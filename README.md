@@ -1,37 +1,7 @@
-## Welcome to GitHub Pages
+## An introduction to Bayes
 
-You can use the [editor on GitHub](https://github.com/lambdaclass/bayes_book_public/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
+[First chapter](https://lambdaclass.com/bayes_book_public/introduction/intro.jl.html): an introduction to Julia and Bayes.
+ Here we talk about the Julia programming language, showing examples of code and some first steps. Then we talk about distributions, histograms and we solve the well known problem of flipping a coin using a bayesian framework.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+[Second chapter](https://lambdaclass.com/bayes_book_public/optimal_pricing/optimal-pricing-chapter), we solve a problem of optimal pricing optimization using a bayesian point of view.
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/lambdaclass/bayes_book_public/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.

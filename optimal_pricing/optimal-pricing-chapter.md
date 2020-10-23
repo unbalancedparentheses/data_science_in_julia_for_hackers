@@ -27,19 +27,19 @@ We are going to use a known equation to model the relationship between price of 
 <figcaption style="text-align:center">Figure 1. Quantity vs Price model.</figcaption>
 </figure>
 
-You can imagine this as when you buy a luxury bread at the bakery: 
+You can imagine this as when you buy a luxury bread at the bakery:
 
 In the beginning, if the price of this bread is very low and you will surely buy many of them, even giving some away so that others can try them. If one day you wake up and see that the price of this tasty bread is now double, you will surely stop buying too much and just concentrate on having it for a nice breakfast. Now, if a couple of months later the bakery became famous thanks to its delicious bread and they decided to sell it five times more expensive than before, you would start looking for another bakery.
 
 #### Power law distributions
 
-Okay, so we agree that our model has to express that as the price goes up the quantity tends to go down. However, one could ask why use a decreasing exponential function and not another one, for example a linear relationship with a negative slope. 
+Okay, so we agree that our model has to express that as the price goes up the quantity tends to go down. However, one could ask why use a decreasing exponential function and not another one, for example a linear relationship with a negative slope.
 
-The answer to this question is not straightforward. To start building an intuition, we must think about how people's income is distributed. 
+The answer to this question is not straightforward. To start building an intuition, we must think about how people's income is distributed.
 
-Surely many of you have the main idea: income is not distributed equally across the population. 
+Surely many of you have the main idea: income is not distributed equally across the population.
 
-In general, a few people concentrate most of the income, and only a little of the income is distributed in the majority of the population. The distributions that describe this phenomenon are called "power law". The best known is perhaps the Pareto distribution or 80-20 distribution. A distribution widely used in business management referring to the fact that, for example 20% of the mix of products sold are those that generate 80% of the profits. 
+In general, a few people concentrate most of the income, and only a little of the income is distributed in the majority of the population. The distributions that describe this phenomenon are called "power law". The best known is perhaps the Pareto distribution or 80-20 distribution. A distribution widely used in business management referring to the fact that, for example 20% of the mix of products sold are those that generate 80% of the profits.
 
 In economics this idea is presented with the Lorentz curve:
 
@@ -52,17 +52,17 @@ In this graph, the x-axis represents the accumulated population and the y-axis t
 
 With this in mind we can already generate an intuition that will help us answer the initial question: why use a decreasing exponential and not a negative-slope line?
 
-Well, since a great majority of people have a small relative income and a minority has a large one, as we increase the price of the product, a large number of people with low income can no longer afford it. This process continues until only people with a high income are left and their consumption preferences are not greatly affected by the price increase. 
+Well, since a great majority of people have a small relative income and a minority has a large one, as we increase the price of the product, a large number of people with low income can no longer afford it. This process continues until only people with a high income are left and their consumption preferences are not greatly affected by the price increase.
 
 The exponential distribution is useful to describe this.
 
 ### Price elasticity of demand
 
-A very important factor to consider is the price demand elasticity of the product in question. What does this mean? It means how much the quantity that customers demand of my product changes when I change the price of the product by one unit. 
+A very important factor to consider is the price demand elasticity of the product in question. What does this mean? It means how much the quantity that customers demand of my product changes when I change the price of the product by one unit.
 
 Mathematically, price elasticity is defined as:
 
-$e_{(p)}=\frac{dQ/Q}{dP/P}$ (1)    
+$$ e_{(p)}=\frac{dQ/Q}{dP/P} (1) $$
 
 For example, the demand elasticity of a medicine for a terminal illness is not the same as that of chocolate with peanuts.
 
@@ -104,11 +104,11 @@ In our problem, we said we have already recorded some points of the curve for ou
 <figcaption style="text-align:center">Figure 2. Data of Quantity and Price recorded.</figcaption>
 </figure>
 
-Now, given the model and the data available, we define it 
+Now, given the model and the data available, we define it
 
 So, given our exponential model to describe the relationship between the price of a good and the quantity demanded, We want to estimate its parameters:
 
-$Q=aP^{c} $ 
+$Q=aP^{c} $
 
 In order to do this, an intelligent strategy is to linearize the relationship in order to perform a simple linear regression. Simply taking the logarithm of both parts of the equation achieves the goal:
 
@@ -133,18 +133,18 @@ How we interpret this model?
 
 #### Priors: our previous knowledge
 
-Remember that Bayesian models always ask us to choose previous distributions for their parameters. In this particular example we propose that *log a* and *c* follow a Cauchy distribution. *Why did we do this?* Basically they are very flat distributions that are going to leave a lot of freedom for turing to learn from the data what the value of the parameters are. 
+Remember that Bayesian models always ask us to choose previous distributions for their parameters. In this particular example we propose that *log a* and *c* follow a Cauchy distribution. *Why did we do this?* Basically they are very flat distributions that are going to leave a lot of freedom for turing to learn from the data what the value of the parameters are.
 
 <figure class="image">
 <div style="text-align:center"><img src = "images/cauchy.png" width = "600"></div>
 <figcaption style="text-align:center">Figure 2. Normal and Cauchy distributions. The Cauchy distribution is said to be fat tailed as it allows for extreme values.</figcaption>
 </figure>
 
-Doing this is the best choice? Definitely not. Having the possibility to choose the previous distributions allows us to introduce previous knowledge to our problem. For example, if you were doing a linear regression to find the relationship between people's weight and their height, you could already "tell" the model that it would not make sense for the relationship to be negative, that is, that it does not make sense that as a person weighs more, he or she would be shorter. 
+Doing this is the best choice? Definitely not. Having the possibility to choose the previous distributions allows us to introduce previous knowledge to our problem. For example, if you were doing a linear regression to find the relationship between people's weight and their height, you could already "tell" the model that it would not make sense for the relationship to be negative, that is, that it does not make sense that as a person weighs more, he or she would be shorter.
 
 Another very important use of piors is to define the scale of the problem. In the example of height and weight it would be to say something like "It doesn't make sense that for every additional kilogram of weight, a person would measure one meter more. At most a few centimeters". All this information can be communicated to our model through the priors we choose. Let's leave it there for now.
 
-Returning to the code. Julia allows us to easily define the variables that are probability distributions using the ~ operator. Once we know *c* and *log a* for a given value of price, we can univocally determine the quantity, therefore the variables $\log(\mu_0)$ (and $\mu_0$) are defined with the = operator, indicating a deterministic relation. 
+Returning to the code. Julia allows us to easily define the variables that are probability distributions using the ~ operator. Once we know *c* and *log a* for a given value of price, we can univocally determine the quantity, therefore the variables $\log(\mu_0)$ (and $\mu_0$) are defined with the = operator, indicating a deterministic relation.
 
 In addition, since the quantity of product sold is a discrete one and it comes from adding independent purchases, they are modeled as a poisson distribution.
 
