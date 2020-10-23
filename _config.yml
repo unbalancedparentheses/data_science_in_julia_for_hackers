@@ -1,8 +1,8 @@
 title: Bayes Book
-description: First chapter the book written by LambdaClass
+description: First chapter of the book written by LambdaClass
 theme: jekyll-theme-tactile
-kramdown:
-    math_engine: mathjax
+plugins:
+    - jekyll-katex
 defaults:
     - scope:
         path: ""

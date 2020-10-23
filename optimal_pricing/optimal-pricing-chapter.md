@@ -61,9 +61,9 @@ The exponential distribution is useful to describe this.
 A very important factor to consider is the price demand elasticity of the product in question. What does this mean? It means how much the quantity that customers demand of my product changes when I change the price of the product by one unit.
 
 Mathematically, price elasticity is defined as:
-{% raw %}
-$$e_{(p)}=\frac{dQ/Q}{dP/P}$$ (1)
-{% endraw %}
+{% katex %}
+e_{(p)}=\frac{dQ/Q}{dP/P} (1)
+{% endkatex %}
 For example, the demand elasticity of a medicine for a terminal illness is not the same as that of chocolate with peanuts.
 
 While some might argue that chocolate is vital to your life, the difference between these two products is that users of the medicine cannot afford not to consume it. No matter how much the price increases, the nature of their need forces them to buy it anyway. It is said then that the medicine has a low demand elasticity, that is, it is not sensitive to price.
