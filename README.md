@@ -5,6 +5,10 @@
 
 [Second chapter](https://lambdaclass.com/practical_bayes_with_julia/introduction/prob_prog.jl.html): An introduction to Probabilistic Programming, and some simple examples in Turing and Soss.
 
-[Third chapter](https://lambdaclass.com/practical_bayes_with_julia/optimal_pricing/optimal-pricing-chapter.jl.html), we solve a problem of optimal pricing optimization using a bayesian point of view.
+[Third chapter](https://lambdaclass.com/practical_bayes_with_julia/gravity_exercise/gravity_exercise.jl.html), we estimate the gravity of Mars to compute the escape velocity, throwing stones and taking very simple measurements from it.
 
-[Fourth chapter](https://lambdaclass.com/practical_bayes_with_julia/gravity_exercise/gravity_exercise.jl.html), we estimate the gravity of Mars to compute the escape velocity, throwing stones and taking very simple measurements from it.
+[Fourth chapter](https://lambdaclass.com/practical_bayes_with_julia/football_analysis/football-analysis-chapter.jl.html), we use a hierarchical bayesian model to estimate latent variables that describe Premier League´s football teams.
+
+[Fifth chapter](https://lambdaclass.com/practical_bayes_with_julia/basketball_scoring/basketball_shots.jl.html), we analyze how the scoring probability is affected by some variables, such as the distance from the hoop and the angle of shooting.
+
+[Sixth chapter](https://lambdaclass.com/practical_bayes_with_julia/optimal_pricing/optimal-pricing-chapter.jl.html), we solve a problem of optimal pricing optimization using a bayesian point of view.
