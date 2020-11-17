@@ -15,4 +15,4 @@
 
 [Seventh chapter](https://lambdaclass.com/practical_bayes_with_julia/optimal_pricing/optimal-pricing-chapter.jl.html), we solve a problem of optimal pricing optimization using a bayesian point of view.
 
-[eighth chapter](https://lambdaclass.com/practical_bayes_with_julia/ultima_online_chapter/ultima_online_chapter.jl.html), we explain the Ultima Online Catastrophe using differential equations to build a population dynamics model.
+[Eighth chapter](https://lambdaclass.com/practical_bayes_with_julia/ultima_online_chapter/ultima_online_chapter.jl.html), we explain the Ultima Online Catastrophe using differential equations to build a population dynamics model.
