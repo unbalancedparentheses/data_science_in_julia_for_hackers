@@ -14,3 +14,5 @@
 [Sixth chapter](https://lambdaclass.com/practical_bayes_with_julia/basketball_scoring/basketball_shots.jl.html), we analyze how the scoring probability is affected by some variables, such as the distance from the hoop and the angle of shooting.
 
 [Seventh chapter](https://lambdaclass.com/practical_bayes_with_julia/optimal_pricing/optimal-pricing-chapter.jl.html), we solve a problem of optimal pricing optimization using a bayesian point of view.
+
+[eighth chapter](https://lambdaclass.com/practical_bayes_with_julia/ultima_online_chapter/ultima_online_chapter.jl.html), we explain the Ultima Online Catastrophe using differential equations to build a population dynamics model.
