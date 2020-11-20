@@ -1,9 +1,9 @@
 ## Practical Machine Learning and Bayes with Julia
 
-[First chapter](https://lambdaclass.com/machine_learning_bayesianism_with_julia/intro_julia_and_bayes.jl.html):
+[First chapter](https://lambdaclass.com/machine_learning_bayesianism_with_julia/introduction/intro_julia_and_bayes.jl.html):
  Here we introduce the Julia programming language, showing examples of code and some first steps. Then we talk about histograms, probability distributions and  finally about the Bayesian interpretation of probability.
 
-[Second chapter](https://lambdaclass.com/machine_learning_bayesianism_with_julia/prob_prog.jl.html): An introduction to Probabilistic Programming, and some simple examples in Turing and Soss.
+[Second chapter](https://lambdaclass.com/machine_learning_bayesianism_with_julia/introduction/prob_prog.jl.html): An introduction to Probabilistic Programming, and some simple examples in Turing and Soss.
 
 [Third chapter](https://lambdaclass.com/machine_learning_bayesianism_with_julia/naive_bayes/spam_filter.jl.html), using a Naive-Bayes approach we construct a simple spam email filter.
 
