@@ -17,4 +17,4 @@
 
 [Eighth chapter](https://lambdaclass.com/machine_learning_bayesianism_with_julia/ultima_online_chapter/ultima_online_chapter.jl.html), we explain the Ultima Online Catastrophe using differential equations to build a population dynamics model.
 
-[Nineth chapter](https://lambdaclass/machine_learning_bayesianism_with_julia/time_series/time_series_chapter.jl.html), we see the basics for time series analysis, focusing on the exponential smoothing method.
+[Nineth chapter](https://lambdaclass.com/machine_learning_bayesianism_with_julia/time_series/time_series_chapter.jl.html), we see the basics for time series analysis, focusing on the exponential smoothing method.
