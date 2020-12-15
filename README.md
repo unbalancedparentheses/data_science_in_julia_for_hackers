@@ -18,3 +18,5 @@
 [Eighth chapter](https://lambdaclass.com/machine_learning_bayesianism_with_julia/ultima_online_chapter/ultima_online_chapter.jl.html), we explain the Ultima Online Catastrophe using differential equations to build a population dynamics model.
 
 [Nineth chapter](https://lambdaclass.com/machine_learning_bayesianism_with_julia/time_series/time_series_chapter.jl.html), we see the basics for time series analysis, focusing on the exponential smoothing method.
+
+[Tenth chapter](https://lambdaclass.com/machine_learning_bayesianism_with_julia/bees_vs_wasps/wasp_detector.jl.html), in this chapter we give an overview of Machine Learning and we implement a simple convolutional neural network to solve a bees vs. wasps classification.
