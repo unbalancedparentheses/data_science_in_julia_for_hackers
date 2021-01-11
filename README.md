@@ -23,7 +23,7 @@
 
 * [Eleventh chapter](https://lambdaclass.com/machine_learning_bayesianism_with_julia/ultima_online_chapter/ultima_online_chapter.jl.html): we explain the Ultima Online Catastrophe using differential equations to build a population dynamics model.
 
-* [Twelfth chapter](https://lambdaclass.com/machine_learning_bayesianism_with_julia/universal_odes/universal_ode_chapter.jl.html): A continuation of the Ultima Online Catastrophe, introducing the universal ODEs to recover missing parts of scientific models.
+* [Twelfth chapter](https://lambdaclass.com/machine_learning_bayesianism_with_julia/universal_odes/universal_ode_chapter.jl.html): A continuation of the Ultima Online Catastrophe, introducing the Universal Differential Equations to recover missing parts of scientific models.
 
 * [Thirteenth chapter](https://lambdaclass.com/machine_learning_bayesianism_with_julia/time_series/time_series_chapter.jl.html): we see the basics for time series analysis, focusing on the exponential smoothing method.
 
