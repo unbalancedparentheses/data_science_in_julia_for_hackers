@@ -19,11 +19,11 @@
 
 * [Nineth chapter](https://lambdaclass.com/machine_learning_bayesianism_with_julia/optimal_pricing/optimal-pricing-chapter.jl.html): we solve a problem of optimal pricing optimization using a bayesian point of view.
 
-* [Tenth chapter](https://lambdaclass.com/machine_learning_bayesianism_with_julia/ultima_online_chapter/ultima_online_chapter.jl.html): we explain the Ultima Online Catastrophe using differential equations to build a population dynamics model.
+* [Tenth chapter](https://lambdaclass.com/machine_learning_bayesianism_with_julia/bees_vs_wasps/wasp_detector.jl.html): in this chapter we give an overview of Machine Learning and we implement a simple convolutional neural network to solve a bees vs. wasps classification.
 
-* Eleventh chapter: A continuation of the Ultima Online Catastrophe, and an introduction to universal ODEs.
+* [Eleventh chapter](https://lambdaclass.com/machine_learning_bayesianism_with_julia/ultima_online_chapter/ultima_online_chapter.jl.html): we explain the Ultima Online Catastrophe using differential equations to build a population dynamics model.
 
-* [Twelfth chapter](https://lambdaclass.com/machine_learning_bayesianism_with_julia/bees_vs_wasps/wasp_detector.jl.html): in this chapter we give an overview of Machine Learning and we implement a simple convolutional neural network to solve a bees vs. wasps classification.
+* Twelfth chapter: A continuation of the Ultima Online Catastrophe, and an introduction to universal ODEs.
 
 * [Thirteenth chapter](https://lambdaclass.com/machine_learning_bayesianism_with_julia/time_series/time_series_chapter.jl.html): we see the basics for time series analysis, focusing on the exponential smoothing method.
 
