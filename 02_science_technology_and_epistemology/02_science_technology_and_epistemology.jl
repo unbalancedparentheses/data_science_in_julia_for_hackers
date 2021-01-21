@@ -52,11 +52,25 @@ We just talked about a lot of issues revolving around science. We think a good c
 
 Well, here we get back into another quagmire. We think it almost goes without saying that science and technology are intimately related and in some ways feed back into each other. So it would be great if we could define it in a similar way. Well, we can think that if the goal of science is to understand the reality, the goal of technology is to **transform** it. We transform the reality in which we live by *expanding* our capacities, from taking a long stick with a point to reach a fruit high up in a tree, passing through transforming an entire landscape by building a huge electric dam, to the creation of artificial intelligence that helps us solve our deepest puzzles. With technology we transform our reality.
 
-And here is when everything gets confusing
+And here is when everything gets confusing because science and technology start interacting in a complex way: the more science we do, the more technology we can create; but also, as more technology we have (ie: [Large Hadron Collider](https://home.cern/science/accelerators/large-hadron-collider)), we can start digging in more and more intricate enigmas. The relationship is complex and generates a kind of multiplying virtuous circle.
 
+
+
+"""
+
+# ╔═╡ 1c60486a-5c2d-11eb-385e-417e8c4b7ddb
+md"""### References
+
+- Antifragile: Things That Gain from Disorder, ch 15 - Nassim Nicholas Taleb
+
+- [Freeman Dyson - Where Do the Laws of Nature Come From?](https://youtu.be/wxRpa-PqUfw)
+- [Roger Penrose - Is Mathematics Invented or Discovered?](https://youtu.be/ujvS2K06dg4)
+- [How to tell science from pseudoscience](https://youtu.be/o9ylQC5bPpU)
+- [Sabine Hossenfelder - Why the ‘Unreasonable Effectiveness’ of Mathematics?](https://youtu.be/QUWbe5KGaQY)
 
 
 """
 
 # ╔═╡ Cell order:
 # ╟─ee92411c-5c28-11eb-2f22-2f275ae35b18
+# ╟─1c60486a-5c2d-11eb-385e-417e8c4b7ddb
