@@ -279,12 +279,30 @@ julia> hcat([1, 2, 3], [4, 5, 6]) # this stacks the two arrays one next to the o
 
 ```
 
-With some of these basic tools to start getting your hands dirty in Julia, we can get going into some higher-order functionalities.
-"
+With some of these basic tools to start getting your hands dirty in Julia, we can get going into some other functionalities like loops and function definitions. Consider the code block below, where we define a function to calculate a certain number of steps of the Fibonacci sequence,
 
-# ╔═╡ 2a584914-5a9c-11eb-3ccc-bd40e33a54f2
-md"
-Let's get our hands dirty with some Julia code in an example that the Fibonacci sequence to see what it looks like:
+```julia
+julia> 	n1 = 0
+		n2 = 1
+		m = 10
+
+		function fibonacci(n1, n2, m)
+			fib = Array{Int64,1}(undef, m)
+			fib[1] = n1
+			fib[2] = n2
+			for i in 3:m
+				fib[i] = fib[i-1] + fib[i-2]
+			end
+			return fib
+		end
+fibonacci (generic function with 1 method)
+```
+
+Here, we firstly made some variable assignments, variables $n1$, $n2$ and $m$ were asigned values 0, 1 and 10. Then, we defined a function for the fibonacci calculation. Function blocks start with the *function* keyword, followed by the name of the function and the arguments between brackets, all separated by commas. In this function, the arguments will be the first two numbers of the sequence and the total length of the sequence. 
+Inside the body of the function, everything is indented. Although this is not strictly necessary for the code to run, it is a good practice to have from the beginning.
+first we initialize an array of integers of one dimension and length $m$. This way of initializing an array is not strictly necessary, but is definitely a good practice for optimizing code performance in Julia. But don't worry too much about that right now.
+We then proceed to assign the two first elements of the sequence and calculate the rest with a *for loop*. The syntax ```3:m ``` just means all the numbers from 3 to ```m```, with a step of 1. We could have set ```3:2:m``` if we wanted to jump between numbers two by two. Finally, an *end* keyword is necessary at the end of the for loop and another one to end the definition of the function.
+Evaluating our function in the variables $n1$, $n2$ and $m$ already defined, gives us:
 "
 
 # ╔═╡ 0ea23640-5a96-11eb-0843-11d44fa27ea7
@@ -443,7 +461,6 @@ md"
 # ╟─0a4fc5fc-544d-11eb-0189-6b1c959b1eb1
 # ╟─292d20ea-5a8e-11eb-2a96-a37689e468ca
 # ╟─01ca39ee-5a9c-11eb-118e-afae416cfca4
-# ╟─2a584914-5a9c-11eb-3ccc-bd40e33a54f2
 # ╠═0ea23640-5a96-11eb-0843-11d44fa27ea7
 # ╟─5e789866-544d-11eb-3aaa-f544a717a591
 # ╠═6b354b4c-544d-11eb-393a-cbb768b7643e
