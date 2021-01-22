@@ -55,6 +55,19 @@ Well, here we get back into another quagmire. We think it almost goes without sa
 And here is when everything gets confusing because science and technology start interacting in a complex way: the more science we do, the more technology we can create; but also, as more technology we have (ie: [Large Hadron Collider](https://home.cern/science/accelerators/large-hadron-collider)), we can start digging in more and more intricate enigmas. The relationship is complex and generates a kind of multiplying virtuous circle.
 
 
+But for us is important to go deeper, how is that relationship? And how is the process of knowledge discovery? 
+
+
+Nowadays, there is a kind of "linear model" thinking in which we take for granted that the the process of producing knowledge is very define: We **firts** make academic and theoretical discoveries and **only then**, with all of that formalization made, we can start thinking of putting it to practical use in the real world. And for us, this is completely wrong thinking and is holding us back enormously, causing important funds to be misused.
+
+
+If you start looking to the technology/innovation history you may gradually begin to notice a repeating pattern: There is a constant differentiation between the people who *do* and the people who *watch* and then narrate. "The History Written by the Losers" would [Nassim Nicholas Taleb](https://en.wikipedia.org/wiki/Nassim_Nicholas_Taleb) said, the people that are **doing stuff** doesn´t have time for beauty writing. But the thing does not stop there. It is not only the do-nothings who write about the findings of others, but also attribute it to them! And this comes from a worrying bias that has been developing throughout recent history: the linear thinking we are talking about. That common sense in which knowledge is built from a purely intellectual work that can be done in the armchair at home, and that after acquiring this sacred theoretical knowledge it is possible to become with technology or innovation.
+
+
+So let´s think for a moment, does a child need to know the gear mechanisms of a bicycle, in order to be able to use it? or does messi need to know about fluid dynamics to make the ball take a curved trajectory? Maybe you are thinking that this is a very specific case, but the reality is that those example share a general and universal property: The knowledge is adquire base on experimentation, implementation and heuristics, pure trial and error. And technological innovation follow the same mechanism, it was discover by people that were  **taking risks, taking action, with a pure trial-and-error experiential manner** and, above all, without anyone truly understanding the theory behind.
+
+
+In his book "Antifragile: Things That Gain from Disorder", Taleb (yes, we really like his ideas) problematizes this apparent "order" when it comes to generating innovation and lists a series of events/fields that were misrepresented by the "losers that write the history", generating the false illusion that theoretical discovery came before practice and the trial and error process. 
 
 """
 
