@@ -4,6 +4,15 @@
 using Markdown
 using InteractiveUtils
 
+# ╔═╡ eb62587c-544e-11eb-2cdf-833c27b9793c
+begin
+	using Plots
+	
+	sequence = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+
+	scatter(sequence, xlabel="n", ylabel="Fibonacci(n)", color="purple", label=false, size=(450, 300))
+end
+
 # ╔═╡ 0a4fc5fc-544d-11eb-0189-6b1c959b1eb1
 md"
 # Meeting Julia
@@ -19,8 +28,8 @@ As with every programming language, it is useful to know some of the basic opera
 
 The common arithmetical and logical operations are all available in Julia:
 
-* $ + $: Add operator
-* $ - $: Substract operator
+* `` + ``: Add operator
+* ``` - ```: Substract operator
 * $ * $: Product operator
 * $ / $: Division operator
 
@@ -194,7 +203,18 @@ julia> [1 1 2; 4 1 0; 3 3 1]
  4  1  0
  3  3  1
 ```
+The length and shape of arrays can be obtained using the *length()* and *size()* functions respectiverly, like so
 
+```julia
+julia> length([1, -1, 2, 0])
+4
+
+julia> size([1 0; 0 1])
+(2, 2)
+
+julia> size([1 0; 0 1], 2) # you can also specify the dimension where you want the shape to be computed
+2
+```
 An interesting feature in Julia is *broadcasting*. Suppose you wanted to add the number 2 to every element of an array. You might be tempted to do
 
 ```julia
@@ -279,146 +299,144 @@ julia> hcat([1, 2, 3], [4, 5, 6]) # this stacks the two arrays one next to the o
 
 ```
 
-With some of these basic tools to start getting your hands dirty in Julia, we can get going into some other functionalities like loops and function definitions. Consider the code block below, where we define a function to calculate a certain number of steps of the Fibonacci sequence,
+With some of these basic tools to start getting your hands dirty in Julia, we can get 
+going into some other functionalities like loops and function definitions.
+We have already seen a for loop. For loops are started with a *for* keyword, followed by the name of the iterator and the range of iterations we want our loop to cover. Below this for statement we write what we want to be performed in each loop and we finish with an *end* keyword statement.
+Let's return to the example we made earlier,
+```julia
+julia> for i in 1:100
+	       println(i)
+	   end
+```
+The syntax ```1:100 ``` is the Julian way to define a range of all the numbers from 1 
+to 100, with a step of 1. We could have set ```1:2:100``` if we wanted to jump between 
+numbers with a step size of 2. We can also iterate over collections of data, like 
+arrays. Consider the next block of code where we define an array and then iterate over it,
 
 ```julia
-julia> 	n1 = 0
-		n2 = 1
-		m = 10
+julia> arr = [1, 3, 2, 2]
+julia> for element in arr
+	       println(element)
+	   end
+1
+3
+2
+2
+```
+As you can see, the loop was done for each element of the array. It might be convenient sometimes to iterate over a collection. 
+Following with the basics, conditional statements in Julia are very similar to most languages. Essentially, a conditional statement starts with the *if* keyword, followed by the condition that must be evaluated to true or false, and then the body of the action to apply if the condition evaluates to true. Then, an *elseif* keyword can be used to ask for another condition, and an *else*  keyword to apply some statement when the other conditions evaluate to false. Finally, like it is usual in Julia, the conditional statement block finishes whith an *end* keyword. As an example, 
 
-		function fibonacci(n1, n2, m)
-			fib = Array{Int64,1}(undef, m)
-			fib[1] = n1
-			fib[2] = n2
-			for i in 3:m
-				fib[i] = fib[i-1] + fib[i-2]
-			end
-			return fib
-		end
+```julia
+julia> x = 3
+julia> if x > 2
+	       println(\"x is greater than 2\")
+       elseif 1 < x < 2
+		   println(\"x is in between 1 and 2\")
+	   else
+		   println(\"x is less than 1\")
+	   end
+x is greater than 2
+```
+
+Now consider the code block below, where we define a function to calculate a certain number of steps of the Fibonacci sequence,
+
+```julia
+julia> n1 = 0
+julia> n2 = 1
+julia> m = 10
+julia> function fibonacci(n1, n2, m)
+	       fib = Array{Int64,1}(undef, m)
+		   fib[1] = n1
+		   fib[2] = n2
+		   for i in 3:m
+		   	   fib[i] = fib[i-1] + fib[i-2]
+		   end
+		   return fib
+	   end
 fibonacci (generic function with 1 method)
 ```
 
-Here, we firstly made some variable assignments, variables $n1$, $n2$ and $m$ were asigned values 0, 1 and 10. Then, we defined a function for the fibonacci calculation. Function blocks start with the *function* keyword, followed by the name of the function and the arguments between brackets, all separated by commas. In this function, the arguments will be the first two numbers of the sequence and the total length of the sequence. 
-Inside the body of the function, everything is indented. Although this is not strictly necessary for the code to run, it is a good practice to have from the beginning.
-first we initialize an array of integers of one dimension and length $m$. This way of initializing an array is not strictly necessary, but is definitely a good practice for optimizing code performance in Julia. But don't worry too much about that right now.
-We then proceed to assign the two first elements of the sequence and calculate the rest with a *for loop*. The syntax ```3:m ``` just means all the numbers from 3 to ```m```, with a step of 1. We could have set ```3:2:m``` if we wanted to jump between numbers two by two. Finally, an *end* keyword is necessary at the end of the for loop and another one to end the definition of the function.
+Here, we first made some variable assignments, variables $n1$, $n2$ and $m$ were asigned values 0, 1 and 10. Variables are assigned simply by writing the name of the 
+variable followed by an 'equal' sign, and followed finally by the value you want to
+store in that variable. There is no need to declare the data type of the value you are going to store.
+Then, we defined the function body for the fibonacci series computation. Function blocks start with the *function* keyword, followed by the name of the function and the 
+arguments between brackets, all separated by commas. In this function, the arguments 
+will be the first two numbers of the sequence and the total length of the fibonacci 
+sequence. 
+Inside the body of the function, everything is indented. Although this is not strictly 
+necessary for the code to run, it is a good practice to have from the beginning, since we want our code to be readable.
+At first, we initialize an array of integers of one dimension and length $m$, by 
+allocating memory. This way of initializing an array is not strictly necessary, you 
+could have initialized an empty array and start filling it later in the code. But is 
+definitely a good practice to learn for a situation like this, where we know how long our array is going to be and optimizing code performance in Julia. 
+The memory allocation for this array is done by initializing the array as we have already seen earlier. ```julia {Int64,1}```just means we want a one-dimentional array
+of integers. The new part is the one between parenthesis, ```julia (undef, m)```. This 
+just means we are initializing the array with undefined values –which will be later modifyed by us–, and that there will be a number $m$ of them. Don't worry too much if 
+you don't understand all this right now, though.
+We then proceed to assign the two first elements of the sequence and calculate the 
+rest with a for loop. Finally, an *end* keyword is necessary at the end of the for loop and another one to end the definition of the function.
 Evaluating our function in the variables $n1$, $n2$ and $m$ already defined, gives us:
+
+```julia
+julia> fibonacci(n1, n2, m)
+10-element Array{Int64,1}:
+  0
+  1
+  1
+  2
+  3
+  5
+  8
+ 13
+ 21
+ 34
+```
+
+Remember the broadcasting operation, that dot we added to the beginning of another operator to make it appy over an entire collection of objects? It turns out that this can be done with functions as well! Consider the following function,
+
+```julia
+julia> function isPositive(x)
+	      if x >= 0
+			   return true
+		  elseif x < 0
+			   return false
+		  end
+	   end
+isPositive (generic function with 1 method)
+
+julia> isPositive(3)
+true
+
+julia> isPositive.([-1, 1, 3, -5])
+4-element BitArray{1}:
+ 0
+ 1
+ 1
+ 0
+```
+
+As you can see, we had broadcasted the function isPositive() we defined, over every 
+element of an array, by adding a dot next to the end of the function name, previous to 
+the parenthesis. Is is as easy as that! Once you start using this feature, you will notice how useful it is.
+One last thing concearning functions in Julia is the 'bang'(!) convention. Functions that have a name ending with an exclamation mark (or bang), are functions that change their imputs in-place. Consider the example of the pop! function from the Julia Base package. Watch closely what happens to the array over we apply the function
+
+```julia
+julia> arr = [1, 2, 3];
+julia> pop!(arr)
+3
+julia> arr
+2-element Array{Int64,1}:
+ 1
+ 2
+```
+Did you understand what happened? At first, we defined and array. Then, we applied the pop!() function, which, as the name suggests, pops the last element of the array. But notice that when we call our *arr* variable to see what it is storing, now the number 3 is gone. This is what functions with a bang do and what we mean with modifying *in-place*. Try to follow this convention whenever you define a function that will modify other objects in-place!
 "
-
-# ╔═╡ 0ea23640-5a96-11eb-0843-11d44fa27ea7
-begin
-	n1 = 0
-	n2 = 1
-	m = 10
-
-	function fibonacci(n1, n2, m)
-		fib = Array{Int64,1}(undef, m)
-		fib[1] = n1
-		fib[2] = n2
-		for i in 3:m
-			fib[i] = fib[i-1] + fib[i-2]
-		end
-		return fib
-	end
-end
-
-# ╔═╡ eb62587c-544e-11eb-2cdf-833c27b9793c
-begin
-	using Plots
-	sequence = fibonacci(n1, n2, m)
-	scatter(sequence, xlabel="n", ylabel="Fibonacci(n)", color="purple", label=false, size=(450, 300))
-end
-
-# ╔═╡ 5e789866-544d-11eb-3aaa-f544a717a591
-md"
-As you can see, writing Julia code is pretty straight-forward. First of all, we made some variable assignments, variables $n1$, $n2$ and $m$ were asigned values 0, 1 and 10. Then, we defined a function for the fibonacci calculation. Function blocks start with the *function* statement, followed by the name of the function and the arguments within brackets. These arguments will be the first two numbers of the sequence and the total length of the sequence. 
-Inside the function definition, first we initialize an array of integers of one dimension and length $m$. This way of initializing an array is not strictly necessary, but is definitely a good practice for optimizing code performance in Julia. But don't worry too much about that right now.
-We then proceed to assign the two first elements of the sequence and calculate the rest with a *for loop*. The syntax ```3:m ``` just means all the numbers from 3 to ```m```, with a step of 1. We could have set ```3:2:m``` if we wanted to jump between numbers two by two. Finally, an *end* statement is necessary at the end of the for loop, another one to end the definition of the function, and a third one to end the whole code block.
-Evaluating our function in the variables $n1$, $n2$ and $m$ already defined, gives us:
-"
-
-# ╔═╡ 6b354b4c-544d-11eb-393a-cbb768b7643e
-fibonacci(n1, n2, m)
-
-# ╔═╡ 6e8b26f6-544d-11eb-2075-c169535e3137
-md" 
-Let's see some other nice Julia functionalities. Suppose you wanted to add the number 2 to every element of an array. You may be tempted to try this code, but you are going to get an error message
-"
-
-# ╔═╡ 8502f292-544d-11eb-264f-b1ed1b07a710
-arr = [1, 2, 2, 3, 6]
-
-# ╔═╡ f8757038-544d-11eb-2280-4b2749b445b4
-arr + 2
-
-# ╔═╡ a601ee3a-544d-11eb-1bd9-cb41d605f598
-md" 
-If you watch closely, the message makes a good suggestion: the *broadcast operator*. When you have an operator applied to some iterable object, adding a dot in front of that operator broadcasts the operation for every element of the object. This is what the dot syntax mentioned in the error message refers to. 
- Let's see it in action:
-"
-
-# ╔═╡ ae1fb444-544d-11eb-0d07-e99e031c5264
-arr .+ 2
-
-# ╔═╡ 179cbdfe-544e-11eb-117d-17d468df04da
-md" 
-This is also useful when doing some vector operations. In Julia, one-dimensional arrays initialized by separating its elements with commas can be thought as column vectors. For example, we can define two column vectors
-"
-
-# ╔═╡ 6840faea-544e-11eb-1d3e-41ff39e2213f
-vec1 = [1, 0, 1]
-
-# ╔═╡ 6e53adc6-544e-11eb-0f25-776f005b1dd8
-vec2 = [2, 1, 1]
-
-# ╔═╡ 74b1beb8-544e-11eb-27f8-35afab1636f7
-md"
-If we would try to do something like ```vec1 * vec2```, this is an ambiguous operation, because Julia doesn't know if we mean a dot product,cross product or maybe something else. But if we add the dot syntax operator, ```vec1 .* vec2```, Julia makes a element-wise multiplication between the elements of the two vectors:
-"
-
-# ╔═╡ 7b2239ec-544e-11eb-2e44-4703d2331147
-vec1 .* vec2
-
-# ╔═╡ 81772818-544e-11eb-1feb-eb7a87460399
-md"
-If we would have used the broadcast operator between a column vector and a *row* vector instead, the broadcast is done for every row of the first vector and every column of the second vector, returning a matrix. A row vector can be initialized using whitespaces to separate each element, like so
-"
-
-# ╔═╡ 8e2ccc5c-544e-11eb-0460-41f13910bcf5
-vec3 = [3 1 4]
-
-# ╔═╡ 92f5a45c-544e-11eb-39b2-f1687cd4c364
-md"
-So if we do, por example  ```vec1 .* vec3```, we get
-"
-
-# ╔═╡ ae011592-544e-11eb-18c4-95e0361479d2
-vec1 .* vec3
-
-# ╔═╡ b7c0de46-544e-11eb-3e18-ad4259c4460e
-md"
-We will be using the broadcast dot syntax throughout the book, and it is used extensively in the Julia community due to its usefulness. 
-Broadcasting can be used on functions too. Say you have a function that tells you if a number is positive
-"
-
-# ╔═╡ c6b0b188-544e-11eb-1d17-35487e3fe72e
-begin
-	function isPositive(x)
-		if x >= 0
-			return true
-		elseif x < 0
-			return false
-		end
-	end
-end
-
-# ╔═╡ c8ca2a08-544e-11eb-0066-1d62576da475
-isPositive(3)
 
 # ╔═╡ d1ae60a8-544e-11eb-15b5-97188dc41aa8
 md"
-Julia's ecosystem is composed by a variety of libraries which focus on techical domains such as DataScience (DataFrames.jl, CSV.jl), Machine Learning (MLJ.jl, Flux.jl, Turing.jl) and Scientific Computing (DifferentialEquations.jl), as well as more general purpose programming (HTTP.jl, Dash.jl). 
-We will now consider one of the libraries that will be accompanying us throughout the book to make visualizations, and it is the standard package for plotting in Julia. It is called Plots.jl. Let's import the library first,
+## **Julia's Ecosystem**: Basic plotting and DataFrames manipulation
+Julia's ecosystem is composed by a variety of libraries which focus on techical domains such as Data Science (DataFrames.jl, CSV.jl, JSON.jl), Machine Learning (MLJ.jl, Flux.jl, Turing.jl) and Scientific Computing (DifferentialEquations.jl), as well as more general purpose programming (HTTP.jl, Dash.jl). 
+We will now consider one of the libraries that will be accompanying us throughout the book to make visualizations, Plots.jl. There are some another great packages like Gadfly.jl and VegaLite.jl, but Plots will be the best to get you started. Let's import the library with the 'using' keyword and start making some plots. We will plot the first ten numbers of the fibonacci sequence using the ```scatter()``` function.
 "
 
 # ╔═╡ e36a4352-544e-11eb-2331-43f864bb01d5
@@ -442,7 +460,7 @@ end
 
 # ╔═╡ 11f33ecc-544f-11eb-35d5-27a280cdce1b
 md"
-You may have noticed que exclamation mark (or 'bang', as it is called in the Julia community) next to the scatter function. In Julia, functions with a bang are functions that modify variables *in-place*. In the example above, a plot is created when we call the plot() function. What the scatter!() call then does, is to modify the global state of the plot in-place. If not done this way, both plots wouldn't be sketched together.
+In the example above, a plot is created when we call the plot() function. What the scatter!() call then does, is to modify the global state of the plot in-place. If not done this way, both plots wouldn't be sketched together.
 "
 
 # ╔═╡ 190ab9c4-544f-11eb-1460-9fbf13dc8516
@@ -459,28 +477,8 @@ md"
 
 # ╔═╡ Cell order:
 # ╟─0a4fc5fc-544d-11eb-0189-6b1c959b1eb1
-# ╟─292d20ea-5a8e-11eb-2a96-a37689e468ca
+# ╠═292d20ea-5a8e-11eb-2a96-a37689e468ca
 # ╟─01ca39ee-5a9c-11eb-118e-afae416cfca4
-# ╠═0ea23640-5a96-11eb-0843-11d44fa27ea7
-# ╟─5e789866-544d-11eb-3aaa-f544a717a591
-# ╠═6b354b4c-544d-11eb-393a-cbb768b7643e
-# ╟─6e8b26f6-544d-11eb-2075-c169535e3137
-# ╠═8502f292-544d-11eb-264f-b1ed1b07a710
-# ╠═f8757038-544d-11eb-2280-4b2749b445b4
-# ╟─a601ee3a-544d-11eb-1bd9-cb41d605f598
-# ╠═ae1fb444-544d-11eb-0d07-e99e031c5264
-# ╟─179cbdfe-544e-11eb-117d-17d468df04da
-# ╠═6840faea-544e-11eb-1d3e-41ff39e2213f
-# ╠═6e53adc6-544e-11eb-0f25-776f005b1dd8
-# ╟─74b1beb8-544e-11eb-27f8-35afab1636f7
-# ╠═7b2239ec-544e-11eb-2e44-4703d2331147
-# ╠═81772818-544e-11eb-1feb-eb7a87460399
-# ╠═8e2ccc5c-544e-11eb-0460-41f13910bcf5
-# ╟─92f5a45c-544e-11eb-39b2-f1687cd4c364
-# ╠═ae011592-544e-11eb-18c4-95e0361479d2
-# ╟─b7c0de46-544e-11eb-3e18-ad4259c4460e
-# ╠═c6b0b188-544e-11eb-1d17-35487e3fe72e
-# ╠═c8ca2a08-544e-11eb-0066-1d62576da475
 # ╟─d1ae60a8-544e-11eb-15b5-97188dc41aa8
 # ╟─e36a4352-544e-11eb-2331-43f864bb01d5
 # ╠═eb62587c-544e-11eb-2cdf-833c27b9793c
