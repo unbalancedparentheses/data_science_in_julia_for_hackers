@@ -13,6 +13,18 @@ begin
 	scatter(sequence, xlabel="n", ylabel="Fibonacci(n)", color="purple", label=false, size=(450, 300))
 end
 
+# ╔═╡ 123c9e1a-5f25-11eb-2aa8-756adae10d51
+begin
+	using DataFrames, Random
+	
+	Random.seed!(123)
+	
+	fake_data = rand(5, 5) # this creates a 5x5 matrix with random values between 0 
+						   # and 1 in each matrix element.
+	
+	df = DataFrame(fake_data)
+end
+
 # ╔═╡ 0a4fc5fc-544d-11eb-0189-6b1c959b1eb1
 md"
 # Meeting Julia
@@ -434,13 +446,14 @@ Did you understand what happened? At first, we defined and array. Then, we appli
 
 # ╔═╡ d1ae60a8-544e-11eb-15b5-97188dc41aa8
 md"
-## **Julia's Ecosystem**: Basic plotting and DataFrames manipulation
+# **Julia's Ecosystem**: Basic plotting and DataFrames manipulation
 Julia's ecosystem is composed by a variety of libraries which focus on techical domains such as Data Science (DataFrames.jl, CSV.jl, JSON.jl), Machine Learning (MLJ.jl, Flux.jl, Turing.jl) and Scientific Computing (DifferentialEquations.jl), as well as more general purpose programming (HTTP.jl, Dash.jl). 
 We will now consider one of the libraries that will be accompanying us throughout the book to make visualizations, Plots.jl. There are some another great packages like Gadfly.jl and VegaLite.jl, but Plots will be the best to get you started. Let's import the library with the 'using' keyword and start making some plots. We will plot the first ten numbers of the fibonacci sequence using the ```scatter()``` function.
 "
 
 # ╔═╡ e36a4352-544e-11eb-2331-43f864bb01d5
 md"
+### Plotting with Plots.jl
 Let's make a plot of the 10 first numbers in the fibonacci sequence. For this, we can make use of the ```scatter()``` function:
 "
 
@@ -461,11 +474,102 @@ end
 # ╔═╡ 11f33ecc-544f-11eb-35d5-27a280cdce1b
 md"
 In the example above, a plot is created when we call the plot() function. What the scatter!() call then does, is to modify the global state of the plot in-place. If not done this way, both plots wouldn't be sketched together.
+
+### Introducing DataFrames.jl
+When dealing with any type of data in large quantities, it is essential to have a 
+framework to organize and manipulate it in an efficient way. If you have previously 
+used Python, you probably came across the Pandas package and dataframes. In Julia, the DataFrames.jl package follows the same idea.
+Dataframes are objects with the purpose of structuring tabular data in a smart way. You can think of them as a table, a matrix or a spreadsheet. 
+In the dataframe convention, each row is an observation of a vector-type variable, and each column is the complete set of values of a given variable. In other words, for a single row, each column represents a a realization of a variable. 
+Let's see how to construct and load data into a dataframe. There are many ways you can accomplish this. Consider we had some data in a matrix and we want to organize it in a dataframe. First, we are going to create some 'fake data' and loading that in a Julia DataFrame,
 "
 
-# ╔═╡ 190ab9c4-544f-11eb-1460-9fbf13dc8516
-md" 
-As mentioned, Julia is specially suited for areas related with scientific and high-performance computations. Between these, we have *Probabilistic Programming*, and more generally *Bayesian Statistics*. These two fields are strongly related to each other and are the main focus of the book. First, we will need to get some intuitive idea about what Bayesian Statistics is, so let's go for it
+# ╔═╡ 7fbacda8-5f3f-11eb-2d85-c702f205cc6b
+md"
+As you can see, the column names were initialized with values $x1, x2, ...$. We probabily would want to rename them with more meaningful names. To do this, we have the ```rename!()``` function. Remember this function changes the dataframe in-place, so be careful!
+Below we rename the columns of our dataframe,
+"
+
+# ╔═╡ 340ee342-5f46-11eb-224e-c33007e70b4a
+rename!(df, ["one", "two", "three", "four", "five"])
+
+# ╔═╡ d38bbbfc-5f46-11eb-2453-efa50f8bfae0
+md"
+The first argument of the function is the dataframe we want to modify, and the second an array of strings, each one corresponding to the name of each column. Another way to create a dataframe is by passing a list of variables that store arrays or any collection of data. For example,
+"
+
+# ╔═╡ c820403e-5f47-11eb-1f3c-35a128d1f990
+DataFrame(column1=1:10, column2=2:2:20, column3=3:3:30)
+
+# ╔═╡ 7ea669ca-5f48-11eb-2341-eb3ee9f959e8
+md"
+As you can see, the name of each array is automatically assigned to the columns of the dataframe. 
+Furthermore, you can initialize an empty dataframe and start adding data later if you want,
+"
+
+# ╔═╡ 8b6d3ac8-5f49-11eb-1a34-9524509f41ac
+begin
+	df_ = DataFrame(Names = String[],
+				Countries = String[],
+				Ages = Int64[])
+	df_ = vcat(df_, DataFrame(Names="Juan", Countries="Argentina", Ages=28))
+end
+
+# ╔═╡ 758cc9f2-5f4a-11eb-059d-6f7a46877bf2
+md"
+We have used the ```vcat()```function we have seen earlier to append new data to the dataframe.
+
+You can access data in a dataframe in various ways. One way is by the column name. For example,
+"
+
+# ╔═╡ 60431b28-5f4f-11eb-2ada-c71526f5a8b5
+df.three
+
+# ╔═╡ 5f8669a0-5f50-11eb-2ad2-79ba19b0103c
+df."three"
+
+# ╔═╡ 6901d1b8-5f50-11eb-28c2-1f384653d8fa
+md"
+But you can also access dataframe data as if it were a matrix. You can treat columns as their column number or by their name, it doesn't matter,
+"
+
+# ╔═╡ 816f1406-5f51-11eb-0fc2-9311f9488ce1
+df[1,:]
+
+# ╔═╡ a6e3925e-5f51-11eb-1611-3366446106e7
+df[1:2, "one"]
+
+# ╔═╡ b4987490-5f52-11eb-1605-6b5db8fce285
+df[3:5, ["two", "four", "five"]]
+
+# ╔═╡ e7f3b386-5f52-11eb-07f1-532a67807549
+md"
+The column names can be accessed by the ```names()``` function,
+"
+
+# ╔═╡ 71ddef62-5f53-11eb-0d3e-41823fb10639
+names(df)
+
+# ╔═╡ c7370ae6-5f55-11eb-2c5f-a3302af5354f
+md"
+Another useful tool for having a quick overview of the dataframe, typically when in an exploratory process is the ```describe()``` function. It outputs some information about each column, as you can see below,
+"
+
+# ╔═╡ c83bca04-5f54-11eb-3190-3fbf4dde731a
+describe(df)
+
+# ╔═╡ 32211860-5f56-11eb-076a-d504b31ef94d
+md"
+To select data following certain conditions, you can use the ```filter()``` function
+"
+
+# ╔═╡ 695a4a3e-5f58-11eb-278d-ddd3f24e5f85
+filter(col -> col[1] < 0.5, df)
+
+# ╔═╡ 0429e9de-5f25-11eb-3f26-d3b35e3b542b
+md"
+---
+As mentioned, Julia is specially suited for areas related with scientific and high-performance computations. Between these, we have Data Science, Machine Learning and Probabilistic Programming. These fields are related to each other and are the main focus of the book. 
 "
 
 # ╔═╡ 1f2086cc-544f-11eb-339e-1d31f4b4eb4b
@@ -473,11 +577,13 @@ md"
 ### Bibliography
 * [Julia's website](https://julialang.org/)
 * [Learn X in Y minutes](https://learnxinyminutes.com/docs/julia/)
+* [Introducing Julia](https://en.wikibooks.org/wiki/Introducing_Julia)
+* [Data Science with Julia](https://www.amazon.com/Data-Science-Julia-Paul-McNicholas/dp/1138499986)
 "
 
 # ╔═╡ Cell order:
 # ╟─0a4fc5fc-544d-11eb-0189-6b1c959b1eb1
-# ╠═292d20ea-5a8e-11eb-2a96-a37689e468ca
+# ╟─292d20ea-5a8e-11eb-2a96-a37689e468ca
 # ╟─01ca39ee-5a9c-11eb-118e-afae416cfca4
 # ╟─d1ae60a8-544e-11eb-15b5-97188dc41aa8
 # ╟─e36a4352-544e-11eb-2331-43f864bb01d5
@@ -486,5 +592,25 @@ md"
 # ╠═03641078-544f-11eb-1dab-37614a0bdbc7
 # ╠═093aac02-544f-11eb-1221-4dfc049d4652
 # ╟─11f33ecc-544f-11eb-35d5-27a280cdce1b
-# ╟─190ab9c4-544f-11eb-1460-9fbf13dc8516
+# ╠═123c9e1a-5f25-11eb-2aa8-756adae10d51
+# ╟─7fbacda8-5f3f-11eb-2d85-c702f205cc6b
+# ╠═340ee342-5f46-11eb-224e-c33007e70b4a
+# ╟─d38bbbfc-5f46-11eb-2453-efa50f8bfae0
+# ╠═c820403e-5f47-11eb-1f3c-35a128d1f990
+# ╟─7ea669ca-5f48-11eb-2341-eb3ee9f959e8
+# ╠═8b6d3ac8-5f49-11eb-1a34-9524509f41ac
+# ╟─758cc9f2-5f4a-11eb-059d-6f7a46877bf2
+# ╠═60431b28-5f4f-11eb-2ada-c71526f5a8b5
+# ╠═5f8669a0-5f50-11eb-2ad2-79ba19b0103c
+# ╟─6901d1b8-5f50-11eb-28c2-1f384653d8fa
+# ╠═816f1406-5f51-11eb-0fc2-9311f9488ce1
+# ╠═a6e3925e-5f51-11eb-1611-3366446106e7
+# ╠═b4987490-5f52-11eb-1605-6b5db8fce285
+# ╟─e7f3b386-5f52-11eb-07f1-532a67807549
+# ╠═71ddef62-5f53-11eb-0d3e-41823fb10639
+# ╟─c7370ae6-5f55-11eb-2c5f-a3302af5354f
+# ╠═c83bca04-5f54-11eb-3190-3fbf4dde731a
+# ╠═32211860-5f56-11eb-076a-d504b31ef94d
+# ╠═695a4a3e-5f58-11eb-278d-ddd3f24e5f85
+# ╟─0429e9de-5f25-11eb-3f26-d3b35e3b542b
 # ╟─1f2086cc-544f-11eb-339e-1d31f4b4eb4b
