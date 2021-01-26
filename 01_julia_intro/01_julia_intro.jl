@@ -25,6 +25,13 @@ begin
 	df = DataFrame(fake_data)
 end
 
+# ╔═╡ 9917300e-5fe2-11eb-2bed-e1891671fdd6
+begin
+	using CSV
+	
+	iris_df = CSV.File("./data/Iris.csv") |> DataFrame
+end
+
 # ╔═╡ 0a4fc5fc-544d-11eb-0189-6b1c959b1eb1
 md"
 # Meeting Julia
@@ -480,13 +487,13 @@ When dealing with any type of data in large quantities, it is essential to have 
 framework to organize and manipulate it in an efficient way. If you have previously 
 used Python, you probably came across the Pandas package and dataframes. In Julia, the DataFrames.jl package follows the same idea.
 Dataframes are objects with the purpose of structuring tabular data in a smart way. You can think of them as a table, a matrix or a spreadsheet. 
-In the dataframe convention, each row is an observation of a vector-type variable, and each column is the complete set of values of a given variable. In other words, for a single row, each column represents a a realization of a variable. 
+In the dataframe convention, each row is an observation of a vector-type variable, and each column is the complete set of values of a given variable, across all observations. In other words, for a single row, each column represents a a realization of a variable. 
 Let's see how to construct and load data into a dataframe. There are many ways you can accomplish this. Consider we had some data in a matrix and we want to organize it in a dataframe. First, we are going to create some 'fake data' and loading that in a Julia DataFrame,
 "
 
 # ╔═╡ 7fbacda8-5f3f-11eb-2d85-c702f205cc6b
 md"
-As you can see, the column names were initialized with values $x1, x2, ...$. We probabily would want to rename them with more meaningful names. To do this, we have the ```rename!()``` function. Remember this function changes the dataframe in-place, so be careful!
+As you can see, the column names were initialized with values $x1, x2, ...$. We probabily would want to rename them with more meaningful names. To do this, we have the ```rename!()``` function. Remember that this function has a bang, so it changes the dataframe in-place, be careful!
 Below we rename the columns of our dataframe,
 "
 
@@ -517,7 +524,7 @@ end
 
 # ╔═╡ 758cc9f2-5f4a-11eb-059d-6f7a46877bf2
 md"
-We have used the ```vcat()```function we have seen earlier to append new data to the dataframe.
+We have used the ```vcat()```function seen earlier to append new data to the dataframe.
 
 You can access data in a dataframe in various ways. One way is by the column name. For example,
 "
@@ -552,7 +559,7 @@ names(df)
 
 # ╔═╡ c7370ae6-5f55-11eb-2c5f-a3302af5354f
 md"
-Another useful tool for having a quick overview of the dataframe, typically when in an exploratory process is the ```describe()``` function. It outputs some information about each column, as you can see below,
+Another useful tool for having a quick overview of the dataframe, typically when in an exploratory process, is the ```describe()``` function. It outputs some information about each column, as you can see below,
 "
 
 # ╔═╡ c83bca04-5f54-11eb-3190-3fbf4dde731a
@@ -560,11 +567,30 @@ describe(df)
 
 # ╔═╡ 32211860-5f56-11eb-076a-d504b31ef94d
 md"
-To select data following certain conditions, you can use the ```filter()``` function
+To select data following certain conditions, you can use the ```filter()``` function. Given some condition, this function will throw away all the rows that don't evaluate the condition to true. This condition is expressed as an anonymous function and it is written in the first argument. In the second argument of the function, the dataframe where to apply the filtering is indicated. In the example below, all the rows that have their 'one' column value greater than $0.5$ are filtered.
 "
 
 # ╔═╡ 695a4a3e-5f58-11eb-278d-ddd3f24e5f85
 filter(col -> col[1] < 0.5, df)
+
+# ╔═╡ 94730e2a-5fdc-11eb-2939-0b1ec1283463
+md"
+A very usual application of dataframes is when dealing with CSV data. In case you are new to the term, CSV stands for **Comma Separated Values**. As the name indicates, 
+these are files where each line is a data record, composed by values separated by 
+commas. In essence, a way to store tabular data. A lot of the datasets around the 
+internet are available in this format, and naturally, the DataFrame.jl package is well 
+integrated with it. As an example, consider the popular Iris flower dataset. This 
+dataset consists of samples of three different species of plants. The samples 
+correspond to four measured features of the flowers: length and width of the sepals 
+and petals. 
+To work with CSV files, the package CSV.jl is your best choice in Julia. Loading a CSV file is very easy once you have it downloaded. Consider the following code,
+"
+
+# ╔═╡ c056d31a-5fe5-11eb-1cdd-43abf761bc90
+md"
+Here we used the pipeline operator ```|>```, which is mainly syntactical sugar. It resambles the flow of information. First, the ```CSV.File()```function, loads the CSV file and creates a CSV File object, that is passed to the ```DataFrame()```function, to give us finally a dataframe.
+While 
+"
 
 # ╔═╡ 0429e9de-5f25-11eb-3f26-d3b35e3b542b
 md"
@@ -579,6 +605,14 @@ md"
 * [Learn X in Y minutes](https://learnxinyminutes.com/docs/julia/)
 * [Introducing Julia](https://en.wikibooks.org/wiki/Introducing_Julia)
 * [Data Science with Julia](https://www.amazon.com/Data-Science-Julia-Paul-McNicholas/dp/1138499986)
+* [Comma Separated Values](https://en.wikipedia.org/wiki/Comma-separated_values)
+* [Iris Dataset](https://en.wikipedia.org/wiki/Iris_flower_data_set)
+"
+
+# ╔═╡ 72c1199c-5fdd-11eb-056d-276f74e591bc
+md"
+* Julia installation
+* Anonymous functions
 "
 
 # ╔═╡ Cell order:
@@ -610,7 +644,11 @@ md"
 # ╠═71ddef62-5f53-11eb-0d3e-41823fb10639
 # ╟─c7370ae6-5f55-11eb-2c5f-a3302af5354f
 # ╠═c83bca04-5f54-11eb-3190-3fbf4dde731a
-# ╠═32211860-5f56-11eb-076a-d504b31ef94d
+# ╟─32211860-5f56-11eb-076a-d504b31ef94d
 # ╠═695a4a3e-5f58-11eb-278d-ddd3f24e5f85
-# ╟─0429e9de-5f25-11eb-3f26-d3b35e3b542b
+# ╟─94730e2a-5fdc-11eb-2939-0b1ec1283463
+# ╠═9917300e-5fe2-11eb-2bed-e1891671fdd6
+# ╠═c056d31a-5fe5-11eb-1cdd-43abf761bc90
+# ╠═0429e9de-5f25-11eb-3f26-d3b35e3b542b
 # ╟─1f2086cc-544f-11eb-339e-1d31f4b4eb4b
+# ╟─72c1199c-5fdd-11eb-056d-276f74e591bc
