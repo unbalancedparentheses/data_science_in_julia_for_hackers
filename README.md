@@ -1,6 +1,6 @@
 ## Data Science in Julia for Hackers    
 
-* [First chapter](https://lambdaclass.com/data_science_in_julia_for_hackers/julia_introduction/julia_intro.jl.html): 
+* [First chapter](https://lambdaclass.com/data_science_in_julia_for_hackers/docs/01_julia_intro/01_julia_intro.jl.html): 
  Here we introduce the Julia programming language, showing examples of code and some first steps. 
 
 * Second chapter: Science, technology, models and epistemology. 
