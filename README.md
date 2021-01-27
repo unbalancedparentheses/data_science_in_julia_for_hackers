@@ -1,3 +1,1 @@
-# bayes_book_public
-
-THIS IS A TEST
+# Data Science in Julia for Hackers
