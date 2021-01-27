@@ -40,6 +40,34 @@ For years, programming languages were limited to either having a simple syntax, 
 	Julia is dynamically typed and is great for interactive use. It also uses multiple dispatch as a core design concept, which adds to the composability of the language. In conventional, single-dispatched, object-oriented programming languages, when invoking a method, one of the arguments has a special treatment since it determines which of the methods contained in a function is going to be applied. Multiple dispatch is a generalization of this for all the arguments of the function, so the method applied is going to be the one that matches exactly the number of type of the function call.
 "
 
+# ╔═╡ c2272800-6007-11eb-1736-b7f334dbba2f
+md"
+## Installation
+For the installation process, we recommend you to follow one of the following instructionals provided by Julia:
+* [Platform Specific Instructions for Official Binaries](https://julialang.org/downloads/platform/): These instructions will get you through a fresh installation of Julia depending on the specifications of your computer. It is a barebones installation, so it will only include the basic Julia packages.
+* [JuliaPro](https://juliacomputing.com/products/juliapro/): JuliaPro is a collection of Julia-related software that will get you started quickly. This collection consists of the Julia binaries as well as list of the most mature packages aimed for data scientists, economists, researchers and many more. It also includes the Juno IDE, a well integrated text editor for Julia. 
+
+All along the book, we are going to use specific Julia packages, that you may or may not have already installed. Julia has a built-in packet manager that makes this task very easy. 
+First, you will need to start a Julia session. For this, type in your terminal
+```
+~ julia
+```
+
+At this point, your will have started your Julia session. To switch to the package manager, type a closing square bracket ']',
+
+```julia
+julia> ]
+(@v1.5) pkg>
+```
+The 'pkg' word in the prompt will mean you are successfully in the package manager. To add some new package, you just need to write
+
+```julia
+(@v1.5) pkg> add NewPackage
+```
+
+It is as simple as that! Beware that all Julia commands are case-sensitive, so be sure to write the package name –and in the future, all functions and variables too– correctly.
+"
+
 # ╔═╡ 292d20ea-5a8e-11eb-2a96-a37689e468ca
 md"
 ## First steps into the Julia world
@@ -437,7 +465,7 @@ julia> isPositive.([-1, 1, 3, -5])
 As you can see, we had broadcasted the function isPositive() we defined, over every 
 element of an array, by adding a dot next to the end of the function name, previous to 
 the parenthesis. Is is as easy as that! Once you start using this feature, you will notice how useful it is.
-One last thing concearning functions in Julia is the 'bang'(!) convention. Functions that have a name ending with an exclamation mark (or bang), are functions that change their imputs in-place. Consider the example of the pop! function from the Julia Base package. Watch closely what happens to the array over we apply the function
+One thing concearning functions in Julia is the 'bang'(!) convention. Functions that have a name ending with an exclamation mark (or bang), are functions that change their imputs in-place. Consider the example of the pop! function from the Julia Base package. Watch closely what happens to the array over we apply the function
 
 ```julia
 julia> arr = [1, 2, 3];
@@ -449,6 +477,28 @@ julia> arr
  2
 ```
 Did you understand what happened? At first, we defined and array. Then, we applied the pop!() function, which, as the name suggests, pops the last element of the array. But notice that when we call our *arr* variable to see what it is storing, now the number 3 is gone. This is what functions with a bang do and what we mean with modifying *in-place*. Try to follow this convention whenever you define a function that will modify other objects in-place!
+
+Sometimes, you will be in a situation where you may need to use some function, bit you really aren't interested in giving it a special name and storing it. For this kind of situations, an *anonymous* or *lambda* function is what you may need. Typically anonymous functions will be used as arguments to *higher-order functions*. This is just a fancy name to functions that accept other functions as arguments, that is what makes them of higher-order. One of the most ubiquitous example of these type of functions is the ```map()``` function. You can think of this function as a way to broadcast **any** function over a collection.
+Anonymous functions are created using the arrow ```->``` syntax. At the left-hand side of the arrow, you must specify what the arguments of the function will be and their name. At the right side of the arrow, you write the recipe of the things to do with this arguments. Let's use an anonymous function to define a not-anonymous function, just to illustrate the point.
+
+```julia
+julia> f = (x,y) -> x + y 
+#1 (generic function with 1 method)
+julia> f(2,3)
+5
+```
+You can think about what we done here as if $f$ were a variable that is storing some function. Then, when calling $f(2,3)$ Julia understands we want to evaluate the function it is storing with the values 2 and 3.
+Let's see now how the higher-order function ```map()``` uses anonymous functions,
+```julia
+julia> map(x -> x^2 + 5, [2, 4, 6, 3, 3])
+5-element Array{Int64,1}:
+  9
+ 21
+ 41
+ 14
+ 14
+```
+The first argument of the map function, is another function. You can use functions already defined if you want, but with the help of anonymous functions you can simply create a function that will be used only inside map. The function we specified in the first argument, is then applied to every member of the array in the second argument. 
 "
 
 # ╔═╡ d1ae60a8-544e-11eb-15b5-97188dc41aa8
@@ -526,6 +576,17 @@ end
 md"
 We have used the ```vcat()```function seen earlier to append new data to the dataframe.
 
+You can also add a new column very easily,
+"
+
+# ╔═╡ eb9c5a88-60b0-11eb-2553-9bdd07a9625d
+begin
+	df_.height = 1.72
+	df_
+end
+
+# ╔═╡ b8b22f14-60b0-11eb-1985-bb0104229c96
+md"
 You can access data in a dataframe in various ways. One way is by the column name. For example,
 "
 
@@ -537,7 +598,7 @@ df."three"
 
 # ╔═╡ 6901d1b8-5f50-11eb-28c2-1f384653d8fa
 md"
-But you can also access dataframe data as if it were a matrix. You can treat columns as their column number or by their name, it doesn't matter,
+But you can also access dataframe data as if it were a matrix. You can treat columns either as their column number or by their name,
 "
 
 # ╔═╡ 816f1406-5f51-11eb-0fc2-9311f9488ce1
@@ -588,19 +649,26 @@ To work with CSV files, the package CSV.jl is your best choice in Julia. Loading
 
 # ╔═╡ c056d31a-5fe5-11eb-1cdd-43abf761bc90
 md"
-Here we used the pipeline operator ```|>```, which is mainly syntactical sugar. It resambles the flow of information. First, the ```CSV.File()```function, loads the CSV file and creates a CSV File object, that is passed to the ```DataFrame()```function, to give us finally a dataframe.
-While 
+Here we used the pipeline operator ```|>```, which is mainly some Julian syntactical sugar. It resambles the flow of information. First, the ```CSV.File()```function, loads the CSV file and creates a CSV File object, that is passed to the ```DataFrame()```function, to give us finally a dataframe. 
+Once you have worked on a dataframe cleaning data or modifying it, you can write a CSV text file from it and in this way, you can share your work with other people.
+For example, consider I want to filter one of the species of plants, 'Iris-setosa', and then I want to write a file with this modified data to share it with someone,
 "
 
-# ╔═╡ 0429e9de-5f25-11eb-3f26-d3b35e3b542b
+# ╔═╡ da6fa616-6001-11eb-017f-5d75ec317675
+begin
+	filter!(row -> row.Species != "Iris-setosa", iris_df)
+	CSV.write("./data/modified_iris.csv", iris_df)
+end;
+
+# ╔═╡ 03a43280-6003-11eb-1df8-a5833659f0a8
 md"
----
-As mentioned, Julia is specially suited for areas related with scientific and high-performance computations. Between these, we have Data Science, Machine Learning and Probabilistic Programming. These fields are related to each other and are the main focus of the book. 
+### Summary
+In this chapter we have introduced the Julia language, the motivations behind its creation, features, installation and basic building blocks for writing some code. 
 "
 
 # ╔═╡ 1f2086cc-544f-11eb-339e-1d31f4b4eb4b
 md"
-### Bibliography
+### References
 * [Julia's website](https://julialang.org/)
 * [Learn X in Y minutes](https://learnxinyminutes.com/docs/julia/)
 * [Introducing Julia](https://en.wikibooks.org/wiki/Introducing_Julia)
@@ -617,6 +685,7 @@ md"
 
 # ╔═╡ Cell order:
 # ╟─0a4fc5fc-544d-11eb-0189-6b1c959b1eb1
+# ╟─c2272800-6007-11eb-1736-b7f334dbba2f
 # ╟─292d20ea-5a8e-11eb-2a96-a37689e468ca
 # ╟─01ca39ee-5a9c-11eb-118e-afae416cfca4
 # ╟─d1ae60a8-544e-11eb-15b5-97188dc41aa8
@@ -634,6 +703,8 @@ md"
 # ╟─7ea669ca-5f48-11eb-2341-eb3ee9f959e8
 # ╠═8b6d3ac8-5f49-11eb-1a34-9524509f41ac
 # ╟─758cc9f2-5f4a-11eb-059d-6f7a46877bf2
+# ╠═eb9c5a88-60b0-11eb-2553-9bdd07a9625d
+# ╟─b8b22f14-60b0-11eb-1985-bb0104229c96
 # ╠═60431b28-5f4f-11eb-2ada-c71526f5a8b5
 # ╠═5f8669a0-5f50-11eb-2ad2-79ba19b0103c
 # ╟─6901d1b8-5f50-11eb-28c2-1f384653d8fa
@@ -648,7 +719,8 @@ md"
 # ╠═695a4a3e-5f58-11eb-278d-ddd3f24e5f85
 # ╟─94730e2a-5fdc-11eb-2939-0b1ec1283463
 # ╠═9917300e-5fe2-11eb-2bed-e1891671fdd6
-# ╠═c056d31a-5fe5-11eb-1cdd-43abf761bc90
-# ╠═0429e9de-5f25-11eb-3f26-d3b35e3b542b
+# ╟─c056d31a-5fe5-11eb-1cdd-43abf761bc90
+# ╠═da6fa616-6001-11eb-017f-5d75ec317675
+# ╟─03a43280-6003-11eb-1df8-a5833659f0a8
 # ╟─1f2086cc-544f-11eb-339e-1d31f4b4eb4b
 # ╟─72c1199c-5fdd-11eb-056d-276f74e591bc
