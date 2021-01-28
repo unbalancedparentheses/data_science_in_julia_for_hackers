@@ -499,6 +499,8 @@ julia> map(x -> x^2 + 5, [2, 4, 6, 3, 3])
  14
 ```
 The first argument of the map function, is another function. You can use functions already defined if you want, but with the help of anonymous functions you can simply create a function that will be used only inside map. The function we specified in the first argument, is then applied to every member of the array in the second argument. 
+
+Now that the most important details of syntax have been discussed, let's focus our attention into some packages of Julia's ecosystem.
 "
 
 # ╔═╡ d1ae60a8-544e-11eb-15b5-97188dc41aa8
@@ -664,6 +666,8 @@ end;
 md"
 ### Summary
 In this chapter we have introduced the Julia language, the motivations behind its creation, features, installation and basic building blocks for writing some code. 
+First we discussed some basic Julia operators and datatypes. Some special features of the language such as how to write different kinds of arrays and broadcasting were detailed. We then followed with an overview of how functions work in Julia, and how to make your own.
+Finally, we introduced some packages of the Julia ecosystem, mainly the Plots.jl package for plotting, and DataFrames.jl for data organization and manipulation.
 "
 
 # ╔═╡ 1f2086cc-544f-11eb-339e-1d31f4b4eb4b
@@ -675,12 +679,6 @@ md"
 * [Data Science with Julia](https://www.amazon.com/Data-Science-Julia-Paul-McNicholas/dp/1138499986)
 * [Comma Separated Values](https://en.wikipedia.org/wiki/Comma-separated_values)
 * [Iris Dataset](https://en.wikipedia.org/wiki/Iris_flower_data_set)
-"
-
-# ╔═╡ 72c1199c-5fdd-11eb-056d-276f74e591bc
-md"
-* Julia installation
-* Anonymous functions
 "
 
 # ╔═╡ Cell order:
@@ -723,4 +721,3 @@ md"
 # ╠═da6fa616-6001-11eb-017f-5d75ec317675
 # ╟─03a43280-6003-11eb-1df8-a5833659f0a8
 # ╟─1f2086cc-544f-11eb-339e-1d31f4b4eb4b
-# ╟─72c1199c-5fdd-11eb-056d-276f74e591bc
