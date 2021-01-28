@@ -37,7 +37,7 @@ md"
 # Meeting Julia
 Julia is a young, free, open-source and promising general-purpose language, designed and developed by Jeff Bezason, Alan Edelman, Viral B. Shah and Stefan Karpinski in MIT. 
 For years, programming languages were limited to either having a simple syntax, being readable, and having good abstraction capabilities, or being designed for technical, high-performance and resource-intensive computations. This led applied scientists to face the task of not only learning two different languages –one high-level, the other low-level-, but also learning how to have them communicate with one another, which is far from trivial in many cases. This is what Julia creators called the *two-language problem*, and it costs programmers and scientists valuable time and effort which may be better invested in solving the actual problems that they needed to compute. Julia is designed to bridge the gap, as it is created from scratch to be both fast and easy to understand, even for people who are not programmers or computer scientists.
-	Julia is dynamically typed and is great for interactive use. It also uses multiple dispatch as a core design concept, which adds to the composability of the language. In conventional, single-dispatched, object-oriented programming languages, when invoking a method, one of the arguments has a special treatment since it determines which of the methods contained in a function is going to be applied. Multiple dispatch is a generalization of this for all the arguments of the function, so the method applied is going to be the one that matches exactly the number of type of the function call.
+	Julia is dynamically typed and is great for interactive use. It also uses multiple dispatch as a core design concept, which adds to the composability of the language. In conventional, single-dispatched, object-oriented programming languages, when invoking a method, one of the arguments has a special treatment since it determines which of the methods contained in a function is going to be applied. Multiple dispatch is a generalization of this for all the arguments of the function, so the method applied is going to be the one that matches exactly the number of types of the function call.
 "
 
 # ╔═╡ c2272800-6007-11eb-1736-b7f334dbba2f
@@ -80,7 +80,7 @@ The common arithmetical and logical operations are all available in Julia:
 * $ * $: Product operator
 * $ / $: Division operator
 
-Julia code is intended to be very similar to math. So insted of doing something like
+Julia code is intended to be very similar to math. So instead of doing something like
 ```julia
 julia> 2*x
 ```
@@ -89,13 +89,13 @@ you can simply do
 julia> 2x
 ```
 
-For this same purpose, Julia has a great variety of unicode characters, which enables us to write things like greek letters and subscripts/superscripts, making our code much more beautiful and easy to read in a mathematical form. In general, unicode characters are activated by using '\', followed by the name of the character and then pressing the 'tab' key. For example,
+For this same purpose, Julia has a great variety of unicode characters, which enables us to write things like Greek letters and subscripts/superscripts, making our code much more beautiful and easy to read in a mathematical form. In general, unicode characters are activated by using '\', followed by the name of the character and then pressing the 'tab' key. For example,
 ```julia
 julia> \pi # and next we press tab
 julia> π
 ```
 
-For subscripts and superscripts, the methodology is similar. You start with the character you want to add the subscript or superscript to, and then you do '\_' or '\^', followed by the character you want to be at the bottom or top, and finally the 'tab' key. For example, 
+You can add subscripts by using '_' and superscriptos by using '^', followed by the character(s) you want to modify and then pressing Tab. For example, 
 ```julia
 julia> L\_0 # and next we press tab
 julia> L₀
@@ -684,7 +684,7 @@ md"
 # ╔═╡ Cell order:
 # ╟─0a4fc5fc-544d-11eb-0189-6b1c959b1eb1
 # ╟─c2272800-6007-11eb-1736-b7f334dbba2f
-# ╟─292d20ea-5a8e-11eb-2a96-a37689e468ca
+# ╠═292d20ea-5a8e-11eb-2a96-a37689e468ca
 # ╟─01ca39ee-5a9c-11eb-118e-afae416cfca4
 # ╟─d1ae60a8-544e-11eb-15b5-97188dc41aa8
 # ╟─e36a4352-544e-11eb-2331-43f864bb01d5
