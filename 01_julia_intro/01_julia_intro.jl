@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.18
+# v0.12.20
 
 using Markdown
 using InteractiveUtils
@@ -45,15 +45,33 @@ md"
 ## Installation
 For the installation process, we recommend you to follow one of the following instructionals provided by Julia:
 * [Platform Specific Instructions for Official Binaries](https://julialang.org/downloads/platform/): These instructions will get you through a fresh installation of Julia depending on the specifications of your computer. It is a barebones installation, so it will only include the basic Julia packages.
-* [JuliaPro](https://juliacomputing.com/products/juliapro/): JuliaPro is a collection of Julia-related software that will get you started quickly. This collection consists of the Julia binaries as well as list of the most mature packages aimed for data scientists, economists, researchers and many more. It also includes the Juno IDE, a well integrated text editor for Julia. 
+* [JuliaPro](https://juliacomputing.com/products/juliapro/): JuliaPro is a collection of Julia-related software that will get you started quickly. This collection consists of the Julia binaries as well as a set of the most mature packages aimed for data scientists, economists, researchers and many more. It also includes the Juno IDE, a well integrated text editor for Julia. 
 
 All along the book, we are going to use specific Julia packages, that you may or may not have already installed. Julia has a built-in packet manager that makes this task very easy. 
 First, you will need to start a Julia session. For this, type in your terminal
 ```
 ~ julia
+julia>
 ```
 
-At this point, your will have started your Julia session. To switch to the package manager, type a closing square bracket ']',
+At this point, your will have started your Julia session. What you see right now is a 
+**Julia REPL** (read-eval-print loop), an interactive command line prompt. Here you 
+can quickly evaluate Julia expressions, get help about different Julia functionalities
+and much more. The REPL has a set of different modes you can activate with different keybindings. The *Julian mode* is the default one, where you can directly type any Julia expression and press the Enter key to evaluate and print it. The *help mode* is activated with an interrogation sign '?'. You will notice that the prompt will now change,
+
+```julia
+julia> ?
+help?>
+```
+By typing the name of a function or a Julia package, you will get information about it as well as usage examples.
+Another available mode is the *shell mode*. This is just a way to input terminal commands in your Julia REPL. You can access this mode by typing a semicolon,
+
+```julia
+julia> ;
+shell>
+```
+
+Maybe one of the most used, along with the default Julian mode, is the *package manager mode*. When in this mode, you can perform tasks such as adding and updating packages. It is also useful to manage project environments and controlling package versions. To switch to the package manager, type a closing square bracket ']',
 
 ```julia
 julia> ]
@@ -75,8 +93,8 @@ As with every programming language, it is useful to know some of the basic opera
 
 The common arithmetical and logical operations are all available in Julia:
 
-* `` + ``: Add operator
-* ``` - ```: Substract operator
+* $ + $: Add operator
+* $ - $: Substract operator
 * $ * $: Product operator
 * $ / $: Division operator
 
@@ -348,7 +366,7 @@ julia> hcat([1, 2, 3], [4, 5, 6]) # this stacks the two arrays one next to the o
 
 With some of these basic tools to start getting your hands dirty in Julia, we can get 
 going into some other functionalities like loops and function definitions.
-We have already seen a for loop. For loops are started with a *for* keyword, followed by the name of the iterator and the range of iterations we want our loop to cover. Below this for statement we write what we want to be performed in each loop and we finish with an *end* keyword statement.
+We have already seen a for loop. For loops are started with a *for* keyword, followed by the name of the iterator and the range of iterations we want our loop to cover. Below this ```for``` statement we write what we want to be performed in each loop and we finish with an *end* keyword statement.
 Let's return to the example we made earlier,
 ```julia
 julia> for i in 1:100
@@ -674,6 +692,7 @@ Finally, we introduced some packages of the Julia ecosystem, mainly the Plots.jl
 md"
 ### References
 * [Julia's website](https://julialang.org/)
+* [Julia REPL](https://docs.julialang.org/en/v1/stdlib/REPL/)
 * [Learn X in Y minutes](https://learnxinyminutes.com/docs/julia/)
 * [Introducing Julia](https://en.wikibooks.org/wiki/Introducing_Julia)
 * [Data Science with Julia](https://www.amazon.com/Data-Science-Julia-Paul-McNicholas/dp/1138499986)
@@ -683,8 +702,8 @@ md"
 
 # ╔═╡ Cell order:
 # ╟─0a4fc5fc-544d-11eb-0189-6b1c959b1eb1
-# ╟─c2272800-6007-11eb-1736-b7f334dbba2f
-# ╠═292d20ea-5a8e-11eb-2a96-a37689e468ca
+# ╠═c2272800-6007-11eb-1736-b7f334dbba2f
+# ╟─292d20ea-5a8e-11eb-2a96-a37689e468ca
 # ╟─01ca39ee-5a9c-11eb-118e-afae416cfca4
 # ╟─d1ae60a8-544e-11eb-15b5-97188dc41aa8
 # ╟─e36a4352-544e-11eb-2331-43f864bb01d5
