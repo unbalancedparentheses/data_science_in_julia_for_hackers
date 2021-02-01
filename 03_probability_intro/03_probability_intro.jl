@@ -401,6 +401,9 @@ Considering that we have only tried 100 times, the probabilities have been estim
 md"
 ### References
 * [Bayesian Statistics the fun way](https://www.amazon.com/Bayesian-Statistics-Fun-Will-Kurt/dp/1593279566)
+* [Conditional Probability - Wikipedia](https://en.wikipedia.org/wiki/Conditional_probability)
+* [Bayes' Theorem - Wikipedia](https://en.wikipedia.org/wiki/Bayes%27_theorem)
+* [Statistical Rethinking](https://www.amazon.com/Statistical-Rethinking-Bayesian-Examples-Chapman/dp/1482253445)
 * [ThinkBayes](https://www.amazon.com/Think-Bayes-Bayesian-Statistics-Python/dp/1449370780)
 * [ThinkStats](https://www.amazon.com/Think-Stats-Exploratory-Data-Analysis/dp/1491907339)
 * [Mixture Distribution](https://www.johndcook.com/blog/mixture_distribution/)
@@ -410,10 +413,10 @@ md"
 
 # ╔═╡ Cell order:
 # ╟─84b10156-5116-11eb-1a6d-13f625300801
-# ╠═2d9482ce-1252-11eb-0cc7-35ad9c288ef8
+# ╟─2d9482ce-1252-11eb-0cc7-35ad9c288ef8
 # ╠═e6ecfce4-54e5-11eb-2ff6-3bb479c286af
 # ╠═8b06866e-5424-11eb-3cb6-f9afabefcd70
-# ╠═351923ee-5436-11eb-2bf6-8d024a64e83e
+# ╟─351923ee-5436-11eb-2bf6-8d024a64e83e
 # ╟─4a6f2768-543e-11eb-1846-f9e35aa961d2
 # ╠═0ac3353a-543d-11eb-08fe-d35a4c0f0bbc
 # ╠═ecec1854-543c-11eb-0d11-b342e4d246e1
