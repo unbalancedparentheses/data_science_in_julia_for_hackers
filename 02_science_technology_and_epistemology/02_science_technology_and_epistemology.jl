@@ -8,10 +8,30 @@ using InteractiveUtils
 md"""
 ## Brief talk about science, technology and epistemology
 
+
+That´s a difficult question, doesn´t it? Neither in this chapter, nor in the entire 
+book we pretend in any way to give an absolute answer, but we find it a very 
+interesting debate, especially in a data science book like this one, and we want to 
+give our insights in the matter. But we are not academics and we have no PhDs. We are 
+just amateur enthusiasts and very passionate about what we do and the particular 
+historical moment we are living on.
+With this in mind, we are not going to be repeating al over the place things like "According to what we think..." or "Our opinion is that..." so that the reading is not overloaded, but you can read it that way. Let's start then!
+
+=======>
+
+Instead of starting with formal definitions, let's take an historical approach about  mathematics and it's relation to science and technology. This is not going to be a thorought It is very difficult to imagine science without mathematics, specially the so-called *natural sciences*. When there is a need of quantitative results, we know mathematics is the way to go. But, at least for some time in the past, math and science didn't have the relationship they have today. 
+The first steps the humanity made into the mathematical world, were done to communicate ideas more efficiently. If I ask you what the simplest form of mathematics that comes to your mind is, you probably are going to think about counting. And essentially there is were everything started. To our minds, that are now accustomed to very complex ideas of all kinds, such as the internet or the economy, maybe counting doesn't sound like a very phenomenal idea. But think about the conceptual leap our ancestors had to make in order to arrive to an abstract construct such as a number. After all, what is a number? How does it look like? What comes to your mind when I speak about the number two? What do two cats and two roses have in common?
+Numbers appeared as a way to have a more efficient communication. Steven Strogatz refers, in his book *The Joy of x*, to a particular episode of the *Sesame Street* show, '123 Count with Me'. Altough it may sound silly and childish, it makes a great metaphor of the usefulness of numbers. 
+In the show, one of the characters, Humphrey, is working as a waiter in a restaurant and he takes an order of some penguins. When he calls out the order to the kitchen, he says: "Fish, fish, fish, fish, fish, fish". At this point, another character, Ernie, teaches Humphrey about the concept of numbers. 
+As we make this first abstraction leap, new rules start appearing. When using numbers to characterize a collection of objects of the same kind, operations such as addition and substraction emerge naturally once the concept is created, almost as if they had a life of their own. 
+As human culture and curiosity developed, new challenges appeared, and the relation between things and how they vary became a field of interest in mathematics and the physical sciences. In particular, physics cares about the relationship about different magnitudes of the real life –or phisical world–, and the tool to formalize these relations are *variables* and *functions*. These are the next step in mathematical abstraction. With variables, the conceptualization of magnitudes that change their value during a process was made evident, and altough this value changed, the magnitude itself remained to be the same. Moreover, functions were the key abstraction tool to represent how variables depend to another variables, and the concept of independent and dependent variables appears. 
+For many years, the desire to understand the world and postulate physical laws motivated mathematical discovery. This is really easy to understand with the creation of Calculus by Newton and Leibnitz, one of the most important mathematical tools we have in our arsenal, which has today extended use along science, engineering, economy and many more fields. 
+Alongside Calculus, another important and fundamental mathematical field started being conceptualized and developed. With the stimulus of games of chance and gambling, the mathematical theory of probability was born by Pascal and Fermat.
+Almost in paralell, Statistics started as an applied field dealing with data from states, such as population demographics and economy, but it slowly growed and extended to the collection of any kind of data, its analysis, interpretation and the extraction of conclusions from it. The evolution process of Statistics was intimately related with the development of probability, and, with the Theory of errors, ultimately all three of these mathematical disciplines, Calculus, Probability and Statistics, played a fundamental role in hypothesis testing and scientific research. 
+
+<=======	
+
 ### What is Science?
-
-That´s a difficult question, doesn´t it? We don´t pretend in any way to give an absolute answer, but we find it a very interesting debate, especially in a data science book, and we wanted to leave our opinion. But that's it, nothing more than our humble opinion. So having said that, we are not going to be repeating throughout the chapter things like "According to what we think..." or "Our opinion is that..." so that the reading is not overloaded, but you can read it that way. Let's start then!
-
 As a first approach, science is a method that aims to discover the principles -invariant laws- that describe the world. And note that we said "method", because is what it really is: A methodology which ensures that we are as objective and data-driven as possible.
 
 So, science is a method we have founded to conclude that hypothesis we propose are not false. This doesn't mean they are true, and this is one of the core concepts of the scientific method. There are no dogmas in science, every proposition, claim, hypothesis or theory can be tested to try to falsify it. And everything happens in the context of a community; it makes no sense to talk about an hypothesis being false by its own, there must be a community that can validate and replicate the evidence.
@@ -80,7 +100,10 @@ And if we take that line of thinking and push deeper, we can start thinking abou
 md"""### References
 
 - Antifragile: Things That Gain from Disorder, ch 15 - Nassim Nicholas Taleb
-
+- [The Joy of X](https://www.amazon.com/Joy-Guided-Tour-Math-Infinity/dp/0544105850)
+- [Kolmogorov - Mathematics: It's contents, method and meaning](https://www.amazon.com/Mathematics-Content-Methods-Meaning-Volumes/dp/0486409163)
+- [Calculus - Wikipedia](https://en.wikipedia.org/wiki/Calculus)
+- [History of Probability - Wikipedia](https://en.wikipedia.org/wiki/History_of_probability)
 - [Freeman Dyson - Where Do the Laws of Nature Come From?](https://youtu.be/wxRpa-PqUfw)
 - [Roger Penrose - Is Mathematics Invented or Discovered?](https://youtu.be/ujvS2K06dg4)
 - [How to tell science from pseudoscience](https://youtu.be/o9ylQC5bPpU)
@@ -90,5 +113,5 @@ md"""### References
 """
 
 # ╔═╡ Cell order:
-# ╟─ee92411c-5c28-11eb-2f22-2f275ae35b18
+# ╠═ee92411c-5c28-11eb-2f22-2f275ae35b18
 # ╟─1c60486a-5c2d-11eb-385e-417e8c4b7ddb
