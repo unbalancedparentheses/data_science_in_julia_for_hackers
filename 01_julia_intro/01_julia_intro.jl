@@ -113,7 +113,7 @@ julia> \pi # and next we press tab
 julia> π
 ```
 
-You can add subscripts by using '_' and superscriptos by using '^', followed by the character(s) you want to modify and then pressing Tab. For example, 
+You can add subscripts by using '_' and superscripts by using '^', followed by the character(s) you want to modify and then pressing Tab. For example, 
 ```julia
 julia> L\_0 # and next we press tab
 julia> L₀
@@ -702,7 +702,7 @@ md"
 
 # ╔═╡ Cell order:
 # ╟─0a4fc5fc-544d-11eb-0189-6b1c959b1eb1
-# ╠═c2272800-6007-11eb-1736-b7f334dbba2f
+# ╟─c2272800-6007-11eb-1736-b7f334dbba2f
 # ╟─292d20ea-5a8e-11eb-2a96-a37689e468ca
 # ╟─01ca39ee-5a9c-11eb-118e-afae416cfca4
 # ╟─d1ae60a8-544e-11eb-15b5-97188dc41aa8
