@@ -1,9 +1,9 @@
 ## Data Science in Julia for Hackers
 
-* [First chapter](https://datasciencejuliahackers.com/01_julia_intro.jl.html): 
- Here we introduce the Julia programming language, showing examples of code and some first steps. 
+* First chapter: Science, technology, models and epistemology. 
 
-* Second chapter: Science, technology, models and epistemology. 
+* [Second chapter](https://datasciencejuliahackers.com/02_julia_intro.jl.html): 
+ Here we introduce the Julia programming language, showing examples of code and some first steps. 
 
 * [Third chapter](https://datasciencejuliahackers.com/03_probability_intro.jl.html): An introduction to probability, probability distributions and Bayes' interpretation. 
 
