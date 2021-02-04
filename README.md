@@ -8,9 +8,10 @@ You can visit the book page [here](https://lambdaclass.com/data_science_in_julia
 
 ## Chapter index
 
-* [First chapter](https://lambdaclass.com/data_science_in_julia_for_hackers//01_julia_intro.jl.html): Here we introduce the Julia programming language, showing examples of code and some first steps.
 
-* Second chapter: Science, technology, models and epistemology.
+* First chapter: Science, technology, models and epistemology.
+
+* [Second chapter](https://lambdaclass.com/data_science_in_julia_for_hackers/02_julia_intro.jl.html): Here we introduce the Julia programming language, showing examples of code and some first steps.
 
 * [Third chapter](https://lambdaclass.com/data_science_in_julia_for_hackers/03_probability_intro.jl.html): An introduction to probability, probability distributions and Bayes' interpretation.
 
