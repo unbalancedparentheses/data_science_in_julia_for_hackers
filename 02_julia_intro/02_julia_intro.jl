@@ -43,13 +43,12 @@ For years, programming languages were limited to either having a simple syntax, 
 # ╔═╡ c2272800-6007-11eb-1736-b7f334dbba2f
 md"
 ## Installation
-For the installation process, we recommend you to follow one of the following instructionals provided by Julia:
-* [Platform Specific Instructions for Official Binaries](https://julialang.org/downloads/platform/): These instructions will get you through a fresh installation of Julia depending on the specifications of your computer. It is a barebones installation, so it will only include the basic Julia packages.
-* [JuliaPro](https://juliacomputing.com/products/juliapro/): JuliaPro is a collection of Julia-related software that will get you started quickly. This collection consists of the Julia binaries as well as a set of the most mature packages aimed for data scientists, economists, researchers and many more. It also includes the Juno IDE, a well integrated text editor for Julia. 
+For the installation process, we recommend you to follow the following instructionals provided by the Julia team:
+> [Platform Specific Instructions for Official Binaries](https://julialang.org/downloads/platform/): These instructions will get you through a fresh installation of Julia depending on the specifications of your computer. It is a barebones installation, so it will only include the basic Julia packages.
 
-All along the book, we are going to use specific Julia packages, that you may or may not have already installed. Julia has a built-in packet manager that makes this task very easy. 
+All along the book, we are going to use specific Julia packages, that you may or may not have already installed. Julia has a built-in packet manager that makes the task of installing new packages and checking compatibilities very easy. 
 First, you will need to start a Julia session. For this, type in your terminal
-```
+```julia
 ~ julia
 julia>
 ```
