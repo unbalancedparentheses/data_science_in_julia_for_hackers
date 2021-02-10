@@ -4,19 +4,19 @@
 **Richard Feynman**
 
 
-One of the first things to note about this book is that it is not an academic textbook. We are not academics, we don't have a PhD, and much less we are experts in the topics we are going to discuss. 
-We are passionate, amateur enthusiasts, with multidisciplinary backgrounds, which range from Engineering, Informatics, Physics and Economy, that converged their approaches in this book. 
-So what type of book is this, then? It lies somewhere in between a methodological recipe and a theoretical intensive textbook. What we want to deliver in this book is a mathematical and computational methodology to face concrete Data Science problems, and to end with the theory/practice dilemma. The two approaches are important and their relationship is complex. Considering them as a whole can take us much farther. These pages may offer the theorist a way to think about problematic situations in a more down to earth manner, and to the practitioner, stimulation to go beyond the mere application of programming libraries and tools.
+One of the first things to note about this book is that it is not an academic textbook. We are not academics, and we are not experts in the topics we are going to discuss, but we are passionate, (amateur?) enthusiasts, with multidisciplinary backgrounds, which range from Engineering, Informatics, Physics and Economy, that converged their approaches in this book, and that day by day keep reading, learning and training about new approaches, technologies, techniques and ways of thinking. 
+So what type of book is this, then? It lies somewhere in between a methodological recipe and a theoretical intensive textbook. What we want to deliver in this book is a mathematical and computational methodology to face concrete Data Science problems, that is, applying theory and science to real-world problems involving data. The relationship between theory and practice is complex. Considering them as a whole can take us much farther. These pages may offer the theorist a way to think about problematic situations in a more down to earth manner, and to the practitioner, stimulation to go beyond the mere application of programming libraries and tools.
+
+As the name of the book states, this is a book for Hackers. This word has been used for a long time in very different contexts. Ironically, the term can have opposite connotations, depending who is pronouncing it and to whom it is refers to. 
+In media and pop culture, the term is mostly used to referentiate cyber-criminals, people who use computer techniques with malicious intensions like stealing you money or information. In the informatics field, various conceptions of the term exist too. But they generally coincide in that it has not necessarily a bad connotation. In the cyber-security niche, hackers are, as stated in the final chapter of *Hacking: The Art of Exploitation* by Jon Erickson, "...just people with innovative spirits and an in-depht knowledge of technology". But the definition we found most suitable in relation to the message we want to communicate, is borrowed from [The Jargon File's](http://www.catb.org/jargon/html/index.html) glossary, written by Eric S. Raymond,
+> "A person who delights in having an intimate understanding of the internal workings of a system, computers and computer networks in particular."
+
+In this sense is that this book is for Hackers: it will lead you in a route with a results-driven perspective, slowly growing intuition about the inner workings of many problematic situations involving data and what they all have in common, with a priority on application and streching capabilities.
 
 The situations presented in the book are diverse, reflecting the interdisciplinary nature of Data Science. The solutions, however don't try to be beautiful or perfect. We know that the path to resolving real-life problems is muddy, that sometimes you might feel lost and that your ideas may change as you try to find the solution, but we encourage to embrace this non-elegant features and accept the sharp corners in this learning-through-solving journey. Suggestions, criticism and feedback are very appreciated, this book is alive and will evolve as a consequence of it's environment response. 
 
 Although this book isn't intended to have obscure, overly-technical or academic definitions that may scare the reader, people with a little of programming knowledge, basic understanding of Calculus and some modelling intuition will get the most out of these pages. Namely, familiarity with a high-level language like Python, taking derivatives and some function analysis. 
 All chapters include the code for the reader to play, explore and implement the solutions on their own. Moreover, links to notebooks with the worked solutions are available. 
 
-Why "Hackers"?
-Si los hackers son personas con espíritus innovadores y con un gran conocimiento en tecnología (Hacking: Art of Exploitation), entonces por qué el libro es para Hackers? acaso el área de Data Science se puede considerar una nueva tecnología, con sus vulnerabilidades y exploits? qué ofrece el libro para este perfil de personas?
-
-
-Why Julia?
-
+Why Data Science in Julia? There are several reasons why Julia makes for a great language for Data Science. One of the first features anyone who takes a look at Julia code will probably notice, is the readability it offers, even more when talking about math-related computations. Julia is designed for math from the ground up, and considering the great amounts of math involved in the Data Science field, this turns the language into a very convenient framework where to express related concepts.
 
