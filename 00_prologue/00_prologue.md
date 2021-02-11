@@ -1,7 +1,5 @@
-# Data Science in Julia for Hackers
-
-## Prologue
-
+# Prologue
+---
 >*"We have a habit in writing articles published in scientific journals to make the work as finished as possible, to cover up all the tracks, to not worry about the blind alleys or describe how you had the wrong idea first, and so on"*
 **Richard Feynman**
 
@@ -22,33 +20,3 @@ All chapters include the code for the reader to play, explore and implement the 
 
 Why Data Science in Julia? There are several reasons why Julia makes for a great language for this field. One of the first features anyone who takes a look at Julia code will probably notice, is the readability it offers, even more when talking about math-related computations. Julia is designed for math from the ground up, and considering the great amounts of math involved in Data Science, this turns the language into a very convenient framework where to express concepts related to this field.
 Another interesting aspect of Julia appears if we consider the historical background of the language. Developed by a team of scientists, it comes to adress problems they typically encounter when doing research. Very often, scientists are faced with complicated situations that need to aglomerate various tools and find an equilibrium point among many requirements. This leads researchers to invest a lot of time and work in learning to use tools that are typically just a necessary evil to build knowledge. Julia makes the perfect tool for these needs, being suited to implement code easily and fast in an explorative process, and allowing to have highly performant code with some minor tweaks, all in the same language. Moreover, features like multiple-dispatch and simple syntax, generates great composability between packages, as well as scalability, making the task of writing software much more human and maintainable.
-
-
-## Chapter index
-* First chapter: Science, technology, models and epistemology. 
-
-* [Second chapter](https://datasciencejuliahackers.com/02_julia_intro.jl.html): 
- Here we introduce the Julia programming language, showing examples of code and some first steps. 
-
-* [Third chapter](https://datasciencejuliahackers.com/03_probability_intro.jl.html): An introduction to probability, probability distributions and Bayes' interpretation. 
-
-* [Fourth chapter](https://datasciencejuliahackers.com/04_naive_bayes.jl.html): using a Naive-Bayes approach we construct a simple spam email filter.
-
-* [Fifth chapter](https://datasciencejuliahackers.com/05_prob_prog_intro.jl.html): An introduction to Probabilistic Programming and some simple examples using the Turing.jl package.
-
-* [Sixth chapter](https://datasciencejuliahackers.com/06_gravity.jl.html): we estimate the gravity of Mars to compute the escape velocity, throwing stones and taking very simple measurements from it.
-
-* [Seventh chapter](https://datasciencejuliahackers.com/07_football_simulation.jl.html): we use a hierarchical bayesian model to estimate latent variables that describe Premier League´s football teams.
-
-* [Eighth chapter](https://datasciencejuliahackers.com/08_basketball_shots.jl.html): we analyze how the scoring probability is affected by some variables, such as the distance from the hoop and the angle of shooting.
-
-* [Nineth chapter](https://datasciencejuliahackers.com/09_optimal_pricing.jl.html): we solve a problem of optimal pricing optimization using a bayesian point of view.
-
-* [Tenth chapter](https://datasciencejuliahackers.com/10_bees_vs_wasps.jl.html): in this chapter we give an overview of Machine Learning and we implement a simple convolutional neural network to solve a bees vs. wasps classification.
-
-* [Eleventh chapter](https://datasciencejuliahackers.com/11_ultima_online.jl.html): we explain the Ultima Online Catastrophe using differential equations to build a population dynamics model.
-
-* [Twelfth chapter](https://datasciencejuliahackers.com/12_ultima_continued.jl.html): A continuation of the Ultima Online Catastrophe, introducing the Universal Differential Equations to recover missing parts of scientific models.
-
-* [Thirteenth chapter](https://datasciencejuliahackers.com/13_time_series.jl.html): we see the basics for time series analysis, focusing on the exponential smoothing method.
-
