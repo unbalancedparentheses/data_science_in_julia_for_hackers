@@ -25,7 +25,7 @@ Another interesting aspect of Julia appears if we consider the historical backgr
 
 
 ## Chapter index
-* First chapter: Science, technology, models and epistemology. 
+* [First chapter](https://datasciencejuliahackers.com/01_science_technology_and_epistemology.jl.html): Science, technology, models and epistemology. 
 
 * [Second chapter](https://datasciencejuliahackers.com/02_julia_intro.jl.html): 
  Here we introduce the Julia programming language, showing examples of code and some first steps. 
