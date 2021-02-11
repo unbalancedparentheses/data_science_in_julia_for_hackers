@@ -1,9 +1,12 @@
-# Data Science in Julia for Hackers
+## Data Science in Julia for Hackers
 
-## Prologue
+### Prologue
 
 >*"We have a habit in writing articles published in scientific journals to make the work as finished as possible, to cover up all the tracks, to not worry about the blind alleys or describe how you had the wrong idea first, and so on"*
 **Richard Feynman**
+
+>*Only that what’s open can be true. Full transparency is best for me and you*
+**OpenBSD**
 
 One of the first things to note about this book is that it is not an academic textbook. We are not academics, and we are not experts in the topics we are going to discuss, but we are passionate, proudly amateur enthusiasts, with multidisciplinary backgrounds, which range from Engineering, Informatics, Physics and Economy, that converged their approaches in this book, and that day by day keep reading, learning and training about new approaches, technologies, techniques and ways of thinking. 
 This book lies somewhere in between a methodological recipe and a theoretical intensive textbook. What we want to deliver in this book is a mathematical and computational methodology to face concrete Data Science problems, that is, applying theory and science to real-world problems involving data. The relationship between theory and practice is complex. Considering them as a whole can take us much farther. These pages may offer the theorist a way to think about problematic situations in a more down to earth manner, and to the practitioner, stimulation to go beyond the mere application of programming libraries and tools.
@@ -24,7 +27,7 @@ Why Data Science in Julia? There are several reasons why Julia makes for a great
 Another interesting aspect of Julia appears if we consider the historical background of the language. Developed by a team of scientists, it comes to adress problems they typically encounter when doing research. Very often, scientists are faced with complicated situations that need to aglomerate various tools and find an equilibrium point among many requirements. This leads researchers to invest a lot of time and work in learning to use tools that are typically just a necessary evil to build knowledge. Julia makes the perfect tool for these needs, being suited to implement code easily and fast in an explorative process, and allowing to have highly performant code with some minor tweaks, all in the same language. Moreover, features like multiple-dispatch and simple syntax, generates great composability between packages, as well as scalability, making the task of writing software much more human and maintainable.
 
 
-## Chapter index
+### Chapter index
 * [First chapter](https://datasciencejuliahackers.com/01_science_technology_and_epistemology.jl.html): Science, technology, models and epistemology. 
 
 * [Second chapter](https://datasciencejuliahackers.com/02_julia_intro.jl.html): 
