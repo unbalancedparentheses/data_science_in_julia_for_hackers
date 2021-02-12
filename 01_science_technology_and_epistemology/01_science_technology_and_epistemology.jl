@@ -14,7 +14,7 @@ A quick and fundamental difference between the two is that when Science tries to
 
 ## What is technology?
 
-Okay, technology is the thing that allows us as humans to transform reality. And here it is important to clarify that technology is not something "new". It has been with us since the very beginning of the human era, and it is really what makes us different from other animals. 
+Technology is the thing that allows us as humans to transform reality. And here it is important to clarify that technology is not something "new". It has been with us since the very beginning of the human era, and it is really what makes us different from other animals. 
 
 How? Well, when we say that we use technology to transform the reality, we are referring to the fact that we do so through the *expansion of our capabilities*. From taking a long stick with a point to reach a fruit high up in a tree, passing through transforming an entire landscape by building a huge electric dam, to the creation of artificial intelligence that helps us solve our deepest puzzles. With technology we transform our *experience* in the reality in which we live.
 
@@ -89,7 +89,8 @@ But enough talk, let's get our hands dirty.
 md"""### References
 
 - Antifragile: Things That Gain from Disorder, ch 15 - Nassim Nicholas Taleb
-- Infinite Powers: How Calculus Reveals the Secrets of the Universe
+- Infinite Powers: How Calculus Reveals the Secrets of the Universe - Steven Strogatz
+- Lost in Math: How Beauty Leads Physics Astray - Sabine Hossenfelder
 - [The Joy of X](https://www.amazon.com/Joy-Guided-Tour-Math-Infinity/dp/0544105850)
 - [Kolmogorov - Mathematics: It's contents, method and meaning](https://www.amazon.com/Mathematics-Content-Methods-Meaning-Volumes/dp/0486409163)
 - [Freeman Dyson - Where Do the Laws of Nature Come From?](https://youtu.be/wxRpa-PqUfw)
