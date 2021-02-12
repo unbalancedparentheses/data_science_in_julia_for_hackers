@@ -261,6 +261,16 @@ As you can see below, the model (at least under this simple metric) is performin
 # ╔═╡ aa9f7ea4-2850-11eb-33e2-ade40fd0a360
 spam_filter_accurracy(x_test, y_test, spam_filter, 1)
 
+# ╔═╡ 96834844-6d45-11eb-39a5-737dd8e43cb1
+md" ### References
+* [How the word 'Spam' came to mean 'Junk Message'](http://www.todayifoundout.com/index.php/2010/09/how-the-word-spam-came-to-mean-junk-message/)
+* [Monty Python Sketch - YouTube](https://www.youtube.com/watch?v=zLih-WQwBSc)
+* [What is Spam Filtering?](https://www.mailchannels.com/what-is-spam-filtering/)
+* [Naive Bayes Classifiers - GeeksforGeeks](https://www.geeksforgeeks.org/naive-bayes-classifiers/)
+* [Spam Filter in Python: Naive Bayes from Scratch](https://www.kdnuggets.com/2020/07/spam-filter-python-naive-bayes-scratch.html)
+* [Naive Bayes Explained](https://www.upgrad.com/blog/naive-bayes-explained/)
+"
+
 # ╔═╡ Cell order:
 # ╟─0de04b90-2835-11eb-1369-01c64bc38c42
 # ╠═b519d90e-2834-11eb-1c48-0307b18584de
@@ -290,3 +300,4 @@ spam_filter_accurracy(x_test, y_test, spam_filter, 1)
 # ╠═4e470cba-2850-11eb-3563-cd9ead36f468
 # ╟─71cc0158-29e3-11eb-0206-8d29109f858f
 # ╠═aa9f7ea4-2850-11eb-33e2-ade40fd0a360
+# ╟─96834844-6d45-11eb-39a5-737dd8e43cb1
