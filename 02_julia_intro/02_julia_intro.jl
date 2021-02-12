@@ -680,6 +680,16 @@ begin
 	CSV.write("./data/modified_iris.csv", iris_df)
 end;
 
+# ╔═╡ 08b5d43e-6d66-11eb-0645-91568ff3b368
+begin
+	plot()
+	for i in 2:5
+		plot!(iris_df[:,i])
+	end
+	current()
+end
+		
+
 # ╔═╡ 03a43280-6003-11eb-1df8-a5833659f0a8
 md"
 ### Summary
@@ -738,5 +748,6 @@ md"
 # ╠═9917300e-5fe2-11eb-2bed-e1891671fdd6
 # ╟─c056d31a-5fe5-11eb-1cdd-43abf761bc90
 # ╠═da6fa616-6001-11eb-017f-5d75ec317675
+# ╠═08b5d43e-6d66-11eb-0645-91568ff3b368
 # ╟─03a43280-6003-11eb-1df8-a5833659f0a8
 # ╟─1f2086cc-544f-11eb-339e-1d31f4b4eb4b
