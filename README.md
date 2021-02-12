@@ -1,18 +1,20 @@
 # Data Science in Julia for Hackers
 
-Book written by [LambdaClass](https://lambdaclass.com/) with a focus on applied knowledge and computational techniques,
+A book written by Federico Carrone, Herman Obst Demaestri and Mariano Nicolini, with a focus on applied knowledge and computational techniques,
 written in the Julia language.
+Acknowledgements to Martina Cantaro and Camilo Plata.
 
 You can visit the book page [here](https://datasciencejuliahackers.com/)
 
 
-## Chapter index
+## Table of contents
 
-
+### Part I: Data Science and Julia
 * [First chapter](https://datasciencejuliahackers.com/01_science_technology_and_epistemology.jl.html): Science, technology, models and epistemology.
 
 * [Second chapter](https://datasciencejuliahackers.com/02_julia_intro.jl.html): Here we introduce the Julia programming language, showing examples of code and some first steps.
 
+### Part II: Bayesian Statistics
 * [Third chapter](https://datasciencejuliahackers.com:wq/03_probability_intro.jl.html): An introduction to probability, probability distributions and Bayes' interpretation.
 
 * [Fourth chapter](https://datasciencejuliahackers.com/04_naive_bayes.jl.html): using a Naive-Bayes approach we construct a simple spam email filter.
@@ -27,10 +29,16 @@ You can visit the book page [here](https://datasciencejuliahackers.com/)
 
 * [Nineth chapter](https://datasciencejuliahackers.com/09_optimal_pricing.jl.html): we solve a problem of optimal pricing optimization using a bayesian point of view.
 
+### Part III: Machine Learning
+* Work in progress
+
+### Part IV: Deep Learning
 * [Tenth chapter](https://datasciencejuliahackers.com/10_bees_vs_wasps.jl.html): in this chapter we give an overview of Machine Learning and we implement a simple convolutional neural network to solve a bees vs. wasps classification.
 
+### Part V: Scientific Machine Learning
 * [Eleventh chapter](https://datasciencejuliahackers.com/11_ultima_online.jl.html): we explain the Ultima Online Catastrophe using differential equations to build a population dynamics model.
 
 * [Twelfth chapter](https://datasciencejuliahackers.com/12_ultima_continued.jl.html): A continuation of the Ultima Online Catastrophe, introducing the Universal Differential Equations to recover missing parts of scientific models.
 
+# Part VI: Time Series and Forecasting
 * [Thirteenth chapter](https://datasciencejuliahackers.com/13_time_series.jl.html): we see the basics for time series analysis, focusing on the exponential smoothing method.

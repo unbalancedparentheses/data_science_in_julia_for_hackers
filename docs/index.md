@@ -1,5 +1,5 @@
 ## Data Science in Julia for Hackers
-A book written by Federico Carrone, Herman Obst and Mariano Nicolini.
+A book written by Federico Carrone, Herman Obst Demaestri and Mariano Nicolini.
 
 Acknowledgements to Martina Cantaro and Camilo Plata.
 
@@ -27,12 +27,15 @@ Why Data Science in Julia? There are several reasons why Julia makes for a great
 Another interesting aspect of Julia appears if we consider the historical background of the language. Developed by a team of scientists, it comes to adress problems they typically encounter when doing research. Very often, scientists are faced with complicated situations that need to aglomerate various tools and find an equilibrium point among many requirements. This leads researchers to invest a lot of time and work in learning to use tools that are typically just a necessary evil to build knowledge. Julia makes the perfect tool for these needs, being suited to implement code easily and fast in an explorative process, and allowing to have highly performant code with some minor tweaks, all in the same language. Moreover, features like multiple-dispatch and simple syntax, generates great composability between packages, as well as scalability, making the task of writing software much more human and maintainable.
 
 
-## Chapter index
+## Table of contents
+
+### Part I: Data Science and Julia
 * [First chapter](https://datasciencejuliahackers.com/01_science_technology_and_epistemology.jl.html): Science, technology, models and epistemology. 
 
 * [Second chapter](https://datasciencejuliahackers.com/02_julia_intro.jl.html): 
  Here we introduce the Julia programming language, showing examples of code and some first steps. 
 
+### Part II: Bayesian Statistics
 * [Third chapter](https://datasciencejuliahackers.com/03_probability_intro.jl.html): An introduction to probability, probability distributions and Bayes' interpretation. 
 
 * [Fourth chapter](https://datasciencejuliahackers.com/04_naive_bayes.jl.html): Using a Naive-Bayes approach we construct a simple spam email filter.
@@ -47,11 +50,17 @@ Another interesting aspect of Julia appears if we consider the historical backgr
 
 * [Nineth chapter](https://datasciencejuliahackers.com/09_optimal_pricing.jl.html): We solve a problem of optimal pricing optimization using a bayesian point of view.
 
+### Part III: Machine Learning
+* Work in progress
+
+### Part IV: Deep Learning
 * [Tenth chapter](https://datasciencejuliahackers.com/10_bees_vs_wasps.jl.html): In this chapter we give an overview of Machine Learning and we implement a simple convolutional neural network to solve a bees vs. wasps classification.
 
+### Part V: Scientific Machine Learning
 * [Eleventh chapter](https://datasciencejuliahackers.com/11_ultima_online.jl.html): We explain the Ultima Online Catastrophe using differential equations to build a population dynamics model.
 
 * [Twelfth chapter](https://datasciencejuliahackers.com/12_ultima_continued.jl.html): A continuation of the Ultima Online Catastrophe, introducing the Universal Differential Equations to recover missing parts of scientific models.
 
+### Part VI: Time Series and Forecasting
 * [Thirteenth chapter](https://datasciencejuliahackers.com/13_time_series.jl.html): We see the basics for time series analysis, focusing on the exponential smoothing method.
 
