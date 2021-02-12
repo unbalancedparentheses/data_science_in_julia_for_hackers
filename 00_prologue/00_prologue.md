@@ -1,10 +1,8 @@
 # Prologue
 ---
->*"We have a habit in writing articles published in scientific journals to make the work as finished as possible, to cover up all the tracks, to not worry about the blind alleys or describe how you had the wrong idea first, and so on"*
-**Richard Feynman**
+>*We have a habit in writing articles published in scientific journals to make the work as finished as possible, to cover up all the tracks, to not worry about the blind alleys or describe how you had the wrong idea first, and so on* - **Richard Feynman**
 
->*Only that what’s open can be true. Full transparency is best for me and you*
-**OpenBSD**
+>*Only that what’s open can be true. Full transparency is best for me and you* - **OpenBSD**
 
 One of the first things to note about this book is that it is not an academic textbook. We are not academics, and we are not experts in the topics we are going to discuss, but we are passionate, proudly amateur enthusiasts, with multidisciplinary backgrounds, which range from Engineering, Informatics, Physics and Economy, that converged their approaches in this book, and that day by day keep reading, learning and training about new approaches, technologies, techniques and ways of thinking. 
 This book lies somewhere in between a methodological recipe and a theoretical intensive textbook. What we want to deliver in this book is a mathematical and computational methodology to face concrete Data Science problems, that is, applying theory and science to real-world problems involving data. The relationship between theory and practice is complex. Considering them as a whole can take us much farther. These pages may offer the theorist a way to think about problematic situations in a more down to earth manner, and to the practitioner, stimulation to go beyond the mere application of programming libraries and tools.
