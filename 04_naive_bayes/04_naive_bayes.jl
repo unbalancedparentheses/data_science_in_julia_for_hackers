@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.18
+# v0.12.20
 
 using Markdown
 using InteractiveUtils
@@ -14,7 +14,6 @@ begin
 	using MLDataUtils
 	using Plots
 	using Images
-	using WordCloud
 end
 
 # ╔═╡ 0de04b90-2835-11eb-1369-01c64bc38c42
@@ -262,41 +261,6 @@ As you can see below, the model (at least under this simple metric) is performin
 # ╔═╡ aa9f7ea4-2850-11eb-33e2-ade40fd0a360
 spam_filter_accurracy(x_test, y_test, spam_filter, 1)
 
-# ╔═╡ 55955e22-28fc-11eb-0153-83f34561665b
-# to create the emails corpus based on the frequencies of each word
-
-function create_spam_and_ham_corpus(model::BayesSpamFilter, df)
-	
-	n_spam_mails = sum(df.Prediction)
-	n_ham_mails = size(df)[1] - n_spam_mails
-	
-	ham_corpus = Array{String}(undef, n_ham_mails)
-	spam_corpus = Array{String}(undef, n_spam_mails)
-	
-	for i in 1:n_spam_mails
-		spam_corpus[i] = string([repeat(string(word, " "), 												model.words_count_spam[word]) for word in vocabulary])
-	end
-	
-	for i in 1:n_ham_mails
-		ham_corpus[i] = string([repeat(string(word, " "), 
-					model.words_count_ham[word]) for word in vocabulary])
-	end
-	return ham_corpus, spam_corpus
-end	
-
-# ╔═╡ e8ea2bd0-2903-11eb-176f-a527049a3968
-# ham_corpus, spam_corpus = create_spam_and_ham_corpus(spam_filter, raw_df)
-
-# ╔═╡ 7fb08fa2-29b9-11eb-39d5-f74320ac9609
-md"
-#### To do:
-* WordClouds
-* Confusion matrix
-"
-
-# ╔═╡ 23fc8684-29d2-11eb-235c-29e2fad3bd5d
-corpus = "la la la le li li holaaa hola holu"
-
 # ╔═╡ Cell order:
 # ╟─0de04b90-2835-11eb-1369-01c64bc38c42
 # ╠═b519d90e-2834-11eb-1c48-0307b18584de
@@ -326,7 +290,3 @@ corpus = "la la la le li li holaaa hola holu"
 # ╠═4e470cba-2850-11eb-3563-cd9ead36f468
 # ╟─71cc0158-29e3-11eb-0206-8d29109f858f
 # ╠═aa9f7ea4-2850-11eb-33e2-ade40fd0a360
-# ╠═55955e22-28fc-11eb-0153-83f34561665b
-# ╠═e8ea2bd0-2903-11eb-176f-a527049a3968
-# ╠═7fb08fa2-29b9-11eb-39d5-f74320ac9609
-# ╠═23fc8684-29d2-11eb-235c-29e2fad3bd5d
