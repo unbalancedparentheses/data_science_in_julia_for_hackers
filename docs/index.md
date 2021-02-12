@@ -54,7 +54,7 @@ Another interesting aspect of Julia appears if we consider the historical backgr
 * Work in progress
 
 ### Part IV: Deep Learning
-* [Tenth chapter](https://datasciencejuliahackers.com/10_bees_vs_wasps.jl.html): Overview of Machine Learning and implementation of a simple convolutional neural network that is able to discriminate between pictures of bees and wasps..
+* [Tenth chapter](https://datasciencejuliahackers.com/10_bees_vs_wasps.jl.html): Overview of Machine Learning and implementation of a simple convolutional neural network that is able to discriminate between pictures of bees and wasps.
 
 ### Part V: Scientific Machine Learning
 * [Eleventh chapter](https://datasciencejuliahackers.com/11_ultima_online.jl.html): We explain the Ultima Online Catastrophe using differential equations to build a population dynamics model.
