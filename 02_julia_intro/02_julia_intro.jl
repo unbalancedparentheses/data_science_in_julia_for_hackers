@@ -548,10 +548,15 @@ begin
 	scatter!(sequence, label=false, color="purple", size=(450, 300))
 end
 
+# ╔═╡ 53a0950c-6d79-11eb-0914-4de1f259e95e
+md"
+In the example above, a plot is created when we call the ```plot()``` function. What the ```scatter!()``` call then does, is to modify the global state of the plot in-place. If not done this way, both plots wouldn't be sketched together.
+
+A nice feature that Julia offers in regard to plotting, is the fact of changing plotting backends. There exist various plotting packages in Julia, and each one has its own special features and 
+"
+
 # ╔═╡ 11f33ecc-544f-11eb-35d5-27a280cdce1b
 md"
-In the example above, a plot is created when we call the plot() function. What the scatter!() call then does, is to modify the global state of the plot in-place. If not done this way, both plots wouldn't be sketched together.
-
 ### Introducing DataFrames.jl
 When dealing with any type of data in large quantities, it is essential to have a 
 framework to organize and manipulate it in an efficient way. If you have previously 
@@ -680,12 +685,20 @@ begin
 	CSV.write("./data/modified_iris.csv", iris_df)
 end;
 
+# ╔═╡ 3625d788-6d71-11eb-3878-97c4ad01ffb4
+md"
+Plotting Dataframes data is very easy. Suppose we want to plot the flower features from the iris dataset, all in one single plot. These features correspond to the columns two to five of the dataframe. Thinking about it as a matrix, you can access these data by selecting all the rows for each of the corresponding columns. In the code below, a loop is performed over the columns of interest. The ```plot()``` statement, with no arguments, is a way to create an empty instance of a plot, like a blank canvas. This empty plot will be successively overwritten by each call to ```plot!()```. Finally, we make a call to ```current()```, to display the plot. You may be wondering why is this necessary. Notice that all the plotting happens inside a loop, hence the plotting iterations are not displayed. It is more efficient to display the finished plot when the loop is over than to update each plot as it overwrites the previous one.
+"
+
 # ╔═╡ 08b5d43e-6d66-11eb-0645-91568ff3b368
 begin
 	plot()
 	for i in 2:5
-		plot!(iris_df[:,i])
+		plot!(iris_df[:,i], legend=false)
 	end
+	xlabel!("Flower")
+	ylabel!("Centimeters (cm)")
+	title!("Flower features")
 	current()
 end
 		
@@ -721,7 +734,8 @@ md"
 # ╟─f453c7b0-544e-11eb-137c-1d027edb83e6
 # ╠═03641078-544f-11eb-1dab-37614a0bdbc7
 # ╠═093aac02-544f-11eb-1221-4dfc049d4652
-# ╟─11f33ecc-544f-11eb-35d5-27a280cdce1b
+# ╟─53a0950c-6d79-11eb-0914-4de1f259e95e
+# ╠═11f33ecc-544f-11eb-35d5-27a280cdce1b
 # ╠═123c9e1a-5f25-11eb-2aa8-756adae10d51
 # ╟─7fbacda8-5f3f-11eb-2d85-c702f205cc6b
 # ╠═340ee342-5f46-11eb-224e-c33007e70b4a
@@ -748,6 +762,7 @@ md"
 # ╠═9917300e-5fe2-11eb-2bed-e1891671fdd6
 # ╟─c056d31a-5fe5-11eb-1cdd-43abf761bc90
 # ╠═da6fa616-6001-11eb-017f-5d75ec317675
+# ╟─3625d788-6d71-11eb-3878-97c4ad01ffb4
 # ╠═08b5d43e-6d66-11eb-0645-91568ff3b368
 # ╟─03a43280-6003-11eb-1df8-a5833659f0a8
 # ╟─1f2086cc-544f-11eb-339e-1d31f4b4eb4b
