@@ -43,7 +43,7 @@ For years, programming languages were limited to either having a simple syntax, 
 # ╔═╡ c2272800-6007-11eb-1736-b7f334dbba2f
 md"
 ## Installation
-For the installation process, we recommend you to follow the following instructional provided by the Julia team:
+For the installation process, we recommend you follow the instructional provided by the Julia team:
 > [Platform Specific Instructions for Official Binaries](https://julialang.org/downloads/platform/): These instructions will get you through a fresh installation of Julia depending on the specifications of your computer. It is a barebones installation, so it will only include the basic Julia packages.
 
 All along the book, we are going to use specific Julia packages, that you may or may not have already installed. Julia has a built-in packet manager that makes the task of installing new packages and checking compatibilities very easy. 
@@ -701,7 +701,7 @@ md"
 
 # ╔═╡ Cell order:
 # ╟─0a4fc5fc-544d-11eb-0189-6b1c959b1eb1
-# ╠═c2272800-6007-11eb-1736-b7f334dbba2f
+# ╟─c2272800-6007-11eb-1736-b7f334dbba2f
 # ╟─292d20ea-5a8e-11eb-2a96-a37689e468ca
 # ╟─01ca39ee-5a9c-11eb-118e-afae416cfca4
 # ╟─d1ae60a8-544e-11eb-15b5-97188dc41aa8
