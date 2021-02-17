@@ -552,7 +552,34 @@ end
 md"
 In the example above, a plot is created when we call the ```plot()``` function. What the ```scatter!()``` call then does, is to modify the global state of the plot in-place. If not done this way, both plots wouldn't be sketched together.
 
-A nice feature that Julia offers in regard to plotting, is the fact of changing plotting backends. There exist various plotting packages in Julia, and each one has its own special features and 
+A nice feature that the Plots.jl package offers, is the fact of changing plotting backends. There exist various plotting packages in Julia, and each one has its own special features and aesthetic flavour. The Plots.jl package integrates these plotting libraries and acts as an interface to communicate with them in an easy way.
+By default, the ```GR``` backend is the one used. In fact, this was the plotting engine that generated the plots we have already done. The most used and maintained plotting backends up to date, are the already mentioned ```GR```, ```Plotly/PlotlyJS```, ```PyPlot```, ```UnicodePlots``` and ```InspectDR```.
+The backend you choose will depend on the particular situation you are facing. For a detailed explanation on backends, we recommend you visit the Julia Plots [documentation](https://docs.juliaplots.org/latest/backends/). Through the book we will be focusing on the ```GR```backend, but as a demonstration of the ease of changing from one backend to another, consider the code below.
+The only thing added to the code for plotting that we have already used, is the ```pyplot()``` call to change the backend. If you have already coded in Python, you will feel familiar with this plotting backend. 
+"
+
+# ╔═╡ 7572d6ac-7127-11eb-1dec-9d5919434ca0
+begin
+	pyplot()
+	plot(sequence, xlabel="x", ylabel="Fibonacci", linewidth=3, label=false, color="green", size=(450, 300))
+	scatter!(sequence, label=false, color="purple", size=(450, 300))
+end
+
+# ╔═╡ aeb24808-7136-11eb-3f55-b55c445423fa
+md"
+Analogously, we can use the ```plotlyjs``` backend, which is specially suited for interactivity.
+"
+
+# ╔═╡ 1c5c95e4-7138-11eb-0116-314aab362756
+begin
+	plotlyjs()
+	plot(sequence, xlabel="x", ylabel="Fibonacci", linewidth=3, label=false, color="green", size=(450, 300))
+	scatter!(sequence, label=false, color="purple", size=(450, 300))
+end
+
+# ╔═╡ 0ae33f2c-7139-11eb-1239-5bb34937a949
+md"
+Each of these backends has its own scope, so there may be plots that one backend can do that another can't. For example, 3D plots are not supported for all backends. The details are well explained in the Julia documentation.
 "
 
 # ╔═╡ 11f33ecc-544f-11eb-35d5-27a280cdce1b
@@ -692,6 +719,7 @@ Plotting Dataframes data is very easy. Suppose we want to plot the flower featur
 
 # ╔═╡ 08b5d43e-6d66-11eb-0645-91568ff3b368
 begin
+	gr()
 	plot()
 	for i in 2:5
 		plot!(iris_df[:,i], legend=false)
@@ -708,7 +736,7 @@ md"
 ### Summary
 In this chapter we have introduced the Julia language, the motivations behind its creation, features, installation and basic building blocks for writing some code. 
 First we discussed some basic Julia operators and datatypes. Some special features of the language such as how to write different kinds of arrays and broadcasting were detailed. We then followed with an overview of how functions work in Julia, and how to make your own.
-Finally, we introduced some packages of the Julia ecosystem, mainly the Plots.jl package for plotting, and DataFrames.jl for data organization and manipulation.
+Finally, we introduced some packages of the Julia ecosystem, mainly the Plots.jl package for plotting and changing backends, and DataFrames.jl for data organization and manipulation.
 "
 
 # ╔═╡ 1f2086cc-544f-11eb-339e-1d31f4b4eb4b
@@ -718,6 +746,7 @@ md"
 * [Julia REPL](https://docs.julialang.org/en/v1/stdlib/REPL/)
 * [Learn X in Y minutes](https://learnxinyminutes.com/docs/julia/)
 * [Introducing Julia](https://en.wikibooks.org/wiki/Introducing_Julia)
+* [Julia Plots - Backends](https://docs.juliaplots.org/latest/backends/)
 * [Data Science with Julia](https://www.amazon.com/Data-Science-Julia-Paul-McNicholas/dp/1138499986)
 * [Comma Separated Values](https://en.wikipedia.org/wiki/Comma-separated_values)
 * [Iris Dataset](https://en.wikipedia.org/wiki/Iris_flower_data_set)
@@ -735,7 +764,11 @@ md"
 # ╠═03641078-544f-11eb-1dab-37614a0bdbc7
 # ╠═093aac02-544f-11eb-1221-4dfc049d4652
 # ╟─53a0950c-6d79-11eb-0914-4de1f259e95e
-# ╠═11f33ecc-544f-11eb-35d5-27a280cdce1b
+# ╠═7572d6ac-7127-11eb-1dec-9d5919434ca0
+# ╟─aeb24808-7136-11eb-3f55-b55c445423fa
+# ╠═1c5c95e4-7138-11eb-0116-314aab362756
+# ╟─0ae33f2c-7139-11eb-1239-5bb34937a949
+# ╟─11f33ecc-544f-11eb-35d5-27a280cdce1b
 # ╠═123c9e1a-5f25-11eb-2aa8-756adae10d51
 # ╟─7fbacda8-5f3f-11eb-2d85-c702f205cc6b
 # ╠═340ee342-5f46-11eb-224e-c33007e70b4a
