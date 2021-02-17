@@ -261,6 +261,17 @@ As you can see below, the model (at least under this simple metric) is performin
 # ╔═╡ aa9f7ea4-2850-11eb-33e2-ade40fd0a360
 spam_filter_accurracy(x_test, y_test, spam_filter, 1)
 
+# ╔═╡ 3ce2070a-7156-11eb-1204-3d1850c7abee
+md"
+### Summary
+In this chapter, we have used a naive-bayes approach to build a simple email spam filter. 
+First, a contextualization of the topic was made and the origin of the spam word was discussed.
+Then, the dataset and the theoretical framework was introduced. Using Bayes' theorem, and the data available, we assign a probability of belonging to a spam or a ham email to each word of the dataset. 
+Thus, the probability of a new email belonging to the spam category, is the product of the probabilities of each of its constituent words.
+Later, the data was pre-processed and a struct was defined for the spam filter object. Functions were implemented to fit the spam filter object to the data.
+Finally, a metric for evaluating the accuracy of the model was implemented, giving a result of approximately $0.95$.
+"
+
 # ╔═╡ 96834844-6d45-11eb-39a5-737dd8e43cb1
 md" ### References
 * [How the word 'Spam' came to mean 'Junk Message'](http://www.todayifoundout.com/index.php/2010/09/how-the-word-spam-came-to-mean-junk-message/)
@@ -275,7 +286,7 @@ md" ### References
 # ╟─0de04b90-2835-11eb-1369-01c64bc38c42
 # ╠═b519d90e-2834-11eb-1c48-0307b18584de
 # ╟─03a60d0e-2835-11eb-239c-c3b43694607c
-# ╟─78c91c38-4eae-11eb-3569-07af96eb6881
+# ╠═78c91c38-4eae-11eb-3569-07af96eb6881
 # ╟─6fbd7c76-4eae-11eb-124f-fbbda19ba636
 # ╟─6ce18f50-4eaf-11eb-0189-ede5b110341c
 # ╟─c898651a-4eac-11eb-26ac-ddb1885afc13
@@ -300,4 +311,5 @@ md" ### References
 # ╠═4e470cba-2850-11eb-3563-cd9ead36f468
 # ╟─71cc0158-29e3-11eb-0206-8d29109f858f
 # ╠═aa9f7ea4-2850-11eb-33e2-ade40fd0a360
+# ╟─3ce2070a-7156-11eb-1204-3d1850c7abee
 # ╟─96834844-6d45-11eb-39a5-737dd8e43cb1
