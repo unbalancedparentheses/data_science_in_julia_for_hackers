@@ -8,15 +8,24 @@ using InteractiveUtils
 md"""
 ## The difference between Science and Technology
 
-Everyone would agree that science and technology have a lot in common but, what are the essential differences between them? and how do they interact between each other? These are fundamental questions for us, and ones that most people don´t have a clear answer. This leads to misconceptions about key aspects on, for example, how the knowledge is created and, in a more general perspective, how the world operates. 
+Everyone would agree that science and technology have a lot in common but, what are the essential differences between them? and how do they interact between each other? 
+These are fundamental questions for us, and ones that most people don´t have a clear answer. 
+This leads to misconceptions about key aspects on, for example, how the knowledge is created and, in a more general perspective, how the world operates. 
 
-A quick and fundamental difference between the two is that when Science tries to **understand** the physical world in which we live, Technology aims to **transform** it. So, Technology has a strong practical goal and Science a more intellectual one. A very frequent confusion that is nowadays very much encouraged by academia is to think that first, one has to have all the theoretical and formal knowledge about something, and only after this, one will be able to apply and transform reality. This idea could not be more wrong. The process is exactly the opposite: One lives in reality, interacts with it, takes action, makes mistakes, tries again, and in that way slowly discovers how the world works. Only after this, it is useful to formalize our knowledge, in order to be able to lay solid foundations and to continue advancing in our understanding.
+A quick and fundamental difference between the two is that when Science tries to **understand** the physical world in which we live, Technology aims to **transform** it. 
+So, Technology has a strong practical goal and Science a more intellectual one. 
+A very frequent confusion that is nowadays very much encouraged by academia is to think that first, one has to have all the theoretical and formal knowledge about something, and only after this, one will be able to apply and transform reality. 
+This idea could not be more wrong. The process is exactly the opposite: One lives in reality, interacts with it, takes action, makes mistakes, tries again, and in that way slowly discovers how the world works. 
+Only after this, it is useful to formalize our knowledge, in order to be able to lay solid foundations and to continue advancing in our understanding.
 
 ## What is technology?
 
-Technology is the thing that allows us as humans to transform reality. And here it is important to clarify that technology is not something "new". It has been with us since the very beginning of the human era, and it is really what makes us different from other animals. 
+Technology is the thing that allows us as humans to transform reality. And here it is important to clarify that technology is not something "new". 
+It has been with us since the very beginning of the human era, and it is really what makes us different from other animals. 
 
-How? Well, when we say that we use technology to transform the reality, we are referring to the fact that we do so through the *expansion of our capabilities*. From taking a long stick with a point to reach a fruit high up in a tree, passing through transforming an entire landscape by building a huge electric dam, to the creation of artificial intelligence that helps us solve our deepest puzzles. With technology we transform our *experience* in the reality in which we live.
+How? Well, when we say that we use technology to transform the reality, we are referring to the fact that we do so through the *expansion of our capabilities*. 
+From taking a long stick with a point to reach a fruit high up in a tree, passing through transforming an entire landscape by building a huge electric dam, to the creation of artificial intelligence that helps us solve our deepest puzzles. 
+With technology we transform our *experience* in the reality in which we live.
 
 The current understanding of how knowledge is produced is very strange and even counterproductive for the development of humanity. Nowadays, there is a kind of *linear thinking* model in which we take for granted that the process of knowledge production is very definite: We first make academic and theoretical discoveries and only then, with all of that formalization made, we can start thinking of putting it to practical use in the real world. This is a completely wrong way of thinking and is holding us back enormously, causing important funds to be misused.
 
