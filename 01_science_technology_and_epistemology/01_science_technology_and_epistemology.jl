@@ -150,6 +150,12 @@ This boosted the application of a lot of computational techniques and the creati
 As a consequence of the enormous quantities of data available and the variety and diversity of the underlying generating mechanisms, a field of its own started growing. This field would deal with data in a general way, in principle, without caring too much about its nature. 
 This is what we call Data Science nowadays, and it aims to extract information and insights from any type of data.
 
+We are living in the so-called "Petabyte Age". 
+At this scale, information is not a matter of simple three- and four-dimensional taxonomy and order but of dimensionally agnostic statistics.
+And this is so important because is expanding our possibilities to do science. 
+In the complex, messy domains that we already mention, particularly game-theoretic domains involving unpredictable agents such as human beings, there are no general theories that can be expressed in simple equations like F = m a or E = m c2. 
+But now we have massive amounts of available data describing those complex systems, so employing non-parametric density approximation models such as nearest-neighbors or kernel methods rather than parametric models such as low-dimensional linear regression may be the solution to gain useful insights. Theory is expanding into new forms. A new form where, if it allow to solve problems, correlation is enough.
+
 So the exponential progress that we have been seeing in computer technology is a key aspect of Data Science. 
 So much so that it is common to hear that Data Science is the conjunction between Statistics and Computer Science and, undoubtedly, there is a lot of truth in this. 
 Okay, but, what is the real difference between Data science and Statistics?
