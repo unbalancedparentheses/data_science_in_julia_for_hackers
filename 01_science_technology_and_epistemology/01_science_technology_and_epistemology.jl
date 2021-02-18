@@ -9,29 +9,29 @@ md"""
 ## The difference between Science and Technology
 
 Everyone would agree that science and technology have a lot in common but, what are the essential differences between them? and how do they interact between each other? 
-These are fundamental questions for us, and ones that most people don´t have a clear answer. 
-This leads to misconceptions about key aspects on, for example, how the knowledge is created and, in a more general perspective, how the world operates. 
+These are fundamental questions for us, and ones that most people don´t have a clear answer for. 
+This leads to misconceptions about key aspects on, for example, how knowledge is created and, more generally, how the world operates. 
 
-A quick and fundamental difference between the two is that when Science tries to **understand** the physical world in which we live, Technology aims to **transform** it. 
-So, Technology has a strong practical goal and Science a more intellectual one. 
+One fundamental difference between the two is that while science tries to understand the physical world in which we live, technology aims to transform it. 
+So, technology has a strong practical goal and Science a more intellectual one. 
 A very frequent confusion that is nowadays very much encouraged by academia is to think that first, one has to have all the theoretical and formal knowledge about something, and only after this, one will be able to apply and transform reality. 
-This idea could not be more wrong. The process is exactly the opposite: One lives in reality, interacts with it, takes action, makes mistakes, tries again, and in that way slowly discovers how the world works. 
-Only after this, it is useful to formalize our knowledge, in order to be able to lay solid foundations and to continue advancing in our understanding.
+But in reality this is not the case. The process occurs, in most cases, in the opposite way: One lives in reality, interacts with it, takes action, makes mistakes, tries again, and in that way slowly discovers how the world works. 
+And then, of course, it is useful to formalize our knowledge in order to be able to transmit that learning, lay solid foundations and to continue advancing in our understanding.
 
 ## What is technology?
 
-Technology is the thing that allows us as humans to transform reality. And here it is important to clarify that technology is not something "new". 
-It has been with us since the very beginning of the human era, and it is really what makes us different from other animals. 
+Technology is the practice that allows us as humans to transform reality. 
+And here it is important to clarify that it is not something "new”, it has been with us since the very beginning of the human era, and it is really what makes us different from other animals. 
 
-How? Well, when we say that we use technology to transform the reality, we are referring to the fact that we do so through the *expansion of our capabilities*.
-From taking a long stick with a point to reach a fruit high up in a tree, passing through transforming an entire landscape by building a huge electric dam, to the creation of artificial intelligence that helps us solve our deepest puzzles. 
-With technology we transform our *experience* in the reality in which we live.
+Technology enables us to expand our capabilities.
+From taking a long, pointy stick to reach fruit high up in a tree, through transforming an entire landscape by building a huge electric dam, to the creation of artificial intelligence that helps us solve our deepest puzzles. 
+With technology we transform our experience in the world.
 
-The current understanding of how knowledge is produced is very strange and even counterproductive for the development of humanity. 
-Nowadays, there is a kind of *linear thinking* model in which we take for granted that the process of knowledge production is very definite: We first make academic and theoretical discoveries and only then, with all of that formalization made, we can start thinking of putting it to practical use in the real world. 
-This is a completely wrong way of thinking and is holding us back enormously, causing important funds to be misused.
+The current understanding of how knowledge is produced is quite out of step with what really happen, and may even work against us in our development. 
+Nowadays, there is a kind of *linear thinking* model in which is taken for granted that the process of knowledge production is very definite: First, academic and theoretical discoveries are made and only then, with all of that formalization achieve, one can start thinking of putting it to practical use in the real world. 
+This type of thinking is counterproductive because, being so widespread, it causes most people to be more concerned with constantly acquiring theoretical knowledge, rather than taking action and immersing themselves in practice.
 
-If you start looking at the technology/innovation history you may gradually begin to notice a repeating pattern: There is a constant differentiation between the people who *do* and the people who *watch* and then narrate. 
+By looking at the history of technology and innovation we can see a repeating pattern: There is a constant differentiation between the people who *do* and the people who *watch* and then narrate. 
 "The History Written by the Losers" would [Nassim Nicholas Taleb](https://en.wikipedia.org/wiki/Nassim_Nicholas_Taleb) said, the people that are doing stuff don't have time for beauty writing. But the thing does not stop there. 
 It is not only that the do-nothings who write about the findings of others, but also attribute it to them! And this comes from a worrying bias that has been developing throughout recent history: the linear thinking we are talking about. 
 That –apparently– common sense in which knowledge is built from a purely intellectual work that can be done in the armchair at home, and that after acquiring this sacred theoretical knowledge it is possible to come up with technology or innovation.
@@ -212,5 +212,5 @@ md"""### References
 """
 
 # ╔═╡ Cell order:
-# ╟─ee92411c-5c28-11eb-2f22-2f275ae35b18
+# ╠═ee92411c-5c28-11eb-2f22-2f275ae35b18
 # ╟─1c60486a-5c2d-11eb-385e-417e8c4b7ddb
