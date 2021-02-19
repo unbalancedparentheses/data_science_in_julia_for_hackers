@@ -2,7 +2,8 @@
 
 A book written by Federico Carrone, Herman Obst Demaestri and Mariano Nicolini, with a focus on applied knowledge and computational techniques,
 written in the Julia language.
-Thanks to Martina Cantaro and Camilo Plata.
+
+Thanks to Martina Cantaro, Camilo Plata, Manuel Puebla, Lucas Raul Fernandez Piana, Osvaldo Martin, Iñaki Garay and Mariana Vinyolas.
 
 You can visit the book page [here](https://datasciencejuliahackers.com/)
 
