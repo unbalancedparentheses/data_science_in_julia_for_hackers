@@ -401,8 +401,7 @@ Considering that we have only tried 100 times, the probabilities have been estim
 md"
 ### References
 * [Bayesian Statistics the fun way](https://www.amazon.com/Bayesian-Statistics-Fun-Will-Kurt/dp/1593279566)
-* [Conditional Probability - Wikipedia](https://en.wikipedia.org/wiki/Conditional_probability)
-* [Bayes' Theorem - Wikipedia](https://en.wikipedia.org/wiki/Bayes%27_theorem)
+* [Infinite Powers: How Calculus Reveals the Secrets of the Universe](https://www.amazon.com/Infinite-Powers-Calculus-Reveals-Universe/dp/0358299284/ref=sr_1_1?dchild=1&keywords=Infinite+Powers&qid=1613753162&s=books&sr=1-1)
 * [Statistical Rethinking](https://www.amazon.com/Statistical-Rethinking-Bayesian-Examples-Chapman/dp/1482253445)
 * [ThinkBayes](https://www.amazon.com/Think-Bayes-Bayesian-Statistics-Python/dp/1449370780)
 * [ThinkStats](https://www.amazon.com/Think-Stats-Exploratory-Data-Analysis/dp/1491907339)
@@ -459,4 +458,4 @@ md"
 # ╠═c822a558-54f1-11eb-162b-398bd542ded1
 # ╠═e3b582b0-54f1-11eb-3ffa-67a92240e659
 # ╟─0d541d38-59a5-11eb-3404-f13d3e5150d4
-# ╟─32df0e98-35a2-11eb-1121-5f731785abbb
+# ╠═32df0e98-35a2-11eb-1121-5f731785abbb
