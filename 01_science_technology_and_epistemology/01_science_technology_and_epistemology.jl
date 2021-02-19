@@ -27,18 +27,23 @@ Technology enables us to expand our capabilities.
 From taking a long, pointy stick to reach fruit high up in a tree, through transforming an entire landscape by building a huge electric dam, to the creation of artificial intelligence that helps us solve our deepest puzzles. 
 With technology we transform our experience in the world.
 
+It is evident that the more we know about the reality in which we live, the more we will be able to modify it. 
+But from this idea comes a very important question: how is the "order" in which innovation takes place? 
+Is it necessary first to have an absolute understanding of the process we are trying to modify? 
+Or is technology created in a more chaotic process, through trial and error?
+
+So let´s think for a moment, does a child need to know the gear mechanisms of a bicycle, in order to be able to use it? does Messi need to know about fluid dynamics to make the ball take a curved trajectory? Did the Romans need to know the Navier-Stokes equation in order to build their huge aqueducts? 
+Maybe you are thinking that these are very specific cases, but the reality is that those example share a general and universal property: The knowledge is acquired based on experimentation, implementation and heuristics, pure trial and error. 
+And technological innovation follows the same mechanism, it was discovered by people that were  taking risks, taking action, with a pure trial-and-error experiential manner and, above all, without anyone truly understanding the theory behind.
+
 The current understanding of how knowledge is produced is quite out of step with what really happen, and may even work against us in our development. 
 Nowadays, there is a kind of *linear thinking* model in which is taken for granted that the process of knowledge production is very definite: First, academic and theoretical discoveries are made and only then, with all of that formalization achieve, one can start thinking of putting it to practical use in the real world. 
 This type of thinking is counterproductive because, being so widespread, it causes most people to be more concerned with constantly acquiring theoretical knowledge, rather than taking action and immersing themselves in practice.
 
 By looking at the history of technology and innovation we can see a repeating pattern: There is a constant differentiation between the people who *do* and the people who *watch* and then narrate. 
 "The History Written by the Losers" would [Nassim Nicholas Taleb](https://en.wikipedia.org/wiki/Nassim_Nicholas_Taleb) said, the people that are doing stuff don't have time for beauty writing. But the thing does not stop there. 
-It is not only that the do-nothings who write about the findings of others, but also attribute it to them! And this comes from a worrying bias that has been developing throughout recent history: the linear thinking we are talking about. 
-That –apparently– common sense in which knowledge is built from a purely intellectual work that can be done in the armchair at home, and that after acquiring this sacred theoretical knowledge it is possible to come up with technology or innovation.
-
-So let´s think for a moment, does a child need to know the gear mechanisms of a bicycle, in order to be able to use it? does Messi need to know about fluid dynamics to make the ball take a curved trajectory? Did the Romans need to know the Navier-Stokes equation in order to build their huge aqueducts? 
-Maybe you are thinking that these are very specific cases, but the reality is that those example share a general and universal property: The knowledge is acquired based on experimentation, implementation and heuristics, pure trial and error. 
-And technological innovation follows the same mechanism, it was discovered by people that were  taking risks, taking action, with a pure trial-and-error experiential manner and, above all, without anyone truly understanding the theory behind.
+It is not only that the non-practitioners who write about the findings of others, but as time goes by and because of this prevailing thought about the order of knowledge creation, society ends up being convinced that there was indeed an arduous intellectual and academic work first, and then came its implementation.
+That –apparently– common sense in which knowledge is built from a purely intellectual work that can be done in the armchair at home, and that only after acquiring this sacred theoretical knowledge it is possible to come up with technology or innovation, is the one we need to question.
 
 In his book "Antifragile: Things That Gain from Disorder", Taleb problematizes this apparent "order" when it comes to generating innovation and lists a series of events/fields that were misrepresented by the "losers that write the history", 
 generating the false illusion that theoretical discovery came before practice and the trial and error process. 
@@ -212,5 +217,5 @@ md"""### References
 """
 
 # ╔═╡ Cell order:
-# ╠═ee92411c-5c28-11eb-2f22-2f275ae35b18
+# ╟─ee92411c-5c28-11eb-2f22-2f275ae35b18
 # ╟─1c60486a-5c2d-11eb-385e-417e8c4b7ddb
