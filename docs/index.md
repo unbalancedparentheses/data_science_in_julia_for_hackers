@@ -1,7 +1,7 @@
 ## Data Science in Julia for Hackers
 A book written by Federico Carrone, Herman Obst Demaestri and Mariano Nicolini.
 
-Thanks to Martina Cantaro, Camilo Plata, Manuel Puebla, Lucas Raul Fernandez Piana, Osvaldo Martin, Iñaki Garay and Mariana Vinyolas.
+Thanks to Martina Cantaro, Camilo Plata, Manuel Puebla, Lucas Raúl Fernandez Piana, Osvaldo Martin, Iñaki Garay and Mariana Vinyolas.
 
 ## Prologue
 >*We have a habit in writing articles published in scientific journals to make the work as finished as possible, to cover up all the tracks, to not worry about the blind alleys or describe how you had the wrong idea first, and so on* - **Richard Feynman**
