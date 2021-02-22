@@ -8,13 +8,13 @@ using InteractiveUtils
 md"""
 ## The difference between Science and Technology
 
-Everyone would agree that science and technology have a lot in common but, what are the essential differences between them? and how do they interact between each other? 
-These are fundamental questions for us, and ones that most people don´t have a clear answer for. 
+Anyone would agree that science and technology have a lot in common but, what are the essential differences between them? and how do they interact between each other? 
+These are fundamental questions for us, and ones that most people don't have a clear answer for. 
 This leads to misconceptions about key aspects on, for example, how knowledge is created and, more generally, how the world operates. 
 
 One fundamental difference between the two is that while science tries to understand the physical world in which we live, technology aims to transform it. 
-So, technology has a strong practical goal and Science a more intellectual one. 
-A very frequent confusion that is nowadays very much encouraged by academia is to think that first, one has to have all the theoretical and formal knowledge about something, and only after this, one will be able to apply and transform reality. 
+So, technology has a strong practical goal and science a more intellectual one. 
+A very frequent misunderstanding that is nowadays very much encouraged by academia is to think that first, one needs to acquire all of the theoretical and formal knowledge about a subject matter before being able to apply it and transform reality. 
 But in reality this is not the case. The process occurs, in most cases, in the opposite way: One lives in reality, interacts with it, takes action, makes mistakes, tries again, and in that way slowly discovers how the world works. 
 And then, of course, it is useful to formalize our knowledge in order to be able to transmit that learning, lay solid foundations and to continue advancing in our understanding.
 
@@ -28,47 +28,49 @@ From taking a long, pointy stick to reach fruit high up in a tree, through trans
 With technology we transform our experience in the world.
 
 It is evident that the more we know about the reality in which we live, the more we will be able to modify it. 
-But from this idea comes a very important question: how is the "order" in which innovation takes place? 
+But from this idea comes a very important question: what is the order in which innovation takes place? 
 Is it necessary first to have an absolute understanding of the process we are trying to modify? 
 Or is technology created in a more chaotic process, through trial and error?
 
-So let´s think for a moment, does a child need to know the gear mechanisms of a bicycle, in order to be able to use it? does Messi need to know about fluid dynamics to make the ball take a curved trajectory? Did the Romans need to know the Navier-Stokes equation in order to build their huge aqueducts? 
-Maybe you are thinking that these are very specific cases, but the reality is that those example share a general and universal property: The knowledge is acquired based on experimentation, implementation and heuristics, pure trial and error. 
-And technological innovation follows the same mechanism, it was discovered by people that were  taking risks, taking action, with a pure trial-and-error experiential manner and, above all, without anyone truly understanding the theory behind.
+So let's think for a moment, does a child need to know the gear mechanisms of a bicycle in order to be able to use it? Does Lionel Messi need to know about fluid dynamics to make the ball take a curved trajectory? Did the Romans need to know the Navier-Stokes equation in order to build their huge aqueducts? 
+Maybe you are thinking that these are very specific cases, but the reality is that those example share a general and universal property: The knowledge is acquired based on experimentation, implementation and heuristics, pure trial and error and with much less theoretical knowledge than many believe. 
+And technological innovation tends to follows the same mechanism, it was discovered by people that were taking risks, taking action, with a pure trial-and-error experiential manner and, above all, without anyone truly understanding the theory behind.
 
-The current understanding of how knowledge is produced is quite out of step with what really happen, and may even work against us in our development. 
-Nowadays, there is a kind of *linear thinking* model in which is taken for granted that the process of knowledge production is very definite: First, academic and theoretical discoveries are made and only then, with all of that formalization achieve, one can start thinking of putting it to practical use in the real world. 
-This type of thinking is counterproductive because, being so widespread, it causes most people to be more concerned with constantly acquiring theoretical knowledge, rather than taking action and immersing themselves in practice.
+The current understanding of how knowledge is produced does not match how it actually happens, and may even work against our society's development.
+Nowadays, there is a kind of linear thinking model in which it is taken for granted that the process of knowledge production has a very specific way of occurring: First, academic and theoretical discoveries are made. And only then, with all of that formalization achieve, one can start thinking of putting it into practical use.
+This type of thinking is counterproductive because, being so widespread, it causes many people to be more concerned with constantly acquiring theoretical knowledge, rather than taking action and immersing themselves in practice.
 
-By looking at the history of technology and innovation we can see a repeating pattern: There is a constant differentiation between the people who *do* and the people who *watch* and then narrate. 
-"The History Written by the Losers" would [Nassim Nicholas Taleb](https://en.wikipedia.org/wiki/Nassim_Nicholas_Taleb) said, the people that are doing stuff don't have time for beauty writing. But the thing does not stop there. 
-It is not only that the non-practitioners who write about the findings of others, but as time goes by and because of this prevailing thought about the order of knowledge creation, society ends up being convinced that there was indeed an arduous intellectual and academic work first, and then came its implementation.
+By looking at the history of technology and innovation a repeating pattern can be seen: There is a constant differentiation between the people who do and the people who watch and then narrate. 
+"The History Written by the Losers" would [Nassim Nicholas Taleb](https://en.wikipedia.org/wiki/Nassim_Nicholas_Taleb) said, the people that are doing stuff don't have time for writing. 
+And it is not only that the non-practitioners who write about the findings of others, but as time goes by and because of this prevailing thought about the order of knowledge creation, society ends up being convinced that there was indeed an arduous intellectual and academic work first, and then came its implementation.
 That –apparently– common sense in which knowledge is built from a purely intellectual work that can be done in the armchair at home, and that only after acquiring this sacred theoretical knowledge it is possible to come up with technology or innovation, is the one we need to question.
 
 In another book, "Antifragile: Things That Gain from Disorder", Taleb problematizes this apparent "order" when it comes to generating innovation and lists a series of fields that were misrepresented by the "losers that write the history", 
 generating the false illusion that theoretical discovery came before practice and the trial and error process. 
 
 He show how the development of the jet engine had nothing to do with the discoveries of physicists researching, but to the cleverness and practical heuristics based on trial and error that engineers have developed, although in academic books it is stated the other way around. 
-Or in his main field, finances. Where he describes how senior traders, that have been deploying several heuristics to make their trades, are much more complex than the ones generated by the pricing formulas that academics invented based on the trial-and-error experiences of people who are immersed in the market. 
+Or in his main field, finances. Where he describes how senior traders, that have been deploying several heuristics to make their trades, build portfolios that are much more complex than the ones generated by the pricing formulas that academics invented based on the trial-and-error experiences of people who are immersed in the market. 
 And this happened because, in the process of trying to generalize this heuristics into formal equations, the academics are constantly introducing fragilities. 
 And the worst thing? After doing so, finance PhDs can't understand how traders can correctly assing prices to financial derivatives without knowing several theorems... 
 So the wheel is broken.
 
-We are makers. We are Hackers. And, as makers that we are, we learn by doing. 
+We are makers. We are hackers. And, as such, we learn by doing. 
 That is another sign of how different technology is from the sciences. 
 Scientists don't learn science by doing it, but by doing labs and problem sets. 
-Scientists start out doing work that's perfect, in the sense that they're just trying to reproduce work someone else has already done for them. 
+Scientists start out doing work that's perfect, in the sense that they're just trying to reproduce work someone else has already done for them.
+For example when physics students go to the lab and perform the well-known pendulum experiment. Using the length and the period at which it pendulates, they are able to find the gravity acceleration using a formula that describes its motion: $T = 2π\sqrt[2]{\frac{L}{g}}$. They are not creating some new form of experiment, but recreating one that is well know throughout the scientific community and that has been performed thousands of times in different parts of the world. 
 Eventually, they get to the point where they can do original work. Whereas makers, from the start, are doing original work; it's just very bad. 
 So makers start original, and get good, and scientists start good, and get original.
 
-So then, what role does Science play in all this and why is it useful for technology? As we already said, it is a tool that technology has to formalize all that chaotic based knowledge discovery. 
+So, what role does science play in all this and why is it useful for technology? As we already said, it is a tool that technology has to formalize all that chaotic based knowledge discovery. 
 Formalization is very useful to teach and communicate some base knowledge and to build a solid foundation in order to keep expanding it. 
-But it is also the way we found to draw out subjectivities regarding the understanding of our world.
+But it is also the way we find to eliminate subjectivities regarding the understanding of our world. 
+Thanks to science, it is no longer important what we think about reality, but rather the experimentation and the consequent testing of the hypotheses we made. 
 
 ## What is Science?
 
 As a first approach, science is a method that was conceived to help humans define the principles -invariant laws- that describe the world. 
-And note that we said "method", because this is all it really is: A methodology which ensures that we are as objective and data-driven as possible.
+And note that we said "method", because this is all it really is: a methodology which ensures that we are as objective and data-driven as possible.
 
 It is common to think that one does this by observation. 
 We observe all around us, and we look for theories to best explain the mass of facts. But this idea did not convince [Sir Karl Popper](https://en.wikipedia.org/wiki/Karl_Popper) (1902-1994), the scientific philosopher, who began to think more deeply about the key issues dividing scientific theories from non-scientific ones. 
@@ -158,15 +160,15 @@ This is what we call Data Science nowadays, and it aims to extract information a
 We are living in the so-called "Petabyte Age". 
 At this scale, information is not a matter of simple three- and four-dimensional taxonomy and order but of dimensionally agnostic statistics.
 And this is so important because is expanding our possibilities to do science. 
-In the complex, messy domains that we already mention, particularly game-theoretic domains involving unpredictable agents such as human beings, there are no general theories that can be expressed in simple equations like F = m a or E = m c2. 
-But now we have massive amounts of available data describing those complex systems, so employing non-parametric density approximation models such as nearest-neighbors or kernel methods rather than parametric models such as low-dimensional linear regression may be the solution to gain useful insights. Theory is expanding into new forms. A new form where, if it allow to solve problems, correlation is enough.
+In the complex, messy domains that we already mention, particularly game-theoretic domains involving unpredictable agents such as human beings, there are no general theories that can be expressed in simple equations like $F = ma$ or $E = m c^2$. 
+But now we have massive amounts of available data describing those complex systems, so employing non-parametric density approximation models such as nearest-neighbors or kernel methods rather than parametric models such as low-dimensional linear regression may be the solution to gain useful insights. Theory is expanding into new forms. A new form where, if it allows to solve problems, correlation is enough.
 
-So the exponential progress that we have been seeing in computer technology is a key aspect of Data Science. 
+The exponential progress that we have been seeing in computer technology is a key aspect of Data Science. 
 So much so that it is common to hear that Data Science is the conjunction between Statistics and Computer Science and, undoubtedly, there is a lot of truth in this. 
 Okay, but, what is the real difference between Data science and Statistics?
 
-Well, the key difference is the (almost) pure **practical** point of view. 
-In the Data Science field the ultimate goal is to solve a huge diversity of problems and also creating a replicable solution. 
+Well, the key difference is the (almost) pure practical point of view. 
+In the data science field the ultimate goal is to solve a huge diversity of problems and also creating a replicable solution. 
 In contrast to statistics where you can define the data that you are going to use, here the data itself became the object of study. 
 And, as the world it's complicated, the data we encounter too. 
 In data science we make use of data collection, management, and presentation, to focus more on predicting future outcomes and less on merely inferring relationships. 
@@ -180,7 +182,7 @@ Here we don´t care about academic degrees, only the ingenuity to engineer and s
 
 ## Our philosophy: The right balance between practice and theory
 
-So, having talked about all this, it is easier for us to explain the purpose of our book. 
+Having talked about all this, it is easier for us to explain the purpose of our book. 
 And it is to propose interesting and complex problems, to think about how to solve them, and only to introduce theory as the resolution of the problem requires it. 
 Our goal is to show the hardcore academic that it doesn't hurt to take a few blind steps to attack real problems and to show the purely practical person the benefits of having a deeper understanding of modelling, probability and statistics beyond just being able to use a few libraries.
 
@@ -217,5 +219,5 @@ md"""### References
 """
 
 # ╔═╡ Cell order:
-# ╠═ee92411c-5c28-11eb-2f22-2f275ae35b18
+# ╟─ee92411c-5c28-11eb-2f22-2f275ae35b18
 # ╟─1c60486a-5c2d-11eb-385e-417e8c4b7ddb
