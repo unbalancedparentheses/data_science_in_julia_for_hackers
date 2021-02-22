@@ -4,7 +4,7 @@
 
 >*Only that what’s open can be true. Full transparency is best for me and you* - **OpenBSD**
 
-One of the first things to note about this book is that it is not an academic textbook. The authors of this book are not academics but a multidisciplinary team of passionate practitioners from different backgrounds, namely Engineering, Computer Science, Physics and Economy, that converged their approaches in this book, and that day by day keep reading, learning and applying new approaches, technologies and ways of thinking. 
+One of the first things to note about this book is that it is not an academic textbook. The authors of this book are not academics but a multidisciplinary team of passionate amateur practitioners from different backgrounds, namely Engineering, Computer Science, Physics and Economy, that converged their approaches in this book, and that day by day keep reading, learning and applying new approaches, technologies and ways of thinking. 
 This book lies somewhere in between a methodological recipe and a theoretical intensive textbook. What we want to deliver is a mathematical and computational methodology to face concrete Data Science problems, that is, applying theory and science to real-world problems involving data. The relationship between theory and practice is complex. Considering them as a whole can take us much farther. These pages may offer the theorist a way to think about problematic situations in a more down to earth manner, and to the practitioner, stimulation to go beyond the mere application of programming libraries and tools.
 
 As the name of the book states, this is a book for Hackers. Ironically, the term can have opposite connotations, depending on who is pronouncing it and to whom it refers to. 
