@@ -88,7 +88,7 @@ end
 matches_df
 
 # ╔═╡ 7f0c72d4-1f9e-11eb-06f1-cb587d7e5436
-teams = unique(collect(matches_df[1]))
+teams = unique(collect(matches_df[:,1]))
 
 # ╔═╡ 868e5c8c-1ed3-11eb-291c-fb26d512c103
 md"""So, we have the data of the 380 matches that were played in the Premier League 2017/2018 and our challenge is to be able to analyze the characteristics of these teams. 
@@ -231,7 +231,7 @@ So let´s run it and see if all of this effort was worth it:
 """
 
 # ╔═╡ f3f4bfba-203f-11eb-142c-a187112744d2
-model = football_matches(matches_df[1], matches_df[2], matches_df[3], matches_df[4], teams)
+model = football_matches(matches_df[:,1], matches_df[:,2], matches_df[:,3], matches_df[:,4], teams)
 
 # ╔═╡ 2ce4435c-2040-11eb-1670-e39ad4cc690c
 posterior = sample(model, NUTS(),3000);
