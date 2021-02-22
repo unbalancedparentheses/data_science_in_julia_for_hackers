@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.18
+# v0.12.20
 
 using Markdown
 using InteractiveUtils
@@ -237,7 +237,7 @@ But let's stop for a second... The title of this chapter has the word "catastrop
 
 #### The virtual catastrophe
 
-Okay, so far we know that Garriott and his team created a gigantic and highly complex ecological system, where the animals interacted with each other reaching natural balances.
+So far we know that Garriott and his team created a gigantic and highly complex ecological system, where the animals interacted with each other reaching natural balances.
 
 Also, as expected when the players were included, they would hunt some animals to find resources or to defend themselves from dangerous carnivores. This was also taken into account, making the dynamic system capable of absorbing this "new" source of mortality, and reaching a balance again.
 

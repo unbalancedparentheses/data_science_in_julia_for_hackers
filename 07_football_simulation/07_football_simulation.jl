@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.18
+# v0.12.20
 
 using Markdown
 using InteractiveUtils
@@ -97,7 +97,7 @@ A priori it may seem that we are missing data, that with the data we have we can
 
 #### Creating our stories
 
-Okay, let's see what information we have from our data: 
+Let's see what information we have from our data: 
 On one hand we have specified the names of each team and which one is local. On the other hand, we have the number of goals scored.
 
 A possible approach to this data is to realize that the goals scored by each team can be modeled with a poisson distribution. 
@@ -137,7 +137,7 @@ md"""This leaves one attack and one defense parameter for each team, and a globa
 
 #### Letting the information flow 
 
-Okay, we are already getting much closer to the initial goal we set. As a last step, we must be able to make the information flow between the two independent poissons that we proposed to model the score of each of the two teams that are playing. We need to do that precisely because we have proposed that the poissons are independent, but we need that when making the inference of the parameters the model can access the information from both scores so it can catch the correlation between them. In other words, we have to find a way to interconnect our model.
+We are already getting much closer to the initial goal we set. As a last step, we must be able to make the information flow between the two independent poissons that we proposed to model the score of each of the two teams that are playing. We need to do that precisely because we have proposed that the poissons are independent, but we need that when making the inference of the parameters the model can access the information from both scores so it can catch the correlation between them. In other words, we have to find a way to interconnect our model.
 
 And that is exactly what hierarchical Bayesian models allow us to do. How? By letting us choose probability distributions for the parameters that represent the characteristics of both equipment. With the addition that these parameters will share the same prior distributions. Let's see how:
 
@@ -330,7 +330,7 @@ end
 mean(teams_att[11])
 
 # ╔═╡ 6924f372-2059-11eb-2b98-6f4b65b777f4
-md"Okay, when comparing the league champion against a mid-table team, we can clearly see the superiority in attack. For now, it seems that the inference comes in handy. 
+md"When comparing the league champion against a mid-table team, we can clearly see the superiority in attack. For now, it seems that the inference comes in handy. 
 
 Let's try now to have an overview of the attacking powers of each team. To do this, just take the average of each and plot it next to the standard deviation 
 "
