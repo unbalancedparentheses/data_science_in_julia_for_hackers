@@ -28,31 +28,31 @@ end
 begin
 	using CSV
 	using DataFrames
-	rain_data = CSV.read("/Users/lambda/Desktop/Julia/Libro/bayes_book/prob_intro/data/historico_precipitaciones.csv", DataFrame)
+	rain_data = CSV.read("data/historico_precipitaciones.csv", DataFrame)
 	colnames = ["Year", "Month", "mm", "Days"]
-	names!(rain_data, Symbol.(colnames))
+	rename!(rain_data, Symbol.(colnames))
 	
-	for i in 1:length(rain_data[:Month])
-		if rain_data[:Month][i] == "Enero" rain_data[:Month][i] = "January"
-		elseif rain_data[:Month][i] == "Febrero" rain_data[:Month][i] = "February"
-		elseif rain_data[:Month][i] == "Marzo" rain_data[:Month][i] = "March"
-		elseif rain_data[:Month][i] == "Abril" rain_data[:Month][i] = "April"
-		elseif rain_data[:Month][i] == "Mayo" rain_data[:Month][i] = "May"
-		elseif rain_data[:Month][i] == "Junio" rain_data[:Month][i] = "June" 
-		elseif rain_data[:Month][i] == "Julio" rain_data[:Month][i] = "July"  				elseif rain_data[:Month][i] == "Agosto" rain_data[:Month][i] = "August" 
-		elseif rain_data[:Month][i] == "Septiembre" rain_data[:Month][i] = "September" 
-		elseif rain_data[:Month][i] == "Octubre" rain_data[:Month][i] = "October"
-		elseif rain_data[:Month][i] == "Noviembre" rain_data[:Month][i] = "November"
-		elseif rain_data[:Month][i] == "Diciembre" rain_data[:Month][i] = "December"
+	for i in 1:length(rain_data[:,:Month])
+		if rain_data[i,:Month] == "Enero" rain_data[i,:Month] = "January"
+		elseif rain_data[i, :Month] == "Febrero" rain_data[i,:Month] = "February"
+		elseif rain_data[i, :Month] == "Marzo" rain_data[i,:Month] = "March"
+		elseif rain_data[i, :Month] == "Abril" rain_data[i,:Month] = "April"
+		elseif rain_data[i, :Month]== "Mayo" rain_data[i,:Month] = "May"
+		elseif rain_data[i, :Month] == "Junio" rain_data[i,:Month] = "June" 
+		elseif rain_data[i, :Month] == "Julio" rain_data[i,:Month] = "July"  				elseif rain_data[i, :Month] == "Agosto" rain_data[i,:Month] = "August" 
+		elseif rain_data[i, :Month] == "Septiembre" rain_data[i,:Month] = "September" 
+		elseif rain_data[i, :Month] == "Octubre" rain_data[i,:Month] = "October"
+		elseif rain_data[i, :Month] == "Noviembre" rain_data[i,:Month] = "November"
+		elseif rain_data[i, :Month] == "Diciembre" rain_data[i,:Month] = "December"
 		end
 	end
-end;
+end
 
 # ╔═╡ 84b10156-5116-11eb-1a6d-13f625300801
 md"
 # Introduction to Probability
 In this book, probability and statistics topics will be discussed extensively. Mainly the Bayesian interpretation of probability and Bayesian statistics. But we first need an intuitive conceptual basis to build on top of that. 
-We won't assume any prior knowledge, so let's start from the basics. What *is* probability? Probability si a measure of uncertainty of a particular event happening or the degree of confidence about some statement or hypothesis, that we express with a number ranging from $0$ to $1$. The number $0$ means we know with certainty that the event will not happen (or that the hypothesis is false), while the number $1$ means we know with certainty that the event will happen (or that the hypothesis is true). How exactly this number is linked to each event is something that is far from trivial and indeed is a discussion that has been going for years. Later on we will dive deeper into that rabbit hole, but for the moment lets not worry about how exacly this is defined or calculated: assume we have well established method for the time being. The important thing now will be the different rules that emerge from the nature of these events.
+We won't assume any prior knowledge, so let's start from the basics. What is probability? Probability si a measure of uncertainty of a particular event happening or the degree of confidence about some statement or hypothesis, that we express with a number ranging from $0$ to $1$. The number $0$ means we know with certainty that the event will not happen (or that the hypothesis is false), while the number $1$ means we know with certainty that the event will happen (or that the hypothesis is true). How exactly this number is linked to each event is something that is far from trivial and indeed is a discussion that has been going for years. Later on we will dive deeper into that rabbit hole, but for the moment lets not worry about how exacly this is defined or calculated: assume we have well established method for the time being. The important thing now will be the different rules that emerge from the nature of these events.
 
 We can start reasoning about probabilities of events with an example. Say we know that the probability of raining today in Buenos Aires is $0.8$. In a more mathematical form, we can say that
 
@@ -66,13 +66,13 @@ where V, in this case, stands for the event 'the volcano will erupt today'. Let'
 
 $P(\text{R and V}) = P(R)P(V).$
 
-Coloquially, this means that the probability of both of events 'it will rain in Buenos Aires today' and 'the volcano will erupt today' happening together is equal to the product of each of the probabilities of each one happening individually. Calculating the probability of various events happening at the same time is known as calculating the *joint probability* of the events. When the events are not independent from one another, unfortunately, things are not so simple. This leads us into another important concept, and really fundamental to the Bayesian interpretation of probability, which we will discuss later on. 
-When events are not independent, it is relevant to talk about *conditional probability*. Conditional probability of two events A and B is noted as
+Coloquially, this means that the probability of both of events 'it will rain in Buenos Aires today' and 'the volcano will erupt today' happening together is equal to the product of each of the probabilities of each one happening individually. Calculating the probability of various events happening at the same time is known as calculating the joint probability of the events. When the events are not independent from one another, unfortunately, things are not so simple. This leads us into another important concept, and really fundamental to the Bayesian interpretation of probability, which we will discuss later on. 
+When events are not independent, it is relevant to talk about conditional probability. Conditional probability of two events A and B is noted as
 
 $P(A|B)\text{ or }P(B|A)$
 
 In general, $P(A|B)$ and $P(B|A)$, which reads as 'the conditional probability of A given B' and 'the conditional probability of B given A',
-are not equal, that's why I have written the two possibilities. The way to interpret this, for example $P(A|B)$, is: 'the probability of the event A happening, *given* that we know the event B occured'. The analogous interpretation for $P(B|A)$ would be 'the probability of event B happening, given that we know the event A occured'. Altough it may sound as if this implies an order in the occurance of the events, that isn't necessary the case. What in reality has an actual order in this statement is our knowledge of what things happened. If we say, for example, $P(A|B)$, then what we know first is event B, and given this knowledge, we want to know the probability of event A.
+are not equal, that's why I have written the two possibilities. The way to interpret this, for example $P(A|B)$, is: 'the probability of the event A happening, given that we know the event B occured'. The analogous interpretation for $P(B|A)$ would be 'the probability of event B happening, given that we know the event A occured'. Altough it may sound as if this implies an order in the occurance of the events, that isn't necessary the case. What in reality has an actual order in this statement is our knowledge of what things happened. If we say, for example, $P(A|B)$, then what we know first is event B, and given this knowledge, we want to know the probability of event A.
 
 Let's see in a simple example how this conditional probability arises from two non-independent events. Assume we have, again, the event R 'it will rain today in Buenos Aires', and another event H, 'staying at home today'. Applying what we learned, we would first ask ourselves if these two events are independent or interdependent. If they were completely independent one from another, when trying to compute the conditional probabilities, for example $P(R|H)$, we will have
 
@@ -92,7 +92,7 @@ With this formula in mind, and another property of conjunction probability,
 
 $P(A\text{ and }B) = P(B\text{ and }A)$
 
-which just means what we naturally interpret of two events happening *at the same time*. If the two events do happen at the same time, it doesn't matter if we write $B\text{ and }A)$ or $A\text{ and }B$, setting an order in the expression is just a consequence of having to write it. Just as like doing $2 + 3$ or $3 + 2$, the 'and' logical operator is commutative. We now proceed to derive the famous **Bayes' theorem**! We write 
+which just means what we naturally interpret of two events happening at the same time. If the two events do happen at the same time, it doesn't matter if we write $B\text{ and }A)$ or $A\text{ and }B$, setting an order in the expression is just a consequence of having to write it. Just as like doing $2 + 3$ or $3 + 2$, the 'and' logical operator is commutative. We now proceed to derive the famous Bayes' theorem! We write 
 
 $P(B\text{ and }A) = P(B)P(A|B),$
 
@@ -106,8 +106,8 @@ $P(A|B) = \frac{P(A)P(B|A)}{P(B)}$
 
 This theorem does not only give us a practical way to calculate conditional probabilities, but also is the fundamental building block of the Bayesian interpretation of probability. But what does this even mean? Here we must take a step back and focus on the details of how exactly probability is defined for an event or hypothesis.
 
-There are two main approaches to probability, the *frequentist* approach 
-and the one we have already introduced, the *Bayesian* one. The 
+There are two main approaches to probability, the frequentist approach 
+and the one we have already introduced, the Bayesian one. The 
 frequentist interpretation views probability as the frequency of events 
 when a big number of repetitions are carried out. The typical example of 
 this is the flipping of a coin. To know the probability of obtaining 
@@ -124,26 +124,26 @@ You might be asking yourself: How does this Bayesian probability work? What is t
 
 $P(H|D) = \frac{P(D|H)P(H)}{P(D)}$
 
-Put into words, what this means is 'the probability of my hypothesis or *belief*, given the data observed, is equal to the probability that the data would be obtained if the belief were to be true, multiplied by the probability of the hypothesis being true before seeing the data, divided by the probability of obtaining that data'. 
+Put into words, what this means is 'the probability of my hypothesis or belief, given the data observed, is equal to the probability that the data would be obtained if the belief were to be true, multiplied by the probability of the hypothesis being true before seeing the data, divided by the probability of obtaining that data'. 
 This may sound a bit confusing at first, but if you look closely for some time and think about each term, you will find it makes perfect sense.
 
-* P(H): This is called **Prior probability**. As its name states, it represents the probability of a particular belief or hypothesis of being true *before* we have any new data to contrast this belief.
+* P(H): This is called Prior probability. As its name states, it represents the probability of a particular belief or hypothesis of being true before we have any new data to contrast this belief.
 
-* P(D|H): Frequently called **Likelihood**. If we remember the definition of conditional probability, what this means is the probability of the data being observed if our hypothesis were true. Intuitively, if we collect some data that contradicts our beliefs, this probability should be low. Makes sense, right?
+* P(D|H): Frequently called Likelihood. If we remember the definition of conditional probability, what this means is the probability of the data being observed if our hypothesis were true. Intuitively, if we collect some data that contradicts our beliefs, this probability should be low. Makes sense, right?
 
 * P(D): This term has no particular name. It is a measure of all possible ways we could have obtained the data be have. In general it is considered a normalizing constant.
 
-* P(H|D): The famous **Posterior probability**. Again, remembering the definition of conditional probability, it is clear this represents the probability of our hypothesis being true, given that we collected some data $D$. 
+* P(H|D): The famous Posterior probability. Again, remembering the definition of conditional probability, it is clear this represents the probability of our hypothesis being true, given that we collected some data $D$. 
 
 It is interesting to give a little more detail on the epistemological interpretation of this entire theorem. We start from some initial hypothesis and we assign some probability to it (the Prior). How exactly this has to be done is uncertain, in fact, there are ways to encode that you don't know nothing about the validity of the hypothesis. But the important part is that, if you already knew something about it, you can include that in your priors. For example, if you are trying to estimate some parameter that you know is positive definite, then you can use priors that are defined only for positive values. From that starting point, then, you have a methodical way to update your beliefs by collecting data, and with this data, give rise to the Posterior probability, which hopefully will be more accurate than our Prior probability. 
 What is nice about the Bayesian framework is that we always account for the uncertainty of the world. We start with some probability and end with another probability, but uncertainty is always present. This is what real life is about.
-To understand the full power of Bayesian probability we have to extend the notion of probability to *probability distributions*. We will discuss this topic in the following section.
+To understand the full power of Bayesian probability we have to extend the notion of probability to probability distributions. We will discuss this topic in the following section.
 "
 
 # ╔═╡ 2d9482ce-1252-11eb-0cc7-35ad9c288ef8
 md"
 # Probability distributions
-So far we have been talking of probabilities of particular events. **Probability distributions**, on the other hand, help us compute probabilities of various events. These are functions that connect each event in an 'event space' to some probability. What do we mean by 'event space'? For example, consider the distribution of heights of adult women, given approximately by a **Normal distribution**,
+So far we have been talking of probabilities of particular events. Probability distributions, on the other hand, help us compute probabilities of various events. These are functions that connect each event in an 'event space' to some probability. What do we mean by 'event space'? For example, consider the distribution of heights of adult women, given approximately by a Normal distribution,
 "
 
 # ╔═╡ 351923ee-5436-11eb-2bf6-8d024a64e83e
@@ -152,7 +152,7 @@ In this example, the event space is just all the possible heights a woman could 
 
 Any mathematical function satisfying certain requirements can be a probability distribution. There are lots of these type of functions, and each one has its own shape and distinctive properties.
 
-We will introduce some important probability distributions so that you can have a better understanding of what all this is about. Probably, the concept of the Normal distribution –also refered as the Gaussian– was already familiar to you, as it is one of the most popular and widely used distributions in some fields and in popular culture. The shape of this distribution is governed by two *parameters*, usually represented by the Greek letters $\mu$ and $\sigma$. Roughly speaking, $\mu$ is associated with the center of the distribution and $\sigma$ with how wide it is. 
+We will introduce some important probability distributions so that you can have a better understanding of what all this is about. Probably, the concept of the Normal distribution –also refered as the Gaussian– was already familiar to you, as it is one of the most popular and widely used distributions in some fields and in popular culture. The shape of this distribution is governed by two parameters, usually represented by the Greek letters $\mu$ and $\sigma$. Roughly speaking, $\mu$ is associated with the center of the distribution and $\sigma$ with how wide it is. 
 "
 
 # ╔═╡ 4a6f2768-543e-11eb-1846-f9e35aa961d2
@@ -173,7 +173,7 @@ plot(Normal(μ,σ), xlabel="x", ylabel="P(x)", lw=4, color="purple", label=false
 md" 
 Every probability distribution that is defined by a mathematical function, has a set of parameters that defines the distribution's shape and behaviour, and changing them will influence the distribution in different ways, depending on the one we are working with. 
 
-Another widely used distribution is the *exponential*. Below you can see how it looks like. It is governed by only one parameter, $\alpha$, which basically represents the rate of decrease in probability as $x$ gets bigger. 
+Another widely used distribution is the exponential. Below you can see how it looks like. It is governed by only one parameter, $\alpha$, which basically represents the rate of decrease in probability as $x$ gets bigger. 
 "
 
 # ╔═╡ 90c1b258-543e-11eb-3f8e-3f167fab2db0
@@ -195,7 +195,7 @@ As the book progresses, we will be using a lot of different distributions. They 
 # ╔═╡ fbaac2e0-1252-11eb-1d8a-e7ba0193ea9b
 md"
 ## Histograms
-To illustrate some of these concepts we have been learning, we are going to use [monthly rainfall data](https://data.buenosaires.gob.ar/dataset/registro-precipitaciones-ciudad) from the city of Buenos Aires, Argentina, since 1991. The **histogram** of the data is shown below. You may be wondering what a histogram is. An histogram is a plot that tells us the counts or relative frequencies of a given set of events."
+To illustrate some of these concepts we have been learning, we are going to use [monthly rainfall data](https://data.buenosaires.gob.ar/dataset/registro-precipitaciones-ciudad) from the city of Buenos Aires, Argentina, since 1991. The histogram of the data is shown below. You may be wondering what a histogram is. An histogram is a plot that tells us the counts or relative frequencies of a given set of events."
 
 # ╔═╡ 748f8114-1483-11eb-15c0-879e4e1dec8c
 md"We can see the first few rows of our data, with columns corresponding to the year, the month, the rain precipitation (in millimeters) and the number of days it rained in that month."
@@ -210,7 +210,7 @@ Now plotting the histogram for the column of rainfall in mm we have the figure s
 
 # ╔═╡ 14317216-1251-11eb-1912-ef5685acd473
 begin
-	histogram(rain_data["mm"], bins=20, legend=false, size=(450, 300))
+	histogram(rain_data[:,"mm"], bins=20, legend=false, size=(450, 300))
 	title!("Monthly rainfall in Buenos Aires")
 	xlabel!("Rainfall (mm)")
 	ylabel!("Frequency")
@@ -218,13 +218,13 @@ end
 
 # ╔═╡ c770092e-12e6-11eb-0711-0196e27d573e
 md"
-Histograms can be interpreted as probability distributions. The reason behind this is because we have registered some total number $N$ of events that happened in some time interval (in this case, one month) and we grouped the number of times each one ocurred. In this line of reasoning, events that happened most are more likely to happen, and hence we can say they have a higher probability associated to them. Something important to consider about histograms when dealing with a continuous variable such as, in our case, milimeters of monthly rainfall, are *bins* and bin size. When working with such continuous variables, the domain in which our data expresses itself (in this case, from 0 mm to approximately 450 mm) is divided in discrete intervals. In this way, given a bin size of 20mm, when constructing our histogram we have to ask 'how many rainy days have given us a precipitation measurement between 100mm and 120mm?', and then we register that number in that bin. This process is repeated for all bins to obtain our histogram.
-We have earlier said that probability has to be a number between 0 and 1, so how can it be that these relative frequencies are linked to probabilities? What we should do now is to *normalize* our histogram to have the frequency values constrained. Normalizing is just the action of adjusting the scale of variables, without changing the relative values of our data. Below we show the normalized histogram. You will notice that the frequency values are very low now. The reason for this is that when normalizing, we impose to our histogram data that the sum of the counts of all our events (or, thinking graphically, the total area of the histogram) must be 1. But why? As probability tell us how plausible is an event, if we take into account all the events, we expect that the probability of all those events to be the maximum value, and that value is set up to 1 by convention. In that way we can compare plausibilities across different events, therefore when we say that some event has a probability of 0.6 to occur, for any event it means the same, no matter if we are talking about the probability of raining or the probability of being hit by a car.
+Histograms can be interpreted as probability distributions. The reason behind this is because we have registered some total number $N$ of events that happened in some time interval (in this case, one month) and we grouped the number of times each one ocurred. In this line of reasoning, events that happened most are more likely to happen, and hence we can say they have a higher probability associated to them. Something important to consider about histograms when dealing with a continuous variable such as, in our case, milimeters of monthly rainfall, are bins and bin size. When working with such continuous variables, the domain in which our data expresses itself (in this case, from 0 mm to approximately 450 mm) is divided in discrete intervals. In this way, given a bin size of 20mm, when constructing our histogram we have to ask 'how many rainy days have given us a precipitation measurement between 100mm and 120mm?', and then we register that number in that bin. This process is repeated for all bins to obtain our histogram.
+We have earlier said that probability has to be a number between 0 and 1, so how can it be that these relative frequencies are linked to probabilities? What we should do now is to normalize our histogram to have the frequency values constrained. Normalizing is just the action of adjusting the scale of variables, without changing the relative values of our data. Below we show the normalized histogram. You will notice that the frequency values are very low now. The reason for this is that when normalizing, we impose to our histogram data that the sum of the counts of all our events (or, thinking graphically, the total area of the histogram) must be 1. But why? As probability tell us how plausible is an event, if we take into account all the events, we expect that the probability of all those events to be the maximum value, and that value is set up to 1 by convention. In that way we can compare plausibilities across different events, therefore when we say that some event has a probability of 0.6 to occur, for any event it means the same, no matter if we are talking about the probability of raining or the probability of being hit by a car.
 So, we normalize the histogram obtaining:"
 
 # ╔═╡ 178f5f72-12e7-11eb-2282-c19f2b58ae58
 begin
-	histogram(rain_data["mm"], bins=20, legend=false, normalize=true, size=(450, 300))
+	histogram(rain_data[:,"mm"], bins=20, legend=false, normalize=true, size=(450, 300))
 	title!("Monthly rainfall in Buenos Aires")
 	xlabel!("Rainfall [mm]")
 	ylabel!("Frequency")
@@ -242,25 +242,25 @@ I'm making some assumptions that are often implied working with histograms and m
 
 # ╔═╡ cc3a3236-1949-11eb-3021-3d5a81bfa6a6
 md"
-So far we have been talking about histograms as probability distributions. Distributions such as these, that are built from the outcome of an experiment are called *empirical* distributions. This means that they arise from direct measurements, not from an underlying analytical function. When dealing with most real-world examples, histograms will represent distributions we will obtain for our updated beliefs, so they are a really important concept for what will come in the book.
+So far we have been talking about histograms as probability distributions. Distributions such as these, that are built from the outcome of an experiment are called empirical distributions. This means that they arise from direct measurements, not from an underlying analytical function. When dealing with most real-world examples, histograms will represent distributions we will obtain for our updated beliefs, so they are a really important concept for what will come in the book.
 "
 
 # ╔═╡ d1aade6e-550d-11eb-1eea-7751ef152b7a
 md"
-All the concepts we developed about probability distributions, are directly applied to our Bayesian formalism. The prior, likelihood and posterior probabilities are really *probability distributions*, and that is really how we treat Bayes' theorem mathematically and computationally.
+All the concepts we developed about probability distributions, are directly applied to our Bayesian formalism. The prior, likelihood and posterior probabilities are really probability distributions, and that is really how we treat Bayes' theorem mathematically and computationally.
 "
 
 # ╔═╡ 3b8ea6fc-54f1-11eb-0a00-3f465d1f2d22
 md"
 ### Example: Bayesian Bandits
-Now we are going to tackle a famous problem that may help us to understand a little bit how to incorporate what we learned about Bayesian probability and some features of the Julia language. Here we present the **bandit** or **multi-armed bandit** problem. Altough it is conceived thinking about a strategy for a casino situation, there exist a lot of different settings where the same strategy could be applied.
+Now we are going to tackle a famous problem that may help us to understand a little bit how to incorporate what we learned about Bayesian probability and some features of the Julia language. Here we present the bandit or multi-armed bandit problem. Altough it is conceived thinking about a strategy for a casino situation, there exist a lot of different settings where the same strategy could be applied.
 
-The situation, in it's simpler form, goes like this: you are in a casino, with a limited amount of casino chips. In front of you there are some slot machines (say, three of them for simplicity). Each machine has some probability *$p_m$* of giving you \$1 associated with it, but every machine has a different probability. There are two main problems. First, we don't know these probabilities beforehand, so we will have to develop some explorative process in order to gather information about the machines. The second problem is that our chips –and thus our possible trials– are limited, and we want to take the most profit we can out of the machines. How do we do this? Finding the machine with the highest success probability and keep playing on it. This tradeoff is commonly known as *explore vs. exploit*. If we had one million chips we could simply play a lot of times in each machine and thus make a good estimate about their probabilities, but our reward may not be very good, because we would have played so many chips in machines that were not our best option. Conversely, we may have found a machine which we know that has a good success probability, but if we don't explore the other machines also, we won't know if it is the best of our options.
+The situation, in it's simpler form, goes like this: you are in a casino, with a limited amount of casino chips. In front of you there are some slot machines (say, three of them for simplicity). Each machine has some probability $p_m$ of giving you \$1 associated with it, but every machine has a different probability. There are two main problems. First, we don't know these probabilities beforehand, so we will have to develop some explorative process in order to gather information about the machines. The second problem is that our chips –and thus our possible trials– are limited, and we want to take the most profit we can out of the machines. How do we do this? Finding the machine with the highest success probability and keep playing on it. This tradeoff is commonly known as explore vs. exploit. If we had one million chips we could simply play a lot of times in each machine and thus make a good estimate about their probabilities, but our reward may not be very good, because we would have played so many chips in machines that were not our best option. Conversely, we may have found a machine which we know that has a good success probability, but if we don't explore the other machines also, we won't know if it is the best of our options.
 "
 
 # ╔═╡ 86a1ea8c-54f1-11eb-194c-c93861393ab6
 md"
-This is a kind of problem that is very suited for the Bayesian way of thinking. We start with some information about the slot machines (in the worst case, we know nothing), and we will update our beliefs with the results of our trials. A methodology exists for these explore vs. exploit dilemmas, within many others, which is called **Thompson sampling**. The algorithm underlying the Thomposon sampling can be thought in these succesive steps:
+This is a kind of problem that is very suited for the Bayesian way of thinking. We start with some information about the slot machines (in the worst case, we know nothing), and we will update our beliefs with the results of our trials. A methodology exists for these explore vs. exploit dilemmas, within many others, which is called Thompson sampling. The algorithm underlying the Thomposon sampling can be thought in these succesive steps:
 
 1) First, assign some probability distribution for your knowledge of the success probability of each slot machine.
 2) Sample randomly from each of these distributions and check which is the maximum sampled probability. 
@@ -268,7 +268,7 @@ This is a kind of problem that is very suited for the Bayesian way of thinking. 
 4) Update the probability with the result of the experiment.
 5) Repeat from step 2.
 
-Here we will take some advantage about the math that can be used to model our situation. To model the generation of our data, we can use a distribution we have not  yet introduced, the *Binomial* distribution. This distribution arises when you repeat some experiment that has two possible outcomes, a number N of times. In each individual experiment, the outcomes have some probability $p$ and $1-p$ of happening (because there are only two). Let's see what this Binomial distribution looks like,
+Here we will take some advantage about the math that can be used to model our situation. To model the generation of our data, we can use a distribution we have not  yet introduced, the Binomial distribution. This distribution arises when you repeat some experiment that has two possible outcomes, a number N of times. In each individual experiment, the outcomes have some probability $p$ and $1-p$ of happening (because there are only two). Let's see what this Binomial distribution looks like,
 "
 
 # ╔═╡ 105bebae-550d-11eb-197c-7d87fd8b1ffa
@@ -284,8 +284,8 @@ scatter(Binomial(N, p), xlim=300, label=false, title="Binomial distribution", si
 md"
 We choose this distribution as it models properly our situation, with $p$ being the probability we estimate of succeeding  with a particular machine, and $N$ the number of trials we make on the machine. The two possible outcomes are success (we win \$1) or fail (we don't win anything)
 
-So we now use a prior tu set our knowledge before making a trial on the slot machine. The thing is, there exists a mathematical hack called *conjugate priors*. When a likelihood distribution is multiplied by its conjugate prior, the posterior distribution is the same as the prior with its corresponding parameters updated. This trick frees us from the need of using more computation-expensive techniques, that we will be using later in the book.
-In the particular case of the Binomial distribution, the conjugate prior is the *Beta distribution*. This is a very flexible distribution, as we can obtain a lot of other distributions as particular cases of the Beta, with specific combinations of its parameters. Below you can see some of the fancy shapes this Beta distribution can obtain
+So we now use a prior tu set our knowledge before making a trial on the slot machine. The thing is, there exists a mathematical hack called conjugate priors. When a likelihood distribution is multiplied by its conjugate prior, the posterior distribution is the same as the prior with its corresponding parameters updated. This trick frees us from the need of using more computation-expensive techniques, that we will be using later in the book.
+In the particular case of the Binomial distribution, the conjugate prior is the Beta distribution. This is a very flexible distribution, as we can obtain a lot of other distributions as particular cases of the Beta, with specific combinations of its parameters. Below you can see some of the fancy shapes this Beta distribution can obtain
 "
 
 # ╔═╡ 926a7e38-54f1-11eb-327d-9999beac2716
@@ -299,8 +299,8 @@ end
 
 # ╔═╡ e4192172-550e-11eb-10ac-136508e689a3
 md"
-To start formalizing our problem a bit, we are going to start building our bandits. This is just a way to name our slot machines and some information associated with them. How will we do this? With the help of Julia's *struct*. These are objects we can create in Julia and that can be used to store information that has meaning as an entire block. In our case, some relevant information would be to store the probability of each slot machine, and the number of trials. It is more comfortable to carry all this information in one big block, as we later can start creating as many bandits we want, and it would be impossible to keep track of all the parameters.
-Above we define a struct of a *beta bandit*, which will store the real probability of success of the bandit, the parameters $a$ and $b$ of the Beta distribution, and the total number of tries $N$ of the bandit. This would correspond to the first step in the Thompson sampling algorithm.
+To start formalizing our problem a bit, we are going to start building our bandits. This is just a way to name our slot machines and some information associated with them. How will we do this? With the help of Julia's struct. These are objects we can create in Julia and that can be used to store information that has meaning as an entire block. In our case, some relevant information would be to store the probability of each slot machine, and the number of trials. It is more comfortable to carry all this information in one big block, as we later can start creating as many bandits we want, and it would be impossible to keep track of all the parameters.
+Above we define a struct of a beta bandit, which will store the real probability of success of the bandit, the parameters $a$ and $b$ of the Beta distribution, and the total number of tries $N$ of the bandit. This would correspond to the first step in the Thompson sampling algorithm.
 "
 
 # ╔═╡ 99d86504-54f1-11eb-1091-63f3c1227714
@@ -352,7 +352,7 @@ end
 
 # ╔═╡ 1d2fded6-551d-11eb-3680-9d0faf78dc6f
 md"
-With all these functions defined, we are ready to make an experiment and actually see how our strategy works. We will define beforehand a number of trials and the true probabilities of the slot machines. When the experiment is over, we will see how well were the probabilities of each machine were estimated, and the reward we accumulated. If you come up with some other novel strategy, you can test it doing a similar experiment and see how well the probabilities were estimated and the final reward you got. First, we define the total number of trials we are going to make, and then the *true* probabilities of each slot machine. Ath the end, we'll see how well these probabilities were estimated, or, in other words, how well the Thompson sampling helped in the process of gathering information abiyt the bandits.
+With all these functions defined, we are ready to make an experiment and actually see how our strategy works. We will define beforehand a number of trials and the true probabilities of the slot machines. When the experiment is over, we will see how well were the probabilities of each machine were estimated, and the reward we accumulated. If you come up with some other novel strategy, you can test it doing a similar experiment and see how well the probabilities were estimated and the final reward you got. First, we define the total number of trials we are going to make, and then the true probabilities of each slot machine. Ath the end, we'll see how well these probabilities were estimated, or, in other words, how well the Thompson sampling helped in the process of gathering information abiyt the bandits.
 "
 
 # ╔═╡ b5174e84-54f1-11eb-1fbb-afb237e1fdf2
@@ -432,7 +432,7 @@ md"
 # ╟─be8cb9ee-1483-11eb-1637-f3770319f3ed
 # ╠═14317216-1251-11eb-1912-ef5685acd473
 # ╟─c770092e-12e6-11eb-0711-0196e27d573e
-# ╟─178f5f72-12e7-11eb-2282-c19f2b58ae58
+# ╠═178f5f72-12e7-11eb-2282-c19f2b58ae58
 # ╟─6a45327a-1254-11eb-2334-07eb5a961b02
 # ╟─cc3a3236-1949-11eb-3021-3d5a81bfa6a6
 # ╟─d1aade6e-550d-11eb-1eea-7751ef152b7a
@@ -458,4 +458,4 @@ md"
 # ╠═c822a558-54f1-11eb-162b-398bd542ded1
 # ╠═e3b582b0-54f1-11eb-3ffa-67a92240e659
 # ╟─0d541d38-59a5-11eb-3404-f13d3e5150d4
-# ╠═32df0e98-35a2-11eb-1121-5f731785abbb
+# ╟─32df0e98-35a2-11eb-1121-5f731785abbb
