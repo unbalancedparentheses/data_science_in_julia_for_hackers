@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.18
+# v0.12.20
 
 using Markdown
 using InteractiveUtils
@@ -474,7 +474,7 @@ porcentual_std_diff = ( unfav_4000 - unfav) / unfav *100
 # ╔═╡ 32997ca8-1869-11eb-2bc6-11da0327e0b8
 md"""So, for every dollar we "lost" in average profitability, we gained more than double in the reduction of uncertainty.
 
-Regardless of each person's risk aversion, the important thing about the Bayesian framework is that it allows us to include uncertainty in our models and use it to our advantage to make more informed and intelligent decisions. 
+Regardless of each person decision, the important thing about the Bayesian framework is that it allows us to include uncertainty in our models and use it to our advantage to make more informed and intelligent decisions. 
 
 Instead of wanting to forget and get rid of uncertainty, Bayesianism allows us to accept that this is an inherent feature of reality and to take advantage of it. Being able to narrow down how sure we are about the inferences we make gives us an invaluable advantage when making decisions.
 """
