@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.18
+# v0.12.20
 
 using Markdown
 using InteractiveUtils
@@ -30,7 +30,7 @@ You may or may not like bees. Either if you are afraid of them stinging you, or 
 # ╔═╡ 70f367f4-3be4-11eb-0a64-b9258c771d20
 begin
 	scale = 0.8
-	im = load("pollination.jpg")
+	im = load("images/pollination.jpg")
 	im = imresize(im, Int(floor(scale*size(im)[1])), Int(floor(scale*size(im)[2])))
 end
 
@@ -46,13 +46,10 @@ md"
 ### Machine Learning Overview
 Let's dive in to understand a little about this Neural Network thing first. It may sound a little bit intimidating at first, but the clue is to take it easy.
 To put things in context, Neural Networks are part of the Machine Learning set of models, which at the same time are included in what is called *Artificial Intelligence*. This name references programs that are made to solve problems or tasks that are easy for people to perform but hard to describe in a formal way, something that is an obligation for any computational task. The approach to this type of problems is to let computers learn from experience, so the need for a formal specification of the problem is avoided. This is where the name *Machine Learning* takes it's roots. The model parameters –which can scale up to a size of millions– are learned –fitted– from the data insted of hardcoding them. This is why the data gathering, munging and cleaning procceses are so important. Not only from an efficiency and accuracy perspective, but most importantly from an ethical one. It is essential for everybody who is implementing or training a model to consider how it will be used.
-
-** WRITE MORE ABOUT DATA ETHICS?**
-
 "
 
 # ╔═╡ 9f3f3138-3bf8-11eb-2b89-1b3dbae5cd1c
-load("venn.png") |> (x -> imresize(x, Int(floor(0.7*size(x)[1])), Int(floor(0.7*size(x)[2]))))
+load("images/venn.png") |> (x -> imresize(x, Int(floor(0.7*size(x)[1])), Int(floor(0.7*size(x)[2]))))
 
 # ╔═╡ 838388ee-3e18-11eb-1a8f-539964858853
 md"
@@ -63,7 +60,7 @@ In the big set of models classified as Artificial Intelligence, one of the most 
 
 # ╔═╡ b07a686a-3e45-11eb-133f-f13ba20182b8
 begin
-	plotlyjs()
+	gr()
 	plot(-10:0.5:10, sigmoid.(-10:0.5:10), label=false, title="sigmoid function", lw=2, size=(400, 300), color="Green")
 end
 
@@ -79,7 +76,7 @@ A typical representation of how a neural network operates looks something like t
 "
 
 # ╔═╡ 72ae2826-3e51-11eb-3c71-87b8019085a8
-load("conv_net.png")
+load("images/conv_net.png")
 
 # ╔═╡ 30b40e16-3e53-11eb-1fae-bddf5a8ac229
 md"
@@ -94,11 +91,6 @@ The way to handle this in Machine Learning is, in the first place, by defining a
 The next step will be to adjust the knobs so our model will perform better. This is where the loss function will help. If you have some basic understanding of Calculus, you will know about derivatives of a function. When we take the derivative of some function and we evaluate it in a point of its domain, that value represents represents the rate of change of our original function in that point. In multidimensional Calculus, that is, Calculus applied on functions with a lot of variables –as it is our case–, we can calculate the Gradient of that function, which gives us the direction with the highest rate of change. That is, if we move in variable space along that direction giving a tiny step, the value of the function will grow the most. By the same token, if we move in the opposite side to the gradient, the function will *decrease* the most. Returning to the particular case of the loss function, if we move in the direction opposite to the gradient, the loss will decrease the most and, conversely, the model will perform slightly better. What we refer as moving in the opposite direction to the gradient here is exactly the recipe of how to tweak our model parameters (knobs) to increase the performance. This process takes the name of *Gradient Descent*, and it is the fundamental tool for training our machine. Applying it in an iterative manner, hopefully will lead the model to a minimim of the loss function and the its performance will be close to perfect.
 
 As for almost every recipe, there are some limitations and considerations about it. This is not a golden rule. Due to the complexity of the models and the high-dimensionality that characterize some neural network models, such global minima may be difficult to achieve or very computationally expensive, among other complications. To tackle some of these, various optimizers had been implemented to update the parameters of the model in the most efficient way.
-"
-
-# ╔═╡ 937b0eaa-3f0c-11eb-29fd-0dd327b6da9a
-md"
-EVERYTHING BELOW HERE IS WORK IN PROGRESS
 "
 
 # ╔═╡ 7886cd64-3f11-11eb-0cbb-4512dea543ca
@@ -143,27 +135,27 @@ n_resolution = 90
 
 # ╔═╡ 791ceae0-3b30-11eb-0f85-6705042d10d6
 begin
-	process_images("bee1", n_resolution, n_resolution)
-	process_images("bee2", n_resolution, n_resolution)
-	process_images("wasp1", n_resolution, n_resolution)
-	process_images("wasp2", n_resolution, n_resolution);
+	process_images("data/bee1", n_resolution, n_resolution)
+	process_images("data/bee2", n_resolution, n_resolution)
+	process_images("data/wasp1", n_resolution, n_resolution)
+	process_images("data/wasp2", n_resolution, n_resolution);
 end
 
 # ╔═╡ 80a6b480-3b30-11eb-3aef-a9a455d4199d
 begin
-	bee1_dir = readdir("preprocessed_bee1")
-	bee2_dir = readdir("preprocessed_bee2")
-	wasp1_dir = readdir("preprocessed_wasp1")
-	wasp2_dir = readdir("preprocessed_wasp2");
+	bee1_dir = readdir("preprocessed_data/bee1")
+	bee2_dir = readdir("preprocessed_data/bee2")
+	wasp1_dir = readdir("preprocessed_data/wasp1")
+	wasp2_dir = readdir("preprocessed_data/wasp2");
 end;
 
 # ╔═╡ ab9b995c-3b31-11eb-2e65-11c6b04fe286
 begin
 	# we load the pre-proccessed images
-	bees1 = load.("preprocessed_bee1/" .* bee1_dir)
-	bees2 = load.("preprocessed_bee2/" .* bee2_dir)
-	wasp1 = load.("preprocessed_wasp1/" .* wasp1_dir)
-	wasp2 = load.("preprocessed_wasp2/" .* wasp2_dir);
+	bees1 = load.("preprocessed_data/bee1/" .* bee1_dir)
+	bees2 = load.("preprocessed_data/bee2/" .* bee2_dir)
+	wasp1 = load.("preprocessed_data/wasp1/" .* wasp1_dir)
+	wasp2 = load.("preprocessed_data/wasp2/" .* wasp2_dir);
 end;
 
 # ╔═╡ bb309a2a-3b31-11eb-1c84-0b190a3cd272
@@ -296,7 +288,7 @@ begin
 	    push!(acc, accuracy(test_set..., model))
 	    @printf("train loss = %.2f, test loss = %.2f, accuracy = %.2f\n", train_loss[end], test_loss[end], acc[end])
 	end
-e
+end
 
 # ╔═╡ 8d0b2b7c-4943-11eb-1f61-913583280e3b
 md"
@@ -334,7 +326,7 @@ opt_2 = ADAM(0.0005)
 
 # ╔═╡ 523e8666-3b32-11eb-1e2f-f53ad63acd1e
 begin
-	plot(train_loss, xlabel="Iterations", title="Model(2) Training", label="Train loss", lw=2, alpha=0.9)
+	plot(train_loss, xlabel="Iterations", title="Model Training", label="Train loss", lw=2, alpha=0.9)
 	plot!(test_loss, label="Test loss", lw=2, alpha=0.9)
 	plot!(acc, label="Accuracy", lw=2, alpha=0.9)
 	vline!([82], lw=2, label=false)
@@ -342,7 +334,7 @@ end
 
 # ╔═╡ e01a6f0e-4a1e-11eb-2ea6-850ba1652f08
 md"
-We see that the accuracy got a little better now, reaching a maximum of $82%$. For now this will be enough, but there are many things we can do to improve the performance of the model. Hopefully this chapter had given some starting point for you to dig deeper into these topic if it is of your interest!
+We see that the accuracy got a little better now, reaching a maximum of $85\%$. For now this will be enough, but there are many things we can do to improve the performance of the model. Hopefully this chapter had given some starting point for you to dig deeper into these topic if it is of your interest!
 "
 
 # ╔═╡ aff7a9f4-3bb4-11eb-154c-cd119af4d850
@@ -368,7 +360,6 @@ md"
 # ╟─72ae2826-3e51-11eb-3c71-87b8019085a8
 # ╟─30b40e16-3e53-11eb-1fae-bddf5a8ac229
 # ╟─a8a5a9c2-3ee2-11eb-3370-b7b8d0d8453a
-# ╟─937b0eaa-3f0c-11eb-29fd-0dd327b6da9a
 # ╟─7886cd64-3f11-11eb-0cbb-4512dea543ca
 # ╠═2289f88c-3b2e-11eb-3f1b-734e94e4694d
 # ╟─044e370e-3f14-11eb-38ef-e19b21b1a1f0
