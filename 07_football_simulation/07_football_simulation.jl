@@ -221,11 +221,11 @@ end
 # ╔═╡ f3f0b6f8-2033-11eb-0f9e-d951d791001d
 md"""As you can see, the turing code is very clear and direct. In the first block we define our hyperpriors for the distributions of the characteristics of the equipment.
 
-In the second one, we define the priors distributions that will encapsulate the information about the attack and defense powers of the teams. With the *filldist* function we are telling Turing that we need as many of these parameters as there are teams in the league *length(teams)*
+In the second one, we define the priors distributions that will encapsulate the information about the attack and defense powers of the teams. With the filldist function we are telling Turing that we need as many of these parameters as there are teams in the league length(teams)
 
 Then, we calculate the average of the defense and attack parameters that we are going to use to centralize those variables, and we use the LogPoisson distribution to allow the theta to take some negative value in the inference process and give more sensitivity to the parameters that make it up.
 
-As we said before, we will model the thetas for each game played in the league, that's why the *for* of the last block goes from 1 to *length(home_teams)*, which is the list that contains who was the local team of each game played.
+As we said before, we will model the thetas for each game played in the league, that's why the for of the last block goes from 1 to length(home_teams), which is the list that contains who was the local team of each game played.
 
 So let´s run it and see if all of this effort was worth it:
 """
