@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.17
+# v0.12.20
 
 using Markdown
 using InteractiveUtils
@@ -36,7 +36,7 @@ end
 
 # ╔═╡ 3d12b0c6-34db-11eb-3d51-a366f7b8508b
 md"
-*As we just said*: Notice that the variables they are asking us to work with are values that are evolving over time, so they take the name of **Time Series**. This kind of variables are the ones we are going to deal with in this chapter and have the particularity that, as they evolve in time, the values they take are related to the previous ones. So can you think of something to solve the problem of predicting the next value the series is going to have? 
+As we just said: Notice that the variables they are asking us to work with are values that are evolving over time, so they take the name of Time Series. This kind of variables are the ones we are going to deal with in this chapter and have the particularity that, as they evolve in time, the values they take are related to the previous ones. So can you think of something to solve the problem of predicting the next value the series is going to have? 
 
 Many ideas must be coming to your mind.  Surely some of them thought of taking as a forecast value the average of all the previous ones and some others have thought of taking directly the last value of the series, justifying that the very old values do not affect the next ones. That is to say:"
 
@@ -69,7 +69,7 @@ Okay then, a better solution would be one that allows us to take into account al
 
 ## Exponential Smoothing
 
-A very interesting idea to implement our idea of finding a method that allows us to take into account the most distant values, but assigning them a lesser weight, is that of the **Exponential Smoothing**.
+A very interesting idea to implement our idea of finding a method that allows us to take into account the most distant values, but assigning them a lesser weight, is that of the Exponential Smoothing.
 
 The name may sound very complicated or crazy to you. The reality is that it is very simple. Basically, what we propose is to assign weights that are decreasing exponentially as the observations are getting older, getting to give a preponderant value to the closest values, but without resigning the valuable information that the previous values offer us:
 
@@ -125,7 +125,7 @@ For this, we have to introduce two new ways of writing the same method.
 
 ### Weighted average and Component form
 
-Another way to write the same method and that will help us later with the choice of the alpha that best describes our data series is the **Weighted average form**. It simply proposes that the next value is a weighted average between the last value in the time series and the last prediction made: 
+Another way to write the same method and that will help us later with the choice of the alpha that best describes our data series is the Weighted average form. It simply proposes that the next value is a weighted average between the last value in the time series and the last prediction made: 
 
 $y_{t+1|t}^- = αy_t + (1-α)*y_{t|t-1}^-$
 
@@ -163,13 +163,13 @@ And as $(1-\alpha)^T$ decays exponentially, for not very high values of T this t
 
 Well, this is very good! We already have a way to go through the whole time series and make the predictions. This will be very useful since we can make these predictions for different alpha values and observe which one best approximates the whole series. Once this optimal alpha is obtained in this fitting process, we will be able to make the prediction for the future period.
 
-Finally, there is one last way to define our models called **Component form**
+Finally, there is one last way to define our models called Component form
 
 $y_{t+h|t}^- = l_t$
 
 $l_t = α*y_t + (1 - α)*l_{t-1}$
 
-In the case of the *Simple Exponential Smoothing* it is identical to the **Weighted average form**, but it will make our work easier later when we want to make the analysis more complex.
+In the case of the Simple Exponential Smoothing it is identical to the Weighted average form, but it will make our work easier later when we want to make the analysis more complex.
 
 ### Optimization (or Fitting) Process
 
@@ -230,13 +230,13 @@ begin
 end
 
 # ╔═╡ 4ea1c9a2-365d-11eb-129f-c302bb22fbe5
-md"This is a very cool graphic to look at. It illustrates very clearly how small alphas look mostly like an **average** of the time series values and, as it starts to get closer to 1, it looks more like taking the last value in the series as a future prediction. As we said at the beginning of the chapter, this method allows us to find intermediate points between the two extremes.
+md"This is a very cool graphic to look at. It illustrates very clearly how small alphas look mostly like an average of the time series values and, as it starts to get closer to 1, it looks more like taking the last value in the series as a future prediction. As we said at the beginning of the chapter, this method allows us to find intermediate points between the two extremes.
 
 Well, okey. It's very nice to see how the graphs change as the alpha does... but how do we find the best alpha and l0 so that the fit is the best?
 
 #### Loss functions
 
-Somehow we have to be able to **quantify** how close the predicted curve is to the actual data curve. A very elegant way to do it is defining an *error function* or *loss function* which will return, for a certain value of the parameters to be optimized, a global number that tells us just how similar both curves are.
+Somehow we have to be able to quantify how close the predicted curve is to the actual data curve. A very elegant way to do it is defining an error function or loss function which will return, for a certain value of the parameters to be optimized, a global number that tells us just how similar both curves are.
 
 For example, one could go point by point looking at the real value of the time series and subtract the predicted value for that same point: $y_{t} - y_{t|t-1}^-$. This subtraction is usually called a residual or error, so:
 
@@ -244,7 +244,7 @@ $e = y_{t} - y_{t|t-1}^-$
 
 Then you add up all those differences and get the overall value of difference between the two series, right? 
 
-Well, actually there is one more step to go. As it can happen that sometimes the predicted value is **greater** than the value of the time series, the subtraction of these would be negative and in the same way, if the predicted value is **lesser** the subtraction will take a positive value. This is a complication when adding up these errors since they could cancel each other out. 
+Well, actually there is one more step to go. As it can happen that sometimes the predicted value is greater than the value of the time series, the subtraction of these would be negative and in the same way, if the predicted value is lesser the subtraction will take a positive value. This is a complication when adding up these errors since they could cancel each other out. 
 
 To solve this, we usually take the absolute value of the subtraction, or the square values. Now the sum of the residuals will not be cancelled, no matter if it is positive or negative:
 
@@ -316,7 +316,7 @@ end
 # ╔═╡ 54c4bd90-3a35-11eb-23a3-f98fb9168cc7
 md"""To use this function more efficiently it is necessary to define a range for the parameters in which the algorithm will perform the search and also a starting point (obviously within that range).
 
-Also, one trick to keep in mind is that this package accepts "univariate" functions, that is, the function you enter only has to have one parameter to optimize. This is not entirely true since, although only one parameter has to be passed, it can be a vector, so that several parameters can be optimized. This is why we define a wrapper function **SES\_loss\_** that facilitates the calculation. 
+Also, one trick to keep in mind is that this package accepts "univariate" functions, that is, the function you enter only has to have one parameter to optimize. This is not entirely true since, although only one parameter has to be passed, it can be a vector, so that several parameters can be optimized. This is why we define a wrapper function SES\_loss\_ that facilitates the calculation. 
 
 Okey then! With everything ready, let's look for the values of alpha and lo that minimize our error function:
 """
@@ -353,7 +353,7 @@ function SES_weight_forecast(α, l0, time_serie, n_pred)
 end
 
 # ╔═╡ 1fe8df1c-3b01-11eb-2c11-27f81361e3b8
-md"""As you can see, the **simple exponential smoothing** method only gives us a forward value. In other words, it predicts a constant value into the future. This happens because these types of time series have no latent variables defined, such as trend or seasonality. These are variables that add information to the model and allow us to make different predictions for each time we want to predict.
+md"""As you can see, the simple exponential smoothing method only gives us a forward value. In other words, it predicts a constant value into the future. This happens because these types of time series have no latent variables defined, such as trend or seasonality. These are variables that add information to the model and allow us to make different predictions for each time we want to predict.
 
 But do not worry about that for now, we will study it well in a short time. For now, let's see how the prediction would look like.
 """
@@ -371,7 +371,7 @@ end
 # ╔═╡ d43bfa54-3b05-11eb-0cc2-79111e16f81e
 md"""Perfect! We already have an initial model to attack problems where there is a lot of variability. But this is not always the case.
 
-That same night we talked to Terry, showed him the progress and he loves the direction we are going. He tells us that he has another time series to analyze and that he has a different behavior than the previous one, apparently this one shows a **trend** in the values...
+That same night we talked to Terry, showed him the progress and he loves the direction we are going. He tells us that he has another time series to analyze and that he has a different behavior than the previous one, apparently this one shows a trend in the values...
 
 Let's see:
 
@@ -394,7 +394,7 @@ end
 plot(time_, data, label=false)
 
 # ╔═╡ 83f8d2e4-3b1c-11eb-1055-1f9b4f7bb16d
-md"""In this type of problem, it would not make any sense for all the predictions to be constant. Here is more latent information that we can get from the data: **The trend.**
+md"""In this type of problem, it would not make any sense for all the predictions to be constant. Here is more latent information that we can get from the data: The trend.
 
 This will be key since, once obtained, it will allow us to generate new values as we want to make more distant forecasts in time.
 
@@ -402,7 +402,7 @@ But how do we include this in our exponential smoothing model?
 
 #### Holt’s linear trend method
 
-This method for making predictions with time series that have a trend consists of a prediction equation and two smoothing equations, one to determine the *level* and another for the *slope* (or trend):
+This method for making predictions with time series that have a trend consists of a prediction equation and two smoothing equations, one to determine the level and another for the slope (or trend):
 
 $y_{T+h|T}^- = l_t + hb_t$
 
@@ -450,7 +450,7 @@ function HLT_loss(time_serie, α, β, l0, b0)
 end
 
 # ╔═╡ 0f673c38-3bec-11eb-2590-479f8726b950
-md"This function is doing exactly the same as **SES\_weight\_loss**, which we defined earlier. It is good to clarify that, like it, the method needs an initial slope to make the estimation of the first value of the time series. Let's see which parameters optimize the model with the data we have!"
+md"This function is doing exactly the same as SES\_weight\_loss, which we defined earlier. It is good to clarify that, like it, the method needs an initial slope to make the estimation of the first value of the time series. Let's see which parameters optimize the model with the data we have!"
 
 # ╔═╡ 844d7ad8-3bec-11eb-0ea4-198afb86a61c
 function HLT_loss_(params, time_serie=data)
@@ -533,7 +533,7 @@ But surely you are thinking that assuming that the trend is going to be maintain
 
 It is known that this type of methods usually overestimate the values of the variable to predict, exactly because they suppose that the tendency continues. 
 
-A improvement of this method that helps to deal with this problem it is the **Damped trend methods**. Basically, what it does is add a coefficient that flattens the curve as we want to make more distant predictions in time. This improvement makes better predictions than the common trend methods, leaving the formulas as:
+A improvement of this method that helps to deal with this problem it is the Damped trend methods. Basically, what it does is add a coefficient that flattens the curve as we want to make more distant predictions in time. This improvement makes better predictions than the common trend methods, leaving the formulas as:
 
 $y_{T+h|T}^- = l_t + (ϕ + ϕ^2 + ... + ϕ^h)b_t$
 
@@ -628,7 +628,7 @@ plot(time, australia_tourist, xlabel="Year", ylabel="""Nigth visitors (millions)
 # ╔═╡ 8ac617fc-3ef1-11eb-3961-2b7edbf53e23
 md"""As you can see, the series shows a lot of variability. The values go up and down constantly. 
 
-After being a long time with Terry looking for ideas to address this type of data we realize that these ups and downs are not random, indeed, the form is repeated year after year! We realize that we are facing a problem with **seasonality**. 
+After being a long time with Terry looking for ideas to address this type of data we realize that these ups and downs are not random, indeed, the form is repeated year after year! We realize that we are facing a problem with seasonality. 
 
 ### Seasonality Methods
 
