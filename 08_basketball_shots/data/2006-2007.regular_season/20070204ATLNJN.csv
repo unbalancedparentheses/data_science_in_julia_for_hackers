@@ -1,0 +1,463 @@
+a1,a2,a3,a4,a5,h1,h2,h3,h4,h5,period,time,team,etype,assist,away,block,entered,home,left,num,opponent,outof,player,points,possession,reason,result,steal,type,x,y
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,12:00,OFF,jump ball,,Josh Smith,,,Jason Collins,,,,,,,Mikki Moore,,,,,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,11:47,NJN,shot,Vince Carter,,,,,,,,,Mikki Moore,2,,,made,,layup,25,6
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,11:47,ATL,foul,,,,,,,,Mikki Moore,,Tyronn Lue,,,,,,shooting,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,11:47,NJN,free throw,,,,,,,1,,1,Mikki Moore,,,foul,missed,,,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,11:46,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,def,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,11:29,ATL,shot,,,,,,,,,,Lorenzen Wright,,,,missed,,jump,10,8
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,11:27,NJN,rebound,,,,,,,,,,Mikki Moore,,,,,,def,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,11:10,NJN,shot,Jason Kidd,,,,,,,,,Antoine Wright,2,,,made,,layup,25,6
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,10:45,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,jump,23,26
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,10:41,ATL,rebound,,,,,,,,,,Lorenzen Wright,,,,,,off,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,10:39,ATL,shot,,,,,,,,,,Lorenzen Wright,2,,,made,,layup,25,6
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,10:21,ATL,foul,,,,,,,,,,Lorenzen Wright,,,,,,defense 3 second,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,10:21,NJN,free throw,,,,,,,1,,1,Jason Kidd,,,technical,made,,,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,10:07,NJN,turnover,,,,,,,,,,,,,shot clock turnover,,,,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,9:54,ATL,shot,Josh Smith,,,,,,,,,Joe Johnson,2,,,made,,jump,34,21
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,9:31,NJN,turnover,,,,,,,,,,Jason Kidd,,,bad pass,,Josh Smith,,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,9:25,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,driving layup,25,6
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,9:24,NJN,rebound,,,,,,,,,,Jason Collins,,,,,,def,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,9:19,ATL,foul,,,,,,,,Mikki Moore,,Josh Smith,,,,,,shooting,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,9:19,NJN,free throw,,,,,,,1,,2,Mikki Moore,,,foul,made,,,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,9:19,NJN,free throw,,,,,,,2,,2,Mikki Moore,,,foul,made,,,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,9:03,NJN,foul,,,,,,,,Joe Johnson,,Antoine Wright,,,,,,personal,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,8:54,ATL,shot,,,,,,,,,,Joe Johnson,3,,,made,,3pt,2,4
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,8:40,NJN,shot,,,,,,,,,,Vince Carter,,,,missed,,jump,24,29
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,8:39,ATL,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,8:26,NJN,foul,,,,,,,,Josh Smith,,Jason Collins,,,,,,shooting,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,8:26,ATL,free throw,,,,,,,1,,2,Josh Smith,,,foul,made,,,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,8:26,ATL,free throw,,,,,,,2,,2,Josh Smith,,,foul,missed,,,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,8:25,NJN,rebound,,,,,,,,,,Jason Kidd,,,,,,def,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,8:11,NJN,shot,Antoine Wright,,,,,,,,,Jason Kidd,3,,,made,,3pt,40,25
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,7:47,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,layup,25,6
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,7:46,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,off,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,7:44,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,layup,25,6
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,7:42,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,off,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,7:39,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,3pt,2,5
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,7:36,NJN,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,7:16,NJN,shot,,,,,,,,,,Jason Kidd,,,,missed,,jump,12,9
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,7:14,ATL,rebound,,,,,,,,,,Lorenzen Wright,,,,,,def,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,7:06,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,jump,29,24
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,7:04,NJN,rebound,,,,,,,,,,Antoine Wright,,,,,,def,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,6:53,NJN,shot,Vince Carter,,,,,,,,,Mikki Moore,2,,,made,,driving layup,25,6
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,6:34,ATL,shot,Lorenzen Wright,,,,,,,,,Tyronn Lue,3,,,made,,3pt,25,31
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,6:13,NJN,shot,Vince Carter,,,,,,,,,Antoine Wright,2,,,made,,layup,25,6
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,5:53,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,hook,29,8
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,5:52,NJN,rebound,,,,,,,,,,Mikki Moore,,,,,,def,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,5:40,ATL,foul,,,,,,,,Jason Collins,,Josh Smith,,,,,,personal,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,5:40,NJN,timeout,,,,,,,,,,,,,,,,regular,,
+Joe Johnson,Lorenzen Wright,Marvin Williams,Shelden Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,5:40,ATL,sub,,,,Shelden Williams,,Josh Smith,,,,,,,,,,,,
+Joe Johnson,Lorenzen Wright,Marvin Williams,Shelden Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,5:30,NJN,shot,,,,,,,,,,Vince Carter,,,,missed,,driving layup,25,6
+Joe Johnson,Lorenzen Wright,Marvin Williams,Shelden Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,5:28,ATL,rebound,,,,,,,,,,Joe Johnson,,,,,,def,,
+Joe Johnson,Lorenzen Wright,Marvin Williams,Shelden Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,5:07,NJN,foul,,,,,,,,,,Jason Collins,,,,,,defense 3 second,,
+Joe Johnson,Lorenzen Wright,Marvin Williams,Shelden Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,5:07,ATL,free throw,,,,,,,1,,1,Joe Johnson,,,technical,made,,,,
+Joe Johnson,Josh Childress,Lorenzen Wright,Marvin Williams,Shelden Williams,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,5:07,ATL,sub,,,,Josh Childress,,Tyronn Lue,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Lorenzen Wright,Marvin Williams,Shelden Williams,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,4:54,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,jump,5,8
+Joe Johnson,Josh Childress,Lorenzen Wright,Marvin Williams,Shelden Williams,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,4:52,ATL,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Lorenzen Wright,Marvin Williams,Shelden Williams,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,4:52,ATL,turnover,,,,,,,,,,,,,shot clock turnover,,,,,
+Joe Johnson,Josh Childress,Lorenzen Wright,Marvin Williams,Shelden Williams,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,4:35,NJN,shot,Mikki Moore,,,,,,,,,Vince Carter,3,,,made,,3pt,7,22
+Joe Johnson,Josh Childress,Lorenzen Wright,Marvin Williams,Shelden Williams,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,1,4:13,NJN,foul,,,,,,,,Marvin Williams,,Vince Carter,,,,,,personal,,
+Joe Johnson,Josh Childress,Lorenzen Wright,Marvin Williams,Shelden Williams,Antoine Wright,Jason Collins,Marcus Williams,Mikki Moore,Vince Carter,1,4:13,NJN,sub,,,,Marcus Williams,,Jason Kidd,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Marvin Williams,Shelden Williams,Zaza Pachulia,Antoine Wright,Jason Collins,Marcus Williams,Mikki Moore,Vince Carter,1,4:13,ATL,sub,,,,Zaza Pachulia,,Lorenzen Wright,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Marvin Williams,Shelden Williams,Zaza Pachulia,Antoine Wright,Jason Collins,Marcus Williams,Mikki Moore,Vince Carter,1,4:03,ATL,shot,Joe Johnson,,,,,,,,,Shelden Williams,2,,,made,,jump,22,28
+Joe Johnson,Josh Childress,Marvin Williams,Shelden Williams,Zaza Pachulia,Antoine Wright,Jason Collins,Marcus Williams,Mikki Moore,Vince Carter,1,3:49,NJN,shot,Jason Collins,,,,,,,,,Mikki Moore,2,,,made,,alley oop dunk,25,6
+Joe Johnson,Josh Childress,Marvin Williams,Shelden Williams,Zaza Pachulia,Antoine Wright,Jason Collins,Marcus Williams,Mikki Moore,Vince Carter,1,3:24,ATL,shot,Joe Johnson,,,,,,,,,Marvin Williams,2,,,made,,jump,33,22
+Joe Johnson,Josh Childress,Marvin Williams,Shelden Williams,Zaza Pachulia,Antoine Wright,Jason Collins,Marcus Williams,Mikki Moore,Vince Carter,1,3:05,NJN,turnover,,,,,,,,,,Vince Carter,,,bad pass,,,,,
+Joe Johnson,Josh Childress,Marvin Williams,Shelden Williams,Zaza Pachulia,Antoine Wright,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,1,3:05,NJN,sub,,,,Clifford Robinson,,Jason Collins,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Marvin Williams,Shelden Williams,Zaza Pachulia,Antoine Wright,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,1,2:52,ATL,shot,,,,,,,,,,Marvin Williams,,,,missed,,jump,18,22
+Joe Johnson,Josh Childress,Marvin Williams,Shelden Williams,Zaza Pachulia,Antoine Wright,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,1,2:50,ATL,rebound,,,,,,,,,,Shelden Williams,,,,,,off,,
+Joe Johnson,Josh Childress,Marvin Williams,Shelden Williams,Zaza Pachulia,Antoine Wright,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,1,2:49,ATL,shot,,,,,,,,,,Shelden Williams,2,,,made,,tip,25,6
+Joe Johnson,Josh Childress,Marvin Williams,Shelden Williams,Zaza Pachulia,Antoine Wright,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,1,2:27,NJN,shot,,,,,,,,,,Vince Carter,,,,missed,,3pt,1,7
+Joe Johnson,Josh Childress,Marvin Williams,Shelden Williams,Zaza Pachulia,Antoine Wright,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,1,2:25,ATL,rebound,,,,,,,,,,Zaza Pachulia,,,,,,def,,
+Joe Johnson,Josh Childress,Marvin Williams,Shelden Williams,Zaza Pachulia,Antoine Wright,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,1,2:11,ATL,turnover,,,,,,,,,,Josh Childress,,,traveling,,,,,
+Joe Johnson,Josh Childress,Marvin Williams,Shelden Williams,Zaza Pachulia,Antoine Wright,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,1,2:11,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Joe Johnson,Josh Childress,Marvin Williams,Shelden Williams,Zaza Pachulia,Antoine Wright,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,1,1:57,NJN,shot,Marcus Williams,,,,,,,,,Vince Carter,2,,,made,,fade away jumper,19,12
+Joe Johnson,Josh Childress,Marvin Williams,Shelden Williams,Zaza Pachulia,Antoine Wright,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,1,1:37,ATL,shot,,,,,,,,,,Zaza Pachulia,,,,missed,,jump,42,14
+Joe Johnson,Josh Childress,Marvin Williams,Shelden Williams,Zaza Pachulia,Antoine Wright,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,1,1:34,NJN,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Antoine Wright,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,1,1:34,ATL,sub,,,,Speedy Claxton,,Marvin Williams,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Antoine Wright,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,1,1:24,ATL,foul,,,,,,,,Marcus Williams,,Joe Johnson,,,,,,personal,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Antoine Wright,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,1,1:19,NJN,turnover,,,,,,,,,,Marcus Williams,,,lost ball,,Shelden Williams,,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Antoine Wright,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,1,1:04,ATL,shot,,,,,,,,,,Shelden Williams,2,,,made,,turnaround jump,33,5
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Antoine Wright,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,1,0:50,NJN,shot,Vince Carter,,,,,,,,,Clifford Robinson,3,,,made,,3pt,2,6
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Antoine Wright,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,1,0:32,ATL,shot,,,,,,,,,,Zaza Pachulia,,,,missed,,jump,16,21
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Antoine Wright,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,1,0:30,NJN,rebound,,,,,,,,,,Marcus Williams,,,,,,def,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Antoine Wright,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,1,0:10,NJN,shot,,,,,,,,,,Antoine Wright,,,,missed,,jump,29,27
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Antoine Wright,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,1,0:08,ATL,rebound,,,,,,,,,,Josh Childress,,,,,,def,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Antoine Wright,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,1,0:00,ATL,shot,Speedy Claxton,,,,,,,,,Zaza Pachulia,2,,,made,,layup,25,6
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,2,11:47,NJN,foul,,,,,,,,,,Mikki Moore,,,,,,defense 3 second,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,2,11:47,ATL,free throw,,,,,,,1,,1,Joe Johnson,,,technical,missed,,,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,2,11:47,ATL,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,2,11:40,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,jump,17,24
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,2,11:38,ATL,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,2,11:32,ATL,shot,Joe Johnson,,,,,,,,,Josh Childress,2,,,made,,jump bank,14,11
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,2,11:11,NJN,shot,,,,,,,,,,Bostjan Nachbar,,,,missed,,layup,25,6
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,2,11:10,NJN,rebound,,,,,,,,,,Vince Carter,,,,,,off,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,2,11:07,NJN,shot,,,,,,,,,,Vince Carter,,,,missed,,jump,42,5
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,2,11:05,ATL,rebound,,,,,,,,,,Shelden Williams,,,,,,def,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,2,10:49,NJN,foul,,,,,,,,Speedy Claxton,,Marcus Williams,,,,,,personal,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Josh Boone,Marcus Williams,Vince Carter,2,10:49,NJN,sub,,,,Josh Boone,,Mikki Moore,,,,,,,,,,,,
+Josh Childress,Marvin Williams,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Josh Boone,Marcus Williams,Vince Carter,2,10:49,ATL,sub,,,,Marvin Williams,,Joe Johnson,,,,,,,,,,,,
+Josh Childress,Marvin Williams,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Josh Boone,Marcus Williams,Vince Carter,2,10:35,ATL,shot,,,,,,,,,,Zaza Pachulia,,,,missed,,turnaround jump,31,6
+Josh Childress,Marvin Williams,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Josh Boone,Marcus Williams,Vince Carter,2,10:34,NJN,rebound,,,,,,,,,,Vince Carter,,,,,,def,,
+Josh Childress,Marvin Williams,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Josh Boone,Marcus Williams,Vince Carter,2,10:20,NJN,shot,,,,,,,,,,Clifford Robinson,,,,missed,,jump,42,6
+Josh Childress,Marvin Williams,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Josh Boone,Marcus Williams,Vince Carter,2,10:18,ATL,rebound,,,,,,,,,,Shelden Williams,,,,,,def,,
+Josh Childress,Marvin Williams,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Josh Boone,Marcus Williams,Vince Carter,2,10:03,ATL,shot,,,,,,,,,,Marvin Williams,,,,missed,,jump,26,27
+Josh Childress,Marvin Williams,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Josh Boone,Marcus Williams,Vince Carter,2,10:01,ATL,rebound,,,,,,,,,,,,,,,,,,
+Josh Childress,Marvin Williams,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Josh Boone,Marcus Williams,Vince Carter,2,9:50,ATL,shot,,,Josh Boone,,,,,,,Zaza Pachulia,,,,missed,,layup,25,6
+Josh Childress,Marvin Williams,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Josh Boone,Marcus Williams,Vince Carter,2,9:48,ATL,rebound,,,,,,,,,,Marvin Williams,,,,,,off,,
+Josh Childress,Marvin Williams,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Josh Boone,Marcus Williams,Vince Carter,2,9:47,ATL,shot,,,,,,,,,,Marvin Williams,2,,,made,,layup,25,6
+Josh Childress,Marvin Williams,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Josh Boone,Marcus Williams,Vince Carter,2,9:47,NJN,timeout,,,,,,,,,,,,,,,,regular,,
+Josh Childress,Marvin Williams,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Josh Boone,Marcus Williams,Vince Carter,2,9:24,NJN,shot,,,,,,,,,,Marcus Williams,,,,missed,,3pt,27,31
+Josh Childress,Marvin Williams,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Josh Boone,Marcus Williams,Vince Carter,2,9:21,ATL,rebound,,,,,,,,,,Speedy Claxton,,,,,,def,,
+Josh Childress,Marvin Williams,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Josh Boone,Marcus Williams,Vince Carter,2,9:14,ATL,shot,Speedy Claxton,,,,,,,,,Marvin Williams,2,,,made,,jump,10,8
+Josh Childress,Marvin Williams,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Josh Boone,Marcus Williams,Vince Carter,2,9:00,NJN,shot,Vince Carter,,,,,,,,,Marcus Williams,2,,,made,,layup,25,6
+Josh Childress,Marvin Williams,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Josh Boone,Marcus Williams,Vince Carter,2,8:44,NJN,foul,,,,,,,,Shelden Williams,,Clifford Robinson,,,,,,personal,,
+Josh Childress,Marvin Williams,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Josh Boone,Marcus Williams,Vince Carter,2,8:34,ATL,shot,,,,,,,,,,Zaza Pachulia,2,,,made,,driving layup,25,6
+Josh Childress,Marvin Williams,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Josh Boone,Marcus Williams,Vince Carter,2,8:15,NJN,shot,,,,,,,,,,Vince Carter,,,,missed,,driving layup,25,6
+Josh Childress,Marvin Williams,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Josh Boone,Marcus Williams,Vince Carter,2,8:14,NJN,rebound,,,,,,,,,,Vince Carter,,,,,,off,,
+Josh Childress,Marvin Williams,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Josh Boone,Marcus Williams,Vince Carter,2,8:13,NJN,shot,,,,,,,,,,Vince Carter,2,,,made,,dunk,25,6
+Josh Childress,Marvin Williams,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Josh Boone,Marcus Williams,Vince Carter,2,7:50,ATL,turnover,,,,,,,,,,Zaza Pachulia,,,bad pass,,Clifford Robinson,,,
+Josh Childress,Marvin Williams,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Jason Kidd,Josh Boone,Vince Carter,2,7:50,NJN,sub,,,,Jason Kidd,,Marcus Williams,,,,,,,,,,,,
+Josh Childress,Marvin Williams,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Eddie House,Jason Kidd,Josh Boone,2,7:50,NJN,sub,,,,Eddie House,,Vince Carter,,,,,,,,,,,,
+Josh Childress,Marvin Williams,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Eddie House,Jason Kidd,Josh Boone,2,7:35,NJN,shot,,,Marvin Williams,,,,,,,Bostjan Nachbar,,,,missed,,driving layup,25,6
+Josh Childress,Marvin Williams,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Eddie House,Jason Kidd,Josh Boone,2,7:34,NJN,rebound,,,,,,,,,,Josh Boone,,,,,,off,,
+Josh Childress,Marvin Williams,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Eddie House,Jason Kidd,Josh Boone,2,7:34,ATL,foul,,,,,,,,Josh Boone,,Zaza Pachulia,,,,,,shooting,,
+Josh Childress,Marvin Williams,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Eddie House,Jason Kidd,Josh Boone,2,7:34,NJN,free throw,,,,,,,1,,2,Josh Boone,,,foul,made,,,,
+Josh Childress,Marvin Williams,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Eddie House,Jason Kidd,Josh Boone,2,7:34,NJN,free throw,,,,,,,2,,2,Josh Boone,,,foul,missed,,,,
+Josh Childress,Marvin Williams,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Eddie House,Jason Kidd,Josh Boone,2,7:33,ATL,rebound,,,,,,,,,,Shelden Williams,,,,,,def,,
+Josh Childress,Marvin Williams,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Eddie House,Jason Kidd,Josh Boone,2,7:33,NJN,foul,,,,,,,,Speedy Claxton,,Jason Kidd,,,,,,personal,,
+Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Eddie House,Jason Kidd,Josh Boone,2,7:33,ATL,sub,,,,Josh Smith,,Shelden Williams,,,,,,,,,,,,
+Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Eddie House,Jason Kidd,Josh Boone,2,7:15,ATL,shot,,,,,,,,,,Speedy Claxton,,,,missed,,3pt,26,32
+Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Eddie House,Jason Kidd,Josh Boone,2,7:12,NJN,rebound,,,,,,,,,,Jason Kidd,,,,,,def,,
+Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Eddie House,Jason Kidd,Josh Boone,2,7:06,NJN,shot,,,Speedy Claxton,,,,,,,Eddie House,,,,missed,,3pt,1,5
+Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Eddie House,Jason Kidd,Josh Boone,2,7:04,NJN,rebound,,,,,,,,,,Josh Boone,,,,,,off,,
+Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Eddie House,Jason Kidd,Josh Boone,2,6:59,ATL,foul,,,,,,,,Josh Boone,,Josh Childress,,,,,,shooting,,
+Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Eddie House,Jason Kidd,Josh Boone,2,6:59,NJN,free throw,,,,,,,1,,2,Josh Boone,,,foul,missed,,,,
+Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Eddie House,Jason Kidd,Josh Boone,2,6:59,NJN,rebound,,,,,,,,,,,,,,,,,,
+Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Eddie House,Jason Kidd,Josh Boone,2,6:59,NJN,free throw,,,,,,,2,,2,Josh Boone,,,foul,made,,,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Eddie House,Jason Kidd,Josh Boone,2,6:59,ATL,sub,,,,Joe Johnson,,Marvin Williams,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Eddie House,Jason Kidd,Josh Boone,2,6:34,ATL,shot,Josh Smith,,,,,,,,,Josh Childress,3,,,made,,3pt,2,4
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Eddie House,Jason Kidd,Josh Boone,2,6:19,NJN,shot,Jason Kidd,,,,,,,,,Bostjan Nachbar,3,,,made,,3pt,6,24
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Eddie House,Jason Kidd,Josh Boone,2,5:59,ATL,shot,,,,,,,,,,Speedy Claxton,,,,missed,,running jump,27,14
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Eddie House,Jason Kidd,Josh Boone,2,5:57,ATL,rebound,,,,,,,,,,Zaza Pachulia,,,,,,off,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Eddie House,Jason Kidd,Josh Boone,2,5:52,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,jump,42,16
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Eddie House,Jason Kidd,Josh Boone,2,5:50,ATL,rebound,,,,,,,,,,Joe Johnson,,,,,,off,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Eddie House,Jason Kidd,Josh Boone,2,5:46,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,jump,41,6
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Eddie House,Jason Kidd,Josh Boone,2,5:45,NJN,rebound,,,,,,,,,,Clifford Robinson,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Eddie House,Jason Kidd,Josh Boone,2,5:30,NJN,shot,,,,,,,,,,Eddie House,,,,missed,,jump,38,23
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Eddie House,Jason Kidd,Josh Boone,2,5:29,NJN,rebound,,,,,,,,,,Bostjan Nachbar,,,,,,off,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Eddie House,Jason Kidd,Josh Boone,2,5:28,ATL,foul,,,,,,,,Bostjan Nachbar,,Speedy Claxton,,,,,,personal,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Eddie House,Jason Kidd,Josh Boone,2,5:28,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Speedy Claxton,Bostjan Nachbar,Clifford Robinson,Eddie House,Jason Kidd,Josh Boone,2,5:28,ATL,sub,,,,Lorenzen Wright,,Zaza Pachulia,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Speedy Claxton,Bostjan Nachbar,Clifford Robinson,Eddie House,Jason Collins,Jason Kidd,2,5:28,NJN,sub,,,,Jason Collins,,Josh Boone,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Speedy Claxton,Bostjan Nachbar,Clifford Robinson,Eddie House,Jason Collins,Jason Kidd,2,5:17,NJN,shot,,,,,,,,,,Clifford Robinson,,,,missed,,jump,19,7
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Speedy Claxton,Bostjan Nachbar,Clifford Robinson,Eddie House,Jason Collins,Jason Kidd,2,5:15,ATL,rebound,,,,,,,,,,Joe Johnson,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Speedy Claxton,Bostjan Nachbar,Clifford Robinson,Eddie House,Jason Collins,Jason Kidd,2,5:02,NJN,foul,,,,,,,,Josh Smith,,Clifford Robinson,,,,,,shooting,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Speedy Claxton,Bostjan Nachbar,Clifford Robinson,Eddie House,Jason Collins,Jason Kidd,2,5:02,ATL,free throw,,,,,,,1,,2,Josh Smith,,,foul,made,,,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Speedy Claxton,Bostjan Nachbar,Eddie House,Jason Collins,Jason Kidd,Mikki Moore,2,5:02,NJN,sub,,,,Mikki Moore,,Clifford Robinson,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Bostjan Nachbar,Eddie House,Jason Collins,Jason Kidd,Mikki Moore,2,5:02,ATL,sub,,,,Tyronn Lue,,Speedy Claxton,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Bostjan Nachbar,Eddie House,Jason Collins,Jason Kidd,Mikki Moore,2,5:02,ATL,free throw,,,,,,,2,,2,Josh Smith,,,foul,made,,,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Bostjan Nachbar,Eddie House,Jason Collins,Jason Kidd,Mikki Moore,2,4:46,NJN,shot,,,,,,,,,,Jason Collins,,,,missed,,jump,40,15
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Bostjan Nachbar,Eddie House,Jason Collins,Jason Kidd,Mikki Moore,2,4:45,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Bostjan Nachbar,Eddie House,Jason Collins,Jason Kidd,Mikki Moore,2,4:32,ATL,turnover,,,,,,,,,,Joe Johnson,,,bad pass,,Jason Kidd,,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Bostjan Nachbar,Eddie House,Jason Collins,Jason Kidd,Mikki Moore,2,4:26,NJN,shot,Jason Kidd,,,,,,,,,Bostjan Nachbar,2,,,made,,driving layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Bostjan Nachbar,Eddie House,Jason Collins,Jason Kidd,Mikki Moore,2,4:10,NJN,foul,,,,,,,,Joe Johnson,,Bostjan Nachbar,,,,,,personal,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Bostjan Nachbar,Eddie House,Jason Collins,Jason Kidd,Mikki Moore,2,4:10,ATL,free throw,,,,,,,1,,2,Joe Johnson,,,foul,made,,,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Bostjan Nachbar,Eddie House,Jason Collins,Jason Kidd,Mikki Moore,2,4:10,ATL,free throw,,,,,,,2,,2,Joe Johnson,,,foul,made,,,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Bostjan Nachbar,Eddie House,Jason Collins,Jason Kidd,Mikki Moore,2,3:55,NJN,shot,Jason Kidd,,,,,,,,,Eddie House,2,,,made,,jump,4,14
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Bostjan Nachbar,Eddie House,Jason Collins,Jason Kidd,Mikki Moore,2,3:37,ATL,shot,,,,,,,,,,Josh Childress,,,,missed,,3pt,2,5
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Bostjan Nachbar,Eddie House,Jason Collins,Jason Kidd,Mikki Moore,2,3:35,ATL,rebound,,,,,,,,,,Lorenzen Wright,,,,,,off,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Bostjan Nachbar,Eddie House,Jason Collins,Jason Kidd,Mikki Moore,2,3:25,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,3pt,46,19
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Bostjan Nachbar,Eddie House,Jason Collins,Jason Kidd,Mikki Moore,2,3:23,NJN,rebound,,,,,,,,,,Mikki Moore,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Bostjan Nachbar,Eddie House,Jason Collins,Jason Kidd,Mikki Moore,2,3:15,NJN,shot,,,,,,,,,,Jason Kidd,2,,,made,,jump,25,20
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Bostjan Nachbar,Eddie House,Jason Collins,Jason Kidd,Mikki Moore,2,2:51,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,jump,37,18
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Bostjan Nachbar,Eddie House,Jason Collins,Jason Kidd,Mikki Moore,2,2:49,NJN,rebound,,,,,,,,,,Mikki Moore,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Bostjan Nachbar,Eddie House,Jason Collins,Jason Kidd,Mikki Moore,2,2:40,NJN,turnover,,,,,,,,,,Jason Kidd,,,bad pass,,Josh Smith,,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Bostjan Nachbar,Eddie House,Jason Collins,Jason Kidd,Mikki Moore,2,2:30,ATL,turnover,,,,,,,,,,Joe Johnson,,,bad pass,,Eddie House,,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Bostjan Nachbar,Eddie House,Jason Collins,Jason Kidd,Mikki Moore,2,2:23,NJN,shot,,,Josh Smith,,,,,,,Mikki Moore,,,,missed,,layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Bostjan Nachbar,Eddie House,Jason Collins,Jason Kidd,Mikki Moore,2,2:21,NJN,rebound,,,,,,,,,,Jason Kidd,,,,,,off,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Bostjan Nachbar,Eddie House,Jason Collins,Jason Kidd,Mikki Moore,2,2:14,NJN,shot,Jason Kidd,,,,,,,,,Bostjan Nachbar,2,,,made,,layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Bostjan Nachbar,Eddie House,Jason Collins,Jason Kidd,Mikki Moore,2,2:01,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,jump,44,5
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Bostjan Nachbar,Eddie House,Jason Collins,Jason Kidd,Mikki Moore,2,1:59,NJN,rebound,,,,,,,,,,Bostjan Nachbar,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Bostjan Nachbar,Eddie House,Jason Collins,Jason Kidd,Mikki Moore,2,1:55,ATL,foul,,,,,,,,Jason Collins,,Josh Smith,,,,,,personal,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Bostjan Nachbar,Eddie House,Jason Collins,Jason Kidd,Mikki Moore,2,1:55,ATL,timeout,,,,,,,,,,,,,,,,regular,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Bostjan Nachbar,Eddie House,Jason Kidd,Mikki Moore,Vince Carter,2,1:55,NJN,sub,,,,Vince Carter,,Jason Collins,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Shelden Williams,Tyronn Lue,Bostjan Nachbar,Eddie House,Jason Kidd,Mikki Moore,Vince Carter,2,1:55,ATL,sub,,,,Shelden Williams,,Josh Childress,,,,,,,,,,,,
+Joe Johnson,Lorenzen Wright,Marvin Williams,Shelden Williams,Tyronn Lue,Bostjan Nachbar,Eddie House,Jason Kidd,Mikki Moore,Vince Carter,2,1:55,ATL,sub,,,,Marvin Williams,,Josh Smith,,,,,,,,,,,,
+Joe Johnson,Lorenzen Wright,Marvin Williams,Shelden Williams,Tyronn Lue,Bostjan Nachbar,Eddie House,Jason Kidd,Mikki Moore,Vince Carter,2,1:47,NJN,shot,,,,,,,,,,Eddie House,,,,missed,,jump,41,20
+Joe Johnson,Lorenzen Wright,Marvin Williams,Shelden Williams,Tyronn Lue,Bostjan Nachbar,Eddie House,Jason Kidd,Mikki Moore,Vince Carter,2,1:45,ATL,rebound,,,,,,,,,,Shelden Williams,,,,,,def,,
+Joe Johnson,Lorenzen Wright,Marvin Williams,Shelden Williams,Tyronn Lue,Bostjan Nachbar,Eddie House,Jason Kidd,Mikki Moore,Vince Carter,2,1:26,NJN,foul,,,,,,,,Joe Johnson,,Bostjan Nachbar,,,,,,shooting,,
+Joe Johnson,Lorenzen Wright,Marvin Williams,Shelden Williams,Tyronn Lue,Antoine Wright,Eddie House,Jason Kidd,Mikki Moore,Vince Carter,2,1:26,NJN,sub,,,,Antoine Wright,,Bostjan Nachbar,,,,,,,,,,,,
+Joe Johnson,Lorenzen Wright,Marvin Williams,Shelden Williams,Tyronn Lue,Antoine Wright,Eddie House,Jason Kidd,Mikki Moore,Vince Carter,2,1:26,ATL,free throw,,,,,,,1,,2,Joe Johnson,,,foul,made,,,,
+Joe Johnson,Lorenzen Wright,Marvin Williams,Shelden Williams,Tyronn Lue,Antoine Wright,Eddie House,Jason Kidd,Mikki Moore,Vince Carter,2,1:26,ATL,free throw,,,,,,,2,,2,Joe Johnson,,,foul,made,,,,
+Joe Johnson,Lorenzen Wright,Marvin Williams,Shelden Williams,Tyronn Lue,Antoine Wright,Eddie House,Jason Kidd,Mikki Moore,Vince Carter,2,1:13,ATL,foul,,,,,,,,Mikki Moore,,Shelden Williams,,,,,,shooting,,
+Joe Johnson,Lorenzen Wright,Marvin Williams,Shelden Williams,Tyronn Lue,Antoine Wright,Eddie House,Jason Kidd,Mikki Moore,Vince Carter,2,1:13,NJN,free throw,,,,,,,1,,2,Mikki Moore,,,foul,missed,,,,
+Joe Johnson,Lorenzen Wright,Marvin Williams,Shelden Williams,Tyronn Lue,Antoine Wright,Eddie House,Jason Kidd,Mikki Moore,Vince Carter,2,1:13,NJN,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Lorenzen Wright,Marvin Williams,Shelden Williams,Tyronn Lue,Antoine Wright,Eddie House,Jason Kidd,Mikki Moore,Vince Carter,2,1:13,NJN,free throw,,,,,,,2,,2,Mikki Moore,,,foul,made,,,,
+Joe Johnson,Lorenzen Wright,Marvin Williams,Shelden Williams,Tyronn Lue,Antoine Wright,Eddie House,Jason Kidd,Mikki Moore,Vince Carter,2,0:56,ATL,shot,,,,,,,,,,Shelden Williams,,,,missed,,hook,24,13
+Joe Johnson,Lorenzen Wright,Marvin Williams,Shelden Williams,Tyronn Lue,Antoine Wright,Eddie House,Jason Kidd,Mikki Moore,Vince Carter,2,0:54,ATL,rebound,,,,,,,,,,Shelden Williams,,,,,,off,,
+Joe Johnson,Lorenzen Wright,Marvin Williams,Shelden Williams,Tyronn Lue,Antoine Wright,Eddie House,Jason Kidd,Mikki Moore,Vince Carter,2,0:50,NJN,foul,,,,,,,,Joe Johnson,,Jason Kidd,,,,,,shooting,,
+Joe Johnson,Lorenzen Wright,Marvin Williams,Shelden Williams,Tyronn Lue,Antoine Wright,Eddie House,Jason Kidd,Mikki Moore,Vince Carter,2,0:50,ATL,free throw,,,,,,,1,,2,Joe Johnson,,,foul,made,,,,
+Joe Johnson,Lorenzen Wright,Marvin Williams,Shelden Williams,Tyronn Lue,Antoine Wright,Eddie House,Jason Kidd,Mikki Moore,Vince Carter,2,0:50,ATL,free throw,,,,,,,2,,2,Joe Johnson,,,foul,made,,,,
+Joe Johnson,Lorenzen Wright,Marvin Williams,Shelden Williams,Tyronn Lue,Antoine Wright,Eddie House,Jason Kidd,Mikki Moore,Vince Carter,2,0:29,NJN,shot,,,,,,,,,,Mikki Moore,,,,missed,,hook,18,7
+Joe Johnson,Lorenzen Wright,Marvin Williams,Shelden Williams,Tyronn Lue,Antoine Wright,Eddie House,Jason Kidd,Mikki Moore,Vince Carter,2,0:28,ATL,rebound,,,,,,,,,,Marvin Williams,,,,,,def,,
+Joe Johnson,Lorenzen Wright,Marvin Williams,Shelden Williams,Tyronn Lue,Antoine Wright,Eddie House,Jason Kidd,Mikki Moore,Vince Carter,2,0:04,ATL,shot,Joe Johnson,,,,,,,,,Marvin Williams,2,,,made,,layup,25,6
+Joe Johnson,Lorenzen Wright,Marvin Williams,Shelden Williams,Tyronn Lue,Antoine Wright,Eddie House,Jason Kidd,Mikki Moore,Vince Carter,2,0:01,NJN,shot,,,,,,,,,,Jason Kidd,,,,missed,,3pt,5,22
+Joe Johnson,Lorenzen Wright,Marvin Williams,Shelden Williams,Tyronn Lue,Antoine Wright,Eddie House,Jason Kidd,Mikki Moore,Vince Carter,2,0:00,NJN,rebound,,,,,,,,,,Mikki Moore,,,,,,off,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,11:40,ATL,shot,,,,,,,,,,Tyronn Lue,,,,missed,,jump,14,20
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,11:39,NJN,rebound,,,,,,,,,,Vince Carter,,,,,,def,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,11:16,NJN,shot,,,,,,,,,,Jason Collins,,,,missed,,jump,33,21
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,11:14,ATL,rebound,,,,,,,,,,Marvin Williams,,,,,,def,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,10:51,ATL,shot,Joe Johnson,,,,,,,,,Josh Smith,2,,,made,,jump,8,16
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,10:38,NJN,shot,,,,,,,,,,Vince Carter,2,,,made,,jump,24,26
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,10:09,ATL,shot,,,,,,,,,,Lorenzen Wright,,,,missed,,jump,14,8
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,10:07,NJN,rebound,,,,,,,,,,Mikki Moore,,,,,,def,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,10:02,NJN,shot,Jason Kidd,,,,,,,,,Antoine Wright,2,,,made,,layup,25,6
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,9:44,NJN,foul,,,,,,,,Joe Johnson,,Jason Collins,,,,,,shooting,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,9:44,ATL,free throw,,,,,,,1,,2,Joe Johnson,,,foul,made,,,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,9:44,ATL,free throw,,,,,,,2,,2,Joe Johnson,,,foul,made,,,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,9:24,NJN,shot,Jason Kidd,,,,,,,,,Vince Carter,2,,,made,,jump,15,24
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,9:04,NJN,foul,,,,,,,,Josh Smith,,Antoine Wright,,,,,,personal,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,8:51,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,jump,35,21
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,8:49,NJN,rebound,,,,,,,,,,Jason Collins,,,,,,def,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,8:37,NJN,shot,,,,,,,,,,Vince Carter,,,,missed,,3pt,15,27
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,8:35,ATL,rebound,,,,,,,,,,Tyronn Lue,,,,,,def,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,8:26,ATL,shot,,,,,,,,,,Marvin Williams,,,,missed,,jump,14,12
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,8:25,NJN,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,8:25,ATL,foul,,,,,,,,Mikki Moore,,Lorenzen Wright,,,,,,loose ball,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,8:06,NJN,shot,,,,,,,,,,Jason Kidd,,,,missed,,3pt,16,30
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,7:58,ATL,rebound,,,,,,,,,,Lorenzen Wright,,,,,,def,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,7:58,ATL,turnover,,,,,,,,,,Lorenzen Wright,,,bad pass,,,,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,7:52,NJN,shot,Vince Carter,,,,,,,,,Antoine Wright,2,,,made,,layup,25,6
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,7:34,ATL,turnover,,,,,,,,,,Josh Smith,,,lost ball,,Antoine Wright,,,
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,7:28,NJN,shot,Antoine Wright,,,,,,,,,Jason Kidd,2,,,made,,layup,25,6
+Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Tyronn Lue,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,7:20,ATL,timeout,,,,,,,,,,,,,,,,regular,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Marvin Williams,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,7:20,ATL,sub,,,,Josh Childress,,Tyronn Lue,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Zaza Pachulia,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,7:20,ATL,sub,,,,Zaza Pachulia,,Lorenzen Wright,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Zaza Pachulia,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,7:11,ATL,shot,,,Vince Carter,,,,,,,Josh Smith,,,,missed,,layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Zaza Pachulia,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,7:11,ATL,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Zaza Pachulia,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,7:04,ATL,shot,,,,,,,,,,Joe Johnson,2,,,made,,driving layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Zaza Pachulia,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,6:45,NJN,shot,,,,,,,,,,Antoine Wright,,,,missed,,driving layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Zaza Pachulia,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,6:44,ATL,rebound,,,,,,,,,,Marvin Williams,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Zaza Pachulia,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,6:31,ATL,shot,Joe Johnson,,,,,,,,,Marvin Williams,2,,,made,,jump,36,19
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Zaza Pachulia,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,6:08,NJN,shot,,,Joe Johnson,,,,,,,Antoine Wright,,,,missed,,layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Zaza Pachulia,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,6:07,ATL,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Zaza Pachulia,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,6:07,NJN,foul,,,,,,,,Joe Johnson,,Jason Collins,,,,,,loose ball,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Zaza Pachulia,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,5:49,ATL,turnover,,,,,,,,,,Josh Childress,,,3 second violation,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Zaza Pachulia,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,5:32,NJN,turnover,,,,,,,,,,Vince Carter,,,lost ball,,Josh Childress,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Zaza Pachulia,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,5:28,ATL,shot,Josh Childress,,,,,,,,,Joe Johnson,2,,,made,,layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Zaza Pachulia,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,5:15,ATL,foul,,,,,,,,Vince Carter,,Marvin Williams,,,,,,personal,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Zaza Pachulia,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,5:10,ATL,foul,,,,,,,,Vince Carter,,Marvin Williams,,,,,,shooting,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Zaza Pachulia,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,5:10,NJN,free throw,,,,,,,1,,2,Vince Carter,,,foul,made,,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Zaza Pachulia,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,5:10,NJN,free throw,,,,,,,2,,2,Vince Carter,,,foul,made,,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Zaza Pachulia,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,4:55,ATL,shot,Josh Childress,,,,,,,,,Joe Johnson,3,,,made,,3pt,1,5
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Zaza Pachulia,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,4:32,ATL,foul,,,,,,,,Antoine Wright,,Josh Smith,,,,,,personal,,
+Joe Johnson,Josh Childress,Marvin Williams,Shelden Williams,Zaza Pachulia,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,4:32,ATL,sub,,,,Shelden Williams,,Josh Smith,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Marvin Williams,Shelden Williams,Zaza Pachulia,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,4:21,NJN,shot,Vince Carter,,,,,,,,,Jason Kidd,2,,,made,,driving layup,25,6
+Joe Johnson,Josh Childress,Marvin Williams,Shelden Williams,Zaza Pachulia,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,4:03,ATL,turnover,,,,,,,,,,Shelden Williams,,,bad pass,,Vince Carter,,,
+Joe Johnson,Josh Childress,Marvin Williams,Shelden Williams,Zaza Pachulia,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,3:57,NJN,shot,Mikki Moore,,,,,,,,,Vince Carter,2,,,made,,layup,25,6
+Joe Johnson,Josh Childress,Marvin Williams,Shelden Williams,Zaza Pachulia,Antoine Wright,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,3:46,NJN,foul,,,,,,,,Zaza Pachulia,,Antoine Wright,,,,,,personal,,
+Joe Johnson,Josh Childress,Marvin Williams,Shelden Williams,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Mikki Moore,Vince Carter,3,3:46,NJN,sub,,,,Bostjan Nachbar,,Antoine Wright,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Marvin Williams,Shelden Williams,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Jason Kidd,Mikki Moore,Vince Carter,3,3:46,NJN,sub,,,,Clifford Robinson,,Jason Collins,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Marvin Williams,Shelden Williams,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Jason Kidd,Mikki Moore,Vince Carter,3,3:37,ATL,shot,Zaza Pachulia,,,,,,,,,Josh Childress,2,,,made,,layup,25,6
+Joe Johnson,Josh Childress,Marvin Williams,Shelden Williams,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Jason Kidd,Mikki Moore,Vince Carter,3,3:30,NJN,timeout,,,,,,,,,,,,,,,,regular,,
+Joe Johnson,Josh Childress,Marvin Williams,Shelden Williams,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Jason Kidd,Mikki Moore,Vince Carter,3,3:17,NJN,shot,,,,,,,,,,Mikki Moore,,,,missed,,alley oop layup shot,25,6
+Joe Johnson,Josh Childress,Marvin Williams,Shelden Williams,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Jason Kidd,Mikki Moore,Vince Carter,3,3:16,NJN,rebound,,,,,,,,,,Vince Carter,,,,,,off,,
+Joe Johnson,Josh Childress,Marvin Williams,Shelden Williams,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Jason Kidd,Mikki Moore,Vince Carter,3,3:01,NJN,shot,,,,,,,,,,Jason Kidd,,,,missed,,3pt,25,30
+Joe Johnson,Josh Childress,Marvin Williams,Shelden Williams,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Jason Kidd,Mikki Moore,Vince Carter,3,2:59,ATL,rebound,,,,,,,,,,Zaza Pachulia,,,,,,def,,
+Joe Johnson,Josh Childress,Marvin Williams,Shelden Williams,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Jason Kidd,Mikki Moore,Vince Carter,3,2:41,NJN,foul,,,,,,,,Zaza Pachulia,,Mikki Moore,,,,,,shooting,,
+Joe Johnson,Josh Childress,Marvin Williams,Shelden Williams,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,3,2:41,NJN,sub,,,,Marcus Williams,,Jason Kidd,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Marvin Williams,Shelden Williams,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,3,2:41,ATL,free throw,,,,,,,1,,2,Zaza Pachulia,,,foul,made,,,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,3,2:41,ATL,sub,,,,Speedy Claxton,,Marvin Williams,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,3,2:41,ATL,free throw,,,,,,,2,,2,Zaza Pachulia,,,foul,made,,,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,3,2:18,NJN,shot,,,,,,,,,,Clifford Robinson,,,,missed,,jump,7,11
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,3,2:16,ATL,rebound,,,,,,,,,,Josh Childress,,,,,,def,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,3,2:08,ATL,shot,,,,,,,,,,Shelden Williams,,,,missed,,jump,13,9
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,3,2:06,ATL,rebound,,,,,,,,,,Zaza Pachulia,,,,,,off,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,3,1:46,ATL,shot,,,,,,,,,,Joe Johnson,2,,,made,,jump,34,26
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,3,1:28,ATL,foul,,,,,,,,Clifford Robinson,,Shelden Williams,,,,,,loose ball,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,3,1:28,NJN,free throw,,,,,,,1,,2,Clifford Robinson,,,foul,missed,,,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,3,1:28,NJN,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,3,1:28,NJN,free throw,,,,,,,2,,2,Clifford Robinson,,,foul,missed,,,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,3,1:27,ATL,rebound,,,,,,,,,,Zaza Pachulia,,,,,,def,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,3,1:12,ATL,shot,Shelden Williams,,,,,,,,,Joe Johnson,3,,,made,,3pt,30,29
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,3,0:46,NJN,shot,,,,,,,,,,Vince Carter,,,,missed,,running jump,35,17
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,3,0:45,NJN,rebound,,,,,,,,,,Mikki Moore,,,,,,off,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,3,0:31,NJN,shot,Vince Carter,,,,,,,,,Marcus Williams,2,,,made,,jump,32,17
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,3,0:10,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,jump,43,17
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,3,0:09,ATL,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,3,0:09,ATL,timeout,,,,,,,,,,,,,,,,short,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,3,0:01,NJN,foul,,,,,,,,Zaza Pachulia,,Bostjan Nachbar,,,,,,shooting,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,3,0:01,ATL,free throw,,,,,,,1,,2,Zaza Pachulia,,,foul,made,,,,
+Joe Johnson,Josh Childress,Marvin Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,3,0:01,ATL,sub,,,,Marvin Williams,,Shelden Williams,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Marvin Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,3,0:01,ATL,free throw,,,,,,,2,,2,Zaza Pachulia,,,foul,made,,,,
+Joe Johnson,Josh Childress,Marvin Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,3,0:00,NJN,shot,,,,,,,,,,Marcus Williams,,,,missed,,3pt,5,76
+Joe Johnson,Josh Childress,Marvin Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Marcus Williams,Mikki Moore,Vince Carter,3,0:00,NJN,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Jason Kidd,Marcus Williams,Mikki Moore,4,11:46,NJN,turnover,,,,,,,,,,Marcus Williams,,,bad pass,,,,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Jason Kidd,Marcus Williams,Mikki Moore,4,11:29,ATL,shot,,,,,,,,,,Joe Johnson,2,,,made,,fade away jumper,11,15
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Jason Kidd,Marcus Williams,Mikki Moore,4,11:08,NJN,shot,,,,,,,,,,Marcus Williams,2,,,made,,jump,27,24
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Jason Kidd,Marcus Williams,Mikki Moore,4,10:46,ATL,shot,Speedy Claxton,,,,,,,,,Joe Johnson,2,,,made,,jump,6,14
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Jason Kidd,Marcus Williams,Mikki Moore,4,10:30,ATL,foul,,,,,,,,Mikki Moore,,Shelden Williams,,,,,,shooting,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Jason Kidd,Marcus Williams,Mikki Moore,4,10:30,NJN,free throw,,,,,,,1,,2,Mikki Moore,,,foul,made,,,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Jason Kidd,Marcus Williams,Mikki Moore,4,10:30,NJN,free throw,,,,,,,2,,2,Mikki Moore,,,foul,made,,,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Jason Kidd,Marcus Williams,Mikki Moore,4,10:13,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,3pt,25,31
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Jason Kidd,Marcus Williams,Mikki Moore,4,10:11,NJN,rebound,,,,,,,,,,Marcus Williams,,,,,,def,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Jason Kidd,Marcus Williams,Mikki Moore,4,10:07,NJN,shot,,,,,,,,,,Marcus Williams,2,,,made,,jump,29,20
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Jason Kidd,Marcus Williams,Mikki Moore,4,9:52,ATL,turnover,,,,,,,,,,Speedy Claxton,,,bad pass,,,,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Jason Kidd,Marcus Williams,Mikki Moore,4,9:34,NJN,shot,,,,,,,,,,Marcus Williams,,,,missed,,layup,25,6
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Clifford Robinson,Jason Kidd,Marcus Williams,Mikki Moore,4,9:34,NJN,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Mikki Moore,4,9:34,NJN,sub,,,,Jason Collins,,Clifford Robinson,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Mikki Moore,4,9:34,ATL,foul,,,,,,,,Mikki Moore,,Zaza Pachulia,,,,,,loose ball,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,9:34,NJN,sub,,,,Vince Carter,,Mikki Moore,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,9:28,NJN,shot,,,,,,,,,,Jason Kidd,,,,missed,,layup,25,6
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,9:28,NJN,rebound,,,,,,,,,,Jason Collins,,,,,,off,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,9:28,ATL,foul,,,,,,,,Jason Collins,,Zaza Pachulia,,,,,,shooting,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,9:28,NJN,free throw,,,,,,,1,,2,Jason Collins,,,foul,missed,,,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,9:28,NJN,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,9:28,ATL,sub,,,,Josh Smith,,Shelden Williams,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,9:28,NJN,free throw,,,,,,,2,,2,Jason Collins,,,foul,missed,,,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,9:27,NJN,rebound,,,,,,,,,,Marcus Williams,,,,,,off,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,9:20,ATL,foul,,,,,,,,Jason Collins,,Speedy Claxton,,,,,,personal,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,9:16,NJN,shot,Marcus Williams,,,,,,,,,Jason Kidd,2,,,made,,driving layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,8:59,ATL,turnover,,,,,,,,,,Speedy Claxton,,,bad pass,,Jason Kidd,,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,8:54,NJN,shot,Jason Kidd,,,,,,,,,Bostjan Nachbar,2,,,made,,layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,8:48,ATL,timeout,,,,,,,,,,,,,,,,regular,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,8:40,ATL,shot,,,Vince Carter,,,,,,,Josh Smith,,,,missed,,jump,31,12
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,8:38,NJN,rebound,,,,,,,,,,Bostjan Nachbar,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,8:28,NJN,shot,,,,,,,,,,Marcus Williams,2,,,made,,layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,8:03,ATL,shot,,,,,,,,,,Joe Johnson,2,,,made,,layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,7:42,NJN,shot,,,,,,,,,,Bostjan Nachbar,,,,missed,,jump,46,9
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,7:40,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,7:23,NJN,foul,,,,,,,,Joe Johnson,,Jason Collins,,,,,,personal,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,7:10,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,jump,37,18
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,7:08,NJN,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,6:59,ATL,foul,,,,,,,,Jason Collins,,Speedy Claxton,,,,,,personal,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,6:59,NJN,free throw,,,,,,,1,,2,Jason Collins,,,foul,made,,,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,6:59,NJN,free throw,,,,,,,2,,2,Jason Collins,,,foul,made,,,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,6:46,ATL,shot,Speedy Claxton,,,,,,,,,Josh Childress,2,,,made,,reverse layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,6:29,ATL,foul,,,,,,,,Vince Carter,,Zaza Pachulia,,,,,,shooting,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,6:29,NJN,free throw,,,,,,,1,,2,Vince Carter,,,foul,missed,,,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,6:29,NJN,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,6:29,NJN,free throw,,,,,,,2,,2,Vince Carter,,,foul,made,,,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,6:14,ATL,turnover,,,,,,,,,,Speedy Claxton,,,lost ball,,Marcus Williams,,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,6:12,NJN,turnover,,,,,,,,,,Jason Kidd,,,out of bounds lost ball turnover,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,5:53,ATL,shot,Josh Smith,,,,,,,,,Speedy Claxton,2,,,made,,jump,37,24
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,5:39,NJN,foul,,,,,,,,Joe Johnson,,Jason Collins,,,,,,offensive,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,5:39,NJN,turnover,,,,,,,,,,Jason Collins,,,foul,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,5:39,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Antoine Wright,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,5:39,NJN,sub,,,,Antoine Wright,,Bostjan Nachbar,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Antoine Wright,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,5:22,ATL,shot,,,,,,,,,,Speedy Claxton,,,,missed,,jump,14,16
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Antoine Wright,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,5:20,NJN,rebound,,,,,,,,,,Antoine Wright,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Antoine Wright,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,5:01,NJN,shot,,,,,,,,,,Jason Kidd,,,,missed,,layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Antoine Wright,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,5:00,ATL,rebound,,,,,,,,,,Joe Johnson,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Antoine Wright,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,4:46,ATL,shot,,,Antoine Wright,,,,,,,Josh Childress,,,,missed,,layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Antoine Wright,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,4:45,OFF,jump ball,,Zaza Pachulia,,,Jason Collins,,,,,,,Marcus Williams,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Antoine Wright,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,4:45,NJN,rebound,,,,,,,,,,Jason Collins,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Antoine Wright,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,4:25,NJN,shot,,,Josh Childress,,,,,,,Antoine Wright,,,,missed,,layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Antoine Wright,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,4:24,NJN,rebound,,,,,,,,,,Jason Collins,,,,,,off,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Antoine Wright,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,4:23,ATL,foul,,,,,,,,Jason Collins,,Josh Childress,,,,,,shooting,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Antoine Wright,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,4:23,NJN,free throw,,,,,,,1,,2,Jason Collins,,,foul,missed,,,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Antoine Wright,Jason Collins,Jason Kidd,Marcus Williams,Vince Carter,4,4:23,NJN,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Antoine Wright,Bostjan Nachbar,Jason Collins,Jason Kidd,Vince Carter,4,4:23,NJN,sub,,,,Bostjan Nachbar,,Marcus Williams,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Antoine Wright,Bostjan Nachbar,Jason Collins,Jason Kidd,Vince Carter,4,4:23,NJN,free throw,,,,,,,2,,2,Jason Collins,,,foul,missed,,,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Antoine Wright,Bostjan Nachbar,Jason Collins,Jason Kidd,Vince Carter,4,4:22,ATL,rebound,,,,,,,,,,Zaza Pachulia,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Antoine Wright,Bostjan Nachbar,Jason Collins,Jason Kidd,Vince Carter,4,4:08,NJN,foul,,,,,,,,Joe Johnson,,Jason Collins,,,,,,personal,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Antoine Wright,Bostjan Nachbar,Jason Kidd,Mikki Moore,Vince Carter,4,4:08,NJN,sub,,,,Mikki Moore,,Jason Collins,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Antoine Wright,Bostjan Nachbar,Jason Kidd,Mikki Moore,Vince Carter,4,4:08,ATL,timeout,,,,,,,,,,,,,,,,regular,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Antoine Wright,Bostjan Nachbar,Jason Kidd,Mikki Moore,Vince Carter,4,4:00,ATL,shot,Josh Childress,,,,,,,,,Zaza Pachulia,2,,,made,,layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Antoine Wright,Bostjan Nachbar,Jason Kidd,Mikki Moore,Vince Carter,4,3:40,ATL,foul,,,,,,,,Mikki Moore,,Zaza Pachulia,,,,,,personal,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Antoine Wright,Bostjan Nachbar,Jason Kidd,Mikki Moore,Vince Carter,4,3:40,NJN,free throw,,,,,,,1,,2,Mikki Moore,,,foul,missed,,,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Antoine Wright,Bostjan Nachbar,Jason Kidd,Mikki Moore,Vince Carter,4,3:40,NJN,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Antoine Wright,Bostjan Nachbar,Jason Kidd,Mikki Moore,Vince Carter,4,3:40,NJN,free throw,,,,,,,2,,2,Mikki Moore,,,foul,missed,,,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Antoine Wright,Bostjan Nachbar,Jason Kidd,Mikki Moore,Vince Carter,4,3:39,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Antoine Wright,Bostjan Nachbar,Jason Kidd,Mikki Moore,Vince Carter,4,3:23,ATL,shot,Speedy Claxton,,,,,,,,,Josh Smith,3,,,made,,3pt,2,10
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Antoine Wright,Bostjan Nachbar,Jason Kidd,Mikki Moore,Vince Carter,4,3:17,NJN,timeout,,,,,,,,,,,,,,,,regular,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,4,3:17,NJN,sub,,,,Marcus Williams,,Antoine Wright,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,4,3:06,NJN,shot,Jason Kidd,,,,,,,,,Vince Carter,2,,,made,,layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,4,2:48,ATL,shot,,,,,,,,,,Speedy Claxton,,,,missed,,layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,4,2:47,NJN,rebound,,,,,,,,,,Vince Carter,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,4,2:40,NJN,shot,,,,,,,,,,Marcus Williams,2,,,made,,layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,4,2:40,ATL,violation,,,,,,,,,,Josh Smith,,,,,,defensive goaltending,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,4,2:23,ATL,turnover,,,,,,,,,,Joe Johnson,,,lost ball,,Jason Kidd,,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,4,2:21,NJN,foul,,,,,,,,Speedy Claxton,,Jason Kidd,,,,,,offensive,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,4,2:21,NJN,turnover,,,,,,,,,,Jason Kidd,,,foul,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,4,2:10,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,jump,22,22
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,4,2:09,NJN,rebound,,,,,,,,,,Jason Kidd,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,4,2:08,ATL,foul,,,,,,,,Jason Kidd,,Zaza Pachulia,,,,,,personal,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,4,2:08,ATL,sub,,,,Lorenzen Wright,,Zaza Pachulia,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,4,2:08,NJN,free throw,,,,,,,1,,2,Jason Kidd,,,foul,missed,,,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,4,2:08,NJN,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,4,2:08,NJN,free throw,,,,,,,2,,2,Jason Kidd,,,foul,made,,,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,4,1:52,ATL,shot,,,,,,,,,,Josh Childress,,,,missed,,jump,40,15
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,4,1:50,NJN,rebound,,,,,,,,,,Jason Kidd,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,4,1:45,ATL,foul,,,,,,,,Bostjan Nachbar,,Josh Childress,,,,,,shooting,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,4,1:45,NJN,free throw,,,,,,,1,,2,Bostjan Nachbar,,,foul,made,,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,4,1:45,ATL,sub,,,,Marvin Williams,,Lorenzen Wright,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,4,1:45,NJN,free throw,,,,,,,2,,2,Bostjan Nachbar,,,foul,made,,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,4,1:33,NJN,foul,,,,,,,,Speedy Claxton,,Mikki Moore,,,,,,personal,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,4,1:19,ATL,shot,Speedy Claxton,,,,,,,,,Marvin Williams,2,,,made,,jump,40,21
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,4,1:05,NJN,shot,,,,,,,,,,Vince Carter,,,,missed,,jump,18,10
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,4,1:04,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,4,0:43,ATL,shot,,,,,,,,,,Joe Johnson,2,,,made,,jump,12,14
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,4,0:43,NJN,timeout,,,,,,,,,,,,,,,,regular,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,4,0:38,NJN,shot,Mikki Moore,,,,,,,,,Vince Carter,2,,,made,,layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,4,0:15,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,3pt,29,31
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,4,0:13,NJN,rebound,,,,,,,,,,Vince Carter,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,4,0:10,NJN,shot,Jason Kidd,,,,,,,,,Marcus Williams,2,,,made,,layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,4,0:10,ATL,timeout,,,,,,,,,,,,,,,,regular,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Antoine Wright,Bostjan Nachbar,Jason Kidd,Mikki Moore,Vince Carter,4,0:10,NJN,sub,,,,Antoine Wright,,Marcus Williams,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Antoine Wright,Bostjan Nachbar,Jason Kidd,Mikki Moore,Vince Carter,4,0:01,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,3pt,2,7
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Antoine Wright,Bostjan Nachbar,Jason Kidd,Mikki Moore,Vince Carter,4,0:00,ATL,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,5,5:00,OFF,jump ball,,Josh Smith,,,Mikki Moore,,,,,,,Marcus Williams,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,5,4:47,NJN,shot,Marcus Williams,,,,,,,,,Mikki Moore,2,,,made,,alley oop dunk,25,6
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,5,4:29,ATL,turnover,,,,,,,,,,Joe Johnson,,,lost ball,,Jason Kidd,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,5,4:19,NJN,shot,,,,,,,,,,Marcus Williams,,,,missed,,jump,5,6
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,5,4:17,NJN,rebound,,,,,,,,,,Marcus Williams,,,,,,off,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,5,4:04,NJN,shot,,,,,,,,,,Marcus Williams,2,,,made,,driving layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,5,3:29,ATL,shot,Marvin Williams,,,,,,,,,Joe Johnson,3,,,made,,3pt,16,32
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,5,3:07,OFF,jump ball,,Speedy Claxton,,,Vince Carter,,,,,,,Bostjan Nachbar,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,5,3:00,ATL,foul,,,,,,,,Marcus Williams,,Josh Childress,,,,,,shooting,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,5,3:00,NJN,free throw,,,,,,,1,,2,Marcus Williams,,,foul,made,,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,5,3:00,NJN,free throw,,,,,,,2,,2,Marcus Williams,,,foul,made,,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,5,2:48,ATL,shot,,,Mikki Moore,,,,,,,Speedy Claxton,,,,missed,,layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,5,2:47,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,off,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,5,2:46,ATL,shot,,,,,,,,,,Josh Smith,2,,,made,,slam dunk,25,6
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,5,2:34,NJN,turnover,,,,,,,,,,Marcus Williams,,,lost ball,,Speedy Claxton,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,5,2:29,ATL,turnover,,,,,,,,,,Josh Smith,,,bad pass,,Marcus Williams,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,5,2:20,NJN,shot,,,,,,,,,,Bostjan Nachbar,,,,missed,,3pt,2,9
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,5,2:18,ATL,rebound,,,,,,,,,,Joe Johnson,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,5,2:07,ATL,shot,Joe Johnson,,,,,,,,,Josh Smith,2,,,made,,dunk,25,6
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,5,2:02,NJN,timeout,,,,,,,,,,,,,,,,regular,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,5,1:54,NJN,shot,,,,,,,,,,Vince Carter,2,,,made,,driving layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,5,1:34,ATL,shot,Speedy Claxton,,,,,,,,,Josh Smith,2,,,made,,jump,25,10
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,5,1:12,NJN,shot,,,,,,,,,,Marcus Williams,,,,missed,,running jump,18,7
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,5,1:11,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,5,0:54,ATL,shot,,,,,,,,,,Marvin Williams,,,,missed,,3pt,2,6
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,5,0:52,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,off,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,5,0:49,ATL,turnover,,,,,,,,,,Josh Smith,,,out of bounds lost ball turnover,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,5,0:34,NJN,turnover,,,,,,,,,,Vince Carter,,,lost ball,,Speedy Claxton,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,5,0:33,NJN,foul,,,,,,,,Speedy Claxton,,Vince Carter,,,,,,loose ball,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,5,0:33,ATL,timeout,,,,,,,,,,,,,,,,regular,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Antoine Wright,Bostjan Nachbar,Jason Kidd,Mikki Moore,Vince Carter,5,0:33,NJN,sub,,,,Antoine Wright,,Marcus Williams,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Tyronn Lue,Antoine Wright,Bostjan Nachbar,Jason Kidd,Mikki Moore,Vince Carter,5,0:33,ATL,sub,,,,Tyronn Lue,,Speedy Claxton,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Tyronn Lue,Antoine Wright,Bostjan Nachbar,Jason Kidd,Mikki Moore,Vince Carter,5,0:14,ATL,shot,Joe Johnson,,,,,,,,,Tyronn Lue,2,,,made,,jump,27,28
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Tyronn Lue,Antoine Wright,Bostjan Nachbar,Jason Kidd,Mikki Moore,Vince Carter,5,0:14,NJN,timeout,,,,,,,,,,,,,,,,regular,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Antoine Wright,Bostjan Nachbar,Jason Kidd,Mikki Moore,Vince Carter,5,0:14,ATL,sub,,,,Speedy Claxton,,Tyronn Lue,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,5,0:14,NJN,sub,,,,Marcus Williams,,Antoine Wright,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,5,0:11,ATL,foul,,,,,,,,Vince Carter,,Josh Smith,,,,,,shooting,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,5,0:11,NJN,free throw,,,,,,,1,,2,Vince Carter,,,foul,made,,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Antoine Wright,Bostjan Nachbar,Jason Kidd,Mikki Moore,Vince Carter,5,0:11,NJN,sub,,,,Antoine Wright,,Marcus Williams,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Antoine Wright,Bostjan Nachbar,Jason Kidd,Mikki Moore,Vince Carter,5,0:11,NJN,free throw,,,,,,,2,,2,Vince Carter,,,foul,made,,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Antoine Wright,Bostjan Nachbar,Jason Kidd,Mikki Moore,Vince Carter,5,0:11,ATL,timeout,,,,,,,,,,,,,,,,short,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Tyronn Lue,Antoine Wright,Bostjan Nachbar,Jason Kidd,Mikki Moore,Vince Carter,5,0:11,ATL,sub,,,,Tyronn Lue,,Speedy Claxton,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Tyronn Lue,Antoine Wright,Bostjan Nachbar,Jason Kidd,Mikki Moore,Vince Carter,5,0:09,NJN,foul,,,,,,,,Tyronn Lue,,Antoine Wright,,,,,,personal,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Tyronn Lue,Antoine Wright,Bostjan Nachbar,Jason Kidd,Mikki Moore,Vince Carter,5,0:09,ATL,free throw,,,,,,,1,,2,Tyronn Lue,,,foul,made,,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Tyronn Lue,Antoine Wright,Bostjan Nachbar,Jason Kidd,Mikki Moore,Vince Carter,5,0:09,ATL,free throw,,,,,,,2,,2,Tyronn Lue,,,foul,made,,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Tyronn Lue,Antoine Wright,Bostjan Nachbar,Jason Kidd,Mikki Moore,Vince Carter,5,0:09,NJN,timeout,,,,,,,,,,,,,,,,short,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Antoine Wright,Bostjan Nachbar,Jason Kidd,Mikki Moore,Vince Carter,5,0:09,ATL,sub,,,,Speedy Claxton,,Tyronn Lue,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,5,0:09,NJN,sub,,,,Marcus Williams,,Antoine Wright,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,5,0:02,NJN,shot,Jason Kidd,,,,,,,,,Vince Carter,3,,,made,,3pt,23,31
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Bostjan Nachbar,Jason Kidd,Marcus Williams,Mikki Moore,Vince Carter,5,0:02,ATL,timeout,,,,,,,,,,,,,,,,short,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Speedy Claxton,Antoine Wright,Bostjan Nachbar,Jason Kidd,Mikki Moore,Vince Carter,5,0:02,NJN,sub,,,,Antoine Wright,,Marcus Williams,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Tyronn Lue,Antoine Wright,Bostjan Nachbar,Jason Kidd,Mikki Moore,Vince Carter,5,0:02,ATL,sub,,,,Tyronn Lue,,Speedy Claxton,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Tyronn Lue,Antoine Wright,Bostjan Nachbar,Jason Kidd,Mikki Moore,Vince Carter,5,0:00,ATL,shot,,,,,,,,,,Tyronn Lue,2,,,made,,jump,29,28

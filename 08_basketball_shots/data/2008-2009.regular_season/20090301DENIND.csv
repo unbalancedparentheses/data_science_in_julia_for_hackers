@@ -1,0 +1,505 @@
+a1,a2,a3,a4,a5,h1,h2,h3,h4,h5,period,time,team,etype,assist,away,block,entered,home,left,num,opponent,outof,player,points,possession,reason,result,steal,type,x,y
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,12:00,OFF,jump ball,,Nene Hilario,,,Roy Hibbert,,,,,,,Jarrett Jack,,,,,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,11:55,IND,shot,Roy Hibbert,,,,,,,,,Jarrett Jack,2,,,made,,jump,16,19
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,11:34,DEN,shot,Carmelo Anthony,,,,,,,,,Dahntay Jones,2,,,made,,jump,29,9
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,11:15,IND,shot,Marquis Daniels,,,,,,,,,Roy Hibbert,2,,,made,,jump,22,6
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,11:01,DEN,shot,Chauncey Billups,,,,,,,,,Kenyon Martin,2,,,made,,jump bank,32,8
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,10:43,IND,shot,T.J. Ford,,,,,,,,,Roy Hibbert,2,,,made,,layup,23,6
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,10:28,DEN,shot,,,,,,,,,,Chauncey Billups,2,,,made,,jump,17,21
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,10:09,IND,shot,,,,,,,,,,Jarrett Jack,2,,,made,,fade away jumper,31,14
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,9:56,DEN,shot,,,,,,,,,,Dahntay Jones,,,,missed,,jump,39,21
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,9:55,DEN,rebound,,,,,,,,,,Nene Hilario,,,,,,off,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,9:53,DEN,shot,,,,,,,,,,Nene Hilario,,,,missed,,layup,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,9:52,IND,rebound,,,,,,,,,,Troy Murphy,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,9:36,IND,shot,,,,,,,,,,Roy Hibbert,,,,missed,,jump,30,11
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,9:35,DEN,rebound,,,,,,,,,,Carmelo Anthony,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,9:31,DEN,turnover,,,,,,,,,,Carmelo Anthony,,,bad pass,,Marquis Daniels,,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,9:24,IND,shot,,,Nene Hilario,,,,,,,Troy Murphy,,,,missed,,layup,24,6
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,9:22,DEN,rebound,,,,,,,,,,Chauncey Billups,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,9:17,DEN,shot,,,,,,,,,,Carmelo Anthony,,,,missed,,jump,36,22
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,9:16,IND,rebound,,,,,,,,,,Troy Murphy,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,9:07,IND,shot,Jarrett Jack,,,,,,,,,Troy Murphy,3,,,made,,3pt,26,31
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,8:48,DEN,shot,,,,,,,,,,Nene Hilario,2,,,made,,layup,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,8:48,IND,foul,,,,,,,,Nene Hilario,,Roy Hibbert,,,,,,shooting,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,8:48,DEN,free throw,,,,,,,1,,1,Nene Hilario,,,foul,made,,,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,8:31,IND,shot,,,Dahntay Jones,,,,,,,T.J. Ford,,,,missed,,jump,18,9
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,8:29,IND,rebound,,,,,,,,,,Jarrett Jack,,,,,,off,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,8:26,IND,shot,,,,,,,,,,Troy Murphy,,,,missed,,3pt,41,26
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,8:25,DEN,rebound,,,,,,,,,,Kenyon Martin,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,8:11,DEN,shot,Carmelo Anthony,,,,,,,,,Dahntay Jones,2,,,made,,driving slam dunk,26,6
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,7:53,IND,shot,,,,,,,,,,T.J. Ford,,,,missed,,jump,10,6
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,7:52,IND,rebound,,,,,,,,,,Roy Hibbert,,,,,,off,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,7:51,IND,shot,,,,,,,,,,Roy Hibbert,,,,missed,,layup,26,6
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,7:50,IND,rebound,,,,,,,,,,Roy Hibbert,,,,,,off,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,7:49,IND,shot,,,,,,,,,,Roy Hibbert,,,,missed,,layup,25,6
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,7:48,DEN,rebound,,,,,,,,,,Kenyon Martin,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,7:44,DEN,shot,,,,,,,,,,Kenyon Martin,,,,missed,,jump,26,20
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,7:42,IND,rebound,,,,,,,,,,Troy Murphy,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,7:36,DEN,foul,,,,,,,,T.J. Ford,,Dahntay Jones,,,,,,personal,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,7:36,IND,foul,,,,,,,,,,T.J. Ford,,,,,,technical,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,7:36,DEN,free throw,,,,,,,1,,1,Chauncey Billups,,,technical,made,,,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,7:25,IND,shot,,,,,,,,,,Marquis Daniels,,,,missed,,jump,16,21
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,7:23,DEN,rebound,,,,,,,,,,Dahntay Jones,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,7:16,DEN,shot,,,,,,,,,,Carmelo Anthony,,,,missed,,jump,9,17
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,7:15,IND,rebound,,,,,,,,,,Roy Hibbert,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,7:08,IND,shot,Jarrett Jack,,,,,,,,,T.J. Ford,2,,,made,,layup,23,7
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,6:50,DEN,shot,,,,,,,,,,Nene Hilario,,,,missed,,jump,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,6:49,IND,rebound,,,,,,,,,,Marquis Daniels,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,6:38,IND,shot,,,,,,,,,,Roy Hibbert,,,,missed,,jump,29,10
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,6:37,DEN,rebound,,,,,,,,,,Kenyon Martin,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,6:27,DEN,shot,,,,,,,,,,Kenyon Martin,,,,missed,,jump,24,27
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,6:26,IND,rebound,,,,,,,,,,Troy Murphy,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,6:17,IND,shot,,,,,,,,,,Jarrett Jack,2,,,made,,pullup jump,7,6
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,5:56,IND,violation,,,,,,,,,,Marquis Daniels,,,,,,kicked ball,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,5:56,IND,timeout,,,,,,,,,,,,,,,,regular,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Brandon Rush,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,5:56,IND,sub,,,,Brandon Rush,,Jarrett Jack,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Brandon Rush,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,5:43,DEN,turnover,,,,,,,,,,Chauncey Billups,,,bad pass,,,,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Brandon Rush,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,5:31,IND,shot,T.J. Ford,,,,,,,,,Troy Murphy,2,,,made,,jump,11,6
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Brandon Rush,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,5:12,DEN,shot,,,,,,,,,,Chauncey Billups,2,,,made,,turnaround jump,14,6
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Brandon Rush,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,4:54,DEN,foul,,,,,,,,Troy Murphy,,Nene Hilario,,,,,,personal,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Kenyon Martin,Nene Hilario,Brandon Rush,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,4:54,DEN,sub,,,,J.R. Smith,,Dahntay Jones,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Kenyon Martin,Nene Hilario,Brandon Rush,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,4:45,IND,shot,,,Nene Hilario,,,,,,,Troy Murphy,,,,missed,,jump,41,6
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Kenyon Martin,Nene Hilario,Brandon Rush,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,4:43,DEN,rebound,,,,,,,,,,Kenyon Martin,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Kenyon Martin,Nene Hilario,Brandon Rush,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,4:26,DEN,shot,,,,,,,,,,Carmelo Anthony,,,,missed,,jump,14,19
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Kenyon Martin,Nene Hilario,Brandon Rush,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,4:25,IND,rebound,,,,,,,,,,Troy Murphy,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Kenyon Martin,Nene Hilario,Brandon Rush,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,4:17,IND,shot,,,,,,,,,,T.J. Ford,,,,missed,,layup,23,6
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Kenyon Martin,Nene Hilario,Brandon Rush,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,4:16,IND,rebound,,,,,,,,,,Marquis Daniels,,,,,,off,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Kenyon Martin,Nene Hilario,Brandon Rush,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,4:14,IND,shot,,,,,,,,,,Marquis Daniels,2,,,made,,tip,24,6
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Kenyon Martin,Nene Hilario,Brandon Rush,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,4:04,DEN,turnover,,,,,,,,,,Carmelo Anthony,,,bad pass,,,,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Kenyon Martin,Nene Hilario,Brandon Rush,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,3:46,DEN,violation,,,,,,,,,,Kenyon Martin,,,,,,kicked ball,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Kenyon Martin,Nene Hilario,Brandon Rush,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,3:41,IND,turnover,,,,,,,,,,Troy Murphy,,,bad pass,,,,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Kenyon Martin,Nene Hilario,Brandon Rush,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,3:30,DEN,shot,,,,,,,,,,Chauncey Billups,,,,missed,,layup,26,6
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Kenyon Martin,Nene Hilario,Brandon Rush,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,3:28,DEN,rebound,,,,,,,,,,Chauncey Billups,,,,,,off,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Kenyon Martin,Nene Hilario,Brandon Rush,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,3:17,DEN,shot,J.R. Smith,,,,,,,,,Nene Hilario,2,,,made,,layup,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Kenyon Martin,Nene Hilario,Brandon Rush,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,3:09,IND,turnover,,,,,,,,,,Brandon Rush,,,lost ball,,Carmelo Anthony,,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Kenyon Martin,Nene Hilario,Brandon Rush,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,3:00,DEN,shot,Carmelo Anthony,,,,,,,,,Kenyon Martin,2,,,made,,dunk,25,6
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Kenyon Martin,Nene Hilario,Brandon Rush,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,2:42,IND,shot,T.J. Ford,,,,,,,,,Troy Murphy,3,,,made,,3pt,49,5
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Kenyon Martin,Nene Hilario,Brandon Rush,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,2:18,IND,foul,,,,,,,,Carmelo Anthony,,Roy Hibbert,,,,,,shooting,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Kenyon Martin,Nene Hilario,Brandon Rush,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,1,2:18,DEN,timeout,,,,,,,,,,,,,,,,regular,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Kenyon Martin,Nene Hilario,Brandon Rush,Jeff Foster,Marquis Daniels,Roy Hibbert,T.J. Ford,1,2:18,IND,sub,,,,Jeff Foster,,Troy Murphy,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Kenyon Martin,Nene Hilario,Brandon Rush,Jeff Foster,Marquis Daniels,Rasho Nesterovic,T.J. Ford,1,2:18,IND,sub,,,,Rasho Nesterovic,,Roy Hibbert,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Kenyon Martin,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Rasho Nesterovic,1,2:18,IND,sub,,,,Jarrett Jack,,T.J. Ford,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Rasho Nesterovic,1,2:18,DEN,sub,,,,Chris Andersen,,Nene Hilario,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Rasho Nesterovic,1,2:18,DEN,free throw,,,,,,,1,,2,Carmelo Anthony,,,foul,made,,,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Rasho Nesterovic,1,2:18,DEN,free throw,,,,,,,2,,2,Carmelo Anthony,,,foul,made,,,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Rasho Nesterovic,1,2:02,IND,shot,Rasho Nesterovic,,,,,,,,,Marquis Daniels,2,,,made,,jump,35,12
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Rasho Nesterovic,1,1:48,DEN,shot,,,,,,,,,,Carmelo Anthony,2,,,made,,fade away jumper,14,15
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Rasho Nesterovic,1,1:37,DEN,foul,,,,,,,,Jarrett Jack,,Chris Andersen,,,,,,shooting,,
+Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Rasho Nesterovic,1,1:37,DEN,sub,,,,Linas Kleiza,,Carmelo Anthony,,,,,,,,,,,,
+Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Rasho Nesterovic,1,1:37,IND,free throw,,,,,,,1,,2,Jarrett Jack,,,foul,made,,,,
+Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Rasho Nesterovic,1,1:37,IND,free throw,,,,,,,2,,2,Jarrett Jack,,,foul,made,,,,
+Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Rasho Nesterovic,1,1:27,IND,foul,,,,,,,,Chauncey Billups,,Jarrett Jack,,,,,,shooting,,
+Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Rasho Nesterovic,1,1:27,DEN,free throw,,,,,,,1,,2,Chauncey Billups,,,foul,made,,,,
+Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Rasho Nesterovic,1,1:27,DEN,free throw,,,,,,,2,,2,Chauncey Billups,,,foul,made,,,,
+Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Rasho Nesterovic,1,1:11,IND,shot,,,Chris Andersen,,,,,,,Jarrett Jack,,,,missed,,layup,22,8
+Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Rasho Nesterovic,1,1:11,IND,rebound,,,,,,,,,,,,,,,,,,
+Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Rasho Nesterovic,1,1:07,IND,shot,,,,,,,,,,Brandon Rush,,,,missed,,jump,11,6
+Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Rasho Nesterovic,1,1:06,DEN,rebound,,,,,,,,,,Chauncey Billups,,,,,,def,,
+Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Rasho Nesterovic,1,1:02,IND,foul,,,,,,,,Chauncey Billups,,Jeff Foster,,,,,,personal,,
+Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Rasho Nesterovic,1,1:02,DEN,free throw,,,,,,,1,,2,Chauncey Billups,,,foul,made,,,,
+Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,1,1:02,IND,sub,,,,Stephen Graham,,Marquis Daniels,,,,,,,,,,,,
+Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,1,1:02,DEN,free throw,,,,,,,2,,2,Chauncey Billups,,,foul,made,,,,
+Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,1,0:41,IND,shot,Stephen Graham,,,,,,,,,Jeff Foster,2,,,made,,jump,37,21
+Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,1,0:34,DEN,shot,,,,,,,,,,Chauncey Billups,,,,missed,,3pt,13,28
+Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,1,0:33,DEN,rebound,,,,,,,,,,J.R. Smith,,,,,,off,,
+Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,1,0:28,DEN,shot,Kenyon Martin,,,,,,,,,Linas Kleiza,2,,,made,,layup,24,7
+Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,1,0:28,IND,foul,,,,,,,,Linas Kleiza,,Rasho Nesterovic,,,,,,shooting,,
+Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,1,0:28,DEN,free throw,,,,,,,1,,1,Linas Kleiza,,,foul,made,,,,
+Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,1,0:06,IND,turnover,,,,,,,,,,Jarrett Jack,,,lost ball,,Chauncey Billups,,,
+Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,1,0:00,DEN,shot,,,,,,,,,,Chauncey Billups,,,,missed,,jump,37,13
+Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,1,0:00,DEN,rebound,,,,,,,,,,,,,,,,,,
+Anthony Carter,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,2,11:48,DEN,shot,,,,,,,,,,J.R. Smith,,,,missed,,jump,31,9
+Anthony Carter,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,2,11:47,DEN,rebound,,,,,,,,,,Chris Andersen,,,,,,off,,
+Anthony Carter,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,2,11:46,DEN,shot,,,,,,,,,,Chris Andersen,2,,,made,,tip,25,7
+Anthony Carter,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,2,11:29,IND,shot,,,,,,,,,,Stephen Graham,,,,missed,,jump,17,24
+Anthony Carter,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,2,11:27,IND,rebound,,,,,,,,,,Stephen Graham,,,,,,off,,
+Anthony Carter,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,2,11:23,IND,shot,,,,,,,,,,Brandon Rush,,,,missed,,3pt,43,27
+Anthony Carter,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,2,11:22,IND,rebound,,,,,,,,,,Jeff Foster,,,,,,off,,
+Anthony Carter,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,2,11:12,IND,shot,,,,,,,,,,Stephen Graham,,,,missed,,3pt,41,26
+Anthony Carter,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,2,11:11,DEN,rebound,,,,,,,,,,Chris Andersen,,,,,,def,,
+Anthony Carter,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,2,11:00,DEN,shot,,,,,,,,,,Kenyon Martin,,,,missed,,jump,40,16
+Anthony Carter,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,2,11:00,IND,rebound,,,,,,,,,,Stephen Graham,,,,,,def,,
+Anthony Carter,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,2,10:51,IND,shot,,,,,,,,,,Rasho Nesterovic,,,,missed,,jump,26,26
+Anthony Carter,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,2,10:50,DEN,rebound,,,,,,,,,,Chris Andersen,,,,,,def,,
+Anthony Carter,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,2,10:40,DEN,shot,,,,,,,,,,Anthony Carter,,,,missed,,jump,15,21
+Anthony Carter,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,2,10:39,IND,rebound,,,,,,,,,,Jeff Foster,,,,,,def,,
+Anthony Carter,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,2,10:24,IND,shot,Brandon Rush,,,,,,,,,Rasho Nesterovic,2,,,made,,reverse layup,25,7
+Anthony Carter,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,2,10:06,DEN,shot,,,,,,,,,,Linas Kleiza,,,,missed,,3pt,1,7
+Anthony Carter,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,2,10:05,IND,rebound,,,,,,,,,,Jeff Foster,,,,,,def,,
+Anthony Carter,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,2,9:50,IND,shot,Jarrett Jack,,,,,,,,,Brandon Rush,3,,,made,,3pt,0,6
+Anthony Carter,Chris Andersen,J.R. Smith,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,2,9:33,IND,foul,,,,,,,,J.R. Smith,,Brandon Rush,,,,,,personal,,
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,2,9:33,DEN,sub,,,,Nene Hilario,,Kenyon Martin,,,,,,,,,,,,
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,2,9:29,DEN,shot,,,,,,,,,,J.R. Smith,,,,missed,,jump,21,25
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,2,9:28,DEN,rebound,,,,,,,,,,,,,,,,,,
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,2,9:28,IND,foul,,,,,,,,Chris Andersen,,Jeff Foster,,,,,,loose ball,,
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,2,9:22,DEN,shot,J.R. Smith,,,,,,,,,Nene Hilario,2,,,made,,layup,,
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,2,9:22,IND,foul,,,,,,,,Nene Hilario,,Jeff Foster,,,,,,shooting,,
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Rasho Nesterovic,Stephen Graham,Troy Murphy,2,9:22,IND,sub,,,,Troy Murphy,,Jeff Foster,,,,,,,,,,,,
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Rasho Nesterovic,Stephen Graham,Troy Murphy,2,9:22,DEN,free throw,,,,,,,1,,1,Nene Hilario,,,foul,missed,,,,
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Rasho Nesterovic,Stephen Graham,Troy Murphy,2,9:21,IND,rebound,,,,,,,,,,Rasho Nesterovic,,,,,,def,,
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Rasho Nesterovic,Stephen Graham,Troy Murphy,2,9:00,IND,shot,,,,,,,,,,Brandon Rush,,,,missed,,3pt,2,7
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Rasho Nesterovic,Stephen Graham,Troy Murphy,2,8:59,IND,rebound,,,,,,,,,,Rasho Nesterovic,,,,,,off,,
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Rasho Nesterovic,Stephen Graham,Troy Murphy,2,8:56,IND,shot,,,,,,,,,,Rasho Nesterovic,,,,missed,,jump,25,11
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Rasho Nesterovic,Stephen Graham,Troy Murphy,2,8:55,IND,rebound,,,,,,,,,,Troy Murphy,,,,,,off,,
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Rasho Nesterovic,Stephen Graham,Troy Murphy,2,8:53,IND,shot,,,,,,,,,,Troy Murphy,,,,missed,,layup,25,9
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Rasho Nesterovic,Stephen Graham,Troy Murphy,2,8:53,DEN,rebound,,,,,,,,,,Nene Hilario,,,,,,def,,
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Rasho Nesterovic,Stephen Graham,Troy Murphy,2,8:44,DEN,shot,,,Troy Murphy,,,,,,,J.R. Smith,,,,missed,,jump,25,10
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Rasho Nesterovic,Stephen Graham,Troy Murphy,2,8:43,DEN,rebound,,,,,,,,,,Nene Hilario,,,,,,off,,
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Rasho Nesterovic,Stephen Graham,Troy Murphy,2,8:41,DEN,shot,,,,,,,,,,Nene Hilario,,,,missed,,layup,,
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Rasho Nesterovic,Stephen Graham,Troy Murphy,2,8:40,IND,rebound,,,,,,,,,,Rasho Nesterovic,,,,,,def,,
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Rasho Nesterovic,Stephen Graham,Troy Murphy,2,8:33,IND,shot,,,,,,,,,,Jarrett Jack,2,,,made,,jump,27,16
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Rasho Nesterovic,Stephen Graham,Troy Murphy,2,8:23,DEN,turnover,,,,,,,,,,Anthony Carter,,,lost ball,,Troy Murphy,,,
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Rasho Nesterovic,Stephen Graham,Troy Murphy,2,8:18,IND,turnover,,,,,,,,,,Jarrett Jack,,,discontinue dribble,,,,,
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Rasho Nesterovic,Stephen Graham,Troy Murphy,2,8:18,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Rasho Nesterovic,Stephen Graham,Troy Murphy,2,8:18,IND,foul,,,,,,,,,,O'Brien,,,,,,technical,,
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Rasho Nesterovic,Stephen Graham,Troy Murphy,2,8:18,DEN,free throw,,,,,,,1,,1,Anthony Carter,,,technical,made,,,,
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Rasho Nesterovic,Stephen Graham,Troy Murphy,2,8:00,DEN,turnover,,,,,,,,,,Nene Hilario,,,5 second violation,,,,,
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Rasho Nesterovic,Stephen Graham,Troy Murphy,2,7:37,IND,shot,,,,,,,,,,Jarrett Jack,,,,missed,,3pt,42,24
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Rasho Nesterovic,Stephen Graham,Troy Murphy,2,7:36,DEN,rebound,,,,,,,,,,Anthony Carter,,,,,,def,,
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Rasho Nesterovic,Stephen Graham,Troy Murphy,2,7:29,DEN,turnover,,,,,,,,,,J.R. Smith,,,out of bounds lost ball turnover,,,,,
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Rasho Nesterovic,Stephen Graham,Troy Murphy,2,7:24,IND,shot,,,Nene Hilario,,,,,,,Jarrett Jack,,,,missed,,layup,25,6
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Rasho Nesterovic,Stephen Graham,Troy Murphy,2,7:24,IND,rebound,,,,,,,,,,,,,,,,,,
+Anthony Carter,Carmelo Anthony,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Rasho Nesterovic,Stephen Graham,Troy Murphy,2,7:24,DEN,sub,,,,Carmelo Anthony,,Chris Andersen,,,,,,,,,,,,
+Anthony Carter,Carmelo Anthony,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,Troy Murphy,2,7:24,IND,sub,,,,Marquis Daniels,,Stephen Graham,,,,,,,,,,,,
+Anthony Carter,Carmelo Anthony,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,7:24,IND,sub,,,,T.J. Ford,,Jarrett Jack,,,,,,,,,,,,
+Anthony Carter,Carmelo Anthony,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,7:24,DEN,foul,,,,,,,,Troy Murphy,,Linas Kleiza,,,,,,personal,,
+Anthony Carter,Carmelo Anthony,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,7:16,IND,foul,,,,,,,,J.R. Smith,,Troy Murphy,,,,,,offensive,,
+Anthony Carter,Carmelo Anthony,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,7:16,IND,turnover,,,,,,,,,,Troy Murphy,,,foul,,,,,
+Anthony Carter,Carmelo Anthony,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,7:05,DEN,shot,,,T.J. Ford,,,,,,,Linas Kleiza,,,,missed,,layup,23,7
+Anthony Carter,Carmelo Anthony,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,7:05,DEN,rebound,,,,,,,,,,,,,,,,,,
+Anthony Carter,Carmelo Anthony,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,7:03,DEN,shot,,,,,,,,,,Carmelo Anthony,,,,missed,,layup,25,8
+Anthony Carter,Carmelo Anthony,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,7:01,IND,rebound,,,,,,,,,,,,,,,,,,
+Anthony Carter,Carmelo Anthony,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,7:01,DEN,violation,,,,,,,,,,,,,,,,delay of game,,
+Anthony Carter,Carmelo Anthony,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,6:44,IND,shot,,,,,,,,,,Marquis Daniels,2,,,made,,layup,25,6
+Anthony Carter,Carmelo Anthony,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,6:33,DEN,shot,,,Rasho Nesterovic,,,,,,,Nene Hilario,,,,missed,,layup,,
+Anthony Carter,Carmelo Anthony,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,6:33,DEN,rebound,,,,,,,,,,,,,,,,,,
+Anthony Carter,Carmelo Anthony,Chauncey Billups,Linas Kleiza,Nene Hilario,Brandon Rush,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,6:33,DEN,sub,,,,Chauncey Billups,,J.R. Smith,,,,,,,,,,,,
+Anthony Carter,Carmelo Anthony,Chauncey Billups,Linas Kleiza,Nene Hilario,Brandon Rush,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,6:28,DEN,shot,Carmelo Anthony,,,,,,,,,Linas Kleiza,2,,,made,,slam dunk,25,6
+Anthony Carter,Carmelo Anthony,Chauncey Billups,Linas Kleiza,Nene Hilario,Brandon Rush,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,6:10,DEN,foul,,,,,,,,Troy Murphy,,Nene Hilario,,,,,,shooting,,
+Anthony Carter,Carmelo Anthony,Chauncey Billups,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,6:10,IND,sub,,,,Jarrett Jack,,Brandon Rush,,,,,,,,,,,,
+Anthony Carter,Carmelo Anthony,Chauncey Billups,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,6:10,IND,sub,,,,Roy Hibbert,,Rasho Nesterovic,,,,,,,,,,,,
+Anthony Carter,Carmelo Anthony,Chauncey Billups,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,6:10,IND,free throw,,,,,,,1,,2,Troy Murphy,,,foul,made,,,,
+Anthony Carter,Carmelo Anthony,Chauncey Billups,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,6:10,IND,free throw,,,,,,,2,,2,Troy Murphy,,,foul,missed,,,,
+Anthony Carter,Carmelo Anthony,Chauncey Billups,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,6:09,DEN,rebound,,,,,,,,,,Anthony Carter,,,,,,def,,
+Anthony Carter,Carmelo Anthony,Chauncey Billups,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,5:59,IND,foul,,,,,,,,Carmelo Anthony,,Marquis Daniels,,,,,,personal,,
+Anthony Carter,Carmelo Anthony,Chauncey Billups,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,5:59,IND,timeout,,,,,,,,,,,,,,,,regular,,
+Anthony Carter,Carmelo Anthony,Chauncey Billups,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,5:44,DEN,shot,,,,,,,,,,Anthony Carter,,,,missed,,jump,12,14
+Anthony Carter,Carmelo Anthony,Chauncey Billups,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,5:43,IND,rebound,,,,,,,,,,Troy Murphy,,,,,,def,,
+Anthony Carter,Carmelo Anthony,Chauncey Billups,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,5:33,IND,shot,,,,,,,,,,Jarrett Jack,,,,missed,,3pt,1,6
+Anthony Carter,Carmelo Anthony,Chauncey Billups,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,5:31,DEN,rebound,,,,,,,,,,Carmelo Anthony,,,,,,def,,
+Anthony Carter,Carmelo Anthony,Chauncey Billups,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,5:24,DEN,shot,,,,,,,,,,Carmelo Anthony,,,,missed,,jump,33,21
+Anthony Carter,Carmelo Anthony,Chauncey Billups,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,5:22,DEN,rebound,,,,,,,,,,Linas Kleiza,,,,,,off,,
+Anthony Carter,Carmelo Anthony,Chauncey Billups,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,5:21,DEN,shot,,,,,,,,,,Linas Kleiza,2,,,made,,tip,25,6
+Anthony Carter,Carmelo Anthony,Chauncey Billups,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,5:09,DEN,foul,,,,,,,,Roy Hibbert,,Linas Kleiza,,,,,,personal,,
+Carmelo Anthony,Chauncey Billups,Kenyon Martin,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,5:09,DEN,sub,,,,Kenyon Martin,,Anthony Carter,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,Kenyon Martin,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,5:01,DEN,violation,,,,,,,,,,Linas Kleiza,,,,,,kicked ball,,
+Carmelo Anthony,Chauncey Billups,Kenyon Martin,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,4:53,IND,shot,,,,,,,,,,Marquis Daniels,,,,missed,,3pt,15,29
+Carmelo Anthony,Chauncey Billups,Kenyon Martin,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,4:52,DEN,rebound,,,,,,,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,Kenyon Martin,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,4:34,DEN,shot,,,,,,,,,,Carmelo Anthony,,,,missed,,jump,33,12
+Carmelo Anthony,Chauncey Billups,Kenyon Martin,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,4:34,IND,rebound,,,,,,,,,,Troy Murphy,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Kenyon Martin,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,4:34,DEN,foul,,,,,,,,Troy Murphy,,Carmelo Anthony,,,,,,loose ball,,
+Carmelo Anthony,Chauncey Billups,Kenyon Martin,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,4:12,IND,turnover,,,,,,,,,,T.J. Ford,,,bad pass,,Chauncey Billups,,,
+Carmelo Anthony,Chauncey Billups,Kenyon Martin,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,4:04,DEN,turnover,,,,,,,,,,Nene Hilario,,,bad pass,,Marquis Daniels,,,
+Carmelo Anthony,Chauncey Billups,Kenyon Martin,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,3:59,IND,shot,,,,,,,,,,T.J. Ford,,,,missed,,jump,33,22
+Carmelo Anthony,Chauncey Billups,Kenyon Martin,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,3:58,IND,rebound,,,,,,,,,,Roy Hibbert,,,,,,off,,
+Carmelo Anthony,Chauncey Billups,Kenyon Martin,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,3:57,IND,shot,,,,,,,,,,Roy Hibbert,2,,,made,,tip,25,6
+Carmelo Anthony,Chauncey Billups,Kenyon Martin,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,3:32,DEN,shot,,,,,,,,,,Chauncey Billups,,,,missed,,jump,37,7
+Carmelo Anthony,Chauncey Billups,Kenyon Martin,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,3:31,IND,rebound,,,,,,,,,,Troy Murphy,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Kenyon Martin,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,3:10,IND,shot,,,,,,,,,,T.J. Ford,,,,missed,,3pt,13,29
+Carmelo Anthony,Chauncey Billups,Kenyon Martin,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,3:09,DEN,rebound,,,,,,,,,,Carmelo Anthony,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Kenyon Martin,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,2:58,DEN,shot,,,,,,,,,,Chauncey Billups,2,,,made,,driving finger roll layup,24,6
+Carmelo Anthony,Chauncey Billups,Kenyon Martin,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,2:33,IND,shot,,,Nene Hilario,,,,,,,Roy Hibbert,,,,missed,,layup,25,6
+Carmelo Anthony,Chauncey Billups,Kenyon Martin,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,2:32,DEN,rebound,,,,,,,,,,Nene Hilario,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Kenyon Martin,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,2:26,DEN,shot,,,Roy Hibbert,,,,,,,Chauncey Billups,,,,missed,,jump,25,9
+Carmelo Anthony,Chauncey Billups,Kenyon Martin,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,2:26,DEN,rebound,,,,,,,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,Kenyon Martin,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,2:26,DEN,timeout,,,,,,,,,,,,,,,,regular,,
+Carmelo Anthony,Chauncey Billups,Kenyon Martin,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,2:25,IND,foul,,,,,,,,Nene Hilario,,Roy Hibbert,,,,,,shooting,,
+Carmelo Anthony,Chauncey Billups,Kenyon Martin,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,2:25,DEN,free throw,,,,,,,1,,2,Nene Hilario,,,foul,missed,,,,
+Carmelo Anthony,Chauncey Billups,Kenyon Martin,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,2:25,DEN,rebound,,,,,,,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,2,2:25,DEN,sub,,,,J.R. Smith,,Linas Kleiza,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,2:25,IND,sub,,,,Rasho Nesterovic,,Roy Hibbert,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,2:25,DEN,free throw,,,,,,,2,,2,Nene Hilario,,,foul,made,,,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,2:13,DEN,foul,,,,,,,,Troy Murphy,,J.R. Smith,,,,,,personal,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,2:13,DEN,sub,,,,Chris Andersen,,Nene Hilario,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,2:13,IND,free throw,,,,,,,1,,2,Troy Murphy,,,foul,made,,,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,2:13,IND,free throw,,,,,,,2,,2,Troy Murphy,,,foul,missed,,,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,2:11,DEN,rebound,,,,,,,,,,Chris Andersen,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,1:54,DEN,shot,,,,,,,,,,Carmelo Anthony,,,,missed,,jump,28,18
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,1:53,IND,rebound,,,,,,,,,,Troy Murphy,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,1:47,IND,shot,,,,,,,,,,Marquis Daniels,,,,missed,,layup,26,7
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,1:46,IND,rebound,,,,,,,,,,Rasho Nesterovic,,,,,,off,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,1:46,IND,shot,,,,,,,,,,Rasho Nesterovic,,,,missed,,layup,25,6
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,1:46,IND,rebound,,,,,,,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,1:43,IND,shot,,,,,,,,,,Troy Murphy,,,,missed,,jump,37,20
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,1:42,DEN,rebound,,,,,,,,,,Chris Andersen,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,1:33,DEN,shot,,,T.J. Ford,,,,,,,Chauncey Billups,,,,missed,,jump,37,8
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,1:31,IND,rebound,,,,,,,,,,Troy Murphy,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,1:23,IND,shot,,,,,,,,,,Troy Murphy,,,,missed,,3pt,25,31
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,1:22,DEN,rebound,,,,,,,,,,Chris Andersen,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,1:15,DEN,turnover,,,,,,,,,,J.R. Smith,,,bad pass,,Rasho Nesterovic,,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,1:11,DEN,foul,,,,,,,,Jarrett Jack,,Carmelo Anthony,,,,,,shooting,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,1:11,IND,free throw,,,,,,,1,,2,Jarrett Jack,,,foul,made,,,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,1:11,IND,free throw,,,,,,,2,,2,Jarrett Jack,,,foul,made,,,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,0:58,DEN,shot,,,,,,,,,,J.R. Smith,,,,missed,,3pt,42,24
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,0:57,IND,rebound,,,,,,,,,,Marquis Daniels,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,0:42,IND,shot,,,,,,,,,,Marquis Daniels,,,,missed,,jump,35,9
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,0:42,IND,rebound,,,,,,,,,,Troy Murphy,,,,,,off,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,0:42,IND,shot,,,,,,,,,,Troy Murphy,2,,,made,,putback dunk,25,6
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,0:34,DEN,foul,,,,,,,,Marquis Daniels,,Chauncey Billups,,,,,,offensive,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,0:34,DEN,turnover,,,,,,,,,,Chauncey Billups,,,foul,,,,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,0:12,IND,shot,,,,,,,,,,Jarrett Jack,,,,missed,,jump,14,12
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,0:11,DEN,rebound,,,,,,,,,,J.R. Smith,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,0:01,DEN,shot,,,,,,,,,,J.R. Smith,,,,missed,,jump,12,7
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,0:00,IND,rebound,,,,,,,,,,Rasho Nesterovic,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,0:00,IND,shot,,,,,,,,,,T.J. Ford,,,,missed,,3pt,26,47
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,2,0:00,IND,rebound,,,,,,,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,11:41,DEN,shot,,,,,,,,,,Chauncey Billups,,,,missed,,jump,21,25
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,11:40,IND,rebound,,,,,,,,,,Marquis Daniels,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,11:26,IND,shot,,,,,,,,,,T.J. Ford,,,,missed,,3pt,11,28
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,11:25,IND,rebound,,,,,,,,,,Roy Hibbert,,,,,,off,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,11:17,IND,shot,Marquis Daniels,,,,,,,,,Troy Murphy,3,,,made,,3pt,8,25
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,10:53,DEN,shot,Chauncey Billups,,,,,,,,,Dahntay Jones,2,,,made,,jump,22,8
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,10:39,DEN,foul,,,,,,,,,,Carmelo Anthony,,,,,,defense 3 second,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,10:39,IND,free throw,,,,,,,1,,1,Jarrett Jack,,,technical,made,,,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,10:28,IND,shot,,,,,,,,,,Roy Hibbert,2,,,made,,slam dunk,25,5
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,10:28,DEN,foul,,,,,,,,Roy Hibbert,,Kenyon Martin,,,,,,shooting,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,10:28,IND,free throw,,,,,,,1,,1,Roy Hibbert,,,foul,missed,,,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,10:27,DEN,rebound,,,,,,,,,,Nene Hilario,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,10:17,DEN,shot,Chauncey Billups,,,,,,,,,Carmelo Anthony,2,,,made,,fade away jumper,11,11
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,9:55,IND,shot,T.J. Ford,,,,,,,,,Jarrett Jack,3,,,made,,3pt,25,31
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,9:42,DEN,shot,Dahntay Jones,,,,,,,,,Kenyon Martin,2,,,made,,jump,25,13
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,9:30,DEN,foul,,,,,,,,Marquis Daniels,,Carmelo Anthony,,,,,,shooting,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,9:30,IND,free throw,,,,,,,1,,2,Marquis Daniels,,,foul,made,,,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,9:30,IND,free throw,,,,,,,2,,2,Marquis Daniels,,,foul,missed,,,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,9:30,DEN,rebound,,,,,,,,,,Dahntay Jones,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,9:22,DEN,shot,,,,,,,,,,Chauncey Billups,3,,,made,,3pt,25,31
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,9:01,IND,shot,,,,,,,,,,Marquis Daniels,,,,missed,,jump,38,5
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,9:00,DEN,rebound,,,,,,,,,,Chauncey Billups,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,8:46,DEN,shot,,,,,,,,,,Chauncey Billups,,,,missed,,jump,40,7
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,8:45,IND,rebound,,,,,,,,,,Troy Murphy,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,8:25,IND,shot,,,Dahntay Jones,,,,,,,T.J. Ford,,,,missed,,layup,27,6
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,8:23,DEN,rebound,,,,,,,,,,Dahntay Jones,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,8:18,DEN,shot,,,,,,,,,,Dahntay Jones,2,,,made,,layup,24,7
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,8:06,IND,shot,,,,,,,,,,Roy Hibbert,,,,missed,,layup,24,8
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,8:05,IND,rebound,,,,,,,,,,Roy Hibbert,,,,,,off,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,8:04,IND,shot,,,,,,,,,,Roy Hibbert,2,,,made,,tip,25,6
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,7:46,DEN,shot,,,,,,,,,,Carmelo Anthony,,,,missed,,jump,27,10
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,7:45,DEN,rebound,,,,,,,,,,Nene Hilario,,,,,,off,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,7:44,DEN,shot,,,Troy Murphy,,,,,,,Nene Hilario,,,,missed,,jump,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,7:42,DEN,rebound,,,,,,,,,,Kenyon Martin,,,,,,off,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,7:36,DEN,shot,Chauncey Billups,,,,,,,,,Carmelo Anthony,2,,,made,,alley oop layup,25,7
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,7:14,IND,shot,,,,,,,,,,Roy Hibbert,,,,missed,,jump,26,10
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,7:13,DEN,rebound,,,,,,,,,,Nene Hilario,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,7:07,IND,foul,,,,,,,,Chauncey Billups,,Marquis Daniels,,,,,,personal,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,7:03,IND,foul,,,,,,,,Chauncey Billups,,Roy Hibbert,,,,,,personal,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,6:57,DEN,turnover,,,,,,,,,,Carmelo Anthony,,,bad pass,,,,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,6:48,IND,shot,,,,,,,,,,T.J. Ford,,,,missed,,layup,25,9
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,6:47,DEN,rebound,,,,,,,,,,Nene Hilario,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,6:41,IND,foul,,,,,,,,Kenyon Martin,,Troy Murphy,,,,,,shooting,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,3,6:41,DEN,free throw,,,,,,,1,,2,Kenyon Martin,,,foul,made,,,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,3,6:41,IND,sub,,,,Rasho Nesterovic,,Roy Hibbert,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Jarrett Jack,Jeff Foster,Marquis Daniels,Rasho Nesterovic,T.J. Ford,3,6:41,IND,sub,,,,Jeff Foster,,Troy Murphy,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Brandon Rush,Jeff Foster,Marquis Daniels,Rasho Nesterovic,T.J. Ford,3,6:41,IND,sub,,,,Brandon Rush,,Jarrett Jack,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Brandon Rush,Jeff Foster,Marquis Daniels,Rasho Nesterovic,T.J. Ford,3,6:41,DEN,free throw,,,,,,,2,,2,Kenyon Martin,,,foul,made,,,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Brandon Rush,Jeff Foster,Marquis Daniels,Rasho Nesterovic,T.J. Ford,3,6:29,IND,shot,,,,,,,,,,T.J. Ford,,,,missed,,jump,26,24
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Brandon Rush,Jeff Foster,Marquis Daniels,Rasho Nesterovic,T.J. Ford,3,6:28,IND,rebound,,,,,,,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Brandon Rush,Jeff Foster,Marquis Daniels,Rasho Nesterovic,T.J. Ford,3,6:09,IND,shot,,,,,,,,,,Brandon Rush,,,,missed,,jump,37,21
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Brandon Rush,Jeff Foster,Marquis Daniels,Rasho Nesterovic,T.J. Ford,3,6:08,DEN,rebound,,,,,,,,,,Chauncey Billups,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Brandon Rush,Jeff Foster,Marquis Daniels,Rasho Nesterovic,T.J. Ford,3,6:02,IND,foul,,,,,,,,Chauncey Billups,,T.J. Ford,,,,,,shooting,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Brandon Rush,Jeff Foster,Marquis Daniels,Rasho Nesterovic,T.J. Ford,3,6:02,DEN,free throw,,,,,,,1,,2,Chauncey Billups,,,foul,made,,,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Brandon Rush,Jeff Foster,Marquis Daniels,Rasho Nesterovic,T.J. Ford,3,6:02,DEN,free throw,,,,,,,2,,2,Chauncey Billups,,,foul,made,,,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Brandon Rush,Jeff Foster,Marquis Daniels,Rasho Nesterovic,T.J. Ford,3,5:46,IND,shot,,,,,,,,,,Rasho Nesterovic,,,,missed,,jump,25,10
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Brandon Rush,Jeff Foster,Marquis Daniels,Rasho Nesterovic,T.J. Ford,3,5:45,DEN,rebound,,,,,,,,,,Kenyon Martin,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Brandon Rush,Jeff Foster,Marquis Daniels,Rasho Nesterovic,T.J. Ford,3,5:40,IND,foul,,,,,,,,Nene Hilario,,Rasho Nesterovic,,,,,,shooting,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Brandon Rush,Jeff Foster,Marquis Daniels,Rasho Nesterovic,T.J. Ford,3,5:40,IND,timeout,,,,,,,,,,,,,,,,regular,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,T.J. Ford,3,5:40,IND,sub,,,,Jarrett Jack,,Marquis Daniels,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,5:40,IND,sub,,,,Stephen Graham,,T.J. Ford,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,5:40,DEN,free throw,,,,,,,1,,2,Nene Hilario,,,foul,made,,,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,5:40,DEN,free throw,,,,,,,2,,2,Nene Hilario,,,foul,made,,,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,5:26,DEN,foul,,,,,,,,Jeff Foster,,Nene Hilario,,,,,,personal,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,5:11,IND,shot,,,,,,,,,,Stephen Graham,,,,missed,,3pt,1,11
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,5:08,DEN,rebound,,,,,,,,,,Nene Hilario,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,5:04,DEN,turnover,,,,,,,,,,Carmelo Anthony,,,discontinue dribble,,,,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,4:51,IND,shot,Jeff Foster,,,,,,,,,Jarrett Jack,3,,,made,,3pt,9,26
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,4:29,DEN,shot,,,,,,,,,,Kenyon Martin,,,,missed,,jump,7,8
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,4:27,IND,rebound,,,,,,,,,,Rasho Nesterovic,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,4:16,IND,shot,,,,,,,,,,Brandon Rush,,,,missed,,jump,26,11
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,4:15,DEN,rebound,,,,,,,,,,Nene Hilario,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,4:08,DEN,shot,,,,,,,,,,Chauncey Billups,,,,missed,,3pt,21,31
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,4:07,IND,rebound,,,,,,,,,,Jeff Foster,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,3:57,IND,shot,,,,,,,,,,Stephen Graham,2,,,made,,pullup jump,38,18
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,3:38,DEN,shot,,,,,,,,,,Kenyon Martin,,,,missed,,jump,26,18
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,3:37,IND,rebound,,,,,,,,,,Rasho Nesterovic,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Dahntay Jones,Kenyon Martin,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,3:36,IND,turnover,,,,,,,,,,Jarrett Jack,,,traveling,,,,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Kenyon Martin,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,3:36,DEN,sub,,,,J.R. Smith,,Dahntay Jones,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Kenyon Martin,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,3:28,DEN,shot,Chauncey Billups,,,,,,,,,Nene Hilario,2,,,made,,slam dunk,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Kenyon Martin,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,3:11,IND,turnover,,,,,,,,,,Rasho Nesterovic,,,bad pass,,Chauncey Billups,,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Kenyon Martin,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,3:00,DEN,shot,,,,,,,,,,Carmelo Anthony,,,,missed,,jump,12,18
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Kenyon Martin,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,2:59,IND,rebound,,,,,,,,,,Rasho Nesterovic,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Kenyon Martin,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,2:50,DEN,foul,,,,,,,,Stephen Graham,,Nene Hilario,,,,,,personal,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Kenyon Martin,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,2:50,DEN,timeout,,,,,,,,,,,,,,,,regular,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,2:50,DEN,sub,,,,Chris Andersen,,Nene Hilario,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,2:42,IND,turnover,,,,,,,,,,Rasho Nesterovic,,,bad pass,,,,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,2:25,DEN,shot,,,,,,,,,,Carmelo Anthony,,,,missed,,jump,37,16
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,2:24,DEN,rebound,,,,,,,,,,Chris Andersen,,,,,,off,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,2:23,DEN,shot,,,,,,,,,,Chris Andersen,,,,missed,,layup,25,5
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,2:21,IND,rebound,,,,,,,,,,Jeff Foster,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,2:03,IND,shot,,,,,,,,,,Jeff Foster,,,,missed,,jump,10,18
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,2:02,DEN,rebound,,,,,,,,,,Carmelo Anthony,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,1:53,DEN,shot,,,,,,,,,,Carmelo Anthony,2,,,made,,jump,11,18
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,1:40,IND,shot,,,,,,,,,,Brandon Rush,,,,missed,,jump,26,18
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,1:39,DEN,rebound,,,,,,,,,,Chris Andersen,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,1:28,DEN,shot,,,,,,,,,,Carmelo Anthony,2,,,made,,fade away jumper,15,22
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,1:19,IND,shot,,,Kenyon Martin,,,,,,,Jarrett Jack,,,,missed,,layup,22,7
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,1:17,DEN,rebound,,,,,,,,,,Kenyon Martin,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,1:13,DEN,shot,,,,,,,,,,Chauncey Billups,3,,,made,,3pt,40,27
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Kenyon Martin,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,1:13,IND,timeout,,,,,,,,,,,,,,,,short,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Rasho Nesterovic,Stephen Graham,3,1:13,DEN,sub,,,,Linas Kleiza,,Kenyon Martin,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Stephen Graham,3,1:13,IND,sub,,,,Marquis Daniels,,Rasho Nesterovic,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,3,1:13,IND,sub,,,,Troy Murphy,,Stephen Graham,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,3,1:00,DEN,foul,,,,,,,,Marquis Daniels,,J.R. Smith,,,,,,personal,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,3,1:00,IND,free throw,,,,,,,1,,2,Marquis Daniels,,,foul,missed,,,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,3,1:00,IND,rebound,,,,,,,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,3,1:00,IND,free throw,,,,,,,2,,2,Marquis Daniels,,,foul,made,,,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,3,0:47,DEN,shot,Chauncey Billups,,,,,,,,,Carmelo Anthony,3,,,made,,3pt,41,27
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,3,0:37,IND,shot,Troy Murphy,,,,,,,,,Marquis Daniels,3,,,made,,3pt,40,27
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,3,0:26,DEN,shot,,,,,,,,,,Carmelo Anthony,,,,missed,,jump,45,5
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,3,0:25,DEN,rebound,,,,,,,,,,Chris Andersen,,,,,,off,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,3,0:21,DEN,shot,Chauncey Billups,,,,,,,,,J.R. Smith,3,,,made,,3pt,9,26
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,3,0:05,DEN,foul,,,,,,,,Jarrett Jack,,Chris Andersen,,,,,,shooting,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,3,0:05,IND,free throw,,,,,,,1,,2,Jarrett Jack,,,foul,made,,,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,3,0:05,IND,free throw,,,,,,,2,,2,Jarrett Jack,,,foul,made,,,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,3,0:00,DEN,shot,,,,,,,,,,Linas Kleiza,,,,missed,,3pt,40,31
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,3,0:00,DEN,rebound,,,,,,,,,,,,,,,,,,
+Anthony Carter,Carmelo Anthony,Chris Andersen,J.R. Smith,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,11:47,IND,shot,Troy Murphy,,,,,,,,,Marquis Daniels,2,,,made,,layup,25,5
+Anthony Carter,Carmelo Anthony,Chris Andersen,J.R. Smith,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,11:47,DEN,violation,,,,,,,,,,Chris Andersen,,,,,,defensive goaltending,,
+Anthony Carter,Carmelo Anthony,Chris Andersen,J.R. Smith,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,11:31,IND,foul,,,,,,,,Anthony Carter,,Jeff Foster,,,,,,shooting,,
+Anthony Carter,Carmelo Anthony,Chris Andersen,J.R. Smith,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,11:31,DEN,free throw,,,,,,,1,,2,Anthony Carter,,,foul,made,,,,
+Anthony Carter,Carmelo Anthony,Chris Andersen,J.R. Smith,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,11:31,DEN,free throw,,,,,,,2,,2,Anthony Carter,,,foul,missed,,,,
+Anthony Carter,Carmelo Anthony,Chris Andersen,J.R. Smith,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,11:29,IND,rebound,,,,,,,,,,Marquis Daniels,,,,,,def,,
+Anthony Carter,Carmelo Anthony,Chris Andersen,J.R. Smith,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,11:07,IND,shot,,,,,,,,,,Troy Murphy,2,,,made,,fade away jumper,12,7
+Anthony Carter,Carmelo Anthony,Chris Andersen,J.R. Smith,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,10:58,DEN,shot,,,,,,,,,,Carmelo Anthony,,,,missed,,jump,39,16
+Anthony Carter,Carmelo Anthony,Chris Andersen,J.R. Smith,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,10:57,IND,rebound,,,,,,,,,,Troy Murphy,,,,,,def,,
+Anthony Carter,Carmelo Anthony,Chris Andersen,J.R. Smith,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,10:49,IND,shot,,,,,,,,,,Marquis Daniels,,,,missed,,3pt,49,8
+Anthony Carter,Carmelo Anthony,Chris Andersen,J.R. Smith,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,10:47,IND,rebound,,,,,,,,,,Jeff Foster,,,,,,off,,
+Anthony Carter,Carmelo Anthony,Chris Andersen,J.R. Smith,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,10:45,IND,shot,,,J.R. Smith,,,,,,,Marquis Daniels,,,,missed,,layup,24,6
+Anthony Carter,Carmelo Anthony,Chris Andersen,J.R. Smith,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,10:43,DEN,rebound,,,,,,,,,,J.R. Smith,,,,,,def,,
+Anthony Carter,Carmelo Anthony,Chris Andersen,J.R. Smith,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,10:34,DEN,shot,,,,,,,,,,Chris Andersen,,,,missed,,jump,26,12
+Anthony Carter,Carmelo Anthony,Chris Andersen,J.R. Smith,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,10:33,IND,rebound,,,,,,,,,,Jeff Foster,,,,,,def,,
+Anthony Carter,Carmelo Anthony,Chris Andersen,J.R. Smith,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,10:24,IND,shot,,,,,,,,,,Brandon Rush,2,,,made,,driving jump,25,11
+Anthony Carter,Carmelo Anthony,Chris Andersen,J.R. Smith,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,10:08,DEN,foul,,,,,,,,Jeff Foster,,J.R. Smith,,,,,,offensive,,
+Anthony Carter,Carmelo Anthony,Chris Andersen,J.R. Smith,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,10:08,DEN,turnover,,,,,,,,,,J.R. Smith,,,foul,,,,,
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,10:08,DEN,sub,,,,Nene Hilario,,Carmelo Anthony,,,,,,,,,,,,
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,9:44,IND,shot,,,Chris Andersen,,,,,,,Troy Murphy,,,,missed,,layup,24,7
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,9:44,IND,rebound,,,,,,,,,,,,,,,,,,
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,9:44,IND,turnover,,,,,,,,,,,,,shot clock turnover,,,,,
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,9:25,DEN,shot,,,,,,,,,,J.R. Smith,,,,missed,,jump,24,27
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,9:24,DEN,rebound,,,,,,,,,,Chris Andersen,,,,,,off,,
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,9:22,DEN,shot,,,,,,,,,,Chris Andersen,,,,missed,,layup,24,6
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,9:22,DEN,rebound,,,,,,,,,,Chris Andersen,,,,,,off,,
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,9:22,IND,foul,,,,,,,,Chris Andersen,,Troy Murphy,,,,,,shooting,,
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,9:22,DEN,free throw,,,,,,,1,,2,Chris Andersen,,,foul,made,,,,
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,9:22,DEN,free throw,,,,,,,2,,2,Chris Andersen,,,foul,made,,,,
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,9:01,IND,shot,Jarrett Jack,,,,,,,,,Brandon Rush,3,,,made,,3pt,10,27
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,8:36,DEN,shot,,,,,,,,,,Anthony Carter,,,,missed,,3pt,10,28
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,8:33,DEN,rebound,,,,,,,,,,Linas Kleiza,,,,,,off,,
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,8:32,DEN,shot,,,,,,,,,,Linas Kleiza,,,,missed,,layup,25,5
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,8:30,IND,rebound,,,,,,,,,,Jeff Foster,,,,,,def,,
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,8:14,IND,shot,Jarrett Jack,,,,,,,,,Marquis Daniels,2,,,made,,layup,25,6
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,8:11,DEN,timeout,,,,,,,,,,,,,,,,regular,,
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,7:58,DEN,foul,,,,,,,,Jeff Foster,,Nene Hilario,,,,,,offensive,,
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,7:58,DEN,turnover,,,,,,,,,,Nene Hilario,,,foul,,,,,
+Anthony Carter,Chris Andersen,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,7:49,DEN,foul,,,,,,,,Jarrett Jack,,Anthony Carter,,,,,,personal,,
+Anthony Carter,Chauncey Billups,Chris Andersen,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,7:49,DEN,sub,,,,Chauncey Billups,,J.R. Smith,,,,,,,,,,,,
+Anthony Carter,Chauncey Billups,Chris Andersen,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,7:49,DEN,sub,,,,Kenyon Martin,,Nene Hilario,,,,,,,,,,,,
+Anthony Carter,Chauncey Billups,Chris Andersen,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,7:43,IND,shot,Jarrett Jack,,,,,,,,,Jeff Foster,2,,,made,,layup,23,6
+Anthony Carter,Chauncey Billups,Chris Andersen,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,7:43,DEN,foul,,,,,,,,Jeff Foster,,Kenyon Martin,,,,,,shooting,,
+Anthony Carter,Chauncey Billups,Chris Andersen,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,7:43,IND,free throw,,,,,,,1,,1,Jeff Foster,,,foul,made,,,,
+Anthony Carter,Chauncey Billups,Chris Andersen,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,7:22,DEN,shot,,,,,,,,,,Chauncey Billups,2,,,made,,turnaround jump,15,6
+Anthony Carter,Chauncey Billups,Chris Andersen,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,7:05,IND,timeout,,,,,,,,,,,,,,,,regular,,
+Anthony Carter,Chauncey Billups,Chris Andersen,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,6:59,IND,shot,,,,,,,,,,Marquis Daniels,2,,,made,,jump,27,10
+Anthony Carter,Chauncey Billups,Chris Andersen,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,6:39,DEN,shot,,,,,,,,,,Kenyon Martin,,,,missed,,layup,21,7
+Anthony Carter,Chauncey Billups,Chris Andersen,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,6:38,IND,rebound,,,,,,,,,,Troy Murphy,,,,,,def,,
+Anthony Carter,Chauncey Billups,Chris Andersen,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,6:27,IND,shot,,,,,,,,,,Troy Murphy,,,,missed,,3pt,15,30
+Anthony Carter,Chauncey Billups,Chris Andersen,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,6:26,DEN,rebound,,,,,,,,,,Chris Andersen,,,,,,def,,
+Anthony Carter,Chauncey Billups,Chris Andersen,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,6:08,DEN,shot,,,,,,,,,,Kenyon Martin,,,,missed,,jump,37,9
+Anthony Carter,Chauncey Billups,Chris Andersen,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,6:07,DEN,rebound,,,,,,,,,,Anthony Carter,,,,,,off,,
+Anthony Carter,Chauncey Billups,Chris Andersen,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,6:05,DEN,shot,,,,,,,,,,Anthony Carter,2,,,made,,putback layup,25,6
+Anthony Carter,Chauncey Billups,Chris Andersen,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,5:52,IND,shot,,,Chris Andersen,,,,,,,Brandon Rush,,,,missed,,jump,20,10
+Anthony Carter,Chauncey Billups,Chris Andersen,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,5:52,IND,rebound,,,,,,,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,Kenyon Martin,Linas Kleiza,Brandon Rush,Jarrett Jack,Jeff Foster,Marquis Daniels,Troy Murphy,4,5:52,DEN,sub,,,,Carmelo Anthony,,Anthony Carter,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,Kenyon Martin,Linas Kleiza,Jarrett Jack,Jeff Foster,Marquis Daniels,T.J. Ford,Troy Murphy,4,5:52,IND,sub,,,,T.J. Ford,,Brandon Rush,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,Kenyon Martin,Linas Kleiza,Jarrett Jack,Jeff Foster,Marquis Daniels,T.J. Ford,Troy Murphy,4,5:39,IND,shot,,,,,,,,,,Troy Murphy,2,,,made,,jump,40,13
+Carmelo Anthony,Chauncey Billups,Chris Andersen,Kenyon Martin,Linas Kleiza,Jarrett Jack,Jeff Foster,Marquis Daniels,T.J. Ford,Troy Murphy,4,5:23,DEN,shot,,,,,,,,,,Linas Kleiza,,,,missed,,jump,24,14
+Carmelo Anthony,Chauncey Billups,Chris Andersen,Kenyon Martin,Linas Kleiza,Jarrett Jack,Jeff Foster,Marquis Daniels,T.J. Ford,Troy Murphy,4,5:22,DEN,rebound,,,,,,,,,,Carmelo Anthony,,,,,,off,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,Kenyon Martin,Linas Kleiza,Jarrett Jack,Jeff Foster,Marquis Daniels,T.J. Ford,Troy Murphy,4,5:21,DEN,shot,,,,,,,,,,Carmelo Anthony,,,,missed,,layup,27,4
+Carmelo Anthony,Chauncey Billups,Chris Andersen,Kenyon Martin,Linas Kleiza,Jarrett Jack,Jeff Foster,Marquis Daniels,T.J. Ford,Troy Murphy,4,5:20,DEN,rebound,,,,,,,,,,Carmelo Anthony,,,,,,off,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,Kenyon Martin,Linas Kleiza,Jarrett Jack,Jeff Foster,Marquis Daniels,T.J. Ford,Troy Murphy,4,5:18,DEN,shot,,,,,,,,,,Carmelo Anthony,,,,missed,,layup,27,4
+Carmelo Anthony,Chauncey Billups,Chris Andersen,Kenyon Martin,Linas Kleiza,Jarrett Jack,Jeff Foster,Marquis Daniels,T.J. Ford,Troy Murphy,4,5:18,DEN,rebound,,,,,,,,,,Carmelo Anthony,,,,,,off,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,Kenyon Martin,Linas Kleiza,Jarrett Jack,Jeff Foster,Marquis Daniels,T.J. Ford,Troy Murphy,4,5:18,DEN,shot,,,,,,,,,,Carmelo Anthony,2,,,made,,layup,23,6
+Carmelo Anthony,Chauncey Billups,Chris Andersen,Kenyon Martin,Linas Kleiza,Jarrett Jack,Jeff Foster,Marquis Daniels,T.J. Ford,Troy Murphy,4,5:18,DEN,foul,,,,,,,,,,Carmelo Anthony,,,,,,technical,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,Kenyon Martin,Linas Kleiza,Jarrett Jack,Jeff Foster,Marquis Daniels,T.J. Ford,Troy Murphy,4,5:18,IND,free throw,,,,,,,1,,1,Jarrett Jack,,,technical,made,,,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,Linas Kleiza,Nene Hilario,Jarrett Jack,Jeff Foster,Marquis Daniels,T.J. Ford,Troy Murphy,4,5:18,DEN,sub,,,,Nene Hilario,,Kenyon Martin,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,4,5:18,IND,sub,,,,Roy Hibbert,,Jeff Foster,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,4,4:59,IND,shot,,,,,,,,,,Roy Hibbert,,,,missed,,jump,15,9
+Carmelo Anthony,Chauncey Billups,Chris Andersen,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,4,4:56,IND,rebound,,,,,,,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,4,4:54,IND,turnover,,,,,,,,,,Marquis Daniels,,,bad pass,,Chauncey Billups,,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,4,4:50,DEN,shot,,,,,,,,,,Chauncey Billups,,,,missed,,layup,26,6
+Carmelo Anthony,Chauncey Billups,Chris Andersen,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,4,4:49,DEN,rebound,,,,,,,,,,Linas Kleiza,,,,,,off,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,4,4:45,DEN,shot,,,,,,,,,,Linas Kleiza,,,,missed,,jump,25,9
+Carmelo Anthony,Chauncey Billups,Chris Andersen,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,4,4:44,IND,rebound,,,,,,,,,,Troy Murphy,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,4,4:37,IND,shot,Jarrett Jack,,,,,,,,,Troy Murphy,3,,,made,,3pt,26,32
+Carmelo Anthony,Chauncey Billups,Chris Andersen,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Roy Hibbert,T.J. Ford,Troy Murphy,4,4:35,DEN,timeout,,,,,,,,,,,,,,,,regular,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,Linas Kleiza,Nene Hilario,Jarrett Jack,Jeff Foster,Marquis Daniels,T.J. Ford,Troy Murphy,4,4:35,IND,sub,,,,Jeff Foster,,Roy Hibbert,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,Linas Kleiza,Nene Hilario,Jarrett Jack,Jeff Foster,Marquis Daniels,T.J. Ford,Troy Murphy,4,4:23,DEN,shot,,,,,,,,,,Chauncey Billups,2,,,made,,jump,24,25
+Carmelo Anthony,Chauncey Billups,Chris Andersen,Linas Kleiza,Nene Hilario,Jarrett Jack,Jeff Foster,Marquis Daniels,T.J. Ford,Troy Murphy,4,4:08,IND,shot,,,,,,,,,,T.J. Ford,2,,,made,,fade away jumper,25,23
+Carmelo Anthony,Chauncey Billups,Chris Andersen,Linas Kleiza,Nene Hilario,Jarrett Jack,Jeff Foster,Marquis Daniels,T.J. Ford,Troy Murphy,4,3:53,DEN,shot,,,,,,,,,,Carmelo Anthony,,,,missed,,3pt,10,27
+Carmelo Anthony,Chauncey Billups,Chris Andersen,Linas Kleiza,Nene Hilario,Jarrett Jack,Jeff Foster,Marquis Daniels,T.J. Ford,Troy Murphy,4,3:52,IND,rebound,,,,,,,,,,Troy Murphy,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,Linas Kleiza,Nene Hilario,Jarrett Jack,Jeff Foster,Marquis Daniels,T.J. Ford,Troy Murphy,4,3:30,IND,shot,,,,,,,,,,Jeff Foster,,,,missed,,jump,37,22
+Carmelo Anthony,Chauncey Billups,Chris Andersen,Linas Kleiza,Nene Hilario,Jarrett Jack,Jeff Foster,Marquis Daniels,T.J. Ford,Troy Murphy,4,3:28,IND,rebound,,,,,,,,,,Marquis Daniels,,,,,,off,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,Linas Kleiza,Nene Hilario,Jarrett Jack,Jeff Foster,Marquis Daniels,T.J. Ford,Troy Murphy,4,3:04,IND,shot,,,,,,,,,,Jarrett Jack,,,,missed,,3pt,22,34
+Carmelo Anthony,Chauncey Billups,Chris Andersen,Linas Kleiza,Nene Hilario,Jarrett Jack,Jeff Foster,Marquis Daniels,T.J. Ford,Troy Murphy,4,3:03,IND,rebound,,,,,,,,,,Jeff Foster,,,,,,off,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,Linas Kleiza,Nene Hilario,Jarrett Jack,Jeff Foster,Marquis Daniels,T.J. Ford,Troy Murphy,4,2:36,IND,shot,Jarrett Jack,,,,,,,,,Marquis Daniels,2,,,made,,jump,6,6
+Carmelo Anthony,Chauncey Billups,Chris Andersen,Linas Kleiza,Nene Hilario,Jarrett Jack,Jeff Foster,Marquis Daniels,T.J. Ford,Troy Murphy,4,2:25,DEN,shot,,,,,,,,,,Chauncey Billups,,,,missed,,jump,13,13
+Carmelo Anthony,Chauncey Billups,Chris Andersen,Linas Kleiza,Nene Hilario,Jarrett Jack,Jeff Foster,Marquis Daniels,T.J. Ford,Troy Murphy,4,2:25,DEN,rebound,,,,,,,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,Linas Kleiza,Nene Hilario,Jarrett Jack,Jeff Foster,Marquis Daniels,T.J. Ford,Troy Murphy,4,2:25,IND,foul,,,,,,,,Chris Andersen,,Jarrett Jack,,,,,,loose ball,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Nene Hilario,Jarrett Jack,Jeff Foster,Marquis Daniels,T.J. Ford,Troy Murphy,4,2:25,DEN,sub,,,,J.R. Smith,,Linas Kleiza,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Nene Hilario,Jarrett Jack,Jeff Foster,Marquis Daniels,T.J. Ford,Troy Murphy,4,2:16,DEN,shot,,,,,,,,,,Chauncey Billups,,,,missed,,3pt,13,28
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Nene Hilario,Jarrett Jack,Jeff Foster,Marquis Daniels,T.J. Ford,Troy Murphy,4,2:16,DEN,rebound,,,,,,,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Nene Hilario,Jarrett Jack,Jeff Foster,Marquis Daniels,T.J. Ford,Troy Murphy,4,2:16,IND,foul,,,,,,,,Chris Andersen,,Jeff Foster,,,,,,loose ball,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Nene Hilario,Jarrett Jack,Jeff Foster,Marquis Daniels,T.J. Ford,Troy Murphy,4,2:05,DEN,shot,,,,,,,,,,Carmelo Anthony,2,,,made,,layup,26,8
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Nene Hilario,Jarrett Jack,Jeff Foster,Marquis Daniels,T.J. Ford,Troy Murphy,4,1:41,IND,shot,,,,,,,,,,Marquis Daniels,,,,missed,,jump,21,10
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Nene Hilario,Jarrett Jack,Jeff Foster,Marquis Daniels,T.J. Ford,Troy Murphy,4,1:40,IND,rebound,,,,,,,,,,Jeff Foster,,,,,,off,,
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Nene Hilario,Jarrett Jack,Jeff Foster,Marquis Daniels,T.J. Ford,Troy Murphy,4,1:38,IND,shot,Jeff Foster,,,,,,,,,Jarrett Jack,3,,,made,,3pt,49,5
+Carmelo Anthony,Chauncey Billups,Chris Andersen,J.R. Smith,Nene Hilario,Jarrett Jack,Jeff Foster,Marquis Daniels,T.J. Ford,Troy Murphy,4,1:38,DEN,timeout,,,,,,,,,,,,,,,,regular,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Linas Kleiza,Nene Hilario,Jarrett Jack,Jeff Foster,Marquis Daniels,T.J. Ford,Troy Murphy,4,1:38,DEN,sub,,,,Linas Kleiza,,Chris Andersen,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Linas Kleiza,Nene Hilario,Jarrett Jack,Jeff Foster,Marquis Daniels,T.J. Ford,Troy Murphy,4,1:28,IND,foul,,,,,,,,Carmelo Anthony,,Jeff Foster,,,,,,shooting,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,4,1:28,IND,sub,,,,Rasho Nesterovic,,Jeff Foster,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,4,1:28,DEN,free throw,,,,,,,1,,2,Carmelo Anthony,,,foul,made,,,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,4,1:28,DEN,free throw,,,,,,,2,,2,Carmelo Anthony,,,foul,missed,,,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,4,1:27,DEN,rebound,,,,,,,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,4,1:27,IND,foul,,,,,,,,Linas Kleiza,,Troy Murphy,,,,,,loose ball,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,4,1:27,DEN,free throw,,,,,,,1,,2,Linas Kleiza,,,foul,missed,,,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,4,1:27,DEN,rebound,,,,,,,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,4,1:27,DEN,free throw,,,,,,,2,,2,Linas Kleiza,,,foul,made,,,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,4,1:03,IND,shot,,,,,,,,,,Rasho Nesterovic,,,,missed,,jump,38,15
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,4,1:03,IND,rebound,,,,,,,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Linas Kleiza,Nene Hilario,Jarrett Jack,Marquis Daniels,Rasho Nesterovic,T.J. Ford,Troy Murphy,4,1:03,IND,turnover,,,,,,,,,,,,,shot clock turnover,,,,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Marquis Daniels,T.J. Ford,Troy Murphy,4,1:03,IND,sub,,,,Brandon Rush,,Rasho Nesterovic,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Marquis Daniels,T.J. Ford,Troy Murphy,4,0:56,DEN,shot,,,,,,,,,,Chauncey Billups,2,,,made,,driving finger roll layup,25,5
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Marquis Daniels,T.J. Ford,Troy Murphy,4,0:33,IND,shot,,,,,,,,,,Marquis Daniels,,,,missed,,3pt,49,5
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Marquis Daniels,T.J. Ford,Troy Murphy,4,0:31,DEN,rebound,,,,,,,,,,Carmelo Anthony,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Marquis Daniels,T.J. Ford,Troy Murphy,4,0:25,DEN,shot,,,,,,,,,,Carmelo Anthony,,,,missed,,3pt,13,30
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Marquis Daniels,T.J. Ford,Troy Murphy,4,0:24,IND,rebound,,,,,,,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Marquis Daniels,T.J. Ford,Troy Murphy,4,0:23,DEN,foul,,,,,,,,Jarrett Jack,,Linas Kleiza,,,,,,personal,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Marquis Daniels,T.J. Ford,Troy Murphy,4,0:20,DEN,foul,,,,,,,,Jarrett Jack,,Linas Kleiza,,,,,,personal,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Marquis Daniels,T.J. Ford,Troy Murphy,4,0:20,IND,free throw,,,,,,,1,,2,Jarrett Jack,,,foul,missed,,,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Marquis Daniels,T.J. Ford,Troy Murphy,4,0:20,IND,rebound,,,,,,,,,,,,,,,,,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Marquis Daniels,T.J. Ford,Troy Murphy,4,0:20,IND,free throw,,,,,,,2,,2,Jarrett Jack,,,foul,made,,,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Marquis Daniels,T.J. Ford,Troy Murphy,4,0:13,DEN,shot,,,,,,,,,,Chauncey Billups,2,,,made,,driving finger roll layup,24,6
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Marquis Daniels,T.J. Ford,Troy Murphy,4,0:12,IND,turnover,,,,,,,,,,Marquis Daniels,,,bad pass,,Nene Hilario,,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Marquis Daniels,T.J. Ford,Troy Murphy,4,0:06,DEN,shot,,,,,,,,,,J.R. Smith,,,,missed,,3pt,48,5
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Marquis Daniels,T.J. Ford,Troy Murphy,4,0:05,IND,rebound,,,,,,,,,,Troy Murphy,,,,,,def,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Marquis Daniels,T.J. Ford,Troy Murphy,4,0:02,DEN,foul,,,,,,,,Jarrett Jack,,Linas Kleiza,,,,,,personal,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Marquis Daniels,T.J. Ford,Troy Murphy,4,0:02,IND,free throw,,,,,,,1,,2,Jarrett Jack,,,foul,made,,,,
+Carmelo Anthony,Chauncey Billups,J.R. Smith,Linas Kleiza,Nene Hilario,Brandon Rush,Jarrett Jack,Marquis Daniels,T.J. Ford,Troy Murphy,4,0:02,IND,free throw,,,,,,,2,,2,Jarrett Jack,,,foul,made,,,,

@@ -1,0 +1,505 @@
+a1,a2,a3,a4,a5,h1,h2,h3,h4,h5,period,time,team,etype,assist,away,block,entered,home,left,num,opponent,outof,player,points,possession,reason,result,steal,type,x,y
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,12:00,OFF,jump ball,,Ben Wallace,,,Andrew Bogut,,,,,,,P.J. Brown,,,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,11:46,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,jump,13,19
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,11:44,MIL,rebound,,,,,,,,,,Brian Skinner,,,,,,def,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,11:33,CHI,foul,,,,,,,,Andrew Bogut,,Ben Gordon,,,,,,shooting,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,11:33,MIL,free throw,,,,,,,1,,2,Andrew Bogut,,,foul,missed,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,11:33,MIL,rebound,,,,,,,,,,,,,,,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,11:33,MIL,free throw,,,,,,,2,,2,Andrew Bogut,,,foul,made,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,11:28,CHI,turnover,,,,,,,,,,Kirk Hinrich,,,bad pass,,Charlie Bell,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,11:23,MIL,shot,,,,,,,,,,Charlie Bell,,,,missed,,3pt,1,8
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,11:21,CHI,rebound,,,,,,,,,,Kirk Hinrich,,,,,,def,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,11:06,CHI,turnover,,,,,,,,,,Luol Deng,,,step out of bounds turnover,,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,10:54,MIL,shot,,,,,,,,,,Mo Williams,2,,,made,,jump,13,4
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,10:36,CHI,shot,,,,,,,,,,Luol Deng,,,,missed,,jump,35,22
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,10:34,MIL,rebound,,,,,,,,,,Michael Redd,,,,,,def,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,10:18,MIL,shot,Andrew Bogut,,,,,,,,,Brian Skinner,2,,,made,,dunk,25,6
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,10:02,CHI,turnover,,,,,,,,,,Ben Gordon,,,poss lost ball turnover,,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,9:57,MIL,shot,,,,,,,,,,Michael Redd,,,,missed,,3pt,3,19
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,9:55,CHI,rebound,,,,,,,,,,Ben Wallace,,,,,,def,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,9:49,CHI,shot,Ben Gordon,,,,,,,,,Luol Deng,2,,,made,,jump,8,10
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,9:28,MIL,shot,Andrew Bogut,,,,,,,,,Michael Redd,2,,,made,,jump,10,13
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,9:17,CHI,shot,Ben Wallace,,,,,,,,,Ben Gordon,3,,,made,,3pt,1,5
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,9:01,MIL,shot,Mo Williams,,,,,,,,,Andrew Bogut,2,,,made,,running hook,18,6
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,8:42,CHI,shot,,,,,,,,,,Luol Deng,,,,missed,,jump,7,4
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,8:40,MIL,rebound,,,,,,,,,,Michael Redd,,,,,,def,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,8:33,MIL,turnover,,,,,,,,,,Mo Williams,,,bad pass,,Kirk Hinrich,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,8:30,MIL,foul,,,,,,,,Luol Deng,,Charlie Bell,,,,,,shooting,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,8:30,CHI,free throw,,,,,,,1,,2,Luol Deng,,,foul,made,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,8:30,CHI,free throw,,,,,,,2,,2,Luol Deng,,,foul,made,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,8:12,MIL,shot,Andrew Bogut,,,,,,,,,Mo Williams,2,,,made,,running layup,25,6
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,7:56,CHI,shot,Ben Wallace,,,,,,,,,P.J. Brown,2,,,made,,layup,25,6
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,7:41,MIL,shot,,,,,,,,,,Andrew Bogut,,,,missed,,hook,30,7
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,7:39,CHI,rebound,,,,,,,,,,Kirk Hinrich,,,,,,def,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,7:33,CHI,shot,,,,,,,,,,Kirk Hinrich,,,,missed,,jump,9,19
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,7:32,MIL,rebound,,,,,,,,,,Andrew Bogut,,,,,,def,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,7:16,MIL,shot,Mo Williams,,,,,,,,,Charlie Bell,2,,,made,,jump,13,20
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,7:09,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,3pt,43,27
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,7:07,MIL,rebound,,,,,,,,,,Brian Skinner,,,,,,def,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,6:56,MIL,shot,,,,,,,,,,Charlie Bell,,,,missed,,3pt,43,24
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,6:54,CHI,rebound,,,,,,,,,,P.J. Brown,,,,,,def,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,6:45,CHI,shot,,,,,,,,,,Kirk Hinrich,2,,,made,,layup,25,6
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,6:45,MIL,violation,,,,,,,,,,Brian Skinner,,,,,,defensive goaltending,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,6:27,MIL,shot,,,,,,,,,,Andrew Bogut,,,,missed,,jump,16,23
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,6:25,CHI,rebound,,,,,,,,,,Ben Wallace,,,,,,def,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,6:18,MIL,foul,,,,,,,,P.J. Brown,,Andrew Bogut,,,,,,shooting,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,6:18,CHI,free throw,,,,,,,1,,2,P.J. Brown,,,foul,made,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,6:18,CHI,free throw,,,,,,,2,,2,P.J. Brown,,,foul,made,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,6:10,CHI,foul,,,,,,,,Brian Skinner,,P.J. Brown,,,,,,personal,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,6:10,MIL,timeout,,,,,,,,,,,,,,,,regular,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,6:03,MIL,shot,Brian Skinner,,,,,,,,,Mo Williams,2,,,made,,layup,25,6
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,5:45,CHI,shot,,,,,,,,,,P.J. Brown,,,,missed,,jump,43,5
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,5:43,MIL,rebound,,,,,,,,,,Andrew Bogut,,,,,,def,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,5:35,MIL,shot,,,,,,,,,,Michael Redd,3,,,made,,3pt,11,29
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,5:14,CHI,shot,,,,,,,,,,P.J. Brown,,,,missed,,jump,25,15
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,5:13,MIL,rebound,,,,,,,,,,,,,,,,,,
+Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,5:13,CHI,sub,,,,Chris Duhon,,Kirk Hinrich,,,,,,,,,,,,
+Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,4:57,MIL,shot,Charlie Bell,,,,,,,,,Michael Redd,3,,,made,,3pt,41,26
+Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,4:41,CHI,sub,,,,Tyrus Thomas,,P.J. Brown,,,,,,,,,,,,
+Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,4:34,CHI,shot,Chris Duhon,,,,,,,,,Ben Gordon,2,,,made,,jump,10,17
+Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,4:34,MIL,foul,,,,,,,,Ben Gordon,,Charlie Bell,,,,,,shooting,,
+Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,4:34,CHI,free throw,,,,,,,1,,1,Ben Gordon,,,foul,made,,,,
+Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,4:16,MIL,shot,Brian Skinner,,,,,,,,,Michael Redd,2,,,made,,jump,36,20
+Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,1,4:16,CHI,foul,,,,,,,,Michael Redd,,Luol Deng,,,,,,shooting,,
+Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Bell,Charlie Villanueva,Michael Redd,Mo Williams,1,4:16,MIL,sub,,,,Charlie Villanueva,,Brian Skinner,,,,,,,,,,,,
+Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,4:16,MIL,sub,,,,Ruben Patterson,,Charlie Bell,,,,,,,,,,,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,4:16,CHI,sub,,,,Kirk Hinrich,,Luol Deng,,,,,,,,,,,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,4:16,MIL,free throw,,,,,,,1,,1,Michael Redd,,,foul,made,,,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,4:06,CHI,shot,Ben Gordon,,,,,,,,,Kirk Hinrich,3,,,made,,3pt,40,29
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,3:48,CHI,foul,,,,,,,,Michael Redd,,Kirk Hinrich,,,,,,shooting,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,3:48,MIL,free throw,,,,,,,1,,2,Michael Redd,,,foul,made,,,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,3:48,MIL,free throw,,,,,,,2,,2,Michael Redd,,,foul,made,,,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,3:32,CHI,shot,Chris Duhon,,,,,,,,,Ben Gordon,3,,,made,,3pt,49,5
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,3:07,MIL,shot,,,Ben Wallace,,,,,,,Charlie Villanueva,,,,missed,,layup,25,6
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,3:07,MIL,rebound,,,,,,,,,,,,,,,,,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,3:04,MIL,turnover,,,,,,,,,,,,,shot clock turnover,,,,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,2:52,CHI,shot,Tyrus Thomas,,,,,,,,,Ben Wallace,2,,,made,,layup,25,6
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,2:37,MIL,shot,,,,,,,,,,Mo Williams,,,,missed,,jump,17,21
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,2:35,MIL,rebound,,,,,,,,,,Andrew Bogut,,,,,,off,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,2:33,MIL,shot,,,,,,,,,,Andrew Bogut,2,,,made,,layup,25,6
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,2:23,CHI,shot,,,,,,,,,,Kirk Hinrich,,,,missed,,jump,13,18
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,2:21,MIL,rebound,,,,,,,,,,Charlie Villanueva,,,,,,def,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,2:08,MIL,shot,,,,,,,,,,Michael Redd,,,,missed,,3pt,13,30
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,2:06,CHI,rebound,,,,,,,,,,Ben Wallace,,,,,,def,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,2:00,CHI,foul,,,,,,,,Andrew Bogut,,Tyrus Thomas,,,,,,offensive,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,2:00,CHI,turnover,,,,,,,,,,Tyrus Thomas,,,foul,,,,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,2:00,CHI,timeout,,,,,,,,,,,,,,,,regular,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,1:44,MIL,shot,Charlie Villanueva,,,,,,,,,Michael Redd,3,,,made,,3pt,14,29
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,1:29,CHI,turnover,,,,,,,,,,Kirk Hinrich,,,bad pass,,Charlie Villanueva,,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,1:21,MIL,shot,,,,,,,,,,Ruben Patterson,,,,missed,,layup,25,6
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,1:20,MIL,rebound,,,,,,,,,,Andrew Bogut,,,,,,off,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,1:19,MIL,shot,,,,,,,,,,Andrew Bogut,,,,missed,,layup,25,6
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,1:17,CHI,rebound,,,,,,,,,,Ben Wallace,,,,,,def,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,1:11,CHI,shot,,,,,,,,,,Ben Wallace,,,,missed,,layup,25,6
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,1:10,MIL,rebound,,,,,,,,,,Andrew Bogut,,,,,,def,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,1:04,MIL,turnover,,,,,,,,,,Mo Williams,,,bad pass,,,,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,0:50,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,3pt,2,5
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,0:49,CHI,shot,,,,,,,,,,Tyrus Thomas,2,,,made,,tip,25,6
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,0:49,CHI,rebound,,,,,,,,,,Tyrus Thomas,,,,,,off,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,0:32,MIL,shot,,,,,,,,,,Charlie Villanueva,,,,missed,,3pt,48,22
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,0:30,MIL,rebound,,,,,,,,,,Andrew Bogut,,,,,,off,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,0:25,MIL,shot,,,,,,,,,,Andrew Bogut,,,,missed,,hook,26,11
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,0:24,CHI,rebound,,,,,,,,,,Ben Wallace,,,,,,def,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,0:16,CHI,shot,Kirk Hinrich,,,,,,,,,Chris Duhon,2,,,made,,layup,25,6
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,0:02,MIL,foul,,,,,,,,Chris Duhon,,Mo Williams,,,,,,offensive,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,0:02,MIL,turnover,,,,,,,,,,Mo Williams,,,foul,,,,,
+Ben Gordon,Chris Duhon,Kirk Hinrich,P.J. Brown,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,0:02,CHI,sub,,,,P.J. Brown,,Ben Wallace,,,,,,,,,,,,
+Ben Gordon,Chris Duhon,Kirk Hinrich,P.J. Brown,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,0:00,CHI,shot,,,,,,,,,,Chris Duhon,,,,missed,,3pt,7,42
+Ben Gordon,Chris Duhon,Kirk Hinrich,P.J. Brown,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,1,0:00,CHI,rebound,,,,,,,,,,,,,,,,,,
+Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,11:43,MIL,shot,,,,,,,,,,Mo Williams,,,,missed,,running jump,31,8
+Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,11:41,CHI,rebound,,,,,,,,,,P.J. Brown,,,,,,def,,
+Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,11:24,MIL,foul,,,,,,,,Tyrus Thomas,,Charlie Villanueva,,,,,,shooting,,
+Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,11:24,CHI,free throw,,,,,,,1,,2,Tyrus Thomas,,,foul,missed,,,,
+Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,11:24,CHI,rebound,,,,,,,,,,,,,,,,,,
+Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,11:24,CHI,free throw,,,,,,,2,,2,Tyrus Thomas,,,foul,missed,,,,
+Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,11:22,MIL,rebound,,,,,,,,,,Brian Skinner,,,,,,def,,
+Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,11:04,MIL,turnover,,,,,,,,,,Charlie Villanueva,,,bad pass,,,,,
+Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,10:46,CHI,turnover,,,,,,,,,,Kirk Hinrich,,,traveling,,,,,
+Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,10:28,MIL,shot,,,,,,,,,,Brian Skinner,2,,,made,,jump,28,11
+Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,10:08,CHI,shot,,,,,,,,,,Luol Deng,,,,missed,,jump,29,23
+Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,10:06,MIL,rebound,,,,,,,,,,Charlie Bell,,,,,,def,,
+Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,9:55,MIL,foul,,,,,,,,Luol Deng,,Ruben Patterson,,,,,,offensive,,
+Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,9:55,MIL,turnover,,,,,,,,,,Ruben Patterson,,,foul,,,,,
+Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,9:37,CHI,shot,,,,,,,,,,Chris Duhon,,,,missed,,3pt,46,23
+Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,9:33,MIL,rebound,,,,,,,,,,Charlie Villanueva,,,,,,def,,
+Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,9:33,CHI,foul,,,,,,,,Charlie Villanueva,,Chris Duhon,,,,,,shooting,,
+Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,9:33,MIL,free throw,,,,,,,1,,2,Charlie Villanueva,,,foul,made,,,,
+Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,9:33,MIL,free throw,,,,,,,2,,2,Charlie Villanueva,,,foul,made,,,,
+Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,9:15,CHI,turnover,,,,,,,,,,Chris Duhon,,,bad pass,,Charlie Bell,,,
+Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,9:12,MIL,shot,,,,,,,,,,Charlie Bell,2,,,made,,layup,25,6
+Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,8:57,CHI,shot,,,,,,,,,,Kirk Hinrich,,,,missed,,3pt,28,34
+Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,8:54,MIL,rebound,,,,,,,,,,Ruben Patterson,,,,,,def,,
+Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,8:49,MIL,shot,,,,,,,,,,Charlie Bell,,,,missed,,layup,25,6
+Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,8:46,CHI,rebound,,,,,,,,,,Tyrus Thomas,,,,,,def,,
+Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,8:37,CHI,shot,,,,,,,,,,Chris Duhon,,,,missed,,3pt,42,28
+Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,8:35,MIL,rebound,,,,,,,,,,Brian Skinner,,,,,,def,,
+Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,8:26,MIL,shot,,,Tyrus Thomas,,,,,,,Brian Skinner,,,,missed,,layup,25,6
+Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,8:23,MIL,rebound,,,,,,,,,,Charlie Bell,,,,,,off,,
+Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,8:20,MIL,shot,,,,,,,,,,Charlie Villanueva,,,,missed,,3pt,1,10
+Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,8:18,MIL,shot,,,,,,,,,,Ruben Patterson,,,,missed,,tip,25,6
+Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,8:18,MIL,rebound,,,,,,,,,,Ruben Patterson,,,,,,off,,
+Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,8:16,MIL,rebound,,,,,,,,,,Charlie Bell,,,,,,off,,
+Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,8:03,MIL,shot,,,,,,,,,,Mo Williams,2,,,made,,layup,25,6
+Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,7:57,CHI,timeout,,,,,,,,,,,,,,,,regular,,
+Ben Gordon,Chris Duhon,Luol Deng,P.J. Brown,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,7:57,CHI,sub,,,,Ben Gordon,,Kirk Hinrich,,,,,,,,,,,,
+Ben Gordon,Ben Wallace,Luol Deng,P.J. Brown,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,7:57,CHI,sub,,,,Ben Wallace,,Chris Duhon,,,,,,,,,,,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,P.J. Brown,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,7:57,CHI,sub,,,,Adrian Griffin,,Tyrus Thomas,,,,,,,,,,,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,P.J. Brown,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,7:47,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,jump,42,4
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,P.J. Brown,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,7:47,MIL,rebound,,,,,,,,,,,,,,,,,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,P.J. Brown,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,7:34,MIL,shot,,,,,,,,,,Charlie Villanueva,,,,missed,,alley oop dunk,25,6
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,P.J. Brown,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,7:33,CHI,rebound,,,,,,,,,,Ben Wallace,,,,,,def,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,P.J. Brown,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,7:22,CHI,shot,,,,,,,,,,Ben Gordon,2,,,made,,jump,9,13
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,P.J. Brown,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,6:58,MIL,shot,,,,,,,,,,Charlie Bell,,,,missed,,3pt,48,10
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,P.J. Brown,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,6:56,CHI,rebound,,,,,,,,,,Adrian Griffin,,,,,,def,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,P.J. Brown,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,6:48,CHI,shot,,,,,,,,,,Ben Gordon,2,,,made,,jump,26,27
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,P.J. Brown,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,Ruben Patterson,2,6:25,MIL,shot,,,,,,,,,,Ruben Patterson,2,,,made,,hook,20,4
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,P.J. Brown,Brian Skinner,Charlie Bell,Charlie Villanueva,Michael Redd,Ruben Patterson,2,6:17,MIL,sub,,,,Michael Redd,,Mo Williams,,,,,,,,,,,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,P.J. Brown,Brian Skinner,Charlie Bell,Charlie Villanueva,Michael Redd,Ruben Patterson,2,6:08,CHI,shot,Luol Deng,,,,,,,,,Ben Gordon,3,,,made,,3pt,14,31
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,P.J. Brown,Brian Skinner,Charlie Bell,Charlie Villanueva,Michael Redd,Ruben Patterson,2,5:54,CHI,foul,,,,,,,,Charlie Villanueva,,P.J. Brown,,,,,,personal,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,P.J. Brown,Brian Skinner,Charlie Bell,Charlie Villanueva,Michael Redd,Ruben Patterson,2,5:54,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,P.J. Brown,Andrew Bogut,Charlie Bell,Charlie Villanueva,Michael Redd,Ruben Patterson,2,5:54,MIL,sub,,,,Andrew Bogut,,Brian Skinner,,,,,,,,,,,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,P.J. Brown,Andrew Bogut,Charlie Bell,Charlie Villanueva,David Noel,Michael Redd,2,5:54,MIL,sub,,,,David Noel,,Ruben Patterson,,,,,,,,,,,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Bell,Charlie Villanueva,David Noel,Michael Redd,2,5:54,CHI,sub,,,,Tyrus Thomas,,P.J. Brown,,,,,,,,,,,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Bell,Charlie Villanueva,David Noel,Michael Redd,2,5:49,MIL,shot,Andrew Bogut,,,,,,,,,Charlie Bell,2,,,made,,layup,25,6
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Bell,Charlie Villanueva,David Noel,Michael Redd,2,5:30,CHI,shot,Ben Wallace,,,,,,,,,Luol Deng,2,,,made,,dunk,25,6
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Bell,Charlie Villanueva,David Noel,Michael Redd,2,5:17,MIL,shot,,,,,,,,,,Michael Redd,,,,missed,,jump,18,19
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Bell,Charlie Villanueva,David Noel,Michael Redd,2,5:15,CHI,rebound,,,,,,,,,,Tyrus Thomas,,,,,,def,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Bell,Charlie Villanueva,David Noel,Michael Redd,2,5:09,CHI,shot,Ben Gordon,,,,,,,,,Luol Deng,2,,,made,,jump,8,14
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Bell,Charlie Villanueva,David Noel,Michael Redd,2,4:52,MIL,turnover,,,,,,,,,,David Noel,,,bad pass,,,,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Bell,Charlie Villanueva,David Noel,Michael Redd,2,4:41,CHI,shot,,,,,,,,,,Adrian Griffin,,,,missed,,jump,41,4
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Bell,Charlie Villanueva,David Noel,Michael Redd,2,4:39,CHI,rebound,,,,,,,,,,Ben Wallace,,,,,,off,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Bell,Charlie Villanueva,David Noel,Michael Redd,2,4:35,CHI,shot,Ben Wallace,,,,,,,,,Luol Deng,2,,,made,,hook,22,11
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Bell,Charlie Villanueva,David Noel,Michael Redd,2,4:32,MIL,timeout,,,,,,,,,,,,,,,,short,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Bell,Charlie Villanueva,David Noel,Michael Redd,2,4:17,MIL,shot,,,,,,,,,,Michael Redd,2,,,made,,jump,24,12
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Bell,Charlie Villanueva,David Noel,Michael Redd,2,3:56,CHI,shot,,,,,,,,,,Tyrus Thomas,,,,missed,,jump,33,21
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Bell,Charlie Villanueva,David Noel,Michael Redd,2,3:54,CHI,rebound,,,,,,,,,,Adrian Griffin,,,,,,off,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Bell,Charlie Villanueva,David Noel,Michael Redd,2,3:49,CHI,shot,Adrian Griffin,,,,,,,,,Ben Gordon,3,,,made,,3pt,25,34
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Bell,Charlie Villanueva,David Noel,Michael Redd,2,3:27,MIL,shot,,,,,,,,,,Charlie Villanueva,2,,,made,,running jump,27,10
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Bell,Charlie Villanueva,David Noel,Michael Redd,2,3:14,MIL,foul,,,,,,,,Tyrus Thomas,,Andrew Bogut,,,,,,shooting,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,David Noel,Michael Redd,Mo Williams,2,3:14,MIL,sub,,,,Mo Williams,,Charlie Bell,,,,,,,,,,,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,2,3:14,MIL,sub,,,,Ruben Patterson,,David Noel,,,,,,,,,,,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,2,3:14,CHI,free throw,,,,,,,1,,2,Tyrus Thomas,,,foul,missed,,,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,2,3:14,CHI,rebound,,,,,,,,,,,,,,,,,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,2,3:14,CHI,free throw,,,,,,,2,,2,Tyrus Thomas,,,foul,made,,,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,2,3:02,MIL,shot,,,,,,,,,,Michael Redd,,,,missed,,3pt,1,14
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,2,3:00,CHI,rebound,,,,,,,,,,Tyrus Thomas,,,,,,def,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,2,3:00,CHI,turnover,,,,,,,,,,Tyrus Thomas,,,poss lost ball turnover,,,,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,2,2:52,CHI,foul,,,,,,,,Michael Redd,,Tyrus Thomas,,,,,,shooting,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,2,2:52,MIL,timeout,,,,,,,,,,,,,,,,regular,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,2,2:52,CHI,sub,,,,Kirk Hinrich,,Tyrus Thomas,,,,,,,,,,,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,2,2:52,MIL,free throw,,,,,,,1,,2,Michael Redd,,,foul,made,,,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,2,2:52,MIL,free throw,,,,,,,2,,2,Michael Redd,,,foul,made,,,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,2,2:36,CHI,shot,,,,,,,,,,Adrian Griffin,,,,missed,,layup,25,6
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,2,2:34,CHI,shot,,,,,,,,,,Ben Wallace,,,,missed,,tip,25,6
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,2,2:34,CHI,rebound,,,,,,,,,,Ben Wallace,,,,,,off,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,2,2:33,MIL,rebound,,,,,,,,,,Charlie Villanueva,,,,,,def,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,2,2:15,MIL,shot,,,,,,,,,,Ruben Patterson,,,,missed,,layup,25,6
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,2,2:12,MIL,shot,,,,,,,,,,Andrew Bogut,2,,,made,,layup,25,6
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,2,2:12,MIL,rebound,,,,,,,,,,Andrew Bogut,,,,,,off,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,2,1:59,CHI,turnover,,,,,,,,,,Kirk Hinrich,,,traveling,,,,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,2,1:45,MIL,shot,,,,,,,,,,Mo Williams,,,,missed,,jump,43,12
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,2,1:43,CHI,rebound,,,,,,,,,,Ben Wallace,,,,,,def,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,2,1:28,CHI,shot,,,,,,,,,,Adrian Griffin,2,,,made,,jump,18,12
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,2,1:10,MIL,turnover,,,,,,,,,,Michael Redd,,,bad pass,,,,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,2,1:00,CHI,shot,Adrian Griffin,,,,,,,,,Ben Gordon,3,,,made,,3pt,2,5
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,2,0:38,MIL,shot,Mo Williams,,,,,,,,,Charlie Villanueva,3,,,made,,3pt,14,30
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,2,0:32,CHI,shot,,,,,,,,,,Kirk Hinrich,,,,missed,,3pt,47,20
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,2,0:30,CHI,rebound,,,,,,,,,,,,,,,,,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Brian Skinner,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,2,0:30,MIL,sub,,,,Brian Skinner,,Andrew Bogut,,,,,,,,,,,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Brian Skinner,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,2,0:14,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,3pt,28,33
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Brian Skinner,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,2,0:12,CHI,rebound,,,,,,,,,,Ben Wallace,,,,,,off,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Brian Skinner,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,2,0:00,CHI,shot,,,,,,,,,,Ben Gordon,2,,,made,,layup,25,6
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,3,11:47,MIL,shot,Michael Redd,,,,,,,,,Andrew Bogut,2,,,made,,jump,35,8
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,3,11:31,CHI,shot,,,,,,,,,,Kirk Hinrich,,,,missed,,jump,12,14
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,3,11:29,MIL,rebound,,,,,,,,,,Mo Williams,,,,,,def,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,3,11:29,CHI,foul,,,,,,,,Mo Williams,,Ben Wallace,,,,,,personal,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,3,11:15,MIL,shot,,,,,,,,,,Mo Williams,2,,,made,,jump,40,7
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,3,11:05,CHI,shot,,,,,,,,,,Luol Deng,2,,,made,,driving layup,25,6
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,3,10:47,MIL,shot,,,,,,,,,,Mo Williams,,,,missed,,jump,14,19
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,3,10:45,CHI,rebound,,,,,,,,,,Luol Deng,,,,,,def,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,3,10:37,MIL,foul,,,,,,,,Kirk Hinrich,,Charlie Bell,,,,,,personal,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,3,10:30,MIL,foul,,,,,,,,Ben Wallace,,Charlie Bell,,,,,,shooting,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,3,10:30,CHI,free throw,,,,,,,1,,2,Ben Wallace,,,foul,missed,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Charlie Bell,Michael Redd,Mo Williams,3,10:30,CHI,rebound,,,,,,,,,,,,,,,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Michael Redd,Mo Williams,Ruben Patterson,3,10:30,MIL,sub,,,,Ruben Patterson,,Charlie Bell,,,,,,,,,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Michael Redd,Mo Williams,Ruben Patterson,3,10:30,CHI,free throw,,,,,,,2,,2,Ben Wallace,,,foul,made,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Michael Redd,Mo Williams,Ruben Patterson,3,10:13,MIL,foul,,,,,,,,Luol Deng,,Ruben Patterson,,,,,,offensive,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Michael Redd,Mo Williams,Ruben Patterson,3,10:13,MIL,turnover,,,,,,,,,,Ruben Patterson,,,foul,,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Michael Redd,Mo Williams,Ruben Patterson,3,10:00,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,3pt,48,17
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Michael Redd,Mo Williams,Ruben Patterson,3,9:58,MIL,rebound,,,,,,,,,,Andrew Bogut,,,,,,def,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Michael Redd,Mo Williams,Ruben Patterson,3,9:48,MIL,shot,,,,,,,,,,Ruben Patterson,2,,,made,,layup,25,6
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Michael Redd,Mo Williams,Ruben Patterson,3,9:31,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,jump,24,24
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Michael Redd,Mo Williams,Ruben Patterson,3,9:29,MIL,rebound,,,,,,,,,,Brian Skinner,,,,,,def,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Michael Redd,Mo Williams,Ruben Patterson,3,9:18,MIL,shot,Mo Williams,,,,,,,,,Michael Redd,3,,,made,,3pt,1,9
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Michael Redd,Mo Williams,Ruben Patterson,3,9:06,CHI,turnover,,,,,,,,,,P.J. Brown,,,lost ball,,Michael Redd,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Michael Redd,Mo Williams,Ruben Patterson,3,9:03,CHI,foul,,,,,,,,Ruben Patterson,,Kirk Hinrich,,,,,,shooting,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Michael Redd,Mo Williams,Ruben Patterson,3,9:03,MIL,free throw,,,,,,,1,,2,Ruben Patterson,,,foul,missed,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Andrew Bogut,Brian Skinner,Michael Redd,Mo Williams,Ruben Patterson,3,9:03,MIL,rebound,,,,,,,,,,,,,,,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Brian Skinner,Michael Redd,Mo Williams,Ruben Patterson,3,9:03,CHI,sub,,,,Tyrus Thomas,,P.J. Brown,,,,,,,,,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Brian Skinner,Michael Redd,Mo Williams,Ruben Patterson,3,9:03,MIL,free throw,,,,,,,2,,2,Ruben Patterson,,,foul,made,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Brian Skinner,Michael Redd,Mo Williams,Ruben Patterson,3,8:54,CHI,turnover,,,,,,,,,,Ben Gordon,,,traveling,,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Brian Skinner,Michael Redd,Mo Williams,Ruben Patterson,3,8:42,MIL,shot,,,,,,,,,,Mo Williams,,,,missed,,jump,12,17
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Brian Skinner,Michael Redd,Mo Williams,Ruben Patterson,3,8:42,CHI,rebound,,,,,,,,,,,,,,,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Brian Skinner,Michael Redd,Mo Williams,Ruben Patterson,3,8:42,MIL,foul,,,,,,,,Luol Deng,,Brian Skinner,,,,,,loose ball,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Brian Skinner,Michael Redd,Mo Williams,Ruben Patterson,3,8:34,CHI,shot,,,,,,,,,,Kirk Hinrich,2,,,made,,layup,25,6
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Brian Skinner,Michael Redd,Mo Williams,Ruben Patterson,3,8:12,MIL,shot,,,,,,,,,,Michael Redd,2,,,made,,jump,39,15
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Brian Skinner,Michael Redd,Mo Williams,Ruben Patterson,3,8:02,CHI,turnover,,,,,,,,,,Tyrus Thomas,,,offensive goaltending,,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Brian Skinner,Michael Redd,Mo Williams,Ruben Patterson,3,7:54,MIL,turnover,,,,,,,,,,Michael Redd,,,step out of bounds turnover,,,,,
+Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,Andrew Bogut,Brian Skinner,Michael Redd,Mo Williams,Ruben Patterson,3,7:54,CHI,sub,,,,Chris Duhon,,Kirk Hinrich,,,,,,,,,,,,
+Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,Andrew Bogut,Brian Skinner,Michael Redd,Mo Williams,Ruben Patterson,3,7:40,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,jump,18,19
+Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,Andrew Bogut,Brian Skinner,Michael Redd,Mo Williams,Ruben Patterson,3,7:38,MIL,rebound,,,,,,,,,,Andrew Bogut,,,,,,def,,
+Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,Andrew Bogut,Brian Skinner,Michael Redd,Mo Williams,Ruben Patterson,3,7:30,MIL,shot,,,,,,,,,,Michael Redd,,,,missed,,jump,15,5
+Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,Andrew Bogut,Brian Skinner,Michael Redd,Mo Williams,Ruben Patterson,3,7:27,CHI,rebound,,,,,,,,,,Tyrus Thomas,,,,,,def,,
+Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,Andrew Bogut,Brian Skinner,Michael Redd,Mo Williams,Ruben Patterson,3,7:24,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,jump,41,9
+Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,Andrew Bogut,Brian Skinner,Michael Redd,Mo Williams,Ruben Patterson,3,7:22,MIL,rebound,,,,,,,,,,Andrew Bogut,,,,,,def,,
+Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,Andrew Bogut,Brian Skinner,Michael Redd,Mo Williams,Ruben Patterson,3,7:01,MIL,shot,,,,,,,,,,Michael Redd,,,,missed,,jump,40,5
+Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,Andrew Bogut,Brian Skinner,Michael Redd,Mo Williams,Ruben Patterson,3,6:59,CHI,rebound,,,,,,,,,,Tyrus Thomas,,,,,,def,,
+Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,Andrew Bogut,Brian Skinner,Michael Redd,Mo Williams,Ruben Patterson,3,6:47,CHI,shot,Ben Wallace,,,,,,,,,Luol Deng,2,,,made,,dunk,25,6
+Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,Andrew Bogut,Brian Skinner,Michael Redd,Mo Williams,Ruben Patterson,3,6:30,MIL,turnover,,,,,,,,,,Andrew Bogut,,,traveling,,,,,
+Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,Andrew Bogut,Brian Skinner,Michael Redd,Mo Williams,Ruben Patterson,3,6:30,CHI,timeout,,,,,,,,,,,,,,,,regular,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Tyrus Thomas,Andrew Bogut,Brian Skinner,Michael Redd,Mo Williams,Ruben Patterson,3,6:30,CHI,sub,,,,Adrian Griffin,,Ben Wallace,,,,,,,,,,,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,6:30,MIL,sub,,,,Charlie Villanueva,,Brian Skinner,,,,,,,,,,,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,6:18,CHI,turnover,,,,,,,,,,Adrian Griffin,,,traveling,,,,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,6:07,CHI,foul,,,,,,,,Ruben Patterson,,Adrian Griffin,,,,,,shooting,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,6:07,MIL,free throw,,,,,,,1,,2,Ruben Patterson,,,foul,made,,,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,6:07,MIL,free throw,,,,,,,2,,2,Ruben Patterson,,,foul,made,,,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,5:47,CHI,turnover,,,,,,,,,,Ben Gordon,,,bad pass,,Ruben Patterson,,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,5:42,MIL,shot,Ruben Patterson,,,,,,,,,Michael Redd,3,,,made,,3pt,9,30
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,5:25,CHI,shot,Chris Duhon,,,,,,,,,Tyrus Thomas,2,,,made,,dunk,25,6
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,5:13,CHI,foul,,,,,,,,Andrew Bogut,,Adrian Griffin,,,,,,shooting,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,5:13,MIL,free throw,,,,,,,1,,2,Andrew Bogut,,,foul,missed,,,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,5:13,MIL,rebound,,,,,,,,,,,,,,,,,,
+Adrian Griffin,Chris Duhon,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,5:13,CHI,sub,,,,Kirk Hinrich,,Ben Gordon,,,,,,,,,,,,
+Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,5:13,CHI,sub,,,,Ben Wallace,,Adrian Griffin,,,,,,,,,,,,
+Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,5:13,MIL,free throw,,,,,,,2,,2,Andrew Bogut,,,foul,made,,,,
+Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,5:04,MIL,foul,,,,,,,,Luol Deng,,Mo Williams,,,,,,shooting,,
+Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,5:04,CHI,free throw,,,,,,,1,,2,Luol Deng,,,foul,made,,,,
+Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,5:04,CHI,free throw,,,,,,,2,,2,Luol Deng,,,foul,made,,,,
+Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,4:44,MIL,shot,,,,,,,,,,Michael Redd,2,,,made,,jump,29,20
+Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,4:27,CHI,shot,,,,,,,,,,Luol Deng,,,,missed,,jump,32,9
+Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,4:26,MIL,rebound,,,,,,,,,,Mo Williams,,,,,,def,,
+Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,4:20,MIL,shot,Mo Williams,,,,,,,,,Michael Redd,3,,,made,,3pt,50,12
+Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,4:18,CHI,timeout,,,,,,,,,,,,,,,,short,,
+Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,4:02,CHI,shot,Luol Deng,,,,,,,,,Tyrus Thomas,2,,,made,,dunk,25,6
+Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,3:53,CHI,foul,,,,,,,,Michael Redd,,Chris Duhon,,,,,,personal,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,3:53,CHI,sub,,,,Ben Gordon,,Chris Duhon,,,,,,,,,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,3:53,MIL,free throw,,,,,,,1,,2,Michael Redd,,,foul,made,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,3:53,MIL,free throw,,,,,,,2,,2,Michael Redd,,,foul,missed,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,3:51,CHI,rebound,,,,,,,,,,Ben Wallace,,,,,,def,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,3:43,CHI,turnover,,,,,,,,,,Kirk Hinrich,,,traveling,,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,3:31,MIL,shot,Michael Redd,,,,,,,,,Andrew Bogut,2,,,made,,running dunk,25,6
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,3:20,CHI,shot,,,,,,,,,,Kirk Hinrich,3,,,made,,3pt,13,29
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,3:02,MIL,shot,Andrew Bogut,,,,,,,,,Michael Redd,2,,,made,,reverse layup,25,6
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,2:52,CHI,shot,,,,,,,,,,Luol Deng,,,,missed,,jump,12,20
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,2:50,MIL,rebound,,,,,,,,,,Mo Williams,,,,,,def,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,2:36,MIL,shot,,,,,,,,,,Mo Williams,,,,missed,,jump,9,9
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,2:34,CHI,rebound,,,,,,,,,,Kirk Hinrich,,,,,,def,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,2:29,CHI,shot,,,Charlie Villanueva,,,,,,,Kirk Hinrich,,,,missed,,jump,18,15
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,2:29,CHI,rebound,,,,,,,,,,,,,,,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,2:29,MIL,timeout,,,,,,,,,,,,,,,,regular,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Bell,Charlie Villanueva,Michael Redd,Ruben Patterson,3,2:29,MIL,sub,,,,Charlie Bell,,Mo Williams,,,,,,,,,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Bell,Charlie Villanueva,Michael Redd,Ruben Patterson,3,2:15,CHI,shot,Kirk Hinrich,,,,,,,,,Luol Deng,2,,,made,,running jump,29,9
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Bell,Charlie Villanueva,Michael Redd,Ruben Patterson,3,1:58,CHI,foul,,,,,,,,Michael Redd,,Ben Wallace,,,,,,personal,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Bell,Charlie Villanueva,Michael Redd,Ruben Patterson,3,1:58,MIL,free throw,,,,,,,1,,2,Michael Redd,,,foul,made,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Bell,Charlie Villanueva,Michael Redd,Ruben Patterson,3,1:58,MIL,free throw,,,,,,,2,,2,Michael Redd,,,foul,made,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Bell,Charlie Villanueva,Michael Redd,Ruben Patterson,3,1:48,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,jump,24,12
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Bell,Charlie Villanueva,Michael Redd,Ruben Patterson,3,1:46,CHI,rebound,,,,,,,,,,Luol Deng,,,,,,off,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Bell,Charlie Villanueva,Michael Redd,Ruben Patterson,3,1:43,CHI,shot,,,,,,,,,,Luol Deng,2,,,made,,jump,9,6
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Bell,Charlie Villanueva,Michael Redd,Ruben Patterson,3,1:23,MIL,shot,Charlie Bell,,,,,,,,,Michael Redd,3,,,made,,3pt,5,22
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Charlie Bell,Charlie Villanueva,Michael Redd,Ruben Patterson,3,1:13,MIL,foul,,,,,,,,Kirk Hinrich,,Charlie Bell,,,,,,personal,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Michael Redd,Ruben Patterson,3,1:13,MIL,sub,,,,Brian Skinner,,Andrew Bogut,,,,,,,,,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brian Skinner,Charlie Bell,Charlie Villanueva,Michael Redd,Ruben Patterson,3,1:13,CHI,free throw,,,,,,,1,,2,Kirk Hinrich,,,foul,made,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brian Skinner,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,1:13,MIL,sub,,,,Mo Williams,,Charlie Bell,,,,,,,,,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brian Skinner,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,1:13,CHI,free throw,,,,,,,2,,2,Kirk Hinrich,,,foul,missed,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brian Skinner,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,1:12,MIL,rebound,,,,,,,,,,Brian Skinner,,,,,,def,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brian Skinner,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,1:01,MIL,turnover,,,,,,,,,,Michael Redd,,,traveling,,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brian Skinner,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,0:53,CHI,turnover,,,,,,,,,,Luol Deng,,,poss lost ball turnover,,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brian Skinner,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,0:35,MIL,shot,Mo Williams,,,,,,,,,Michael Redd,3,,,made,,3pt,35,31
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brian Skinner,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,0:28,CHI,shot,,,,,,,,,,Kirk Hinrich,2,,,made,,driving layup,25,6
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brian Skinner,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,0:06,MIL,shot,,,,,,,,,,Michael Redd,,,,missed,,3pt,17,35
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brian Skinner,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,0:03,CHI,rebound,,,,,,,,,,Tyrus Thomas,,,,,,def,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brian Skinner,Charlie Villanueva,Michael Redd,Mo Williams,Ruben Patterson,3,0:00,CHI,shot,Tyrus Thomas,,,,,,,,,Kirk Hinrich,3,,,made,,3pt,14,32
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brian Skinner,Charlie Villanueva,Lynn Greer,Mo Williams,Ruben Patterson,4,11:46,CHI,shot,,,,,,,,,,Kirk Hinrich,,,,missed,,3pt,15,30
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brian Skinner,Charlie Villanueva,Lynn Greer,Mo Williams,Ruben Patterson,4,11:45,CHI,rebound,,,,,,,,,,Luol Deng,,,,,,off,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brian Skinner,Charlie Villanueva,Lynn Greer,Mo Williams,Ruben Patterson,4,11:44,MIL,foul,,,,,,,,Ben Wallace,,Ruben Patterson,,,,,,personal,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brian Skinner,Charlie Villanueva,Lynn Greer,Mo Williams,Ruben Patterson,4,11:34,CHI,shot,Kirk Hinrich,,,,,,,,,Ben Gordon,2,,,made,,jump,11,22
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brian Skinner,Charlie Villanueva,Lynn Greer,Mo Williams,Ruben Patterson,4,11:13,MIL,shot,Mo Williams,,,,,,,,,Charlie Villanueva,3,,,made,,3pt,38,30
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brian Skinner,Charlie Villanueva,Lynn Greer,Mo Williams,Ruben Patterson,4,11:00,CHI,shot,,,,,,,,,,Kirk Hinrich,,,,missed,,3pt,49,9
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brian Skinner,Charlie Villanueva,Lynn Greer,Mo Williams,Ruben Patterson,4,10:58,MIL,rebound,,,,,,,,,,Lynn Greer,,,,,,def,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brian Skinner,Charlie Villanueva,Lynn Greer,Mo Williams,Ruben Patterson,4,10:55,MIL,shot,Lynn Greer,,,,,,,,,Ruben Patterson,2,,,made,,dunk,25,6
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brian Skinner,Charlie Villanueva,Lynn Greer,Mo Williams,Ruben Patterson,4,10:34,CHI,shot,Kirk Hinrich,,,,,,,,,Ben Gordon,2,,,made,,jump,9,17
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brian Skinner,Charlie Villanueva,Lynn Greer,Mo Williams,Ruben Patterson,4,10:12,MIL,shot,Mo Williams,,,,,,,,,Charlie Villanueva,3,,,made,,3pt,41,26
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brian Skinner,Charlie Villanueva,Lynn Greer,Mo Williams,Ruben Patterson,4,9:59,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,3pt,8,27
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brian Skinner,Charlie Villanueva,Lynn Greer,Mo Williams,Ruben Patterson,4,9:57,MIL,rebound,,,,,,,,,,Mo Williams,,,,,,def,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brian Skinner,Charlie Villanueva,Lynn Greer,Mo Williams,Ruben Patterson,4,9:51,MIL,turnover,,,,,,,,,,Mo Williams,,,poss lost ball turnover,,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Brian Skinner,Charlie Villanueva,Lynn Greer,Mo Williams,4,9:51,MIL,sub,,,,Andrew Bogut,,Ruben Patterson,,,,,,,,,,,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Brian Skinner,Charlie Villanueva,Lynn Greer,Mo Williams,4,9:43,CHI,shot,,,Andrew Bogut,,,,,,,Tyrus Thomas,,,,missed,,layup,25,6
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Brian Skinner,Charlie Villanueva,Lynn Greer,Mo Williams,4,9:42,MIL,rebound,,,,,,,,,,Brian Skinner,,,,,,def,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Brian Skinner,Charlie Villanueva,Lynn Greer,Mo Williams,4,9:42,CHI,foul,,,,,,,,Brian Skinner,,Tyrus Thomas,,,,,,personal,,
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Brian Skinner,Charlie Villanueva,Lynn Greer,Mo Williams,4,9:26,MIL,shot,Lynn Greer,,,,,,,,,Mo Williams,2,,,made,,jump,37,19
+Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,Andrew Bogut,Brian Skinner,Charlie Villanueva,Lynn Greer,Mo Williams,4,9:17,CHI,timeout,,,,,,,,,,,,,,,,regular,,
+Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,Tyrus Thomas,Andrew Bogut,Brian Skinner,Charlie Villanueva,Lynn Greer,Mo Williams,4,9:17,CHI,sub,,,,Malik Allen,,Ben Wallace,,,,,,,,,,,,
+Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Tyrus Thomas,Andrew Bogut,Brian Skinner,Charlie Villanueva,Lynn Greer,Mo Williams,4,9:17,CHI,sub,,,,Chris Duhon,,Kirk Hinrich,,,,,,,,,,,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Brian Skinner,Charlie Villanueva,Lynn Greer,Mo Williams,4,9:17,CHI,sub,,,,Adrian Griffin,,Tyrus Thomas,,,,,,,,,,,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Brian Skinner,Charlie Villanueva,Lynn Greer,Mo Williams,4,9:02,MIL,foul,,,,,,,,Ben Gordon,,Mo Williams,,,,,,shooting,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Brian Skinner,Charlie Villanueva,Lynn Greer,Mo Williams,4,9:02,CHI,free throw,,,,,,,1,,2,Ben Gordon,,,foul,made,,,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Brian Skinner,Charlie Villanueva,Lynn Greer,Mo Williams,4,9:02,CHI,free throw,,,,,,,2,,2,Ben Gordon,,,foul,made,,,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Brian Skinner,Charlie Villanueva,Lynn Greer,Mo Williams,4,8:55,MIL,timeout,,,,,,,,,,,,,,,,regular,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Brian Skinner,Charlie Villanueva,Lynn Greer,Mo Williams,4,8:43,MIL,shot,,,,,,,,,,Mo Williams,,,,missed,,3pt,36,31
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Brian Skinner,Charlie Villanueva,Lynn Greer,Mo Williams,4,8:41,CHI,rebound,,,,,,,,,,Chris Duhon,,,,,,def,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Brian Skinner,Charlie Villanueva,Lynn Greer,Mo Williams,4,8:25,CHI,shot,Malik Allen,,,,,,,,,Chris Duhon,3,,,made,,3pt,49,5
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Brian Skinner,Charlie Villanueva,Lynn Greer,Mo Williams,4,8:21,MIL,foul,,,,,,,,Luol Deng,,Lynn Greer,,,,,,offensive,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Brian Skinner,Charlie Villanueva,Lynn Greer,Mo Williams,4,8:21,MIL,turnover,,,,,,,,,,Lynn Greer,,,foul,,,,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Brian Skinner,Charlie Bell,Charlie Villanueva,Mo Williams,4,8:21,MIL,sub,,,,Charlie Bell,,Lynn Greer,,,,,,,,,,,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Charlie Villanueva,Michael Redd,Mo Williams,4,8:21,MIL,sub,,,,Michael Redd,,Brian Skinner,,,,,,,,,,,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Charlie Villanueva,Michael Redd,Mo Williams,4,8:08,CHI,turnover,,,,,,,,,,Chris Duhon,,,bad pass,,Michael Redd,,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Charlie Villanueva,Michael Redd,Mo Williams,4,7:49,MIL,shot,,,,,,,,,,Michael Redd,,,,missed,,jump,9,17
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Charlie Villanueva,Michael Redd,Mo Williams,4,7:47,CHI,rebound,,,,,,,,,,Chris Duhon,,,,,,def,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Charlie Villanueva,Michael Redd,Mo Williams,4,7:36,CHI,shot,Chris Duhon,,,,,,,,,Luol Deng,2,,,made,,dunk,25,6
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Charlie Villanueva,Michael Redd,Mo Williams,4,7:36,MIL,foul,,,,,,,,Luol Deng,,Michael Redd,,,,,,shooting,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Charlie Villanueva,Michael Redd,Mo Williams,4,7:36,CHI,free throw,,,,,,,1,,1,Luol Deng,,,foul,made,,,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Charlie Villanueva,Michael Redd,Mo Williams,4,7:15,MIL,shot,,,,,,,,,,Charlie Villanueva,,,,missed,,3pt,36,30
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Charlie Villanueva,Michael Redd,Mo Williams,4,7:15,CHI,rebound,,,,,,,,,,,,,,,,,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,7:15,MIL,sub,,,,Ruben Patterson,,Charlie Villanueva,,,,,,,,,,,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,7:05,MIL,foul,,,,,,,,Ben Gordon,,Ruben Patterson,,,,,,shooting,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,7:05,CHI,free throw,,,,,,,1,,2,Ben Gordon,,,foul,missed,,,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,7:05,CHI,rebound,,,,,,,,,,,,,,,,,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,7:05,CHI,free throw,,,,,,,2,,2,Ben Gordon,,,foul,made,,,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,6:59,MIL,shot,Ruben Patterson,,,,,,,,,Charlie Bell,2,,,made,,dunk,25,6
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,6:51,CHI,shot,,,,,,,,,,Ben Gordon,2,,,made,,jump,19,23
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,6:36,MIL,turnover,,,,,,,,,,Andrew Bogut,,,bad pass,,,,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,6:28,CHI,shot,,,,,,,,,,Ben Gordon,2,,,made,,layup,25,6
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,6:28,MIL,timeout,,,,,,,,,,,,,,,,short,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,6:15,MIL,shot,,,,,,,,,,Michael Redd,2,,,made,,jump,41,5
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,5:50,CHI,shot,Adrian Griffin,,,,,,,,,Malik Allen,2,,,made,,jump,9,4
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,5:31,MIL,shot,,,,,,,,,,Mo Williams,,,,missed,,jump,17,20
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,5:29,MIL,rebound,,,,,,,,,,Mo Williams,,,,,,off,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,5:23,MIL,shot,,,,,,,,,,Andrew Bogut,,,,missed,,jump,11,9
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,5:22,CHI,rebound,,,,,,,,,,,,,,,,,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,5:13,CHI,shot,,,,,,,,,,Chris Duhon,,,,missed,,layup,25,6
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,5:13,CHI,rebound,,,,,,,,,,,,,,,,,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,5:13,MIL,foul,,,,,,,,Malik Allen,,Michael Redd,,,,,,loose ball,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,5:13,CHI,free throw,,,,,,,1,,2,Malik Allen,,,foul,missed,,,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,5:13,CHI,rebound,,,,,,,,,,,,,,,,,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,5:13,CHI,free throw,,,,,,,2,,2,Malik Allen,,,foul,made,,,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,4:58,CHI,foul,,,,,,,,Michael Redd,,Adrian Griffin,,,,,,personal,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,4:49,MIL,shot,,,,,,,,,,Charlie Bell,,,,missed,,jump,5,4
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,4:47,MIL,rebound,,,,,,,,,,Ruben Patterson,,,,,,off,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,4:37,MIL,shot,,,,,,,,,,Charlie Bell,,,,missed,,reverse layup,25,6
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,4:36,MIL,rebound,,,,,,,,,,Ruben Patterson,,,,,,off,,
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,4:34,MIL,shot,,,,,,,,,,Ruben Patterson,2,,,made,,layup,25,6
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,4:16,CHI,shot,Chris Duhon,,,,,,,,,Ben Gordon,2,,,made,,jump,35,25
+Adrian Griffin,Ben Gordon,Chris Duhon,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,4:01,CHI,foul,,,,,,,,Michael Redd,,Adrian Griffin,,,,,,personal,,
+Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,4:01,CHI,sub,,,,Kirk Hinrich,,Chris Duhon,,,,,,,,,,,,
+Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,3:54,MIL,shot,,,,,,,,,,Michael Redd,,,,missed,,3pt,9,26
+Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,3:52,CHI,rebound,,,,,,,,,,Malik Allen,,,,,,def,,
+Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,3:46,CHI,shot,,,,,,,,,,Ben Gordon,3,,,made,,3pt,13,29
+Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,3:21,MIL,shot,,,,,,,,,,Ruben Patterson,2,,,made,,jump,26,10
+Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,3:04,CHI,turnover,,,,,,,,,,Ben Gordon,,,bad pass,,Michael Redd,,,
+Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,2:54,MIL,turnover,,,,,,,,,,Mo Williams,,,bad pass,,Ben Gordon,,,
+Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,2:54,MIL,foul,,,,,,,,Ben Gordon,,Andrew Bogut,,,,,,personal,,
+Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,2:54,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,2:54,CHI,free throw,,,,,,,1,,2,Ben Gordon,,,foul,made,,,,
+Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,2:54,CHI,free throw,,,,,,,2,,2,Ben Gordon,,,foul,made,,,,
+Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,2:32,MIL,shot,Charlie Bell,,,,,,,,,Mo Williams,2,,,made,,running jump,26,11
+Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,2:10,CHI,shot,Ben Gordon,,,,,,,,,Luol Deng,2,,,made,,jump,13,20
+Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,1:50,MIL,shot,,,,,,,,,,Michael Redd,,,,missed,,jump,39,4
+Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,1:48,CHI,rebound,,,,,,,,,,Ben Gordon,,,,,,def,,
+Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,1:41,CHI,shot,Ben Gordon,,,,,,,,,Adrian Griffin,2,,,made,,jump,9,7
+Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,1:19,MIL,shot,,,,,,,,,,Mo Williams,,,,missed,,jump,12,16
+Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,1:17,CHI,rebound,,,,,,,,,,Adrian Griffin,,,,,,def,,
+Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,1:08,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,3pt,23,34
+Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,1:05,MIL,rebound,,,,,,,,,,Mo Williams,,,,,,def,,
+Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,0:49,MIL,timeout,,,,,,,,,,,,,,,,short,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,0:49,CHI,sub,,,,Ben Wallace,,Malik Allen,,,,,,,,,,,,
+Adrian Griffin,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,0:49,CHI,sub,,,,Chris Duhon,,Ben Gordon,,,,,,,,,,,,
+Adrian Griffin,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,0:47,MIL,turnover,,,,,,,,,,Michael Redd,,,bad pass,,,,,
+Adrian Griffin,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,0:47,CHI,timeout,,,,,,,,,,,,,,,,regular,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,0:47,CHI,sub,,,,Ben Gordon,,Chris Duhon,,,,,,,,,,,,
+Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,0:47,CHI,sub,,,,Malik Allen,,Ben Wallace,,,,,,,,,,,,
+Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,0:38,CHI,shot,,,,,,,,,,Malik Allen,,,,missed,,jump,10,5
+Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,0:36,MIL,rebound,,,,,,,,,,Ruben Patterson,,,,,,def,,
+Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,0:36,CHI,foul,,,,,,,,Ruben Patterson,,Malik Allen,,,,,,personal,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,0:36,CHI,sub,,,,Ben Wallace,,Malik Allen,,,,,,,,,,,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,0:18,MIL,shot,,,,,,,,,,Michael Redd,,,,missed,,jump,43,4
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,0:16,CHI,rebound,,,,,,,,,,Ben Wallace,,,,,,def,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,0:16,CHI,timeout,,,,,,,,,,,,,,,,short,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,0:11,CHI,shot,,,,,,,,,,Ben Gordon,2,,,made,,jump,17,19
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,0:11,MIL,timeout,,,,,,,,,,,,,,,,regular,,
+Adrian Griffin,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,0:11,CHI,sub,,,,Chris Duhon,,Ben Gordon,,,,,,,,,,,,
+Adrian Griffin,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,0:05,MIL,shot,,,,,,,,,,Michael Redd,,,,missed,,jump,43,4
+Adrian Griffin,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,0:03,MIL,rebound,,,,,,,,,,Ruben Patterson,,,,,,off,,
+Adrian Griffin,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,0:03,CHI,foul,,,,,,,,Ruben Patterson,,Chris Duhon,,,,,,personal,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,0:03,CHI,sub,,,,Ben Gordon,,Chris Duhon,,,,,,,,,,,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,0:03,MIL,free throw,,,,,,,1,,2,Ruben Patterson,,,foul,missed,,,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,0:03,MIL,rebound,,,,,,,,,,,,,,,,,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,0:03,MIL,free throw,,,,,,,2,,2,Ruben Patterson,,,foul,made,,,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,0:03,CHI,sub,,,,Chris Duhon,,Adrian Griffin,,,,,,,,,,,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,0:00,CHI,shot,,,,,,,,,,Chris Duhon,,,,missed,,3pt,16,44
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,4,0:00,CHI,rebound,,,,,,,,,,,,,,,,,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,5:00,OFF,jump ball,,Ben Wallace,,,Andrew Bogut,,,,,,,Ben Gordon,,,,,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,4:53,CHI,shot,,,,,,,,,,Ben Gordon,2,,,made,,layup,25,6
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,4:37,MIL,turnover,,,,,,,,,,Mo Williams,,,bad pass,,Adrian Griffin,,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,4:18,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,jump,24,13
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,4:17,MIL,rebound,,,,,,,,,,Ruben Patterson,,,,,,def,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,3:55,MIL,shot,,,Adrian Griffin,,,,,,,Charlie Bell,,,,missed,,jump,11,10
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,3:52,MIL,rebound,,,,,,,,,,Michael Redd,,,,,,off,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,3:49,MIL,shot,,,,,,,,,,Michael Redd,,,,missed,,jump,11,9
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,3:47,CHI,rebound,,,,,,,,,,Adrian Griffin,,,,,,def,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,3:42,CHI,shot,Kirk Hinrich,,,,,,,,,Luol Deng,2,,,made,,layup,25,6
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,3:27,CHI,foul,,,,,,,,Ruben Patterson,,Ben Wallace,,,,,,shooting,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,3:27,MIL,free throw,,,,,,,1,,2,Ruben Patterson,,,foul,made,,,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,3:27,MIL,free throw,,,,,,,2,,2,Ruben Patterson,,,foul,missed,,,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,3:26,CHI,rebound,,,,,,,,,,Adrian Griffin,,,,,,def,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,3:13,CHI,shot,Luol Deng,,,,,,,,,Kirk Hinrich,3,,,made,,3pt,45,26
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,2:51,MIL,shot,,,,,,,,,,Michael Redd,2,,,made,,running jump,26,11
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,2:38,CHI,shot,,,,,,,,,,Ben Gordon,2,,,made,,jump,28,10
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,2:13,MIL,shot,Andrew Bogut,,,,,,,,,Ruben Patterson,2,,,made,,jump,20,18
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,1:53,CHI,foul,,,,,,,,Andrew Bogut,,Kirk Hinrich,,,,,,offensive,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,1:53,CHI,turnover,,,,,,,,,,Kirk Hinrich,,,foul,,,,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,1:34,MIL,shot,,,,,,,,,,Michael Redd,2,,,made,,jump,36,25
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,1:15,CHI,shot,Kirk Hinrich,,,,,,,,,Adrian Griffin,2,,,made,,jump,23,19
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,1:01,MIL,shot,,,Ben Wallace,,,,,,,Mo Williams,,,,missed,,jump,25,28
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,0:57,MIL,rebound,,,,,,,,,,Mo Williams,,,,,,off,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,0:56,MIL,shot,,,,,,,,,,Charlie Bell,,,,missed,,3pt,49,11
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,0:54,MIL,rebound,,,,,,,,,,Andrew Bogut,,,,,,off,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,0:52,MIL,shot,,,,,,,,,,Mo Williams,,,,missed,,3pt,40,29
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,0:51,MIL,rebound,,,,,,,,,,Charlie Bell,,,,,,off,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,0:51,CHI,foul,,,,,,,,Charlie Bell,,Adrian Griffin,,,,,,loose ball,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,0:51,MIL,timeout,,,,,,,,,,,,,,,,regular,,
+Adrian Griffin,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,0:51,CHI,sub,,,,Chris Duhon,,Ben Gordon,,,,,,,,,,,,
+Adrian Griffin,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,0:39,MIL,shot,,,,,,,,,,Michael Redd,2,,,made,,driving layup,25,6
+Adrian Griffin,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,0:39,CHI,timeout,,,,,,,,,,,,,,,,short,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,0:39,CHI,sub,,,,Ben Gordon,,Chris Duhon,,,,,,,,,,,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,0:21,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,jump,40,6
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,0:20,MIL,rebound,,,,,,,,,,Ruben Patterson,,,,,,def,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,0:17,MIL,turnover,,,,,,,,,,Mo Williams,,,poss lost ball turnover,,,,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,0:17,CHI,timeout,,,,,,,,,,,,,,,,short,,
+Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,0:17,CHI,sub,,,,Malik Allen,,Ben Wallace,,,,,,,,,,,,
+Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,Andrew Bogut,David Noel,Michael Redd,Mo Williams,Ruben Patterson,5,0:17,MIL,sub,,,,David Noel,,Charlie Bell,,,,,,,,,,,,
+Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,Andrew Bogut,David Noel,Michael Redd,Mo Williams,Ruben Patterson,5,0:12,MIL,foul,,,,,,,,Kirk Hinrich,,Mo Williams,,,,,,personal,,
+Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,Andrew Bogut,David Noel,Michael Redd,Mo Williams,Ruben Patterson,5,0:11,MIL,foul,,,,,,,,Kirk Hinrich,,Mo Williams,,,,,,personal,,
+Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,Andrew Bogut,David Noel,Michael Redd,Mo Williams,Ruben Patterson,5,0:11,CHI,free throw,,,,,,,1,,2,Kirk Hinrich,,,foul,made,,,,
+Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Andrew Bogut,David Noel,Michael Redd,Mo Williams,Ruben Patterson,5,0:11,CHI,sub,,,,Ben Wallace,,Malik Allen,,,,,,,,,,,,
+Adrian Griffin,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Andrew Bogut,David Noel,Michael Redd,Mo Williams,Ruben Patterson,5,0:11,CHI,sub,,,,Chris Duhon,,Ben Gordon,,,,,,,,,,,,
+Adrian Griffin,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Andrew Bogut,David Noel,Michael Redd,Mo Williams,Ruben Patterson,5,0:11,CHI,free throw,,,,,,,2,,2,Kirk Hinrich,,,foul,made,,,,
+Adrian Griffin,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Andrew Bogut,David Noel,Michael Redd,Mo Williams,Ruben Patterson,5,0:11,MIL,timeout,,,,,,,,,,,,,,,,regular,,
+Adrian Griffin,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,0:11,MIL,sub,,,,Charlie Bell,,David Noel,,,,,,,,,,,,
+Adrian Griffin,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,0:05,MIL,shot,,,Ben Wallace,,,,,,,Michael Redd,,,,missed,,layup,25,6
+Adrian Griffin,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,0:05,MIL,rebound,,,,,,,,,,,,,,,,,,
+Adrian Griffin,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,0:05,CHI,foul,,,,,,,,Andrew Bogut,,Adrian Griffin,,,,,,personal,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Michael Redd,Mo Williams,Ruben Patterson,5,0:05,CHI,sub,,,,Ben Gordon,,Adrian Griffin,,,,,,,,,,,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Andrew Bogut,David Noel,Michael Redd,Mo Williams,Ruben Patterson,5,0:05,MIL,sub,,,,David Noel,,Charlie Bell,,,,,,,,,,,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Andrew Bogut,David Noel,Michael Redd,Mo Williams,Ruben Patterson,5,0:05,MIL,free throw,,,,,,,1,,2,Andrew Bogut,,,foul,missed,,,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Andrew Bogut,David Noel,Michael Redd,Mo Williams,Ruben Patterson,5,0:05,MIL,rebound,,,,,,,,,,,,,,,,,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Andrew Bogut,David Noel,Lynn Greer,Michael Redd,Ruben Patterson,5,0:05,MIL,sub,,,,Lynn Greer,,Mo Williams,,,,,,,,,,,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Andrew Bogut,David Noel,Lynn Greer,Michael Redd,Ruben Patterson,5,0:05,MIL,free throw,,,,,,,2,,2,Andrew Bogut,,,foul,made,,,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Andrew Bogut,David Noel,Lynn Greer,Michael Redd,Ruben Patterson,5,0:03,MIL,foul,,,,,,,,Kirk Hinrich,,Lynn Greer,,,,,,personal,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Andrew Bogut,David Noel,Lynn Greer,Michael Redd,Ruben Patterson,5,0:03,CHI,free throw,,,,,,,1,,2,Kirk Hinrich,,,foul,made,,,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Andrew Bogut,David Noel,Lynn Greer,Michael Redd,Ruben Patterson,5,0:03,CHI,free throw,,,,,,,2,,2,Kirk Hinrich,,,foul,made,,,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Andrew Bogut,David Noel,Lynn Greer,Michael Redd,Ruben Patterson,5,0:03,MIL,timeout,,,,,,,,,,,,,,,,short,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Villanueva,David Noel,Lynn Greer,Michael Redd,5,0:03,MIL,sub,,,,Charlie Villanueva,,Ruben Patterson,,,,,,,,,,,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Villanueva,Lynn Greer,Michael Redd,Mo Williams,5,0:03,MIL,sub,,,,Mo Williams,,David Noel,,,,,,,,,,,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Charlie Villanueva,Michael Redd,Mo Williams,5,0:03,MIL,sub,,,,Charlie Bell,,Lynn Greer,,,,,,,,,,,,
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Charlie Villanueva,Michael Redd,Mo Williams,5,0:00,MIL,shot,,,,,,,,,,Mo Williams,,,,missed,,3pt,33,35
+Ben Gordon,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Andrew Bogut,Charlie Bell,Charlie Villanueva,Michael Redd,Mo Williams,5,0:00,MIL,rebound,,,,,,,,,,,,,,,,,,

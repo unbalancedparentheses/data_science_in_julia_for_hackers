@@ -1,0 +1,431 @@
+a1,a2,a3,a4,a5,h1,h2,h3,h4,h5,period,time,team,etype,assist,away,block,entered,home,left,num,opponent,outof,player,points,possession,reason,result,steal,type,x,y
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,12:00,OFF,jump ball,,Josh Smith,,,Andrew Bogut,,,,,,,Tyronn Lue,,,,,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,11:44,ATL,turnover,,,,,,,,,,Zaza Pachulia,,,offensive goaltending,,,,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,11:29,ATL,foul,,,,,,,,Yi Jianlian,,Josh Smith,,,,,,shooting,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,11:29,MIL,free throw,,,,,,,1,,2,Yi Jianlian,,,foul,missed,,,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,11:29,MIL,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,11:29,MIL,free throw,,,,,,,2,,2,Yi Jianlian,,,foul,made,,,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,11:16,ATL,shot,Joe Johnson,,,,,,,,,Josh Smith,2,,,made,,layup,25,6
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,10:55,MIL,timeout,,,,,,,,,,,,,,,,short,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,10:46,MIL,shot,Desmond Mason,,,,,,,,,Mo Williams,2,,,made,,jump,9,5
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,10:30,MIL,foul,,,,,,,,Josh Smith,,Desmond Mason,,,,,,shooting,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,10:30,ATL,free throw,,,,,,,1,,2,Josh Smith,,,foul,made,,,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,10:30,ATL,free throw,,,,,,,2,,2,Josh Smith,,,foul,made,,,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,10:18,MIL,turnover,,,,,,,,,,Mo Williams,,,bad pass,,Josh Smith,,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,10:15,ATL,shot,Tyronn Lue,,,,,,,,,Josh Smith,2,,,made,,dunk,25,6
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,9:59,ATL,foul,,,,,,,,Yi Jianlian,,Marvin Williams,,,,,,personal,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,9:45,MIL,shot,,,,,,,,,,Desmond Mason,2,,,made,,jump,10,4
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,9:25,ATL,shot,,,Andrew Bogut,,,,,,,Josh Smith,,,,missed,,layup,25,6
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,9:23,MIL,rebound,,,,,,,,,,Yi Jianlian,,,,,,def,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,9:19,MIL,turnover,,,,,,,,,,Mo Williams,,,bad pass,,,,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,8:56,ATL,shot,,,,,,,,,,Zaza Pachulia,,,,missed,,jump,37,11
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,8:55,MIL,rebound,,,,,,,,,,Yi Jianlian,,,,,,def,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,8:37,MIL,shot,,,,,,,,,,Michael Redd,,,,missed,,jump,42,7
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,8:36,ATL,rebound,,,,,,,,,,Marvin Williams,,,,,,def,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,8:26,ATL,shot,,,,,,,,,,Tyronn Lue,,,,missed,,driving layup,25,6
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,8:24,ATL,rebound,,,,,,,,,,Zaza Pachulia,,,,,,off,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,8:23,ATL,shot,,,,,,,,,,Zaza Pachulia,2,,,made,,layup,25,6
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,7:59,MIL,shot,,,,,,,,,,Andrew Bogut,2,,,made,,hook,30,5
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,7:44,ATL,shot,,,,,,,,,,Marvin Williams,2,,,made,,jump,26,13
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,7:23,MIL,shot,,,,,,,,,,Desmond Mason,2,,,made,,jump,21,11
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,7:12,ATL,shot,,,,,,,,,,Tyronn Lue,2,,,made,,jump,32,19
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,6:54,MIL,shot,Desmond Mason,,,,,,,,,Michael Redd,2,,,made,,reverse layup,25,6
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,6:34,ATL,turnover,,,,,,,,,,Joe Johnson,,,bad pass,,Andrew Bogut,,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,6:29,MIL,shot,Mo Williams,,,,,,,,,Michael Redd,2,,,made,,layup,25,6
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,6:28,ATL,timeout,,,,,,,,,,,,,,,,regular,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,6:28,ATL,sub,,,,Josh Childress,,Tyronn Lue,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,6:09,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,jump,34,19
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,6:08,MIL,rebound,,,,,,,,,,Desmond Mason,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,5:49,MIL,shot,,,,,,,,,,Desmond Mason,2,,,made,,running layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,5:33,ATL,shot,Joe Johnson,,,,,,,,,Josh Smith,2,,,made,,layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,5:17,MIL,shot,,,,,,,,,,Yi Jianlian,,,,missed,,layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,5:16,ATL,rebound,,,,,,,,,,Zaza Pachulia,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,5:08,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,jump,40,18
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,5:08,MIL,rebound,,,,,,,,,,,,,,,,,,
+Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,5:08,ATL,sub,,,,Anthony Johnson,,Marvin Williams,,,,,,,,,,,,
+Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,5:06,MIL,shot,,,,,,,,,,Michael Redd,,,,missed,,jump,33,19
+Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,5:04,MIL,rebound,,,,,,,,,,Michael Redd,,,,,,off,,
+Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,5:03,MIL,shot,,,,,,,,,,Michael Redd,2,,,made,,jump,11,4
+Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,4:44,ATL,shot,,,,,,,,,,Anthony Johnson,,,,missed,,jump,19,14
+Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,4:43,MIL,rebound,,,,,,,,,,Andrew Bogut,,,,,,def,,
+Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,4:33,MIL,shot,Mo Williams,,,,,,,,,Andrew Bogut,2,,,made,,layup,25,6
+Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,4:20,MIL,foul,,,,,,,,Josh Childress,,Yi Jianlian,,,,,,personal,,
+Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,4:14,ATL,shot,,,,,,,,,,Zaza Pachulia,,,,missed,,layup,25,6
+Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,4:13,ATL,rebound,,,,,,,,,,Zaza Pachulia,,,,,,off,,
+Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,4:11,ATL,shot,,,,,,,,,,Zaza Pachulia,2,,,made,,layup,25,6
+Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,3:52,MIL,shot,,,,,,,,,,Michael Redd,,,,missed,,3pt,4,20
+Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,3:50,MIL,shot,,,,,,,,,,Desmond Mason,,,,missed,,tip,25,6
+Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,3:50,MIL,rebound,,,,,,,,,,Desmond Mason,,,,,,off,,
+Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,3:49,ATL,rebound,,,,,,,,,,Josh Childress,,,,,,def,,
+Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,3:47,ATL,shot,Josh Childress,,,,,,,,,Josh Smith,2,,,made,,dunk,25,6
+Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,3:47,MIL,foul,,,,,,,,Josh Smith,,Yi Jianlian,,,,,,shooting,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,1,3:47,ATL,sub,,,,Al Horford,,Zaza Pachulia,,,,,,,,,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Bobby Simmons,Desmond Mason,Michael Redd,Mo Williams,1,3:47,MIL,sub,,,,Bobby Simmons,,Yi Jianlian,,,,,,,,,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Bobby Simmons,Desmond Mason,Michael Redd,Mo Williams,1,3:47,ATL,free throw,,,,,,,1,,1,Josh Smith,,,foul,missed,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Bobby Simmons,Desmond Mason,Michael Redd,Mo Williams,1,3:46,MIL,rebound,,,,,,,,,,Bobby Simmons,,,,,,def,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Bobby Simmons,Desmond Mason,Michael Redd,Mo Williams,1,3:27,MIL,shot,,,,,,,,,,Bobby Simmons,,,,missed,,jump,43,10
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Bobby Simmons,Desmond Mason,Michael Redd,Mo Williams,1,3:25,MIL,rebound,,,,,,,,,,Desmond Mason,,,,,,off,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Bobby Simmons,Desmond Mason,Michael Redd,Mo Williams,1,3:24,MIL,shot,,,,,,,,,,Desmond Mason,,,,missed,,tip,25,6
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Bobby Simmons,Desmond Mason,Michael Redd,Mo Williams,1,3:23,ATL,rebound,,,,,,,,,,Al Horford,,,,,,def,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Bobby Simmons,Desmond Mason,Michael Redd,Mo Williams,1,3:02,ATL,shot,,,,,,,,,,Josh Smith,2,,,made,,hook,37,5
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Bobby Simmons,Desmond Mason,Michael Redd,Mo Williams,1,2:40,MIL,shot,,,,,,,,,,Bobby Simmons,,,,missed,,3pt,44,25
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Bobby Simmons,Desmond Mason,Michael Redd,Mo Williams,1,2:39,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,def,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Bobby Simmons,Desmond Mason,Michael Redd,Mo Williams,1,2:26,ATL,shot,,,,,,,,,,Joe Johnson,2,,,made,,jump,35,20
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Bobby Simmons,Desmond Mason,Michael Redd,Mo Williams,1,2:08,MIL,shot,,,,,,,,,,Mo Williams,,,,missed,,jump,39,6
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Bobby Simmons,Desmond Mason,Michael Redd,Mo Williams,1,2:06,ATL,rebound,,,,,,,,,,Al Horford,,,,,,def,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Bobby Simmons,Desmond Mason,Michael Redd,Mo Williams,1,1:59,ATL,turnover,,,,,,,,,,Josh Smith,,,bad pass,,Andrew Bogut,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Bobby Simmons,Desmond Mason,Michael Redd,Mo Williams,1,1:48,MIL,shot,,,,,,,,,,Andrew Bogut,,,,missed,,jump,14,18
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Bobby Simmons,Desmond Mason,Michael Redd,Mo Williams,1,1:47,ATL,rebound,,,,,,,,,,Al Horford,,,,,,def,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Bobby Simmons,Desmond Mason,Michael Redd,Mo Williams,1,1:28,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,3pt,40,28
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Bobby Simmons,Desmond Mason,Michael Redd,Mo Williams,1,1:27,MIL,rebound,,,,,,,,,,Desmond Mason,,,,,,def,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Bobby Simmons,Desmond Mason,Michael Redd,Mo Williams,1,1:14,ATL,foul,,,,,,,,Desmond Mason,,Josh Smith,,,,,,personal,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Bobby Simmons,Desmond Mason,Michael Redd,Mo Williams,1,1:14,MIL,timeout,,,,,,,,,,,,,,,,regular,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Bobby Simmons,Charlie Villanueva,Michael Redd,Mo Williams,1,1:14,MIL,sub,,,,Charlie Villanueva,,Desmond Mason,,,,,,,,,,,,
+Al Horford,Anthony Johnson,Josh Childress,Josh Smith,Shelden Williams,Andrew Bogut,Bobby Simmons,Charlie Villanueva,Michael Redd,Mo Williams,1,1:14,ATL,sub,,,,Shelden Williams,,Joe Johnson,,,,,,,,,,,,
+Al Horford,Anthony Johnson,Josh Childress,Marvin Williams,Shelden Williams,Andrew Bogut,Bobby Simmons,Charlie Villanueva,Michael Redd,Mo Williams,1,1:14,ATL,sub,,,,Marvin Williams,,Josh Smith,,,,,,,,,,,,
+Al Horford,Anthony Johnson,Josh Childress,Marvin Williams,Shelden Williams,Andrew Bogut,Bobby Simmons,Charlie Villanueva,Michael Redd,Mo Williams,1,1:03,MIL,shot,Charlie Villanueva,,,,,,,,,Andrew Bogut,2,,,made,,layup,25,6
+Al Horford,Anthony Johnson,Josh Childress,Marvin Williams,Shelden Williams,Andrew Bogut,Bobby Simmons,Charlie Villanueva,Michael Redd,Mo Williams,1,0:47,ATL,shot,,,,,,,,,,Anthony Johnson,2,,,made,,layup,25,6
+Al Horford,Anthony Johnson,Josh Childress,Marvin Williams,Shelden Williams,Andrew Bogut,Bobby Simmons,Charlie Villanueva,Michael Redd,Mo Williams,1,0:33,MIL,shot,,,,,,,,,,Michael Redd,2,,,made,,layup,25,6
+Al Horford,Anthony Johnson,Josh Childress,Marvin Williams,Shelden Williams,Andrew Bogut,Bobby Simmons,Charlie Villanueva,Michael Redd,Mo Williams,1,0:19,ATL,shot,,,,,,,,,,Josh Childress,,,,missed,,layup,25,6
+Al Horford,Anthony Johnson,Josh Childress,Marvin Williams,Shelden Williams,Andrew Bogut,Bobby Simmons,Charlie Villanueva,Michael Redd,Mo Williams,1,0:18,MIL,rebound,,,,,,,,,,Mo Williams,,,,,,def,,
+Al Horford,Anthony Johnson,Josh Childress,Marvin Williams,Shelden Williams,Andrew Bogut,Bobby Simmons,Charlie Villanueva,Michael Redd,Mo Williams,1,0:00,MIL,shot,,,Shelden Williams,,,,,,,Mo Williams,,,,missed,,layup,25,6
+Al Horford,Anthony Johnson,Josh Childress,Marvin Williams,Shelden Williams,Andrew Bogut,Bobby Simmons,Charlie Villanueva,Michael Redd,Mo Williams,1,0:00,ATL,rebound,,,,,,,,,,Anthony Johnson,,,,,,def,,
+Al Horford,Anthony Johnson,Josh Childress,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Mo Williams,2,11:33,MIL,shot,,,,,,,,,,Charlie Bell,,,,missed,,layup,25,6
+Al Horford,Anthony Johnson,Josh Childress,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Mo Williams,2,11:32,ATL,rebound,,,,,,,,,,Al Horford,,,,,,def,,
+Al Horford,Anthony Johnson,Josh Childress,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Mo Williams,2,11:18,MIL,foul,,,,,,,,Marvin Williams,,Charlie Bell,,,,,,personal,,
+Al Horford,Anthony Johnson,Josh Childress,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Mo Williams,2,11:08,MIL,foul,,,,,,,,Marvin Williams,,Bobby Simmons,,,,,,personal,,
+Al Horford,Anthony Johnson,Josh Childress,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Mo Williams,2,10:59,ATL,shot,,,,,,,,,,Marvin Williams,,,,missed,,jump,38,17
+Al Horford,Anthony Johnson,Josh Childress,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Mo Williams,2,10:58,MIL,rebound,,,,,,,,,,Mo Williams,,,,,,def,,
+Al Horford,Anthony Johnson,Josh Childress,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Mo Williams,2,10:48,MIL,shot,,,,,,,,,,Charlie Villanueva,,,,missed,,3pt,11,28
+Al Horford,Anthony Johnson,Josh Childress,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Mo Williams,2,10:47,ATL,rebound,,,,,,,,,,Marvin Williams,,,,,,def,,
+Al Horford,Anthony Johnson,Josh Childress,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Mo Williams,2,10:44,MIL,foul,,,,,,,,Al Horford,,Mo Williams,,,,,,shooting,,
+Al Horford,Anthony Johnson,Josh Childress,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Mo Williams,2,10:44,ATL,free throw,,,,,,,1,,2,Al Horford,,,foul,missed,,,,
+Al Horford,Anthony Johnson,Josh Childress,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Mo Williams,2,10:44,ATL,rebound,,,,,,,,,,,,,,,,,,
+Al Horford,Anthony Johnson,Josh Childress,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,10:44,MIL,sub,,,,Royal Ivey,,Mo Williams,,,,,,,,,,,,
+Al Horford,Anthony Johnson,Josh Childress,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,10:44,ATL,free throw,,,,,,,2,,2,Al Horford,,,foul,missed,,,,
+Al Horford,Anthony Johnson,Josh Childress,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,10:42,MIL,rebound,,,,,,,,,,Charlie Villanueva,,,,,,def,,
+Al Horford,Anthony Johnson,Josh Childress,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,10:33,ATL,foul,,,,,,,,Dan Gadzuric,,Al Horford,,,,,,personal,,
+Al Horford,Anthony Johnson,Josh Childress,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,10:20,MIL,shot,,,,,,,,,,Royal Ivey,,,,missed,,jump,44,4
+Al Horford,Anthony Johnson,Josh Childress,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,10:19,MIL,rebound,,,,,,,,,,Charlie Villanueva,,,,,,off,,
+Al Horford,Anthony Johnson,Josh Childress,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,10:18,MIL,shot,,,,,,,,,,Charlie Villanueva,,,,missed,,layup,25,6
+Al Horford,Anthony Johnson,Josh Childress,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,10:17,MIL,shot,,,,,,,,,,Dan Gadzuric,2,,,made,,tip,25,6
+Al Horford,Anthony Johnson,Josh Childress,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,10:17,MIL,rebound,,,,,,,,,,Dan Gadzuric,,,,,,off,,
+Al Horford,Anthony Johnson,Josh Childress,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,10:09,ATL,turnover,,,,,,,,,,Josh Childress,,,out of bounds lost ball turnover,,,,,
+Al Horford,Anthony Johnson,Josh Childress,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,9:49,MIL,shot,Royal Ivey,,,,,,,,,Charlie Villanueva,2,,,made,,jump,21,11
+Al Horford,Anthony Johnson,Josh Childress,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,9:39,ATL,turnover,,,,,,,,,,Anthony Johnson,,,out of bounds lost ball turnover,,,,,
+Al Horford,Anthony Johnson,Josh Childress,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,9:23,MIL,shot,Charlie Bell,,,,,,,,,Dan Gadzuric,2,,,made,,slam dunk,25,6
+Al Horford,Anthony Johnson,Josh Childress,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,9:06,MIL,foul,,,,,,,,Marvin Williams,,Bobby Simmons,,,,,,personal,,
+Al Horford,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,9:06,ATL,sub,,,,Josh Smith,,Anthony Johnson,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,9:06,ATL,sub,,,,Joe Johnson,,Shelden Williams,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,8:52,ATL,shot,Joe Johnson,,,,,,,,,Al Horford,2,,,made,,hook,30,6
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,8:40,MIL,shot,Charlie Bell,,,,,,,,,Bobby Simmons,2,,,made,,jump,28,24
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,8:22,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,8:17,ATL,shot,,,,,,,,,,Marvin Williams,,,,missed,,jump,40,17
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,8:15,MIL,rebound,,,,,,,,,,Bobby Simmons,,,,,,def,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,7:58,MIL,shot,,,,,,,,,,Charlie Villanueva,,,,missed,,layup,25,6
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,7:57,MIL,shot,,,,,,,,,,Charlie Villanueva,,,,missed,,tip,25,6
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,7:57,MIL,rebound,,,,,,,,,,Charlie Villanueva,,,,,,off,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,7:56,MIL,shot,,,,,,,,,,Charlie Villanueva,2,,,made,,dunk,25,6
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,7:56,MIL,rebound,,,,,,,,,,Charlie Villanueva,,,,,,off,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,7:39,ATL,shot,,,,,,,,,,Al Horford,2,,,made,,hook,19,5
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,7:32,MIL,foul,,,,,,,,Joe Johnson,,Dan Gadzuric,,,,,,offensive,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,7:32,MIL,turnover,,,,,,,,,,Dan Gadzuric,,,foul,,,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,7:15,ATL,shot,,,,,,,,,,Marvin Williams,,,,missed,,jump,23,11
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,7:14,MIL,rebound,,,,,,,,,,Dan Gadzuric,,,,,,def,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,7:02,MIL,shot,,,,,,,,,,Bobby Simmons,,,,missed,,3pt,23,33
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,7:01,MIL,rebound,,,,,,,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,6:50,ATL,foul,,,,,,,,Dan Gadzuric,,Josh Childress,,,,,,shooting,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,6:50,MIL,free throw,,,,,,,1,,2,Dan Gadzuric,,,foul,missed,,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,6:50,MIL,rebound,,,,,,,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,6:50,MIL,free throw,,,,,,,2,,2,Dan Gadzuric,,,foul,made,,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,6:34,ATL,turnover,,,,,,,,,,Al Horford,,,lost ball,,Charlie Villanueva,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,6:30,MIL,shot,,,,,,,,,,Charlie Villanueva,2,,,made,,layup,25,6
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,6:23,MIL,foul,,,,,,,,Josh Smith,,Charlie Bell,,,,,,personal,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,6:23,ATL,free throw,,,,,,,1,,2,Josh Smith,,,foul,made,,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,6:23,ATL,sub,,,,Tyronn Lue,,Marvin Williams,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,6:23,ATL,free throw,,,,,,,2,,2,Josh Smith,,,foul,made,,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,6:09,MIL,shot,Charlie Bell,,,,,,,,,Charlie Villanueva,2,,,made,,driving layup,25,6
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,5:49,ATL,shot,Josh Childress,,,,,,,,,Joe Johnson,2,,,made,,jump,40,5
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,5:36,MIL,shot,,,,,,,,,,Charlie Villanueva,,,,missed,,jump,10,14
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,5:34,ATL,rebound,,,,,,,,,,Josh Childress,,,,,,def,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,5:23,MIL,violation,,,,,,,,,,Charlie Bell,,,,,,kicked ball,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,5:23,MIL,timeout,,,,,,,,,,,,,,,,regular,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,2,5:23,ATL,sub,,,,Zaza Pachulia,,Al Horford,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Royal Ivey,2,5:23,MIL,sub,,,,Andrew Bogut,,Dan Gadzuric,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Royal Ivey,2,5:07,ATL,turnover,,,,,,,,,,,,,shot clock turnover,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Royal Ivey,2,4:48,MIL,shot,Andrew Bogut,,,,,,,,,Charlie Villanueva,2,,,made,,hook,25,11
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Royal Ivey,2,4:29,ATL,shot,,,,,,,,,,Tyronn Lue,2,,,made,,jump,18,14
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Royal Ivey,2,4:09,MIL,shot,,,,,,,,,,Andrew Bogut,,,,missed,,layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Royal Ivey,2,4:08,MIL,shot,,,,,,,,,,Andrew Bogut,,,,missed,,tip,25,6
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Royal Ivey,2,4:08,MIL,rebound,,,,,,,,,,Andrew Bogut,,,,,,off,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Royal Ivey,2,4:07,MIL,shot,,,,,,,,,,Andrew Bogut,2,,,made,,tip,25,6
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Royal Ivey,2,4:07,MIL,rebound,,,,,,,,,,Andrew Bogut,,,,,,off,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Royal Ivey,2,3:53,ATL,shot,Josh Smith,,,,,,,,,Josh Childress,2,,,made,,layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Royal Ivey,2,3:36,MIL,shot,Charlie Bell,,,,,,,,,Andrew Bogut,2,,,made,,alley oop layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Royal Ivey,2,3:22,ATL,shot,Tyronn Lue,,,,,,,,,Joe Johnson,3,,,made,,3pt,1,6
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Royal Ivey,2,3:10,MIL,shot,,,,,,,,,,Bobby Simmons,,,,missed,,3pt,1,7
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Royal Ivey,2,3:09,ATL,rebound,,,,,,,,,,Zaza Pachulia,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Royal Ivey,2,3:08,ATL,turnover,,,,,,,,,,Zaza Pachulia,,,bad pass,,Royal Ivey,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Royal Ivey,2,3:05,MIL,shot,Charlie Villanueva,,,,,,,,,Andrew Bogut,2,,,made,,dunk,25,6
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Royal Ivey,2,2:48,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,3pt,48,5
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Royal Ivey,2,2:46,MIL,rebound,,,,,,,,,,Charlie Bell,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Royal Ivey,2,2:41,MIL,shot,,,,,,,,,,Charlie Bell,2,,,made,,dunk,25,6
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Royal Ivey,2,2:33,ATL,timeout,,,,,,,,,,,,,,,,regular,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Royal Ivey,2,2:33,ATL,sub,,,,Al Horford,,Zaza Pachulia,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Andrew Bogut,Charlie Bell,Charlie Villanueva,Desmond Mason,Royal Ivey,2,2:33,MIL,sub,,,,Desmond Mason,,Bobby Simmons,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Andrew Bogut,Charlie Bell,Charlie Villanueva,Desmond Mason,Royal Ivey,2,2:23,ATL,shot,,,,,,,,,,Tyronn Lue,,,,missed,,3pt,23,32
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Andrew Bogut,Charlie Bell,Charlie Villanueva,Desmond Mason,Royal Ivey,2,2:22,MIL,rebound,,,,,,,,,,Andrew Bogut,,,,,,def,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Andrew Bogut,Charlie Bell,Charlie Villanueva,Desmond Mason,Royal Ivey,2,2:05,MIL,turnover,,,,,,,,,,Charlie Villanueva,,,lost ball,,Josh Smith,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Andrew Bogut,Charlie Bell,Charlie Villanueva,Desmond Mason,Royal Ivey,2,2:05,MIL,foul,,,,,,,,Josh Smith,,Charlie Villanueva,,,,,,loose ball,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Andrew Bogut,Charlie Bell,Charlie Villanueva,Desmond Mason,Royal Ivey,2,2:05,ATL,free throw,,,,,,,1,,2,Josh Smith,,,foul,missed,,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Andrew Bogut,Charlie Bell,Charlie Villanueva,Desmond Mason,Royal Ivey,2,2:05,ATL,rebound,,,,,,,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Andrew Bogut,Charlie Villanueva,Desmond Mason,Mo Williams,Royal Ivey,2,2:05,MIL,sub,,,,Mo Williams,,Charlie Bell,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,2,2:05,MIL,sub,,,,Michael Redd,,Royal Ivey,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,2,2:05,ATL,free throw,,,,,,,2,,2,Josh Smith,,,foul,made,,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,2,1:59,MIL,shot,Charlie Villanueva,,,,,,,,,Desmond Mason,2,,,made,,layup,25,6
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,2,1:40,ATL,turnover,,,,,,,,,,Josh Smith,,,bad pass,,Mo Williams,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,2,1:38,MIL,turnover,,,,,,,,,,Mo Williams,,,bad pass,,,,,
+Al Horford,Joe Johnson,Josh Childress,Marvin Williams,Tyronn Lue,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,2,1:38,ATL,sub,,,,Marvin Williams,,Josh Smith,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Childress,Marvin Williams,Tyronn Lue,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,2,1:19,ATL,shot,,,,,,,,,,Tyronn Lue,2,,,made,,jump,25,26
+Al Horford,Joe Johnson,Josh Childress,Marvin Williams,Tyronn Lue,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,2,1:01,MIL,shot,,,,,,,,,,Michael Redd,2,,,made,,jump,8,10
+Al Horford,Joe Johnson,Josh Childress,Marvin Williams,Tyronn Lue,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,2,0:53,ATL,shot,,,,,,,,,,Tyronn Lue,2,,,made,,layup,25,6
+Al Horford,Joe Johnson,Josh Childress,Marvin Williams,Tyronn Lue,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,2,0:36,MIL,shot,Mo Williams,,,,,,,,,Michael Redd,2,,,made,,layup,25,6
+Al Horford,Joe Johnson,Josh Childress,Marvin Williams,Tyronn Lue,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,2,0:31,ATL,shot,,,,,,,,,,Josh Childress,,,,missed,,layup,25,6
+Al Horford,Joe Johnson,Josh Childress,Marvin Williams,Tyronn Lue,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,2,0:29,MIL,rebound,,,,,,,,,,Andrew Bogut,,,,,,def,,
+Al Horford,Joe Johnson,Josh Childress,Marvin Williams,Tyronn Lue,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,2,0:24,MIL,shot,,,,,,,,,,Mo Williams,3,,,made,,3pt,24,33
+Al Horford,Joe Johnson,Josh Childress,Marvin Williams,Tyronn Lue,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,2,0:01,ATL,shot,Tyronn Lue,,,,,,,,,Joe Johnson,2,,,made,,jump,45,10
+Al Horford,Joe Johnson,Josh Childress,Marvin Williams,Tyronn Lue,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,2,0:01,MIL,shot,,,,,,,,,,Michael Redd,,,,missed,,jump,9,4
+Al Horford,Joe Johnson,Josh Childress,Marvin Williams,Tyronn Lue,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,2,0:00,MIL,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,11:38,MIL,shot,,,,,,,,,,Desmond Mason,,,,missed,,hook,38,9
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,11:37,ATL,rebound,,,,,,,,,,Zaza Pachulia,,,,,,def,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,11:23,MIL,foul,,,,,,,,Joe Johnson,,Michael Redd,,,,,,shooting,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,11:23,ATL,free throw,,,,,,,1,,2,Joe Johnson,,,foul,made,,,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,11:23,ATL,free throw,,,,,,,2,,2,Joe Johnson,,,foul,missed,,,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,11:22,MIL,rebound,,,,,,,,,,Yi Jianlian,,,,,,def,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,11:12,MIL,foul,,,,,,,,Zaza Pachulia,,Desmond Mason,,,,,,offensive,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,11:12,MIL,turnover,,,,,,,,,,Desmond Mason,,,foul,,,,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,10:58,ATL,shot,,,Andrew Bogut,,,,,,,Marvin Williams,,,,missed,,layup,25,6
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,10:54,ATL,rebound,,,,,,,,,,Zaza Pachulia,,,,,,off,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,10:51,ATL,shot,,,,,,,,,,Zaza Pachulia,,,,missed,,layup,25,6
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,10:50,MIL,rebound,,,,,,,,,,Andrew Bogut,,,,,,def,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,10:44,MIL,turnover,,,,,,,,,,Michael Redd,,,bad pass,,Marvin Williams,,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,10:41,ATL,turnover,,,,,,,,,,Zaza Pachulia,,,poss lost ball turnover,,,,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,10:28,MIL,shot,,,Josh Smith,,,,,,,Desmond Mason,,,,missed,,layup,25,6
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,10:26,ATL,rebound,,,,,,,,,,Marvin Williams,,,,,,def,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,10:10,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,jump,13,9
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,10:09,MIL,rebound,,,,,,,,,,Yi Jianlian,,,,,,def,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,9:55,ATL,foul,,,,,,,,Andrew Bogut,,Zaza Pachulia,,,,,,shooting,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,9:55,MIL,free throw,,,,,,,1,,2,Andrew Bogut,,,foul,missed,,,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,9:55,MIL,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,9:55,MIL,free throw,,,,,,,2,,2,Andrew Bogut,,,foul,made,,,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,9:49,MIL,foul,,,,,,,,Joe Johnson,,Michael Redd,,,,,,personal,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,9:39,ATL,shot,Marvin Williams,,,,,,,,,Joe Johnson,2,,,made,,layup,25,6
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,9:31,MIL,shot,,,,,,,,,,Mo Williams,2,,,made,,layup,25,6
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,9:23,ATL,shot,,,,,,,,,,Tyronn Lue,2,,,made,,layup,25,6
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,9:12,ATL,foul,,,,,,,,Yi Jianlian,,Zaza Pachulia,,,,,,shooting,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,9:12,MIL,free throw,,,,,,,1,,2,Yi Jianlian,,,foul,made,,,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,9:12,MIL,free throw,,,,,,,2,,2,Yi Jianlian,,,foul,made,,,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,9:09,ATL,turnover,,,,,,,,,,Joe Johnson,,,bad pass,,Andrew Bogut,,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,9:03,MIL,shot,Mo Williams,,,,,,,,,Andrew Bogut,2,,,made,,dunk,25,6
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,8:38,ATL,shot,,,Yi Jianlian,,,,,,,Marvin Williams,,,,missed,,layup,25,6
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,8:36,MIL,rebound,,,,,,,,,,Mo Williams,,,,,,def,,
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,8:32,MIL,shot,Mo Williams,,,,,,,,,Desmond Mason,2,,,made,,hook,19,11
+Joe Johnson,Josh Smith,Marvin Williams,Tyronn Lue,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,8:25,ATL,timeout,,,,,,,,,,,,,,,,regular,,
+Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Zaza Pachulia,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,8:25,ATL,sub,,,,Anthony Johnson,,Tyronn Lue,,,,,,,,,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,8:25,ATL,sub,,,,Al Horford,,Zaza Pachulia,,,,,,,,,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,8:12,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,3pt,43,26
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,8:09,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,off,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,8:08,ATL,shot,,,,,,,,,,Josh Smith,2,,,made,,dunk,25,6
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,7:59,MIL,turnover,,,,,,,,,,Mo Williams,,,bad pass,,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,7:42,ATL,shot,,,,,,,,,,Marvin Williams,,,,missed,,jump,25,26
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,7:40,MIL,rebound,,,,,,,,,,Mo Williams,,,,,,def,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,7:27,MIL,shot,,,,,,,,,,Michael Redd,,,,missed,,layup,25,6
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,7:25,MIL,shot,,,,,,,,,,Andrew Bogut,,,,missed,,tip,25,6
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,7:25,MIL,rebound,,,,,,,,,,Andrew Bogut,,,,,,off,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,7:24,MIL,rebound,,,,,,,,,,Andrew Bogut,,,,,,off,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,7:11,ATL,foul,,,,,,,,Yi Jianlian,,Joe Johnson,,,,,,shooting,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,7:11,MIL,free throw,,,,,,,1,,2,Yi Jianlian,,,foul,made,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,7:11,ATL,sub,,,,Josh Childress,,Marvin Williams,,,,,,,,,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,7:11,MIL,free throw,,,,,,,2,,2,Yi Jianlian,,,foul,made,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,6:47,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,jump,33,10
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,6:46,MIL,rebound,,,,,,,,,,Andrew Bogut,,,,,,def,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,6:41,MIL,turnover,,,,,,,,,,Andrew Bogut,,,bad pass,,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,6:31,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,layup,25,6
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,6:29,ATL,rebound,,,,,,,,,,Anthony Johnson,,,,,,off,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,6:26,ATL,shot,Anthony Johnson,,,,,,,,,Josh Smith,2,,,made,,jump,25,13
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,6:26,MIL,foul,,,,,,,,Josh Smith,,Andrew Bogut,,,,,,shooting,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,6:26,ATL,free throw,,,,,,,1,,1,Josh Smith,,,foul,made,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,6:09,MIL,shot,,,,,,,,,,Mo Williams,,,,missed,,3pt,43,27
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,6:08,ATL,rebound,,,,,,,,,,Anthony Johnson,,,,,,def,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,6:02,MIL,foul,,,,,,,,Josh Smith,,Andrew Bogut,,,,,,shooting,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,6:02,ATL,free throw,,,,,,,1,,2,Josh Smith,,,foul,missed,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,6:02,ATL,rebound,,,,,,,,,,,,,,,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,6:02,ATL,free throw,,,,,,,2,,2,Josh Smith,,,foul,made,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,5:42,MIL,turnover,,,,,,,,,,Michael Redd,,,out of bounds lost ball turnover,,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,5:20,ATL,shot,,,,,,,,,,Anthony Johnson,,,,missed,,3pt,12,29
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,5:19,MIL,rebound,,,,,,,,,,Mo Williams,,,,,,def,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,5:09,MIL,shot,,,Josh Smith,,,,,,,Yi Jianlian,,,,missed,,layup,25,6
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,5:06,ATL,rebound,,,,,,,,,,Anthony Johnson,,,,,,def,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,5:00,ATL,shot,Anthony Johnson,,,,,,,,,Al Horford,2,,,made,,layup,25,6
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,4:49,MIL,timeout,,,,,,,,,,,,,,,,regular,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,4:34,MIL,shot,,,,,,,,,,Mo Williams,,,,missed,,jump,39,23
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,4:33,ATL,rebound,,,,,,,,,,Al Horford,,,,,,def,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,4:18,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,3pt,49,6
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,4:16,MIL,rebound,,,,,,,,,,Mo Williams,,,,,,def,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,4:00,MIL,shot,,,,,,,,,,Yi Jianlian,,,,missed,,jump,11,19
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,3:59,ATL,rebound,,,,,,,,,,Anthony Johnson,,,,,,def,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,3:47,ATL,shot,Joe Johnson,,,,,,,,,Josh Smith,2,,,made,,layup,25,6
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,3:26,MIL,shot,,,,,,,,,,Yi Jianlian,,,,missed,,jump,38,23
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,3:25,ATL,rebound,,,,,,,,,,Al Horford,,,,,,def,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,3:14,ATL,shot,Joe Johnson,,,,,,,,,Josh Childress,2,,,made,,dunk,25,6
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Desmond Mason,Michael Redd,Mo Williams,Yi Jianlian,3,3:06,ATL,foul,,,,,,,,Mo Williams,,Joe Johnson,,,,,,personal,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,3,3:06,MIL,sub,,,,Charlie Villanueva,,Yi Jianlian,,,,,,,,,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Marvin Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,3,3:06,ATL,sub,,,,Marvin Williams,,Josh Smith,,,,,,,,,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Marvin Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,3,2:58,MIL,shot,,,Al Horford,,,,,,,Andrew Bogut,,,,missed,,hook,25,6
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Marvin Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,3,2:56,ATL,rebound,,,,,,,,,,Al Horford,,,,,,def,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Marvin Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,3,2:42,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,jump,10,11
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Marvin Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,3,2:40,ATL,shot,,,,,,,,,,Al Horford,,,,missed,,dunk,25,6
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Marvin Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,3,2:40,ATL,rebound,,,,,,,,,,Al Horford,,,,,,off,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Marvin Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,3,2:39,MIL,rebound,,,,,,,,,,Mo Williams,,,,,,def,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Marvin Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,3,2:33,MIL,shot,Mo Williams,,,,,,,,,Michael Redd,3,,,made,,3pt,1,6
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Marvin Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,3,2:16,ATL,shot,Josh Childress,,,,,,,,,Al Horford,2,,,made,,jump,43,9
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Marvin Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,3,2:00,MIL,shot,Mo Williams,,,,,,,,,Charlie Villanueva,3,,,made,,3pt,13,29
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Marvin Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,3,1:41,ATL,shot,,,,,,,,,,Marvin Williams,,,,missed,,jump,40,16
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Marvin Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,3,1:41,ATL,rebound,,,,,,,,,,Josh Childress,,,,,,off,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Marvin Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,3,1:31,ATL,shot,Joe Johnson,,,,,,,,,Marvin Williams,2,,,made,,jump,21,25
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Marvin Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,3,1:13,MIL,shot,Mo Williams,,,,,,,,,Andrew Bogut,2,,,made,,dunk,25,6
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Marvin Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,3,0:50,ATL,shot,,,,,,,,,,Marvin Williams,,,,missed,,jump,18,6
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Marvin Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,3,0:49,MIL,rebound,,,,,,,,,,Michael Redd,,,,,,def,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Marvin Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,3,0:29,ATL,foul,,,,,,,,Andrew Bogut,,Joe Johnson,,,,,,shooting,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Marvin Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,3,0:29,MIL,free throw,,,,,,,1,,2,Andrew Bogut,,,foul,missed,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Childress,Marvin Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,3,0:29,MIL,rebound,,,,,,,,,,,,,,,,,,
+Al Horford,Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,3,0:29,ATL,sub,,,,Josh Smith,,Joe Johnson,,,,,,,,,,,,
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,3,0:29,ATL,sub,,,,Shelden Williams,,Al Horford,,,,,,,,,,,,
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,3,0:29,MIL,free throw,,,,,,,2,,2,Andrew Bogut,,,foul,missed,,,,
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,3,0:28,ATL,rebound,,,,,,,,,,Marvin Williams,,,,,,def,,
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,3,0:10,ATL,shot,,,,,,,,,,Josh Childress,,,,missed,,jump,26,11
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,3,0:09,MIL,rebound,,,,,,,,,,Mo Williams,,,,,,def,,
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,3,0:05,MIL,turnover,,,,,,,,,,Mo Williams,,,bad pass,,,,,
+Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,3,0:05,ATL,sub,,,,Joe Johnson,,Shelden Williams,,,,,,,,,,,,
+Anthony Johnson,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,3,0:00,ATL,shot,Anthony Johnson,,,,,,,,,Josh Childress,3,,,made,,3pt,49,6
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Mo Williams,4,11:42,MIL,foul,,,,,,,,Shelden Williams,,Andrew Bogut,,,,,,shooting,,
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Mo Williams,4,11:42,ATL,free throw,,,,,,,1,,2,Shelden Williams,,,foul,missed,,,,
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Mo Williams,4,11:42,ATL,rebound,,,,,,,,,,,,,,,,,,
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Mo Williams,4,11:42,MIL,sub,,,,Dan Gadzuric,,Andrew Bogut,,,,,,,,,,,,
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Mo Williams,4,11:42,ATL,free throw,,,,,,,2,,2,Shelden Williams,,,foul,made,,,,
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Mo Williams,4,11:23,MIL,shot,,,,,,,,,,Dan Gadzuric,,,,missed,,hook,25,6
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Mo Williams,4,11:21,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,def,,
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Mo Williams,4,11:17,ATL,shot,,,,,,,,,,Josh Smith,2,,,made,,dunk,25,6
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Mo Williams,4,11:17,MIL,foul,,,,,,,,Josh Smith,,Charlie Villanueva,,,,,,shooting,,
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Mo Williams,4,11:17,ATL,free throw,,,,,,,1,,1,Josh Smith,,,foul,missed,,,,
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Mo Williams,4,11:16,ATL,rebound,,,,,,,,,,,,,,,,,,
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Mo Williams,4,11:14,MIL,foul,,,,,,,,Josh Smith,,Charlie Villanueva,,,,,,shooting,,
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Mo Williams,4,11:14,ATL,free throw,,,,,,,1,,2,Josh Smith,,,foul,made,,,,
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Mo Williams,4,11:14,ATL,free throw,,,,,,,2,,2,Josh Smith,,,foul,made,,,,
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Mo Williams,4,11:00,MIL,shot,Mo Williams,,,,,,,,,Bobby Simmons,3,,,made,,3pt,49,17
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Mo Williams,4,10:36,ATL,shot,,,,,,,,,,Shelden Williams,,,,missed,,dunk,25,6
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Mo Williams,4,10:35,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,off,,
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Mo Williams,4,10:33,ATL,shot,,,,,,,,,,Josh Smith,2,,,made,,layup,25,6
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Mo Williams,4,10:27,ATL,foul,,,,,,,,Charlie Bell,,Shelden Williams,,,,,,personal,,
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Mo Williams,4,10:13,ATL,foul,,,,,,,,Dan Gadzuric,,Shelden Williams,,,,,,personal,,
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Mo Williams,4,10:04,MIL,shot,,,Josh Smith,,,,,,,Mo Williams,,,,missed,,layup,25,6
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Mo Williams,4,10:02,ATL,rebound,,,,,,,,,,Marvin Williams,,,,,,def,,
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Mo Williams,4,10:02,MIL,foul,,,,,,,,Marvin Williams,,Charlie Bell,,,,,,personal,,
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,10:02,MIL,sub,,,,Royal Ivey,,Mo Williams,,,,,,,,,,,,
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,9:56,ATL,shot,,,,,,,,,,Anthony Johnson,,,,missed,,jump,13,15
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,9:54,MIL,rebound,,,,,,,,,,Charlie Villanueva,,,,,,def,,
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,9:43,MIL,shot,,,,,,,,,,Bobby Simmons,,,,missed,,3pt,9,26
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,9:42,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,def,,
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,9:38,ATL,turnover,,,,,,,,,,Josh Smith,,,lost ball,,Royal Ivey,,,
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,9:34,MIL,shot,Charlie Bell,,,,,,,,,Charlie Villanueva,2,,,made,,dunk,25,6
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,9:21,ATL,turnover,,,,,,,,,,Marvin Williams,,,lost ball,,Charlie Bell,,,
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,9:18,MIL,turnover,,,,,,,,,,Royal Ivey,,,traveling,,,,,
+Anthony Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,9:18,ATL,timeout,,,,,,,,,,,,,,,,regular,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,9:18,ATL,sub,,,,Joe Johnson,,Anthony Johnson,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,9:06,ATL,shot,,,,,,,,,,Josh Smith,2,,,made,,running layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,8:50,MIL,shot,Charlie Bell,,,,,,,,,Charlie Villanueva,2,,,made,,running jump,26,9
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,8:37,ATL,turnover,,,,,,,,,,Josh Childress,,,bad pass,,Dan Gadzuric,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,8:32,MIL,turnover,,,,,,,,,,Charlie Bell,,,out of bounds lost ball turnover,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,8:18,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,3pt,45,25
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,8:16,ATL,rebound,,,,,,,,,,Shelden Williams,,,,,,off,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,8:13,ATL,foul,,,,,,,,Dan Gadzuric,,Marvin Williams,,,,,,offensive,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,8:13,ATL,turnover,,,,,,,,,,Marvin Williams,,,foul,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,7:56,MIL,shot,,,,,,,,,,Charlie Villanueva,,,,missed,,jump,11,5
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,7:54,MIL,rebound,,,,,,,,,,Dan Gadzuric,,,,,,off,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,7:37,MIL,shot,Royal Ivey,,,,,,,,,Bobby Simmons,3,,,made,,3pt,48,5
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,7:19,ATL,shot,,,Dan Gadzuric,,,,,,,Joe Johnson,,,,missed,,layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,7:19,ATL,rebound,,,,,,,,,,Marvin Williams,,,,,,off,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,7:19,ATL,shot,,,,,,,,,,Marvin Williams,2,,,made,,layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Shelden Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,7:19,MIL,foul,,,,,,,,Marvin Williams,,Charlie Villanueva,,,,,,shooting,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,7:19,ATL,sub,,,,Al Horford,,Shelden Williams,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,7:19,ATL,free throw,,,,,,,1,,1,Marvin Williams,,,foul,missed,,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,7:18,MIL,rebound,,,,,,,,,,Charlie Villanueva,,,,,,def,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,7:06,MIL,shot,,,,,,,,,,Bobby Simmons,,,,missed,,jump,26,24
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,7:06,ATL,rebound,,,,,,,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,6:54,ATL,shot,,,,,,,,,,Josh Childress,,,,missed,,3pt,2,8
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,6:52,MIL,rebound,,,,,,,,,,Charlie Bell,,,,,,def,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,6:36,MIL,shot,Charlie Bell,,,,,,,,,Bobby Simmons,2,,,made,,jump,42,4
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,6:24,ATL,shot,,,Charlie Villanueva,,,,,,,Josh Smith,,,,missed,,layup,25,6
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,6:24,MIL,rebound,,,,,,,,,,Dan Gadzuric,,,,,,def,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,6:24,ATL,foul,,,,,,,,Dan Gadzuric,,Al Horford,,,,,,personal,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,6:08,MIL,shot,Charlie Bell,,,,,,,,,Royal Ivey,2,,,made,,jump,44,5
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,5:50,ATL,shot,,,,,,,,,,Joe Johnson,2,,,made,,jump,20,10
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,5:32,MIL,shot,,,,,,,,,,Dan Gadzuric,,,,missed,,jump,37,10
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,5:31,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,def,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,5:22,ATL,shot,Joe Johnson,,,,,,,,,Josh Smith,2,,,made,,layup,25,6
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,5:22,MIL,foul,,,,,,,,Josh Smith,,Charlie Bell,,,,,,shooting,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Royal Ivey,4,5:22,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Bobby Simmons,Charlie Bell,Charlie Villanueva,Dan Gadzuric,Michael Redd,4,5:22,MIL,sub,,,,Michael Redd,,Royal Ivey,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Michael Redd,4,5:22,MIL,sub,,,,Andrew Bogut,,Dan Gadzuric,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Michael Redd,4,5:22,ATL,free throw,,,,,,,1,,1,Josh Smith,,,foul,made,,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Michael Redd,4,5:09,MIL,shot,,,,,,,,,,Michael Redd,2,,,made,,running jump,20,8
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Michael Redd,4,4:49,ATL,shot,,,Andrew Bogut,,,,,,,Joe Johnson,,,,missed,,layup,25,6
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Michael Redd,4,4:48,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,off,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Michael Redd,4,4:41,ATL,shot,Josh Smith,,,,,,,,,Marvin Williams,2,,,made,,jump,21,23
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Michael Redd,4,4:24,ATL,foul,,,,,,,,Charlie Bell,,Josh Childress,,,,,,shooting,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Michael Redd,4,4:24,MIL,free throw,,,,,,,1,,2,Charlie Bell,,,foul,missed,,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Michael Redd,4,4:24,MIL,rebound,,,,,,,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Michael Redd,4,4:24,MIL,free throw,,,,,,,2,,2,Charlie Bell,,,foul,made,,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Michael Redd,4,4:07,ATL,shot,,,Andrew Bogut,,,,,,,Marvin Williams,,,,missed,,layup,25,6
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Michael Redd,4,4:07,ATL,rebound,,,,,,,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Michael Redd,4,4:02,ATL,shot,Joe Johnson,,,,,,,,,Josh Childress,2,,,made,,running dunk,25,6
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Michael Redd,4,3:46,MIL,foul,,,,,,,,Josh Smith,,Andrew Bogut,,,,,,offensive,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Michael Redd,4,3:46,MIL,turnover,,,,,,,,,,Andrew Bogut,,,foul,,,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Michael Redd,4,3:31,ATL,shot,Joe Johnson,,,,,,,,,Marvin Williams,2,,,made,,jump,42,14
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Michael Redd,4,3:15,MIL,shot,,,Al Horford,,,,,,,Charlie Bell,,,,missed,,layup,25,6
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Michael Redd,4,3:15,MIL,rebound,,,,,,,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Michael Redd,4,3:09,MIL,shot,Bobby Simmons,,,,,,,,,Michael Redd,2,,,made,,jump,43,5
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Michael Redd,4,3:03,MIL,foul,,,,,,,,Josh Smith,,Andrew Bogut,,,,,,flagrant type 1,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Bobby Simmons,Charlie Bell,Charlie Villanueva,Michael Redd,4,3:03,ATL,free throw,,,,,,,1,,2,Josh Smith,,,flagrant,made,,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Bobby Simmons,Charlie Villanueva,Michael Redd,Mo Williams,4,3:03,MIL,sub,,,,Mo Williams,,Charlie Bell,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Bobby Simmons,Charlie Villanueva,Michael Redd,Mo Williams,4,3:03,ATL,free throw,,,,,,,2,,2,Josh Smith,,,flagrant,made,,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Bobby Simmons,Charlie Villanueva,Michael Redd,Mo Williams,4,2:58,ATL,foul,,,,,,,,Andrew Bogut,,Joe Johnson,,,,,,offensive,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Bobby Simmons,Charlie Villanueva,Michael Redd,Mo Williams,4,2:58,ATL,turnover,,,,,,,,,,Joe Johnson,,,foul,,,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Bobby Simmons,Charlie Villanueva,Michael Redd,Mo Williams,4,2:58,MIL,timeout,,,,,,,,,,,,,,,,regular,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Bobby Simmons,Charlie Villanueva,Michael Redd,Mo Williams,4,2:39,MIL,shot,,,,,,,,,,Michael Redd,,,,missed,,layup,25,6
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Bobby Simmons,Charlie Villanueva,Michael Redd,Mo Williams,4,2:37,MIL,shot,,,,,,,,,,Andrew Bogut,2,,,made,,tip,25,6
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Bobby Simmons,Charlie Villanueva,Michael Redd,Mo Williams,4,2:37,MIL,rebound,,,,,,,,,,Andrew Bogut,,,,,,off,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Bobby Simmons,Charlie Villanueva,Michael Redd,Mo Williams,4,2:16,ATL,shot,,,,,,,,,,Josh Smith,2,,,made,,layup,25,6
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Bobby Simmons,Charlie Villanueva,Michael Redd,Mo Williams,4,1:56,MIL,shot,,,,,,,,,,Michael Redd,2,,,made,,layup,25,6
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Bobby Simmons,Charlie Villanueva,Michael Redd,Mo Williams,4,1:36,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,jump,19,10
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Bobby Simmons,Charlie Villanueva,Michael Redd,Mo Williams,4,1:34,MIL,rebound,,,,,,,,,,Michael Redd,,,,,,def,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Bobby Simmons,Charlie Villanueva,Michael Redd,Mo Williams,4,1:14,MIL,shot,Mo Williams,,,,,,,,,Andrew Bogut,2,,,made,,layup,25,6
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Bobby Simmons,Charlie Villanueva,Michael Redd,Mo Williams,4,1:14,ATL,timeout,,,,,,,,,,,,,,,,regular,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,4,1:14,MIL,sub,,,,Desmond Mason,,Bobby Simmons,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,4,1:07,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,3pt,14,30
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,4,1:03,ATL,rebound,,,,,,,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,4,0:53,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,3pt,41,29
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,4,0:52,ATL,rebound,,,,,,,,,,Marvin Williams,,,,,,off,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,4,0:46,ATL,shot,,,,,,,,,,Marvin Williams,,,,missed,,jump,15,20
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,4,0:45,MIL,rebound,,,,,,,,,,Charlie Villanueva,,,,,,def,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,4,0:33,ATL,foul,,,,,,,,Mo Williams,,Josh Childress,,,,,,personal,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,4,0:33,MIL,free throw,,,,,,,1,,2,Mo Williams,,,foul,made,,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,4,0:33,MIL,free throw,,,,,,,2,,2,Mo Williams,,,foul,made,,,,
+Al Horford,Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,4,0:33,ATL,timeout,,,,,,,,,,,,,,,,short,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Salim Stoudamire,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,4,0:33,ATL,sub,,,,Salim Stoudamire,,Al Horford,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Salim Stoudamire,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,4,0:30,ATL,turnover,,,,,,,,,,Josh Childress,,,bad pass,,Mo Williams,,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Salim Stoudamire,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,4,0:28,MIL,shot,,,,,,,,,,Mo Williams,2,,,made,,layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Salim Stoudamire,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,4,0:19,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,3pt,3,20
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Salim Stoudamire,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,4,0:18,ATL,rebound,,,,,,,,,,Marvin Williams,,,,,,off,,
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Salim Stoudamire,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,4,0:16,ATL,shot,,,,,,,,,,Marvin Williams,,,,missed,,jump,22,16
+Joe Johnson,Josh Childress,Josh Smith,Marvin Williams,Salim Stoudamire,Andrew Bogut,Charlie Villanueva,Desmond Mason,Michael Redd,Mo Williams,4,0:16,MIL,rebound,,,,,,,,,,,,,,,,,,

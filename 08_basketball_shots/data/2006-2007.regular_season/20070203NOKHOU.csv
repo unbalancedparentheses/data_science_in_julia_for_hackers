@@ -1,0 +1,418 @@
+a1,a2,a3,a4,a5,h1,h2,h3,h4,h5,period,time,team,etype,assist,away,block,entered,home,left,num,opponent,outof,player,points,possession,reason,result,steal,type,x,y
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,12:00,OFF,jump ball,,Tyson Chandler,,,Dikembe Mutombo,,,,,,,Chris Paul,,,,,,
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,11:36,NOK,shot,,,,,,,,,,David West,,,,missed,,jump,37,10
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,11:35,NOK,rebound,,,,,,,,,,David West,,,,,,off,,
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,11:24,NOK,shot,,,,,,,,,,David West,,,,missed,,jump,11,11
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,11:23,HOU,rebound,,,,,,,,,,Rafer Alston,,,,,,def,,
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,11:10,HOU,shot,Rafer Alston,,,,,,,,,Tracy McGrady,2,,,made,,jump,35,22
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,11:00,NOK,turnover,,,,,,,,,,Tyson Chandler,,,out of bounds lost ball turnover,,,,,
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,10:49,HOU,shot,,,,,,,,,,Tracy McGrady,,,,missed,,3pt,48,5
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,10:48,NOK,rebound,,,,,,,,,,Tyson Chandler,,,,,,def,,
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,10:30,NOK,shot,Chris Paul,,,,,,,,,Devin Brown,2,,,made,,jump,18,10
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,10:18,HOU,shot,,,,,,,,,,Shane Battier,,,,missed,,3pt,1,6
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,10:16,NOK,rebound,,,,,,,,,,Tyson Chandler,,,,,,def,,
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,10:07,NOK,shot,,,,,,,,,,Chris Paul,2,,,made,,jump,14,23
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,9:52,HOU,shot,,,,,,,,,,Juwan Howard,,,,missed,,jump,35,9
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,9:50,NOK,rebound,,,,,,,,,,Tyson Chandler,,,,,,def,,
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,9:42,NOK,shot,Chris Paul,,,,,,,,,Tyson Chandler,2,,,made,,jump,25,19
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,9:22,HOU,shot,,,,,,,,,,Rafer Alston,,,,missed,,3pt,14,29
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,9:21,NOK,rebound,,,,,,,,,,Devin Brown,,,,,,def,,
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,9:10,NOK,shot,,,,,,,,,,David West,,,,missed,,jump,42,9
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,9:09,HOU,rebound,,,,,,,,,,Dikembe Mutombo,,,,,,def,,
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,8:55,HOU,shot,,,,,,,,,,Juwan Howard,,,,missed,,hook,19,9
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,8:52,NOK,rebound,,,,,,,,,,Tyson Chandler,,,,,,def,,
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,8:43,NOK,shot,,,,,,,,,,Desmond Mason,,,,missed,,jump,16,11
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,8:41,HOU,rebound,,,,,,,,,,Juwan Howard,,,,,,def,,
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,8:36,HOU,shot,Rafer Alston,,,,,,,,,Shane Battier,2,,,made,,layup,25,6
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,8:22,HOU,foul,,,,,,,,Tyson Chandler,,Dikembe Mutombo,,,,,,personal,,
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,8:14,NOK,turnover,,,,,,,,,,Desmond Mason,,,lost ball,,Tracy McGrady,,,
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,8:05,NOK,foul,,,,,,,,Rafer Alston,,Chris Paul,,,,,,personal,,
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,7:56,HOU,turnover,,,,,,,,,,Shane Battier,,,bad pass,,Devin Brown,,,
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,7:42,NOK,shot,,,,,,,,,,Chris Paul,,,,missed,,jump,34,25
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,7:40,HOU,rebound,,,,,,,,,,Dikembe Mutombo,,,,,,def,,
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,7:35,HOU,shot,,,Tyson Chandler,,,,,,,Rafer Alston,,,,missed,,layup,25,6
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,7:33,NOK,rebound,,,,,,,,,,Devin Brown,,,,,,def,,
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,7:27,NOK,shot,,,Dikembe Mutombo,,,,,,,Tyson Chandler,,,,missed,,dunk,25,6
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,7:23,NOK,rebound,,,,,,,,,,Desmond Mason,,,,,,off,,
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,7:14,NOK,turnover,,,,,,,,,,Chris Paul,,,out of bounds lost ball turnover,,,,,
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,7:01,HOU,shot,,,,,,,,,,Tracy McGrady,,,,missed,,jump,6,16
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,7:00,NOK,rebound,,,,,,,,,,Desmond Mason,,,,,,def,,
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,6:44,NOK,shot,,,,,,,,,,Devin Brown,,,,missed,,jump,24,23
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,6:42,HOU,rebound,,,,,,,,,,Rafer Alston,,,,,,def,,
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,6:30,HOU,shot,Tracy McGrady,,,,,,,,,Shane Battier,3,,,made,,3pt,11,27
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,6:07,NOK,turnover,,,,,,,,,,Tyson Chandler,,,3 second violation,,,,,
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,5:58,HOU,shot,,,,,,,,,,Juwan Howard,,,,missed,,jump,16,23
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,5:56,HOU,rebound,,,,,,,,,,,,,,,,,,
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,5:56,HOU,foul,,,,,,,,Tyson Chandler,,Dikembe Mutombo,,,,,,loose ball,,
+Chris Paul,David West,Desmond Mason,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,5:56,HOU,timeout,,,,,,,,,,,,,,,,regular,,
+Bobby Jackson,Chris Paul,David West,Desmond Mason,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,5:56,NOK,sub,,,,Bobby Jackson,,Devin Brown,,,,,,,,,,,,
+Bobby Jackson,Chris Paul,David West,Desmond Mason,Tyson Chandler,Chuck Hayes,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,5:56,HOU,sub,,,,Chuck Hayes,,Dikembe Mutombo,,,,,,,,,,,,
+Bobby Jackson,Chris Paul,David West,Desmond Mason,Tyson Chandler,Chuck Hayes,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,5:35,NOK,shot,,,,,,,,,,Bobby Jackson,,,,missed,,jump,35,25
+Bobby Jackson,Chris Paul,David West,Desmond Mason,Tyson Chandler,Chuck Hayes,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,5:34,NOK,rebound,,,,,,,,,,Desmond Mason,,,,,,off,,
+Bobby Jackson,Chris Paul,David West,Desmond Mason,Tyson Chandler,Chuck Hayes,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,5:12,NOK,shot,Chris Paul,,,,,,,,,Desmond Mason,2,,,made,,driving layup,25,6
+Bobby Jackson,Chris Paul,David West,Desmond Mason,Tyson Chandler,Chuck Hayes,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,4:52,HOU,shot,,,,,,,,,,Tracy McGrady,,,,missed,,jump,15,21
+Bobby Jackson,Chris Paul,David West,Desmond Mason,Tyson Chandler,Chuck Hayes,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,4:50,NOK,rebound,,,,,,,,,,Bobby Jackson,,,,,,def,,
+Bobby Jackson,Chris Paul,David West,Desmond Mason,Tyson Chandler,Chuck Hayes,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,4:41,NOK,turnover,,,,,,,,,,Bobby Jackson,,,bad pass,,Shane Battier,,,
+Bobby Jackson,Chris Paul,David West,Desmond Mason,Tyson Chandler,Chuck Hayes,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,4:36,NOK,foul,,,,,,,,Juwan Howard,,David West,,,,,,shooting,,
+Bobby Jackson,Chris Paul,David West,Desmond Mason,Tyson Chandler,Chuck Hayes,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,4:36,HOU,free throw,,,,,,,1,,2,Juwan Howard,,,foul,made,,,,
+Bobby Jackson,Chris Paul,David West,Desmond Mason,Tyson Chandler,Chuck Hayes,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,4:36,HOU,free throw,,,,,,,2,,2,Juwan Howard,,,foul,made,,,,
+Bobby Jackson,Chris Paul,David West,Desmond Mason,Tyson Chandler,Chuck Hayes,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,4:24,HOU,foul,,,,,,,,Tyson Chandler,,Chuck Hayes,,,,,,personal,,
+Bobby Jackson,Chris Paul,Desmond Mason,Linton Johnson,Tyson Chandler,Chuck Hayes,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,4:24,NOK,sub,,,,Linton Johnson,,David West,,,,,,,,,,,,
+Bobby Jackson,Chris Paul,Desmond Mason,Linton Johnson,Tyson Chandler,Chuck Hayes,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,4:09,NOK,turnover,,,,,,,,,,Desmond Mason,,,lost ball,,Rafer Alston,,,
+Bobby Jackson,Chris Paul,Desmond Mason,Linton Johnson,Tyson Chandler,Chuck Hayes,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,4:07,NOK,foul,,,,,,,,Tracy McGrady,,Desmond Mason,,,,,,shooting,,
+Bobby Jackson,Chris Paul,Desmond Mason,Linton Johnson,Tyson Chandler,Chuck Hayes,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,4:07,HOU,foul,,,,,,,,,,Rafer Alston,,,,,,double technical,,
+Bobby Jackson,Chris Paul,Desmond Mason,Linton Johnson,Tyson Chandler,Chuck Hayes,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,4:07,HOU,free throw,,,,,,,1,,2,Tracy McGrady,,,foul,missed,,,,
+Bobby Jackson,Chris Paul,Desmond Mason,Linton Johnson,Tyson Chandler,Chuck Hayes,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,4:07,HOU,rebound,,,,,,,,,,,,,,,,,,
+Bobby Jackson,Chris Paul,Desmond Mason,Linton Johnson,Tyson Chandler,Chuck Hayes,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,4:07,NOK,foul,,,,,,,,Tracy McGrady,,Desmond Mason,,,,,,double technical,,
+Bobby Jackson,Chris Paul,Desmond Mason,Linton Johnson,Tyson Chandler,Chuck Hayes,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,4:07,HOU,ejection,,,,,,,,,,Mason,,,second technical,,,,,
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Chuck Hayes,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,4:07,NOK,sub,,,,Rasual Butler,,Desmond Mason,,,,,,,,,,,,
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Chuck Hayes,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,4:07,HOU,ejection,,,,,,,,,,Rafer Alston,,,second technical,,,,,
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,1,4:07,HOU,sub,,,,Luther Head,,Rafer Alston,,,,,,,,,,,,
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,1,4:07,HOU,free throw,,,,,,,2,,2,Tracy McGrady,,,foul,made,,,,
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,1,3:56,NOK,shot,,,,,,,,,,Chris Paul,,,,missed,,layup,25,6
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,1,3:54,NOK,shot,,,,,,,,,,Tyson Chandler,,,,missed,,tip,25,6
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,1,3:54,NOK,rebound,,,,,,,,,,Tyson Chandler,,,,,,off,,
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,1,3:53,HOU,rebound,,,,,,,,,,Chuck Hayes,,,,,,def,,
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,1,3:49,HOU,timeout,,,,,,,,,,,,,,,,short,,
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,1,3:49,HOU,sub,,,,Bonzi Wells,,Tracy McGrady,,,,,,,,,,,,
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,1,3:40,HOU,turnover,,,,,,,,,,Luther Head,,,bad pass,,Chris Paul,,,
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,1,3:30,NOK,shot,Chris Paul,,,,,,,,,Linton Johnson,2,,,made,,jump,10,22
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,1,3:13,HOU,shot,Shane Battier,,,,,,,,,Luther Head,3,,,made,,3pt,0,8
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,1,3:03,NOK,shot,,,,,,,,,,Tyson Chandler,,,,missed,,layup,23,8
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,1,3:01,HOU,rebound,,,,,,,,,,Luther Head,,,,,,def,,
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,1,2:51,HOU,shot,,,,,,,,,,Chuck Hayes,,,,missed,,reverse layup,25,6
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,1,2:49,NOK,rebound,,,,,,,,,,Tyson Chandler,,,,,,def,,
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,1,2:32,HOU,foul,,,,,,,,Bobby Jackson,,Juwan Howard,,,,,,shooting,,
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,1,2:32,HOU,timeout,,,,,,,,,,,,,,,,regular,,
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,1,2:32,NOK,free throw,,,,,,,1,,2,Bobby Jackson,,,foul,made,,,,
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,1,2:32,NOK,free throw,,,,,,,2,,2,Bobby Jackson,,,foul,made,,,,
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,1,2:26,HOU,turnover,,,,,,,,,,Juwan Howard,,,bad pass,,,,,
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,1,2:03,NOK,shot,Bobby Jackson,,,,,,,,,Rasual Butler,3,,,made,,3pt,46,21
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,1,1:40,HOU,shot,,,,,,,,,,Bonzi Wells,,,,missed,,turnaround jump,9,9
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,1,1:39,HOU,rebound,,,,,,,,,,Juwan Howard,,,,,,off,,
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,1,1:34,HOU,shot,,,,,,,,,,Shane Battier,,,,missed,,3pt,37,28
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,1,1:33,HOU,rebound,,,,,,,,,,Chuck Hayes,,,,,,off,,
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,1,1:27,HOU,shot,,,,,,,,,,Luther Head,,,,missed,,3pt,9,26
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,1,1:26,NOK,rebound,,,,,,,,,,Bobby Jackson,,,,,,def,,
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,1,1:19,NOK,shot,,,,,,,,,,Rasual Butler,,,,missed,,jump,7,9
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,1,1:18,NOK,rebound,,,,,,,,,,Tyson Chandler,,,,,,off,,
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,John Lucas,Juwan Howard,Luther Head,1,1:13,HOU,sub,,,,John Lucas,,Shane Battier,,,,,,,,,,,,
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,John Lucas,Juwan Howard,Luther Head,1,1:13,OFF,jump ball,,Linton Johnson,,,Juwan Howard,,,,,,,Luther Head,,,,,,
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,John Lucas,Juwan Howard,Luther Head,1,1:13,NOK,turnover,,,,,,,,,,Tyson Chandler,,,bad pass,,Juwan Howard,,,
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,John Lucas,Juwan Howard,Luther Head,1,1:08,HOU,shot,,,,,,,,,,Luther Head,2,,,made,,layup,25,6
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,John Lucas,Juwan Howard,Luther Head,1,0:46,NOK,foul,,,,,,,,John Lucas,,Chris Paul,,,,,,offensive,,
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,John Lucas,Juwan Howard,Luther Head,1,0:46,NOK,turnover,,,,,,,,,,Chris Paul,,,foul,,,,,
+Bobby Jackson,Jannero Pargo,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,John Lucas,Juwan Howard,Luther Head,1,0:46,NOK,sub,,,,Jannero Pargo,,Chris Paul,,,,,,,,,,,,
+Bobby Jackson,Jannero Pargo,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,John Lucas,Juwan Howard,Luther Head,1,0:25,HOU,shot,,,,,,,,,,Bonzi Wells,,,,missed,,jump,41,16
+Bobby Jackson,Jannero Pargo,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,John Lucas,Juwan Howard,Luther Head,1,0:24,NOK,rebound,,,,,,,,,,Tyson Chandler,,,,,,def,,
+Bobby Jackson,Jannero Pargo,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,John Lucas,Juwan Howard,Luther Head,1,0:03,NOK,shot,Bobby Jackson,,,,,,,,,Jannero Pargo,2,,,made,,jump,16,21
+Bobby Jackson,Jannero Pargo,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,John Lucas,Juwan Howard,Luther Head,1,0:00,HOU,shot,,,,,,,,,,John Lucas,,,,missed,,3pt,34,50
+Bobby Jackson,Jannero Pargo,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,John Lucas,Juwan Howard,Luther Head,1,0:00,HOU,rebound,,,,,,,,,,,,,,,,,,
+Bobby Jackson,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,11:43,OFF,jump ball,,Linton Johnson,,,Bonzi Wells,,,,,,,Tracy McGrady,,,,,,
+Bobby Jackson,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,11:33,HOU,shot,Tracy McGrady,,,,,,,,,John Lucas,2,,,made,,jump,41,22
+Bobby Jackson,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,11:16,NOK,shot,,,Bonzi Wells,,,,,,,Bobby Jackson,,,,missed,,jump,30,9
+Bobby Jackson,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,11:15,HOU,rebound,,,,,,,,,,,,,,,,,,
+Bobby Jackson,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,11:14,NOK,shot,,,,,,,,,,Jannero Pargo,,,,missed,,jump,45,6
+Bobby Jackson,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,11:12,HOU,rebound,,,,,,,,,,,,,,,,,,
+Bobby Jackson,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,10:53,HOU,shot,,,,,,,,,,Bonzi Wells,,,,missed,,layup,25,6
+Bobby Jackson,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,10:51,NOK,rebound,,,,,,,,,,Hilton Armstrong,,,,,,def,,
+Bobby Jackson,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,10:40,NOK,shot,,,,,,,,,,Bobby Jackson,,,,missed,,3pt,34,31
+Bobby Jackson,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,10:38,HOU,rebound,,,,,,,,,,Chuck Hayes,,,,,,def,,
+Bobby Jackson,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,10:28,HOU,turnover,,,,,,,,,,Tracy McGrady,,,bad pass,,Hilton Armstrong,,,
+Bobby Jackson,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,10:21,HOU,foul,,,,,,,,Bobby Jackson,,Chuck Hayes,,,,,,shooting,,
+Bobby Jackson,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,10:21,NOK,free throw,,,,,,,1,,2,Bobby Jackson,,,foul,made,,,,
+Bobby Jackson,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,10:21,NOK,free throw,,,,,,,2,,2,Bobby Jackson,,,foul,made,,,,
+Bobby Jackson,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,10:13,HOU,shot,,,,,,,,,,Chuck Hayes,,,,missed,,reverse layup,25,6
+Bobby Jackson,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,10:12,HOU,rebound,,,,,,,,,,Bonzi Wells,,,,,,off,,
+Bobby Jackson,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,10:10,HOU,shot,,,,,,,,,,Bonzi Wells,,,,missed,,layup,25,6
+Bobby Jackson,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,10:08,HOU,shot,,,,,,,,,,Chuck Hayes,2,,,made,,tip,25,6
+Bobby Jackson,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,10:08,HOU,rebound,,,,,,,,,,Chuck Hayes,,,,,,off,,
+Bobby Jackson,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,9:53,NOK,shot,,,,,,,,,,Jannero Pargo,,,,missed,,jump,11,19
+Bobby Jackson,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,9:52,HOU,rebound,,,,,,,,,,Bonzi Wells,,,,,,def,,
+Bobby Jackson,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,9:46,NOK,foul,,,,,,,,Tracy McGrady,,Rasual Butler,,,,,,personal,,
+Bobby Jackson,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,9:33,HOU,shot,,,,,,,,,,Luther Head,,,,missed,,3pt,43,22
+Bobby Jackson,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,9:31,NOK,rebound,,,,,,,,,,Rasual Butler,,,,,,def,,
+Bobby Jackson,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,9:08,NOK,shot,,,,,,,,,,Bobby Jackson,3,,,made,,3pt,23,31
+Bobby Jackson,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,8:50,HOU,shot,,,,,,,,,,Tracy McGrady,,,,missed,,driving layup,25,6
+Bobby Jackson,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,8:48,HOU,rebound,,,,,,,,,,Tracy McGrady,,,,,,off,,
+Bobby Jackson,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,8:47,HOU,shot,,,,,,,,,,Tracy McGrady,,,,missed,,layup,25,6
+Bobby Jackson,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,8:46,NOK,rebound,,,,,,,,,,Jannero Pargo,,,,,,def,,
+Bobby Jackson,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,8:35,NOK,shot,,,Chuck Hayes,,,,,,,Hilton Armstrong,,,,missed,,layup,25,6
+Bobby Jackson,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,8:32,HOU,rebound,,,,,,,,,,Luther Head,,,,,,def,,
+Bobby Jackson,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,8:15,HOU,shot,,,,,,,,,,John Lucas,,,,missed,,3pt,10,27
+Bobby Jackson,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,8:14,NOK,rebound,,,,,,,,,,Linton Johnson,,,,,,def,,
+Bobby Jackson,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,7:55,NOK,shot,,,,,,,,,,Bobby Jackson,,,,missed,,jump,29,25
+Bobby Jackson,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,7:53,HOU,rebound,,,,,,,,,,Tracy McGrady,,,,,,def,,
+Bobby Jackson,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,7:45,HOU,shot,John Lucas,,,,,,,,,Tracy McGrady,3,,,made,,3pt,31,31
+Bobby Jackson,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,7:38,HOU,timeout,,,,,,,,,,,,,,,,regular,,
+Devin Brown,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,7:38,NOK,sub,,,,Devin Brown,,Bobby Jackson,,,,,,,,,,,,
+David West,Devin Brown,Hilton Armstrong,Jannero Pargo,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,7:38,NOK,sub,,,,David West,,Linton Johnson,,,,,,,,,,,,
+David West,Devin Brown,Hilton Armstrong,Jannero Pargo,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,7:24,NOK,shot,David West,,,,,,,,,Jannero Pargo,2,,,made,,jump,24,23
+David West,Devin Brown,Hilton Armstrong,Jannero Pargo,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,7:06,HOU,shot,,,,,,,,,,Tracy McGrady,,,,missed,,jump,11,10
+David West,Devin Brown,Hilton Armstrong,Jannero Pargo,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,7:05,NOK,rebound,,,,,,,,,,Devin Brown,,,,,,def,,
+David West,Devin Brown,Hilton Armstrong,Jannero Pargo,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,6:56,NOK,shot,Devin Brown,,,,,,,,,Hilton Armstrong,2,,,made,,jump,24,10
+David West,Devin Brown,Hilton Armstrong,Jannero Pargo,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,6:35,HOU,shot,,,David West,,,,,,,Luther Head,,,,missed,,driving layup,25,6
+David West,Devin Brown,Hilton Armstrong,Jannero Pargo,Rasual Butler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,6:34,HOU,rebound,,,,,,,,,,,,,,,,,,
+David West,Devin Brown,Jannero Pargo,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,6:34,NOK,sub,,,,Tyson Chandler,,Hilton Armstrong,,,,,,,,,,,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,6:34,NOK,sub,,,,Chris Paul,,Jannero Pargo,,,,,,,,,,,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,6:33,NOK,foul,,,,,,,,Tracy McGrady,,Rasual Butler,,,,,,personal,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,6:25,HOU,shot,,,,,,,,,,Tracy McGrady,2,,,made,,jump,38,20
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,6:03,HOU,foul,,,,,,,,David West,,Bonzi Wells,,,,,,shooting,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,6:03,NOK,free throw,,,,,,,1,,2,David West,,,foul,made,,,,
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,6:03,NOK,sub,,,,Bobby Jackson,,Rasual Butler,,,,,,,,,,,,
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,6:03,NOK,free throw,,,,,,,2,,2,David West,,,foul,made,,,,
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,5:40,HOU,turnover,,,,,,,,,,Luther Head,,,traveling,,,,,
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Bonzi Wells,Chuck Hayes,John Lucas,Luther Head,Tracy McGrady,2,5:40,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Bonzi Wells,John Lucas,Luther Head,Shane Battier,Tracy McGrady,2,5:40,HOU,sub,,,,Shane Battier,,Chuck Hayes,,,,,,,,,,,,
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Bonzi Wells,Dikembe Mutombo,Luther Head,Shane Battier,Tracy McGrady,2,5:40,HOU,sub,,,,Dikembe Mutombo,,John Lucas,,,,,,,,,,,,
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Bonzi Wells,Dikembe Mutombo,Luther Head,Shane Battier,Tracy McGrady,2,5:21,NOK,shot,Bobby Jackson,,,,,,,,,Tyson Chandler,2,,,made,,layup,25,6
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Bonzi Wells,Dikembe Mutombo,Luther Head,Shane Battier,Tracy McGrady,2,4:56,HOU,shot,,,,,,,,,,Bonzi Wells,,,,missed,,jump,9,13
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Bonzi Wells,Dikembe Mutombo,Luther Head,Shane Battier,Tracy McGrady,2,4:55,NOK,rebound,,,,,,,,,,Bobby Jackson,,,,,,def,,
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Bonzi Wells,Dikembe Mutombo,Luther Head,Shane Battier,Tracy McGrady,2,4:41,NOK,shot,,,,,,,,,,David West,,,,missed,,hook,18,11
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Bonzi Wells,Dikembe Mutombo,Luther Head,Shane Battier,Tracy McGrady,2,4:39,HOU,rebound,,,,,,,,,,Dikembe Mutombo,,,,,,def,,
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Bonzi Wells,Dikembe Mutombo,Luther Head,Shane Battier,Tracy McGrady,2,4:27,HOU,shot,,,,,,,,,,Shane Battier,,,,missed,,3pt,1,9
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Bonzi Wells,Dikembe Mutombo,Luther Head,Shane Battier,Tracy McGrady,2,4:26,HOU,rebound,,,,,,,,,,Dikembe Mutombo,,,,,,off,,
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Bonzi Wells,Dikembe Mutombo,Luther Head,Shane Battier,Tracy McGrady,2,4:21,HOU,shot,,,,,,,,,,Luther Head,,,,missed,,3pt,15,29
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Bonzi Wells,Dikembe Mutombo,Luther Head,Shane Battier,Tracy McGrady,2,4:19,NOK,rebound,,,,,,,,,,Tyson Chandler,,,,,,def,,
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Bonzi Wells,Dikembe Mutombo,Luther Head,Shane Battier,Tracy McGrady,2,4:03,HOU,foul,,,,,,,,David West,,Bonzi Wells,,,,,,personal,,
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,4:03,HOU,sub,,,,Juwan Howard,,Bonzi Wells,,,,,,,,,,,,
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,3:49,NOK,shot,,,,,,,,,,Chris Paul,,,,missed,,3pt,39,27
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,3:48,NOK,rebound,,,,,,,,,,Tyson Chandler,,,,,,off,,
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,3:39,NOK,shot,,,,,,,,,,Chris Paul,,,,missed,,jump,21,12
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,3:38,HOU,rebound,,,,,,,,,,Shane Battier,,,,,,def,,
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,3:24,HOU,timeout,,,,,,,,,,,,,,,,regular,,
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,3:19,HOU,shot,,,,,,,,,,Juwan Howard,,,,missed,,hook,29,12
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,3:18,HOU,rebound,,,,,,,,,,,,,,,,,,
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,3:00,NOK,foul,,,,,,,,Juwan Howard,,Devin Brown,,,,,,offensive,,
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,3:00,NOK,turnover,,,,,,,,,,Devin Brown,,,foul,,,,,
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,2:49,HOU,shot,Luther Head,,,,,,,,,Tracy McGrady,2,,,made,,jump,15,26
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,2:25,NOK,shot,,,,,,,,,,Devin Brown,,,,missed,,jump,38,22
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,2:23,HOU,rebound,,,,,,,,,,Luther Head,,,,,,def,,
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,2:17,HOU,shot,,,,,,,,,,Tracy McGrady,,,,missed,,3pt,11,29
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,2:15,NOK,rebound,,,,,,,,,,Bobby Jackson,,,,,,def,,
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,2:09,NOK,shot,,,,,,,,,,Bobby Jackson,2,,,made,,driving layup,25,6
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,2:09,HOU,foul,,,,,,,,Bobby Jackson,,Shane Battier,,,,,,shooting,,
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,2:09,NOK,free throw,,,,,,,1,,1,Bobby Jackson,,,foul,made,,,,
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,1:53,HOU,shot,,,,,,,,,,Shane Battier,,,,missed,,3pt,48,5
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,1:51,NOK,rebound,,,,,,,,,,Devin Brown,,,,,,def,,
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,1:47,NOK,shot,,,,,,,,,,Chris Paul,,,,missed,,reverse layup,25,6
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,1:47,HOU,rebound,,,,,,,,,,,,,,,,,,
+Bobby Jackson,Chris Paul,David West,Devin Brown,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,1:47,HOU,foul,,,,,,,,Tyson Chandler,,Juwan Howard,,,,,,loose ball,,
+Bobby Jackson,David West,Devin Brown,Jannero Pargo,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,1:47,NOK,sub,,,,Jannero Pargo,,Chris Paul,,,,,,,,,,,,
+Bobby Jackson,David West,Devin Brown,Jannero Pargo,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,1:47,NOK,free throw,,,,,,,1,,2,Tyson Chandler,,,foul,missed,,,,
+Bobby Jackson,David West,Devin Brown,Jannero Pargo,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,1:47,HOU,rebound,,,,,,,,,,,,,,,,,,
+Bobby Jackson,David West,Devin Brown,Jannero Pargo,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,1:47,NOK,free throw,,,,,,,2,,2,Tyson Chandler,,,foul,missed,,,,
+Bobby Jackson,David West,Devin Brown,Jannero Pargo,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,1:47,NOK,rebound,,,,,,,,,,Devin Brown,,,,,,off,,
+Bobby Jackson,David West,Devin Brown,Jannero Pargo,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,1:34,NOK,shot,,,,,,,,,,Devin Brown,,,,missed,,3pt,36,30
+Bobby Jackson,David West,Devin Brown,Jannero Pargo,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,1:32,HOU,rebound,,,,,,,,,,Shane Battier,,,,,,def,,
+Bobby Jackson,David West,Devin Brown,Jannero Pargo,Tyson Chandler,Dikembe Mutombo,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,1:31,NOK,foul,,,,,,,,Shane Battier,,Bobby Jackson,,,,,,personal,,
+Bobby Jackson,David West,Devin Brown,Jannero Pargo,Tyson Chandler,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,1:31,HOU,sub,,,,Chuck Hayes,,Dikembe Mutombo,,,,,,,,,,,,
+Bobby Jackson,David West,Devin Brown,Jannero Pargo,Tyson Chandler,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,1:18,HOU,shot,,,,,,,,,,Luther Head,2,,,made,,running jump,28,10
+Bobby Jackson,David West,Devin Brown,Jannero Pargo,Tyson Chandler,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,0:54,NOK,shot,,,,,,,,,,Bobby Jackson,,,,missed,,3pt,36,30
+Bobby Jackson,David West,Devin Brown,Jannero Pargo,Tyson Chandler,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,0:52,HOU,rebound,,,,,,,,,,Juwan Howard,,,,,,def,,
+Bobby Jackson,David West,Devin Brown,Jannero Pargo,Tyson Chandler,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,0:43,HOU,shot,,,,,,,,,,Luther Head,,,,missed,,jump,12,24
+Bobby Jackson,David West,Devin Brown,Jannero Pargo,Tyson Chandler,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,0:41,NOK,rebound,,,,,,,,,,David West,,,,,,def,,
+Bobby Jackson,David West,Devin Brown,Jannero Pargo,Tyson Chandler,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,0:22,NOK,turnover,,,,,,,,,,David West,,,bad pass,,Tracy McGrady,,,
+Bobby Jackson,David West,Devin Brown,Jannero Pargo,Tyson Chandler,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,0:01,NOK,foul,,,,,,,,Luther Head,,Tyson Chandler,,,,,,shooting,,
+Bobby Jackson,David West,Devin Brown,Jannero Pargo,Tyson Chandler,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,0:01,HOU,free throw,,,,,,,1,,3,Luther Head,,,foul,missed,,,,
+Bobby Jackson,David West,Devin Brown,Jannero Pargo,Tyson Chandler,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,0:01,HOU,rebound,,,,,,,,,,,,,,,,,,
+Bobby Jackson,David West,Devin Brown,Jannero Pargo,Tyson Chandler,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,0:01,HOU,free throw,,,,,,,2,,3,Luther Head,,,foul,made,,,,
+Bobby Jackson,David West,Devin Brown,Jannero Pargo,Tyson Chandler,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,0:01,HOU,free throw,,,,,,,3,,3,Luther Head,,,foul,made,,,,
+Bobby Jackson,David West,Devin Brown,Jannero Pargo,Tyson Chandler,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,0:00,NOK,shot,,,,,,,,,,Devin Brown,,,,missed,,3pt,10,63
+Bobby Jackson,David West,Devin Brown,Jannero Pargo,Tyson Chandler,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,2,0:00,HOU,rebound,,,,,,,,,,,,,,,,,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Dikembe Mutombo,John Lucas,Juwan Howard,Shane Battier,Tracy McGrady,3,11:44,HOU,shot,,,,,,,,,,John Lucas,2,,,made,,jump bank,30,9
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Dikembe Mutombo,John Lucas,Juwan Howard,Shane Battier,Tracy McGrady,3,11:25,HOU,foul,,,,,,,,Rasual Butler,,Dikembe Mutombo,,,,,,shooting,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Dikembe Mutombo,John Lucas,Juwan Howard,Shane Battier,Tracy McGrady,3,11:25,NOK,free throw,,,,,,,1,,2,Rasual Butler,,,foul,made,,,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Dikembe Mutombo,John Lucas,Juwan Howard,Shane Battier,Tracy McGrady,3,11:25,NOK,free throw,,,,,,,2,,2,Rasual Butler,,,foul,made,,,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Dikembe Mutombo,John Lucas,Juwan Howard,Shane Battier,Tracy McGrady,3,11:10,HOU,shot,,,,,,,,,,Dikembe Mutombo,,,,missed,,layup,25,6
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Dikembe Mutombo,John Lucas,Juwan Howard,Shane Battier,Tracy McGrady,3,11:08,HOU,rebound,,,,,,,,,,Dikembe Mutombo,,,,,,off,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Dikembe Mutombo,John Lucas,Juwan Howard,Shane Battier,Tracy McGrady,3,11:07,HOU,shot,,,,,,,,,,Dikembe Mutombo,,,,missed,,layup,25,6
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Dikembe Mutombo,John Lucas,Juwan Howard,Shane Battier,Tracy McGrady,3,11:06,NOK,rebound,,,,,,,,,,Rasual Butler,,,,,,def,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Dikembe Mutombo,John Lucas,Juwan Howard,Shane Battier,Tracy McGrady,3,10:59,NOK,shot,Chris Paul,,,,,,,,,David West,2,,,made,,jump,37,21
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Dikembe Mutombo,John Lucas,Juwan Howard,Shane Battier,Tracy McGrady,3,10:41,HOU,shot,Juwan Howard,,,,,,,,,Tracy McGrady,2,,,made,,jump,39,18
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Dikembe Mutombo,John Lucas,Juwan Howard,Shane Battier,Tracy McGrady,3,10:36,HOU,foul,,,,,,,,Chris Paul,,John Lucas,,,,,,personal,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Dikembe Mutombo,John Lucas,Juwan Howard,Shane Battier,Tracy McGrady,3,10:22,NOK,shot,Devin Brown,,,,,,,,,Chris Paul,3,,,made,,3pt,44,24
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Dikembe Mutombo,John Lucas,Juwan Howard,Shane Battier,Tracy McGrady,3,10:00,HOU,shot,,,,,,,,,,Juwan Howard,,,,missed,,jump,42,10
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Dikembe Mutombo,John Lucas,Juwan Howard,Shane Battier,Tracy McGrady,3,9:58,NOK,rebound,,,,,,,,,,Chris Paul,,,,,,def,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Dikembe Mutombo,John Lucas,Juwan Howard,Shane Battier,Tracy McGrady,3,9:38,NOK,shot,,,,,,,,,,David West,,,,missed,,jump,20,25
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Dikembe Mutombo,John Lucas,Juwan Howard,Shane Battier,Tracy McGrady,3,9:37,HOU,rebound,,,,,,,,,,Dikembe Mutombo,,,,,,def,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Dikembe Mutombo,John Lucas,Juwan Howard,Shane Battier,Tracy McGrady,3,9:27,NOK,foul,,,,,,,,Tracy McGrady,,Devin Brown,,,,,,shooting,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Dikembe Mutombo,John Lucas,Juwan Howard,Shane Battier,Tracy McGrady,3,9:27,HOU,free throw,,,,,,,1,,2,Tracy McGrady,,,foul,missed,,,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Dikembe Mutombo,John Lucas,Juwan Howard,Shane Battier,Tracy McGrady,3,9:27,HOU,rebound,,,,,,,,,,,,,,,,,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Dikembe Mutombo,John Lucas,Juwan Howard,Shane Battier,Tracy McGrady,3,9:27,HOU,free throw,,,,,,,2,,2,Tracy McGrady,,,foul,made,,,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Dikembe Mutombo,John Lucas,Juwan Howard,Shane Battier,Tracy McGrady,3,9:10,NOK,shot,,,,,,,,,,Devin Brown,,,,missed,,3pt,19,30
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Dikembe Mutombo,John Lucas,Juwan Howard,Shane Battier,Tracy McGrady,3,9:09,HOU,rebound,,,,,,,,,,,,,,,,,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Dikembe Mutombo,John Lucas,Juwan Howard,Shane Battier,Tracy McGrady,3,8:54,HOU,shot,,,,,,,,,,Juwan Howard,2,,,made,,layup,25,6
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Dikembe Mutombo,John Lucas,Juwan Howard,Shane Battier,Tracy McGrady,3,8:46,HOU,foul,,,,,,,,Tyson Chandler,,Shane Battier,,,,,,personal,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Dikembe Mutombo,John Lucas,Juwan Howard,Shane Battier,Tracy McGrady,3,8:36,NOK,shot,,,,,,,,,,Chris Paul,2,,,made,,layup,25,6
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Dikembe Mutombo,John Lucas,Juwan Howard,Shane Battier,Tracy McGrady,3,8:24,HOU,foul,,,,,,,,David West,,Juwan Howard,,,,,,offensive,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Dikembe Mutombo,John Lucas,Juwan Howard,Shane Battier,Tracy McGrady,3,8:24,HOU,turnover,,,,,,,,,,Juwan Howard,,,foul,,,,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Dikembe Mutombo,John Lucas,Juwan Howard,Shane Battier,Tracy McGrady,3,8:04,NOK,shot,Chris Paul,,,,,,,,,Devin Brown,3,,,made,,3pt,1,7
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Dikembe Mutombo,John Lucas,Juwan Howard,Shane Battier,Tracy McGrady,3,7:53,HOU,shot,,,,,,,,,,John Lucas,,,,missed,,3pt,8,26
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Dikembe Mutombo,John Lucas,Juwan Howard,Shane Battier,Tracy McGrady,3,7:52,NOK,rebound,,,,,,,,,,David West,,,,,,def,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Dikembe Mutombo,John Lucas,Juwan Howard,Shane Battier,Tracy McGrady,3,7:43,NOK,shot,Devin Brown,,,,,,,,,Rasual Butler,3,,,made,,3pt,48,5
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Dikembe Mutombo,John Lucas,Juwan Howard,Shane Battier,Tracy McGrady,3,7:41,HOU,timeout,,,,,,,,,,,,,,,,regular,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Chuck Hayes,John Lucas,Juwan Howard,Shane Battier,Tracy McGrady,3,7:41,HOU,sub,,,,Chuck Hayes,,Dikembe Mutombo,,,,,,,,,,,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,3,7:41,HOU,sub,,,,Luther Head,,John Lucas,,,,,,,,,,,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,3,7:30,HOU,shot,Tracy McGrady,,,,,,,,,Chuck Hayes,2,,,made,,layup,25,6
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,3,7:13,NOK,shot,,,,,,,,,,Chris Paul,,,,missed,,jump,25,12
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,3,7:11,HOU,rebound,,,,,,,,,,Juwan Howard,,,,,,def,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,3,7:04,HOU,shot,,,,,,,,,,Shane Battier,,,,missed,,3pt,48,7
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,3,7:03,NOK,rebound,,,,,,,,,,Tyson Chandler,,,,,,def,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,3,6:57,NOK,shot,Chris Paul,,,,,,,,,Devin Brown,2,,,made,,jump,39,10
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,3,6:35,NOK,foul,,,,,,,,Luther Head,,Chris Paul,,,,,,personal,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,3,6:24,HOU,shot,,,,,,,,,,Tracy McGrady,,,,missed,,jump,9,13
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,3,6:22,NOK,rebound,,,,,,,,,,Tyson Chandler,,,,,,def,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,3,6:02,NOK,shot,Devin Brown,,,,,,,,,David West,2,,,made,,jump,24,11
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,3,5:42,HOU,shot,,,,,,,,,,Juwan Howard,2,,,made,,turnaround jump,17,12
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Tracy McGrady,3,5:26,HOU,foul,,,,,,,,Tyson Chandler,,Luther Head,,,,,,personal,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,5:26,HOU,sub,,,,Bonzi Wells,,Shane Battier,,,,,,,,,,,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,5:18,NOK,shot,,,,,,,,,,Chris Paul,,,,missed,,jump,18,15
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,5:16,HOU,rebound,,,,,,,,,,Luther Head,,,,,,def,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,5:02,HOU,shot,,,,,,,,,,Juwan Howard,,,,missed,,hook,25,11
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,4:59,NOK,rebound,,,,,,,,,,Chris Paul,,,,,,def,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,4:54,NOK,shot,,,,,,,,,,Rasual Butler,,,,missed,,3pt,8,24
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,4:52,HOU,rebound,,,,,,,,,,Juwan Howard,,,,,,def,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,4:44,HOU,turnover,,,,,,,,,,Tracy McGrady,,,bad pass,,Chris Paul,,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,4:01,NOK,shot,,,,,,,,,,Devin Brown,,,,missed,,3pt,41,24
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,4:00,HOU,rebound,,,,,,,,,,Bonzi Wells,,,,,,def,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,3:48,HOU,shot,,,,,,,,,,Luther Head,,,,missed,,3pt,1,8
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,3:46,NOK,rebound,,,,,,,,,,Chris Paul,,,,,,def,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,3:41,HOU,timeout,,,,,,,,,,,,,,,,regular,,
+Bobby Jackson,Chris Paul,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,3:41,NOK,sub,,,,Bobby Jackson,,David West,,,,,,,,,,,,
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,3:41,NOK,sub,,,,Linton Johnson,,Devin Brown,,,,,,,,,,,,
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,3:32,NOK,shot,,,,,,,,,,Rasual Butler,,,,missed,,3pt,10,27
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,3:31,NOK,rebound,,,,,,,,,,Linton Johnson,,,,,,off,,
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,3:11,NOK,shot,,,,,,,,,,Tyson Chandler,2,,,made,,turnaround jump,34,6
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,2:53,HOU,turnover,,,,,,,,,,Tracy McGrady,,,bad pass,,Chris Paul,,,
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,2:49,NOK,shot,Bobby Jackson,,,,,,,,,Chris Paul,2,,,made,,layup,25,6
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,2:31,HOU,shot,,,,,,,,,,Bonzi Wells,,,,missed,,jump,38,10
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,2:30,HOU,rebound,,,,,,,,,,Bonzi Wells,,,,,,off,,
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,2:28,HOU,shot,,,,,,,,,,Bonzi Wells,2,,,made,,layup,26,6
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,2:15,NOK,shot,,,,,,,,,,Bobby Jackson,,,,missed,,3pt,48,3
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,2:14,HOU,rebound,,,,,,,,,,,,,,,,,,
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,2:14,HOU,foul,,,,,,,,Tyson Chandler,,Chuck Hayes,,,,,,loose ball,,
+Bobby Jackson,Chris Paul,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,2:14,NOK,free throw,,,,,,,1,,2,Tyson Chandler,,,foul,made,,,,
+Bobby Jackson,Jannero Pargo,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,2:14,NOK,sub,,,,Jannero Pargo,,Chris Paul,,,,,,,,,,,,
+Bobby Jackson,Jannero Pargo,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,2:14,NOK,free throw,,,,,,,2,,2,Tyson Chandler,,,foul,made,,,,
+Bobby Jackson,Jannero Pargo,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,2:05,NOK,foul,,,,,,,,Tracy McGrady,,Rasual Butler,,,,,,personal,,
+Bobby Jackson,Jannero Pargo,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,1:51,HOU,turnover,,,,,,,,,,Juwan Howard,,,lost ball,,Jannero Pargo,,,
+Bobby Jackson,Jannero Pargo,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,1:51,HOU,foul,,,,,,,,Jannero Pargo,,Juwan Howard,,,,,,personal,,
+Bobby Jackson,Jannero Pargo,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,1:51,NOK,free throw,,,,,,,1,,2,Jannero Pargo,,,foul,made,,,,
+Bobby Jackson,Jannero Pargo,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,1:51,NOK,free throw,,,,,,,2,,2,Jannero Pargo,,,foul,made,,,,
+Bobby Jackson,Jannero Pargo,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,1:31,HOU,shot,,,,,,,,,,Luther Head,,,,missed,,3pt,48,7
+Bobby Jackson,Jannero Pargo,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,1:29,NOK,rebound,,,,,,,,,,Jannero Pargo,,,,,,def,,
+Bobby Jackson,Jannero Pargo,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,1:07,HOU,foul,,,,,,,,Tyson Chandler,,Chuck Hayes,,,,,,shooting,,
+Bobby Jackson,Jannero Pargo,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,3,1:07,NOK,free throw,,,,,,,1,,2,Tyson Chandler,,,foul,made,,,,
+Bobby Jackson,Jannero Pargo,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Chuck Hayes,Luther Head,Scott Padgett,Tracy McGrady,3,1:07,HOU,sub,,,,Scott Padgett,,Juwan Howard,,,,,,,,,,,,
+Bobby Jackson,Jannero Pargo,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Luther Head,Scott Padgett,Steve Novak,Tracy McGrady,3,1:07,HOU,sub,,,,Steve Novak,,Chuck Hayes,,,,,,,,,,,,
+Bobby Jackson,Jannero Pargo,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Luther Head,Scott Padgett,Steve Novak,Tracy McGrady,3,1:07,NOK,free throw,,,,,,,2,,2,Tyson Chandler,,,foul,missed,,,,
+Bobby Jackson,Jannero Pargo,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Luther Head,Scott Padgett,Steve Novak,Tracy McGrady,3,1:07,HOU,rebound,,,,,,,,,,Steve Novak,,,,,,def,,
+Bobby Jackson,Jannero Pargo,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Luther Head,Scott Padgett,Steve Novak,Tracy McGrady,3,1:04,NOK,foul,,,,,,,,Steve Novak,,Linton Johnson,,,,,,personal,,
+Bobby Jackson,Jannero Pargo,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Luther Head,Scott Padgett,Steve Novak,Tracy McGrady,3,0:56,HOU,turnover,,,,,,,,,,Steve Novak,,,traveling,,,,,
+Bobby Jackson,Jannero Pargo,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Luther Head,Scott Padgett,Steve Novak,Tracy McGrady,3,0:38,NOK,shot,,,,,,,,,,Tyson Chandler,,,,missed,,jump,26,12
+Bobby Jackson,Jannero Pargo,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Luther Head,Scott Padgett,Steve Novak,Tracy McGrady,3,0:36,HOU,rebound,,,,,,,,,,Tracy McGrady,,,,,,def,,
+Bobby Jackson,Jannero Pargo,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Luther Head,Scott Padgett,Steve Novak,Tracy McGrady,3,0:28,HOU,shot,,,,,,,,,,Bonzi Wells,2,,,made,,layup,25,6
+Bobby Jackson,Jannero Pargo,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Luther Head,Scott Padgett,Steve Novak,Tracy McGrady,3,0:28,NOK,foul,,,,,,,,Bonzi Wells,,Jannero Pargo,,,,,,shooting,,
+Bobby Jackson,Jannero Pargo,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Luther Head,Scott Padgett,Steve Novak,Tracy McGrady,3,0:28,HOU,free throw,,,,,,,1,,1,Bonzi Wells,,,foul,made,,,,
+Bobby Jackson,Jannero Pargo,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Luther Head,Scott Padgett,Steve Novak,Tracy McGrady,3,0:06,NOK,shot,,,,,,,,,,Bobby Jackson,2,,,made,,driving layup,25,6
+Bobby Jackson,Jannero Pargo,Linton Johnson,Rasual Butler,Tyson Chandler,Bonzi Wells,Luther Head,Scott Padgett,Steve Novak,Tracy McGrady,3,0:00,HOU,shot,,,,,,,,,,Tracy McGrady,3,,,made,,3pt,38,33
+Bobby Jackson,Devin Brown,Hilton Armstrong,Jannero Pargo,Linton Johnson,Bonzi Wells,Luther Head,Scott Padgett,Steve Novak,Tracy McGrady,4,11:40,NOK,shot,,,,,,,,,,Jannero Pargo,,,,missed,,jump,11,25
+Bobby Jackson,Devin Brown,Hilton Armstrong,Jannero Pargo,Linton Johnson,Bonzi Wells,Luther Head,Scott Padgett,Steve Novak,Tracy McGrady,4,11:38,NOK,rebound,,,,,,,,,,Devin Brown,,,,,,off,,
+Bobby Jackson,Devin Brown,Hilton Armstrong,Jannero Pargo,Linton Johnson,Bonzi Wells,Luther Head,Scott Padgett,Steve Novak,Tracy McGrady,4,11:22,NOK,turnover,,,,,,,,,,Devin Brown,,,traveling,,,,,
+Bobby Jackson,Devin Brown,Hilton Armstrong,Jannero Pargo,Linton Johnson,Bonzi Wells,Luther Head,Scott Padgett,Steve Novak,Tracy McGrady,4,11:08,HOU,shot,,,,,,,,,,Tracy McGrady,,,,missed,,jump,10,19
+Bobby Jackson,Devin Brown,Hilton Armstrong,Jannero Pargo,Linton Johnson,Bonzi Wells,Luther Head,Scott Padgett,Steve Novak,Tracy McGrady,4,11:07,NOK,rebound,,,,,,,,,,Hilton Armstrong,,,,,,def,,
+Bobby Jackson,Devin Brown,Hilton Armstrong,Jannero Pargo,Linton Johnson,Bonzi Wells,Luther Head,Scott Padgett,Steve Novak,Tracy McGrady,4,11:05,HOU,foul,,,,,,,,Hilton Armstrong,,Bonzi Wells,,,,,,personal,,
+Bobby Jackson,Devin Brown,Hilton Armstrong,Jannero Pargo,Linton Johnson,Bonzi Wells,Luther Head,Scott Padgett,Steve Novak,Tracy McGrady,4,10:47,NOK,turnover,,,,,,,,,,Bobby Jackson,,,lost ball,,Tracy McGrady,,,
+Bobby Jackson,Devin Brown,Hilton Armstrong,Jannero Pargo,Linton Johnson,Bonzi Wells,Luther Head,Scott Padgett,Steve Novak,Tracy McGrady,4,10:46,HOU,turnover,,,,,,,,,,Luther Head,,,bad pass,,,,,
+Bobby Jackson,Devin Brown,Hilton Armstrong,Jannero Pargo,Linton Johnson,Bonzi Wells,Luther Head,Scott Padgett,Steve Novak,Tracy McGrady,4,10:29,NOK,shot,Bobby Jackson,,,,,,,,,Linton Johnson,2,,,made,,jump,43,18
+Bobby Jackson,Devin Brown,Hilton Armstrong,Jannero Pargo,Linton Johnson,Bonzi Wells,Luther Head,Scott Padgett,Steve Novak,Tracy McGrady,4,10:13,HOU,shot,,,,,,,,,,Bonzi Wells,2,,,made,,driving layup,25,6
+Bobby Jackson,Devin Brown,Hilton Armstrong,Jannero Pargo,Linton Johnson,Bonzi Wells,Luther Head,Scott Padgett,Steve Novak,Tracy McGrady,4,10:13,NOK,foul,,,,,,,,Bonzi Wells,,Linton Johnson,,,,,,shooting,,
+Bobby Jackson,Devin Brown,Hilton Armstrong,Jannero Pargo,Linton Johnson,Bonzi Wells,John Lucas,Luther Head,Scott Padgett,Steve Novak,4,10:13,HOU,sub,,,,John Lucas,,Tracy McGrady,,,,,,,,,,,,
+Bobby Jackson,Devin Brown,Hilton Armstrong,Jannero Pargo,Linton Johnson,Bonzi Wells,John Lucas,Luther Head,Scott Padgett,Steve Novak,4,10:13,HOU,free throw,,,,,,,1,,1,Bonzi Wells,,,foul,missed,,,,
+Bobby Jackson,Devin Brown,Hilton Armstrong,Jannero Pargo,Linton Johnson,Bonzi Wells,John Lucas,Luther Head,Scott Padgett,Steve Novak,4,10:13,NOK,rebound,,,,,,,,,,Linton Johnson,,,,,,def,,
+Bobby Jackson,Devin Brown,Hilton Armstrong,Jannero Pargo,Linton Johnson,Bonzi Wells,John Lucas,Luther Head,Scott Padgett,Steve Novak,4,9:51,NOK,shot,,,,,,,,,,Bobby Jackson,,,,missed,,jump,25,26
+Bobby Jackson,Devin Brown,Hilton Armstrong,Jannero Pargo,Linton Johnson,Bonzi Wells,John Lucas,Luther Head,Scott Padgett,Steve Novak,4,9:50,HOU,rebound,,,,,,,,,,Bonzi Wells,,,,,,def,,
+Bobby Jackson,Devin Brown,Hilton Armstrong,Jannero Pargo,Linton Johnson,Bonzi Wells,John Lucas,Luther Head,Scott Padgett,Steve Novak,4,9:44,HOU,shot,,,,,,,,,,Bonzi Wells,,,,missed,,3pt,0,7
+Bobby Jackson,Devin Brown,Hilton Armstrong,Jannero Pargo,Linton Johnson,Bonzi Wells,John Lucas,Luther Head,Scott Padgett,Steve Novak,4,9:42,NOK,rebound,,,,,,,,,,Hilton Armstrong,,,,,,def,,
+Bobby Jackson,Devin Brown,Hilton Armstrong,Jannero Pargo,Linton Johnson,Bonzi Wells,John Lucas,Luther Head,Scott Padgett,Steve Novak,4,9:32,HOU,foul,,,,,,,,Devin Brown,,John Lucas,,,,,,shooting,,
+Bobby Jackson,David West,Devin Brown,Hilton Armstrong,Jannero Pargo,Bonzi Wells,John Lucas,Luther Head,Scott Padgett,Steve Novak,4,9:32,NOK,sub,,,,David West,,Linton Johnson,,,,,,,,,,,,
+Bobby Jackson,David West,Devin Brown,Hilton Armstrong,Jannero Pargo,Bonzi Wells,John Lucas,Luther Head,Scott Padgett,Steve Novak,4,9:32,NOK,free throw,,,,,,,1,,2,Devin Brown,,,foul,made,,,,
+Bobby Jackson,David West,Devin Brown,Hilton Armstrong,Jannero Pargo,Bonzi Wells,John Lucas,Luther Head,Scott Padgett,Steve Novak,4,9:32,NOK,free throw,,,,,,,2,,2,Devin Brown,,,foul,made,,,,
+Bobby Jackson,David West,Devin Brown,Hilton Armstrong,Jannero Pargo,Bonzi Wells,John Lucas,Luther Head,Scott Padgett,Steve Novak,4,9:25,NOK,foul,,,,,,,,Bonzi Wells,,David West,,,,,,personal,,
+Bobby Jackson,David West,Devin Brown,Hilton Armstrong,Jannero Pargo,Bonzi Wells,John Lucas,Luther Head,Scott Padgett,Steve Novak,4,9:17,HOU,shot,,,,,,,,,,Bonzi Wells,,,,missed,,jump bank,9,14
+Bobby Jackson,David West,Devin Brown,Hilton Armstrong,Jannero Pargo,Bonzi Wells,John Lucas,Luther Head,Scott Padgett,Steve Novak,4,9:14,NOK,rebound,,,,,,,,,,Hilton Armstrong,,,,,,def,,
+Bobby Jackson,David West,Devin Brown,Hilton Armstrong,Jannero Pargo,Bonzi Wells,John Lucas,Luther Head,Scott Padgett,Steve Novak,4,9:08,NOK,shot,Bobby Jackson,,,,,,,,,Jannero Pargo,3,,,made,,3pt,12,27
+Bobby Jackson,David West,Devin Brown,Hilton Armstrong,Jannero Pargo,Bonzi Wells,John Lucas,Luther Head,Scott Padgett,Steve Novak,4,9:07,HOU,timeout,,,,,,,,,,,,,,,,regular,,
+Bobby Jackson,David West,Devin Brown,Hilton Armstrong,Jannero Pargo,Bonzi Wells,John Lucas,Luther Head,Scott Padgett,Shane Battier,4,9:07,HOU,sub,,,,Shane Battier,,Steve Novak,,,,,,,,,,,,
+Bobby Jackson,David West,Devin Brown,Hilton Armstrong,Jannero Pargo,Bonzi Wells,John Lucas,Luther Head,Scott Padgett,Shane Battier,4,8:52,HOU,shot,,,,,,,,,,John Lucas,,,,missed,,jump,22,14
+Bobby Jackson,David West,Devin Brown,Hilton Armstrong,Jannero Pargo,Bonzi Wells,John Lucas,Luther Head,Scott Padgett,Shane Battier,4,8:51,NOK,rebound,,,,,,,,,,Devin Brown,,,,,,def,,
+Bobby Jackson,David West,Devin Brown,Hilton Armstrong,Jannero Pargo,Bonzi Wells,John Lucas,Luther Head,Scott Padgett,Shane Battier,4,8:37,NOK,shot,,,,,,,,,,David West,,,,missed,,layup,25,6
+Bobby Jackson,David West,Devin Brown,Hilton Armstrong,Jannero Pargo,Bonzi Wells,John Lucas,Luther Head,Scott Padgett,Shane Battier,4,8:35,NOK,rebound,,,,,,,,,,Bobby Jackson,,,,,,off,,
+Bobby Jackson,David West,Devin Brown,Hilton Armstrong,Jannero Pargo,Bonzi Wells,John Lucas,Luther Head,Scott Padgett,Shane Battier,4,8:23,NOK,shot,,,,,,,,,,Bobby Jackson,,,,missed,,jump,4,6
+Bobby Jackson,David West,Devin Brown,Hilton Armstrong,Jannero Pargo,Bonzi Wells,John Lucas,Luther Head,Scott Padgett,Shane Battier,4,8:21,HOU,rebound,,,,,,,,,,John Lucas,,,,,,def,,
+Bobby Jackson,David West,Devin Brown,Hilton Armstrong,Jannero Pargo,Bonzi Wells,John Lucas,Luther Head,Scott Padgett,Shane Battier,4,8:05,HOU,shot,Luther Head,,,,,,,,,John Lucas,3,,,made,,3pt,48,6
+Bobby Jackson,David West,Devin Brown,Hilton Armstrong,Jannero Pargo,Bonzi Wells,John Lucas,Luther Head,Scott Padgett,Shane Battier,4,7:41,NOK,shot,,,,,,,,,,Devin Brown,,,,missed,,jump,16,21
+Bobby Jackson,David West,Devin Brown,Hilton Armstrong,Jannero Pargo,Bonzi Wells,John Lucas,Luther Head,Scott Padgett,Shane Battier,4,7:39,HOU,rebound,,,,,,,,,,Luther Head,,,,,,def,,
+Bobby Jackson,David West,Devin Brown,Hilton Armstrong,Jannero Pargo,Bonzi Wells,John Lucas,Luther Head,Scott Padgett,Shane Battier,4,7:27,HOU,timeout,,,,,,,,,,,,,,,,short,,
+Bobby Jackson,David West,Devin Brown,Hilton Armstrong,Jannero Pargo,Bonzi Wells,John Lucas,Scott Padgett,Shane Battier,Tracy McGrady,4,7:27,HOU,sub,,,,Tracy McGrady,,Luther Head,,,,,,,,,,,,
+Chris Paul,David West,Devin Brown,Hilton Armstrong,Jannero Pargo,Bonzi Wells,John Lucas,Scott Padgett,Shane Battier,Tracy McGrady,4,7:27,NOK,sub,,,,Chris Paul,,Bobby Jackson,,,,,,,,,,,,
+Chris Paul,David West,Devin Brown,Jannero Pargo,Tyson Chandler,Bonzi Wells,John Lucas,Scott Padgett,Shane Battier,Tracy McGrady,4,7:27,NOK,sub,,,,Tyson Chandler,,Hilton Armstrong,,,,,,,,,,,,
+Chris Paul,David West,Devin Brown,Jannero Pargo,Tyson Chandler,Bonzi Wells,John Lucas,Scott Padgett,Shane Battier,Tracy McGrady,4,7:21,HOU,shot,,,,,,,,,,Tracy McGrady,2,,,made,,jump,25,28
+Chris Paul,David West,Devin Brown,Jannero Pargo,Tyson Chandler,Bonzi Wells,John Lucas,Scott Padgett,Shane Battier,Tracy McGrady,4,7:01,NOK,shot,Devin Brown,,,,,,,,,Jannero Pargo,3,,,made,,3pt,14,30
+Chris Paul,David West,Devin Brown,Jannero Pargo,Tyson Chandler,Bonzi Wells,John Lucas,Scott Padgett,Shane Battier,Tracy McGrady,4,6:35,HOU,shot,Scott Padgett,,,,,,,,,Bonzi Wells,2,,,made,,dunk,25,6
+Chris Paul,David West,Devin Brown,Jannero Pargo,Tyson Chandler,Bonzi Wells,John Lucas,Scott Padgett,Shane Battier,Tracy McGrady,4,6:08,HOU,turnover,,,,,,,,,,,,,shot clock turnover,,,,,
+Chris Paul,David West,Devin Brown,Jannero Pargo,Tyson Chandler,Bonzi Wells,John Lucas,Scott Padgett,Shane Battier,Tracy McGrady,4,6:01,NOK,foul,,,,,,,,Tracy McGrady,,Devin Brown,,,,,,personal,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,John Lucas,Scott Padgett,Shane Battier,Tracy McGrady,4,6:01,NOK,sub,,,,Rasual Butler,,Jannero Pargo,,,,,,,,,,,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,John Lucas,Scott Padgett,Shane Battier,Tracy McGrady,4,5:52,HOU,shot,,,,,,,,,,John Lucas,,,,missed,,jump,30,9
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,John Lucas,Scott Padgett,Shane Battier,Tracy McGrady,4,5:49,NOK,rebound,,,,,,,,,,Rasual Butler,,,,,,def,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,John Lucas,Scott Padgett,Shane Battier,Tracy McGrady,4,5:49,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Luther Head,Scott Padgett,Shane Battier,Tracy McGrady,4,5:49,HOU,sub,,,,Luther Head,,John Lucas,,,,,,,,,,,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Luther Head,Scott Padgett,Shane Battier,Tracy McGrady,4,5:28,NOK,shot,,,,,,,,,,Chris Paul,,,,missed,,jump,39,18
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Luther Head,Scott Padgett,Shane Battier,Tracy McGrady,4,5:27,HOU,rebound,,,,,,,,,,,,,,,,,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Luther Head,Scott Padgett,Shane Battier,Tracy McGrady,4,5:05,NOK,shot,,,,,,,,,,Devin Brown,,,,missed,,fade away jumper,40,23
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Luther Head,Scott Padgett,Shane Battier,Tracy McGrady,4,5:04,HOU,rebound,,,,,,,,,,,,,,,,,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Luther Head,Scott Padgett,Shane Battier,Tracy McGrady,4,4:54,HOU,shot,Tracy McGrady,,,,,,,,,Bonzi Wells,2,,,made,,jump,24,11
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Luther Head,Scott Padgett,Shane Battier,Tracy McGrady,4,4:54,NOK,foul,,,,,,,,Bonzi Wells,,Tyson Chandler,,,,,,shooting,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Luther Head,Scott Padgett,Shane Battier,Tracy McGrady,4,4:54,HOU,free throw,,,,,,,1,,1,Bonzi Wells,,,foul,missed,,,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Luther Head,Scott Padgett,Shane Battier,Tracy McGrady,4,4:54,NOK,rebound,,,,,,,,,,David West,,,,,,def,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Luther Head,Scott Padgett,Shane Battier,Tracy McGrady,4,4:44,NOK,turnover,,,,,,,,,,Devin Brown,,,bad pass,,,,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Luther Head,Scott Padgett,Shane Battier,Tracy McGrady,4,4:30,HOU,turnover,,,,,,,,,,Scott Padgett,,,bad pass,,Chris Paul,,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Luther Head,Scott Padgett,Shane Battier,Tracy McGrady,4,4:28,HOU,foul,,,,,,,,Chris Paul,,Tracy McGrady,,,,,,shooting,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Luther Head,Scott Padgett,Shane Battier,Tracy McGrady,4,4:28,NOK,free throw,,,,,,,1,,2,Chris Paul,,,foul,made,,,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Luther Head,Scott Padgett,Shane Battier,Tracy McGrady,4,4:28,NOK,free throw,,,,,,,2,,2,Chris Paul,,,foul,made,,,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Luther Head,Scott Padgett,Shane Battier,Tracy McGrady,4,4:14,HOU,shot,Tracy McGrady,,,,,,,,,Bonzi Wells,2,,,made,,layup,25,6
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Luther Head,Scott Padgett,Shane Battier,Tracy McGrady,4,3:49,NOK,shot,David West,,,,,,,,,Devin Brown,3,,,made,,3pt,43,22
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Luther Head,Scott Padgett,Shane Battier,Tracy McGrady,4,3:29,HOU,shot,,,,,,,,,,Bonzi Wells,,,,missed,,driving layup,25,6
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Luther Head,Scott Padgett,Shane Battier,Tracy McGrady,4,3:27,NOK,rebound,,,,,,,,,,Rasual Butler,,,,,,def,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Luther Head,Scott Padgett,Shane Battier,Tracy McGrady,4,3:17,HOU,foul,,,,,,,,Chris Paul,,Luther Head,,,,,,personal,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Luther Head,Scott Padgett,Shane Battier,Tracy McGrady,4,3:03,NOK,shot,,,,,,,,,,Devin Brown,3,,,made,,3pt,34,28
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,Luther Head,Scott Padgett,Shane Battier,Tracy McGrady,4,3:01,HOU,timeout,,,,,,,,,,,,,,,,regular,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,John Lucas,Luther Head,Scott Padgett,Tracy McGrady,4,3:01,HOU,sub,,,,John Lucas,,Shane Battier,,,,,,,,,,,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,Bonzi Wells,John Lucas,Luther Head,Scott Padgett,Steve Novak,4,3:01,HOU,sub,,,,Steve Novak,,Tracy McGrady,,,,,,,,,,,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,3:01,HOU,sub,,,,Vassilis Spanoulis,,Bonzi Wells,,,,,,,,,,,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,2:50,HOU,shot,John Lucas,,,,,,,,,Luther Head,3,,,made,,3pt,48,7
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,2:27,NOK,shot,,,,,,,,,,Tyson Chandler,,,,missed,,jump,20,9
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,2:26,HOU,rebound,,,,,,,,,,Scott Padgett,,,,,,def,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,2:13,HOU,shot,,,,,,,,,,Scott Padgett,,,,missed,,layup,25,6
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,2:11,NOK,rebound,,,,,,,,,,David West,,,,,,def,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,2:07,HOU,foul,,,,,,,,Chris Paul,,Vassilis Spanoulis,,,,,,personal,,
+Chris Paul,David West,Devin Brown,Rasual Butler,Tyson Chandler,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,2:07,NOK,free throw,,,,,,,1,,2,Chris Paul,,,foul,made,,,,
+Chris Paul,Devin Brown,Linton Johnson,Rasual Butler,Tyson Chandler,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,2:07,NOK,sub,,,,Linton Johnson,,David West,,,,,,,,,,,,
+Chris Paul,Devin Brown,Linton Johnson,Rasual Butler,Tyson Chandler,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,2:07,NOK,free throw,,,,,,,2,,2,Chris Paul,,,foul,missed,,,,
+Chris Paul,Devin Brown,Linton Johnson,Rasual Butler,Tyson Chandler,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,2:07,HOU,rebound,,,,,,,,,,Scott Padgett,,,,,,def,,
+Chris Paul,Devin Brown,Linton Johnson,Rasual Butler,Tyson Chandler,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,1:48,HOU,shot,Luther Head,,,,,,,,,Steve Novak,3,,,made,,3pt,7,24
+Chris Paul,Devin Brown,Linton Johnson,Rasual Butler,Tyson Chandler,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,1:48,HOU,timeout,,,,,,,,,,,,,,,,short,,
+Chris Paul,Devin Brown,Linton Johnson,Rasual Butler,Tyson Chandler,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,1:44,NOK,shot,Chris Paul,,,,,,,,,Tyson Chandler,2,,,made,,alley oop dunk,25,6
+Chris Paul,Devin Brown,Linton Johnson,Rasual Butler,Tyson Chandler,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,1:36,HOU,shot,,,,,,,,,,Luther Head,,,,missed,,jump,33,26
+Chris Paul,Devin Brown,Linton Johnson,Rasual Butler,Tyson Chandler,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,1:35,NOK,rebound,,,,,,,,,,Chris Paul,,,,,,def,,
+Chris Paul,Devin Brown,Linton Johnson,Rasual Butler,Tyson Chandler,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,1:15,NOK,shot,Chris Paul,,,,,,,,,Devin Brown,3,,,made,,3pt,13,28
+Chris Paul,Devin Brown,Linton Johnson,Rasual Butler,Tyson Chandler,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,1:08,NOK,foul,,,,,,,,Vassilis Spanoulis,,Chris Paul,,,,,,personal,,
+Devin Brown,Jannero Pargo,Linton Johnson,Rasual Butler,Tyson Chandler,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,1:08,NOK,sub,,,,Jannero Pargo,,Chris Paul,,,,,,,,,,,,
+Devin Brown,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,1:08,NOK,sub,,,,Hilton Armstrong,,Tyson Chandler,,,,,,,,,,,,
+Devin Brown,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,1:08,HOU,free throw,,,,,,,1,,2,Vassilis Spanoulis,,,foul,made,,,,
+Devin Brown,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,1:08,HOU,free throw,,,,,,,2,,2,Vassilis Spanoulis,,,foul,made,,,,
+Devin Brown,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,0:50,NOK,turnover,,,,,,,,,,Hilton Armstrong,,,traveling,,,,,
+Devin Brown,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,0:35,HOU,shot,John Lucas,,,,,,,,,Luther Head,2,,,made,,reverse layup,25,6
+Devin Brown,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,0:25,NOK,turnover,,,,,,,,,,Jannero Pargo,,,lost ball,,Scott Padgett,,,
+Devin Brown,Hilton Armstrong,Jannero Pargo,Linton Johnson,Rasual Butler,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,0:23,HOU,shot,,,,,,,,,,Scott Padgett,2,,,made,,dunk,25,6

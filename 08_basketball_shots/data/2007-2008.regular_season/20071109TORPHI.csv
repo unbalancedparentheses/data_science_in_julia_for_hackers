@@ -1,0 +1,461 @@
+a1,a2,a3,a4,a5,h1,h2,h3,h4,h5,period,time,team,etype,assist,away,block,entered,home,left,num,opponent,outof,player,points,possession,reason,result,steal,type,x,y
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,1,12:00,OFF,jump ball,,Chris Bosh,,,Samuel Dalembert,,,,,,,Andre Iguodala,,,,,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,1,11:38,PHI,shot,,,,,,,,,,Willie Green,,,,missed,,jump,7,11
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,1,11:36,TOR,rebound,,,,,,,,,,Jason Kapono,,,,,,def,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,1,11:21,TOR,shot,,,Samuel Dalembert,,,,,,,Chris Bosh,,,,missed,,hook,24,9
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,1,11:19,PHI,rebound,,,,,,,,,,Reggie Evans,,,,,,def,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,1,11:11,PHI,shot,,,,,,,,,,Reggie Evans,,,,missed,,jump,42,14
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,1,11:10,TOR,rebound,,,,,,,,,,Rasho Nesterovic,,,,,,def,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,1,10:59,TOR,shot,,,,,,,,,,Jason Kapono,,,,missed,,jump,37,18
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,1,10:57,PHI,rebound,,,,,,,,,,Reggie Evans,,,,,,def,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,1,10:54,TOR,foul,,,,,,,,Reggie Evans,,Chris Bosh,,,,,,personal,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,1,10:32,PHI,shot,,,,,,,,,,Willie Green,,,,missed,,jump,41,6
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,1,10:31,PHI,rebound,,,,,,,,,,Andre Miller,,,,,,off,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,1,10:12,PHI,shot,,,,,,,,,,Samuel Dalembert,,,,missed,,jump,41,6
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,1,10:11,TOR,rebound,,,,,,,,,,Anthony Parker,,,,,,def,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,1,10:11,PHI,foul,,,,,,,,Chris Bosh,,Samuel Dalembert,,,,,,shooting,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,1,10:11,TOR,free throw,,,,,,,1,,2,Chris Bosh,,,foul,made,,,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,1,10:11,TOR,free throw,,,,,,,2,,2,Chris Bosh,,,foul,made,,,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,1,9:49,PHI,shot,Andre Iguodala,,,,,,,,,Andre Miller,2,,,made,,jump,44,12
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,1,9:27,TOR,turnover,,,,,,,,,,Rasho Nesterovic,,,traveling,,,,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,1,9:14,PHI,shot,,,,,,,,,,Reggie Evans,,,,missed,,jump,22,7
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,1,9:13,TOR,rebound,,,,,,,,,,Rasho Nesterovic,,,,,,def,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,1,8:55,TOR,shot,,,,,,,,,,T.J. Ford,,,,missed,,jump,16,20
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,1,8:54,PHI,rebound,,,,,,,,,,Samuel Dalembert,,,,,,def,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,1,8:43,PHI,shot,Andre Miller,,,,,,,,,Andre Iguodala,3,,,made,,3pt,2,6
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,1,8:25,TOR,shot,,,,,,,,,,Rasho Nesterovic,,,,missed,,jump,10,5
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,1,8:24,PHI,rebound,,,,,,,,,,Samuel Dalembert,,,,,,def,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,1,8:15,PHI,shot,,,,,,,,,,Andre Miller,,,,missed,,jump,25,14
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,1,8:13,TOR,rebound,,,,,,,,,,,,,,,,,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,1,8:00,PHI,foul,,,,,,,,Chris Bosh,,Samuel Dalembert,,,,,,shooting,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,1,8:00,TOR,free throw,,,,,,,1,,2,Chris Bosh,,,foul,made,,,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,8:00,PHI,sub,,,,Calvin Booth,,Samuel Dalembert,,,,,,,,,,,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,8:00,TOR,free throw,,,,,,,2,,2,Chris Bosh,,,foul,made,,,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,7:35,PHI,shot,,,,,,,,,,Andre Miller,,,,missed,,jump,35,3
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,7:34,TOR,rebound,,,,,,,,,,Rasho Nesterovic,,,,,,def,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,7:27,TOR,shot,,,Calvin Booth,,,,,,,Anthony Parker,,,,missed,,jump,25,13
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,7:25,PHI,rebound,,,,,,,,,,Reggie Evans,,,,,,def,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,7:22,PHI,shot,Andre Iguodala,,,,,,,,,Willie Green,2,,,made,,driving layup,25,6
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,7:14,TOR,shot,Anthony Parker,,,,,,,,,Jason Kapono,2,,,made,,reverse layup,25,6
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,7:14,PHI,foul,,,,,,,,Jason Kapono,,Willie Green,,,,,,shooting,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,7:14,TOR,free throw,,,,,,,1,,1,Jason Kapono,,,foul,made,,,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,7:01,TOR,foul,,,,,,,,Willie Green,,T.J. Ford,,,,,,personal,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,7:01,PHI,shot,,,,,,,,,,Andre Iguodala,,,,missed,,3pt,14,28
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,7:00,TOR,rebound,,,,,,,,,,Jason Kapono,,,,,,def,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,6:54,TOR,shot,,,,,,,,,,Chris Bosh,,,,missed,,layup,25,6
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,6:52,TOR,shot,,,,,,,,,,Rasho Nesterovic,,,,missed,,layup,25,6
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,6:52,TOR,rebound,,,,,,,,,,Rasho Nesterovic,,,,,,off,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,6:51,TOR,rebound,,,,,,,,,,Rasho Nesterovic,,,,,,off,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,6:48,TOR,shot,,,,,,,,,,Jason Kapono,,,,missed,,3pt,6,23
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,6:47,TOR,rebound,,,,,,,,,,Rasho Nesterovic,,,,,,off,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,6:44,TOR,shot,Jason Kapono,,,,,,,,,Anthony Parker,3,,,made,,3pt,44,22
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,6:16,PHI,timeout,,,,,,,,,,,,,,,,regular,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,6:06,PHI,shot,,,,,,,,,,Willie Green,,,,missed,,3pt,44,23
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,6:06,TOR,rebound,,,,,,,,,,Rasho Nesterovic,,,,,,def,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,6:00,TOR,shot,,,,,,,,,,Anthony Parker,,,,missed,,layup,25,6
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,6:00,PHI,rebound,,,,,,,,,,Calvin Booth,,,,,,def,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,5:52,PHI,shot,Andre Miller,,,,,,,,,Reggie Evans,2,,,made,,layup,25,6
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,5:52,PHI,free throw,,,,,,,1,,1,Reggie Evans,,,foul,made,,,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,5:52,TOR,foul,,,,,,,,Reggie Evans,,Anthony Parker,,,,,,shooting,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,5:36,PHI,foul,,,,,,,,Chris Bosh,,Calvin Booth,,,,,,shooting,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,5:36,TOR,free throw,,,,,,,1,,2,Chris Bosh,,,foul,made,,,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,5:36,TOR,free throw,,,,,,,2,,2,Chris Bosh,,,foul,made,,,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,5:14,PHI,shot,,,,,,,,,,Andre Miller,,,,missed,,jump,19,21
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,5:13,TOR,rebound,,,,,,,,,,Chris Bosh,,,,,,def,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,4:59,TOR,shot,,,,,,,,,,T.J. Ford,2,,,made,,fade away jumper,12,3
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,4:43,TOR,foul,,,,,,,,Calvin Booth,,Rasho Nesterovic,,,,,,shooting,,
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,4:43,TOR,sub,,,,Andrea Bargnani,,Rasho Nesterovic,,,,,,,,,,,,
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,4:43,PHI,free throw,,,,,,,1,,2,Calvin Booth,,,foul,missed,,,,
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,4:43,PHI,rebound,,,,,,,,,,,,,,,,,,
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,4:43,PHI,free throw,,,,,,,2,,2,Calvin Booth,,,foul,made,,,,
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,4:23,TOR,shot,,,,,,,,,,Anthony Parker,,,,missed,,3pt,24,32
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,4:19,PHI,rebound,,,,,,,,,,Reggie Evans,,,,,,def,,
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,4:10,PHI,shot,Andre Iguodala,,,,,,,,,Reggie Evans,2,,,made,,layup,25,6
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,3:55,TOR,shot,Chris Bosh,,,,,,,,,Anthony Parker,2,,,made,,jump,25,23
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,3:35,PHI,shot,,,,,,,,,,Calvin Booth,,,,missed,,jump,24,22
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,3:34,TOR,rebound,,,,,,,,,,Chris Bosh,,,,,,def,,
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,3:19,TOR,shot,,,,,,,,,,T.J. Ford,,,,missed,,3pt,40,27
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,3:17,PHI,rebound,,,,,,,,,,Andre Iguodala,,,,,,def,,
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Reggie Evans,Willie Green,1,3:11,PHI,turnover,,,,,,,,,,Andre Iguodala,,,out of bounds lost ball turnover,,,,,
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,1,3:11,PHI,sub,,,,Kyle Korver,,Calvin Booth,,,,,,,,,,,,
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,1,2:56,TOR,timeout,,,,,,,,,,,,,,,,regular,,
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,1,2:34,PHI,shot,,,,,,,,,,Willie Green,2,,,made,,jump,18,12
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,1,2:22,TOR,shot,,,,,,,,,,T.J. Ford,2,,,made,,jump,12,5
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,1,2:01,PHI,shot,,,,,,,,,,Andre Iguodala,,,,missed,,3pt,1,8
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,1,1:58,PHI,rebound,,,,,,,,,,Reggie Evans,,,,,,off,,
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,1,1:51,PHI,shot,Reggie Evans,,,,,,,,,Kyle Korver,2,,,made,,jump,7,4
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,1,1:30,TOR,shot,T.J. Ford,,,,,,,,,Anthony Parker,3,,,made,,3pt,1,4
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,1,1:12,PHI,shot,Andre Miller,,,,,,,,,Andre Iguodala,2,,,made,,dunk,25,6
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,1,0:53,TOR,foul,,,,,,,,Andre Iguodala,,Andrea Bargnani,,,,,,offensive,,
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,1,0:53,TOR,turnover,,,,,,,,,,Andrea Bargnani,,,foul,,,,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,1,0:53,TOR,sub,,,,Carlos Delfino,,Jason Kapono,,,,,,,,,,,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Rodney Carney,1,0:53,PHI,sub,,,,Rodney Carney,,Willie Green,,,,,,,,,,,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Rodney Carney,1,0:37,PHI,shot,,,,,,,,,,Rodney Carney,,,,missed,,jump,44,7
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Rodney Carney,1,0:35,TOR,rebound,,,,,,,,,,Chris Bosh,,,,,,def,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Rodney Carney,1,0:19,TOR,shot,Andrea Bargnani,,,,,,,,,T.J. Ford,3,,,made,,3pt,27,32
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Rodney Carney,1,0:02,PHI,shot,,,,,,,,,,Kyle Korver,,,,missed,,jump,38,21
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Rodney Carney,1,0:00,TOR,rebound,,,,,,,,,,Carlos Delfino,,,,,,def,,
+Andrea Bargnani,Carlos Delfino,Chris Bosh,Jose Calderon,Juan Dixon,Andre Iguodala,Kyle Korver,Louis Williams,Reggie Evans,Rodney Carney,2,11:43,TOR,shot,,,,,,,,,,Andrea Bargnani,,,,missed,,3pt,29,30
+Andrea Bargnani,Carlos Delfino,Chris Bosh,Jose Calderon,Juan Dixon,Andre Iguodala,Kyle Korver,Louis Williams,Reggie Evans,Rodney Carney,2,11:41,TOR,rebound,,,,,,,,,,Carlos Delfino,,,,,,off,,
+Andrea Bargnani,Carlos Delfino,Chris Bosh,Jose Calderon,Juan Dixon,Andre Iguodala,Kyle Korver,Louis Williams,Reggie Evans,Rodney Carney,2,11:35,TOR,turnover,,,,,,,,,,Chris Bosh,,,traveling,,,,,
+Andrea Bargnani,Carlos Delfino,Chris Bosh,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,11:35,PHI,sub,,,,Jason Smith,,Reggie Evans,,,,,,,,,,,,
+Andrea Bargnani,Carlos Delfino,Chris Bosh,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,11:20,PHI,shot,,,,,,,,,,Andre Iguodala,2,,,made,,jump,23,26
+Andrea Bargnani,Carlos Delfino,Chris Bosh,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,11:13,TOR,turnover,,,,,,,,,,Jose Calderon,,,out of bounds lost ball turnover,,,,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,11:13,TOR,sub,,,,Jamario Moon,,Chris Bosh,,,,,,,,,,,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,10:56,PHI,shot,,,,,,,,,,Rodney Carney,,,,missed,,3pt,48,6
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,10:54,TOR,rebound,,,,,,,,,,Carlos Delfino,,,,,,def,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,10:50,TOR,turnover,,,,,,,,,,Juan Dixon,,,traveling,,,,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,10:37,PHI,shot,Louis Williams,,,,,,,,,Rodney Carney,2,,,made,,driving layup,25,6
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,10:24,TOR,shot,,,,,,,,,,Jose Calderon,,,,missed,,jump,41,22
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,10:23,TOR,rebound,,,,,,,,,,Carlos Delfino,,,,,,off,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,10:21,TOR,shot,Carlos Delfino,,,,,,,,,Andrea Bargnani,2,,,made,,jump,40,6
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,10:00,PHI,shot,Jason Smith,,,,,,,,,Kyle Korver,2,,,made,,layup,25,6
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,9:40,TOR,shot,,,,,,,,,,Andrea Bargnani,,,,missed,,jump,26,29
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,9:39,PHI,rebound,,,,,,,,,,Andre Iguodala,,,,,,def,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,9:34,PHI,shot,,,,,,,,,,Andre Iguodala,,,,missed,,jump,21,26
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,9:31,TOR,rebound,,,,,,,,,,Andrea Bargnani,,,,,,def,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,9:13,TOR,turnover,,,,,,,,,,Juan Dixon,,,lost ball,,Rodney Carney,,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,9:11,TOR,foul,,,,,,,,Rodney Carney,,Carlos Delfino,,,,,,shooting,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,9:11,PHI,free throw,,,,,,,1,,2,Rodney Carney,,,foul,made,,,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,9:11,PHI,free throw,,,,,,,2,,2,Rodney Carney,,,foul,made,,,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,8:53,TOR,shot,,,,,,,,,,Carlos Delfino,,,,missed,,3pt,15,31
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,8:51,PHI,rebound,,,,,,,,,,Andre Iguodala,,,,,,def,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,8:30,PHI,shot,,,,,,,,,,Louis Williams,,,,missed,,jump,44,10
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,8:28,TOR,rebound,,,,,,,,,,Jamario Moon,,,,,,def,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,8:15,TOR,turnover,,,,,,,,,,Andrea Bargnani,,,bad pass,,Andre Iguodala,,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,8:11,PHI,shot,,,,,,,,,,Rodney Carney,,,,missed,,layup,25,6
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,8:09,PHI,shot,,,,,,,,,,Andre Iguodala,2,,,made,,putback dunk,25,6
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,8:09,PHI,rebound,,,,,,,,,,Andre Iguodala,,,,,,off,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,8:03,PHI,violation,,,,,,,,,,,,,,,,delay of game,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,7:49,TOR,shot,Carlos Delfino,,,,,,,,,Jose Calderon,2,,,made,,jump,24,27
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,7:36,PHI,shot,,,,,,,,,,Louis Williams,,,,missed,,jump,24,26
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,7:27,PHI,rebound,,,,,,,,,,Kyle Korver,,,,,,off,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,7:25,PHI,turnover,,,,,,,,,,Jason Smith,,,bad pass,,Carlos Delfino,,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,7:23,TOR,turnover,,,,,,,,,,Juan Dixon,,,bad pass,,Louis Williams,,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,7:17,PHI,shot,,,,,,,,,,Andre Iguodala,,,,missed,,layup,25,6
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,7:16,PHI,shot,,,,,,,,,,Jason Smith,2,,,made,,tip,25,6
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,7:16,PHI,rebound,,,,,,,,,,Jason Smith,,,,,,off,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,6:58,TOR,shot,,,,,,,,,,Jamario Moon,,,,missed,,jump,13,9
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,6:57,PHI,rebound,,,,,,,,,,Rodney Carney,,,,,,def,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,6:57,PHI,turnover,,,,,,,,,,Rodney Carney,,,out of bounds lost ball turnover,,,,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,2,6:57,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,Willie Green,2,6:57,PHI,sub,,,,Willie Green,,Andre Iguodala,,,,,,,,,,,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Jamario Moon,Jose Calderon,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,Willie Green,2,6:57,TOR,sub,,,,Anthony Parker,,Juan Dixon,,,,,,,,,,,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Jamario Moon,Jose Calderon,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,Willie Green,2,6:47,TOR,shot,Jose Calderon,,,,,,,,,Carlos Delfino,3,,,made,,3pt,48,5
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Jamario Moon,Jose Calderon,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,Willie Green,2,6:32,PHI,shot,,,,,,,,,,Kyle Korver,,,,missed,,3pt,33,30
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Jamario Moon,Jose Calderon,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,Willie Green,2,6:30,TOR,rebound,,,,,,,,,,Anthony Parker,,,,,,def,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Jamario Moon,Jose Calderon,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,Willie Green,2,6:24,TOR,shot,Jose Calderon,,,,,,,,,Carlos Delfino,3,,,made,,3pt,7,23
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Jamario Moon,Jose Calderon,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,Willie Green,2,6:02,TOR,foul,,,,,,,,Louis Williams,,Andrea Bargnani,,,,,,personal,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Jamario Moon,Jose Calderon,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,Willie Green,2,6:02,PHI,timeout,,,,,,,,,,,,,,,,regular,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Jamario Moon,Jose Calderon,Andre Miller,Jason Smith,Kyle Korver,Rodney Carney,Willie Green,2,6:02,PHI,sub,,,,Andre Miller,,Louis Williams,,,,,,,,,,,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Jamario Moon,Jose Calderon,Andre Miller,Jason Smith,Kyle Korver,Rodney Carney,Willie Green,2,5:56,PHI,shot,Andre Miller,,,,,,,,,Kyle Korver,3,,,made,,3pt,48,18
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Jamario Moon,Jose Calderon,Andre Miller,Jason Smith,Kyle Korver,Rodney Carney,Willie Green,2,5:43,TOR,shot,Jose Calderon,,,,,,,,,Andrea Bargnani,3,,,made,,3pt,26,31
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Jamario Moon,Jose Calderon,Andre Miller,Jason Smith,Kyle Korver,Rodney Carney,Willie Green,2,5:17,PHI,shot,,,,,,,,,,Kyle Korver,,,,missed,,3pt,24,31
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Jamario Moon,Jose Calderon,Andre Miller,Jason Smith,Kyle Korver,Rodney Carney,Willie Green,2,5:15,TOR,rebound,,,,,,,,,,Carlos Delfino,,,,,,def,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Jamario Moon,Jose Calderon,Andre Iguodala,Andre Miller,Jason Smith,Kyle Korver,Willie Green,2,5:01,PHI,sub,,,,Andre Iguodala,,Rodney Carney,,,,,,,,,,,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Jamario Moon,Jose Calderon,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,2,5:01,PHI,sub,,,,Reggie Evans,,Jason Smith,,,,,,,,,,,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Jamario Moon,Jose Calderon,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,2,4:50,TOR,shot,,,,,,,,,,Anthony Parker,,,,missed,,jump,8,19
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Jamario Moon,Jose Calderon,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,2,4:48,PHI,rebound,,,,,,,,,,Reggie Evans,,,,,,def,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,Jose Calderon,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,2,4:43,TOR,sub,,,,Chris Bosh,,Andrea Bargnani,,,,,,,,,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,Jose Calderon,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,2,4:40,PHI,turnover,,,,,,,,,,Kyle Korver,,,bad pass,,Jose Calderon,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,Jose Calderon,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,2,4:36,TOR,shot,Jose Calderon,,,,,,,,,Jamario Moon,2,,,made,,driving slam dunk,25,6
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,Jose Calderon,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,2,4:10,PHI,turnover,,,,,,,,,,Willie Green,,,bad pass,,Jamario Moon,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,Jose Calderon,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,2,4:01,TOR,shot,Jose Calderon,,,,,,,,,Jamario Moon,2,,,made,,reverse layup,25,6
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,Jose Calderon,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,2,3:39,PHI,shot,,,,,,,,,,Willie Green,,,,missed,,jump,35,22
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,Jose Calderon,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,2,3:37,TOR,rebound,,,,,,,,,,Chris Bosh,,,,,,def,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,2,3:27,TOR,sub,,,,T.J. Ford,,Jose Calderon,,,,,,,,,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,2,3:14,TOR,shot,,,,,,,,,,Jamario Moon,,,,missed,,jump,24,27
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,2,3:12,PHI,rebound,,,,,,,,,,Willie Green,,,,,,def,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,2,3:03,PHI,shot,,,,,,,,,,Kyle Korver,,,,missed,,3pt,24,32
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,2,3:03,TOR,rebound,,,,,,,,,,,,,,,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,2,3:00,TOR,shot,,,,,,,,,,Andrea Bargnani,,,,missed,,layup,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,2,2:57,PHI,rebound,,,,,,,,,,,,,,,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,2,2:55,TOR,turnover,,,,,,,,,,T.J. Ford,,,bad pass,,Kyle Korver,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,2,2:48,PHI,shot,,,,,,,,,,Kyle Korver,,,,missed,,3pt,11,26
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,2,2:46,TOR,rebound,,,,,,,,,,Anthony Parker,,,,,,def,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,2,2:40,TOR,timeout,,,,,,,,,,,,,,,,regular,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Rodney Carney,Willie Green,2,2:40,PHI,sub,,,,Rodney Carney,,Kyle Korver,,,,,,,,,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Rodney Carney,Willie Green,2,2:33,TOR,shot,T.J. Ford,,,,,,,,,Chris Bosh,2,,,made,,slam dunk,25,6
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Rodney Carney,Willie Green,2,2:18,TOR,foul,,,,,,,,Andre Iguodala,,Jamario Moon,,,,,,personal,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Rodney Carney,Willie Green,2,2:05,PHI,shot,,,,,,,,,,Andre Iguodala,,,,missed,,jump,13,11
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Rodney Carney,Willie Green,2,2:03,PHI,rebound,,,,,,,,,,Reggie Evans,,,,,,off,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Rodney Carney,Willie Green,2,1:59,PHI,turnover,,,,,,,,,,Andre Miller,,,bad pass,,Jamario Moon,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Rodney Carney,Willie Green,2,1:54,TOR,turnover,,,,,,,,,,Carlos Delfino,,,lost ball,,Willie Green,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Rodney Carney,Willie Green,2,1:49,PHI,shot,,,,,,,,,,Willie Green,2,,,made,,driving layup,25,6
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Rodney Carney,Willie Green,2,1:28,TOR,shot,,,,,,,,,,Anthony Parker,,,,missed,,3pt,49,7
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Rodney Carney,Willie Green,2,1:27,PHI,rebound,,,,,,,,,,Reggie Evans,,,,,,def,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Rodney Carney,Willie Green,2,1:20,PHI,shot,,,,,,,,,,Willie Green,2,,,made,,running jump,24,10
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Rodney Carney,Willie Green,2,1:01,PHI,foul,,,,,,,,Anthony Parker,,Reggie Evans,,,,,,shooting,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Rodney Carney,Willie Green,2,1:01,TOR,free throw,,,,,,,1,,2,Anthony Parker,,,foul,made,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Rodney Carney,Willie Green,2,1:01,TOR,sub,,,,Jason Kapono,,Jamario Moon,,,,,,,,,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Rodney Carney,Willie Green,2,1:01,TOR,free throw,,,,,,,2,,2,Anthony Parker,,,foul,made,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,2,1:01,PHI,sub,,,,Kyle Korver,,Rodney Carney,,,,,,,,,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,2,0:45,PHI,turnover,,,,,,,,,,Reggie Evans,,,lost ball,,Carlos Delfino,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,2,0:45,TOR,shot,,,,,,,,,,Carlos Delfino,,,,missed,,3pt,36,32
+Anthony Parker,Carlos Delfino,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,2,0:44,PHI,rebound,,,,,,,,,,Kyle Korver,,,,,,def,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,2,0:24,PHI,shot,,,,,,,,,,Andre Miller,,,,missed,,layup,25,6
+Anthony Parker,Carlos Delfino,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,2,0:23,PHI,rebound,,,,,,,,,,Andre Miller,,,,,,off,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,2,0:23,TOR,foul,,,,,,,,Andre Miller,,Chris Bosh,,,,,,shooting,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,2,0:23,PHI,free throw,,,,,,,1,,2,Andre Miller,,,foul,missed,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,2,0:23,PHI,rebound,,,,,,,,,,,,,,,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,2,0:23,PHI,free throw,,,,,,,2,,2,Andre Miller,,,foul,made,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,2,0:02,PHI,foul,,,,,,,,T.J. Ford,,Andre Miller,,,,,,personal,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,2,0:02,TOR,free throw,,,,,,,1,,2,T.J. Ford,,,foul,made,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,2,0:02,TOR,free throw,,,,,,,2,,2,T.J. Ford,,,foul,made,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Reggie Evans,Willie Green,2,0:02,PHI,timeout,,,,,,,,,,,,,,,,short,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Samuel Dalembert,Willie Green,2,0:02,PHI,sub,,,,Samuel Dalembert,,Reggie Evans,,,,,,,,,,,,
+Anthony Parker,Carlos Delfino,Jamario Moon,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Samuel Dalembert,Willie Green,2,0:02,TOR,sub,,,,Jamario Moon,,Chris Bosh,,,,,,,,,,,,
+Anthony Parker,Carlos Delfino,Jamario Moon,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Samuel Dalembert,Willie Green,2,0:01,PHI,shot,,,,,,,,,,Willie Green,,,,missed,,3pt,13,28
+Anthony Parker,Carlos Delfino,Jamario Moon,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Samuel Dalembert,Willie Green,2,0:00,PHI,rebound,,,,,,,,,,,,,,,,,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,3,11:47,TOR,turnover,,,,,,,,,,Chris Bosh,,,traveling,,,,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,3,11:33,PHI,turnover,,,,,,,,,,Andre Iguodala,,,palming turnover,,,,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,3,11:11,TOR,shot,,,,,,,,,,Rasho Nesterovic,,,,missed,,hook,24,8
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,3,11:09,PHI,rebound,,,,,,,,,,Reggie Evans,,,,,,def,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,3,10:59,PHI,shot,,,,,,,,,,Andre Miller,2,,,made,,jump,10,11
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,3,10:47,TOR,shot,Chris Bosh,,,,,,,,,Anthony Parker,2,,,made,,layup,25,6
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,3,10:31,PHI,shot,Andre Miller,,,,,,,,,Andre Iguodala,2,,,made,,jump,25,18
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,3,10:13,TOR,shot,T.J. Ford,,,,,,,,,Jason Kapono,2,,,made,,jump,10,7
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,3,9:54,PHI,shot,,,,,,,,,,Samuel Dalembert,,,,missed,,jump,23,21
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,3,9:53,TOR,rebound,,,,,,,,,,Rasho Nesterovic,,,,,,def,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,3,9:38,TOR,shot,Rasho Nesterovic,,,,,,,,,Anthony Parker,2,,,made,,fade away jumper,9,6
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,3,9:19,PHI,shot,,,,,,,,,,Andre Iguodala,,,,missed,,jump,9,6
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,3,9:18,TOR,rebound,,,,,,,,,,Chris Bosh,,,,,,def,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,3,9:07,TOR,shot,,,,,,,,,,Chris Bosh,,,,missed,,jump,26,23
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,3,9:06,PHI,rebound,,,,,,,,,,Reggie Evans,,,,,,def,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,3,8:58,PHI,shot,,,,,,,,,,Andre Miller,2,,,made,,driving finger roll layup,25,6
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,3,8:46,PHI,foul,,,,,,,,Jason Kapono,,Reggie Evans,,,,,,shooting,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,3,8:46,TOR,free throw,,,,,,,1,,2,Jason Kapono,,,foul,made,,,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,3,8:46,TOR,free throw,,,,,,,2,,2,Jason Kapono,,,foul,made,,,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,3,8:33,PHI,shot,,,,,,,,,,Andre Iguodala,2,,,made,,jump,8,5
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,3,8:33,TOR,foul,,,,,,,,Andre Iguodala,,Jason Kapono,,,,,,shooting,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,3,8:33,PHI,free throw,,,,,,,1,,1,Andre Iguodala,,,foul,made,,,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,3,8:25,PHI,foul,,,,,,,,Chris Bosh,,Reggie Evans,,,,,,shooting,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,3,8:25,TOR,free throw,,,,,,,1,,2,Chris Bosh,,,foul,made,,,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,3,8:25,TOR,free throw,,,,,,,2,,2,Chris Bosh,,,foul,made,,,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,3,8:10,PHI,shot,Willie Green,,,,,,,,,Andre Miller,2,,,made,,jump,24,21
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,3,8:03,TOR,shot,,,,,,,,,,Jason Kapono,,,,missed,,jump,35,19
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,3,8:02,PHI,rebound,,,,,,,,,,Reggie Evans,,,,,,def,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,3,7:55,PHI,shot,,,,,,,,,,Andre Miller,,,,missed,,jump,35,19
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,3,7:51,PHI,shot,,,,,,,,,,Reggie Evans,2,,,made,,layup,25,6
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,3,7:51,PHI,rebound,,,,,,,,,,Reggie Evans,,,,,,off,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,3,7:35,TOR,shot,,,,,,,,,,T.J. Ford,,,,missed,,jump,15,22
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,3,7:35,TOR,rebound,,,,,,,,,,,,,,,,,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Reggie Evans,Samuel Dalembert,Willie Green,3,7:35,PHI,foul,,,,,,,,T.J. Ford,,Reggie Evans,,,,,,loose ball,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Jason Smith,Samuel Dalembert,Willie Green,3,7:35,PHI,sub,,,,Jason Smith,,Reggie Evans,,,,,,,,,,,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Jason Smith,Samuel Dalembert,Willie Green,3,7:29,TOR,shot,,,,,,,,,,Rasho Nesterovic,,,,missed,,jump,38,16
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Jason Smith,Samuel Dalembert,Willie Green,3,7:28,PHI,rebound,,,,,,,,,,Willie Green,,,,,,def,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Jason Smith,Samuel Dalembert,Willie Green,3,7:19,PHI,shot,,,,,,,,,,Willie Green,,,,missed,,3pt,12,28
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Jason Smith,Samuel Dalembert,Willie Green,3,7:18,TOR,rebound,,,,,,,,,,,,,,,,,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Jason Smith,Samuel Dalembert,Willie Green,3,7:09,PHI,foul,,,,,,,,Chris Bosh,,Willie Green,,,,,,shooting,,
+Anthony Parker,Chris Bosh,Jason Kapono,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Jason Smith,Samuel Dalembert,Willie Green,3,7:09,TOR,free throw,,,,,,,1,,2,Chris Bosh,,,foul,made,,,,
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Jason Smith,Samuel Dalembert,Willie Green,3,7:09,TOR,sub,,,,Andrea Bargnani,,Rasho Nesterovic,,,,,,,,,,,,
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Jason Smith,Samuel Dalembert,Willie Green,3,7:09,TOR,free throw,,,,,,,2,,2,Chris Bosh,,,foul,made,,,,
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Jason Smith,Samuel Dalembert,Willie Green,3,6:55,PHI,shot,Andre Miller,,,,,,,,,Jason Smith,2,,,made,,jump,25,25
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Jason Smith,Samuel Dalembert,Willie Green,3,6:43,TOR,shot,,,,,,,,,,T.J. Ford,2,,,made,,driving layup,25,6
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Jason Smith,Samuel Dalembert,Willie Green,3,6:26,PHI,shot,Willie Green,,,,,,,,,Andre Iguodala,3,,,made,,3pt,14,29
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Jason Smith,Samuel Dalembert,Willie Green,3,6:11,TOR,shot,,,,,,,,,,Chris Bosh,,,,missed,,jump,17,16
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Jason Smith,Samuel Dalembert,Willie Green,3,6:09,PHI,rebound,,,,,,,,,,Samuel Dalembert,,,,,,def,,
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Jason Smith,Samuel Dalembert,Willie Green,3,6:03,TOR,foul,,,,,,,,Andre Miller,,T.J. Ford,,,,,,shooting,,
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Jason Smith,Samuel Dalembert,Willie Green,3,6:03,PHI,free throw,,,,,,,1,,2,Andre Miller,,,foul,missed,,,,
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Jason Smith,Samuel Dalembert,Willie Green,3,6:03,PHI,rebound,,,,,,,,,,,,,,,,,,
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Jason Smith,Samuel Dalembert,Willie Green,3,6:03,PHI,free throw,,,,,,,2,,2,Andre Miller,,,foul,made,,,,
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Jason Smith,Samuel Dalembert,Willie Green,3,5:47,PHI,foul,,,,,,,,Chris Bosh,,Samuel Dalembert,,,,,,shooting,,
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Jason Smith,Samuel Dalembert,Willie Green,3,5:47,PHI,timeout,,,,,,,,,,,,,,,,regular,,
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Jason Smith,Samuel Dalembert,Willie Green,3,5:47,TOR,free throw,,,,,,,1,,2,Chris Bosh,,,foul,missed,,,,
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Jason Smith,Samuel Dalembert,Willie Green,3,5:47,TOR,rebound,,,,,,,,,,,,,,,,,,
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Jason Smith,Samuel Dalembert,Willie Green,3,5:47,TOR,free throw,,,,,,,2,,2,Chris Bosh,,,foul,made,,,,
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Jason Smith,Samuel Dalembert,Willie Green,3,5:28,PHI,shot,,,,,,,,,,Andre Iguodala,2,,,made,,driving layup,25,6
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Jason Smith,Samuel Dalembert,Willie Green,3,5:06,TOR,shot,,,,,,,,,,Andrea Bargnani,,,,missed,,jump,24,23
+Andrea Bargnani,Anthony Parker,Chris Bosh,Jason Kapono,T.J. Ford,Andre Iguodala,Andre Miller,Jason Smith,Samuel Dalembert,Willie Green,3,5:05,PHI,rebound,,,,,,,,,,Willie Green,,,,,,def,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,T.J. Ford,Andre Iguodala,Andre Miller,Jason Smith,Samuel Dalembert,Willie Green,3,5:00,TOR,sub,,,,Carlos Delfino,,Jason Kapono,,,,,,,,,,,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,T.J. Ford,Andre Iguodala,Andre Miller,Jason Smith,Samuel Dalembert,Willie Green,3,4:58,PHI,turnover,,,,,,,,,,Andre Miller,,,bad pass,,T.J. Ford,,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,T.J. Ford,Andre Iguodala,Andre Miller,Jason Smith,Samuel Dalembert,Willie Green,3,4:54,TOR,shot,,,,,,,,,,T.J. Ford,,,,missed,,layup,25,6
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,T.J. Ford,Andre Iguodala,Andre Miller,Jason Smith,Samuel Dalembert,Willie Green,3,4:51,PHI,rebound,,,,,,,,,,Samuel Dalembert,,,,,,def,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,T.J. Ford,Andre Iguodala,Andre Miller,Jason Smith,Samuel Dalembert,Willie Green,3,4:44,PHI,foul,,,,,,,,Chris Bosh,,Samuel Dalembert,,,,,,offensive,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,T.J. Ford,Andre Iguodala,Andre Miller,Jason Smith,Samuel Dalembert,Willie Green,3,4:44,PHI,turnover,,,,,,,,,,Samuel Dalembert,,,foul,,,,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Jason Smith,Willie Green,3,4:44,PHI,sub,,,,Calvin Booth,,Samuel Dalembert,,,,,,,,,,,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Jason Smith,Willie Green,3,4:30,TOR,shot,,,,,,,,,,Chris Bosh,2,,,made,,driving layup,25,6
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Jason Smith,Willie Green,3,4:08,PHI,shot,,,,,,,,,,Andre Iguodala,,,,missed,,layup,25,6
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Jason Smith,Willie Green,3,4:06,TOR,rebound,,,,,,,,,,Anthony Parker,,,,,,def,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Jason Smith,Willie Green,3,3:59,TOR,turnover,,,,,,,,,,Andrea Bargnani,,,traveling,,,,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Jason Smith,Willie Green,3,3:34,PHI,shot,,,,,,,,,,Jason Smith,,,,missed,,jump,26,23
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Jason Smith,Willie Green,3,3:32,PHI,rebound,,,,,,,,,,Andre Miller,,,,,,off,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Jason Smith,Willie Green,3,3:28,PHI,shot,,,,,,,,,,Andre Miller,,,,missed,,jump,39,16
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Jason Smith,Willie Green,3,3:26,TOR,rebound,,,,,,,,,,Anthony Parker,,,,,,def,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Jason Smith,Willie Green,3,3:20,TOR,shot,,,Jason Smith,,,,,,,T.J. Ford,,,,missed,,layup,25,6
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Jason Smith,Willie Green,3,3:18,TOR,rebound,,,,,,,,,,Andrea Bargnani,,,,,,off,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Jason Smith,Willie Green,3,3:07,TOR,turnover,,,,,,,,,,T.J. Ford,,,double dribble,,,,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Jason Smith,Willie Green,3,3:07,TOR,timeout,,,,,,,,,,,,,,,,regular,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Jason Smith,Kyle Korver,3,3:07,PHI,sub,,,,Kyle Korver,,Willie Green,,,,,,,,,,,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Jason Smith,Kyle Korver,3,2:58,PHI,shot,,,,,,,,,,Andre Miller,2,,,made,,driving layup,25,6
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Jason Smith,Kyle Korver,3,2:47,TOR,shot,T.J. Ford,,,,,,,,,Anthony Parker,2,,,made,,jump,8,2
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Jason Smith,Kyle Korver,3,2:23,PHI,shot,,,,,,,,,,Andre Iguodala,,,,missed,,jump,39,19
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Jason Smith,Kyle Korver,3,2:20,TOR,rebound,,,,,,,,,,Anthony Parker,,,,,,def,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,T.J. Ford,Andre Iguodala,Andre Miller,Calvin Booth,Jason Smith,Kyle Korver,3,2:12,TOR,turnover,,,,,,,,,,Anthony Parker,,,bad pass,,Andre Iguodala,,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,T.J. Ford,Andre Iguodala,Calvin Booth,Jason Smith,Kyle Korver,Louis Williams,3,2:12,PHI,sub,,,,Louis Williams,,Andre Miller,,,,,,,,,,,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,T.J. Ford,Andre Iguodala,Calvin Booth,Jason Smith,Kyle Korver,Louis Williams,3,2:12,TOR,foul,,,,,,,,Andre Iguodala,,Anthony Parker,,,,,,personal,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,Jose Calderon,Andre Iguodala,Calvin Booth,Jason Smith,Kyle Korver,Louis Williams,3,2:12,TOR,sub,,,,Jose Calderon,,T.J. Ford,,,,,,,,,,,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,Jose Calderon,Andre Iguodala,Calvin Booth,Jason Smith,Kyle Korver,Louis Williams,3,1:55,PHI,shot,,,,,,,,,,Kyle Korver,,,,missed,,3pt,39,28
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,Jose Calderon,Andre Iguodala,Calvin Booth,Jason Smith,Kyle Korver,Louis Williams,3,1:53,TOR,rebound,,,,,,,,,,Chris Bosh,,,,,,def,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,Jose Calderon,Andre Iguodala,Calvin Booth,Jason Smith,Kyle Korver,Louis Williams,3,1:39,TOR,shot,Anthony Parker,,,,,,,,,Jose Calderon,2,,,made,,jump,25,28
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,Jose Calderon,Andre Iguodala,Calvin Booth,Jason Smith,Kyle Korver,Louis Williams,3,1:20,PHI,shot,Andre Iguodala,,,,,,,,,Jason Smith,2,,,made,,jump,24,20
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,Jose Calderon,Andre Iguodala,Calvin Booth,Jason Smith,Kyle Korver,Louis Williams,3,1:08,PHI,foul,,,,,,,,Jose Calderon,,Calvin Booth,,,,,,shooting,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,Jose Calderon,Andre Iguodala,Calvin Booth,Jason Smith,Kyle Korver,Louis Williams,3,1:08,TOR,free throw,,,,,,,1,,2,Jose Calderon,,,foul,missed,,,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,Jose Calderon,Andre Iguodala,Calvin Booth,Jason Smith,Kyle Korver,Louis Williams,3,1:08,TOR,rebound,,,,,,,,,,,,,,,,,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,Jose Calderon,Andre Iguodala,Calvin Booth,Jason Smith,Kyle Korver,Louis Williams,3,1:08,TOR,free throw,,,,,,,2,,2,Jose Calderon,,,foul,made,,,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,Jose Calderon,Andre Iguodala,Calvin Booth,Jason Smith,Kyle Korver,Louis Williams,3,0:53,PHI,shot,,,,,,,,,,Andre Iguodala,2,,,made,,pullup jump,14,18
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,Jose Calderon,Andre Iguodala,Calvin Booth,Jason Smith,Kyle Korver,Louis Williams,3,0:45,TOR,shot,,,,,,,,,,Jose Calderon,2,,,made,,driving layup,25,6
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,Jose Calderon,Andre Iguodala,Calvin Booth,Jason Smith,Kyle Korver,Louis Williams,3,0:45,PHI,violation,,,,,,,,,,Jason Smith,,,,,,defensive goaltending,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,Jose Calderon,Andre Iguodala,Calvin Booth,Jason Smith,Kyle Korver,Louis Williams,3,0:28,TOR,foul,,,,,,,,Louis Williams,,Chris Bosh,,,,,,shooting,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,Jose Calderon,Andre Iguodala,Calvin Booth,Jason Smith,Kyle Korver,Louis Williams,3,0:28,PHI,free throw,,,,,,,1,,2,Louis Williams,,,foul,made,,,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,Jose Calderon,Calvin Booth,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,3,0:28,PHI,sub,,,,Rodney Carney,,Andre Iguodala,,,,,,,,,,,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,Jose Calderon,Calvin Booth,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,3,0:28,PHI,free throw,,,,,,,2,,2,Louis Williams,,,foul,made,,,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,Jose Calderon,Calvin Booth,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,3,0:04,TOR,shot,,,,,,,,,,Anthony Parker,,,,missed,,jump,6,4
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,Jose Calderon,Calvin Booth,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,3,0:04,TOR,rebound,,,,,,,,,,,,,,,,,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,Jose Calderon,Calvin Booth,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,3,0:04,TOR,turnover,,,,,,,,,,,,,shot clock turnover,,,,,
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,Jose Calderon,Calvin Booth,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,3,0:00,PHI,shot,,,,,,,,,,Rodney Carney,,,,missed,,jump,13,5
+Andrea Bargnani,Anthony Parker,Carlos Delfino,Chris Bosh,Jose Calderon,Calvin Booth,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,3,0:00,PHI,rebound,,,,,,,,,,,,,,,,,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Calvin Booth,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,4,11:43,TOR,foul,,,,,,,,Louis Williams,,Carlos Delfino,,,,,,shooting,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Calvin Booth,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,4,11:43,PHI,free throw,,,,,,,1,,2,Louis Williams,,,foul,missed,,,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Calvin Booth,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,4,11:43,PHI,rebound,,,,,,,,,,,,,,,,,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Calvin Booth,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,4,11:43,PHI,free throw,,,,,,,2,,2,Louis Williams,,,foul,made,,,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Calvin Booth,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,4,11:26,TOR,shot,,,,,,,,,,Jose Calderon,2,,,made,,driving layup,25,6
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Calvin Booth,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,4,11:23,PHI,turnover,,,,,,,,,,Jason Smith,,,bad pass,,Jose Calderon,,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Calvin Booth,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,4,11:15,TOR,shot,Andrea Bargnani,,,,,,,,,Juan Dixon,2,,,made,,driving layup,25,6
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Calvin Booth,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,4,10:51,PHI,shot,,,,,,,,,,Jason Smith,,,,missed,,3pt,10,26
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Calvin Booth,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,4,10:49,TOR,rebound,,,,,,,,,,Carlos Delfino,,,,,,def,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Calvin Booth,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,4,10:29,TOR,shot,Jose Calderon,,,,,,,,,Jamario Moon,2,,,made,,jump,43,7
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Calvin Booth,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,4,10:29,PHI,timeout,,,,,,,,,,,,,,,,regular,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,4,10:29,PHI,sub,,,,Andre Iguodala,,Calvin Booth,,,,,,,,,,,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,4,10:16,PHI,shot,,,,,,,,,,Kyle Korver,,,,missed,,3pt,41,27
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,4,10:14,TOR,rebound,,,,,,,,,,Carlos Delfino,,,,,,def,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,4,10:02,TOR,shot,Jose Calderon,,,,,,,,,Jamario Moon,2,,,made,,reverse layup,25,6
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,4,9:43,PHI,shot,,,,,,,,,,Louis Williams,2,,,made,,driving finger roll layup,25,6
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Jason Smith,Kyle Korver,Louis Williams,Rodney Carney,4,9:29,PHI,foul,,,,,,,,Andrea Bargnani,,Rodney Carney,,,,,,shooting,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Andre Miller,Jason Smith,Kyle Korver,Louis Williams,4,9:29,PHI,sub,,,,Andre Miller,,Rodney Carney,,,,,,,,,,,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Andre Miller,Jason Smith,Kyle Korver,Louis Williams,4,9:29,TOR,free throw,,,,,,,1,,2,Andrea Bargnani,,,foul,made,,,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Andre Miller,Jason Smith,Kyle Korver,Louis Williams,4,9:29,TOR,free throw,,,,,,,2,,2,Andrea Bargnani,,,foul,missed,,,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Andre Miller,Jason Smith,Kyle Korver,Louis Williams,4,9:28,PHI,rebound,,,,,,,,,,Andre Iguodala,,,,,,def,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Andre Miller,Jason Smith,Kyle Korver,Louis Williams,4,9:12,PHI,shot,Andre Iguodala,,,,,,,,,Louis Williams,3,,,made,,3pt,0,7
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Andre Miller,Jason Smith,Kyle Korver,Louis Williams,4,8:53,TOR,shot,Juan Dixon,,,,,,,,,Andrea Bargnani,3,,,made,,3pt,26,31
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Andre Miller,Jason Smith,Kyle Korver,Louis Williams,4,8:38,PHI,shot,,,,,,,,,,Andre Iguodala,2,,,made,,driving layup,25,6
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Andre Miller,Jason Smith,Kyle Korver,Louis Williams,4,8:38,TOR,foul,,,,,,,,Andre Iguodala,,Jose Calderon,,,,,,shooting,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Andre Miller,Jason Smith,Kyle Korver,Louis Williams,4,8:38,PHI,free throw,,,,,,,1,,1,Andre Iguodala,,,foul,missed,,,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Andre Miller,Jason Smith,Kyle Korver,Louis Williams,4,8:37,TOR,rebound,,,,,,,,,,Jamario Moon,,,,,,def,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Andre Miller,Jason Smith,Kyle Korver,Louis Williams,4,8:15,TOR,shot,,,,,,,,,,Andrea Bargnani,,,,missed,,3pt,26,31
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Andre Miller,Jason Smith,Kyle Korver,Louis Williams,4,8:14,PHI,rebound,,,,,,,,,,Andre Iguodala,,,,,,def,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Andre Miller,Jason Smith,Kyle Korver,Louis Williams,4,8:10,PHI,shot,Andre Iguodala,,,,,,,,,Andre Miller,2,,,made,,layup,25,6
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Andre Miller,Jason Smith,Kyle Korver,Louis Williams,4,8:01,TOR,timeout,,,,,,,,,,,,,,,,regular,,
+Andrea Bargnani,Carlos Delfino,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,8:01,PHI,sub,,,,Samuel Dalembert,,Jason Smith,,,,,,,,,,,,
+Carlos Delfino,Chris Bosh,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,7:56,TOR,sub,,,,Chris Bosh,,Andrea Bargnani,,,,,,,,,,,,
+Carlos Delfino,Chris Bosh,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,7:46,TOR,shot,,,,,,,,,,Juan Dixon,,,,missed,,jump,27,13
+Carlos Delfino,Chris Bosh,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,7:44,TOR,shot,,,,,,,,,,Jamario Moon,,,,missed,,layup,25,6
+Carlos Delfino,Chris Bosh,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,7:44,TOR,rebound,,,,,,,,,,Jamario Moon,,,,,,off,,
+Carlos Delfino,Chris Bosh,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,7:43,PHI,rebound,,,,,,,,,,Louis Williams,,,,,,def,,
+Carlos Delfino,Chris Bosh,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,7:40,TOR,foul,,,,,,,,Louis Williams,,Chris Bosh,,,,,,shooting,,
+Carlos Delfino,Chris Bosh,Jamario Moon,Jose Calderon,Juan Dixon,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,7:40,PHI,free throw,,,,,,,1,,2,Louis Williams,,,foul,made,,,,
+Carlos Delfino,Chris Bosh,Jamario Moon,Jose Calderon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,7:40,TOR,sub,,,,T.J. Ford,,Juan Dixon,,,,,,,,,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,7:40,TOR,sub,,,,Anthony Parker,,Jose Calderon,,,,,,,,,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,7:40,PHI,free throw,,,,,,,2,,2,Louis Williams,,,foul,made,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,7:25,TOR,shot,,,Samuel Dalembert,,,,,,,Chris Bosh,,,,missed,,layup,25,6
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,7:23,TOR,rebound,,,,,,,,,,Jamario Moon,,,,,,off,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,7:20,TOR,shot,,,,,,,,,,Anthony Parker,,,,missed,,3pt,44,24
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,7:16,TOR,rebound,,,,,,,,,,Jamario Moon,,,,,,off,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,7:00,PHI,foul,,,,,,,,Carlos Delfino,,Louis Williams,,,,,,personal,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,6:53,TOR,shot,,,,,,,,,,Chris Bosh,,,,missed,,layup,25,6
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,6:52,TOR,shot,,,,,,,,,,Chris Bosh,2,,,made,,tip,25,6
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,6:52,TOR,rebound,,,,,,,,,,Chris Bosh,,,,,,off,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,6:36,PHI,shot,,,,,,,,,,Kyle Korver,3,,,made,,3pt,44,23
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,6:21,TOR,shot,,,,,,,,,,Chris Bosh,,,,missed,,jump,40,8
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,6:19,TOR,rebound,,,,,,,,,,Jamario Moon,,,,,,off,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,6:12,TOR,shot,,,,,,,,,,T.J. Ford,2,,,made,,fade away jumper,41,7
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,5:48,PHI,shot,,,,,,,,,,Samuel Dalembert,,,,missed,,layup,25,6
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,5:47,PHI,rebound,,,,,,,,,,Samuel Dalembert,,,,,,off,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,5:47,TOR,foul,,,,,,,,Samuel Dalembert,,Anthony Parker,,,,,,shooting,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,5:47,PHI,free throw,,,,,,,1,,2,Samuel Dalembert,,,foul,made,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,5:47,PHI,free throw,,,,,,,2,,2,Samuel Dalembert,,,foul,made,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,5:34,TOR,shot,,,,,,,,,,Anthony Parker,,,,missed,,jump,43,19
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,5:32,PHI,rebound,,,,,,,,,,Samuel Dalembert,,,,,,def,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,5:24,PHI,shot,,,,,,,,,,Louis Williams,2,,,made,,jump,38,23
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,4:58,TOR,shot,Chris Bosh,,,,,,,,,Anthony Parker,3,,,made,,3pt,49,7
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,4:34,PHI,shot,Louis Williams,,,,,,,,,Samuel Dalembert,2,,,made,,slam dunk,25,6
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,4:18,TOR,shot,,,,,,,,,,T.J. Ford,2,,,made,,driving layup,25,6
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,3:53,PHI,shot,Louis Williams,,,,,,,,,Andre Iguodala,2,,,made,,jump,8,9
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,3:31,PHI,foul,,,,,,,,Chris Bosh,,Samuel Dalembert,,,,,,shooting,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,3:31,TOR,free throw,,,,,,,1,,2,Chris Bosh,,,foul,made,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,3:31,TOR,free throw,,,,,,,2,,2,Chris Bosh,,,foul,made,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,3:14,PHI,shot,,,,,,,,,,Louis Williams,,,,missed,,jump,24,27
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,3:12,TOR,rebound,,,,,,,,,,Chris Bosh,,,,,,def,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,2:50,TOR,shot,Jamario Moon,,,,,,,,,Chris Bosh,2,,,made,,jump,35,21
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,2:49,PHI,timeout,,,,,,,,,,,,,,,,short,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,2:49,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,2:31,PHI,shot,,,,,,,,,,Andre Miller,,,,missed,,jump,37,22
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,2:29,TOR,rebound,,,,,,,,,,Jamario Moon,,,,,,def,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,2:08,TOR,shot,,,,,,,,,,Jamario Moon,,,,missed,,jump,4,7
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,2:06,TOR,rebound,,,,,,,,,,Chris Bosh,,,,,,off,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,2:05,PHI,foul,,,,,,,,Chris Bosh,,Andre Iguodala,,,,,,personal,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,1:22,TOR,turnover,,,,,,,,,,T.J. Ford,,,bad pass,,Andre Iguodala,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,1:17,PHI,shot,,,,,,,,,,Louis Williams,,,,missed,,layup,25,6
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,1:15,PHI,shot,,,,,,,,,,Andre Miller,,,,missed,,tip,25,6
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,1:15,PHI,rebound,,,,,,,,,,Andre Miller,,,,,,off,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,1:14,PHI,rebound,,,,,,,,,,Andre Iguodala,,,,,,off,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,1:13,PHI,shot,,,Jamario Moon,,,,,,,Andre Iguodala,,,,missed,,layup,25,6
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,1:11,TOR,rebound,,,,,,,,,,Jamario Moon,,,,,,def,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,1:11,PHI,foul,,,,,,,,Jamario Moon,,Kyle Korver,,,,,,personal,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,1:11,TOR,free throw,,,,,,,1,,2,Jamario Moon,,,foul,missed,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,1:11,TOR,rebound,,,,,,,,,,,,,,,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,1:11,TOR,free throw,,,,,,,2,,2,Jamario Moon,,,foul,made,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,1:11,PHI,timeout,,,,,,,,,,,,,,,,short,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,1:10,PHI,shot,Andre Miller,,,,,,,,,Samuel Dalembert,2,,,made,,alley oop dunk,25,6
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,1:07,PHI,foul,,,,,,,,T.J. Ford,,Andre Miller,,,,,,personal,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,1:07,TOR,free throw,,,,,,,1,,2,T.J. Ford,,,foul,missed,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,1:07,TOR,rebound,,,,,,,,,,,,,,,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,1:07,TOR,free throw,,,,,,,2,,2,T.J. Ford,,,foul,made,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:57,PHI,shot,Andre Iguodala,,,,,,,,,Louis Williams,3,,,made,,3pt,29,31
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:33,TOR,shot,T.J. Ford,,,,,,,,,Anthony Parker,3,,,made,,3pt,13,28
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:33,PHI,timeout,,,,,,,,,,,,,,,,regular,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:26,PHI,shot,,,,,,,,,,Andre Iguodala,,,,missed,,3pt,40,28
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:25,PHI,rebound,,,,,,,,,,Louis Williams,,,,,,off,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:21,PHI,shot,Kyle Korver,,,,,,,,,Louis Williams,3,,,made,,3pt,46,21
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:21,TOR,foul,,,,,,,,Louis Williams,,Anthony Parker,,,,,,shooting,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:21,PHI,free throw,,,,,,,1,,1,Louis Williams,,,foul,made,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Reggie Evans,4,0:21,PHI,sub,,,,Reggie Evans,,Samuel Dalembert,,,,,,,,,,,,
+Carlos Delfino,Chris Bosh,Jamario Moon,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Reggie Evans,4,0:21,TOR,sub,,,,Rasho Nesterovic,,Anthony Parker,,,,,,,,,,,,
+Carlos Delfino,Chris Bosh,Jamario Moon,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Reggie Evans,4,0:21,TOR,timeout,,,,,,,,,,,,,,,,short,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Reggie Evans,4,0:21,TOR,sub,,,,Anthony Parker,,Rasho Nesterovic,,,,,,,,,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Reggie Evans,4,0:20,PHI,foul,,,,,,,,Chris Bosh,,Andre Iguodala,,,,,,personal,,
+Carlos Delfino,Chris Bosh,Jamario Moon,Jose Calderon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Reggie Evans,4,0:20,TOR,sub,,,,Jose Calderon,,Anthony Parker,,,,,,,,,,,,
+Carlos Delfino,Chris Bosh,Jason Kapono,Jose Calderon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Reggie Evans,4,0:20,TOR,sub,,,,Jason Kapono,,Jamario Moon,,,,,,,,,,,,
+Carlos Delfino,Chris Bosh,Jason Kapono,Jose Calderon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:20,PHI,sub,,,,Samuel Dalembert,,Reggie Evans,,,,,,,,,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jose Calderon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:20,TOR,sub,,,,Anthony Parker,,Jason Kapono,,,,,,,,,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jose Calderon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:20,TOR,free throw,,,,,,,1,,2,Chris Bosh,,,foul,made,,,,
+Carlos Delfino,Chris Bosh,Jamario Moon,Jose Calderon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:20,TOR,sub,,,,Jamario Moon,,Anthony Parker,,,,,,,,,,,,
+Carlos Delfino,Chris Bosh,Jamario Moon,Jose Calderon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:20,TOR,free throw,,,,,,,2,,2,Chris Bosh,,,foul,made,,,,
+Carlos Delfino,Chris Bosh,Jamario Moon,Jose Calderon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:15,PHI,shot,,,,,,,,,,Louis Williams,2,,,made,,driving layup,25,6
+Carlos Delfino,Chris Bosh,Jamario Moon,Jose Calderon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:15,TOR,foul,,,,,,,,Louis Williams,,T.J. Ford,,,,,,shooting,,
+Carlos Delfino,Chris Bosh,Jamario Moon,Jose Calderon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:15,PHI,free throw,,,,,,,1,,1,Louis Williams,,,foul,missed,,,,
+Carlos Delfino,Chris Bosh,Jamario Moon,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:15,TOR,sub,,,,Rasho Nesterovic,,Jose Calderon,,,,,,,,,,,,
+Carlos Delfino,Chris Bosh,Jamario Moon,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:12,TOR,rebound,,,,,,,,,,Carlos Delfino,,,,,,def,,
+Carlos Delfino,Chris Bosh,Jamario Moon,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:12,PHI,foul,,,,,,,,Carlos Delfino,,Andre Iguodala,,,,,,personal,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:12,TOR,sub,,,,Anthony Parker,,Rasho Nesterovic,,,,,,,,,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:12,TOR,free throw,,,,,,,1,,2,Carlos Delfino,,,foul,missed,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:12,TOR,rebound,,,,,,,,,,,,,,,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:12,TOR,free throw,,,,,,,2,,2,Carlos Delfino,,,foul,made,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:05,PHI,shot,,,Chris Bosh,,,,,,,Andre Miller,,,,missed,,layup,25,6
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:04,TOR,rebound,,,,,,,,,,Carlos Delfino,,,,,,def,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:04,PHI,foul,,,,,,,,Carlos Delfino,,Kyle Korver,,,,,,personal,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:04,TOR,free throw,,,,,,,1,,2,Carlos Delfino,,,foul,missed,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:04,TOR,rebound,,,,,,,,,,,,,,,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:04,TOR,free throw,,,,,,,2,,2,Carlos Delfino,,,foul,missed,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:03,TOR,rebound,,,,,,,,,,Chris Bosh,,,,,,off,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:03,PHI,foul,,,,,,,,Chris Bosh,,Kyle Korver,,,,,,personal,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jamario Moon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:03,TOR,free throw,,,,,,,1,,2,Chris Bosh,,,foul,made,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jose Calderon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:03,TOR,sub,,,,Jose Calderon,,Jamario Moon,,,,,,,,,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jose Calderon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:03,TOR,free throw,,,,,,,2,,2,Chris Bosh,,,foul,missed,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jose Calderon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:02,PHI,rebound,,,,,,,,,,Andre Iguodala,,,,,,def,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Jose Calderon,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:01,TOR,foul,,,,,,,,Andre Iguodala,,Jose Calderon,,,,,,personal,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:01,TOR,sub,,,,Rasho Nesterovic,,Jose Calderon,,,,,,,,,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:01,PHI,free throw,,,,,,,1,,2,Andre Iguodala,,,foul,missed,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Andre Miller,Kyle Korver,Louis Williams,Samuel Dalembert,4,0:01,PHI,rebound,,,,,,,,,,,,,,,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Kyle Korver,Louis Williams,Reggie Evans,Samuel Dalembert,4,0:01,PHI,sub,,,,Reggie Evans,,Andre Miller,,,,,,,,,,,,
+Anthony Parker,Carlos Delfino,Chris Bosh,Rasho Nesterovic,T.J. Ford,Andre Iguodala,Kyle Korver,Louis Williams,Reggie Evans,Samuel Dalembert,4,0:01,PHI,free throw,,,,,,,2,,2,Andre Iguodala,,,foul,made,,,,

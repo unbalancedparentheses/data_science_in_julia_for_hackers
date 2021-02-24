@@ -1,0 +1,479 @@
+a1,a2,a3,a4,a5,h1,h2,h3,h4,h5,period,time,team,etype,assist,away,block,entered,home,left,num,opponent,outof,player,points,possession,reason,result,steal,type,x,y
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,12:00,OFF,jump ball,,Mehmet Okur,,,Shaquille O'Neal,,,,,,,Steve Nash,,,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,11:45,PHX,shot,Steve Nash,,,,,,,,,Shaquille O'Neal,2,,,made,,hook,22,11
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,11:40,UTA,foul,,,,,,,,Shaquille O'Neal,,Paul Millsap,,,,,,offensive,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,11:40,UTA,turnover,,,,,,,,,,Paul Millsap,,,foul,,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,11:24,PHX,turnover,,,,,,,,,,Steve Nash,,,bad pass,,Ronnie Brewer,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,11:08,UTA,shot,,,,,,,,,,Mehmet Okur,2,,,made,,jump,33,7
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,10:45,PHX,shot,,,,,,,,,,Shaquille O'Neal,2,,,made,,turnaround jump,34,6
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,10:30,UTA,shot,,,,,,,,,,Ronnie Brewer,,,,missed,,jump,8,8
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,10:29,UTA,rebound,,,,,,,,,,Mehmet Okur,,,,,,off,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,10:20,UTA,shot,,,,,,,,,,Deron Williams,2,,,made,,running bank,20,9
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,10:08,PHX,shot,,,,,,,,,,Amare Stoudemire,,,,missed,,layup,25,6
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,10:07,PHX,shot,,,,,,,,,,Amare Stoudemire,2,,,made,,tip,25,6
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,10:07,PHX,rebound,,,,,,,,,,Amare Stoudemire,,,,,,off,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,9:58,UTA,shot,,,,,,,,,,Deron Williams,,,,missed,,3pt,17,30
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,9:57,PHX,rebound,,,,,,,,,,Raja Bell,,,,,,def,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,9:49,PHX,shot,,,,,,,,,,Amare Stoudemire,,,,missed,,jump bank,18,9
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,9:48,UTA,rebound,,,,,,,,,,Paul Millsap,,,,,,def,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,9:39,UTA,shot,,,,,,,,,,Paul Millsap,,,,missed,,jump,9,7
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,9:37,PHX,rebound,,,,,,,,,,Steve Nash,,,,,,def,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,9:27,PHX,shot,,,,,,,,,,Steve Nash,2,,,made,,fade away jumper,34,7
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,9:03,UTA,shot,Deron Williams,,,,,,,,,Mehmet Okur,3,,,made,,3pt,12,27
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,8:43,PHX,shot,,,Paul Millsap,,,,,,,Steve Nash,,,,missed,,layup,25,6
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,8:41,UTA,rebound,,,,,,,,,,Paul Millsap,,,,,,def,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,8:37,UTA,turnover,,,,,,,,,,Deron Williams,,,bad pass,,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,8:28,UTA,foul,,,,,,,,Shaquille O'Neal,,Mehmet Okur,,,,,,shooting,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,8:28,PHX,free throw,,,,,,,1,,2,Shaquille O'Neal,,,foul,missed,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,8:28,PHX,rebound,,,,,,,,,,,,,,,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,8:28,PHX,free throw,,,,,,,2,,2,Shaquille O'Neal,,,foul,made,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,8:17,PHX,foul,,,,,,,,Paul Millsap,,Shaquille O'Neal,,,,,,shooting,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,8:17,UTA,free throw,,,,,,,1,,2,Paul Millsap,,,foul,missed,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,8:17,UTA,rebound,,,,,,,,,,,,,,,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,8:17,UTA,free throw,,,,,,,2,,2,Paul Millsap,,,foul,made,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,8:09,PHX,shot,,,,,,,,,,Steve Nash,,,,missed,,3pt,24,31
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,8:08,UTA,rebound,,,,,,,,,,Paul Millsap,,,,,,def,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,7:51,UTA,shot,,,,,,,,,,Mehmet Okur,,,,missed,,fade away jumper,34,12
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,7:50,PHX,rebound,,,,,,,,,,Shaquille O'Neal,,,,,,def,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,7:44,PHX,shot,,,,,,,,,,Steve Nash,2,,,made,,driving layup,25,6
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,7:24,UTA,shot,Deron Williams,,,,,,,,,Paul Millsap,2,,,made,,layup,25,6
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,7:09,PHX,shot,,,,,,,,,,Grant Hill,2,,,made,,running jump,20,9
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,6:53,PHX,foul,,,,,,,,Ronnie Brewer,,Raja Bell,,,,,,shooting,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,6:53,UTA,free throw,,,,,,,1,,2,Ronnie Brewer,,,foul,made,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,6:53,UTA,free throw,,,,,,,2,,2,Ronnie Brewer,,,foul,missed,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,6:52,PHX,rebound,,,,,,,,,,Shaquille O'Neal,,,,,,def,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,6:33,PHX,shot,Amare Stoudemire,,,,,,,,,Shaquille O'Neal,2,,,made,,dunk,25,6
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,6:12,UTA,turnover,,,,,,,,,,Paul Millsap,,,lost ball,,Raja Bell,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,6:07,PHX,shot,Steve Nash,,,,,,,,,Grant Hill,2,,,made,,layup,25,6
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,1,6:07,UTA,timeout,,,,,,,,,,,,,,,,regular,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Grant Hill,Raja Bell,Steve Nash,1,6:07,PHX,sub,,,,Boris Diaw,,Shaquille O'Neal,,,,,,,,,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Grant Hill,Raja Bell,Steve Nash,1,5:55,UTA,shot,,,,,,,,,,Deron Williams,,,,missed,,jump,44,9
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Grant Hill,Raja Bell,Steve Nash,1,5:54,PHX,rebound,,,,,,,,,,Steve Nash,,,,,,def,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Grant Hill,Raja Bell,Steve Nash,1,5:50,PHX,turnover,,,,,,,,,,Steve Nash,,,bad pass,,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Grant Hill,Raja Bell,Steve Nash,1,5:27,UTA,shot,,,,,,,,,,Ronnie Brewer,,,,missed,,layup,25,6
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Grant Hill,Raja Bell,Steve Nash,1,5:26,UTA,rebound,,,,,,,,,,Paul Millsap,,,,,,off,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Grant Hill,Raja Bell,Steve Nash,1,5:26,PHX,foul,,,,,,,,Paul Millsap,,Raja Bell,,,,,,shooting,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Grant Hill,Raja Bell,Steve Nash,1,5:26,UTA,sub,,,,Andrei Kirilenko,,Mehmet Okur,,,,,,,,,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Grant Hill,Leandro Barbosa,Steve Nash,1,5:26,PHX,sub,,,,Leandro Barbosa,,Raja Bell,,,,,,,,,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Grant Hill,Leandro Barbosa,Steve Nash,1,5:26,UTA,free throw,,,,,,,1,,2,Paul Millsap,,,foul,made,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Grant Hill,Leandro Barbosa,Steve Nash,1,5:26,UTA,free throw,,,,,,,2,,2,Paul Millsap,,,foul,missed,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Grant Hill,Leandro Barbosa,Steve Nash,1,5:26,UTA,rebound,,,,,,,,,,Ronnie Brewer,,,,,,off,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Grant Hill,Leandro Barbosa,Steve Nash,1,5:04,UTA,shot,,,,,,,,,,Ronnie Brewer,,,,missed,,jump,19,25
+Andrei Kirilenko,C.J. Miles,Deron Williams,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Grant Hill,Leandro Barbosa,Steve Nash,1,5:03,UTA,rebound,,,,,,,,,,C.J. Miles,,,,,,off,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Grant Hill,Leandro Barbosa,Steve Nash,1,5:01,UTA,shot,,,,,,,,,,C.J. Miles,2,,,made,,layup,25,6
+Andrei Kirilenko,C.J. Miles,Deron Williams,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Grant Hill,Leandro Barbosa,Steve Nash,1,4:45,PHX,foul,,,,,,,,Paul Millsap,,Boris Diaw,,,,,,offensive,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Grant Hill,Leandro Barbosa,Steve Nash,1,4:45,PHX,turnover,,,,,,,,,,Boris Diaw,,,foul,,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,1,4:45,PHX,sub,,,,Matt Barnes,,Grant Hill,,,,,,,,,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,1,4:24,UTA,shot,Deron Williams,,,,,,,,,C.J. Miles,3,,,made,,3pt,3,20
+Andrei Kirilenko,C.J. Miles,Deron Williams,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,1,4:06,PHX,turnover,,,,,,,,,,Boris Diaw,,,out of bounds lost ball turnover,,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,1,3:50,UTA,shot,Deron Williams,,,,,,,,,C.J. Miles,3,,,made,,3pt,2,5
+Andrei Kirilenko,C.J. Miles,Deron Williams,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,1,3:39,PHX,shot,,,,,,,,,,Leandro Barbosa,,,,missed,,layup,25,6
+Andrei Kirilenko,C.J. Miles,Deron Williams,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,1,3:38,UTA,rebound,,,,,,,,,,,,,,,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,1,3:38,PHX,foul,,,,,,,,C.J. Miles,,Amare Stoudemire,,,,,,loose ball,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,1,3:21,UTA,turnover,,,,,,,,,,Andrei Kirilenko,,,lost ball,,Matt Barnes,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,1,3:16,PHX,shot,Steve Nash,,,,,,,,,Matt Barnes,2,,,made,,jump,43,6
+Andrei Kirilenko,C.J. Miles,Deron Williams,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,1,2:56,UTA,shot,,,,,,,,,,Andrei Kirilenko,,,,missed,,jump,16,12
+Andrei Kirilenko,C.J. Miles,Deron Williams,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,1,2:55,PHX,rebound,,,,,,,,,,Amare Stoudemire,,,,,,def,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,1,2:47,PHX,turnover,,,,,,,,,,Boris Diaw,,,lost ball,,Andrei Kirilenko,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,1,2:45,UTA,turnover,,,,,,,,,,Andrei Kirilenko,,,lost ball,,Boris Diaw,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,1,2:42,PHX,shot,,,,,,,,,,Boris Diaw,2,,,made,,layup,25,6
+Andrei Kirilenko,C.J. Miles,Deron Williams,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,1,2:42,UTA,violation,,,,,,,,,,Andrei Kirilenko,,,,,,defensive goaltending,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,1,2:29,UTA,shot,Deron Williams,,,,,,,,,Paul Millsap,2,,,made,,dunk,25,6
+Andrei Kirilenko,C.J. Miles,Deron Williams,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,1,2:14,PHX,shot,Steve Nash,,,,,,,,,Amare Stoudemire,2,,,made,,jump,20,9
+Andrei Kirilenko,C.J. Miles,Deron Williams,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,1,2:14,UTA,violation,,,,,,,,,,Andrei Kirilenko,,,,,,defensive goaltending,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,1,2:01,UTA,turnover,,,,,,,,,,Ronnie Brewer,,,discontinue dribble,,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,1,2:01,PHX,timeout,,,,,,,,,,,,,,,,regular,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,1,2:01,PHX,sub,,,,Goran Dragic,,Steve Nash,,,,,,,,,,,,
+Andrei Kirilenko,Brevin Knight,C.J. Miles,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,1,2:01,UTA,sub,,,,Brevin Knight,,Deron Williams,,,,,,,,,,,,
+Andrei Kirilenko,Brevin Knight,C.J. Miles,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,1,1:38,PHX,shot,,,Andrei Kirilenko,,,,,,,Matt Barnes,,,,missed,,jump,34,7
+Andrei Kirilenko,Brevin Knight,C.J. Miles,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,1,1:38,UTA,rebound,,,,,,,,,,,,,,,,,,
+Andrei Kirilenko,Brevin Knight,C.J. Miles,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,1,1:26,UTA,shot,Andrei Kirilenko,,,,,,,,,Paul Millsap,2,,,made,,jump,32,9
+Andrei Kirilenko,Brevin Knight,C.J. Miles,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,1,1:17,PHX,foul,,,,,,,,Andrei Kirilenko,,Boris Diaw,,,,,,offensive,,
+Andrei Kirilenko,Brevin Knight,C.J. Miles,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,1,1:17,PHX,turnover,,,,,,,,,,Boris Diaw,,,foul,,,,,
+Andrei Kirilenko,Brevin Knight,C.J. Miles,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,1,1:06,UTA,shot,,,,,,,,,,Ronnie Brewer,,,,missed,,layup,25,6
+Andrei Kirilenko,Brevin Knight,C.J. Miles,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,1,1:05,UTA,rebound,,,,,,,,,,,,,,,,,,
+Andrei Kirilenko,Brevin Knight,C.J. Miles,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,1,1:02,UTA,shot,,,,,,,,,,Ronnie Brewer,,,,missed,,jump,22,25
+Andrei Kirilenko,Brevin Knight,C.J. Miles,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,1,1:01,PHX,rebound,,,,,,,,,,Amare Stoudemire,,,,,,def,,
+Andrei Kirilenko,Brevin Knight,C.J. Miles,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,1,0:51,PHX,shot,,,,,,,,,,Boris Diaw,,,,missed,,jump,34,25
+Andrei Kirilenko,Brevin Knight,C.J. Miles,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,1,0:50,PHX,rebound,,,,,,,,,,Goran Dragic,,,,,,off,,
+Andrei Kirilenko,Brevin Knight,C.J. Miles,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,1,0:42,PHX,shot,,,Paul Millsap,,,,,,,Amare Stoudemire,,,,missed,,layup,25,6
+Andrei Kirilenko,Brevin Knight,C.J. Miles,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,1,0:40,UTA,rebound,,,,,,,,,,Paul Millsap,,,,,,def,,
+Andrei Kirilenko,Brevin Knight,C.J. Miles,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,1,0:38,UTA,shot,,,,,,,,,,Andrei Kirilenko,,,,missed,,layup,25,6
+Andrei Kirilenko,Brevin Knight,C.J. Miles,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,1,0:37,PHX,rebound,,,,,,,,,,Boris Diaw,,,,,,def,,
+Andrei Kirilenko,Brevin Knight,C.J. Miles,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,1,0:34,PHX,shot,Boris Diaw,,,,,,,,,Amare Stoudemire,2,,,made,,jump bank,25,10
+Andrei Kirilenko,Brevin Knight,C.J. Miles,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,1,0:34,UTA,foul,,,,,,,,Amare Stoudemire,,Brevin Knight,,,,,,shooting,,
+Andrei Kirilenko,Brevin Knight,C.J. Miles,Kyle Korver,Paul Millsap,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,1,0:34,UTA,sub,,,,Kyle Korver,,Ronnie Brewer,,,,,,,,,,,,
+Andrei Kirilenko,Brevin Knight,C.J. Miles,Kyle Korver,Paul Millsap,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,1,0:34,PHX,free throw,,,,,,,1,,1,Amare Stoudemire,,,foul,made,,,,
+Andrei Kirilenko,Brevin Knight,C.J. Miles,Kyle Korver,Paul Millsap,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,1,0:24,UTA,shot,C.J. Miles,,,,,,,,,Andrei Kirilenko,2,,,made,,layup,25,6
+Andrei Kirilenko,Brevin Knight,C.J. Miles,Kyle Korver,Paul Millsap,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,1,0:00,PHX,turnover,,,,,,,,,,,,,shot clock turnover,,,,,
+Andrei Kirilenko,Brevin Knight,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,2,11:43,UTA,turnover,,,,,,,,,,Brevin Knight,,,lost ball,,Leandro Barbosa,,,
+Andrei Kirilenko,Brevin Knight,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,2,11:38,PHX,shot,,,,,,,,,,Goran Dragic,,,,missed,,layup,25,6
+Andrei Kirilenko,Brevin Knight,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,2,11:37,UTA,rebound,,,,,,,,,,Mehmet Okur,,,,,,def,,
+Andrei Kirilenko,Brevin Knight,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,2,11:31,UTA,shot,,,,,,,,,,Brevin Knight,,,,missed,,jump,16,19
+Andrei Kirilenko,Brevin Knight,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,2,11:30,PHX,rebound,,,,,,,,,,Boris Diaw,,,,,,def,,
+Andrei Kirilenko,Brevin Knight,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,2,11:22,PHX,shot,,,,,,,,,,Leandro Barbosa,2,,,made,,driving layup,25,6
+Andrei Kirilenko,Brevin Knight,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,2,11:07,UTA,shot,,,,,,,,,,Matt Harpring,,,,missed,,jump,16,11
+Andrei Kirilenko,Brevin Knight,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,2,11:06,PHX,rebound,,,,,,,,,,Shaquille O'Neal,,,,,,def,,
+Andrei Kirilenko,Brevin Knight,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,2,10:55,PHX,shot,,,,,,,,,,Matt Barnes,,,,missed,,3pt,40,26
+Andrei Kirilenko,Brevin Knight,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,2,10:54,UTA,rebound,,,,,,,,,,Andrei Kirilenko,,,,,,def,,
+Andrei Kirilenko,Brevin Knight,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,2,10:39,UTA,shot,,,,,,,,,,Brevin Knight,,,,missed,,jump,5,7
+Andrei Kirilenko,Brevin Knight,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,2,10:37,PHX,rebound,,,,,,,,,,Goran Dragic,,,,,,def,,
+Andrei Kirilenko,Brevin Knight,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,2,10:15,PHX,shot,,,,,,,,,,Goran Dragic,,,,missed,,jump,36,21
+Andrei Kirilenko,Brevin Knight,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,2,10:14,UTA,rebound,,,,,,,,,,Mehmet Okur,,,,,,def,,
+Andrei Kirilenko,Brevin Knight,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,2,10:08,UTA,shot,Brevin Knight,,,,,,,,,Andrei Kirilenko,2,,,made,,jump,11,20
+Andrei Kirilenko,Brevin Knight,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,2,9:55,PHX,turnover,,,,,,,,,,Goran Dragic,,,bad pass,,Andrei Kirilenko,,,
+Andrei Kirilenko,Brevin Knight,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,2,9:52,UTA,shot,,,,,,,,,,Andrei Kirilenko,2,,,made,,dunk,25,6
+Andrei Kirilenko,Brevin Knight,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,2,9:41,PHX,shot,,,,,,,,,,Matt Barnes,,,,missed,,3pt,4,19
+Andrei Kirilenko,Brevin Knight,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,2,9:40,UTA,rebound,,,,,,,,,,Andrei Kirilenko,,,,,,def,,
+Andrei Kirilenko,Brevin Knight,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,2,9:26,UTA,shot,,,,,,,,,,Matt Harpring,,,,missed,,jump,6,7
+Andrei Kirilenko,Brevin Knight,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,2,9:25,PHX,rebound,,,,,,,,,,Shaquille O'Neal,,,,,,def,,
+Andrei Kirilenko,Brevin Knight,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,2,9:17,PHX,shot,Matt Barnes,,,,,,,,,Leandro Barbosa,2,,,made,,jump,6,7
+Andrei Kirilenko,Brevin Knight,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,2,9:03,UTA,shot,Mehmet Okur,,,,,,,,,Kyle Korver,2,,,made,,layup,25,6
+Andrei Kirilenko,Brevin Knight,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,2,8:45,PHX,shot,Shaquille O'Neal,,,,,,,,,Boris Diaw,2,,,made,,jump,29,8
+Andrei Kirilenko,Brevin Knight,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,2,8:32,PHX,foul,,,,,,,,Matt Harpring,,Matt Barnes,,,,,,personal,,
+Andrei Kirilenko,Brevin Knight,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,2,8:32,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Andrei Kirilenko,Brevin Knight,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,Steve Nash,2,8:32,PHX,sub,,,,Steve Nash,,Goran Dragic,,,,,,,,,,,,
+Andrei Kirilenko,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,Steve Nash,2,8:32,UTA,sub,,,,Deron Williams,,Brevin Knight,,,,,,,,,,,,
+Andrei Kirilenko,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,Steve Nash,2,8:22,UTA,shot,,,,,,,,,,Mehmet Okur,,,,missed,,jump,4,8
+Andrei Kirilenko,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,Steve Nash,2,8:21,PHX,rebound,,,,,,,,,,Boris Diaw,,,,,,def,,
+Andrei Kirilenko,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,Steve Nash,2,8:15,PHX,shot,,,,,,,,,,Steve Nash,,,,missed,,3pt,4,20
+Andrei Kirilenko,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,Steve Nash,2,8:14,PHX,rebound,,,,,,,,,,Shaquille O'Neal,,,,,,off,,
+Andrei Kirilenko,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,Steve Nash,2,8:11,PHX,shot,,,,,,,,,,Shaquille O'Neal,2,,,made,,dunk,25,6
+Andrei Kirilenko,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,Steve Nash,2,7:52,UTA,shot,,,,,,,,,,Deron Williams,,,,missed,,jump,36,24
+Andrei Kirilenko,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,Steve Nash,2,7:51,PHX,rebound,,,,,,,,,,Steve Nash,,,,,,def,,
+Andrei Kirilenko,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,Steve Nash,2,7:33,PHX,shot,,,,,,,,,,Boris Diaw,2,,,made,,layup,25,6
+Andrei Kirilenko,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,Steve Nash,2,7:33,UTA,foul,,,,,,,,Boris Diaw,,Andrei Kirilenko,,,,,,shooting,,
+Andrei Kirilenko,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,Steve Nash,2,7:33,PHX,free throw,,,,,,,1,,1,Boris Diaw,,,foul,made,,,,
+Andrei Kirilenko,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,Steve Nash,2,7:16,UTA,shot,,,,,,,,,,Kyle Korver,,,,missed,,3pt,36,29
+Andrei Kirilenko,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,Steve Nash,2,7:15,UTA,rebound,,,,,,,,,,,,,,,,,,
+Andrei Kirilenko,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,Steve Nash,2,7:14,PHX,foul,,,,,,,,Matt Harpring,,Leandro Barbosa,,,,,,loose ball,,
+Andrei Kirilenko,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,Steve Nash,2,7:07,UTA,shot,,,,,,,,,,Mehmet Okur,,,,missed,,jump,36,20
+Andrei Kirilenko,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,Steve Nash,2,7:06,PHX,rebound,,,,,,,,,,Matt Barnes,,,,,,def,,
+Andrei Kirilenko,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,Steve Nash,2,7:01,PHX,shot,Matt Barnes,,,,,,,,,Leandro Barbosa,2,,,made,,layup,25,6
+Andrei Kirilenko,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,Steve Nash,2,6:45,UTA,shot,,,,,,,,,,Deron Williams,,,,missed,,3pt,19,30
+Andrei Kirilenko,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Boris Diaw,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,Steve Nash,2,6:44,PHX,rebound,,,,,,,,,,,,,,,,,,
+Andrei Kirilenko,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Boris Diaw,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,Steve Nash,2,6:43,UTA,sub,,,,Paul Millsap,,Matt Harpring,,,,,,,,,,,,
+Andrei Kirilenko,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Boris Diaw,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,Steve Nash,2,6:32,PHX,shot,,,,,,,,,,Steve Nash,2,,,made,,jump,15,8
+Andrei Kirilenko,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Boris Diaw,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,Steve Nash,2,6:12,UTA,shot,Deron Williams,,,,,,,,,Andrei Kirilenko,2,,,made,,jump,16,25
+Andrei Kirilenko,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Boris Diaw,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,Steve Nash,2,5:52,PHX,shot,,,,,,,,,,Matt Barnes,2,,,made,,jump,38,7
+Andrei Kirilenko,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Boris Diaw,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,Steve Nash,2,5:35,UTA,shot,,,,,,,,,,Andrei Kirilenko,,,,missed,,3pt,7,24
+Andrei Kirilenko,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Boris Diaw,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,Steve Nash,2,5:34,PHX,rebound,,,,,,,,,,Shaquille O'Neal,,,,,,def,,
+Andrei Kirilenko,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Boris Diaw,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,Steve Nash,2,5:32,PHX,timeout,,,,,,,,,,,,,,,,regular,,
+Andrei Kirilenko,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,Steve Nash,2,5:32,PHX,sub,,,,Grant Hill,,Boris Diaw,,,,,,,,,,,,
+Andrei Kirilenko,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Grant Hill,Matt Barnes,Raja Bell,Shaquille O'Neal,Steve Nash,2,5:32,PHX,sub,,,,Raja Bell,,Leandro Barbosa,,,,,,,,,,,,
+Andrei Kirilenko,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,2,5:32,PHX,sub,,,,Amare Stoudemire,,Matt Barnes,,,,,,,,,,,,
+Andrei Kirilenko,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,2,5:12,PHX,shot,,,,,,,,,,Grant Hill,,,,missed,,jump,34,21
+Andrei Kirilenko,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,2,5:11,UTA,rebound,,,,,,,,,,Paul Millsap,,,,,,def,,
+Andrei Kirilenko,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,2,4:56,UTA,shot,Paul Millsap,,,,,,,,,Deron Williams,2,,,made,,jump,42,9
+Andrei Kirilenko,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,2,4:36,PHX,shot,Steve Nash,,,,,,,,,Amare Stoudemire,2,,,made,,jump,32,9
+Andrei Kirilenko,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,2,4:10,UTA,turnover,,,,,,,,,,Mehmet Okur,,,bad pass,,Steve Nash,,,
+Andrei Kirilenko,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,2,4:03,PHX,shot,,,,,,,,,,Raja Bell,,,,missed,,3pt,42,24
+Andrei Kirilenko,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,2,4:02,UTA,rebound,,,,,,,,,,Mehmet Okur,,,,,,def,,
+Andrei Kirilenko,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,2,3:51,PHX,foul,,,,,,,,Deron Williams,,Shaquille O'Neal,,,,,,shooting,,
+Andrei Kirilenko,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,2,3:51,UTA,free throw,,,,,,,1,,2,Deron Williams,,,foul,made,,,,
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,2,3:51,UTA,sub,,,,C.J. Miles,,Andrei Kirilenko,,,,,,,,,,,,
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,2,3:51,UTA,free throw,,,,,,,2,,2,Deron Williams,,,foul,made,,,,
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,2,3:38,PHX,turnover,,,,,,,,,,Amare Stoudemire,,,lost ball,,Paul Millsap,,,
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,2,3:30,UTA,shot,,,,,,,,,,Kyle Korver,,,,missed,,3pt,1,9
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,2,3:29,UTA,rebound,,,,,,,,,,Mehmet Okur,,,,,,off,,
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,2,3:21,UTA,shot,,,,,,,,,,Deron Williams,,,,missed,,3pt,8,25
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,2,3:20,UTA,rebound,,,,,,,,,,Paul Millsap,,,,,,off,,
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,2,3:19,PHX,foul,,,,,,,,Paul Millsap,,Amare Stoudemire,,,,,,personal,,
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,2,3:13,UTA,shot,Kyle Korver,,,,,,,,,C.J. Miles,2,,,made,,jump,40,14
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,2,2:54,PHX,shot,,,,,,,,,,Shaquille O'Neal,,,,missed,,jump bank,14,9
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,2,2:53,UTA,rebound,,,,,,,,,,Deron Williams,,,,,,def,,
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,2,2:46,UTA,shot,,,Grant Hill,,,,,,,Mehmet Okur,,,,missed,,layup,25,6
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,2,2:44,PHX,rebound,,,,,,,,,,Shaquille O'Neal,,,,,,def,,
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,2,2:36,PHX,turnover,,,,,,,,,,Steve Nash,,,bad pass,,Paul Millsap,,,
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,2,2:30,UTA,shot,Deron Williams,,,,,,,,,C.J. Miles,2,,,made,,layup,25,6
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,2,2:14,PHX,shot,,,,,,,,,,Raja Bell,,,,missed,,3pt,26,31
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,2,2:13,PHX,rebound,,,,,,,,,,Amare Stoudemire,,,,,,off,,
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,2,2:11,PHX,shot,,,,,,,,,,Amare Stoudemire,,,,missed,,layup,25,6
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,2,2:10,PHX,shot,,,,,,,,,,Amare Stoudemire,2,,,made,,tip,25,6
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,2,2:10,PHX,rebound,,,,,,,,,,Amare Stoudemire,,,,,,off,,
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,2,1:50,PHX,foul,,,,,,,,Paul Millsap,,Shaquille O'Neal,,,,,,shooting,,
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,2,1:50,UTA,timeout,,,,,,,,,,,,,,,,regular,,
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Matt Barnes,Raja Bell,Steve Nash,2,1:50,PHX,sub,,,,Matt Barnes,,Shaquille O'Neal,,,,,,,,,,,,
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Matt Barnes,Raja Bell,Steve Nash,2,1:50,UTA,free throw,,,,,,,1,,2,Paul Millsap,,,foul,made,,,,
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Matt Barnes,Raja Bell,Steve Nash,2,1:50,UTA,free throw,,,,,,,2,,2,Paul Millsap,,,foul,made,,,,
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Matt Barnes,Raja Bell,Steve Nash,2,1:38,PHX,shot,Steve Nash,,,,,,,,,Matt Barnes,3,,,made,,3pt,35,29
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Matt Barnes,Raja Bell,Steve Nash,2,1:21,UTA,turnover,,,,,,,,,,Mehmet Okur,,,poss lost ball turnover,,Matt Barnes,,,
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Matt Barnes,Raja Bell,Steve Nash,2,1:15,PHX,turnover,,,,,,,,,,Matt Barnes,,,bad pass,,Kyle Korver,,,
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Matt Barnes,Raja Bell,Steve Nash,2,1:08,UTA,shot,Deron Williams,,,,,,,,,Paul Millsap,2,,,made,,layup,25,6
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Matt Barnes,Raja Bell,Steve Nash,2,0:49,PHX,shot,,,,,,,,,,Steve Nash,,,,missed,,3pt,2,10
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Matt Barnes,Raja Bell,Steve Nash,2,0:48,UTA,rebound,,,,,,,,,,Paul Millsap,,,,,,def,,
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Matt Barnes,Raja Bell,Steve Nash,2,0:36,UTA,shot,,,,,,,,,,Deron Williams,2,,,made,,jump,32,25
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Matt Barnes,Raja Bell,Steve Nash,2,0:17,PHX,shot,,,,,,,,,,Matt Barnes,,,,missed,,3pt,2,6
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Matt Barnes,Raja Bell,Steve Nash,2,0:16,UTA,rebound,,,,,,,,,,Mehmet Okur,,,,,,def,,
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Matt Barnes,Raja Bell,Steve Nash,2,0:02,UTA,shot,,,,,,,,,,Deron Williams,2,,,made,,jump,14,21
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Matt Barnes,Raja Bell,Steve Nash,2,0:00,PHX,shot,,,,,,,,,,Grant Hill,,,,missed,,3pt,34,31
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Grant Hill,Matt Barnes,Raja Bell,Steve Nash,2,0:00,PHX,rebound,,,,,,,,,,,,,,,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,11:43,UTA,shot,,,,,,,,,,Paul Millsap,,,,missed,,jump,15,20
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,11:42,PHX,rebound,,,,,,,,,,Grant Hill,,,,,,def,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,11:22,PHX,shot,,,,,,,,,,Raja Bell,,,,missed,,3pt,47,5
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,11:21,UTA,rebound,,,,,,,,,,Paul Millsap,,,,,,def,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,11:15,UTA,foul,,,,,,,,Grant Hill,,C.J. Miles,,,,,,offensive,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,11:15,UTA,turnover,,,,,,,,,,C.J. Miles,,,foul,,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,10:57,PHX,shot,,,,,,,,,,Shaquille O'Neal,,,,missed,,jump,25,11
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,10:56,UTA,rebound,,,,,,,,,,Mehmet Okur,,,,,,def,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,10:39,UTA,shot,,,,,,,,,,Paul Millsap,,,,missed,,dunk,25,6
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,10:38,PHX,rebound,,,,,,,,,,Amare Stoudemire,,,,,,def,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,10:36,PHX,turnover,,,,,,,,,,Amare Stoudemire,,,bad pass,,C.J. Miles,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,10:30,UTA,shot,Ronnie Brewer,,,,,,,,,Paul Millsap,2,,,made,,layup,25,6
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,10:20,PHX,shot,,,,,,,,,,Steve Nash,,,,missed,,layup,25,6
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,10:19,PHX,rebound,,,,,,,,,,Amare Stoudemire,,,,,,off,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,10:13,PHX,shot,,,,,,,,,,Steve Nash,,,,missed,,jump,8,8
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,10:12,PHX,rebound,,,,,,,,,,Shaquille O'Neal,,,,,,off,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,10:12,UTA,foul,,,,,,,,Shaquille O'Neal,,Paul Millsap,,,,,,shooting,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,10:12,PHX,free throw,,,,,,,1,,2,Shaquille O'Neal,,,foul,made,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,10:12,PHX,free throw,,,,,,,2,,2,Shaquille O'Neal,,,foul,made,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,9:57,UTA,shot,,,,,,,,,,Ronnie Brewer,,,,missed,,layup,25,6
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,9:56,PHX,rebound,,,,,,,,,,Shaquille O'Neal,,,,,,def,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,9:51,PHX,shot,Steve Nash,,,,,,,,,Amare Stoudemire,2,,,made,,dunk,25,6
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,9:35,UTA,shot,,,,,,,,,,Mehmet Okur,,,,missed,,3pt,42,23
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,9:34,PHX,rebound,,,,,,,,,,Steve Nash,,,,,,def,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,9:26,PHX,turnover,,,,,,,,,,Steve Nash,,,bad pass,,Paul Millsap,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,9:25,PHX,foul,,,,,,,,Paul Millsap,,Amare Stoudemire,,,,,,personal,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,9:12,UTA,shot,,,,,,,,,,Paul Millsap,,,,missed,,jump,19,10
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,9:11,PHX,rebound,,,,,,,,,,Shaquille O'Neal,,,,,,def,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,9:08,UTA,foul,,,,,,,,Grant Hill,,Mehmet Okur,,,,,,shooting,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,9:08,PHX,free throw,,,,,,,1,,2,Grant Hill,,,foul,made,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,9:08,PHX,free throw,,,,,,,2,,2,Grant Hill,,,foul,missed,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,9:07,UTA,rebound,,,,,,,,,,Paul Millsap,,,,,,def,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,8:59,PHX,foul,,,,,,,,Paul Millsap,,Grant Hill,,,,,,shooting,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,8:59,UTA,free throw,,,,,,,1,,2,Paul Millsap,,,foul,made,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,8:59,UTA,free throw,,,,,,,2,,2,Paul Millsap,,,foul,made,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,8:39,PHX,shot,Grant Hill,,,,,,,,,Shaquille O'Neal,2,,,made,,dunk,25,6
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,8:10,UTA,shot,Ronnie Brewer,,,,,,,,,Deron Williams,3,,,made,,3pt,5,24
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,7:45,UTA,foul,,,,,,,,Grant Hill,,Paul Millsap,,,,,,shooting,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,7:45,PHX,free throw,,,,,,,1,,2,Grant Hill,,,foul,missed,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,7:45,PHX,rebound,,,,,,,,,,,,,,,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,7:45,PHX,free throw,,,,,,,2,,2,Grant Hill,,,foul,made,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,7:31,UTA,shot,,,,,,,,,,Deron Williams,,,,missed,,3pt,48,5
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,7:30,UTA,rebound,,,,,,,,,,Paul Millsap,,,,,,off,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,7:20,UTA,shot,,,,,,,,,,Deron Williams,2,,,made,,jump,14,9
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,7:08,PHX,shot,,,,,,,,,,Raja Bell,,,,missed,,3pt,15,30
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,7:08,PHX,rebound,,,,,,,,,,Amare Stoudemire,,,,,,off,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,7:08,UTA,foul,,,,,,,,Amare Stoudemire,,Paul Millsap,,,,,,shooting,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,7:08,PHX,free throw,,,,,,,1,,2,Amare Stoudemire,,,foul,missed,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,7:08,PHX,rebound,,,,,,,,,,,,,,,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Mehmet Okur,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,7:08,UTA,sub,,,,Andrei Kirilenko,,Paul Millsap,,,,,,,,,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Mehmet Okur,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,7:08,PHX,free throw,,,,,,,2,,2,Amare Stoudemire,,,foul,made,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Mehmet Okur,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,6:57,UTA,turnover,,,,,,,,,,Mehmet Okur,,,out of bounds lost ball turnover,,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Mehmet Okur,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,6:31,PHX,shot,,,,,,,,,,Amare Stoudemire,,,,missed,,jump,20,24
+Andrei Kirilenko,C.J. Miles,Deron Williams,Mehmet Okur,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,6:30,UTA,rebound,,,,,,,,,,Mehmet Okur,,,,,,def,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Mehmet Okur,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,6:13,UTA,shot,Deron Williams,,,,,,,,,C.J. Miles,3,,,made,,3pt,31,30
+Andrei Kirilenko,C.J. Miles,Deron Williams,Mehmet Okur,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,6:03,UTA,foul,,,,,,,,Shaquille O'Neal,,Mehmet Okur,,,,,,personal,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Mehmet Okur,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,6:03,PHX,free throw,,,,,,,1,,2,Shaquille O'Neal,,,foul,made,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Mehmet Okur,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,6:03,PHX,free throw,,,,,,,2,,2,Shaquille O'Neal,,,foul,made,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Mehmet Okur,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,5:42,PHX,foul,,,,,,,,Ronnie Brewer,,Shaquille O'Neal,,,,,,shooting,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Mehmet Okur,Ronnie Brewer,Amare Stoudemire,Grant Hill,Raja Bell,Shaquille O'Neal,Steve Nash,3,5:42,PHX,timeout,,,,,,,,,,,,,,,,regular,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Mehmet Okur,Ronnie Brewer,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shaquille O'Neal,Steve Nash,3,5:42,PHX,sub,,,,Leandro Barbosa,,Grant Hill,,,,,,,,,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Mehmet Okur,Ronnie Brewer,Amare Stoudemire,Leandro Barbosa,Matt Barnes,Raja Bell,Steve Nash,3,5:42,PHX,sub,,,,Matt Barnes,,Shaquille O'Neal,,,,,,,,,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Mehmet Okur,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,5:42,PHX,sub,,,,Boris Diaw,,Raja Bell,,,,,,,,,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Mehmet Okur,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,5:42,UTA,free throw,,,,,,,1,,2,Ronnie Brewer,,,foul,missed,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Mehmet Okur,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,5:42,UTA,rebound,,,,,,,,,,,,,,,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kosta Koufos,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,5:42,UTA,sub,,,,Kosta Koufos,,Mehmet Okur,,,,,,,,,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kosta Koufos,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,5:42,UTA,free throw,,,,,,,2,,2,Ronnie Brewer,,,foul,made,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kosta Koufos,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,5:35,UTA,foul,,,,,,,,Amare Stoudemire,,Kosta Koufos,,,,,,personal,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kosta Koufos,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,5:35,PHX,free throw,,,,,,,1,,2,Amare Stoudemire,,,foul,missed,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kosta Koufos,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,5:35,PHX,rebound,,,,,,,,,,,,,,,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kosta Koufos,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,5:35,PHX,free throw,,,,,,,2,,2,Amare Stoudemire,,,foul,made,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kosta Koufos,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,5:18,UTA,shot,,,,,,,,,,C.J. Miles,,,,missed,,jump,14,13
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kosta Koufos,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,5:17,PHX,rebound,,,,,,,,,,Amare Stoudemire,,,,,,def,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kosta Koufos,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,5:03,PHX,shot,Amare Stoudemire,,,,,,,,,Leandro Barbosa,2,,,made,,layup,25,6
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kosta Koufos,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,4:37,UTA,shot,,,,,,,,,,Andrei Kirilenko,2,,,made,,driving layup,25,6
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kosta Koufos,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,4:19,UTA,foul,,,,,,,,Amare Stoudemire,,Kosta Koufos,,,,,,shooting,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kosta Koufos,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,4:19,PHX,free throw,,,,,,,1,,2,Amare Stoudemire,,,foul,missed,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kosta Koufos,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,4:19,PHX,rebound,,,,,,,,,,,,,,,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kosta Koufos,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,4:19,PHX,free throw,,,,,,,2,,2,Amare Stoudemire,,,foul,missed,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kosta Koufos,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,4:19,UTA,rebound,,,,,,,,,,,,,,,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kosta Koufos,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,4:04,UTA,shot,,,,,,,,,,Ronnie Brewer,,,,missed,,layup,25,6
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kosta Koufos,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,4:02,PHX,rebound,,,,,,,,,,Steve Nash,,,,,,def,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kosta Koufos,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,3:58,UTA,foul,,,,,,,,Leandro Barbosa,,Andrei Kirilenko,,,,,,personal,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kosta Koufos,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,3:58,PHX,free throw,,,,,,,1,,2,Leandro Barbosa,,,foul,made,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kosta Koufos,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,3:58,PHX,free throw,,,,,,,2,,2,Leandro Barbosa,,,foul,made,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kosta Koufos,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,3:45,UTA,shot,Deron Williams,,,,,,,,,Kosta Koufos,2,,,made,,layup,25,6
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kosta Koufos,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,3:27,PHX,turnover,,,,,,,,,,Amare Stoudemire,,,bad pass,,Ronnie Brewer,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kosta Koufos,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,3:22,UTA,shot,Deron Williams,,,,,,,,,Ronnie Brewer,2,,,made,,layup,25,6
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kosta Koufos,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,3:22,PHX,foul,,,,,,,,Ronnie Brewer,,Amare Stoudemire,,,,,,shooting,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kosta Koufos,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,3:22,UTA,free throw,,,,,,,1,,1,Ronnie Brewer,,,foul,missed,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kosta Koufos,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,3:21,PHX,rebound,,,,,,,,,,Matt Barnes,,,,,,def,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kosta Koufos,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,3:09,PHX,shot,Boris Diaw,,,,,,,,,Leandro Barbosa,3,,,made,,3pt,47,5
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kosta Koufos,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,3:03,UTA,foul,,,,,,,,Steve Nash,,Deron Williams,,,,,,offensive,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kosta Koufos,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,3:03,UTA,turnover,,,,,,,,,,Deron Williams,,,foul,,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kosta Koufos,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,2:52,PHX,shot,Steve Nash,,,,,,,,,Boris Diaw,3,,,made,,3pt,33,30
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kosta Koufos,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,2:27,UTA,shot,Deron Williams,,,,,,,,,Andrei Kirilenko,2,,,made,,dunk,25,6
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kosta Koufos,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,2:09,PHX,shot,,,,,,,,,,Steve Nash,2,,,made,,driving layup,25,6
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kosta Koufos,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,1:47,UTA,shot,,,,,,,,,,Andrei Kirilenko,,,,missed,,jump,36,6
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kosta Koufos,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,1:46,PHX,rebound,,,,,,,,,,Matt Barnes,,,,,,def,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kosta Koufos,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,1:42,PHX,shot,Matt Barnes,,,,,,,,,Leandro Barbosa,2,,,made,,layup,25,6
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kosta Koufos,Ronnie Brewer,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,1:34,UTA,timeout,,,,,,,,,,,,,,,,regular,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kosta Koufos,Matt Harpring,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,1:34,UTA,sub,,,,Matt Harpring,,Ronnie Brewer,,,,,,,,,,,,
+Andrei Kirilenko,C.J. Miles,Kosta Koufos,Matt Harpring,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,3,1:34,UTA,sub,,,,Ronnie Price,,Deron Williams,,,,,,,,,,,,
+Andrei Kirilenko,C.J. Miles,Kosta Koufos,Matt Harpring,Ronnie Price,Boris Diaw,Leandro Barbosa,Matt Barnes,Robin Lopez,Steve Nash,3,1:34,PHX,sub,,,,Robin Lopez,,Amare Stoudemire,,,,,,,,,,,,
+Andrei Kirilenko,C.J. Miles,Kosta Koufos,Matt Harpring,Ronnie Price,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Robin Lopez,3,1:34,PHX,sub,,,,Goran Dragic,,Steve Nash,,,,,,,,,,,,
+Andrei Kirilenko,C.J. Miles,Kosta Koufos,Matt Harpring,Ronnie Price,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Robin Lopez,3,1:22,PHX,foul,,,,,,,,Kosta Koufos,,Leandro Barbosa,,,,,,personal,,
+Andrei Kirilenko,C.J. Miles,Kosta Koufos,Matt Harpring,Ronnie Price,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Robin Lopez,3,1:22,UTA,free throw,,,,,,,1,,2,Kosta Koufos,,,foul,made,,,,
+Andrei Kirilenko,C.J. Miles,Kosta Koufos,Matt Harpring,Ronnie Price,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Robin Lopez,3,1:22,UTA,free throw,,,,,,,2,,2,Kosta Koufos,,,foul,made,,,,
+Andrei Kirilenko,C.J. Miles,Kosta Koufos,Matt Harpring,Ronnie Price,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Robin Lopez,3,1:10,PHX,shot,,,,,,,,,,Leandro Barbosa,,,,missed,,layup,25,6
+Andrei Kirilenko,C.J. Miles,Kosta Koufos,Matt Harpring,Ronnie Price,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Robin Lopez,3,1:09,UTA,rebound,,,,,,,,,,C.J. Miles,,,,,,def,,
+Andrei Kirilenko,C.J. Miles,Kosta Koufos,Matt Harpring,Ronnie Price,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Robin Lopez,3,1:03,UTA,shot,Ronnie Price,,,,,,,,,Kosta Koufos,2,,,made,,layup,25,6
+Andrei Kirilenko,C.J. Miles,Kosta Koufos,Matt Harpring,Ronnie Price,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Robin Lopez,3,1:03,PHX,foul,,,,,,,,Kosta Koufos,,Matt Barnes,,,,,,shooting,,
+Andrei Kirilenko,C.J. Miles,Kosta Koufos,Matt Harpring,Ronnie Price,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Robin Lopez,3,1:03,UTA,free throw,,,,,,,1,,1,Kosta Koufos,,,foul,made,,,,
+Andrei Kirilenko,C.J. Miles,Kosta Koufos,Matt Harpring,Ronnie Price,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Robin Lopez,3,0:52,UTA,foul,,,,,,,,Leandro Barbosa,,C.J. Miles,,,,,,personal,,
+Andrei Kirilenko,C.J. Miles,Kosta Koufos,Matt Harpring,Ronnie Price,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Robin Lopez,3,0:52,PHX,free throw,,,,,,,1,,2,Leandro Barbosa,,,foul,made,,,,
+Andrei Kirilenko,C.J. Miles,Kosta Koufos,Matt Harpring,Ronnie Price,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Robin Lopez,3,0:52,PHX,free throw,,,,,,,2,,2,Leandro Barbosa,,,foul,made,,,,
+Andrei Kirilenko,C.J. Miles,Kosta Koufos,Matt Harpring,Ronnie Price,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Robin Lopez,3,0:32,UTA,shot,Ronnie Price,,,,,,,,,Andrei Kirilenko,2,,,made,,dunk,25,6
+Andrei Kirilenko,C.J. Miles,Kosta Koufos,Matt Harpring,Ronnie Price,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Robin Lopez,3,0:12,PHX,shot,,,,,,,,,,Robin Lopez,,,,missed,,hook,30,10
+Andrei Kirilenko,C.J. Miles,Kosta Koufos,Matt Harpring,Ronnie Price,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Robin Lopez,3,0:11,PHX,rebound,,,,,,,,,,Robin Lopez,,,,,,off,,
+Andrei Kirilenko,C.J. Miles,Kosta Koufos,Matt Harpring,Ronnie Price,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Robin Lopez,3,0:00,PHX,shot,,,,,,,,,,Goran Dragic,,,,missed,,jump,11,24
+Andrei Kirilenko,C.J. Miles,Kosta Koufos,Matt Harpring,Ronnie Price,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Robin Lopez,3,0:00,PHX,rebound,,,,,,,,,,,,,,,,,,
+Andrei Kirilenko,Kosta Koufos,Kyle Korver,Matt Harpring,Ronnie Price,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,4,11:42,PHX,shot,,,,,,,,,,Matt Barnes,3,,,made,,3pt,1,12
+Andrei Kirilenko,Kosta Koufos,Kyle Korver,Matt Harpring,Ronnie Price,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,4,11:19,PHX,foul,,,,,,,,Kosta Koufos,,Shaquille O'Neal,,,,,,shooting,,
+Andrei Kirilenko,Kosta Koufos,Kyle Korver,Matt Harpring,Ronnie Price,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,4,11:19,UTA,free throw,,,,,,,1,,2,Kosta Koufos,,,foul,missed,,,,
+Andrei Kirilenko,Kosta Koufos,Kyle Korver,Matt Harpring,Ronnie Price,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,4,11:19,UTA,rebound,,,,,,,,,,,,,,,,,,
+Andrei Kirilenko,Kosta Koufos,Kyle Korver,Matt Harpring,Ronnie Price,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,4,11:19,PHX,sub,,,,Amare Stoudemire,,Shaquille O'Neal,,,,,,,,,,,,
+Andrei Kirilenko,Kosta Koufos,Kyle Korver,Matt Harpring,Ronnie Price,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,4,11:19,UTA,free throw,,,,,,,2,,2,Kosta Koufos,,,foul,made,,,,
+Andrei Kirilenko,Kosta Koufos,Kyle Korver,Matt Harpring,Ronnie Price,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,4,10:58,PHX,turnover,,,,,,,,,,Goran Dragic,,,bad pass,,Ronnie Price,,,
+Andrei Kirilenko,Kosta Koufos,Kyle Korver,Matt Harpring,Ronnie Price,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,4,10:55,PHX,foul,,,,,,,,Matt Harpring,,Leandro Barbosa,,,,,,shooting,,
+Andrei Kirilenko,Kosta Koufos,Kyle Korver,Matt Harpring,Ronnie Price,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,4,10:55,UTA,free throw,,,,,,,1,,2,Matt Harpring,,,foul,missed,,,,
+Andrei Kirilenko,Kosta Koufos,Kyle Korver,Matt Harpring,Ronnie Price,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,4,10:55,UTA,rebound,,,,,,,,,,,,,,,,,,
+Andrei Kirilenko,Kosta Koufos,Kyle Korver,Matt Harpring,Ronnie Price,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,4,10:55,UTA,free throw,,,,,,,2,,2,Matt Harpring,,,foul,missed,,,,
+Andrei Kirilenko,Kosta Koufos,Kyle Korver,Matt Harpring,Ronnie Price,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,4,10:54,PHX,rebound,,,,,,,,,,Amare Stoudemire,,,,,,def,,
+Andrei Kirilenko,Kosta Koufos,Kyle Korver,Matt Harpring,Ronnie Price,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,4,10:40,UTA,foul,,,,,,,,Leandro Barbosa,,Kyle Korver,,,,,,shooting,,
+Andrei Kirilenko,Kosta Koufos,Kyle Korver,Matt Harpring,Ronnie Price,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,4,10:40,PHX,free throw,,,,,,,1,,2,Leandro Barbosa,,,foul,made,,,,
+Andrei Kirilenko,Kosta Koufos,Kyle Korver,Matt Harpring,Ronnie Price,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,4,10:40,PHX,free throw,,,,,,,2,,2,Leandro Barbosa,,,foul,made,,,,
+Andrei Kirilenko,Kosta Koufos,Kyle Korver,Matt Harpring,Ronnie Price,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,4,10:24,OFF,jump ball,,Matt Harpring,,,Boris Diaw,,,,,,,Ronnie Price,,,,,,
+Andrei Kirilenko,Kosta Koufos,Kyle Korver,Matt Harpring,Ronnie Price,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,4,10:18,UTA,turnover,,,,,,,,,,Ronnie Price,,,lost ball,,Leandro Barbosa,,,
+Andrei Kirilenko,Kosta Koufos,Kyle Korver,Matt Harpring,Ronnie Price,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,4,10:14,PHX,shot,,,,,,,,,,Leandro Barbosa,,,,missed,,layup,25,6
+Andrei Kirilenko,Kosta Koufos,Kyle Korver,Matt Harpring,Ronnie Price,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,4,10:13,UTA,rebound,,,,,,,,,,Kyle Korver,,,,,,def,,
+Andrei Kirilenko,Kosta Koufos,Kyle Korver,Matt Harpring,Ronnie Price,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,4,9:57,UTA,shot,,,,,,,,,,Matt Harpring,,,,missed,,jump,43,8
+Andrei Kirilenko,Kosta Koufos,Kyle Korver,Matt Harpring,Ronnie Price,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,4,9:56,PHX,rebound,,,,,,,,,,Boris Diaw,,,,,,def,,
+Andrei Kirilenko,Kosta Koufos,Kyle Korver,Matt Harpring,Ronnie Price,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,4,9:43,PHX,shot,,,,,,,,,,Matt Barnes,,,,missed,,jump,7,6
+Andrei Kirilenko,Kosta Koufos,Kyle Korver,Matt Harpring,Ronnie Price,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,4,9:42,UTA,rebound,,,,,,,,,,Matt Harpring,,,,,,def,,
+Andrei Kirilenko,Kosta Koufos,Kyle Korver,Matt Harpring,Ronnie Price,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,4,9:28,UTA,shot,Matt Harpring,,,,,,,,,Kyle Korver,2,,,made,,layup,25,6
+Andrei Kirilenko,Kosta Koufos,Kyle Korver,Matt Harpring,Ronnie Price,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,4,9:12,UTA,foul,,,,,,,,Amare Stoudemire,,Kosta Koufos,,,,,,personal,,
+Andrei Kirilenko,Kosta Koufos,Kyle Korver,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Goran Dragic,Leandro Barbosa,Matt Barnes,4,9:12,UTA,sub,,,,Paul Millsap,,Matt Harpring,,,,,,,,,,,,
+Andrei Kirilenko,Kosta Koufos,Kyle Korver,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,9:12,PHX,sub,,,,Steve Nash,,Goran Dragic,,,,,,,,,,,,
+Andrei Kirilenko,Kosta Koufos,Kyle Korver,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,9:05,UTA,foul,,,,,,,,Steve Nash,,Paul Millsap,,,,,,shooting,,
+Andrei Kirilenko,Kosta Koufos,Kyle Korver,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,9:05,PHX,free throw,,,,,,,1,,2,Steve Nash,,,foul,made,,,,
+Andrei Kirilenko,Kosta Koufos,Kyle Korver,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,9:05,UTA,sub,,,,Mehmet Okur,,Paul Millsap,,,,,,,,,,,,
+Deron Williams,Kosta Koufos,Kyle Korver,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,9:05,UTA,sub,,,,Deron Williams,,Andrei Kirilenko,,,,,,,,,,,,
+Deron Williams,Kosta Koufos,Kyle Korver,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,9:05,PHX,free throw,,,,,,,2,,2,Steve Nash,,,foul,made,,,,
+Deron Williams,Kosta Koufos,Kyle Korver,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,8:48,UTA,turnover,,,,,,,,,,Ronnie Price,,,lost ball,,Leandro Barbosa,,,
+Deron Williams,Kosta Koufos,Kyle Korver,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,8:39,PHX,shot,,,,,,,,,,Steve Nash,,,,missed,,3pt,12,28
+Deron Williams,Kosta Koufos,Kyle Korver,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,8:38,PHX,shot,,,,,,,,,,Amare Stoudemire,,,,missed,,layup,25,6
+Deron Williams,Kosta Koufos,Kyle Korver,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,8:38,PHX,rebound,,,,,,,,,,Amare Stoudemire,,,,,,off,,
+Deron Williams,Kosta Koufos,Kyle Korver,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,8:37,UTA,rebound,,,,,,,,,,Mehmet Okur,,,,,,def,,
+Deron Williams,Kosta Koufos,Kyle Korver,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,8:31,UTA,shot,,,,,,,,,,Ronnie Price,,,,missed,,jump bank,19,9
+Deron Williams,Kosta Koufos,Kyle Korver,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,8:29,UTA,shot,,,,,,,,,,Mehmet Okur,2,,,made,,layup,25,6
+Deron Williams,Kosta Koufos,Kyle Korver,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,8:29,UTA,rebound,,,,,,,,,,Mehmet Okur,,,,,,off,,
+Deron Williams,Kosta Koufos,Kyle Korver,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,8:11,PHX,shot,,,,,,,,,,Boris Diaw,,,,missed,,layup,25,6
+Deron Williams,Kosta Koufos,Kyle Korver,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,8:10,PHX,rebound,,,,,,,,,,Amare Stoudemire,,,,,,off,,
+Deron Williams,Kosta Koufos,Kyle Korver,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,8:10,UTA,foul,,,,,,,,Amare Stoudemire,,Ronnie Price,,,,,,personal,,
+Deron Williams,Kosta Koufos,Kyle Korver,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,8:10,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Deron Williams,Kosta Koufos,Kyle Korver,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,7:56,PHX,turnover,,,,,,,,,,Amare Stoudemire,,,lost ball,,Deron Williams,,,
+Deron Williams,Kosta Koufos,Kyle Korver,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,7:39,UTA,shot,,,,,,,,,,Mehmet Okur,,,,missed,,jump,39,14
+Deron Williams,Kosta Koufos,Kyle Korver,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,7:38,PHX,rebound,,,,,,,,,,Amare Stoudemire,,,,,,def,,
+Deron Williams,Kosta Koufos,Kyle Korver,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,7:18,PHX,shot,,,,,,,,,,Boris Diaw,,,,missed,,layup,25,6
+Deron Williams,Kosta Koufos,Kyle Korver,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,7:16,PHX,shot,,,,,,,,,,Amare Stoudemire,2,,,made,,putback dunk,25,6
+Deron Williams,Kosta Koufos,Kyle Korver,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,7:16,PHX,rebound,,,,,,,,,,Amare Stoudemire,,,,,,off,,
+Deron Williams,Kosta Koufos,Kyle Korver,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,7:00,PHX,foul,,,,,,,,Kosta Koufos,,Matt Barnes,,,,,,shooting,,
+Deron Williams,Kosta Koufos,Kyle Korver,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,7:00,UTA,free throw,,,,,,,1,,2,Kosta Koufos,,,foul,made,,,,
+Deron Williams,Kosta Koufos,Kyle Korver,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,7:00,UTA,free throw,,,,,,,2,,2,Kosta Koufos,,,foul,missed,,,,
+Deron Williams,Kosta Koufos,Kyle Korver,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,6:59,PHX,rebound,,,,,,,,,,Amare Stoudemire,,,,,,def,,
+Deron Williams,Kosta Koufos,Kyle Korver,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,6:43,PHX,shot,Boris Diaw,,,,,,,,,Matt Barnes,3,,,made,,3pt,2,6
+Deron Williams,Kosta Koufos,Kyle Korver,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,6:23,UTA,shot,,,,,,,,,,Kyle Korver,,,,missed,,3pt,1,5
+Deron Williams,Kosta Koufos,Kyle Korver,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,6:22,UTA,rebound,,,,,,,,,,Mehmet Okur,,,,,,off,,
+Deron Williams,Kosta Koufos,Kyle Korver,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,6:16,PHX,foul,,,,,,,,Mehmet Okur,,Boris Diaw,,,,,,shooting,,
+C.J. Miles,Deron Williams,Kosta Koufos,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,6:16,UTA,sub,,,,C.J. Miles,,Kyle Korver,,,,,,,,,,,,
+C.J. Miles,Deron Williams,Kosta Koufos,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,6:16,UTA,free throw,,,,,,,1,,2,Mehmet Okur,,,foul,made,,,,
+C.J. Miles,Deron Williams,Kosta Koufos,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,6:16,UTA,free throw,,,,,,,2,,2,Mehmet Okur,,,foul,made,,,,
+C.J. Miles,Deron Williams,Kosta Koufos,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,6:01,PHX,shot,,,,,,,,,,Amare Stoudemire,2,,,made,,jump,25,11
+C.J. Miles,Deron Williams,Kosta Koufos,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,5:42,UTA,shot,,,,,,,,,,Mehmet Okur,,,,missed,,jump,32,6
+C.J. Miles,Deron Williams,Kosta Koufos,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,5:41,PHX,rebound,,,,,,,,,,Matt Barnes,,,,,,def,,
+C.J. Miles,Deron Williams,Kosta Koufos,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,5:34,PHX,shot,,,,,,,,,,Leandro Barbosa,,,,missed,,3pt,1,11
+C.J. Miles,Deron Williams,Kosta Koufos,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,5:33,UTA,rebound,,,,,,,,,,Ronnie Price,,,,,,def,,
+C.J. Miles,Deron Williams,Kosta Koufos,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,5:24,UTA,shot,,,Matt Barnes,,,,,,,Deron Williams,,,,missed,,jump,19,9
+C.J. Miles,Deron Williams,Kosta Koufos,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,5:23,PHX,rebound,,,,,,,,,,Leandro Barbosa,,,,,,def,,
+C.J. Miles,Deron Williams,Kosta Koufos,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,5:23,UTA,foul,,,,,,,,Leandro Barbosa,,C.J. Miles,,,,,,personal,,
+C.J. Miles,Deron Williams,Kosta Koufos,Mehmet Okur,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,5:23,PHX,timeout,,,,,,,,,,,,,,,,regular,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,5:23,UTA,sub,,,,Paul Millsap,,Kosta Koufos,,,,,,,,,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,5:23,PHX,free throw,,,,,,,1,,2,Leandro Barbosa,,,foul,made,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,5:23,PHX,free throw,,,,,,,2,,2,Leandro Barbosa,,,foul,made,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,5:10,UTA,shot,C.J. Miles,,,,,,,,,Paul Millsap,2,,,made,,jump,26,10
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,4:54,PHX,turnover,,,,,,,,,,Amare Stoudemire,,,traveling,,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,4:45,UTA,shot,,,,,,,,,,Mehmet Okur,2,,,made,,jump,11,9
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,4:45,PHX,foul,,,,,,,,Mehmet Okur,,Leandro Barbosa,,,,,,shooting,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,4:45,UTA,free throw,,,,,,,1,,1,Mehmet Okur,,,foul,made,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,4:34,PHX,shot,,,,,,,,,,Steve Nash,,,,missed,,3pt,11,27
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,4:34,UTA,rebound,,,,,,,,,,,,,,,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,4:34,PHX,foul,,,,,,,,Ronnie Price,,Amare Stoudemire,,,,,,loose ball,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,4:34,UTA,free throw,,,,,,,1,,2,Ronnie Price,,,foul,made,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,4:34,UTA,free throw,,,,,,,2,,2,Ronnie Price,,,foul,missed,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,4:33,PHX,rebound,,,,,,,,,,Matt Barnes,,,,,,def,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,4:21,PHX,shot,,,,,,,,,,Steve Nash,,,,missed,,layup,25,6
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,4:20,PHX,shot,,,,,,,,,,Amare Stoudemire,,,,missed,,tip,25,6
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,4:20,PHX,rebound,,,,,,,,,,Amare Stoudemire,,,,,,off,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,4:19,PHX,rebound,,,,,,,,,,Amare Stoudemire,,,,,,off,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,4:19,UTA,foul,,,,,,,,Amare Stoudemire,,C.J. Miles,,,,,,personal,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,4:19,PHX,free throw,,,,,,,1,,2,Amare Stoudemire,,,foul,made,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,4:19,PHX,free throw,,,,,,,2,,2,Amare Stoudemire,,,foul,missed,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,4:17,UTA,rebound,,,,,,,,,,Mehmet Okur,,,,,,def,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,4:05,UTA,shot,,,,,,,,,,C.J. Miles,,,,missed,,jump,8,20
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,4:04,UTA,rebound,,,,,,,,,,Paul Millsap,,,,,,off,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,4:03,UTA,shot,,,,,,,,,,Paul Millsap,2,,,made,,layup,25,6
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,3:46,PHX,shot,,,,,,,,,,Leandro Barbosa,,,,missed,,3pt,1,8
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,3:46,UTA,rebound,,,,,,,,,,,,,,,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,3:23,UTA,shot,,,,,,,,,,Deron Williams,,,,missed,,reverse layup,25,6
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,3:21,PHX,rebound,,,,,,,,,,Matt Barnes,,,,,,def,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,3:15,PHX,shot,Steve Nash,,,,,,,,,Leandro Barbosa,2,,,made,,jump,46,6
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,2:55,UTA,shot,Deron Williams,,,,,,,,,C.J. Miles,3,,,made,,3pt,9,26
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,2:45,UTA,foul,,,,,,,,Leandro Barbosa,,Ronnie Price,,,,,,personal,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,2:45,UTA,timeout,,,,,,,,,,,,,,,,regular,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,2:45,PHX,free throw,,,,,,,1,,2,Leandro Barbosa,,,foul,made,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,2:45,PHX,free throw,,,,,,,2,,2,Leandro Barbosa,,,foul,made,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,2:21,UTA,shot,,,,,,,,,,Ronnie Price,,,,missed,,3pt,3,20
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,2:20,UTA,rebound,,,,,,,,,,Mehmet Okur,,,,,,off,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,2:17,UTA,shot,Deron Williams,,,,,,,,,C.J. Miles,2,,,made,,alley oop dunk,25,6
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,1:55,UTA,foul,,,,,,,,Boris Diaw,,Ronnie Price,,,,,,personal,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,1:55,PHX,free throw,,,,,,,1,,2,Boris Diaw,,,foul,made,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,1:55,PHX,free throw,,,,,,,2,,2,Boris Diaw,,,foul,missed,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,1:54,UTA,rebound,,,,,,,,,,C.J. Miles,,,,,,def,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,1:38,UTA,shot,,,,,,,,,,C.J. Miles,,,,missed,,3pt,1,6
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,1:37,PHX,rebound,,,,,,,,,,Amare Stoudemire,,,,,,def,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,1:18,PHX,shot,,,,,,,,,,Steve Nash,,,,missed,,3pt,2,6
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,1:17,UTA,rebound,,,,,,,,,,C.J. Miles,,,,,,def,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,1:08,UTA,shot,,,,,,,,,,Deron Williams,,,,missed,,jump bank,20,9
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,1:06,PHX,rebound,,,,,,,,,,Amare Stoudemire,,,,,,def,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,0:59,PHX,shot,,,,,,,,,,Matt Barnes,,,,missed,,layup,25,6
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,0:57,PHX,shot,,,,,,,,,,Amare Stoudemire,,,,missed,,layup,25,6
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,0:57,PHX,rebound,,,,,,,,,,Amare Stoudemire,,,,,,off,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,0:56,PHX,rebound,,,,,,,,,,Boris Diaw,,,,,,off,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,0:41,PHX,shot,Boris Diaw,,,,,,,,,Amare Stoudemire,2,,,made,,jump bank,24,10
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,0:27,UTA,shot,,,,,,,,,,C.J. Miles,,,,missed,,3pt,40,27
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,0:26,PHX,rebound,,,,,,,,,,Boris Diaw,,,,,,def,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,0:20,UTA,foul,,,,,,,,Steve Nash,,Ronnie Price,,,,,,personal,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,0:20,PHX,free throw,,,,,,,1,,2,Steve Nash,,,foul,made,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,0:20,PHX,free throw,,,,,,,2,,2,Steve Nash,,,foul,made,,,,
+C.J. Miles,Deron Williams,Mehmet Okur,Paul Millsap,Ronnie Price,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,0:20,UTA,timeout,,,,,,,,,,,,,,,,regular,,
+C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,0:20,UTA,sub,,,,Kyle Korver,,Ronnie Price,,,,,,,,,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,0:20,UTA,sub,,,,Andrei Kirilenko,,Paul Millsap,,,,,,,,,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,0:15,UTA,shot,Deron Williams,,,,,,,,,Andrei Kirilenko,3,,,made,,3pt,45,22
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,0:14,UTA,foul,,,,,,,,Boris Diaw,,Andrei Kirilenko,,,,,,personal,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,0:14,PHX,free throw,,,,,,,1,,2,Boris Diaw,,,foul,missed,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,0:14,PHX,rebound,,,,,,,,,,,,,,,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,0:14,PHX,free throw,,,,,,,2,,2,Boris Diaw,,,foul,made,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,0:14,UTA,timeout,,,,,,,,,,,,,,,,short,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,0:10,UTA,shot,,,,,,,,,,Deron Williams,,,,missed,,3pt,15,29
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,0:09,PHX,rebound,,,,,,,,,,Matt Barnes,,,,,,def,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,0:09,PHX,timeout,,,,,,,,,,,,,,,,short,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,0:09,OFF,jump ball,,C.J. Miles,,,Matt Barnes,,,,,,,Matt Barnes,,,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,0:06,UTA,foul,,,,,,,,Matt Barnes,,Kyle Korver,,,,,,personal,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,0:06,PHX,free throw,,,,,,,1,,2,Matt Barnes,,,foul,made,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,0:06,PHX,free throw,,,,,,,2,,2,Matt Barnes,,,foul,missed,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,0:06,UTA,rebound,,,,,,,,,,,,,,,,,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,0:01,UTA,shot,,,,,,,,,,Deron Williams,,,,missed,,3pt,6,24
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,0:00,UTA,rebound,,,,,,,,,,Kyle Korver,,,,,,off,,
+Andrei Kirilenko,C.J. Miles,Deron Williams,Kyle Korver,Mehmet Okur,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Matt Barnes,Steve Nash,4,0:00,UTA,shot,,,,,,,,,,Kyle Korver,2,,,made,,jump bank,30,9

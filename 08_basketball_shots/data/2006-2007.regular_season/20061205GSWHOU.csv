@@ -1,0 +1,465 @@
+a1,a2,a3,a4,a5,h1,h2,h3,h4,h5,period,time,team,etype,assist,away,block,entered,home,left,num,opponent,outof,player,points,possession,reason,result,steal,type,x,y
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,12:00,OFF,jump ball,,Andris Biedrins,,,Yao Ming,,,,,,,Rafer Alston,,,,,,
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,11:37,HOU,shot,,,,,,,,,,Rafer Alston,,,,missed,,jump,8,25
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,11:35,GSW,rebound,,,,,,,,,,Monta Ellis,,,,,,def,,
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,11:30,GSW,turnover,,,,,,,,,,Monta Ellis,,,bad pass,,,,,
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,11:19,HOU,shot,,,,,,,,,,Yao Ming,,,,missed,,hook,27,10
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,11:17,GSW,rebound,,,,,,,,,,Andris Biedrins,,,,,,def,,
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,11:06,GSW,shot,,,,,,,,,,Mickael Pietrus,,,,missed,,layup,25,6
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,11:04,HOU,rebound,,,,,,,,,,Shane Battier,,,,,,def,,
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,11:00,HOU,shot,,,,,,,,,,Tracy McGrady,,,,missed,,jump,1,9
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,10:55,GSW,rebound,,,,,,,,,,Mickael Pietrus,,,,,,def,,
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,10:53,GSW,shot,,,,,,,,,,Anthony Roberson,,,,missed,,jump,43,6
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,10:53,HOU,rebound,,,,,,,,,,,,,,,,,,
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,10:37,HOU,shot,,,Mickael Pietrus,,,,,,,Yao Ming,,,,missed,,jump,19,9
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,10:36,HOU,rebound,,,,,,,,,,,,,,,,,,
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,10:34,HOU,shot,Rafer Alston,,,,,,,,,Yao Ming,2,,,made,,hook,19,8
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,10:34,GSW,foul,,,,,,,,Yao Ming,,Andris Biedrins,,,,,,shooting,,
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,10:34,HOU,free throw,,,,,,,1,,1,Yao Ming,,,foul,made,,,,
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,10:22,GSW,shot,,,,,,,,,,Baron Davis,,,,missed,,jump,30,24
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,10:20,GSW,rebound,,,,,,,,,,Andris Biedrins,,,,,,off,,
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,10:16,GSW,shot,,,Yao Ming,,,,,,,Andris Biedrins,,,,missed,,layup,25,6
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,10:14,HOU,rebound,,,,,,,,,,Rafer Alston,,,,,,def,,
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,10:07,GSW,foul,,,,,,,,Tracy McGrady,,Baron Davis,,,,,,personal,,
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,9:57,HOU,shot,,,,,,,,,,Yao Ming,2,,,made,,hook,29,11
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,9:45,GSW,shot,,,,,,,,,,Anthony Roberson,,,,missed,,jump,9,20
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,9:43,GSW,rebound,,,,,,,,,,Anthony Roberson,,,,,,off,,
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,9:35,GSW,shot,,,,,,,,,,Baron Davis,,,,missed,,jump,8,21
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,9:34,HOU,rebound,,,,,,,,,,Tracy McGrady,,,,,,def,,
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,9:27,HOU,shot,Shane Battier,,,,,,,,,Yao Ming,2,,,made,,layup,25,6
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,9:07,GSW,shot,,,,,,,,,,Monta Ellis,2,,,made,,jump,18,24
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,8:56,HOU,shot,Rafer Alston,,,,,,,,,Yao Ming,2,,,made,,layup,25,6
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,8:40,HOU,violation,,,,,,,,,,Yao Ming,,,,,,kicked ball,,
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,8:32,GSW,shot,,,,,,,,,,Baron Davis,,,,missed,,jump,14,21
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,8:29,HOU,rebound,,,,,,,,,,Chuck Hayes,,,,,,def,,
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,8:13,HOU,shot,Shane Battier,,,,,,,,,Yao Ming,2,,,made,,layup,25,6
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,7:54,GSW,shot,,,,,,,,,,Baron Davis,,,,missed,,jump,42,23
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,7:52,GSW,rebound,,,,,,,,,,Mickael Pietrus,,,,,,off,,
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,7:47,GSW,shot,Mickael Pietrus,,,,,,,,,Anthony Roberson,2,,,made,,jump,32,30
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,7:35,GSW,foul,,,,,,,,Yao Ming,,Andris Biedrins,,,,,,personal,,
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,7:30,HOU,shot,Shane Battier,,,,,,,,,Tracy McGrady,2,,,made,,layup,25,6
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,7:15,GSW,shot,,,,,,,,,,Baron Davis,,,,missed,,fade away,25,11
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,7:13,HOU,rebound,,,,,,,,,,Chuck Hayes,,,,,,def,,
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,7:03,HOU,shot,,,,,,,,,,Tracy McGrady,2,,,made,,jump,24,26
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,6:53,HOU,foul,,,,,,,,Monta Ellis,,Rafer Alston,,,,,,personal,,
+Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,6:53,GSW,sub,,,,Troy Murphy,,Andris Biedrins,,,,,,,,,,,,
+Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,6:45,GSW,shot,Baron Davis,,,,,,,,,Monta Ellis,2,,,made,,jump,36,23
+Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,6:30,HOU,shot,,,,,,,,,,Tracy McGrady,,,,missed,,reverse layup,25,6
+Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,6:29,HOU,shot,,,,,,,,,,Yao Ming,2,,,made,,follow up dunk,25,6
+Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,6:29,HOU,rebound,,,,,,,,,,Yao Ming,,,,,,off,,
+Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,6:18,GSW,shot,,,,,,,,,,Monta Ellis,,,,missed,,jump,17,24
+Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,6:16,HOU,rebound,,,,,,,,,,Shane Battier,,,,,,def,,
+Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,5:58,GSW,foul,,,,,,,,Yao Ming,,Troy Murphy,,,,,,personal,,
+Anthony Roberson,Baron Davis,Mickael Pietrus,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,5:58,HOU,timeout,,,,,,,,,,,,,,,,regular,,
+Anthony Roberson,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,5:58,GSW,sub,,,,Mike Dunleavy,,Baron Davis,,,,,,,,,,,,
+Anthony Roberson,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,5:52,HOU,shot,Tracy McGrady,,,,,,,,,Shane Battier,2,,,made,,layup,25,6
+Anthony Roberson,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,5:39,GSW,foul,,,,,,,,Shane Battier,,Monta Ellis,,,,,,offensive,,
+Anthony Roberson,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,5:39,GSW,turnover,,,,,,,,,,Monta Ellis,,,foul,,,,,
+Anthony Roberson,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,5:25,HOU,shot,Tracy McGrady,,,,,,,,,Yao Ming,2,,,made,,turnaround jump,13,9
+Anthony Roberson,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,5:15,GSW,shot,,,,,,,,,,Mike Dunleavy,,,,missed,,layup,25,6
+Anthony Roberson,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,5:14,HOU,rebound,,,,,,,,,,Chuck Hayes,,,,,,def,,
+Anthony Roberson,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,5:03,HOU,shot,,,,,,,,,,Tracy McGrady,2,,,made,,fade away,25,13
+Anthony Roberson,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,4:47,GSW,shot,,,,,,,,,,Troy Murphy,,,,missed,,jump,11,22
+Anthony Roberson,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,4:45,HOU,rebound,,,,,,,,,,Shane Battier,,,,,,def,,
+Anthony Roberson,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,4:32,GSW,foul,,,,,,,,Tracy McGrady,,Anthony Roberson,,,,,,shooting,,
+Anthony Roberson,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,4:32,HOU,free throw,,,,,,,1,,2,Tracy McGrady,,,foul,made,,,,
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,4:32,GSW,sub,,,,Baron Davis,,Anthony Roberson,,,,,,,,,,,,
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,4:32,HOU,free throw,,,,,,,2,,2,Tracy McGrady,,,foul,missed,,,,
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,4:32,HOU,rebound,,,,,,,,,,Tracy McGrady,,,,,,off,,
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,4:26,HOU,shot,,,,,,,,,,Rafer Alston,,,,missed,,jump,7,26
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,4:25,GSW,rebound,,,,,,,,,,Mike Dunleavy,,,,,,def,,
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,4:17,GSW,turnover,,,,,,,,,,Troy Murphy,,,bad pass,,Tracy McGrady,,,
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,4:12,HOU,shot,Rafer Alston,,,,,,,,,Chuck Hayes,2,,,made,,layup,25,6
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,4:04,GSW,timeout,,,,,,,,,,,,,,,,regular,,
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,3:54,GSW,shot,,,,,,,,,,Troy Murphy,2,,,made,,jump,23,27
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,3:32,HOU,shot,Rafer Alston,,,,,,,,,Yao Ming,2,,,made,,turnaround jump,13,9
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,3:23,HOU,foul,,,,,,,,Baron Davis,,Shane Battier,,,,,,shooting,,
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,3:23,GSW,free throw,,,,,,,1,,2,Baron Davis,,,foul,missed,,,,
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,1,3:23,GSW,rebound,,,,,,,,,,,,,,,,,,
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,3:23,HOU,sub,,,,Juwan Howard,,Yao Ming,,,,,,,,,,,,
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,3:23,GSW,free throw,,,,,,,2,,2,Baron Davis,,,foul,made,,,,
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,3:06,HOU,shot,,,,,,,,,,Tracy McGrady,2,,,made,,jump,30,19
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,2:49,GSW,shot,Mickael Pietrus,,,,,,,,,Baron Davis,2,,,made,,jump,9,26
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Juwan Howard,Rafer Alston,Shane Battier,Tracy McGrady,1,2:32,HOU,turnover,,,,,,,,,,Shane Battier,,,bad pass,,,,,
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,1,2:32,HOU,sub,,,,Luther Head,,Shane Battier,,,,,,,,,,,,
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,1,2:15,GSW,shot,,,,,,,,,,Monta Ellis,,,,missed,,jump,49,7
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,1,2:13,GSW,rebound,,,,,,,,,,Mickael Pietrus,,,,,,off,,
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,1,2:06,GSW,shot,,,,,,,,,,Baron Davis,2,,,made,,layup,25,6
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,1,2:06,HOU,foul,,,,,,,,Baron Davis,,Rafer Alston,,,,,,shooting,,
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,1,2:06,HOU,sub,,,,Vassilis Spanoulis,,Rafer Alston,,,,,,,,,,,,
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,1,2:06,GSW,free throw,,,,,,,1,,1,Baron Davis,,,foul,made,,,,
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,1,1:48,HOU,shot,,,Mickael Pietrus,,,,,,,Chuck Hayes,,,,missed,,layup,25,6
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,1,1:47,HOU,rebound,,,,,,,,,,Chuck Hayes,,,,,,off,,
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,1,1:44,HOU,shot,,,Mickael Pietrus,,,,,,,Chuck Hayes,,,,missed,,hook,30,8
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,1,1:42,GSW,rebound,,,,,,,,,,Mike Dunleavy,,,,,,def,,
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,1,1:30,GSW,shot,,,,,,,,,,Baron Davis,,,,missed,,fade away,35,6
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,1,1:28,HOU,rebound,,,,,,,,,,Juwan Howard,,,,,,def,,
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,1,1:19,HOU,turnover,,,,,,,,,,Tracy McGrady,,,lost ball,,Troy Murphy,,,
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,1,1:04,GSW,shot,,,,,,,,,,Troy Murphy,,,,missed,,jump bank,30,10
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,1,1:02,HOU,rebound,,,,,,,,,,Chuck Hayes,,,,,,def,,
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,1,0:47,HOU,shot,Vassilis Spanoulis,,,,,,,,,Luther Head,2,,,made,,jump,1,8
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,1,0:41,GSW,shot,,,,,,,,,,Mike Dunleavy,2,,,made,,driving layup,25,6
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,1,0:29,HOU,shot,,,,,,,,,,Tracy McGrady,2,,,made,,jump,28,25
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,1,0:09,GSW,shot,,,,,,,,,,Monta Ellis,2,,,made,,jump,44,8
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,1,0:00,HOU,shot,,,,,,,,,,Juwan Howard,,,,missed,,jump,39,22
+Baron Davis,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,1,0:00,GSW,rebound,,,,,,,,,,Mickael Pietrus,,,,,,def,,
+Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,2,11:45,GSW,shot,,,Tracy McGrady,,,,,,,Mickael Pietrus,,,,missed,,layup,25,6
+Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,2,11:43,HOU,rebound,,,,,,,,,,Luther Head,,,,,,def,,
+Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,2,11:37,HOU,shot,,,,,,,,,,Tracy McGrady,,,,missed,,jump,19,31
+Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,2,11:35,GSW,rebound,,,,,,,,,,Mike Dunleavy,,,,,,def,,
+Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,2,11:28,GSW,shot,,,,,,,,,,Anthony Roberson,,,,missed,,jump,40,25
+Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,2,11:26,GSW,rebound,,,,,,,,,,Mickael Pietrus,,,,,,off,,
+Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,2,11:21,HOU,foul,,,,,,,,Troy Murphy,,Tracy McGrady,,,,,,shooting,,
+Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,2,11:21,GSW,free throw,,,,,,,1,,2,Troy Murphy,,,foul,made,,,,
+Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,2,11:21,GSW,free throw,,,,,,,2,,2,Troy Murphy,,,foul,made,,,,
+Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,2,11:06,HOU,shot,,,,,,,,,,Tracy McGrady,,,,missed,,jump,38,28
+Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,2,11:04,GSW,rebound,,,,,,,,,,Anthony Roberson,,,,,,def,,
+Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,2,10:58,GSW,shot,,,,,,,,,,Anthony Roberson,,,,missed,,layup,25,6
+Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,2,10:57,HOU,rebound,,,,,,,,,,Juwan Howard,,,,,,def,,
+Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,2,10:50,HOU,shot,,,,,,,,,,Vassilis Spanoulis,,,,missed,,jump,1,8
+Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,2,10:48,HOU,rebound,,,,,,,,,,Juwan Howard,,,,,,off,,
+Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,2,10:43,GSW,foul,,,,,,,,Vassilis Spanoulis,,Mike Dunleavy,,,,,,personal,,
+Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,2,10:39,GSW,foul,,,,,,,,Yao Ming,,Troy Murphy,,,,,,personal,,
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,2,10:39,GSW,sub,,,,Andris Biedrins,,Troy Murphy,,,,,,,,,,,,
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,2,10:24,HOU,shot,,,,,,,,,,Vassilis Spanoulis,,,,missed,,jump,8,21
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,2,10:22,GSW,rebound,,,,,,,,,,Baron Davis,,,,,,def,,
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,2,10:17,GSW,turnover,,,,,,,,,,Baron Davis,,,bad pass,,Luther Head,,,
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,2,10:02,GSW,foul,,,,,,,,Vassilis Spanoulis,,Anthony Roberson,,,,,,shooting,,
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,Yao Ming,2,10:02,HOU,sub,,,,Shane Battier,,Tracy McGrady,,,,,,,,,,,,
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,Yao Ming,2,10:02,HOU,free throw,,,,,,,1,,2,Vassilis Spanoulis,,,foul,made,,,,
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,Yao Ming,2,10:02,HOU,free throw,,,,,,,2,,2,Vassilis Spanoulis,,,foul,made,,,,
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,Yao Ming,2,9:51,GSW,shot,,,,,,,,,,Andris Biedrins,,,,missed,,layup,25,6
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,Yao Ming,2,9:49,HOU,rebound,,,,,,,,,,Yao Ming,,,,,,def,,
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,Yao Ming,2,9:39,HOU,shot,Shane Battier,,,,,,,,,Yao Ming,2,,,made,,slam dunk,25,6
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,Yao Ming,2,9:28,GSW,shot,,,,,,,,,,Baron Davis,,,,missed,,layup,25,6
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,Yao Ming,2,9:27,HOU,rebound,,,,,,,,,,Shane Battier,,,,,,def,,
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,Yao Ming,2,9:21,GSW,foul,,,,,,,,Juwan Howard,,Mike Dunleavy,,,,,,shooting,,
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,Yao Ming,2,9:21,HOU,free throw,,,,,,,1,,2,Juwan Howard,,,foul,made,,,,
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,Yao Ming,2,9:21,HOU,free throw,,,,,,,2,,2,Juwan Howard,,,foul,made,,,,
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,Yao Ming,2,9:07,GSW,shot,,,,,,,,,,Mickael Pietrus,,,,missed,,jump,48,6
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,Yao Ming,2,9:05,HOU,rebound,,,,,,,,,,Juwan Howard,,,,,,def,,
+Andris Biedrins,Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,Yao Ming,2,8:57,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Adonal Foyle,Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,Yao Ming,2,8:57,GSW,sub,,,,Adonal Foyle,,Andris Biedrins,,,,,,,,,,,,
+Adonal Foyle,Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,Yao Ming,2,8:44,HOU,shot,,,,,,,,,,Juwan Howard,2,,,made,,hook,31,9
+Adonal Foyle,Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,Yao Ming,2,8:24,HOU,foul,,,,,,,,Mickael Pietrus,,Shane Battier,,,,,,shooting,,
+Adonal Foyle,Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,Yao Ming,2,8:24,GSW,free throw,,,,,,,1,,2,Mickael Pietrus,,,foul,missed,,,,
+Adonal Foyle,Anthony Roberson,Baron Davis,Mickael Pietrus,Mike Dunleavy,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,Yao Ming,2,8:24,GSW,rebound,,,,,,,,,,,,,,,,,,
+Adonal Foyle,Anthony Roberson,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,Yao Ming,2,8:24,GSW,sub,,,,Monta Ellis,,Baron Davis,,,,,,,,,,,,
+Adonal Foyle,Anthony Roberson,Mickael Pietrus,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,Yao Ming,2,8:24,GSW,sub,,,,Troy Murphy,,Mike Dunleavy,,,,,,,,,,,,
+Adonal Foyle,Anthony Roberson,Mickael Pietrus,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,Yao Ming,2,8:24,GSW,free throw,,,,,,,2,,2,Mickael Pietrus,,,foul,made,,,,
+Adonal Foyle,Anthony Roberson,Mickael Pietrus,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,Yao Ming,2,8:16,GSW,foul,,,,,,,,Shane Battier,,Mickael Pietrus,,,,,,shooting,,
+Adonal Foyle,Anthony Roberson,Mickael Pietrus,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,Yao Ming,2,8:16,HOU,free throw,,,,,,,1,,2,Shane Battier,,,foul,made,,,,
+Adonal Foyle,Anthony Roberson,Mickael Pietrus,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,Yao Ming,2,8:16,HOU,free throw,,,,,,,2,,2,Shane Battier,,,foul,made,,,,
+Adonal Foyle,Anthony Roberson,Mickael Pietrus,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,Yao Ming,2,8:03,HOU,foul,,,,,,,,Mickael Pietrus,,Shane Battier,,,,,,shooting,,
+Adonal Foyle,Anthony Roberson,Mickael Pietrus,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,Yao Ming,2,8:03,GSW,free throw,,,,,,,1,,2,Mickael Pietrus,,,foul,missed,,,,
+Adonal Foyle,Anthony Roberson,Mickael Pietrus,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,Yao Ming,2,8:03,GSW,rebound,,,,,,,,,,,,,,,,,,
+Adonal Foyle,Anthony Roberson,Mickael Pietrus,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Rafer Alston,Vassilis Spanoulis,Yao Ming,2,8:03,HOU,sub,,,,Rafer Alston,,Shane Battier,,,,,,,,,,,,
+Adonal Foyle,Anthony Roberson,Mickael Pietrus,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Rafer Alston,Vassilis Spanoulis,Yao Ming,2,8:03,GSW,free throw,,,,,,,2,,2,Mickael Pietrus,,,foul,made,,,,
+Adonal Foyle,Anthony Roberson,Mickael Pietrus,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Rafer Alston,Vassilis Spanoulis,Yao Ming,2,7:50,HOU,shot,,,,,,,,,,Yao Ming,,,,missed,,turnaround jump,14,7
+Adonal Foyle,Anthony Roberson,Mickael Pietrus,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Rafer Alston,Vassilis Spanoulis,Yao Ming,2,7:48,GSW,rebound,,,,,,,,,,Mickael Pietrus,,,,,,def,,
+Adonal Foyle,Anthony Roberson,Mickael Pietrus,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Rafer Alston,Vassilis Spanoulis,Yao Ming,2,7:45,HOU,foul,,,,,,,,Mickael Pietrus,,Vassilis Spanoulis,,,,,,shooting,,
+Adonal Foyle,Anthony Roberson,Mickael Pietrus,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Rafer Alston,Vassilis Spanoulis,Yao Ming,2,7:45,GSW,free throw,,,,,,,1,,2,Mickael Pietrus,,,foul,made,,,,
+Adonal Foyle,Anthony Roberson,Mickael Pietrus,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Rafer Alston,Vassilis Spanoulis,Yao Ming,2,7:45,GSW,free throw,,,,,,,2,,2,Mickael Pietrus,,,foul,missed,,,,
+Adonal Foyle,Anthony Roberson,Mickael Pietrus,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Rafer Alston,Vassilis Spanoulis,Yao Ming,2,7:45,HOU,rebound,,,,,,,,,,Rafer Alston,,,,,,def,,
+Adonal Foyle,Anthony Roberson,Mickael Pietrus,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Rafer Alston,Vassilis Spanoulis,Yao Ming,2,7:31,HOU,shot,,,,,,,,,,Juwan Howard,,,,missed,,jump,42,7
+Adonal Foyle,Anthony Roberson,Mickael Pietrus,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Rafer Alston,Vassilis Spanoulis,Yao Ming,2,7:29,GSW,rebound,,,,,,,,,,Anthony Roberson,,,,,,def,,
+Adonal Foyle,Anthony Roberson,Mickael Pietrus,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Rafer Alston,Vassilis Spanoulis,Yao Ming,2,7:18,GSW,shot,,,,,,,,,,Adonal Foyle,,,,missed,,reverse layup,25,6
+Adonal Foyle,Anthony Roberson,Mickael Pietrus,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Rafer Alston,Vassilis Spanoulis,Yao Ming,2,7:16,HOU,rebound,,,,,,,,,,Juwan Howard,,,,,,def,,
+Adonal Foyle,Anthony Roberson,Mickael Pietrus,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Rafer Alston,Vassilis Spanoulis,Yao Ming,2,7:07,HOU,shot,Yao Ming,,,,,,,,,Luther Head,2,,,made,,reverse layup,25,6
+Adonal Foyle,Anthony Roberson,Mickael Pietrus,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Rafer Alston,Vassilis Spanoulis,Yao Ming,2,6:53,GSW,shot,,,,,,,,,,Monta Ellis,2,,,made,,jump,25,26
+Adonal Foyle,Anthony Roberson,Mickael Pietrus,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Rafer Alston,Vassilis Spanoulis,Yao Ming,2,6:29,HOU,shot,,,,,,,,,,Yao Ming,2,,,made,,jump,32,7
+Adonal Foyle,Anthony Roberson,Mickael Pietrus,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Rafer Alston,Vassilis Spanoulis,Yao Ming,2,6:17,GSW,shot,,,,,,,,,,Monta Ellis,,,,missed,,jump,25,24
+Adonal Foyle,Anthony Roberson,Mickael Pietrus,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Rafer Alston,Vassilis Spanoulis,Yao Ming,2,6:15,HOU,rebound,,,,,,,,,,Juwan Howard,,,,,,def,,
+Adonal Foyle,Anthony Roberson,Mickael Pietrus,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Rafer Alston,Vassilis Spanoulis,Yao Ming,2,6:11,GSW,foul,,,,,,,,Luther Head,,Monta Ellis,,,,,,shooting,,
+Adonal Foyle,Anthony Roberson,Mickael Pietrus,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Rafer Alston,Vassilis Spanoulis,Yao Ming,2,6:11,HOU,free throw,,,,,,,1,,2,Luther Head,,,foul,made,,,,
+Adonal Foyle,Anthony Roberson,Mickael Pietrus,Monta Ellis,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Vassilis Spanoulis,2,6:11,HOU,sub,,,,Chuck Hayes,,Yao Ming,,,,,,,,,,,,
+Adonal Foyle,Anthony Roberson,Mickael Pietrus,Monta Ellis,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Vassilis Spanoulis,2,6:11,HOU,free throw,,,,,,,2,,2,Luther Head,,,foul,made,,,,
+Adonal Foyle,Anthony Roberson,Mickael Pietrus,Monta Ellis,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Vassilis Spanoulis,2,6:05,HOU,foul,,,,,,,,Troy Murphy,,Juwan Howard,,,,,,personal,,
+Adonal Foyle,Anthony Roberson,Mickael Pietrus,Monta Ellis,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Vassilis Spanoulis,2,6:05,GSW,free throw,,,,,,,1,,2,Troy Murphy,,,foul,missed,,,,
+Adonal Foyle,Anthony Roberson,Mickael Pietrus,Monta Ellis,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Vassilis Spanoulis,2,6:05,GSW,rebound,,,,,,,,,,,,,,,,,,
+Anthony Roberson,Mickael Pietrus,Monta Ellis,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Vassilis Spanoulis,2,6:05,GSW,sub,,,,Patrick O'Bryant,,Adonal Foyle,,,,,,,,,,,,
+Anthony Roberson,Mickael Pietrus,Monta Ellis,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Vassilis Spanoulis,2,6:05,GSW,free throw,,,,,,,2,,2,Troy Murphy,,,foul,made,,,,
+Anthony Roberson,Mickael Pietrus,Monta Ellis,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Vassilis Spanoulis,2,5:57,HOU,shot,,,,,,,,,,Rafer Alston,,,,missed,,jump,12,29
+Anthony Roberson,Mickael Pietrus,Monta Ellis,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Vassilis Spanoulis,2,5:55,GSW,rebound,,,,,,,,,,Monta Ellis,,,,,,def,,
+Anthony Roberson,Mickael Pietrus,Monta Ellis,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Vassilis Spanoulis,2,5:49,GSW,shot,,,,,,,,,,Monta Ellis,,,,missed,,layup,25,6
+Anthony Roberson,Mickael Pietrus,Monta Ellis,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Vassilis Spanoulis,2,5:46,HOU,rebound,,,,,,,,,,,,,,,,,,
+Anthony Roberson,Mickael Pietrus,Monta Ellis,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Vassilis Spanoulis,2,5:46,HOU,timeout,,,,,,,,,,,,,,,,regular,,
+Anthony Roberson,Mickael Pietrus,Monta Ellis,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,2,5:46,HOU,sub,,,,Tracy McGrady,,Vassilis Spanoulis,,,,,,,,,,,,
+Anthony Roberson,Baron Davis,Monta Ellis,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,2,5:46,GSW,sub,,,,Baron Davis,,Mickael Pietrus,,,,,,,,,,,,
+Anthony Roberson,Baron Davis,Monta Ellis,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,2,5:28,GSW,foul,,,,,,,,Juwan Howard,,Patrick O'Bryant,,,,,,shooting,,
+Anthony Roberson,Baron Davis,Monta Ellis,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,2,5:28,HOU,free throw,,,,,,,1,,2,Juwan Howard,,,foul,made,,,,
+Anthony Roberson,Baron Davis,Monta Ellis,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,2,5:28,HOU,free throw,,,,,,,2,,2,Juwan Howard,,,foul,made,,,,
+Anthony Roberson,Baron Davis,Monta Ellis,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,2,5:11,GSW,shot,,,,,,,,,,Monta Ellis,,,,missed,,jump,24,31
+Anthony Roberson,Baron Davis,Monta Ellis,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,2,5:10,HOU,rebound,,,,,,,,,,Juwan Howard,,,,,,def,,
+Anthony Roberson,Baron Davis,Monta Ellis,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,2,5:04,HOU,shot,Luther Head,,,,,,,,,Tracy McGrady,2,,,made,,jump,27,31
+Anthony Roberson,Baron Davis,Monta Ellis,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,2,4:46,GSW,shot,Baron Davis,,,,,,,,,Anthony Roberson,2,,,made,,jump,1,8
+Anthony Roberson,Baron Davis,Monta Ellis,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,2,4:32,HOU,turnover,,,,,,,,,,Tracy McGrady,,,traveling,,,,,
+Anthony Roberson,Baron Davis,Monta Ellis,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,2,4:12,GSW,shot,,,,,,,,,,Anthony Roberson,,,,missed,,fade away,14,22
+Anthony Roberson,Baron Davis,Monta Ellis,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,2,4:09,HOU,rebound,,,,,,,,,,Chuck Hayes,,,,,,def,,
+Anthony Roberson,Baron Davis,Monta Ellis,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,2,4:03,GSW,foul,,,,,,,,Rafer Alston,,Anthony Roberson,,,,,,shooting,,
+Anthony Roberson,Baron Davis,Monta Ellis,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,2,4:03,HOU,free throw,,,,,,,1,,2,Rafer Alston,,,foul,made,,,,
+Baron Davis,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,2,4:03,GSW,sub,,,,Mike Dunleavy,,Anthony Roberson,,,,,,,,,,,,
+Baron Davis,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,2,4:03,HOU,free throw,,,,,,,2,,2,Rafer Alston,,,foul,made,,,,
+Baron Davis,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,2,3:52,GSW,shot,,,,,,,,,,Mike Dunleavy,,,,missed,,layup,25,6
+Baron Davis,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,2,3:51,GSW,shot,,,,,,,,,,Mike Dunleavy,2,,,made,,tip,25,6
+Baron Davis,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,2,3:51,GSW,rebound,,,,,,,,,,Mike Dunleavy,,,,,,off,,
+Baron Davis,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,2,3:28,HOU,shot,,,,,,,,,,Tracy McGrady,,,,missed,,jump,18,28
+Baron Davis,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,2,3:26,GSW,rebound,,,,,,,,,,Troy Murphy,,,,,,def,,
+Baron Davis,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,2,3:20,GSW,shot,Baron Davis,,,,,,,,,Mike Dunleavy,2,,,made,,layup,25,6
+Baron Davis,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,2,3:01,HOU,shot,Tracy McGrady,,,,,,,,,Juwan Howard,2,,,made,,layup,25,6
+Baron Davis,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,2,3:01,GSW,foul,,,,,,,,Juwan Howard,,Patrick O'Bryant,,,,,,shooting,,
+Baron Davis,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,Troy Murphy,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,Yao Ming,2,3:01,HOU,sub,,,,Yao Ming,,Chuck Hayes,,,,,,,,,,,,
+Adonal Foyle,Baron Davis,Mike Dunleavy,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,Yao Ming,2,3:01,GSW,sub,,,,Adonal Foyle,,Patrick O'Bryant,,,,,,,,,,,,
+Adonal Foyle,Baron Davis,Mike Dunleavy,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,Yao Ming,2,3:01,HOU,free throw,,,,,,,1,,1,Juwan Howard,,,foul,made,,,,
+Adonal Foyle,Baron Davis,Mike Dunleavy,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,Yao Ming,2,2:46,GSW,shot,,,,,,,,,,Mike Dunleavy,,,,missed,,jump,42,17
+Adonal Foyle,Baron Davis,Mike Dunleavy,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,Yao Ming,2,2:44,HOU,rebound,,,,,,,,,,Yao Ming,,,,,,def,,
+Adonal Foyle,Baron Davis,Mike Dunleavy,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,Yao Ming,2,2:25,HOU,shot,,,,,,,,,,Rafer Alston,,,,missed,,jump,40,27
+Adonal Foyle,Baron Davis,Mike Dunleavy,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,Yao Ming,2,2:23,GSW,rebound,,,,,,,,,,Troy Murphy,,,,,,def,,
+Adonal Foyle,Baron Davis,Mike Dunleavy,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,Yao Ming,2,2:12,HOU,foul,,,,,,,,Baron Davis,,Luther Head,,,,,,shooting,,
+Adonal Foyle,Baron Davis,Mike Dunleavy,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,Yao Ming,2,2:12,GSW,timeout,,,,,,,,,,,,,,,,regular,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mike Dunleavy,Monta Ellis,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,Yao Ming,2,2:12,GSW,sub,,,,Andris Biedrins,,Troy Murphy,,,,,,,,,,,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mike Dunleavy,Monta Ellis,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,Yao Ming,2,2:12,GSW,free throw,,,,,,,1,,2,Baron Davis,,,foul,missed,,,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mike Dunleavy,Monta Ellis,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,Yao Ming,2,2:12,GSW,rebound,,,,,,,,,,,,,,,,,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mike Dunleavy,Monta Ellis,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,Yao Ming,2,2:12,GSW,free throw,,,,,,,2,,2,Baron Davis,,,foul,made,,,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mike Dunleavy,Monta Ellis,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,Yao Ming,2,2:01,HOU,shot,Tracy McGrady,,,,,,,,,Yao Ming,2,,,made,,slam dunk,25,6
+Adonal Foyle,Andris Biedrins,Baron Davis,Mike Dunleavy,Monta Ellis,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,Yao Ming,2,1:36,GSW,shot,,,,,,,,,,Mike Dunleavy,,,,missed,,jump,40,26
+Adonal Foyle,Andris Biedrins,Baron Davis,Mike Dunleavy,Monta Ellis,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,Yao Ming,2,1:34,HOU,rebound,,,,,,,,,,Juwan Howard,,,,,,def,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mike Dunleavy,Monta Ellis,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,Yao Ming,2,1:21,HOU,shot,,,,,,,,,,Yao Ming,,,,missed,,fade away,21,17
+Adonal Foyle,Andris Biedrins,Baron Davis,Mike Dunleavy,Monta Ellis,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,Yao Ming,2,1:19,GSW,rebound,,,,,,,,,,Mike Dunleavy,,,,,,def,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mike Dunleavy,Monta Ellis,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,Yao Ming,2,1:11,GSW,shot,,,,,,,,,,Baron Davis,2,,,made,,jump,43,23
+Adonal Foyle,Andris Biedrins,Baron Davis,Mike Dunleavy,Monta Ellis,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,Yao Ming,2,1:01,HOU,shot,,,,,,,,,,Luther Head,,,,missed,,reverse layup,25,6
+Adonal Foyle,Andris Biedrins,Baron Davis,Mike Dunleavy,Monta Ellis,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,Yao Ming,2,0:57,GSW,rebound,,,,,,,,,,Adonal Foyle,,,,,,def,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mike Dunleavy,Monta Ellis,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,Yao Ming,2,0:41,GSW,shot,,,,,,,,,,Baron Davis,2,,,made,,jump,24,32
+Adonal Foyle,Andris Biedrins,Baron Davis,Mike Dunleavy,Monta Ellis,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,Yao Ming,2,0:30,GSW,foul,,,,,,,,Tracy McGrady,,Mike Dunleavy,,,,,,personal,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mike Dunleavy,Monta Ellis,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,Yao Ming,2,0:30,HOU,free throw,,,,,,,1,,2,Tracy McGrady,,,foul,made,,,,
+Andris Biedrins,Baron Davis,Mike Dunleavy,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Rafer Alston,Tracy McGrady,Yao Ming,2,0:30,GSW,sub,,,,Troy Murphy,,Adonal Foyle,,,,,,,,,,,,
+Andris Biedrins,Baron Davis,Mike Dunleavy,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,2,0:30,HOU,sub,,,,Vassilis Spanoulis,,Rafer Alston,,,,,,,,,,,,
+Andris Biedrins,Baron Davis,Mike Dunleavy,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,2,0:30,HOU,free throw,,,,,,,2,,2,Tracy McGrady,,,foul,made,,,,
+Andris Biedrins,Baron Davis,Mike Dunleavy,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,2,0:12,GSW,shot,,,,,,,,,,Andris Biedrins,2,,,made,,layup,25,6
+Andris Biedrins,Baron Davis,Mike Dunleavy,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,2,0:01,HOU,shot,,,,,,,,,,Vassilis Spanoulis,,,,missed,,jump,38,27
+Andris Biedrins,Baron Davis,Mike Dunleavy,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,2,0:00,GSW,rebound,,,,,,,,,,Mike Dunleavy,,,,,,def,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,11:46,GSW,shot,,,,,,,,,,Mickael Pietrus,,,,missed,,jump,26,26
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,11:44,HOU,rebound,,,,,,,,,,Yao Ming,,,,,,def,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,11:33,HOU,shot,,,,,,,,,,Tracy McGrady,,,,missed,,jump,11,8
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,11:31,GSW,rebound,,,,,,,,,,Andris Biedrins,,,,,,def,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,11:14,GSW,shot,,,,,,,,,,Andris Biedrins,2,,,made,,turnaround hook,33,7
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,11:02,HOU,shot,,,Adonal Foyle,,,,,,,Chuck Hayes,,,,missed,,layup,25,6
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,11:00,HOU,rebound,,,,,,,,,,Chuck Hayes,,,,,,off,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,10:56,GSW,foul,,,,,,,,,,Adonal Foyle,,,,,,illegal defense,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,10:56,HOU,free throw,,,,,,,1,,1,Yao Ming,,,technical,made,,,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,10:45,HOU,shot,,,,,,,,,,Yao Ming,,,,missed,,jump,7,7
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,10:43,GSW,rebound,,,,,,,,,,Andris Biedrins,,,,,,def,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,10:33,GSW,shot,,,,,,,,,,Monta Ellis,2,,,made,,layup,25,6
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,10:12,HOU,turnover,,,,,,,,,,Yao Ming,,,bad pass,,Baron Davis,,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,10:08,GSW,shot,Baron Davis,,,,,,,,,Monta Ellis,2,,,made,,layup,25,6
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,9:49,HOU,shot,Tracy McGrady,,,,,,,,,Shane Battier,2,,,made,,jump,48,11
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,9:33,GSW,turnover,,,,,,,,,,Andris Biedrins,,,traveling,,,,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,9:25,HOU,shot,Shane Battier,,,,,,,,,Tracy McGrady,2,,,made,,layup,25,6
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,9:06,GSW,shot,,,,,,,,,,Adonal Foyle,,,,missed,,jump,13,22
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,9:04,HOU,rebound,,,,,,,,,,,,,,,,,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,8:53,HOU,shot,Tracy McGrady,,,,,,,,,Chuck Hayes,2,,,made,,layup,25,6
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,8:52,GSW,timeout,,,,,,,,,,,,,,,,regular,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,8:32,GSW,shot,,,,,,,,,,Baron Davis,2,,,made,,fade away,11,20
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,8:13,HOU,shot,,,,,,,,,,Tracy McGrady,,,,missed,,layup,25,6
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,8:12,GSW,rebound,,,,,,,,,,Adonal Foyle,,,,,,def,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,8:08,GSW,shot,,,,,,,,,,Baron Davis,,,,missed,,layup,25,6
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,8:07,GSW,shot,,,,,,,,,,Mickael Pietrus,,,,missed,,layup,25,6
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,8:07,GSW,rebound,,,,,,,,,,Mickael Pietrus,,,,,,off,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,8:03,HOU,rebound,,,,,,,,,,Chuck Hayes,,,,,,def,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,8:02,HOU,turnover,,,,,,,,,,Chuck Hayes,,,bad pass,,Baron Davis,,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,8:00,GSW,shot,,,,,,,,,,Baron Davis,2,,,made,,layup,25,6
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,7:46,HOU,turnover,,,,,,,,,,Rafer Alston,,,bad pass,,,,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,7:33,HOU,foul,,,,,,,,Baron Davis,,Chuck Hayes,,,,,,personal,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,7:21,HOU,foul,,,,,,,,Monta Ellis,,Rafer Alston,,,,,,personal,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,7:11,GSW,shot,,,,,,,,,,Baron Davis,,,,missed,,jump,46,19
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,7:08,HOU,rebound,,,,,,,,,,Rafer Alston,,,,,,def,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,7:03,HOU,shot,,,,,,,,,,Tracy McGrady,,,,missed,,dunk,25,6
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,7:02,HOU,shot,,,,,,,,,,Chuck Hayes,2,,,made,,layup,25,6
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,7:02,HOU,rebound,,,,,,,,,,Chuck Hayes,,,,,,off,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,6:56,GSW,shot,,,,,,,,,,Mickael Pietrus,,,,missed,,jump,1,13
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,6:54,HOU,rebound,,,,,,,,,,Shane Battier,,,,,,def,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,6:41,HOU,shot,,,,,,,,,,Yao Ming,2,,,made,,turnaround jump,15,7
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,6:27,GSW,turnover,,,,,,,,,,Baron Davis,,,bad pass,,Tracy McGrady,,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,6:09,HOU,shot,Yao Ming,,,,,,,,,Tracy McGrady,2,,,made,,dunk,25,6
+Adonal Foyle,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,5:51,HOU,foul,,,,,,,,Andris Biedrins,,Chuck Hayes,,,,,,shooting,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mike Dunleavy,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,5:51,GSW,sub,,,,Mike Dunleavy,,Mickael Pietrus,,,,,,,,,,,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mike Dunleavy,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,5:51,GSW,free throw,,,,,,,1,,2,Andris Biedrins,,,foul,missed,,,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mike Dunleavy,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,5:51,GSW,rebound,,,,,,,,,,,,,,,,,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mike Dunleavy,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,5:51,GSW,free throw,,,,,,,2,,2,Andris Biedrins,,,foul,missed,,,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mike Dunleavy,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,5:51,HOU,rebound,,,,,,,,,,Chuck Hayes,,,,,,def,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mike Dunleavy,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,5:44,HOU,shot,,,,,,,,,,Tracy McGrady,,,,missed,,jump,8,28
+Adonal Foyle,Andris Biedrins,Baron Davis,Mike Dunleavy,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,5:42,GSW,rebound,,,,,,,,,,Adonal Foyle,,,,,,def,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mike Dunleavy,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,5:37,GSW,turnover,,,,,,,,,,Mike Dunleavy,,,bad pass,,Tracy McGrady,,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mike Dunleavy,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,5:33,HOU,shot,,,,,,,,,,Tracy McGrady,2,,,made,,layup,25,6
+Adonal Foyle,Andris Biedrins,Baron Davis,Mike Dunleavy,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,5:12,GSW,shot,,,,,,,,,,Monta Ellis,,,,missed,,jump,32,25
+Adonal Foyle,Andris Biedrins,Baron Davis,Mike Dunleavy,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,5:10,HOU,rebound,,,,,,,,,,Yao Ming,,,,,,def,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mike Dunleavy,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,5:03,HOU,shot,,,,,,,,,,Tracy McGrady,2,,,made,,jump,31,31
+Adonal Foyle,Andris Biedrins,Baron Davis,Mike Dunleavy,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,4:51,GSW,turnover,,,,,,,,,,Andris Biedrins,,,lost ball,,Chuck Hayes,,,
+Adonal Foyle,Andris Biedrins,Baron Davis,Mike Dunleavy,Monta Ellis,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,4:51,GSW,foul,,,,,,,,Chuck Hayes,,Andris Biedrins,,,,,,personal,,
+Andris Biedrins,Baron Davis,Mike Dunleavy,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,4:51,GSW,sub,,,,Troy Murphy,,Adonal Foyle,,,,,,,,,,,,
+Andris Biedrins,Baron Davis,Keith McLeod,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,4:51,GSW,sub,,,,Keith McLeod,,Mike Dunleavy,,,,,,,,,,,,
+Andris Biedrins,Baron Davis,Keith McLeod,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,4:33,HOU,shot,,,,,,,,,,Shane Battier,,,,missed,,jump,1,9
+Andris Biedrins,Baron Davis,Keith McLeod,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,4:32,GSW,rebound,,,,,,,,,,Baron Davis,,,,,,def,,
+Andris Biedrins,Baron Davis,Keith McLeod,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,4:25,GSW,shot,,,Yao Ming,,,,,,,Baron Davis,,,,missed,,turnaround jump,27,11
+Andris Biedrins,Baron Davis,Keith McLeod,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,4:24,HOU,rebound,,,,,,,,,,,,,,,,,,
+Andris Biedrins,Baron Davis,Keith McLeod,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,4:10,HOU,shot,,,,,,,,,,Tracy McGrady,,,,missed,,jump,12,29
+Andris Biedrins,Baron Davis,Keith McLeod,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,4:09,GSW,rebound,,,,,,,,,,,,,,,,,,
+Andris Biedrins,Baron Davis,Keith McLeod,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,4:09,HOU,foul,,,,,,,,Troy Murphy,,Yao Ming,,,,,,loose ball,,
+Andris Biedrins,Baron Davis,Keith McLeod,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,3:57,HOU,foul,,,,,,,,Monta Ellis,,Rafer Alston,,,,,,shooting,,
+Andris Biedrins,Baron Davis,Keith McLeod,Monta Ellis,Troy Murphy,Chuck Hayes,Rafer Alston,Shane Battier,Tracy McGrady,Yao Ming,3,3:57,GSW,free throw,,,,,,,1,,2,Monta Ellis,,,foul,made,,,,
+Andris Biedrins,Baron Davis,Keith McLeod,Monta Ellis,Troy Murphy,Chuck Hayes,Luther Head,Shane Battier,Tracy McGrady,Yao Ming,3,3:57,HOU,sub,,,,Luther Head,,Rafer Alston,,,,,,,,,,,,
+Andris Biedrins,Baron Davis,Keith McLeod,Monta Ellis,Troy Murphy,Chuck Hayes,Luther Head,Shane Battier,Tracy McGrady,Yao Ming,3,3:57,GSW,free throw,,,,,,,2,,2,Monta Ellis,,,foul,made,,,,
+Andris Biedrins,Baron Davis,Keith McLeod,Monta Ellis,Troy Murphy,Chuck Hayes,Luther Head,Shane Battier,Tracy McGrady,Yao Ming,3,3:44,HOU,turnover,,,,,,,,,,Tracy McGrady,,,bad pass,,Andris Biedrins,,,
+Andris Biedrins,Baron Davis,Keith McLeod,Monta Ellis,Troy Murphy,Chuck Hayes,Luther Head,Shane Battier,Tracy McGrady,Yao Ming,3,3:32,GSW,shot,Baron Davis,,,,,,,,,Troy Murphy,2,,,made,,jump,11,28
+Andris Biedrins,Baron Davis,Keith McLeod,Monta Ellis,Troy Murphy,Chuck Hayes,Luther Head,Shane Battier,Tracy McGrady,Yao Ming,3,3:14,HOU,shot,Yao Ming,,,,,,,,,Tracy McGrady,2,,,made,,slam dunk,25,6
+Andris Biedrins,Baron Davis,Keith McLeod,Monta Ellis,Troy Murphy,Chuck Hayes,Luther Head,Shane Battier,Tracy McGrady,Yao Ming,3,2:51,GSW,shot,,,,,,,,,,Monta Ellis,2,,,made,,jump,10,28
+Andris Biedrins,Baron Davis,Keith McLeod,Monta Ellis,Troy Murphy,Chuck Hayes,Luther Head,Shane Battier,Tracy McGrady,Yao Ming,3,2:33,HOU,turnover,,,,,,,,,,Tracy McGrady,,,bad pass,,Andris Biedrins,,,
+Andris Biedrins,Baron Davis,Keith McLeod,Monta Ellis,Troy Murphy,Chuck Hayes,Luther Head,Shane Battier,Tracy McGrady,Yao Ming,3,2:29,GSW,shot,Keith McLeod,,,,,,,,,Monta Ellis,2,,,made,,layup,25,6
+Andris Biedrins,Baron Davis,Keith McLeod,Monta Ellis,Troy Murphy,Chuck Hayes,Luther Head,Shane Battier,Tracy McGrady,Yao Ming,3,2:26,HOU,timeout,,,,,,,,,,,,,,,,regular,,
+Andris Biedrins,Anthony Roberson,Keith McLeod,Monta Ellis,Troy Murphy,Chuck Hayes,Luther Head,Shane Battier,Tracy McGrady,Yao Ming,3,2:26,GSW,sub,,,,Anthony Roberson,,Baron Davis,,,,,,,,,,,,
+Andris Biedrins,Anthony Roberson,Keith McLeod,Monta Ellis,Troy Murphy,Chuck Hayes,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,3,2:26,HOU,sub,,,,Vassilis Spanoulis,,Shane Battier,,,,,,,,,,,,
+Andris Biedrins,Anthony Roberson,Keith McLeod,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,3,2:26,HOU,sub,,,,Juwan Howard,,Chuck Hayes,,,,,,,,,,,,
+Andris Biedrins,Anthony Roberson,Keith McLeod,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,3,2:13,HOU,shot,Tracy McGrady,,,,,,,,,Juwan Howard,2,,,made,,jump,24,25
+Andris Biedrins,Anthony Roberson,Keith McLeod,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,3,1:55,GSW,shot,,,,,,,,,,Troy Murphy,,,,missed,,running hook,28,10
+Andris Biedrins,Anthony Roberson,Keith McLeod,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,3,1:52,HOU,rebound,,,,,,,,,,Yao Ming,,,,,,def,,
+Andris Biedrins,Anthony Roberson,Keith McLeod,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,3,1:51,HOU,turnover,,,,,,,,,,Yao Ming,,,bad pass,,Monta Ellis,,,
+Andris Biedrins,Anthony Roberson,Keith McLeod,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,3,1:39,HOU,foul,,,,,,,,Andris Biedrins,,Luther Head,,,,,,shooting,,
+Andris Biedrins,Anthony Roberson,Keith McLeod,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,3,1:39,GSW,free throw,,,,,,,1,,2,Andris Biedrins,,,foul,missed,,,,
+Andris Biedrins,Anthony Roberson,Keith McLeod,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,3,1:39,GSW,rebound,,,,,,,,,,,,,,,,,,
+Andris Biedrins,Anthony Roberson,Keith McLeod,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,3,1:39,GSW,free throw,,,,,,,2,,2,Andris Biedrins,,,foul,missed,,,,
+Andris Biedrins,Anthony Roberson,Keith McLeod,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,3,1:39,HOU,rebound,,,,,,,,,,Yao Ming,,,,,,def,,
+Andris Biedrins,Anthony Roberson,Keith McLeod,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,3,1:25,GSW,foul,,,,,,,,Yao Ming,,Troy Murphy,,,,,,shooting,,
+Andris Biedrins,Anthony Roberson,Keith McLeod,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,3,1:25,HOU,free throw,,,,,,,1,,2,Yao Ming,,,foul,missed,,,,
+Andris Biedrins,Anthony Roberson,Keith McLeod,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,3,1:25,HOU,rebound,,,,,,,,,,,,,,,,,,
+Andris Biedrins,Anthony Roberson,Keith McLeod,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,3,1:25,HOU,free throw,,,,,,,2,,2,Yao Ming,,,foul,made,,,,
+Andris Biedrins,Anthony Roberson,Keith McLeod,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,3,1:07,GSW,shot,Keith McLeod,,,,,,,,,Andris Biedrins,2,,,made,,jump,16,16
+Andris Biedrins,Anthony Roberson,Keith McLeod,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,3,0:54,HOU,shot,,,,,,,,,,Tracy McGrady,2,,,made,,jump,12,22
+Andris Biedrins,Anthony Roberson,Keith McLeod,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,3,0:44,GSW,shot,,,,,,,,,,Troy Murphy,,,,missed,,jump,9,19
+Andris Biedrins,Anthony Roberson,Keith McLeod,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,3,0:42,HOU,rebound,,,,,,,,,,Yao Ming,,,,,,def,,
+Andris Biedrins,Anthony Roberson,Keith McLeod,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,3,0:28,HOU,shot,Yao Ming,,,,,,,,,Vassilis Spanoulis,2,,,made,,reverse layup,25,6
+Andris Biedrins,Anthony Roberson,Keith McLeod,Monta Ellis,Troy Murphy,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,Yao Ming,3,0:06,GSW,shot,,,,,,,,,,Keith McLeod,2,,,made,,jump,11,21
+Andris Biedrins,Anthony Roberson,Keith McLeod,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,4,11:48,HOU,shot,,,,,,,,,,Tracy McGrady,,,,missed,,jump,37,20
+Andris Biedrins,Anthony Roberson,Keith McLeod,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,4,11:47,HOU,rebound,,,,,,,,,,Chuck Hayes,,,,,,off,,
+Andris Biedrins,Anthony Roberson,Keith McLeod,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,4,11:35,HOU,shot,,,Andris Biedrins,,,,,,,Chuck Hayes,,,,missed,,reverse layup,25,6
+Andris Biedrins,Anthony Roberson,Keith McLeod,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,4,11:33,HOU,rebound,,,,,,,,,,Chuck Hayes,,,,,,off,,
+Andris Biedrins,Anthony Roberson,Keith McLeod,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,4,11:27,HOU,shot,,,,,,,,,,Tracy McGrady,2,,,made,,layup,25,6
+Andris Biedrins,Anthony Roberson,Keith McLeod,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,4,11:10,GSW,shot,,,,,,,,,,Patrick O'Bryant,,,,missed,,jump,30,18
+Andris Biedrins,Anthony Roberson,Keith McLeod,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,4,11:08,HOU,rebound,,,,,,,,,,Juwan Howard,,,,,,def,,
+Andris Biedrins,Anthony Roberson,Keith McLeod,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,4,11:01,HOU,shot,,,,,,,,,,Tracy McGrady,,,,missed,,jump,34,30
+Andris Biedrins,Anthony Roberson,Keith McLeod,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,4,10:59,HOU,rebound,,,,,,,,,,Chuck Hayes,,,,,,off,,
+Andris Biedrins,Anthony Roberson,Keith McLeod,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,4,10:47,HOU,turnover,,,,,,,,,,Tracy McGrady,,,bad pass,,Andris Biedrins,,,
+Andris Biedrins,Anthony Roberson,Keith McLeod,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,4,10:34,GSW,turnover,,,,,,,,,,Anthony Roberson,,,lost ball,,Luther Head,,,
+Andris Biedrins,Anthony Roberson,Keith McLeod,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,4,10:29,HOU,shot,Luther Head,,,,,,,,,Vassilis Spanoulis,2,,,made,,layup,25,6
+Andris Biedrins,Anthony Roberson,Keith McLeod,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,4,10:11,GSW,shot,,,,,,,,,,Keith McLeod,2,,,made,,jump,33,21
+Andris Biedrins,Anthony Roberson,Keith McLeod,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,4,10:01,HOU,timeout,,,,,,,,,,,,,,,,regular,,
+Anthony Roberson,Keith McLeod,Mickael Pietrus,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Tracy McGrady,Vassilis Spanoulis,4,10:01,GSW,sub,,,,Mickael Pietrus,,Andris Biedrins,,,,,,,,,,,,
+Anthony Roberson,Keith McLeod,Mickael Pietrus,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,10:01,HOU,sub,,,,Shane Battier,,Tracy McGrady,,,,,,,,,,,,
+Anthony Roberson,Keith McLeod,Mickael Pietrus,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,9:49,HOU,shot,,,,,,,,,,Shane Battier,,,,missed,,hook,29,11
+Anthony Roberson,Keith McLeod,Mickael Pietrus,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,9:48,GSW,rebound,,,,,,,,,,,,,,,,,,
+Anthony Roberson,Keith McLeod,Mickael Pietrus,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,9:38,GSW,turnover,,,,,,,,,,Patrick O'Bryant,,,bad pass,,,,,
+Anthony Roberson,Keith McLeod,Mickael Pietrus,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,9:26,HOU,turnover,,,,,,,,,,Juwan Howard,,,bad pass,,,,,
+Anthony Roberson,Keith McLeod,Mickael Pietrus,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,9:11,GSW,shot,,,,,,,,,,Anthony Roberson,,,,missed,,jump,23,28
+Anthony Roberson,Keith McLeod,Mickael Pietrus,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,9:09,HOU,rebound,,,,,,,,,,Chuck Hayes,,,,,,def,,
+Anthony Roberson,Keith McLeod,Mickael Pietrus,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,9:05,GSW,foul,,,,,,,,Vassilis Spanoulis,,Anthony Roberson,,,,,,shooting,,
+Anthony Roberson,Keith McLeod,Mickael Pietrus,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,9:05,HOU,free throw,,,,,,,1,,2,Vassilis Spanoulis,,,foul,made,,,,
+Anthony Roberson,Keith McLeod,Mickael Pietrus,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,9:05,HOU,free throw,,,,,,,2,,2,Vassilis Spanoulis,,,foul,made,,,,
+Anthony Roberson,Keith McLeod,Mickael Pietrus,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,8:45,GSW,shot,,,,,,,,,,Keith McLeod,,,,missed,,jump,39,22
+Anthony Roberson,Keith McLeod,Mickael Pietrus,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,8:43,HOU,rebound,,,,,,,,,,Juwan Howard,,,,,,def,,
+Anthony Roberson,Keith McLeod,Mickael Pietrus,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,8:29,HOU,shot,,,,,,,,,,Chuck Hayes,,,,missed,,hook,25,12
+Anthony Roberson,Keith McLeod,Mickael Pietrus,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,8:27,GSW,rebound,,,,,,,,,,Anthony Roberson,,,,,,def,,
+Anthony Roberson,Keith McLeod,Mickael Pietrus,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,8:26,GSW,turnover,,,,,,,,,,Anthony Roberson,,,bad pass,,,,,
+Anthony Roberson,Keith McLeod,Mickael Pietrus,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,8:14,GSW,foul,,,,,,,,Chuck Hayes,,Anthony Roberson,,,,,,shooting,,
+Anthony Roberson,Keith McLeod,Mickael Pietrus,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,8:14,HOU,free throw,,,,,,,1,,2,Chuck Hayes,,,foul,missed,,,,
+Anthony Roberson,Keith McLeod,Mickael Pietrus,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,8:14,HOU,rebound,,,,,,,,,,,,,,,,,,
+Anthony Roberson,Keith McLeod,Mickael Pietrus,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,8:14,HOU,free throw,,,,,,,2,,2,Chuck Hayes,,,foul,missed,,,,
+Anthony Roberson,Keith McLeod,Mickael Pietrus,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,8:14,GSW,rebound,,,,,,,,,,Troy Murphy,,,,,,def,,
+Anthony Roberson,Keith McLeod,Mickael Pietrus,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,8:01,GSW,turnover,,,,,,,,,,Troy Murphy,,,bad pass,,,,,
+Anthony Roberson,Keith McLeod,Mickael Pietrus,Patrick O'Bryant,Troy Murphy,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,7:48,HOU,turnover,,,,,,,,,,Vassilis Spanoulis,,,bad pass,,,,,
+Anthony Roberson,Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,7:48,GSW,sub,,,,Mike Dunleavy,,Troy Murphy,,,,,,,,,,,,
+Anthony Roberson,Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,7:38,GSW,shot,,,,,,,,,,Keith McLeod,,,,missed,,reverse layup,25,6
+Anthony Roberson,Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,7:36,HOU,rebound,,,,,,,,,,Juwan Howard,,,,,,def,,
+Anthony Roberson,Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,7:31,HOU,shot,,,,,,,,,,Vassilis Spanoulis,,,,missed,,jump,13,21
+Anthony Roberson,Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,7:30,HOU,rebound,,,,,,,,,,,,,,,,,,
+Anthony Roberson,Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,7:25,HOU,turnover,,,,,,,,,,Luther Head,,,lost ball,,Mike Dunleavy,,,
+Anthony Roberson,Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,7:19,GSW,shot,,,,,,,,,,Anthony Roberson,,,,missed,,jump,44,11
+Anthony Roberson,Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,7:18,GSW,shot,,,,,,,,,,Patrick O'Bryant,2,,,made,,follow up dunk,25,6
+Anthony Roberson,Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,7:18,GSW,rebound,,,,,,,,,,Patrick O'Bryant,,,,,,off,,
+Anthony Roberson,Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,7:04,GSW,foul,,,,,,,,Vassilis Spanoulis,,Anthony Roberson,,,,,,personal,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,7:04,GSW,sub,,,,Monta Ellis,,Anthony Roberson,,,,,,,,,,,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,7:00,HOU,foul,,,,,,,,Monta Ellis,,Juwan Howard,,,,,,offensive,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,7:00,HOU,turnover,,,,,,,,,,Juwan Howard,,,foul,,,,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,6:47,GSW,turnover,,,,,,,,,,Mickael Pietrus,,,bad pass,,Vassilis Spanoulis,,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,6:43,HOU,turnover,,,,,,,,,,Vassilis Spanoulis,,,bad pass,,Monta Ellis,,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,6:36,GSW,turnover,,,,,,,,,,Monta Ellis,,,bad pass,,Chuck Hayes,,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,6:32,HOU,shot,Luther Head,,,,,,,,,Vassilis Spanoulis,2,,,made,,layup,25,6
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,6:19,GSW,shot,,,,,,,,,,Mike Dunleavy,,,,missed,,jump,40,19
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,6:17,HOU,rebound,,,,,,,,,,Chuck Hayes,,,,,,def,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,6:06,HOU,shot,Juwan Howard,,,,,,,,,Chuck Hayes,2,,,made,,hook,20,10
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,Chuck Hayes,Juwan Howard,Luther Head,Shane Battier,Vassilis Spanoulis,4,6:06,GSW,foul,,,,,,,,Chuck Hayes,,Monta Ellis,,,,,,shooting,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,Chuck Hayes,John Lucas,Juwan Howard,Luther Head,Vassilis Spanoulis,4,6:06,HOU,sub,,,,John Lucas,,Shane Battier,,,,,,,,,,,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,Chuck Hayes,John Lucas,Juwan Howard,Luther Head,Vassilis Spanoulis,4,6:06,HOU,turnover,,,,,,,,,,Juwan Howard,,,lane violation,,,,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,Chuck Hayes,John Lucas,Juwan Howard,Luther Head,Vassilis Spanoulis,4,6:01,GSW,shot,Mike Dunleavy,,,,,,,,,Mickael Pietrus,2,,,made,,layup,25,6
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,Chuck Hayes,John Lucas,Juwan Howard,Luther Head,Vassilis Spanoulis,4,5:41,HOU,shot,,,,,,,,,,Juwan Howard,,,,missed,,jump,24,27
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,Chuck Hayes,John Lucas,Juwan Howard,Luther Head,Vassilis Spanoulis,4,5:39,GSW,rebound,,,,,,,,,,Mike Dunleavy,,,,,,def,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,Chuck Hayes,John Lucas,Juwan Howard,Luther Head,Vassilis Spanoulis,4,5:34,GSW,turnover,,,,,,,,,,Mike Dunleavy,,,bad pass,,Juwan Howard,,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,Chuck Hayes,John Lucas,Juwan Howard,Luther Head,Vassilis Spanoulis,4,5:29,HOU,turnover,,,,,,,,,,Vassilis Spanoulis,,,stepped out of bounds,,,,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,Chuck Hayes,John Lucas,Juwan Howard,Luther Head,Vassilis Spanoulis,4,5:29,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,John Lucas,Juwan Howard,Luther Head,Steve Novak,Vassilis Spanoulis,4,5:29,HOU,sub,,,,Steve Novak,,Chuck Hayes,,,,,,,,,,,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,5:29,HOU,sub,,,,Scott Padgett,,Juwan Howard,,,,,,,,,,,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,5:16,GSW,shot,,,,,,,,,,Keith McLeod,,,,missed,,fade away,21,14
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,5:14,HOU,rebound,,,,,,,,,,Scott Padgett,,,,,,def,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,5:09,HOU,shot,,,,,,,,,,Scott Padgett,,,,missed,,layup,25,6
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,5:08,GSW,rebound,,,,,,,,,,Mickael Pietrus,,,,,,def,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,5:01,GSW,turnover,,,,,,,,,,Monta Ellis,,,bad pass,,,,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,4:45,HOU,shot,Luther Head,,,,,,,,,Vassilis Spanoulis,2,,,made,,jump,48,7
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,4:33,HOU,foul,,,,,,,,Mickael Pietrus,,Scott Padgett,,,,,,shooting,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,4:33,GSW,free throw,,,,,,,1,,2,Mickael Pietrus,,,foul,made,,,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Monta Ellis,Patrick O'Bryant,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,4:33,GSW,free throw,,,,,,,2,,2,Mickael Pietrus,,,foul,made,,,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,4:12,GSW,sub,,,,Troy Murphy,,Monta Ellis,,,,,,,,,,,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,4:07,HOU,shot,,,,,,,,,,John Lucas,2,,,made,,running jump,18,11
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,3:58,GSW,shot,,,,,,,,,,Keith McLeod,,,,missed,,jump,8,25
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,3:57,HOU,rebound,,,,,,,,,,Scott Padgett,,,,,,def,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,3:43,HOU,turnover,,,,,,,,,,Vassilis Spanoulis,,,lost ball,,Patrick O'Bryant,,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,3:39,HOU,foul,,,,,,,,Mickael Pietrus,,Scott Padgett,,,,,,shooting,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,3:39,GSW,free throw,,,,,,,1,,2,Mickael Pietrus,,,foul,made,,,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,3:39,GSW,free throw,,,,,,,2,,2,Mickael Pietrus,,,foul,missed,,,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,3:36,GSW,rebound,,,,,,,,,,,,,,,,,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,3:34,GSW,shot,,,,,,,,,,Keith McLeod,,,,missed,,jump,41,8
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,3:32,HOU,rebound,,,,,,,,,,Scott Padgett,,,,,,def,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,3:28,HOU,turnover,,,,,,,,,,Vassilis Spanoulis,,,bad pass,,Keith McLeod,,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,3:18,GSW,shot,Keith McLeod,,,,,,,,,Patrick O'Bryant,2,,,made,,layup,25,6
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,3:18,HOU,foul,,,,,,,,Patrick O'Bryant,,John Lucas,,,,,,shooting,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,3:18,GSW,free throw,,,,,,,1,,1,Patrick O'Bryant,,,foul,made,,,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,3:05,GSW,foul,,,,,,,,Scott Padgett,,Patrick O'Bryant,,,,,,shooting,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,3:05,HOU,free throw,,,,,,,1,,2,Scott Padgett,,,foul,missed,,,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,3:05,HOU,rebound,,,,,,,,,,,,,,,,,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,3:05,HOU,free throw,,,,,,,2,,2,Scott Padgett,,,foul,missed,,,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,3:04,HOU,rebound,,,,,,,,,,Steve Novak,,,,,,off,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,2:55,HOU,shot,,,,,,,,,,Luther Head,2,,,made,,reverse layup,25,6
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,2:55,GSW,foul,,,,,,,,Luther Head,,Patrick O'Bryant,,,,,,shooting,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,2:55,GSW,timeout,,,,,,,,,,,,,,,,regular,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,2:55,HOU,free throw,,,,,,,1,,1,Luther Head,,,foul,made,,,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,2:42,HOU,foul,,,,,,,,Mickael Pietrus,,Steve Novak,,,,,,personal,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,2:28,GSW,shot,,,,,,,,,,Mike Dunleavy,,,,missed,,jump bank,32,10
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,2:26,GSW,shot,,,,,,,,,,Patrick O'Bryant,2,,,made,,layup,25,6
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,2:26,GSW,rebound,,,,,,,,,,Patrick O'Bryant,,,,,,off,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,2:04,HOU,shot,Vassilis Spanoulis,,,,,,,,,John Lucas,2,,,made,,jump,40,25
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,1:54,GSW,shot,,,,,,,,,,Keith McLeod,2,,,made,,jump,39,22
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,1:44,HOU,shot,,,,,,,,,,Steve Novak,,,,missed,,jump,33,31
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,1:42,HOU,rebound,,,,,,,,,,Luther Head,,,,,,off,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,1:34,HOU,shot,Luther Head,,,,,,,,,Steve Novak,2,,,made,,jump,40,5
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,1:29,HOU,foul,,,,,,,,Mickael Pietrus,,Vassilis Spanoulis,,,,,,personal,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,1:29,GSW,free throw,,,,,,,1,,2,Mickael Pietrus,,,foul,missed,,,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,1:29,GSW,rebound,,,,,,,,,,,,,,,,,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,1:29,GSW,free throw,,,,,,,2,,2,Mickael Pietrus,,,foul,made,,,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,1:09,HOU,shot,,,,,,,,,,John Lucas,2,,,made,,running jump,18,10
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,1:01,GSW,shot,,,,,,,,,,Keith McLeod,,,,missed,,jump,14,14
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,0:59,HOU,rebound,,,,,,,,,,Scott Padgett,,,,,,def,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,0:50,HOU,shot,,,,,,,,,,Vassilis Spanoulis,,,,missed,,jump,0,11
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,0:48,HOU,rebound,,,,,,,,,,Scott Padgett,,,,,,off,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,0:47,HOU,turnover,,,,,,,,,,Scott Padgett,,,bad pass,,Mickael Pietrus,,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,0:42,GSW,shot,,,,,,,,,,Mickael Pietrus,2,,,made,,jump,7,25
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,0:19,HOU,turnover,,,,,,,,,,John Lucas,,,lost ball,,Keith McLeod,,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,0:19,HOU,foul,,,,,,,,Keith McLeod,,Scott Padgett,,,,,,personal,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,0:19,GSW,free throw,,,,,,,1,,2,Keith McLeod,,,foul,made,,,,
+Keith McLeod,Mickael Pietrus,Mike Dunleavy,Patrick O'Bryant,Troy Murphy,John Lucas,Luther Head,Scott Padgett,Steve Novak,Vassilis Spanoulis,4,0:19,GSW,free throw,,,,,,,2,,2,Keith McLeod,,,foul,made,,,,

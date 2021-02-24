@@ -1,0 +1,520 @@
+a1,a2,a3,a4,a5,h1,h2,h3,h4,h5,period,time,team,etype,assist,away,block,entered,home,left,num,opponent,outof,player,points,possession,reason,result,steal,type,x,y
+Joe Johnson,Josh Smith,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,12:00,OFF,jump ball,,Josh Smith,,,Zydrunas Ilgauskas,,,,,,,Atlanta,,,,,,
+Joe Johnson,Josh Smith,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,11:49,ATL,shot,,,LeBron James,,,,,,,Josh Smith,,,,missed,,layup,25,7
+Joe Johnson,Josh Smith,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,11:46,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,off,,
+Joe Johnson,Josh Smith,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,11:42,ATL,shot,Speedy Claxton,,,,,,,,,Josh Smith,3,,,made,,3pt,47,4
+Joe Johnson,Josh Smith,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,11:17,CLE,shot,,,,,,,,,,Drew Gooden,,,,missed,,turnaround jump,29,9
+Joe Johnson,Josh Smith,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,11:16,ATL,rebound,,,,,,,,,,Speedy Claxton,,,,,,def,,
+Joe Johnson,Josh Smith,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,11:09,ATL,shot,Speedy Claxton,,,,,,,,,Zaza Pachulia,2,,,made,,jump,29,20
+Joe Johnson,Josh Smith,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,10:52,CLE,shot,Zydrunas Ilgauskas,,,,,,,,,LeBron James,2,,,made,,jump,40,20
+Joe Johnson,Josh Smith,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,10:28,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,turnaround jump,42,3
+Joe Johnson,Josh Smith,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,10:25,CLE,rebound,,,,,,,,,,Drew Gooden,,,,,,def,,
+Joe Johnson,Josh Smith,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,10:06,CLE,shot,Eric Snow,,,,,,,,,Zydrunas Ilgauskas,2,,,made,,running hook,23,14
+Joe Johnson,Josh Smith,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,9:45,ATL,shot,,,,,,,,,,Josh Smith,2,,,made,,driving layup,24,7
+Joe Johnson,Josh Smith,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,9:45,CLE,foul,,,,,,,,Josh Smith,,Drew Gooden,,,,,,shooting,,
+Joe Johnson,Josh Smith,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,9:45,ATL,free throw,,,,,,,1,,1,Josh Smith,,,foul,made,,,,
+Joe Johnson,Josh Smith,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,9:28,CLE,shot,,,,,,,,,,Larry Hughes,,,,missed,,jump,11,18
+Joe Johnson,Josh Smith,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,9:26,CLE,rebound,,,,,,,,,,Drew Gooden,,,,,,off,,
+Joe Johnson,Josh Smith,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,9:23,CLE,shot,,,Shelden Williams,,,,,,,Drew Gooden,,,,missed,,layup,26,7
+Joe Johnson,Josh Smith,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,9:21,ATL,rebound,,,,,,,,,,Joe Johnson,,,,,,def,,
+Joe Johnson,Josh Smith,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,9:16,ATL,shot,Joe Johnson,,,,,,,,,Shelden Williams,2,,,made,,layup,22,7
+Joe Johnson,Josh Smith,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,9:04,ATL,foul,,,,,,,,Drew Gooden,,Shelden Williams,,,,,,shooting,,
+Joe Johnson,Josh Smith,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,9:04,CLE,free throw,,,,,,,1,,2,Drew Gooden,,,foul,missed,,,,
+Joe Johnson,Josh Smith,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,9:04,CLE,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,9:04,CLE,free throw,,,,,,,2,,2,Drew Gooden,,,foul,missed,,,,
+Joe Johnson,Josh Smith,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,9:03,ATL,rebound,,,,,,,,,,Shelden Williams,,,,,,def,,
+Joe Johnson,Josh Smith,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,8:53,ATL,turnover,,,,,,,,,,Joe Johnson,,,traveling,,,,,
+Joe Johnson,Josh Smith,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,8:41,CLE,shot,,,,,,,,,,LeBron James,,,,missed,,3pt,40,26
+Joe Johnson,Josh Smith,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,8:39,ATL,rebound,,,,,,,,,,Shelden Williams,,,,,,def,,
+Joe Johnson,Josh Smith,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,8:29,ATL,shot,,,Zydrunas Ilgauskas,,,,,,,Speedy Claxton,,,,missed,,reverse layup,25,6
+Joe Johnson,Josh Smith,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,8:28,CLE,rebound,,,,,,,,,,LeBron James,,,,,,def,,
+Joe Johnson,Josh Smith,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,8:26,ATL,foul,,,,,,,,LeBron James,,Josh Smith,,,,,,personal,,
+Joe Johnson,Josh Smith,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,8:10,CLE,turnover,,,,,,,,,,Larry Hughes,,,lost ball,,Joe Johnson,,,
+Joe Johnson,Josh Smith,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,8:09,ATL,foul,,,,,,,,Zydrunas Ilgauskas,,Josh Smith,,,,,,offensive,,
+Joe Johnson,Josh Smith,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,8:09,ATL,turnover,,,,,,,,,,Josh Smith,,,foul,,,,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,8:09,ATL,sub,,,,Josh Childress,,Josh Smith,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,7:51,CLE,shot,Larry Hughes,,,,,,,,,Drew Gooden,2,,,made,,jump,10,3
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,7:39,ATL,turnover,,,,,,,,,,Shelden Williams,,,traveling,,,,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,7:28,CLE,shot,Eric Snow,,,,,,,,,Zydrunas Ilgauskas,2,,,made,,running hook,24,10
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,7:15,ATL,turnover,,,,,,,,,,Zaza Pachulia,,,bad pass,,Drew Gooden,,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,7:11,CLE,shot,Eric Snow,,,,,,,,,LeBron James,2,,,made,,driving dunk,23,6
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,6:55,ATL,timeout,,,,,,,,,,,,,,,,regular,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,6:46,ATL,shot,,,,,,,,,,Zaza Pachulia,,,,missed,,turnaround jump,37,4
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,6:45,ATL,rebound,,,,,,,,,,Shelden Williams,,,,,,off,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,6:44,ATL,turnover,,,,,,,,,,Shelden Williams,,,traveling,,,,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,6:21,CLE,shot,,,Josh Childress,,,,,,,Drew Gooden,,,,missed,,layup,24,4
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,6:19,CLE,rebound,,,,,,,,,,Zydrunas Ilgauskas,,,,,,off,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,6:17,CLE,shot,,,,,,,,,,Zydrunas Ilgauskas,,,,missed,,jump,37,22
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,6:17,ATL,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,6:01,ATL,shot,Josh Childress,,,,,,,,,Shelden Williams,2,,,made,,jump,4,4
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,5:36,CLE,shot,,,,,,,,,,Drew Gooden,,,,missed,,jump,16,7
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,5:35,CLE,rebound,,,,,,,,,,Drew Gooden,,,,,,off,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,5:32,CLE,shot,,,,,,,,,,Drew Gooden,2,,,made,,layup,24,7
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,5:21,ATL,turnover,,,,,,,,,,Speedy Claxton,,,traveling,,,,,
+Joe Johnson,Josh Childress,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,5:21,ATL,sub,,,,Tyronn Lue,,Speedy Claxton,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,5:00,CLE,shot,,,,,,,,,,Larry Hughes,,,,missed,,jump,45,4
+Joe Johnson,Josh Childress,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,4:59,ATL,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Shelden Williams,Tyronn Lue,Zaza Pachulia,Damon Jones,Drew Gooden,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,4:59,CLE,sub,,,,Damon Jones,,Eric Snow,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Shelden Williams,Tyronn Lue,Zaza Pachulia,Damon Jones,Drew Gooden,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,4:37,ATL,shot,,,,,,,,,,Zaza Pachulia,,,,missed,,hook,24,11
+Joe Johnson,Josh Childress,Shelden Williams,Tyronn Lue,Zaza Pachulia,Damon Jones,Drew Gooden,Larry Hughes,LeBron James,Zydrunas Ilgauskas,1,4:35,CLE,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Shelden Williams,Tyronn Lue,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,1,4:35,CLE,sub,,,,Donyell Marshall,,Zydrunas Ilgauskas,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Shelden Williams,Tyronn Lue,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,1,4:20,CLE,shot,,,,,,,,,,LeBron James,2,,,made,,jump bank,34,7
+Joe Johnson,Josh Childress,Shelden Williams,Tyronn Lue,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,1,3:53,ATL,shot,Tyronn Lue,,,,,,,,,Joe Johnson,2,,,made,,jump,41,19
+Joe Johnson,Josh Childress,Shelden Williams,Tyronn Lue,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,1,3:39,CLE,turnover,,,,,,,,,,LeBron James,,,bad pass,,Shelden Williams,,,
+Joe Johnson,Josh Childress,Shelden Williams,Tyronn Lue,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,1,3:31,ATL,shot,,,,,,,,,,Joe Johnson,2,,,made,,reverse layup,22,6
+Joe Johnson,Josh Childress,Shelden Williams,Tyronn Lue,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,1,3:11,CLE,shot,,,,,,,,,,Donyell Marshall,,,,missed,,jump hook,24,14
+Joe Johnson,Josh Childress,Shelden Williams,Tyronn Lue,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,1,3:07,ATL,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Lorenzen Wright,Shelden Williams,Tyronn Lue,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,1,3:07,ATL,sub,,,,Lorenzen Wright,,Zaza Pachulia,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Lorenzen Wright,Shelden Williams,Tyronn Lue,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,1,2:53,ATL,shot,,,Donyell Marshall,,,,,,,Tyronn Lue,,,,missed,,layup,25,6
+Joe Johnson,Josh Childress,Lorenzen Wright,Shelden Williams,Tyronn Lue,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,1,2:53,CLE,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Lorenzen Wright,Shelden Williams,Tyronn Lue,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,1,2:53,CLE,timeout,,,,,,,,,,,,,,,,regular,,
+Joe Johnson,Josh Childress,Lorenzen Wright,Shelden Williams,Tyronn Lue,Anderson Varejao,Damon Jones,Donyell Marshall,Larry Hughes,LeBron James,1,2:53,CLE,sub,,,,Anderson Varejao,,Drew Gooden,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Lorenzen Wright,Shelden Williams,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,LeBron James,1,2:53,CLE,sub,,,,David Wesley,,Larry Hughes,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Lorenzen Wright,Shelden Williams,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,LeBron James,1,2:32,CLE,shot,David Wesley,,,,,,,,,Damon Jones,3,,,made,,3pt,8,26
+Joe Johnson,Josh Childress,Lorenzen Wright,Shelden Williams,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,LeBron James,1,2:14,ATL,turnover,,,,,,,,,,Joe Johnson,,,backcourt turnover,,,,,
+Joe Johnson,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,LeBron James,1,2:14,ATL,sub,,,,Matt Freije,,Shelden Williams,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,LeBron James,1,1:55,CLE,shot,,,,,,,,,,David Wesley,,,,missed,,3pt,38,27
+Joe Johnson,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,LeBron James,1,1:53,ATL,rebound,,,,,,,,,,Joe Johnson,,,,,,def,,
+Joe Johnson,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,LeBron James,1,1:49,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,running jump,18,15
+Joe Johnson,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,LeBron James,1,1:46,CLE,rebound,,,,,,,,,,Donyell Marshall,,,,,,def,,
+Joe Johnson,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,LeBron James,1,1:44,CLE,foul,,,,,,,,Tyronn Lue,,Damon Jones,,,,,,offensive,,
+Joe Johnson,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,LeBron James,1,1:44,CLE,turnover,,,,,,,,,,Damon Jones,,,foul,,,,,
+Joe Johnson,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,LeBron James,1,1:31,ATL,shot,Tyronn Lue,,,,,,,,,Lorenzen Wright,2,,,made,,slam dunk,24,6
+Joe Johnson,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,LeBron James,1,1:14,CLE,shot,LeBron James,,,,,,,,,Donyell Marshall,3,,,made,,3pt,47,17
+Joe Johnson,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,LeBron James,1,1:08,CLE,foul,,,,,,,,Tyronn Lue,,David Wesley,,,,,,personal,,
+Joe Johnson,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,LeBron James,1,1:01,ATL,foul,,,,,,,,Anderson Varejao,,Lorenzen Wright,,,,,,offensive,,
+Joe Johnson,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,LeBron James,1,1:01,ATL,turnover,,,,,,,,,,Lorenzen Wright,,,foul,,,,,
+Joe Johnson,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,LeBron James,1,0:42,CLE,shot,,,,,,,,,,LeBron James,,,,missed,,fade away jumper,38,4
+Joe Johnson,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,LeBron James,1,0:40,ATL,rebound,,,,,,,,,,Lorenzen Wright,,,,,,def,,
+Joe Johnson,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,LeBron James,1,0:28,ATL,turnover,,,,,,,,,,Joe Johnson,,,bad pass,,LeBron James,,,
+Joe Johnson,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,LeBron James,1,0:26,ATL,foul,,,,,,,,LeBron James,,Tyronn Lue,,,,,,personal,,
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,LeBron James,1,0:26,ATL,sub,,,,Cedric Bozeman,,Joe Johnson,,,,,,,,,,,,
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,LeBron James,1,0:12,CLE,shot,,,,,,,,,,LeBron James,,,,missed,,jump,28,5
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,LeBron James,1,0:10,CLE,rebound,,,,,,,,,,Anderson Varejao,,,,,,off,,
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,LeBron James,1,0:07,CLE,turnover,,,,,,,,,,Anderson Varejao,,,lost ball,,Cedric Bozeman,,,
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,LeBron James,1,0:01,ATL,shot,,,,,,,,,,Tyronn Lue,2,,,made,,layup,24,8
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,LeBron James,1,0:00,CLE,shot,,,,,,,,,,Damon Jones,,,,missed,,3pt,22,45
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,LeBron James,1,0:00,CLE,rebound,,,,,,,,,,,,,,,,,,
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Larry Hughes,Zydrunas Ilgauskas,2,11:38,CLE,shot,,,,,,,,,,David Wesley,,,,missed,,jump,39,19
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Larry Hughes,Zydrunas Ilgauskas,2,11:36,ATL,rebound,,,,,,,,,,Josh Childress,,,,,,def,,
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Larry Hughes,Zydrunas Ilgauskas,2,11:26,ATL,shot,Matt Freije,,,,,,,,,Cedric Bozeman,2,,,made,,driving layup,27,7
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Larry Hughes,Zydrunas Ilgauskas,2,11:08,CLE,shot,,,Josh Childress,,,,,,,Zydrunas Ilgauskas,,,,missed,,dunk,24,6
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Larry Hughes,Zydrunas Ilgauskas,2,11:05,CLE,shot,,,,,,,,,,Zydrunas Ilgauskas,,,,missed,,tip,25,5
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Larry Hughes,Zydrunas Ilgauskas,2,11:05,CLE,rebound,,,,,,,,,,Zydrunas Ilgauskas,,,,,,off,,
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Larry Hughes,Zydrunas Ilgauskas,2,11:03,CLE,rebound,,,,,,,,,,Zydrunas Ilgauskas,,,,,,off,,
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Larry Hughes,Zydrunas Ilgauskas,2,11:02,CLE,shot,,,,,,,,,,Zydrunas Ilgauskas,,,,missed,,tip,25,7
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Larry Hughes,Zydrunas Ilgauskas,2,11:01,CLE,rebound,,,,,,,,,,Zydrunas Ilgauskas,,,,,,off,,
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Larry Hughes,Zydrunas Ilgauskas,2,11:00,CLE,shot,,,,,,,,,,Zydrunas Ilgauskas,,,,missed,,tip,25,6
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Larry Hughes,Zydrunas Ilgauskas,2,10:59,ATL,rebound,,,,,,,,,,Cedric Bozeman,,,,,,def,,
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Larry Hughes,Zydrunas Ilgauskas,2,10:46,ATL,shot,,,,,,,,,,Matt Freije,,,,missed,,jump,27,22
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Larry Hughes,Zydrunas Ilgauskas,2,10:44,ATL,rebound,,,,,,,,,,Lorenzen Wright,,,,,,off,,
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Larry Hughes,Zydrunas Ilgauskas,2,10:25,ATL,shot,,,,,,,,,,Matt Freije,,,,missed,,jump,30,25
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Larry Hughes,Zydrunas Ilgauskas,2,10:23,CLE,rebound,,,,,,,,,,Zydrunas Ilgauskas,,,,,,def,,
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Larry Hughes,Zydrunas Ilgauskas,2,10:12,CLE,shot,,,,,,,,,,Anderson Varejao,,,,missed,,jump,20,7
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Larry Hughes,Zydrunas Ilgauskas,2,10:10,ATL,rebound,,,,,,,,,,Lorenzen Wright,,,,,,def,,
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Larry Hughes,Zydrunas Ilgauskas,2,9:59,ATL,turnover,,,,,,,,,,Lorenzen Wright,,,bad pass,,David Wesley,,,
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Larry Hughes,Zydrunas Ilgauskas,2,9:53,CLE,shot,,,,,,,,,,Damon Jones,,,,missed,,3pt,46,18
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Larry Hughes,Zydrunas Ilgauskas,2,9:52,ATL,rebound,,,,,,,,,,Cedric Bozeman,,,,,,def,,
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Larry Hughes,Zydrunas Ilgauskas,2,9:29,ATL,shot,,,Anderson Varejao,,,,,,,Lorenzen Wright,,,,missed,,reverse layup,25,7
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Larry Hughes,Zydrunas Ilgauskas,2,9:26,CLE,rebound,,,,,,,,,,Larry Hughes,,,,,,def,,
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Larry Hughes,Zydrunas Ilgauskas,2,9:12,ATL,foul,,,,,,,,Larry Hughes,,Cedric Bozeman,,,,,,shooting,,
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,David Wesley,Larry Hughes,Shannon Brown,Zydrunas Ilgauskas,2,9:12,CLE,sub,,,,Shannon Brown,,Damon Jones,,,,,,,,,,,,
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,David Wesley,Larry Hughes,Shannon Brown,Zydrunas Ilgauskas,2,9:12,CLE,free throw,,,,,,,1,,2,Larry Hughes,,,foul,made,,,,
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,David Wesley,Larry Hughes,Shannon Brown,Zydrunas Ilgauskas,2,9:12,CLE,free throw,,,,,,,2,,2,Larry Hughes,,,foul,made,,,,
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,David Wesley,Larry Hughes,Shannon Brown,Zydrunas Ilgauskas,2,8:52,ATL,shot,Josh Childress,,,,,,,,,Matt Freije,3,,,made,,3pt,8,25
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,David Wesley,Larry Hughes,Shannon Brown,Zydrunas Ilgauskas,2,8:43,CLE,shot,,,,,,,,,,Larry Hughes,2,,,made,,jump,41,16
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,David Wesley,Larry Hughes,Shannon Brown,Zydrunas Ilgauskas,2,8:17,ATL,shot,Tyronn Lue,,,,,,,,,Lorenzen Wright,2,,,made,,jump,9,3
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,David Wesley,Larry Hughes,Shannon Brown,Zydrunas Ilgauskas,2,8:06,ATL,foul,,,,,,,,Anderson Varejao,,Josh Childress,,,,,,personal,,
+Cedric Bozeman,Josh Childress,Lorenzen Wright,Matt Freije,Tyronn Lue,Anderson Varejao,David Wesley,Larry Hughes,Shannon Brown,Zydrunas Ilgauskas,2,8:06,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Cedric Bozeman,Joe Johnson,Josh Childress,Lorenzen Wright,Matt Freije,Anderson Varejao,David Wesley,Larry Hughes,Shannon Brown,Zydrunas Ilgauskas,2,8:06,ATL,sub,,,,Joe Johnson,,Tyronn Lue,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Lorenzen Wright,Matt Freije,Speedy Claxton,Anderson Varejao,David Wesley,Larry Hughes,Shannon Brown,Zydrunas Ilgauskas,2,8:06,ATL,sub,,,,Speedy Claxton,,Cedric Bozeman,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Lorenzen Wright,Matt Freije,Speedy Claxton,Anderson Varejao,David Wesley,Larry Hughes,Shannon Brown,Zydrunas Ilgauskas,2,7:48,CLE,shot,,,,,,,,,,Shannon Brown,,,,missed,,jump,14,9
+Joe Johnson,Josh Childress,Lorenzen Wright,Matt Freije,Speedy Claxton,Anderson Varejao,David Wesley,Larry Hughes,Shannon Brown,Zydrunas Ilgauskas,2,7:44,ATL,rebound,,,,,,,,,,Joe Johnson,,,,,,def,,
+Joe Johnson,Josh Childress,Lorenzen Wright,Matt Freije,Speedy Claxton,Anderson Varejao,David Wesley,Larry Hughes,Shannon Brown,Zydrunas Ilgauskas,2,7:39,ATL,turnover,,,,,,,,,,Speedy Claxton,,,palming turnover,,,,,
+Joe Johnson,Josh Childress,Lorenzen Wright,Matt Freije,Speedy Claxton,Anderson Varejao,David Wesley,Larry Hughes,Shannon Brown,Zydrunas Ilgauskas,2,7:14,CLE,shot,,,,,,,,,,Larry Hughes,,,,missed,,jump,9,4
+Joe Johnson,Josh Childress,Lorenzen Wright,Matt Freije,Speedy Claxton,Anderson Varejao,David Wesley,Larry Hughes,Shannon Brown,Zydrunas Ilgauskas,2,7:12,CLE,rebound,,,,,,,,,,Zydrunas Ilgauskas,,,,,,off,,
+Joe Johnson,Josh Childress,Lorenzen Wright,Matt Freije,Speedy Claxton,Anderson Varejao,David Wesley,Larry Hughes,Shannon Brown,Zydrunas Ilgauskas,2,7:04,CLE,shot,,,,,,,,,,Larry Hughes,,,,missed,,layup,24,6
+Joe Johnson,Josh Childress,Lorenzen Wright,Matt Freije,Speedy Claxton,Anderson Varejao,David Wesley,Larry Hughes,Shannon Brown,Zydrunas Ilgauskas,2,7:03,CLE,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Lorenzen Wright,Matt Freije,Speedy Claxton,Anderson Varejao,David Wesley,Donyell Marshall,Larry Hughes,Shannon Brown,2,7:03,CLE,sub,,,,Donyell Marshall,,Zydrunas Ilgauskas,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Lorenzen Wright,Matt Freije,Speedy Claxton,Anderson Varejao,Donyell Marshall,Larry Hughes,LeBron James,Shannon Brown,2,7:03,CLE,sub,,,,LeBron James,,David Wesley,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Lorenzen Wright,Matt Freije,Speedy Claxton,Anderson Varejao,Donyell Marshall,Larry Hughes,LeBron James,Shannon Brown,2,6:47,CLE,shot,,,Josh Childress,,,,,,,Shannon Brown,,,,missed,,layup,24,8
+Joe Johnson,Josh Childress,Lorenzen Wright,Matt Freije,Speedy Claxton,Anderson Varejao,Donyell Marshall,Larry Hughes,LeBron James,Shannon Brown,2,6:44,CLE,rebound,,,,,,,,,,Shannon Brown,,,,,,off,,
+Joe Johnson,Josh Childress,Lorenzen Wright,Matt Freije,Speedy Claxton,Anderson Varejao,Donyell Marshall,Larry Hughes,LeBron James,Shannon Brown,2,6:43,CLE,foul,,,,,,,,Speedy Claxton,,Shannon Brown,,,,,,offensive,,
+Joe Johnson,Josh Childress,Lorenzen Wright,Matt Freije,Speedy Claxton,Anderson Varejao,Donyell Marshall,Larry Hughes,LeBron James,Shannon Brown,2,6:43,CLE,turnover,,,,,,,,,,Shannon Brown,,,foul,,,,,
+Joe Johnson,Josh Childress,Lorenzen Wright,Matt Freije,Speedy Claxton,Anderson Varejao,Donyell Marshall,Larry Hughes,LeBron James,Shannon Brown,2,6:28,ATL,foul,,,,,,,,Anderson Varejao,,Joe Johnson,,,,,,offensive,,
+Joe Johnson,Josh Childress,Lorenzen Wright,Matt Freije,Speedy Claxton,Anderson Varejao,Donyell Marshall,Larry Hughes,LeBron James,Shannon Brown,2,6:28,ATL,turnover,,,,,,,,,,Joe Johnson,,,foul,,,,,
+Joe Johnson,Josh Childress,Matt Freije,Speedy Claxton,Zaza Pachulia,Anderson Varejao,Donyell Marshall,Larry Hughes,LeBron James,Shannon Brown,2,6:28,ATL,sub,,,,Zaza Pachulia,,Lorenzen Wright,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Matt Freije,Speedy Claxton,Zaza Pachulia,Anderson Varejao,Donyell Marshall,Larry Hughes,LeBron James,Shannon Brown,2,6:08,CLE,shot,,,,,,,,,,LeBron James,,,,missed,,jump,8,18
+Joe Johnson,Josh Childress,Matt Freije,Speedy Claxton,Zaza Pachulia,Anderson Varejao,Donyell Marshall,Larry Hughes,LeBron James,Shannon Brown,2,6:07,ATL,rebound,,,,,,,,,,Josh Childress,,,,,,def,,
+Joe Johnson,Josh Childress,Matt Freije,Speedy Claxton,Zaza Pachulia,Anderson Varejao,Donyell Marshall,Larry Hughes,LeBron James,Shannon Brown,2,5:56,CLE,timeout,,,,,,,,,,,,,,,,regular,,
+Joe Johnson,Josh Childress,Matt Freije,Speedy Claxton,Zaza Pachulia,Anderson Varejao,Donyell Marshall,Larry Hughes,LeBron James,Shannon Brown,2,5:50,ATL,shot,,,,,,,,,,Joe Johnson,2,,,made,,jump,35,24
+Joe Johnson,Josh Childress,Matt Freije,Speedy Claxton,Zaza Pachulia,Anderson Varejao,Donyell Marshall,Larry Hughes,LeBron James,Shannon Brown,2,5:39,CLE,shot,,,,,,,,,,Donyell Marshall,,,,missed,,hook,30,11
+Joe Johnson,Josh Childress,Matt Freije,Speedy Claxton,Zaza Pachulia,Anderson Varejao,Donyell Marshall,Larry Hughes,LeBron James,Shannon Brown,2,5:36,ATL,rebound,,,,,,,,,,Matt Freije,,,,,,def,,
+Joe Johnson,Josh Childress,Matt Freije,Speedy Claxton,Zaza Pachulia,Anderson Varejao,Donyell Marshall,Larry Hughes,LeBron James,Shannon Brown,2,5:24,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,jump,16,25
+Joe Johnson,Josh Childress,Matt Freije,Speedy Claxton,Zaza Pachulia,Anderson Varejao,Donyell Marshall,Larry Hughes,LeBron James,Shannon Brown,2,5:22,CLE,rebound,,,,,,,,,,Larry Hughes,,,,,,def,,
+Joe Johnson,Josh Childress,Matt Freije,Speedy Claxton,Zaza Pachulia,Anderson Varejao,Donyell Marshall,Larry Hughes,LeBron James,Shannon Brown,2,5:02,CLE,shot,,,,,,,,,,Donyell Marshall,,,,missed,,hook,19,10
+Joe Johnson,Josh Childress,Matt Freije,Speedy Claxton,Zaza Pachulia,Anderson Varejao,Donyell Marshall,Larry Hughes,LeBron James,Shannon Brown,2,5:00,ATL,rebound,,,,,,,,,,Joe Johnson,,,,,,def,,
+Joe Johnson,Josh Childress,Matt Freije,Speedy Claxton,Zaza Pachulia,Anderson Varejao,Donyell Marshall,Larry Hughes,LeBron James,Shannon Brown,2,4:54,CLE,foul,,,,,,,,Zaza Pachulia,,Anderson Varejao,,,,,,personal,,
+Joe Johnson,Josh Childress,Matt Freije,Speedy Claxton,Zaza Pachulia,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,Shannon Brown,2,4:54,CLE,sub,,,,Drew Gooden,,Anderson Varejao,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Matt Freije,Speedy Claxton,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,2,4:54,CLE,sub,,,,Eric Snow,,Shannon Brown,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,2,4:54,ATL,sub,,,,Josh Smith,,Matt Freije,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,2,4:44,CLE,foul,,,,,,,,Zaza Pachulia,,Drew Gooden,,,,,,personal,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,2,4:41,CLE,foul,,,,,,,,Joe Johnson,,Donyell Marshall,,,,,,shooting,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,2,4:41,ATL,free throw,,,,,,,1,,2,Joe Johnson,,,foul,missed,,,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,2,4:41,ATL,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,2,4:41,ATL,free throw,,,,,,,2,,2,Joe Johnson,,,foul,made,,,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,2,4:31,CLE,shot,,,,,,,,,,LeBron James,,,,missed,,jump,18,26
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,2,4:28,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,2,4:25,ATL,shot,Josh Smith,,,,,,,,,Zaza Pachulia,2,,,made,,layup,24,6
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,2,4:04,ATL,foul,,,,,,,,Larry Hughes,,Josh Childress,,,,,,shooting,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,4:04,CLE,sub,,,,Zydrunas Ilgauskas,,Donyell Marshall,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,4:04,CLE,free throw,,,,,,,1,,2,Larry Hughes,,,foul,made,,,,
+Joe Johnson,Josh Childress,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,4:04,ATL,sub,,,,Shelden Williams,,Josh Smith,,,,,,,,,,,,
+Cedric Bozeman,Joe Johnson,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,4:04,ATL,sub,,,,Cedric Bozeman,,Josh Childress,,,,,,,,,,,,
+Cedric Bozeman,Joe Johnson,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,4:04,CLE,free throw,,,,,,,2,,2,Larry Hughes,,,foul,made,,,,
+Cedric Bozeman,Joe Johnson,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,3:46,ATL,shot,,,,,,,,,,Speedy Claxton,,,,missed,,reverse layup,23,7
+Cedric Bozeman,Joe Johnson,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,3:44,CLE,rebound,,,,,,,,,,Eric Snow,,,,,,def,,
+Cedric Bozeman,Joe Johnson,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,3:40,CLE,shot,Eric Snow,,,,,,,,,LeBron James,2,,,made,,driving layup,24,6
+Cedric Bozeman,Joe Johnson,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,3:26,ATL,shot,,,,,,,,,,Zaza Pachulia,,,,missed,,layup,23,7
+Cedric Bozeman,Joe Johnson,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,3:25,CLE,rebound,,,,,,,,,,Drew Gooden,,,,,,def,,
+Cedric Bozeman,Joe Johnson,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,3:22,ATL,foul,,,,,,,,LeBron James,,Cedric Bozeman,,,,,,personal,,
+Cedric Bozeman,Joe Johnson,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,3:11,CLE,shot,LeBron James,,,,,,,,,Zydrunas Ilgauskas,2,,,made,,slam dunk,24,6
+Cedric Bozeman,Joe Johnson,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,2:46,CLE,foul,,,,,,,,Joe Johnson,,Eric Snow,,,,,,shooting,,
+Cedric Bozeman,Joe Johnson,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,2:46,ATL,timeout,,,,,,,,,,,,,,,,regular,,
+Cedric Bozeman,Joe Johnson,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,2:46,ATL,free throw,,,,,,,1,,2,Joe Johnson,,,foul,made,,,,
+Cedric Bozeman,Joe Johnson,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,2:46,ATL,free throw,,,,,,,2,,2,Joe Johnson,,,foul,made,,,,
+Cedric Bozeman,Joe Johnson,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,2:33,CLE,shot,,,,,,,,,,Eric Snow,,,,missed,,jump,21,21
+Cedric Bozeman,Joe Johnson,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,2:31,CLE,rebound,,,,,,,,,,Zydrunas Ilgauskas,,,,,,off,,
+Cedric Bozeman,Joe Johnson,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,2:29,CLE,shot,,,Cedric Bozeman,,,,,,,Zydrunas Ilgauskas,,,,missed,,layup,23,6
+Cedric Bozeman,Joe Johnson,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,2:27,ATL,rebound,,,,,,,,,,Cedric Bozeman,,,,,,def,,
+Cedric Bozeman,Joe Johnson,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,2:22,ATL,shot,,,,,,,,,,Speedy Claxton,,,,missed,,jump,36,24
+Cedric Bozeman,Joe Johnson,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,2:20,CLE,rebound,,,,,,,,,,LeBron James,,,,,,def,,
+Cedric Bozeman,Joe Johnson,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,2:15,CLE,shot,,,,,,,,,,LeBron James,2,,,made,,driving dunk,23,6
+Cedric Bozeman,Joe Johnson,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,1:45,ATL,shot,,,,,,,,,,Zaza Pachulia,2,,,made,,running layup,25,8
+Cedric Bozeman,Joe Johnson,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,1:35,ATL,foul,,,,,,,,Drew Gooden,,Shelden Williams,,,,,,personal,,
+Cedric Bozeman,Joe Johnson,Shelden Williams,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,1:35,CLE,free throw,,,,,,,1,,2,Drew Gooden,,,foul,made,,,,
+Cedric Bozeman,Joe Johnson,Lorenzen Wright,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,1:35,ATL,sub,,,,Lorenzen Wright,,Shelden Williams,,,,,,,,,,,,
+Cedric Bozeman,Joe Johnson,Lorenzen Wright,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,1:35,CLE,free throw,,,,,,,2,,2,Drew Gooden,,,foul,made,,,,
+Cedric Bozeman,Joe Johnson,Lorenzen Wright,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,1:16,ATL,turnover,,,,,,,,,,Zaza Pachulia,,,traveling,,,,,
+Cedric Bozeman,Joe Johnson,Lorenzen Wright,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,1:06,ATL,foul,,,,,,,,Drew Gooden,,Lorenzen Wright,,,,,,personal,,
+Cedric Bozeman,Joe Johnson,Lorenzen Wright,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,1:06,CLE,free throw,,,,,,,1,,2,Drew Gooden,,,foul,made,,,,
+Cedric Bozeman,Joe Johnson,Lorenzen Wright,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,1:06,CLE,free throw,,,,,,,2,,2,Drew Gooden,,,foul,made,,,,
+Cedric Bozeman,Joe Johnson,Lorenzen Wright,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,0:43,ATL,shot,,,Larry Hughes,,,,,,,Speedy Claxton,,,,missed,,jump,24,10
+Cedric Bozeman,Joe Johnson,Lorenzen Wright,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,0:41,CLE,rebound,,,,,,,,,,Eric Snow,,,,,,def,,
+Cedric Bozeman,Joe Johnson,Lorenzen Wright,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,0:29,CLE,shot,,,,,,,,,,LeBron James,,,,missed,,running jump,18,6
+Cedric Bozeman,Joe Johnson,Lorenzen Wright,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,0:28,CLE,shot,,,,,,,,,,Drew Gooden,,,,missed,,tip,23,7
+Cedric Bozeman,Joe Johnson,Lorenzen Wright,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,0:28,CLE,rebound,,,,,,,,,,Drew Gooden,,,,,,off,,
+Cedric Bozeman,Joe Johnson,Lorenzen Wright,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,0:28,ATL,rebound,,,,,,,,,,Zaza Pachulia,,,,,,def,,
+Cedric Bozeman,Joe Johnson,Lorenzen Wright,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,0:28,CLE,foul,,,,,,,,Zaza Pachulia,,Zydrunas Ilgauskas,,,,,,personal,,
+Cedric Bozeman,Joe Johnson,Lorenzen Wright,Speedy Claxton,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,0:28,ATL,free throw,,,,,,,1,,2,Zaza Pachulia,,,foul,made,,,,
+Cedric Bozeman,Joe Johnson,Lorenzen Wright,Speedy Claxton,Zaza Pachulia,Donyell Marshall,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,0:28,CLE,sub,,,,Donyell Marshall,,Drew Gooden,,,,,,,,,,,,
+Cedric Bozeman,Joe Johnson,Matt Freije,Speedy Claxton,Zaza Pachulia,Donyell Marshall,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,0:28,ATL,sub,,,,Matt Freije,,Lorenzen Wright,,,,,,,,,,,,
+Cedric Bozeman,Joe Johnson,Matt Freije,Speedy Claxton,Zaza Pachulia,Donyell Marshall,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,0:28,ATL,free throw,,,,,,,2,,2,Zaza Pachulia,,,foul,missed,,,,
+Cedric Bozeman,Joe Johnson,Matt Freije,Speedy Claxton,Zaza Pachulia,Donyell Marshall,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,0:27,CLE,rebound,,,,,,,,,,Zydrunas Ilgauskas,,,,,,def,,
+Cedric Bozeman,Joe Johnson,Matt Freije,Speedy Claxton,Zaza Pachulia,Donyell Marshall,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,0:12,ATL,foul,,,,,,,,Larry Hughes,,Cedric Bozeman,,,,,,personal,,
+Cedric Bozeman,Joe Johnson,Matt Freije,Speedy Claxton,Zaza Pachulia,Donyell Marshall,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,0:12,CLE,free throw,,,,,,,1,,2,Larry Hughes,,,foul,made,,,,
+Cedric Bozeman,Joe Johnson,Matt Freije,Speedy Claxton,Zaza Pachulia,David Wesley,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,0:12,CLE,sub,,,,David Wesley,,Donyell Marshall,,,,,,,,,,,,
+Cedric Bozeman,Joe Johnson,Matt Freije,Speedy Claxton,Zaza Pachulia,David Wesley,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,0:12,CLE,free throw,,,,,,,2,,2,Larry Hughes,,,foul,made,,,,
+Cedric Bozeman,Joe Johnson,Matt Freije,Speedy Claxton,Zaza Pachulia,David Wesley,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,0:00,ATL,shot,,,David Wesley,,,,,,,Joe Johnson,,,,missed,,jump,47,6
+Cedric Bozeman,Joe Johnson,Matt Freije,Speedy Claxton,Zaza Pachulia,David Wesley,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,0:00,OFF,jump ball,,Joe Johnson,,,David Wesley,,,,,,,Cleveland,,,,,,
+Cedric Bozeman,Joe Johnson,Matt Freije,Speedy Claxton,Zaza Pachulia,David Wesley,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,0:00,ATL,rebound,,,,,,,,,,,,,,,,,,
+Cedric Bozeman,Joe Johnson,Matt Freije,Speedy Claxton,Zaza Pachulia,David Wesley,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,0:00,ATL,violation,,,,,,,,,,Joe Johnson,,,,,,jump ball,,
+Cedric Bozeman,Joe Johnson,Matt Freije,Speedy Claxton,Zaza Pachulia,David Wesley,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,2,0:00,ATL,turnover,,,,,,,,,,Joe Johnson,,,jump ball violation,,,,,
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,11:45,CLE,shot,LeBron James,,,,,,,,,Drew Gooden,2,,,made,,jump,41,4
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,11:24,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,jump,32,7
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,11:22,CLE,rebound,,,,,,,,,,Drew Gooden,,,,,,def,,
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,11:14,CLE,shot,,,,,,,,,,Larry Hughes,,,,missed,,jump,21,7
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,11:13,CLE,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,11:06,CLE,shot,Larry Hughes,,,,,,,,,LeBron James,3,,,made,,3pt,47,5
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,10:41,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,driving layup,25,7
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,10:40,ATL,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,10:31,ATL,shot,,,,,,,,,,Joe Johnson,2,,,made,,layup,25,8
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,10:18,CLE,shot,,,Zaza Pachulia,,,,,,,Zydrunas Ilgauskas,,,,missed,,layup,23,8
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,10:16,ATL,rebound,,,,,,,,,,Joe Johnson,,,,,,def,,
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,10:10,ATL,shot,Tyronn Lue,,,,,,,,,Shelden Williams,2,,,made,,jump,8,3
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,9:44,CLE,shot,,,,,,,,,,LeBron James,2,,,made,,jump,9,4
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,9:34,ATL,shot,Tyronn Lue,,,,,,,,,Joe Johnson,3,,,made,,3pt,40,26
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,9:20,CLE,turnover,,,,,,,,,,Drew Gooden,,,bad pass,,Zaza Pachulia,,,
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,9:17,CLE,foul,,,,,,,,Josh Smith,,Larry Hughes,,,,,,personal,,
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,9:17,ATL,free throw,,,,,,,1,,2,Josh Smith,,,foul,made,,,,
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,9:17,ATL,free throw,,,,,,,2,,2,Josh Smith,,,foul,made,,,,
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,9:05,CLE,turnover,,,,,,,,,,LeBron James,,,out of bounds lost ball turnover,,,,,
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,8:45,ATL,shot,,,,,,,,,,Zaza Pachulia,,,,missed,,reverse layup,22,5
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,8:43,CLE,rebound,,,,,,,,,,Zydrunas Ilgauskas,,,,,,def,,
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,8:37,CLE,shot,,,,,,,,,,Larry Hughes,,,,missed,,jump,35,19
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,8:35,ATL,rebound,,,,,,,,,,Joe Johnson,,,,,,def,,
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,8:30,ATL,shot,,,,,,,,,,Tyronn Lue,2,,,made,,jump,11,24
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,8:17,ATL,foul,,,,,,,,Drew Gooden,,Shelden Williams,,,,,,personal,,
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,8:12,CLE,shot,Eric Snow,,,,,,,,,Larry Hughes,2,,,made,,jump,39,9
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,8:00,ATL,shot,,,,,,,,,,Zaza Pachulia,,,,missed,,jump,9,9
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,7:58,CLE,rebound,,,,,,,,,,LeBron James,,,,,,def,,
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,7:52,ATL,foul,,,,,,,,LeBron James,,Josh Smith,,,,,,shooting,,
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,7:52,CLE,free throw,,,,,,,1,,2,LeBron James,,,foul,made,,,,
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,7:52,CLE,free throw,,,,,,,2,,2,LeBron James,,,foul,missed,,,,
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,7:52,ATL,rebound,,,,,,,,,,Shelden Williams,,,,,,def,,
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,7:45,CLE,foul,,,,,,,,Zaza Pachulia,,Zydrunas Ilgauskas,,,,,,personal,,
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,7:33,ATL,shot,,,Zydrunas Ilgauskas,,,,,,,Joe Johnson,,,,missed,,layup,23,5
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,7:32,ATL,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,7:29,ATL,shot,,,,,,,,,,Shelden Williams,,,,missed,,jump,36,13
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,7:28,CLE,rebound,,,,,,,,,,LeBron James,,,,,,def,,
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,7:25,ATL,violation,,,,,,,,,,Tyronn Lue,,,,,,kicked ball,,
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,7:12,CLE,shot,,,,,,,,,,LeBron James,,,,missed,,turnaround jump,23,10
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,7:12,ATL,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,6:50,ATL,shot,,,,,,,,,,Zaza Pachulia,,,,missed,,jump,23,10
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,6:46,ATL,shot,,,,,,,,,,Zaza Pachulia,2,,,made,,tip,25,6
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,6:46,ATL,rebound,,,,,,,,,,Zaza Pachulia,,,,,,off,,
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,6:25,CLE,shot,Larry Hughes,,,,,,,,,LeBron James,3,,,made,,3pt,47,17
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,6:09,ATL,turnover,,,,,,,,,,Tyronn Lue,,,bad pass,,LeBron James,,,
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,6:05,CLE,shot,,,,,,,,,,LeBron James,2,,,made,,layup,25,6
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,5:48,ATL,shot,,,,,,,,,,Zaza Pachulia,2,,,made,,hook,24,9
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,5:32,CLE,shot,,,,,,,,,,Larry Hughes,2,,,made,,driving layup,25,6
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,5:17,ATL,shot,,,,,,,,,,Tyronn Lue,,,,missed,,jump,32,11
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,5:15,ATL,shot,,,,,,,,,,Zaza Pachulia,2,,,made,,tip,25,6
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,5:15,ATL,rebound,,,,,,,,,,Zaza Pachulia,,,,,,off,,
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,4:53,CLE,shot,,,,,,,,,,Drew Gooden,2,,,made,,jump,17,10
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,4:41,ATL,shot,Joe Johnson,,,,,,,,,Tyronn Lue,3,,,made,,3pt,28,31
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,4:24,CLE,shot,,,,,,,,,,LeBron James,,,,missed,,3pt,48,5
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,4:22,CLE,rebound,,,,,,,,,,Zydrunas Ilgauskas,,,,,,off,,
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,4:20,CLE,shot,,,,,,,,,,Zydrunas Ilgauskas,2,,,made,,hook,23,12
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,4:06,ATL,shot,Tyronn Lue,,,,,,,,,Shelden Williams,2,,,made,,slam dunk,24,6
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,4:00,ATL,foul,,,,,,,,Drew Gooden,,Tyronn Lue,,,,,,shooting,,
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,Zydrunas Ilgauskas,3,4:00,CLE,timeout,,,,,,,,,,,,,,,,regular,,
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,3,4:00,CLE,sub,,,,Donyell Marshall,,Zydrunas Ilgauskas,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Shelden Williams,Tyronn Lue,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,3,4:00,CLE,sub,,,,Damon Jones,,Eric Snow,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Shelden Williams,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,3,4:00,ATL,sub,,,,Josh Childress,,Tyronn Lue,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Shelden Williams,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,3,4:00,CLE,free throw,,,,,,,1,,2,Drew Gooden,,,foul,missed,,,,
+Joe Johnson,Josh Childress,Josh Smith,Shelden Williams,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,3,4:00,CLE,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Shelden Williams,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,3,4:00,CLE,free throw,,,,,,,2,,2,Drew Gooden,,,foul,made,,,,
+Joe Johnson,Josh Childress,Josh Smith,Shelden Williams,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,3,3:48,ATL,shot,,,,,,,,,,Zaza Pachulia,,,,missed,,layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Shelden Williams,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,3,3:47,CLE,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Shelden Williams,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,3,3:28,CLE,shot,,,,,,,,,,Donyell Marshall,,,,missed,,3pt,48,9
+Joe Johnson,Josh Childress,Josh Smith,Shelden Williams,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,3,3:26,CLE,rebound,,,,,,,,,,Drew Gooden,,,,,,off,,
+Joe Johnson,Josh Childress,Josh Smith,Shelden Williams,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,3,3:26,ATL,foul,,,,,,,,Drew Gooden,,Zaza Pachulia,,,,,,shooting,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Shelden Williams,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,3,3:26,ATL,sub,,,,Lorenzen Wright,,Zaza Pachulia,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Shelden Williams,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,3,3:26,CLE,free throw,,,,,,,1,,2,Drew Gooden,,,foul,made,,,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Shelden Williams,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,3,3:26,CLE,free throw,,,,,,,2,,2,Drew Gooden,,,foul,made,,,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Shelden Williams,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,3,3:11,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,jump,30,25
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Shelden Williams,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,3,3:09,CLE,rebound,,,,,,,,,,LeBron James,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Shelden Williams,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,3,3:01,CLE,shot,,,,,,,,,,LeBron James,,,,missed,,jump,29,13
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Shelden Williams,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,3,2:59,CLE,shot,,,,,,,,,,Donyell Marshall,2,,,made,,tip,24,6
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Shelden Williams,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,3,2:59,CLE,rebound,,,,,,,,,,Donyell Marshall,,,,,,off,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Shelden Williams,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,3,2:54,ATL,timeout,,,,,,,,,,,,,,,,regular,,
+Cedric Bozeman,Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,3,2:54,ATL,sub,,,,Cedric Bozeman,,Shelden Williams,,,,,,,,,,,,
+Cedric Bozeman,Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,3,2:44,CLE,foul,,,,,,,,Josh Smith,,Drew Gooden,,,,,,shooting,,
+Cedric Bozeman,Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,3,2:44,ATL,free throw,,,,,,,1,,2,Josh Smith,,,foul,made,,,,
+Cedric Bozeman,Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,3,2:44,ATL,free throw,,,,,,,2,,2,Josh Smith,,,foul,missed,,,,
+Cedric Bozeman,Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,3,2:43,CLE,rebound,,,,,,,,,,Drew Gooden,,,,,,def,,
+Cedric Bozeman,Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,3,2:28,CLE,shot,,,,,,,,,,LeBron James,2,,,made,,driving layup,25,6
+Cedric Bozeman,Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,3,2:28,ATL,foul,,,,,,,,LeBron James,,Lorenzen Wright,,,,,,shooting,,
+Cedric Bozeman,Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,3,2:28,CLE,free throw,,,,,,,1,,1,LeBron James,,,foul,made,,,,
+Cedric Bozeman,Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,3,2:09,ATL,shot,Joe Johnson,,,,,,,,,Cedric Bozeman,3,,,made,,3pt,33,29
+Cedric Bozeman,Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,3,1:55,CLE,shot,LeBron James,,,,,,,,,Drew Gooden,2,,,made,,slam dunk,24,7
+Cedric Bozeman,Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,3,1:37,ATL,foul,,,,,,,,LeBron James,,Josh Childress,,,,,,offensive,,
+Cedric Bozeman,Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,3,1:37,ATL,turnover,,,,,,,,,,Josh Childress,,,foul,,,,,
+Cedric Bozeman,Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,3,1:18,CLE,foul,,,,,,,,Cedric Bozeman,,Donyell Marshall,,,,,,offensive,,
+Cedric Bozeman,Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,3,1:18,CLE,turnover,,,,,,,,,,Donyell Marshall,,,foul,,,,,
+Cedric Bozeman,Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,3,1:07,CLE,foul,,,,,,,,Joe Johnson,,Drew Gooden,,,,,,personal,,
+Cedric Bozeman,Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Anderson Varejao,Damon Jones,Donyell Marshall,Larry Hughes,LeBron James,3,1:07,CLE,sub,,,,Anderson Varejao,,Drew Gooden,,,,,,,,,,,,
+Cedric Bozeman,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Anderson Varejao,Damon Jones,Donyell Marshall,Larry Hughes,LeBron James,3,1:07,ATL,sub,,,,Tyronn Lue,,Joe Johnson,,,,,,,,,,,,
+Cedric Bozeman,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,LeBron James,3,1:07,CLE,sub,,,,David Wesley,,Larry Hughes,,,,,,,,,,,,
+Cedric Bozeman,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,LeBron James,3,0:53,ATL,shot,,,Anderson Varejao,,,,,,,Lorenzen Wright,,,,missed,,layup,25,6
+Cedric Bozeman,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,LeBron James,3,0:51,CLE,rebound,,,,,,,,,,David Wesley,,,,,,def,,
+Cedric Bozeman,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,LeBron James,3,0:46,CLE,shot,David Wesley,,,,,,,,,Donyell Marshall,2,,,made,,layup,24,6
+Cedric Bozeman,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,LeBron James,3,0:22,ATL,shot,Josh Smith,,,,,,,,,Tyronn Lue,3,,,made,,3pt,11,31
+Cedric Bozeman,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,LeBron James,3,0:00,CLE,shot,,,,,,,,,,Anderson Varejao,,,,missed,,layup,24,9
+Cedric Bozeman,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,LeBron James,3,0:00,CLE,rebound,,,,,,,,,,,,,,,,,,
+Cedric Bozeman,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,4,11:42,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,jump,22,10
+Cedric Bozeman,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,4,11:41,ATL,rebound,,,,,,,,,,,,,,,,,,
+Cedric Bozeman,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,4,11:29,ATL,shot,Tyronn Lue,,,,,,,,,Josh Smith,2,,,made,,layup,25,6
+Cedric Bozeman,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,4,11:29,CLE,foul,,,,,,,,Josh Smith,,Anderson Varejao,,,,,,shooting,,
+Cedric Bozeman,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,4,11:29,ATL,free throw,,,,,,,1,,1,Josh Smith,,,foul,made,,,,
+Cedric Bozeman,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,4,11:14,ATL,foul,,,,,,,,Anderson Varejao,,Cedric Bozeman,,,,,,shooting,,
+Cedric Bozeman,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,4,11:14,CLE,free throw,,,,,,,1,,2,Anderson Varejao,,,foul,missed,,,,
+Cedric Bozeman,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,4,11:14,CLE,rebound,,,,,,,,,,,,,,,,,,
+Cedric Bozeman,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Larry Hughes,LeBron James,4,11:14,CLE,sub,,,,LeBron James,,Donyell Marshall,,,,,,,,,,,,
+Cedric Bozeman,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Larry Hughes,LeBron James,4,11:14,CLE,free throw,,,,,,,2,,2,Anderson Varejao,,,foul,missed,,,,
+Cedric Bozeman,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Larry Hughes,LeBron James,4,11:14,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,def,,
+Cedric Bozeman,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Larry Hughes,LeBron James,4,11:00,ATL,shot,,,,,,,,,,Josh Childress,,,,missed,,layup,25,7
+Cedric Bozeman,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Larry Hughes,LeBron James,4,10:58,CLE,rebound,,,,,,,,,,Damon Jones,,,,,,def,,
+Cedric Bozeman,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Larry Hughes,LeBron James,4,10:58,CLE,turnover,,,,,,,,,,Damon Jones,,,bad pass,,Cedric Bozeman,,,
+Cedric Bozeman,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Larry Hughes,LeBron James,4,10:56,ATL,turnover,,,,,,,,,,Cedric Bozeman,,,bad pass,,David Wesley,,,
+Cedric Bozeman,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Larry Hughes,LeBron James,4,10:44,ATL,foul,,,,,,,,LeBron James,,Tyronn Lue,,,,,,shooting,,
+Cedric Bozeman,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Larry Hughes,LeBron James,4,10:44,CLE,free throw,,,,,,,1,,2,LeBron James,,,foul,missed,,,,
+Cedric Bozeman,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Larry Hughes,LeBron James,4,10:44,CLE,free throw,,,,,,,2,,2,LeBron James,,,foul,missed,,,,
+Cedric Bozeman,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Larry Hughes,LeBron James,4,10:44,CLE,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Anderson Varejao,Damon Jones,David Wesley,Larry Hughes,LeBron James,4,10:44,ATL,sub,,,,Joe Johnson,,Cedric Bozeman,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,10:44,CLE,sub,,,,Donyell Marshall,,Anderson Varejao,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,10:42,CLE,rebound,,,,,,,,,,Donyell Marshall,,,,,,off,,
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,10:38,CLE,shot,LeBron James,,,,,,,,,Donyell Marshall,2,,,made,,layup,24,6
+Joe Johnson,Josh Childress,Josh Smith,Lorenzen Wright,Tyronn Lue,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,10:28,CLE,foul,,,,,,,,Joe Johnson,,Larry Hughes,,,,,,shooting,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,10:28,ATL,sub,,,,Zaza Pachulia,,Lorenzen Wright,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,10:28,ATL,free throw,,,,,,,1,,2,Joe Johnson,,,foul,missed,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,10:28,ATL,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,10:28,ATL,free throw,,,,,,,2,,2,Joe Johnson,,,foul,missed,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,10:25,CLE,rebound,,,,,,,,,,LeBron James,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,10:04,CLE,shot,,,,,,,,,,LeBron James,3,,,made,,3pt,39,26
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,9:45,ATL,turnover,,,,,,,,,,Zaza Pachulia,,,traveling,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,9:27,CLE,shot,,,,,,,,,,David Wesley,,,,missed,,3pt,1,5
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,9:25,ATL,rebound,,,,,,,,,,Tyronn Lue,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,9:23,CLE,foul,,,,,,,,Josh Smith,,Damon Jones,,,,,,shooting,,
+Joe Johnson,Josh Childress,Josh Smith,Matt Freije,Tyronn Lue,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,9:23,ATL,sub,,,,Matt Freije,,Zaza Pachulia,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Matt Freije,Tyronn Lue,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,9:23,ATL,free throw,,,,,,,1,,2,Josh Smith,,,foul,missed,,,,
+Joe Johnson,Josh Childress,Josh Smith,Matt Freije,Tyronn Lue,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,9:23,ATL,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Matt Freije,Tyronn Lue,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,9:23,ATL,free throw,,,,,,,2,,2,Josh Smith,,,foul,made,,,,
+Joe Johnson,Josh Childress,Josh Smith,Matt Freije,Tyronn Lue,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,8:59,CLE,shot,,,,,,,,,,LeBron James,2,,,made,,driving finger roll,25,7
+Joe Johnson,Josh Childress,Josh Smith,Matt Freije,Tyronn Lue,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,8:47,ATL,turnover,,,,,,,,,,Joe Johnson,,,poss lost ball turnover,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Matt Freije,Tyronn Lue,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,8:47,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Joe Johnson,Josh Childress,Josh Smith,Matt Freije,Tyronn Lue,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,8:29,CLE,shot,,,,,,,,,,Damon Jones,,,,missed,,layup,25,7
+Joe Johnson,Josh Childress,Josh Smith,Matt Freije,Tyronn Lue,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,8:28,CLE,shot,,,,,,,,,,Donyell Marshall,,,,missed,,tip,24,5
+Joe Johnson,Josh Childress,Josh Smith,Matt Freije,Tyronn Lue,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,8:28,CLE,rebound,,,,,,,,,,Donyell Marshall,,,,,,off,,
+Joe Johnson,Josh Childress,Josh Smith,Matt Freije,Tyronn Lue,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,8:26,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Matt Freije,Tyronn Lue,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,8:21,ATL,shot,,,Larry Hughes,,,,,,,Matt Freije,,,,missed,,layup,24,7
+Joe Johnson,Josh Childress,Josh Smith,Matt Freije,Tyronn Lue,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,8:21,ATL,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Matt Freije,Tyronn Lue,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,8:19,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,jump bank,18,5
+Joe Johnson,Josh Childress,Josh Smith,Matt Freije,Tyronn Lue,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,8:16,CLE,rebound,,,,,,,,,,Donyell Marshall,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Matt Freije,Tyronn Lue,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,8:13,ATL,foul,,,,,,,,Larry Hughes,,Tyronn Lue,,,,,,shooting,,
+Joe Johnson,Josh Childress,Josh Smith,Matt Freije,Tyronn Lue,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,8:13,CLE,free throw,,,,,,,1,,2,Larry Hughes,,,foul,made,,,,
+Joe Johnson,Josh Childress,Josh Smith,Matt Freije,Tyronn Lue,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,8:13,CLE,free throw,,,,,,,2,,2,Larry Hughes,,,foul,made,,,,
+Joe Johnson,Josh Childress,Josh Smith,Matt Freije,Tyronn Lue,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,7:53,ATL,shot,Joe Johnson,,,,,,,,,Matt Freije,2,,,made,,jump,7,15
+Joe Johnson,Josh Childress,Josh Smith,Matt Freije,Tyronn Lue,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,7:26,CLE,shot,,,,,,,,,,David Wesley,,,,missed,,3pt,1,4
+Joe Johnson,Josh Childress,Josh Smith,Matt Freije,Tyronn Lue,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,7:24,ATL,rebound,,,,,,,,,,Joe Johnson,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Matt Freije,Tyronn Lue,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,7:18,ATL,shot,Josh Smith,,,,,,,,,Tyronn Lue,2,,,made,,jump,40,4
+Joe Johnson,Josh Childress,Josh Smith,Matt Freije,Tyronn Lue,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,6:53,CLE,shot,,,,,,,,,,Larry Hughes,,,,missed,,jump,10,20
+Joe Johnson,Josh Childress,Josh Smith,Matt Freije,Tyronn Lue,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,6:51,ATL,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Matt Freije,Tyronn Lue,Damon Jones,David Wesley,Donyell Marshall,Larry Hughes,LeBron James,4,6:37,CLE,foul,,,,,,,,Joe Johnson,,Larry Hughes,,,,,,personal,,
+Joe Johnson,Josh Childress,Josh Smith,Matt Freije,Tyronn Lue,Damon Jones,Donyell Marshall,Eric Snow,Larry Hughes,LeBron James,4,6:37,CLE,sub,,,,Eric Snow,,David Wesley,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Matt Freije,Tyronn Lue,Damon Jones,Donyell Marshall,Eric Snow,Larry Hughes,LeBron James,4,6:37,ATL,timeout,,,,,,,,,,,,,,,,regular,,
+Joe Johnson,Josh Childress,Josh Smith,Matt Freije,Tyronn Lue,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,6:37,CLE,sub,,,,Drew Gooden,,Damon Jones,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Matt Freije,Tyronn Lue,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,6:24,ATL,shot,,,,,,,,,,Matt Freije,,,,missed,,3pt,6,23
+Joe Johnson,Josh Childress,Josh Smith,Matt Freije,Tyronn Lue,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,6:22,CLE,rebound,,,,,,,,,,Eric Snow,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Matt Freije,Tyronn Lue,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,6:14,CLE,turnover,,,,,,,,,,Larry Hughes,,,bad pass,,Matt Freije,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,5:53,ATL,sub,,,,Zaza Pachulia,,Matt Freije,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,5:48,ATL,turnover,,,,,,,,,,,,,shot clock turnover,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,5:42,ATL,foul,,,,,,,,LeBron James,,Josh Childress,,,,,,personal,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,5:34,ATL,foul,,,,,,,,Donyell Marshall,,Josh Childress,,,,,,shooting,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,5:34,CLE,free throw,,,,,,,1,,2,Donyell Marshall,,,foul,made,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,5:34,CLE,free throw,,,,,,,2,,2,Donyell Marshall,,,foul,missed,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,5:33,ATL,rebound,,,,,,,,,,Josh Childress,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,5:11,ATL,shot,,,,,,,,,,Zaza Pachulia,2,,,made,,driving layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,4:50,CLE,shot,Eric Snow,,,,,,,,,Donyell Marshall,2,,,made,,jump hook,29,10
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,4:30,CLE,foul,,,,,,,,Zaza Pachulia,,LeBron James,,,,,,personal,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,4:30,ATL,free throw,,,,,,,1,,2,Zaza Pachulia,,,foul,made,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,4:30,ATL,free throw,,,,,,,2,,2,Zaza Pachulia,,,foul,made,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,4:22,CLE,turnover,,,,,,,,,,Larry Hughes,,,out of bounds lost ball turnover,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,4:10,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,3pt,10,27
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,4:08,CLE,rebound,,,,,,,,,,Larry Hughes,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,3:57,CLE,shot,,,,,,,,,,Eric Snow,,,,missed,,jump,41,3
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,3:56,ATL,rebound,,,,,,,,,,Zaza Pachulia,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,3:37,ATL,shot,,,,,,,,,,Tyronn Lue,,,,missed,,3pt,1,8
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,3:36,CLE,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,3:17,CLE,shot,,,,,,,,,,Larry Hughes,,,,missed,,jump,24,27
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,3:16,ATL,rebound,,,,,,,,,,Tyronn Lue,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,3:14,ATL,shot,Tyronn Lue,,,,,,,,,Josh Childress,2,,,made,,layup,24,5
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,3:14,CLE,foul,,,,,,,,Josh Childress,,Eric Snow,,,,,,shooting,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,3:14,ATL,free throw,,,,,,,1,,1,Josh Childress,,,foul,missed,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,3:11,OFF,jump ball,,Zaza Pachulia,,,Drew Gooden,,,,,,,Donyell Marshall,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,3:11,CLE,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,2:59,ATL,foul,,,,,,,,LeBron James,,Joe Johnson,,,,,,personal,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,2:59,CLE,timeout,,,,,,,,,,,,,,,,regular,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,2:59,CLE,free throw,,,,,,,1,,2,LeBron James,,,foul,missed,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,2:59,CLE,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,2:59,CLE,free throw,,,,,,,2,,2,LeBron James,,,foul,made,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,2:46,CLE,foul,,,,,,,,Joe Johnson,,Eric Snow,,,,,,personal,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,2:46,ATL,free throw,,,,,,,1,,2,Joe Johnson,,,foul,made,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,2:46,ATL,free throw,,,,,,,2,,2,Joe Johnson,,,foul,missed,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,2:45,CLE,rebound,,,,,,,,,,Drew Gooden,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,2:24,CLE,shot,,,,,,,,,,Drew Gooden,,,,missed,,jump,22,22
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,2:22,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,2:01,ATL,timeout,,,,,,,,,,,,,,,,short,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,1:58,ATL,shot,Tyronn Lue,,,,,,,,,Joe Johnson,3,,,made,,3pt,4,24
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,1:34,CLE,shot,,,,,,,,,,Drew Gooden,,,,missed,,3pt,6,25
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,1:32,ATL,rebound,,,,,,,,,,Josh Childress,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,1:10,ATL,shot,Tyronn Lue,,,,,,,,,Josh Childress,2,,,made,,layup,24,7
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,0:58,CLE,shot,,,,,,,,,,LeBron James,,,,missed,,3pt,23,31
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,0:56,ATL,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,0:56,CLE,foul,,,,,,,,Tyronn Lue,,Drew Gooden,,,,,,loose ball,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,0:56,ATL,free throw,,,,,,,1,,2,Tyronn Lue,,,foul,missed,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,0:56,ATL,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,0:56,ATL,free throw,,,,,,,2,,2,Tyronn Lue,,,foul,missed,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,0:54,CLE,rebound,,,,,,,,,,Drew Gooden,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,0:49,CLE,timeout,,,,,,,,,,,,,,,,short,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,4,0:49,CLE,sub,,,,Damon Jones,,Eric Snow,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,4,0:39,CLE,shot,LeBron James,,,,,,,,,Larry Hughes,3,,,made,,3pt,9,27
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,4,0:35,ATL,timeout,,,,,,,,,,,,,,,,regular,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,David Wesley,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,4,0:35,CLE,sub,,,,David Wesley,,Damon Jones,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,David Wesley,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,0:35,CLE,sub,,,,Eric Snow,,Donyell Marshall,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,David Wesley,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,0:15,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,jump,26,22
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,David Wesley,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,0:14,CLE,rebound,,,,,,,,,,Drew Gooden,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,David Wesley,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,0:14,ATL,foul,,,,,,,,Drew Gooden,,Josh Smith,,,,,,personal,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,David Wesley,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,0:14,CLE,free throw,,,,,,,1,,2,Drew Gooden,,,foul,made,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,David Wesley,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,0:14,CLE,free throw,,,,,,,2,,2,Drew Gooden,,,foul,made,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,David Wesley,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,0:14,ATL,timeout,,,,,,,,,,,,,,,,short,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,David Wesley,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,0:06,ATL,shot,,,,,,,,,,Tyronn Lue,2,,,made,,driving layup,23,7
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,David Wesley,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,0:06,CLE,timeout,,,,,,,,,,,,,,,,short,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,David Wesley,Drew Gooden,Larry Hughes,LeBron James,4,0:06,CLE,sub,,,,Damon Jones,,Eric Snow,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,4,0:06,CLE,sub,,,,Donyell Marshall,,David Wesley,,,,,,,,,,,,
+Cedric Bozeman,Joe Johnson,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,4,0:06,ATL,sub,,,,Cedric Bozeman,,Josh Childress,,,,,,,,,,,,
+Cedric Bozeman,Joe Johnson,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,4,0:06,ATL,foul,,,,,,,,LeBron James,,Joe Johnson,,,,,,personal,,
+Cedric Bozeman,Joe Johnson,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,0:06,CLE,sub,,,,Eric Snow,,Damon Jones,,,,,,,,,,,,
+Cedric Bozeman,Joe Johnson,Josh Smith,Tyronn Lue,Zaza Pachulia,David Wesley,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,0:06,CLE,sub,,,,David Wesley,,Donyell Marshall,,,,,,,,,,,,
+Cedric Bozeman,Joe Johnson,Josh Smith,Tyronn Lue,Zaza Pachulia,David Wesley,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,0:06,CLE,free throw,,,,,,,1,,2,LeBron James,,,foul,made,,,,
+Joe Johnson,Josh Smith,Matt Freije,Tyronn Lue,Zaza Pachulia,David Wesley,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,0:06,ATL,sub,,,,Matt Freije,,Cedric Bozeman,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Matt Freije,Salim Stoudamire,Tyronn Lue,David Wesley,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,4,0:06,ATL,sub,,,,Salim Stoudamire,,Zaza Pachulia,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Matt Freije,Salim Stoudamire,Tyronn Lue,Damon Jones,David Wesley,Eric Snow,Larry Hughes,LeBron James,4,0:06,CLE,sub,,,,Damon Jones,,Drew Gooden,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Matt Freije,Salim Stoudamire,Tyronn Lue,Damon Jones,David Wesley,Eric Snow,Larry Hughes,LeBron James,4,0:06,CLE,free throw,,,,,,,2,,2,LeBron James,,,foul,missed,,,,
+Joe Johnson,Josh Smith,Matt Freije,Salim Stoudamire,Tyronn Lue,Damon Jones,David Wesley,Eric Snow,Larry Hughes,LeBron James,4,0:04,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,def,,
+Joe Johnson,Josh Smith,Matt Freije,Salim Stoudamire,Tyronn Lue,Damon Jones,David Wesley,Eric Snow,Larry Hughes,LeBron James,4,0:00,ATL,shot,,,,,,,,,,Tyronn Lue,2,,,made,,driving layup,24,7
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,5,5:00,OFF,jump ball,,Josh Smith,,,Drew Gooden,,,,,,,Joe Johnson,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,5,4:39,ATL,shot,Tyronn Lue,,,,,,,,,Zaza Pachulia,2,,,made,,layup,25,6
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,5,4:21,CLE,shot,,,,,,,,,,LeBron James,2,,,made,,driving layup,23,6
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,5,4:03,ATL,shot,Zaza Pachulia,,,,,,,,,Tyronn Lue,3,,,made,,3pt,39,27
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,5,3:39,CLE,shot,,,,,,,,,,LeBron James,,,,missed,,3pt,7,24
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,5,3:36,ATL,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,5,3:19,CLE,foul,,,,,,,,Joe Johnson,,Eric Snow,,,,,,personal,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,5,3:16,ATL,shot,,,Drew Gooden,,,,,,,Zaza Pachulia,,,,missed,,layup,23,6
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,5,3:16,CLE,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,5,2:56,ATL,foul,,,,,,,,Donyell Marshall,,Josh Smith,,,,,,shooting,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,5,2:56,CLE,free throw,,,,,,,1,,2,Donyell Marshall,,,foul,missed,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,5,2:56,CLE,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,5,2:56,CLE,free throw,,,,,,,2,,2,Donyell Marshall,,,foul,missed,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,5,2:56,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,5,2:35,ATL,shot,,,,,,,,,,Joe Johnson,2,,,made,,layup,24,6
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Donyell Marshall,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,5,2:35,CLE,foul,,,,,,,,Joe Johnson,,Larry Hughes,,,,,,shooting,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,5,2:35,CLE,sub,,,,Damon Jones,,Eric Snow,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,5,2:35,ATL,free throw,,,,,,,1,,1,Joe Johnson,,,foul,made,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,5,2:21,ATL,foul,,,,,,,,LeBron James,,Zaza Pachulia,,,,,,shooting,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,5,2:21,CLE,free throw,,,,,,,1,,2,LeBron James,,,foul,missed,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,5,2:21,CLE,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,5,2:21,CLE,free throw,,,,,,,2,,2,LeBron James,,,foul,made,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,5,1:59,ATL,shot,,,,,,,,,,Joe Johnson,3,,,made,,3pt,11,27
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,5,1:44,CLE,shot,,,,,,,,,,LeBron James,,,,missed,,layup,23,6
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,5,1:42,CLE,shot,,,,,,,,,,Drew Gooden,,,,missed,,tip,23,6
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,5,1:42,CLE,rebound,,,,,,,,,,Drew Gooden,,,,,,off,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,5,1:42,CLE,shot,,,,,,,,,,Drew Gooden,,,,missed,,tip,23,6
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,5,1:42,CLE,rebound,,,,,,,,,,Drew Gooden,,,,,,off,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,5,1:40,CLE,shot,,,,,,,,,,Donyell Marshall,,,,missed,,tip,23,6
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,5,1:40,CLE,rebound,,,,,,,,,,Donyell Marshall,,,,,,off,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,5,1:37,CLE,shot,,,,,,,,,,Drew Gooden,2,,,made,,tip,24,6
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,5,1:37,CLE,rebound,,,,,,,,,,Drew Gooden,,,,,,off,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,5,1:18,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,jump,10,8
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,5,1:16,CLE,rebound,,,,,,,,,,LeBron James,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,5,1:13,ATL,foul,,,,,,,,LeBron James,,Joe Johnson,,,,,,personal,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,5,1:04,CLE,shot,,,,,,,,,,Donyell Marshall,,,,missed,,3pt,47,4
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,5,1:02,ATL,rebound,,,,,,,,,,Joe Johnson,,,,,,def,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,5,0:47,ATL,timeout,,,,,,,,,,,,,,,,regular,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,5,0:47,CLE,sub,,,,Eric Snow,,Donyell Marshall,,,,,,,,,,,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,5,0:42,ATL,shot,Joe Johnson,,,,,,,,,Josh Smith,2,,,made,,slam dunk,24,6
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,Drew Gooden,Eric Snow,Larry Hughes,LeBron James,5,0:42,CLE,timeout,,,,,,,,,,,,,,,,regular,,
+Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Zaza Pachulia,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,5,0:42,CLE,sub,,,,Donyell Marshall,,Eric Snow,,,,,,,,,,,,
+Cedric Bozeman,Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,5,0:42,ATL,sub,,,,Cedric Bozeman,,Zaza Pachulia,,,,,,,,,,,,
+Cedric Bozeman,Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,5,0:32,CLE,shot,,,,,,,,,,Drew Gooden,,,,missed,,3pt,10,27
+Cedric Bozeman,Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,5,0:30,ATL,rebound,,,,,,,,,,Josh Childress,,,,,,def,,
+Cedric Bozeman,Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,5,0:24,CLE,foul,,,,,,,,Joe Johnson,,Drew Gooden,,,,,,personal,,
+Cedric Bozeman,Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Damon Jones,Donyell Marshall,Drew Gooden,Larry Hughes,LeBron James,5,0:24,ATL,timeout,,,,,,,,,,,,,,,,short,,
+Cedric Bozeman,Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Damon Jones,Donyell Marshall,Larry Hughes,LeBron James,Shannon Brown,5,0:24,CLE,sub,,,,Shannon Brown,,Drew Gooden,,,,,,,,,,,,
+Cedric Bozeman,Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Damon Jones,Donyell Marshall,Larry Hughes,LeBron James,Shannon Brown,5,0:21,CLE,foul,,,,,,,,Joe Johnson,,Damon Jones,,,,,,personal,,
+Cedric Bozeman,Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Damon Jones,Donyell Marshall,Larry Hughes,LeBron James,Shannon Brown,5,0:21,ATL,free throw,,,,,,,1,,2,Joe Johnson,,,foul,missed,,,,
+Cedric Bozeman,Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Damon Jones,Donyell Marshall,Larry Hughes,LeBron James,Shannon Brown,5,0:21,ATL,free throw,,,,,,,2,,2,Joe Johnson,,,foul,made,,,,
+Cedric Bozeman,Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Damon Jones,Donyell Marshall,Larry Hughes,LeBron James,Shannon Brown,5,0:21,ATL,rebound,,,,,,,,,,,,,,,,,,
+Cedric Bozeman,Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Damon Jones,Donyell Marshall,Larry Hughes,LeBron James,Shannon Brown,5,0:16,CLE,shot,,,,,,,,,,LeBron James,,,,missed,,3pt,12,28
+Cedric Bozeman,Joe Johnson,Josh Childress,Josh Smith,Tyronn Lue,Damon Jones,Donyell Marshall,Larry Hughes,LeBron James,Shannon Brown,5,0:13,ATL,rebound,,,,,,,,,,Tyronn Lue,,,,,,def,,

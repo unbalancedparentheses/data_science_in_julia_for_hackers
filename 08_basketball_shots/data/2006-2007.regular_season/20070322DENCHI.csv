@@ -1,0 +1,448 @@
+a1,a2,a3,a4,a5,h1,h2,h3,h4,h5,period,time,team,etype,assist,away,block,entered,home,left,num,opponent,outof,player,points,possession,reason,result,steal,type,x,y
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,12:00,OFF,jump ball,,Marcus Camby,,,Ben Wallace,,,,,,,Allen Iverson,,,,,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,11:36,DEN,shot,Allen Iverson,,,,,,,,,Marcus Camby,2,,,made,,jump,30,24
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,11:17,CHI,shot,Ben Wallace,,,,,,,,,Ben Gordon,2,,,made,,jump,40,8
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,11:04,DEN,shot,,,,,,,,,,Allen Iverson,,,,missed,,layup,25,6
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,11:02,CHI,rebound,,,,,,,,,,Ben Wallace,,,,,,def,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,10:47,CHI,shot,P.J. Brown,,,,,,,,,Ben Wallace,2,,,made,,layup,25,6
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,10:20,DEN,shot,Allen Iverson,,,,,,,,,Marcus Camby,2,,,made,,jump,45,6
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,9:59,CHI,shot,Ben Wallace,,,,,,,,,Luol Deng,2,,,made,,jump,39,22
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,9:46,DEN,shot,,,,,,,,,,Allen Iverson,2,,,made,,jump,43,16
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,9:35,CHI,shot,Luol Deng,,,,,,,,,Kirk Hinrich,2,,,made,,jump,44,8
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,9:18,DEN,shot,Marcus Camby,,,,,,,,,Carmelo Anthony,2,,,made,,jump,37,5
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,9:01,CHI,shot,,,,,,,,,,Luol Deng,,,,missed,,jump,9,7
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,8:58,CHI,rebound,,,,,,,,,,P.J. Brown,,,,,,off,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,8:57,CHI,shot,P.J. Brown,,,,,,,,,Kirk Hinrich,3,,,made,,3pt,9,26
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,8:48,DEN,turnover,,,,,,,,,,Marcus Camby,,,bad pass,,P.J. Brown,,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,8:43,CHI,shot,,,,,,,,,,Kirk Hinrich,,,,missed,,3pt,10,26
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,8:41,DEN,rebound,,,,,,,,,,Carmelo Anthony,,,,,,def,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,8:24,DEN,turnover,,,,,,,,,,Allen Iverson,,,bad pass,,,,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,8:24,CHI,foul,,,,,,,,Allen Iverson,,Ben Gordon,,,,,,offensive,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,8:24,CHI,turnover,,,,,,,,,,Ben Gordon,,,foul,,,,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,8:08,DEN,shot,,,,,,,,,,Marcus Camby,,,,missed,,jump,40,18
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,8:07,DEN,rebound,,,,,,,,,,Steve Blake,,,,,,off,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,8:05,DEN,shot,Steve Blake,,,,,,,,,Nene Hilario,2,,,made,,layup,25,6
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,8:05,CHI,foul,,,,,,,,Nene Hilario,,P.J. Brown,,,,,,shooting,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,8:05,DEN,free throw,,,,,,,1,,1,Nene Hilario,,,foul,made,,,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,7:55,DEN,foul,,,,,,,,P.J. Brown,,Nene Hilario,,,,,,shooting,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,7:55,CHI,free throw,,,,,,,1,,2,P.J. Brown,,,foul,made,,,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,7:55,CHI,free throw,,,,,,,2,,2,P.J. Brown,,,foul,missed,,,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,7:54,CHI,rebound,,,,,,,,,,,,,,,,,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,7:47,CHI,shot,,,,,,,,,,Luol Deng,,,,missed,,jump bank,9,14
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,7:45,CHI,rebound,,,,,,,,,,P.J. Brown,,,,,,off,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,7:44,CHI,shot,,,,,,,,,,P.J. Brown,2,,,made,,dunk,25,6
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,7:30,DEN,shot,,,,,,,,,,Carmelo Anthony,2,,,made,,driving layup,25,6
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,7:17,CHI,shot,,,,,,,,,,Luol Deng,,,,missed,,layup,25,6
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,7:16,CHI,rebound,,,,,,,,,,Luol Deng,,,,,,off,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,7:15,CHI,shot,,,,,,,,,,Luol Deng,,,,missed,,layup,25,6
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,7:14,DEN,rebound,,,,,,,,,,Nene Hilario,,,,,,def,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,7:08,DEN,turnover,,,,,,,,,,Nene Hilario,,,traveling,,,,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,6:51,CHI,shot,,,,,,,,,,Luol Deng,2,,,made,,layup,25,6
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,6:41,DEN,shot,,,,,,,,,,Allen Iverson,2,,,made,,jump,41,19
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,6:41,CHI,foul,,,,,,,,Carmelo Anthony,,Kirk Hinrich,,,,,,away from play,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,6:41,CHI,foul,,,,,,,,,,Skiles,,,,,,technical,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,6:41,DEN,free throw,,,,,,,1,,1,Carmelo Anthony,,,technical,made,,,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,6:41,DEN,free throw,,,,,,,1,,1,Carmelo Anthony,,,foul,made,,,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,6:33,CHI,turnover,,,,,,,,,,P.J. Brown,,,traveling,,,,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,6:22,DEN,shot,,,Luol Deng,,,,,,,Allen Iverson,,,,missed,,layup,25,6
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,6:20,DEN,rebound,,,,,,,,,,Carmelo Anthony,,,,,,off,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,6:19,DEN,shot,Carmelo Anthony,,,,,,,,,Nene Hilario,2,,,made,,dunk,25,6
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,6:07,CHI,turnover,,,,,,,,,,Luol Deng,,,lost ball,,Carmelo Anthony,,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,6:02,DEN,shot,Carmelo Anthony,,,,,,,,,Allen Iverson,2,,,made,,layup,25,6
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,1,5:57,CHI,timeout,,,,,,,,,,,,,,,,regular,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,P.J. Brown,1,5:57,CHI,sub,,,,Adrian Griffin,,Luol Deng,,,,,,,,,,,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,P.J. Brown,1,5:49,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,jump,15,19
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,P.J. Brown,1,5:46,DEN,rebound,,,,,,,,,,Steve Blake,,,,,,def,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Ben Wallace,Kirk Hinrich,P.J. Brown,1,5:42,CHI,foul,,,,,,,,Allen Iverson,,Kirk Hinrich,,,,,,personal,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,P.J. Brown,1,5:42,CHI,sub,,,,Chris Duhon,,Kirk Hinrich,,,,,,,,,,,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,P.J. Brown,1,5:24,DEN,shot,,,,,,,,,,Steve Blake,2,,,made,,jump,44,17
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,P.J. Brown,1,5:07,CHI,turnover,,,,,,,,,,Ben Wallace,,,bad pass,,Allen Iverson,,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,P.J. Brown,1,4:52,DEN,shot,,,,,,,,,,Carmelo Anthony,,,,missed,,jump,12,18
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,P.J. Brown,1,4:50,CHI,rebound,,,,,,,,,,Ben Gordon,,,,,,def,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,P.J. Brown,1,4:40,CHI,shot,,,,,,,,,,Adrian Griffin,,,,missed,,layup,25,6
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,P.J. Brown,1,4:38,DEN,rebound,,,,,,,,,,,,,,,,,,
+Carmelo Anthony,Linas Kleiza,Marcus Camby,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,P.J. Brown,1,4:38,DEN,sub,,,,Linas Kleiza,,Allen Iverson,,,,,,,,,,,,
+Carmelo Anthony,Linas Kleiza,Marcus Camby,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,P.J. Brown,1,4:16,DEN,turnover,,,,,,,,,,Steve Blake,,,bad pass,,Adrian Griffin,,,
+Carmelo Anthony,Linas Kleiza,Marcus Camby,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,P.J. Brown,1,4:05,CHI,shot,,,,,,,,,,Ben Wallace,2,,,made,,layup,25,6
+Carmelo Anthony,Linas Kleiza,Marcus Camby,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,P.J. Brown,1,3:48,DEN,turnover,,,,,,,,,,Marcus Camby,,,traveling,,,,,
+Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Nene Hilario,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,P.J. Brown,1,3:48,DEN,sub,,,,Eduardo Najera,,Steve Blake,,,,,,,,,,,,
+Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Nene Hilario,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,Tyrus Thomas,1,3:48,CHI,sub,,,,Tyrus Thomas,,P.J. Brown,,,,,,,,,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,Tyrus Thomas,1,3:48,DEN,sub,,,,Allen Iverson,,Nene Hilario,,,,,,,,,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,Tyrus Thomas,1,3:36,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,jump,18,25
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,Tyrus Thomas,1,3:33,DEN,rebound,,,,,,,,,,Allen Iverson,,,,,,def,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,Tyrus Thomas,1,3:31,DEN,shot,,,Ben Wallace,,,,,,,Linas Kleiza,,,,missed,,layup,25,6
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,Tyrus Thomas,1,3:29,CHI,rebound,,,,,,,,,,Adrian Griffin,,,,,,def,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,Tyrus Thomas,1,3:19,DEN,foul,,,,,,,,Tyrus Thomas,,Marcus Camby,,,,,,personal,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,Tyrus Thomas,1,3:09,CHI,shot,,,,,,,,,,Ben Gordon,2,,,made,,layup,25,6
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,Tyrus Thomas,1,2:59,DEN,turnover,,,,,,,,,,Carmelo Anthony,,,out of bounds lost ball turnover,,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,Tyrus Thomas,1,2:59,DEN,timeout,,,,,,,,,,,,,,,,regular,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,Tyrus Thomas,1,2:38,CHI,shot,,,,,,,,,,Tyrus Thomas,,,,missed,,jump,44,5
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,Tyrus Thomas,1,2:36,DEN,rebound,,,,,,,,,,Marcus Camby,,,,,,def,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,Tyrus Thomas,1,2:28,DEN,timeout,,,,,,,,,,,,,,,,short,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,Tyrus Thomas,1,2:15,DEN,shot,Allen Iverson,,,,,,,,,Eduardo Najera,2,,,made,,layup,25,6
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,Tyrus Thomas,1,2:03,CHI,shot,,,,,,,,,,Chris Duhon,,,,missed,,jump,37,25
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,Tyrus Thomas,1,2:00,CHI,rebound,,,,,,,,,,Ben Wallace,,,,,,off,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,Tyrus Thomas,1,1:58,CHI,shot,Ben Wallace,,,,,,,,,Adrian Griffin,2,,,made,,jump,9,15
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,Tyrus Thomas,1,1:44,DEN,shot,,,,,,,,,,Allen Iverson,,,,missed,,jump,41,18
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,Tyrus Thomas,1,1:42,CHI,rebound,,,,,,,,,,Tyrus Thomas,,,,,,def,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,Tyrus Thomas,1,1:33,CHI,shot,Chris Duhon,,,,,,,,,Ben Wallace,2,,,made,,layup,25,6
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,Tyrus Thomas,1,1:33,DEN,foul,,,,,,,,Ben Wallace,,Linas Kleiza,,,,,,shooting,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,Tyrus Thomas,1,1:33,CHI,free throw,,,,,,,1,,1,Ben Wallace,,,foul,missed,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,Tyrus Thomas,1,1:32,DEN,rebound,,,,,,,,,,Marcus Camby,,,,,,def,,
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Marcus Camby,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,Tyrus Thomas,1,1:18,DEN,sub,,,,J.R. Smith,,Carmelo Anthony,,,,,,,,,,,,
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Marcus Camby,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,Tyrus Thomas,1,1:09,DEN,turnover,,,,,,,,,,,,,shot clock turnover,,,,,
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Marcus Camby,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,Tyrus Thomas,1,1:02,DEN,foul,,,,,,,,Ben Gordon,,Eduardo Najera,,,,,,personal,,
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Marcus Camby,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,Tyrus Thomas,1,1:02,CHI,free throw,,,,,,,1,,2,Ben Gordon,,,foul,made,,,,
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Marcus Camby,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,Tyrus Thomas,1,1:02,CHI,free throw,,,,,,,2,,2,Ben Gordon,,,foul,made,,,,
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Marcus Camby,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,Tyrus Thomas,1,0:49,DEN,shot,Eduardo Najera,,,,,,,,,Linas Kleiza,3,,,made,,3pt,1,5
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Marcus Camby,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,Tyrus Thomas,1,0:32,CHI,turnover,,,,,,,,,,Ben Wallace,,,lost ball,,Eduardo Najera,,,
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Marcus Camby,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,Tyrus Thomas,1,0:29,DEN,shot,Linas Kleiza,,,,,,,,,J.R. Smith,2,,,made,,layup,25,6
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Marcus Camby,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,Tyrus Thomas,1,0:29,CHI,foul,,,,,,,,J.R. Smith,,Tyrus Thomas,,,,,,shooting,,
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Marcus Camby,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,Tyrus Thomas,1,0:29,DEN,free throw,,,,,,,1,,1,J.R. Smith,,,foul,made,,,,
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Marcus Camby,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,Tyrus Thomas,1,0:09,CHI,shot,,,,,,,,,,Ben Gordon,2,,,made,,driving dunk,25,6
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Marcus Camby,Adrian Griffin,Ben Gordon,Ben Wallace,Chris Duhon,Tyrus Thomas,1,0:00,DEN,shot,Allen Iverson,,,,,,,,,Linas Kleiza,3,,,made,,3pt,42,24
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Nene Hilario,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,Tyrus Thomas,2,11:46,CHI,shot,,,,,,,,,,Kirk Hinrich,,,,missed,,jump,13,22
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Nene Hilario,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,Tyrus Thomas,2,11:44,DEN,rebound,,,,,,,,,,,,,,,,,,
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Nene Hilario,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,Tyrus Thomas,2,11:28,DEN,shot,,,,,,,,,,J.R. Smith,,,,missed,,3pt,43,24
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Nene Hilario,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,Tyrus Thomas,2,11:24,DEN,rebound,,,,,,,,,,Eduardo Najera,,,,,,off,,
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Nene Hilario,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,Tyrus Thomas,2,11:16,DEN,shot,,,,,,,,,,Eduardo Najera,,,,missed,,layup,25,6
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Nene Hilario,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,Tyrus Thomas,2,11:15,DEN,shot,,,,,,,,,,Eduardo Najera,2,,,made,,tip,25,6
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Nene Hilario,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,Tyrus Thomas,2,11:15,DEN,rebound,,,,,,,,,,Eduardo Najera,,,,,,off,,
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Nene Hilario,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,Tyrus Thomas,2,11:01,DEN,foul,,,,,,,,Tyrus Thomas,,Nene Hilario,,,,,,personal,,
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Nene Hilario,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,Tyrus Thomas,2,10:48,CHI,shot,,,,,,,,,,Malik Allen,,,,missed,,jump,24,13
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Nene Hilario,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,Tyrus Thomas,2,10:47,CHI,rebound,,,,,,,,,,Luol Deng,,,,,,off,,
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Nene Hilario,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,Tyrus Thomas,2,10:47,DEN,foul,,,,,,,,Luol Deng,,Linas Kleiza,,,,,,shooting,,
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Nene Hilario,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,Tyrus Thomas,2,10:47,CHI,free throw,,,,,,,1,,2,Luol Deng,,,foul,made,,,,
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Nene Hilario,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,Tyrus Thomas,2,10:47,CHI,free throw,,,,,,,2,,2,Luol Deng,,,foul,made,,,,
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Nene Hilario,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,Tyrus Thomas,2,10:37,DEN,turnover,,,,,,,,,,Allen Iverson,,,bad pass,,Luol Deng,,,
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Nene Hilario,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,Tyrus Thomas,2,10:33,CHI,shot,Luol Deng,,,,,,,,,Tyrus Thomas,2,,,made,,alley oop dunk,25,6
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Nene Hilario,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,Tyrus Thomas,2,10:05,DEN,shot,,,Luol Deng,,,,,,,Nene Hilario,,,,missed,,layup,25,6
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Nene Hilario,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,Tyrus Thomas,2,10:03,DEN,shot,,,,,,,,,,Linas Kleiza,,,,missed,,tip,25,6
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Nene Hilario,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,Tyrus Thomas,2,10:03,DEN,rebound,,,,,,,,,,Linas Kleiza,,,,,,off,,
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Nene Hilario,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,Tyrus Thomas,2,10:00,CHI,rebound,,,,,,,,,,Luol Deng,,,,,,def,,
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Nene Hilario,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,Tyrus Thomas,2,9:55,CHI,shot,,,,,,,,,,Luol Deng,2,,,made,,layup,25,6
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Nene Hilario,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,Tyrus Thomas,2,9:46,DEN,shot,,,,,,,,,,Allen Iverson,,,,missed,,jump,40,23
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Nene Hilario,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,Tyrus Thomas,2,9:45,CHI,rebound,,,,,,,,,,Tyrus Thomas,,,,,,def,,
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Nene Hilario,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,Tyrus Thomas,2,9:25,CHI,shot,Luol Deng,,,,,,,,,Tyrus Thomas,2,,,made,,layup,25,6
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Nene Hilario,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,Tyrus Thomas,2,9:09,DEN,shot,,,,,,,,,,Eduardo Najera,,,,missed,,jump,14,24
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Nene Hilario,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,Tyrus Thomas,2,9:07,CHI,rebound,,,,,,,,,,Luol Deng,,,,,,def,,
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Nene Hilario,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,Tyrus Thomas,2,9:03,CHI,shot,,,,,,,,,,Luol Deng,2,,,made,,driving layup,25,6
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Nene Hilario,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,Tyrus Thomas,2,8:54,DEN,turnover,,,,,,,,,,Eduardo Najera,,,traveling,,,,,
+Allen Iverson,Eduardo Najera,J.R. Smith,Linas Kleiza,Nene Hilario,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,Tyrus Thomas,2,8:54,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Eduardo Najera,J.R. Smith,Linas Kleiza,Nene Hilario,Steve Blake,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,Tyrus Thomas,2,8:54,DEN,sub,,,,Steve Blake,,Allen Iverson,,,,,,,,,,,,
+Carmelo Anthony,Eduardo Najera,J.R. Smith,Nene Hilario,Steve Blake,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,Tyrus Thomas,2,8:54,DEN,sub,,,,Carmelo Anthony,,Linas Kleiza,,,,,,,,,,,,
+Carmelo Anthony,Eduardo Najera,J.R. Smith,Nene Hilario,Steve Blake,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,Tyrus Thomas,2,8:43,CHI,turnover,,,,,,,,,,Kirk Hinrich,,,bad pass,,Eduardo Najera,,,
+Carmelo Anthony,Eduardo Najera,J.R. Smith,Nene Hilario,Steve Blake,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,Tyrus Thomas,2,8:38,DEN,shot,,,,,,,,,,Carmelo Anthony,,,,missed,,3pt,42,24
+Carmelo Anthony,Eduardo Najera,J.R. Smith,Nene Hilario,Steve Blake,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,Tyrus Thomas,2,8:35,CHI,rebound,,,,,,,,,,Tyrus Thomas,,,,,,def,,
+Carmelo Anthony,Eduardo Najera,J.R. Smith,Nene Hilario,Steve Blake,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,Tyrus Thomas,2,8:27,CHI,turnover,,,,,,,,,,Malik Allen,,,traveling,,,,,
+Carmelo Anthony,Eduardo Najera,J.R. Smith,Nene Hilario,Steve Blake,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,Tyrus Thomas,2,8:10,DEN,shot,,,,,,,,,,J.R. Smith,2,,,made,,jump,13,22
+Carmelo Anthony,Eduardo Najera,J.R. Smith,Nene Hilario,Steve Blake,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,Tyrus Thomas,2,7:55,DEN,foul,,,,,,,,Luol Deng,,Eduardo Najera,,,,,,personal,,
+Carmelo Anthony,Eduardo Najera,J.R. Smith,Nene Hilario,Steve Blake,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,P.J. Brown,2,7:55,CHI,sub,,,,P.J. Brown,,Tyrus Thomas,,,,,,,,,,,,
+Carmelo Anthony,Eduardo Najera,J.R. Smith,Nene Hilario,Steve Blake,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,P.J. Brown,2,7:40,CHI,shot,,,,,,,,,,Chris Duhon,,,,missed,,jump,34,26
+Carmelo Anthony,Eduardo Najera,J.R. Smith,Nene Hilario,Steve Blake,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,P.J. Brown,2,7:40,DEN,rebound,,,,,,,,,,J.R. Smith,,,,,,def,,
+Carmelo Anthony,Eduardo Najera,J.R. Smith,Nene Hilario,Steve Blake,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,P.J. Brown,2,7:40,CHI,foul,,,,,,,,J.R. Smith,,P.J. Brown,,,,,,personal,,
+Carmelo Anthony,Eduardo Najera,J.R. Smith,Nene Hilario,Steve Blake,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,P.J. Brown,2,7:23,DEN,shot,Carmelo Anthony,,,,,,,,,Nene Hilario,2,,,made,,dunk,25,6
+Carmelo Anthony,Eduardo Najera,J.R. Smith,Nene Hilario,Steve Blake,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,P.J. Brown,2,7:06,CHI,shot,,,,,,,,,,Luol Deng,,,,missed,,jump,37,24
+Carmelo Anthony,Eduardo Najera,J.R. Smith,Nene Hilario,Steve Blake,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,P.J. Brown,2,7:04,DEN,rebound,,,,,,,,,,Nene Hilario,,,,,,def,,
+Carmelo Anthony,Eduardo Najera,J.R. Smith,Nene Hilario,Steve Blake,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,P.J. Brown,2,6:57,DEN,turnover,,,,,,,,,,Nene Hilario,,,traveling,,,,,
+Carmelo Anthony,Eduardo Najera,J.R. Smith,Nene Hilario,Steve Blake,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,P.J. Brown,2,6:47,CHI,shot,,,,,,,,,,Kirk Hinrich,2,,,made,,jump,25,22
+Carmelo Anthony,Eduardo Najera,J.R. Smith,Nene Hilario,Steve Blake,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,P.J. Brown,2,6:24,DEN,shot,,,,,,,,,,Carmelo Anthony,2,,,made,,jump,24,18
+Carmelo Anthony,Eduardo Najera,J.R. Smith,Nene Hilario,Steve Blake,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,P.J. Brown,2,6:10,CHI,shot,,,,,,,,,,Kirk Hinrich,,,,missed,,layup,25,6
+Carmelo Anthony,Eduardo Najera,J.R. Smith,Nene Hilario,Steve Blake,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,P.J. Brown,2,6:08,DEN,rebound,,,,,,,,,,Nene Hilario,,,,,,def,,
+Carmelo Anthony,Eduardo Najera,J.R. Smith,Nene Hilario,Steve Blake,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,P.J. Brown,2,6:03,DEN,shot,,,,,,,,,,Steve Blake,,,,missed,,jump,14,24
+Carmelo Anthony,Eduardo Najera,J.R. Smith,Nene Hilario,Steve Blake,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,P.J. Brown,2,6:01,DEN,rebound,,,,,,,,,,Eduardo Najera,,,,,,off,,
+Carmelo Anthony,Eduardo Najera,J.R. Smith,Nene Hilario,Steve Blake,Chris Duhon,Kirk Hinrich,Luol Deng,Malik Allen,P.J. Brown,2,6:01,CHI,foul,,,,,,,,Eduardo Najera,,Chris Duhon,,,,,,personal,,
+Carmelo Anthony,Eduardo Najera,J.R. Smith,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,P.J. Brown,2,6:01,CHI,sub,,,,Ben Gordon,,Chris Duhon,,,,,,,,,,,,
+Carmelo Anthony,Eduardo Najera,J.R. Smith,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,P.J. Brown,2,5:38,DEN,shot,,,,,,,,,,Carmelo Anthony,,,,missed,,3pt,41,26
+Carmelo Anthony,Eduardo Najera,J.R. Smith,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,P.J. Brown,2,5:36,DEN,rebound,,,,,,,,,,Nene Hilario,,,,,,off,,
+Carmelo Anthony,Eduardo Najera,J.R. Smith,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,P.J. Brown,2,5:34,DEN,shot,,,,,,,,,,Eduardo Najera,,,,missed,,layup,25,6
+Carmelo Anthony,Eduardo Najera,J.R. Smith,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,P.J. Brown,2,5:33,CHI,rebound,,,,,,,,,,P.J. Brown,,,,,,def,,
+Carmelo Anthony,Eduardo Najera,J.R. Smith,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,P.J. Brown,2,5:27,CHI,shot,,,,,,,,,,Kirk Hinrich,,,,missed,,layup,25,6
+Carmelo Anthony,Eduardo Najera,J.R. Smith,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,P.J. Brown,2,5:26,CHI,shot,,,,,,,,,,Luol Deng,2,,,made,,layup,25,6
+Carmelo Anthony,Eduardo Najera,J.R. Smith,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,P.J. Brown,2,5:26,CHI,rebound,,,,,,,,,,Luol Deng,,,,,,off,,
+Carmelo Anthony,Eduardo Najera,J.R. Smith,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,P.J. Brown,2,5:04,DEN,turnover,,,,,,,,,,Nene Hilario,,,bad pass,,,,,
+Carmelo Anthony,Eduardo Najera,J.R. Smith,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,P.J. Brown,2,5:04,CHI,timeout,,,,,,,,,,,,,,,,regular,,
+Carmelo Anthony,J.R. Smith,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,P.J. Brown,2,5:04,DEN,sub,,,,Marcus Camby,,Eduardo Najera,,,,,,,,,,,,
+Carmelo Anthony,J.R. Smith,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,P.J. Brown,2,4:53,CHI,shot,Kirk Hinrich,,,,,,,,,Ben Gordon,2,,,made,,layup,25,6
+Carmelo Anthony,J.R. Smith,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,Malik Allen,P.J. Brown,2,4:53,DEN,foul,,,,,,,,Ben Gordon,,J.R. Smith,,,,,,shooting,,
+Carmelo Anthony,J.R. Smith,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,2,4:53,CHI,sub,,,,Ben Wallace,,Malik Allen,,,,,,,,,,,,
+Carmelo Anthony,J.R. Smith,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,2,4:53,CHI,free throw,,,,,,,1,,1,Ben Gordon,,,foul,made,,,,
+Carmelo Anthony,J.R. Smith,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,2,4:36,DEN,shot,,,,,,,,,,J.R. Smith,,,,missed,,jump,36,10
+Carmelo Anthony,J.R. Smith,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,2,4:34,CHI,rebound,,,,,,,,,,P.J. Brown,,,,,,def,,
+Carmelo Anthony,J.R. Smith,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,2,4:24,CHI,turnover,,,,,,,,,,Ben Wallace,,,bad pass,,J.R. Smith,,,
+Carmelo Anthony,J.R. Smith,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,2,4:20,DEN,shot,Steve Blake,,,,,,,,,J.R. Smith,2,,,made,,layup,25,6
+Carmelo Anthony,J.R. Smith,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,2,4:03,CHI,shot,Kirk Hinrich,,,,,,,,,P.J. Brown,2,,,made,,jump,42,7
+Carmelo Anthony,J.R. Smith,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,2,3:50,DEN,shot,Steve Blake,,,,,,,,,Carmelo Anthony,2,,,made,,layup,25,6
+Carmelo Anthony,J.R. Smith,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,2,3:37,CHI,shot,Kirk Hinrich,,,,,,,,,Ben Gordon,2,,,made,,jump,9,19
+Carmelo Anthony,J.R. Smith,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,2,3:18,DEN,turnover,,,,,,,,,,Marcus Camby,,,bad pass,,Ben Wallace,,,
+Carmelo Anthony,J.R. Smith,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,2,3:12,CHI,shot,,,,,,,,,,Kirk Hinrich,,,,missed,,layup,25,6
+Carmelo Anthony,J.R. Smith,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,2,3:11,CHI,rebound,,,,,,,,,,P.J. Brown,,,,,,off,,
+Carmelo Anthony,J.R. Smith,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,2,3:10,CHI,turnover,,,,,,,,,,P.J. Brown,,,lost ball,,Steve Blake,,,
+Carmelo Anthony,J.R. Smith,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,2,3:04,DEN,shot,Steve Blake,,,,,,,,,Carmelo Anthony,2,,,made,,dunk,25,6
+Carmelo Anthony,J.R. Smith,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,2,2:47,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,jump,42,14
+Carmelo Anthony,J.R. Smith,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,2,2:45,DEN,rebound,,,,,,,,,,Marcus Camby,,,,,,def,,
+Carmelo Anthony,J.R. Smith,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,2,2:32,DEN,turnover,,,,,,,,,,Nene Hilario,,,lost ball,,Ben Wallace,,,
+Carmelo Anthony,J.R. Smith,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,2,2:24,CHI,shot,Ben Gordon,,,,,,,,,Luol Deng,2,,,made,,jump,41,15
+Carmelo Anthony,J.R. Smith,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,2,2:20,DEN,timeout,,,,,,,,,,,,,,,,regular,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,2,2:20,DEN,sub,,,,Allen Iverson,,J.R. Smith,,,,,,,,,,,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,2,2:13,DEN,shot,Allen Iverson,,,,,,,,,Steve Blake,2,,,made,,jump,14,24
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,2,1:58,DEN,foul,,,,,,,,P.J. Brown,,Marcus Camby,,,,,,shooting,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,2,1:58,CHI,free throw,,,,,,,1,,2,P.J. Brown,,,foul,made,,,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,P.J. Brown,2,1:58,CHI,sub,,,,Chris Duhon,,Kirk Hinrich,,,,,,,,,,,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,P.J. Brown,2,1:58,CHI,free throw,,,,,,,2,,2,P.J. Brown,,,foul,missed,,,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,P.J. Brown,2,1:56,DEN,rebound,,,,,,,,,,Marcus Camby,,,,,,def,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,P.J. Brown,2,1:36,DEN,shot,,,,,,,,,,Allen Iverson,,,,missed,,jump,32,26
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,P.J. Brown,2,1:33,CHI,rebound,,,,,,,,,,Luol Deng,,,,,,def,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,P.J. Brown,2,1:23,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,3pt,42,24
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,P.J. Brown,2,1:20,DEN,rebound,,,,,,,,,,Marcus Camby,,,,,,def,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,P.J. Brown,2,1:13,CHI,foul,,,,,,,,Allen Iverson,,Chris Duhon,,,,,,shooting,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Malik Allen,2,1:13,CHI,sub,,,,Malik Allen,,P.J. Brown,,,,,,,,,,,,
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Marcus Camby,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Malik Allen,2,1:13,DEN,sub,,,,Linas Kleiza,,Nene Hilario,,,,,,,,,,,,
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Marcus Camby,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Malik Allen,2,1:13,DEN,free throw,,,,,,,1,,2,Allen Iverson,,,foul,made,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Malik Allen,2,1:13,DEN,sub,,,,Eduardo Najera,,Marcus Camby,,,,,,,,,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Malik Allen,2,1:13,DEN,free throw,,,,,,,2,,2,Allen Iverson,,,foul,missed,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Malik Allen,2,1:11,CHI,rebound,,,,,,,,,,Luol Deng,,,,,,def,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Malik Allen,2,1:00,CHI,turnover,,,,,,,,,,Ben Wallace,,,bad pass,,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Malik Allen,2,0:45,DEN,shot,,,Ben Wallace,,,,,,,Carmelo Anthony,,,,missed,,dunk,25,6
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Malik Allen,2,0:43,CHI,rebound,,,,,,,,,,Malik Allen,,,,,,def,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Malik Allen,2,0:38,CHI,shot,Ben Gordon,,,,,,,,,Chris Duhon,3,,,made,,3pt,13,29
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Malik Allen,2,0:21,DEN,shot,,,,,,,,,,Carmelo Anthony,,,,missed,,jump,10,20
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Malik Allen,2,0:19,CHI,rebound,,,,,,,,,,Malik Allen,,,,,,def,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Malik Allen,2,0:00,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,layup,25,6
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Malik Allen,2,0:00,DEN,rebound,,,,,,,,,,Eduardo Najera,,,,,,def,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,11:47,CHI,shot,P.J. Brown,,,,,,,,,Kirk Hinrich,2,,,made,,jump,25,27
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,11:31,DEN,turnover,,,,,,,,,,Allen Iverson,,,lost ball,,Kirk Hinrich,,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,11:28,CHI,shot,,,,,,,,,,Kirk Hinrich,2,,,made,,layup,25,6
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,11:06,CHI,foul,,,,,,,,Carmelo Anthony,,Luol Deng,,,,,,personal,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,10:50,DEN,shot,,,,,,,,,,Carmelo Anthony,,,,missed,,fade away jumper,40,7
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,10:48,DEN,rebound,,,,,,,,,,Nene Hilario,,,,,,off,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,10:46,DEN,turnover,,,,,,,,,,Nene Hilario,,,backcourt turnover,,,,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,10:31,CHI,shot,,,,,,,,,,P.J. Brown,,,,missed,,layup,25,6
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,10:30,CHI,shot,,,,,,,,,,P.J. Brown,2,,,made,,tip,25,6
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,10:30,CHI,rebound,,,,,,,,,,P.J. Brown,,,,,,off,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,10:02,DEN,shot,Steve Blake,,,,,,,,,Nene Hilario,2,,,made,,jump,38,11
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,9:40,CHI,shot,,,,,,,,,,Ben Wallace,,,,missed,,jump,25,14
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,9:38,DEN,rebound,,,,,,,,,,Steve Blake,,,,,,def,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,9:36,CHI,foul,,,,,,,,Carmelo Anthony,,Ben Wallace,,,,,,shooting,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,9:36,DEN,free throw,,,,,,,1,,2,Carmelo Anthony,,,foul,made,,,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,9:36,DEN,free throw,,,,,,,2,,2,Carmelo Anthony,,,foul,made,,,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,9:22,CHI,shot,,,,,,,,,,Ben Gordon,2,,,made,,jump,37,15
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,9:15,DEN,shot,,,,,,,,,,Allen Iverson,2,,,made,,running jump,38,8
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,9:15,CHI,foul,,,,,,,,Allen Iverson,,Kirk Hinrich,,,,,,shooting,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,9:15,DEN,free throw,,,,,,,1,,1,Allen Iverson,,,foul,made,,,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,9:00,CHI,shot,,,,,,,,,,Kirk Hinrich,,,,missed,,3pt,48,5
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,8:57,CHI,rebound,,,,,,,,,,Kirk Hinrich,,,,,,off,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,8:56,CHI,shot,,,,,,,,,,Kirk Hinrich,2,,,made,,layup,25,6
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,8:41,DEN,shot,Steve Blake,,,,,,,,,Allen Iverson,3,,,made,,3pt,48,13
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,8:31,CHI,shot,,,,,,,,,,Kirk Hinrich,3,,,made,,3pt,40,26
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,P.J. Brown,3,8:26,CHI,sub,,,,Chris Duhon,,Kirk Hinrich,,,,,,,,,,,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,P.J. Brown,3,8:14,DEN,shot,Marcus Camby,,,,,,,,,Nene Hilario,2,,,made,,slam dunk,25,6
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,P.J. Brown,3,7:57,CHI,shot,,,,,,,,,,Luol Deng,,,,missed,,jump,40,20
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,P.J. Brown,3,7:55,DEN,rebound,,,,,,,,,,Steve Blake,,,,,,def,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,P.J. Brown,3,7:51,DEN,shot,Nene Hilario,,,,,,,,,Carmelo Anthony,2,,,made,,slam dunk,25,6
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,P.J. Brown,3,7:32,CHI,shot,Ben Gordon,,,,,,,,,Chris Duhon,3,,,made,,3pt,43,24
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,P.J. Brown,3,7:09,DEN,shot,,,,,,,,,,Nene Hilario,2,,,made,,driving layup,25,6
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,P.J. Brown,3,6:47,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,fade away jumper,9,7
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,P.J. Brown,3,6:46,CHI,rebound,,,,,,,,,,Ben Wallace,,,,,,off,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,P.J. Brown,3,6:45,CHI,shot,Ben Wallace,,,,,,,,,P.J. Brown,2,,,made,,dunk,25,6
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,P.J. Brown,3,6:26,CHI,foul,,,,,,,,,,P.J. Brown,,,,,,defense 3 second,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,P.J. Brown,3,6:26,DEN,free throw,,,,,,,1,,1,Carmelo Anthony,,,technical,made,,,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,P.J. Brown,3,6:15,DEN,shot,,,,,,,,,,Allen Iverson,2,,,made,,jump,36,24
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,P.J. Brown,3,6:01,CHI,turnover,,,,,,,,,,Chris Duhon,,,lost ball,,Marcus Camby,,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,P.J. Brown,3,5:56,CHI,foul,,,,,,,,Nene Hilario,,Ben Wallace,,,,,,shooting,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,P.J. Brown,3,5:56,CHI,timeout,,,,,,,,,,,,,,,,regular,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,P.J. Brown,3,5:56,DEN,free throw,,,,,,,1,,2,Nene Hilario,,,foul,missed,,,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,P.J. Brown,3,5:56,DEN,rebound,,,,,,,,,,,,,,,,,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,5:56,CHI,sub,,,,Kirk Hinrich,,Chris Duhon,,,,,,,,,,,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,5:56,DEN,free throw,,,,,,,2,,2,Nene Hilario,,,foul,made,,,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,5:41,CHI,shot,Ben Gordon,,,,,,,,,P.J. Brown,2,,,made,,turnaround jump,10,11
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,5:22,DEN,shot,,,,,,,,,,Nene Hilario,,,,missed,,turnaround jump,10,12
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,5:20,CHI,rebound,,,,,,,,,,Ben Wallace,,,,,,def,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,5:16,CHI,shot,,,Marcus Camby,,,,,,,Luol Deng,,,,missed,,jump,18,10
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,5:13,DEN,rebound,,,,,,,,,,Marcus Camby,,,,,,def,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,5:10,DEN,foul,,,,,,,,Ben Wallace,,Nene Hilario,,,,,,offensive,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,5:10,DEN,turnover,,,,,,,,,,Nene Hilario,,,foul,,,,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,4:59,CHI,shot,,,Nene Hilario,,,,,,,Ben Gordon,,,,missed,,layup,25,6
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,4:57,DEN,rebound,,,,,,,,,,Nene Hilario,,,,,,def,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,4:53,DEN,shot,Steve Blake,,,,,,,,,Allen Iverson,2,,,made,,layup,25,6
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,4:30,CHI,shot,,,,,,,,,,P.J. Brown,,,,missed,,jump,43,6
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,4:28,CHI,rebound,,,,,,,,,,Luol Deng,,,,,,off,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,4:27,CHI,shot,,,Marcus Camby,,,,,,,Luol Deng,,,,missed,,layup,25,6
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,4:25,CHI,rebound,,,,,,,,,,Luol Deng,,,,,,off,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,4:21,CHI,shot,,,,,,,,,,Kirk Hinrich,,,,missed,,3pt,43,22
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,4:18,DEN,rebound,,,,,,,,,,Marcus Camby,,,,,,def,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,4:12,DEN,shot,Steve Blake,,,,,,,,,Carmelo Anthony,2,,,made,,jump,8,15
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,3:56,CHI,shot,,,,,,,,,,P.J. Brown,,,,missed,,jump,24,22
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,3:53,DEN,rebound,,,,,,,,,,Marcus Camby,,,,,,def,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,3:39,DEN,shot,Marcus Camby,,,,,,,,,Carmelo Anthony,2,,,made,,jump,8,17
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,3,3:38,CHI,timeout,,,,,,,,,,,,,,,,short,,
+Allen Iverson,Carmelo Anthony,Marcus Camby,Nene Hilario,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,3:38,CHI,sub,,,,Tyrus Thomas,,P.J. Brown,,,,,,,,,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Marcus Camby,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,3:38,DEN,sub,,,,Eduardo Najera,,Nene Hilario,,,,,,,,,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Marcus Camby,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,3:28,DEN,foul,,,,,,,,Kirk Hinrich,,Marcus Camby,,,,,,personal,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Marcus Camby,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,3:19,CHI,shot,Kirk Hinrich,,,,,,,,,Luol Deng,2,,,made,,jump,32,22
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Marcus Camby,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,3:00,DEN,shot,,,,,,,,,,Carmelo Anthony,,,,missed,,jump,9,13
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Marcus Camby,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,2:59,CHI,rebound,,,,,,,,,,Tyrus Thomas,,,,,,def,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Marcus Camby,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,2:59,DEN,foul,,,,,,,,Tyrus Thomas,,Carmelo Anthony,,,,,,personal,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Marcus Camby,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,2:59,DEN,timeout,,,,,,,,,,,,,,,,regular,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Marcus Camby,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,2:48,CHI,turnover,,,,,,,,,,Kirk Hinrich,,,bad pass,,Eduardo Najera,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Marcus Camby,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,2:27,DEN,shot,,,,,,,,,,Marcus Camby,,,,missed,,jump,11,21
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Marcus Camby,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,2:25,DEN,rebound,,,,,,,,,,Eduardo Najera,,,,,,off,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Marcus Camby,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,2:22,DEN,foul,,,,,,,,Kirk Hinrich,,Allen Iverson,,,,,,offensive,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Marcus Camby,Steve Blake,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,2:22,DEN,turnover,,,,,,,,,,Allen Iverson,,,foul,,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,2:22,DEN,sub,,,,Linas Kleiza,,Steve Blake,,,,,,,,,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,2:07,CHI,shot,,,,,,,,,,Kirk Hinrich,,,,missed,,jump,36,21
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,2:06,CHI,rebound,,,,,,,,,,Tyrus Thomas,,,,,,off,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,2:01,CHI,turnover,,,,,,,,,,Kirk Hinrich,,,bad pass,,Eduardo Najera,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,1:58,CHI,foul,,,,,,,,Carmelo Anthony,,Ben Gordon,,,,,,shooting,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,1:58,DEN,free throw,,,,,,,1,,2,Carmelo Anthony,,,foul,made,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,1:58,DEN,free throw,,,,,,,2,,2,Carmelo Anthony,,,foul,made,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,1:46,CHI,shot,,,Marcus Camby,,,,,,,Ben Wallace,,,,missed,,layup,25,6
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,1:44,CHI,rebound,,,,,,,,,,Ben Wallace,,,,,,off,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,1:43,CHI,shot,Ben Wallace,,,,,,,,,Kirk Hinrich,3,,,made,,3pt,15,29
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,1:30,CHI,foul,,,,,,,,Allen Iverson,,Kirk Hinrich,,,,,,shooting,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,1:30,DEN,free throw,,,,,,,1,,2,Allen Iverson,,,foul,made,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,3,1:30,CHI,sub,,,,Chris Duhon,,Kirk Hinrich,,,,,,,,,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,3,1:30,DEN,free throw,,,,,,,2,,2,Allen Iverson,,,foul,made,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,3,1:17,CHI,shot,,,,,,,,,,Chris Duhon,,,,missed,,3pt,41,28
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,3,1:12,DEN,rebound,,,,,,,,,,Allen Iverson,,,,,,def,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,3,1:09,CHI,foul,,,,,,,,Allen Iverson,,Chris Duhon,,,,,,personal,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,3,1:09,DEN,free throw,,,,,,,1,,2,Allen Iverson,,,foul,made,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,3,1:09,DEN,free throw,,,,,,,2,,2,Allen Iverson,,,foul,made,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,3,0:53,CHI,shot,,,,,,,,,,Tyrus Thomas,,,,missed,,jump,39,10
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,3,0:51,CHI,rebound,,,,,,,,,,Ben Wallace,,,,,,off,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,3,0:44,CHI,shot,,,Linas Kleiza,,,,,,,Tyrus Thomas,,,,missed,,layup,25,6
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,3,0:44,CHI,rebound,,,,,,,,,,,,,,,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,3,0:44,CHI,turnover,,,,,,,,,,,,,shot clock turnover,,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,3,0:27,CHI,foul,,,,,,,,Carmelo Anthony,,Luol Deng,,,,,,personal,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,3,0:27,DEN,free throw,,,,,,,1,,2,Carmelo Anthony,,,foul,missed,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Marcus Camby,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,3,0:27,DEN,rebound,,,,,,,,,,,,,,,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Nene Hilario,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,3,0:27,DEN,sub,,,,Nene Hilario,,Marcus Camby,,,,,,,,,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Nene Hilario,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,3,0:27,DEN,free throw,,,,,,,2,,2,Carmelo Anthony,,,foul,made,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Nene Hilario,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,3,0:06,CHI,shot,,,,,,,,,,Ben Gordon,2,,,made,,jump,25,29
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Nene Hilario,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,3,0:00,DEN,shot,,,,,,,,,,Carmelo Anthony,,,,missed,,layup,25,6
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Nene Hilario,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,Tyrus Thomas,3,0:00,CHI,rebound,,,,,,,,,,Luol Deng,,,,,,def,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Nene Hilario,Adrian Griffin,Ben Gordon,Chris Duhon,P.J. Brown,Tyrus Thomas,4,11:41,DEN,shot,,,,,,,,,,Allen Iverson,2,,,made,,layup,25,6
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Nene Hilario,Adrian Griffin,Ben Gordon,Chris Duhon,P.J. Brown,Tyrus Thomas,4,11:35,CHI,turnover,,,,,,,,,,Tyrus Thomas,,,bad pass,,Eduardo Najera,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Nene Hilario,Adrian Griffin,Ben Gordon,Chris Duhon,P.J. Brown,Tyrus Thomas,4,11:31,DEN,shot,,,,,,,,,,Allen Iverson,,,,missed,,3pt,49,10
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Nene Hilario,Adrian Griffin,Ben Gordon,Chris Duhon,P.J. Brown,Tyrus Thomas,4,11:29,CHI,rebound,,,,,,,,,,Tyrus Thomas,,,,,,def,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Nene Hilario,Adrian Griffin,Ben Gordon,Chris Duhon,P.J. Brown,Tyrus Thomas,4,11:07,CHI,shot,,,Nene Hilario,,,,,,,P.J. Brown,,,,missed,,layup,25,6
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Nene Hilario,Adrian Griffin,Ben Gordon,Chris Duhon,P.J. Brown,Tyrus Thomas,4,11:07,CHI,rebound,,,,,,,,,,,,,,,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Nene Hilario,Adrian Griffin,Ben Gordon,Chris Duhon,P.J. Brown,Tyrus Thomas,4,11:07,CHI,turnover,,,,,,,,,,,,,shot clock turnover,,,,,
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Chris Duhon,P.J. Brown,Tyrus Thomas,4,11:07,DEN,sub,,,,Steve Blake,,Carmelo Anthony,,,,,,,,,,,,
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Chris Duhon,P.J. Brown,Tyrus Thomas,4,10:54,DEN,turnover,,,,,,,,,,Allen Iverson,,,bad pass,,Tyrus Thomas,,,
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Chris Duhon,P.J. Brown,Tyrus Thomas,4,10:51,CHI,shot,,,Eduardo Najera,,,,,,,Tyrus Thomas,,,,missed,,layup,25,6
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Chris Duhon,P.J. Brown,Tyrus Thomas,4,10:51,CHI,rebound,,,,,,,,,,,,,,,,,,
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Chris Duhon,Kirk Hinrich,P.J. Brown,Tyrus Thomas,4,10:51,CHI,sub,,,,Kirk Hinrich,,Ben Gordon,,,,,,,,,,,,
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Chris Duhon,Kirk Hinrich,P.J. Brown,Tyrus Thomas,4,10:43,CHI,shot,,,,,,,,,,Kirk Hinrich,,,,missed,,layup,25,6
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Chris Duhon,Kirk Hinrich,P.J. Brown,Tyrus Thomas,4,10:42,CHI,rebound,,,,,,,,,,Tyrus Thomas,,,,,,off,,
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Chris Duhon,Kirk Hinrich,P.J. Brown,Tyrus Thomas,4,10:41,DEN,foul,,,,,,,,Tyrus Thomas,,Nene Hilario,,,,,,personal,,
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Chris Duhon,Kirk Hinrich,P.J. Brown,Tyrus Thomas,4,10:33,CHI,shot,,,,,,,,,,Kirk Hinrich,,,,missed,,jump,24,14
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Chris Duhon,Kirk Hinrich,P.J. Brown,Tyrus Thomas,4,10:33,CHI,rebound,,,,,,,,,,,,,,,,,,
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Chris Duhon,Kirk Hinrich,P.J. Brown,Tyrus Thomas,4,10:29,CHI,shot,Kirk Hinrich,,,,,,,,,P.J. Brown,2,,,made,,jump,20,21
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Chris Duhon,Kirk Hinrich,P.J. Brown,Tyrus Thomas,4,10:10,DEN,shot,,,,,,,,,,Linas Kleiza,,,,missed,,3pt,48,5
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Chris Duhon,Kirk Hinrich,P.J. Brown,Tyrus Thomas,4,10:07,CHI,rebound,,,,,,,,,,Adrian Griffin,,,,,,def,,
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Chris Duhon,Kirk Hinrich,P.J. Brown,Tyrus Thomas,4,10:04,CHI,shot,,,,,,,,,,Kirk Hinrich,,,,missed,,3pt,13,29
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Chris Duhon,Kirk Hinrich,P.J. Brown,Tyrus Thomas,4,10:03,DEN,rebound,,,,,,,,,,,,,,,,,,
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Chris Duhon,Kirk Hinrich,P.J. Brown,Tyrus Thomas,4,9:40,CHI,foul,,,,,,,,Allen Iverson,,Chris Duhon,,,,,,shooting,,
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Chris Duhon,Kirk Hinrich,P.J. Brown,Tyrus Thomas,4,9:40,DEN,free throw,,,,,,,1,,2,Allen Iverson,,,foul,made,,,,
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Chris Duhon,Kirk Hinrich,P.J. Brown,Tyrus Thomas,4,9:40,DEN,free throw,,,,,,,2,,2,Allen Iverson,,,foul,made,,,,
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Chris Duhon,Kirk Hinrich,P.J. Brown,Tyrus Thomas,4,9:18,CHI,shot,,,,,,,,,,Chris Duhon,,,,missed,,layup,25,6
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Chris Duhon,Kirk Hinrich,P.J. Brown,Tyrus Thomas,4,9:17,DEN,rebound,,,,,,,,,,Linas Kleiza,,,,,,def,,
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Chris Duhon,Kirk Hinrich,P.J. Brown,Tyrus Thomas,4,9:14,DEN,shot,Linas Kleiza,,,,,,,,,Allen Iverson,2,,,made,,layup,25,6
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Chris Duhon,Kirk Hinrich,P.J. Brown,Tyrus Thomas,4,9:14,CHI,timeout,,,,,,,,,,,,,,,,regular,,
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,9:14,CHI,sub,,,,Luol Deng,,Chris Duhon,,,,,,,,,,,,
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,4,9:14,CHI,sub,,,,Ben Gordon,,Tyrus Thomas,,,,,,,,,,,,
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,4,9:01,CHI,turnover,,,,,,,,,,Kirk Hinrich,,,bad pass,,Eduardo Najera,,,
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,4,8:45,CHI,foul,,,,,,,,Allen Iverson,,Ben Gordon,,,,,,personal,,
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,4,8:39,DEN,shot,,,,,,,,,,Allen Iverson,2,,,made,,fade away jumper,39,6
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,4,8:18,CHI,shot,Adrian Griffin,,,,,,,,,Luol Deng,2,,,made,,dunk,25,6
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,4,7:56,DEN,shot,,,,,,,,,,Linas Kleiza,,,,missed,,3pt,4,20
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,4,7:54,CHI,rebound,,,,,,,,,,Luol Deng,,,,,,def,,
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,4,7:45,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,jump,41,8
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,4,7:43,CHI,shot,,,,,,,,,,Luol Deng,,,,missed,,layup,25,6
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,4,7:43,CHI,rebound,,,,,,,,,,Luol Deng,,,,,,off,,
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,4,7:42,DEN,rebound,,,,,,,,,,Nene Hilario,,,,,,def,,
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,4,7:42,CHI,foul,,,,,,,,Nene Hilario,,Luol Deng,,,,,,personal,,
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,4,7:24,DEN,shot,Steve Blake,,,,,,,,,Nene Hilario,2,,,made,,layup,25,6
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,4,7:07,CHI,shot,,,,,,,,,,Adrian Griffin,2,,,made,,jump,27,19
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,4,6:51,DEN,shot,,,,,,,,,,Steve Blake,,,,missed,,3pt,38,28
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,4,6:49,DEN,rebound,,,,,,,,,,Eduardo Najera,,,,,,off,,
+Allen Iverson,Eduardo Najera,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,4,6:48,DEN,turnover,,,,,,,,,,Steve Blake,,,bad pass,,,,,
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,4,6:48,DEN,sub,,,,Carmelo Anthony,,Eduardo Najera,,,,,,,,,,,,
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,4,6:41,CHI,shot,Kirk Hinrich,,,,,,,,,Ben Gordon,3,,,made,,3pt,22,31
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,4,6:21,DEN,shot,Nene Hilario,,,,,,,,,Carmelo Anthony,2,,,made,,jump,45,10
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,4,6:13,CHI,shot,,,Nene Hilario,,,,,,,Kirk Hinrich,,,,missed,,layup,25,6
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,4,6:13,CHI,rebound,,,,,,,,,,,,,,,,,,
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,4,6:13,DEN,timeout,,,,,,,,,,,,,,,,regular,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Steve Blake,Adrian Griffin,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,4,6:13,DEN,sub,,,,Eduardo Najera,,Nene Hilario,,,,,,,,,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,6:13,CHI,sub,,,,Tyrus Thomas,,Adrian Griffin,,,,,,,,,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,6:04,CHI,shot,,,,,,,,,,Luol Deng,,,,missed,,layup,25,6
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,6:04,CHI,rebound,,,,,,,,,,Tyrus Thomas,,,,,,off,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,6:04,DEN,foul,,,,,,,,Tyrus Thomas,,Carmelo Anthony,,,,,,shooting,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,6:04,CHI,free throw,,,,,,,1,,2,Tyrus Thomas,,,foul,made,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,6:04,CHI,free throw,,,,,,,2,,2,Tyrus Thomas,,,foul,missed,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,6:03,DEN,rebound,,,,,,,,,,,,,,,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,5:43,DEN,shot,Allen Iverson,,,,,,,,,Linas Kleiza,3,,,made,,3pt,16,29
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,5:28,CHI,shot,Kirk Hinrich,,,,,,,,,P.J. Brown,2,,,made,,jump,35,20
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,5:12,DEN,shot,,,,,,,,,,Allen Iverson,,,,missed,,jump,36,23
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,5:09,CHI,rebound,,,,,,,,,,Tyrus Thomas,,,,,,def,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,5:04,CHI,shot,,,,,,,,,,Ben Gordon,3,,,made,,3pt,44,23
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,4:43,DEN,shot,,,,,,,,,,Carmelo Anthony,2,,,made,,turnaround jump,14,8
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,4:30,CHI,shot,Ben Gordon,,,,,,,,,Tyrus Thomas,2,,,made,,dunk,25,6
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,4:07,DEN,shot,,,,,,,,,,Linas Kleiza,,,,missed,,jump,18,15
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,4:05,CHI,rebound,,,,,,,,,,Luol Deng,,,,,,def,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Linas Kleiza,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,3:59,DEN,foul,,,,,,,,Ben Gordon,,Allen Iverson,,,,,,personal,,
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,3:59,DEN,sub,,,,Nene Hilario,,Eduardo Najera,,,,,,,,,,,,
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,3:53,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,jump,24,14
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,3:50,DEN,rebound,,,,,,,,,,Nene Hilario,,,,,,def,,
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,3:32,DEN,shot,,,,,,,,,,Linas Kleiza,,,,missed,,3pt,25,31
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,3:30,CHI,rebound,,,,,,,,,,Luol Deng,,,,,,def,,
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,3:20,CHI,shot,,,,,,,,,,Kirk Hinrich,2,,,made,,driving layup,25,6
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,3:17,DEN,timeout,,,,,,,,,,,,,,,,short,,
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,3:03,DEN,turnover,,,,,,,,,,Steve Blake,,,bad pass,,Luol Deng,,,
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,3:01,CHI,shot,,,,,,,,,,Kirk Hinrich,,,,missed,,3pt,25,32
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,2:59,CHI,rebound,,,,,,,,,,Tyrus Thomas,,,,,,off,,
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,2:58,CHI,shot,,,,,,,,,,Tyrus Thomas,,,,missed,,tip,25,6
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,2:57,DEN,rebound,,,,,,,,,,Nene Hilario,,,,,,def,,
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,2:56,DEN,turnover,,,,,,,,,,Nene Hilario,,,bad pass,,Luol Deng,,,
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,2:54,CHI,shot,,,,,,,,,,Luol Deng,2,,,made,,layup,25,6
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,2:54,DEN,foul,,,,,,,,Luol Deng,,Carmelo Anthony,,,,,,shooting,,
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,2:54,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,2:54,CHI,free throw,,,,,,,1,,1,Luol Deng,,,foul,missed,,,,
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,2:52,DEN,rebound,,,,,,,,,,Linas Kleiza,,,,,,def,,
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,2:32,DEN,shot,,,,,,,,,,Carmelo Anthony,,,,missed,,jump,36,16
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,2:30,CHI,rebound,,,,,,,,,,Kirk Hinrich,,,,,,def,,
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,2:20,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,jump,28,28
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,2:17,DEN,rebound,,,,,,,,,,Nene Hilario,,,,,,def,,
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,2:05,DEN,shot,Nene Hilario,,,,,,,,,Linas Kleiza,3,,,made,,3pt,49,5
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,1:50,DEN,violation,,,,,,,,,,Steve Blake,,,,,,kicked ball,,
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,1:41,CHI,shot,Kirk Hinrich,,,,,,,,,Luol Deng,2,,,made,,layup,25,6
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,1:25,CHI,foul,,,,,,,,Carmelo Anthony,,Tyrus Thomas,,,,,,personal,,
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,1:14,DEN,foul,,,,,,,,Ben Gordon,,Linas Kleiza,,,,,,offensive,,
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,1:14,DEN,turnover,,,,,,,,,,Linas Kleiza,,,foul,,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,1:14,DEN,sub,,,,Eduardo Najera,,Linas Kleiza,,,,,,,,,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,1:01,CHI,shot,,,Nene Hilario,,,,,,,Kirk Hinrich,,,,missed,,layup,25,6
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,0:59,CHI,rebound,,,,,,,,,,P.J. Brown,,,,,,off,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,0:52,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,layup,25,6
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,0:51,DEN,rebound,,,,,,,,,,Nene Hilario,,,,,,def,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,0:50,DEN,turnover,,,,,,,,,,Carmelo Anthony,,,out of bounds lost ball turnover,,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,0:50,CHI,timeout,,,,,,,,,,,,,,,,short,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,0:32,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,jump,20,19
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,0:32,DEN,rebound,,,,,,,,,,Nene Hilario,,,,,,def,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,0:32,CHI,foul,,,,,,,,Nene Hilario,,Ben Gordon,,,,,,personal,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,0:32,DEN,free throw,,,,,,,1,,2,Nene Hilario,,,foul,made,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,0:32,DEN,free throw,,,,,,,2,,2,Nene Hilario,,,foul,made,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,0:23,CHI,shot,,,,,,,,,,Ben Gordon,2,,,made,,jump,40,19
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,0:23,DEN,timeout,,,,,,,,,,,,,,,,regular,,
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,0:23,DEN,sub,,,,Linas Kleiza,,Eduardo Najera,,,,,,,,,,,,
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,0:23,CHI,sub,,,,Chris Duhon,,Ben Gordon,,,,,,,,,,,,
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,0:13,DEN,shot,,,,,,,,,,Allen Iverson,2,,,made,,driving layup,25,6
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,0:13,CHI,timeout,,,,,,,,,,,,,,,,regular,,
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,0:13,CHI,sub,,,,Ben Gordon,,Chris Duhon,,,,,,,,,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,0:13,DEN,sub,,,,Eduardo Najera,,Linas Kleiza,,,,,,,,,,,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,0:01,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,jump,5,6
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,0:00,CHI,shot,,,,,,,,,,Tyrus Thomas,2,,,made,,layup,25,6
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,0:00,CHI,rebound,,,,,,,,,,Tyrus Thomas,,,,,,off,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Nene Hilario,Steve Blake,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,0:00,DEN,timeout,,,,,,,,,,,,,,,,short,,
+Allen Iverson,Carmelo Anthony,Eduardo Najera,Nene Hilario,Steve Blake,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,0:00,CHI,sub,,,,Ben Wallace,,Ben Gordon,,,,,,,,,,,,
+Allen Iverson,Carmelo Anthony,Linas Kleiza,Nene Hilario,Steve Blake,Ben Wallace,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,4,0:00,DEN,sub,,,,Linas Kleiza,,Eduardo Najera,,,,,,,,,,,,

@@ -1,0 +1,402 @@
+a1,a2,a3,a4,a5,h1,h2,h3,h4,h5,period,time,team,etype,assist,away,block,entered,home,left,num,opponent,outof,player,points,possession,reason,result,steal,type,x,y
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,12:00,OFF,jump ball,,DeSagana Diop,,,Amare Stoudemire,,,,,,,Steve Nash,,,,,,
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,11:44,PHX,shot,,,,,,,,,,Raja Bell,,,,missed,,jump,33,22
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,11:42,DAL,rebound,,,,,,,,,,Devin Harris,,,,,,def,,
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,11:38,DAL,shot,Devin Harris,,,,,,,,,Josh Howard,2,,,made,,layup,25,6
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,11:28,PHX,shot,,,,,,,,,,Amare Stoudemire,2,,,made,,jump,34,20
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,11:13,DAL,shot,,,,,,,,,,Devin Harris,,,,missed,,layup,25,6
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,11:11,PHX,rebound,,,,,,,,,,Shawn Marion,,,,,,def,,
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,11:07,PHX,turnover,,,,,,,,,,Shawn Marion,,,poss lost ball turnover,,,,,
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,10:50,DAL,shot,Devin Harris,,,,,,,,,Dirk Nowitzki,2,,,made,,jump,39,23
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,10:33,PHX,shot,Raja Bell,,,,,,,,,Steve Nash,3,,,made,,3pt,39,27
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,10:18,DAL,shot,,,,,,,,,,Devin Harris,,,,missed,,jump,33,21
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,10:16,PHX,rebound,,,,,,,,,,Leandro Barbosa,,,,,,def,,
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,10:06,PHX,shot,,,,,,,,,,Leandro Barbosa,2,,,made,,running jump,29,14
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,9:47,DAL,shot,,,,,,,,,,Dirk Nowitzki,2,,,made,,jump,34,21
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,9:40,PHX,shot,,,,,,,,,,Leandro Barbosa,,,,missed,,3pt,48,7
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,9:39,DAL,rebound,,,,,,,,,,,,,,,,,,
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,9:39,PHX,foul,,,,,,,,Josh Howard,,Raja Bell,,,,,,loose ball,,
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,9:30,DAL,foul,,,,,,,,Raja Bell,,Josh Howard,,,,,,offensive,,
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,9:30,DAL,turnover,,,,,,,,,,Josh Howard,,,foul,,,,,
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,9:17,DAL,foul,,,,,,,,Steve Nash,,Devin Harris,,,,,,personal,,
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,9:07,DAL,foul,,,,,,,,Leandro Barbosa,,Devin Harris,,,,,,shooting,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,9:07,DAL,sub,,,,Jerry Stackhouse,,Devin Harris,,,,,,,,,,,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,9:07,PHX,free throw,,,,,,,1,,2,Leandro Barbosa,,,foul,missed,,,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,9:07,PHX,rebound,,,,,,,,,,,,,,,,,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,9:07,PHX,free throw,,,,,,,2,,2,Leandro Barbosa,,,foul,made,,,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,8:55,DAL,shot,,,,,,,,,,Dirk Nowitzki,,,,missed,,jump,16,20
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,8:53,PHX,rebound,,,,,,,,,,Amare Stoudemire,,,,,,def,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,8:43,PHX,shot,,,,,,,,,,Leandro Barbosa,,,,missed,,jump bank,32,12
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,8:42,DAL,rebound,,,,,,,,,,DeSagana Diop,,,,,,def,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,8:37,PHX,foul,,,,,,,,Jason Terry,,Leandro Barbosa,,,,,,personal,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,8:37,PHX,timeout,,,,,,,,,,,,,,,,regular,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,8:28,DAL,shot,,,Shawn Marion,,,,,,,Jerry Stackhouse,,,,missed,,jump,16,19
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,8:26,DAL,rebound,,,,,,,,,,Jason Terry,,,,,,off,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,8:24,DAL,shot,Jason Terry,,,,,,,,,Josh Howard,3,,,made,,3pt,44,21
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,8:05,PHX,shot,,,,,,,,,,Steve Nash,,,,missed,,jump,34,20
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,8:04,DAL,rebound,,,,,,,,,,Josh Howard,,,,,,def,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,7:48,DAL,shot,Dirk Nowitzki,,,,,,,,,Jason Terry,3,,,made,,3pt,4,21
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,7:25,PHX,shot,,,,,,,,,,Raja Bell,,,,missed,,3pt,33,30
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,7:23,DAL,rebound,,,,,,,,,,Josh Howard,,,,,,def,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,7:11,DAL,shot,,,,,,,,,,Jerry Stackhouse,,,,missed,,hook,30,13
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,7:09,PHX,rebound,,,,,,,,,,Amare Stoudemire,,,,,,def,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,7:03,PHX,shot,,,,,,,,,,Leandro Barbosa,,,,missed,,3pt,9,25
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,7:01,DAL,rebound,,,,,,,,,,Josh Howard,,,,,,def,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,6:56,DAL,shot,,,,,,,,,,Josh Howard,,,,missed,,jump,33,25
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,6:54,DAL,rebound,,,,,,,,,,Dirk Nowitzki,,,,,,off,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,1,6:53,PHX,foul,,,,,,,,Dirk Nowitzki,,Amare Stoudemire,,,,,,personal,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,1,6:53,PHX,sub,,,,Boris Diaw,,Leandro Barbosa,,,,,,,,,,,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,1,6:39,DAL,shot,,,,,,,,,,Josh Howard,,,,missed,,jump,15,16
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,1,6:37,PHX,rebound,,,,,,,,,,Amare Stoudemire,,,,,,def,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,1,6:27,PHX,shot,,,,,,,,,,Amare Stoudemire,2,,,made,,jump,17,15
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,1,6:04,DAL,shot,,,,,,,,,,Jerry Stackhouse,2,,,made,,jump,17,24
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,1,5:49,PHX,shot,,,,,,,,,,Amare Stoudemire,2,,,made,,jump,19,24
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,1,5:36,DAL,shot,,,,,,,,,,Dirk Nowitzki,2,,,made,,driving layup,25,6
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,1,5:21,DAL,foul,,,,,,,,Raja Bell,,Jerry Stackhouse,,,,,,personal,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,James Jones,Raja Bell,Steve Nash,1,5:21,PHX,sub,,,,James Jones,,Shawn Marion,,,,,,,,,,,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,James Jones,Raja Bell,Steve Nash,1,5:16,PHX,shot,,,,,,,,,,Raja Bell,,,,missed,,jump,40,10
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,James Jones,Raja Bell,Steve Nash,1,5:14,DAL,rebound,,,,,,,,,,DeSagana Diop,,,,,,def,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,James Jones,Raja Bell,Steve Nash,1,4:52,DAL,shot,,,,,,,,,,Dirk Nowitzki,,,,missed,,jump,15,20
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,James Jones,Raja Bell,Steve Nash,1,4:50,PHX,rebound,,,,,,,,,,Raja Bell,,,,,,def,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,James Jones,Raja Bell,Steve Nash,1,4:44,DAL,foul,,,,,,,,Amare Stoudemire,,DeSagana Diop,,,,,,shooting,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,James Jones,Raja Bell,Steve Nash,1,4:44,PHX,free throw,,,,,,,1,,2,Amare Stoudemire,,,foul,made,,,,
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,James Jones,Raja Bell,Steve Nash,1,4:44,DAL,sub,,,,Devean George,,DeSagana Diop,,,,,,,,,,,,
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,James Jones,Raja Bell,Steve Nash,1,4:44,PHX,free throw,,,,,,,2,,2,Amare Stoudemire,,,foul,made,,,,
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,James Jones,Raja Bell,Steve Nash,1,4:26,DAL,shot,Dirk Nowitzki,,,,,,,,,Josh Howard,3,,,made,,3pt,6,24
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,James Jones,Raja Bell,Steve Nash,1,4:12,PHX,shot,,,,,,,,,,Steve Nash,2,,,made,,driving layup,25,6
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,James Jones,Raja Bell,Steve Nash,1,4:06,DAL,timeout,,,,,,,,,,,,,,,,regular,,
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,James Jones,Raja Bell,Steve Nash,1,3:55,DAL,shot,,,,,,,,,,Dirk Nowitzki,,,,missed,,layup,25,6
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,James Jones,Raja Bell,Steve Nash,1,3:54,PHX,rebound,,,,,,,,,,Boris Diaw,,,,,,def,,
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,James Jones,Raja Bell,Steve Nash,1,3:41,PHX,shot,Boris Diaw,,,,,,,,,Raja Bell,3,,,made,,3pt,2,13
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,James Jones,Raja Bell,Steve Nash,1,3:18,DAL,turnover,,,,,,,,,,Jason Terry,,,bad pass,,Steve Nash,,,
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,James Jones,Raja Bell,Steve Nash,1,2:53,PHX,shot,Boris Diaw,,,,,,,,,Steve Nash,3,,,made,,3pt,43,27
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,James Jones,Raja Bell,Steve Nash,1,2:31,DAL,shot,,,,,,,,,,Jason Terry,3,,,made,,3pt,4,19
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,James Jones,Raja Bell,Steve Nash,1,2:16,PHX,shot,,,,,,,,,,Steve Nash,2,,,made,,driving layup,25,6
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,James Jones,Raja Bell,Steve Nash,1,1:58,PHX,foul,,,,,,,,,,Steve Nash,,,,,,defense 3 second,,
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,James Jones,Raja Bell,Steve Nash,1,1:58,DAL,free throw,,,,,,,1,,1,Dirk Nowitzki,,,technical,made,,,,
+Austin Croshere,Devean George,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,James Jones,Raja Bell,Steve Nash,1,1:58,DAL,sub,,,,Austin Croshere,,Dirk Nowitzki,,,,,,,,,,,,
+Austin Croshere,Devean George,Greg Buckner,Jason Terry,Jerry Stackhouse,Amare Stoudemire,Boris Diaw,James Jones,Raja Bell,Steve Nash,1,1:58,DAL,sub,,,,Greg Buckner,,Josh Howard,,,,,,,,,,,,
+Austin Croshere,Devean George,Greg Buckner,Jason Terry,Jerry Stackhouse,Amare Stoudemire,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,1,1:58,PHX,sub,,,,Leandro Barbosa,,Steve Nash,,,,,,,,,,,,
+Austin Croshere,Devean George,Greg Buckner,Jason Terry,Jerry Stackhouse,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,1,1:58,PHX,sub,,,,Shawn Marion,,Amare Stoudemire,,,,,,,,,,,,
+Austin Croshere,Devean George,Greg Buckner,Jason Terry,Jerry Stackhouse,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,1,1:46,DAL,shot,,,,,,,,,,Jason Terry,,,,missed,,jump,17,22
+Austin Croshere,Devean George,Greg Buckner,Jason Terry,Jerry Stackhouse,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,1,1:44,PHX,rebound,,,,,,,,,,Raja Bell,,,,,,def,,
+Austin Croshere,Devean George,Greg Buckner,Jason Terry,Jerry Stackhouse,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,1,1:31,PHX,shot,,,,,,,,,,James Jones,,,,missed,,3pt,49,7
+Austin Croshere,Devean George,Greg Buckner,Jason Terry,Jerry Stackhouse,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,1,1:29,DAL,rebound,,,,,,,,,,Jerry Stackhouse,,,,,,def,,
+Austin Croshere,Devean George,Greg Buckner,Jason Terry,Jerry Stackhouse,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,1,1:22,PHX,foul,,,,,,,,Jason Terry,,James Jones,,,,,,shooting,,
+Austin Croshere,Devean George,Greg Buckner,Jason Terry,Jerry Stackhouse,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,1,1:22,DAL,free throw,,,,,,,1,,2,Jason Terry,,,foul,made,,,,
+Austin Croshere,Devean George,Greg Buckner,Jason Terry,Jerry Stackhouse,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,1,1:22,DAL,free throw,,,,,,,2,,2,Jason Terry,,,foul,made,,,,
+Austin Croshere,Devean George,Greg Buckner,Jason Terry,Jerry Stackhouse,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,1,1:12,PHX,shot,,,,,,,,,,Boris Diaw,,,,missed,,jump,38,21
+Austin Croshere,Devean George,Greg Buckner,Jason Terry,Jerry Stackhouse,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,1,1:10,DAL,rebound,,,,,,,,,,Jerry Stackhouse,,,,,,def,,
+Austin Croshere,Devean George,Greg Buckner,Jason Terry,Jerry Stackhouse,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,1,1:04,DAL,shot,,,,,,,,,,Jerry Stackhouse,2,,,made,,jump,14,23
+Austin Croshere,Devean George,Greg Buckner,Jason Terry,Jerry Stackhouse,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,1,0:49,PHX,shot,,,,,,,,,,Leandro Barbosa,2,,,made,,jump,44,18
+Austin Croshere,Devean George,Greg Buckner,Jason Terry,Jerry Stackhouse,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,1,0:36,DAL,shot,,,,,,,,,,Jerry Stackhouse,2,,,made,,turnaround jump,38,16
+Austin Croshere,Devean George,Greg Buckner,Jason Terry,Jerry Stackhouse,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,1,0:27,PHX,shot,,,,,,,,,,Leandro Barbosa,,,,missed,,jump,31,25
+Austin Croshere,Devean George,Greg Buckner,Jason Terry,Jerry Stackhouse,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,1,0:25,DAL,rebound,,,,,,,,,,Greg Buckner,,,,,,def,,
+Austin Croshere,Devean George,Greg Buckner,Jason Terry,Jerry Stackhouse,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,1,0:00,DAL,shot,,,,,,,,,,Austin Croshere,,,,missed,,jump,11,14
+Austin Croshere,Devean George,Greg Buckner,Jason Terry,Jerry Stackhouse,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,1,0:00,PHX,rebound,,,,,,,,,,Shawn Marion,,,,,,def,,
+Austin Croshere,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,2,11:46,DAL,shot,,,,,,,,,,Devin Harris,,,,missed,,jump,33,14
+Austin Croshere,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,2,11:44,PHX,rebound,,,,,,,,,,Leandro Barbosa,,,,,,def,,
+Austin Croshere,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,2,11:33,PHX,shot,Shawn Marion,,,,,,,,,Raja Bell,3,,,made,,3pt,9,24
+Austin Croshere,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,2,11:08,DAL,shot,,,,,,,,,,Josh Howard,,,,missed,,jump,15,15
+Austin Croshere,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,2,11:06,PHX,rebound,,,,,,,,,,Shawn Marion,,,,,,def,,
+Austin Croshere,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,2,11:04,DAL,foul,,,,,,,,Shawn Marion,,Dirk Nowitzki,,,,,,shooting,,
+Austin Croshere,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,2,11:04,PHX,free throw,,,,,,,1,,2,Shawn Marion,,,foul,made,,,,
+Austin Croshere,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,2,11:04,PHX,free throw,,,,,,,2,,2,Shawn Marion,,,foul,made,,,,
+Austin Croshere,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,2,10:49,DAL,shot,,,,,,,,,,Dirk Nowitzki,,,,missed,,jump,15,18
+Austin Croshere,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,2,10:47,PHX,rebound,,,,,,,,,,Raja Bell,,,,,,def,,
+Austin Croshere,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,2,10:37,PHX,shot,,,,,,,,,,Shawn Marion,2,,,made,,driving layup,25,6
+Austin Croshere,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,2,10:22,DAL,shot,,,,,,,,,,Devin Harris,2,,,made,,driving layup,25,6
+Austin Croshere,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,2,10:07,DAL,foul,,,,,,,,Boris Diaw,,Austin Croshere,,,,,,personal,,
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,2,10:07,DAL,sub,,,,DeSagana Diop,,Austin Croshere,,,,,,,,,,,,
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,2,9:59,PHX,turnover,,,,,,,,,,Boris Diaw,,,traveling,,,,,
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,2,9:40,DAL,shot,Greg Buckner,,,,,,,,,Josh Howard,3,,,made,,3pt,49,10
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,2,9:25,PHX,shot,,,,,,,,,,James Jones,,,,missed,,3pt,11,27
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,2,9:22,DAL,rebound,,,,,,,,,,Greg Buckner,,,,,,def,,
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,2,9:12,DAL,shot,,,,,,,,,,Dirk Nowitzki,,,,missed,,turnaround jump,38,14
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,2,9:10,PHX,rebound,,,,,,,,,,Shawn Marion,,,,,,def,,
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,2,9:03,PHX,shot,Shawn Marion,,,,,,,,,Boris Diaw,2,,,made,,layup,25,6
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,2,8:47,PHX,foul,,,,,,,,Devin Harris,,Leandro Barbosa,,,,,,shooting,,
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,2,8:47,OFF,timeout,,,,,,,,,,,,,,,,official,,
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Amare Stoudemire,Boris Diaw,James Jones,Leandro Barbosa,Shawn Marion,2,8:47,PHX,sub,,,,Amare Stoudemire,,Raja Bell,,,,,,,,,,,,
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Amare Stoudemire,Boris Diaw,James Jones,Shawn Marion,Steve Nash,2,8:47,PHX,sub,,,,Steve Nash,,Leandro Barbosa,,,,,,,,,,,,
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Amare Stoudemire,Boris Diaw,James Jones,Shawn Marion,Steve Nash,2,8:47,DAL,free throw,,,,,,,1,,2,Devin Harris,,,foul,made,,,,
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Amare Stoudemire,Boris Diaw,James Jones,Shawn Marion,Steve Nash,2,8:47,DAL,free throw,,,,,,,2,,2,Devin Harris,,,foul,made,,,,
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Amare Stoudemire,Boris Diaw,James Jones,Shawn Marion,Steve Nash,2,8:34,PHX,shot,,,,,,,,,,Steve Nash,,,,missed,,jump,15,19
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Amare Stoudemire,Boris Diaw,James Jones,Shawn Marion,Steve Nash,2,8:33,PHX,rebound,,,,,,,,,,Boris Diaw,,,,,,off,,
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Amare Stoudemire,Boris Diaw,James Jones,Shawn Marion,Steve Nash,2,8:23,PHX,shot,Boris Diaw,,,,,,,,,Amare Stoudemire,2,,,made,,dunk,25,6
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Amare Stoudemire,Boris Diaw,James Jones,Shawn Marion,Steve Nash,2,8:07,DAL,shot,,,,,,,,,,Devin Harris,,,,missed,,layup,25,6
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Amare Stoudemire,Boris Diaw,James Jones,Shawn Marion,Steve Nash,2,8:06,PHX,rebound,,,,,,,,,,James Jones,,,,,,def,,
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Amare Stoudemire,Boris Diaw,James Jones,Shawn Marion,Steve Nash,2,8:00,PHX,turnover,,,,,,,,,,Steve Nash,,,lost ball,,Josh Howard,,,
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Amare Stoudemire,Boris Diaw,James Jones,Shawn Marion,Steve Nash,2,7:48,DAL,shot,Dirk Nowitzki,,,,,,,,,Josh Howard,3,,,made,,3pt,38,27
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Amare Stoudemire,Boris Diaw,James Jones,Shawn Marion,Steve Nash,2,7:33,PHX,shot,,,,,,,,,,Steve Nash,2,,,made,,jump,35,15
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Amare Stoudemire,Boris Diaw,James Jones,Shawn Marion,Steve Nash,2,7:17,PHX,foul,,,,,,,,Josh Howard,,Shawn Marion,,,,,,shooting,,
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Amare Stoudemire,Boris Diaw,James Jones,Shawn Marion,Steve Nash,2,7:17,DAL,free throw,,,,,,,1,,2,Josh Howard,,,foul,made,,,,
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Greg Buckner,Josh Howard,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Shawn Marion,Steve Nash,2,7:17,PHX,sub,,,,Leandro Barbosa,,James Jones,,,,,,,,,,,,
+DeSagana Diop,Devean George,Dirk Nowitzki,Greg Buckner,Josh Howard,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Shawn Marion,Steve Nash,2,7:17,DAL,sub,,,,Devean George,,Devin Harris,,,,,,,,,,,,
+DeSagana Diop,Devean George,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Shawn Marion,Steve Nash,2,7:17,DAL,sub,,,,Jason Terry,,Greg Buckner,,,,,,,,,,,,
+DeSagana Diop,Devean George,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Shawn Marion,Steve Nash,2,7:17,DAL,free throw,,,,,,,2,,2,Josh Howard,,,foul,made,,,,
+DeSagana Diop,Devean George,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Shawn Marion,Steve Nash,2,7:04,PHX,shot,,,,,,,,,,Boris Diaw,2,,,made,,driving layup,25,6
+DeSagana Diop,Devean George,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Shawn Marion,Steve Nash,2,6:44,DAL,shot,,,,,,,,,,Devean George,,,,missed,,jump,12,16
+DeSagana Diop,Devean George,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Shawn Marion,Steve Nash,2,6:42,DAL,rebound,,,,,,,,,,Josh Howard,,,,,,off,,
+DeSagana Diop,Devean George,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Shawn Marion,Steve Nash,2,6:30,DAL,shot,,,,,,,,,,Dirk Nowitzki,,,,missed,,layup,25,6
+DeSagana Diop,Devean George,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Shawn Marion,Steve Nash,2,6:28,PHX,rebound,,,,,,,,,,Amare Stoudemire,,,,,,def,,
+DeSagana Diop,Devean George,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Shawn Marion,Steve Nash,2,6:13,PHX,shot,,,,,,,,,,Shawn Marion,,,,missed,,3pt,48,5
+DeSagana Diop,Devean George,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Shawn Marion,Steve Nash,2,6:11,PHX,rebound,,,,,,,,,,Boris Diaw,,,,,,off,,
+DeSagana Diop,Devean George,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Shawn Marion,Steve Nash,2,6:08,DAL,foul,,,,,,,,Steve Nash,,Devean George,,,,,,personal,,
+DeSagana Diop,Devean George,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Shawn Marion,Steve Nash,2,6:08,DAL,sub,,,,Jerry Stackhouse,,Dirk Nowitzki,,,,,,,,,,,,
+DeSagana Diop,Devean George,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Shawn Marion,Steve Nash,2,5:54,PHX,shot,Amare Stoudemire,,,,,,,,,Shawn Marion,2,,,made,,layup,25,6
+DeSagana Diop,Devean George,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Shawn Marion,Steve Nash,2,5:31,DAL,shot,,,,,,,,,,Jerry Stackhouse,2,,,made,,jump,17,14
+DeSagana Diop,Devean George,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Shawn Marion,Steve Nash,2,5:11,PHX,shot,Steve Nash,,,,,,,,,Boris Diaw,3,,,made,,3pt,48,5
+DeSagana Diop,Devean George,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Shawn Marion,Steve Nash,2,4:52,DAL,shot,,,,,,,,,,Jerry Stackhouse,2,,,made,,turnaround jump,35,19
+DeSagana Diop,Devean George,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Shawn Marion,Steve Nash,2,4:26,PHX,shot,,,,,,,,,,Leandro Barbosa,,,,missed,,jump,16,18
+DeSagana Diop,Devean George,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Shawn Marion,Steve Nash,2,4:24,DAL,rebound,,,,,,,,,,Devean George,,,,,,def,,
+DeSagana Diop,Devean George,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Shawn Marion,Steve Nash,2,4:18,DAL,shot,Jason Terry,,,,,,,,,Jerry Stackhouse,3,,,made,,3pt,5,21
+DeSagana Diop,Devean George,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Shawn Marion,Steve Nash,2,4:13,PHX,timeout,,,,,,,,,,,,,,,,regular,,
+DeSagana Diop,Devean George,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,2,4:13,PHX,sub,,,,Raja Bell,,Boris Diaw,,,,,,,,,,,,
+DeSagana Diop,Devean George,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,2,4:04,DAL,foul,,,,,,,,Steve Nash,,Devean George,,,,,,personal,,
+DeSagana Diop,Devean George,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,2,3:57,PHX,turnover,,,,,,,,,,Steve Nash,,,bad pass,,,,,
+DeSagana Diop,Devean George,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,2,3:39,DAL,shot,,,,,,,,,,Jason Terry,2,,,made,,jump,17,17
+DeSagana Diop,Devean George,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,2,3:25,DAL,foul,,,,,,,,Steve Nash,,DeSagana Diop,,,,,,personal,,
+DeSagana Diop,Devean George,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,2,3:25,PHX,free throw,,,,,,,1,,2,Steve Nash,,,foul,made,,,,
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,2,3:25,DAL,sub,,,,Dirk Nowitzki,,DeSagana Diop,,,,,,,,,,,,
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,2,3:25,PHX,free throw,,,,,,,2,,2,Steve Nash,,,foul,made,,,,
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,2,3:08,DAL,shot,,,,,,,,,,Jason Terry,,,,missed,,3pt,44,23
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,2,3:07,PHX,rebound,,,,,,,,,,,,,,,,,,
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,2,2:47,PHX,shot,Steve Nash,,,,,,,,,Leandro Barbosa,3,,,made,,3pt,12,26
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,2,2:40,DAL,timeout,,,,,,,,,,,,,,,,regular,,
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,2,2:26,DAL,shot,,,,,,,,,,Devean George,,,,missed,,turnaround jump,35,11
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,2,2:25,PHX,rebound,,,,,,,,,,Shawn Marion,,,,,,def,,
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,2,2:05,PHX,shot,,,,,,,,,,Leandro Barbosa,,,,missed,,3pt,2,8
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,2,2:04,DAL,rebound,,,,,,,,,,Dirk Nowitzki,,,,,,def,,
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,2,1:45,DAL,turnover,,,,,,,,,,Josh Howard,,,bad pass,,Raja Bell,,,
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,2,1:41,PHX,shot,Raja Bell,,,,,,,,,Shawn Marion,2,,,made,,layup,25,6
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,2,1:24,DAL,shot,,,,,,,,,,Josh Howard,,,,missed,,jump,25,11
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,2,1:22,DAL,rebound,,,,,,,,,,Josh Howard,,,,,,off,,
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,2,1:18,DAL,shot,Jerry Stackhouse,,,,,,,,,Dirk Nowitzki,2,,,made,,jump,11,10
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,2,1:11,PHX,shot,Steve Nash,,,,,,,,,Leandro Barbosa,2,,,made,,layup,25,6
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,2,0:58,PHX,foul,,,,,,,,Josh Howard,,Amare Stoudemire,,,,,,shooting,,
+Devean George,Dirk Nowitzki,Greg Buckner,Jason Terry,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,2,0:58,DAL,sub,,,,Greg Buckner,,Jerry Stackhouse,,,,,,,,,,,,
+Devean George,Dirk Nowitzki,Greg Buckner,Jason Terry,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,2,0:58,DAL,free throw,,,,,,,1,,2,Josh Howard,,,foul,made,,,,
+Austin Croshere,Dirk Nowitzki,Greg Buckner,Jason Terry,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,2,0:58,DAL,sub,,,,Austin Croshere,,Devean George,,,,,,,,,,,,
+Austin Croshere,Dirk Nowitzki,Greg Buckner,Jason Terry,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,2,0:58,DAL,free throw,,,,,,,2,,2,Josh Howard,,,foul,made,,,,
+Austin Croshere,Dirk Nowitzki,Greg Buckner,Jason Terry,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,2,0:48,PHX,shot,Steve Nash,,,,,,,,,Amare Stoudemire,2,,,made,,slam dunk,25,6
+Austin Croshere,Dirk Nowitzki,Greg Buckner,Jason Terry,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,2,0:48,DAL,foul,,,,,,,,Amare Stoudemire,,Jason Terry,,,,,,shooting,,
+Austin Croshere,Dirk Nowitzki,Greg Buckner,Jason Terry,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,2,0:48,PHX,free throw,,,,,,,1,,1,Amare Stoudemire,,,foul,made,,,,
+Austin Croshere,Dirk Nowitzki,Greg Buckner,Jason Terry,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,2,0:30,PHX,foul,,,,,,,,Dirk Nowitzki,,Leandro Barbosa,,,,,,shooting,,
+Austin Croshere,Dirk Nowitzki,Greg Buckner,Jason Terry,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,2,0:30,DAL,free throw,,,,,,,1,,2,Dirk Nowitzki,,,foul,made,,,,
+Austin Croshere,Dirk Nowitzki,Greg Buckner,Jason Terry,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,2,0:30,PHX,sub,,,,Boris Diaw,,Leandro Barbosa,,,,,,,,,,,,
+Austin Croshere,Dirk Nowitzki,Greg Buckner,Jason Terry,Jerry Stackhouse,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,2,0:30,DAL,sub,,,,Jerry Stackhouse,,Josh Howard,,,,,,,,,,,,
+Austin Croshere,Dirk Nowitzki,Greg Buckner,Jason Terry,Jerry Stackhouse,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,2,0:30,DAL,free throw,,,,,,,2,,2,Dirk Nowitzki,,,foul,made,,,,
+Austin Croshere,Dirk Nowitzki,Greg Buckner,Jason Terry,Jerry Stackhouse,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,2,0:15,DAL,foul,,,,,,,,Boris Diaw,,Dirk Nowitzki,,,,,,shooting,,
+Austin Croshere,Dirk Nowitzki,Greg Buckner,Jason Terry,Jerry Stackhouse,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,2,0:15,PHX,free throw,,,,,,,1,,2,Boris Diaw,,,foul,made,,,,
+Austin Croshere,Dirk Nowitzki,Greg Buckner,Jason Terry,Jerry Stackhouse,Boris Diaw,James Jones,Raja Bell,Shawn Marion,Steve Nash,2,0:15,PHX,sub,,,,James Jones,,Amare Stoudemire,,,,,,,,,,,,
+Austin Croshere,Dirk Nowitzki,Greg Buckner,Jason Terry,Jerry Stackhouse,Boris Diaw,James Jones,Raja Bell,Shawn Marion,Steve Nash,2,0:15,DAL,violation,,,,,,,,,,Jason Terry,,,,,,lane,,
+Austin Croshere,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Boris Diaw,James Jones,Raja Bell,Shawn Marion,Steve Nash,2,0:15,DAL,sub,,,,Josh Howard,,Greg Buckner,,,,,,,,,,,,
+Austin Croshere,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Boris Diaw,James Jones,Raja Bell,Shawn Marion,Steve Nash,2,0:15,PHX,free throw,,,,,,,2,,2,Boris Diaw,,,foul,made,,,,
+Austin Croshere,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Boris Diaw,James Jones,Raja Bell,Shawn Marion,Steve Nash,2,0:02,DAL,timeout,,,,,,,,,,,,,,,,short,,
+Austin Croshere,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Boris Diaw,James Jones,Raja Bell,Shawn Marion,Steve Nash,2,0:02,DAL,turnover,,,,,,,,,,Josh Howard,,,backcourt turnover,,,,,
+Austin Croshere,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Boris Diaw,James Jones,Raja Bell,Shawn Marion,Steve Nash,2,0:02,PHX,timeout,,,,,,,,,,,,,,,,short,,
+Austin Croshere,Greg Buckner,Jason Terry,Jerry Stackhouse,Josh Howard,Boris Diaw,James Jones,Raja Bell,Shawn Marion,Steve Nash,2,0:02,DAL,sub,,,,Greg Buckner,,Dirk Nowitzki,,,,,,,,,,,,
+Austin Croshere,Devean George,Greg Buckner,Jason Terry,Jerry Stackhouse,Boris Diaw,James Jones,Raja Bell,Shawn Marion,Steve Nash,2,0:02,DAL,sub,,,,Devean George,,Josh Howard,,,,,,,,,,,,
+Austin Croshere,Devean George,Greg Buckner,Jason Terry,Jerry Stackhouse,Boris Diaw,Kurt Thomas,Raja Bell,Shawn Marion,Steve Nash,2,0:02,PHX,sub,,,,Kurt Thomas,,James Jones,,,,,,,,,,,,
+Austin Croshere,Devean George,Greg Buckner,Jason Terry,Jerry Stackhouse,Boris Diaw,Kurt Thomas,Raja Bell,Shawn Marion,Steve Nash,2,0:00,PHX,shot,,,,,,,,,,Steve Nash,,,,missed,,3pt,35,31
+Austin Croshere,Devean George,Greg Buckner,Jason Terry,Jerry Stackhouse,Boris Diaw,Kurt Thomas,Raja Bell,Shawn Marion,Steve Nash,2,0:00,PHX,rebound,,,,,,,,,,,,,,,,,,
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,11:39,DAL,shot,,,,,,,,,,Josh Howard,,,,missed,,jump,36,19
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,11:37,DAL,rebound,,,,,,,,,,Devin Harris,,,,,,off,,
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,11:29,DAL,foul,,,,,,,,Steve Nash,,Dirk Nowitzki,,,,,,offensive,,
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,11:29,DAL,turnover,,,,,,,,,,Dirk Nowitzki,,,foul,,,,,
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,11:12,PHX,shot,,,,,,,,,,Amare Stoudemire,2,,,made,,jump,15,18
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,10:48,DAL,shot,,,Shawn Marion,,,,,,,Devin Harris,,,,missed,,jump,33,17
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,10:46,DAL,rebound,,,,,,,,,,Devin Harris,,,,,,off,,
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,10:45,DAL,turnover,,,,,,,,,,,,,shot clock turnover,,,,,
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Jason Terry,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,10:28,DAL,foul,,,,,,,,Amare Stoudemire,,DeSagana Diop,,,,,,personal,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,10:28,DAL,sub,,,,Jerry Stackhouse,,Devin Harris,,,,,,,,,,,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,10:18,PHX,shot,,,,,,,,,,Shawn Marion,,,,missed,,jump,40,9
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,10:16,DAL,rebound,,,,,,,,,,DeSagana Diop,,,,,,def,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,10:08,DAL,shot,,,,,,,,,,Jerry Stackhouse,,,,missed,,3pt,8,24
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,10:06,PHX,rebound,,,,,,,,,,Shawn Marion,,,,,,def,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,9:53,PHX,shot,,,,,,,,,,Amare Stoudemire,,,,missed,,jump,33,20
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,9:51,PHX,rebound,,,,,,,,,,Boris Diaw,,,,,,off,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,9:34,PHX,shot,,,,,,,,,,Steve Nash,,,,missed,,jump,15,19
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,9:33,DAL,rebound,,,,,,,,,,Jason Terry,,,,,,def,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,9:28,DAL,shot,,,,,,,,,,Dirk Nowitzki,,,,missed,,3pt,8,25
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,9:26,PHX,rebound,,,,,,,,,,Amare Stoudemire,,,,,,def,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,9:16,PHX,shot,Steve Nash,,,,,,,,,Amare Stoudemire,2,,,made,,jump,20,10
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,9:14,DAL,timeout,,,,,,,,,,,,,,,,regular,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,8:50,DAL,shot,,,,,,,,,,Jerry Stackhouse,2,,,made,,fade away jumper,37,9
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,8:35,DAL,violation,,,,,,,,,,Jason Terry,,,,,,kicked ball,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,8:28,PHX,shot,,,,,,,,,,Boris Diaw,,,,missed,,layup,25,6
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,8:27,DAL,rebound,,,,,,,,,,Dirk Nowitzki,,,,,,def,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,8:13,DAL,shot,,,,,,,,,,Josh Howard,,,,missed,,layup,25,6
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,8:12,DAL,rebound,,,,,,,,,,Josh Howard,,,,,,off,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,8:11,DAL,shot,,,,,,,,,,Josh Howard,,,,missed,,layup,25,6
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,8:10,DAL,shot,,,,,,,,,,Josh Howard,2,,,made,,reverse layup,25,6
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,8:10,DAL,rebound,,,,,,,,,,Josh Howard,,,,,,off,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,7:49,PHX,shot,Boris Diaw,,,,,,,,,Amare Stoudemire,2,,,made,,jump,21,10
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,7:49,DAL,foul,,,,,,,,Amare Stoudemire,,Josh Howard,,,,,,shooting,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,7:49,PHX,free throw,,,,,,,1,,1,Amare Stoudemire,,,foul,made,,,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,7:34,DAL,shot,Jerry Stackhouse,,,,,,,,,Jason Terry,2,,,made,,jump,35,14
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,7:19,PHX,foul,,,,,,,,Jason Terry,,Steve Nash,,,,,,offensive,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,7:19,PHX,turnover,,,,,,,,,,Steve Nash,,,foul,,,,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,6:59,DAL,shot,,,,,,,,,,Jerry Stackhouse,2,,,made,,jump,12,21
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,6:53,PHX,shot,Steve Nash,,,,,,,,,Shawn Marion,2,,,made,,alley oop dunk,25,6
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,6:29,DAL,shot,Jason Terry,,,,,,,,,Jerry Stackhouse,3,,,made,,3pt,45,21
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,6:12,PHX,turnover,,,,,,,,,,Steve Nash,,,bad pass,,,,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,5:54,DAL,shot,Dirk Nowitzki,,,,,,,,,Jason Terry,2,,,made,,jump,8,10
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,5:41,DAL,foul,,,,,,,,Steve Nash,,Jason Terry,,,,,,shooting,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Boris Diaw,Raja Bell,Shawn Marion,Steve Nash,3,5:41,PHX,free throw,,,,,,,1,,2,Steve Nash,,,foul,made,,,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,3,5:41,PHX,sub,,,,Leandro Barbosa,,Boris Diaw,,,,,,,,,,,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,3,5:41,PHX,free throw,,,,,,,2,,2,Steve Nash,,,foul,made,,,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,3,5:26,DAL,turnover,,,,,,,,,,Jerry Stackhouse,,,bad pass,,Steve Nash,,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,3,5:21,PHX,shot,Steve Nash,,,,,,,,,Shawn Marion,2,,,made,,dunk,25,6
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,3,4:57,DAL,shot,,,,,,,,,,Dirk Nowitzki,,,,missed,,3pt,12,28
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,3,4:56,PHX,rebound,,,,,,,,,,Steve Nash,,,,,,def,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,3,4:49,PHX,turnover,,,,,,,,,,Steve Nash,,,bad pass,,Jason Terry,,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,3,4:44,DAL,turnover,,,,,,,,,,Jason Terry,,,bad pass,,Leandro Barbosa,,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,3,4:31,PHX,shot,Steve Nash,,,,,,,,,Raja Bell,3,,,made,,3pt,18,29
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,3,4:17,DAL,shot,,,Amare Stoudemire,,,,,,,Jason Terry,,,,missed,,layup,25,6
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,3,4:15,DAL,rebound,,,,,,,,,,Dirk Nowitzki,,,,,,off,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,3,4:15,PHX,foul,,,,,,,,Dirk Nowitzki,,Raja Bell,,,,,,shooting,,
+DeSagana Diop,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,3,4:15,DAL,free throw,,,,,,,1,,2,Dirk Nowitzki,,,foul,made,,,,
+DeSagana Diop,Devin Harris,Dirk Nowitzki,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,3,4:15,DAL,sub,,,,Devin Harris,,Jason Terry,,,,,,,,,,,,
+Devean George,Devin Harris,Dirk Nowitzki,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,3,4:15,DAL,sub,,,,Devean George,,DeSagana Diop,,,,,,,,,,,,
+Devean George,Devin Harris,Dirk Nowitzki,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,3,4:15,DAL,free throw,,,,,,,2,,2,Dirk Nowitzki,,,foul,made,,,,
+Devean George,Devin Harris,Dirk Nowitzki,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,3,4:02,PHX,shot,Shawn Marion,,,,,,,,,Leandro Barbosa,3,,,made,,3pt,4,19
+Devean George,Devin Harris,Dirk Nowitzki,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,3,4:00,DAL,timeout,,,,,,,,,,,,,,,,regular,,
+Devean George,Devin Harris,Dirk Nowitzki,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,3,3:47,DAL,shot,Dirk Nowitzki,,,,,,,,,Josh Howard,2,,,made,,jump,35,17
+Devean George,Devin Harris,Dirk Nowitzki,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,3,3:34,PHX,shot,Steve Nash,,,,,,,,,Shawn Marion,2,,,made,,alley oop dunk,25,6
+Devean George,Devin Harris,Dirk Nowitzki,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,3,3:17,PHX,foul,,,,,,,,Dirk Nowitzki,,Shawn Marion,,,,,,shooting,,
+Devean George,Devin Harris,Dirk Nowitzki,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,3,3:17,DAL,free throw,,,,,,,1,,2,Dirk Nowitzki,,,foul,made,,,,
+Devean George,Devin Harris,Dirk Nowitzki,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,3,3:17,DAL,free throw,,,,,,,2,,2,Dirk Nowitzki,,,foul,made,,,,
+Devean George,Devin Harris,Dirk Nowitzki,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,3,2:59,PHX,shot,,,,,,,,,,Amare Stoudemire,2,,,made,,jump,33,20
+Devean George,Devin Harris,Dirk Nowitzki,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,3,2:33,DAL,shot,,,,,,,,,,Josh Howard,,,,missed,,jump,40,16
+Devean George,Devin Harris,Dirk Nowitzki,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,3,2:31,DAL,rebound,,,,,,,,,,Dirk Nowitzki,,,,,,off,,
+Devean George,Devin Harris,Dirk Nowitzki,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,3,2:18,DAL,shot,,,,,,,,,,Jerry Stackhouse,,,,missed,,jump,9,8
+Devean George,Devin Harris,Dirk Nowitzki,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,3,2:17,PHX,rebound,,,,,,,,,,Amare Stoudemire,,,,,,def,,
+Devean George,Devin Harris,Dirk Nowitzki,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,3,2:10,PHX,shot,,,,,,,,,,Raja Bell,,,,missed,,3pt,2,17
+Devean George,Devin Harris,Dirk Nowitzki,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,3,2:10,PHX,rebound,,,,,,,,,,,,,,,,,,
+Devean George,Devin Harris,Dirk Nowitzki,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,3,2:10,DAL,foul,,,,,,,,Shawn Marion,,Jerry Stackhouse,,,,,,loose ball,,
+Devean George,Devin Harris,Dirk Nowitzki,Jerry Stackhouse,Josh Howard,Amare Stoudemire,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,3,2:10,PHX,sub,,,,James Jones,,Steve Nash,,,,,,,,,,,,
+Devean George,Dirk Nowitzki,Greg Buckner,Jerry Stackhouse,Josh Howard,Amare Stoudemire,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,3,2:10,DAL,sub,,,,Greg Buckner,,Devin Harris,,,,,,,,,,,,
+Devean George,Dirk Nowitzki,Greg Buckner,Jason Terry,Josh Howard,Amare Stoudemire,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,3,2:10,DAL,sub,,,,Jason Terry,,Jerry Stackhouse,,,,,,,,,,,,
+Devean George,Dirk Nowitzki,Greg Buckner,Jason Terry,Josh Howard,Amare Stoudemire,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,3,1:58,PHX,shot,,,,,,,,,,Leandro Barbosa,2,,,made,,driving layup,25,6
+Devean George,Dirk Nowitzki,Greg Buckner,Jason Terry,Josh Howard,Amare Stoudemire,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,3,1:38,DAL,shot,,,,,,,,,,Josh Howard,2,,,made,,driving dunk,25,6
+Devean George,Dirk Nowitzki,Greg Buckner,Jason Terry,Josh Howard,Amare Stoudemire,James Jones,Leandro Barbosa,Raja Bell,Shawn Marion,3,1:19,DAL,foul,,,,,,,,Leandro Barbosa,,Devean George,,,,,,personal,,
+Devean George,Dirk Nowitzki,Greg Buckner,Jason Terry,Josh Howard,Amare Stoudemire,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,3,1:19,PHX,sub,,,,Boris Diaw,,Shawn Marion,,,,,,,,,,,,
+Devean George,Devin Harris,Dirk Nowitzki,Greg Buckner,Jason Terry,Amare Stoudemire,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,3,1:19,DAL,sub,,,,Devin Harris,,Josh Howard,,,,,,,,,,,,
+Devean George,Devin Harris,Dirk Nowitzki,Greg Buckner,Jason Terry,Amare Stoudemire,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,3,1:19,PHX,free throw,,,,,,,1,,2,Leandro Barbosa,,,foul,made,,,,
+Devean George,Devin Harris,Dirk Nowitzki,Greg Buckner,Jason Terry,Amare Stoudemire,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,3,1:19,PHX,free throw,,,,,,,2,,2,Leandro Barbosa,,,foul,made,,,,
+Devean George,Devin Harris,Dirk Nowitzki,Greg Buckner,Jason Terry,Amare Stoudemire,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,3,1:06,DAL,shot,,,,,,,,,,Jason Terry,2,,,made,,jump,13,23
+Devean George,Devin Harris,Dirk Nowitzki,Greg Buckner,Jason Terry,Amare Stoudemire,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,3,0:53,PHX,shot,,,,,,,,,,Leandro Barbosa,2,,,made,,jump,16,21
+Devean George,Devin Harris,Dirk Nowitzki,Greg Buckner,Jason Terry,Amare Stoudemire,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,3,0:36,DAL,shot,,,,,,,,,,Jason Terry,3,,,made,,3pt,13,28
+Devean George,Devin Harris,Dirk Nowitzki,Greg Buckner,Jason Terry,Amare Stoudemire,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,3,0:29,PHX,shot,,,,,,,,,,Leandro Barbosa,,,,missed,,running jump,18,8
+Devean George,Devin Harris,Dirk Nowitzki,Greg Buckner,Jason Terry,Amare Stoudemire,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,3,0:27,DAL,rebound,,,,,,,,,,Devean George,,,,,,def,,
+Devean George,Devin Harris,Dirk Nowitzki,Greg Buckner,Jason Terry,Amare Stoudemire,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,3,0:20,DAL,shot,,,,,,,,,,Devin Harris,,,,missed,,jump,45,8
+Devean George,Devin Harris,Dirk Nowitzki,Greg Buckner,Jason Terry,Amare Stoudemire,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,3,0:17,PHX,rebound,,,,,,,,,,Amare Stoudemire,,,,,,def,,
+Devean George,Devin Harris,Dirk Nowitzki,Greg Buckner,Jason Terry,Amare Stoudemire,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,3,0:00,PHX,shot,,,,,,,,,,Amare Stoudemire,,,,missed,,turnaround jump,38,12
+Devean George,Devin Harris,Dirk Nowitzki,Greg Buckner,Jason Terry,Amare Stoudemire,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,3,0:00,DAL,rebound,,,,,,,,,,Devean George,,,,,,def,,
+Devean George,Devin Harris,Dirk Nowitzki,Greg Buckner,Jason Terry,Amare Stoudemire,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,4,11:36,PHX,shot,,,,,,,,,,Boris Diaw,,,,missed,,jump,12,16
+Devean George,Devin Harris,Dirk Nowitzki,Greg Buckner,Jason Terry,Amare Stoudemire,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,4,11:36,PHX,rebound,,,,,,,,,,,,,,,,,,
+Devean George,Devin Harris,Dirk Nowitzki,Greg Buckner,Jason Terry,Amare Stoudemire,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,4,11:36,PHX,turnover,,,,,,,,,,,,,shot clock turnover,,,,,
+Devean George,Devin Harris,Dirk Nowitzki,Greg Buckner,Jason Terry,Amare Stoudemire,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,4,11:19,DAL,shot,,,,,,,,,,Dirk Nowitzki,2,,,made,,jump,40,17
+Devean George,Devin Harris,Dirk Nowitzki,Greg Buckner,Jason Terry,Amare Stoudemire,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,4,11:05,PHX,turnover,,,,,,,,,,Boris Diaw,,,bad pass,,Greg Buckner,,,
+Devean George,Devin Harris,Dirk Nowitzki,Greg Buckner,Jason Terry,Amare Stoudemire,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,4,10:58,DAL,shot,,,,,,,,,,Dirk Nowitzki,,,,missed,,3pt,45,22
+Devean George,Devin Harris,Dirk Nowitzki,Greg Buckner,Jason Terry,Amare Stoudemire,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,4,10:55,PHX,rebound,,,,,,,,,,Amare Stoudemire,,,,,,def,,
+Devean George,Devin Harris,Dirk Nowitzki,Greg Buckner,Jason Terry,Amare Stoudemire,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,4,10:41,PHX,shot,Boris Diaw,,,,,,,,,James Jones,2,,,made,,jump,9,21
+Devean George,Devin Harris,Dirk Nowitzki,Greg Buckner,Jason Terry,Amare Stoudemire,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,4,10:15,DAL,shot,,,,,,,,,,Dirk Nowitzki,2,,,made,,turnaround jump,41,6
+Devean George,Devin Harris,Dirk Nowitzki,Greg Buckner,Jason Terry,Amare Stoudemire,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,4,9:57,PHX,shot,,,,,,,,,,Boris Diaw,2,,,made,,jump,34,6
+Devean George,Devin Harris,Dirk Nowitzki,Greg Buckner,Jason Terry,Amare Stoudemire,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,4,9:39,DAL,shot,Jason Terry,,,,,,,,,Devin Harris,2,,,made,,jump,35,12
+Devean George,Devin Harris,Dirk Nowitzki,Greg Buckner,Jason Terry,Amare Stoudemire,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,4,9:22,PHX,foul,,,,,,,,Devin Harris,,Amare Stoudemire,,,,,,offensive,,
+Devean George,Devin Harris,Dirk Nowitzki,Greg Buckner,Jason Terry,Amare Stoudemire,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,4,9:22,PHX,turnover,,,,,,,,,,Amare Stoudemire,,,foul,,,,,
+Devean George,Devin Harris,Dirk Nowitzki,Greg Buckner,Jason Terry,Amare Stoudemire,Boris Diaw,James Jones,Leandro Barbosa,Steve Nash,4,9:22,PHX,sub,,,,Steve Nash,,Raja Bell,,,,,,,,,,,,
+Devean George,Devin Harris,Dirk Nowitzki,Greg Buckner,Jason Terry,Boris Diaw,James Jones,Leandro Barbosa,Shawn Marion,Steve Nash,4,9:22,PHX,sub,,,,Shawn Marion,,Amare Stoudemire,,,,,,,,,,,,
+Devean George,Devin Harris,Dirk Nowitzki,Greg Buckner,Jason Terry,Boris Diaw,James Jones,Leandro Barbosa,Shawn Marion,Steve Nash,4,9:03,DAL,shot,,,,,,,,,,Devean George,,,,missed,,3pt,48,18
+Devean George,Devin Harris,Dirk Nowitzki,Greg Buckner,Jason Terry,Boris Diaw,James Jones,Leandro Barbosa,Shawn Marion,Steve Nash,4,9:01,PHX,rebound,,,,,,,,,,Shawn Marion,,,,,,def,,
+Devean George,Devin Harris,Dirk Nowitzki,Greg Buckner,Jason Terry,Boris Diaw,James Jones,Leandro Barbosa,Shawn Marion,Steve Nash,4,8:43,DAL,foul,,,,,,,,Boris Diaw,,Greg Buckner,,,,,,personal,,
+Devean George,Devin Harris,Dirk Nowitzki,Greg Buckner,Jason Terry,Boris Diaw,James Jones,Leandro Barbosa,Shawn Marion,Steve Nash,4,8:43,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Devin Harris,Dirk Nowitzki,Greg Buckner,Jason Terry,Jerry Stackhouse,Boris Diaw,James Jones,Leandro Barbosa,Shawn Marion,Steve Nash,4,8:43,DAL,sub,,,,Jerry Stackhouse,,Devean George,,,,,,,,,,,,
+Dirk Nowitzki,Greg Buckner,Jason Terry,Jerry Stackhouse,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Shawn Marion,Steve Nash,4,8:43,DAL,sub,,,,Josh Howard,,Devin Harris,,,,,,,,,,,,
+Dirk Nowitzki,Greg Buckner,Jason Terry,Jerry Stackhouse,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Shawn Marion,Steve Nash,4,8:34,DAL,foul,,,,,,,,Boris Diaw,,Jason Terry,,,,,,personal,,
+Dirk Nowitzki,Greg Buckner,Jason Terry,Jerry Stackhouse,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Shawn Marion,Steve Nash,4,8:24,PHX,shot,,,,,,,,,,Boris Diaw,2,,,made,,hook,26,10
+Dirk Nowitzki,Greg Buckner,Jason Terry,Jerry Stackhouse,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Shawn Marion,Steve Nash,4,7:57,DAL,shot,,,,,,,,,,Jason Terry,,,,missed,,3pt,11,28
+Dirk Nowitzki,Greg Buckner,Jason Terry,Jerry Stackhouse,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Shawn Marion,Steve Nash,4,7:56,DAL,rebound,,,,,,,,,,,,,,,,,,
+Dirk Nowitzki,Greg Buckner,Jason Terry,Jerry Stackhouse,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Shawn Marion,Steve Nash,4,7:56,PHX,foul,,,,,,,,Greg Buckner,,Steve Nash,,,,,,loose ball,,
+Dirk Nowitzki,Greg Buckner,Jason Terry,Jerry Stackhouse,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Shawn Marion,Steve Nash,4,7:51,PHX,foul,,,,,,,,Josh Howard,,Boris Diaw,,,,,,personal,,
+Dirk Nowitzki,Greg Buckner,Jason Terry,Jerry Stackhouse,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Shawn Marion,Steve Nash,4,7:36,DAL,shot,,,,,,,,,,Dirk Nowitzki,,,,missed,,jump,45,14
+Dirk Nowitzki,Greg Buckner,Jason Terry,Jerry Stackhouse,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Shawn Marion,Steve Nash,4,7:34,PHX,rebound,,,,,,,,,,Steve Nash,,,,,,def,,
+Dirk Nowitzki,Greg Buckner,Jason Terry,Jerry Stackhouse,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Shawn Marion,Steve Nash,4,7:29,PHX,shot,Steve Nash,,,,,,,,,Leandro Barbosa,3,,,made,,3pt,48,13
+Dirk Nowitzki,Greg Buckner,Jason Terry,Jerry Stackhouse,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Shawn Marion,Steve Nash,4,7:24,DAL,timeout,,,,,,,,,,,,,,,,regular,,
+DeSagana Diop,Greg Buckner,Jason Terry,Jerry Stackhouse,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Shawn Marion,Steve Nash,4,7:24,DAL,sub,,,,DeSagana Diop,,Dirk Nowitzki,,,,,,,,,,,,
+DeSagana Diop,Devean George,Jason Terry,Jerry Stackhouse,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Shawn Marion,Steve Nash,4,7:24,DAL,sub,,,,Devean George,,Greg Buckner,,,,,,,,,,,,
+DeSagana Diop,Devean George,Jason Terry,Jerry Stackhouse,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Shawn Marion,Steve Nash,4,7:12,PHX,foul,,,,,,,,Jason Terry,,Leandro Barbosa,,,,,,shooting,,
+DeSagana Diop,Devean George,Jason Terry,Jerry Stackhouse,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Shawn Marion,Steve Nash,4,7:12,DAL,free throw,,,,,,,1,,2,Jason Terry,,,foul,missed,,,,
+DeSagana Diop,Devean George,Jason Terry,Jerry Stackhouse,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Shawn Marion,Steve Nash,4,7:12,DAL,rebound,,,,,,,,,,,,,,,,,,
+DeSagana Diop,Devean George,Jason Terry,Jerry Stackhouse,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Shawn Marion,Steve Nash,4,7:12,DAL,free throw,,,,,,,2,,2,Jason Terry,,,foul,made,,,,
+DeSagana Diop,Devean George,Jason Terry,Jerry Stackhouse,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Shawn Marion,Steve Nash,4,7:01,PHX,shot,,,,,,,,,,Leandro Barbosa,2,,,made,,driving layup,25,6
+DeSagana Diop,Devean George,Jason Terry,Jerry Stackhouse,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Shawn Marion,Steve Nash,4,6:47,DAL,turnover,,,,,,,,,,Jason Terry,,,bad pass,,Shawn Marion,,,
+DeSagana Diop,Devean George,Jason Terry,Jerry Stackhouse,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Shawn Marion,Steve Nash,4,6:41,PHX,shot,,,,,,,,,,Shawn Marion,2,,,made,,turnaround jump,31,9
+DeSagana Diop,Devean George,Jason Terry,Jerry Stackhouse,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Shawn Marion,Steve Nash,4,6:22,DAL,shot,,,,,,,,,,Jason Terry,,,,missed,,jump,25,10
+DeSagana Diop,Devean George,Jason Terry,Jerry Stackhouse,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Shawn Marion,Steve Nash,4,6:20,DAL,rebound,,,,,,,,,,Devean George,,,,,,off,,
+DeSagana Diop,Devean George,Jason Terry,Jerry Stackhouse,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Shawn Marion,Steve Nash,4,6:17,DAL,shot,,,,,,,,,,Jerry Stackhouse,,,,missed,,3pt,48,6
+DeSagana Diop,Devean George,Jason Terry,Jerry Stackhouse,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Shawn Marion,Steve Nash,4,6:15,DAL,rebound,,,,,,,,,,Devean George,,,,,,off,,
+DeSagana Diop,Devean George,Jason Terry,Jerry Stackhouse,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Shawn Marion,Steve Nash,4,6:06,DAL,shot,,,,,,,,,,Jerry Stackhouse,2,,,made,,driving layup,25,6
+DeSagana Diop,Devean George,Jason Terry,Jerry Stackhouse,Josh Howard,Boris Diaw,James Jones,Leandro Barbosa,Shawn Marion,Steve Nash,4,6:06,PHX,foul,,,,,,,,Jerry Stackhouse,,James Jones,,,,,,shooting,,
+DeSagana Diop,Devean George,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,James Jones,Leandro Barbosa,Shawn Marion,Steve Nash,4,6:06,PHX,sub,,,,Amare Stoudemire,,Boris Diaw,,,,,,,,,,,,
+DeSagana Diop,Devean George,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,6:06,PHX,sub,,,,Raja Bell,,James Jones,,,,,,,,,,,,
+DeSagana Diop,Devean George,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,6:06,DAL,free throw,,,,,,,1,,1,Jerry Stackhouse,,,foul,made,,,,
+DeSagana Diop,Devean George,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,5:45,PHX,shot,,,,,,,,,,Steve Nash,2,,,made,,jump,43,12
+DeSagana Diop,Devean George,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,5:45,DAL,foul,,,,,,,,Steve Nash,,Josh Howard,,,,,,shooting,,
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,5:45,DAL,sub,,,,Dirk Nowitzki,,DeSagana Diop,,,,,,,,,,,,
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,5:45,PHX,free throw,,,,,,,1,,1,Steve Nash,,,foul,made,,,,
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,5:35,PHX,foul,,,,,,,,Josh Howard,,Raja Bell,,,,,,shooting,,
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,5:35,DAL,free throw,,,,,,,1,,2,Josh Howard,,,foul,made,,,,
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,5:35,DAL,free throw,,,,,,,2,,2,Josh Howard,,,foul,made,,,,
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,5:26,PHX,shot,Shawn Marion,,,,,,,,,Amare Stoudemire,2,,,made,,slam dunk,25,6
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,5:13,PHX,foul,,,,,,,,Josh Howard,,Raja Bell,,,,,,personal,,
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,5:13,DAL,free throw,,,,,,,1,,2,Josh Howard,,,foul,made,,,,
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,5:13,DAL,free throw,,,,,,,2,,2,Josh Howard,,,foul,made,,,,
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,5:02,PHX,shot,,,,,,,,,,Shawn Marion,2,,,made,,jump,31,11
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,4:50,PHX,foul,,,,,,,,Dirk Nowitzki,,Steve Nash,,,,,,personal,,
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,4:50,PHX,violation,,,,,,,,,,,,,,,,delay of game,,
+Devean George,Dirk Nowitzki,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,4:50,DAL,free throw,,,,,,,1,,2,Dirk Nowitzki,,,foul,made,,,,
+Dirk Nowitzki,Greg Buckner,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,4:50,DAL,sub,,,,Greg Buckner,,Devean George,,,,,,,,,,,,
+Dirk Nowitzki,Greg Buckner,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,4:50,DAL,free throw,,,,,,,2,,2,Dirk Nowitzki,,,foul,made,,,,
+Dirk Nowitzki,Greg Buckner,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,4:31,PHX,shot,,,,,,,,,,Steve Nash,2,,,made,,driving layup,25,6
+Dirk Nowitzki,Greg Buckner,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,4:17,DAL,shot,,,Shawn Marion,,,,,,,Josh Howard,,,,missed,,jump,30,15
+Dirk Nowitzki,Greg Buckner,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,4:15,PHX,rebound,,,,,,,,,,Steve Nash,,,,,,def,,
+Dirk Nowitzki,Greg Buckner,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,3:51,PHX,shot,,,,,,,,,,Amare Stoudemire,,,,missed,,jump,10,11
+Dirk Nowitzki,Greg Buckner,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,3:50,DAL,rebound,,,,,,,,,,,,,,,,,,
+Dirk Nowitzki,Greg Buckner,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,3:50,PHX,timeout,,,,,,,,,,,,,,,,regular,,
+Dirk Nowitzki,Greg Buckner,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,3:40,DAL,shot,Dirk Nowitzki,,,,,,,,,Jerry Stackhouse,2,,,made,,layup,25,6
+Dirk Nowitzki,Greg Buckner,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,3:23,PHX,shot,Steve Nash,,,,,,,,,Leandro Barbosa,3,,,made,,3pt,21,31
+Dirk Nowitzki,Greg Buckner,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,3:06,DAL,shot,,,,,,,,,,Dirk Nowitzki,,,,missed,,jump,27,12
+Dirk Nowitzki,Greg Buckner,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,3:04,DAL,rebound,,,,,,,,,,Dirk Nowitzki,,,,,,off,,
+Dirk Nowitzki,Greg Buckner,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,3:03,DAL,shot,,,,,,,,,,Dirk Nowitzki,,,,missed,,layup,25,6
+Dirk Nowitzki,Greg Buckner,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,3:01,PHX,rebound,,,,,,,,,,Raja Bell,,,,,,def,,
+Dirk Nowitzki,Greg Buckner,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,2:43,DAL,foul,,,,,,,,Shawn Marion,,Greg Buckner,,,,,,shooting,,
+Dirk Nowitzki,Greg Buckner,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,2:43,PHX,free throw,,,,,,,1,,2,Shawn Marion,,,foul,made,,,,
+Austin Croshere,Greg Buckner,Jason Terry,Jerry Stackhouse,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,2:43,DAL,sub,,,,Austin Croshere,,Dirk Nowitzki,,,,,,,,,,,,
+Austin Croshere,Devin Harris,Greg Buckner,Jason Terry,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,2:43,DAL,sub,,,,Devin Harris,,Jerry Stackhouse,,,,,,,,,,,,
+Austin Croshere,Devin Harris,Greg Buckner,Jason Terry,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,2:43,PHX,free throw,,,,,,,2,,2,Shawn Marion,,,foul,made,,,,
+Austin Croshere,Devin Harris,Greg Buckner,Jason Terry,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,2:26,DAL,shot,,,,,,,,,,Jason Terry,,,,missed,,3pt,10,28
+Austin Croshere,Devin Harris,Greg Buckner,Jason Terry,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,2:25,PHX,rebound,,,,,,,,,,Raja Bell,,,,,,def,,
+Austin Croshere,Devin Harris,Greg Buckner,Jason Terry,Josh Howard,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,2:15,DAL,foul,,,,,,,,Steve Nash,,Devin Harris,,,,,,shooting,,
+Austin Croshere,Devin Harris,Greg Buckner,Jason Terry,Jose Juan Barea,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,2:15,DAL,sub,,,,Jose Juan Barea,,Josh Howard,,,,,,,,,,,,
+Austin Croshere,Devin Harris,Greg Buckner,Jose Juan Barea,Maurice Ager,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,2:15,DAL,sub,,,,Maurice Ager,,Jason Terry,,,,,,,,,,,,
+Austin Croshere,Devin Harris,Greg Buckner,Jose Juan Barea,Maurice Ager,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,2:15,PHX,free throw,,,,,,,1,,2,Steve Nash,,,foul,made,,,,
+Austin Croshere,DeSagana Diop,Greg Buckner,Jose Juan Barea,Maurice Ager,Amare Stoudemire,Leandro Barbosa,Raja Bell,Shawn Marion,Steve Nash,4,2:15,DAL,sub,,,,DeSagana Diop,,Devin Harris,,,,,,,,,,,,
+Austin Croshere,DeSagana Diop,Greg Buckner,Jose Juan Barea,Maurice Ager,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Raja Bell,Steve Nash,4,2:15,PHX,sub,,,,Boris Diaw,,Shawn Marion,,,,,,,,,,,,
+Austin Croshere,DeSagana Diop,Greg Buckner,Jose Juan Barea,Maurice Ager,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Raja Bell,Steve Nash,4,2:15,PHX,free throw,,,,,,,2,,2,Steve Nash,,,foul,made,,,,
+Austin Croshere,DeSagana Diop,Greg Buckner,Jose Juan Barea,Maurice Ager,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Raja Bell,Steve Nash,4,1:59,DAL,turnover,,,,,,,,,,Maurice Ager,,,bad pass,,Steve Nash,,,
+Austin Croshere,DeSagana Diop,Greg Buckner,Jose Juan Barea,Maurice Ager,Amare Stoudemire,Boris Diaw,Leandro Barbosa,Raja Bell,Steve Nash,4,1:54,PHX,turnover,,,,,,,,,,Amare Stoudemire,,,out of bounds lost ball turnover,,,,,
+Austin Croshere,DeSagana Diop,Greg Buckner,Jose Juan Barea,Maurice Ager,Amare Stoudemire,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,4,1:54,PHX,sub,,,,James Jones,,Steve Nash,,,,,,,,,,,,
+Austin Croshere,DeSagana Diop,Greg Buckner,Jose Juan Barea,Maurice Ager,Amare Stoudemire,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,4,1:36,DAL,shot,,,,,,,,,,Jose Juan Barea,,,,missed,,jump,33,19
+Austin Croshere,DeSagana Diop,Greg Buckner,Jose Juan Barea,Maurice Ager,Amare Stoudemire,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,4,1:35,PHX,rebound,,,,,,,,,,Amare Stoudemire,,,,,,def,,
+Austin Croshere,DeSagana Diop,Greg Buckner,Jose Juan Barea,Maurice Ager,Amare Stoudemire,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,4,1:22,DAL,foul,,,,,,,,Leandro Barbosa,,Jose Juan Barea,,,,,,personal,,
+Austin Croshere,DeSagana Diop,Greg Buckner,Jose Juan Barea,Maurice Ager,Amare Stoudemire,Boris Diaw,James Jones,Leandro Barbosa,Raja Bell,4,1:22,PHX,free throw,,,,,,,1,,2,Leandro Barbosa,,,foul,made,,,,
+Austin Croshere,DeSagana Diop,Greg Buckner,Jose Juan Barea,Maurice Ager,Boris Diaw,Eric Piatkowski,James Jones,Leandro Barbosa,Raja Bell,4,1:22,PHX,sub,,,,Eric Piatkowski,,Amare Stoudemire,,,,,,,,,,,,
+Austin Croshere,DeSagana Diop,Greg Buckner,Jose Juan Barea,Maurice Ager,Boris Diaw,Eric Piatkowski,James Jones,Leandro Barbosa,Raja Bell,4,1:22,PHX,free throw,,,,,,,2,,2,Leandro Barbosa,,,foul,made,,,,
+Austin Croshere,DeSagana Diop,Greg Buckner,Jose Juan Barea,Maurice Ager,Boris Diaw,Eric Piatkowski,James Jones,Leandro Barbosa,Raja Bell,4,1:09,DAL,shot,Austin Croshere,,,,,,,,,Greg Buckner,2,,,made,,jump,43,13
+Austin Croshere,DeSagana Diop,Greg Buckner,Jose Juan Barea,Maurice Ager,Boris Diaw,Eric Piatkowski,James Jones,Leandro Barbosa,Raja Bell,4,0:54,PHX,shot,Leandro Barbosa,,,,,,,,,James Jones,3,,,made,,3pt,7,23
+Austin Croshere,DeSagana Diop,Greg Buckner,Jose Juan Barea,Maurice Ager,Boris Diaw,Eric Piatkowski,James Jones,Leandro Barbosa,Raja Bell,4,0:41,DAL,shot,DeSagana Diop,,,,,,,,,Greg Buckner,2,,,made,,layup,25,6
+Austin Croshere,DeSagana Diop,Greg Buckner,Jose Juan Barea,Maurice Ager,Boris Diaw,Eric Piatkowski,James Jones,Leandro Barbosa,Raja Bell,4,0:17,PHX,shot,Leandro Barbosa,,,,,,,,,Boris Diaw,3,,,made,,3pt,1,5

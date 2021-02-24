@@ -1,0 +1,438 @@
+a1,a2,a3,a4,a5,h1,h2,h3,h4,h5,period,time,team,etype,assist,away,block,entered,home,left,num,opponent,outof,player,points,possession,reason,result,steal,type,x,y
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,12:00,OFF,jump ball,,Jeff Foster,,,Dwight Howard,,,,,,,Troy Murphy,,,,,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,11:39,IND,shot,,,Dwight Howard,,,,,,,Ronald Murray,,,,missed,,layup,25,6
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,11:37,IND,rebound,,,,,,,,,,Ronald Murray,,,,,,off,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,11:33,IND,shot,,,,,,,,,,Danny Granger,,,,missed,,jump,8,18
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,11:31,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,def,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,11:25,ORL,turnover,,,,,,,,,,Jameer Nelson,,,bad pass,,Danny Granger,,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,11:22,IND,shot,,,,,,,,,,Danny Granger,2,,,made,,driving layup,25,6
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,11:00,ORL,shot,,,,,,,,,,Rashard Lewis,,,,missed,,running jump,31,14
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,10:59,IND,rebound,,,,,,,,,,Troy Murphy,,,,,,def,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,10:44,IND,shot,,,Dwight Howard,,,,,,,Mike Dunleavy,,,,missed,,driving layup,25,6
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,10:43,IND,rebound,,,,,,,,,,,,,,,,,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,10:37,IND,shot,,,,,,,,,,Troy Murphy,,,,missed,,jump,40,10
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,10:36,ORL,rebound,,,,,,,,,,Maurice Evans,,,,,,def,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,10:19,ORL,foul,,,,,,,,Jeff Foster,,Dwight Howard,,,,,,offensive,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,10:19,ORL,turnover,,,,,,,,,,Dwight Howard,,,foul,,,,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,10:05,IND,shot,Mike Dunleavy,,,,,,,,,Jeff Foster,2,,,made,,dunk,25,6
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,9:54,IND,foul,,,,,,,,Dwight Howard,,Mike Dunleavy,,,,,,personal,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,9:43,ORL,shot,Jameer Nelson,,,,,,,,,Maurice Evans,2,,,made,,jump,13,10
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,9:32,IND,shot,,,,,,,,,,Jeff Foster,,,,missed,,jump,21,22
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,9:31,ORL,rebound,,,,,,,,,,Rashard Lewis,,,,,,def,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,9:25,ORL,turnover,,,,,,,,,,Jameer Nelson,,,bad pass,,Danny Granger,,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,9:15,IND,shot,Troy Murphy,,,,,,,,,Danny Granger,2,,,made,,jump,39,10
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,9:00,ORL,shot,Hedo Turkoglu,,,,,,,,,Dwight Howard,2,,,made,,hook,16,11
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,8:46,IND,shot,Mike Dunleavy,,,,,,,,,Troy Murphy,2,,,made,,dunk,25,6
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,8:31,ORL,shot,,,,,,,,,,Dwight Howard,2,,,made,,slam dunk,25,6
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,8:09,ORL,foul,,,,,,,,Jeff Foster,,Rashard Lewis,,,,,,shooting,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,8:09,IND,free throw,,,,,,,1,,2,Jeff Foster,,,foul,missed,,,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,8:09,IND,rebound,,,,,,,,,,,,,,,,,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,8:09,IND,free throw,,,,,,,2,,2,Jeff Foster,,,foul,made,,,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,7:57,ORL,shot,,,,,,,,,,Hedo Turkoglu,,,,missed,,driving layup,25,6
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,7:55,IND,rebound,,,,,,,,,,Danny Granger,,,,,,def,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,7:47,IND,shot,,,,,,,,,,Danny Granger,,,,missed,,3pt,27,31
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,7:46,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,def,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,7:43,ORL,turnover,,,,,,,,,,Dwight Howard,,,bad pass,,,,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,7:33,ORL,foul,,,,,,,,Mike Dunleavy,,Maurice Evans,,,,,,personal,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,7:24,IND,shot,,,,,,,,,,Ronald Murray,,,,missed,,jump,22,25
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,7:22,ORL,rebound,,,,,,,,,,Maurice Evans,,,,,,def,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,7:17,ORL,shot,,,,,,,,,,Hedo Turkoglu,2,,,made,,driving dunk,25,6
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,7:06,IND,foul,,,,,,,,Jameer Nelson,,Ronald Murray,,,,,,offensive,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,7:06,IND,turnover,,,,,,,,,,Ronald Murray,,,foul,,,,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,6:49,ORL,shot,Jameer Nelson,,,,,,,,,Hedo Turkoglu,2,,,made,,driving finger roll layup,25,6
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,6:27,IND,shot,,,,,,,,,,Mike Dunleavy,,,,missed,,layup,25,6
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,6:26,ORL,rebound,,,,,,,,,,Hedo Turkoglu,,,,,,def,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,6:20,ORL,shot,Hedo Turkoglu,,,,,,,,,Rashard Lewis,2,,,made,,layup,25,6
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,6:06,IND,shot,,,,,,,,,,Ronald Murray,,,,missed,,jump,45,12
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,6:05,ORL,rebound,,,,,,,,,,,,,,,,,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,6:05,IND,foul,,,,,,,,Hedo Turkoglu,,Troy Murphy,,,,,,loose ball,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,5:50,ORL,shot,,,,,,,,,,Rashard Lewis,2,,,made,,driving layup,25,6
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,5:35,IND,shot,,,,,,,,,,Troy Murphy,,,,missed,,jump,5,12
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,5:34,IND,rebound,,,,,,,,,,Troy Murphy,,,,,,off,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,1,5:33,ORL,timeout,,,,,,,,,,,,,,,,regular,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Brian Cook,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,1,5:33,ORL,sub,,,,Brian Cook,,Rashard Lewis,,,,,,,,,,,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Ronald Murray,Troy Murphy,Brian Cook,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,1,5:33,IND,sub,,,,Marquis Daniels,,Jeff Foster,,,,,,,,,,,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Ronald Murray,Troy Murphy,Brian Cook,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,1,5:29,IND,turnover,,,,,,,,,,Mike Dunleavy,,,lost ball,,Maurice Evans,,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Ronald Murray,Troy Murphy,Brian Cook,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,1,5:24,ORL,shot,Maurice Evans,,,,,,,,,Jameer Nelson,2,,,made,,layup,25,6
+Danny Granger,Marquis Daniels,Mike Dunleavy,Ronald Murray,Troy Murphy,Brian Cook,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,1,5:07,IND,shot,,,,,,,,,,Marquis Daniels,2,,,made,,turnaround jump,33,11
+Danny Granger,Marquis Daniels,Mike Dunleavy,Ronald Murray,Troy Murphy,Brian Cook,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,1,4:55,ORL,shot,,,,,,,,,,Dwight Howard,,,,missed,,hook,25,14
+Danny Granger,Marquis Daniels,Mike Dunleavy,Ronald Murray,Troy Murphy,Brian Cook,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,1,4:54,IND,rebound,,,,,,,,,,Mike Dunleavy,,,,,,def,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Ronald Murray,Troy Murphy,Brian Cook,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,1,4:46,IND,foul,,,,,,,,Jameer Nelson,,Mike Dunleavy,,,,,,offensive,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Ronald Murray,Troy Murphy,Brian Cook,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,1,4:46,IND,turnover,,,,,,,,,,Mike Dunleavy,,,foul,,,,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Ronald Murray,Troy Murphy,Brian Cook,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,1,4:36,ORL,turnover,,,,,,,,,,Jameer Nelson,,,bad pass,,,,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Ronald Murray,Troy Murphy,Brian Cook,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,1,4:14,IND,shot,,,,,,,,,,Troy Murphy,,,,missed,,3pt,27,32
+Danny Granger,Marquis Daniels,Mike Dunleavy,Ronald Murray,Troy Murphy,Brian Cook,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,1,4:12,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,def,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Ronald Murray,Troy Murphy,Brian Cook,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,1,4:03,ORL,shot,Hedo Turkoglu,,,,,,,,,Brian Cook,3,,,made,,3pt,10,26
+Danny Granger,Marquis Daniels,Mike Dunleavy,Ronald Murray,Troy Murphy,Brian Cook,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,1,3:58,ORL,foul,,,,,,,,Mike Dunleavy,,Maurice Evans,,,,,,personal,,
+Danny Granger,Marquis Daniels,Ronald Murray,Travis Diener,Troy Murphy,Brian Cook,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,1,3:58,IND,sub,,,,Travis Diener,,Mike Dunleavy,,,,,,,,,,,,
+Danny Granger,Marquis Daniels,Ronald Murray,Travis Diener,Troy Murphy,Brian Cook,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,1,3:58,ORL,sub,,,,Keith Bogans,,Maurice Evans,,,,,,,,,,,,
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Brian Cook,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,1,3:58,IND,sub,,,,Kareem Rush,,Ronald Murray,,,,,,,,,,,,
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Brian Cook,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,1,3:52,IND,shot,,,,,,,,,,Marquis Daniels,,,,missed,,running jump,28,15
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Brian Cook,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,1,3:51,ORL,rebound,,,,,,,,,,Keith Bogans,,,,,,def,,
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Brian Cook,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,1,3:46,ORL,turnover,,,,,,,,,,Hedo Turkoglu,,,bad pass,,Travis Diener,,,
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Brian Cook,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,1,3:40,IND,shot,,,,,,,,,,Kareem Rush,,,,missed,,3pt,7,24
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Brian Cook,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,1,3:38,ORL,rebound,,,,,,,,,,Brian Cook,,,,,,def,,
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Brian Cook,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,1,3:22,ORL,shot,,,,,,,,,,Dwight Howard,2,,,made,,hook,26,13
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Brian Cook,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,1,2:59,IND,shot,,,,,,,,,,Danny Granger,,,,missed,,layup,25,6
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Brian Cook,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,1,2:58,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,def,,
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Brian Cook,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,1,2:53,ORL,turnover,,,,,,,,,,Hedo Turkoglu,,,traveling,,,,,
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Brian Cook,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,1,2:53,IND,timeout,,,,,,,,,,,,,,,,regular,,
+Danny Granger,Jeff Foster,Kareem Rush,Marquis Daniels,Travis Diener,Brian Cook,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,1,2:53,IND,sub,,,,Jeff Foster,,Troy Murphy,,,,,,,,,,,,
+Danny Granger,Jeff Foster,Kareem Rush,Marquis Daniels,Travis Diener,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,2:53,ORL,sub,,,,Rashard Lewis,,Hedo Turkoglu,,,,,,,,,,,,
+Danny Granger,Jeff Foster,Kareem Rush,Marquis Daniels,Travis Diener,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,2:48,ORL,foul,,,,,,,,Travis Diener,,Jameer Nelson,,,,,,personal,,
+Danny Granger,Jeff Foster,Kareem Rush,Marquis Daniels,Travis Diener,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,2:36,IND,shot,,,,,,,,,,Danny Granger,,,,missed,,3pt,34,31
+Danny Granger,Jeff Foster,Kareem Rush,Marquis Daniels,Travis Diener,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,2:35,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,def,,
+Danny Granger,Jeff Foster,Kareem Rush,Marquis Daniels,Travis Diener,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,2:13,ORL,shot,Dwight Howard,,,,,,,,,Keith Bogans,3,,,made,,3pt,38,28
+Danny Granger,Jeff Foster,Kareem Rush,Marquis Daniels,Travis Diener,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,1:57,IND,shot,Marquis Daniels,,,,,,,,,Kareem Rush,3,,,made,,3pt,40,26
+Danny Granger,Jeff Foster,Kareem Rush,Marquis Daniels,Travis Diener,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,1:44,ORL,shot,,,,,,,,,,Dwight Howard,,,,missed,,hook,20,14
+Danny Granger,Jeff Foster,Kareem Rush,Marquis Daniels,Travis Diener,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,1:42,IND,rebound,,,,,,,,,,Danny Granger,,,,,,def,,
+Danny Granger,Jeff Foster,Kareem Rush,Marquis Daniels,Travis Diener,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,1:35,IND,shot,,,,,,,,,,Danny Granger,,,,missed,,driving layup,25,6
+Danny Granger,Jeff Foster,Kareem Rush,Marquis Daniels,Travis Diener,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,1:34,ORL,rebound,,,,,,,,,,Brian Cook,,,,,,def,,
+Danny Granger,Jeff Foster,Kareem Rush,Marquis Daniels,Travis Diener,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,1:24,IND,foul,,,,,,,,Jameer Nelson,,Danny Granger,,,,,,shooting,,
+Danny Granger,Jeff Foster,Kareem Rush,Marquis Daniels,Travis Diener,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,1:24,ORL,free throw,,,,,,,1,,2,Jameer Nelson,,,foul,missed,,,,
+Danny Granger,Jeff Foster,Kareem Rush,Marquis Daniels,Travis Diener,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,1:24,ORL,rebound,,,,,,,,,,,,,,,,,,
+Danny Granger,Jeff Foster,Kareem Rush,Marquis Daniels,Travis Diener,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,1:24,ORL,free throw,,,,,,,2,,2,Jameer Nelson,,,foul,made,,,,
+Danny Granger,Jeff Foster,Kareem Rush,Marquis Daniels,Travis Diener,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,1:10,IND,shot,,,,,,,,,,Marquis Daniels,2,,,made,,driving reverse layup,25,6
+Danny Granger,Jeff Foster,Kareem Rush,Marquis Daniels,Travis Diener,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,0:56,ORL,shot,Jameer Nelson,,,,,,,,,Keith Bogans,3,,,made,,3pt,48,12
+Danny Granger,Jeff Foster,Kareem Rush,Marquis Daniels,Travis Diener,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,0:47,IND,shot,,,,,,,,,,Travis Diener,,,,missed,,3pt,19,30
+Danny Granger,Jeff Foster,Kareem Rush,Marquis Daniels,Travis Diener,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,0:46,ORL,rebound,,,,,,,,,,,,,,,,,,
+Danny Granger,Jeff Foster,Kareem Rush,Marquis Daniels,Travis Diener,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,0:46,IND,foul,,,,,,,,Dwight Howard,,Jeff Foster,,,,,,loose ball,,
+Danny Granger,Jeff Foster,Kareem Rush,Marquis Daniels,Travis Diener,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,0:46,ORL,free throw,,,,,,,1,,2,Dwight Howard,,,foul,missed,,,,
+Danny Granger,Jeff Foster,Kareem Rush,Marquis Daniels,Travis Diener,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,0:46,ORL,rebound,,,,,,,,,,,,,,,,,,
+Danny Granger,Jeff Foster,Kareem Rush,Marquis Daniels,Travis Diener,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,0:46,ORL,free throw,,,,,,,2,,2,Dwight Howard,,,foul,missed,,,,
+Danny Granger,Jeff Foster,Kareem Rush,Marquis Daniels,Travis Diener,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,0:45,IND,rebound,,,,,,,,,,Jeff Foster,,,,,,def,,
+Danny Granger,Jeff Foster,Kareem Rush,Marquis Daniels,Travis Diener,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,0:30,IND,turnover,,,,,,,,,,Danny Granger,,,bad pass,,Jameer Nelson,,,
+Danny Granger,Jeff Foster,Kareem Rush,Marquis Daniels,Travis Diener,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,0:26,ORL,shot,,,,,,,,,,Keith Bogans,,,,missed,,layup,25,6
+Danny Granger,Jeff Foster,Kareem Rush,Marquis Daniels,Travis Diener,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,0:24,IND,rebound,,,,,,,,,,Marquis Daniels,,,,,,def,,
+Danny Granger,Jeff Foster,Kareem Rush,Marquis Daniels,Travis Diener,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,0:20,IND,shot,Danny Granger,,,,,,,,,Kareem Rush,2,,,made,,layup,25,6
+Danny Granger,Jeff Foster,Kareem Rush,Marquis Daniels,Travis Diener,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,0:00,ORL,shot,,,,,,,,,,Jameer Nelson,,,,missed,,jump,35,27
+Danny Granger,Jeff Foster,Kareem Rush,Marquis Daniels,Travis Diener,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,0:00,IND,rebound,,,,,,,,,,Danny Granger,,,,,,def,,
+David Harrison,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,11:38,ORL,shot,Keith Bogans,,,,,,,,,Hedo Turkoglu,2,,,made,,driving finger roll layup,25,6
+David Harrison,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,11:21,IND,shot,,,,,,,,,,Troy Murphy,2,,,made,,driving layup,25,6
+David Harrison,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,11:21,ORL,foul,,,,,,,,Troy Murphy,,Adonal Foyle,,,,,,shooting,,
+David Harrison,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,11:21,IND,free throw,,,,,,,1,,1,Troy Murphy,,,foul,made,,,,
+David Harrison,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,11:04,ORL,shot,,,,,,,,,,Hedo Turkoglu,2,,,made,,jump,42,9
+David Harrison,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,10:49,IND,shot,,,,,,,,,,Kareem Rush,,,,missed,,jump,33,20
+David Harrison,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,10:48,ORL,rebound,,,,,,,,,,Keith Bogans,,,,,,def,,
+David Harrison,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,10:42,IND,foul,,,,,,,,Hedo Turkoglu,,Marquis Daniels,,,,,,personal,,
+David Harrison,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,10:38,ORL,shot,Rashard Lewis,,,,,,,,,Hedo Turkoglu,2,,,made,,dunk,25,6
+David Harrison,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,10:36,IND,turnover,,,,,,,,,,Kareem Rush,,,inbound turnover,,,,,
+David Harrison,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,10:30,ORL,shot,Carlos Arroyo,,,,,,,,,Hedo Turkoglu,2,,,made,,jump,8,11
+David Harrison,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,10:20,ORL,foul,,,,,,,,David Harrison,,Adonal Foyle,,,,,,shooting,,
+David Harrison,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,10:20,IND,free throw,,,,,,,1,,2,David Harrison,,,foul,missed,,,,
+David Harrison,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,10:20,IND,rebound,,,,,,,,,,,,,,,,,,
+David Harrison,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,10:20,IND,free throw,,,,,,,2,,2,David Harrison,,,foul,missed,,,,
+David Harrison,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,10:19,ORL,rebound,,,,,,,,,,Hedo Turkoglu,,,,,,def,,
+David Harrison,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,10:02,ORL,shot,,,,,,,,,,Hedo Turkoglu,2,,,made,,fade away jumper,18,14
+David Harrison,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,9:50,IND,shot,Kareem Rush,,,,,,,,,Troy Murphy,2,,,made,,jump,29,26
+David Harrison,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,9:30,IND,foul,,,,,,,,Hedo Turkoglu,,Marquis Daniels,,,,,,personal,,
+Danny Granger,David Harrison,Kareem Rush,Travis Diener,Troy Murphy,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,9:30,IND,sub,,,,Danny Granger,,Marquis Daniels,,,,,,,,,,,,
+Danny Granger,David Harrison,Mike Dunleavy,Travis Diener,Troy Murphy,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,9:30,IND,sub,,,,Mike Dunleavy,,Kareem Rush,,,,,,,,,,,,
+Danny Granger,David Harrison,Mike Dunleavy,Travis Diener,Troy Murphy,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,9:21,ORL,shot,Carlos Arroyo,,,,,,,,,Rashard Lewis,3,,,made,,3pt,10,27
+Danny Granger,David Harrison,Mike Dunleavy,Travis Diener,Troy Murphy,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,9:10,IND,shot,Travis Diener,,,,,,,,,Troy Murphy,2,,,made,,driving layup,25,6
+Danny Granger,David Harrison,Mike Dunleavy,Travis Diener,Troy Murphy,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,9:10,ORL,foul,,,,,,,,Troy Murphy,,Adonal Foyle,,,,,,shooting,,
+Danny Granger,David Harrison,Mike Dunleavy,Travis Diener,Troy Murphy,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,9:10,ORL,violation,,,,,,,,,,Adonal Foyle,,,,,,lane,,
+Danny Granger,David Harrison,Mike Dunleavy,Travis Diener,Troy Murphy,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,9:10,IND,free throw,,,,,,,1,,1,Troy Murphy,,,foul,made,,,,
+Danny Granger,David Harrison,Mike Dunleavy,Travis Diener,Troy Murphy,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,8:56,ORL,shot,,,,,,,,,,Hedo Turkoglu,,,,missed,,3pt,34,30
+Danny Granger,David Harrison,Mike Dunleavy,Travis Diener,Troy Murphy,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,8:54,IND,rebound,,,,,,,,,,Troy Murphy,,,,,,def,,
+Danny Granger,David Harrison,Mike Dunleavy,Travis Diener,Troy Murphy,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,8:42,IND,shot,Danny Granger,,,,,,,,,David Harrison,2,,,made,,slam dunk,25,6
+Danny Granger,David Harrison,Mike Dunleavy,Travis Diener,Troy Murphy,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,8:35,ORL,timeout,,,,,,,,,,,,,,,,regular,,
+Danny Granger,David Harrison,Mike Dunleavy,Travis Diener,Troy Murphy,Adonal Foyle,Brian Cook,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,2,8:35,ORL,sub,,,,Brian Cook,,Rashard Lewis,,,,,,,,,,,,
+Danny Granger,David Harrison,Mike Dunleavy,Travis Diener,Troy Murphy,Adonal Foyle,Brian Cook,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,2,8:20,OFF,jump ball,,David Harrison,,,Hedo Turkoglu,,,,,,,Danny Granger,,,,,,
+Danny Granger,David Harrison,Mike Dunleavy,Travis Diener,Troy Murphy,Adonal Foyle,Brian Cook,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,2,8:20,ORL,turnover,,,,,,,,,,Brian Cook,,,bad pass,,David Harrison,,,
+Danny Granger,David Harrison,Mike Dunleavy,Travis Diener,Troy Murphy,Adonal Foyle,Brian Cook,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,2,8:02,IND,shot,Travis Diener,,,,,,,,,Danny Granger,2,,,made,,running jump,21,15
+Danny Granger,David Harrison,Mike Dunleavy,Travis Diener,Troy Murphy,Adonal Foyle,Brian Cook,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,2,7:44,ORL,shot,Keith Bogans,,,,,,,,,Brian Cook,3,,,made,,3pt,27,34
+Danny Granger,David Harrison,Mike Dunleavy,Travis Diener,Troy Murphy,Adonal Foyle,Brian Cook,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,2,7:24,IND,shot,,,,,,,,,,Troy Murphy,,,,missed,,jump,30,27
+Danny Granger,David Harrison,Mike Dunleavy,Travis Diener,Troy Murphy,Adonal Foyle,Brian Cook,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,2,7:22,ORL,rebound,,,,,,,,,,Adonal Foyle,,,,,,def,,
+Danny Granger,David Harrison,Mike Dunleavy,Travis Diener,Troy Murphy,Adonal Foyle,Brian Cook,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,2,7:14,IND,foul,,,,,,,,Carlos Arroyo,,David Harrison,,,,,,shooting,,
+Danny Granger,David Harrison,Mike Dunleavy,Travis Diener,Troy Murphy,Brian Cook,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,2,7:14,ORL,sub,,,,Dwight Howard,,Adonal Foyle,,,,,,,,,,,,
+Danny Granger,David Harrison,Mike Dunleavy,Travis Diener,Troy Murphy,Brian Cook,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,2,7:14,ORL,free throw,,,,,,,1,,2,Carlos Arroyo,,,foul,made,,,,
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Travis Diener,Brian Cook,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,2,7:14,IND,sub,,,,Kareem Rush,,Troy Murphy,,,,,,,,,,,,
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Travis Diener,Brian Cook,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,2,7:14,ORL,free throw,,,,,,,2,,2,Carlos Arroyo,,,foul,made,,,,
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Travis Diener,Brian Cook,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,2,7:05,ORL,foul,,,,,,,,Mike Dunleavy,,Hedo Turkoglu,,,,,,personal,,
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Travis Diener,Brian Cook,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,2,7:00,IND,turnover,,,,,,,,,,David Harrison,,,bad pass,,Brian Cook,,,
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Travis Diener,Brian Cook,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,2,6:52,ORL,shot,,,,,,,,,,Brian Cook,2,,,made,,jump,38,19
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Travis Diener,Brian Cook,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,2,6:38,IND,shot,,,,,,,,,,Danny Granger,,,,missed,,3pt,13,28
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Travis Diener,Brian Cook,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,2,6:36,IND,rebound,,,,,,,,,,Kareem Rush,,,,,,off,,
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Travis Diener,Brian Cook,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,2,6:26,IND,shot,Mike Dunleavy,,,,,,,,,David Harrison,2,,,made,,jump bank,22,22
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Travis Diener,Brian Cook,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,2,6:09,ORL,shot,,,,,,,,,,Brian Cook,,,,missed,,jump,40,10
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Travis Diener,Brian Cook,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,2,6:08,IND,rebound,,,,,,,,,,Travis Diener,,,,,,def,,
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Travis Diener,Brian Cook,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,2,6:00,IND,shot,Kareem Rush,,,,,,,,,Mike Dunleavy,3,,,made,,3pt,17,29
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Travis Diener,Brian Cook,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,2,5:40,ORL,turnover,,,,,,,,,,Hedo Turkoglu,,,bad pass,,Kareem Rush,,,
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Travis Diener,Brian Cook,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,2,5:32,IND,foul,,,,,,,,Brian Cook,,Danny Granger,,,,,,offensive,,
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Travis Diener,Brian Cook,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,2,5:32,IND,turnover,,,,,,,,,,Danny Granger,,,foul,,,,,
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Travis Diener,Brian Cook,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,2,5:32,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Travis Diener,Brian Cook,Carlos Arroyo,Dwight Howard,Keith Bogans,Rashard Lewis,2,5:32,ORL,sub,,,,Rashard Lewis,,Hedo Turkoglu,,,,,,,,,,,,
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Ronald Murray,Brian Cook,Carlos Arroyo,Dwight Howard,Keith Bogans,Rashard Lewis,2,5:32,IND,sub,,,,Ronald Murray,,Travis Diener,,,,,,,,,,,,
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Ronald Murray,Brian Cook,Carlos Arroyo,Dwight Howard,Keith Bogans,Rashard Lewis,2,5:15,ORL,turnover,,,,,,,,,,Dwight Howard,,,lost ball,,Ronald Murray,,,
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Ronald Murray,Brian Cook,Carlos Arroyo,Dwight Howard,Keith Bogans,Rashard Lewis,2,5:15,ORL,foul,,,,,,,,Ronald Murray,,Dwight Howard,,,,,,personal,,
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Ronald Murray,Brian Cook,Carlos Arroyo,Dwight Howard,Keith Bogans,Rashard Lewis,2,5:15,IND,free throw,,,,,,,1,,2,Ronald Murray,,,foul,missed,,,,
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Ronald Murray,Brian Cook,Carlos Arroyo,Dwight Howard,Keith Bogans,Rashard Lewis,2,5:15,IND,rebound,,,,,,,,,,,,,,,,,,
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Ronald Murray,Brian Cook,Carlos Arroyo,Dwight Howard,Keith Bogans,Rashard Lewis,2,5:15,IND,free throw,,,,,,,2,,2,Ronald Murray,,,foul,made,,,,
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Ronald Murray,Brian Cook,Carlos Arroyo,Dwight Howard,Keith Bogans,Rashard Lewis,2,5:01,IND,foul,,,,,,,,Dwight Howard,,David Harrison,,,,,,personal,,
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Ronald Murray,Brian Cook,Carlos Arroyo,Dwight Howard,Keith Bogans,Rashard Lewis,2,4:45,ORL,shot,,,,,,,,,,Keith Bogans,2,,,made,,running jump,19,13
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Ronald Murray,Brian Cook,Carlos Arroyo,Dwight Howard,Keith Bogans,Rashard Lewis,2,4:26,IND,shot,,,,,,,,,,Danny Granger,2,,,made,,jump,13,19
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Ronald Murray,Brian Cook,Carlos Arroyo,Dwight Howard,Keith Bogans,Rashard Lewis,2,4:08,ORL,shot,Carlos Arroyo,,,,,,,,,Rashard Lewis,3,,,made,,3pt,49,12
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Ronald Murray,Brian Cook,Carlos Arroyo,Dwight Howard,Keith Bogans,Rashard Lewis,2,3:49,IND,shot,,,,,,,,,,Ronald Murray,2,,,made,,running jump,30,15
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Ronald Murray,Brian Cook,Carlos Arroyo,Dwight Howard,Keith Bogans,Rashard Lewis,2,3:31,ORL,shot,,,,,,,,,,Brian Cook,,,,missed,,running jump,24,11
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Ronald Murray,Brian Cook,Carlos Arroyo,Dwight Howard,Keith Bogans,Rashard Lewis,2,3:30,ORL,shot,,,,,,,,,,Brian Cook,,,,missed,,tip,25,6
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Ronald Murray,Brian Cook,Carlos Arroyo,Dwight Howard,Keith Bogans,Rashard Lewis,2,3:30,ORL,rebound,,,,,,,,,,Brian Cook,,,,,,off,,
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Ronald Murray,Brian Cook,Carlos Arroyo,Dwight Howard,Keith Bogans,Rashard Lewis,2,3:28,ORL,rebound,,,,,,,,,,,,,,,,,,
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Ronald Murray,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,3:28,ORL,sub,,,,Hedo Turkoglu,,Brian Cook,,,,,,,,,,,,
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Ronald Murray,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,3:24,ORL,shot,,,,,,,,,,Carlos Arroyo,2,,,made,,jump,40,10
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Ronald Murray,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,3:04,IND,shot,,,,,,,,,,Ronald Murray,2,,,made,,jump,40,9
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Ronald Murray,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,2:53,ORL,turnover,,,,,,,,,,Carlos Arroyo,,,bad pass,,David Harrison,,,
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Ronald Murray,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,2:48,IND,shot,Ronald Murray,,,,,,,,,Kareem Rush,2,,,made,,driving layup,25,6
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Ronald Murray,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,2:30,ORL,shot,Hedo Turkoglu,,,,,,,,,Dwight Howard,2,,,made,,slam dunk,25,6
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Ronald Murray,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,2:13,ORL,foul,,,,,,,,Danny Granger,,Rashard Lewis,,,,,,shooting,,
+Danny Granger,David Harrison,Kareem Rush,Mike Dunleavy,Ronald Murray,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,2:13,IND,timeout,,,,,,,,,,,,,,,,regular,,
+Danny Granger,Kareem Rush,Mike Dunleavy,Ronald Murray,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,2:13,IND,sub,,,,Troy Murphy,,David Harrison,,,,,,,,,,,,
+Danny Granger,Kareem Rush,Mike Dunleavy,Ronald Murray,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Maurice Evans,2,2:13,ORL,sub,,,,Maurice Evans,,Rashard Lewis,,,,,,,,,,,,
+Danny Granger,Kareem Rush,Mike Dunleavy,Ronald Murray,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Maurice Evans,2,2:13,IND,free throw,,,,,,,1,,2,Danny Granger,,,foul,made,,,,
+Danny Granger,Kareem Rush,Mike Dunleavy,Ronald Murray,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Maurice Evans,2,2:13,IND,free throw,,,,,,,2,,2,Danny Granger,,,foul,made,,,,
+Danny Granger,Kareem Rush,Mike Dunleavy,Ronald Murray,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Maurice Evans,2,1:53,ORL,shot,,,Troy Murphy,,,,,,,Dwight Howard,,,,missed,,layup,25,6
+Danny Granger,Kareem Rush,Mike Dunleavy,Ronald Murray,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Maurice Evans,2,1:51,IND,rebound,,,,,,,,,,Troy Murphy,,,,,,def,,
+Danny Granger,Kareem Rush,Mike Dunleavy,Ronald Murray,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Maurice Evans,2,1:42,IND,shot,Kareem Rush,,,,,,,,,Troy Murphy,3,,,made,,3pt,24,31
+Danny Granger,Kareem Rush,Mike Dunleavy,Ronald Murray,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Maurice Evans,2,1:22,ORL,shot,,,,,,,,,,Dwight Howard,2,,,made,,dunk,25,6
+Danny Granger,Kareem Rush,Mike Dunleavy,Ronald Murray,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Maurice Evans,2,1:08,IND,shot,,,,,,,,,,Ronald Murray,,,,missed,,jump,14,10
+Danny Granger,Kareem Rush,Mike Dunleavy,Ronald Murray,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Maurice Evans,2,1:07,ORL,rebound,,,,,,,,,,Hedo Turkoglu,,,,,,def,,
+Danny Granger,Kareem Rush,Mike Dunleavy,Ronald Murray,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Maurice Evans,2,0:48,ORL,turnover,,,,,,,,,,Dwight Howard,,,lost ball,,Ronald Murray,,,
+Danny Granger,Kareem Rush,Mike Dunleavy,Ronald Murray,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Maurice Evans,2,0:43,IND,shot,Kareem Rush,,,,,,,,,Danny Granger,2,,,made,,dunk,25,6
+Danny Granger,Kareem Rush,Mike Dunleavy,Ronald Murray,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Maurice Evans,2,0:31,ORL,shot,,,,,,,,,,Carlos Arroyo,,,,missed,,3pt,32,31
+Danny Granger,Kareem Rush,Mike Dunleavy,Ronald Murray,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Maurice Evans,2,0:29,ORL,rebound,,,,,,,,,,Maurice Evans,,,,,,off,,
+Danny Granger,Kareem Rush,Mike Dunleavy,Ronald Murray,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Maurice Evans,2,0:14,ORL,shot,,,,,,,,,,Carlos Arroyo,2,,,made,,driving layup,25,6
+Danny Granger,Kareem Rush,Mike Dunleavy,Ronald Murray,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Maurice Evans,2,0:04,ORL,foul,,,,,,,,Ronald Murray,,Carlos Arroyo,,,,,,personal,,
+Danny Granger,Kareem Rush,Mike Dunleavy,Ronald Murray,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Maurice Evans,2,0:04,IND,free throw,,,,,,,1,,2,Ronald Murray,,,foul,made,,,,
+Jeff Foster,Kareem Rush,Mike Dunleavy,Ronald Murray,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Maurice Evans,2,0:04,IND,sub,,,,Jeff Foster,,Danny Granger,,,,,,,,,,,,
+Jeff Foster,Kareem Rush,Ronald Murray,Stephen Graham,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Maurice Evans,2,0:04,IND,sub,,,,Stephen Graham,,Mike Dunleavy,,,,,,,,,,,,
+Jeff Foster,Kareem Rush,Ronald Murray,Stephen Graham,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Maurice Evans,2,0:04,IND,free throw,,,,,,,2,,2,Ronald Murray,,,foul,made,,,,
+Jeff Foster,Kareem Rush,Ronald Murray,Stephen Graham,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Maurice Evans,2,0:00,ORL,shot,,,,,,,,,,Hedo Turkoglu,,,,missed,,3pt,34,30
+Jeff Foster,Kareem Rush,Ronald Murray,Stephen Graham,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Maurice Evans,2,0:00,ORL,rebound,,,,,,,,,,,,,,,,,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,11:40,ORL,shot,Rashard Lewis,,,,,,,,,Maurice Evans,3,,,made,,3pt,49,12
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,11:16,IND,turnover,,,,,,,,,,Ronald Murray,,,bad pass,,Rashard Lewis,,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,11:04,ORL,shot,,,,,,,,,,Maurice Evans,2,,,made,,driving reverse layup,25,6
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,10:53,IND,shot,Troy Murphy,,,,,,,,,Mike Dunleavy,2,,,made,,jump,20,23
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,10:41,ORL,foul,,,,,,,,Jeff Foster,,Dwight Howard,,,,,,offensive,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,10:41,ORL,turnover,,,,,,,,,,Dwight Howard,,,foul,,,,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,10:24,ORL,foul,,,,,,,,,,Jameer Nelson,,,,,,defense 3 second,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,10:24,IND,free throw,,,,,,,1,,1,Danny Granger,,,technical,made,,,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,10:19,IND,shot,,,Dwight Howard,,,,,,,Mike Dunleavy,,,,missed,,running hook,18,10
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,10:18,IND,rebound,,,,,,,,,,,,,,,,,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,10:13,IND,shot,,,,,,,,,,Ronald Murray,2,,,made,,driving layup,25,6
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,9:50,ORL,shot,,,,,,,,,,Hedo Turkoglu,,,,missed,,fade away jumper,39,16
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,9:48,IND,rebound,,,,,,,,,,Mike Dunleavy,,,,,,def,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,9:41,IND,shot,,,,,,,,,,Mike Dunleavy,,,,missed,,running jump,34,13
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,9:40,IND,rebound,,,,,,,,,,Jeff Foster,,,,,,off,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,9:29,IND,shot,Ronald Murray,,,,,,,,,Danny Granger,3,,,made,,3pt,11,28
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,9:06,ORL,shot,Jameer Nelson,,,,,,,,,Maurice Evans,2,,,made,,dunk,25,6
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,8:54,IND,turnover,,,,,,,,,,Ronald Murray,,,lost ball,,Jameer Nelson,,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,8:50,ORL,shot,Maurice Evans,,,,,,,,,Rashard Lewis,2,,,made,,dunk,25,6
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,8:32,ORL,foul,,,,,,,,Danny Granger,,Hedo Turkoglu,,,,,,shooting,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,8:32,IND,free throw,,,,,,,1,,2,Danny Granger,,,foul,made,,,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,8:32,IND,free throw,,,,,,,2,,2,Danny Granger,,,foul,missed,,,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,8:31,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,def,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,8:22,IND,foul,,,,,,,,Dwight Howard,,Jeff Foster,,,,,,shooting,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,8:22,ORL,free throw,,,,,,,1,,2,Dwight Howard,,,foul,missed,,,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,8:22,ORL,rebound,,,,,,,,,,,,,,,,,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,8:22,ORL,free throw,,,,,,,2,,2,Dwight Howard,,,foul,missed,,,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,8:21,IND,rebound,,,,,,,,,,Troy Murphy,,,,,,def,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,8:08,IND,shot,,,,,,,,,,Mike Dunleavy,,,,missed,,3pt,24,31
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,8:07,ORL,rebound,,,,,,,,,,Jameer Nelson,,,,,,def,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,8:02,ORL,shot,Jameer Nelson,,,,,,,,,Hedo Turkoglu,2,,,made,,driving layup,25,6
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,7:48,IND,shot,,,,,,,,,,Mike Dunleavy,2,,,made,,jump,11,16
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,7:34,ORL,turnover,,,,,,,,,,Hedo Turkoglu,,,bad pass,,,,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,7:21,IND,shot,Troy Murphy,,,,,,,,,Jeff Foster,2,,,made,,jump,40,10
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,7:00,ORL,shot,,,,,,,,,,Dwight Howard,,,,missed,,layup,25,6
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,6:59,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,off,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,6:59,ORL,shot,,,,,,,,,,Dwight Howard,2,,,made,,layup,25,6
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,6:59,IND,foul,,,,,,,,Dwight Howard,,Jeff Foster,,,,,,shooting,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,6:59,ORL,free throw,,,,,,,1,,1,Dwight Howard,,,foul,missed,,,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,6:59,IND,rebound,,,,,,,,,,Troy Murphy,,,,,,def,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,6:50,ORL,foul,,,,,,,,Mike Dunleavy,,Maurice Evans,,,,,,shooting,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,6:50,IND,free throw,,,,,,,1,,2,Mike Dunleavy,,,foul,made,,,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,6:50,IND,free throw,,,,,,,2,,2,Mike Dunleavy,,,foul,missed,,,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,6:49,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,def,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,6:34,ORL,shot,Rashard Lewis,,,,,,,,,Jameer Nelson,3,,,made,,3pt,25,31
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,6:17,IND,shot,Troy Murphy,,,,,,,,,Ronald Murray,2,,,made,,driving layup,25,6
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,6:00,ORL,shot,,,,,,,,,,Hedo Turkoglu,,,,missed,,3pt,47,19
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,5:58,IND,rebound,,,,,,,,,,Troy Murphy,,,,,,def,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,5:48,IND,shot,,,,,,,,,,Ronald Murray,,,,missed,,fade away jumper,30,13
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,5:46,IND,shot,,,,,,,,,,Jeff Foster,,,,missed,,tip,25,6
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,5:46,IND,rebound,,,,,,,,,,Jeff Foster,,,,,,off,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,5:45,IND,shot,,,,,,,,,,Jeff Foster,,,,missed,,tip,25,6
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,5:45,IND,rebound,,,,,,,,,,Jeff Foster,,,,,,off,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,5:44,ORL,rebound,,,,,,,,,,Rashard Lewis,,,,,,def,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,5:34,ORL,turnover,,,,,,,,,,Jameer Nelson,,,lost ball,,Ronald Murray,,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,5:28,IND,shot,Mike Dunleavy,,,,,,,,,Danny Granger,2,,,made,,jump,26,23
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,3,5:27,ORL,timeout,,,,,,,,,,,,,,,,regular,,
+Danny Granger,Jeff Foster,Mike Dunleavy,Ronald Murray,Troy Murphy,Brian Cook,Dwight Howard,Jameer Nelson,Maurice Evans,Rashard Lewis,3,5:27,ORL,sub,,,,Brian Cook,,Hedo Turkoglu,,,,,,,,,,,,
+Jeff Foster,Mike Dunleavy,Ronald Murray,Travis Diener,Troy Murphy,Brian Cook,Dwight Howard,Jameer Nelson,Maurice Evans,Rashard Lewis,3,5:27,IND,sub,,,,Travis Diener,,Danny Granger,,,,,,,,,,,,
+Jeff Foster,Kareem Rush,Mike Dunleavy,Travis Diener,Troy Murphy,Brian Cook,Dwight Howard,Jameer Nelson,Maurice Evans,Rashard Lewis,3,5:27,IND,sub,,,,Kareem Rush,,Ronald Murray,,,,,,,,,,,,
+Jeff Foster,Kareem Rush,Mike Dunleavy,Travis Diener,Troy Murphy,Brian Cook,Dwight Howard,Jameer Nelson,Maurice Evans,Rashard Lewis,3,5:09,ORL,shot,Brian Cook,,,,,,,,,Dwight Howard,2,,,made,,hook,18,10
+Jeff Foster,Kareem Rush,Mike Dunleavy,Travis Diener,Troy Murphy,Brian Cook,Dwight Howard,Jameer Nelson,Maurice Evans,Rashard Lewis,3,4:55,IND,shot,,,,,,,,,,Mike Dunleavy,2,,,made,,jump,19,19
+Jeff Foster,Kareem Rush,Mike Dunleavy,Travis Diener,Troy Murphy,Brian Cook,Dwight Howard,Jameer Nelson,Maurice Evans,Rashard Lewis,3,4:42,ORL,shot,,,,,,,,,,Rashard Lewis,,,,missed,,3pt,45,22
+Jeff Foster,Kareem Rush,Mike Dunleavy,Travis Diener,Troy Murphy,Brian Cook,Dwight Howard,Jameer Nelson,Maurice Evans,Rashard Lewis,3,4:41,IND,rebound,,,,,,,,,,,,,,,,,,
+Jeff Foster,Kareem Rush,Mike Dunleavy,Travis Diener,Troy Murphy,Brian Cook,Dwight Howard,Jameer Nelson,Maurice Evans,Rashard Lewis,3,4:26,IND,shot,,,,,,,,,,Mike Dunleavy,,,,missed,,3pt,1,10
+Jeff Foster,Kareem Rush,Mike Dunleavy,Travis Diener,Troy Murphy,Brian Cook,Dwight Howard,Jameer Nelson,Maurice Evans,Rashard Lewis,3,4:25,IND,rebound,,,,,,,,,,Troy Murphy,,,,,,off,,
+Jeff Foster,Kareem Rush,Mike Dunleavy,Travis Diener,Troy Murphy,Brian Cook,Dwight Howard,Jameer Nelson,Maurice Evans,Rashard Lewis,3,4:19,IND,shot,,,,,,,,,,Troy Murphy,,,,missed,,jump,42,9
+Jeff Foster,Kareem Rush,Mike Dunleavy,Travis Diener,Troy Murphy,Brian Cook,Dwight Howard,Jameer Nelson,Maurice Evans,Rashard Lewis,3,4:18,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,def,,
+Jeff Foster,Kareem Rush,Mike Dunleavy,Travis Diener,Troy Murphy,Brian Cook,Dwight Howard,Jameer Nelson,Maurice Evans,Rashard Lewis,3,4:10,ORL,shot,Jameer Nelson,,,,,,,,,Maurice Evans,2,,,made,,dunk,25,6
+Jeff Foster,Kareem Rush,Mike Dunleavy,Travis Diener,Troy Murphy,Brian Cook,Dwight Howard,Jameer Nelson,Maurice Evans,Rashard Lewis,3,3:58,ORL,foul,,,,,,,,Troy Murphy,,Dwight Howard,,,,,,shooting,,
+Jeff Foster,Kareem Rush,Mike Dunleavy,Travis Diener,Troy Murphy,Brian Cook,Dwight Howard,Jameer Nelson,Maurice Evans,Rashard Lewis,3,3:58,IND,free throw,,,,,,,1,,2,Troy Murphy,,,foul,made,,,,
+Jeff Foster,Kareem Rush,Mike Dunleavy,Travis Diener,Troy Murphy,Adonal Foyle,Brian Cook,Jameer Nelson,Maurice Evans,Rashard Lewis,3,3:58,ORL,sub,,,,Adonal Foyle,,Dwight Howard,,,,,,,,,,,,
+David Harrison,Kareem Rush,Mike Dunleavy,Travis Diener,Troy Murphy,Adonal Foyle,Brian Cook,Jameer Nelson,Maurice Evans,Rashard Lewis,3,3:58,IND,sub,,,,David Harrison,,Jeff Foster,,,,,,,,,,,,
+David Harrison,Kareem Rush,Mike Dunleavy,Travis Diener,Troy Murphy,Adonal Foyle,Brian Cook,Jameer Nelson,Maurice Evans,Rashard Lewis,3,3:58,IND,free throw,,,,,,,2,,2,Troy Murphy,,,foul,missed,,,,
+David Harrison,Kareem Rush,Mike Dunleavy,Travis Diener,Troy Murphy,Adonal Foyle,Brian Cook,Jameer Nelson,Maurice Evans,Rashard Lewis,3,3:57,ORL,rebound,,,,,,,,,,Rashard Lewis,,,,,,def,,
+David Harrison,Kareem Rush,Mike Dunleavy,Travis Diener,Troy Murphy,Adonal Foyle,Brian Cook,Jameer Nelson,Maurice Evans,Rashard Lewis,3,3:40,ORL,shot,Jameer Nelson,,,,,,,,,Maurice Evans,2,,,made,,jump,9,9
+David Harrison,Kareem Rush,Mike Dunleavy,Travis Diener,Troy Murphy,Adonal Foyle,Brian Cook,Jameer Nelson,Maurice Evans,Rashard Lewis,3,3:28,IND,turnover,,,,,,,,,,Travis Diener,,,bad pass,,Jameer Nelson,,,
+David Harrison,Kareem Rush,Mike Dunleavy,Travis Diener,Troy Murphy,Adonal Foyle,Brian Cook,Jameer Nelson,Maurice Evans,Rashard Lewis,3,3:23,ORL,shot,,,,,,,,,,Jameer Nelson,,,,missed,,driving layup,25,6
+David Harrison,Kareem Rush,Mike Dunleavy,Travis Diener,Troy Murphy,Adonal Foyle,Brian Cook,Jameer Nelson,Maurice Evans,Rashard Lewis,3,3:21,IND,rebound,,,,,,,,,,Troy Murphy,,,,,,def,,
+David Harrison,Kareem Rush,Mike Dunleavy,Travis Diener,Troy Murphy,Adonal Foyle,Brian Cook,Jameer Nelson,Maurice Evans,Rashard Lewis,3,3:12,IND,shot,,,,,,,,,,Travis Diener,,,,missed,,3pt,2,11
+David Harrison,Kareem Rush,Mike Dunleavy,Travis Diener,Troy Murphy,Adonal Foyle,Brian Cook,Jameer Nelson,Maurice Evans,Rashard Lewis,3,3:11,ORL,rebound,,,,,,,,,,Rashard Lewis,,,,,,def,,
+David Harrison,Kareem Rush,Mike Dunleavy,Travis Diener,Troy Murphy,Adonal Foyle,Brian Cook,Jameer Nelson,Maurice Evans,Rashard Lewis,3,2:59,ORL,shot,,,David Harrison,,,,,,,Adonal Foyle,,,,missed,,hook,17,10
+David Harrison,Kareem Rush,Mike Dunleavy,Travis Diener,Troy Murphy,Adonal Foyle,Brian Cook,Jameer Nelson,Maurice Evans,Rashard Lewis,3,2:59,IND,rebound,,,,,,,,,,,,,,,,,,
+David Harrison,Kareem Rush,Mike Dunleavy,Travis Diener,Troy Murphy,Adonal Foyle,Brian Cook,Jameer Nelson,Maurice Evans,Rashard Lewis,3,2:48,IND,shot,Travis Diener,,,,,,,,,Mike Dunleavy,2,,,made,,jump,5,14
+David Harrison,Kareem Rush,Mike Dunleavy,Travis Diener,Troy Murphy,Adonal Foyle,Brian Cook,Jameer Nelson,Maurice Evans,Rashard Lewis,3,2:32,IND,foul,,,,,,,,Jameer Nelson,,David Harrison,,,,,,shooting,,
+David Harrison,Kareem Rush,Mike Dunleavy,Travis Diener,Troy Murphy,Adonal Foyle,Brian Cook,Jameer Nelson,Maurice Evans,Rashard Lewis,3,2:32,IND,timeout,,,,,,,,,,,,,,,,regular,,
+David Harrison,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Adonal Foyle,Brian Cook,Jameer Nelson,Maurice Evans,Rashard Lewis,3,2:32,IND,sub,,,,Marquis Daniels,,Troy Murphy,,,,,,,,,,,,
+David Harrison,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Adonal Foyle,Brian Cook,Hedo Turkoglu,Jameer Nelson,Maurice Evans,3,2:32,ORL,sub,,,,Hedo Turkoglu,,Rashard Lewis,,,,,,,,,,,,
+David Harrison,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Adonal Foyle,Brian Cook,Hedo Turkoglu,Jameer Nelson,Maurice Evans,3,2:32,ORL,free throw,,,,,,,1,,2,Jameer Nelson,,,foul,made,,,,
+David Harrison,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Adonal Foyle,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,3,2:32,ORL,sub,,,,Keith Bogans,,Brian Cook,,,,,,,,,,,,
+David Harrison,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Adonal Foyle,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,3,2:32,ORL,violation,,,,,,,,,,,,,,,,delay of game,,
+David Harrison,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Adonal Foyle,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,3,2:32,ORL,free throw,,,,,,,2,,2,Jameer Nelson,,,foul,made,,,,
+David Harrison,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Adonal Foyle,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,3,2:20,IND,shot,,,,,,,,,,Mike Dunleavy,2,,,made,,jump,8,11
+David Harrison,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Adonal Foyle,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,3,2:03,ORL,shot,,,,,,,,,,Hedo Turkoglu,,,,missed,,running jump,17,13
+David Harrison,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Adonal Foyle,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,3,2:00,IND,rebound,,,,,,,,,,David Harrison,,,,,,def,,
+David Harrison,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Adonal Foyle,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,3,1:39,IND,shot,,,,,,,,,,Marquis Daniels,,,,missed,,jump,30,22
+David Harrison,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Adonal Foyle,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,3,1:37,ORL,rebound,,,,,,,,,,Keith Bogans,,,,,,def,,
+David Harrison,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Adonal Foyle,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,3,1:26,ORL,shot,,,,,,,,,,Maurice Evans,,,,missed,,3pt,48,13
+David Harrison,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Adonal Foyle,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,3,1:24,IND,rebound,,,,,,,,,,Kareem Rush,,,,,,def,,
+David Harrison,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Adonal Foyle,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,3,1:17,IND,shot,,,,,,,,,,Kareem Rush,,,,missed,,jump,27,20
+David Harrison,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Adonal Foyle,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,3,1:15,ORL,rebound,,,,,,,,,,Hedo Turkoglu,,,,,,def,,
+David Harrison,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Adonal Foyle,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,3,1:11,IND,foul,,,,,,,,Maurice Evans,,David Harrison,,,,,,shooting,,
+David Harrison,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Adonal Foyle,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,3,1:11,ORL,free throw,,,,,,,1,,2,Maurice Evans,,,foul,made,,,,
+Danny Granger,David Harrison,Marquis Daniels,Mike Dunleavy,Travis Diener,Adonal Foyle,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,3,1:11,IND,sub,,,,Danny Granger,,Kareem Rush,,,,,,,,,,,,
+Danny Granger,David Harrison,Marquis Daniels,Mike Dunleavy,Travis Diener,Adonal Foyle,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,3,1:11,ORL,free throw,,,,,,,2,,2,Maurice Evans,,,foul,made,,,,
+Danny Granger,David Harrison,Marquis Daniels,Mike Dunleavy,Travis Diener,Adonal Foyle,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,3,0:46,IND,shot,,,,,,,,,,Mike Dunleavy,,,,missed,,running jump,9,12
+Danny Granger,David Harrison,Marquis Daniels,Mike Dunleavy,Travis Diener,Adonal Foyle,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,3,0:45,ORL,rebound,,,,,,,,,,Maurice Evans,,,,,,def,,
+Danny Granger,David Harrison,Marquis Daniels,Mike Dunleavy,Travis Diener,Adonal Foyle,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,3,0:41,IND,foul,,,,,,,,Maurice Evans,,Travis Diener,,,,,,personal,,
+Danny Granger,David Harrison,Marquis Daniels,Mike Dunleavy,Travis Diener,Adonal Foyle,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,3,0:41,ORL,free throw,,,,,,,1,,2,Maurice Evans,,,foul,made,,,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Adonal Foyle,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,3,0:41,IND,sub,,,,Troy Murphy,,David Harrison,,,,,,,,,,,,
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Adonal Foyle,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,3,0:41,IND,sub,,,,Kareem Rush,,Mike Dunleavy,,,,,,,,,,,,
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Brian Cook,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,3,0:41,ORL,sub,,,,Brian Cook,,Adonal Foyle,,,,,,,,,,,,
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Brian Cook,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,3,0:41,ORL,free throw,,,,,,,2,,2,Maurice Evans,,,foul,missed,,,,
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Brian Cook,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,3,0:38,IND,rebound,,,,,,,,,,Danny Granger,,,,,,def,,
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Brian Cook,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,3,0:28,IND,turnover,,,,,,,,,,Travis Diener,,,lost ball,,Brian Cook,,,
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Brian Cook,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,3,0:22,ORL,turnover,,,,,,,,,,Brian Cook,,,bad pass,,Kareem Rush,,,
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Brian Cook,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,3,0:18,IND,shot,,,,,,,,,,Marquis Daniels,2,,,made,,layup,25,6
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Brian Cook,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,3,0:01,ORL,shot,Jameer Nelson,,,,,,,,,Maurice Evans,3,,,made,,3pt,48,9
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Brian Cook,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Maurice Evans,4,11:43,ORL,foul,,,,,,,,Marquis Daniels,,Brian Cook,,,,,,personal,,
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Brian Cook,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Maurice Evans,4,11:38,IND,shot,,,,,,,,,,Marquis Daniels,2,,,made,,driving layup,25,6
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Brian Cook,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Maurice Evans,4,11:09,ORL,turnover,,,,,,,,,,Carlos Arroyo,,,lost ball,,Kareem Rush,,,
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Brian Cook,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Maurice Evans,4,11:04,IND,turnover,,,,,,,,,,Marquis Daniels,,,lost ball,,Brian Cook,,,
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Brian Cook,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Maurice Evans,4,10:46,ORL,shot,,,,,,,,,,Hedo Turkoglu,,,,missed,,fade away jumper,39,21
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Brian Cook,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Maurice Evans,4,10:44,IND,rebound,,,,,,,,,,Marquis Daniels,,,,,,def,,
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Brian Cook,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Maurice Evans,4,10:35,IND,shot,Travis Diener,,,,,,,,,Kareem Rush,3,,,made,,3pt,2,13
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Brian Cook,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Maurice Evans,4,10:12,ORL,shot,,,Danny Granger,,,,,,,Hedo Turkoglu,,,,missed,,layup,25,6
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Brian Cook,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Maurice Evans,4,10:11,ORL,rebound,,,,,,,,,,,,,,,,,,
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Maurice Evans,4,10:11,ORL,sub,,,,Dwight Howard,,Brian Cook,,,,,,,,,,,,
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Rashard Lewis,4,10:11,ORL,sub,,,,Rashard Lewis,,Maurice Evans,,,,,,,,,,,,
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Rashard Lewis,4,10:09,ORL,shot,Keith Bogans,,,,,,,,,Hedo Turkoglu,2,,,made,,slam dunk,25,6
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Rashard Lewis,4,9:44,IND,shot,Troy Murphy,,,,,,,,,Danny Granger,3,,,made,,3pt,36,29
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Rashard Lewis,4,9:19,ORL,shot,,,,,,,,,,Hedo Turkoglu,,,,missed,,fade away jumper,15,12
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Rashard Lewis,4,9:17,IND,rebound,,,,,,,,,,Danny Granger,,,,,,def,,
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Rashard Lewis,4,9:10,IND,shot,Kareem Rush,,,,,,,,,Troy Murphy,3,,,made,,3pt,28,31
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Rashard Lewis,4,9:08,ORL,timeout,,,,,,,,,,,,,,,,regular,,
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Rashard Lewis,4,8:55,ORL,turnover,,,,,,,,,,Dwight Howard,,,3 second violation,,,,,
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Rashard Lewis,4,8:42,IND,shot,,,,,,,,,,Travis Diener,,,,missed,,3pt,1,11
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Rashard Lewis,4,8:40,IND,rebound,,,,,,,,,,Danny Granger,,,,,,off,,
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Rashard Lewis,4,8:35,IND,shot,,,,,,,,,,Kareem Rush,,,,missed,,3pt,16,29
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Rashard Lewis,4,8:33,ORL,rebound,,,,,,,,,,Carlos Arroyo,,,,,,def,,
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Rashard Lewis,4,8:27,ORL,shot,,,,,,,,,,Carlos Arroyo,2,,,made,,driving layup,25,6
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Rashard Lewis,4,8:27,IND,foul,,,,,,,,Carlos Arroyo,,Travis Diener,,,,,,shooting,,
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Rashard Lewis,4,8:27,ORL,free throw,,,,,,,1,,1,Carlos Arroyo,,,foul,made,,,,
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Rashard Lewis,4,8:14,IND,shot,,,,,,,,,,Marquis Daniels,2,,,made,,jump,29,14
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Rashard Lewis,4,7:55,ORL,turnover,,,,,,,,,,Carlos Arroyo,,,lost ball,,Danny Granger,,,
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Rashard Lewis,4,7:51,IND,shot,,,Rashard Lewis,,,,,,,Danny Granger,,,,missed,,layup,25,6
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Rashard Lewis,4,7:47,ORL,rebound,,,,,,,,,,Keith Bogans,,,,,,def,,
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Rashard Lewis,4,7:44,ORL,shot,Carlos Arroyo,,,,,,,,,Dwight Howard,2,,,made,,alley oop dunk,25,6
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Rashard Lewis,4,7:35,ORL,foul,,,,,,,,Troy Murphy,,Keith Bogans,,,,,,shooting,,
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Rashard Lewis,4,7:35,IND,free throw,,,,,,,1,,2,Troy Murphy,,,foul,missed,,,,
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Rashard Lewis,4,7:35,IND,rebound,,,,,,,,,,,,,,,,,,
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,7:35,ORL,sub,,,,Jameer Nelson,,Carlos Arroyo,,,,,,,,,,,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,7:35,IND,sub,,,,Mike Dunleavy,,Kareem Rush,,,,,,,,,,,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,7:35,IND,free throw,,,,,,,2,,2,Troy Murphy,,,foul,missed,,,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,7:34,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,def,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,7:19,IND,foul,,,,,,,,Dwight Howard,,Troy Murphy,,,,,,personal,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,7:11,ORL,shot,,,,,,,,,,Hedo Turkoglu,,,,missed,,running jump,33,9
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,7:10,ORL,rebound,,,,,,,,,,,,,,,,,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,7:00,ORL,shot,,,,,,,,,,Rashard Lewis,2,,,made,,driving reverse layup,25,6
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,7:00,IND,foul,,,,,,,,Rashard Lewis,,Troy Murphy,,,,,,shooting,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,7:00,ORL,free throw,,,,,,,1,,1,Rashard Lewis,,,foul,made,,,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,6:49,IND,shot,,,,,,,,,,Marquis Daniels,,,,missed,,driving layup,25,6
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,6:48,ORL,rebound,,,,,,,,,,Rashard Lewis,,,,,,def,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,6:42,ORL,shot,,,,,,,,,,Rashard Lewis,,,,missed,,3pt,33,30
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,6:40,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,off,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,6:39,ORL,foul,,,,,,,,Mike Dunleavy,,Dwight Howard,,,,,,offensive,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,6:39,ORL,turnover,,,,,,,,,,Dwight Howard,,,foul,,,,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Brian Cook,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,6:39,ORL,sub,,,,Brian Cook,,Dwight Howard,,,,,,,,,,,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Brian Cook,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,6:29,IND,shot,,,,,,,,,,Marquis Daniels,2,,,made,,driving dunk,25,6
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Brian Cook,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,6:10,OFF,jump ball,,Danny Granger,,,Jameer Nelson,,,,,,,Mike Dunleavy,,,,,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Brian Cook,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,6:10,ORL,turnover,,,,,,,,,,Jameer Nelson,,,lost ball,,Danny Granger,,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Brian Cook,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,5:57,ORL,foul,,,,,,,,Mike Dunleavy,,Rashard Lewis,,,,,,shooting,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Brian Cook,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,5:57,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,5:57,ORL,sub,,,,Dwight Howard,,Brian Cook,,,,,,,,,,,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,5:57,IND,free throw,,,,,,,1,,3,Mike Dunleavy,,,foul,missed,,,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,5:57,IND,rebound,,,,,,,,,,,,,,,,,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,5:57,IND,free throw,,,,,,,2,,3,Mike Dunleavy,,,foul,made,,,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,5:57,IND,free throw,,,,,,,3,,3,Mike Dunleavy,,,foul,made,,,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,5:43,ORL,shot,Hedo Turkoglu,,,,,,,,,Keith Bogans,3,,,made,,3pt,2,12
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,5:35,IND,timeout,,,,,,,,,,,,,,,,short,,
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,5:35,IND,sub,,,,Kareem Rush,,Mike Dunleavy,,,,,,,,,,,,
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,5:24,IND,shot,Danny Granger,,,,,,,,,Travis Diener,3,,,made,,3pt,38,28
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,5:02,ORL,shot,,,,,,,,,,Hedo Turkoglu,2,,,made,,driving reverse layup,25,6
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,4:36,IND,shot,,,,,,,,,,Danny Granger,2,,,made,,jump,10,19
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,4:17,ORL,shot,,,,,,,,,,Rashard Lewis,2,,,made,,jump,13,9
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,4:05,IND,turnover,,,,,,,,,,Danny Granger,,,lost ball,,Keith Bogans,,,
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,3:53,ORL,shot,Hedo Turkoglu,,,,,,,,,Dwight Howard,2,,,made,,alley oop layup,25,6
+Danny Granger,Kareem Rush,Marquis Daniels,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,3:47,IND,timeout,,,,,,,,,,,,,,,,regular,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,3:47,IND,sub,,,,Mike Dunleavy,,Kareem Rush,,,,,,,,,,,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,3:37,ORL,foul,,,,,,,,Troy Murphy,,Keith Bogans,,,,,,shooting,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,3:37,IND,free throw,,,,,,,1,,2,Troy Murphy,,,foul,missed,,,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,3:37,IND,rebound,,,,,,,,,,,,,,,,,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,3:37,IND,free throw,,,,,,,2,,2,Troy Murphy,,,foul,made,,,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,3:18,ORL,shot,Keith Bogans,,,,,,,,,Hedo Turkoglu,2,,,made,,driving dunk,25,6
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,3:08,IND,shot,,,,,,,,,,Troy Murphy,,,,missed,,3pt,19,31
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,3:07,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,def,,
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,2:59,ORL,shot,,,,,,,,,,Hedo Turkoglu,2,,,made,,driving layup,25,6
+Danny Granger,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,2:57,IND,timeout,,,,,,,,,,,,,,,,regular,,
+Jeff Foster,Marquis Daniels,Mike Dunleavy,Travis Diener,Troy Murphy,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,2:57,IND,sub,,,,Jeff Foster,,Danny Granger,,,,,,,,,,,,
+Jeff Foster,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,2:57,IND,sub,,,,Kareem Rush,,Troy Murphy,,,,,,,,,,,,
+Jeff Foster,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,2:44,IND,shot,,,,,,,,,,Kareem Rush,,,,missed,,driving layup,25,6
+Jeff Foster,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,2:41,IND,rebound,,,,,,,,,,Jeff Foster,,,,,,off,,
+Jeff Foster,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,2:36,ORL,foul,,,,,,,,Marquis Daniels,,Hedo Turkoglu,,,,,,personal,,
+Jeff Foster,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,2:36,IND,free throw,,,,,,,1,,2,Marquis Daniels,,,foul,made,,,,
+Jeff Foster,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,2:36,IND,free throw,,,,,,,2,,2,Marquis Daniels,,,foul,made,,,,
+Jeff Foster,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,2:20,ORL,shot,,,,,,,,,,Jameer Nelson,,,,missed,,3pt,48,17
+Jeff Foster,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,2:19,IND,rebound,,,,,,,,,,Mike Dunleavy,,,,,,def,,
+Jeff Foster,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,2:03,IND,shot,Travis Diener,,,,,,,,,Kareem Rush,2,,,made,,dunk,25,6
+Jeff Foster,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,1:46,ORL,turnover,,,,,,,,,,Keith Bogans,,,step out of bounds turnover,,,,,
+Jeff Foster,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,1:31,IND,shot,,,,,,,,,,Mike Dunleavy,,,,missed,,3pt,35,29
+Jeff Foster,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,1:29,ORL,rebound,,,,,,,,,,Jameer Nelson,,,,,,def,,
+Jeff Foster,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,1:15,ORL,shot,Jameer Nelson,,,,,,,,,Rashard Lewis,3,,,made,,3pt,1,16
+Jeff Foster,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,1:08,ORL,foul,,,,,,,,Travis Diener,,Hedo Turkoglu,,,,,,personal,,
+Jeff Foster,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,1:08,IND,free throw,,,,,,,1,,2,Travis Diener,,,foul,made,,,,
+Jeff Foster,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,1:08,IND,free throw,,,,,,,2,,2,Travis Diener,,,foul,made,,,,
+Jeff Foster,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,0:43,ORL,shot,,,,,,,,,,Keith Bogans,,,,missed,,jump,45,14
+Jeff Foster,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,0:43,IND,rebound,,,,,,,,,,,,,,,,,,
+Jeff Foster,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,4,0:43,ORL,foul,,,,,,,,Jeff Foster,,Dwight Howard,,,,,,loose ball,,
+Jeff Foster,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,Rashard Lewis,4,0:43,ORL,sub,,,,Maurice Evans,,Dwight Howard,,,,,,,,,,,,
+Jeff Foster,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,Rashard Lewis,4,0:43,IND,free throw,,,,,,,1,,2,Jeff Foster,,,foul,made,,,,
+Jeff Foster,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,Rashard Lewis,4,0:43,IND,free throw,,,,,,,2,,2,Jeff Foster,,,foul,made,,,,
+Jeff Foster,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,Rashard Lewis,4,0:37,IND,foul,,,,,,,,Rashard Lewis,,Travis Diener,,,,,,personal,,
+Jeff Foster,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,Rashard Lewis,4,0:36,IND,foul,,,,,,,,Rashard Lewis,,Jeff Foster,,,,,,personal,,
+Jeff Foster,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,Rashard Lewis,4,0:36,ORL,free throw,,,,,,,1,,2,Rashard Lewis,,,foul,made,,,,
+Jeff Foster,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,Rashard Lewis,4,0:36,ORL,free throw,,,,,,,2,,2,Rashard Lewis,,,foul,made,,,,
+Jeff Foster,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,Rashard Lewis,4,0:27,IND,shot,,,,,,,,,,Kareem Rush,,,,missed,,jump,8,21
+Jeff Foster,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,Rashard Lewis,4,0:26,ORL,rebound,,,,,,,,,,,,,,,,,,
+Jeff Foster,Kareem Rush,Marquis Daniels,Mike Dunleavy,Travis Diener,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,Rashard Lewis,4,0:02,ORL,shot,,,,,,,,,,Hedo Turkoglu,3,,,made,,3pt,42,34

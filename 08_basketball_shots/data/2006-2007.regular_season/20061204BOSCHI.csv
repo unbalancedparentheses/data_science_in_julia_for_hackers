@@ -1,0 +1,462 @@
+a1,a2,a3,a4,a5,h1,h2,h3,h4,h5,period,time,team,etype,assist,away,block,entered,home,left,num,opponent,outof,player,points,possession,reason,result,steal,type,x,y
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,1,12:00,OFF,jump ball,,Kendrick Perkins,,,Ben Wallace,,,,,,,Sebastian Telfair,,,,,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,1,11:47,BOS,shot,,,,,,,,,,Paul Pierce,,,,missed,,layup,25,6
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,1,11:45,CHI,rebound,,,,,,,,,,Luol Deng,,,,,,def,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,1,11:31,CHI,shot,,,,,,,,,,Kirk Hinrich,,,,missed,,jump,49,7
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,1,11:29,BOS,rebound,,,,,,,,,,Kendrick Perkins,,,,,,def,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,1,11:19,CHI,foul,,,,,,,,Sebastian Telfair,,Andres Nocioni,,,,,,personal,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,1,11:06,BOS,shot,,,Ben Wallace,,,,,,,Kendrick Perkins,,,,missed,,layup,25,6
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,1,11:04,BOS,rebound,,,,,,,,,,Ryan Gomes,,,,,,off,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,1,11:02,BOS,shot,,,,,,,,,,Ryan Gomes,2,,,made,,layup,25,6
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,1,10:48,CHI,shot,,,,,,,,,,Chris Duhon,,,,missed,,jump,17,30
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,1,10:45,BOS,rebound,,,,,,,,,,Ryan Gomes,,,,,,def,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,1,10:37,BOS,turnover,,,,,,,,,,Delonte West,,,bad pass,,Kirk Hinrich,,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,1,10:34,BOS,foul,,,,,,,,Chris Duhon,,Delonte West,,,,,,shooting,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,1,10:34,CHI,free throw,,,,,,,1,,2,Chris Duhon,,,foul,made,,,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,1,10:34,CHI,free throw,,,,,,,2,,2,Chris Duhon,,,foul,made,,,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,1,10:13,BOS,shot,,,,,,,,,,Kendrick Perkins,,,,missed,,layup,25,6
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,1,10:12,BOS,rebound,,,,,,,,,,Ryan Gomes,,,,,,off,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,1,10:12,CHI,foul,,,,,,,,Ryan Gomes,,Ben Wallace,,,,,,shooting,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Tyrus Thomas,1,10:12,CHI,sub,,,,Tyrus Thomas,,Andres Nocioni,,,,,,,,,,,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Tyrus Thomas,1,10:12,BOS,free throw,,,,,,,1,,2,Ryan Gomes,,,foul,made,,,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Tyrus Thomas,1,10:12,BOS,free throw,,,,,,,2,,2,Ryan Gomes,,,foul,made,,,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Tyrus Thomas,1,9:52,CHI,shot,Tyrus Thomas,,,,,,,,,Luol Deng,2,,,made,,jump,20,21
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Tyrus Thomas,1,9:38,BOS,shot,,,Tyrus Thomas,,,,,,,Ryan Gomes,,,,missed,,layup,25,6
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Tyrus Thomas,1,9:36,CHI,rebound,,,,,,,,,,Luol Deng,,,,,,def,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Tyrus Thomas,1,9:23,CHI,shot,,,Kendrick Perkins,,,,,,,Tyrus Thomas,,,,missed,,hook,22,10
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Tyrus Thomas,1,9:22,CHI,rebound,,,,,,,,,,,,,,,,,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Tyrus Thomas,1,9:19,CHI,shot,,,,,,,,,,Kirk Hinrich,,,,missed,,jump,9,5
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Tyrus Thomas,1,9:17,BOS,rebound,,,,,,,,,,Sebastian Telfair,,,,,,def,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Tyrus Thomas,1,9:09,BOS,turnover,,,,,,,,,,Delonte West,,,lost ball,,Kirk Hinrich,,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Tyrus Thomas,1,9:06,CHI,shot,Kirk Hinrich,,,,,,,,,Ben Wallace,2,,,made,,dunk,25,6
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Tyrus Thomas,1,9:06,BOS,foul,,,,,,,,Ben Wallace,,Sebastian Telfair,,,,,,shooting,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Tyrus Thomas,1,9:06,CHI,free throw,,,,,,,1,,1,Ben Wallace,,,foul,made,,,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Tyrus Thomas,1,8:49,BOS,shot,,,,,,,,,,Sebastian Telfair,,,,missed,,jump,2,5
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Tyrus Thomas,1,8:47,CHI,rebound,,,,,,,,,,Tyrus Thomas,,,,,,def,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Tyrus Thomas,1,8:33,CHI,shot,,,,,,,,,,Ben Wallace,,,,missed,,layup,25,6
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Tyrus Thomas,1,8:32,BOS,rebound,,,,,,,,,,Paul Pierce,,,,,,def,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,Tyrus Thomas,1,8:20,CHI,foul,,,,,,,,Kendrick Perkins,,Ben Wallace,,,,,,personal,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,8:20,CHI,sub,,,,P.J. Brown,,Ben Wallace,,,,,,,,,,,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,8:05,BOS,shot,,,,,,,,,,Paul Pierce,,,,missed,,jump,42,21
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,8:03,CHI,rebound,,,,,,,,,,P.J. Brown,,,,,,def,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,7:55,CHI,shot,,,,,,,,,,P.J. Brown,,,,missed,,jump,33,23
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,7:53,BOS,rebound,,,,,,,,,,Sebastian Telfair,,,,,,def,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,7:48,BOS,shot,,,,,,,,,,Sebastian Telfair,2,,,made,,jump,19,23
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,7:28,CHI,shot,,,,,,,,,,Kirk Hinrich,2,,,made,,jump,11,12
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,7:04,BOS,shot,,,,,,,,,,Sebastian Telfair,2,,,made,,driving layup,25,6
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,6:46,CHI,shot,,,,,,,,,,Chris Duhon,,,,missed,,jump,2,6
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,6:44,BOS,rebound,,,,,,,,,,Kendrick Perkins,,,,,,def,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,6:34,CHI,foul,,,,,,,,Ryan Gomes,,Tyrus Thomas,,,,,,shooting,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,6:34,BOS,free throw,,,,,,,1,,2,Ryan Gomes,,,foul,made,,,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,6:34,BOS,free throw,,,,,,,2,,2,Ryan Gomes,,,foul,made,,,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,6:19,CHI,shot,Chris Duhon,,,,,,,,,Luol Deng,2,,,made,,jump,9,6
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,6:08,BOS,foul,,,,,,,,Tyrus Thomas,,Ryan Gomes,,,,,,offensive,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,6:08,BOS,turnover,,,,,,,,,,Ryan Gomes,,,foul,,,,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,5:57,CHI,shot,Chris Duhon,,,,,,,,,Tyrus Thomas,2,,,made,,jump,33,20
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,5:32,BOS,shot,,,,,,,,,,Paul Pierce,,,,missed,,jump,43,24
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,5:30,CHI,rebound,,,,,,,,,,Chris Duhon,,,,,,def,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,5:15,CHI,shot,,,,,,,,,,P.J. Brown,2,,,made,,jump,39,7
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,5:00,BOS,shot,Sebastian Telfair,,,,,,,,,Ryan Gomes,2,,,made,,jump,6,5
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,4:59,CHI,timeout,,,,,,,,,,,,,,,,regular,,
+Al Jefferson,Delonte West,Paul Pierce,Ryan Gomes,Sebastian Telfair,Chris Duhon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,4:59,BOS,sub,,,,Al Jefferson,,Kendrick Perkins,,,,,,,,,,,,
+Al Jefferson,Delonte West,Paul Pierce,Ryan Gomes,Sebastian Telfair,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,4:59,CHI,sub,,,,Ben Gordon,,Chris Duhon,,,,,,,,,,,,
+Al Jefferson,Delonte West,Paul Pierce,Ryan Gomes,Sebastian Telfair,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,4:46,CHI,shot,,,,,,,,,,Luol Deng,,,,missed,,layup,25,6
+Al Jefferson,Delonte West,Paul Pierce,Ryan Gomes,Sebastian Telfair,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,4:45,BOS,rebound,,,,,,,,,,Ryan Gomes,,,,,,def,,
+Al Jefferson,Delonte West,Paul Pierce,Ryan Gomes,Sebastian Telfair,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,4:27,BOS,turnover,,,,,,,,,,Delonte West,,,bad pass,,Luol Deng,,,
+Al Jefferson,Delonte West,Paul Pierce,Ryan Gomes,Sebastian Telfair,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,4:23,CHI,shot,Ben Gordon,,,,,,,,,Luol Deng,2,,,made,,layup,25,6
+Al Jefferson,Delonte West,Paul Pierce,Ryan Gomes,Sebastian Telfair,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,4:06,CHI,foul,,,,,,,,Al Jefferson,,P.J. Brown,,,,,,personal,,
+Al Jefferson,Delonte West,Paul Pierce,Ryan Gomes,Sebastian Telfair,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,4:06,BOS,free throw,,,,,,,1,,2,Al Jefferson,,,foul,made,,,,
+Al Jefferson,Delonte West,Paul Pierce,Ryan Gomes,Sebastian Telfair,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,4:06,BOS,free throw,,,,,,,2,,2,Al Jefferson,,,foul,made,,,,
+Al Jefferson,Delonte West,Paul Pierce,Ryan Gomes,Sebastian Telfair,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,3:50,CHI,shot,,,,,,,,,,Luol Deng,,,,missed,,jump,12,6
+Al Jefferson,Delonte West,Paul Pierce,Ryan Gomes,Sebastian Telfair,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,3:48,CHI,rebound,,,,,,,,,,P.J. Brown,,,,,,off,,
+Al Jefferson,Delonte West,Paul Pierce,Ryan Gomes,Sebastian Telfair,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,3:45,CHI,turnover,,,,,,,,,,P.J. Brown,,,bad pass,,,,,
+Al Jefferson,Paul Pierce,Ryan Gomes,Sebastian Telfair,Tony Allen,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,3:45,BOS,sub,,,,Tony Allen,,Delonte West,,,,,,,,,,,,
+Al Jefferson,Paul Pierce,Ryan Gomes,Sebastian Telfair,Tony Allen,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,3:31,BOS,shot,,,,,,,,,,Paul Pierce,,,,missed,,layup,25,6
+Al Jefferson,Paul Pierce,Ryan Gomes,Sebastian Telfair,Tony Allen,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,3:30,CHI,rebound,,,,,,,,,,Luol Deng,,,,,,def,,
+Al Jefferson,Paul Pierce,Ryan Gomes,Sebastian Telfair,Tony Allen,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,3:23,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,jump,,
+Al Jefferson,Paul Pierce,Ryan Gomes,Sebastian Telfair,Tony Allen,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,3:22,CHI,rebound,,,,,,,,,,Tyrus Thomas,,,,,,off,,
+Al Jefferson,Paul Pierce,Ryan Gomes,Sebastian Telfair,Tony Allen,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,Tyrus Thomas,1,3:22,BOS,foul,,,,,,,,Tyrus Thomas,,Ryan Gomes,,,,,,personal,,
+Al Jefferson,Paul Pierce,Ryan Gomes,Sebastian Telfair,Tony Allen,Ben Gordon,Kirk Hinrich,Luol Deng,Mike Sweetney,P.J. Brown,1,3:22,CHI,sub,,,,Mike Sweetney,,Tyrus Thomas,,,,,,,,,,,,
+Al Jefferson,Brian Scalabrine,Paul Pierce,Sebastian Telfair,Tony Allen,Ben Gordon,Kirk Hinrich,Luol Deng,Mike Sweetney,P.J. Brown,1,3:22,BOS,sub,,,,Brian Scalabrine,,Ryan Gomes,,,,,,,,,,,,
+Al Jefferson,Brian Scalabrine,Paul Pierce,Sebastian Telfair,Tony Allen,Ben Gordon,Kirk Hinrich,Luol Deng,Mike Sweetney,P.J. Brown,1,3:15,CHI,shot,,,,,,,,,,Kirk Hinrich,,,,missed,,jump,27,32
+Al Jefferson,Brian Scalabrine,Paul Pierce,Sebastian Telfair,Tony Allen,Ben Gordon,Kirk Hinrich,Luol Deng,Mike Sweetney,P.J. Brown,1,3:13,CHI,rebound,,,,,,,,,,Luol Deng,,,,,,off,,
+Al Jefferson,Brian Scalabrine,Paul Pierce,Sebastian Telfair,Tony Allen,Ben Gordon,Kirk Hinrich,Luol Deng,Mike Sweetney,P.J. Brown,1,3:11,CHI,foul,,,,,,,,Al Jefferson,,Kirk Hinrich,,,,,,offensive,,
+Al Jefferson,Brian Scalabrine,Paul Pierce,Sebastian Telfair,Tony Allen,Ben Gordon,Kirk Hinrich,Luol Deng,Mike Sweetney,P.J. Brown,1,3:11,CHI,turnover,,,,,,,,,,Kirk Hinrich,,,foul,,,,,
+Al Jefferson,Brian Scalabrine,Paul Pierce,Sebastian Telfair,Tony Allen,Ben Gordon,Kirk Hinrich,Luol Deng,Mike Sweetney,P.J. Brown,1,2:56,BOS,turnover,,,,,,,,,,Paul Pierce,,,traveling,,,,,
+Al Jefferson,Brian Scalabrine,Paul Pierce,Sebastian Telfair,Tony Allen,Ben Gordon,Kirk Hinrich,Luol Deng,Mike Sweetney,P.J. Brown,1,2:56,BOS,timeout,,,,,,,,,,,,,,,,regular,,
+Al Jefferson,Brian Scalabrine,Paul Pierce,Sebastian Telfair,Tony Allen,Ben Gordon,Kirk Hinrich,Luol Deng,Mike Sweetney,P.J. Brown,1,2:40,CHI,shot,,,,,,,,,,Mike Sweetney,2,,,made,,layup,,
+Al Jefferson,Brian Scalabrine,Paul Pierce,Sebastian Telfair,Tony Allen,Ben Gordon,Kirk Hinrich,Luol Deng,Mike Sweetney,P.J. Brown,1,2:17,BOS,shot,,,,,,,,,,Tony Allen,,,,missed,,jump,44,23
+Al Jefferson,Brian Scalabrine,Paul Pierce,Sebastian Telfair,Tony Allen,Ben Gordon,Kirk Hinrich,Luol Deng,Mike Sweetney,P.J. Brown,1,2:15,CHI,rebound,,,,,,,,,,Mike Sweetney,,,,,,def,,
+Al Jefferson,Brian Scalabrine,Paul Pierce,Sebastian Telfair,Tony Allen,Ben Gordon,Kirk Hinrich,Luol Deng,Mike Sweetney,P.J. Brown,1,2:04,CHI,shot,,,,,,,,,,P.J. Brown,,,,missed,,jump,19,21
+Al Jefferson,Brian Scalabrine,Paul Pierce,Sebastian Telfair,Tony Allen,Ben Gordon,Kirk Hinrich,Luol Deng,Mike Sweetney,P.J. Brown,1,2:04,CHI,rebound,,,,,,,,,,,,,,,,,,
+Al Jefferson,Brian Scalabrine,Paul Pierce,Sebastian Telfair,Tony Allen,Ben Gordon,Kirk Hinrich,Luol Deng,Mike Sweetney,P.J. Brown,1,2:04,BOS,foul,,,,,,,,Mike Sweetney,,Brian Scalabrine,,,,,,loose ball,,
+Al Jefferson,Brian Scalabrine,Paul Pierce,Sebastian Telfair,Tony Allen,Ben Gordon,Kirk Hinrich,Luol Deng,Mike Sweetney,P.J. Brown,1,1:44,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,jump,38,19
+Al Jefferson,Brian Scalabrine,Paul Pierce,Sebastian Telfair,Tony Allen,Ben Gordon,Kirk Hinrich,Luol Deng,Mike Sweetney,P.J. Brown,1,1:43,BOS,rebound,,,,,,,,,,Paul Pierce,,,,,,def,,
+Al Jefferson,Brian Scalabrine,Paul Pierce,Sebastian Telfair,Tony Allen,Ben Gordon,Kirk Hinrich,Luol Deng,Mike Sweetney,P.J. Brown,1,1:23,BOS,foul,,,,,,,,Kirk Hinrich,,Sebastian Telfair,,,,,,offensive,,
+Al Jefferson,Brian Scalabrine,Paul Pierce,Sebastian Telfair,Tony Allen,Ben Gordon,Kirk Hinrich,Luol Deng,Mike Sweetney,P.J. Brown,1,1:23,BOS,turnover,,,,,,,,,,Sebastian Telfair,,,foul,,,,,
+Al Jefferson,Brian Scalabrine,Paul Pierce,Rajon Rondo,Tony Allen,Ben Gordon,Kirk Hinrich,Luol Deng,Mike Sweetney,P.J. Brown,1,1:23,BOS,sub,,,,Rajon Rondo,,Sebastian Telfair,,,,,,,,,,,,
+Al Jefferson,Brian Scalabrine,Paul Pierce,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Kirk Hinrich,Mike Sweetney,P.J. Brown,1,1:23,CHI,sub,,,,Andres Nocioni,,Luol Deng,,,,,,,,,,,,
+Al Jefferson,Brian Scalabrine,Paul Pierce,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Kirk Hinrich,Mike Sweetney,P.J. Brown,1,1:04,CHI,shot,,,,,,,,,,Mike Sweetney,,,,missed,,hook,,
+Al Jefferson,Brian Scalabrine,Paul Pierce,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Kirk Hinrich,Mike Sweetney,P.J. Brown,1,1:02,BOS,rebound,,,,,,,,,,Rajon Rondo,,,,,,def,,
+Al Jefferson,Brian Scalabrine,Paul Pierce,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Kirk Hinrich,Mike Sweetney,P.J. Brown,1,0:52,BOS,shot,,,,,,,,,,Paul Pierce,,,,missed,,layup,25,6
+Al Jefferson,Brian Scalabrine,Paul Pierce,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Kirk Hinrich,Mike Sweetney,P.J. Brown,1,0:51,CHI,rebound,,,,,,,,,,Mike Sweetney,,,,,,def,,
+Al Jefferson,Brian Scalabrine,Paul Pierce,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Kirk Hinrich,Mike Sweetney,P.J. Brown,1,0:46,CHI,shot,,,,,,,,,,Kirk Hinrich,2,,,made,,jump,37,28
+Al Jefferson,Brian Scalabrine,Paul Pierce,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Kirk Hinrich,Mike Sweetney,P.J. Brown,1,0:46,BOS,foul,,,,,,,,Kirk Hinrich,,Paul Pierce,,,,,,shooting,,
+Al Jefferson,Brian Scalabrine,Paul Pierce,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Kirk Hinrich,Mike Sweetney,P.J. Brown,1,0:46,CHI,free throw,,,,,,,1,,1,Kirk Hinrich,,,foul,missed,,,,
+Al Jefferson,Brian Scalabrine,Paul Pierce,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Kirk Hinrich,Mike Sweetney,P.J. Brown,1,0:45,CHI,rebound,,,,,,,,,,P.J. Brown,,,,,,off,,
+Al Jefferson,Brian Scalabrine,Paul Pierce,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Kirk Hinrich,Mike Sweetney,P.J. Brown,1,0:36,CHI,shot,Mike Sweetney,,,,,,,,,Andres Nocioni,2,,,made,,layup,25,6
+Al Jefferson,Brian Scalabrine,Paul Pierce,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Kirk Hinrich,Mike Sweetney,P.J. Brown,1,0:36,BOS,foul,,,,,,,,Andres Nocioni,,Tony Allen,,,,,,shooting,,
+Al Jefferson,Brian Scalabrine,Gerald Green,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Kirk Hinrich,Mike Sweetney,P.J. Brown,1,0:36,BOS,sub,,,,Gerald Green,,Paul Pierce,,,,,,,,,,,,
+Al Jefferson,Brian Scalabrine,Gerald Green,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Kirk Hinrich,Mike Sweetney,Tyrus Thomas,1,0:36,CHI,sub,,,,Tyrus Thomas,,P.J. Brown,,,,,,,,,,,,
+Al Jefferson,Brian Scalabrine,Gerald Green,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Kirk Hinrich,Mike Sweetney,Tyrus Thomas,1,0:36,CHI,free throw,,,,,,,1,,1,Andres Nocioni,,,foul,made,,,,
+Al Jefferson,Brian Scalabrine,Gerald Green,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Kirk Hinrich,Mike Sweetney,Tyrus Thomas,1,0:27,CHI,foul,,,,,,,,Rajon Rondo,,Ben Gordon,,,,,,personal,,
+Al Jefferson,Brian Scalabrine,Gerald Green,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Kirk Hinrich,Mike Sweetney,Tyrus Thomas,1,0:27,BOS,free throw,,,,,,,1,,2,Rajon Rondo,,,foul,missed,,,,
+Al Jefferson,Brian Scalabrine,Gerald Green,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Kirk Hinrich,Mike Sweetney,Tyrus Thomas,1,0:27,BOS,rebound,,,,,,,,,,,,,,,,,,
+Al Jefferson,Brian Scalabrine,Gerald Green,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Kirk Hinrich,Mike Sweetney,Tyrus Thomas,1,0:27,BOS,free throw,,,,,,,2,,2,Rajon Rondo,,,foul,missed,,,,
+Al Jefferson,Brian Scalabrine,Gerald Green,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Kirk Hinrich,Mike Sweetney,Tyrus Thomas,1,0:26,CHI,rebound,,,,,,,,,,Mike Sweetney,,,,,,def,,
+Al Jefferson,Brian Scalabrine,Gerald Green,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Kirk Hinrich,Mike Sweetney,Tyrus Thomas,1,0:04,CHI,shot,Ben Gordon,,,,,,,,,Kirk Hinrich,2,,,made,,jump,31,25
+Al Jefferson,Brian Scalabrine,Gerald Green,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Kirk Hinrich,Mike Sweetney,Tyrus Thomas,1,0:04,BOS,foul,,,,,,,,Kirk Hinrich,,Brian Scalabrine,,,,,,shooting,,
+Al Jefferson,Brian Scalabrine,Gerald Green,Rajon Rondo,Tony Allen,Andres Nocioni,Chris Duhon,Kirk Hinrich,Mike Sweetney,Tyrus Thomas,1,0:04,CHI,sub,,,,Chris Duhon,,Ben Gordon,,,,,,,,,,,,
+Al Jefferson,Brian Scalabrine,Gerald Green,Rajon Rondo,Tony Allen,Andres Nocioni,Chris Duhon,Kirk Hinrich,Mike Sweetney,Tyrus Thomas,1,0:04,CHI,free throw,,,,,,,1,,1,Kirk Hinrich,,,foul,made,,,,
+Al Jefferson,Brian Scalabrine,Gerald Green,Rajon Rondo,Tony Allen,Andres Nocioni,Chris Duhon,Kirk Hinrich,Mike Sweetney,Tyrus Thomas,1,0:00,CHI,violation,,,,,,,,,,Tyrus Thomas,,,,,,kicked ball,,
+Al Jefferson,Brian Scalabrine,Gerald Green,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Chris Duhon,Mike Sweetney,2,11:38,CHI,shot,Chris Duhon,,,,,,,,,Andres Nocioni,2,,,made,,layup,25,6
+Al Jefferson,Brian Scalabrine,Gerald Green,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Chris Duhon,Mike Sweetney,2,11:38,BOS,foul,,,,,,,,Andres Nocioni,,Brian Scalabrine,,,,,,shooting,,
+Al Jefferson,Brian Scalabrine,Gerald Green,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Chris Duhon,Mike Sweetney,2,11:38,CHI,free throw,,,,,,,1,,1,Andres Nocioni,,,foul,missed,,,,
+Al Jefferson,Brian Scalabrine,Gerald Green,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Chris Duhon,Mike Sweetney,2,11:37,BOS,rebound,,,,,,,,,,Al Jefferson,,,,,,def,,
+Al Jefferson,Brian Scalabrine,Gerald Green,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Chris Duhon,Mike Sweetney,2,11:25,BOS,shot,Al Jefferson,,,,,,,,,Tony Allen,2,,,made,,driving dunk,25,6
+Al Jefferson,Brian Scalabrine,Gerald Green,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Chris Duhon,Mike Sweetney,2,11:05,BOS,foul,,,,,,,,Ben Gordon,,Gerald Green,,,,,,personal,,
+Al Jefferson,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Chris Duhon,Mike Sweetney,2,11:05,BOS,sub,,,,Leon Powe,,Brian Scalabrine,,,,,,,,,,,,
+Al Jefferson,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Chris Duhon,Mike Sweetney,2,11:01,BOS,foul,,,,,,,,Ben Gordon,,Tony Allen,,,,,,shooting,,
+Al Jefferson,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Chris Duhon,Mike Sweetney,2,11:01,CHI,free throw,,,,,,,1,,2,Ben Gordon,,,foul,made,,,,
+Al Jefferson,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Chris Duhon,Mike Sweetney,2,11:01,CHI,free throw,,,,,,,2,,2,Ben Gordon,,,foul,made,,,,
+Al Jefferson,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Chris Duhon,Mike Sweetney,2,10:46,BOS,timeout,,,,,,,,,,,,,,,,regular,,
+Al Jefferson,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Chris Duhon,Mike Sweetney,2,10:40,BOS,shot,Rajon Rondo,,,,,,,,,Gerald Green,2,,,made,,jump,44,16
+Al Jefferson,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Chris Duhon,Mike Sweetney,2,10:25,CHI,shot,Chris Duhon,,,,,,,,,Ben Wallace,2,,,made,,reverse layup,25,6
+Al Jefferson,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Chris Duhon,Mike Sweetney,2,9:59,BOS,shot,,,,,,,,,,Al Jefferson,,,,missed,,jump,30,11
+Al Jefferson,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Chris Duhon,Mike Sweetney,2,9:59,BOS,rebound,,,,,,,,,,,,,,,,,,
+Al Jefferson,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Chris Duhon,Mike Sweetney,2,9:42,BOS,shot,,,,,,,,,,Tony Allen,,,,missed,,jump,8,5
+Al Jefferson,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Chris Duhon,Mike Sweetney,2,9:40,CHI,rebound,,,,,,,,,,Ben Gordon,,,,,,def,,
+Al Jefferson,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Chris Duhon,Mike Sweetney,2,9:28,CHI,shot,,,Al Jefferson,,,,,,,Mike Sweetney,,,,missed,,jump,,
+Al Jefferson,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Chris Duhon,Mike Sweetney,2,9:26,BOS,rebound,,,,,,,,,,Leon Powe,,,,,,def,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Chris Duhon,Mike Sweetney,2,9:22,BOS,sub,,,,Delonte West,,Rajon Rondo,,,,,,,,,,,,
+Al Jefferson,Delonte West,Gerald Green,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Chris Duhon,Mike Sweetney,2,9:22,BOS,sub,,,,Ryan Gomes,,Leon Powe,,,,,,,,,,,,
+Al Jefferson,Delonte West,Gerald Green,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Chris Duhon,Mike Sweetney,2,9:14,BOS,turnover,,,,,,,,,,Gerald Green,,,bad pass,,Mike Sweetney,,,
+Al Jefferson,Delonte West,Gerald Green,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Chris Duhon,Mike Sweetney,2,9:05,CHI,shot,Chris Duhon,,,,,,,,,Andres Nocioni,2,,,made,,jump,11,25
+Al Jefferson,Delonte West,Gerald Green,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Chris Duhon,Mike Sweetney,2,8:47,BOS,shot,,,,,,,,,,Ryan Gomes,2,,,made,,driving layup,25,6
+Al Jefferson,Delonte West,Gerald Green,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Chris Duhon,Mike Sweetney,2,8:47,CHI,foul,,,,,,,,Ryan Gomes,,Ben Wallace,,,,,,shooting,,
+Al Jefferson,Delonte West,Ryan Gomes,Sebastian Telfair,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Chris Duhon,Mike Sweetney,2,8:47,BOS,sub,,,,Sebastian Telfair,,Gerald Green,,,,,,,,,,,,
+Al Jefferson,Delonte West,Ryan Gomes,Sebastian Telfair,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Chris Duhon,Luol Deng,2,8:47,CHI,sub,,,,Luol Deng,,Mike Sweetney,,,,,,,,,,,,
+Al Jefferson,Delonte West,Ryan Gomes,Sebastian Telfair,Tony Allen,Andres Nocioni,Ben Gordon,Chris Duhon,Luol Deng,P.J. Brown,2,8:47,CHI,sub,,,,P.J. Brown,,Ben Wallace,,,,,,,,,,,,
+Al Jefferson,Delonte West,Ryan Gomes,Sebastian Telfair,Tony Allen,Andres Nocioni,Ben Gordon,Chris Duhon,Luol Deng,P.J. Brown,2,8:47,BOS,free throw,,,,,,,1,,1,Ryan Gomes,,,foul,made,,,,
+Al Jefferson,Delonte West,Ryan Gomes,Sebastian Telfair,Tony Allen,Andres Nocioni,Ben Gordon,Chris Duhon,Luol Deng,P.J. Brown,2,8:27,CHI,turnover,,,,,,,,,,Ben Gordon,,,traveling,,,,,
+Al Jefferson,Delonte West,Ryan Gomes,Sebastian Telfair,Tony Allen,Andres Nocioni,Ben Gordon,Chris Duhon,Luol Deng,P.J. Brown,2,8:08,BOS,shot,Tony Allen,,,,,,,,,Ryan Gomes,2,,,made,,layup,25,6
+Al Jefferson,Delonte West,Ryan Gomes,Sebastian Telfair,Tony Allen,Andres Nocioni,Ben Gordon,Chris Duhon,Luol Deng,P.J. Brown,2,7:47,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,jump,46,22
+Al Jefferson,Delonte West,Ryan Gomes,Sebastian Telfair,Tony Allen,Andres Nocioni,Ben Gordon,Chris Duhon,Luol Deng,P.J. Brown,2,7:45,BOS,rebound,,,,,,,,,,Delonte West,,,,,,def,,
+Al Jefferson,Delonte West,Ryan Gomes,Sebastian Telfair,Tony Allen,Andres Nocioni,Ben Gordon,Chris Duhon,Luol Deng,P.J. Brown,2,7:41,CHI,foul,,,,,,,,Delonte West,,P.J. Brown,,,,,,shooting,,
+Al Jefferson,Delonte West,Ryan Gomes,Sebastian Telfair,Tony Allen,Andres Nocioni,Ben Gordon,Kirk Hinrich,Luol Deng,P.J. Brown,2,7:41,CHI,sub,,,,Kirk Hinrich,,Chris Duhon,,,,,,,,,,,,
+Al Jefferson,Delonte West,Ryan Gomes,Sebastian Telfair,Tony Allen,Andres Nocioni,Ben Gordon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,7:41,CHI,sub,,,,Mike Sweetney,,P.J. Brown,,,,,,,,,,,,
+Al Jefferson,Delonte West,Ryan Gomes,Sebastian Telfair,Tony Allen,Andres Nocioni,Ben Gordon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,7:41,BOS,free throw,,,,,,,1,,2,Delonte West,,,foul,made,,,,
+Al Jefferson,Delonte West,Ryan Gomes,Sebastian Telfair,Tony Allen,Andres Nocioni,Ben Gordon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,7:41,BOS,free throw,,,,,,,2,,2,Delonte West,,,foul,made,,,,
+Al Jefferson,Delonte West,Ryan Gomes,Sebastian Telfair,Tony Allen,Andres Nocioni,Ben Gordon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,7:31,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,jump,23,22
+Al Jefferson,Delonte West,Ryan Gomes,Sebastian Telfair,Tony Allen,Andres Nocioni,Ben Gordon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,7:29,CHI,rebound,,,,,,,,,,Luol Deng,,,,,,off,,
+Al Jefferson,Delonte West,Ryan Gomes,Sebastian Telfair,Tony Allen,Andres Nocioni,Ben Gordon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,7:27,CHI,shot,,,Tony Allen,,,,,,,Luol Deng,,,,missed,,jump,10,5
+Al Jefferson,Delonte West,Ryan Gomes,Sebastian Telfair,Tony Allen,Andres Nocioni,Ben Gordon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,7:26,BOS,rebound,,,,,,,,,,Ryan Gomes,,,,,,def,,
+Al Jefferson,Delonte West,Ryan Gomes,Sebastian Telfair,Tony Allen,Andres Nocioni,Ben Gordon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,7:15,BOS,shot,Delonte West,,,,,,,,,Ryan Gomes,2,,,made,,layup,25,6
+Al Jefferson,Delonte West,Ryan Gomes,Sebastian Telfair,Tony Allen,Andres Nocioni,Ben Gordon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,7:15,CHI,timeout,,,,,,,,,,,,,,,,regular,,
+Al Jefferson,Delonte West,Ryan Gomes,Sebastian Telfair,Tony Allen,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,7:15,CHI,sub,,,,Chris Duhon,,Ben Gordon,,,,,,,,,,,,
+Al Jefferson,Delonte West,Ryan Gomes,Sebastian Telfair,Tony Allen,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,6:56,CHI,shot,Andres Nocioni,,,,,,,,,Luol Deng,2,,,made,,running layup,25,6
+Al Jefferson,Delonte West,Ryan Gomes,Sebastian Telfair,Tony Allen,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,6:41,BOS,shot,,,,,,,,,,Al Jefferson,,,,missed,,hook,36,5
+Al Jefferson,Delonte West,Ryan Gomes,Sebastian Telfair,Tony Allen,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,6:38,CHI,rebound,,,,,,,,,,Andres Nocioni,,,,,,def,,
+Al Jefferson,Delonte West,Ryan Gomes,Sebastian Telfair,Tony Allen,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,6:24,BOS,foul,,,,,,,,Mike Sweetney,,Al Jefferson,,,,,,shooting,,
+Al Jefferson,Delonte West,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,6:24,BOS,sub,,,,Paul Pierce,,Tony Allen,,,,,,,,,,,,
+Al Jefferson,Delonte West,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,6:24,CHI,free throw,,,,,,,1,,2,Mike Sweetney,,,foul,made,,,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,6:24,BOS,sub,,,,Kendrick Perkins,,Al Jefferson,,,,,,,,,,,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,6:24,CHI,free throw,,,,,,,2,,2,Mike Sweetney,,,foul,made,,,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,6:03,BOS,shot,,,,,,,,,,Delonte West,,,,missed,,jump,45,5
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,6:01,CHI,rebound,,,,,,,,,,Andres Nocioni,,,,,,def,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,5:47,CHI,foul,,,,,,,,Delonte West,,Luol Deng,,,,,,offensive,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,5:47,CHI,turnover,,,,,,,,,,Luol Deng,,,foul,,,,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,5:29,BOS,shot,,,,,,,,,,Kendrick Perkins,,,,missed,,jump,40,6
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,5:26,CHI,rebound,,,,,,,,,,Andres Nocioni,,,,,,def,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,5:17,CHI,shot,,,,,,,,,,Kirk Hinrich,,,,missed,,jump,42,24
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,5:17,BOS,rebound,,,,,,,,,,,,,,,,,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,5:06,BOS,shot,,,,,,,,,,Paul Pierce,,,,missed,,jump,35,19
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,5:04,CHI,rebound,,,,,,,,,,Mike Sweetney,,,,,,def,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,4:58,CHI,shot,,,,,,,,,,Chris Duhon,2,,,made,,jump,34,21
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,4:40,CHI,foul,,,,,,,,Paul Pierce,,Luol Deng,,,,,,personal,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,4:30,BOS,turnover,,,,,,,,,,Paul Pierce,,,bad pass,,,,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,4:15,CHI,shot,,,,,,,,,,Chris Duhon,,,,missed,,jump,49,5
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,4:13,CHI,rebound,,,,,,,,,,Chris Duhon,,,,,,off,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,4:10,CHI,shot,,,,,,,,,,Kirk Hinrich,,,,missed,,jump,42,25
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,4:08,CHI,rebound,,,,,,,,,,Luol Deng,,,,,,off,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,4:07,CHI,shot,,,,,,,,,,Luol Deng,2,,,made,,layup,25,6
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,3:50,BOS,shot,Sebastian Telfair,,,,,,,,,Ryan Gomes,2,,,made,,jump,5,5
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,3:32,CHI,shot,,,,,,,,,,Andres Nocioni,2,,,made,,jump,15,15
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,3:16,BOS,turnover,,,,,,,,,,Ryan Gomes,,,3 second violation,,,,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,2:53,CHI,shot,,,,,,,,,,Andres Nocioni,2,,,made,,fade away,34,11
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,2:36,BOS,shot,,,,,,,,,,Sebastian Telfair,,,,missed,,jump,25,19
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,2:34,CHI,rebound,,,,,,,,,,Andres Nocioni,,,,,,def,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,2:28,CHI,shot,,,,,,,,,,Kirk Hinrich,,,,missed,,jump,2,4
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,2:26,BOS,rebound,,,,,,,,,,Delonte West,,,,,,def,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,2:14,BOS,shot,,,,,,,,,,Kendrick Perkins,,,,missed,,layup,25,6
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,2:14,BOS,shot,,,,,,,,,,Kendrick Perkins,2,,,made,,tip,25,6
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,2:14,BOS,rebound,,,,,,,,,,Kendrick Perkins,,,,,,off,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,2:14,CHI,timeout,,,,,,,,,,,,,,,,short,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,2:14,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Al Jefferson,Delonte West,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,2:14,BOS,sub,,,,Al Jefferson,,Kendrick Perkins,,,,,,,,,,,,
+Al Jefferson,Delonte West,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,1:52,CHI,shot,,,,,,,,,,Luol Deng,,,,missed,,jump,26,20
+Al Jefferson,Delonte West,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,1:52,BOS,rebound,,,,,,,,,,Al Jefferson,,,,,,def,,
+Al Jefferson,Delonte West,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,1:52,CHI,foul,,,,,,,,Al Jefferson,,Mike Sweetney,,,,,,personal,,
+Al Jefferson,Delonte West,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,1:32,BOS,shot,,,,,,,,,,Sebastian Telfair,,,,missed,,jump,42,20
+Al Jefferson,Delonte West,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,1:30,CHI,rebound,,,,,,,,,,Andres Nocioni,,,,,,def,,
+Al Jefferson,Delonte West,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,1:11,CHI,shot,,,Delonte West,,,,,,,Andres Nocioni,,,,missed,,jump,8,24
+Al Jefferson,Delonte West,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Luol Deng,Mike Sweetney,2,1:08,BOS,rebound,,,,,,,,,,Al Jefferson,,,,,,def,,
+Al Jefferson,Delonte West,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Mike Sweetney,Tyrus Thomas,2,1:06,CHI,sub,,,,Tyrus Thomas,,Luol Deng,,,,,,,,,,,,
+Al Jefferson,Delonte West,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Mike Sweetney,Tyrus Thomas,2,1:01,BOS,shot,,,,,,,,,,Paul Pierce,2,,,made,,jump,25,21
+Al Jefferson,Delonte West,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Mike Sweetney,Tyrus Thomas,2,0:54,OFF,jump ball,,Sebastian Telfair,,,Chris Duhon,,,,,,,Andres Nocioni,,,,,,
+Al Jefferson,Delonte West,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Mike Sweetney,Tyrus Thomas,2,0:49,CHI,turnover,,,,,,,,,,Kirk Hinrich,,,bad pass,,Al Jefferson,,,
+Al Jefferson,Delonte West,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Mike Sweetney,Tyrus Thomas,2,0:41,BOS,shot,,,,,,,,,,Paul Pierce,,,,missed,,jump,14,28
+Al Jefferson,Delonte West,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Mike Sweetney,Tyrus Thomas,2,0:41,BOS,rebound,,,,,,,,,,,,,,,,,,
+Al Jefferson,Delonte West,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Mike Sweetney,Tyrus Thomas,2,0:38,BOS,shot,Sebastian Telfair,,,,,,,,,Paul Pierce,2,,,made,,layup,25,6
+Al Jefferson,Delonte West,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Mike Sweetney,Tyrus Thomas,2,0:28,BOS,foul,,,,,,,,Kirk Hinrich,,Al Jefferson,,,,,,personal,,
+Al Jefferson,Delonte West,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Mike Sweetney,Tyrus Thomas,2,0:28,CHI,free throw,,,,,,,1,,2,Kirk Hinrich,,,foul,made,,,,
+Al Jefferson,Delonte West,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Mike Sweetney,Tyrus Thomas,2,0:28,CHI,free throw,,,,,,,2,,2,Kirk Hinrich,,,foul,made,,,,
+Al Jefferson,Delonte West,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Mike Sweetney,Tyrus Thomas,2,0:06,BOS,shot,,,,,,,,,,Sebastian Telfair,,,,missed,,jump,49,6
+Al Jefferson,Delonte West,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Mike Sweetney,Tyrus Thomas,2,0:04,CHI,rebound,,,,,,,,,,Kirk Hinrich,,,,,,def,,
+Al Jefferson,Delonte West,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Chris Duhon,Kirk Hinrich,Mike Sweetney,Tyrus Thomas,2,0:00,CHI,shot,Kirk Hinrich,,,,,,,,,Chris Duhon,2,,,made,,jump,47,5
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,11:42,BOS,foul,,,,,,,,Luol Deng,,Paul Pierce,,,,,,shooting,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,11:42,CHI,free throw,,,,,,,1,,2,Luol Deng,,,foul,missed,,,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,11:42,CHI,rebound,,,,,,,,,,,,,,,,,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,11:42,CHI,free throw,,,,,,,2,,2,Luol Deng,,,foul,made,,,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,11:28,BOS,shot,Sebastian Telfair,,,,,,,,,Paul Pierce,2,,,made,,layup,25,6
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,11:28,CHI,violation,,,,,,,,,,Andres Nocioni,,,,,,defensive goaltending,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,11:11,CHI,shot,Chris Duhon,,,,,,,,,Andres Nocioni,2,,,made,,driving layup,25,6
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,11:11,BOS,foul,,,,,,,,Andres Nocioni,,Kendrick Perkins,,,,,,shooting,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,11:11,CHI,free throw,,,,,,,1,,1,Andres Nocioni,,,foul,made,,,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,10:48,BOS,shot,,,,,,,,,,Paul Pierce,,,,missed,,jump,44,4
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,10:46,CHI,rebound,,,,,,,,,,Ben Wallace,,,,,,def,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,10:24,CHI,shot,Luol Deng,,,,,,,,,Ben Wallace,2,,,made,,fade away,11,9
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,10:02,BOS,shot,,,,,,,,,,Ryan Gomes,,,,missed,,jump,18,22
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,9:59,CHI,rebound,,,,,,,,,,Ben Wallace,,,,,,def,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,9:54,BOS,foul,,,,,,,,Chris Duhon,,Kendrick Perkins,,,,,,personal,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,9:47,CHI,turnover,,,,,,,,,,Luol Deng,,,lost ball,,Paul Pierce,,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,9:47,CHI,foul,,,,,,,,Paul Pierce,,Luol Deng,,,,,,personal,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,9:32,BOS,shot,,,,,,,,,,Paul Pierce,2,,,made,,driving layup,25,6
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,9:14,CHI,shot,,,,,,,,,,Kirk Hinrich,,,,missed,,jump,31,17
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,9:14,BOS,rebound,,,,,,,,,,,,,,,,,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,9:14,CHI,foul,,,,,,,,Ryan Gomes,,Andres Nocioni,,,,,,loose ball,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,9:01,BOS,foul,,,,,,,,Ben Wallace,,Paul Pierce,,,,,,offensive,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,9:01,BOS,turnover,,,,,,,,,,Paul Pierce,,,foul,,,,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,8:43,CHI,shot,Kirk Hinrich,,,,,,,,,Andres Nocioni,2,,,made,,jump,2,3
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,8:32,CHI,foul,,,,,,,,Sebastian Telfair,,Chris Duhon,,,,,,personal,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,8:23,BOS,turnover,,,,,,,,,,Delonte West,,,bad pass,,Luol Deng,,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,8:15,CHI,shot,Luol Deng,,,,,,,,,Chris Duhon,2,,,made,,jump,19,31
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,7:51,BOS,shot,,,,,,,,,,Sebastian Telfair,,,,missed,,jump,7,5
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,7:49,CHI,rebound,,,,,,,,,,Andres Nocioni,,,,,,def,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,7:41,CHI,shot,,,,,,,,,,Luol Deng,,,,missed,,jump,5,4
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,7:39,BOS,rebound,,,,,,,,,,Sebastian Telfair,,,,,,def,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,7:37,CHI,foul,,,,,,,,Delonte West,,Andres Nocioni,,,,,,shooting,,
+Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Sebastian Telfair,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,7:37,BOS,free throw,,,,,,,1,,2,Delonte West,,,foul,made,,,,
+Allan Ray,Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,7:37,BOS,sub,,,,Allan Ray,,Sebastian Telfair,,,,,,,,,,,,
+Allan Ray,Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,7:37,BOS,free throw,,,,,,,2,,2,Delonte West,,,foul,made,,,,
+Allan Ray,Delonte West,Kendrick Perkins,Paul Pierce,Ryan Gomes,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,7:26,BOS,foul,,,,,,,,Luol Deng,,Allan Ray,,,,,,shooting,,
+Allan Ray,Kendrick Perkins,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,7:26,BOS,sub,,,,Tony Allen,,Delonte West,,,,,,,,,,,,
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,7:26,BOS,sub,,,,Al Jefferson,,Kendrick Perkins,,,,,,,,,,,,
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,7:26,CHI,free throw,,,,,,,1,,2,Luol Deng,,,foul,missed,,,,
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,7:26,CHI,rebound,,,,,,,,,,,,,,,,,,
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,7:26,CHI,free throw,,,,,,,2,,2,Luol Deng,,,foul,made,,,,
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,7:06,BOS,shot,,,Ben Wallace,,,,,,,Ryan Gomes,,,,missed,,jump,27,12
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,7:04,CHI,rebound,,,,,,,,,,Chris Duhon,,,,,,def,,
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,6:58,CHI,turnover,,,,,,,,,,Andres Nocioni,,,bad pass,,Ryan Gomes,,,
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,6:45,BOS,shot,,,,,,,,,,Al Jefferson,,,,missed,,hook,30,11
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,6:43,CHI,rebound,,,,,,,,,,Ben Wallace,,,,,,def,,
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,6:40,CHI,timeout,,,,,,,,,,,,,,,,regular,,
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,6:27,CHI,shot,,,,,,,,,,Chris Duhon,,,,missed,,jump,48,5
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,6:25,BOS,rebound,,,,,,,,,,Ryan Gomes,,,,,,def,,
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,6:08,CHI,foul,,,,,,,,Tony Allen,,Chris Duhon,,,,,,shooting,,
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,6:08,BOS,free throw,,,,,,,1,,2,Tony Allen,,,foul,missed,,,,
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,6:08,BOS,rebound,,,,,,,,,,,,,,,,,,
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,6:08,BOS,free throw,,,,,,,2,,2,Tony Allen,,,foul,missed,,,,
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,6:07,CHI,rebound,,,,,,,,,,Ben Wallace,,,,,,def,,
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,5:46,CHI,shot,,,,,,,,,,Andres Nocioni,,,,missed,,jump,21,30
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,5:44,BOS,rebound,,,,,,,,,,Paul Pierce,,,,,,def,,
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,5:37,BOS,shot,Paul Pierce,,,,,,,,,Ryan Gomes,2,,,made,,layup,25,6
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,5:37,CHI,foul,,,,,,,,Ryan Gomes,,Kirk Hinrich,,,,,,shooting,,
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,5:37,BOS,free throw,,,,,,,1,,1,Ryan Gomes,,,foul,missed,,,,
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,5:35,CHI,rebound,,,,,,,,,,Andres Nocioni,,,,,,def,,
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Wallace,Chris Duhon,Kirk Hinrich,Luol Deng,3,5:24,CHI,turnover,,,,,,,,,,Luol Deng,,,bad pass,,,,,
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,3,5:24,CHI,sub,,,,Ben Gordon,,Chris Duhon,,,,,,,,,,,,
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,3,5:15,BOS,foul,,,,,,,,Kirk Hinrich,,Tony Allen,,,,,,offensive,,
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,3,5:15,BOS,turnover,,,,,,,,,,Tony Allen,,,foul,,,,,
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,3,4:57,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,jump,12,29
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,3,4:56,BOS,rebound,,,,,,,,,,Ryan Gomes,,,,,,def,,
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,3,4:53,BOS,shot,Ryan Gomes,,,,,,,,,Tony Allen,2,,,made,,layup,25,6
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,3,4:34,CHI,shot,,,,,,,,,,Ben Gordon,2,,,made,,jump,38,17
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,3,4:07,BOS,shot,,,,,,,,,,Paul Pierce,,,,missed,,layup,25,6
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,3,4:06,BOS,shot,,,,,,,,,,Al Jefferson,,,,missed,,tip,25,6
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,3,4:06,BOS,rebound,,,,,,,,,,Al Jefferson,,,,,,off,,
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,3,4:05,CHI,rebound,,,,,,,,,,Ben Gordon,,,,,,def,,
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,3,3:56,CHI,shot,Luol Deng,,,,,,,,,Andres Nocioni,2,,,made,,jump,10,11
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,3,3:33,BOS,shot,Tony Allen,,,,,,,,,Al Jefferson,2,,,made,,jump,29,15
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Andres Nocioni,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,3,3:19,BOS,foul,,,,,,,,Ben Gordon,,Al Jefferson,,,,,,shooting,,
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,3:19,CHI,sub,,,,Tyrus Thomas,,Andres Nocioni,,,,,,,,,,,,
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,3:19,CHI,free throw,,,,,,,1,,2,Ben Gordon,,,foul,made,,,,
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,3:19,CHI,free throw,,,,,,,2,,2,Ben Gordon,,,foul,made,,,,
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,3:03,BOS,turnover,,,,,,,,,,Paul Pierce,,,bad pass,,Kirk Hinrich,,,
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,3:01,BOS,foul,,,,,,,,Kirk Hinrich,,Paul Pierce,,,,,,personal,,
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,3:01,CHI,free throw,,,,,,,1,,2,Kirk Hinrich,,,foul,missed,,,,
+Al Jefferson,Allan Ray,Paul Pierce,Ryan Gomes,Tony Allen,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,3:01,CHI,rebound,,,,,,,,,,,,,,,,,,
+Al Jefferson,Allan Ray,Gerald Green,Ryan Gomes,Tony Allen,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,3:01,BOS,sub,,,,Gerald Green,,Paul Pierce,,,,,,,,,,,,
+Al Jefferson,Allan Ray,Gerald Green,Ryan Gomes,Tony Allen,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,3:01,CHI,free throw,,,,,,,2,,2,Kirk Hinrich,,,foul,made,,,,
+Al Jefferson,Allan Ray,Gerald Green,Ryan Gomes,Tony Allen,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,2:48,BOS,shot,,,Ben Wallace,,,,,,,Al Jefferson,,,,missed,,jump,26,13
+Al Jefferson,Allan Ray,Gerald Green,Ryan Gomes,Tony Allen,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,2:45,CHI,rebound,,,,,,,,,,Ben Gordon,,,,,,def,,
+Al Jefferson,Allan Ray,Gerald Green,Ryan Gomes,Tony Allen,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,2:44,CHI,shot,Ben Gordon,,,,,,,,,Luol Deng,2,,,made,,layup,25,6
+Al Jefferson,Allan Ray,Gerald Green,Ryan Gomes,Tony Allen,Ben Gordon,Ben Wallace,Kirk Hinrich,Luol Deng,Tyrus Thomas,3,2:44,BOS,foul,,,,,,,,Luol Deng,,Allan Ray,,,,,,shooting,,
+Al Jefferson,Allan Ray,Gerald Green,Ryan Gomes,Tony Allen,Ben Gordon,Ben Wallace,Luol Deng,Thabo Sefolosha,Tyrus Thomas,3,2:44,CHI,sub,,,,Thabo Sefolosha,,Kirk Hinrich,,,,,,,,,,,,
+Al Jefferson,Allan Ray,Gerald Green,Ryan Gomes,Tony Allen,Ben Gordon,Ben Wallace,Luol Deng,Thabo Sefolosha,Tyrus Thomas,3,2:44,CHI,free throw,,,,,,,1,,1,Luol Deng,,,foul,missed,,,,
+Al Jefferson,Allan Ray,Gerald Green,Ryan Gomes,Tony Allen,Ben Gordon,Ben Wallace,Luol Deng,Thabo Sefolosha,Tyrus Thomas,3,2:43,BOS,rebound,,,,,,,,,,Al Jefferson,,,,,,def,,
+Al Jefferson,Allan Ray,Gerald Green,Ryan Gomes,Tony Allen,Ben Gordon,Ben Wallace,Luol Deng,Thabo Sefolosha,Tyrus Thomas,3,2:26,BOS,shot,,,,,,,,,,Allan Ray,,,,missed,,jump,42,16
+Al Jefferson,Allan Ray,Gerald Green,Ryan Gomes,Tony Allen,Ben Gordon,Ben Wallace,Luol Deng,Thabo Sefolosha,Tyrus Thomas,3,2:24,CHI,rebound,,,,,,,,,,Tyrus Thomas,,,,,,def,,
+Al Jefferson,Allan Ray,Gerald Green,Ryan Gomes,Tony Allen,Ben Gordon,Ben Wallace,Luol Deng,Thabo Sefolosha,Tyrus Thomas,3,2:14,CHI,turnover,,,,,,,,,,Ben Gordon,,,bad pass,,Allan Ray,,,
+Al Jefferson,Allan Ray,Gerald Green,Ryan Gomes,Tony Allen,Ben Gordon,Ben Wallace,Luol Deng,Thabo Sefolosha,Tyrus Thomas,3,2:03,BOS,shot,,,,,,,,,,Gerald Green,,,,missed,,jump,19,24
+Al Jefferson,Allan Ray,Gerald Green,Ryan Gomes,Tony Allen,Ben Gordon,Ben Wallace,Luol Deng,Thabo Sefolosha,Tyrus Thomas,3,2:01,BOS,rebound,,,,,,,,,,Al Jefferson,,,,,,off,,
+Al Jefferson,Allan Ray,Gerald Green,Ryan Gomes,Tony Allen,Ben Gordon,Ben Wallace,Luol Deng,Thabo Sefolosha,Tyrus Thomas,3,1:51,BOS,turnover,,,,,,,,,,Ryan Gomes,,,bad pass,,Ben Wallace,,,
+Al Jefferson,Allan Ray,Gerald Green,Ryan Gomes,Tony Allen,Ben Gordon,Ben Wallace,Luol Deng,Thabo Sefolosha,Tyrus Thomas,3,1:40,CHI,shot,Luol Deng,,,,,,,,,Tyrus Thomas,2,,,made,,dunk,25,6
+Al Jefferson,Allan Ray,Gerald Green,Ryan Gomes,Tony Allen,Ben Gordon,Ben Wallace,Luol Deng,Thabo Sefolosha,Tyrus Thomas,3,1:21,CHI,foul,,,,,,,,Al Jefferson,,Thabo Sefolosha,,,,,,shooting,,
+Al Jefferson,Allan Ray,Gerald Green,Ryan Gomes,Tony Allen,Ben Gordon,Luol Deng,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,3,1:21,CHI,sub,,,,P.J. Brown,,Ben Wallace,,,,,,,,,,,,
+Al Jefferson,Allan Ray,Gerald Green,Ryan Gomes,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,3,1:21,CHI,sub,,,,Adrian Griffin,,Luol Deng,,,,,,,,,,,,
+Al Jefferson,Allan Ray,Gerald Green,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,3,1:21,BOS,sub,,,,Rajon Rondo,,Ryan Gomes,,,,,,,,,,,,
+Al Jefferson,Brian Scalabrine,Gerald Green,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,3,1:21,BOS,sub,,,,Brian Scalabrine,,Allan Ray,,,,,,,,,,,,
+Al Jefferson,Brian Scalabrine,Gerald Green,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,3,1:21,BOS,free throw,,,,,,,1,,2,Al Jefferson,,,foul,missed,,,,
+Al Jefferson,Brian Scalabrine,Gerald Green,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,3,1:21,BOS,rebound,,,,,,,,,,,,,,,,,,
+Al Jefferson,Brian Scalabrine,Gerald Green,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,3,1:21,BOS,free throw,,,,,,,2,,2,Al Jefferson,,,foul,made,,,,
+Al Jefferson,Brian Scalabrine,Gerald Green,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,3,1:05,CHI,turnover,,,,,,,,,,Tyrus Thomas,,,3 second violation,,,,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,3,1:05,BOS,sub,,,,Leon Powe,,Al Jefferson,,,,,,,,,,,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,3,0:52,CHI,foul,,,,,,,,Tony Allen,,Adrian Griffin,,,,,,shooting,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,3,0:52,BOS,free throw,,,,,,,1,,2,Tony Allen,,,foul,made,,,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,3,0:52,BOS,free throw,,,,,,,2,,2,Tony Allen,,,foul,made,,,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,3,0:35,BOS,foul,,,,,,,,Tyrus Thomas,,Brian Scalabrine,,,,,,shooting,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,3,0:35,CHI,free throw,,,,,,,1,,2,Tyrus Thomas,,,foul,missed,,,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,3,0:35,CHI,rebound,,,,,,,,,,,,,,,,,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,3,0:35,CHI,free throw,,,,,,,2,,2,Tyrus Thomas,,,foul,made,,,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,3,0:24,BOS,shot,,,,,,,,,,Tony Allen,2,,,made,,driving dunk,25,6
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,3,0:24,CHI,foul,,,,,,,,Tony Allen,,Ben Gordon,,,,,,shooting,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,3,0:24,BOS,free throw,,,,,,,1,,1,Tony Allen,,,foul,made,,,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,3,0:17,CHI,turnover,,,,,,,,,,Adrian Griffin,,,bad pass,,Tony Allen,,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,3,0:00,BOS,shot,,,,,,,,,,Rajon Rondo,,,,missed,,jump,19,12
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,3,0:00,BOS,rebound,,,,,,,,,,,,,,,,,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,11:50,BOS,turnover,,,,,,,,,,Leon Powe,,,lost ball,,P.J. Brown,,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,11:48,BOS,foul,,,,,,,,Thabo Sefolosha,,Gerald Green,,,,,,personal,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,11:42,CHI,shot,,,,,,,,,,Ben Gordon,2,,,made,,jump,39,25
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,11:23,CHI,foul,,,,,,,,Tony Allen,,Thabo Sefolosha,,,,,,shooting,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,11:23,BOS,free throw,,,,,,,1,,2,Tony Allen,,,foul,made,,,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,11:23,BOS,free throw,,,,,,,2,,2,Tony Allen,,,foul,made,,,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,11:05,CHI,shot,Ben Gordon,,,,,,,,,Thabo Sefolosha,2,,,made,,jump,13,23
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,10:51,CHI,foul,,,,,,,,Leon Powe,,Tyrus Thomas,,,,,,personal,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,10:41,BOS,shot,,,,,,,,,,Brian Scalabrine,,,,missed,,jump,13,20
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,10:39,CHI,rebound,,,,,,,,,,Adrian Griffin,,,,,,def,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,10:18,CHI,shot,,,,,,,,,,P.J. Brown,,,,missed,,jump,10,8
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,10:17,BOS,rebound,,,,,,,,,,Leon Powe,,,,,,def,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,10:07,BOS,shot,,,,,,,,,,Brian Scalabrine,,,,missed,,jump,13,28
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,10:05,CHI,rebound,,,,,,,,,,Adrian Griffin,,,,,,def,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,9:57,CHI,shot,,,Leon Powe,,,,,,,Ben Gordon,,,,missed,,layup,25,6
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,9:55,BOS,rebound,,,,,,,,,,Brian Scalabrine,,,,,,def,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,9:53,CHI,foul,,,,,,,,Tony Allen,,P.J. Brown,,,,,,shooting,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,9:53,BOS,free throw,,,,,,,1,,2,Tony Allen,,,foul,made,,,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,9:53,BOS,free throw,,,,,,,2,,2,Tony Allen,,,foul,made,,,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,9:32,CHI,shot,,,,,,,,,,Adrian Griffin,,,,missed,,layup,25,6
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,9:31,CHI,rebound,,,,,,,,,,Adrian Griffin,,,,,,off,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,9:30,CHI,shot,,,Leon Powe,,,,,,,Adrian Griffin,,,,missed,,layup,25,6
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,9:27,BOS,rebound,,,,,,,,,,Gerald Green,,,,,,def,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,9:23,BOS,shot,,,,,,,,,,Gerald Green,2,,,made,,running jump,26,13
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,9:07,BOS,foul,,,,,,,,Thabo Sefolosha,,Gerald Green,,,,,,personal,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,9:02,CHI,turnover,,,,,,,,,,P.J. Brown,,,lost ball,,Brian Scalabrine,,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,8:59,BOS,turnover,,,,,,,,,,Gerald Green,,,lost ball,,Thabo Sefolosha,,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,8:59,BOS,foul,,,,,,,,Thabo Sefolosha,,Gerald Green,,,,,,shooting,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,8:59,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,8:59,CHI,free throw,,,,,,,1,,2,Thabo Sefolosha,,,foul,made,,,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,8:59,CHI,free throw,,,,,,,2,,2,Thabo Sefolosha,,,foul,made,,,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,8:36,BOS,shot,,,,,,,,,,Tony Allen,,,,missed,,jump,9,13
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,8:34,CHI,rebound,,,,,,,,,,Ben Gordon,,,,,,def,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,8:23,CHI,shot,,,Brian Scalabrine,,,,,,,Thabo Sefolosha,,,,missed,,layup,25,6
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,8:21,BOS,rebound,,,,,,,,,,Leon Powe,,,,,,def,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,8:18,CHI,foul,,,,,,,,Tony Allen,,P.J. Brown,,,,,,shooting,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,8:18,BOS,free throw,,,,,,,1,,2,Tony Allen,,,foul,missed,,,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,8:18,BOS,rebound,,,,,,,,,,,,,,,,,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,8:18,BOS,free throw,,,,,,,2,,2,Tony Allen,,,foul,made,,,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,7:53,CHI,shot,,,,,,,,,,Tyrus Thomas,,,,missed,,jump,9,6
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,7:51,CHI,rebound,,,,,,,,,,Adrian Griffin,,,,,,off,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,7:48,CHI,turnover,,,,,,,,,,Adrian Griffin,,,lost ball,,Rajon Rondo,,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,7:39,BOS,turnover,,,,,,,,,,Rajon Rondo,,,lost ball,,Adrian Griffin,,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,P.J. Brown,Thabo Sefolosha,Tyrus Thomas,4,7:39,CHI,turnover,,,,,,,,,,Ben Gordon,,,lost ball possession,,,,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,Malik Allen,Thabo Sefolosha,Tyrus Thomas,4,7:39,CHI,sub,,,,Malik Allen,,P.J. Brown,,,,,,,,,,,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,Malik Allen,Thabo Sefolosha,Tyrus Thomas,4,7:28,BOS,shot,,,,,,,,,,Rajon Rondo,,,,missed,,jump,15,20
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,Malik Allen,Thabo Sefolosha,Tyrus Thomas,4,7:27,CHI,rebound,,,,,,,,,,Adrian Griffin,,,,,,def,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,Malik Allen,Thabo Sefolosha,Tyrus Thomas,4,7:15,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,jump,22,25
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,Malik Allen,Thabo Sefolosha,Tyrus Thomas,4,7:13,CHI,rebound,,,,,,,,,,Adrian Griffin,,,,,,off,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,Malik Allen,Thabo Sefolosha,Tyrus Thomas,4,7:01,CHI,shot,,,,,,,,,,Thabo Sefolosha,2,,,made,,jump,42,5
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,Malik Allen,Thabo Sefolosha,Tyrus Thomas,4,6:44,BOS,shot,Rajon Rondo,,,,,,,,,Brian Scalabrine,2,,,made,,jump,18,26
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,Malik Allen,Thabo Sefolosha,Tyrus Thomas,4,6:29,CHI,shot,,,,,,,,,,Ben Gordon,2,,,made,,jump,44,20
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,Malik Allen,Thabo Sefolosha,Tyrus Thomas,4,6:12,BOS,shot,,,,,,,,,,Leon Powe,,,,missed,,jump,19,11
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,Malik Allen,Thabo Sefolosha,Tyrus Thomas,4,6:09,BOS,shot,,,,,,,,,,Tony Allen,2,,,made,,tip,25,6
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,Malik Allen,Thabo Sefolosha,Tyrus Thomas,4,6:09,BOS,rebound,,,,,,,,,,Tony Allen,,,,,,off,,
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,Malik Allen,Thabo Sefolosha,Tyrus Thomas,4,5:51,CHI,shot,Malik Allen,,,,,,,,,Thabo Sefolosha,2,,,made,,layup,25,6
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,Malik Allen,Thabo Sefolosha,Tyrus Thomas,4,5:28,BOS,shot,Tony Allen,,,,,,,,,Gerald Green,2,,,made,,jump,41,20
+Brian Scalabrine,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,Malik Allen,Thabo Sefolosha,Tyrus Thomas,4,5:21,CHI,timeout,,,,,,,,,,,,,,,,regular,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Ben Gordon,Malik Allen,Thabo Sefolosha,Tyrus Thomas,4,5:21,BOS,sub,,,,Allan Ray,,Brian Scalabrine,,,,,,,,,,,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,5:21,CHI,sub,,,,Mike Sweetney,,Ben Gordon,,,,,,,,,,,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,5:09,CHI,shot,,,,,,,,,,Malik Allen,,,,missed,,jump,9,6
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,5:07,BOS,rebound,,,,,,,,,,Leon Powe,,,,,,def,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,5:00,BOS,shot,,,,,,,,,,Tony Allen,2,,,made,,jump,32,10
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,4:35,CHI,shot,,,,,,,,,,Tyrus Thomas,,,,missed,,jump,21,28
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,4:33,BOS,rebound,,,,,,,,,,Tony Allen,,,,,,def,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,4:25,BOS,shot,,,,,,,,,,Gerald Green,,,,missed,,jump,19,10
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,4:23,CHI,rebound,,,,,,,,,,Tyrus Thomas,,,,,,def,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,4:21,CHI,turnover,,,,,,,,,,Tyrus Thomas,,,bad pass,,Rajon Rondo,,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,4:20,BOS,shot,,,,,,,,,,Allan Ray,2,,,made,,layup,25,6
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,4:20,CHI,foul,,,,,,,,Allan Ray,,Malik Allen,,,,,,shooting,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,4:20,BOS,free throw,,,,,,,1,,1,Allan Ray,,,foul,missed,,,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,4:17,BOS,rebound,,,,,,,,,,Leon Powe,,,,,,off,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,4:15,BOS,turnover,,,,,,,,,,Leon Powe,,,lost ball,,Adrian Griffin,,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,4:08,CHI,turnover,,,,,,,,,,Adrian Griffin,,,discontinue dribble,,,,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,3:47,BOS,shot,,,,,,,,,,Leon Powe,,,,missed,,jump,28,13
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,3:45,BOS,rebound,,,,,,,,,,Allan Ray,,,,,,off,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,3:44,BOS,shot,,,,,,,,,,Allan Ray,2,,,made,,follow up dunk,25,6
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,3:39,CHI,timeout,,,,,,,,,,,,,,,,short,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,3:24,CHI,shot,,,,,,,,,,Thabo Sefolosha,2,,,made,,jump,40,21
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,2:59,BOS,shot,,,,,,,,,,Gerald Green,,,,missed,,jump,17,22
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,2:57,BOS,shot,,,,,,,,,,Rajon Rondo,,,,missed,,dunk,25,6
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,2:57,BOS,rebound,,,,,,,,,,Rajon Rondo,,,,,,off,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,2:55,CHI,rebound,,,,,,,,,,Malik Allen,,,,,,def,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,2:48,BOS,foul,,,,,,,,Malik Allen,,Allan Ray,,,,,,personal,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,2:48,BOS,timeout,,,,,,,,,,,,,,,,regular,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,2:41,CHI,turnover,,,,,,,,,,Mike Sweetney,,,3 second violation,,,,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,2:31,BOS,shot,Rajon Rondo,,,,,,,,,Allan Ray,2,,,made,,jump,45,23
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,2:16,BOS,foul,,,,,,,,Malik Allen,,Rajon Rondo,,,,,,shooting,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,2:16,CHI,free throw,,,,,,,1,,2,Malik Allen,,,foul,made,,,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,2:16,CHI,free throw,,,,,,,2,,2,Malik Allen,,,foul,made,,,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,2:01,BOS,shot,,,,,,,,,,Allan Ray,,,,missed,,jump,44,23
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,1:59,CHI,rebound,,,,,,,,,,Malik Allen,,,,,,def,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,1:50,CHI,shot,,,,,,,,,,Malik Allen,,,,missed,,jump,19,16
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,1:48,BOS,rebound,,,,,,,,,,Gerald Green,,,,,,def,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,1:31,CHI,foul,,,,,,,,Leon Powe,,Mike Sweetney,,,,,,personal,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,1:31,BOS,free throw,,,,,,,1,,2,Leon Powe,,,foul,missed,,,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,1:31,BOS,rebound,,,,,,,,,,,,,,,,,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,1:31,BOS,free throw,,,,,,,2,,2,Leon Powe,,,foul,made,,,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,1:21,CHI,shot,Mike Sweetney,,,,,,,,,Adrian Griffin,2,,,made,,jump,24,20
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,1:16,BOS,shot,Rajon Rondo,,,,,,,,,Allan Ray,2,,,made,,jump,7,8
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,0:57,CHI,shot,,,,,,,,,,Adrian Griffin,,,,missed,,jump,27,14
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,0:55,CHI,shot,,,,,,,,,,Malik Allen,2,,,made,,jump,28,10
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,0:55,CHI,rebound,,,,,,,,,,Malik Allen,,,,,,off,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,0:50,BOS,turnover,,,,,,,,,,Allan Ray,,,traveling,,,,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,0:34,CHI,shot,,,,,,,,,,Thabo Sefolosha,,,,missed,,jump,39,10
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,0:32,CHI,shot,,,,,,,,,,Malik Allen,,,,missed,,tip,25,6
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,0:32,CHI,rebound,,,,,,,,,,Malik Allen,,,,,,off,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,0:31,BOS,rebound,,,,,,,,,,Allan Ray,,,,,,def,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,0:30,CHI,foul,,,,,,,,Tony Allen,,Thabo Sefolosha,,,,,,personal,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,0:30,BOS,free throw,,,,,,,1,,2,Tony Allen,,,foul,made,,,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,0:30,BOS,free throw,,,,,,,2,,2,Tony Allen,,,foul,made,,,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,0:17,CHI,shot,Thabo Sefolosha,,,,,,,,,Tyrus Thomas,2,,,made,,alley oop dunk,25,6
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,0:03,BOS,shot,,,,,,,,,,Gerald Green,,,,missed,,jump,13,22
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,0:01,BOS,rebound,,,,,,,,,,Leon Powe,,,,,,off,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Tony Allen,Adrian Griffin,Malik Allen,Mike Sweetney,Thabo Sefolosha,Tyrus Thomas,4,0:01,BOS,shot,,,,,,,,,,Leon Powe,2,,,made,,fade away,38,7

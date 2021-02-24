@@ -1,0 +1,414 @@
+a1,a2,a3,a4,a5,h1,h2,h3,h4,h5,period,time,team,etype,assist,away,block,entered,home,left,num,opponent,outof,player,points,possession,reason,result,steal,type,x,y
+Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,12:00,OFF,jump ball,,Josh Powell,,,Eddy Curry,,,,,,,Sam Cassell,,,,,,
+Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,11:54,LAC,shot,,,,,,,,,,Sam Cassell,2,,,made,,jump,14,24
+Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,11:37,NYK,shot,Zach Randolph,,,,,,,,,Fred Jones,2,,,made,,layup,25,6
+Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,11:16,LAC,shot,Cuttino Mobley,,,,,,,,,Quinton Ross,2,,,made,,jump,25,26
+Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,11:00,LAC,foul,,,,,,,,Eddy Curry,,Josh Powell,,,,,,personal,,
+Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,10:47,NYK,shot,,,,,,,,,,Jamal Crawford,,,,missed,,3pt,1,6
+Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,10:46,LAC,rebound,,,,,,,,,,Josh Powell,,,,,,def,,
+Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,10:38,LAC,shot,,,,,,,,,,Tim Thomas,,,,missed,,3pt,41,25
+Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,10:36,NYK,rebound,,,,,,,,,,Fred Jones,,,,,,def,,
+Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,10:28,NYK,shot,,,,,,,,,,Zach Randolph,,,,missed,,jump,4,4
+Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,10:27,LAC,rebound,,,,,,,,,,Cuttino Mobley,,,,,,def,,
+Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,10:21,LAC,turnover,,,,,,,,,,Quinton Ross,,,bad pass,,Quentin Richardson,,,
+Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,10:19,NYK,turnover,,,,,,,,,,Jamal Crawford,,,traveling,,,,,
+Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,10:06,LAC,shot,Sam Cassell,,,,,,,,,Josh Powell,2,,,made,,jump,40,13
+Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,9:53,NYK,shot,,,,,,,,,,Eddy Curry,,,,missed,,layup,25,6
+Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,9:52,NYK,rebound,,,,,,,,,,,,,,,,,,
+Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,9:52,LAC,foul,,,,,,,,Eddy Curry,,Quinton Ross,,,,,,loose ball,,
+Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,9:41,NYK,shot,Fred Jones,,,,,,,,,Eddy Curry,2,,,made,,slam dunk,25,6
+Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,9:28,LAC,shot,,,,,,,,,,Josh Powell,,,,missed,,layup,25,6
+Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,9:26,LAC,rebound,,,,,,,,,,,,,,,,,,
+Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,9:18,LAC,shot,Sam Cassell,,,,,,,,,Josh Powell,2,,,made,,reverse layup,25,6
+Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,9:02,NYK,shot,Zach Randolph,,,,,,,,,Quentin Richardson,2,,,made,,jump,39,22
+Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,8:56,LAC,shot,Sam Cassell,,,,,,,,,Josh Powell,2,,,made,,driving layup,25,6
+Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,8:39,LAC,foul,,,,,,,,Eddy Curry,,Josh Powell,,,,,,shooting,,
+Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,8:39,NYK,free throw,,,,,,,1,,2,Eddy Curry,,,foul,made,,,,
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,8:39,LAC,sub,,,,Chris Kaman,,Josh Powell,,,,,,,,,,,,
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,8:39,NYK,free throw,,,,,,,2,,2,Eddy Curry,,,foul,made,,,,
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,8:32,LAC,shot,,,Zach Randolph,,,,,,,Sam Cassell,,,,missed,,jump,25,14
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,8:32,OFF,jump ball,,Sam Cassell,,,Zach Randolph,,,,,,,Jamal Crawford,,,,,,
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,8:32,NYK,rebound,,,,,,,,,,,,,,,,,,
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,8:19,NYK,shot,,,,,,,,,,Quentin Richardson,2,,,made,,jump,31,27
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,8:03,LAC,shot,,,,,,,,,,Quinton Ross,,,,missed,,jump,13,22
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,8:01,NYK,rebound,,,,,,,,,,Zach Randolph,,,,,,def,,
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,7:52,NYK,shot,,,,,,,,,,Fred Jones,,,,missed,,3pt,48,6
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,7:49,LAC,rebound,,,,,,,,,,Sam Cassell,,,,,,def,,
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,7:43,LAC,shot,Sam Cassell,,,,,,,,,Cuttino Mobley,3,,,made,,3pt,42,26
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,7:25,NYK,shot,,,,,,,,,,Eddy Curry,2,,,made,,finger roll layup,25,6
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,7:14,LAC,shot,Cuttino Mobley,,,,,,,,,Tim Thomas,3,,,made,,3pt,42,25
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,Eddy Curry,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,6:53,LAC,foul,,,,,,,,Zach Randolph,,Tim Thomas,,,,,,shooting,,
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,6:53,NYK,sub,,,,David Lee,,Eddy Curry,,,,,,,,,,,,
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,6:53,NYK,free throw,,,,,,,1,,2,Zach Randolph,,,foul,made,,,,
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,6:53,NYK,free throw,,,,,,,2,,2,Zach Randolph,,,foul,made,,,,
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,6:44,LAC,shot,,,,,,,,,,Sam Cassell,2,,,made,,driving layup,25,6
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,6:21,NYK,turnover,,,,,,,,,,Quentin Richardson,,,bad pass,,Tim Thomas,,,
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,6:13,NYK,foul,,,,,,,,Tim Thomas,,Fred Jones,,,,,,shooting,,
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,6:13,LAC,free throw,,,,,,,1,,2,Tim Thomas,,,foul,made,,,,
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,6:13,LAC,free throw,,,,,,,2,,2,Tim Thomas,,,foul,made,,,,
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,5:56,NYK,shot,,,Chris Kaman,,,,,,,David Lee,,,,missed,,layup,25,6
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,5:54,LAC,rebound,,,,,,,,,,Chris Kaman,,,,,,def,,
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,5:49,LAC,shot,,,,,,,,,,Cuttino Mobley,,,,missed,,3pt,5,22
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,5:47,NYK,rebound,,,,,,,,,,Zach Randolph,,,,,,def,,
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,5:44,NYK,turnover,,,,,,,,,,Zach Randolph,,,bad pass,,Quinton Ross,,,
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,5:39,LAC,shot,Quinton Ross,,,,,,,,,Tim Thomas,2,,,made,,layup,25,6
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,5:16,NYK,shot,,,,,,,,,,Jamal Crawford,,,,missed,,3pt,8,25
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,5:14,LAC,rebound,,,,,,,,,,Tim Thomas,,,,,,def,,
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,5:07,LAC,shot,,,,,,,,,,Sam Cassell,2,,,made,,jump,32,25
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,5:02,NYK,timeout,,,,,,,,,,,,,,,,regular,,
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,4:48,NYK,shot,Jamal Crawford,,,,,,,,,Fred Jones,2,,,made,,jump,4,5
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,4:28,LAC,shot,,,,,,,,,,Chris Kaman,,,,missed,,jump,33,7
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,4:27,NYK,rebound,,,,,,,,,,Zach Randolph,,,,,,def,,
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,4:13,NYK,shot,,,,,,,,,,Fred Jones,2,,,made,,driving layup,25,6
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,3:55,LAC,shot,,,,,,,,,,Tim Thomas,,,,missed,,jump,40,8
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,3:54,NYK,rebound,,,,,,,,,,Quentin Richardson,,,,,,def,,
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,3:47,LAC,foul,,,,,,,,Zach Randolph,,Chris Kaman,,,,,,shooting,,
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,3:47,NYK,free throw,,,,,,,1,,2,Zach Randolph,,,foul,made,,,,
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,3:47,NYK,free throw,,,,,,,2,,2,Zach Randolph,,,foul,missed,,,,
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,3:46,LAC,rebound,,,,,,,,,,Chris Kaman,,,,,,def,,
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,3:26,LAC,shot,Sam Cassell,,,,,,,,,Chris Kaman,2,,,made,,dunk,25,6
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,3:03,NYK,shot,Fred Jones,,,,,,,,,Zach Randolph,2,,,made,,layup,25,6
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,2:53,LAC,shot,,,,,,,,,,Sam Cassell,,,,missed,,jump,37,6
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,2:51,NYK,rebound,,,,,,,,,,David Lee,,,,,,def,,
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,2:42,NYK,shot,,,,,,,,,,Quentin Richardson,2,,,made,,jump bank,34,7
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,2:17,LAC,shot,,,,,,,,,,Quinton Ross,,,,missed,,jump,45,6
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,2:15,NYK,rebound,,,,,,,,,,Quentin Richardson,,,,,,def,,
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,2:06,LAC,foul,,,,,,,,Zach Randolph,,Tim Thomas,,,,,,shooting,,
+Chris Kaman,Cuttino Mobley,Quinton Ross,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,2:06,LAC,timeout,,,,,,,,,,,,,,,,regular,,
+Al Thornton,Chris Kaman,Cuttino Mobley,Sam Cassell,Tim Thomas,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,2:06,LAC,sub,,,,Al Thornton,,Quinton Ross,,,,,,,,,,,,
+Al Thornton,Chris Kaman,Corey Maggette,Cuttino Mobley,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,2:06,LAC,sub,,,,Corey Maggette,,Tim Thomas,,,,,,,,,,,,
+Al Thornton,Chris Kaman,Corey Maggette,Cuttino Mobley,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,2:06,NYK,free throw,,,,,,,1,,2,Zach Randolph,,,foul,made,,,,
+Al Thornton,Chris Kaman,Corey Maggette,Cuttino Mobley,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,2:06,NYK,free throw,,,,,,,2,,2,Zach Randolph,,,foul,made,,,,
+Al Thornton,Chris Kaman,Corey Maggette,Cuttino Mobley,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,1:51,LAC,shot,Corey Maggette,,,,,,,,,Cuttino Mobley,3,,,made,,3pt,48,15
+Al Thornton,Chris Kaman,Corey Maggette,Cuttino Mobley,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,1:36,NYK,shot,David Lee,,,,,,,,,Quentin Richardson,2,,,made,,layup,25,6
+Al Thornton,Chris Kaman,Corey Maggette,Cuttino Mobley,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,1:16,LAC,shot,,,,,,,,,,Chris Kaman,,,,missed,,layup,25,6
+Al Thornton,Chris Kaman,Corey Maggette,Cuttino Mobley,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,1:15,NYK,rebound,,,,,,,,,,David Lee,,,,,,def,,
+Al Thornton,Chris Kaman,Corey Maggette,Cuttino Mobley,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,1:04,NYK,shot,,,,,,,,,,Quentin Richardson,,,,missed,,3pt,46,20
+Al Thornton,Chris Kaman,Corey Maggette,Cuttino Mobley,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,1:03,LAC,rebound,,,,,,,,,,Corey Maggette,,,,,,def,,
+Al Thornton,Chris Kaman,Corey Maggette,Cuttino Mobley,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,0:57,LAC,shot,Sam Cassell,,,,,,,,,Al Thornton,2,,,made,,pullup jump,8,8
+Al Thornton,Chris Kaman,Corey Maggette,Cuttino Mobley,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,0:36,NYK,shot,David Lee,,,,,,,,,Quentin Richardson,3,,,made,,3pt,49,5
+Al Thornton,Chris Kaman,Corey Maggette,Cuttino Mobley,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,0:30,LAC,shot,,,,,,,,,,Sam Cassell,,,,missed,,jump,41,23
+Al Thornton,Chris Kaman,Corey Maggette,Cuttino Mobley,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,0:29,NYK,rebound,,,,,,,,,,Zach Randolph,,,,,,def,,
+Al Thornton,Chris Kaman,Corey Maggette,Cuttino Mobley,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,0:08,NYK,turnover,,,,,,,,,,Jamal Crawford,,,bad pass,,Al Thornton,,,
+Al Thornton,Chris Kaman,Corey Maggette,Cuttino Mobley,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,0:01,LAC,shot,,,Jamal Crawford,,,,,,,Al Thornton,,,,missed,,jump,33,21
+Al Thornton,Chris Kaman,Corey Maggette,Cuttino Mobley,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Quentin Richardson,Zach Randolph,1,0:00,LAC,rebound,,,,,,,,,,,,,,,,,,
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Jamal Crawford,Mardy Collins,Quentin Richardson,2,11:43,NYK,shot,Jamal Crawford,,,,,,,,,David Lee,2,,,made,,dunk,25,6
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Jamal Crawford,Mardy Collins,Quentin Richardson,2,11:19,LAC,shot,,,,,,,,,,Chris Kaman,,,,missed,,jump,38,6
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Jamal Crawford,Mardy Collins,Quentin Richardson,2,11:17,NYK,rebound,,,,,,,,,,David Lee,,,,,,def,,
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Jamal Crawford,Mardy Collins,Quentin Richardson,2,11:11,NYK,shot,Quentin Richardson,,,,,,,,,Eddy Curry,2,,,made,,layup,25,6
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Jamal Crawford,Mardy Collins,Quentin Richardson,2,10:47,LAC,shot,,,,,,,,,,Corey Maggette,3,,,made,,3pt,30,31
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Jamal Crawford,Mardy Collins,Quentin Richardson,2,10:30,NYK,shot,Jamal Crawford,,,,,,,,,Quentin Richardson,3,,,made,,3pt,26,31
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Jamal Crawford,Mardy Collins,Quentin Richardson,2,10:12,NYK,foul,,,,,,,,Chris Kaman,,David Lee,,,,,,personal,,
+Aaron Williams,Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,David Lee,Eddy Curry,Jamal Crawford,Mardy Collins,Quentin Richardson,2,10:12,LAC,sub,,,,Aaron Williams,,Cuttino Mobley,,,,,,,,,,,,
+Aaron Williams,Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,David Lee,Eddy Curry,Jamal Crawford,Mardy Collins,Quentin Richardson,2,10:06,LAC,turnover,,,,,,,,,,Chris Kaman,,,bad pass,,,,,
+Aaron Williams,Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,David Lee,Eddy Curry,Jamal Crawford,Mardy Collins,Quentin Richardson,2,9:59,LAC,foul,,,,,,,,Jamal Crawford,,Brevin Knight,,,,,,personal,,
+Aaron Williams,Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Quentin Richardson,2,9:59,NYK,sub,,,,Jared Jeffries,,Jamal Crawford,,,,,,,,,,,,
+Aaron Williams,Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,9:59,NYK,sub,,,,Renaldo Balkman,,Quentin Richardson,,,,,,,,,,,,
+Aaron Williams,Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,9:48,NYK,turnover,,,,,,,,,,David Lee,,,bad pass,,Aaron Williams,,,
+Aaron Williams,Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,9:42,LAC,shot,,,,,,,,,,Brevin Knight,,,,missed,,jump,16,21
+Aaron Williams,Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,9:40,LAC,rebound,,,,,,,,,,,,,,,,,,
+Aaron Williams,Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,9:27,LAC,shot,,,,,,,,,,Al Thornton,2,,,made,,jump,8,5
+Aaron Williams,Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,9:15,NYK,shot,,,,,,,,,,Jared Jeffries,,,,missed,,jump,45,5
+Aaron Williams,Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,9:13,NYK,rebound,,,,,,,,,,David Lee,,,,,,off,,
+Aaron Williams,Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,9:12,LAC,foul,,,,,,,,David Lee,,Corey Maggette,,,,,,shooting,,
+Aaron Williams,Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,9:12,NYK,free throw,,,,,,,1,,2,David Lee,,,foul,made,,,,
+Aaron Williams,Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,9:12,NYK,free throw,,,,,,,2,,2,David Lee,,,foul,made,,,,
+Aaron Williams,Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,8:50,LAC,shot,,,,,,,,,,Brevin Knight,,,,missed,,jump,45,5
+Aaron Williams,Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,8:49,NYK,rebound,,,,,,,,,,,,,,,,,,
+Aaron Williams,Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,8:49,LAC,foul,,,,,,,,Eddy Curry,,Chris Kaman,,,,,,loose ball,,
+Aaron Williams,Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,8:49,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Aaron Williams,Al Thornton,Brevin Knight,Corey Maggette,Josh Powell,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,8:49,LAC,sub,,,,Josh Powell,,Chris Kaman,,,,,,,,,,,,
+Aaron Williams,Al Thornton,Brevin Knight,Corey Maggette,Josh Powell,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,8:31,NYK,shot,Eddy Curry,,,,,,,,,Jared Jeffries,3,,,made,,3pt,8,23
+Aaron Williams,Al Thornton,Brevin Knight,Corey Maggette,Josh Powell,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,8:11,LAC,turnover,,,,,,,,,,Corey Maggette,,,lost ball,,Mardy Collins,,,
+Aaron Williams,Al Thornton,Brevin Knight,Corey Maggette,Josh Powell,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,8:07,NYK,shot,Mardy Collins,,,,,,,,,Renaldo Balkman,2,,,made,,driving finger roll layup,25,6
+Aaron Williams,Al Thornton,Brevin Knight,Corey Maggette,Josh Powell,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,7:53,LAC,turnover,,,,,,,,,,Corey Maggette,,,lost ball,,Mardy Collins,,,
+Aaron Williams,Al Thornton,Brevin Knight,Corey Maggette,Josh Powell,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,7:46,NYK,shot,Jared Jeffries,,,,,,,,,Eddy Curry,2,,,made,,layup,25,6
+Aaron Williams,Al Thornton,Brevin Knight,Corey Maggette,Josh Powell,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,7:21,LAC,shot,,,,,,,,,,Al Thornton,,,,missed,,jump,12,19
+Aaron Williams,Al Thornton,Brevin Knight,Corey Maggette,Josh Powell,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,7:20,NYK,rebound,,,,,,,,,,Mardy Collins,,,,,,def,,
+Aaron Williams,Al Thornton,Brevin Knight,Corey Maggette,Josh Powell,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,7:12,NYK,shot,Mardy Collins,,,,,,,,,Eddy Curry,2,,,made,,layup,25,6
+Aaron Williams,Al Thornton,Brevin Knight,Corey Maggette,Josh Powell,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,6:59,LAC,foul,,,,,,,,Jared Jeffries,,Corey Maggette,,,,,,offensive,,
+Aaron Williams,Al Thornton,Brevin Knight,Corey Maggette,Josh Powell,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,6:59,LAC,turnover,,,,,,,,,,Corey Maggette,,,foul,,,,,
+Aaron Williams,Al Thornton,Brevin Knight,Corey Maggette,Tim Thomas,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,6:59,LAC,sub,,,,Tim Thomas,,Josh Powell,,,,,,,,,,,,
+Aaron Williams,Al Thornton,Brevin Knight,Corey Maggette,Tim Thomas,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,6:46,NYK,turnover,,,,,,,,,,Mardy Collins,,,bad pass,,,,,
+Aaron Williams,Al Thornton,Brevin Knight,Corey Maggette,Tim Thomas,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,6:25,LAC,shot,,,,,,,,,,Al Thornton,,,,missed,,jump,16,19
+Aaron Williams,Al Thornton,Brevin Knight,Corey Maggette,Tim Thomas,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,6:25,NYK,rebound,,,,,,,,,,David Lee,,,,,,def,,
+Aaron Williams,Al Thornton,Brevin Knight,Corey Maggette,Tim Thomas,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,6:05,LAC,foul,,,,,,,,Mardy Collins,,Brevin Knight,,,,,,shooting,,
+Aaron Williams,Al Thornton,Brevin Knight,Corey Maggette,Tim Thomas,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,6:05,NYK,free throw,,,,,,,1,,3,Mardy Collins,,,foul,made,,,,
+Aaron Williams,Brevin Knight,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,6:05,LAC,sub,,,,Cuttino Mobley,,Al Thornton,,,,,,,,,,,,
+Aaron Williams,Brevin Knight,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,6:05,NYK,free throw,,,,,,,2,,3,Mardy Collins,,,foul,missed,,,,
+Aaron Williams,Brevin Knight,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,6:05,NYK,rebound,,,,,,,,,,,,,,,,,,
+Aaron Williams,Brevin Knight,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,6:05,NYK,free throw,,,,,,,3,,3,Mardy Collins,,,foul,missed,,,,
+Aaron Williams,Brevin Knight,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,6:03,LAC,rebound,,,,,,,,,,Aaron Williams,,,,,,def,,
+Aaron Williams,Brevin Knight,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,5:51,LAC,shot,Cuttino Mobley,,,,,,,,,Tim Thomas,3,,,made,,3pt,48,6
+Aaron Williams,Brevin Knight,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,5:34,NYK,shot,Mardy Collins,,,,,,,,,David Lee,2,,,made,,jump,36,7
+Aaron Williams,Brevin Knight,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,5:24,LAC,timeout,,,,,,,,,,,,,,,,regular,,
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,5:24,LAC,sub,,,,Chris Kaman,,Aaron Williams,,,,,,,,,,,,
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,5:17,LAC,shot,,,,,,,,,,Tim Thomas,,,,missed,,3pt,31,30
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,5:16,NYK,rebound,,,,,,,,,,Eddy Curry,,,,,,def,,
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,5:03,NYK,shot,,,,,,,,,,Renaldo Balkman,,,,missed,,layup,25,6
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,5:02,LAC,rebound,,,,,,,,,,Brevin Knight,,,,,,def,,
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,4:46,LAC,shot,,,,,,,,,,Corey Maggette,,,,missed,,jump,33,27
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,4:45,NYK,rebound,,,,,,,,,,,,,,,,,,
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,4:27,NYK,shot,,,,,,,,,,Eddy Curry,2,,,made,,layup,25,6
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,4:10,LAC,turnover,,,,,,,,,,Cuttino Mobley,,,bad pass,,,,,
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,3:59,NYK,shot,,,,,,,,,,Jared Jeffries,,,,missed,,layup,25,6
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,3:58,LAC,rebound,,,,,,,,,,Chris Kaman,,,,,,def,,
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,3:53,LAC,turnover,,,,,,,,,,Brevin Knight,,,bad pass,,Mardy Collins,,,
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,3:51,NYK,turnover,,,,,,,,,,Mardy Collins,,,bad pass,,Tim Thomas,,,
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,3:47,LAC,shot,,,,,,,,,,Tim Thomas,,,,missed,,jump,37,13
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,3:46,LAC,rebound,,,,,,,,,,Corey Maggette,,,,,,off,,
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,3:46,NYK,foul,,,,,,,,Corey Maggette,,Jared Jeffries,,,,,,loose ball,,
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Mardy Collins,Quentin Richardson,Renaldo Balkman,2,3:46,NYK,sub,,,,Quentin Richardson,,Jared Jeffries,,,,,,,,,,,,
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Mardy Collins,Quentin Richardson,Renaldo Balkman,2,3:36,NYK,foul,,,,,,,,Chris Kaman,,Eddy Curry,,,,,,shooting,,
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Mardy Collins,Quentin Richardson,Renaldo Balkman,2,3:36,LAC,free throw,,,,,,,1,,2,Chris Kaman,,,foul,made,,,,
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jamal Crawford,Quentin Richardson,Renaldo Balkman,2,3:36,NYK,sub,,,,Jamal Crawford,,Mardy Collins,,,,,,,,,,,,
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jamal Crawford,Quentin Richardson,Renaldo Balkman,2,3:36,LAC,free throw,,,,,,,2,,2,Chris Kaman,,,foul,made,,,,
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jamal Crawford,Quentin Richardson,Renaldo Balkman,2,3:22,LAC,foul,,,,,,,,Eddy Curry,,Chris Kaman,,,,,,shooting,,
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jamal Crawford,Quentin Richardson,Renaldo Balkman,2,3:22,NYK,free throw,,,,,,,1,,2,Eddy Curry,,,foul,made,,,,
+Aaron Williams,Brevin Knight,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jamal Crawford,Quentin Richardson,Renaldo Balkman,2,3:22,LAC,sub,,,,Aaron Williams,,Chris Kaman,,,,,,,,,,,,
+Aaron Williams,Brevin Knight,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jamal Crawford,Quentin Richardson,Renaldo Balkman,2,3:22,NYK,free throw,,,,,,,2,,2,Eddy Curry,,,foul,made,,,,
+Aaron Williams,Brevin Knight,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jamal Crawford,Quentin Richardson,Renaldo Balkman,2,3:12,LAC,shot,,,,,,,,,,Corey Maggette,2,,,made,,driving layup,25,6
+Aaron Williams,Brevin Knight,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jamal Crawford,Quentin Richardson,Renaldo Balkman,2,2:56,LAC,foul,,,,,,,,David Lee,,Tim Thomas,,,,,,personal,,
+Aaron Williams,Brevin Knight,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jamal Crawford,Quentin Richardson,Renaldo Balkman,2,2:56,NYK,timeout,,,,,,,,,,,,,,,,regular,,
+Aaron Williams,Brevin Knight,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jamal Crawford,Quentin Richardson,Renaldo Balkman,2,2:56,NYK,free throw,,,,,,,1,,2,David Lee,,,foul,made,,,,
+Aaron Williams,Brevin Knight,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jamal Crawford,Quentin Richardson,Renaldo Balkman,2,2:56,NYK,free throw,,,,,,,2,,2,David Lee,,,foul,made,,,,
+Aaron Williams,Brevin Knight,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jamal Crawford,Quentin Richardson,Renaldo Balkman,2,2:34,LAC,shot,Cuttino Mobley,,,,,,,,,Brevin Knight,2,,,made,,jump,39,21
+Aaron Williams,Brevin Knight,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jamal Crawford,Quentin Richardson,Renaldo Balkman,2,2:19,NYK,shot,,,,,,,,,,Quentin Richardson,,,,missed,,3pt,5,21
+Aaron Williams,Brevin Knight,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jamal Crawford,Quentin Richardson,Renaldo Balkman,2,2:18,LAC,rebound,,,,,,,,,,Aaron Williams,,,,,,def,,
+Aaron Williams,Brevin Knight,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jamal Crawford,Quentin Richardson,Renaldo Balkman,2,2:12,NYK,foul,,,,,,,,Corey Maggette,,Jamal Crawford,,,,,,personal,,
+Aaron Williams,Brevin Knight,Corey Maggette,Cuttino Mobley,Tim Thomas,David Lee,Eddy Curry,Jamal Crawford,Mardy Collins,Renaldo Balkman,2,2:12,NYK,sub,,,,Mardy Collins,,Quentin Richardson,,,,,,,,,,,,
+Aaron Williams,Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Jamal Crawford,Mardy Collins,Renaldo Balkman,2,2:12,LAC,sub,,,,Al Thornton,,Tim Thomas,,,,,,,,,,,,
+Aaron Williams,Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Jamal Crawford,Mardy Collins,Renaldo Balkman,2,1:57,LAC,shot,,,,,,,,,,Al Thornton,2,,,made,,jump,36,22
+Aaron Williams,Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Jamal Crawford,Mardy Collins,Renaldo Balkman,2,1:46,NYK,shot,,,Aaron Williams,,,,,,,Eddy Curry,,,,missed,,layup,25,6
+Aaron Williams,Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Jamal Crawford,Mardy Collins,Renaldo Balkman,2,1:45,LAC,rebound,,,,,,,,,,Al Thornton,,,,,,def,,
+Aaron Williams,Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Jamal Crawford,Mardy Collins,Renaldo Balkman,2,1:41,LAC,turnover,,,,,,,,,,Al Thornton,,,traveling,,,,,
+Aaron Williams,Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Jamal Crawford,Mardy Collins,Renaldo Balkman,2,1:29,NYK,foul,,,,,,,,Brevin Knight,,David Lee,,,,,,offensive,,
+Aaron Williams,Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Jamal Crawford,Mardy Collins,Renaldo Balkman,2,1:29,NYK,turnover,,,,,,,,,,David Lee,,,foul,,,,,
+Aaron Williams,Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Jamal Crawford,Mardy Collins,Renaldo Balkman,2,1:20,LAC,shot,Aaron Williams,,,,,,,,,Corey Maggette,2,,,made,,layup,25,6
+Aaron Williams,Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Jamal Crawford,Mardy Collins,Renaldo Balkman,2,1:03,NYK,turnover,,,,,,,,,,Eddy Curry,,,lost ball,,Brevin Knight,,,
+Aaron Williams,Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Jamal Crawford,Mardy Collins,Renaldo Balkman,2,0:52,NYK,foul,,,,,,,,Corey Maggette,,David Lee,,,,,,shooting,,
+Aaron Williams,Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Jamal Crawford,Mardy Collins,Renaldo Balkman,2,0:52,LAC,free throw,,,,,,,1,,2,Corey Maggette,,,foul,made,,,,
+Aaron Williams,Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,Eddy Curry,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,2,0:52,NYK,sub,,,,Jared Jeffries,,David Lee,,,,,,,,,,,,
+Aaron Williams,Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,2,0:52,NYK,sub,,,,Zach Randolph,,Eddy Curry,,,,,,,,,,,,
+Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,2,0:52,LAC,sub,,,,Josh Powell,,Aaron Williams,,,,,,,,,,,,
+Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,2,0:52,LAC,free throw,,,,,,,2,,2,Corey Maggette,,,foul,made,,,,
+Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,2,0:37,NYK,turnover,,,,,,,,,,Jared Jeffries,,,lost ball,,Brevin Knight,,,
+Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,2,0:23,LAC,shot,,,,,,,,,,Corey Maggette,,,,missed,,jump,40,6
+Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,2,0:22,NYK,rebound,,,,,,,,,,Zach Randolph,,,,,,def,,
+Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,2,0:02,NYK,shot,Jamal Crawford,,,,,,,,,Zach Randolph,3,,,made,,3pt,2,20
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,11:46,LAC,violation,,,,,,,,,,Chris Kaman,,,,,,kicked ball,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,11:41,LAC,foul,,,,,,,,Eddy Curry,,Quinton Ross,,,,,,shooting,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,11:41,NYK,free throw,,,,,,,1,,2,Eddy Curry,,,foul,missed,,,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,11:41,NYK,rebound,,,,,,,,,,,,,,,,,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,11:41,NYK,free throw,,,,,,,2,,2,Eddy Curry,,,foul,made,,,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,11:24,LAC,shot,,,,,,,,,,Cuttino Mobley,,,,missed,,3pt,17,30
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,11:22,NYK,rebound,,,,,,,,,,Fred Jones,,,,,,def,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,11:04,NYK,turnover,,,,,,,,,,Eddy Curry,,,bad pass,,Quinton Ross,,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,10:59,LAC,shot,,,,,,,,,,Cuttino Mobley,2,,,made,,driving reverse layup,25,6
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,10:33,NYK,shot,Jamal Crawford,,,,,,,,,Fred Jones,3,,,made,,3pt,49,10
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,10:10,LAC,shot,Quinton Ross,,,,,,,,,Chris Kaman,2,,,made,,hook,27,11
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,9:50,NYK,shot,,,,,,,,,,Eddy Curry,,,,missed,,jump,33,11
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,9:48,NYK,rebound,,,,,,,,,,Fred Jones,,,,,,off,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,9:34,NYK,shot,,,,,,,,,,Jamal Crawford,,,,missed,,jump,6,8
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,9:33,LAC,rebound,,,,,,,,,,Josh Powell,,,,,,def,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,9:22,LAC,shot,,,,,,,,,,Chris Kaman,,,,missed,,jump,8,8
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,9:21,LAC,rebound,,,,,,,,,,Josh Powell,,,,,,off,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,9:03,LAC,shot,,,,,,,,,,Chris Kaman,,,,missed,,jump,7,10
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,9:01,NYK,rebound,,,,,,,,,,Zach Randolph,,,,,,def,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,8:45,NYK,shot,Fred Jones,,,,,,,,,Eddy Curry,2,,,made,,jump hook,26,11
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,8:28,LAC,turnover,,,,,,,,,,Sam Cassell,,,traveling,,,,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,8:16,LAC,foul,,,,,,,,Fred Jones,,Josh Powell,,,,,,personal,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,8:11,NYK,shot,,,Chris Kaman,,,,,,,Fred Jones,,,,missed,,layup,25,6
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,8:09,LAC,rebound,,,,,,,,,,Quinton Ross,,,,,,def,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,7:56,LAC,shot,Josh Powell,,,,,,,,,Quinton Ross,2,,,made,,layup,25,6
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,7:39,NYK,shot,,,,,,,,,,Fred Jones,,,,missed,,3pt,48,6
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,7:38,LAC,rebound,,,,,,,,,,Josh Powell,,,,,,def,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,7:21,LAC,shot,,,,,,,,,,Quinton Ross,2,,,made,,jump,43,15
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,6:57,NYK,shot,,,,,,,,,,Jamal Crawford,,,,missed,,jump,9,8
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,6:57,LAC,rebound,,,,,,,,,,Josh Powell,,,,,,def,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,6:51,NYK,foul,,,,,,,,Sam Cassell,,Fred Jones,,,,,,shooting,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,6:51,LAC,free throw,,,,,,,1,,2,Sam Cassell,,,foul,missed,,,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,6:51,LAC,rebound,,,,,,,,,,,,,,,,,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,6:51,LAC,free throw,,,,,,,2,,2,Sam Cassell,,,foul,made,,,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,6:42,NYK,turnover,,,,,,,,,,Fred Jones,,,bad pass,,,,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,6:30,LAC,shot,,,,,,,,,,Sam Cassell,2,,,made,,driving layup,25,6
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,6:10,NYK,turnover,,,,,,,,,,Jared Jeffries,,,bad pass,,,,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,6:04,LAC,shot,,,,,,,,,,Sam Cassell,,,,missed,,jump,36,24
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,6:01,NYK,rebound,,,,,,,,,,Eddy Curry,,,,,,def,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,5:43,NYK,shot,,,,,,,,,,Zach Randolph,,,,missed,,jump,27,27
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,5:42,NYK,rebound,,,,,,,,,,Fred Jones,,,,,,off,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,5:40,LAC,foul,,,,,,,,Jared Jeffries,,Cuttino Mobley,,,,,,personal,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Jared Jeffries,Zach Randolph,3,5:40,NYK,timeout,,,,,,,,,,,,,,,,regular,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Jamal Crawford,Jared Jeffries,Mardy Collins,Zach Randolph,3,5:40,NYK,sub,,,,Mardy Collins,,Fred Jones,,,,,,,,,,,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Jamal Crawford,Jared Jeffries,Mardy Collins,Zach Randolph,3,5:28,NYK,shot,,,,,,,,,,Zach Randolph,,,,missed,,layup,25,6
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Jamal Crawford,Jared Jeffries,Mardy Collins,Zach Randolph,3,5:27,LAC,rebound,,,,,,,,,,Sam Cassell,,,,,,def,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Jamal Crawford,Jared Jeffries,Mardy Collins,Zach Randolph,3,5:20,LAC,shot,Sam Cassell,,,,,,,,,Quinton Ross,2,,,made,,jump,5,6
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Jamal Crawford,Jared Jeffries,Mardy Collins,Zach Randolph,3,5:01,NYK,turnover,,,,,,,,,,Eddy Curry,,,bad pass,,Sam Cassell,,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Jamal Crawford,Jared Jeffries,Mardy Collins,Zach Randolph,3,5:01,NYK,foul,,,,,,,,Sam Cassell,,Mardy Collins,,,,,,personal,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,David Lee,Jamal Crawford,Jared Jeffries,Mardy Collins,Zach Randolph,3,5:01,NYK,sub,,,,David Lee,,Eddy Curry,,,,,,,,,,,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,David Lee,Jamal Crawford,Jared Jeffries,Mardy Collins,Zach Randolph,3,4:49,LAC,shot,,,,,,,,,,Sam Cassell,,,,missed,,jump,32,12
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,David Lee,Jamal Crawford,Jared Jeffries,Mardy Collins,Zach Randolph,3,4:47,NYK,rebound,,,,,,,,,,David Lee,,,,,,def,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,David Lee,Jamal Crawford,Jared Jeffries,Mardy Collins,Zach Randolph,3,4:30,NYK,shot,,,,,,,,,,Jamal Crawford,,,,missed,,3pt,35,29
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,David Lee,Jamal Crawford,Jared Jeffries,Mardy Collins,Zach Randolph,3,4:27,NYK,rebound,,,,,,,,,,Jared Jeffries,,,,,,off,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,David Lee,Jamal Crawford,Jared Jeffries,Mardy Collins,Zach Randolph,3,4:26,NYK,shot,,,,,,,,,,Jared Jeffries,2,,,made,,slam dunk,25,6
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,David Lee,Jamal Crawford,Jared Jeffries,Mardy Collins,Zach Randolph,3,4:10,LAC,shot,Cuttino Mobley,,,,,,,,,Chris Kaman,2,,,made,,jump,10,8
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,David Lee,Jamal Crawford,Jared Jeffries,Mardy Collins,Zach Randolph,3,3:44,NYK,shot,,,,,,,,,,Zach Randolph,2,,,made,,layup,25,6
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,David Lee,Jamal Crawford,Jared Jeffries,Mardy Collins,Zach Randolph,3,3:28,NYK,foul,,,,,,,,Chris Kaman,,Jared Jeffries,,,,,,shooting,,
+Brevin Knight,Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,David Lee,Jamal Crawford,Jared Jeffries,Mardy Collins,Zach Randolph,3,3:28,LAC,sub,,,,Brevin Knight,,Sam Cassell,,,,,,,,,,,,
+Brevin Knight,Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,David Lee,Jamal Crawford,Jared Jeffries,Mardy Collins,Zach Randolph,3,3:28,LAC,free throw,,,,,,,1,,2,Chris Kaman,,,foul,made,,,,
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Josh Powell,David Lee,Jamal Crawford,Jared Jeffries,Mardy Collins,Zach Randolph,3,3:28,LAC,sub,,,,Corey Maggette,,Quinton Ross,,,,,,,,,,,,
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Josh Powell,David Lee,Jamal Crawford,Jared Jeffries,Mardy Collins,Zach Randolph,3,3:28,LAC,free throw,,,,,,,2,,2,Chris Kaman,,,foul,made,,,,
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Josh Powell,David Lee,Jamal Crawford,Jared Jeffries,Mardy Collins,Zach Randolph,3,3:17,NYK,shot,,,,,,,,,,Jamal Crawford,,,,missed,,jump,41,11
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Josh Powell,David Lee,Jamal Crawford,Jared Jeffries,Mardy Collins,Zach Randolph,3,3:16,LAC,rebound,,,,,,,,,,Chris Kaman,,,,,,def,,
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Josh Powell,David Lee,Jamal Crawford,Jared Jeffries,Mardy Collins,Zach Randolph,3,3:03,LAC,shot,,,,,,,,,,Brevin Knight,,,,missed,,jump,5,7
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Josh Powell,David Lee,Jamal Crawford,Jared Jeffries,Mardy Collins,Zach Randolph,3,3:03,LAC,rebound,,,,,,,,,,Josh Powell,,,,,,off,,
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Josh Powell,David Lee,Jamal Crawford,Jared Jeffries,Mardy Collins,Zach Randolph,3,3:03,NYK,foul,,,,,,,,Josh Powell,,David Lee,,,,,,loose ball,,
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Josh Powell,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,3:03,NYK,sub,,,,Renaldo Balkman,,David Lee,,,,,,,,,,,,
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Josh Powell,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,2:52,LAC,shot,,,,,,,,,,Josh Powell,,,,missed,,jump,38,13
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Josh Powell,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,2:51,NYK,rebound,,,,,,,,,,Jared Jeffries,,,,,,def,,
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Josh Powell,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,2:42,NYK,turnover,,,,,,,,,,Mardy Collins,,,bad pass,,Cuttino Mobley,,,
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Josh Powell,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,2:32,NYK,foul,,,,,,,,Corey Maggette,,Jared Jeffries,,,,,,shooting,,
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Josh Powell,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,2:32,LAC,timeout,,,,,,,,,,,,,,,,regular,,
+Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,2:32,LAC,sub,,,,Al Thornton,,Chris Kaman,,,,,,,,,,,,
+Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,2:32,LAC,free throw,,,,,,,1,,2,Corey Maggette,,,foul,made,,,,
+Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,2:32,LAC,free throw,,,,,,,2,,2,Corey Maggette,,,foul,made,,,,
+Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,2:09,NYK,shot,,,,,,,,,,Jamal Crawford,,,,missed,,jump,30,22
+Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,2:08,LAC,rebound,,,,,,,,,,Cuttino Mobley,,,,,,def,,
+Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,1:52,LAC,shot,,,,,,,,,,Al Thornton,,,,missed,,layup,25,6
+Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,1:49,LAC,shot,,,,,,,,,,Josh Powell,2,,,made,,tip,25,6
+Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,1:49,LAC,rebound,,,,,,,,,,Josh Powell,,,,,,off,,
+Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,1:30,NYK,turnover,,,,,,,,,,Jared Jeffries,,,lost ball,,Cuttino Mobley,,,
+Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,1:26,LAC,shot,,,,,,,,,,Corey Maggette,,,,missed,,layup,25,6
+Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,1:24,LAC,rebound,,,,,,,,,,,,,,,,,,
+Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,1:12,LAC,shot,,,,,,,,,,Al Thornton,2,,,made,,driving layup,25,6
+Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,1:12,NYK,foul,,,,,,,,Al Thornton,,Jared Jeffries,,,,,,shooting,,
+Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,1:12,LAC,free throw,,,,,,,1,,1,Al Thornton,,,foul,made,,,,
+Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,1:03,NYK,turnover,,,,,,,,,,Renaldo Balkman,,,illegal screen turnover,,,,,
+Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,0:51,LAC,shot,,,,,,,,,,Cuttino Mobley,,,,missed,,jump,8,9
+Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,0:49,NYK,rebound,,,,,,,,,,Zach Randolph,,,,,,def,,
+Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,0:41,NYK,shot,,,,,,,,,,Jamal Crawford,2,,,made,,driving layup,25,6
+Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,0:32,NYK,foul,,,,,,,,Cuttino Mobley,,Mardy Collins,,,,,,personal,,
+Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,0:32,LAC,free throw,,,,,,,1,,2,Cuttino Mobley,,,foul,made,,,,
+Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,0:32,LAC,free throw,,,,,,,2,,2,Cuttino Mobley,,,foul,made,,,,
+Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,0:13,NYK,shot,,,Josh Powell,,,,,,,Jamal Crawford,,,,missed,,layup,25,6
+Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,0:11,LAC,rebound,,,,,,,,,,Cuttino Mobley,,,,,,def,,
+Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,0:09,NYK,foul,,,,,,,,Corey Maggette,,Renaldo Balkman,,,,,,shooting,,
+Al Thornton,Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,0:09,LAC,free throw,,,,,,,1,,2,Corey Maggette,,,foul,made,,,,
+Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Quinton Ross,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,0:09,LAC,sub,,,,Quinton Ross,,Al Thornton,,,,,,,,,,,,
+Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Quinton Ross,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,0:09,LAC,free throw,,,,,,,2,,2,Corey Maggette,,,foul,made,,,,
+Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Quinton Ross,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,0:02,NYK,shot,,,,,,,,,,Mardy Collins,2,,,made,,driving layup,25,6
+Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Quinton Ross,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,0:02,LAC,foul,,,,,,,,Mardy Collins,,Brevin Knight,,,,,,shooting,,
+Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Quinton Ross,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,0:02,NYK,free throw,,,,,,,1,,1,Mardy Collins,,,foul,missed,,,,
+Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Quinton Ross,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,0:01,LAC,rebound,,,,,,,,,,Corey Maggette,,,,,,def,,
+Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Quinton Ross,Jamal Crawford,Jared Jeffries,Mardy Collins,Renaldo Balkman,Zach Randolph,3,0:00,LAC,turnover,,,,,,,,,,Corey Maggette,,,traveling,,,,,
+Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Quinton Ross,Eddy Curry,Jamal Crawford,Mardy Collins,Renaldo Balkman,Zach Randolph,3,0:00,NYK,sub,,,,Eddy Curry,,Jared Jeffries,,,,,,,,,,,,
+Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Quinton Ross,Eddy Curry,Jamal Crawford,Mardy Collins,Renaldo Balkman,Zach Randolph,3,0:00,LAC,sub,,,,Aaron Williams,,Al Thornton,,,,,,,,,,,,
+Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Quinton Ross,Eddy Curry,Jamal Crawford,Mardy Collins,Renaldo Balkman,Zach Randolph,3,0:00,NYK,shot,,,,,,,,,,Jamal Crawford,,,,missed,,3pt,13,31
+Brevin Knight,Corey Maggette,Cuttino Mobley,Josh Powell,Quinton Ross,Eddy Curry,Jamal Crawford,Mardy Collins,Renaldo Balkman,Zach Randolph,3,0:00,NYK,rebound,,,,,,,,,,,,,,,,,,
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Fred Jones,Jamal Crawford,Mardy Collins,4,11:44,LAC,shot,,,Eddy Curry,,,,,,,Al Thornton,,,,missed,,layup,25,6
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Fred Jones,Jamal Crawford,Mardy Collins,4,11:42,LAC,rebound,,,,,,,,,,Al Thornton,,,,,,off,,
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Fred Jones,Jamal Crawford,Mardy Collins,4,11:40,LAC,shot,,,,,,,,,,Al Thornton,2,,,made,,layup,25,6
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Fred Jones,Jamal Crawford,Mardy Collins,4,11:20,NYK,shot,,,,,,,,,,Eddy Curry,,,,missed,,jump,19,17
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Fred Jones,Jamal Crawford,Mardy Collins,4,11:18,NYK,rebound,,,,,,,,,,Jamal Crawford,,,,,,off,,
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Fred Jones,Jamal Crawford,Mardy Collins,4,11:12,NYK,shot,,,,,,,,,,Jamal Crawford,,,,missed,,jump,20,18
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Fred Jones,Jamal Crawford,Mardy Collins,4,11:11,LAC,rebound,,,,,,,,,,Cuttino Mobley,,,,,,def,,
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Fred Jones,Jamal Crawford,Mardy Collins,4,10:58,LAC,shot,,,,,,,,,,Cuttino Mobley,,,,missed,,jump,8,16
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Fred Jones,Jamal Crawford,Mardy Collins,4,10:56,NYK,rebound,,,,,,,,,,Fred Jones,,,,,,def,,
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Fred Jones,Jamal Crawford,Mardy Collins,4,10:36,NYK,shot,,,,,,,,,,Jamal Crawford,3,,,made,,3pt,1,11
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Fred Jones,Jamal Crawford,Mardy Collins,4,10:12,LAC,shot,Al Thornton,,,,,,,,,Chris Kaman,2,,,made,,turnaround jump,19,14
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Fred Jones,Jamal Crawford,Mardy Collins,4,9:47,NYK,shot,,,,,,,,,,Jamal Crawford,2,,,made,,running jump,29,13
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Fred Jones,Jamal Crawford,Mardy Collins,4,9:25,LAC,shot,,,,,,,,,,Brevin Knight,,,,missed,,jump,44,7
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Fred Jones,Jamal Crawford,Mardy Collins,4,9:24,NYK,rebound,,,,,,,,,,Mardy Collins,,,,,,def,,
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Fred Jones,Jamal Crawford,Mardy Collins,4,9:19,NYK,turnover,,,,,,,,,,Mardy Collins,,,lost ball,,Brevin Knight,,,
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Fred Jones,Jamal Crawford,Mardy Collins,4,9:13,LAC,shot,,,Eddy Curry,,,,,,,Al Thornton,,,,missed,,layup,25,6
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Fred Jones,Jamal Crawford,Mardy Collins,4,9:11,LAC,rebound,,,,,,,,,,Al Thornton,,,,,,off,,
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Fred Jones,Jamal Crawford,Mardy Collins,4,9:08,LAC,shot,,,,,,,,,,Al Thornton,,,,missed,,jump,37,13
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Fred Jones,Jamal Crawford,Mardy Collins,4,9:07,LAC,rebound,,,,,,,,,,Corey Maggette,,,,,,off,,
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Fred Jones,Jamal Crawford,Mardy Collins,4,8:50,LAC,shot,,,,,,,,,,Corey Maggette,,,,missed,,jump,44,7
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Fred Jones,Jamal Crawford,Mardy Collins,4,8:49,NYK,rebound,,,,,,,,,,Jamal Crawford,,,,,,def,,
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Fred Jones,Jamal Crawford,Mardy Collins,4,8:40,NYK,turnover,,,,,,,,,,Eddy Curry,,,3 second violation,,,,,
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Fred Jones,Jamal Crawford,Mardy Collins,4,8:40,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Fred Jones,Jamal Crawford,Mardy Collins,4,8:15,LAC,shot,,,,,,,,,,Al Thornton,,,,missed,,jump,42,6
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Fred Jones,Jamal Crawford,Mardy Collins,4,8:14,NYK,rebound,,,,,,,,,,Fred Jones,,,,,,def,,
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Fred Jones,Jamal Crawford,Mardy Collins,4,8:07,NYK,shot,,,,,,,,,,Jamal Crawford,,,,missed,,3pt,1,5
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Fred Jones,Jamal Crawford,Mardy Collins,4,8:06,LAC,rebound,,,,,,,,,,Cuttino Mobley,,,,,,def,,
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Fred Jones,Jamal Crawford,Mardy Collins,4,7:49,LAC,shot,Brevin Knight,,,,,,,,,Cuttino Mobley,2,,,made,,jump,38,7
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Fred Jones,Jamal Crawford,Mardy Collins,4,7:26,LAC,foul,,,,,,,,Eddy Curry,,Brevin Knight,,,,,,shooting,,
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Fred Jones,Jamal Crawford,Mardy Collins,4,7:26,NYK,free throw,,,,,,,1,,2,Eddy Curry,,,foul,missed,,,,
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,David Lee,Eddy Curry,Fred Jones,Jamal Crawford,Mardy Collins,4,7:26,NYK,rebound,,,,,,,,,,,,,,,,,,
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Eddy Curry,Fred Jones,Jamal Crawford,Mardy Collins,Zach Randolph,4,7:26,NYK,sub,,,,Zach Randolph,,David Lee,,,,,,,,,,,,
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Eddy Curry,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,7:26,NYK,sub,,,,Renaldo Balkman,,Mardy Collins,,,,,,,,,,,,
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Eddy Curry,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,7:26,NYK,free throw,,,,,,,2,,2,Eddy Curry,,,foul,missed,,,,
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Eddy Curry,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,7:25,LAC,rebound,,,,,,,,,,Chris Kaman,,,,,,def,,
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Eddy Curry,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,7:13,LAC,shot,,,,,,,,,,Brevin Knight,,,,missed,,jump,43,10
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Eddy Curry,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,7:12,NYK,rebound,,,,,,,,,,Fred Jones,,,,,,def,,
+Al Thornton,Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Eddy Curry,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,7:01,LAC,foul,,,,,,,,Zach Randolph,,Al Thornton,,,,,,personal,,
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Josh Powell,Eddy Curry,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,7:01,LAC,sub,,,,Josh Powell,,Al Thornton,,,,,,,,,,,,
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Josh Powell,Eddy Curry,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,6:53,NYK,shot,Zach Randolph,,,,,,,,,Renaldo Balkman,2,,,made,,driving dunk,25,6
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Josh Powell,Eddy Curry,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,6:44,LAC,shot,,,,,,,,,,Corey Maggette,2,,,made,,driving layup,25,6
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Josh Powell,Eddy Curry,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,6:17,NYK,shot,,,Chris Kaman,,,,,,,Renaldo Balkman,,,,missed,,layup,25,6
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Josh Powell,Eddy Curry,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,6:15,LAC,rebound,,,,,,,,,,Corey Maggette,,,,,,def,,
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Josh Powell,Eddy Curry,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,6:09,NYK,foul,,,,,,,,Chris Kaman,,Eddy Curry,,,,,,personal,,
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Josh Powell,Eddy Curry,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,6:00,LAC,shot,,,,,,,,,,Cuttino Mobley,2,,,made,,fade away jumper,9,14
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Josh Powell,Eddy Curry,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,5:44,LAC,foul,,,,,,,,Jamal Crawford,,Brevin Knight,,,,,,shooting,,
+Brevin Knight,Chris Kaman,Corey Maggette,Cuttino Mobley,Josh Powell,Eddy Curry,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,5:44,NYK,timeout,,,,,,,,,,,,,,,,regular,,
+Brevin Knight,Chris Kaman,Cuttino Mobley,Josh Powell,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,5:44,LAC,sub,,,,Sam Cassell,,Corey Maggette,,,,,,,,,,,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,5:44,LAC,sub,,,,Quinton Ross,,Brevin Knight,,,,,,,,,,,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,5:44,NYK,free throw,,,,,,,1,,2,Jamal Crawford,,,foul,made,,,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,5:44,NYK,free throw,,,,,,,2,,2,Jamal Crawford,,,foul,made,,,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,5:44,NYK,sub,,,,David Lee,,Eddy Curry,,,,,,,,,,,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,5:24,LAC,shot,,,,,,,,,,Cuttino Mobley,,,,missed,,3pt,49,4
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,5:23,LAC,rebound,,,,,,,,,,Chris Kaman,,,,,,off,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,5:22,NYK,foul,,,,,,,,Chris Kaman,,David Lee,,,,,,shooting,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,5:22,LAC,free throw,,,,,,,1,,2,Chris Kaman,,,foul,made,,,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,5:22,LAC,free throw,,,,,,,2,,2,Chris Kaman,,,foul,missed,,,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,5:20,NYK,rebound,,,,,,,,,,Zach Randolph,,,,,,def,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,5:12,NYK,shot,,,,,,,,,,Jamal Crawford,2,,,made,,jump,14,23
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,4:58,NYK,foul,,,,,,,,Cuttino Mobley,,Jamal Crawford,,,,,,personal,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,4:47,LAC,shot,,,,,,,,,,Chris Kaman,,,,missed,,jump,16,6
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,4:46,NYK,rebound,,,,,,,,,,Jamal Crawford,,,,,,def,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,4:40,NYK,shot,,,,,,,,,,Jamal Crawford,2,,,made,,driving layup,25,6
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,4:17,LAC,shot,,,,,,,,,,Quinton Ross,,,,missed,,jump,6,19
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,4:15,LAC,rebound,,,,,,,,,,Josh Powell,,,,,,off,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,4:15,NYK,foul,,,,,,,,Josh Powell,,Zach Randolph,,,,,,shooting,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,4:15,LAC,free throw,,,,,,,1,,2,Josh Powell,,,foul,made,,,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,4:15,LAC,free throw,,,,,,,2,,2,Josh Powell,,,foul,missed,,,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,4:14,NYK,rebound,,,,,,,,,,David Lee,,,,,,def,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,3:56,NYK,shot,,,,,,,,,,Jamal Crawford,2,,,made,,jump,13,23
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,3:28,LAC,shot,Chris Kaman,,,,,,,,,Josh Powell,2,,,made,,jump,17,18
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,3:12,NYK,shot,,,,,,,,,,Jamal Crawford,,,,missed,,3pt,47,14
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,3:10,LAC,rebound,,,,,,,,,,Chris Kaman,,,,,,def,,
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,2:55,LAC,shot,Quinton Ross,,,,,,,,,Josh Powell,2,,,made,,layup,25,6
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,2:34,NYK,shot,,,,,,,,,,Fred Jones,2,,,made,,driving layup,25,6
+Chris Kaman,Cuttino Mobley,Josh Powell,Quinton Ross,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,2:24,LAC,timeout,,,,,,,,,,,,,,,,regular,,
+Chris Kaman,Corey Maggette,Cuttino Mobley,Quinton Ross,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,2:24,LAC,sub,,,,Corey Maggette,,Josh Powell,,,,,,,,,,,,
+Chris Kaman,Corey Maggette,Cuttino Mobley,Quinton Ross,Sam Cassell,David Lee,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,2:13,NYK,foul,,,,,,,,Corey Maggette,,David Lee,,,,,,shooting,,
+Chris Kaman,Corey Maggette,Cuttino Mobley,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,2:13,NYK,sub,,,,Eddy Curry,,David Lee,,,,,,,,,,,,
+Chris Kaman,Corey Maggette,Cuttino Mobley,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,2:13,LAC,free throw,,,,,,,1,,2,Corey Maggette,,,foul,made,,,,
+Chris Kaman,Corey Maggette,Cuttino Mobley,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,2:13,LAC,free throw,,,,,,,2,,2,Corey Maggette,,,foul,made,,,,
+Chris Kaman,Corey Maggette,Cuttino Mobley,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,1:58,NYK,shot,,,,,,,,,,Fred Jones,,,,missed,,jump,11,16
+Chris Kaman,Corey Maggette,Cuttino Mobley,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,1:57,NYK,rebound,,,,,,,,,,Zach Randolph,,,,,,off,,
+Chris Kaman,Corey Maggette,Cuttino Mobley,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,1:46,NYK,foul,,,,,,,,Corey Maggette,,Zach Randolph,,,,,,offensive,,
+Chris Kaman,Corey Maggette,Cuttino Mobley,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,1:46,NYK,turnover,,,,,,,,,,Zach Randolph,,,foul,,,,,
+Chris Kaman,Corey Maggette,Cuttino Mobley,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,1:27,LAC,shot,,,,,,,,,,Sam Cassell,,,,missed,,jump,28,18
+Chris Kaman,Corey Maggette,Cuttino Mobley,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,1:26,LAC,rebound,,,,,,,,,,Chris Kaman,,,,,,off,,
+Chris Kaman,Corey Maggette,Cuttino Mobley,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,1:26,NYK,foul,,,,,,,,Chris Kaman,,Renaldo Balkman,,,,,,shooting,,
+Chris Kaman,Corey Maggette,Cuttino Mobley,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,1:26,LAC,free throw,,,,,,,1,,2,Chris Kaman,,,foul,made,,,,
+Chris Kaman,Corey Maggette,Cuttino Mobley,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,1:26,LAC,free throw,,,,,,,2,,2,Chris Kaman,,,foul,made,,,,
+Chris Kaman,Corey Maggette,Cuttino Mobley,Quinton Ross,Sam Cassell,Eddy Curry,Fred Jones,Jamal Crawford,Renaldo Balkman,Zach Randolph,4,1:26,NYK,timeout,,,,,,,,,,,,,,,,regular,,
+Chris Kaman,Corey Maggette,Cuttino Mobley,Quinton Ross,Sam Cassell,Fred Jones,Jamal Crawford,Jared Jeffries,Renaldo Balkman,Zach Randolph,4,1:26,NYK,sub,,,,Jared Jeffries,,Eddy Curry,,,,,,,,,,,,
+Chris Kaman,Corey Maggette,Cuttino Mobley,Quinton Ross,Sam Cassell,Fred Jones,Jamal Crawford,Jared Jeffries,Renaldo Balkman,Zach Randolph,4,1:19,NYK,shot,,,,,,,,,,Renaldo Balkman,,,,missed,,jump,5,6
+Chris Kaman,Corey Maggette,Cuttino Mobley,Quinton Ross,Sam Cassell,Fred Jones,Jamal Crawford,Jared Jeffries,Renaldo Balkman,Zach Randolph,4,1:18,LAC,rebound,,,,,,,,,,Corey Maggette,,,,,,def,,
+Chris Kaman,Corey Maggette,Cuttino Mobley,Quinton Ross,Sam Cassell,Fred Jones,Jamal Crawford,Jared Jeffries,Renaldo Balkman,Zach Randolph,4,1:00,LAC,turnover,,,,,,,,,,Corey Maggette,,,traveling,,,,,
+Chris Kaman,Corey Maggette,Cuttino Mobley,Quinton Ross,Sam Cassell,Fred Jones,Jamal Crawford,Jared Jeffries,Renaldo Balkman,Zach Randolph,4,0:53,NYK,shot,,,,,,,,,,Jamal Crawford,,,,missed,,jump,35,11
+Chris Kaman,Corey Maggette,Cuttino Mobley,Quinton Ross,Sam Cassell,Fred Jones,Jamal Crawford,Jared Jeffries,Renaldo Balkman,Zach Randolph,4,0:52,LAC,rebound,,,,,,,,,,Sam Cassell,,,,,,def,,
+Chris Kaman,Corey Maggette,Cuttino Mobley,Quinton Ross,Sam Cassell,Fred Jones,Jamal Crawford,Jared Jeffries,Renaldo Balkman,Zach Randolph,4,0:29,LAC,shot,,,,,,,,,,Sam Cassell,2,,,made,,jump,32,25
+Chris Kaman,Corey Maggette,Cuttino Mobley,Quinton Ross,Sam Cassell,Fred Jones,Jamal Crawford,Jared Jeffries,Renaldo Balkman,Zach Randolph,4,0:24,NYK,shot,,,,,,,,,,Jamal Crawford,3,,,made,,3pt,12,28
+Chris Kaman,Corey Maggette,Cuttino Mobley,Quinton Ross,Sam Cassell,Fred Jones,Jamal Crawford,Jared Jeffries,Renaldo Balkman,Zach Randolph,4,0:17,NYK,foul,,,,,,,,Corey Maggette,,Fred Jones,,,,,,personal,,
+Chris Kaman,Corey Maggette,Cuttino Mobley,Quinton Ross,Sam Cassell,Fred Jones,Jamal Crawford,Jared Jeffries,Renaldo Balkman,Zach Randolph,4,0:17,LAC,free throw,,,,,,,1,,2,Corey Maggette,,,foul,made,,,,
+Chris Kaman,Corey Maggette,Cuttino Mobley,Quinton Ross,Sam Cassell,Fred Jones,Jamal Crawford,Jared Jeffries,Renaldo Balkman,Zach Randolph,4,0:17,LAC,free throw,,,,,,,2,,2,Corey Maggette,,,foul,made,,,,
+Chris Kaman,Corey Maggette,Cuttino Mobley,Quinton Ross,Sam Cassell,Fred Jones,Jamal Crawford,Jared Jeffries,Renaldo Balkman,Zach Randolph,4,0:11,NYK,shot,,,,,,,,,,Jamal Crawford,,,,missed,,3pt,4,23
+Chris Kaman,Corey Maggette,Cuttino Mobley,Quinton Ross,Sam Cassell,Fred Jones,Jamal Crawford,Jared Jeffries,Renaldo Balkman,Zach Randolph,4,0:09,NYK,rebound,,,,,,,,,,Jamal Crawford,,,,,,off,,
+Chris Kaman,Corey Maggette,Cuttino Mobley,Quinton Ross,Sam Cassell,Fred Jones,Jamal Crawford,Jared Jeffries,Renaldo Balkman,Zach Randolph,4,0:05,NYK,shot,,,,,,,,,,Jared Jeffries,,,,missed,,3pt,6,24
+Chris Kaman,Corey Maggette,Cuttino Mobley,Quinton Ross,Sam Cassell,Fred Jones,Jamal Crawford,Jared Jeffries,Renaldo Balkman,Zach Randolph,4,0:03,LAC,rebound,,,,,,,,,,Chris Kaman,,,,,,def,,
+Al Thornton,Chris Kaman,Corey Maggette,Cuttino Mobley,Sam Cassell,Fred Jones,Jamal Crawford,Jared Jeffries,Renaldo Balkman,Zach Randolph,4,0:02,LAC,sub,,,,Al Thornton,,Quinton Ross,,,,,,,,,,,,

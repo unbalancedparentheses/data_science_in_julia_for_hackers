@@ -1,0 +1,364 @@
+a1,a2,a3,a4,a5,h1,h2,h3,h4,h5,period,time,team,etype,assist,away,block,entered,home,left,num,opponent,outof,player,points,possession,reason,result,steal,type,x,y
+Eric Gordon,Fred Jones,Marcus Camby,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,12:00,OFF,jump ball,,Marcus Camby,,,Tim Duncan,,,,,,,Zach Randolph,,,,,,
+Eric Gordon,Fred Jones,Marcus Camby,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,11:39,LAC,shot,,,,,,,,,,Zach Randolph,2,,,made,,jump,7,8
+Eric Gordon,Fred Jones,Marcus Camby,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,11:26,LAC,foul,,,,,,,,Tony Parker,,Mike Taylor,,,,,,personal,,
+Eric Gordon,Fred Jones,Marcus Camby,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,11:16,SAS,shot,,,,,,,,,,Matt Bonner,,,,missed,,3pt,48,6
+Eric Gordon,Fred Jones,Marcus Camby,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,11:15,LAC,rebound,,,,,,,,,,Mike Taylor,,,,,,def,,
+Eric Gordon,Fred Jones,Marcus Camby,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,10:56,LAC,shot,Fred Jones,,,,,,,,,Mike Taylor,2,,,made,,jump,8,13
+Eric Gordon,Fred Jones,Marcus Camby,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,10:41,SAS,shot,Tony Parker,,,,,,,,,Matt Bonner,3,,,made,,3pt,14,28
+Eric Gordon,Fred Jones,Marcus Camby,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,10:20,LAC,shot,,,,,,,,,,Eric Gordon,,,,missed,,jump,26,23
+Eric Gordon,Fred Jones,Marcus Camby,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,10:18,SAS,rebound,,,,,,,,,,Tony Parker,,,,,,def,,
+Eric Gordon,Fred Jones,Marcus Camby,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,10:14,SAS,shot,,,Fred Jones,,,,,,,Tony Parker,,,,missed,,layup,26,5
+Eric Gordon,Fred Jones,Marcus Camby,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,10:12,LAC,rebound,,,,,,,,,,Eric Gordon,,,,,,def,,
+Eric Gordon,Fred Jones,Marcus Camby,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,10:05,LAC,turnover,,,,,,,,,,Fred Jones,,,lost ball,,Tony Parker,,,
+Eric Gordon,Fred Jones,Marcus Camby,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,9:56,LAC,foul,,,,,,,,Tim Duncan,,Eric Gordon,,,,,,shooting,,
+Eric Gordon,Fred Jones,Marcus Camby,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,9:56,SAS,free throw,,,,,,,1,,2,Tim Duncan,,,foul,made,,,,
+Eric Gordon,Fred Jones,Marcus Camby,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,9:56,SAS,free throw,,,,,,,2,,2,Tim Duncan,,,foul,made,,,,
+Eric Gordon,Fred Jones,Marcus Camby,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,9:49,LAC,shot,,,,,,,,,,Mike Taylor,,,,missed,,turnaround hook,28,6
+Eric Gordon,Fred Jones,Marcus Camby,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,9:48,SAS,rebound,,,,,,,,,,Tim Duncan,,,,,,def,,
+Eric Gordon,Fred Jones,Marcus Camby,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,9:38,SAS,shot,Tony Parker,,,,,,,,,Tim Duncan,2,,,made,,jump,25,25
+Eric Gordon,Fred Jones,Marcus Camby,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,9:24,SAS,foul,,,,,,,,Zach Randolph,,Matt Bonner,,,,,,shooting,,
+Eric Gordon,Fred Jones,Marcus Camby,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,9:24,LAC,free throw,,,,,,,1,,2,Zach Randolph,,,foul,made,,,,
+Eric Gordon,Fred Jones,Marcus Camby,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,9:24,LAC,free throw,,,,,,,2,,2,Zach Randolph,,,foul,made,,,,
+Eric Gordon,Fred Jones,Marcus Camby,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,9:06,SAS,shot,,,,,,,,,,Roger Mason,,,,missed,,3pt,7,23
+Eric Gordon,Fred Jones,Marcus Camby,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,9:04,SAS,rebound,,,,,,,,,,Tim Duncan,,,,,,off,,
+Eric Gordon,Fred Jones,Marcus Camby,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,9:02,SAS,shot,,,,,,,,,,Tim Duncan,2,,,made,,layup,25,6
+Eric Gordon,Fred Jones,Marcus Camby,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,9:02,LAC,timeout,,,,,,,,,,,,,,,,regular,,
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,9:02,LAC,sub,,,,Al Thornton,,Marcus Camby,,,,,,,,,,,,
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,8:40,LAC,shot,Eric Gordon,,,,,,,,,Zach Randolph,2,,,made,,layup,25,6
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,8:20,SAS,shot,,,,,,,,,,Tony Parker,2,,,made,,jump,23,11
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,8:08,LAC,shot,,,,,,,,,,Eric Gordon,,,,missed,,jump,21,16
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,8:07,SAS,rebound,,,,,,,,,,Roger Mason,,,,,,def,,
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,7:56,SAS,shot,Matt Bonner,,,,,,,,,Michael Finley,3,,,made,,3pt,3,7
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,7:30,LAC,turnover,,,,,,,,,,Fred Jones,,,lost ball,,Tony Parker,,,
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,7:22,SAS,shot,,,,,,,,,,Tony Parker,2,,,made,,layup,24,6
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,7:05,LAC,shot,,,,,,,,,,Mike Taylor,2,,,made,,layup,26,5
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,6:47,SAS,shot,Roger Mason,,,,,,,,,Tony Parker,2,,,made,,layup,25,6
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,6:27,LAC,shot,,,,,,,,,,Fred Jones,,,,missed,,3pt,34,29
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,6:26,SAS,rebound,,,,,,,,,,Tim Duncan,,,,,,def,,
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,6:09,SAS,shot,Tim Duncan,,,,,,,,,Tony Parker,2,,,made,,driving layup,25,7
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,5:47,LAC,shot,,,Matt Bonner,,,,,,,Al Thornton,,,,missed,,jump,30,7
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,5:45,LAC,rebound,,,,,,,,,,Mike Taylor,,,,,,off,,
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,5:40,LAC,shot,,,,,,,,,,Mike Taylor,2,,,made,,jump,39,22
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,5:23,SAS,shot,Matt Bonner,,,,,,,,,Tim Duncan,2,,,made,,jump bank,14,12
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,5:05,LAC,shot,,,Tim Duncan,,,,,,,Mike Taylor,,,,missed,,jump,14,9
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,5:03,SAS,rebound,,,,,,,,,,Michael Finley,,,,,,def,,
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,4:59,LAC,foul,,,,,,,,Tony Parker,,Zach Randolph,,,,,,shooting,,
+Al Thornton,Eric Gordon,Mike Taylor,Steve Novak,Zach Randolph,Matt Bonner,Michael Finley,Roger Mason,Tim Duncan,Tony Parker,1,4:59,LAC,sub,,,,Steve Novak,,Fred Jones,,,,,,,,,,,,
+Al Thornton,Eric Gordon,Mike Taylor,Steve Novak,Zach Randolph,Kurt Thomas,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,1,4:59,SAS,sub,,,,Kurt Thomas,,Tim Duncan,,,,,,,,,,,,
+Al Thornton,Eric Gordon,Mike Taylor,Steve Novak,Zach Randolph,Kurt Thomas,Manu Ginobili,Matt Bonner,Michael Finley,Tony Parker,1,4:59,SAS,sub,,,,Manu Ginobili,,Roger Mason,,,,,,,,,,,,
+Al Thornton,Eric Gordon,Mike Taylor,Steve Novak,Zach Randolph,Kurt Thomas,Manu Ginobili,Matt Bonner,Michael Finley,Tony Parker,1,4:59,SAS,free throw,,,,,,,1,,2,Tony Parker,,,foul,made,,,,
+Al Thornton,Eric Gordon,Mike Taylor,Steve Novak,Zach Randolph,Kurt Thomas,Manu Ginobili,Matt Bonner,Michael Finley,Tony Parker,1,4:59,SAS,free throw,,,,,,,2,,2,Tony Parker,,,foul,missed,,,,
+Al Thornton,Eric Gordon,Mike Taylor,Steve Novak,Zach Randolph,Kurt Thomas,Manu Ginobili,Matt Bonner,Michael Finley,Tony Parker,1,4:59,LAC,rebound,,,,,,,,,,Zach Randolph,,,,,,def,,
+Al Thornton,Eric Gordon,Mike Taylor,Steve Novak,Zach Randolph,Kurt Thomas,Manu Ginobili,Matt Bonner,Michael Finley,Tony Parker,1,4:33,LAC,shot,Zach Randolph,,,,,,,,,Eric Gordon,3,,,made,,3pt,36,28
+Al Thornton,Eric Gordon,Mike Taylor,Steve Novak,Zach Randolph,Kurt Thomas,Manu Ginobili,Matt Bonner,Michael Finley,Tony Parker,1,4:20,SAS,shot,,,,,,,,,,Tony Parker,2,,,made,,driving layup,25,5
+Al Thornton,Eric Gordon,Mike Taylor,Steve Novak,Zach Randolph,Kurt Thomas,Manu Ginobili,Matt Bonner,Michael Finley,Tony Parker,1,3:53,LAC,shot,,,,,,,,,,Zach Randolph,,,,missed,,jump,8,8
+Al Thornton,Eric Gordon,Mike Taylor,Steve Novak,Zach Randolph,Kurt Thomas,Manu Ginobili,Matt Bonner,Michael Finley,Tony Parker,1,3:52,SAS,rebound,,,,,,,,,,Michael Finley,,,,,,def,,
+Al Thornton,Eric Gordon,Mike Taylor,Steve Novak,Zach Randolph,Kurt Thomas,Manu Ginobili,Matt Bonner,Michael Finley,Tony Parker,1,3:34,SAS,shot,,,,,,,,,,Matt Bonner,,,,missed,,jump bank,17,8
+Al Thornton,Eric Gordon,Mike Taylor,Steve Novak,Zach Randolph,Kurt Thomas,Manu Ginobili,Matt Bonner,Michael Finley,Tony Parker,1,3:32,SAS,shot,,,,,,,,,,Matt Bonner,2,,,made,,putback layup,26,6
+Al Thornton,Eric Gordon,Mike Taylor,Steve Novak,Zach Randolph,Kurt Thomas,Manu Ginobili,Matt Bonner,Michael Finley,Tony Parker,1,3:32,SAS,rebound,,,,,,,,,,Matt Bonner,,,,,,off,,
+Al Thornton,Eric Gordon,Mike Taylor,Steve Novak,Zach Randolph,Kurt Thomas,Manu Ginobili,Matt Bonner,Michael Finley,Tony Parker,1,3:19,LAC,shot,,,,,,,,,,Zach Randolph,,,,missed,,layup,24,6
+Al Thornton,Eric Gordon,Mike Taylor,Steve Novak,Zach Randolph,Kurt Thomas,Manu Ginobili,Matt Bonner,Michael Finley,Tony Parker,1,3:18,SAS,rebound,,,,,,,,,,Matt Bonner,,,,,,def,,
+Al Thornton,Eric Gordon,Mike Taylor,Steve Novak,Zach Randolph,Kurt Thomas,Manu Ginobili,Matt Bonner,Michael Finley,Tony Parker,1,3:10,SAS,timeout,,,,,,,,,,,,,,,,regular,,
+Al Thornton,Eric Gordon,Mike Taylor,Steve Novak,Zach Randolph,Kurt Thomas,Manu Ginobili,Matt Bonner,Michael Finley,Roger Mason,1,3:10,SAS,sub,,,,Roger Mason,,Tony Parker,,,,,,,,,,,,
+Al Thornton,Eric Gordon,Mike Taylor,Steve Novak,Zach Randolph,Ime Udoka,Kurt Thomas,Manu Ginobili,Matt Bonner,Roger Mason,1,3:10,SAS,sub,,,,Ime Udoka,,Michael Finley,,,,,,,,,,,,
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Steve Novak,Ime Udoka,Kurt Thomas,Manu Ginobili,Matt Bonner,Roger Mason,1,3:10,LAC,sub,,,,Chris Kaman,,Zach Randolph,,,,,,,,,,,,
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Steve Novak,Ime Udoka,Kurt Thomas,Manu Ginobili,Matt Bonner,Roger Mason,1,3:00,SAS,shot,,,,,,,,,,Manu Ginobili,2,,,made,,jump,23,20
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Steve Novak,Ime Udoka,Kurt Thomas,Manu Ginobili,Matt Bonner,Roger Mason,1,2:43,LAC,shot,,,,,,,,,,Eric Gordon,,,,missed,,3pt,23,32
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Steve Novak,Ime Udoka,Kurt Thomas,Manu Ginobili,Matt Bonner,Roger Mason,1,2:42,SAS,rebound,,,,,,,,,,Kurt Thomas,,,,,,def,,
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Steve Novak,Ime Udoka,Kurt Thomas,Manu Ginobili,Matt Bonner,Roger Mason,1,2:29,SAS,shot,Manu Ginobili,,,,,,,,,Kurt Thomas,2,,,made,,jump,20,22
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,1,2:15,SAS,sub,,,,George Hill,,Matt Bonner,,,,,,,,,,,,
+Al Thornton,Chris Kaman,Eric Gordon,Fred Jones,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,1,2:15,LAC,sub,,,,Fred Jones,,Mike Taylor,,,,,,,,,,,,
+Al Thornton,Chris Kaman,Eric Gordon,Fred Jones,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,1,2:04,LAC,turnover,,,,,,,,,,Chris Kaman,,,bad pass,,Manu Ginobili,,,
+Al Thornton,Chris Kaman,Eric Gordon,Fred Jones,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,1,2:02,LAC,foul,,,,,,,,George Hill,,Fred Jones,,,,,,personal,,
+Al Thornton,Chris Kaman,Eric Gordon,Fred Jones,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,1,1:50,SAS,shot,,,,,,,,,,Kurt Thomas,,,,missed,,jump,41,6
+Al Thornton,Chris Kaman,Eric Gordon,Fred Jones,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,1,1:49,LAC,rebound,,,,,,,,,,Steve Novak,,,,,,def,,
+Al Thornton,Chris Kaman,Eric Gordon,Fred Jones,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,1,1:46,SAS,foul,,,,,,,,Eric Gordon,,George Hill,,,,,,shooting,,
+Al Thornton,Chris Kaman,Eric Gordon,Fred Jones,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,1,1:46,LAC,free throw,,,,,,,1,,2,Eric Gordon,,,foul,made,,,,
+Al Thornton,Chris Kaman,Eric Gordon,Fred Jones,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,1,1:46,LAC,free throw,,,,,,,2,,2,Eric Gordon,,,foul,made,,,,
+Al Thornton,Chris Kaman,Eric Gordon,Fred Jones,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,1,1:33,SAS,shot,,,,,,,,,,Manu Ginobili,2,,,made,,layup,26,6
+Al Thornton,Chris Kaman,Eric Gordon,Fred Jones,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,1,1:10,LAC,shot,,,,,,,,,,Al Thornton,2,,,made,,driving layup,27,6
+Al Thornton,Chris Kaman,Eric Gordon,Fred Jones,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,1,0:57,SAS,shot,Manu Ginobili,,,,,,,,,Kurt Thomas,2,,,made,,jump bank,18,8
+Al Thornton,Chris Kaman,Eric Gordon,Fred Jones,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,1,0:48,LAC,shot,,,,,,,,,,Eric Gordon,,,,missed,,jump,39,15
+Al Thornton,Chris Kaman,Eric Gordon,Fred Jones,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,1,0:47,SAS,rebound,,,,,,,,,,Ime Udoka,,,,,,def,,
+Al Thornton,Chris Kaman,Eric Gordon,Fred Jones,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,1,0:38,SAS,shot,Roger Mason,,,,,,,,,George Hill,2,,,made,,jump,45,12
+Al Thornton,Chris Kaman,Eric Gordon,Fred Jones,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,1,0:29,LAC,shot,,,,,,,,,,Chris Kaman,,,,missed,,jump,17,19
+Al Thornton,Chris Kaman,Eric Gordon,Fred Jones,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,1,0:28,SAS,rebound,,,,,,,,,,Roger Mason,,,,,,def,,
+Al Thornton,Chris Kaman,Eric Gordon,Fred Jones,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,1,0:09,SAS,shot,,,,,,,,,,Roger Mason,2,,,made,,jump,33,27
+Al Thornton,Chris Kaman,Eric Gordon,Fred Jones,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,1,0:01,LAC,shot,,,,,,,,,,Fred Jones,,,,missed,,jump bank,20,7
+Al Thornton,Chris Kaman,Eric Gordon,Fred Jones,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,1,0:00,SAS,rebound,,,,,,,,,,Ime Udoka,,,,,,def,,
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,2,11:45,SAS,shot,,,,,,,,,,Roger Mason,,,,missed,,jump,5,10
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,2,11:44,LAC,rebound,,,,,,,,,,Steve Novak,,,,,,def,,
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,2,11:27,SAS,foul,,,,,,,,Chris Kaman,,Kurt Thomas,,,,,,personal,,
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,2,11:19,LAC,shot,,,,,,,,,,Alex Acker,,,,missed,,jump,12,20
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,2,11:18,SAS,rebound,,,,,,,,,,Ime Udoka,,,,,,def,,
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,2,11:00,SAS,shot,Roger Mason,,,,,,,,,Manu Ginobili,3,,,made,,3pt,4,19
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,2,10:41,LAC,shot,,,,,,,,,,Steve Novak,,,,missed,,3pt,29,30
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,2,10:40,LAC,rebound,,,,,,,,,,Alex Acker,,,,,,off,,
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,2,10:30,LAC,shot,,,,,,,,,,Fred Jones,2,,,made,,driving layup,26,6
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,2,10:21,SAS,shot,,,,,,,,,,Roger Mason,,,,missed,,3pt,13,27
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,2,10:20,LAC,rebound,,,,,,,,,,Chris Kaman,,,,,,def,,
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,2,10:06,LAC,shot,,,,,,,,,,Chris Kaman,,,,missed,,jump,9,9
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,2,10:05,SAS,rebound,,,,,,,,,,Roger Mason,,,,,,def,,
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,2,9:57,SAS,shot,Ime Udoka,,,,,,,,,Manu Ginobili,3,,,made,,3pt,2,12
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,2,9:34,LAC,shot,,,,,,,,,,Al Thornton,,,,missed,,jump,26,28
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,2,9:32,LAC,rebound,,,,,,,,,,Alex Acker,,,,,,off,,
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,2,9:25,LAC,shot,,,,,,,,,,Alex Acker,2,,,made,,running layup,28,6
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Steve Novak,George Hill,Ime Udoka,Kurt Thomas,Manu Ginobili,Roger Mason,2,9:20,SAS,timeout,,,,,,,,,,,,,,,,regular,,
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Steve Novak,George Hill,Ime Udoka,Manu Ginobili,Roger Mason,Tim Duncan,2,9:20,SAS,sub,,,,Tim Duncan,,Kurt Thomas,,,,,,,,,,,,
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Steve Novak,George Hill,Ime Udoka,Matt Bonner,Roger Mason,Tim Duncan,2,9:20,SAS,sub,,,,Matt Bonner,,Manu Ginobili,,,,,,,,,,,,
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Steve Novak,George Hill,Jacque Vaughn,Matt Bonner,Roger Mason,Tim Duncan,2,9:20,SAS,sub,,,,Jacque Vaughn,,Ime Udoka,,,,,,,,,,,,
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Steve Novak,Bruce Bowen,George Hill,Jacque Vaughn,Matt Bonner,Tim Duncan,2,9:20,SAS,sub,,,,Bruce Bowen,,Roger Mason,,,,,,,,,,,,
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Jacque Vaughn,Matt Bonner,Tim Duncan,2,9:20,LAC,sub,,,,Mike Taylor,,Steve Novak,,,,,,,,,,,,
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Jacque Vaughn,Matt Bonner,Tim Duncan,2,8:58,SAS,shot,,,,,,,,,,George Hill,,,,missed,,3pt,2,7
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Jacque Vaughn,Matt Bonner,Tim Duncan,2,8:58,LAC,rebound,,,,,,,,,,,,,,,,,,
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Jacque Vaughn,Matt Bonner,Tim Duncan,2,8:44,LAC,shot,,,,,,,,,,Chris Kaman,2,,,made,,hook,33,7
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Jacque Vaughn,Matt Bonner,Tim Duncan,2,8:30,LAC,foul,,,,,,,,George Hill,,Chris Kaman,,,,,,personal,,
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Jacque Vaughn,Matt Bonner,Tim Duncan,2,8:18,SAS,shot,,,,,,,,,,Matt Bonner,,,,missed,,3pt,15,29
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Jacque Vaughn,Matt Bonner,Tim Duncan,2,8:17,LAC,rebound,,,,,,,,,,Al Thornton,,,,,,def,,
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Jacque Vaughn,Matt Bonner,Tim Duncan,2,8:03,LAC,shot,Alex Acker,,,,,,,,,Fred Jones,3,,,made,,3pt,7,23
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Jacque Vaughn,Matt Bonner,Tim Duncan,2,7:48,SAS,shot,,,,,,,,,,Tim Duncan,2,,,made,,driving bank,34,7
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Jacque Vaughn,Matt Bonner,Tim Duncan,2,7:35,LAC,shot,,,,,,,,,,Al Thornton,,,,missed,,jump,38,14
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Jacque Vaughn,Matt Bonner,Tim Duncan,2,7:34,SAS,rebound,,,,,,,,,,Jacque Vaughn,,,,,,def,,
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Jacque Vaughn,Matt Bonner,Tim Duncan,2,7:26,SAS,shot,Jacque Vaughn,,,,,,,,,Tim Duncan,2,,,made,,layup,24,5
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Jacque Vaughn,Matt Bonner,Tim Duncan,2,7:02,LAC,shot,,,,,,,,,,Fred Jones,,,,missed,,3pt,29,31
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Jacque Vaughn,Matt Bonner,Tim Duncan,2,7:01,LAC,rebound,,,,,,,,,,Chris Kaman,,,,,,off,,
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Jacque Vaughn,Matt Bonner,Tim Duncan,2,6:54,LAC,shot,,,,,,,,,,Chris Kaman,,,,missed,,layup,25,6
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Jacque Vaughn,Matt Bonner,Tim Duncan,2,6:52,LAC,rebound,,,,,,,,,,Fred Jones,,,,,,off,,
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Jacque Vaughn,Matt Bonner,Tim Duncan,2,6:37,LAC,shot,,,,,,,,,,Mike Taylor,,,,missed,,jump,7,15
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Jacque Vaughn,Matt Bonner,Tim Duncan,2,6:36,SAS,rebound,,,,,,,,,,Tim Duncan,,,,,,def,,
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Jacque Vaughn,Matt Bonner,Tim Duncan,2,6:17,SAS,shot,,,,,,,,,,Tim Duncan,,,,missed,,jump,38,17
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Jacque Vaughn,Matt Bonner,Tim Duncan,2,6:15,LAC,rebound,,,,,,,,,,Alex Acker,,,,,,def,,
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Jacque Vaughn,Matt Bonner,Tim Duncan,2,6:08,LAC,shot,,,Tim Duncan,,,,,,,Fred Jones,,,,missed,,layup,25,6
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Jacque Vaughn,Matt Bonner,Tim Duncan,2,6:05,LAC,rebound,,,,,,,,,,Alex Acker,,,,,,off,,
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Jacque Vaughn,Matt Bonner,Tim Duncan,2,6:01,LAC,shot,Fred Jones,,,,,,,,,Mike Taylor,3,,,made,,3pt,2,7
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Jacque Vaughn,Matt Bonner,Tim Duncan,2,5:43,SAS,shot,,,Alex Acker,,,,,,,Jacque Vaughn,,,,missed,,layup,26,4
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Jacque Vaughn,Matt Bonner,Tim Duncan,2,5:41,LAC,rebound,,,,,,,,,,Alex Acker,,,,,,def,,
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Jacque Vaughn,Matt Bonner,Tim Duncan,2,5:29,LAC,shot,Mike Taylor,,,,,,,,,Chris Kaman,2,,,made,,dunk,26,6
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Jacque Vaughn,Matt Bonner,Tim Duncan,2,5:07,SAS,shot,Jacque Vaughn,,,,,,,,,George Hill,2,,,made,,driving layup,25,5
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Jacque Vaughn,Matt Bonner,Tim Duncan,2,4:52,LAC,shot,,,,,,,,,,Chris Kaman,,,,missed,,layup,27,7
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Jacque Vaughn,Matt Bonner,Tim Duncan,2,4:51,SAS,rebound,,,,,,,,,,Tim Duncan,,,,,,def,,
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Jacque Vaughn,Matt Bonner,Tim Duncan,2,4:31,SAS,shot,Tim Duncan,,,,,,,,,Matt Bonner,3,,,made,,3pt,33,30
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Jacque Vaughn,Matt Bonner,Tim Duncan,2,4:09,LAC,shot,,,,,,,,,,Mike Taylor,2,,,made,,jump,7,12
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Jacque Vaughn,Matt Bonner,Tim Duncan,2,3:49,LAC,foul,,,,,,,,Tim Duncan,,Chris Kaman,,,,,,shooting,,
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Jacque Vaughn,Matt Bonner,Tim Duncan,2,3:49,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Al Thornton,Alex Acker,Chris Kaman,Fred Jones,Mike Taylor,Bruce Bowen,Jacque Vaughn,Matt Bonner,Michael Finley,Tim Duncan,2,3:49,SAS,sub,,,,Michael Finley,,George Hill,,,,,,,,,,,,
+Al Thornton,Alex Acker,Fred Jones,Mike Taylor,Zach Randolph,Bruce Bowen,Jacque Vaughn,Matt Bonner,Michael Finley,Tim Duncan,2,3:49,LAC,sub,,,,Zach Randolph,,Chris Kaman,,,,,,,,,,,,
+Al Thornton,Alex Acker,Fred Jones,Mike Taylor,Zach Randolph,Bruce Bowen,Drew Gooden,Jacque Vaughn,Michael Finley,Tim Duncan,2,3:49,SAS,sub,,,,Drew Gooden,,Matt Bonner,,,,,,,,,,,,
+Al Thornton,Alex Acker,Eric Gordon,Mike Taylor,Zach Randolph,Bruce Bowen,Drew Gooden,Jacque Vaughn,Michael Finley,Tim Duncan,2,3:49,LAC,sub,,,,Eric Gordon,,Fred Jones,,,,,,,,,,,,
+Al Thornton,Alex Acker,Eric Gordon,Mike Taylor,Zach Randolph,Bruce Bowen,Drew Gooden,Jacque Vaughn,Michael Finley,Tim Duncan,2,3:49,SAS,free throw,,,,,,,1,,2,Tim Duncan,,,foul,made,,,,
+Al Thornton,Alex Acker,Eric Gordon,Mike Taylor,Zach Randolph,Bruce Bowen,Drew Gooden,Jacque Vaughn,Michael Finley,Tim Duncan,2,3:49,SAS,free throw,,,,,,,2,,2,Tim Duncan,,,foul,missed,,,,
+Al Thornton,Alex Acker,Eric Gordon,Mike Taylor,Zach Randolph,Bruce Bowen,Drew Gooden,Jacque Vaughn,Michael Finley,Tim Duncan,2,3:48,LAC,rebound,,,,,,,,,,Zach Randolph,,,,,,def,,
+Al Thornton,Alex Acker,Eric Gordon,Mike Taylor,Zach Randolph,Bruce Bowen,Drew Gooden,Jacque Vaughn,Michael Finley,Tim Duncan,2,3:34,LAC,shot,,,,,,,,,,Alex Acker,,,,missed,,3pt,8,23
+Al Thornton,Alex Acker,Eric Gordon,Mike Taylor,Zach Randolph,Bruce Bowen,Drew Gooden,Jacque Vaughn,Michael Finley,Tim Duncan,2,3:31,SAS,rebound,,,,,,,,,,Tim Duncan,,,,,,def,,
+Al Thornton,Alex Acker,Eric Gordon,Mike Taylor,Zach Randolph,Bruce Bowen,Drew Gooden,Jacque Vaughn,Michael Finley,Tim Duncan,2,3:17,SAS,shot,,,,,,,,,,Michael Finley,,,,missed,,3pt,2,12
+Al Thornton,Alex Acker,Eric Gordon,Mike Taylor,Zach Randolph,Bruce Bowen,Drew Gooden,Jacque Vaughn,Michael Finley,Tim Duncan,2,3:16,LAC,rebound,,,,,,,,,,Al Thornton,,,,,,def,,
+Al Thornton,Alex Acker,Eric Gordon,Mike Taylor,Zach Randolph,Bruce Bowen,Drew Gooden,Jacque Vaughn,Michael Finley,Tim Duncan,2,3:05,LAC,shot,,,,,,,,,,Mike Taylor,2,,,made,,driving layup,25,6
+Al Thornton,Alex Acker,Eric Gordon,Mike Taylor,Zach Randolph,Bruce Bowen,Drew Gooden,Jacque Vaughn,Michael Finley,Tim Duncan,2,2:38,SAS,shot,,,,,,,,,,Jacque Vaughn,,,,missed,,layup,25,6
+Al Thornton,Alex Acker,Eric Gordon,Mike Taylor,Zach Randolph,Bruce Bowen,Drew Gooden,Jacque Vaughn,Michael Finley,Tim Duncan,2,2:38,SAS,rebound,,,,,,,,,,,,,,,,,,
+Al Thornton,Alex Acker,Eric Gordon,Mike Taylor,Zach Randolph,Bruce Bowen,Drew Gooden,Jacque Vaughn,Michael Finley,Tim Duncan,2,2:38,SAS,turnover,,,,,,,,,,,,,shot clock turnover,,,,,
+Al Thornton,Alex Acker,Eric Gordon,Mike Taylor,Zach Randolph,Bruce Bowen,Drew Gooden,Jacque Vaughn,Michael Finley,Tim Duncan,2,2:38,LAC,timeout,,,,,,,,,,,,,,,,regular,,
+Al Thornton,Alex Acker,Eric Gordon,Mike Taylor,Zach Randolph,Bruce Bowen,Drew Gooden,Manu Ginobili,Michael Finley,Tim Duncan,2,2:38,SAS,sub,,,,Manu Ginobili,,Jacque Vaughn,,,,,,,,,,,,
+Al Thornton,Alex Acker,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,Manu Ginobili,Michael Finley,Roger Mason,Tim Duncan,2,2:38,SAS,sub,,,,Roger Mason,,Bruce Bowen,,,,,,,,,,,,
+Al Thornton,Alex Acker,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,Kurt Thomas,Manu Ginobili,Michael Finley,Roger Mason,2,2:38,SAS,sub,,,,Kurt Thomas,,Tim Duncan,,,,,,,,,,,,
+Alex Acker,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,Kurt Thomas,Manu Ginobili,Michael Finley,Roger Mason,2,2:38,LAC,sub,,,,Chris Kaman,,Al Thornton,,,,,,,,,,,,
+Chris Kaman,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,Kurt Thomas,Manu Ginobili,Michael Finley,Roger Mason,2,2:38,LAC,sub,,,,Fred Jones,,Alex Acker,,,,,,,,,,,,
+Chris Kaman,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,Kurt Thomas,Manu Ginobili,Michael Finley,Roger Mason,2,2:20,LAC,turnover,,,,,,,,,,Chris Kaman,,,lost ball,,Manu Ginobili,,,
+Chris Kaman,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,Kurt Thomas,Manu Ginobili,Michael Finley,Roger Mason,2,2:02,SAS,shot,,,,,,,,,,Drew Gooden,,,,missed,,jump,11,14
+Chris Kaman,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,Kurt Thomas,Manu Ginobili,Michael Finley,Roger Mason,2,2:00,LAC,rebound,,,,,,,,,,Zach Randolph,,,,,,def,,
+Chris Kaman,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,Kurt Thomas,Manu Ginobili,Michael Finley,Roger Mason,2,1:44,SAS,foul,,,,,,,,Chris Kaman,,Drew Gooden,,,,,,personal,,
+Chris Kaman,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,Kurt Thomas,Manu Ginobili,Michael Finley,Roger Mason,2,1:29,LAC,shot,,,,,,,,,,Zach Randolph,2,,,made,,layup,25,6
+Chris Kaman,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,Kurt Thomas,Manu Ginobili,Michael Finley,Roger Mason,2,1:07,SAS,shot,,,,,,,,,,Michael Finley,,,,missed,,jump,35,7
+Chris Kaman,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,Kurt Thomas,Manu Ginobili,Michael Finley,Roger Mason,2,1:06,LAC,rebound,,,,,,,,,,Chris Kaman,,,,,,def,,
+Chris Kaman,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,Kurt Thomas,Manu Ginobili,Michael Finley,Roger Mason,2,1:00,LAC,shot,Chris Kaman,,,,,,,,,Eric Gordon,3,,,made,,3pt,11,26
+Chris Kaman,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,Kurt Thomas,Manu Ginobili,Michael Finley,Roger Mason,2,0:46,SAS,turnover,,,,,,,,,,Kurt Thomas,,,lost ball,,Fred Jones,,,
+Chris Kaman,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,Kurt Thomas,Manu Ginobili,Michael Finley,Roger Mason,2,0:43,LAC,shot,,,,,,,,,,Fred Jones,2,,,made,,dunk,25,6
+Chris Kaman,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,Kurt Thomas,Manu Ginobili,Michael Finley,Roger Mason,2,0:33,SAS,shot,,,,,,,,,,Manu Ginobili,2,,,made,,driving layup,24,6
+Chris Kaman,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,Kurt Thomas,Manu Ginobili,Michael Finley,Roger Mason,2,0:29,SAS,foul,,,,,,,,Eric Gordon,,Roger Mason,,,,,,personal,,
+Chris Kaman,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,Kurt Thomas,Manu Ginobili,Michael Finley,Roger Mason,2,0:29,LAC,free throw,,,,,,,1,,2,Eric Gordon,,,foul,made,,,,
+Chris Kaman,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,Kurt Thomas,Manu Ginobili,Michael Finley,Roger Mason,2,0:29,LAC,free throw,,,,,,,2,,2,Eric Gordon,,,foul,made,,,,
+Chris Kaman,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,Kurt Thomas,Manu Ginobili,Michael Finley,Roger Mason,2,0:10,LAC,foul,,,,,,,,Manu Ginobili,,Eric Gordon,,,,,,personal,,
+Chris Kaman,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,Kurt Thomas,Manu Ginobili,Michael Finley,Roger Mason,2,0:02,SAS,shot,,,,,,,,,,Manu Ginobili,,,,missed,,layup,27,8
+Chris Kaman,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,Kurt Thomas,Manu Ginobili,Michael Finley,Roger Mason,2,0:02,SAS,shot,,,,,,,,,,Drew Gooden,2,,,made,,tip,26,7
+Chris Kaman,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,Kurt Thomas,Manu Ginobili,Michael Finley,Roger Mason,2,0:02,SAS,rebound,,,,,,,,,,Drew Gooden,,,,,,off,,
+Chris Kaman,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,Kurt Thomas,Manu Ginobili,Michael Finley,Roger Mason,2,0:00,LAC,turnover,,,,,,,,,,Chris Kaman,,,bad pass,,Michael Finley,,,
+Chris Kaman,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,Kurt Thomas,Manu Ginobili,Michael Finley,Roger Mason,2,0:00,SAS,shot,,,,,,,,,,Michael Finley,,,,missed,,3pt,49,7
+Chris Kaman,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,Kurt Thomas,Manu Ginobili,Michael Finley,Roger Mason,2,0:00,SAS,rebound,,,,,,,,,,,,,,,,,,
+Eric Gordon,Fred Jones,Mike Taylor,Steve Novak,Zach Randolph,Kurt Thomas,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,11:34,SAS,shot,Roger Mason,,,,,,,,,Kurt Thomas,2,,,made,,jump,15,7
+Eric Gordon,Fred Jones,Mike Taylor,Steve Novak,Zach Randolph,Kurt Thomas,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,11:11,LAC,shot,Zach Randolph,,,,,,,,,Eric Gordon,3,,,made,,3pt,10,26
+Eric Gordon,Fred Jones,Mike Taylor,Steve Novak,Zach Randolph,Kurt Thomas,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,10:52,SAS,shot,Kurt Thomas,,,,,,,,,Matt Bonner,2,,,made,,turnaround bank,20,6
+Eric Gordon,Fred Jones,Mike Taylor,Steve Novak,Zach Randolph,Kurt Thomas,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,10:35,LAC,shot,,,,,,,,,,Steve Novak,,,,missed,,jump,10,14
+Eric Gordon,Fred Jones,Mike Taylor,Steve Novak,Zach Randolph,Kurt Thomas,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,10:34,SAS,rebound,,,,,,,,,,Roger Mason,,,,,,def,,
+Eric Gordon,Fred Jones,Mike Taylor,Steve Novak,Zach Randolph,Kurt Thomas,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,10:20,SAS,shot,Roger Mason,,,,,,,,,Kurt Thomas,2,,,made,,layup,23,6
+Eric Gordon,Fred Jones,Mike Taylor,Steve Novak,Zach Randolph,Kurt Thomas,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,9:53,LAC,shot,Steve Novak,,,,,,,,,Eric Gordon,3,,,made,,3pt,46,21
+Eric Gordon,Fred Jones,Mike Taylor,Steve Novak,Zach Randolph,Kurt Thomas,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,9:32,SAS,shot,Roger Mason,,,,,,,,,Michael Finley,3,,,made,,3pt,33,30
+Eric Gordon,Fred Jones,Mike Taylor,Steve Novak,Zach Randolph,Kurt Thomas,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,9:16,LAC,turnover,,,,,,,,,,Eric Gordon,,,bad pass,,Roger Mason,,,
+Eric Gordon,Fred Jones,Mike Taylor,Steve Novak,Zach Randolph,Kurt Thomas,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,9:03,SAS,shot,,,,,,,,,,Tony Parker,2,,,made,,layup,26,6
+Eric Gordon,Fred Jones,Mike Taylor,Steve Novak,Zach Randolph,Kurt Thomas,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,8:51,LAC,shot,,,,,,,,,,Eric Gordon,,,,missed,,driving layup,25,5
+Eric Gordon,Fred Jones,Mike Taylor,Steve Novak,Zach Randolph,Kurt Thomas,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,8:50,SAS,rebound,,,,,,,,,,Roger Mason,,,,,,def,,
+Eric Gordon,Fred Jones,Mike Taylor,Steve Novak,Zach Randolph,Kurt Thomas,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,8:39,SAS,shot,,,,,,,,,,Tony Parker,2,,,made,,pullup jump,16,24
+Eric Gordon,Fred Jones,Mike Taylor,Steve Novak,Zach Randolph,Kurt Thomas,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,8:12,LAC,shot,,,,,,,,,,Zach Randolph,2,,,made,,jump,9,15
+Eric Gordon,Fred Jones,Mike Taylor,Steve Novak,Zach Randolph,Kurt Thomas,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,7:59,SAS,shot,Tony Parker,,,,,,,,,Roger Mason,3,,,made,,3pt,34,29
+Eric Gordon,Fred Jones,Mike Taylor,Steve Novak,Zach Randolph,Kurt Thomas,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,7:43,LAC,shot,,,,,,,,,,Mike Taylor,2,,,made,,jump,18,27
+Eric Gordon,Fred Jones,Mike Taylor,Steve Novak,Zach Randolph,Kurt Thomas,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,7:25,SAS,shot,Tony Parker,,,,,,,,,Kurt Thomas,2,,,made,,jump,44,6
+Eric Gordon,Fred Jones,Mike Taylor,Steve Novak,Zach Randolph,Kurt Thomas,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,7:18,LAC,timeout,,,,,,,,,,,,,,,,regular,,
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Kurt Thomas,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,7:18,LAC,sub,,,,Al Thornton,,Steve Novak,,,,,,,,,,,,
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Kurt Thomas,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,7:18,LAC,sub,,,,Chris Kaman,,Fred Jones,,,,,,,,,,,,
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Kurt Thomas,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,7:13,SAS,foul,,,,,,,,Zach Randolph,,Michael Finley,,,,,,shooting,,
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Kurt Thomas,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,7:13,LAC,free throw,,,,,,,1,,2,Zach Randolph,,,foul,missed,,,,
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Kurt Thomas,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,7:13,LAC,rebound,,,,,,,,,,,,,,,,,,
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Kurt Thomas,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,7:13,LAC,free throw,,,,,,,2,,2,Zach Randolph,,,foul,missed,,,,
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Kurt Thomas,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,7:12,SAS,rebound,,,,,,,,,,Roger Mason,,,,,,def,,
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Kurt Thomas,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,6:50,SAS,shot,,,,,,,,,,Michael Finley,,,,missed,,3pt,48,8
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Kurt Thomas,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,6:49,SAS,rebound,,,,,,,,,,Kurt Thomas,,,,,,off,,
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Kurt Thomas,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,6:44,SAS,shot,Tony Parker,,,,,,,,,Michael Finley,2,,,made,,jump,12,6
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Kurt Thomas,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,6:20,LAC,shot,Mike Taylor,,,,,,,,,Zach Randolph,2,,,made,,layup,27,7
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Kurt Thomas,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,6:20,SAS,foul,,,,,,,,Zach Randolph,,Kurt Thomas,,,,,,shooting,,
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,6:20,SAS,sub,,,,Drew Gooden,,Kurt Thomas,,,,,,,,,,,,
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,6:20,LAC,free throw,,,,,,,1,,1,Zach Randolph,,,foul,missed,,,,
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,6:20,SAS,rebound,,,,,,,,,,Drew Gooden,,,,,,def,,
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,6:03,SAS,shot,Tony Parker,,,,,,,,,Michael Finley,3,,,made,,3pt,2,8
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,5:49,LAC,shot,Mike Taylor,,,,,,,,,Eric Gordon,2,,,made,,jump,13,23
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,5:27,SAS,shot,,,,,,,,,,Roger Mason,,,,missed,,3pt,2,9
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,5:26,SAS,rebound,,,,,,,,,,Roger Mason,,,,,,off,,
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,5:03,SAS,shot,,,Zach Randolph,,,,,,,Tony Parker,,,,missed,,layup,27,6
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,5:01,LAC,rebound,,,,,,,,,,Zach Randolph,,,,,,def,,
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,4:52,LAC,shot,Eric Gordon,,,,,,,,,Mike Taylor,3,,,made,,3pt,48,5
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,4:27,SAS,shot,Michael Finley,,,,,,,,,Roger Mason,2,,,made,,driving layup,27,7
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,Matt Bonner,Michael Finley,Roger Mason,Tony Parker,3,4:27,LAC,foul,,,,,,,,Roger Mason,,Eric Gordon,,,,,,shooting,,
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,Manu Ginobili,Matt Bonner,Roger Mason,Tony Parker,3,4:27,SAS,sub,,,,Manu Ginobili,,Michael Finley,,,,,,,,,,,,
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,Manu Ginobili,Matt Bonner,Roger Mason,Tony Parker,3,4:27,SAS,free throw,,,,,,,1,,1,Roger Mason,,,foul,made,,,,
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,Manu Ginobili,Matt Bonner,Roger Mason,Tony Parker,3,4:14,LAC,shot,,,,,,,,,,Al Thornton,,,,missed,,jump bank,39,11
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,Manu Ginobili,Matt Bonner,Roger Mason,Tony Parker,3,4:13,SAS,rebound,,,,,,,,,,Drew Gooden,,,,,,def,,
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,Manu Ginobili,Matt Bonner,Roger Mason,Tony Parker,3,3:59,SAS,shot,Manu Ginobili,,,,,,,,,Tony Parker,3,,,made,,3pt,1,9
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,Manu Ginobili,Matt Bonner,Roger Mason,Tony Parker,3,3:48,SAS,foul,,,,,,,,Mike Taylor,,Drew Gooden,,,,,,personal,,
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Manu Ginobili,Matt Bonner,Roger Mason,3,3:48,SAS,sub,,,,George Hill,,Tony Parker,,,,,,,,,,,,
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Manu Ginobili,Matt Bonner,Roger Mason,3,3:34,LAC,shot,,,,,,,,,,Chris Kaman,,,,missed,,layup,26,7
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Manu Ginobili,Matt Bonner,Roger Mason,3,3:33,SAS,rebound,,,,,,,,,,Drew Gooden,,,,,,def,,
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Manu Ginobili,Matt Bonner,Roger Mason,3,3:16,SAS,shot,Manu Ginobili,,,,,,,,,Drew Gooden,2,,,made,,dunk,25,7
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Manu Ginobili,Matt Bonner,Roger Mason,3,3:02,LAC,shot,,,,,,,,,,Mike Taylor,2,,,made,,driving layup,26,7
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Manu Ginobili,Matt Bonner,Roger Mason,3,3:02,SAS,foul,,,,,,,,Mike Taylor,,Matt Bonner,,,,,,shooting,,
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Manu Ginobili,Matt Bonner,Roger Mason,3,3:02,LAC,free throw,,,,,,,1,,1,Mike Taylor,,,foul,missed,,,,
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Manu Ginobili,Matt Bonner,Roger Mason,3,3:01,LAC,shot,,,,,,,,,,Zach Randolph,2,,,made,,tip,25,7
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Manu Ginobili,Matt Bonner,Roger Mason,3,3:01,LAC,rebound,,,,,,,,,,Zach Randolph,,,,,,off,,
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Manu Ginobili,Matt Bonner,Roger Mason,3,2:39,SAS,shot,,,,,,,,,,George Hill,,,,missed,,jump,17,16
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Manu Ginobili,Matt Bonner,Roger Mason,3,2:38,SAS,rebound,,,,,,,,,,Drew Gooden,,,,,,off,,
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Manu Ginobili,Matt Bonner,Roger Mason,3,2:34,SAS,shot,,,,,,,,,,Roger Mason,,,,missed,,3pt,49,8
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Manu Ginobili,Matt Bonner,Roger Mason,3,2:32,LAC,rebound,,,,,,,,,,Chris Kaman,,,,,,def,,
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Manu Ginobili,Matt Bonner,Roger Mason,3,2:26,LAC,shot,,,,,,,,,,Al Thornton,,,,missed,,jump,27,22
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Manu Ginobili,Matt Bonner,Roger Mason,3,2:26,LAC,rebound,,,,,,,,,,,,,,,,,,
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Manu Ginobili,Matt Bonner,Roger Mason,3,2:26,SAS,foul,,,,,,,,Zach Randolph,,Drew Gooden,,,,,,loose ball,,
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Manu Ginobili,Matt Bonner,Roger Mason,3,2:26,SAS,timeout,,,,,,,,,,,,,,,,regular,,
+Al Thornton,Chris Kaman,Eric Gordon,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Ime Udoka,Manu Ginobili,Roger Mason,3,2:26,SAS,sub,,,,Ime Udoka,,Matt Bonner,,,,,,,,,,,,
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Ime Udoka,Manu Ginobili,Roger Mason,3,2:26,LAC,sub,,,,Fred Jones,,Chris Kaman,,,,,,,,,,,,
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Ime Udoka,Manu Ginobili,Roger Mason,3,2:26,LAC,free throw,,,,,,,1,,2,Zach Randolph,,,foul,made,,,,
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Ime Udoka,Manu Ginobili,Roger Mason,3,2:26,LAC,free throw,,,,,,,2,,2,Zach Randolph,,,foul,made,,,,
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Ime Udoka,Manu Ginobili,Roger Mason,3,2:08,LAC,foul,,,,,,,,Manu Ginobili,,Zach Randolph,,,,,,personal,,
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Ime Udoka,Manu Ginobili,Roger Mason,3,1:59,SAS,shot,Manu Ginobili,,,,,,,,,Drew Gooden,2,,,made,,driving layup,24,6
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Ime Udoka,Manu Ginobili,Roger Mason,3,1:35,LAC,shot,Fred Jones,,,,,,,,,Al Thornton,2,,,made,,jump,36,24
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Ime Udoka,Manu Ginobili,Roger Mason,3,1:18,SAS,shot,,,,,,,,,,Drew Gooden,,,,missed,,jump,39,11
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Ime Udoka,Manu Ginobili,Roger Mason,3,1:16,LAC,rebound,,,,,,,,,,Mike Taylor,,,,,,def,,
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Ime Udoka,Manu Ginobili,Roger Mason,3,1:08,LAC,turnover,,,,,,,,,,Mike Taylor,,,bad pass,,George Hill,,,
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Ime Udoka,Manu Ginobili,Roger Mason,3,1:01,LAC,foul,,,,,,,,Ime Udoka,,Al Thornton,,,,,,personal,,
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Ime Udoka,Manu Ginobili,Roger Mason,3,1:00,SAS,shot,Manu Ginobili,,,,,,,,,George Hill,2,,,made,,dunk,24,6
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Ime Udoka,Manu Ginobili,Roger Mason,3,0:38,LAC,shot,,,,,,,,,,Fred Jones,,,,missed,,3pt,48,6
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Ime Udoka,Manu Ginobili,Roger Mason,3,0:37,SAS,rebound,,,,,,,,,,Roger Mason,,,,,,def,,
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Ime Udoka,Manu Ginobili,Roger Mason,3,0:28,SAS,shot,,,,,,,,,,Roger Mason,,,,missed,,3pt,24,31
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Ime Udoka,Manu Ginobili,Roger Mason,3,0:28,LAC,rebound,,,,,,,,,,Zach Randolph,,,,,,def,,
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Ime Udoka,Manu Ginobili,Roger Mason,3,0:26,LAC,turnover,,,,,,,,,,Zach Randolph,,,lost ball,,Manu Ginobili,,,
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Ime Udoka,Manu Ginobili,Roger Mason,3,0:26,LAC,foul,,,,,,,,Manu Ginobili,,Mike Taylor,,,,,,personal,,
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Ime Udoka,Manu Ginobili,Roger Mason,3,0:26,SAS,free throw,,,,,,,1,,2,Manu Ginobili,,,foul,made,,,,
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,Manu Ginobili,3,0:26,SAS,sub,,,,Jacque Vaughn,,Roger Mason,,,,,,,,,,,,
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,Manu Ginobili,3,0:26,SAS,free throw,,,,,,,2,,2,Manu Ginobili,,,foul,made,,,,
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,Manu Ginobili,3,0:05,SAS,foul,,,,,,,,Mike Taylor,,Jacque Vaughn,,,,,,personal,,
+Al Thornton,Eric Gordon,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,Manu Ginobili,3,0:05,LAC,free throw,,,,,,,1,,2,Mike Taylor,,,foul,made,,,,
+Al Thornton,Alex Acker,Fred Jones,Mike Taylor,Zach Randolph,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,Manu Ginobili,3,0:05,LAC,sub,,,,Alex Acker,,Eric Gordon,,,,,,,,,,,,
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Mike Taylor,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,Manu Ginobili,3,0:05,LAC,sub,,,,DeAndre Jordan,,Zach Randolph,,,,,,,,,,,,
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Mike Taylor,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,Manu Ginobili,3,0:05,LAC,free throw,,,,,,,2,,2,Mike Taylor,,,foul,missed,,,,
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Mike Taylor,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,Manu Ginobili,3,0:04,SAS,rebound,,,,,,,,,,Manu Ginobili,,,,,,def,,
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Mike Taylor,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,Manu Ginobili,4,11:48,LAC,shot,,,,,,,,,,Mike Taylor,2,,,made,,floating jump,24,14
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Mike Taylor,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,Manu Ginobili,4,11:32,LAC,foul,,,,,,,,Manu Ginobili,,DeAndre Jordan,,,,,,personal,,
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Mike Taylor,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,Manu Ginobili,4,11:24,SAS,shot,Manu Ginobili,,,,,,,,,Drew Gooden,2,,,made,,jump,25,11
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Mike Taylor,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,Manu Ginobili,4,11:04,LAC,shot,,,,,,,,,,Alex Acker,,,,missed,,jump,13,23
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Mike Taylor,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,Manu Ginobili,4,11:03,SAS,rebound,,,,,,,,,,Jacque Vaughn,,,,,,def,,
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Mike Taylor,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,Manu Ginobili,4,10:53,SAS,shot,,,,,,,,,,Manu Ginobili,,,,missed,,3pt,3,9
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Mike Taylor,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,Manu Ginobili,4,10:52,LAC,rebound,,,,,,,,,,Alex Acker,,,,,,def,,
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Mike Taylor,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,Manu Ginobili,4,10:41,SAS,foul,,,,,,,,Alex Acker,,George Hill,,,,,,personal,,
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Mike Taylor,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,Manu Ginobili,4,10:28,LAC,shot,,,,,,,,,,Al Thornton,2,,,made,,jump,16,23
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Mike Taylor,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,Manu Ginobili,4,10:07,SAS,shot,Jacque Vaughn,,,,,,,,,Drew Gooden,2,,,made,,dunk,25,7
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Mike Taylor,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,Manu Ginobili,4,9:42,LAC,shot,,,Manu Ginobili,,,,,,,DeAndre Jordan,,,,missed,,jump,24,11
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Mike Taylor,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,Manu Ginobili,4,9:41,LAC,rebound,,,,,,,,,,,,,,,,,,
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Mike Taylor,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,9:41,SAS,sub,,,,Bruce Bowen,,Manu Ginobili,,,,,,,,,,,,
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Ime Udoka,Jacque Vaughn,Kurt Thomas,4,9:41,SAS,sub,,,,Kurt Thomas,,Drew Gooden,,,,,,,,,,,,
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Ime Udoka,Jacque Vaughn,Kurt Thomas,4,9:40,LAC,shot,,,,,,,,,,DeAndre Jordan,,,,missed,,alley oop layup,26,9
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Ime Udoka,Jacque Vaughn,Kurt Thomas,4,9:39,SAS,rebound,,,,,,,,,,Kurt Thomas,,,,,,def,,
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Ime Udoka,Jacque Vaughn,Kurt Thomas,4,9:31,SAS,shot,Ime Udoka,,,,,,,,,George Hill,2,,,made,,layup,28,7
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Mike Taylor,Bruce Bowen,George Hill,Ime Udoka,Jacque Vaughn,Kurt Thomas,4,9:18,LAC,timeout,,,,,,,,,,,,,,,,regular,,
+Al Thornton,DeAndre Jordan,Fred Jones,Mike Taylor,Steve Novak,Bruce Bowen,George Hill,Ime Udoka,Jacque Vaughn,Kurt Thomas,4,9:18,LAC,sub,,,,Steve Novak,,Alex Acker,,,,,,,,,,,,
+Al Thornton,DeAndre Jordan,Eric Gordon,Fred Jones,Steve Novak,Bruce Bowen,George Hill,Ime Udoka,Jacque Vaughn,Kurt Thomas,4,9:18,LAC,sub,,,,Eric Gordon,,Mike Taylor,,,,,,,,,,,,
+Al Thornton,DeAndre Jordan,Eric Gordon,Fred Jones,Steve Novak,Bruce Bowen,George Hill,Ime Udoka,Jacque Vaughn,Kurt Thomas,4,9:01,LAC,shot,,,,,,,,,,Al Thornton,2,,,made,,jump,36,21
+Al Thornton,DeAndre Jordan,Eric Gordon,Fred Jones,Steve Novak,Bruce Bowen,George Hill,Ime Udoka,Jacque Vaughn,Kurt Thomas,4,8:42,SAS,shot,,,,,,,,,,Ime Udoka,,,,missed,,jump,10,6
+Al Thornton,DeAndre Jordan,Eric Gordon,Fred Jones,Steve Novak,Bruce Bowen,George Hill,Ime Udoka,Jacque Vaughn,Kurt Thomas,4,8:41,LAC,rebound,,,,,,,,,,Fred Jones,,,,,,def,,
+Al Thornton,DeAndre Jordan,Eric Gordon,Fred Jones,Steve Novak,Bruce Bowen,George Hill,Ime Udoka,Jacque Vaughn,Kurt Thomas,4,8:31,LAC,shot,,,,,,,,,,Eric Gordon,,,,missed,,3pt,11,26
+Al Thornton,DeAndre Jordan,Eric Gordon,Fred Jones,Steve Novak,Bruce Bowen,George Hill,Ime Udoka,Jacque Vaughn,Kurt Thomas,4,8:30,LAC,rebound,,,,,,,,,,DeAndre Jordan,,,,,,off,,
+Al Thornton,DeAndre Jordan,Eric Gordon,Fred Jones,Steve Novak,Bruce Bowen,George Hill,Ime Udoka,Jacque Vaughn,Kurt Thomas,4,8:25,LAC,shot,,,,,,,,,,DeAndre Jordan,,,,missed,,jump,29,8
+Al Thornton,DeAndre Jordan,Eric Gordon,Fred Jones,Steve Novak,Bruce Bowen,George Hill,Ime Udoka,Jacque Vaughn,Kurt Thomas,4,8:24,SAS,rebound,,,,,,,,,,Kurt Thomas,,,,,,def,,
+Al Thornton,DeAndre Jordan,Eric Gordon,Fred Jones,Steve Novak,Bruce Bowen,George Hill,Ime Udoka,Jacque Vaughn,Kurt Thomas,4,8:12,SAS,shot,,,DeAndre Jordan,,,,,,,Ime Udoka,,,,missed,,jump,36,17
+Al Thornton,DeAndre Jordan,Eric Gordon,Fred Jones,Steve Novak,Bruce Bowen,George Hill,Ime Udoka,Jacque Vaughn,Kurt Thomas,4,8:10,LAC,rebound,,,,,,,,,,Steve Novak,,,,,,def,,
+Al Thornton,DeAndre Jordan,Eric Gordon,Fred Jones,Steve Novak,Bruce Bowen,George Hill,Ime Udoka,Jacque Vaughn,Kurt Thomas,4,8:02,LAC,shot,Eric Gordon,,,,,,,,,Steve Novak,3,,,made,,3pt,13,27
+Al Thornton,DeAndre Jordan,Eric Gordon,Fred Jones,Steve Novak,Bruce Bowen,George Hill,Ime Udoka,Jacque Vaughn,Kurt Thomas,4,7:33,SAS,shot,,,,,,,,,,George Hill,,,,missed,,3pt,8,24
+Al Thornton,DeAndre Jordan,Eric Gordon,Fred Jones,Steve Novak,Bruce Bowen,George Hill,Ime Udoka,Jacque Vaughn,Kurt Thomas,4,7:32,LAC,rebound,,,,,,,,,,DeAndre Jordan,,,,,,def,,
+Al Thornton,DeAndre Jordan,Eric Gordon,Fred Jones,Steve Novak,Bruce Bowen,George Hill,Ime Udoka,Jacque Vaughn,Kurt Thomas,4,7:26,LAC,shot,,,,,,,,,,Eric Gordon,,,,missed,,jump,18,7
+Al Thornton,DeAndre Jordan,Eric Gordon,Fred Jones,Steve Novak,Bruce Bowen,George Hill,Ime Udoka,Jacque Vaughn,Kurt Thomas,4,7:26,LAC,rebound,,,,,,,,,,,,,,,,,,
+Al Thornton,DeAndre Jordan,Eric Gordon,Fred Jones,Steve Novak,Bruce Bowen,George Hill,Ime Udoka,Jacque Vaughn,Kurt Thomas,4,7:26,LAC,turnover,,,,,,,,,,Eric Gordon,,,traveling,,,,,
+Al Thornton,DeAndre Jordan,Eric Gordon,Fred Jones,Steve Novak,Bruce Bowen,George Hill,Ime Udoka,Jacque Vaughn,Kurt Thomas,4,7:12,SAS,shot,,,,,,,,,,Ime Udoka,,,,missed,,3pt,11,27
+Al Thornton,DeAndre Jordan,Eric Gordon,Fred Jones,Steve Novak,Bruce Bowen,George Hill,Ime Udoka,Jacque Vaughn,Kurt Thomas,4,7:11,SAS,rebound,,,,,,,,,,Kurt Thomas,,,,,,off,,
+Al Thornton,DeAndre Jordan,Eric Gordon,Fred Jones,Steve Novak,Bruce Bowen,George Hill,Ime Udoka,Jacque Vaughn,Kurt Thomas,4,6:58,LAC,foul,,,,,,,,Kurt Thomas,,Al Thornton,,,,,,personal,,
+Al Thornton,DeAndre Jordan,Eric Gordon,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,6:58,SAS,sub,,,,Drew Gooden,,Kurt Thomas,,,,,,,,,,,,
+Al Thornton,DeAndre Jordan,Eric Gordon,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,6:43,SAS,shot,,,Fred Jones,,,,,,,Drew Gooden,,,,missed,,jump,12,12
+Al Thornton,DeAndre Jordan,Eric Gordon,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,6:43,SAS,rebound,,,,,,,,,,,,,,,,,,
+Al Thornton,DeAndre Jordan,Eric Gordon,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,6:43,SAS,turnover,,,,,,,,,,,,,shot clock turnover,,,,,
+Al Thornton,DeAndre Jordan,Eric Gordon,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,6:27,LAC,turnover,,,,,,,,,,Steve Novak,,,bad pass,,Bruce Bowen,,,
+Al Thornton,DeAndre Jordan,Eric Gordon,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,6:21,SAS,shot,,,,,,,,,,George Hill,,,,missed,,alley oop dunk,24,6
+Al Thornton,DeAndre Jordan,Eric Gordon,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,6:20,SAS,rebound,,,,,,,,,,George Hill,,,,,,off,,
+Al Thornton,DeAndre Jordan,Eric Gordon,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,6:06,SAS,shot,Jacque Vaughn,,,,,,,,,Ime Udoka,3,,,made,,3pt,48,7
+Al Thornton,DeAndre Jordan,Eric Gordon,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,5:44,LAC,shot,Eric Gordon,,,,,,,,,DeAndre Jordan,2,,,made,,alley oop dunk,25,7
+Al Thornton,DeAndre Jordan,Eric Gordon,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,5:28,SAS,shot,,,,,,,,,,Jacque Vaughn,2,,,made,,jump,37,20
+Al Thornton,DeAndre Jordan,Eric Gordon,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,5:06,LAC,shot,,,,,,,,,,Al Thornton,2,,,made,,jump,10,16
+Al Thornton,DeAndre Jordan,Eric Gordon,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,4:49,LAC,foul,,,,,,,,Drew Gooden,,DeAndre Jordan,,,,,,shooting,,
+Al Thornton,DeAndre Jordan,Eric Gordon,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,4:49,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,4:49,LAC,sub,,,,Alex Acker,,Eric Gordon,,,,,,,,,,,,
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,4:49,SAS,free throw,,,,,,,1,,2,Drew Gooden,,,foul,made,,,,
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,4:49,SAS,free throw,,,,,,,2,,2,Drew Gooden,,,foul,made,,,,
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,4:29,LAC,shot,,,,,,,,,,Al Thornton,2,,,made,,driving finger roll layup,26,9
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,4:29,SAS,foul,,,,,,,,Al Thornton,,Drew Gooden,,,,,,shooting,,
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,4:29,LAC,free throw,,,,,,,1,,1,Al Thornton,,,foul,missed,,,,
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,4:28,SAS,rebound,,,,,,,,,,Ime Udoka,,,,,,def,,
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,4:09,SAS,shot,,,,,,,,,,Ime Udoka,,,,missed,,jump,39,17
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,4:07,LAC,rebound,,,,,,,,,,Steve Novak,,,,,,def,,
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,3:54,LAC,shot,,,,,,,,,,DeAndre Jordan,2,,,made,,jump bank,21,7
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,3:38,SAS,turnover,,,,,,,,,,Bruce Bowen,,,bad pass,,,,,
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,3:27,SAS,foul,,,,,,,,Alex Acker,,George Hill,,,,,,personal,,
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,3:17,LAC,shot,Steve Novak,,,,,,,,,DeAndre Jordan,2,,,made,,dunk,25,7
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,3:17,SAS,foul,,,,,,,,DeAndre Jordan,,Ime Udoka,,,,,,shooting,,
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,3:17,LAC,free throw,,,,,,,1,,1,DeAndre Jordan,,,foul,made,,,,
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,2:53,SAS,shot,,,,,,,,,,George Hill,,,,missed,,jump,14,13
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,2:50,LAC,rebound,,,,,,,,,,Fred Jones,,,,,,def,,
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,2:36,LAC,shot,,,,,,,,,,DeAndre Jordan,,,,missed,,jump,14,15
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,2:35,SAS,rebound,,,,,,,,,,Jacque Vaughn,,,,,,def,,
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,2:26,SAS,shot,,,,,,,,,,Jacque Vaughn,,,,missed,,jump,38,16
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,2:25,LAC,rebound,,,,,,,,,,Alex Acker,,,,,,def,,
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,2:13,LAC,shot,,,,,,,,,,Alex Acker,2,,,made,,jump,35,9
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,1:56,SAS,shot,,,,,,,,,,Drew Gooden,2,,,made,,jump hook,23,12
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,1:41,LAC,shot,,,,,,,,,,Fred Jones,,,,missed,,3pt,10,27
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,1:40,SAS,rebound,,,,,,,,,,Bruce Bowen,,,,,,def,,
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,1:14,SAS,shot,,,,,,,,,,Bruce Bowen,,,,missed,,jump,25,9
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,1:13,LAC,rebound,,,,,,,,,,Alex Acker,,,,,,def,,
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,1:11,LAC,shot,,,,,,,,,,Al Thornton,2,,,made,,layup,23,7
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,0:48,SAS,shot,,,,,,,,,,George Hill,,,,missed,,jump,14,22
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,0:46,LAC,rebound,,,,,,,,,,Al Thornton,,,,,,def,,
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,0:37,LAC,shot,,,,,,,,,,Alex Acker,,,,missed,,jump,41,15
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,0:35,LAC,rebound,,,,,,,,,,DeAndre Jordan,,,,,,off,,
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,0:33,LAC,turnover,,,,,,,,,,DeAndre Jordan,,,lost ball,,George Hill,,,
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,0:11,SAS,turnover,,,,,,,,,,George Hill,,,lost ball,,Al Thornton,,,
+Al Thornton,Alex Acker,DeAndre Jordan,Fred Jones,Steve Novak,Bruce Bowen,Drew Gooden,George Hill,Ime Udoka,Jacque Vaughn,4,0:07,LAC,shot,Alex Acker,,,,,,,,,Al Thornton,2,,,made,,dunk,26,7

@@ -1,0 +1,415 @@
+a1,a2,a3,a4,a5,h1,h2,h3,h4,h5,period,time,team,etype,assist,away,block,entered,home,left,num,opponent,outof,player,points,possession,reason,result,steal,type,x,y
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Marcus Camby,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Udonis Haslem,Yakhouba Diawara,1,12:00,OFF,jump ball,,Marcus Camby,,,Jamaal Magloire,,,,,,,Fred Jones,,,,,,
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Marcus Camby,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Udonis Haslem,Yakhouba Diawara,1,11:44,LAC,turnover,,,,,,,,,,Fred Jones,,,bad pass,,Mario Chalmers,,,
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Marcus Camby,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Udonis Haslem,Yakhouba Diawara,1,11:43,MIA,shot,,,,,,,,,,Yakhouba Diawara,,,,missed,,jump,9,11
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Marcus Camby,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Udonis Haslem,Yakhouba Diawara,1,11:38,LAC,rebound,,,,,,,,,,Fred Jones,,,,,,def,,
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Marcus Camby,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Udonis Haslem,Yakhouba Diawara,1,11:25,LAC,shot,Eric Gordon,,,,,,,,,Marcus Camby,2,,,made,,jump,32,22
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Marcus Camby,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Udonis Haslem,Yakhouba Diawara,1,11:09,MIA,shot,Udonis Haslem,,,,,,,,,Mario Chalmers,2,,,made,,jump,12,21
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Marcus Camby,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Udonis Haslem,Yakhouba Diawara,1,10:58,MIA,foul,,,,,,,,Fred Jones,,Mario Chalmers,,,,,,personal,,
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Marcus Camby,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Udonis Haslem,Yakhouba Diawara,1,10:49,LAC,turnover,,,,,,,,,,Marcus Camby,,,lost ball,,Mario Chalmers,,,
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Marcus Camby,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Udonis Haslem,Yakhouba Diawara,1,10:45,MIA,shot,,,,,,,,,,Mario Chalmers,2,,,made,,running dunk,25,6
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Marcus Camby,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Udonis Haslem,Yakhouba Diawara,1,10:19,LAC,shot,,,,,,,,,,Al Thornton,,,,missed,,jump,6,7
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Marcus Camby,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Udonis Haslem,Yakhouba Diawara,1,10:19,LAC,rebound,,,,,,,,,,,,,,,,,,
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Marcus Camby,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Udonis Haslem,Yakhouba Diawara,1,10:19,LAC,turnover,,,,,,,,,,,,,shot clock turnover,,,,,
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Marcus Camby,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Udonis Haslem,Yakhouba Diawara,1,10:06,MIA,turnover,,,,,,,,,,Jamaal Magloire,,,bad pass,,Eric Gordon,,,
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Marcus Camby,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Udonis Haslem,Yakhouba Diawara,1,10:06,MIA,foul,,,,,,,,Eric Gordon,,Jamaal Magloire,,,,,,loose ball,,
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Marcus Camby,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Udonis Haslem,Yakhouba Diawara,1,9:55,LAC,shot,Fred Jones,,,,,,,,,Eric Gordon,3,,,made,,3pt,9,27
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Marcus Camby,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Udonis Haslem,Yakhouba Diawara,1,9:38,MIA,shot,Udonis Haslem,,,,,,,,,Jamaal Magloire,2,,,made,,reverse layup,25,6
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Marcus Camby,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Udonis Haslem,Yakhouba Diawara,1,9:25,LAC,shot,,,,,,,,,,Eric Gordon,,,,missed,,3pt,48,7
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Marcus Camby,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Udonis Haslem,Yakhouba Diawara,1,9:24,MIA,rebound,,,,,,,,,,Jamaal Magloire,,,,,,def,,
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Marcus Camby,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Udonis Haslem,Yakhouba Diawara,1,9:11,MIA,shot,,,,,,,,,,Jamaal Magloire,,,,missed,,layup,25,6
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Marcus Camby,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Udonis Haslem,Yakhouba Diawara,1,9:09,LAC,rebound,,,,,,,,,,Marcus Camby,,,,,,def,,
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Marcus Camby,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Udonis Haslem,Yakhouba Diawara,1,9:02,MIA,foul,,,,,,,,Fred Jones,,Yakhouba Diawara,,,,,,shooting,,
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Marcus Camby,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Udonis Haslem,Yakhouba Diawara,1,9:02,LAC,free throw,,,,,,,1,,2,Fred Jones,,,foul,made,,,,
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Marcus Camby,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Udonis Haslem,Yakhouba Diawara,1,9:02,LAC,free throw,,,,,,,2,,2,Fred Jones,,,foul,made,,,,
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Marcus Camby,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Udonis Haslem,Yakhouba Diawara,1,8:46,MIA,shot,,,,,,,,,,Udonis Haslem,,,,missed,,jump,36,20
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Marcus Camby,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Udonis Haslem,Yakhouba Diawara,1,8:44,LAC,rebound,,,,,,,,,,Eric Gordon,,,,,,def,,
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Marcus Camby,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Udonis Haslem,Yakhouba Diawara,1,8:35,LAC,shot,Fred Jones,,,,,,,,,Brian Skinner,2,,,made,,fade away jumper,14,10
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Marcus Camby,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Udonis Haslem,Yakhouba Diawara,1,8:17,MIA,shot,,,,,,,,,,Dwyane Wade,2,,,made,,jump,37,21
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Marcus Camby,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Udonis Haslem,Yakhouba Diawara,1,8:02,MIA,foul,,,,,,,,Al Thornton,,Yakhouba Diawara,,,,,,personal,,
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Marcus Camby,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,1,8:02,MIA,sub,,,,Shawn Marion,,Yakhouba Diawara,,,,,,,,,,,,
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Marcus Camby,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,1,8:02,MIA,violation,,,,,,,,,,,,,,,,delay of game,,
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Marcus Camby,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,1,7:49,LAC,shot,,,,,,,,,,Al Thornton,,,,missed,,3pt,7,25
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Marcus Camby,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,1,7:47,MIA,rebound,,,,,,,,,,Jamaal Magloire,,,,,,def,,
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Marcus Camby,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,1,7:39,MIA,shot,,,Brian Skinner,,,,,,,Dwyane Wade,,,,missed,,driving layup,25,6
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Marcus Camby,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,1,7:37,MIA,rebound,,,,,,,,,,Dwyane Wade,,,,,,off,,
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,1,7:36,LAC,sub,,,,Zach Randolph,,Brian Skinner,,,,,,,,,,,,
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,1,7:30,MIA,shot,,,,,,,,,,Dwyane Wade,,,,missed,,jump,43,5
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,1,7:28,MIA,rebound,,,,,,,,,,Shawn Marion,,,,,,off,,
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,1,7:27,MIA,shot,,,,,,,,,,Shawn Marion,2,,,made,,tip,25,6
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,1,7:11,LAC,shot,,,,,,,,,,Zach Randolph,,,,missed,,jump,22,11
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,1,7:08,MIA,rebound,,,,,,,,,,Jamaal Magloire,,,,,,def,,
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,1,6:50,MIA,shot,,,,,,,,,,Udonis Haslem,,,,missed,,jump,17,20
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,1,6:49,LAC,rebound,,,,,,,,,,Marcus Camby,,,,,,def,,
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,1,6:35,LAC,shot,,,,,,,,,,Al Thornton,,,,missed,,jump,44,6
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,1,6:33,LAC,rebound,,,,,,,,,,,,,,,,,,
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,1,6:29,LAC,shot,,,,,,,,,,Eric Gordon,,,,missed,,jump,10,17
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,1,6:28,MIA,rebound,,,,,,,,,,Jamaal Magloire,,,,,,def,,
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,1,6:16,MIA,shot,Dwyane Wade,,,,,,,,,Udonis Haslem,2,,,made,,jump,17,19
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,1,5:59,LAC,shot,,,,,,,,,,Zach Randolph,,,,missed,,jump,7,9
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,1,5:58,MIA,rebound,,,,,,,,,,Shawn Marion,,,,,,def,,
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,1,5:45,LAC,foul,,,,,,,,Dwyane Wade,,Eric Gordon,,,,,,personal,,
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,1,5:45,MIA,timeout,,,,,,,,,,,,,,,,regular,,
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,1,5:45,MIA,sub,,,,Joel Anthony,,Jamaal Magloire,,,,,,,,,,,,
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,1,5:34,MIA,shot,Udonis Haslem,,,,,,,,,Mario Chalmers,3,,,made,,3pt,48,6
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,1,5:19,LAC,turnover,,,,,,,,,,Al Thornton,,,bad pass,,Mario Chalmers,,,
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,1,5:02,MIA,shot,,,,,,,,,,Joel Anthony,,,,missed,,jump,36,20
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,1,5:01,LAC,rebound,,,,,,,,,,Zach Randolph,,,,,,def,,
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,1,4:48,LAC,shot,Zach Randolph,,,,,,,,,Al Thornton,2,,,made,,jump,11,8
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,1,4:34,MIA,shot,,,Marcus Camby,,,,,,,Dwyane Wade,,,,missed,,driving layup,25,6
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,1,4:33,LAC,rebound,,,,,,,,,,Marcus Camby,,,,,,def,,
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,1,4:31,MIA,foul,,,,,,,,Eric Gordon,,Udonis Haslem,,,,,,shooting,,
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Chris Quinn,Dwyane Wade,Joel Anthony,Shawn Marion,Udonis Haslem,1,4:31,MIA,sub,,,,Chris Quinn,,Mario Chalmers,,,,,,,,,,,,
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Chris Quinn,Dwyane Wade,Joel Anthony,Shawn Marion,Udonis Haslem,1,4:31,LAC,free throw,,,,,,,1,,2,Eric Gordon,,,foul,made,,,,
+Al Thornton,Baron Davis,Eric Gordon,Marcus Camby,Zach Randolph,Chris Quinn,Dwyane Wade,Joel Anthony,Shawn Marion,Udonis Haslem,1,4:31,LAC,sub,,,,Baron Davis,,Fred Jones,,,,,,,,,,,,
+Al Thornton,Baron Davis,Eric Gordon,Marcus Camby,Zach Randolph,Chris Quinn,Dwyane Wade,Joel Anthony,Shawn Marion,Udonis Haslem,1,4:31,LAC,free throw,,,,,,,2,,2,Eric Gordon,,,foul,made,,,,
+Al Thornton,Baron Davis,Eric Gordon,Marcus Camby,Zach Randolph,Chris Quinn,Dwyane Wade,Joel Anthony,Shawn Marion,Udonis Haslem,1,4:20,MIA,shot,,,,,,,,,,Dwyane Wade,,,,missed,,jump,41,15
+Al Thornton,Baron Davis,Eric Gordon,Marcus Camby,Zach Randolph,Chris Quinn,Dwyane Wade,Joel Anthony,Shawn Marion,Udonis Haslem,1,4:19,LAC,rebound,,,,,,,,,,Eric Gordon,,,,,,def,,
+Al Thornton,Baron Davis,Eric Gordon,Marcus Camby,Zach Randolph,Chris Quinn,Dwyane Wade,Joel Anthony,Shawn Marion,Udonis Haslem,1,4:08,LAC,shot,,,,,,,,,,Zach Randolph,2,,,made,,jump,15,16
+Al Thornton,Baron Davis,Eric Gordon,Marcus Camby,Zach Randolph,Chris Quinn,Dwyane Wade,Joel Anthony,Shawn Marion,Udonis Haslem,1,3:50,MIA,shot,,,,,,,,,,Chris Quinn,2,,,made,,jump,24,21
+Al Thornton,Baron Davis,Eric Gordon,Marcus Camby,Zach Randolph,Chris Quinn,Dwyane Wade,Joel Anthony,Shawn Marion,Udonis Haslem,1,3:39,LAC,shot,Baron Davis,,,,,,,,,Marcus Camby,2,,,made,,jump,33,21
+Al Thornton,Baron Davis,Eric Gordon,Marcus Camby,Zach Randolph,Chris Quinn,Dwyane Wade,Joel Anthony,Shawn Marion,Udonis Haslem,1,3:18,MIA,shot,,,,,,,,,,Shawn Marion,,,,missed,,jump,19,16
+Al Thornton,Baron Davis,Eric Gordon,Marcus Camby,Zach Randolph,Chris Quinn,Dwyane Wade,Joel Anthony,Shawn Marion,Udonis Haslem,1,3:16,MIA,rebound,,,,,,,,,,Udonis Haslem,,,,,,off,,
+Al Thornton,Baron Davis,Eric Gordon,Marcus Camby,Zach Randolph,Chris Quinn,Dwyane Wade,Joel Anthony,Shawn Marion,Udonis Haslem,1,3:11,MIA,shot,,,,,,,,,,Chris Quinn,2,,,made,,jump,38,21
+Al Thornton,Baron Davis,Eric Gordon,Marcus Camby,Zach Randolph,Chris Quinn,Dwyane Wade,Joel Anthony,Shawn Marion,Udonis Haslem,1,2:53,LAC,shot,Eric Gordon,,,,,,,,,Marcus Camby,2,,,made,,jump,36,21
+Al Thornton,Baron Davis,Eric Gordon,Marcus Camby,Zach Randolph,Chris Quinn,Dwyane Wade,Joel Anthony,Shawn Marion,Udonis Haslem,1,2:38,LAC,foul,,,,,,,,Dwyane Wade,,Baron Davis,,,,,,personal,,
+Al Thornton,Baron Davis,Eric Gordon,Marcus Camby,Zach Randolph,Chris Quinn,Dwyane Wade,Joel Anthony,Shawn Marion,Udonis Haslem,1,2:38,LAC,timeout,,,,,,,,,,,,,,,,regular,,
+Al Thornton,Baron Davis,Brian Skinner,Eric Gordon,Zach Randolph,Chris Quinn,Dwyane Wade,Joel Anthony,Shawn Marion,Udonis Haslem,1,2:38,LAC,sub,,,,Brian Skinner,,Marcus Camby,,,,,,,,,,,,
+Al Thornton,Baron Davis,Brian Skinner,Eric Gordon,Zach Randolph,Chris Quinn,Dwyane Wade,Joel Anthony,Shawn Marion,Udonis Haslem,1,2:25,LAC,foul,,,,,,,,Dwyane Wade,,Baron Davis,,,,,,shooting,,
+Al Thornton,Baron Davis,Brian Skinner,Eric Gordon,Zach Randolph,Chris Quinn,Dwyane Wade,Joel Anthony,Shawn Marion,Udonis Haslem,1,2:25,MIA,free throw,,,,,,,1,,2,Dwyane Wade,,,foul,made,,,,
+Al Thornton,Baron Davis,Brian Skinner,Eric Gordon,Zach Randolph,Chris Quinn,Dwyane Wade,Joel Anthony,Shawn Marion,Udonis Haslem,1,2:25,MIA,free throw,,,,,,,2,,2,Dwyane Wade,,,foul,missed,,,,
+Al Thornton,Baron Davis,Brian Skinner,Eric Gordon,Zach Randolph,Chris Quinn,Dwyane Wade,Joel Anthony,Shawn Marion,Udonis Haslem,1,2:22,LAC,rebound,,,,,,,,,,Zach Randolph,,,,,,def,,
+Al Thornton,Baron Davis,Brian Skinner,Eric Gordon,Zach Randolph,Chris Quinn,Dwyane Wade,Joel Anthony,Shawn Marion,Udonis Haslem,1,2:03,LAC,shot,,,Shawn Marion,,,,,,,Zach Randolph,,,,missed,,hook,26,16
+Al Thornton,Baron Davis,Brian Skinner,Eric Gordon,Zach Randolph,Chris Quinn,Dwyane Wade,Joel Anthony,Shawn Marion,Udonis Haslem,1,2:02,MIA,rebound,,,,,,,,,,Udonis Haslem,,,,,,def,,
+Al Thornton,Baron Davis,Brian Skinner,Eric Gordon,Zach Randolph,Chris Quinn,Dwyane Wade,Joel Anthony,Shawn Marion,Udonis Haslem,1,1:51,MIA,shot,,,,,,,,,,Dwyane Wade,2,,,made,,jump,31,19
+Al Thornton,Baron Davis,Brian Skinner,Eric Gordon,Zach Randolph,Chris Quinn,Dwyane Wade,Joel Anthony,Shawn Marion,Udonis Haslem,1,1:30,LAC,shot,Zach Randolph,,,,,,,,,Baron Davis,3,,,made,,3pt,26,31
+Al Thornton,Baron Davis,Brian Skinner,Eric Gordon,Zach Randolph,Chris Quinn,Dwyane Wade,Joel Anthony,Shawn Marion,Udonis Haslem,1,1:06,MIA,shot,,,,,,,,,,Dwyane Wade,2,,,made,,fade away jumper,41,7
+Al Thornton,Baron Davis,Brian Skinner,Eric Gordon,Zach Randolph,Chris Quinn,Dwyane Wade,Joel Anthony,Shawn Marion,Udonis Haslem,1,0:50,LAC,turnover,,,,,,,,,,Al Thornton,,,bad pass,,,,,
+Al Thornton,Baron Davis,Brian Skinner,Eric Gordon,Zach Randolph,Chris Quinn,Dwyane Wade,Joel Anthony,Shawn Marion,Udonis Haslem,1,0:36,LAC,foul,,,,,,,,Dwyane Wade,,Eric Gordon,,,,,,shooting,,
+Al Thornton,Baron Davis,Brian Skinner,Eric Gordon,Zach Randolph,Chris Quinn,Dwyane Wade,Joel Anthony,Shawn Marion,Udonis Haslem,1,0:36,MIA,free throw,,,,,,,1,,2,Dwyane Wade,,,foul,made,,,,
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Zach Randolph,Chris Quinn,Dwyane Wade,Joel Anthony,Shawn Marion,Udonis Haslem,1,0:36,LAC,sub,,,,Ricky Davis,,Eric Gordon,,,,,,,,,,,,
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Zach Randolph,Chris Quinn,Dwyane Wade,Joel Anthony,Shawn Marion,Udonis Haslem,1,0:36,MIA,free throw,,,,,,,2,,2,Dwyane Wade,,,foul,made,,,,
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Zach Randolph,Chris Quinn,Dwyane Wade,Joel Anthony,Shawn Marion,Udonis Haslem,1,0:21,MIA,foul,,,,,,,,Zach Randolph,,Chris Quinn,,,,,,shooting,,
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Zach Randolph,Chris Quinn,Dwyane Wade,Joel Anthony,Shawn Marion,Udonis Haslem,1,0:21,LAC,free throw,,,,,,,1,,2,Zach Randolph,,,foul,made,,,,
+Al Thornton,Brian Skinner,Jason Hart,Ricky Davis,Zach Randolph,Chris Quinn,Dwyane Wade,Joel Anthony,Shawn Marion,Udonis Haslem,1,0:21,LAC,sub,,,,Jason Hart,,Baron Davis,,,,,,,,,,,,
+Al Thornton,Brian Skinner,Jason Hart,Ricky Davis,Zach Randolph,Chris Quinn,Dwyane Wade,Joel Anthony,Shawn Marion,Udonis Haslem,1,0:21,LAC,free throw,,,,,,,2,,2,Zach Randolph,,,foul,made,,,,
+Al Thornton,Brian Skinner,Jason Hart,Ricky Davis,Zach Randolph,Chris Quinn,Dwyane Wade,Joel Anthony,Shawn Marion,Udonis Haslem,1,0:03,MIA,shot,Dwyane Wade,,,,,,,,,Udonis Haslem,2,,,made,,layup,25,6
+Al Thornton,Brian Skinner,Jason Hart,Ricky Davis,Zach Randolph,Chris Quinn,Dwyane Wade,Joel Anthony,Shawn Marion,Udonis Haslem,1,0:02,LAC,turnover,,,,,,,,,,Brian Skinner,,,bad pass,,Chris Quinn,,,
+Al Thornton,Brian Skinner,Jason Hart,Ricky Davis,Zach Randolph,Chris Quinn,Dwyane Wade,Joel Anthony,Shawn Marion,Udonis Haslem,1,0:01,MIA,shot,,,,,,,,,,Chris Quinn,2,,,made,,jump,41,19
+Baron Davis,Brian Skinner,Marcus Camby,Ricky Davis,Steve Novak,Chris Quinn,James Jones,Joel Anthony,Michael Beasley,Shawn Marion,2,11:45,MIA,turnover,,,,,,,,,,Chris Quinn,,,bad pass,,Ricky Davis,,,
+Baron Davis,Brian Skinner,Marcus Camby,Ricky Davis,Steve Novak,Chris Quinn,James Jones,Joel Anthony,Michael Beasley,Shawn Marion,2,11:42,LAC,shot,,,,,,,,,,Ricky Davis,2,,,made,,layup,25,6
+Baron Davis,Brian Skinner,Marcus Camby,Ricky Davis,Steve Novak,Chris Quinn,James Jones,Joel Anthony,Michael Beasley,Shawn Marion,2,11:18,MIA,shot,,,,,,,,,,James Jones,,,,missed,,jump,15,14
+Baron Davis,Brian Skinner,Marcus Camby,Ricky Davis,Steve Novak,Chris Quinn,James Jones,Joel Anthony,Michael Beasley,Shawn Marion,2,11:16,LAC,rebound,,,,,,,,,,Baron Davis,,,,,,def,,
+Baron Davis,Brian Skinner,Marcus Camby,Ricky Davis,Steve Novak,Chris Quinn,James Jones,Joel Anthony,Michael Beasley,Shawn Marion,2,11:10,LAC,shot,Baron Davis,,,,,,,,,Steve Novak,2,,,made,,jump,9,20
+Baron Davis,Brian Skinner,Marcus Camby,Ricky Davis,Steve Novak,Chris Quinn,James Jones,Joel Anthony,Michael Beasley,Shawn Marion,2,10:52,MIA,shot,,,,,,,,,,Chris Quinn,,,,missed,,driving layup,25,6
+Baron Davis,Brian Skinner,Marcus Camby,Ricky Davis,Steve Novak,Chris Quinn,James Jones,Joel Anthony,Michael Beasley,Shawn Marion,2,10:49,LAC,rebound,,,,,,,,,,Brian Skinner,,,,,,def,,
+Baron Davis,Brian Skinner,Marcus Camby,Ricky Davis,Steve Novak,Chris Quinn,James Jones,Joel Anthony,Michael Beasley,Shawn Marion,2,10:30,LAC,shot,,,,,,,,,,Brian Skinner,2,,,made,,reverse layup,25,6
+Baron Davis,Brian Skinner,Marcus Camby,Ricky Davis,Steve Novak,Chris Quinn,James Jones,Joel Anthony,Michael Beasley,Shawn Marion,2,10:24,MIA,timeout,,,,,,,,,,,,,,,,regular,,
+Baron Davis,Brian Skinner,Marcus Camby,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,2,10:24,MIA,sub,,,,Mario Chalmers,,Chris Quinn,,,,,,,,,,,,
+Baron Davis,Brian Skinner,Marcus Camby,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,2,10:18,MIA,turnover,,,,,,,,,,Mario Chalmers,,,lost ball,,Baron Davis,,,
+Baron Davis,Brian Skinner,Marcus Camby,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,2,10:16,MIA,foul,,,,,,,,Marcus Camby,,Michael Beasley,,,,,,shooting,,
+Baron Davis,Brian Skinner,Marcus Camby,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,2,10:16,LAC,free throw,,,,,,,1,,2,Marcus Camby,,,foul,made,,,,
+Baron Davis,Brian Skinner,Marcus Camby,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,2,10:16,LAC,free throw,,,,,,,2,,2,Marcus Camby,,,foul,made,,,,
+Baron Davis,Brian Skinner,Marcus Camby,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,2,9:57,MIA,shot,,,,,,,,,,Mario Chalmers,,,,missed,,jump,12,23
+Baron Davis,Brian Skinner,Marcus Camby,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,2,9:55,LAC,rebound,,,,,,,,,,Brian Skinner,,,,,,def,,
+Baron Davis,Brian Skinner,Marcus Camby,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,2,9:39,LAC,turnover,,,,,,,,,,Ricky Davis,,,lost ball,,Mario Chalmers,,,
+Baron Davis,Brian Skinner,Marcus Camby,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,2,9:33,MIA,shot,Mario Chalmers,,,,,,,,,Shawn Marion,2,,,made,,alley oop dunk,25,6
+Baron Davis,Brian Skinner,Marcus Camby,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,2,9:07,LAC,shot,,,,,,,,,,Baron Davis,,,,missed,,turnaround jump,38,6
+Baron Davis,Brian Skinner,Marcus Camby,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,2,9:04,MIA,rebound,,,,,,,,,,Michael Beasley,,,,,,def,,
+Baron Davis,Brian Skinner,Marcus Camby,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,2,9:00,MIA,shot,,,,,,,,,,Mario Chalmers,,,,missed,,3pt,1,8
+Baron Davis,Brian Skinner,Marcus Camby,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,2,8:58,MIA,rebound,,,,,,,,,,Joel Anthony,,,,,,off,,
+Baron Davis,Brian Skinner,Marcus Camby,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,2,8:57,LAC,foul,,,,,,,,Joel Anthony,,Ricky Davis,,,,,,shooting,,
+Baron Davis,Brian Skinner,Marcus Camby,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,2,8:57,MIA,free throw,,,,,,,1,,2,Joel Anthony,,,foul,made,,,,
+Baron Davis,Brian Skinner,Marcus Camby,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,2,8:57,MIA,free throw,,,,,,,2,,2,Joel Anthony,,,foul,made,,,,
+Baron Davis,Brian Skinner,Marcus Camby,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,2,8:46,MIA,foul,,,,,,,,Brian Skinner,,Joel Anthony,,,,,,personal,,
+Baron Davis,Brian Skinner,Marcus Camby,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,2,8:41,LAC,shot,,,,,,,,,,Baron Davis,,,,missed,,3pt,27,31
+Baron Davis,Brian Skinner,Marcus Camby,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,2,8:39,MIA,rebound,,,,,,,,,,,,,,,,,,
+Baron Davis,Brian Skinner,Marcus Camby,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,2,8:29,MIA,turnover,,,,,,,,,,Michael Beasley,,,out of bounds lost ball turnover,,,,,
+Baron Davis,Brian Skinner,Marcus Camby,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,2,8:15,LAC,shot,,,Shawn Marion,,,,,,,Ricky Davis,,,,missed,,jump,11,17
+Baron Davis,Brian Skinner,Marcus Camby,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,2,8:14,MIA,rebound,,,,,,,,,,Joel Anthony,,,,,,def,,
+Baron Davis,Brian Skinner,Marcus Camby,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,2,8:11,MIA,shot,,,,,,,,,,James Jones,,,,missed,,3pt,3,17
+Baron Davis,Brian Skinner,Marcus Camby,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,2,8:10,MIA,rebound,,,,,,,,,,,,,,,,,,
+Baron Davis,Brian Skinner,Marcus Camby,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,2,8:10,LAC,foul,,,,,,,,Shawn Marion,,Ricky Davis,,,,,,loose ball,,
+Baron Davis,Brian Skinner,Eric Gordon,Marcus Camby,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,2,8:10,LAC,sub,,,,Eric Gordon,,Ricky Davis,,,,,,,,,,,,
+Baron Davis,Brian Skinner,Eric Gordon,Marcus Camby,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,2,8:03,MIA,shot,,,,,,,,,,James Jones,,,,missed,,driving dunk,25,6
+Baron Davis,Brian Skinner,Eric Gordon,Marcus Camby,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,2,7:58,LAC,rebound,,,,,,,,,,Steve Novak,,,,,,def,,
+Baron Davis,Brian Skinner,Eric Gordon,Marcus Camby,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,2,7:47,LAC,turnover,,,,,,,,,,Baron Davis,,,bad pass,,Shawn Marion,,,
+Baron Davis,Brian Skinner,Eric Gordon,Marcus Camby,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,2,7:45,MIA,turnover,,,,,,,,,,Shawn Marion,,,bad pass,,,,,
+Baron Davis,Brian Skinner,Eric Gordon,Marcus Camby,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,2,7:23,LAC,shot,,,,,,,,,,Baron Davis,,,,missed,,3pt,3,18
+Baron Davis,Brian Skinner,Eric Gordon,Marcus Camby,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,2,7:22,MIA,rebound,,,,,,,,,,Michael Beasley,,,,,,def,,
+Baron Davis,Brian Skinner,Eric Gordon,Marcus Camby,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,2,7:14,MIA,turnover,,,,,,,,,,Mario Chalmers,,,lost ball,,Baron Davis,,,
+Baron Davis,Brian Skinner,Eric Gordon,Marcus Camby,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,2,7:09,LAC,shot,,,Joel Anthony,,,,,,,Baron Davis,,,,missed,,layup,25,6
+Baron Davis,Brian Skinner,Eric Gordon,Marcus Camby,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,2,7:07,MIA,rebound,,,,,,,,,,Mario Chalmers,,,,,,def,,
+Baron Davis,Brian Skinner,Eric Gordon,Marcus Camby,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,2,7:07,MIA,shot,James Jones,,,,,,,,,Michael Beasley,2,,,made,,layup,25,6
+Baron Davis,Brian Skinner,Eric Gordon,Marcus Camby,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,2,7:07,LAC,foul,,,,,,,,Michael Beasley,,Marcus Camby,,,,,,shooting,,
+Baron Davis,Brian Skinner,Eric Gordon,Marcus Camby,Steve Novak,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,2,7:07,MIA,sub,,,,Dwyane Wade,,Shawn Marion,,,,,,,,,,,,
+Baron Davis,Eric Gordon,Marcus Camby,Steve Novak,Zach Randolph,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,2,7:07,LAC,sub,,,,Zach Randolph,,Brian Skinner,,,,,,,,,,,,
+Baron Davis,Eric Gordon,Marcus Camby,Steve Novak,Zach Randolph,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,2,7:07,MIA,free throw,,,,,,,1,,1,Michael Beasley,,,foul,made,,,,
+Baron Davis,Eric Gordon,Marcus Camby,Steve Novak,Zach Randolph,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,2,6:50,MIA,foul,,,,,,,,Eric Gordon,,Mario Chalmers,,,,,,personal,,
+Al Thornton,Baron Davis,Eric Gordon,Marcus Camby,Zach Randolph,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,2,6:50,LAC,sub,,,,Al Thornton,,Steve Novak,,,,,,,,,,,,
+Al Thornton,Baron Davis,Eric Gordon,Marcus Camby,Zach Randolph,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,2,6:37,LAC,shot,,,,,,,,,,Zach Randolph,,,,missed,,hook,34,8
+Al Thornton,Baron Davis,Eric Gordon,Marcus Camby,Zach Randolph,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,2,6:34,MIA,rebound,,,,,,,,,,Dwyane Wade,,,,,,def,,
+Al Thornton,Baron Davis,Eric Gordon,Marcus Camby,Zach Randolph,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,2,6:28,MIA,shot,,,,,,,,,,Dwyane Wade,2,,,made,,running jump,22,15
+Al Thornton,Baron Davis,Eric Gordon,Marcus Camby,Zach Randolph,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,2,6:14,LAC,shot,Baron Davis,,,,,,,,,Al Thornton,2,,,made,,jump,46,6
+Al Thornton,Baron Davis,Eric Gordon,Marcus Camby,Zach Randolph,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,2,6:06,MIA,turnover,,,,,,,,,,Joel Anthony,,,bad pass,,,,,
+Al Thornton,Baron Davis,Eric Gordon,Marcus Camby,Zach Randolph,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,2,5:50,LAC,shot,Baron Davis,,,,,,,,,Zach Randolph,2,,,made,,jump,5,6
+Al Thornton,Baron Davis,Eric Gordon,Marcus Camby,Zach Randolph,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,2,5:29,MIA,shot,,,,,,,,,,Joel Anthony,,,,missed,,layup,25,6
+Al Thornton,Baron Davis,Eric Gordon,Marcus Camby,Zach Randolph,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,2,5:27,LAC,rebound,,,,,,,,,,Zach Randolph,,,,,,def,,
+Al Thornton,Baron Davis,Eric Gordon,Marcus Camby,Zach Randolph,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,2,5:19,LAC,shot,,,,,,,,,,Zach Randolph,,,,missed,,3pt,27,31
+Al Thornton,Baron Davis,Eric Gordon,Marcus Camby,Zach Randolph,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,2,5:18,MIA,rebound,,,,,,,,,,Michael Beasley,,,,,,def,,
+Al Thornton,Baron Davis,Eric Gordon,Marcus Camby,Zach Randolph,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,2,5:08,MIA,shot,,,,,,,,,,Michael Beasley,2,,,made,,driving layup,25,6
+Al Thornton,Baron Davis,Eric Gordon,Marcus Camby,Zach Randolph,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,2,4:57,LAC,turnover,,,,,,,,,,Eric Gordon,,,out of bounds lost ball turnover,,,,,
+Al Thornton,Baron Davis,Eric Gordon,Marcus Camby,Zach Randolph,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,2,4:57,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Al Thornton,Baron Davis,Eric Gordon,Fred Jones,Zach Randolph,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,2,4:57,LAC,sub,,,,Fred Jones,,Marcus Camby,,,,,,,,,,,,
+Al Thornton,Eric Gordon,Fred Jones,Steve Novak,Zach Randolph,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,2,4:57,LAC,sub,,,,Steve Novak,,Baron Davis,,,,,,,,,,,,
+Al Thornton,Eric Gordon,Fred Jones,Steve Novak,Zach Randolph,Dwyane Wade,James Jones,Mario Chalmers,Michael Beasley,Udonis Haslem,2,4:57,MIA,sub,,,,Udonis Haslem,,Joel Anthony,,,,,,,,,,,,
+Al Thornton,Eric Gordon,Fred Jones,Steve Novak,Zach Randolph,Dwyane Wade,James Jones,Mario Chalmers,Michael Beasley,Udonis Haslem,2,4:43,MIA,shot,Mario Chalmers,,,,,,,,,James Jones,2,,,made,,jump,9,18
+Al Thornton,Eric Gordon,Fred Jones,Steve Novak,Zach Randolph,Dwyane Wade,James Jones,Mario Chalmers,Michael Beasley,Udonis Haslem,2,4:20,LAC,shot,,,,,,,,,,Fred Jones,,,,missed,,3pt,2,8
+Al Thornton,Eric Gordon,Fred Jones,Steve Novak,Zach Randolph,Dwyane Wade,James Jones,Mario Chalmers,Michael Beasley,Udonis Haslem,2,4:18,LAC,rebound,,,,,,,,,,Al Thornton,,,,,,off,,
+Al Thornton,Eric Gordon,Fred Jones,Steve Novak,Zach Randolph,Dwyane Wade,James Jones,Mario Chalmers,Michael Beasley,Udonis Haslem,2,4:17,LAC,shot,,,,,,,,,,Al Thornton,2,,,made,,putback dunk,25,6
+Al Thornton,Eric Gordon,Fred Jones,Steve Novak,Zach Randolph,Dwyane Wade,James Jones,Mario Chalmers,Michael Beasley,Udonis Haslem,2,4:02,MIA,shot,Udonis Haslem,,,,,,,,,Dwyane Wade,2,,,made,,dunk,25,6
+Al Thornton,Eric Gordon,Fred Jones,Steve Novak,Zach Randolph,Dwyane Wade,James Jones,Mario Chalmers,Michael Beasley,Udonis Haslem,2,3:40,LAC,shot,,,,,,,,,,Al Thornton,,,,missed,,jump,24,20
+Al Thornton,Eric Gordon,Fred Jones,Steve Novak,Zach Randolph,Dwyane Wade,James Jones,Mario Chalmers,Michael Beasley,Udonis Haslem,2,3:38,MIA,rebound,,,,,,,,,,Udonis Haslem,,,,,,def,,
+Al Thornton,Eric Gordon,Fred Jones,Steve Novak,Zach Randolph,Dwyane Wade,James Jones,Mario Chalmers,Michael Beasley,Udonis Haslem,2,3:28,MIA,shot,,,,,,,,,,Michael Beasley,2,,,made,,jump,4,7
+Al Thornton,Eric Gordon,Fred Jones,Steve Novak,Zach Randolph,Dwyane Wade,James Jones,Mario Chalmers,Michael Beasley,Udonis Haslem,2,3:07,LAC,shot,,,,,,,,,,Zach Randolph,2,,,made,,driving layup,25,6
+Al Thornton,Eric Gordon,Fred Jones,Steve Novak,Zach Randolph,Dwyane Wade,James Jones,Mario Chalmers,Michael Beasley,Udonis Haslem,2,2:55,LAC,foul,,,,,,,,Udonis Haslem,,Zach Randolph,,,,,,personal,,
+Al Thornton,Eric Gordon,Fred Jones,Steve Novak,Zach Randolph,Dwyane Wade,James Jones,Mario Chalmers,Michael Beasley,Udonis Haslem,2,2:55,LAC,timeout,,,,,,,,,,,,,,,,regular,,
+Al Thornton,Eric Gordon,Fred Jones,Steve Novak,Zach Randolph,Dwyane Wade,James Jones,Mario Chalmers,Michael Beasley,Udonis Haslem,2,2:44,MIA,shot,,,,,,,,,,Michael Beasley,,,,missed,,jump,38,17
+Al Thornton,Eric Gordon,Fred Jones,Steve Novak,Zach Randolph,Dwyane Wade,James Jones,Mario Chalmers,Michael Beasley,Udonis Haslem,2,2:43,LAC,rebound,,,,,,,,,,Al Thornton,,,,,,def,,
+Al Thornton,Eric Gordon,Fred Jones,Steve Novak,Zach Randolph,Dwyane Wade,James Jones,Mario Chalmers,Michael Beasley,Udonis Haslem,2,2:22,LAC,turnover,,,,,,,,,,Eric Gordon,,,poss lost ball turnover,,,,,
+Al Thornton,Eric Gordon,Fred Jones,Steve Novak,Zach Randolph,Dwyane Wade,James Jones,Mario Chalmers,Michael Beasley,Udonis Haslem,2,2:01,MIA,shot,Dwyane Wade,,,,,,,,,Michael Beasley,3,,,made,,3pt,42,24
+Al Thornton,Eric Gordon,Fred Jones,Steve Novak,Zach Randolph,Dwyane Wade,James Jones,Mario Chalmers,Michael Beasley,Udonis Haslem,2,1:44,MIA,foul,,,,,,,,Zach Randolph,,Michael Beasley,,,,,,shooting,,
+Al Thornton,Eric Gordon,Fred Jones,Steve Novak,Zach Randolph,Dwyane Wade,James Jones,Mario Chalmers,Michael Beasley,Udonis Haslem,2,1:44,LAC,free throw,,,,,,,1,,2,Zach Randolph,,,foul,made,,,,
+Al Thornton,Eric Gordon,Fred Jones,Steve Novak,Zach Randolph,Dwyane Wade,James Jones,Mario Chalmers,Shawn Marion,Udonis Haslem,2,1:44,MIA,sub,,,,Shawn Marion,,Michael Beasley,,,,,,,,,,,,
+Al Thornton,Eric Gordon,Fred Jones,Steve Novak,Zach Randolph,Dwyane Wade,James Jones,Mario Chalmers,Shawn Marion,Udonis Haslem,2,1:44,LAC,free throw,,,,,,,2,,2,Zach Randolph,,,foul,made,,,,
+Al Thornton,Eric Gordon,Fred Jones,Steve Novak,Zach Randolph,Dwyane Wade,James Jones,Mario Chalmers,Shawn Marion,Udonis Haslem,2,1:34,MIA,shot,Mario Chalmers,,,,,,,,,Shawn Marion,2,,,made,,jump,26,10
+Al Thornton,Eric Gordon,Fred Jones,Steve Novak,Zach Randolph,Dwyane Wade,James Jones,Mario Chalmers,Shawn Marion,Udonis Haslem,2,1:16,MIA,foul,,,,,,,,Eric Gordon,,Udonis Haslem,,,,,,personal,,
+Al Thornton,Eric Gordon,Fred Jones,Steve Novak,Zach Randolph,Dwyane Wade,James Jones,Mario Chalmers,Shawn Marion,Udonis Haslem,2,1:16,LAC,free throw,,,,,,,1,,2,Eric Gordon,,,foul,made,,,,
+Al Thornton,Eric Gordon,Fred Jones,Steve Novak,Zach Randolph,Dwyane Wade,James Jones,Mario Chalmers,Shawn Marion,Udonis Haslem,2,1:16,LAC,free throw,,,,,,,2,,2,Eric Gordon,,,foul,made,,,,
+Al Thornton,Eric Gordon,Fred Jones,Steve Novak,Zach Randolph,Dwyane Wade,James Jones,Mario Chalmers,Shawn Marion,Udonis Haslem,2,1:05,LAC,foul,,,,,,,,Shawn Marion,,Zach Randolph,,,,,,shooting,,
+Al Thornton,Eric Gordon,Fred Jones,Steve Novak,Zach Randolph,Dwyane Wade,James Jones,Mario Chalmers,Shawn Marion,Udonis Haslem,2,1:05,MIA,free throw,,,,,,,1,,2,Shawn Marion,,,foul,made,,,,
+Al Thornton,Eric Gordon,Fred Jones,Steve Novak,Zach Randolph,Chris Quinn,Dwyane Wade,James Jones,Shawn Marion,Udonis Haslem,2,1:05,MIA,sub,,,,Chris Quinn,,Mario Chalmers,,,,,,,,,,,,
+Al Thornton,Eric Gordon,Fred Jones,Steve Novak,Zach Randolph,Chris Quinn,Dwyane Wade,James Jones,Shawn Marion,Udonis Haslem,2,1:05,LAC,timeout,,,,,,,,,,,,,,,,short,,
+Al Thornton,Eric Gordon,Fred Jones,Steve Novak,Zach Randolph,Chris Quinn,Dwyane Wade,James Jones,Shawn Marion,Udonis Haslem,2,1:05,MIA,free throw,,,,,,,2,,2,Shawn Marion,,,foul,missed,,,,
+Al Thornton,Eric Gordon,Fred Jones,Steve Novak,Zach Randolph,Chris Quinn,Dwyane Wade,James Jones,Shawn Marion,Udonis Haslem,2,1:03,LAC,rebound,,,,,,,,,,Zach Randolph,,,,,,def,,
+Al Thornton,Eric Gordon,Fred Jones,Steve Novak,Zach Randolph,Chris Quinn,Dwyane Wade,James Jones,Shawn Marion,Udonis Haslem,2,0:47,LAC,shot,Fred Jones,,,,,,,,,Steve Novak,3,,,made,,3pt,48,6
+Al Thornton,Eric Gordon,Fred Jones,Steve Novak,Zach Randolph,Chris Quinn,Dwyane Wade,James Jones,Shawn Marion,Udonis Haslem,2,0:32,MIA,shot,Dwyane Wade,,,,,,,,,Udonis Haslem,2,,,made,,jump,21,10
+Al Thornton,Eric Gordon,Fred Jones,Steve Novak,Zach Randolph,Chris Quinn,Dwyane Wade,James Jones,Shawn Marion,Udonis Haslem,2,0:32,LAC,foul,,,,,,,,Udonis Haslem,,Steve Novak,,,,,,shooting,,
+Al Thornton,Eric Gordon,Fred Jones,Steve Novak,Zach Randolph,Chris Quinn,Dwyane Wade,James Jones,Shawn Marion,Udonis Haslem,2,0:32,MIA,free throw,,,,,,,1,,1,Udonis Haslem,,,foul,made,,,,
+Al Thornton,Eric Gordon,Fred Jones,Steve Novak,Zach Randolph,Chris Quinn,Dwyane Wade,James Jones,Shawn Marion,Udonis Haslem,2,0:14,LAC,turnover,,,,,,,,,,Eric Gordon,,,bad pass,,James Jones,,,
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Shawn Marion,Udonis Haslem,2,0:12,LAC,sub,,,,Brian Skinner,,Zach Randolph,,,,,,,,,,,,
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Shawn Marion,2,0:12,MIA,sub,,,,Joel Anthony,,Udonis Haslem,,,,,,,,,,,,
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Shawn Marion,2,0:01,LAC,foul,,,,,,,,Dwyane Wade,,Al Thornton,,,,,,personal,,
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Shawn Marion,2,0:01,MIA,free throw,,,,,,,1,,2,Dwyane Wade,,,foul,made,,,,
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Shawn Marion,2,0:01,MIA,free throw,,,,,,,2,,2,Dwyane Wade,,,foul,made,,,,
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Shawn Marion,2,0:00,LAC,shot,,,,,,,,,,Eric Gordon,,,,missed,,3pt,8,53
+Al Thornton,Brian Skinner,Eric Gordon,Fred Jones,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Shawn Marion,2,0:00,LAC,rebound,,,,,,,,,,,,,,,,,,
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,11:45,MIA,shot,,,,,,,,,,Dwyane Wade,2,,,made,,jump,42,15
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,11:25,LAC,shot,Al Thornton,,,,,,,,,Zach Randolph,2,,,made,,hook,25,12
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,11:04,LAC,foul,,,,,,,,Shawn Marion,,Eric Gordon,,,,,,shooting,,
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,11:04,MIA,free throw,,,,,,,1,,2,Shawn Marion,,,foul,made,,,,
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,11:04,MIA,free throw,,,,,,,2,,2,Shawn Marion,,,foul,made,,,,
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,10:46,LAC,shot,,,,,,,,,,Al Thornton,,,,missed,,jump,4,10
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,10:44,MIA,rebound,,,,,,,,,,Shawn Marion,,,,,,def,,
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,10:38,MIA,shot,,,,,,,,,,Dwyane Wade,,,,missed,,jump,17,25
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,10:37,LAC,rebound,,,,,,,,,,Fred Jones,,,,,,def,,
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,10:26,LAC,turnover,,,,,,,,,,Marcus Camby,,,bad pass,,Jamaal Magloire,,,
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,10:12,MIA,shot,,,,,,,,,,Udonis Haslem,,,,missed,,jump,26,21
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,10:10,LAC,rebound,,,,,,,,,,Marcus Camby,,,,,,def,,
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,10:05,LAC,shot,,,,,,,,,,Eric Gordon,,,,missed,,layup,25,6
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,10:05,MIA,rebound,,,,,,,,,,,,,,,,,,
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,10:05,LAC,foul,,,,,,,,Jamaal Magloire,,Zach Randolph,,,,,,loose ball,,
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,9:50,MIA,turnover,,,,,,,,,,Jamaal Magloire,,,traveling,,,,,
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,9:34,MIA,foul,,,,,,,,Zach Randolph,,Jamaal Magloire,,,,,,shooting,,
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,9:34,LAC,free throw,,,,,,,1,,2,Zach Randolph,,,foul,made,,,,
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,9:34,LAC,free throw,,,,,,,2,,2,Zach Randolph,,,foul,made,,,,
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,9:22,MIA,shot,,,Al Thornton,,,,,,,Udonis Haslem,,,,missed,,dunk,25,6
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,9:20,MIA,rebound,,,,,,,,,,Udonis Haslem,,,,,,off,,
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,9:17,MIA,shot,,,,,,,,,,Udonis Haslem,2,,,made,,layup,25,6
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,8:54,LAC,shot,,,Jamaal Magloire,,,,,,,Al Thornton,,,,missed,,reverse layup,25,6
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,8:52,MIA,rebound,,,,,,,,,,Shawn Marion,,,,,,def,,
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,8:45,MIA,shot,Shawn Marion,,,,,,,,,Mario Chalmers,3,,,made,,3pt,44,22
+Al Thornton,Eric Gordon,Fred Jones,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,8:38,LAC,timeout,,,,,,,,,,,,,,,,regular,,
+Al Thornton,Baron Davis,Eric Gordon,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,8:38,LAC,sub,,,,Baron Davis,,Fred Jones,,,,,,,,,,,,
+Al Thornton,Baron Davis,Eric Gordon,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,8:15,LAC,shot,,,,,,,,,,Al Thornton,,,,missed,,jump,45,6
+Al Thornton,Baron Davis,Eric Gordon,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,8:14,LAC,shot,,,,,,,,,,Marcus Camby,2,,,made,,tip,25,6
+Al Thornton,Baron Davis,Eric Gordon,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,8:14,LAC,rebound,,,,,,,,,,Marcus Camby,,,,,,off,,
+Al Thornton,Baron Davis,Eric Gordon,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,8:04,LAC,foul,,,,,,,,Dwyane Wade,,Eric Gordon,,,,,,shooting,,
+Al Thornton,Baron Davis,Eric Gordon,Marcus Camby,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,8:04,MIA,free throw,,,,,,,1,,2,Dwyane Wade,,,foul,made,,,,
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,8:04,LAC,sub,,,,Ricky Davis,,Eric Gordon,,,,,,,,,,,,
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,8:04,MIA,free throw,,,,,,,2,,2,Dwyane Wade,,,foul,made,,,,
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,7:42,LAC,shot,,,Jamaal Magloire,,,,,,,Baron Davis,,,,missed,,driving layup,25,6
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,7:41,LAC,rebound,,,,,,,,,,,,,,,,,,
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,7:37,LAC,shot,Al Thornton,,,,,,,,,Zach Randolph,2,,,made,,jump,6,6
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,7:17,MIA,shot,,,,,,,,,,Dwyane Wade,2,,,made,,jump,45,6
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,7:11,LAC,shot,Baron Davis,,,,,,,,,Ricky Davis,2,,,made,,jump,40,15
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,6:49,MIA,shot,,,,,,,,,,Mario Chalmers,2,,,made,,jump,11,21
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,6:36,LAC,shot,,,,,,,,,,Al Thornton,,,,missed,,jump,5,8
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,6:34,LAC,rebound,,,,,,,,,,,,,,,,,,
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,6:34,MIA,foul,,,,,,,,Zach Randolph,,Jamaal Magloire,,,,,,loose ball,,
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,6:27,LAC,shot,Al Thornton,,,,,,,,,Ricky Davis,3,,,made,,3pt,7,25
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,6:10,MIA,shot,,,,,,,,,,Mario Chalmers,,,,missed,,3pt,48,7
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,6:09,MIA,rebound,,,,,,,,,,Udonis Haslem,,,,,,off,,
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,6:03,MIA,shot,,,,,,,,,,Udonis Haslem,,,,missed,,jump,5,9
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,6:00,MIA,shot,,,,,,,,,,Shawn Marion,,,,missed,,tip,25,6
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,6:00,MIA,rebound,,,,,,,,,,Shawn Marion,,,,,,off,,
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,5:58,MIA,rebound,,,,,,,,,,Jamaal Magloire,,,,,,off,,
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,5:56,MIA,shot,,,,,,,,,,Jamaal Magloire,,,,missed,,layup,25,6
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,5:54,LAC,rebound,,,,,,,,,,Marcus Camby,,,,,,def,,
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,5:48,LAC,shot,,,,,,,,,,Marcus Camby,,,,missed,,jump,12,18
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,5:46,MIA,rebound,,,,,,,,,,Dwyane Wade,,,,,,def,,
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,5:38,MIA,shot,Dwyane Wade,,,,,,,,,Jamaal Magloire,2,,,made,,dunk,25,6
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Jamaal Magloire,Mario Chalmers,Shawn Marion,Udonis Haslem,3,5:37,LAC,timeout,,,,,,,,,,,,,,,,short,,
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,5:37,MIA,sub,,,,Joel Anthony,,Jamaal Magloire,,,,,,,,,,,,
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,5:28,LAC,shot,Marcus Camby,,,,,,,,,Zach Randolph,2,,,made,,layup,25,6
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,5:02,MIA,shot,Mario Chalmers,,,,,,,,,Udonis Haslem,2,,,made,,jump,24,21
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,4:45,LAC,shot,Baron Davis,,,,,,,,,Marcus Camby,2,,,made,,jump,36,21
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,4:28,LAC,foul,,,,,,,,Mario Chalmers,,Baron Davis,,,,,,personal,,
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,4:21,MIA,shot,,,,,,,,,,Mario Chalmers,,,,missed,,floating jump,25,13
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,4:19,LAC,rebound,,,,,,,,,,Al Thornton,,,,,,def,,
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,4:06,LAC,shot,,,,,,,,,,Baron Davis,2,,,made,,jump,10,22
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,3:37,MIA,shot,,,,,,,,,,Dwyane Wade,,,,missed,,jump,45,6
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,3:35,LAC,rebound,,,,,,,,,,Marcus Camby,,,,,,def,,
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,3:26,LAC,shot,Baron Davis,,,,,,,,,Al Thornton,2,,,made,,jump,37,19
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,3:25,MIA,timeout,,,,,,,,,,,,,,,,regular,,
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,3:11,MIA,turnover,,,,,,,,,,Dwyane Wade,,,bad pass,,Baron Davis,,,
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,3:08,MIA,foul,,,,,,,,Baron Davis,,Dwyane Wade,,,,,,shooting,,
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,3:08,LAC,free throw,,,,,,,1,,2,Baron Davis,,,foul,made,,,,
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,3:08,LAC,free throw,,,,,,,2,,2,Baron Davis,,,foul,made,,,,
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,2:57,MIA,shot,Mario Chalmers,,,,,,,,,Dwyane Wade,2,,,made,,layup,25,6
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,2:39,LAC,shot,,,,,,,,,,Baron Davis,,,,missed,,3pt,8,27
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,2:38,MIA,rebound,,,,,,,,,,Shawn Marion,,,,,,def,,
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,2:30,MIA,shot,Udonis Haslem,,,,,,,,,Dwyane Wade,3,,,made,,3pt,37,27
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,2:16,LAC,shot,Baron Davis,,,,,,,,,Zach Randolph,2,,,made,,layup,25,6
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,2:16,MIA,foul,,,,,,,,Zach Randolph,,Shawn Marion,,,,,,shooting,,
+Al Thornton,Baron Davis,Marcus Camby,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,2:16,LAC,free throw,,,,,,,1,,1,Zach Randolph,,,foul,made,,,,
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,2:16,LAC,sub,,,,Brian Skinner,,Marcus Camby,,,,,,,,,,,,
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,2:06,MIA,shot,Mario Chalmers,,,,,,,,,Shawn Marion,2,,,made,,dunk,25,6
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,1:40,LAC,shot,,,,,,,,,,Zach Randolph,,,,missed,,jump,8,16
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,1:39,LAC,rebound,,,,,,,,,,Zach Randolph,,,,,,off,,
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,1:28,LAC,shot,,,Shawn Marion,,,,,,,Zach Randolph,,,,missed,,hook,29,11
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,1:26,MIA,rebound,,,,,,,,,,Joel Anthony,,,,,,def,,
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,1:22,MIA,turnover,,,,,,,,,,Mario Chalmers,,,bad pass,,,,,
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,1:02,LAC,shot,,,,,,,,,,Al Thornton,,,,missed,,3pt,49,9
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,1:01,MIA,rebound,,,,,,,,,,Joel Anthony,,,,,,def,,
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,0:56,MIA,shot,,,,,,,,,,Dwyane Wade,3,,,made,,3pt,39,27
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,0:41,LAC,shot,,,,,,,,,,Zach Randolph,,,,missed,,jump,30,8
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,0:39,MIA,rebound,,,,,,,,,,Udonis Haslem,,,,,,def,,
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,0:31,LAC,foul,,,,,,,,Dwyane Wade,,Al Thornton,,,,,,shooting,,
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,0:31,MIA,free throw,,,,,,,1,,2,Dwyane Wade,,,foul,missed,,,,
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Zach Randolph,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,0:31,MIA,rebound,,,,,,,,,,,,,,,,,,
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Steve Novak,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,0:31,LAC,sub,,,,Steve Novak,,Zach Randolph,,,,,,,,,,,,
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Steve Novak,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,0:31,MIA,free throw,,,,,,,2,,2,Dwyane Wade,,,foul,made,,,,
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Steve Novak,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,0:17,LAC,shot,,,,,,,,,,Brian Skinner,,,,missed,,layup,25,6
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Steve Novak,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,0:14,LAC,rebound,,,,,,,,,,Al Thornton,,,,,,off,,
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Steve Novak,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,0:12,LAC,shot,,,Joel Anthony,,,,,,,Al Thornton,,,,missed,,layup,25,6
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Steve Novak,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,0:10,LAC,rebound,,,,,,,,,,Al Thornton,,,,,,off,,
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Steve Novak,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,0:07,LAC,shot,,,Joel Anthony,,,,,,,Al Thornton,,,,missed,,layup,25,6
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Steve Novak,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,0:05,MIA,rebound,,,,,,,,,,Udonis Haslem,,,,,,def,,
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Steve Novak,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,0:02,MIA,shot,Mario Chalmers,,,,,,,,,Udonis Haslem,2,,,made,,jump,40,7
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Steve Novak,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,0:01,LAC,shot,,,,,,,,,,Baron Davis,,,,missed,,3pt,39,43
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Steve Novak,Dwyane Wade,Joel Anthony,Mario Chalmers,Shawn Marion,Udonis Haslem,3,0:00,LAC,rebound,,,,,,,,,,,,,,,,,,
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,4,11:41,LAC,shot,Ricky Davis,,,,,,,,,Steve Novak,2,,,made,,jump,34,23
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,4,11:17,MIA,shot,,,,,,,,,,Mario Chalmers,,,,missed,,3pt,41,25
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,4,11:15,LAC,rebound,,,,,,,,,,Brian Skinner,,,,,,def,,
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,4,11:10,LAC,shot,Fred Jones,,,,,,,,,Ricky Davis,2,,,made,,jump,38,20
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,4,10:46,MIA,shot,,,,,,,,,,Michael Beasley,,,,missed,,jump,18,15
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,4,10:45,MIA,rebound,,,,,,,,,,Shawn Marion,,,,,,off,,
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,4,10:42,MIA,shot,,,Brian Skinner,,,,,,,Joel Anthony,,,,missed,,layup,25,6
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,4,10:41,MIA,rebound,,,,,,,,,,Michael Beasley,,,,,,off,,
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,4,10:40,MIA,shot,,,,,,,,,,Michael Beasley,,,,missed,,tip,24,7
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,4,10:39,MIA,rebound,,,,,,,,,,Michael Beasley,,,,,,off,,
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,4,10:36,MIA,shot,,,,,,,,,,Michael Beasley,2,,,made,,tip,25,6
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,4,10:27,LAC,shot,,,,,,,,,,Ricky Davis,,,,missed,,jump,16,8
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,4,10:25,MIA,rebound,,,,,,,,,,Joel Anthony,,,,,,def,,
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,4,10:13,LAC,foul,,,,,,,,Michael Beasley,,Ricky Davis,,,,,,shooting,,
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,4,10:13,MIA,free throw,,,,,,,1,,2,Michael Beasley,,,foul,made,,,,
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,4,10:13,MIA,free throw,,,,,,,2,,2,Michael Beasley,,,foul,missed,,,,
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,4,10:12,LAC,rebound,,,,,,,,,,Brian Skinner,,,,,,def,,
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,4,9:56,LAC,shot,,,,,,,,,,Steve Novak,,,,missed,,3pt,9,28
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,4,9:55,MIA,rebound,,,,,,,,,,Michael Beasley,,,,,,def,,
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,4,9:48,MIA,turnover,,,,,,,,,,Mario Chalmers,,,discontinue dribble,,,,,
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,4,9:26,LAC,shot,,,,,,,,,,Eric Gordon,,,,missed,,floating jump,14,10
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,4,9:23,MIA,rebound,,,,,,,,,,Joel Anthony,,,,,,def,,
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,4,9:08,MIA,shot,,,,,,,,,,Shawn Marion,,,,missed,,turnaround jump,9,13
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,4,9:06,LAC,rebound,,,,,,,,,,Eric Gordon,,,,,,def,,
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,4,9:04,LAC,shot,Ricky Davis,,,,,,,,,Fred Jones,2,,,made,,layup,25,6
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Shawn Marion,4,9:03,MIA,timeout,,,,,,,,,,,,,,,,regular,,
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,Chris Quinn,James Jones,Joel Anthony,Michael Beasley,Shawn Marion,4,8:58,MIA,sub,,,,Chris Quinn,,Mario Chalmers,,,,,,,,,,,,
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Michael Beasley,4,8:58,MIA,sub,,,,Dwyane Wade,,Shawn Marion,,,,,,,,,,,,
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Michael Beasley,4,8:40,MIA,shot,Dwyane Wade,,,,,,,,,James Jones,2,,,made,,jump,45,7
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Michael Beasley,4,8:25,LAC,shot,,,,,,,,,,Fred Jones,,,,missed,,driving layup,25,6
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Michael Beasley,4,8:23,LAC,rebound,,,,,,,,,,Brian Skinner,,,,,,off,,
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Michael Beasley,4,8:22,LAC,shot,,,,,,,,,,Brian Skinner,2,,,made,,tip,25,6
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Michael Beasley,4,8:09,LAC,foul,,,,,,,,Chris Quinn,,Eric Gordon,,,,,,personal,,
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Michael Beasley,4,8:00,MIA,turnover,,,,,,,,,,Dwyane Wade,,,bad pass,,Fred Jones,,,
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Michael Beasley,4,7:55,LAC,shot,Fred Jones,,,,,,,,,Eric Gordon,2,,,made,,layup,25,6
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Michael Beasley,4,7:35,MIA,shot,,,,,,,,,,Michael Beasley,,,,missed,,driving layup,25,6
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Michael Beasley,4,7:34,MIA,rebound,,,,,,,,,,Michael Beasley,,,,,,off,,
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Michael Beasley,4,7:29,MIA,shot,,,,,,,,,,Michael Beasley,2,,,made,,jump,23,9
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Michael Beasley,4,7:13,LAC,shot,,,,,,,,,,Eric Gordon,,,,missed,,3pt,8,25
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Michael Beasley,4,7:12,MIA,rebound,,,,,,,,,,James Jones,,,,,,def,,
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Michael Beasley,4,7:01,MIA,shot,,,,,,,,,,Michael Beasley,,,,missed,,3pt,6,24
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Michael Beasley,4,6:59,LAC,rebound,,,,,,,,,,Brian Skinner,,,,,,def,,
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Michael Beasley,4,6:54,LAC,shot,,,,,,,,,,Steve Novak,,,,missed,,jump,44,14
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Michael Beasley,4,6:52,MIA,rebound,,,,,,,,,,Chris Quinn,,,,,,def,,
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Michael Beasley,4,6:47,MIA,shot,Dwyane Wade,,,,,,,,,Michael Beasley,2,,,made,,dunk,25,6
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Michael Beasley,4,6:41,LAC,shot,,,,,,,,,,Fred Jones,2,,,made,,running jump,21,14
+Brian Skinner,Eric Gordon,Fred Jones,Ricky Davis,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Michael Beasley,4,6:41,MIA,foul,,,,,,,,Fred Jones,,Chris Quinn,,,,,,shooting,,
+Al Thornton,Brian Skinner,Fred Jones,Ricky Davis,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Michael Beasley,4,6:41,LAC,sub,,,,Al Thornton,,Eric Gordon,,,,,,,,,,,,
+Al Thornton,Brian Skinner,Fred Jones,Ricky Davis,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Michael Beasley,4,6:41,LAC,free throw,,,,,,,1,,1,Fred Jones,,,foul,made,,,,
+Al Thornton,Brian Skinner,Fred Jones,Ricky Davis,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Michael Beasley,4,6:29,MIA,shot,,,,,,,,,,James Jones,,,,missed,,3pt,12,28
+Al Thornton,Brian Skinner,Fred Jones,Ricky Davis,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Michael Beasley,4,6:28,LAC,rebound,,,,,,,,,,Fred Jones,,,,,,def,,
+Al Thornton,Brian Skinner,Fred Jones,Ricky Davis,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Michael Beasley,4,6:16,LAC,shot,,,,,,,,,,Al Thornton,,,,missed,,3pt,7,23
+Al Thornton,Brian Skinner,Fred Jones,Ricky Davis,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Michael Beasley,4,6:15,MIA,rebound,,,,,,,,,,Chris Quinn,,,,,,def,,
+Al Thornton,Brian Skinner,Fred Jones,Ricky Davis,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Michael Beasley,4,6:07,LAC,foul,,,,,,,,Joel Anthony,,Ricky Davis,,,,,,shooting,,
+Al Thornton,Brian Skinner,Fred Jones,Ricky Davis,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Michael Beasley,4,6:07,MIA,free throw,,,,,,,1,,2,Joel Anthony,,,foul,made,,,,
+Al Thornton,Brian Skinner,Fred Jones,Ricky Davis,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Michael Beasley,4,6:07,MIA,free throw,,,,,,,2,,2,Joel Anthony,,,foul,missed,,,,
+Al Thornton,Brian Skinner,Fred Jones,Ricky Davis,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Michael Beasley,4,6:06,LAC,rebound,,,,,,,,,,Al Thornton,,,,,,def,,
+Al Thornton,Brian Skinner,Fred Jones,Ricky Davis,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Michael Beasley,4,5:55,LAC,shot,Ricky Davis,,,,,,,,,Fred Jones,3,,,made,,3pt,48,8
+Al Thornton,Brian Skinner,Fred Jones,Ricky Davis,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Michael Beasley,4,5:40,MIA,shot,Dwyane Wade,,,,,,,,,Chris Quinn,3,,,made,,3pt,39,28
+Al Thornton,Brian Skinner,Fred Jones,Ricky Davis,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Michael Beasley,4,5:34,LAC,turnover,,,,,,,,,,Fred Jones,,,traveling,,,,,
+Al Thornton,Brian Skinner,Fred Jones,Ricky Davis,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Michael Beasley,4,5:34,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Steve Novak,Chris Quinn,Dwyane Wade,James Jones,Joel Anthony,Michael Beasley,4,5:34,LAC,sub,,,,Baron Davis,,Fred Jones,,,,,,,,,,,,
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Steve Novak,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,4,5:34,MIA,sub,,,,Mario Chalmers,,Chris Quinn,,,,,,,,,,,,
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Steve Novak,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,4,5:21,MIA,shot,Dwyane Wade,,,,,,,,,Mario Chalmers,3,,,made,,3pt,8,27
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Steve Novak,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,4,4:51,LAC,shot,,,,,,,,,,Steve Novak,,,,missed,,3pt,38,29
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Steve Novak,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,4,4:50,MIA,rebound,,,,,,,,,,Mario Chalmers,,,,,,def,,
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Steve Novak,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,4,4:42,MIA,shot,,,,,,,,,,Dwyane Wade,,,,missed,,3pt,44,22
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Steve Novak,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,4,4:40,LAC,rebound,,,,,,,,,,Al Thornton,,,,,,def,,
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Steve Novak,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,4,4:31,LAC,shot,,,,,,,,,,Steve Novak,,,,missed,,3pt,31,31
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Steve Novak,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,4,4:29,MIA,rebound,,,,,,,,,,Joel Anthony,,,,,,def,,
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Steve Novak,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,4,4:19,LAC,foul,,,,,,,,Dwyane Wade,,Brian Skinner,,,,,,shooting,,
+Al Thornton,Baron Davis,Brian Skinner,Ricky Davis,Steve Novak,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,4,4:19,MIA,free throw,,,,,,,1,,2,Dwyane Wade,,,foul,made,,,,
+Al Thornton,Baron Davis,Brian Skinner,Eric Gordon,Ricky Davis,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,4,4:19,LAC,sub,,,,Eric Gordon,,Steve Novak,,,,,,,,,,,,
+Al Thornton,Baron Davis,Brian Skinner,Eric Gordon,Ricky Davis,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,4,4:19,MIA,free throw,,,,,,,2,,2,Dwyane Wade,,,foul,made,,,,
+Al Thornton,Baron Davis,Brian Skinner,Eric Gordon,Ricky Davis,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,4,4:02,MIA,foul,,,,,,,,Al Thornton,,Dwyane Wade,,,,,,shooting,,
+Al Thornton,Baron Davis,Brian Skinner,Eric Gordon,Ricky Davis,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,4,4:02,LAC,free throw,,,,,,,1,,2,Al Thornton,,,foul,missed,,,,
+Al Thornton,Baron Davis,Brian Skinner,Eric Gordon,Ricky Davis,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,4,4:02,LAC,rebound,,,,,,,,,,,,,,,,,,
+Al Thornton,Baron Davis,Brian Skinner,Eric Gordon,Ricky Davis,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,4,4:02,LAC,free throw,,,,,,,2,,2,Al Thornton,,,foul,made,,,,
+Al Thornton,Baron Davis,Brian Skinner,Eric Gordon,Ricky Davis,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,4,3:50,MIA,shot,Mario Chalmers,,,,,,,,,Joel Anthony,2,,,made,,dunk,25,6
+Al Thornton,Baron Davis,Brian Skinner,Eric Gordon,Ricky Davis,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,4,3:27,LAC,turnover,,,,,,,,,,Baron Davis,,,traveling,,,,,
+Al Thornton,Baron Davis,Brian Skinner,Eric Gordon,Ricky Davis,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,4,3:18,MIA,turnover,,,,,,,,,,James Jones,,,bad pass,,Baron Davis,,,
+Al Thornton,Baron Davis,Brian Skinner,Eric Gordon,Ricky Davis,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,4,3:15,LAC,shot,,,,,,,,,,Eric Gordon,,,,missed,,jump,29,10
+Al Thornton,Baron Davis,Brian Skinner,Eric Gordon,Ricky Davis,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,4,3:12,MIA,rebound,,,,,,,,,,,,,,,,,,
+Al Thornton,Baron Davis,Brian Skinner,Eric Gordon,Ricky Davis,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,4,2:54,MIA,timeout,,,,,,,,,,,,,,,,short,,
+Al Thornton,Baron Davis,Brian Skinner,Eric Gordon,Ricky Davis,Dwyane Wade,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,4,2:54,LAC,timeout,,,,,,,,,,,,,,,,regular,,
+Al Thornton,Baron Davis,Brian Skinner,Eric Gordon,Ricky Davis,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Yakhouba Diawara,4,2:54,MIA,sub,,,,Yakhouba Diawara,,Dwyane Wade,,,,,,,,,,,,
+Al Thornton,Baron Davis,DeAndre Jordan,Eric Gordon,Ricky Davis,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Yakhouba Diawara,4,2:54,LAC,sub,,,,DeAndre Jordan,,Brian Skinner,,,,,,,,,,,,
+Al Thornton,Baron Davis,DeAndre Jordan,Eric Gordon,Ricky Davis,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Yakhouba Diawara,4,2:46,MIA,turnover,,,,,,,,,,Michael Beasley,,,out of bounds lost ball turnover,,,,,
+Al Thornton,Baron Davis,DeAndre Jordan,Eric Gordon,Ricky Davis,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Yakhouba Diawara,4,2:34,LAC,shot,Baron Davis,,,,,,,,,Eric Gordon,3,,,made,,3pt,39,28
+Al Thornton,Baron Davis,DeAndre Jordan,Eric Gordon,Ricky Davis,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Yakhouba Diawara,4,2:10,LAC,foul,,,,,,,,Michael Beasley,,Al Thornton,,,,,,personal,,
+Al Thornton,Baron Davis,DeAndre Jordan,Eric Gordon,Ricky Davis,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Yakhouba Diawara,4,2:10,MIA,free throw,,,,,,,1,,2,Michael Beasley,,,foul,missed,,,,
+Al Thornton,Baron Davis,DeAndre Jordan,Eric Gordon,Ricky Davis,James Jones,Joel Anthony,Mario Chalmers,Michael Beasley,Yakhouba Diawara,4,2:10,MIA,rebound,,,,,,,,,,,,,,,,,,
+Al Thornton,Baron Davis,DeAndre Jordan,Eric Gordon,Ricky Davis,Chris Quinn,James Jones,Joel Anthony,Michael Beasley,Yakhouba Diawara,4,2:10,MIA,sub,,,,Chris Quinn,,Mario Chalmers,,,,,,,,,,,,
+Al Thornton,Baron Davis,DeAndre Jordan,Fred Jones,Ricky Davis,Chris Quinn,James Jones,Joel Anthony,Michael Beasley,Yakhouba Diawara,4,2:10,LAC,sub,,,,Fred Jones,,Eric Gordon,,,,,,,,,,,,
+Al Thornton,Baron Davis,DeAndre Jordan,Fred Jones,Ricky Davis,Chris Quinn,James Jones,Joel Anthony,Michael Beasley,Yakhouba Diawara,4,2:10,MIA,free throw,,,,,,,2,,2,Michael Beasley,,,foul,made,,,,
+Al Thornton,Baron Davis,DeAndre Jordan,Fred Jones,Ricky Davis,Chris Quinn,James Jones,Joel Anthony,Michael Beasley,Yakhouba Diawara,4,1:51,LAC,shot,,,,,,,,,,Baron Davis,2,,,made,,jump,24,27
+Al Thornton,Baron Davis,DeAndre Jordan,Fred Jones,Ricky Davis,Chris Quinn,James Jones,Joel Anthony,Michael Beasley,Yakhouba Diawara,4,1:36,MIA,shot,Joel Anthony,,,,,,,,,James Jones,2,,,made,,jump,43,17
+Al Thornton,Baron Davis,DeAndre Jordan,Fred Jones,Ricky Davis,Chris Quinn,James Jones,Joel Anthony,Michael Beasley,Yakhouba Diawara,4,1:22,LAC,shot,,,,,,,,,,Baron Davis,,,,missed,,3pt,5,22
+Al Thornton,Baron Davis,DeAndre Jordan,Fred Jones,Ricky Davis,Chris Quinn,James Jones,Joel Anthony,Michael Beasley,Yakhouba Diawara,4,1:21,MIA,rebound,,,,,,,,,,James Jones,,,,,,def,,
+Al Thornton,Baron Davis,DeAndre Jordan,Fred Jones,Ricky Davis,Chris Quinn,James Jones,Joel Anthony,Michael Beasley,Yakhouba Diawara,4,1:04,MIA,shot,Chris Quinn,,,,,,,,,Yakhouba Diawara,3,,,made,,3pt,6,22
+Al Thornton,Baron Davis,DeAndre Jordan,Fred Jones,Ricky Davis,Chris Quinn,James Jones,Joel Anthony,Michael Beasley,Yakhouba Diawara,4,0:42,LAC,turnover,,,,,,,,,,Al Thornton,,,lost ball,,Joel Anthony,,,
+Al Thornton,Baron Davis,DeAndre Jordan,Fred Jones,Ricky Davis,Chris Quinn,James Jones,Joel Anthony,Michael Beasley,Yakhouba Diawara,4,0:37,MIA,shot,Yakhouba Diawara,,,,,,,,,James Jones,3,,,made,,3pt,10,29
+Al Thornton,Baron Davis,DeAndre Jordan,Fred Jones,Ricky Davis,Chris Quinn,James Jones,Joel Anthony,Michael Beasley,Yakhouba Diawara,4,0:25,LAC,shot,,,Joel Anthony,,,,,,,Al Thornton,,,,missed,,driving layup,25,6
+Al Thornton,Baron Davis,DeAndre Jordan,Fred Jones,Ricky Davis,Chris Quinn,James Jones,Joel Anthony,Michael Beasley,Yakhouba Diawara,4,0:20,MIA,rebound,,,,,,,,,,Yakhouba Diawara,,,,,,def,,

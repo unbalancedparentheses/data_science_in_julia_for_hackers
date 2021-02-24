@@ -1,0 +1,402 @@
+a1,a2,a3,a4,a5,h1,h2,h3,h4,h5,period,time,team,etype,assist,away,block,entered,home,left,num,opponent,outof,player,points,possession,reason,result,steal,type,x,y
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,12:00,OFF,jump ball,,Erick Dampier,,,Mark Blount,,,,,,,Jason Kidd,,,,,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,11:47,DAL,shot,Dirk Nowitzki,,,,,,,,,Josh Howard,2,,,made,,layup,25,6
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,11:27,MIA,shot,,,,,,,,,,Daequan Cook,,,,missed,,jump,16,10
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,11:26,DAL,rebound,,,,,,,,,,,,,,,,,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,11:26,MIA,foul,,,,,,,,Jerry Stackhouse,,Alexander Johnson,,,,,,personal,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,11:07,DAL,shot,,,,,,,,,,Josh Howard,2,,,made,,jump,43,7
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,10:53,MIA,turnover,,,,,,,,,,Ricky Davis,,,bad pass,,,,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,10:33,DAL,shot,Jerry Stackhouse,,,,,,,,,Dirk Nowitzki,2,,,made,,jump,16,6
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,10:10,MIA,shot,,,Erick Dampier,,,,,,,Alexander Johnson,,,,missed,,layup,25,6
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,10:09,DAL,rebound,,,,,,,,,,Jason Kidd,,,,,,def,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,9:48,DAL,shot,Jason Kidd,,,,,,,,,Jerry Stackhouse,3,,,made,,3pt,13,28
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,9:41,MIA,timeout,,,,,,,,,,,,,,,,short,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,9:32,MIA,shot,Jason Williams,,,,,,,,,Alexander Johnson,2,,,made,,jump,6,6
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,9:27,DAL,foul,,,,,,,,Alexander Johnson,,Erick Dampier,,,,,,offensive,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,9:27,DAL,turnover,,,,,,,,,,Erick Dampier,,,foul,,,,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,9:06,MIA,shot,,,,,,,,,,Ricky Davis,,,,missed,,jump,16,19
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,9:05,DAL,rebound,,,,,,,,,,Erick Dampier,,,,,,def,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,9:00,DAL,turnover,,,,,,,,,,Jason Kidd,,,bad pass,,,,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,8:46,MIA,shot,,,,,,,,,,Jason Williams,,,,missed,,layup,25,6
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,8:44,DAL,rebound,,,,,,,,,,Dirk Nowitzki,,,,,,def,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,8:42,MIA,foul,,,,,,,,Jerry Stackhouse,,Daequan Cook,,,,,,shooting,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,8:42,DAL,free throw,,,,,,,1,,2,Jerry Stackhouse,,,foul,made,,,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,8:42,DAL,free throw,,,,,,,2,,2,Jerry Stackhouse,,,foul,made,,,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,8:27,MIA,shot,,,Erick Dampier,,,,,,,Mark Blount,,,,missed,,layup,25,6
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,8:26,DAL,rebound,,,,,,,,,,Dirk Nowitzki,,,,,,def,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,8:22,DAL,shot,,,,,,,,,,Josh Howard,,,,missed,,layup,25,6
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,8:21,MIA,rebound,,,,,,,,,,Daequan Cook,,,,,,def,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,8:01,MIA,shot,,,,,,,,,,Alexander Johnson,,,,missed,,jump,16,13
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,8:00,DAL,rebound,,,,,,,,,,Josh Howard,,,,,,def,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,7:48,DAL,shot,,,,,,,,,,Jason Kidd,2,,,made,,finger roll layup,25,6
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,7:32,MIA,shot,,,,,,,,,,Daequan Cook,,,,missed,,jump,13,20
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,7:31,MIA,rebound,,,,,,,,,,Alexander Johnson,,,,,,off,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,Ricky Davis,1,7:25,MIA,sub,,,,Earl Barron,,Alexander Johnson,,,,,,,,,,,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,1,7:25,MIA,sub,,,,Bobby Jones,,Ricky Davis,,,,,,,,,,,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,1,7:15,MIA,turnover,,,,,,,,,,Mark Blount,,,lost ball,,Dirk Nowitzki,,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,1,7:05,DAL,shot,Jerry Stackhouse,,,,,,,,,Dirk Nowitzki,3,,,made,,3pt,26,31
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,1,6:51,MIA,turnover,,,,,,,,,,Daequan Cook,,,out of bounds lost ball turnover,,,,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,1,6:45,DAL,shot,,,,,,,,,,Jerry Stackhouse,2,,,made,,layup,25,6
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,1,6:45,MIA,foul,,,,,,,,Jerry Stackhouse,,Earl Barron,,,,,,shooting,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,1,6:45,DAL,free throw,,,,,,,1,,1,Jerry Stackhouse,,,foul,made,,,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,1,6:40,MIA,timeout,,,,,,,,,,,,,,,,regular,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,1,6:32,MIA,shot,Bobby Jones,,,,,,,,,Daequan Cook,2,,,made,,jump,11,21
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,1,6:11,DAL,shot,,,,,,,,,,Josh Howard,2,,,made,,driving layup,25,6
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,1,5:54,MIA,shot,,,,,,,,,,Jason Williams,,,,missed,,3pt,42,23
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,1,5:53,DAL,rebound,,,,,,,,,,Erick Dampier,,,,,,def,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,1,5:35,DAL,shot,,,,,,,,,,Dirk Nowitzki,2,,,made,,jump,20,18
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,1,5:35,MIA,foul,,,,,,,,Dirk Nowitzki,,Mark Blount,,,,,,shooting,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jason Terry,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,1,5:35,DAL,sub,,,,Jason Terry,,Jerry Stackhouse,,,,,,,,,,,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jason Terry,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,1,5:35,MIA,sub,,,,Joel Anthony,,Mark Blount,,,,,,,,,,,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jason Terry,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,1,5:35,DAL,free throw,,,,,,,1,,1,Dirk Nowitzki,,,foul,made,,,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jason Terry,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,1,5:22,MIA,shot,,,,,,,,,,Daequan Cook,,,,missed,,jump,31,19
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jason Terry,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,1,5:21,DAL,rebound,,,,,,,,,,,,,,,,,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jason Terry,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,1,5:21,MIA,foul,,,,,,,,Dirk Nowitzki,,Earl Barron,,,,,,personal,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jason Terry,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,1,5:21,DAL,free throw,,,,,,,1,,2,Dirk Nowitzki,,,foul,made,,,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jason Terry,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,1,5:21,DAL,free throw,,,,,,,2,,2,Dirk Nowitzki,,,foul,made,,,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jason Terry,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,1,5:00,MIA,shot,Daequan Cook,,,,,,,,,Earl Barron,2,,,made,,jump,30,24
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jason Terry,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,1,4:49,DAL,shot,,,Joel Anthony,,,,,,,Josh Howard,,,,missed,,layup,25,6
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jason Terry,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,1,4:47,MIA,rebound,,,,,,,,,,Daequan Cook,,,,,,def,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jason Terry,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,1,4:41,MIA,turnover,,,,,,,,,,Daequan Cook,,,bad pass,,Dirk Nowitzki,,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jason Terry,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,1,4:31,DAL,shot,,,,,,,,,,Josh Howard,,,,missed,,jump,33,20
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jason Terry,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,1,4:22,MIA,rebound,,,,,,,,,,Bobby Jones,,,,,,def,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jason Terry,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,1,4:18,MIA,shot,,,,,,,,,,Earl Barron,,,,missed,,jump,41,7
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jason Terry,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,1,4:17,DAL,rebound,,,,,,,,,,Erick Dampier,,,,,,def,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jason Terry,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,1,4:11,DAL,shot,,,,,,,,,,Jason Terry,,,,missed,,jump,13,21
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jason Terry,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,1,4:09,MIA,rebound,,,,,,,,,,Earl Barron,,,,,,def,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jason Terry,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,1,3:58,MIA,turnover,,,,,,,,,,Joel Anthony,,,poss lost ball turnover,,,,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jason Terry,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,1,3:50,DAL,foul,,,,,,,,Earl Barron,,Jason Terry,,,,,,offensive,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jason Terry,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,1,3:50,DAL,turnover,,,,,,,,,,Jason Terry,,,foul,,,,,
+Dirk Nowitzki,Erick Dampier,Jason Terry,Josh Howard,Tyronn Lue,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,1,3:50,DAL,sub,,,,Tyronn Lue,,Jason Kidd,,,,,,,,,,,,
+Dirk Nowitzki,Erick Dampier,Jason Terry,Josh Howard,Tyronn Lue,Bobby Jones,Daequan Cook,Jason Williams,Joel Anthony,Ricky Davis,1,3:50,MIA,sub,,,,Ricky Davis,,Earl Barron,,,,,,,,,,,,
+Dirk Nowitzki,Erick Dampier,Jason Terry,Josh Howard,Tyronn Lue,Bobby Jones,Daequan Cook,Jason Williams,Joel Anthony,Ricky Davis,1,3:30,MIA,shot,,,,,,,,,,Ricky Davis,,,,missed,,fade away jumper,17,15
+Dirk Nowitzki,Erick Dampier,Jason Terry,Josh Howard,Tyronn Lue,Bobby Jones,Daequan Cook,Jason Williams,Joel Anthony,Ricky Davis,1,3:29,DAL,rebound,,,,,,,,,,Tyronn Lue,,,,,,def,,
+Dirk Nowitzki,Erick Dampier,Jason Terry,Josh Howard,Tyronn Lue,Bobby Jones,Daequan Cook,Jason Williams,Joel Anthony,Ricky Davis,1,3:08,DAL,shot,,,,,,,,,,Dirk Nowitzki,2,,,made,,fade away jumper,31,12
+Dirk Nowitzki,Erick Dampier,Jason Terry,Josh Howard,Tyronn Lue,Bobby Jones,Daequan Cook,Jason Williams,Joel Anthony,Ricky Davis,1,2:55,MIA,foul,,,,,,,,Tyronn Lue,,Joel Anthony,,,,,,offensive,,
+Dirk Nowitzki,Erick Dampier,Jason Terry,Josh Howard,Tyronn Lue,Bobby Jones,Daequan Cook,Jason Williams,Joel Anthony,Ricky Davis,1,2:55,MIA,turnover,,,,,,,,,,Joel Anthony,,,foul,,,,,
+Dirk Nowitzki,Erick Dampier,Jason Terry,Josh Howard,Tyronn Lue,Bobby Jones,Daequan Cook,Jason Williams,Joel Anthony,Ricky Davis,1,2:55,DAL,timeout,,,,,,,,,,,,,,,,regular,,
+Dirk Nowitzki,Erick Dampier,Jason Terry,Josh Howard,Tyronn Lue,Bobby Jones,Daequan Cook,Jason Williams,Joel Anthony,Ricky Davis,1,2:42,MIA,foul,,,,,,,,Erick Dampier,,Joel Anthony,,,,,,shooting,,
+Dirk Nowitzki,Erick Dampier,Jason Terry,Josh Howard,Tyronn Lue,Bobby Jones,Daequan Cook,Jason Williams,Joel Anthony,Ricky Davis,1,2:42,DAL,free throw,,,,,,,1,,2,Erick Dampier,,,foul,missed,,,,
+Dirk Nowitzki,Erick Dampier,Jason Terry,Josh Howard,Tyronn Lue,Bobby Jones,Daequan Cook,Jason Williams,Joel Anthony,Ricky Davis,1,2:42,DAL,rebound,,,,,,,,,,,,,,,,,,
+Dirk Nowitzki,Erick Dampier,Jason Terry,Josh Howard,Tyronn Lue,Bobby Jones,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,2:42,MIA,sub,,,,Mark Blount,,Joel Anthony,,,,,,,,,,,,
+Dirk Nowitzki,Erick Dampier,Jason Terry,Josh Howard,Tyronn Lue,Bobby Jones,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,2:42,DAL,free throw,,,,,,,2,,2,Erick Dampier,,,foul,made,,,,
+Dirk Nowitzki,Erick Dampier,Jason Terry,Josh Howard,Tyronn Lue,Bobby Jones,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,2:22,MIA,shot,,,,,,,,,,Jason Williams,2,,,made,,jump,25,26
+Dirk Nowitzki,Erick Dampier,Jason Terry,Josh Howard,Tyronn Lue,Bobby Jones,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,2:07,DAL,shot,,,,,,,,,,Josh Howard,,,,missed,,jump,25,15
+Dirk Nowitzki,Erick Dampier,Jason Terry,Josh Howard,Tyronn Lue,Bobby Jones,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,2:07,DAL,rebound,,,,,,,,,,Josh Howard,,,,,,off,,
+Dirk Nowitzki,Erick Dampier,Jason Terry,Josh Howard,Tyronn Lue,Bobby Jones,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,1:54,DAL,shot,,,,,,,,,,Jason Terry,2,,,made,,jump,8,14
+Dirk Nowitzki,Erick Dampier,Jason Terry,Josh Howard,Tyronn Lue,Bobby Jones,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,1:37,MIA,shot,,,,,,,,,,Jason Williams,,,,missed,,jump,34,22
+Dirk Nowitzki,Erick Dampier,Jason Terry,Josh Howard,Tyronn Lue,Bobby Jones,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,1:36,DAL,rebound,,,,,,,,,,Dirk Nowitzki,,,,,,def,,
+Dirk Nowitzki,Erick Dampier,Jason Terry,Josh Howard,Tyronn Lue,Bobby Jones,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,1:24,MIA,foul,,,,,,,,Dirk Nowitzki,,Bobby Jones,,,,,,personal,,
+Devean George,Dirk Nowitzki,Erick Dampier,Jason Terry,Tyronn Lue,Bobby Jones,Daequan Cook,Jason Williams,Mark Blount,Ricky Davis,1,1:24,DAL,sub,,,,Devean George,,Josh Howard,,,,,,,,,,,,
+Devean George,Dirk Nowitzki,Erick Dampier,Jason Terry,Tyronn Lue,Bobby Jones,Chris Quinn,Jason Williams,Mark Blount,Ricky Davis,1,1:24,MIA,sub,,,,Chris Quinn,,Daequan Cook,,,,,,,,,,,,
+Devean George,Dirk Nowitzki,Erick Dampier,Jason Terry,Tyronn Lue,Bobby Jones,Chris Quinn,Jason Williams,Mark Blount,Ricky Davis,1,1:24,DAL,free throw,,,,,,,1,,2,Dirk Nowitzki,,,foul,made,,,,
+Brandon Bass,Devean George,Dirk Nowitzki,Jason Terry,Tyronn Lue,Bobby Jones,Chris Quinn,Jason Williams,Mark Blount,Ricky Davis,1,1:24,DAL,sub,,,,Brandon Bass,,Erick Dampier,,,,,,,,,,,,
+Brandon Bass,Devean George,Dirk Nowitzki,Jason Terry,Tyronn Lue,Bobby Jones,Chris Quinn,Jason Williams,Mark Blount,Ricky Davis,1,1:24,DAL,free throw,,,,,,,2,,2,Dirk Nowitzki,,,foul,made,,,,
+Brandon Bass,Devean George,Dirk Nowitzki,Jason Terry,Tyronn Lue,Bobby Jones,Chris Quinn,Jason Williams,Mark Blount,Ricky Davis,1,1:03,MIA,shot,,,,,,,,,,Chris Quinn,,,,missed,,jump,17,19
+Brandon Bass,Devean George,Dirk Nowitzki,Jason Terry,Tyronn Lue,Bobby Jones,Chris Quinn,Jason Williams,Mark Blount,Ricky Davis,1,1:02,DAL,rebound,,,,,,,,,,Dirk Nowitzki,,,,,,def,,
+Brandon Bass,Devean George,Dirk Nowitzki,Jason Terry,Tyronn Lue,Bobby Jones,Chris Quinn,Jason Williams,Mark Blount,Ricky Davis,1,0:56,DAL,shot,,,,,,,,,,Tyronn Lue,,,,missed,,driving layup,25,6
+Brandon Bass,Devean George,Dirk Nowitzki,Jason Terry,Tyronn Lue,Bobby Jones,Chris Quinn,Jason Williams,Mark Blount,Ricky Davis,1,0:55,MIA,rebound,,,,,,,,,,Ricky Davis,,,,,,def,,
+Brandon Bass,Devean George,Dirk Nowitzki,Jason Terry,Tyronn Lue,Bobby Jones,Chris Quinn,Jason Williams,Mark Blount,Ricky Davis,1,0:48,MIA,turnover,,,,,,,,,,Ricky Davis,,,bad pass,,Jason Terry,,,
+Brandon Bass,Devean George,Dirk Nowitzki,Jason Terry,Tyronn Lue,Bobby Jones,Chris Quinn,Jason Williams,Mark Blount,Ricky Davis,1,0:42,DAL,shot,,,,,,,,,,Dirk Nowitzki,,,,missed,,jump,14,19
+Brandon Bass,Devean George,Dirk Nowitzki,Jason Terry,Tyronn Lue,Bobby Jones,Chris Quinn,Jason Williams,Mark Blount,Ricky Davis,1,0:41,MIA,rebound,,,,,,,,,,Jason Williams,,,,,,def,,
+Brandon Bass,Devean George,Dirk Nowitzki,Jason Terry,Tyronn Lue,Bobby Jones,Chris Quinn,Jason Williams,Mark Blount,Ricky Davis,1,0:28,MIA,shot,,,,,,,,,,Jason Williams,2,,,made,,driving layup,25,6
+Brandon Bass,Devean George,Dirk Nowitzki,Jason Terry,Tyronn Lue,Bobby Jones,Chris Quinn,Jason Williams,Mark Blount,Ricky Davis,1,0:08,DAL,shot,Devean George,,,,,,,,,Jason Terry,2,,,made,,jump,13,7
+Brandon Bass,Devean George,Dirk Nowitzki,Jason Terry,Tyronn Lue,Bobby Jones,Chris Quinn,Jason Williams,Mark Blount,Ricky Davis,1,0:04,DAL,foul,,,,,,,,Jason Williams,,Tyronn Lue,,,,,,personal,,
+Brandon Bass,Devean George,Dirk Nowitzki,Jason Terry,Tyronn Lue,Bobby Jones,Chris Quinn,Jason Williams,Mark Blount,Ricky Davis,1,0:01,DAL,foul,,,,,,,,Chris Quinn,,Dirk Nowitzki,,,,,,shooting,,
+Brandon Bass,Devean George,Dirk Nowitzki,Jason Terry,Tyronn Lue,Bobby Jones,Chris Quinn,Jason Williams,Mark Blount,Ricky Davis,1,0:01,MIA,free throw,,,,,,,1,,2,Chris Quinn,,,foul,made,,,,
+Brandon Bass,Devean George,Dirk Nowitzki,Jason Terry,Tyronn Lue,Bobby Jones,Chris Quinn,Jason Williams,Mark Blount,Ricky Davis,1,0:01,MIA,free throw,,,,,,,2,,2,Chris Quinn,,,foul,made,,,,
+Brandon Bass,Devean George,Dirk Nowitzki,Jason Terry,Tyronn Lue,Bobby Jones,Chris Quinn,Jason Williams,Mark Blount,Ricky Davis,1,0:00,DAL,shot,,,,,,,,,,Devean George,,,,missed,,3pt,45,36
+Brandon Bass,Devean George,Dirk Nowitzki,Jason Terry,Tyronn Lue,Bobby Jones,Chris Quinn,Jason Williams,Mark Blount,Ricky Davis,1,0:00,DAL,rebound,,,,,,,,,,,,,,,,,,
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Mark Blount,Ricky Davis,2,11:45,DAL,foul,,,,,,,,Mark Blount,,Brandon Bass,,,,,,shooting,,
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Mark Blount,Ricky Davis,2,11:45,MIA,free throw,,,,,,,1,,2,Mark Blount,,,foul,missed,,,,
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Mark Blount,Ricky Davis,2,11:45,MIA,rebound,,,,,,,,,,,,,,,,,,
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Mark Blount,Ricky Davis,2,11:45,MIA,free throw,,,,,,,2,,2,Mark Blount,,,foul,made,,,,
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Mark Blount,Ricky Davis,2,11:29,DAL,shot,,,,,,,,,,Malik Allen,2,,,made,,jump,15,22
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Mark Blount,Ricky Davis,2,11:13,MIA,shot,,,,,,,,,,Daequan Cook,,,,missed,,jump,14,23
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Mark Blount,Ricky Davis,2,11:12,DAL,rebound,,,,,,,,,,Tyronn Lue,,,,,,def,,
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Mark Blount,Ricky Davis,2,10:59,DAL,shot,,,,,,,,,,Devean George,,,,missed,,jump,36,6
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Mark Blount,Ricky Davis,2,10:57,MIA,rebound,,,,,,,,,,Mark Blount,,,,,,def,,
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Mark Blount,Ricky Davis,2,10:48,MIA,shot,Chris Quinn,,,,,,,,,Alexander Johnson,2,,,made,,layup,25,6
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Mark Blount,Ricky Davis,2,10:48,DAL,foul,,,,,,,,Alexander Johnson,,Brandon Bass,,,,,,shooting,,
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Mark Blount,Ricky Davis,2,10:48,MIA,free throw,,,,,,,1,,1,Alexander Johnson,,,foul,made,,,,
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Mark Blount,Ricky Davis,2,10:25,DAL,shot,,,,,,,,,,Brandon Bass,2,,,made,,jump,36,19
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Mark Blount,Ricky Davis,2,10:06,MIA,shot,,,,,,,,,,Mark Blount,2,,,made,,turnaround jump,20,12
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Mark Blount,Ricky Davis,2,9:50,DAL,shot,,,,,,,,,,Devean George,,,,missed,,3pt,48,8
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Mark Blount,Ricky Davis,2,9:49,MIA,rebound,,,,,,,,,,Daequan Cook,,,,,,def,,
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Mark Blount,Ricky Davis,2,9:38,MIA,shot,,,,,,,,,,Mark Blount,,,,missed,,jump,24,20
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Mark Blount,Ricky Davis,2,9:37,DAL,rebound,,,,,,,,,,Devean George,,,,,,def,,
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Mark Blount,Ricky Davis,2,9:32,DAL,shot,,,,,,,,,,Jason Terry,,,,missed,,jump,10,18
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Mark Blount,Ricky Davis,2,9:30,MIA,rebound,,,,,,,,,,Daequan Cook,,,,,,def,,
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Mark Blount,Ricky Davis,2,9:08,MIA,shot,,,,,,,,,,Mark Blount,,,,missed,,jump,32,24
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Mark Blount,Ricky Davis,2,9:07,DAL,rebound,,,,,,,,,,Brandon Bass,,,,,,def,,
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Mark Blount,Ricky Davis,2,9:03,MIA,foul,,,,,,,,,,Askins,,,,,,technical,,
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Mark Blount,Ricky Davis,2,9:03,DAL,free throw,,,,,,,1,,1,Jason Terry,,,technical,made,,,,
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Joel Anthony,Ricky Davis,2,9:03,MIA,sub,,,,Joel Anthony,,Mark Blount,,,,,,,,,,,,
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Joel Anthony,Ricky Davis,2,8:50,DAL,turnover,,,,,,,,,,Brandon Bass,,,traveling,,,,,
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Joel Anthony,Ricky Davis,2,8:50,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Joel Anthony,Ricky Davis,2,8:32,MIA,shot,,,,,,,,,,Alexander Johnson,,,,missed,,jump,35,20
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Joel Anthony,Ricky Davis,2,8:31,DAL,rebound,,,,,,,,,,,,,,,,,,
+Brandon Bass,Devean George,Jerry Stackhouse,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Joel Anthony,Ricky Davis,2,8:31,DAL,sub,,,,Jerry Stackhouse,,Jason Terry,,,,,,,,,,,,
+Devean George,Erick Dampier,Jerry Stackhouse,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Joel Anthony,Ricky Davis,2,8:31,DAL,sub,,,,Erick Dampier,,Brandon Bass,,,,,,,,,,,,
+Devean George,Erick Dampier,Jerry Stackhouse,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Joel Anthony,Ricky Davis,2,8:17,DAL,shot,,,,,,,,,,Tyronn Lue,2,,,made,,layup,25,6
+Devean George,Erick Dampier,Jerry Stackhouse,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Joel Anthony,Ricky Davis,2,8:04,MIA,shot,Chris Quinn,,,,,,,,,Ricky Davis,2,,,made,,jump,44,5
+Devean George,Erick Dampier,Jerry Stackhouse,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Joel Anthony,Ricky Davis,2,7:39,DAL,turnover,,,,,,,,,,Devean George,,,out of bounds lost ball turnover,,,,,
+Devean George,Erick Dampier,Jerry Stackhouse,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Joel Anthony,Ricky Davis,2,7:20,MIA,shot,,,Erick Dampier,,,,,,,Joel Anthony,,,,missed,,layup,25,6
+Devean George,Erick Dampier,Jerry Stackhouse,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Joel Anthony,Ricky Davis,2,7:18,DAL,rebound,,,,,,,,,,Malik Allen,,,,,,def,,
+Devean George,Erick Dampier,Jerry Stackhouse,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Joel Anthony,Ricky Davis,2,7:04,DAL,shot,,,,,,,,,,Devean George,,,,missed,,jump,39,18
+Devean George,Erick Dampier,Jerry Stackhouse,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Joel Anthony,Ricky Davis,2,7:02,MIA,rebound,,,,,,,,,,Daequan Cook,,,,,,def,,
+Devean George,Erick Dampier,Jerry Stackhouse,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Joel Anthony,Ricky Davis,2,6:53,MIA,shot,Chris Quinn,,,,,,,,,Ricky Davis,3,,,made,,3pt,12,27
+Devean George,Erick Dampier,Jerry Stackhouse,Malik Allen,Tyronn Lue,Alexander Johnson,Chris Quinn,Daequan Cook,Joel Anthony,Ricky Davis,2,6:48,DAL,timeout,,,,,,,,,,,,,,,,regular,,
+Devean George,Dirk Nowitzki,Erick Dampier,Jerry Stackhouse,Malik Allen,Alexander Johnson,Chris Quinn,Daequan Cook,Joel Anthony,Ricky Davis,2,6:48,DAL,sub,,,,Dirk Nowitzki,,Tyronn Lue,,,,,,,,,,,,
+Dirk Nowitzki,Erick Dampier,Jerry Stackhouse,Josh Howard,Malik Allen,Alexander Johnson,Chris Quinn,Daequan Cook,Joel Anthony,Ricky Davis,2,6:48,DAL,sub,,,,Josh Howard,,Devean George,,,,,,,,,,,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Chris Quinn,Daequan Cook,Joel Anthony,Ricky Davis,2,6:48,DAL,sub,,,,Jason Kidd,,Malik Allen,,,,,,,,,,,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Chris Quinn,Daequan Cook,Joel Anthony,Ricky Davis,2,6:34,DAL,shot,,,,,,,,,,Jason Kidd,,,,missed,,jump,39,5
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Chris Quinn,Daequan Cook,Joel Anthony,Ricky Davis,2,6:33,DAL,rebound,,,,,,,,,,Jason Kidd,,,,,,off,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Chris Quinn,Daequan Cook,Joel Anthony,Ricky Davis,2,6:31,DAL,shot,,,,,,,,,,Josh Howard,,,,missed,,jump,29,24
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Chris Quinn,Daequan Cook,Joel Anthony,Ricky Davis,2,6:30,MIA,rebound,,,,,,,,,,,,,,,,,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Chris Quinn,Daequan Cook,Joel Anthony,Ricky Davis,2,6:04,MIA,shot,,,,,,,,,,Alexander Johnson,,,,missed,,jump,9,19
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Chris Quinn,Daequan Cook,Joel Anthony,Ricky Davis,2,6:03,DAL,rebound,,,,,,,,,,Erick Dampier,,,,,,def,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Chris Quinn,Daequan Cook,Joel Anthony,Ricky Davis,2,5:53,DAL,shot,,,,,,,,,,Jerry Stackhouse,,,,missed,,3pt,1,7
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Chris Quinn,Daequan Cook,Joel Anthony,Ricky Davis,2,5:52,MIA,rebound,,,,,,,,,,Alexander Johnson,,,,,,def,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Chris Quinn,Daequan Cook,Joel Anthony,Ricky Davis,2,5:39,MIA,shot,Ricky Davis,,,,,,,,,Alexander Johnson,2,,,made,,jump,17,22
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Chris Quinn,Daequan Cook,Joel Anthony,Ricky Davis,2,5:18,DAL,shot,,,,,,,,,,Dirk Nowitzki,,,,missed,,jump,40,17
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Chris Quinn,Daequan Cook,Joel Anthony,Ricky Davis,2,5:17,DAL,rebound,,,,,,,,,,Erick Dampier,,,,,,off,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Chris Quinn,Daequan Cook,Joel Anthony,Ricky Davis,2,5:12,DAL,shot,,,,,,,,,,Erick Dampier,,,,missed,,layup,25,6
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Chris Quinn,Daequan Cook,Joel Anthony,Ricky Davis,2,5:11,DAL,rebound,,,,,,,,,,Josh Howard,,,,,,off,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Chris Quinn,Daequan Cook,Joel Anthony,Ricky Davis,2,5:01,DAL,shot,,,,,,,,,,Josh Howard,2,,,made,,running jump,25,13
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Chris Quinn,Daequan Cook,Joel Anthony,Ricky Davis,2,4:52,MIA,timeout,,,,,,,,,,,,,,,,regular,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Alexander Johnson,Daequan Cook,Jason Williams,Joel Anthony,Ricky Davis,2,4:52,MIA,sub,,,,Jason Williams,,Chris Quinn,,,,,,,,,,,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,2,4:52,MIA,sub,,,,Earl Barron,,Alexander Johnson,,,,,,,,,,,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,2,4:41,MIA,shot,,,,,,,,,,Jason Williams,,,,missed,,jump,44,7
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,2,4:40,MIA,rebound,,,,,,,,,,,,,,,,,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,2,4:40,DAL,foul,,,,,,,,Joel Anthony,,Erick Dampier,,,,,,personal,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,2,4:25,DAL,foul,,,,,,,,Ricky Davis,,Erick Dampier,,,,,,shooting,,
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,2,4:25,DAL,sub,,,,Brandon Bass,,Erick Dampier,,,,,,,,,,,,
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,2,4:25,MIA,free throw,,,,,,,1,,2,Ricky Davis,,,foul,missed,,,,
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,2,4:25,MIA,rebound,,,,,,,,,,,,,,,,,,
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,2,4:25,MIA,free throw,,,,,,,2,,2,Ricky Davis,,,foul,missed,,,,
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,2,4:23,MIA,rebound,,,,,,,,,,Joel Anthony,,,,,,off,,
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,2,4:20,MIA,shot,,,,,,,,,,Ricky Davis,,,,missed,,jump,37,21
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,2,4:19,DAL,rebound,,,,,,,,,,Josh Howard,,,,,,def,,
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,2,3:53,DAL,shot,Dirk Nowitzki,,,,,,,,,Jason Kidd,3,,,made,,3pt,13,27
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,2,3:28,MIA,shot,,,,,,,,,,Daequan Cook,,,,missed,,3pt,16,29
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,2,3:27,DAL,rebound,,,,,,,,,,Jason Kidd,,,,,,def,,
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,2,3:23,DAL,turnover,,,,,,,,,,Jason Kidd,,,bad pass,,,,,
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,2,3:23,MIA,sub,,,,Bobby Jones,,Ricky Davis,,,,,,,,,,,,
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,2,2:59,MIA,shot,,,,,,,,,,Joel Anthony,,,,missed,,hook,33,9
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,2,2:57,MIA,rebound,,,,,,,,,,Bobby Jones,,,,,,off,,
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,2,2:52,MIA,shot,,,,,,,,,,Daequan Cook,,,,missed,,3pt,49,8
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,2,2:51,DAL,rebound,,,,,,,,,,Jerry Stackhouse,,,,,,def,,
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,2,2:45,DAL,turnover,,,,,,,,,,Jerry Stackhouse,,,bad pass,,Jason Williams,,,
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,2,2:41,MIA,turnover,,,,,,,,,,Jason Williams,,,bad pass,,Jason Kidd,,,
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,2,2:37,DAL,shot,Jason Kidd,,,,,,,,,Jerry Stackhouse,2,,,made,,layup,25,6
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,2,2:18,MIA,shot,,,,,,,,,,Daequan Cook,2,,,made,,jump,38,17
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,2,2:09,DAL,timeout,,,,,,,,,,,,,,,,short,,
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jason Terry,Josh Howard,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,2,2:09,DAL,sub,,,,Jason Terry,,Jerry Stackhouse,,,,,,,,,,,,
+Dirk Nowitzki,Jason Kidd,Jason Terry,Josh Howard,Malik Allen,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,2,2:09,DAL,sub,,,,Malik Allen,,Brandon Bass,,,,,,,,,,,,
+Dirk Nowitzki,Jason Kidd,Jason Terry,Josh Howard,Malik Allen,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,2,1:58,DAL,shot,,,,,,,,,,Jason Terry,,,,missed,,3pt,5,21
+Dirk Nowitzki,Jason Kidd,Jason Terry,Josh Howard,Malik Allen,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,2,1:57,DAL,rebound,,,,,,,,,,,,,,,,,,
+Dirk Nowitzki,Jason Kidd,Jason Terry,Josh Howard,Malik Allen,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,2,1:51,DAL,foul,,,,,,,,Joel Anthony,,Josh Howard,,,,,,offensive,,
+Dirk Nowitzki,Jason Kidd,Jason Terry,Josh Howard,Malik Allen,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,2,1:51,DAL,turnover,,,,,,,,,,Josh Howard,,,foul,,,,,
+Dirk Nowitzki,Jason Kidd,Jason Terry,Josh Howard,Malik Allen,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,2,1:36,MIA,shot,,,,,,,,,,Earl Barron,2,,,made,,jump,16,19
+Dirk Nowitzki,Jason Kidd,Jason Terry,Josh Howard,Malik Allen,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,2,1:23,DAL,shot,,,Joel Anthony,,,,,,,Dirk Nowitzki,,,,missed,,layup,25,6
+Dirk Nowitzki,Jason Kidd,Jason Terry,Josh Howard,Malik Allen,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,2,1:21,MIA,rebound,,,,,,,,,,Bobby Jones,,,,,,def,,
+Dirk Nowitzki,Jason Kidd,Jason Terry,Josh Howard,Malik Allen,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,2,1:19,DAL,foul,,,,,,,,Earl Barron,,Malik Allen,,,,,,shooting,,
+Dirk Nowitzki,Jason Kidd,Jason Terry,Josh Howard,Malik Allen,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,2,1:19,MIA,free throw,,,,,,,1,,2,Earl Barron,,,foul,missed,,,,
+Dirk Nowitzki,Jason Kidd,Jason Terry,Josh Howard,Malik Allen,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,2,1:19,MIA,rebound,,,,,,,,,,,,,,,,,,
+Dirk Nowitzki,Jason Terry,Josh Howard,Malik Allen,Tyronn Lue,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,2,1:19,DAL,sub,,,,Tyronn Lue,,Jason Kidd,,,,,,,,,,,,
+Dirk Nowitzki,Jason Terry,Josh Howard,Malik Allen,Tyronn Lue,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,2,1:19,MIA,sub,,,,Mark Blount,,Joel Anthony,,,,,,,,,,,,
+Brandon Bass,Jason Terry,Josh Howard,Malik Allen,Tyronn Lue,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,2,1:19,DAL,sub,,,,Brandon Bass,,Dirk Nowitzki,,,,,,,,,,,,
+Brandon Bass,Jason Terry,Josh Howard,Malik Allen,Tyronn Lue,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,2,1:19,MIA,free throw,,,,,,,2,,2,Earl Barron,,,foul,made,,,,
+Brandon Bass,Jason Terry,Josh Howard,Malik Allen,Tyronn Lue,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,2,0:54,DAL,shot,,,,,,,,,,Brandon Bass,,,,missed,,jump,35,15
+Brandon Bass,Jason Terry,Josh Howard,Malik Allen,Tyronn Lue,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,2,0:53,DAL,rebound,,,,,,,,,,Malik Allen,,,,,,off,,
+Brandon Bass,Jason Terry,Josh Howard,Malik Allen,Tyronn Lue,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,2,0:47,MIA,foul,,,,,,,,Josh Howard,,Jason Williams,,,,,,personal,,
+Brandon Bass,Jason Terry,Josh Howard,Malik Allen,Tyronn Lue,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,2,0:36,DAL,shot,,,,,,,,,,Josh Howard,2,,,made,,turnaround jump,16,7
+Brandon Bass,Jason Terry,Josh Howard,Malik Allen,Tyronn Lue,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,2,0:22,MIA,turnover,,,,,,,,,,Jason Williams,,,bad pass,,Brandon Bass,,,
+Brandon Bass,Jason Terry,Josh Howard,Malik Allen,Tyronn Lue,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,2,0:19,MIA,foul,,,,,,,,Josh Howard,,Bobby Jones,,,,,,shooting,,
+Brandon Bass,Jason Terry,Josh Howard,Malik Allen,Tyronn Lue,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,2,0:19,DAL,free throw,,,,,,,1,,2,Josh Howard,,,foul,made,,,,
+Brandon Bass,Jason Terry,Josh Howard,Malik Allen,Tyronn Lue,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,2,0:19,DAL,free throw,,,,,,,2,,2,Josh Howard,,,foul,missed,,,,
+Brandon Bass,Jason Terry,Josh Howard,Malik Allen,Tyronn Lue,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,2,0:17,MIA,rebound,,,,,,,,,,Mark Blount,,,,,,def,,
+Brandon Bass,Jason Terry,Josh Howard,Malik Allen,Tyronn Lue,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,2,0:03,MIA,shot,,,,,,,,,,Earl Barron,,,,missed,,jump,41,8
+Brandon Bass,Jason Terry,Josh Howard,Malik Allen,Tyronn Lue,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,2,0:02,MIA,rebound,,,,,,,,,,Earl Barron,,,,,,off,,
+Brandon Bass,Jason Terry,Josh Howard,Malik Allen,Tyronn Lue,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,2,0:01,MIA,shot,,,,,,,,,,Earl Barron,,,,missed,,layup,25,6
+Brandon Bass,Jason Terry,Josh Howard,Malik Allen,Tyronn Lue,Bobby Jones,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,2,0:00,MIA,rebound,,,,,,,,,,,,,,,,,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,Ricky Davis,3,11:43,MIA,shot,Ricky Davis,,,,,,,,,Daequan Cook,3,,,made,,3pt,45,20
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,Ricky Davis,3,11:24,DAL,shot,Jason Kidd,,,,,,,,,Dirk Nowitzki,2,,,made,,jump,18,20
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,Ricky Davis,3,11:09,MIA,shot,Jason Williams,,,,,,,,,Earl Barron,2,,,made,,jump,42,16
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,Ricky Davis,3,10:50,DAL,shot,,,,,,,,,,Dirk Nowitzki,,,,missed,,jump,10,14
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,Ricky Davis,3,10:49,MIA,rebound,,,,,,,,,,Daequan Cook,,,,,,def,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,Ricky Davis,3,10:44,MIA,shot,,,,,,,,,,Jason Williams,,,,missed,,3pt,12,26
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,Ricky Davis,3,10:43,DAL,rebound,,,,,,,,,,Josh Howard,,,,,,def,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,Ricky Davis,3,10:34,DAL,shot,,,,,,,,,,Josh Howard,,,,missed,,3pt,41,25
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,Ricky Davis,3,10:33,MIA,rebound,,,,,,,,,,Ricky Davis,,,,,,def,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,Ricky Davis,3,10:25,MIA,turnover,,,,,,,,,,Mark Blount,,,lost ball,,Jason Kidd,,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,Ricky Davis,3,10:16,MIA,foul,,,,,,,,Dirk Nowitzki,,Daequan Cook,,,,,,shooting,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,Ricky Davis,3,10:16,DAL,free throw,,,,,,,1,,2,Dirk Nowitzki,,,foul,missed,,,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,Ricky Davis,3,10:16,DAL,rebound,,,,,,,,,,,,,,,,,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,Ricky Davis,3,10:16,DAL,free throw,,,,,,,2,,2,Dirk Nowitzki,,,foul,missed,,,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,Ricky Davis,3,10:14,MIA,rebound,,,,,,,,,,Ricky Davis,,,,,,def,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,Ricky Davis,3,9:56,MIA,turnover,,,,,,,,,,Jason Williams,,,bad pass,,Erick Dampier,,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,Ricky Davis,3,9:44,DAL,shot,Dirk Nowitzki,,,,,,,,,Erick Dampier,2,,,made,,dunk,25,6
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,Ricky Davis,3,9:21,DAL,foul,,,,,,,,Earl Barron,,Erick Dampier,,,,,,shooting,,
+Dirk Nowitzki,Erick Dampier,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,Ricky Davis,3,9:21,MIA,free throw,,,,,,,1,,2,Earl Barron,,,foul,made,,,,
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,Ricky Davis,3,9:21,DAL,sub,,,,Brandon Bass,,Erick Dampier,,,,,,,,,,,,
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,Ricky Davis,3,9:21,MIA,free throw,,,,,,,2,,2,Earl Barron,,,foul,made,,,,
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,Ricky Davis,3,9:00,DAL,shot,,,,,,,,,,Jerry Stackhouse,,,,missed,,3pt,2,7
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,Ricky Davis,3,8:59,MIA,rebound,,,,,,,,,,Mark Blount,,,,,,def,,
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,Ricky Davis,3,8:52,MIA,shot,,,,,,,,,,Jason Williams,2,,,made,,driving layup,25,6
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,Ricky Davis,3,8:51,DAL,timeout,,,,,,,,,,,,,,,,regular,,
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,Ricky Davis,3,8:27,DAL,shot,Josh Howard,,,,,,,,,Dirk Nowitzki,3,,,made,,3pt,5,19
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,Ricky Davis,3,8:07,MIA,shot,,,,,,,,,,Mark Blount,,,,missed,,jump,15,8
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,Ricky Davis,3,8:05,DAL,rebound,,,,,,,,,,Jason Kidd,,,,,,def,,
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,Ricky Davis,3,7:59,DAL,turnover,,,,,,,,,,Jerry Stackhouse,,,bad pass,,,,,
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,Ricky Davis,3,7:41,MIA,shot,Ricky Davis,,,,,,,,,Daequan Cook,2,,,made,,jump,18,25
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,Ricky Davis,3,7:28,DAL,shot,Jason Kidd,,,,,,,,,Josh Howard,2,,,made,,jump,41,6
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,Ricky Davis,3,7:15,MIA,turnover,,,,,,,,,,Jason Williams,,,bad pass,,Josh Howard,,,
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,Ricky Davis,3,7:12,DAL,shot,Jason Kidd,,,,,,,,,Dirk Nowitzki,2,,,made,,dunk,25,6
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Mark Blount,Ricky Davis,3,6:58,MIA,turnover,,,,,,,,,,Ricky Davis,,,traveling,,,,,
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,3,6:58,MIA,sub,,,,Joel Anthony,,Mark Blount,,,,,,,,,,,,
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,3,6:46,MIA,foul,,,,,,,,Jerry Stackhouse,,Daequan Cook,,,,,,shooting,,
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,3,6:46,DAL,free throw,,,,,,,1,,2,Jerry Stackhouse,,,foul,made,,,,
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,3,6:46,DAL,free throw,,,,,,,2,,2,Jerry Stackhouse,,,foul,made,,,,
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,3,6:35,MIA,turnover,,,,,,,,,,Jason Williams,,,bad pass,,,,,
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,3,6:17,DAL,shot,,,,,,,,,,Brandon Bass,2,,,made,,jump,25,10
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,3,6:13,MIA,timeout,,,,,,,,,,,,,,,,regular,,
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,3,5:59,MIA,shot,,,,,,,,,,Jason Williams,,,,missed,,jump,31,24
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,3,5:57,DAL,rebound,,,,,,,,,,Brandon Bass,,,,,,def,,
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,3,5:41,DAL,shot,,,,,,,,,,Jerry Stackhouse,,,,missed,,jump,42,8
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,3,5:40,MIA,rebound,,,,,,,,,,Daequan Cook,,,,,,def,,
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,3,5:24,MIA,shot,Jason Williams,,,,,,,,,Earl Barron,2,,,made,,jump,24,24
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,3,5:07,DAL,shot,,,,,,,,,,Brandon Bass,2,,,made,,jump,29,16
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,3,4:45,MIA,shot,,,,,,,,,,Joel Anthony,,,,missed,,turnaround jump,24,17
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,3,4:43,MIA,rebound,,,,,,,,,,Earl Barron,,,,,,off,,
+Brandon Bass,Dirk Nowitzki,Jason Kidd,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,3,4:41,MIA,shot,,,,,,,,,,Earl Barron,2,,,made,,layup,25,6
+Brandon Bass,Jason Kidd,Jason Terry,Jerry Stackhouse,Josh Howard,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,3,4:29,DAL,sub,,,,Jason Terry,,Dirk Nowitzki,,,,,,,,,,,,
+Brandon Bass,Jason Kidd,Jason Terry,Josh Howard,Malik Allen,Daequan Cook,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,3,4:29,DAL,sub,,,,Malik Allen,,Jerry Stackhouse,,,,,,,,,,,,
+Brandon Bass,Jason Kidd,Jason Terry,Josh Howard,Malik Allen,Bobby Jones,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,3,4:29,MIA,sub,,,,Bobby Jones,,Daequan Cook,,,,,,,,,,,,
+Brandon Bass,Jason Kidd,Jason Terry,Josh Howard,Malik Allen,Bobby Jones,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,3,4:17,DAL,turnover,,,,,,,,,,Brandon Bass,,,bad pass,,Jason Williams,,,
+Brandon Bass,Jason Kidd,Jason Terry,Josh Howard,Malik Allen,Bobby Jones,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,3,4:12,DAL,foul,,,,,,,,Bobby Jones,,Brandon Bass,,,,,,shooting,,
+Brandon Bass,Jason Kidd,Jason Terry,Josh Howard,Malik Allen,Bobby Jones,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,3,4:12,MIA,free throw,,,,,,,1,,2,Bobby Jones,,,foul,made,,,,
+Brandon Bass,Jason Kidd,Jason Terry,Josh Howard,Malik Allen,Bobby Jones,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,3,4:12,MIA,free throw,,,,,,,2,,2,Bobby Jones,,,foul,made,,,,
+Brandon Bass,Jason Kidd,Jason Terry,Josh Howard,Malik Allen,Bobby Jones,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,3,3:51,DAL,shot,,,,,,,,,,Josh Howard,2,,,made,,turnaround jump,23,16
+Brandon Bass,Jason Kidd,Jason Terry,Josh Howard,Malik Allen,Bobby Jones,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,3,3:32,MIA,shot,,,,,,,,,,Jason Williams,,,,missed,,jump,34,5
+Brandon Bass,Jason Kidd,Jason Terry,Josh Howard,Malik Allen,Bobby Jones,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,3,3:31,DAL,rebound,,,,,,,,,,Jason Kidd,,,,,,def,,
+Brandon Bass,Jason Kidd,Jason Terry,Josh Howard,Malik Allen,Bobby Jones,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,3,3:28,DAL,shot,,,,,,,,,,Jason Terry,,,,missed,,layup,25,6
+Brandon Bass,Jason Kidd,Jason Terry,Josh Howard,Malik Allen,Bobby Jones,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,3,3:27,MIA,rebound,,,,,,,,,,Bobby Jones,,,,,,def,,
+Brandon Bass,Jason Kidd,Jason Terry,Josh Howard,Malik Allen,Bobby Jones,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,3,3:08,MIA,shot,,,,,,,,,,Jason Williams,,,,missed,,3pt,35,29
+Brandon Bass,Jason Kidd,Jason Terry,Josh Howard,Malik Allen,Bobby Jones,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,3,3:07,DAL,rebound,,,,,,,,,,Josh Howard,,,,,,def,,
+Brandon Bass,Jason Kidd,Jason Terry,Josh Howard,Malik Allen,Bobby Jones,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,3,2:51,DAL,shot,,,,,,,,,,Josh Howard,,,,missed,,3pt,48,10
+Brandon Bass,Jason Kidd,Jason Terry,Josh Howard,Malik Allen,Bobby Jones,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,3,2:50,DAL,rebound,,,,,,,,,,Malik Allen,,,,,,off,,
+Brandon Bass,Jason Kidd,Jason Terry,Josh Howard,Malik Allen,Bobby Jones,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,3,2:49,DAL,shot,,,,,,,,,,Malik Allen,,,,missed,,tip,25,6
+Brandon Bass,Jason Kidd,Jason Terry,Josh Howard,Malik Allen,Bobby Jones,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,3,2:47,MIA,rebound,,,,,,,,,,Ricky Davis,,,,,,def,,
+Brandon Bass,Jason Kidd,Jason Terry,Josh Howard,Malik Allen,Bobby Jones,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,3,2:26,MIA,shot,,,,,,,,,,Joel Anthony,,,,missed,,jump,39,17
+Brandon Bass,Jason Kidd,Jason Terry,Josh Howard,Malik Allen,Bobby Jones,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,3,2:24,DAL,rebound,,,,,,,,,,Jason Kidd,,,,,,def,,
+Brandon Bass,Jason Kidd,Jason Terry,Josh Howard,Malik Allen,Bobby Jones,Earl Barron,Jason Williams,Joel Anthony,Ricky Davis,3,2:24,MIA,foul,,,,,,,,Jason Terry,,Joel Anthony,,,,,,shooting,,
+Brandon Bass,Jason Kidd,Jason Terry,Josh Howard,Malik Allen,Bobby Jones,Chris Quinn,Earl Barron,Joel Anthony,Ricky Davis,3,2:24,MIA,sub,,,,Chris Quinn,,Jason Williams,,,,,,,,,,,,
+Brandon Bass,Jason Terry,Josh Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Earl Barron,Joel Anthony,Ricky Davis,3,2:24,DAL,sub,,,,Tyronn Lue,,Jason Kidd,,,,,,,,,,,,
+Brandon Bass,Jason Terry,Josh Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Earl Barron,Joel Anthony,Ricky Davis,3,2:24,DAL,free throw,,,,,,,1,,2,Jason Terry,,,foul,made,,,,
+Brandon Bass,Jason Terry,Josh Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Earl Barron,Mark Blount,Ricky Davis,3,2:24,MIA,sub,,,,Mark Blount,,Joel Anthony,,,,,,,,,,,,
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Earl Barron,Mark Blount,Ricky Davis,3,2:24,DAL,sub,,,,Devean George,,Josh Howard,,,,,,,,,,,,
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Earl Barron,Mark Blount,Ricky Davis,3,2:24,DAL,free throw,,,,,,,2,,2,Jason Terry,,,foul,made,,,,
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Earl Barron,Mark Blount,Ricky Davis,3,2:04,MIA,shot,,,,,,,,,,Mark Blount,,,,missed,,jump,8,7
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Earl Barron,Mark Blount,Ricky Davis,3,2:03,DAL,rebound,,,,,,,,,,Malik Allen,,,,,,def,,
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Earl Barron,Mark Blount,Ricky Davis,3,1:54,DAL,shot,Tyronn Lue,,,,,,,,,Brandon Bass,2,,,made,,dunk,25,6
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Earl Barron,Mark Blount,Ricky Davis,3,1:33,DAL,foul,,,,,,,,Mark Blount,,Devean George,,,,,,personal,,
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Earl Barron,Mark Blount,Ricky Davis,3,1:24,MIA,shot,Chris Quinn,,,,,,,,,Earl Barron,2,,,made,,jump,24,23
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Earl Barron,Mark Blount,Ricky Davis,3,1:12,DAL,shot,Tyronn Lue,,,,,,,,,Brandon Bass,2,,,made,,jump,41,6
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Earl Barron,Mark Blount,Ricky Davis,3,1:01,MIA,shot,Earl Barron,,,,,,,,,Mark Blount,2,,,made,,layup,25,6
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Earl Barron,Mark Blount,Ricky Davis,3,0:50,DAL,shot,,,,,,,,,,Tyronn Lue,2,,,made,,jump,23,25
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Earl Barron,Mark Blount,Ricky Davis,3,0:38,MIA,turnover,,,,,,,,,,Chris Quinn,,,bad pass,,Jason Terry,,,
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Earl Barron,Mark Blount,Ricky Davis,3,0:35,DAL,shot,,,,,,,,,,Jason Terry,2,,,made,,layup,25,6
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Earl Barron,Mark Blount,Ricky Davis,3,0:20,MIA,shot,,,,,,,,,,Earl Barron,,,,missed,,jump,5,5
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Earl Barron,Mark Blount,Ricky Davis,3,0:19,DAL,rebound,,,,,,,,,,Tyronn Lue,,,,,,def,,
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Earl Barron,Mark Blount,Ricky Davis,3,0:06,DAL,shot,Tyronn Lue,,,,,,,,,Jason Terry,3,,,made,,3pt,3,18
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Earl Barron,Mark Blount,Ricky Davis,3,0:02,DAL,foul,,,,,,,,Chris Quinn,,Tyronn Lue,,,,,,personal,,
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Earl Barron,Mark Blount,Ricky Davis,3,0:02,MIA,free throw,,,,,,,1,,2,Chris Quinn,,,foul,made,,,,
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Earl Barron,Mark Blount,Ricky Davis,3,0:02,MIA,free throw,,,,,,,2,,2,Chris Quinn,,,foul,made,,,,
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Earl Barron,Mark Blount,Ricky Davis,3,0:00,DAL,shot,,,,,,,,,,Tyronn Lue,,,,missed,,3pt,42,41
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Earl Barron,Mark Blount,Ricky Davis,3,0:00,DAL,rebound,,,,,,,,,,,,,,,,,,
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Joel Anthony,Mark Blount,Ricky Davis,4,11:39,DAL,turnover,,,,,,,,,,Malik Allen,,,bad pass,,Joel Anthony,,,
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Joel Anthony,Mark Blount,Ricky Davis,4,11:16,MIA,turnover,,,,,,,,,,,,,shot clock turnover,,,,,
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Joel Anthony,Mark Blount,Ricky Davis,4,11:01,DAL,shot,,,,,,,,,,Tyronn Lue,,,,missed,,jump,35,22
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Joel Anthony,Mark Blount,Ricky Davis,4,11:00,MIA,rebound,,,,,,,,,,Joel Anthony,,,,,,def,,
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Joel Anthony,Mark Blount,Ricky Davis,4,10:47,MIA,shot,,,,,,,,,,Bobby Jones,2,,,made,,jump,25,12
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Joel Anthony,Mark Blount,Ricky Davis,4,10:47,DAL,foul,,,,,,,,Bobby Jones,,Malik Allen,,,,,,shooting,,
+Brandon Bass,Devean George,Jason Terry,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Joel Anthony,Mark Blount,4,10:47,MIA,sub,,,,Daequan Cook,,Ricky Davis,,,,,,,,,,,,
+Brandon Bass,Devean George,Erick Dampier,Jason Terry,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Joel Anthony,Mark Blount,4,10:47,DAL,sub,,,,Erick Dampier,,Malik Allen,,,,,,,,,,,,
+Brandon Bass,Devean George,Erick Dampier,Jason Terry,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Joel Anthony,Mark Blount,4,10:47,MIA,free throw,,,,,,,1,,1,Bobby Jones,,,foul,missed,,,,
+Brandon Bass,Devean George,Erick Dampier,Jason Terry,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Joel Anthony,Mark Blount,4,10:43,DAL,rebound,,,,,,,,,,Erick Dampier,,,,,,def,,
+Brandon Bass,Devean George,Erick Dampier,Jason Terry,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Joel Anthony,Mark Blount,4,10:33,DAL,shot,,,,,,,,,,Jason Terry,2,,,made,,jump,33,21
+Brandon Bass,Devean George,Erick Dampier,Jason Terry,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Joel Anthony,Mark Blount,4,10:17,MIA,shot,Daequan Cook,,,,,,,,,Mark Blount,2,,,made,,jump,39,18
+Brandon Bass,Devean George,Erick Dampier,Jason Terry,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Joel Anthony,Mark Blount,4,10:03,DAL,turnover,,,,,,,,,,Erick Dampier,,,3 second violation,,,,,
+Brandon Bass,Devean George,Erick Dampier,Jason Terry,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Joel Anthony,Mark Blount,4,9:47,MIA,turnover,,,,,,,,,,Bobby Jones,,,bad pass,,Devean George,,,
+Brandon Bass,Devean George,Erick Dampier,Jason Terry,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Joel Anthony,Mark Blount,4,9:29,DAL,turnover,,,,,,,,,,Erick Dampier,,,lost ball,,Bobby Jones,,,
+Brandon Bass,Devean George,Erick Dampier,Jason Terry,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Joel Anthony,Mark Blount,4,9:17,MIA,shot,Chris Quinn,,,,,,,,,Mark Blount,2,,,made,,jump,20,23
+Brandon Bass,Devean George,Erick Dampier,Jason Terry,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Joel Anthony,Mark Blount,4,8:58,DAL,turnover,,,,,,,,,,Brandon Bass,,,bad pass,,,,,
+Brandon Bass,Devean George,Erick Dampier,Jason Terry,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Joel Anthony,Mark Blount,4,8:58,MIA,timeout,,,,,,,,,,,,,,,,regular,,
+Antoine Wright,Brandon Bass,Devean George,Erick Dampier,Jason Terry,Bobby Jones,Chris Quinn,Daequan Cook,Joel Anthony,Mark Blount,4,8:58,DAL,sub,,,,Antoine Wright,,Tyronn Lue,,,,,,,,,,,,
+Antoine Wright,Brandon Bass,Devean George,Erick Dampier,Jason Terry,Bobby Jones,Chris Quinn,Daequan Cook,Joel Anthony,Mark Blount,4,8:42,MIA,shot,,,,,,,,,,Joel Anthony,2,,,made,,hook,32,7
+Antoine Wright,Brandon Bass,Devean George,Erick Dampier,Jason Terry,Bobby Jones,Chris Quinn,Daequan Cook,Joel Anthony,Mark Blount,4,8:21,DAL,shot,Erick Dampier,,,,,,,,,Brandon Bass,2,,,made,,jump,27,20
+Antoine Wright,Brandon Bass,Devean George,Erick Dampier,Jason Terry,Bobby Jones,Chris Quinn,Daequan Cook,Joel Anthony,Mark Blount,4,7:59,MIA,shot,,,Devean George,,,,,,,Mark Blount,,,,missed,,jump,13,18
+Antoine Wright,Brandon Bass,Devean George,Erick Dampier,Jason Terry,Bobby Jones,Chris Quinn,Daequan Cook,Joel Anthony,Mark Blount,4,7:57,DAL,rebound,,,,,,,,,,Jason Terry,,,,,,def,,
+Antoine Wright,Brandon Bass,Devean George,Erick Dampier,Jason Terry,Bobby Jones,Chris Quinn,Daequan Cook,Joel Anthony,Mark Blount,4,7:45,DAL,shot,,,,,,,,,,Jason Terry,,,,missed,,3pt,46,19
+Antoine Wright,Brandon Bass,Devean George,Erick Dampier,Jason Terry,Bobby Jones,Chris Quinn,Daequan Cook,Joel Anthony,Mark Blount,4,7:44,DAL,rebound,,,,,,,,,,Brandon Bass,,,,,,off,,
+Antoine Wright,Brandon Bass,Devean George,Erick Dampier,Jason Terry,Bobby Jones,Chris Quinn,Daequan Cook,Joel Anthony,Mark Blount,4,7:42,DAL,shot,,,,,,,,,,Brandon Bass,2,,,made,,dunk,25,6
+Antoine Wright,Brandon Bass,Devean George,Erick Dampier,Jason Terry,Bobby Jones,Chris Quinn,Daequan Cook,Joel Anthony,Mark Blount,4,7:18,MIA,shot,,,,,,,,,,Bobby Jones,,,,missed,,3pt,9,25
+Antoine Wright,Brandon Bass,Devean George,Erick Dampier,Jason Terry,Bobby Jones,Chris Quinn,Daequan Cook,Joel Anthony,Mark Blount,4,7:13,DAL,rebound,,,,,,,,,,Devean George,,,,,,def,,
+Antoine Wright,Brandon Bass,Devean George,Erick Dampier,Jason Terry,Bobby Jones,Chris Quinn,Daequan Cook,Joel Anthony,Mark Blount,4,6:55,DAL,shot,,,,,,,,,,Brandon Bass,,,,missed,,jump,38,18
+Antoine Wright,Brandon Bass,Devean George,Erick Dampier,Jason Terry,Bobby Jones,Chris Quinn,Daequan Cook,Joel Anthony,Mark Blount,4,6:54,DAL,rebound,,,,,,,,,,Brandon Bass,,,,,,off,,
+Antoine Wright,Brandon Bass,Devean George,Erick Dampier,Jason Terry,Bobby Jones,Chris Quinn,Daequan Cook,Joel Anthony,Mark Blount,4,6:54,DAL,turnover,,,,,,,,,,,,,shot clock turnover,,,,,
+Antoine Wright,Brandon Bass,Devean George,Erick Dampier,Jason Terry,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,6:54,MIA,sub,,,,Earl Barron,,Mark Blount,,,,,,,,,,,,
+Antoine Wright,Brandon Bass,Devean George,Erick Dampier,Jason Terry,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,6:43,MIA,shot,,,,,,,,,,Chris Quinn,,,,missed,,jump,17,17
+Antoine Wright,Brandon Bass,Devean George,Erick Dampier,Jason Terry,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,6:42,DAL,rebound,,,,,,,,,,Brandon Bass,,,,,,def,,
+Antoine Wright,Brandon Bass,Devean George,Erick Dampier,Jason Terry,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,6:18,DAL,shot,,,,,,,,,,Devean George,,,,missed,,3pt,43,23
+Antoine Wright,Brandon Bass,Devean George,Erick Dampier,Jason Terry,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,6:17,MIA,rebound,,,,,,,,,,Daequan Cook,,,,,,def,,
+Antoine Wright,Brandon Bass,Devean George,Erick Dampier,Jason Terry,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,6:05,MIA,shot,,,,,,,,,,Earl Barron,2,,,made,,jump,31,25
+Antoine Wright,Brandon Bass,Devean George,Erick Dampier,Jason Terry,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,5:38,DAL,shot,,,,,,,,,,Antoine Wright,,,,missed,,jump,44,17
+Antoine Wright,Brandon Bass,Devean George,Erick Dampier,Jason Terry,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,5:37,MIA,rebound,,,,,,,,,,Bobby Jones,,,,,,def,,
+Antoine Wright,Brandon Bass,Devean George,Erick Dampier,Jason Terry,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,5:29,MIA,timeout,,,,,,,,,,,,,,,,regular,,
+Antoine Wright,Brandon Bass,Devean George,Jason Terry,Juwan Howard,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,5:29,DAL,sub,,,,Juwan Howard,,Erick Dampier,,,,,,,,,,,,
+Antoine Wright,Brandon Bass,Devean George,Juwan Howard,Malik Allen,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,5:29,DAL,sub,,,,Malik Allen,,Jason Terry,,,,,,,,,,,,
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,5:29,DAL,sub,,,,Tyronn Lue,,Brandon Bass,,,,,,,,,,,,
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,5:21,DAL,foul,,,,,,,,Joel Anthony,,Juwan Howard,,,,,,personal,,
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,5:21,MIA,free throw,,,,,,,1,,2,Joel Anthony,,,foul,missed,,,,
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,5:21,MIA,rebound,,,,,,,,,,,,,,,,,,
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,5:21,MIA,free throw,,,,,,,2,,2,Joel Anthony,,,foul,missed,,,,
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,5:19,DAL,rebound,,,,,,,,,,Juwan Howard,,,,,,def,,
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,5:02,MIA,foul,,,,,,,,Juwan Howard,,Earl Barron,,,,,,personal,,
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,4:53,MIA,foul,,,,,,,,Devean George,,Earl Barron,,,,,,shooting,,
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,4:53,DAL,free throw,,,,,,,1,,2,Devean George,,,foul,made,,,,
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,4:53,DAL,free throw,,,,,,,2,,2,Devean George,,,foul,missed,,,,
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,4:50,MIA,rebound,,,,,,,,,,Earl Barron,,,,,,def,,
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,4:33,MIA,shot,,,,,,,,,,Earl Barron,,,,missed,,jump,7,10
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,4:31,DAL,rebound,,,,,,,,,,Juwan Howard,,,,,,def,,
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,4:14,DAL,shot,Juwan Howard,,,,,,,,,Malik Allen,2,,,made,,jump,32,22
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,4:06,DAL,foul,,,,,,,,Chris Quinn,,Tyronn Lue,,,,,,personal,,
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,3:57,MIA,shot,Chris Quinn,,,,,,,,,Daequan Cook,2,,,made,,jump,18,24
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,3:39,DAL,shot,,,,,,,,,,Antoine Wright,,,,missed,,3pt,6,22
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,3:38,MIA,rebound,,,,,,,,,,Bobby Jones,,,,,,def,,
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,3:25,MIA,turnover,,,,,,,,,,Bobby Jones,,,traveling,,,,,
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,3:03,DAL,shot,,,,,,,,,,Tyronn Lue,,,,missed,,jump,31,24
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,3:02,MIA,rebound,,,,,,,,,,Chris Quinn,,,,,,def,,
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,2:58,DAL,foul,,,,,,,,Chris Quinn,,Devean George,,,,,,shooting,,
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,2:58,DAL,timeout,,,,,,,,,,,,,,,,regular,,
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,2:58,MIA,free throw,,,,,,,1,,2,Chris Quinn,,,foul,made,,,,
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,2:58,MIA,free throw,,,,,,,2,,2,Chris Quinn,,,foul,made,,,,
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,2:44,DAL,turnover,,,,,,,,,,Antoine Wright,,,bad pass,,,,,
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,2:27,MIA,shot,,,,,,,,,,Earl Barron,2,,,made,,driving jump,21,9
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,2:27,DAL,foul,,,,,,,,Earl Barron,,Juwan Howard,,,,,,shooting,,
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,2:27,MIA,free throw,,,,,,,1,,1,Earl Barron,,,foul,missed,,,,
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,2:26,DAL,rebound,,,,,,,,,,Juwan Howard,,,,,,def,,
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,2:10,DAL,shot,,,Joel Anthony,,,,,,,Tyronn Lue,,,,missed,,layup,25,6
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,2:09,MIA,rebound,,,,,,,,,,Earl Barron,,,,,,def,,
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,1:58,MIA,shot,,,,,,,,,,Chris Quinn,2,,,made,,jump,39,18
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,1:39,DAL,shot,,,,,,,,,,Devean George,,,,missed,,jump,16,19
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,1:37,DAL,rebound,,,,,,,,,,Juwan Howard,,,,,,off,,
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,1:26,DAL,shot,Tyronn Lue,,,,,,,,,Malik Allen,2,,,made,,jump,42,6
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,1:09,MIA,shot,Daequan Cook,,,,,,,,,Earl Barron,2,,,made,,jump,15,21
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,0:55,DAL,shot,Devean George,,,,,,,,,Antoine Wright,3,,,made,,3pt,2,9
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,0:55,DAL,violation,,,,,,,,,,,,,,,,delay of game,,
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,0:37,MIA,shot,,,,,,,,,,Daequan Cook,,,,missed,,3pt,14,27
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,0:36,DAL,rebound,,,,,,,,,,,,,,,,,,
+Antoine Wright,Devean George,Juwan Howard,Malik Allen,Tyronn Lue,Bobby Jones,Chris Quinn,Daequan Cook,Earl Barron,Joel Anthony,4,0:19,DAL,turnover,,,,,,,,,,Devean George,,,traveling,,,,,

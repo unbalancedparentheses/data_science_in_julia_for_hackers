@@ -1,0 +1,505 @@
+a1,a2,a3,a4,a5,h1,h2,h3,h4,h5,period,time,team,etype,assist,away,block,entered,home,left,num,opponent,outof,player,points,possession,reason,result,steal,type,x,y
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Josh Howard,1,12:00,OFF,jump ball,,Joakim Noah,,,Erick Dampier,,,,,,,Jason Kidd,,,,,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Josh Howard,1,11:45,DAL,shot,,,,,,,,,,Dirk Nowitzki,,,,missed,,jump,17,25
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Josh Howard,1,11:42,CHI,rebound,,,,,,,,,,Luol Deng,,,,,,def,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Josh Howard,1,11:22,CHI,shot,,,,,,,,,,Luol Deng,,,,missed,,jump,27,25
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Josh Howard,1,11:20,DAL,rebound,,,,,,,,,,Antoine Wright,,,,,,def,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Josh Howard,1,11:11,DAL,shot,,,,,,,,,,Josh Howard,,,,missed,,jump,28,19
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Josh Howard,1,11:09,CHI,rebound,,,,,,,,,,Tyrus Thomas,,,,,,def,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Josh Howard,1,11:03,CHI,shot,,,,,,,,,,Derrick Rose,,,,missed,,jump,38,20
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Josh Howard,1,11:01,DAL,rebound,,,,,,,,,,Erick Dampier,,,,,,def,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Josh Howard,1,10:52,DAL,shot,,,,,,,,,,Antoine Wright,2,,,made,,layup,25,6
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Josh Howard,1,10:36,CHI,shot,Ben Gordon,,,,,,,,,Joakim Noah,2,,,made,,driving dunk,25,6
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Josh Howard,1,10:24,DAL,shot,,,,,,,,,,Antoine Wright,2,,,made,,slam dunk,25,6
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Josh Howard,1,10:02,CHI,shot,Joakim Noah,,,,,,,,,Derrick Rose,2,,,made,,jump,24,25
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Josh Howard,1,9:45,CHI,sub,,,,Kirk Hinrich,,Ben Gordon,,,,,,,,,,,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Josh Howard,1,9:37,DAL,shot,,,,,,,,,,Dirk Nowitzki,,,,missed,,jump,20,18
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Josh Howard,1,9:35,CHI,rebound,,,,,,,,,,Luol Deng,,,,,,def,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Josh Howard,1,9:26,CHI,shot,Luol Deng,,,,,,,,,Derrick Rose,2,,,made,,jump,20,24
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Josh Howard,1,9:10,DAL,foul,,,,,,,,Luol Deng,,Josh Howard,,,,,,offensive,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Josh Howard,1,9:10,DAL,turnover,,,,,,,,,,Josh Howard,,,foul,,,,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Josh Howard,1,8:47,DAL,foul,,,,,,,,Luol Deng,,Josh Howard,,,,,,shooting,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,1,8:47,DAL,sub,,,,Devean George,,Josh Howard,,,,,,,,,,,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,1,8:47,CHI,free throw,,,,,,,1,,2,Luol Deng,,,foul,missed,,,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,1,8:47,CHI,rebound,,,,,,,,,,,,,,,,,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,1,8:47,CHI,free throw,,,,,,,2,,2,Luol Deng,,,foul,made,,,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,1,8:32,DAL,shot,,,Joakim Noah,,,,,,,Dirk Nowitzki,,,,missed,,driving layup,25,6
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,1,8:30,DAL,rebound,,,,,,,,,,Dirk Nowitzki,,,,,,off,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,1,8:28,DAL,shot,,,,,,,,,,Dirk Nowitzki,,,,missed,,fade away jumper,26,12
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,1,8:26,CHI,rebound,,,,,,,,,,Tyrus Thomas,,,,,,def,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,1,8:11,CHI,shot,,,,,,,,,,Derrick Rose,,,,missed,,jump,36,22
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,1,8:09,CHI,rebound,,,,,,,,,,Joakim Noah,,,,,,off,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,1,8:06,CHI,shot,Luol Deng,,,,,,,,,Kirk Hinrich,3,,,made,,3pt,29,31
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,1,7:49,DAL,shot,,,,,,,,,,Dirk Nowitzki,,,,missed,,turnaround fade away,20,13
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,1,7:46,CHI,rebound,,,,,,,,,,Joakim Noah,,,,,,def,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,1,7:40,CHI,shot,Derrick Rose,,,,,,,,,Kirk Hinrich,3,,,made,,3pt,47,17
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,1,7:38,DAL,timeout,,,,,,,,,,,,,,,,regular,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,1,7:17,DAL,shot,,,,,,,,,,Jason Kidd,,,,missed,,3pt,14,28
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,1,7:16,DAL,rebound,,,,,,,,,,Erick Dampier,,,,,,off,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,1,7:16,CHI,foul,,,,,,,,Erick Dampier,,Joakim Noah,,,,,,loose ball,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,1,7:06,DAL,shot,,,,,,,,,,Devean George,2,,,made,,jump,21,24
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,1,6:45,CHI,turnover,,,,,,,,,,Kirk Hinrich,,,bad pass,,Antoine Wright,,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,1,6:37,DAL,shot,Jason Kidd,,,,,,,,,Dirk Nowitzki,2,,,made,,jump,38,18
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,1,6:15,CHI,shot,,,,,,,,,,Tyrus Thomas,,,,missed,,jump,41,14
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,1,6:15,DAL,rebound,,,,,,,,,,,,,,,,,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,1,6:01,DAL,shot,Antoine Wright,,,,,,,,,Erick Dampier,2,,,made,,slam dunk,25,6
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,1,5:52,CHI,timeout,,,,,,,,,,,,,,,,regular,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,1,5:42,CHI,shot,Derrick Rose,,,,,,,,,Luol Deng,2,,,made,,jump,37,20
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,1,5:24,CHI,foul,,,,,,,,Devean George,,Luol Deng,,,,,,personal,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,1,5:09,DAL,shot,,,,,,,,,,Devean George,,,,missed,,3pt,2,9
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,1,5:07,CHI,rebound,,,,,,,,,,Kirk Hinrich,,,,,,def,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,1,4:56,CHI,shot,,,,,,,,,,Tyrus Thomas,,,,missed,,jump,10,18
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,1,4:52,DAL,rebound,,,,,,,,,,Devean George,,,,,,def,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,1,4:43,DAL,shot,,,,,,,,,,Erick Dampier,2,,,made,,dunk,25,6
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,1,4:23,CHI,shot,,,,,,,,,,Luol Deng,,,,missed,,jump,37,21
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,1,4:21,DAL,rebound,,,,,,,,,,Dirk Nowitzki,,,,,,def,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,1,4:16,DAL,turnover,,,,,,,,,,Jason Kidd,,,bad pass,,Luol Deng,,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,1,4:11,DAL,foul,,,,,,,,Luol Deng,,Antoine Wright,,,,,,shooting,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,1,4:11,CHI,free throw,,,,,,,1,,2,Luol Deng,,,foul,made,,,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jason Terry,1,4:11,DAL,sub,,,,Jason Terry,,Devean George,,,,,,,,,,,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Brandon Bass,Erick Dampier,Jason Kidd,Jason Terry,1,4:11,DAL,sub,,,,Brandon Bass,,Dirk Nowitzki,,,,,,,,,,,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Brandon Bass,Erick Dampier,Jason Kidd,Jason Terry,1,4:11,CHI,free throw,,,,,,,2,,2,Luol Deng,,,foul,made,,,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Brandon Bass,Erick Dampier,Jason Kidd,Jason Terry,1,3:48,DAL,shot,,,,,,,,,,Brandon Bass,,,,missed,,turnaround jump,32,6
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Brandon Bass,Erick Dampier,Jason Kidd,Jason Terry,1,3:46,CHI,rebound,,,,,,,,,,Derrick Rose,,,,,,def,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Brandon Bass,Erick Dampier,Jason Kidd,Jason Terry,1,3:36,CHI,shot,Luol Deng,,,,,,,,,Derrick Rose,2,,,made,,jump,37,23
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Brandon Bass,Erick Dampier,Jason Kidd,Jason Terry,1,3:20,DAL,turnover,,,,,,,,,,Jason Kidd,,,bad pass,,Luol Deng,,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Brandon Bass,Erick Dampier,Jason Kidd,Jason Terry,1,3:13,CHI,shot,,,Erick Dampier,,,,,,,Tyrus Thomas,,,,missed,,driving layup,25,6
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Brandon Bass,Erick Dampier,Jason Kidd,Jason Terry,1,3:11,CHI,rebound,,,,,,,,,,Tyrus Thomas,,,,,,off,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Brandon Bass,Erick Dampier,Jason Kidd,Jason Terry,1,3:09,CHI,shot,,,,,,,,,,Tyrus Thomas,2,,,made,,reverse layup,25,6
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Brandon Bass,Erick Dampier,Jason Kidd,Jason Terry,1,2:47,DAL,shot,,,,,,,,,,Jason Terry,,,,missed,,3pt,2,7
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Brandon Bass,Erick Dampier,Jason Kidd,Jason Terry,1,2:45,CHI,rebound,,,,,,,,,,Kirk Hinrich,,,,,,def,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Brandon Bass,Erick Dampier,Jason Kidd,Jason Terry,1,2:30,CHI,shot,,,,,,,,,,Luol Deng,,,,missed,,running jump,20,18
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Brandon Bass,Erick Dampier,Jason Kidd,Jason Terry,1,2:27,CHI,rebound,,,,,,,,,,,,,,,,,,
+Ben Gordon,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Brandon Bass,Erick Dampier,Jason Kidd,Jason Terry,1,2:27,CHI,sub,,,,Ben Gordon,,Derrick Rose,,,,,,,,,,,,
+Andres Nocioni,Ben Gordon,Joakim Noah,Kirk Hinrich,Luol Deng,Antoine Wright,Brandon Bass,Erick Dampier,Jason Kidd,Jason Terry,1,2:27,CHI,sub,,,,Andres Nocioni,,Tyrus Thomas,,,,,,,,,,,,
+Andres Nocioni,Ben Gordon,Joakim Noah,Kirk Hinrich,Luol Deng,Antoine Wright,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jason Terry,1,2:27,DAL,sub,,,,Dirk Nowitzki,,Erick Dampier,,,,,,,,,,,,
+Andres Nocioni,Ben Gordon,Joakim Noah,Kirk Hinrich,Luol Deng,Antoine Wright,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,1,2:27,DAL,sub,,,,Jose Juan Barea,,Jason Kidd,,,,,,,,,,,,
+Andres Nocioni,Ben Gordon,Joakim Noah,Kirk Hinrich,Luol Deng,Antoine Wright,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,1,2:11,CHI,shot,,,,,,,,,,Luol Deng,,,,missed,,jump bank,37,9
+Andres Nocioni,Ben Gordon,Joakim Noah,Kirk Hinrich,Luol Deng,Antoine Wright,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,1,2:08,DAL,rebound,,,,,,,,,,Dirk Nowitzki,,,,,,def,,
+Andres Nocioni,Ben Gordon,Joakim Noah,Kirk Hinrich,Luol Deng,Antoine Wright,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,1,1:59,DAL,shot,,,,,,,,,,Dirk Nowitzki,,,,missed,,jump,12,19
+Andres Nocioni,Ben Gordon,Joakim Noah,Kirk Hinrich,Luol Deng,Antoine Wright,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,1,1:57,CHI,rebound,,,,,,,,,,Luol Deng,,,,,,def,,
+Andres Nocioni,Ben Gordon,Joakim Noah,Kirk Hinrich,Luol Deng,Antoine Wright,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,1,1:52,CHI,shot,,,,,,,,,,Kirk Hinrich,,,,missed,,jump,21,28
+Andres Nocioni,Ben Gordon,Joakim Noah,Kirk Hinrich,Luol Deng,Antoine Wright,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,1,1:50,DAL,rebound,,,,,,,,,,Antoine Wright,,,,,,def,,
+Andres Nocioni,Ben Gordon,Joakim Noah,Kirk Hinrich,Luol Deng,Antoine Wright,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,1,1:35,DAL,shot,,,,,,,,,,Jose Juan Barea,2,,,made,,turnaround jump,25,12
+Andres Nocioni,Ben Gordon,Joakim Noah,Kirk Hinrich,Luol Deng,Antoine Wright,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,1,1:13,CHI,foul,,,,,,,,Jose Juan Barea,,Kirk Hinrich,,,,,,offensive,,
+Andres Nocioni,Ben Gordon,Joakim Noah,Kirk Hinrich,Luol Deng,Antoine Wright,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,1,1:13,CHI,turnover,,,,,,,,,,Kirk Hinrich,,,foul,,,,,
+Andres Nocioni,Ben Gordon,Joakim Noah,Kirk Hinrich,Thabo Sefolosha,Antoine Wright,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,1,1:13,CHI,sub,,,,Thabo Sefolosha,,Luol Deng,,,,,,,,,,,,
+Andres Nocioni,Ben Gordon,Joakim Noah,Kirk Hinrich,Thabo Sefolosha,Antoine Wright,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,1,1:06,CHI,foul,,,,,,,,Jason Terry,,Andres Nocioni,,,,,,personal,,
+Andres Nocioni,Ben Gordon,Joakim Noah,Kirk Hinrich,Thabo Sefolosha,Antoine Wright,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,1,1:06,CHI,foul,,,,,,,,Jason Terry,,Andres Nocioni,,,,,,technical,,
+Andres Nocioni,Ben Gordon,Joakim Noah,Kirk Hinrich,Thabo Sefolosha,Antoine Wright,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,1,1:06,DAL,free throw,,,,,,,1,,1,Dirk Nowitzki,,,technical,made,,,,
+Andres Nocioni,Ben Gordon,Joakim Noah,Kirk Hinrich,Thabo Sefolosha,Antoine Wright,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,1,0:58,CHI,foul,,,,,,,,Dirk Nowitzki,,Ben Gordon,,,,,,personal,,
+Andres Nocioni,Ben Gordon,Joakim Noah,Kirk Hinrich,Thabo Sefolosha,Antoine Wright,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,1,0:58,DAL,free throw,,,,,,,1,,2,Dirk Nowitzki,,,foul,made,,,,
+Andres Nocioni,Ben Gordon,Joakim Noah,Kirk Hinrich,Thabo Sefolosha,Antoine Wright,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,1,0:58,DAL,free throw,,,,,,,2,,2,Dirk Nowitzki,,,foul,made,,,,
+Andres Nocioni,Ben Gordon,Joakim Noah,Kirk Hinrich,Thabo Sefolosha,Antoine Wright,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,1,0:49,DAL,foul,,,,,,,,Joakim Noah,,Jason Terry,,,,,,personal,,
+Andres Nocioni,Ben Gordon,Joakim Noah,Kirk Hinrich,Thabo Sefolosha,Antoine Wright,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,1,0:38,CHI,shot,,,,,,,,,,Andres Nocioni,,,,missed,,3pt,32,30
+Andres Nocioni,Ben Gordon,Joakim Noah,Kirk Hinrich,Thabo Sefolosha,Antoine Wright,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,1,0:36,DAL,rebound,,,,,,,,,,Dirk Nowitzki,,,,,,def,,
+Andres Nocioni,Ben Gordon,Joakim Noah,Kirk Hinrich,Thabo Sefolosha,Antoine Wright,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,1,0:17,DAL,shot,Dirk Nowitzki,,,,,,,,,Jose Juan Barea,3,,,made,,3pt,35,30
+Andres Nocioni,Ben Gordon,Joakim Noah,Kirk Hinrich,Thabo Sefolosha,Antoine Wright,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,1,0:02,CHI,shot,Kirk Hinrich,,,,,,,,,Andres Nocioni,3,,,made,,3pt,37,26
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Antoine Wright,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,2,11:43,CHI,shot,,,,,,,,,,Ben Gordon,2,,,made,,driving layup,25,6
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Antoine Wright,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,2,11:26,DAL,shot,,,,,,,,,,Dirk Nowitzki,,,,missed,,jump,32,8
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Antoine Wright,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,2,11:24,DAL,shot,,,,,,,,,,Brandon Bass,,,,missed,,layup,25,6
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Antoine Wright,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,2,11:24,DAL,rebound,,,,,,,,,,Brandon Bass,,,,,,off,,
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,Josh Howard,2,11:24,DAL,sub,,,,Josh Howard,,Antoine Wright,,,,,,,,,,,,
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,Josh Howard,2,11:24,DAL,rebound,,,,,,,,,,Brandon Bass,,,,,,off,,
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,Josh Howard,2,11:23,OFF,jump ball,,Tyrus Thomas,,,Brandon Bass,,,,,,,Jose Juan Barea,,,,,,
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,Josh Howard,2,11:12,DAL,shot,,,,,,,,,,Jose Juan Barea,,,,missed,,running layup,25,6
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,Josh Howard,2,11:09,CHI,rebound,,,,,,,,,,Thabo Sefolosha,,,,,,def,,
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,Josh Howard,2,10:50,CHI,turnover,,,,,,,,,,Tyrus Thomas,,,lost ball,,Dirk Nowitzki,,,
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,Josh Howard,2,10:46,DAL,shot,Jason Terry,,,,,,,,,Josh Howard,2,,,made,,layup,25,6
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,Josh Howard,2,10:28,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,jump,6,13
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,Josh Howard,2,10:25,DAL,rebound,,,,,,,,,,Josh Howard,,,,,,def,,
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,Josh Howard,2,10:09,DAL,shot,,,,,,,,,,Dirk Nowitzki,,,,missed,,turnaround fade away,25,12
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,Josh Howard,2,10:06,CHI,rebound,,,,,,,,,,Andres Nocioni,,,,,,def,,
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Terry,Jose Juan Barea,Josh Howard,2,9:55,CHI,turnover,,,,,,,,,,Kirk Hinrich,,,bad pass,,,,,
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,9:55,DAL,sub,,,,James Singleton,,Dirk Nowitzki,,,,,,,,,,,,
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,9:38,DAL,shot,,,,,,,,,,Josh Howard,,,,missed,,layup,25,6
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,9:37,DAL,rebound,,,,,,,,,,James Singleton,,,,,,off,,
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,9:36,DAL,shot,,,,,,,,,,James Singleton,2,,,made,,dunk,25,6
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,9:21,CHI,shot,,,,,,,,,,Kirk Hinrich,,,,missed,,3pt,12,27
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,9:19,CHI,rebound,,,,,,,,,,Andres Nocioni,,,,,,off,,
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,9:10,CHI,shot,,,,,,,,,,Andres Nocioni,,,,missed,,jump hook,23,14
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,9:07,DAL,rebound,,,,,,,,,,Brandon Bass,,,,,,def,,
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,9:05,DAL,shot,Jason Terry,,,,,,,,,James Singleton,2,,,made,,dunk,25,6
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,8:54,CHI,timeout,,,,,,,,,,,,,,,,regular,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,8:54,CHI,sub,,,,Derrick Rose,,Kirk Hinrich,,,,,,,,,,,,
+Ben Gordon,Derrick Rose,Luol Deng,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,8:54,CHI,sub,,,,Luol Deng,,Andres Nocioni,,,,,,,,,,,,
+Ben Gordon,Derrick Rose,Luol Deng,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,8:43,CHI,shot,Derrick Rose,,,,,,,,,Tyrus Thomas,2,,,made,,layup,25,6
+Ben Gordon,Derrick Rose,Luol Deng,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,8:43,DAL,foul,,,,,,,,Tyrus Thomas,,James Singleton,,,,,,shooting,,
+Ben Gordon,Derrick Rose,Luol Deng,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,8:43,CHI,free throw,,,,,,,1,,1,Tyrus Thomas,,,foul,missed,,,,
+Ben Gordon,Derrick Rose,Luol Deng,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,8:42,DAL,rebound,,,,,,,,,,Brandon Bass,,,,,,def,,
+Ben Gordon,Derrick Rose,Luol Deng,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,8:20,DAL,shot,,,,,,,,,,Jason Terry,3,,,made,,3pt,4,20
+Ben Gordon,Derrick Rose,Luol Deng,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,8:14,CHI,shot,Ben Gordon,,,,,,,,,Luol Deng,2,,,made,,layup,25,6
+Ben Gordon,Derrick Rose,Luol Deng,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,7:58,DAL,shot,Jose Juan Barea,,,,,,,,,Jason Terry,2,,,made,,jump,45,7
+Ben Gordon,Derrick Rose,Luol Deng,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,7:49,CHI,shot,,,,,,,,,,Luol Deng,,,,missed,,jump,32,10
+Ben Gordon,Derrick Rose,Luol Deng,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,7:46,DAL,rebound,,,,,,,,,,James Singleton,,,,,,def,,
+Ben Gordon,Derrick Rose,Luol Deng,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,7:41,DAL,shot,,,Tyrus Thomas,,,,,,,Brandon Bass,,,,missed,,dunk,25,6
+Ben Gordon,Derrick Rose,Luol Deng,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,7:39,DAL,rebound,,,,,,,,,,,,,,,,,,
+Ben Gordon,Derrick Rose,Luol Deng,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,7:26,DAL,shot,Jason Terry,,,,,,,,,Brandon Bass,2,,,made,,layup,25,6
+Ben Gordon,Derrick Rose,Luol Deng,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,7:01,CHI,shot,,,James Singleton,,,,,,,Luol Deng,,,,missed,,jump,21,18
+Ben Gordon,Derrick Rose,Luol Deng,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,6:59,DAL,rebound,,,,,,,,,,Jason Terry,,,,,,def,,
+Ben Gordon,Derrick Rose,Luol Deng,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,6:55,CHI,foul,,,,,,,,Josh Howard,,Tyrus Thomas,,,,,,shooting,,
+Ben Gordon,Derrick Rose,Luol Deng,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,6:55,DAL,free throw,,,,,,,1,,2,Josh Howard,,,foul,missed,,,,
+Ben Gordon,Derrick Rose,Luol Deng,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,6:55,DAL,rebound,,,,,,,,,,,,,,,,,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,6:55,CHI,sub,,,,Joakim Noah,,Thabo Sefolosha,,,,,,,,,,,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,6:55,DAL,free throw,,,,,,,2,,2,Josh Howard,,,foul,made,,,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,6:39,CHI,turnover,,,,,,,,,,Joakim Noah,,,bad pass,,Jose Juan Barea,,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,6:34,DAL,shot,,,,,,,,,,Josh Howard,,,,missed,,jump,37,17
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,6:32,CHI,rebound,,,,,,,,,,Tyrus Thomas,,,,,,def,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,6:27,CHI,foul,,,,,,,,James Singleton,,Derrick Rose,,,,,,offensive,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,6:27,CHI,turnover,,,,,,,,,,Derrick Rose,,,foul,,,,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,6:10,DAL,shot,Jason Terry,,,,,,,,,Brandon Bass,2,,,made,,jump,41,8
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,6:01,CHI,shot,Luol Deng,,,,,,,,,Ben Gordon,3,,,made,,3pt,3,8
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,5:40,DAL,shot,,,,,,,,,,Jose Juan Barea,,,,missed,,jump,45,8
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,5:38,CHI,rebound,,,,,,,,,,Tyrus Thomas,,,,,,def,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,5:33,CHI,turnover,,,,,,,,,,Ben Gordon,,,lost ball,,Jason Terry,,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,5:29,CHI,foul,,,,,,,,Jose Juan Barea,,Tyrus Thomas,,,,,,shooting,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,5:29,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,5:29,DAL,free throw,,,,,,,1,,2,Jose Juan Barea,,,foul,missed,,,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,5:29,DAL,rebound,,,,,,,,,,,,,,,,,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,5:29,DAL,free throw,,,,,,,2,,2,Jose Juan Barea,,,foul,made,,,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,5:13,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,finger roll layup,25,6
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,5:12,CHI,shot,,,,,,,,,,Ben Gordon,2,,,made,,tip,25,6
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,5:12,CHI,rebound,,,,,,,,,,Ben Gordon,,,,,,off,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,4:48,DAL,shot,,,,,,,,,,Jason Terry,,,,missed,,3pt,32,31
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,4:46,CHI,rebound,,,,,,,,,,Tyrus Thomas,,,,,,def,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,4:41,CHI,shot,,,Josh Howard,,,,,,,Luol Deng,,,,missed,,jump,19,7
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Brandon Bass,James Singleton,Jason Terry,Jose Juan Barea,Josh Howard,2,4:41,CHI,rebound,,,,,,,,,,,,,,,,,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Brandon Bass,James Singleton,Jason Kidd,Jason Terry,Josh Howard,2,4:41,DAL,sub,,,,Jason Kidd,,Jose Juan Barea,,,,,,,,,,,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,Josh Howard,2,4:41,DAL,sub,,,,Dirk Nowitzki,,Brandon Bass,,,,,,,,,,,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,Josh Howard,2,4:33,DAL,foul,,,,,,,,,,James Singleton,,,,,,defense 3 second,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,Josh Howard,2,4:33,CHI,free throw,,,,,,,1,,1,Ben Gordon,,,technical,made,,,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,Josh Howard,2,4:27,CHI,shot,,,,,,,,,,Derrick Rose,2,,,made,,jump,37,20
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,Josh Howard,2,4:01,DAL,shot,,,,,,,,,,Dirk Nowitzki,,,,missed,,3pt,47,6
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,Josh Howard,2,3:58,DAL,rebound,,,,,,,,,,Josh Howard,,,,,,off,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,Josh Howard,2,3:55,DAL,shot,,,,,,,,,,Jason Terry,,,,missed,,3pt,16,30
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,Josh Howard,2,3:53,CHI,rebound,,,,,,,,,,Joakim Noah,,,,,,def,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,Josh Howard,2,3:49,CHI,turnover,,,,,,,,,,Ben Gordon,,,out of bounds lost ball turnover,,,,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,Josh Howard,2,3:41,DAL,turnover,,,,,,,,,,Josh Howard,,,bad pass,,Ben Gordon,,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,Josh Howard,2,3:35,CHI,shot,Derrick Rose,,,,,,,,,Luol Deng,2,,,made,,layup,25,6
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,Josh Howard,2,3:30,DAL,timeout,,,,,,,,,,,,,,,,regular,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,Josh Howard,2,3:12,DAL,shot,Jason Kidd,,,,,,,,,Dirk Nowitzki,2,,,made,,turnaround fade away,30,18
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,Josh Howard,2,2:59,CHI,shot,Derrick Rose,,,,,,,,,Joakim Noah,2,,,made,,alley oop layup,25,6
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,Josh Howard,2,2:59,DAL,foul,,,,,,,,Joakim Noah,,Josh Howard,,,,,,shooting,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,2,2:59,DAL,sub,,,,Antoine Wright,,Josh Howard,,,,,,,,,,,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,2,2:59,CHI,free throw,,,,,,,1,,1,Joakim Noah,,,foul,missed,,,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,2,2:59,DAL,rebound,,,,,,,,,,James Singleton,,,,,,def,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,2,2:48,DAL,shot,,,,,,,,,,Dirk Nowitzki,,,,missed,,jump,25,23
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,2,2:46,CHI,rebound,,,,,,,,,,Tyrus Thomas,,,,,,def,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,2,2:36,CHI,shot,,,,,,,,,,Derrick Rose,2,,,made,,floating jump,36,14
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,2,2:15,DAL,shot,Antoine Wright,,,,,,,,,Jason Terry,3,,,made,,3pt,2,8
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,2,2:00,CHI,shot,,,,,,,,,,Derrick Rose,,,,missed,,jump,20,25
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,2,1:59,DAL,rebound,,,,,,,,,,Jason Kidd,,,,,,def,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,2,1:53,DAL,shot,Jason Kidd,,,,,,,,,Dirk Nowitzki,2,,,made,,jump,28,25
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,2,1:27,CHI,shot,Joakim Noah,,,,,,,,,Ben Gordon,2,,,made,,reverse layup,25,6
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,2,1:01,DAL,shot,,,,,,,,,,Antoine Wright,,,,missed,,jump,8,7
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,2,0:58,DAL,rebound,,,,,,,,,,Dirk Nowitzki,,,,,,off,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,2,0:56,DAL,shot,,,,,,,,,,Dirk Nowitzki,2,,,made,,jump,10,9
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,2,0:40,DAL,foul,,,,,,,,Tyrus Thomas,,Jason Kidd,,,,,,shooting,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,2,0:40,CHI,free throw,,,,,,,1,,2,Tyrus Thomas,,,foul,made,,,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,2,0:40,DAL,timeout,,,,,,,,,,,,,,,,short,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,2,0:40,CHI,sub,,,,Kirk Hinrich,,Ben Gordon,,,,,,,,,,,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,2,0:40,CHI,free throw,,,,,,,2,,2,Tyrus Thomas,,,foul,made,,,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,2,0:32,CHI,foul,,,,,,,,Dirk Nowitzki,,Joakim Noah,,,,,,personal,,
+Derrick Rose,Kirk Hinrich,Luol Deng,Thabo Sefolosha,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,2,0:32,CHI,sub,,,,Thabo Sefolosha,,Joakim Noah,,,,,,,,,,,,
+Derrick Rose,Kirk Hinrich,Luol Deng,Thabo Sefolosha,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,2,0:20,DAL,shot,,,,,,,,,,Dirk Nowitzki,2,,,made,,turnaround fade away,14,6
+Derrick Rose,Kirk Hinrich,Luol Deng,Thabo Sefolosha,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,2,0:03,CHI,shot,,,,,,,,,,Derrick Rose,2,,,made,,layup,25,6
+Derrick Rose,Kirk Hinrich,Luol Deng,Thabo Sefolosha,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,2,0:00,DAL,shot,,,,,,,,,,Jason Terry,,,,missed,,3pt,36,45
+Derrick Rose,Kirk Hinrich,Luol Deng,Thabo Sefolosha,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,James Singleton,Jason Kidd,Jason Terry,2,0:00,DAL,rebound,,,,,,,,,,,,,,,,,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Josh Howard,3,11:45,CHI,turnover,,,,,,,,,,Joakim Noah,,,3 second violation,,,,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Josh Howard,3,11:25,DAL,shot,,,Derrick Rose,,,,,,,Antoine Wright,,,,missed,,running layup,25,6
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Josh Howard,3,11:23,DAL,rebound,,,,,,,,,,Antoine Wright,,,,,,off,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Josh Howard,3,11:21,DAL,shot,,,,,,,,,,Antoine Wright,,,,missed,,layup,25,6
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Josh Howard,3,11:20,DAL,shot,,,,,,,,,,Erick Dampier,,,,missed,,layup,25,6
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Josh Howard,3,11:20,DAL,rebound,,,,,,,,,,Erick Dampier,,,,,,off,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Josh Howard,3,11:19,CHI,rebound,,,,,,,,,,Joakim Noah,,,,,,def,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Josh Howard,3,11:11,DAL,foul,,,,,,,,Ben Gordon,,Josh Howard,,,,,,shooting,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Josh Howard,3,11:11,CHI,free throw,,,,,,,1,,2,Ben Gordon,,,foul,made,,,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,3,11:11,DAL,sub,,,,Devean George,,Josh Howard,,,,,,,,,,,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,3,11:11,CHI,free throw,,,,,,,2,,2,Ben Gordon,,,foul,made,,,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,3,10:53,DAL,shot,Erick Dampier,,,,,,,,,Dirk Nowitzki,2,,,made,,jump,11,20
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,3,10:35,CHI,turnover,,,,,,,,,,Tyrus Thomas,,,bad pass,,Jason Kidd,,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,3,10:30,DAL,shot,,,Luol Deng,,,,,,,Jason Kidd,,,,missed,,layup,25,6
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,3,10:29,DAL,rebound,,,,,,,,,,Antoine Wright,,,,,,off,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,3,10:17,DAL,shot,,,,,,,,,,Dirk Nowitzki,,,,missed,,jump,38,8
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,3,10:15,CHI,rebound,,,,,,,,,,Joakim Noah,,,,,,def,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,3,10:11,CHI,turnover,,,,,,,,,,Derrick Rose,,,palming turnover,,,,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,3,10:08,DAL,shot,Jason Kidd,,,,,,,,,Dirk Nowitzki,3,,,made,,3pt,18,30
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,3,10:07,CHI,timeout,,,,,,,,,,,,,,,,regular,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,10:07,DAL,sub,,,,Jose Juan Barea,,Devean George,,,,,,,,,,,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,9:57,CHI,shot,,,,,,,,,,Derrick Rose,2,,,made,,jump,40,8
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,9:41,CHI,foul,,,,,,,,Dirk Nowitzki,,Tyrus Thomas,,,,,,personal,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,9:36,DAL,shot,,,Ben Gordon,,,,,,,Jose Juan Barea,,,,missed,,layup,25,6
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,9:34,DAL,shot,,,,,,,,,,Erick Dampier,,,,missed,,tip,25,6
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,9:34,DAL,rebound,,,,,,,,,,Erick Dampier,,,,,,off,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,9:33,DAL,shot,,,,,,,,,,Erick Dampier,,,,missed,,tip,25,6
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,9:33,DAL,rebound,,,,,,,,,,Erick Dampier,,,,,,off,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,9:32,DAL,shot,,,,,,,,,,Erick Dampier,,,,missed,,tip,25,6
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,9:32,DAL,rebound,,,,,,,,,,Erick Dampier,,,,,,off,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,9:31,CHI,rebound,,,,,,,,,,Ben Gordon,,,,,,def,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,9:17,CHI,shot,,,,,,,,,,Ben Gordon,3,,,made,,3pt,12,27
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,8:59,DAL,shot,,,,,,,,,,Dirk Nowitzki,,,,missed,,fade away jumper,14,14
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,8:56,CHI,rebound,,,,,,,,,,Tyrus Thomas,,,,,,def,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,8:54,CHI,turnover,,,,,,,,,,Derrick Rose,,,bad pass,,Jason Kidd,,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,8:39,DAL,shot,Jason Kidd,,,,,,,,,Dirk Nowitzki,2,,,made,,turnaround fade away,15,15
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,8:16,CHI,shot,,,,,,,,,,Derrick Rose,,,,missed,,jump,41,15
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,8:13,DAL,rebound,,,,,,,,,,Erick Dampier,,,,,,def,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,8:04,DAL,shot,Jason Kidd,,,,,,,,,Dirk Nowitzki,2,,,made,,jump,11,16
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,7:39,CHI,shot,,,,,,,,,,Luol Deng,,,,missed,,jump,6,6
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,7:37,DAL,rebound,,,,,,,,,,Erick Dampier,,,,,,def,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,7:30,DAL,shot,,,,,,,,,,Dirk Nowitzki,,,,missed,,jump,35,22
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,7:28,CHI,rebound,,,,,,,,,,Joakim Noah,,,,,,def,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,7:22,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,layup,25,6
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,7:21,CHI,shot,,,,,,,,,,Joakim Noah,2,,,made,,tip,25,6
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,7:21,CHI,rebound,,,,,,,,,,Joakim Noah,,,,,,off,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,7:10,CHI,foul,,,,,,,,Erick Dampier,,Luol Deng,,,,,,personal,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,7:01,DAL,shot,,,,,,,,,,Erick Dampier,,,,missed,,layup,25,6
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,7:00,CHI,rebound,,,,,,,,,,Joakim Noah,,,,,,def,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,6:51,DAL,foul,,,,,,,,Joakim Noah,,Erick Dampier,,,,,,personal,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,6:39,CHI,shot,,,,,,,,,,Joakim Noah,2,,,made,,jump hook,25,11
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,6:23,DAL,shot,,,,,,,,,,Jose Juan Barea,2,,,made,,driving layup,25,6
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,6:19,DAL,foul,,,,,,,,Ben Gordon,,Jason Kidd,,,,,,personal,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,6:03,CHI,shot,Derrick Rose,,,,,,,,,Tyrus Thomas,2,,,made,,jump,30,23
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,5:47,DAL,shot,,,,,,,,,,Jose Juan Barea,2,,,made,,driving finger roll layup,25,6
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,5:26,DAL,foul,,,,,,,,Derrick Rose,,Jose Juan Barea,,,,,,personal,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,5:26,CHI,sub,,,,Kirk Hinrich,,Ben Gordon,,,,,,,,,,,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,5:17,CHI,shot,,,,,,,,,,Kirk Hinrich,,,,missed,,3pt,2,7
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,5:15,DAL,rebound,,,,,,,,,,Jason Kidd,,,,,,def,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,5:07,CHI,foul,,,,,,,,Jose Juan Barea,,Kirk Hinrich,,,,,,shooting,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,5:07,DAL,free throw,,,,,,,1,,2,Jose Juan Barea,,,foul,made,,,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,5:07,DAL,free throw,,,,,,,2,,2,Jose Juan Barea,,,foul,missed,,,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,5:06,CHI,rebound,,,,,,,,,,Joakim Noah,,,,,,def,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,4:54,CHI,shot,,,,,,,,,,Luol Deng,,,,missed,,jump,8,6
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,4:51,DAL,rebound,,,,,,,,,,Erick Dampier,,,,,,def,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,4:37,DAL,shot,,,,,,,,,,Dirk Nowitzki,2,,,made,,turnaround fade away,25,19
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,4:23,CHI,shot,,,,,,,,,,Derrick Rose,2,,,made,,jump,35,24
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,4:08,DAL,shot,,,,,,,,,,Jose Juan Barea,,,,missed,,3pt,12,27
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,4:06,CHI,rebound,,,,,,,,,,Derrick Rose,,,,,,def,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,4:02,CHI,shot,,,,,,,,,,Derrick Rose,,,,missed,,driving layup,25,6
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,4:00,DAL,rebound,,,,,,,,,,Antoine Wright,,,,,,def,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,3:44,DAL,shot,,,,,,,,,,Antoine Wright,,,,missed,,3pt,37,28
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,3:42,CHI,rebound,,,,,,,,,,Joakim Noah,,,,,,def,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,3:31,DAL,foul,,,,,,,,Joakim Noah,,Antoine Wright,,,,,,shooting,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,3:31,CHI,free throw,,,,,,,1,,2,Joakim Noah,,,foul,missed,,,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,3:31,CHI,rebound,,,,,,,,,,,,,,,,,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,3:31,CHI,free throw,,,,,,,2,,2,Joakim Noah,,,foul,missed,,,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,3:30,DAL,rebound,,,,,,,,,,Dirk Nowitzki,,,,,,def,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,3:25,CHI,foul,,,,,,,,Antoine Wright,,Joakim Noah,,,,,,shooting,,
+Aaron Gray,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,3:25,CHI,sub,,,,Aaron Gray,,Joakim Noah,,,,,,,,,,,,
+Aaron Gray,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,3:25,DAL,free throw,,,,,,,1,,2,Antoine Wright,,,foul,made,,,,
+Aaron Gray,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,3:25,DAL,free throw,,,,,,,2,,2,Antoine Wright,,,foul,made,,,,
+Aaron Gray,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,3:11,CHI,foul,,,,,,,,Jose Juan Barea,,Kirk Hinrich,,,,,,offensive,,
+Aaron Gray,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,3:11,CHI,turnover,,,,,,,,,,Kirk Hinrich,,,foul,,,,,
+Aaron Gray,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,3:11,DAL,timeout,,,,,,,,,,,,,,,,regular,,
+Aaron Gray,Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,3:11,CHI,sub,,,,Andres Nocioni,,Tyrus Thomas,,,,,,,,,,,,
+Aaron Gray,Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,2:56,DAL,shot,Jose Juan Barea,,,,,,,,,Erick Dampier,2,,,made,,slam dunk,25,6
+Aaron Gray,Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,2:36,DAL,foul,,,,,,,,Luol Deng,,Antoine Wright,,,,,,personal,,
+Aaron Gray,Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,2:36,CHI,free throw,,,,,,,1,,2,Luol Deng,,,foul,missed,,,,
+Aaron Gray,Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,2:36,CHI,rebound,,,,,,,,,,,,,,,,,,
+Aaron Gray,Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,2:36,CHI,free throw,,,,,,,2,,2,Luol Deng,,,foul,made,,,,
+Aaron Gray,Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,2:17,DAL,shot,Jason Kidd,,,,,,,,,Dirk Nowitzki,2,,,made,,jump,13,20
+Aaron Gray,Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,1:55,DAL,foul,,,,,,,,Andres Nocioni,,Jason Kidd,,,,,,shooting,,
+Aaron Gray,Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,3,1:55,CHI,free throw,,,,,,,1,,2,Andres Nocioni,,,foul,made,,,,
+Aaron Gray,Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jose Juan Barea,Matt Carroll,3,1:55,DAL,sub,,,,Matt Carroll,,Jason Kidd,,,,,,,,,,,,
+Aaron Gray,Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jose Juan Barea,Matt Carroll,3,1:55,CHI,free throw,,,,,,,2,,2,Andres Nocioni,,,foul,made,,,,
+Aaron Gray,Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jose Juan Barea,Matt Carroll,3,1:40,DAL,turnover,,,,,,,,,,Jose Juan Barea,,,bad pass,,Kirk Hinrich,,,
+Aaron Gray,Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jose Juan Barea,Matt Carroll,3,1:28,CHI,shot,,,,,,,,,,Luol Deng,,,,missed,,jump,11,19
+Aaron Gray,Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jose Juan Barea,Matt Carroll,3,1:27,DAL,rebound,,,,,,,,,,Dirk Nowitzki,,,,,,def,,
+Aaron Gray,Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jose Juan Barea,Matt Carroll,3,1:13,DAL,shot,,,,,,,,,,Dirk Nowitzki,,,,missed,,turnaround jump,35,16
+Aaron Gray,Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jose Juan Barea,Matt Carroll,3,1:11,CHI,rebound,,,,,,,,,,Kirk Hinrich,,,,,,def,,
+Aaron Gray,Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jose Juan Barea,Matt Carroll,3,1:05,CHI,shot,Kirk Hinrich,,,,,,,,,Derrick Rose,2,,,made,,driving layup,25,6
+Aaron Gray,Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jose Juan Barea,Matt Carroll,3,0:48,CHI,foul,,,,,,,,Dirk Nowitzki,,Andres Nocioni,,,,,,shooting,,
+Aaron Gray,Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Antoine Wright,Dirk Nowitzki,Erick Dampier,Jose Juan Barea,Matt Carroll,3,0:48,DAL,free throw,,,,,,,1,,2,Dirk Nowitzki,,,foul,made,,,,
+Aaron Gray,Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Devean George,Dirk Nowitzki,Erick Dampier,Jose Juan Barea,Matt Carroll,3,0:48,DAL,sub,,,,Devean George,,Antoine Wright,,,,,,,,,,,,
+Aaron Gray,Andres Nocioni,Ben Gordon,Kirk Hinrich,Luol Deng,Devean George,Dirk Nowitzki,Erick Dampier,Jose Juan Barea,Matt Carroll,3,0:48,CHI,sub,,,,Ben Gordon,,Derrick Rose,,,,,,,,,,,,
+Aaron Gray,Andres Nocioni,Ben Gordon,Kirk Hinrich,Luol Deng,Devean George,Dirk Nowitzki,Erick Dampier,Jose Juan Barea,Matt Carroll,3,0:48,DAL,free throw,,,,,,,2,,2,Dirk Nowitzki,,,foul,made,,,,
+Aaron Gray,Andres Nocioni,Ben Gordon,Kirk Hinrich,Luol Deng,Devean George,Dirk Nowitzki,Erick Dampier,Jose Juan Barea,Matt Carroll,3,0:38,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,jump,20,26
+Aaron Gray,Andres Nocioni,Ben Gordon,Kirk Hinrich,Luol Deng,Devean George,Dirk Nowitzki,Erick Dampier,Jose Juan Barea,Matt Carroll,3,0:36,DAL,rebound,,,,,,,,,,Dirk Nowitzki,,,,,,def,,
+Aaron Gray,Andres Nocioni,Ben Gordon,Kirk Hinrich,Luol Deng,Devean George,Dirk Nowitzki,Erick Dampier,Jose Juan Barea,Matt Carroll,3,0:30,DAL,shot,,,,,,,,,,Jose Juan Barea,2,,,made,,driving layup,25,6
+Aaron Gray,Andres Nocioni,Ben Gordon,Kirk Hinrich,Luol Deng,Devean George,Dirk Nowitzki,Erick Dampier,Jose Juan Barea,Matt Carroll,3,0:09,CHI,shot,,,,,,,,,,Kirk Hinrich,2,,,made,,finger roll layup,25,6
+Aaron Gray,Andres Nocioni,Ben Gordon,Kirk Hinrich,Luol Deng,Devean George,Dirk Nowitzki,Erick Dampier,Jose Juan Barea,Matt Carroll,3,0:03,DAL,shot,,,,,,,,,,Jose Juan Barea,3,,,made,,3pt,32,36
+Aaron Gray,Andres Nocioni,Ben Gordon,Kirk Hinrich,Luol Deng,Devean George,Dirk Nowitzki,Erick Dampier,Jose Juan Barea,Matt Carroll,3,0:02,CHI,turnover,,,,,,,,,,Aaron Gray,,,bad pass,,Jose Juan Barea,,,
+Aaron Gray,Andres Nocioni,Ben Gordon,Kirk Hinrich,Luol Deng,Devean George,Dirk Nowitzki,Erick Dampier,Jose Juan Barea,Matt Carroll,3,0:00,DAL,shot,,,,,,,,,,Jose Juan Barea,,,,missed,,3pt,40,29
+Aaron Gray,Andres Nocioni,Ben Gordon,Kirk Hinrich,Luol Deng,Devean George,Dirk Nowitzki,Erick Dampier,Jose Juan Barea,Matt Carroll,3,0:00,CHI,rebound,,,,,,,,,,Ben Gordon,,,,,,def,,
+Aaron Gray,Andres Nocioni,Ben Gordon,Kirk Hinrich,Luol Deng,Devean George,Dirk Nowitzki,Erick Dampier,Jose Juan Barea,Matt Carroll,4,11:41,DAL,foul,,,,,,,,Andres Nocioni,,Dirk Nowitzki,,,,,,offensive,,
+Aaron Gray,Andres Nocioni,Ben Gordon,Kirk Hinrich,Luol Deng,Devean George,Dirk Nowitzki,Erick Dampier,Jose Juan Barea,Matt Carroll,4,11:41,DAL,turnover,,,,,,,,,,Dirk Nowitzki,,,foul,,,,,
+Aaron Gray,Andres Nocioni,Ben Gordon,Kirk Hinrich,Luol Deng,Devean George,Dirk Nowitzki,Erick Dampier,Jose Juan Barea,Matt Carroll,4,11:29,CHI,shot,,,Dirk Nowitzki,,,,,,,Andres Nocioni,,,,missed,,driving layup,25,6
+Aaron Gray,Andres Nocioni,Ben Gordon,Kirk Hinrich,Luol Deng,Devean George,Dirk Nowitzki,Erick Dampier,Jose Juan Barea,Matt Carroll,4,11:28,DAL,rebound,,,,,,,,,,Matt Carroll,,,,,,def,,
+Aaron Gray,Andres Nocioni,Ben Gordon,Kirk Hinrich,Luol Deng,Devean George,Dirk Nowitzki,Erick Dampier,Jose Juan Barea,Matt Carroll,4,11:19,DAL,shot,,,,,,,,,,Dirk Nowitzki,,,,missed,,layup,25,6
+Aaron Gray,Andres Nocioni,Ben Gordon,Kirk Hinrich,Luol Deng,Devean George,Dirk Nowitzki,Erick Dampier,Jose Juan Barea,Matt Carroll,4,11:18,CHI,rebound,,,,,,,,,,Aaron Gray,,,,,,def,,
+Aaron Gray,Andres Nocioni,Ben Gordon,Kirk Hinrich,Luol Deng,Devean George,Dirk Nowitzki,Erick Dampier,Jose Juan Barea,Matt Carroll,4,11:11,CHI,shot,,,,,,,,,,Kirk Hinrich,,,,missed,,3pt,18,29
+Aaron Gray,Andres Nocioni,Ben Gordon,Kirk Hinrich,Luol Deng,Devean George,Dirk Nowitzki,Erick Dampier,Jose Juan Barea,Matt Carroll,4,11:09,DAL,rebound,,,,,,,,,,Devean George,,,,,,def,,
+Aaron Gray,Andres Nocioni,Ben Gordon,Kirk Hinrich,Luol Deng,Devean George,Dirk Nowitzki,Erick Dampier,Jose Juan Barea,Matt Carroll,4,10:52,DAL,shot,,,,,,,,,,Devean George,2,,,made,,jump,15,24
+Aaron Gray,Andres Nocioni,Ben Gordon,Kirk Hinrich,Luol Deng,Devean George,Dirk Nowitzki,Erick Dampier,Jose Juan Barea,Matt Carroll,4,10:46,CHI,shot,,,,,,,,,,Ben Gordon,3,,,made,,3pt,12,27
+Aaron Gray,Andres Nocioni,Ben Gordon,Kirk Hinrich,Luol Deng,Devean George,Dirk Nowitzki,Erick Dampier,Jose Juan Barea,Matt Carroll,4,10:30,DAL,shot,,,,,,,,,,Devean George,,,,missed,,floating jump,13,7
+Aaron Gray,Andres Nocioni,Ben Gordon,Kirk Hinrich,Luol Deng,Devean George,Dirk Nowitzki,Erick Dampier,Jose Juan Barea,Matt Carroll,4,10:28,CHI,rebound,,,,,,,,,,Andres Nocioni,,,,,,def,,
+Aaron Gray,Andres Nocioni,Ben Gordon,Kirk Hinrich,Luol Deng,Devean George,Dirk Nowitzki,Erick Dampier,Jose Juan Barea,Matt Carroll,4,10:22,CHI,shot,,,,,,,,,,Ben Gordon,2,,,made,,floating jump,11,8
+Aaron Gray,Andres Nocioni,Ben Gordon,Kirk Hinrich,Luol Deng,Devean George,Dirk Nowitzki,Erick Dampier,Jose Juan Barea,Matt Carroll,4,10:22,DAL,foul,,,,,,,,Ben Gordon,,Jose Juan Barea,,,,,,shooting,,
+Aaron Gray,Andres Nocioni,Ben Gordon,Kirk Hinrich,Luol Deng,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,4,10:22,DAL,sub,,,,Jason Kidd,,Matt Carroll,,,,,,,,,,,,
+Aaron Gray,Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,4,10:22,CHI,sub,,,,Thabo Sefolosha,,Luol Deng,,,,,,,,,,,,
+Aaron Gray,Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,4,10:22,CHI,free throw,,,,,,,1,,1,Ben Gordon,,,foul,made,,,,
+Aaron Gray,Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,4,10:07,DAL,shot,,,,,,,,,,Jose Juan Barea,,,,missed,,jump,20,17
+Aaron Gray,Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,4,10:05,CHI,rebound,,,,,,,,,,Thabo Sefolosha,,,,,,def,,
+Aaron Gray,Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Devean George,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,4,9:54,DAL,foul,,,,,,,,Ben Gordon,,Devean George,,,,,,personal,,
+Aaron Gray,Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,4,9:54,DAL,sub,,,,Josh Howard,,Devean George,,,,,,,,,,,,
+Aaron Gray,Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,9:54,DAL,sub,,,,Brandon Bass,,Erick Dampier,,,,,,,,,,,,
+Aaron Gray,Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,9:48,CHI,shot,Kirk Hinrich,,,,,,,,,Andres Nocioni,3,,,made,,3pt,36,27
+Aaron Gray,Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,9:41,DAL,timeout,,,,,,,,,,,,,,,,regular,,
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,9:41,CHI,sub,,,,Tyrus Thomas,,Aaron Gray,,,,,,,,,,,,
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,9:23,DAL,shot,,,Thabo Sefolosha,,,,,,,Brandon Bass,,,,missed,,layup,25,6
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,9:21,CHI,rebound,,,,,,,,,,Kirk Hinrich,,,,,,def,,
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,9:18,CHI,turnover,,,,,,,,,,Kirk Hinrich,,,bad pass,,Jose Juan Barea,,,
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,9:09,CHI,foul,,,,,,,,Brandon Bass,,Tyrus Thomas,,,,,,shooting,,
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,9:09,DAL,free throw,,,,,,,1,,2,Brandon Bass,,,foul,missed,,,,
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,9:09,DAL,rebound,,,,,,,,,,,,,,,,,,
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,9:09,DAL,sub,,,,James Singleton,,Dirk Nowitzki,,,,,,,,,,,,
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,9:09,DAL,free throw,,,,,,,2,,2,Brandon Bass,,,foul,made,,,,
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,8:48,CHI,shot,,,Brandon Bass,,,,,,,Kirk Hinrich,,,,missed,,floating jump,26,12
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,8:46,CHI,rebound,,,,,,,,,,Thabo Sefolosha,,,,,,off,,
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,8:44,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,3pt,35,35
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,8:42,DAL,rebound,,,,,,,,,,Josh Howard,,,,,,def,,
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,8:28,DAL,shot,Jose Juan Barea,,,,,,,,,Josh Howard,3,,,made,,3pt,33,29
+Andres Nocioni,Ben Gordon,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,8:08,DAL,foul,,,,,,,,Tyrus Thomas,,Brandon Bass,,,,,,shooting,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,8:08,CHI,sub,,,,Derrick Rose,,Kirk Hinrich,,,,,,,,,,,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,8:08,CHI,free throw,,,,,,,1,,2,Tyrus Thomas,,,foul,made,,,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,8:08,CHI,free throw,,,,,,,2,,2,Tyrus Thomas,,,foul,made,,,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,7:58,DAL,turnover,,,,,,,,,,Josh Howard,,,traveling,,,,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,7:42,CHI,shot,Tyrus Thomas,,,,,,,,,Andres Nocioni,2,,,made,,jump,16,22
+Andres Nocioni,Ben Gordon,Derrick Rose,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,7:27,DAL,turnover,,,,,,,,,,Josh Howard,,,lost ball,,Ben Gordon,,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,7:22,CHI,shot,,,Jason Kidd,,,,,,,Derrick Rose,,,,missed,,layup,25,6
+Andres Nocioni,Ben Gordon,Derrick Rose,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,7:22,CHI,rebound,,,,,,,,,,,,,,,,,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,7:22,DAL,sub,,,,Dirk Nowitzki,,James Singleton,,,,,,,,,,,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,7:18,CHI,shot,,,Jason Kidd,,,,,,,Ben Gordon,,,,missed,,jump,16,8
+Andres Nocioni,Ben Gordon,Derrick Rose,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,7:15,DAL,rebound,,,,,,,,,,Josh Howard,,,,,,def,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,7:14,DAL,shot,Jason Kidd,,,,,,,,,Josh Howard,2,,,made,,layup,25,6
+Andres Nocioni,Ben Gordon,Derrick Rose,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,7:14,CHI,foul,,,,,,,,Josh Howard,,Derrick Rose,,,,,,shooting,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,7:14,DAL,free throw,,,,,,,1,,1,Josh Howard,,,foul,made,,,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,7:01,CHI,shot,,,Jose Juan Barea,,,,,,,Derrick Rose,,,,missed,,jump,28,25
+Andres Nocioni,Ben Gordon,Derrick Rose,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,6:58,CHI,rebound,,,,,,,,,,Derrick Rose,,,,,,off,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,6:52,CHI,turnover,,,,,,,,,,Ben Gordon,,,out of bounds lost ball turnover,,,,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,6:43,DAL,shot,,,,,,,,,,Josh Howard,2,,,made,,floating jump,28,11
+Andres Nocioni,Ben Gordon,Derrick Rose,Thabo Sefolosha,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,6:43,CHI,timeout,,,,,,,,,,,,,,,,regular,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Thabo Sefolosha,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,6:43,DAL,sub,,,,James Singleton,,Brandon Bass,,,,,,,,,,,,
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Thabo Sefolosha,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,6:43,CHI,sub,,,,Kirk Hinrich,,Ben Gordon,,,,,,,,,,,,
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,6:43,CHI,sub,,,,Luol Deng,,Thabo Sefolosha,,,,,,,,,,,,
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,6:32,CHI,shot,,,Dirk Nowitzki,,,,,,,Derrick Rose,,,,missed,,driving layup,25,6
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,6:30,CHI,shot,,,,,,,,,,Tyrus Thomas,2,,,made,,putback slam dunk,25,6
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,6:30,CHI,rebound,,,,,,,,,,Tyrus Thomas,,,,,,off,,
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,6:11,DAL,shot,,,,,,,,,,Jose Juan Barea,2,,,made,,layup,25,6
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,5:51,CHI,shot,Derrick Rose,,,,,,,,,Tyrus Thomas,2,,,made,,jump,16,24
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,5:39,DAL,shot,,,,,,,,,,Jose Juan Barea,,,,missed,,running jump,18,13
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,5:35,CHI,rebound,,,,,,,,,,Luol Deng,,,,,,def,,
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,5:17,DAL,violation,,,,,,,,,,Josh Howard,,,,,,kicked ball,,
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,5:15,CHI,shot,,,,,,,,,,Derrick Rose,,,,missed,,3pt,2,8
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,5:13,DAL,rebound,,,,,,,,,,Jason Kidd,,,,,,def,,
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,5:00,DAL,shot,,,,,,,,,,Dirk Nowitzki,,,,missed,,turnaround jump,9,9
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,4:57,CHI,rebound,,,,,,,,,,Andres Nocioni,,,,,,def,,
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,4:45,CHI,shot,,,,,,,,,,Luol Deng,,,,missed,,jump,16,19
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,4:44,DAL,rebound,,,,,,,,,,Josh Howard,,,,,,def,,
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,4:34,CHI,foul,,,,,,,,Dirk Nowitzki,,Kirk Hinrich,,,,,,personal,,
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,4:23,DAL,shot,,,,,,,,,,Josh Howard,,,,missed,,jump,41,9
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,4:21,CHI,rebound,,,,,,,,,,Kirk Hinrich,,,,,,def,,
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,4:04,CHI,shot,,,,,,,,,,Kirk Hinrich,2,,,made,,jump,19,13
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,3:54,DAL,shot,,,,,,,,,,Jose Juan Barea,,,,missed,,driving layup,25,6
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,3:53,CHI,rebound,,,,,,,,,,Andres Nocioni,,,,,,def,,
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,3:39,CHI,shot,,,,,,,,,,Derrick Rose,2,,,made,,driving layup,25,6
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,3:38,DAL,timeout,,,,,,,,,,,,,,,,short,,
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,3:28,DAL,foul,,,,,,,,Andres Nocioni,,Jose Juan Barea,,,,,,offensive,,
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,3:28,DAL,turnover,,,,,,,,,,Jose Juan Barea,,,foul,,,,,
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,3:12,CHI,shot,,,,,,,,,,Tyrus Thomas,,,,missed,,jump,17,19
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,3:11,CHI,rebound,,,,,,,,,,Derrick Rose,,,,,,off,,
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,2:56,CHI,shot,,,,,,,,,,Tyrus Thomas,,,,missed,,jump,22,10
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,2:55,CHI,rebound,,,,,,,,,,,,,,,,,,
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,James Singleton,Jason Kidd,Jose Juan Barea,Josh Howard,4,2:55,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,2:55,DAL,sub,,,,Brandon Bass,,James Singleton,,,,,,,,,,,,
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,2:52,CHI,shot,,,,,,,,,,Tyrus Thomas,2,,,made,,dunk,25,6
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,2:35,DAL,turnover,,,,,,,,,,Dirk Nowitzki,,,lost ball,,Andres Nocioni,,,
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,2:17,CHI,shot,,,,,,,,,,Derrick Rose,,,,missed,,driving layup,25,6
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,2:16,DAL,rebound,,,,,,,,,,Jason Kidd,,,,,,def,,
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,2:06,CHI,foul,,,,,,,,Dirk Nowitzki,,Tyrus Thomas,,,,,,personal,,
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,1:52,DAL,shot,,,,,,,,,,Jose Juan Barea,,,,missed,,running jump,23,18
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,1:52,DAL,rebound,,,,,,,,,,,,,,,,,,
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,1:52,DAL,turnover,,,,,,,,,,,,,shot clock turnover,,,,,
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,1:33,CHI,shot,,,,,,,,,,Luol Deng,,,,missed,,running jump,26,10
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,1:30,DAL,rebound,,,,,,,,,,Dirk Nowitzki,,,,,,def,,
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,1:22,DAL,shot,,,,,,,,,,Jose Juan Barea,2,,,made,,driving layup,25,6
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,1:22,CHI,timeout,,,,,,,,,,,,,,,,regular,,
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,1:13,CHI,shot,,,,,,,,,,Derrick Rose,,,,missed,,jump,34,18
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,1:11,DAL,rebound,,,,,,,,,,Brandon Bass,,,,,,def,,
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,0:57,CHI,foul,,,,,,,,Dirk Nowitzki,,Andres Nocioni,,,,,,personal,,
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,0:57,DAL,free throw,,,,,,,1,,2,Dirk Nowitzki,,,foul,made,,,,
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,0:57,DAL,free throw,,,,,,,2,,2,Dirk Nowitzki,,,foul,made,,,,
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,0:57,CHI,timeout,,,,,,,,,,,,,,,,short,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,0:57,CHI,sub,,,,Ben Gordon,,Kirk Hinrich,,,,,,,,,,,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,0:44,CHI,shot,,,,,,,,,,Andres Nocioni,,,,missed,,driving layup,25,6
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,0:41,CHI,shot,,,,,,,,,,Tyrus Thomas,,,,missed,,layup,25,6
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,0:41,CHI,rebound,,,,,,,,,,Tyrus Thomas,,,,,,off,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,0:41,CHI,rebound,,,,,,,,,,Andres Nocioni,,,,,,off,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,0:26,DAL,violation,,,,,,,,,,Brandon Bass,,,,,,defensive goaltending,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,0:24,CHI,shot,,,,,,,,,,Derrick Rose,2,,,made,,running jump,32,19
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,0:24,DAL,timeout,,,,,,,,,,,,,,,,regular,,
+Andres Nocioni,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,0:24,CHI,sub,,,,Joakim Noah,,Ben Gordon,,,,,,,,,,,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,0:24,CHI,sub,,,,Kirk Hinrich,,Andres Nocioni,,,,,,,,,,,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,0:13,DAL,shot,Jose Juan Barea,,,,,,,,,Jason Kidd,3,,,made,,3pt,35,29
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,0:13,CHI,timeout,,,,,,,,,,,,,,,,short,,
+Andres Nocioni,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,0:13,CHI,sub,,,,Andres Nocioni,,Joakim Noah,,,,,,,,,,,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,0:13,CHI,sub,,,,Ben Gordon,,Kirk Hinrich,,,,,,,,,,,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,0:05,DAL,foul,,,,,,,,Derrick Rose,,Jason Kidd,,,,,,personal,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,0:00,CHI,shot,,,,,,,,,,Derrick Rose,,,,missed,,running jump,28,15
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Brandon Bass,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,4,0:00,CHI,rebound,,,,,,,,,,,,,,,,,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,5:00,OFF,jump ball,,Tyrus Thomas,,,Erick Dampier,,,,,,,Chicago,,,,,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,5:00,DAL,violation,,,,,,,,,,Erick Dampier,,,,,,jump ball,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,4:49,CHI,shot,Derrick Rose,,,,,,,,,Tyrus Thomas,2,,,made,,driving layup,25,6
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,4:33,DAL,shot,Erick Dampier,,,,,,,,,Dirk Nowitzki,2,,,made,,jump,14,21
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,4:19,CHI,shot,,,Erick Dampier,,,,,,,Derrick Rose,,,,missed,,driving layup,25,6
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,4:17,CHI,rebound,,,,,,,,,,Tyrus Thomas,,,,,,off,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,4:13,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,running jump,28,11
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,4:12,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,tip,25,6
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,4:12,CHI,rebound,,,,,,,,,,Ben Gordon,,,,,,off,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,4:11,DAL,rebound,,,,,,,,,,Jose Juan Barea,,,,,,def,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,3:53,DAL,shot,,,,,,,,,,Dirk Nowitzki,,,,missed,,turnaround fade away,24,16
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,3:51,CHI,rebound,,,,,,,,,,Tyrus Thomas,,,,,,def,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,3:47,CHI,shot,,,,,,,,,,Ben Gordon,,,,missed,,3pt,39,26
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,3:46,CHI,rebound,,,,,,,,,,Luol Deng,,,,,,off,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,3:46,DAL,foul,,,,,,,,Luol Deng,,Josh Howard,,,,,,loose ball,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,3:38,CHI,shot,,,Dirk Nowitzki,,,,,,,Andres Nocioni,,,,missed,,driving layup,25,6
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,3:38,CHI,rebound,,,,,,,,,,,,,,,,,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,3:32,CHI,foul,,,,,,,,Jason Kidd,,Ben Gordon,,,,,,offensive,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,3:32,CHI,turnover,,,,,,,,,,Ben Gordon,,,foul,,,,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,3:32,CHI,sub,,,,Joakim Noah,,Andres Nocioni,,,,,,,,,,,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,3:19,DAL,shot,Jason Kidd,,,,,,,,,Dirk Nowitzki,2,,,made,,fade away jumper,9,8
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,3:03,CHI,shot,,,,,,,,,,Derrick Rose,,,,missed,,jump,16,13
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,3:01,DAL,rebound,,,,,,,,,,Jason Kidd,,,,,,def,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,2:46,DAL,shot,Jason Kidd,,,,,,,,,Dirk Nowitzki,2,,,made,,jump,11,20
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,2:46,CHI,timeout,,,,,,,,,,,,,,,,regular,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,2:28,CHI,shot,,,,,,,,,,Ben Gordon,2,,,made,,jump,17,21
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,2:17,CHI,foul,,,,,,,,Dirk Nowitzki,,Joakim Noah,,,,,,personal,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,2:01,DAL,shot,Jose Juan Barea,,,,,,,,,Jason Kidd,2,,,made,,jump,19,28
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,1:50,CHI,turnover,,,,,,,,,,Ben Gordon,,,bad pass,,Dirk Nowitzki,,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,1:35,DAL,shot,,,,,,,,,,Dirk Nowitzki,,,,missed,,jump,9,7
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,1:34,DAL,rebound,,,,,,,,,,Erick Dampier,,,,,,off,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,1:34,CHI,foul,,,,,,,,Erick Dampier,,Joakim Noah,,,,,,loose ball,,
+Ben Gordon,Derrick Rose,Joakim Noah,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,1:34,DAL,timeout,,,,,,,,,,,,,,,,regular,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,1:34,CHI,sub,,,,Kirk Hinrich,,Ben Gordon,,,,,,,,,,,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,1:20,DAL,shot,Jose Juan Barea,,,,,,,,,Josh Howard,2,,,made,,jump,5,9
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,1:02,DAL,foul,,,,,,,,Tyrus Thomas,,Dirk Nowitzki,,,,,,shooting,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,1:02,CHI,free throw,,,,,,,1,,2,Tyrus Thomas,,,foul,made,,,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,1:02,CHI,free throw,,,,,,,2,,2,Tyrus Thomas,,,foul,made,,,,
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,0:43,DAL,shot,,,,,,,,,,Dirk Nowitzki,2,,,made,,turnaround jump,33,16
+Derrick Rose,Joakim Noah,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,0:43,CHI,timeout,,,,,,,,,,,,,,,,regular,,
+Ben Gordon,Derrick Rose,Kirk Hinrich,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,0:43,CHI,sub,,,,Ben Gordon,,Joakim Noah,,,,,,,,,,,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,0:43,CHI,sub,,,,Andres Nocioni,,Kirk Hinrich,,,,,,,,,,,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,0:40,DAL,foul,,,,,,,,Ben Gordon,,Jose Juan Barea,,,,,,personal,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,0:40,CHI,free throw,,,,,,,1,,2,Ben Gordon,,,foul,made,,,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,0:40,CHI,free throw,,,,,,,2,,2,Ben Gordon,,,foul,made,,,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,0:22,DAL,shot,,,,,,,,,,Dirk Nowitzki,2,,,made,,turnaround fade away,39,9
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,0:22,CHI,timeout,,,,,,,,,,,,,,,,short,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,0:16,CHI,shot,Derrick Rose,,,,,,,,,Andres Nocioni,3,,,made,,3pt,13,28
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,0:15,CHI,foul,,,,,,,,Dirk Nowitzki,,Andres Nocioni,,,,,,personal,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Dirk Nowitzki,Erick Dampier,Jason Kidd,Jose Juan Barea,Josh Howard,5,0:15,DAL,free throw,,,,,,,1,,2,Dirk Nowitzki,,,foul,made,,,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Devean George,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,5,0:15,DAL,sub,,,,Devean George,,Erick Dampier,,,,,,,,,,,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Devean George,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,5,0:15,DAL,free throw,,,,,,,2,,2,Dirk Nowitzki,,,foul,made,,,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Devean George,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,5,0:03,CHI,shot,,,,,,,,,,Tyrus Thomas,3,,,made,,3pt,14,28
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Devean George,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,5,0:02,CHI,foul,,,,,,,,Dirk Nowitzki,,Derrick Rose,,,,,,personal,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Devean George,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,5,0:02,DAL,free throw,,,,,,,1,,2,Dirk Nowitzki,,,foul,made,,,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Devean George,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,5,0:02,DAL,free throw,,,,,,,2,,2,Dirk Nowitzki,,,foul,made,,,,
+Andres Nocioni,Ben Gordon,Derrick Rose,Luol Deng,Tyrus Thomas,Devean George,Dirk Nowitzki,Jason Kidd,Jose Juan Barea,Josh Howard,5,0:00,CHI,shot,Tyrus Thomas,,,,,,,,,Ben Gordon,3,,,made,,3pt,2,5

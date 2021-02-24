@@ -1,0 +1,504 @@
+a1,a2,a3,a4,a5,h1,h2,h3,h4,h5,period,time,team,etype,assist,away,block,entered,home,left,num,opponent,outof,player,points,possession,reason,result,steal,type,x,y
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,12:00,OFF,jump ball,,Pau Gasol,,,Chris Wilcox,,,,,,,Nick Collison,,,,,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,11:42,MEM,foul,,,,,,,,Rashard Lewis,,Rudy Gay,,,,,,shooting,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,11:42,SEA,free throw,,,,,,,1,,2,Rashard Lewis,,,foul,made,,,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,11:42,SEA,free throw,,,,,,,2,,2,Rashard Lewis,,,foul,missed,,,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,11:40,MEM,rebound,,,,,,,,,,Stromile Swift,,,,,,def,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,11:26,MEM,shot,Damon Stoudamire,,,,,,,,,Mike Miller,3,,,made,,3pt,40,27
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,11:12,SEA,shot,,,,,,,,,,Chris Wilcox,,,,missed,,hook,23,14
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,11:10,MEM,rebound,,,,,,,,,,Stromile Swift,,,,,,def,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,11:01,MEM,shot,Damon Stoudamire,,,,,,,,,Rudy Gay,2,,,made,,jump,9,9
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,10:49,SEA,shot,,,,,,,,,,Rashard Lewis,,,,missed,,jump,21,12
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,10:47,SEA,rebound,,,,,,,,,,Rashard Lewis,,,,,,off,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,10:46,SEA,shot,,,,,,,,,,Rashard Lewis,2,,,made,,layup,25,6
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,10:36,MEM,turnover,,,,,,,,,,Stromile Swift,,,lost ball,,Luke Ridnour,,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,10:32,SEA,shot,,,,,,,,,,Luke Ridnour,2,,,made,,running layup,23,10
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,10:32,MEM,foul,,,,,,,,Luke Ridnour,,Damon Stoudamire,,,,,,shooting,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,10:32,SEA,free throw,,,,,,,1,,1,Luke Ridnour,,,foul,missed,,,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,10:29,MEM,rebound,,,,,,,,,,Stromile Swift,,,,,,def,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,10:17,MEM,shot,Damon Stoudamire,,,,,,,,,Rudy Gay,2,,,made,,jump,11,10
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,10:04,SEA,shot,,,,,,,,,,Ray Allen,,,,missed,,reverse layup,25,6
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,10:00,MEM,rebound,,,,,,,,,,Pau Gasol,,,,,,def,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,9:59,MEM,shot,Damon Stoudamire,,,,,,,,,Mike Miller,2,,,made,,driving dunk,25,6
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,9:54,SEA,timeout,,,,,,,,,,,,,,,,short,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,9:38,SEA,shot,,,,,,,,,,Ray Allen,,,,missed,,layup,25,6
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,9:36,SEA,rebound,,,,,,,,,,Ray Allen,,,,,,off,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,9:34,MEM,foul,,,,,,,,Chris Wilcox,,Stromile Swift,,,,,,shooting,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,9:34,SEA,free throw,,,,,,,1,,2,Chris Wilcox,,,foul,made,,,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,9:34,SEA,free throw,,,,,,,2,,2,Chris Wilcox,,,foul,made,,,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,9:15,MEM,shot,,,,,,,,,,Rudy Gay,,,,missed,,3pt,42,24
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,9:13,SEA,rebound,,,,,,,,,,Chris Wilcox,,,,,,def,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,9:07,SEA,shot,,,,,,,,,,Ray Allen,,,,missed,,jump,37,20
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,9:05,MEM,rebound,,,,,,,,,,Rudy Gay,,,,,,def,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,9:00,MEM,shot,Rudy Gay,,,,,,,,,Mike Miller,2,,,made,,slam dunk,25,6
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,8:44,MEM,foul,,,,,,,,Rashard Lewis,,Rudy Gay,,,,,,personal,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Stromile Swift,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,8:44,MEM,sub,,,,Tarence Kinsey,,Rudy Gay,,,,,,,,,,,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Stromile Swift,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,8:37,MEM,foul,,,,,,,,Chris Wilcox,,Stromile Swift,,,,,,personal,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Stromile Swift,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,8:37,SEA,free throw,,,,,,,1,,2,Chris Wilcox,,,foul,missed,,,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Stromile Swift,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,8:37,SEA,rebound,,,,,,,,,,,,,,,,,,
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,8:37,MEM,sub,,,,Hakim Warrick,,Stromile Swift,,,,,,,,,,,,
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,8:37,SEA,free throw,,,,,,,2,,2,Chris Wilcox,,,foul,made,,,,
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,8:28,MEM,shot,,,Nick Collison,,,,,,,Tarence Kinsey,,,,missed,,jump,22,7
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,8:28,MEM,rebound,,,,,,,,,,,,,,,,,,
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,8:25,MEM,shot,,,,,,,,,,Mike Miller,,,,missed,,jump,40,21
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,8:23,SEA,rebound,,,,,,,,,,Nick Collison,,,,,,def,,
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,8:19,SEA,turnover,,,,,,,,,,Rashard Lewis,,,traveling,,,,,
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,8:03,SEA,foul,,,,,,,,,,Chris Wilcox,,,,,,defense 3 second,,
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,8:03,MEM,free throw,,,,,,,1,,1,Damon Stoudamire,,,technical,made,,,,
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,7:50,MEM,shot,,,,,,,,,,Hakim Warrick,,,,missed,,jump,34,11
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,7:46,SEA,rebound,,,,,,,,,,Chris Wilcox,,,,,,def,,
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,7:34,SEA,shot,,,,,,,,,,Ray Allen,,,,missed,,layup,25,6
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,7:33,MEM,rebound,,,,,,,,,,Pau Gasol,,,,,,def,,
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,7:20,MEM,shot,Mike Miller,,,,,,,,,Damon Stoudamire,3,,,made,,3pt,12,30
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,7:08,SEA,shot,Luke Ridnour,,,,,,,,,Rashard Lewis,2,,,made,,slam dunk,25,6
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,6:57,MEM,turnover,,,,,,,,,,Damon Stoudamire,,,bad pass,,Luke Ridnour,,,
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,6:53,MEM,foul,,,,,,,,Rashard Lewis,,Pau Gasol,,,,,,shooting,,
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,6:53,SEA,free throw,,,,,,,1,,2,Rashard Lewis,,,foul,made,,,,
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,6:53,SEA,free throw,,,,,,,2,,2,Rashard Lewis,,,foul,made,,,,
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,6:44,MEM,shot,,,,,,,,,,Tarence Kinsey,,,,missed,,jump,14,11
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,6:42,SEA,rebound,,,,,,,,,,Chris Wilcox,,,,,,def,,
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,6:37,SEA,shot,Ray Allen,,,,,,,,,Luke Ridnour,2,,,made,,jump,13,11
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,6:13,MEM,turnover,,,,,,,,,,Hakim Warrick,,,lost ball,,Nick Collison,,,
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,6:07,SEA,shot,,,,,,,,,,Chris Wilcox,,,,missed,,layup,25,6
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,6:07,SEA,rebound,,,,,,,,,,,,,,,,,,
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,6:07,SEA,shot,,,,,,,,,,Chris Wilcox,2,,,made,,slam dunk,25,6
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,6:07,MEM,foul,,,,,,,,Chris Wilcox,,Hakim Warrick,,,,,,shooting,,
+Chucky Atkins,Hakim Warrick,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,6:07,MEM,sub,,,,Chucky Atkins,,Damon Stoudamire,,,,,,,,,,,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,6:07,MEM,sub,,,,Lawrence Roberts,,Hakim Warrick,,,,,,,,,,,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,6:07,SEA,free throw,,,,,,,1,,1,Chris Wilcox,,,foul,made,,,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,5:57,SEA,foul,,,,,,,,Pau Gasol,,Chris Wilcox,,,,,,shooting,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,5:57,SEA,timeout,,,,,,,,,,,,,,,,regular,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,5:57,MEM,free throw,,,,,,,1,,2,Pau Gasol,,,foul,made,,,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,5:57,MEM,free throw,,,,,,,2,,2,Pau Gasol,,,foul,made,,,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,5:45,SEA,shot,,,,,,,,,,Ray Allen,2,,,made,,jump,25,21
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,5:34,MEM,shot,Chucky Atkins,,,,,,,,,Pau Gasol,2,,,made,,jump,18,18
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,5:21,SEA,shot,,,,,,,,,,Rashard Lewis,2,,,made,,turnaround jump,34,10
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,4:56,MEM,shot,,,,,,,,,,Chucky Atkins,,,,missed,,3pt,44,24
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,4:53,SEA,rebound,,,,,,,,,,Chris Wilcox,,,,,,def,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,4:39,SEA,shot,,,,,,,,,,Rashard Lewis,,,,missed,,jump,26,14
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,4:37,MEM,rebound,,,,,,,,,,Pau Gasol,,,,,,def,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,4:28,MEM,shot,,,,,,,,,,Pau Gasol,,,,missed,,jump,25,22
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,4:27,SEA,rebound,,,,,,,,,,Chris Wilcox,,,,,,def,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,4:17,SEA,shot,Luke Ridnour,,,,,,,,,Ray Allen,3,,,made,,3pt,35,29
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,1,3:52,MEM,turnover,,,,,,,,,,Chucky Atkins,,,traveling,,,,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Damien Wilkins,Luke Ridnour,Nick Collison,Ray Allen,1,3:52,SEA,sub,,,,Damien Wilkins,,Rashard Lewis,,,,,,,,,,,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Damien Wilkins,Luke Ridnour,Nick Collison,Ray Allen,1,3:34,SEA,shot,,,,,,,,,,Ray Allen,,,,missed,,reverse layup,25,6
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Damien Wilkins,Luke Ridnour,Nick Collison,Ray Allen,1,3:31,SEA,shot,,,,,,,,,,Nick Collison,2,,,made,,tip,25,6
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Damien Wilkins,Luke Ridnour,Nick Collison,Ray Allen,1,3:31,SEA,rebound,,,,,,,,,,Nick Collison,,,,,,off,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Damien Wilkins,Luke Ridnour,Nick Collison,Ray Allen,1,3:14,MEM,turnover,,,,,,,,,,Pau Gasol,,,bad pass,,Ray Allen,,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Damien Wilkins,Luke Ridnour,Nick Collison,Ray Allen,1,3:10,SEA,turnover,,,,,,,,,,Ray Allen,,,bad pass,,,,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Damien Wilkins,Luke Ridnour,Nick Collison,Ray Allen,1,2:54,MEM,shot,,,,,,,,,,Pau Gasol,,,,missed,,jump,18,8
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Damien Wilkins,Luke Ridnour,Nick Collison,Ray Allen,1,2:52,MEM,rebound,,,,,,,,,,Lawrence Roberts,,,,,,off,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Damien Wilkins,Luke Ridnour,Nick Collison,Ray Allen,1,2:50,MEM,shot,,,,,,,,,,Lawrence Roberts,,,,missed,,layup,25,6
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Damien Wilkins,Luke Ridnour,Nick Collison,Ray Allen,1,2:49,SEA,rebound,,,,,,,,,,Chris Wilcox,,,,,,def,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Damien Wilkins,Luke Ridnour,Nick Collison,Ray Allen,1,2:44,SEA,turnover,,,,,,,,,,Luke Ridnour,,,palming turnover,,,,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Damien Wilkins,Luke Ridnour,Nick Collison,Ray Allen,1,2:44,MEM,timeout,,,,,,,,,,,,,,,,regular,,
+Alexander Johnson,Chucky Atkins,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Damien Wilkins,Luke Ridnour,Nick Collison,Ray Allen,1,2:44,MEM,sub,,,,Alexander Johnson,,Lawrence Roberts,,,,,,,,,,,,
+Alexander Johnson,Chucky Atkins,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Damien Wilkins,Earl Watson,Nick Collison,Ray Allen,1,2:44,SEA,sub,,,,Earl Watson,,Luke Ridnour,,,,,,,,,,,,
+Alexander Johnson,Chucky Atkins,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Damien Wilkins,Earl Watson,Nick Collison,Ray Allen,1,2:29,MEM,shot,Chucky Atkins,,,,,,,,,Alexander Johnson,2,,,made,,jump,23,19
+Alexander Johnson,Chucky Atkins,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Damien Wilkins,Earl Watson,Nick Collison,Ray Allen,1,2:13,SEA,shot,Earl Watson,,,,,,,,,Ray Allen,2,,,made,,alley oop layup shot,25,6
+Alexander Johnson,Chucky Atkins,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Damien Wilkins,Earl Watson,Nick Collison,Ray Allen,1,1:58,MEM,shot,,,,,,,,,,Mike Miller,,,,missed,,3pt,25,32
+Alexander Johnson,Chucky Atkins,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Damien Wilkins,Earl Watson,Nick Collison,Ray Allen,1,1:56,SEA,rebound,,,,,,,,,,Ray Allen,,,,,,def,,
+Alexander Johnson,Chucky Atkins,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Damien Wilkins,Earl Watson,Nick Collison,Ray Allen,1,1:38,SEA,shot,,,,,,,,,,Damien Wilkins,,,,missed,,jump,19,9
+Alexander Johnson,Chucky Atkins,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Damien Wilkins,Earl Watson,Nick Collison,Ray Allen,1,1:37,MEM,rebound,,,,,,,,,,Pau Gasol,,,,,,def,,
+Alexander Johnson,Chucky Atkins,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Damien Wilkins,Earl Watson,Nick Collison,Ray Allen,1,1:28,SEA,foul,,,,,,,,Alexander Johnson,,Earl Watson,,,,,,shooting,,
+Alexander Johnson,Chucky Atkins,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,1,1:28,SEA,sub,,,,Johan Petro,,Nick Collison,,,,,,,,,,,,
+Alexander Johnson,Chucky Atkins,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,1,1:28,MEM,free throw,,,,,,,1,,2,Alexander Johnson,,,foul,missed,,,,
+Alexander Johnson,Chucky Atkins,Mike Miller,Pau Gasol,Tarence Kinsey,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,1,1:28,MEM,rebound,,,,,,,,,,,,,,,,,,
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Tarence Kinsey,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,1,1:28,MEM,sub,,,,Hakim Warrick,,Pau Gasol,,,,,,,,,,,,
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Tarence Kinsey,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,1,1:28,MEM,free throw,,,,,,,2,,2,Alexander Johnson,,,foul,made,,,,
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Tarence Kinsey,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,1,1:19,SEA,shot,Earl Watson,,,,,,,,,Ray Allen,2,,,made,,driving layup,25,6
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Tarence Kinsey,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,1,1:07,SEA,foul,,,,,,,,Hakim Warrick,,Chris Wilcox,,,,,,shooting,,
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Tarence Kinsey,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,1,1:07,MEM,free throw,,,,,,,1,,2,Hakim Warrick,,,foul,made,,,,
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Tarence Kinsey,Andre Brown,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,1,1:07,SEA,sub,,,,Andre Brown,,Chris Wilcox,,,,,,,,,,,,
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Tarence Kinsey,Andre Brown,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,1,1:07,MEM,free throw,,,,,,,2,,2,Hakim Warrick,,,foul,made,,,,
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Tarence Kinsey,Andre Brown,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,1,0:52,SEA,turnover,,,,,,,,,,Andre Brown,,,poss lost ball turnover,,,,,
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Tarence Kinsey,Andre Brown,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,1,0:36,MEM,shot,,,,,,,,,,Chucky Atkins,,,,missed,,running layup,25,6
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Tarence Kinsey,Andre Brown,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,1,0:36,SEA,rebound,,,,,,,,,,,,,,,,,,
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Tarence Kinsey,Andre Brown,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,1,0:14,SEA,shot,,,,,,,,,,Earl Watson,2,,,made,,jump,16,17
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Tarence Kinsey,Andre Brown,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,1,0:00,MEM,shot,,,,,,,,,,Tarence Kinsey,,,,missed,,jump,11,10
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Tarence Kinsey,Andre Brown,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,1,0:00,MEM,rebound,,,,,,,,,,,,,,,,,,
+Dahntay Jones,Damon Stoudamire,Pau Gasol,Rudy Gay,Stromile Swift,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,2,11:38,MEM,shot,Damon Stoudamire,,,,,,,,,Rudy Gay,3,,,made,,3pt,2,12
+Dahntay Jones,Damon Stoudamire,Pau Gasol,Rudy Gay,Stromile Swift,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,2,11:19,SEA,shot,,,,,,,,,,Earl Watson,,,,missed,,jump,20,23
+Dahntay Jones,Damon Stoudamire,Pau Gasol,Rudy Gay,Stromile Swift,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,2,11:17,MEM,rebound,,,,,,,,,,Damon Stoudamire,,,,,,def,,
+Dahntay Jones,Damon Stoudamire,Pau Gasol,Rudy Gay,Stromile Swift,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,2,11:10,MEM,shot,Damon Stoudamire,,,,,,,,,Stromile Swift,2,,,made,,slam dunk,25,6
+Dahntay Jones,Damon Stoudamire,Pau Gasol,Rudy Gay,Stromile Swift,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,2,10:58,SEA,shot,Earl Watson,,,,,,,,,Damien Wilkins,2,,,made,,jump,5,17
+Dahntay Jones,Damon Stoudamire,Pau Gasol,Rudy Gay,Stromile Swift,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,2,10:41,MEM,shot,,,,,,,,,,Damon Stoudamire,,,,missed,,jump,30,24
+Dahntay Jones,Damon Stoudamire,Pau Gasol,Rudy Gay,Stromile Swift,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,2,10:39,SEA,rebound,,,,,,,,,,Nick Collison,,,,,,def,,
+Dahntay Jones,Damon Stoudamire,Pau Gasol,Rudy Gay,Stromile Swift,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,2,10:34,SEA,shot,,,,,,,,,,Rashard Lewis,,,,missed,,jump,33,5
+Dahntay Jones,Damon Stoudamire,Pau Gasol,Rudy Gay,Stromile Swift,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,2,10:32,MEM,rebound,,,,,,,,,,Rudy Gay,,,,,,def,,
+Dahntay Jones,Damon Stoudamire,Pau Gasol,Rudy Gay,Stromile Swift,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,2,10:28,MEM,shot,,,,,,,,,,Dahntay Jones,,,,missed,,jump,16,10
+Dahntay Jones,Damon Stoudamire,Pau Gasol,Rudy Gay,Stromile Swift,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,2,10:25,SEA,rebound,,,,,,,,,,Damien Wilkins,,,,,,def,,
+Dahntay Jones,Damon Stoudamire,Pau Gasol,Rudy Gay,Stromile Swift,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,2,10:19,SEA,shot,,,,,,,,,,Damien Wilkins,,,,missed,,jump,39,4
+Dahntay Jones,Damon Stoudamire,Pau Gasol,Rudy Gay,Stromile Swift,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,2,10:17,MEM,rebound,,,,,,,,,,Stromile Swift,,,,,,def,,
+Dahntay Jones,Damon Stoudamire,Pau Gasol,Rudy Gay,Stromile Swift,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,2,10:05,MEM,shot,Dahntay Jones,,,,,,,,,Pau Gasol,2,,,made,,jump,33,11
+Dahntay Jones,Damon Stoudamire,Pau Gasol,Rudy Gay,Stromile Swift,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,2,9:40,SEA,shot,,,,,,,,,,Damien Wilkins,,,,missed,,layup,25,6
+Dahntay Jones,Damon Stoudamire,Pau Gasol,Rudy Gay,Stromile Swift,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,2,9:37,MEM,rebound,,,,,,,,,,Damon Stoudamire,,,,,,def,,
+Dahntay Jones,Damon Stoudamire,Pau Gasol,Rudy Gay,Stromile Swift,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,2,9:31,MEM,shot,,,,,,,,,,Rudy Gay,,,,missed,,jump,26,10
+Dahntay Jones,Damon Stoudamire,Pau Gasol,Rudy Gay,Stromile Swift,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,2,9:29,SEA,rebound,,,,,,,,,,Nick Collison,,,,,,def,,
+Dahntay Jones,Damon Stoudamire,Pau Gasol,Rudy Gay,Stromile Swift,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,2,9:16,SEA,shot,,,Pau Gasol,,,,,,,Earl Watson,,,,missed,,layup,25,6
+Dahntay Jones,Damon Stoudamire,Pau Gasol,Rudy Gay,Stromile Swift,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,2,9:13,MEM,rebound,,,,,,,,,,Pau Gasol,,,,,,def,,
+Dahntay Jones,Damon Stoudamire,Pau Gasol,Rudy Gay,Stromile Swift,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,2,9:10,MEM,shot,Damon Stoudamire,,,,,,,,,Dahntay Jones,2,,,made,,driving dunk,25,6
+Dahntay Jones,Damon Stoudamire,Pau Gasol,Rudy Gay,Stromile Swift,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,2,8:46,SEA,shot,,,,,,,,,,Rashard Lewis,,,,missed,,3pt,41,27
+Dahntay Jones,Damon Stoudamire,Pau Gasol,Rudy Gay,Stromile Swift,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,2,8:44,MEM,rebound,,,,,,,,,,Stromile Swift,,,,,,def,,
+Dahntay Jones,Damon Stoudamire,Pau Gasol,Rudy Gay,Stromile Swift,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,2,8:40,SEA,foul,,,,,,,,Dahntay Jones,,Johan Petro,,,,,,shooting,,
+Dahntay Jones,Damon Stoudamire,Pau Gasol,Rudy Gay,Stromile Swift,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,2,8:40,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Dahntay Jones,Damon Stoudamire,Pau Gasol,Rudy Gay,Stromile Swift,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,Ray Allen,2,8:40,SEA,sub,,,,Ray Allen,,Damien Wilkins,,,,,,,,,,,,
+Dahntay Jones,Damon Stoudamire,Pau Gasol,Rudy Gay,Stromile Swift,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,Ray Allen,2,8:40,MEM,free throw,,,,,,,1,,2,Dahntay Jones,,,foul,made,,,,
+Dahntay Jones,Damon Stoudamire,Pau Gasol,Rudy Gay,Stromile Swift,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,Ray Allen,2,8:40,MEM,free throw,,,,,,,2,,2,Dahntay Jones,,,foul,made,,,,
+Dahntay Jones,Damon Stoudamire,Pau Gasol,Rudy Gay,Stromile Swift,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,Ray Allen,2,8:23,SEA,turnover,,,,,,,,,,Rashard Lewis,,,bad pass,,Pau Gasol,,,
+Dahntay Jones,Damon Stoudamire,Pau Gasol,Rudy Gay,Stromile Swift,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,Ray Allen,2,8:14,MEM,turnover,,,,,,,,,,Stromile Swift,,,lost ball,,Earl Watson,,,
+Dahntay Jones,Damon Stoudamire,Pau Gasol,Rudy Gay,Stromile Swift,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,Ray Allen,2,8:08,SEA,shot,,,,,,,,,,Earl Watson,2,,,made,,driving layup,25,6
+Dahntay Jones,Damon Stoudamire,Pau Gasol,Rudy Gay,Stromile Swift,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,Ray Allen,2,7:55,MEM,shot,,,,,,,,,,Pau Gasol,,,,missed,,alley oop dunk,25,6
+Dahntay Jones,Damon Stoudamire,Pau Gasol,Rudy Gay,Stromile Swift,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,Ray Allen,2,7:51,SEA,rebound,,,,,,,,,,Ray Allen,,,,,,def,,
+Dahntay Jones,Damon Stoudamire,Pau Gasol,Rudy Gay,Stromile Swift,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,Ray Allen,2,7:48,SEA,shot,Ray Allen,,,,,,,,,Johan Petro,2,,,made,,alley oop dunk,25,6
+Dahntay Jones,Damon Stoudamire,Pau Gasol,Rudy Gay,Stromile Swift,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,Ray Allen,2,7:31,SEA,foul,,,,,,,,Pau Gasol,,Nick Collison,,,,,,shooting,,
+Dahntay Jones,Damon Stoudamire,Pau Gasol,Rudy Gay,Stromile Swift,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,Ray Allen,2,7:31,MEM,free throw,,,,,,,1,,2,Pau Gasol,,,foul,made,,,,
+Dahntay Jones,Damon Stoudamire,Mike Miller,Pau Gasol,Stromile Swift,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,Ray Allen,2,7:31,MEM,sub,,,,Mike Miller,,Rudy Gay,,,,,,,,,,,,
+Dahntay Jones,Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,Ray Allen,2,7:31,MEM,sub,,,,Hakim Warrick,,Stromile Swift,,,,,,,,,,,,
+Dahntay Jones,Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,Ray Allen,2,7:31,MEM,free throw,,,,,,,2,,2,Pau Gasol,,,foul,made,,,,
+Dahntay Jones,Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,Ray Allen,2,7:19,SEA,shot,Earl Watson,,,,,,,,,Rashard Lewis,3,,,made,,3pt,43,24
+Dahntay Jones,Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,Ray Allen,2,7:07,MEM,shot,,,,,,,,,,Mike Miller,2,,,made,,driving layup,25,6
+Dahntay Jones,Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,Ray Allen,2,7:01,SEA,shot,,,,,,,,,,Rashard Lewis,,,,missed,,alley oop layup shot,25,6
+Dahntay Jones,Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,Ray Allen,2,6:56,MEM,rebound,,,,,,,,,,Hakim Warrick,,,,,,def,,
+Dahntay Jones,Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,Ray Allen,2,6:49,SEA,foul,,,,,,,,Dahntay Jones,,Earl Watson,,,,,,shooting,,
+Dahntay Jones,Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,Ray Allen,2,6:49,MEM,free throw,,,,,,,1,,2,Dahntay Jones,,,foul,missed,,,,
+Dahntay Jones,Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,Ray Allen,2,6:49,MEM,rebound,,,,,,,,,,,,,,,,,,
+Dahntay Jones,Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Johan Petro,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,6:49,SEA,sub,,,,Luke Ridnour,,Earl Watson,,,,,,,,,,,,
+Dahntay Jones,Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Johan Petro,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,6:49,MEM,free throw,,,,,,,2,,2,Dahntay Jones,,,foul,made,,,,
+Dahntay Jones,Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Johan Petro,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,6:29,SEA,shot,Luke Ridnour,,,,,,,,,Rashard Lewis,3,,,made,,3pt,25,32
+Dahntay Jones,Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Johan Petro,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,6:15,MEM,shot,Pau Gasol,,,,,,,,,Hakim Warrick,2,,,made,,layup,25,6
+Dahntay Jones,Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Johan Petro,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,6:05,MEM,foul,,,,,,,,Nick Collison,,Dahntay Jones,,,,,,shooting,,
+Damon Stoudamire,Hakim Warrick,Junior Harrington,Mike Miller,Pau Gasol,Johan Petro,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,6:05,MEM,sub,,,,Junior Harrington,,Dahntay Jones,,,,,,,,,,,,
+Damon Stoudamire,Hakim Warrick,Junior Harrington,Mike Miller,Pau Gasol,Johan Petro,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,6:05,SEA,free throw,,,,,,,1,,2,Nick Collison,,,foul,made,,,,
+Damon Stoudamire,Hakim Warrick,Junior Harrington,Mike Miller,Pau Gasol,Johan Petro,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,6:05,SEA,free throw,,,,,,,2,,2,Nick Collison,,,foul,made,,,,
+Damon Stoudamire,Hakim Warrick,Junior Harrington,Mike Miller,Pau Gasol,Johan Petro,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,5:55,MEM,shot,Damon Stoudamire,,,,,,,,,Mike Miller,2,,,made,,jump,29,29
+Damon Stoudamire,Hakim Warrick,Junior Harrington,Mike Miller,Pau Gasol,Johan Petro,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,5:46,SEA,shot,Luke Ridnour,,,,,,,,,Ray Allen,3,,,made,,3pt,4,21
+Damon Stoudamire,Hakim Warrick,Junior Harrington,Mike Miller,Pau Gasol,Johan Petro,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,5:38,MEM,shot,,,,,,,,,,Mike Miller,,,,missed,,3pt,10,27
+Damon Stoudamire,Hakim Warrick,Junior Harrington,Mike Miller,Pau Gasol,Johan Petro,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,5:37,SEA,rebound,,,,,,,,,,Nick Collison,,,,,,def,,
+Damon Stoudamire,Hakim Warrick,Junior Harrington,Mike Miller,Pau Gasol,Johan Petro,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,5:32,SEA,shot,,,,,,,,,,Luke Ridnour,2,,,made,,running jump,27,10
+Damon Stoudamire,Hakim Warrick,Junior Harrington,Mike Miller,Pau Gasol,Johan Petro,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,5:32,MEM,foul,,,,,,,,Luke Ridnour,,Junior Harrington,,,,,,shooting,,
+Damon Stoudamire,Hakim Warrick,Junior Harrington,Mike Miller,Pau Gasol,Johan Petro,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,5:32,SEA,timeout,,,,,,,,,,,,,,,,regular,,
+Damon Stoudamire,Hakim Warrick,Junior Harrington,Mike Miller,Pau Gasol,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,5:32,SEA,sub,,,,Chris Wilcox,,Johan Petro,,,,,,,,,,,,
+Damon Stoudamire,Hakim Warrick,Junior Harrington,Mike Miller,Pau Gasol,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,5:32,SEA,free throw,,,,,,,1,,1,Luke Ridnour,,,foul,missed,,,,
+Damon Stoudamire,Hakim Warrick,Junior Harrington,Mike Miller,Pau Gasol,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,5:29,MEM,rebound,,,,,,,,,,Hakim Warrick,,,,,,def,,
+Damon Stoudamire,Hakim Warrick,Junior Harrington,Mike Miller,Pau Gasol,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,5:23,MEM,turnover,,,,,,,,,,Damon Stoudamire,,,lost ball,,Luke Ridnour,,,
+Damon Stoudamire,Hakim Warrick,Junior Harrington,Mike Miller,Pau Gasol,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,5:18,SEA,turnover,,,,,,,,,,Luke Ridnour,,,bad pass,,Damon Stoudamire,,,
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,5:14,MEM,sub,,,,Rudy Gay,,Junior Harrington,,,,,,,,,,,,
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,4:56,MEM,shot,,,,,,,,,,Hakim Warrick,,,,missed,,turnaround jump,37,10
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,4:53,SEA,rebound,,,,,,,,,,Rashard Lewis,,,,,,def,,
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,4:43,SEA,shot,,,,,,,,,,Ray Allen,,,,missed,,layup,25,6
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,4:42,SEA,shot,,,,,,,,,,Nick Collison,,,,missed,,tip,25,6
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,4:42,SEA,rebound,,,,,,,,,,Nick Collison,,,,,,off,,
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,4:40,MEM,rebound,,,,,,,,,,Mike Miller,,,,,,def,,
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,4:32,SEA,foul,,,,,,,,Hakim Warrick,,Nick Collison,,,,,,shooting,,
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,4:32,MEM,free throw,,,,,,,1,,2,Hakim Warrick,,,foul,missed,,,,
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,4:32,MEM,rebound,,,,,,,,,,,,,,,,,,
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,4:32,MEM,free throw,,,,,,,2,,2,Hakim Warrick,,,foul,missed,,,,
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,4:31,SEA,rebound,,,,,,,,,,Rashard Lewis,,,,,,def,,
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,4:18,SEA,turnover,,,,,,,,,,Nick Collison,,,poss lost ball turnover,,,,,
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,4:02,MEM,shot,,,,,,,,,,Damon Stoudamire,,,,missed,,3pt,48,6
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,4:00,SEA,rebound,,,,,,,,,,Nick Collison,,,,,,def,,
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,3:56,SEA,shot,Luke Ridnour,,,,,,,,,Rashard Lewis,2,,,made,,driving layup,25,6
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,3:43,MEM,turnover,,,,,,,,,,Rudy Gay,,,bad pass,,Chris Wilcox,,,
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,3:39,SEA,shot,Chris Wilcox,,,,,,,,,Ray Allen,2,,,made,,driving layup,25,6
+Damon Stoudamire,Hakim Warrick,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,3:34,MEM,timeout,,,,,,,,,,,,,,,,regular,,
+Chucky Atkins,Hakim Warrick,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,3:34,MEM,sub,,,,Chucky Atkins,,Damon Stoudamire,,,,,,,,,,,,
+Alexander Johnson,Chucky Atkins,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,2,3:34,MEM,sub,,,,Alexander Johnson,,Hakim Warrick,,,,,,,,,,,,
+Alexander Johnson,Chucky Atkins,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Johan Petro,Luke Ridnour,Rashard Lewis,Ray Allen,2,3:34,SEA,sub,,,,Johan Petro,,Nick Collison,,,,,,,,,,,,
+Alexander Johnson,Chucky Atkins,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Johan Petro,Luke Ridnour,Rashard Lewis,Ray Allen,2,3:26,MEM,shot,Chucky Atkins,,,,,,,,,Mike Miller,2,,,made,,alley oop layup shot,25,6
+Alexander Johnson,Chucky Atkins,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Johan Petro,Luke Ridnour,Rashard Lewis,Ray Allen,2,3:09,SEA,shot,Luke Ridnour,,,,,,,,,Rashard Lewis,2,,,made,,jump,36,9
+Alexander Johnson,Chucky Atkins,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Johan Petro,Luke Ridnour,Rashard Lewis,Ray Allen,2,3:00,MEM,shot,Chucky Atkins,,,,,,,,,Pau Gasol,2,,,made,,jump,25,22
+Alexander Johnson,Chucky Atkins,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Johan Petro,Luke Ridnour,Rashard Lewis,Ray Allen,2,2:41,SEA,shot,,,,,,,,,,Rashard Lewis,,,,missed,,layup,25,6
+Alexander Johnson,Chucky Atkins,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Johan Petro,Luke Ridnour,Rashard Lewis,Ray Allen,2,2:39,MEM,rebound,,,,,,,,,,Rudy Gay,,,,,,def,,
+Alexander Johnson,Chucky Atkins,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Johan Petro,Luke Ridnour,Rashard Lewis,Ray Allen,2,2:29,MEM,shot,,,,,,,,,,Chucky Atkins,2,,,made,,driving layup,25,6
+Alexander Johnson,Chucky Atkins,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Johan Petro,Luke Ridnour,Rashard Lewis,Ray Allen,2,2:12,SEA,shot,Luke Ridnour,,,,,,,,,Johan Petro,2,,,made,,jump,24,23
+Alexander Johnson,Chucky Atkins,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Johan Petro,Luke Ridnour,Rashard Lewis,Ray Allen,2,1:59,MEM,shot,,,Johan Petro,,,,,,,Alexander Johnson,,,,missed,,layup,25,6
+Alexander Johnson,Chucky Atkins,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Johan Petro,Luke Ridnour,Rashard Lewis,Ray Allen,2,1:59,MEM,rebound,,,,,,,,,,,,,,,,,,
+Alexander Johnson,Chucky Atkins,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Johan Petro,Luke Ridnour,Rashard Lewis,Ray Allen,2,1:56,MEM,shot,Rudy Gay,,,,,,,,,Mike Miller,2,,,made,,jump,6,13
+Alexander Johnson,Chucky Atkins,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Johan Petro,Luke Ridnour,Rashard Lewis,Ray Allen,2,1:46,SEA,shot,,,,,,,,,,Luke Ridnour,,,,missed,,3pt,1,8
+Alexander Johnson,Chucky Atkins,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Johan Petro,Luke Ridnour,Rashard Lewis,Ray Allen,2,1:43,MEM,rebound,,,,,,,,,,Rudy Gay,,,,,,def,,
+Alexander Johnson,Chucky Atkins,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Johan Petro,Luke Ridnour,Rashard Lewis,Ray Allen,2,1:29,MEM,shot,Pau Gasol,,,,,,,,,Rudy Gay,3,,,made,,3pt,5,22
+Alexander Johnson,Chucky Atkins,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Johan Petro,Luke Ridnour,Rashard Lewis,Ray Allen,2,1:16,SEA,shot,,,,,,,,,,Rashard Lewis,,,,missed,,hook,24,10
+Alexander Johnson,Chucky Atkins,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Johan Petro,Luke Ridnour,Rashard Lewis,Ray Allen,2,1:13,MEM,rebound,,,,,,,,,,Pau Gasol,,,,,,def,,
+Alexander Johnson,Chucky Atkins,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Johan Petro,Luke Ridnour,Rashard Lewis,Ray Allen,2,0:59,MEM,turnover,,,,,,,,,,Alexander Johnson,,,lost ball,,Luke Ridnour,,,
+Alexander Johnson,Chucky Atkins,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Johan Petro,Luke Ridnour,Rashard Lewis,Ray Allen,2,0:54,SEA,shot,,,,,,,,,,Chris Wilcox,,,,missed,,dunk,25,6
+Alexander Johnson,Chucky Atkins,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Johan Petro,Luke Ridnour,Rashard Lewis,Ray Allen,2,0:52,SEA,rebound,,,,,,,,,,Luke Ridnour,,,,,,off,,
+Alexander Johnson,Chucky Atkins,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Johan Petro,Luke Ridnour,Rashard Lewis,Ray Allen,2,0:50,SEA,shot,Luke Ridnour,,,,,,,,,Ray Allen,3,,,made,,3pt,3,21
+Alexander Johnson,Chucky Atkins,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Johan Petro,Luke Ridnour,Rashard Lewis,Ray Allen,2,0:39,SEA,foul,,,,,,,,Pau Gasol,,Johan Petro,,,,,,personal,,
+Alexander Johnson,Chucky Atkins,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Johan Petro,Luke Ridnour,Rashard Lewis,Ray Allen,2,0:39,MEM,free throw,,,,,,,1,,2,Pau Gasol,,,foul,made,,,,
+Alexander Johnson,Chucky Atkins,Mike Miller,Pau Gasol,Rudy Gay,Andre Brown,Chris Wilcox,Luke Ridnour,Rashard Lewis,Ray Allen,2,0:39,SEA,sub,,,,Andre Brown,,Johan Petro,,,,,,,,,,,,
+Alexander Johnson,Chucky Atkins,Dahntay Jones,Mike Miller,Pau Gasol,Andre Brown,Chris Wilcox,Luke Ridnour,Rashard Lewis,Ray Allen,2,0:39,MEM,sub,,,,Dahntay Jones,,Rudy Gay,,,,,,,,,,,,
+Alexander Johnson,Chucky Atkins,Dahntay Jones,Mike Miller,Pau Gasol,Andre Brown,Chris Wilcox,Luke Ridnour,Rashard Lewis,Ray Allen,2,0:39,MEM,free throw,,,,,,,2,,2,Pau Gasol,,,foul,missed,,,,
+Alexander Johnson,Chucky Atkins,Dahntay Jones,Mike Miller,Pau Gasol,Andre Brown,Chris Wilcox,Luke Ridnour,Rashard Lewis,Ray Allen,2,0:38,SEA,rebound,,,,,,,,,,Chris Wilcox,,,,,,def,,
+Alexander Johnson,Chucky Atkins,Dahntay Jones,Mike Miller,Pau Gasol,Andre Brown,Chris Wilcox,Luke Ridnour,Rashard Lewis,Ray Allen,2,0:30,SEA,shot,,,,,,,,,,Luke Ridnour,,,,missed,,layup,25,6
+Alexander Johnson,Chucky Atkins,Dahntay Jones,Mike Miller,Pau Gasol,Andre Brown,Chris Wilcox,Luke Ridnour,Rashard Lewis,Ray Allen,2,0:28,MEM,rebound,,,,,,,,,,Pau Gasol,,,,,,def,,
+Alexander Johnson,Chucky Atkins,Dahntay Jones,Mike Miller,Pau Gasol,Andre Brown,Chris Wilcox,Luke Ridnour,Rashard Lewis,Ray Allen,2,0:26,SEA,foul,,,,,,,,Dahntay Jones,,Rashard Lewis,,,,,,shooting,,
+Alexander Johnson,Chucky Atkins,Dahntay Jones,Mike Miller,Pau Gasol,Andre Brown,Chris Wilcox,Luke Ridnour,Rashard Lewis,Ray Allen,2,0:26,MEM,free throw,,,,,,,1,,2,Dahntay Jones,,,foul,made,,,,
+Alexander Johnson,Chucky Atkins,Dahntay Jones,Mike Miller,Pau Gasol,Andre Brown,Damien Wilkins,Luke Ridnour,Rashard Lewis,Ray Allen,2,0:26,SEA,sub,,,,Damien Wilkins,,Chris Wilcox,,,,,,,,,,,,
+Alexander Johnson,Chucky Atkins,Dahntay Jones,Mike Miller,Pau Gasol,Andre Brown,Damien Wilkins,Luke Ridnour,Rashard Lewis,Ray Allen,2,0:26,MEM,free throw,,,,,,,2,,2,Dahntay Jones,,,foul,made,,,,
+Alexander Johnson,Chucky Atkins,Dahntay Jones,Mike Miller,Pau Gasol,Andre Brown,Damien Wilkins,Luke Ridnour,Rashard Lewis,Ray Allen,2,0:08,MEM,foul,,,,,,,,Luke Ridnour,,Chucky Atkins,,,,,,personal,,
+Alexander Johnson,Chucky Atkins,Dahntay Jones,Mike Miller,Pau Gasol,Andre Brown,Damien Wilkins,Luke Ridnour,Rashard Lewis,Ray Allen,2,0:00,SEA,shot,,,,,,,,,,Luke Ridnour,,,,missed,,layup,25,6
+Alexander Johnson,Chucky Atkins,Dahntay Jones,Mike Miller,Pau Gasol,Andre Brown,Damien Wilkins,Luke Ridnour,Rashard Lewis,Ray Allen,2,0:00,SEA,shot,,,,,,,,,,Andre Brown,,,,missed,,tip,25,6
+Alexander Johnson,Chucky Atkins,Dahntay Jones,Mike Miller,Pau Gasol,Andre Brown,Damien Wilkins,Luke Ridnour,Rashard Lewis,Ray Allen,2,0:00,SEA,rebound,,,,,,,,,,Andre Brown,,,,,,off,,
+Alexander Johnson,Chucky Atkins,Dahntay Jones,Mike Miller,Pau Gasol,Andre Brown,Damien Wilkins,Luke Ridnour,Rashard Lewis,Ray Allen,2,0:00,SEA,shot,,,,,,,,,,Rashard Lewis,2,,,made,,tip,25,6
+Alexander Johnson,Chucky Atkins,Dahntay Jones,Mike Miller,Pau Gasol,Andre Brown,Damien Wilkins,Luke Ridnour,Rashard Lewis,Ray Allen,2,0:00,SEA,rebound,,,,,,,,,,Rashard Lewis,,,,,,off,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,11:44,MEM,shot,,,,,,,,,,Damon Stoudamire,,,,missed,,3pt,48,10
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,11:42,SEA,rebound,,,,,,,,,,Ray Allen,,,,,,def,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,11:34,SEA,turnover,,,,,,,,,,Rashard Lewis,,,traveling,,,,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,11:19,MEM,shot,,,,,,,,,,Stromile Swift,,,,missed,,layup,25,6
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,11:17,SEA,rebound,,,,,,,,,,Rashard Lewis,,,,,,def,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,11:09,SEA,shot,,,,,,,,,,Nick Collison,,,,missed,,layup,25,6
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,11:06,MEM,rebound,,,,,,,,,,Pau Gasol,,,,,,def,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,10:52,MEM,shot,,,,,,,,,,Pau Gasol,,,,missed,,jump,16,20
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,10:50,SEA,rebound,,,,,,,,,,Nick Collison,,,,,,def,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,10:31,SEA,shot,Luke Ridnour,,,,,,,,,Ray Allen,2,,,made,,jump,39,17
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,10:11,MEM,shot,Rudy Gay,,,,,,,,,Damon Stoudamire,3,,,made,,3pt,48,9
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,9:52,SEA,shot,,,,,,,,,,Luke Ridnour,,,,missed,,jump,36,19
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,9:50,MEM,rebound,,,,,,,,,,Pau Gasol,,,,,,def,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,9:33,MEM,shot,,,Rashard Lewis,,,,,,,Rudy Gay,,,,missed,,jump,28,10
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,9:31,SEA,rebound,,,,,,,,,,Luke Ridnour,,,,,,def,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,9:26,MEM,foul,,,,,,,,Rashard Lewis,,Rudy Gay,,,,,,personal,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,9:20,SEA,shot,,,,,,,,,,Rashard Lewis,,,,missed,,jump,14,26
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,9:20,MEM,rebound,,,,,,,,,,,,,,,,,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,9:20,SEA,foul,,,,,,,,Pau Gasol,,Nick Collison,,,,,,loose ball,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,9:05,MEM,shot,,,,,,,,,,Stromile Swift,,,,missed,,layup,25,6
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,9:04,SEA,rebound,,,,,,,,,,Nick Collison,,,,,,def,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,8:53,SEA,shot,,,,,,,,,,Ray Allen,2,,,made,,driving layup,25,6
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,8:53,MEM,foul,,,,,,,,Ray Allen,,Mike Miller,,,,,,shooting,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,8:53,SEA,free throw,,,,,,,1,,1,Ray Allen,,,foul,made,,,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,8:46,MEM,turnover,,,,,,,,,,Pau Gasol,,,traveling,,,,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,8:30,SEA,shot,Ray Allen,,,,,,,,,Nick Collison,2,,,made,,layup,25,6
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,8:20,MEM,shot,,,,,,,,,,Mike Miller,,,,missed,,jump,4,10
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,8:20,MEM,rebound,,,,,,,,,,,,,,,,,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,8:20,SEA,foul,,,,,,,,Rudy Gay,,Rashard Lewis,,,,,,loose ball,,
+Damon Stoudamire,Mike Miller,Pau Gasol,Rudy Gay,Stromile Swift,Andre Brown,Chris Wilcox,Luke Ridnour,Rashard Lewis,Ray Allen,3,8:20,SEA,sub,,,,Andre Brown,,Nick Collison,,,,,,,,,,,,
+Damon Stoudamire,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Andre Brown,Chris Wilcox,Luke Ridnour,Rashard Lewis,Ray Allen,3,8:20,MEM,sub,,,,Lawrence Roberts,,Stromile Swift,,,,,,,,,,,,
+Damon Stoudamire,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Andre Brown,Chris Wilcox,Luke Ridnour,Rashard Lewis,Ray Allen,3,8:09,MEM,shot,Damon Stoudamire,,,,,,,,,Mike Miller,2,,,made,,jump,6,19
+Damon Stoudamire,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Andre Brown,Chris Wilcox,Luke Ridnour,Rashard Lewis,Ray Allen,3,8:02,MEM,foul,,,,,,,,Luke Ridnour,,Damon Stoudamire,,,,,,personal,,
+Damon Stoudamire,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,8:02,SEA,sub,,,,Nick Collison,,Andre Brown,,,,,,,,,,,,
+Damon Stoudamire,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,7:50,SEA,shot,,,,,,,,,,Luke Ridnour,,,,missed,,layup,25,6
+Damon Stoudamire,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,7:48,SEA,shot,,,,,,,,,,Nick Collison,2,,,made,,follow up dunk,25,6
+Damon Stoudamire,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,7:48,SEA,rebound,,,,,,,,,,Nick Collison,,,,,,off,,
+Damon Stoudamire,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,7:41,MEM,shot,,,,,,,,,,Damon Stoudamire,2,,,made,,jump,27,11
+Damon Stoudamire,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,7:29,SEA,shot,,,,,,,,,,Rashard Lewis,2,,,made,,jump,27,12
+Damon Stoudamire,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,7:29,MEM,violation,,,,,,,,,,Rudy Gay,,,,,,defensive goaltending,,
+Damon Stoudamire,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,7:13,MEM,shot,,,,,,,,,,Damon Stoudamire,,,,missed,,3pt,48,10
+Damon Stoudamire,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,7:11,MEM,rebound,,,,,,,,,,Lawrence Roberts,,,,,,off,,
+Damon Stoudamire,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,7:09,MEM,turnover,,,,,,,,,,Lawrence Roberts,,,bad pass,,Ray Allen,,,
+Damon Stoudamire,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,7:00,SEA,shot,Luke Ridnour,,,,,,,,,Chris Wilcox,2,,,made,,slam dunk,25,6
+Damon Stoudamire,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,6:45,MEM,shot,,,,,,,,,,Rudy Gay,,,,missed,,3pt,1,7
+Damon Stoudamire,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,6:43,MEM,rebound,,,,,,,,,,,,,,,,,,
+Damon Stoudamire,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,6:31,MEM,shot,,,,,,,,,,Damon Stoudamire,,,,missed,,jump,28,17
+Damon Stoudamire,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,6:30,SEA,rebound,,,,,,,,,,Rashard Lewis,,,,,,def,,
+Damon Stoudamire,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,6:22,SEA,shot,,,,,,,,,,Luke Ridnour,2,,,made,,driving layup,25,6
+Damon Stoudamire,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,6:19,MEM,timeout,,,,,,,,,,,,,,,,regular,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,6:19,MEM,sub,,,,Chucky Atkins,,Damon Stoudamire,,,,,,,,,,,,
+Chucky Atkins,Hakim Warrick,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,6:19,MEM,sub,,,,Hakim Warrick,,Lawrence Roberts,,,,,,,,,,,,
+Chucky Atkins,Hakim Warrick,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,6:11,MEM,turnover,,,,,,,,,,Pau Gasol,,,lost ball,,Chris Wilcox,,,
+Chucky Atkins,Hakim Warrick,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,6:04,SEA,shot,Luke Ridnour,,,,,,,,,Rashard Lewis,2,,,made,,slam dunk,25,6
+Chucky Atkins,Hakim Warrick,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,5:52,MEM,shot,Chucky Atkins,,,,,,,,,Mike Miller,2,,,made,,fade away jumper,9,21
+Chucky Atkins,Hakim Warrick,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,5:44,SEA,shot,,,,,,,,,,Luke Ridnour,,,,missed,,jump,34,8
+Chucky Atkins,Hakim Warrick,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,5:42,SEA,rebound,,,,,,,,,,Luke Ridnour,,,,,,off,,
+Chucky Atkins,Hakim Warrick,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,5:41,SEA,shot,,,,,,,,,,Luke Ridnour,2,,,made,,jump,32,8
+Chucky Atkins,Hakim Warrick,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,5:25,MEM,shot,,,,,,,,,,Chucky Atkins,2,,,made,,driving layup,25,6
+Chucky Atkins,Hakim Warrick,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,5:06,SEA,shot,Luke Ridnour,,,,,,,,,Ray Allen,2,,,made,,jump,38,16
+Chucky Atkins,Hakim Warrick,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,4:44,MEM,shot,,,,,,,,,,Mike Miller,,,,missed,,3pt,6,25
+Chucky Atkins,Hakim Warrick,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,4:42,SEA,rebound,,,,,,,,,,Nick Collison,,,,,,def,,
+Chucky Atkins,Hakim Warrick,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,4:33,SEA,shot,Ray Allen,,,,,,,,,Chris Wilcox,2,,,made,,layup,25,6
+Chucky Atkins,Hakim Warrick,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,4:19,SEA,foul,,,,,,,,Mike Miller,,Ray Allen,,,,,,personal,,
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,3,4:19,MEM,sub,,,,Alexander Johnson,,Pau Gasol,,,,,,,,,,,,
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Rudy Gay,Chris Wilcox,Earl Watson,Nick Collison,Rashard Lewis,Ray Allen,3,4:19,SEA,sub,,,,Earl Watson,,Luke Ridnour,,,,,,,,,,,,
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Rudy Gay,Chris Wilcox,Earl Watson,Johan Petro,Rashard Lewis,Ray Allen,3,4:19,SEA,sub,,,,Johan Petro,,Nick Collison,,,,,,,,,,,,
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Rudy Gay,Chris Wilcox,Earl Watson,Johan Petro,Rashard Lewis,Ray Allen,3,4:12,MEM,shot,,,,,,,,,,Mike Miller,,,,missed,,jump,36,25
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Rudy Gay,Chris Wilcox,Earl Watson,Johan Petro,Rashard Lewis,Ray Allen,3,4:11,MEM,rebound,,,,,,,,,,,,,,,,,,
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Rudy Gay,Chris Wilcox,Earl Watson,Johan Petro,Rashard Lewis,Ray Allen,3,4:00,MEM,shot,,,,,,,,,,Rudy Gay,,,,missed,,jump,28,20
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Rudy Gay,Chris Wilcox,Earl Watson,Johan Petro,Rashard Lewis,Ray Allen,3,3:57,SEA,rebound,,,,,,,,,,Chris Wilcox,,,,,,def,,
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Rudy Gay,Chris Wilcox,Earl Watson,Johan Petro,Rashard Lewis,Ray Allen,3,3:41,SEA,shot,,,,,,,,,,Rashard Lewis,,,,missed,,3pt,49,8
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Rudy Gay,Chris Wilcox,Earl Watson,Johan Petro,Rashard Lewis,Ray Allen,3,3:39,MEM,rebound,,,,,,,,,,Mike Miller,,,,,,def,,
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Rudy Gay,Chris Wilcox,Earl Watson,Johan Petro,Rashard Lewis,Ray Allen,3,3:36,MEM,shot,Mike Miller,,,,,,,,,Rudy Gay,2,,,made,,layup,25,6
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Rudy Gay,Chris Wilcox,Earl Watson,Johan Petro,Rashard Lewis,Ray Allen,3,3:36,SEA,foul,,,,,,,,Rudy Gay,,Johan Petro,,,,,,shooting,,
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Rudy Gay,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,3,3:36,SEA,sub,,,,Damien Wilkins,,Rashard Lewis,,,,,,,,,,,,
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Rudy Gay,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,3,3:36,MEM,free throw,,,,,,,1,,1,Rudy Gay,,,foul,made,,,,
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Rudy Gay,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,3,3:28,MEM,foul,,,,,,,,Chris Wilcox,,Alexander Johnson,,,,,,shooting,,
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Rudy Gay,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,3,3:28,SEA,free throw,,,,,,,1,,2,Chris Wilcox,,,foul,missed,,,,
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Rudy Gay,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,3,3:28,SEA,rebound,,,,,,,,,,,,,,,,,,
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Rudy Gay,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,3,3:28,SEA,free throw,,,,,,,2,,2,Chris Wilcox,,,foul,made,,,,
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Rudy Gay,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,3,3:11,MEM,shot,,,,,,,,,,Hakim Warrick,,,,missed,,layup,25,6
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Rudy Gay,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,3,3:11,SEA,rebound,,,,,,,,,,,,,,,,,,
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Rudy Gay,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,3,3:00,SEA,shot,,,,,,,,,,Johan Petro,,,,missed,,layup,25,6
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Rudy Gay,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,3,2:59,MEM,rebound,,,,,,,,,,,,,,,,,,
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Rudy Gay,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,3,2:59,SEA,timeout,,,,,,,,,,,,,,,,regular,,
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Rudy Gay,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,3,2:45,SEA,foul,,,,,,,,Mike Miller,,Damien Wilkins,,,,,,personal,,
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Rudy Gay,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,3,2:45,MEM,free throw,,,,,,,1,,2,Mike Miller,,,foul,missed,,,,
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Rudy Gay,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,3,2:45,MEM,rebound,,,,,,,,,,,,,,,,,,
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Rudy Gay,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,3,2:45,MEM,free throw,,,,,,,2,,2,Mike Miller,,,foul,made,,,,
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Rudy Gay,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,3,2:25,SEA,shot,Damien Wilkins,,,,,,,,,Ray Allen,3,,,made,,3pt,22,31
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Rudy Gay,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,3,2:17,SEA,foul,,,,,,,,Chucky Atkins,,Johan Petro,,,,,,personal,,
+Alexander Johnson,Chucky Atkins,Hakim Warrick,Mike Miller,Rudy Gay,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,3,2:17,MEM,free throw,,,,,,,1,,2,Chucky Atkins,,,foul,made,,,,
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Mike Miller,Rudy Gay,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,3,2:17,MEM,sub,,,,Lawrence Roberts,,Alexander Johnson,,,,,,,,,,,,
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Mike Miller,Rudy Gay,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,3,2:17,MEM,free throw,,,,,,,2,,2,Chucky Atkins,,,foul,missed,,,,
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Mike Miller,Rudy Gay,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,3,2:15,SEA,rebound,,,,,,,,,,Chris Wilcox,,,,,,def,,
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Mike Miller,Rudy Gay,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,3,2:03,SEA,shot,,,,,,,,,,Ray Allen,,,,missed,,3pt,45,20
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Mike Miller,Rudy Gay,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,3,2:02,MEM,rebound,,,,,,,,,,Chucky Atkins,,,,,,def,,
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Mike Miller,Rudy Gay,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,3,1:55,MEM,shot,,,,,,,,,,Mike Miller,,,,missed,,3pt,32,30
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Mike Miller,Rudy Gay,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,3,1:53,SEA,rebound,,,,,,,,,,Damien Wilkins,,,,,,def,,
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Mike Miller,Rudy Gay,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,3,1:50,SEA,shot,Damien Wilkins,,,,,,,,,Johan Petro,2,,,made,,driving layup,25,6
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Mike Miller,Rudy Gay,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,3,1:40,MEM,shot,,,,,,,,,,Chucky Atkins,2,,,made,,driving layup,25,6
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Mike Miller,Rudy Gay,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,3,1:32,SEA,shot,,,,,,,,,,Earl Watson,2,,,made,,reverse layup,25,6
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Mike Miller,Rudy Gay,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,3,1:21,MEM,shot,,,,,,,,,,Chucky Atkins,,,,missed,,jump,38,21
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Mike Miller,Rudy Gay,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,3,1:20,SEA,rebound,,,,,,,,,,Damien Wilkins,,,,,,def,,
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Mike Miller,Rudy Gay,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,3,1:13,SEA,shot,,,,,,,,,,Damien Wilkins,,,,missed,,running jump,21,6
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Mike Miller,Rudy Gay,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,3,1:11,MEM,rebound,,,,,,,,,,Lawrence Roberts,,,,,,def,,
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Mike Miller,Rudy Gay,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,3,1:06,MEM,turnover,,,,,,,,,,Chucky Atkins,,,bad pass,,Johan Petro,,,
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Mike Miller,Rudy Gay,Chris Wilcox,Damien Wilkins,Earl Watson,Johan Petro,Ray Allen,3,1:02,MEM,foul,,,,,,,,Chris Wilcox,,Lawrence Roberts,,,,,,shooting,,
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Mike Miller,Rudy Gay,Andre Brown,Chris Wilcox,Damien Wilkins,Earl Watson,Ray Allen,3,1:02,SEA,sub,,,,Andre Brown,,Johan Petro,,,,,,,,,,,,
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Mike Miller,Rudy Gay,Andre Brown,Chris Wilcox,Damien Wilkins,Earl Watson,Ray Allen,3,1:02,SEA,free throw,,,,,,,1,,2,Chris Wilcox,,,foul,made,,,,
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Mike Miller,Rudy Gay,Andre Brown,Chris Wilcox,Damien Wilkins,Earl Watson,Ray Allen,3,1:02,SEA,free throw,,,,,,,2,,2,Chris Wilcox,,,foul,missed,,,,
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Mike Miller,Rudy Gay,Andre Brown,Chris Wilcox,Damien Wilkins,Earl Watson,Ray Allen,3,0:59,MEM,rebound,,,,,,,,,,Hakim Warrick,,,,,,def,,
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Mike Miller,Rudy Gay,Andre Brown,Chris Wilcox,Damien Wilkins,Earl Watson,Ray Allen,3,0:49,MEM,shot,,,,,,,,,,Hakim Warrick,2,,,made,,driving layup,25,6
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Mike Miller,Rudy Gay,Andre Brown,Chris Wilcox,Damien Wilkins,Earl Watson,Ray Allen,3,0:49,SEA,foul,,,,,,,,Hakim Warrick,,Andre Brown,,,,,,shooting,,
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Mike Miller,Rudy Gay,Andre Brown,Chris Wilcox,Damien Wilkins,Earl Watson,Ray Allen,3,0:49,MEM,free throw,,,,,,,1,,1,Hakim Warrick,,,foul,missed,,,,
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Mike Miller,Rudy Gay,Andre Brown,Chris Wilcox,Damien Wilkins,Earl Watson,Ray Allen,3,0:47,SEA,rebound,,,,,,,,,,Chris Wilcox,,,,,,def,,
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Mike Miller,Rudy Gay,Andre Brown,Chris Wilcox,Damien Wilkins,Earl Watson,Ray Allen,3,0:38,SEA,shot,,,,,,,,,,Chris Wilcox,,,,missed,,layup,25,6
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Mike Miller,Rudy Gay,Andre Brown,Chris Wilcox,Damien Wilkins,Earl Watson,Ray Allen,3,0:36,SEA,rebound,,,,,,,,,,Chris Wilcox,,,,,,off,,
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Mike Miller,Rudy Gay,Andre Brown,Chris Wilcox,Damien Wilkins,Earl Watson,Ray Allen,3,0:36,SEA,shot,,,,,,,,,,Chris Wilcox,,,,missed,,layup,25,6
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Mike Miller,Rudy Gay,Andre Brown,Chris Wilcox,Damien Wilkins,Earl Watson,Ray Allen,3,0:34,SEA,rebound,,,,,,,,,,Chris Wilcox,,,,,,off,,
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Mike Miller,Rudy Gay,Andre Brown,Chris Wilcox,Damien Wilkins,Earl Watson,Ray Allen,3,0:32,SEA,shot,,,,,,,,,,Andre Brown,,,,missed,,tip,25,6
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Mike Miller,Rudy Gay,Andre Brown,Chris Wilcox,Damien Wilkins,Earl Watson,Ray Allen,3,0:32,SEA,rebound,,,,,,,,,,Andre Brown,,,,,,off,,
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Mike Miller,Rudy Gay,Andre Brown,Chris Wilcox,Damien Wilkins,Earl Watson,Ray Allen,3,0:32,SEA,shot,,,,,,,,,,Chris Wilcox,,,,missed,,tip,25,6
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Mike Miller,Rudy Gay,Andre Brown,Chris Wilcox,Damien Wilkins,Earl Watson,Ray Allen,3,0:30,MEM,rebound,,,,,,,,,,Rudy Gay,,,,,,def,,
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Mike Miller,Rudy Gay,Andre Brown,Chris Wilcox,Damien Wilkins,Earl Watson,Ray Allen,3,0:22,MEM,shot,,,,,,,,,,Chucky Atkins,,,,missed,,running layup,25,6
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Mike Miller,Rudy Gay,Andre Brown,Chris Wilcox,Damien Wilkins,Earl Watson,Ray Allen,3,0:20,MEM,rebound,,,,,,,,,,Lawrence Roberts,,,,,,off,,
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Mike Miller,Rudy Gay,Andre Brown,Chris Wilcox,Damien Wilkins,Earl Watson,Ray Allen,3,0:20,MEM,shot,,,,,,,,,,Lawrence Roberts,2,,,made,,layup,25,6
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Mike Miller,Rudy Gay,Andre Brown,Chris Wilcox,Damien Wilkins,Earl Watson,Ray Allen,3,0:20,SEA,foul,,,,,,,,Lawrence Roberts,,Chris Wilcox,,,,,,shooting,,
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Rudy Gay,Tarence Kinsey,Andre Brown,Chris Wilcox,Damien Wilkins,Earl Watson,Ray Allen,3,0:20,MEM,sub,,,,Tarence Kinsey,,Mike Miller,,,,,,,,,,,,
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Rudy Gay,Tarence Kinsey,Andre Brown,Chris Wilcox,Damien Wilkins,Earl Watson,Ray Allen,3,0:20,MEM,free throw,,,,,,,1,,1,Lawrence Roberts,,,foul,missed,,,,
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Rudy Gay,Tarence Kinsey,Andre Brown,Chris Wilcox,Damien Wilkins,Earl Watson,Ray Allen,3,0:16,MEM,rebound,,,,,,,,,,Hakim Warrick,,,,,,off,,
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Rudy Gay,Tarence Kinsey,Andre Brown,Chris Wilcox,Damien Wilkins,Earl Watson,Ray Allen,3,0:15,MEM,shot,,,,,,,,,,Hakim Warrick,,,,missed,,layup,25,6
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Rudy Gay,Tarence Kinsey,Andre Brown,Chris Wilcox,Damien Wilkins,Earl Watson,Ray Allen,3,0:14,MEM,rebound,,,,,,,,,,,,,,,,,,
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Rudy Gay,Tarence Kinsey,Andre Brown,Damien Wilkins,Earl Watson,Rashard Lewis,Ray Allen,3,0:14,SEA,sub,,,,Rashard Lewis,,Chris Wilcox,,,,,,,,,,,,
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Rudy Gay,Tarence Kinsey,Andre Brown,Damien Wilkins,Earl Watson,Rashard Lewis,Ray Allen,3,0:02,MEM,shot,,,,,,,,,,Chucky Atkins,,,,missed,,jump,21,7
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Rudy Gay,Tarence Kinsey,Andre Brown,Damien Wilkins,Earl Watson,Rashard Lewis,Ray Allen,3,0:02,MEM,rebound,,,,,,,,,,Hakim Warrick,,,,,,off,,
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Rudy Gay,Tarence Kinsey,Andre Brown,Damien Wilkins,Earl Watson,Rashard Lewis,Ray Allen,3,0:01,MEM,shot,,,,,,,,,,Hakim Warrick,,,,missed,,tip,25,6
+Chucky Atkins,Hakim Warrick,Lawrence Roberts,Rudy Gay,Tarence Kinsey,Andre Brown,Damien Wilkins,Earl Watson,Rashard Lewis,Ray Allen,3,0:00,SEA,rebound,,,,,,,,,,Ray Allen,,,,,,def,,
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,4,11:47,SEA,shot,Earl Watson,,,,,,,,,Rashard Lewis,2,,,made,,jump,16,9
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,4,11:33,MEM,turnover,,,,,,,,,,Tarence Kinsey,,,bad pass,,Earl Watson,,,
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,4,11:29,SEA,shot,Earl Watson,,,,,,,,,Damien Wilkins,2,,,made,,driving layup,25,6
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,4,11:15,MEM,shot,,,,,,,,,,Rudy Gay,,,,missed,,jump,37,5
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,4,11:13,SEA,rebound,,,,,,,,,,Nick Collison,,,,,,def,,
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,4,11:05,SEA,turnover,,,,,,,,,,Earl Watson,,,bad pass,,,,,
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,4,10:53,MEM,shot,Pau Gasol,,,,,,,,,Junior Harrington,3,,,made,,3pt,37,30
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,4,10:43,SEA,shot,,,,,,,,,,Rashard Lewis,,,,missed,,3pt,38,27
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,4,10:43,OFF,jump ball,,Junior Harrington,,,Nick Collison,,,,,,,Earl Watson,,,,,,
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,4,10:43,SEA,rebound,,,,,,,,,,,,,,,,,,
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,4,10:26,SEA,shot,,,,,,,,,,Earl Watson,,,,missed,,jump,32,22
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,4,10:24,MEM,rebound,,,,,,,,,,Rudy Gay,,,,,,def,,
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,4,10:10,MEM,turnover,,,,,,,,,,Rudy Gay,,,bad pass,,Damien Wilkins,,,
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,4,10:00,SEA,shot,,,,,,,,,,Rashard Lewis,,,,missed,,jump,39,12
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,4,9:58,SEA,rebound,,,,,,,,,,Damien Wilkins,,,,,,off,,
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,4,9:57,MEM,foul,,,,,,,,Damien Wilkins,,Lawrence Roberts,,,,,,shooting,,
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,4,9:57,SEA,free throw,,,,,,,1,,2,Damien Wilkins,,,foul,made,,,,
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,4,9:57,SEA,free throw,,,,,,,2,,2,Damien Wilkins,,,foul,made,,,,
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,4,9:45,MEM,shot,,,,,,,,,,Junior Harrington,,,,missed,,3pt,25,32
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,4,9:43,SEA,rebound,,,,,,,,,,Johan Petro,,,,,,def,,
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,4,9:38,MEM,foul,,,,,,,,Earl Watson,,Junior Harrington,,,,,,personal,,
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,4,9:25,SEA,shot,,,,,,,,,,Damien Wilkins,,,,missed,,jump,15,11
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,4,9:24,MEM,rebound,,,,,,,,,,Junior Harrington,,,,,,def,,
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,4,9:24,SEA,foul,,,,,,,,Junior Harrington,,Nick Collison,,,,,,personal,,
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,4,9:11,MEM,shot,Pau Gasol,,,,,,,,,Rudy Gay,3,,,made,,3pt,36,29
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,4,8:54,SEA,turnover,,,,,,,,,,Earl Watson,,,bad pass,,Rudy Gay,,,
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,4,8:48,MEM,shot,,,,,,,,,,Rudy Gay,,,,missed,,running layup,25,6
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,4,8:48,MEM,rebound,,,,,,,,,,,,,,,,,,
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Damien Wilkins,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,4,8:48,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Earl Watson,Johan Petro,Nick Collison,Rashard Lewis,Ray Allen,4,8:48,SEA,sub,,,,Ray Allen,,Damien Wilkins,,,,,,,,,,,,
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Chris Wilcox,Earl Watson,Nick Collison,Rashard Lewis,Ray Allen,4,8:48,SEA,sub,,,,Chris Wilcox,,Johan Petro,,,,,,,,,,,,
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Chris Wilcox,Earl Watson,Nick Collison,Rashard Lewis,Ray Allen,4,8:38,MEM,shot,Junior Harrington,,,,,,,,,Rudy Gay,2,,,made,,alley oop dunk,25,6
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Chris Wilcox,Earl Watson,Nick Collison,Rashard Lewis,Ray Allen,4,8:13,SEA,shot,,,,,,,,,,Ray Allen,,,,missed,,jump,45,14
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Chris Wilcox,Earl Watson,Nick Collison,Rashard Lewis,Ray Allen,4,8:11,MEM,rebound,,,,,,,,,,Junior Harrington,,,,,,def,,
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Chris Wilcox,Earl Watson,Nick Collison,Rashard Lewis,Ray Allen,4,8:06,MEM,shot,Junior Harrington,,,,,,,,,Lawrence Roberts,2,,,made,,slam dunk,25,6
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Chris Wilcox,Earl Watson,Nick Collison,Rashard Lewis,Ray Allen,4,7:52,SEA,shot,Earl Watson,,,,,,,,,Rashard Lewis,3,,,made,,3pt,1,7
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Chris Wilcox,Earl Watson,Nick Collison,Rashard Lewis,Ray Allen,4,7:34,MEM,shot,,,,,,,,,,Lawrence Roberts,,,,missed,,layup,22,7
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Chris Wilcox,Earl Watson,Nick Collison,Rashard Lewis,Ray Allen,4,7:32,SEA,rebound,,,,,,,,,,Chris Wilcox,,,,,,def,,
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Chris Wilcox,Earl Watson,Nick Collison,Rashard Lewis,Ray Allen,4,7:22,SEA,shot,,,,,,,,,,Ray Allen,,,,missed,,jump,21,7
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Chris Wilcox,Earl Watson,Nick Collison,Rashard Lewis,Ray Allen,4,7:20,MEM,rebound,,,,,,,,,,Lawrence Roberts,,,,,,def,,
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Chris Wilcox,Earl Watson,Nick Collison,Rashard Lewis,Ray Allen,4,7:12,MEM,shot,,,Nick Collison,,,,,,,Junior Harrington,,,,missed,,layup,25,6
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Chris Wilcox,Earl Watson,Nick Collison,Rashard Lewis,Ray Allen,4,7:10,SEA,rebound,,,,,,,,,,Nick Collison,,,,,,def,,
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Chris Wilcox,Earl Watson,Nick Collison,Rashard Lewis,Ray Allen,4,7:07,SEA,turnover,,,,,,,,,,Nick Collison,,,bad pass,,Lawrence Roberts,,,
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Chris Wilcox,Earl Watson,Nick Collison,Rashard Lewis,Ray Allen,4,7:04,MEM,shot,,,,,,,,,,Lawrence Roberts,2,,,made,,layup,25,6
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Chris Wilcox,Earl Watson,Nick Collison,Rashard Lewis,Ray Allen,4,6:48,SEA,shot,,,,,,,,,,Earl Watson,,,,missed,,layup,25,6
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Chris Wilcox,Earl Watson,Nick Collison,Rashard Lewis,Ray Allen,4,6:48,SEA,rebound,,,,,,,,,,Chris Wilcox,,,,,,off,,
+Junior Harrington,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Chris Wilcox,Earl Watson,Nick Collison,Rashard Lewis,Ray Allen,4,6:48,MEM,foul,,,,,,,,Chris Wilcox,,Lawrence Roberts,,,,,,shooting,,
+Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Tarence Kinsey,Chris Wilcox,Earl Watson,Nick Collison,Rashard Lewis,Ray Allen,4,6:48,MEM,sub,,,,Mike Miller,,Junior Harrington,,,,,,,,,,,,
+Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Tarence Kinsey,Chris Wilcox,Earl Watson,Nick Collison,Rashard Lewis,Ray Allen,4,6:48,SEA,free throw,,,,,,,1,,2,Chris Wilcox,,,foul,missed,,,,
+Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Tarence Kinsey,Chris Wilcox,Earl Watson,Nick Collison,Rashard Lewis,Ray Allen,4,6:48,SEA,rebound,,,,,,,,,,,,,,,,,,
+Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,6:48,SEA,sub,,,,Luke Ridnour,,Earl Watson,,,,,,,,,,,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,6:48,MEM,sub,,,,Chucky Atkins,,Tarence Kinsey,,,,,,,,,,,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,6:48,SEA,free throw,,,,,,,2,,2,Chris Wilcox,,,foul,made,,,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,6:32,MEM,shot,,,,,,,,,,Pau Gasol,2,,,made,,hook,30,7
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,6:24,MEM,foul,,,,,,,,Rashard Lewis,,Rudy Gay,,,,,,personal,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,6:18,SEA,shot,,,,,,,,,,Luke Ridnour,,,,missed,,jump,35,26
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,6:15,SEA,rebound,,,,,,,,,,Rashard Lewis,,,,,,off,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,6:02,SEA,shot,Ray Allen,,,,,,,,,Luke Ridnour,3,,,made,,3pt,48,16
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,5:54,SEA,foul,,,,,,,,Pau Gasol,,Chris Wilcox,,,,,,personal,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,5:54,SEA,timeout,,,,,,,,,,,,,,,,regular,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,5:42,MEM,shot,,,,,,,,,,Lawrence Roberts,,,,missed,,jump,40,15
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,5:41,SEA,rebound,,,,,,,,,,Ray Allen,,,,,,def,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,5:25,SEA,shot,,,,,,,,,,Rashard Lewis,2,,,made,,slam dunk,25,6
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,5:01,MEM,shot,,,,,,,,,,Pau Gasol,2,,,made,,jump,22,11
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,4:42,SEA,shot,,,,,,,,,,Rashard Lewis,,,,missed,,3pt,20,31
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,4:40,MEM,rebound,,,,,,,,,,Chucky Atkins,,,,,,def,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,4:29,MEM,shot,,,,,,,,,,Chucky Atkins,,,,missed,,3pt,48,7
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,4:27,MEM,rebound,,,,,,,,,,Pau Gasol,,,,,,off,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,4:23,MEM,shot,Chucky Atkins,,,,,,,,,Pau Gasol,2,,,made,,slam dunk,25,6
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,4:01,MEM,foul,,,,,,,,Rashard Lewis,,Rudy Gay,,,,,,personal,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,4:01,SEA,free throw,,,,,,,1,,2,Rashard Lewis,,,foul,made,,,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,4:01,SEA,free throw,,,,,,,2,,2,Rashard Lewis,,,foul,made,,,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,3:48,MEM,shot,,,Nick Collison,,,,,,,Pau Gasol,,,,missed,,jump,29,7
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,3:45,MEM,rebound,,,,,,,,,,Pau Gasol,,,,,,off,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,3:44,SEA,foul,,,,,,,,Rudy Gay,,Rashard Lewis,,,,,,shooting,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,3:44,MEM,free throw,,,,,,,1,,2,Rudy Gay,,,foul,missed,,,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,3:44,MEM,rebound,,,,,,,,,,,,,,,,,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,3:44,MEM,free throw,,,,,,,2,,2,Rudy Gay,,,foul,made,,,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,3:28,SEA,shot,,,,,,,,,,Luke Ridnour,,,,missed,,jump,25,22
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,3:26,MEM,rebound,,,,,,,,,,Chucky Atkins,,,,,,def,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,3:23,MEM,turnover,,,,,,,,,,Chucky Atkins,,,lost ball,,Luke Ridnour,,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,3:17,SEA,shot,Rashard Lewis,,,,,,,,,Nick Collison,2,,,made,,driving dunk,25,6
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,3:05,MEM,turnover,,,,,,,,,,Mike Miller,,,lost ball,,Ray Allen,,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,2:54,SEA,shot,,,,,,,,,,Chris Wilcox,,,,missed,,layup,25,6
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,2:52,SEA,rebound,,,,,,,,,,Nick Collison,,,,,,off,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,2:40,SEA,shot,,,,,,,,,,Nick Collison,,,,missed,,jump,36,6
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,2:39,SEA,rebound,,,,,,,,,,Chris Wilcox,,,,,,off,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,2:35,SEA,shot,,,,,,,,,,Luke Ridnour,2,,,made,,jump,24,20
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,2:26,MEM,shot,,,,,,,,,,Chucky Atkins,,,,missed,,reverse layup,25,6
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,2:22,MEM,rebound,,,,,,,,,,Lawrence Roberts,,,,,,off,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,2:20,MEM,shot,Lawrence Roberts,,,,,,,,,Chucky Atkins,3,,,made,,3pt,37,30
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,1:55,SEA,shot,,,Pau Gasol,,,,,,,Nick Collison,,,,missed,,dunk,25,6
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,1:52,MEM,rebound,,,,,,,,,,Pau Gasol,,,,,,def,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,1:49,MEM,turnover,,,,,,,,,,Chucky Atkins,,,bad pass,,,,,
+Chucky Atkins,Lawrence Roberts,Mike Miller,Pau Gasol,Rudy Gay,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,1:49,MEM,timeout,,,,,,,,,,,,,,,,regular,,
+Chucky Atkins,Lawrence Roberts,Pau Gasol,Rudy Gay,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,1:49,MEM,sub,,,,Tarence Kinsey,,Mike Miller,,,,,,,,,,,,
+Chucky Atkins,Junior Harrington,Lawrence Roberts,Rudy Gay,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,1:49,MEM,sub,,,,Junior Harrington,,Pau Gasol,,,,,,,,,,,,
+Chucky Atkins,Hakim Warrick,Junior Harrington,Lawrence Roberts,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,1:49,MEM,sub,,,,Hakim Warrick,,Rudy Gay,,,,,,,,,,,,
+Dahntay Jones,Hakim Warrick,Junior Harrington,Lawrence Roberts,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,1:49,MEM,sub,,,,Dahntay Jones,,Chucky Atkins,,,,,,,,,,,,
+Alexander Johnson,Dahntay Jones,Hakim Warrick,Junior Harrington,Tarence Kinsey,Chris Wilcox,Luke Ridnour,Nick Collison,Rashard Lewis,Ray Allen,4,1:49,MEM,sub,,,,Alexander Johnson,,Lawrence Roberts,,,,,,,,,,,,
+Alexander Johnson,Dahntay Jones,Hakim Warrick,Junior Harrington,Tarence Kinsey,Andre Brown,Chris Wilcox,Luke Ridnour,Nick Collison,Ray Allen,4,1:49,SEA,sub,,,,Andre Brown,,Rashard Lewis,,,,,,,,,,,,
+Alexander Johnson,Dahntay Jones,Hakim Warrick,Junior Harrington,Tarence Kinsey,Andre Brown,Luke Ridnour,Mike Wilks,Nick Collison,Ray Allen,4,1:49,SEA,sub,,,,Mike Wilks,,Chris Wilcox,,,,,,,,,,,,
+Alexander Johnson,Dahntay Jones,Hakim Warrick,Junior Harrington,Tarence Kinsey,Andre Brown,Johan Petro,Luke Ridnour,Mike Wilks,Ray Allen,4,1:49,SEA,sub,,,,Johan Petro,,Nick Collison,,,,,,,,,,,,
+Alexander Johnson,Dahntay Jones,Hakim Warrick,Junior Harrington,Tarence Kinsey,Andre Brown,Johan Petro,Luke Ridnour,Mickael Gelabale,Mike Wilks,4,1:49,SEA,sub,,,,Mickael Gelabale,,Ray Allen,,,,,,,,,,,,
+Alexander Johnson,Dahntay Jones,Hakim Warrick,Junior Harrington,Tarence Kinsey,Andre Brown,Damien Wilkins,Johan Petro,Mickael Gelabale,Mike Wilks,4,1:49,SEA,sub,,,,Damien Wilkins,,Luke Ridnour,,,,,,,,,,,,
+Alexander Johnson,Dahntay Jones,Hakim Warrick,Junior Harrington,Tarence Kinsey,Andre Brown,Damien Wilkins,Johan Petro,Mickael Gelabale,Mike Wilks,4,1:31,SEA,shot,,,Alexander Johnson,,,,,,,Mickael Gelabale,,,,missed,,layup,25,6
+Alexander Johnson,Dahntay Jones,Hakim Warrick,Junior Harrington,Tarence Kinsey,Andre Brown,Damien Wilkins,Johan Petro,Mickael Gelabale,Mike Wilks,4,1:29,SEA,rebound,,,,,,,,,,Damien Wilkins,,,,,,off,,
+Alexander Johnson,Dahntay Jones,Hakim Warrick,Junior Harrington,Tarence Kinsey,Andre Brown,Damien Wilkins,Johan Petro,Mickael Gelabale,Mike Wilks,4,1:25,SEA,shot,,,,,,,,,,Damien Wilkins,,,,missed,,jump,38,25
+Alexander Johnson,Dahntay Jones,Hakim Warrick,Junior Harrington,Tarence Kinsey,Andre Brown,Damien Wilkins,Johan Petro,Mickael Gelabale,Mike Wilks,4,1:23,MEM,rebound,,,,,,,,,,,,,,,,,,
+Alexander Johnson,Dahntay Jones,Hakim Warrick,Junior Harrington,Tarence Kinsey,Andre Brown,Damien Wilkins,Johan Petro,Mickael Gelabale,Mike Wilks,4,1:08,MEM,shot,,,,,,,,,,Dahntay Jones,,,,missed,,jump,23,27
+Alexander Johnson,Dahntay Jones,Hakim Warrick,Junior Harrington,Tarence Kinsey,Andre Brown,Damien Wilkins,Johan Petro,Mickael Gelabale,Mike Wilks,4,1:06,SEA,rebound,,,,,,,,,,Andre Brown,,,,,,def,,
+Alexander Johnson,Dahntay Jones,Hakim Warrick,Junior Harrington,Tarence Kinsey,Andre Brown,Damien Wilkins,Johan Petro,Mickael Gelabale,Mike Wilks,4,0:48,SEA,shot,,,,,,,,,,Mickael Gelabale,2,,,made,,jump,35,9
+Alexander Johnson,Dahntay Jones,Hakim Warrick,Junior Harrington,Tarence Kinsey,Andre Brown,Damien Wilkins,Johan Petro,Mickael Gelabale,Mike Wilks,4,0:44,MEM,shot,,,,,,,,,,Dahntay Jones,2,,,made,,driving layup,25,6
+Alexander Johnson,Dahntay Jones,Hakim Warrick,Junior Harrington,Tarence Kinsey,Andre Brown,Damien Wilkins,Johan Petro,Mickael Gelabale,Mike Wilks,4,0:44,SEA,foul,,,,,,,,Dahntay Jones,,Damien Wilkins,,,,,,shooting,,
+Alexander Johnson,Dahntay Jones,Hakim Warrick,Junior Harrington,Tarence Kinsey,Andre Brown,Damien Wilkins,Johan Petro,Mickael Gelabale,Mike Wilks,4,0:44,MEM,free throw,,,,,,,1,,1,Dahntay Jones,,,foul,made,,,,
+Alexander Johnson,Dahntay Jones,Hakim Warrick,Junior Harrington,Tarence Kinsey,Andre Brown,Damien Wilkins,Johan Petro,Mickael Gelabale,Mike Wilks,4,0:30,SEA,shot,,,,,,,,,,Mike Wilks,,,,missed,,jump,35,21
+Alexander Johnson,Dahntay Jones,Hakim Warrick,Junior Harrington,Tarence Kinsey,Andre Brown,Damien Wilkins,Johan Petro,Mickael Gelabale,Mike Wilks,4,0:28,SEA,rebound,,,,,,,,,,Andre Brown,,,,,,off,,
+Alexander Johnson,Dahntay Jones,Hakim Warrick,Junior Harrington,Tarence Kinsey,Andre Brown,Damien Wilkins,Johan Petro,Mickael Gelabale,Mike Wilks,4,0:09,SEA,shot,Mike Wilks,,,,,,,,,Andre Brown,2,,,made,,jump,26,22
+Alexander Johnson,Dahntay Jones,Hakim Warrick,Junior Harrington,Tarence Kinsey,Andre Brown,Damien Wilkins,Johan Petro,Mickael Gelabale,Mike Wilks,4,0:02,MEM,shot,,,,,,,,,,Dahntay Jones,,,,missed,,jump,23,9
+Alexander Johnson,Dahntay Jones,Hakim Warrick,Junior Harrington,Tarence Kinsey,Andre Brown,Damien Wilkins,Johan Petro,Mickael Gelabale,Mike Wilks,4,0:00,SEA,rebound,,,,,,,,,,Andre Brown,,,,,,def,,

@@ -1,0 +1,463 @@
+a1,a2,a3,a4,a5,h1,h2,h3,h4,h5,period,time,team,etype,assist,away,block,entered,home,left,num,opponent,outof,player,points,possession,reason,result,steal,type,x,y
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,12:00,OFF,jump ball,,Kendrick Perkins,,,Dwight Howard,,,,,,,Jameer Nelson,,,,,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,11:38,ORL,turnover,,,,,,,,,,Grant Hill,,,traveling,,,,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,11:20,BOS,shot,,,Dwight Howard,,,,,,,Kendrick Perkins,,,,missed,,hook,27,12
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,11:17,ORL,rebound,,,,,,,,,,Hedo Turkoglu,,,,,,def,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,11:13,ORL,shot,Hedo Turkoglu,,,,,,,,,Jameer Nelson,2,,,made,,driving layup,25,6
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,10:52,BOS,shot,,,,,,,,,,Al Jefferson,2,,,made,,jump,38,10
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,10:37,ORL,shot,,,,,,,,,,Hedo Turkoglu,2,,,made,,jump,13,18
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,10:33,BOS,turnover,,,,,,,,,,Kendrick Perkins,,,bad pass,,,,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,10:30,ORL,shot,,,Kendrick Perkins,,,,,,,Dwight Howard,,,,missed,,layup,25,6
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,10:29,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,off,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,10:29,ORL,shot,,,,,,,,,,Dwight Howard,2,,,made,,dunk,25,6
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,10:29,BOS,foul,,,,,,,,Dwight Howard,,Rajon Rondo,,,,,,shooting,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,10:29,ORL,free throw,,,,,,,1,,1,Dwight Howard,,,foul,made,,,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,10:15,BOS,shot,,,,,,,,,,Delonte West,,,,missed,,jump,20,25
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,10:13,ORL,rebound,,,,,,,,,,Hedo Turkoglu,,,,,,def,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,10:00,ORL,turnover,,,,,,,,,,Dwight Howard,,,traveling,,,,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,9:40,BOS,turnover,,,,,,,,,,Kendrick Perkins,,,out of bounds lost ball turnover,,,,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,9:16,ORL,shot,,,,,,,,,,Grant Hill,,,,missed,,jump,12,23
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,9:14,ORL,rebound,,,,,,,,,,Tony Battie,,,,,,off,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,9:00,ORL,turnover,,,,,,,,,,Dwight Howard,,,bad pass,,Rajon Rondo,,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,8:57,ORL,foul,,,,,,,,Rajon Rondo,,Jameer Nelson,,,,,,shooting,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,8:57,BOS,free throw,,,,,,,1,,2,Rajon Rondo,,,foul,made,,,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,8:57,BOS,free throw,,,,,,,2,,2,Rajon Rondo,,,foul,made,,,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,8:34,ORL,shot,,,Kendrick Perkins,,,,,,,Dwight Howard,,,,missed,,layup,25,6
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,8:32,ORL,rebound,,,,,,,,,,,,,,,,,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,8:32,ORL,turnover,,,,,,,,,,,,,shot clock turnover,,,,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,8:16,BOS,shot,,,,,,,,,,Rajon Rondo,,,,missed,,jump,20,22
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,8:14,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,def,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,8:06,ORL,shot,,,,,,,,,,Tony Battie,,,,missed,,jump,21,16
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,8:03,BOS,rebound,,,,,,,,,,Kendrick Perkins,,,,,,def,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,7:54,BOS,shot,,,,,,,,,,Ryan Gomes,2,,,made,,fade away jumper,13,13
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,7:37,ORL,shot,,,,,,,,,,Hedo Turkoglu,,,,missed,,driving layup,25,6
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,7:36,ORL,shot,,,,,,,,,,Hedo Turkoglu,,,,missed,,tip,25,6
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,7:36,ORL,rebound,,,,,,,,,,Hedo Turkoglu,,,,,,off,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,7:34,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,off,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,7:30,BOS,foul,,,,,,,,Jameer Nelson,,Kendrick Perkins,,,,,,personal,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,7:21,ORL,shot,,,Kendrick Perkins,,,,,,,Jameer Nelson,,,,missed,,driving layup,25,6
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,7:18,BOS,rebound,,,,,,,,,,Delonte West,,,,,,def,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,7:13,ORL,foul,,,,,,,,Delonte West,,Hedo Turkoglu,,,,,,personal,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,7:06,BOS,turnover,,,,,,,,,,Ryan Gomes,,,bad pass,,Grant Hill,,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,7:02,ORL,shot,,,,,,,,,,Grant Hill,2,,,made,,driving dunk,25,6
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,6:52,BOS,shot,,,,,,,,,,Kendrick Perkins,2,,,made,,layup,25,6
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,6:38,ORL,shot,,,,,,,,,,Dwight Howard,,,,missed,,fade away jumper,32,11
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,6:36,BOS,rebound,,,,,,,,,,Al Jefferson,,,,,,def,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,6:20,BOS,shot,,,,,,,,,,Al Jefferson,2,,,made,,jump,34,9
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,6:12,ORL,timeout,,,,,,,,,,,,,,,,regular,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,5:52,ORL,shot,,,,,,,,,,Hedo Turkoglu,,,,missed,,3pt,39,27
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,5:52,ORL,rebound,,,,,,,,,,,,,,,,,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,5:52,BOS,foul,,,,,,,,Tony Battie,,Ryan Gomes,,,,,,loose ball,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,5:43,ORL,shot,,,,,,,,,,Hedo Turkoglu,2,,,made,,driving layup,25,6
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,5:43,BOS,violation,,,,,,,,,,Kendrick Perkins,,,,,,defensive goaltending,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,5:22,BOS,shot,,,,,,,,,,Al Jefferson,,,,missed,,jump,38,7
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,5:20,ORL,rebound,,,,,,,,,,Jameer Nelson,,,,,,def,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,5:11,ORL,shot,,,,,,,,,,Tony Battie,,,,missed,,jump,27,23
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,5:09,BOS,rebound,,,,,,,,,,Rajon Rondo,,,,,,def,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,4:59,ORL,foul,,,,,,,,Rajon Rondo,,Tony Battie,,,,,,personal,,
+Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,4:59,BOS,sub,,,,Gerald Green,,Al Jefferson,,,,,,,,,,,,
+Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,4:45,BOS,shot,Delonte West,,,,,,,,,Rajon Rondo,2,,,made,,running jump,24,15
+Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,4:23,ORL,shot,,,,,,,,,,Grant Hill,,,,missed,,reverse layup,25,6
+Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,4:21,BOS,rebound,,,,,,,,,,Kendrick Perkins,,,,,,def,,
+Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,4:13,BOS,shot,,,,,,,,,,Gerald Green,2,,,made,,jump,38,21
+Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,3:53,ORL,turnover,,,,,,,,,,Hedo Turkoglu,,,bad pass,,Ryan Gomes,,,
+Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,3:45,BOS,shot,,,,,,,,,,Gerald Green,,,,missed,,jump,12,8
+Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,3:43,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,def,,
+Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,1,3:35,BOS,foul,,,,,,,,Hedo Turkoglu,,Delonte West,,,,,,shooting,,
+Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,Tony Battie,1,3:35,ORL,sub,,,,Keyon Dooling,,Grant Hill,,,,,,,,,,,,
+Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,Tony Battie,1,3:35,ORL,free throw,,,,,,,1,,2,Hedo Turkoglu,,,foul,made,,,,
+Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,1,3:35,ORL,sub,,,,Darko Milicic,,Tony Battie,,,,,,,,,,,,
+Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,1,3:35,ORL,free throw,,,,,,,2,,2,Hedo Turkoglu,,,foul,made,,,,
+Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,1,3:24,BOS,shot,,,,,,,,,,Ryan Gomes,,,,missed,,3pt,49,9
+Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,1,3:22,ORL,rebound,,,,,,,,,,Hedo Turkoglu,,,,,,def,,
+Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,1,3:18,BOS,foul,,,,,,,,Darko Milicic,,Ryan Gomes,,,,,,shooting,,
+Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,1,3:18,ORL,free throw,,,,,,,1,,2,Darko Milicic,,,foul,missed,,,,
+Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,1,3:18,ORL,rebound,,,,,,,,,,,,,,,,,,
+Delonte West,Gerald Green,Kendrick Perkins,Leon Powe,Rajon Rondo,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,1,3:18,BOS,sub,,,,Leon Powe,,Ryan Gomes,,,,,,,,,,,,
+Delonte West,Gerald Green,Kendrick Perkins,Leon Powe,Rajon Rondo,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,1,3:18,ORL,free throw,,,,,,,2,,2,Darko Milicic,,,foul,missed,,,,
+Delonte West,Gerald Green,Kendrick Perkins,Leon Powe,Rajon Rondo,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,1,3:16,BOS,rebound,,,,,,,,,,Kendrick Perkins,,,,,,def,,
+Delonte West,Gerald Green,Kendrick Perkins,Leon Powe,Rajon Rondo,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,1,3:10,BOS,shot,,,,,,,,,,Gerald Green,,,,missed,,3pt,49,12
+Delonte West,Gerald Green,Kendrick Perkins,Leon Powe,Rajon Rondo,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,1,3:06,ORL,rebound,,,,,,,,,,Keyon Dooling,,,,,,def,,
+Delonte West,Gerald Green,Kendrick Perkins,Leon Powe,Rajon Rondo,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,1,3:00,BOS,foul,,,,,,,,Keyon Dooling,,Kendrick Perkins,,,,,,personal,,
+Delonte West,Gerald Green,Kendrick Perkins,Leon Powe,Rajon Rondo,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,1,3:00,ORL,free throw,,,,,,,1,,2,Keyon Dooling,,,foul,made,,,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,1,3:00,BOS,sub,,,,Al Jefferson,,Kendrick Perkins,,,,,,,,,,,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,Trevor Ariza,1,3:00,ORL,sub,,,,Trevor Ariza,,Dwight Howard,,,,,,,,,,,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,Trevor Ariza,1,3:00,ORL,free throw,,,,,,,2,,2,Keyon Dooling,,,foul,made,,,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,Trevor Ariza,1,2:48,BOS,shot,,,,,,,,,,Rajon Rondo,2,,,made,,driving layup,25,6
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,Trevor Ariza,1,2:48,ORL,foul,,,,,,,,Rajon Rondo,,Keyon Dooling,,,,,,shooting,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,Trevor Ariza,1,2:48,BOS,timeout,,,,,,,,,,,,,,,,regular,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,Trevor Ariza,1,2:48,BOS,free throw,,,,,,,1,,1,Rajon Rondo,,,foul,made,,,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,Trevor Ariza,1,2:29,ORL,turnover,,,,,,,,,,Darko Milicic,,,lost ball,,Al Jefferson,,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,Trevor Ariza,1,2:26,ORL,foul,,,,,,,,Gerald Green,,Hedo Turkoglu,,,,,,shooting,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,Trevor Ariza,1,2:26,BOS,free throw,,,,,,,1,,2,Gerald Green,,,foul,made,,,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Dwight Howard,Jameer Nelson,Keyon Dooling,Trevor Ariza,1,2:26,ORL,sub,,,,Dwight Howard,,Hedo Turkoglu,,,,,,,,,,,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Dwight Howard,Jameer Nelson,Keyon Dooling,Trevor Ariza,1,2:26,BOS,free throw,,,,,,,2,,2,Gerald Green,,,foul,made,,,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Dwight Howard,Jameer Nelson,Keyon Dooling,Trevor Ariza,1,2:03,ORL,shot,,,,,,,,,,Trevor Ariza,2,,,made,,jump bank,23,27
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Dwight Howard,Jameer Nelson,Keyon Dooling,Trevor Ariza,1,1:41,BOS,shot,,,,,,,,,,Al Jefferson,2,,,made,,reverse layup,25,6
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Dwight Howard,Jameer Nelson,Keyon Dooling,Trevor Ariza,1,1:31,BOS,foul,,,,,,,,Jameer Nelson,,Al Jefferson,,,,,,shooting,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Dwight Howard,Jameer Nelson,Keyon Dooling,Trevor Ariza,1,1:31,ORL,free throw,,,,,,,1,,2,Jameer Nelson,,,foul,made,,,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Dwight Howard,Jameer Nelson,Keyon Dooling,Trevor Ariza,1,1:31,ORL,free throw,,,,,,,2,,2,Jameer Nelson,,,foul,made,,,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Sebastian Telfair,Darko Milicic,Dwight Howard,Jameer Nelson,Keyon Dooling,Trevor Ariza,1,1:21,BOS,sub,,,,Sebastian Telfair,,Rajon Rondo,,,,,,,,,,,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Sebastian Telfair,Darko Milicic,Dwight Howard,Jameer Nelson,Keyon Dooling,Trevor Ariza,1,1:18,BOS,shot,,,,,,,,,,Sebastian Telfair,,,,missed,,jump,36,9
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Sebastian Telfair,Darko Milicic,Dwight Howard,Jameer Nelson,Keyon Dooling,Trevor Ariza,1,1:16,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,def,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Sebastian Telfair,Darko Milicic,Dwight Howard,Jameer Nelson,Keyon Dooling,Trevor Ariza,1,1:11,ORL,shot,,,,,,,,,,Jameer Nelson,2,,,made,,layup,25,6
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Sebastian Telfair,Darko Milicic,Dwight Howard,Jameer Nelson,Keyon Dooling,Trevor Ariza,1,0:58,BOS,turnover,,,,,,,,,,Gerald Green,,,traveling,,,,,
+Al Jefferson,Allan Ray,Gerald Green,Leon Powe,Sebastian Telfair,Darko Milicic,Dwight Howard,Jameer Nelson,Keyon Dooling,Trevor Ariza,1,0:58,BOS,sub,,,,Allan Ray,,Delonte West,,,,,,,,,,,,
+Al Jefferson,Allan Ray,Gerald Green,Leon Powe,Sebastian Telfair,Darko Milicic,Dwight Howard,Jameer Nelson,Keyon Dooling,Trevor Ariza,1,0:45,BOS,foul,,,,,,,,Jameer Nelson,,Sebastian Telfair,,,,,,personal,,
+Al Jefferson,Allan Ray,Gerald Green,Leon Powe,Sebastian Telfair,Darko Milicic,Dwight Howard,Jameer Nelson,Keyon Dooling,Trevor Ariza,1,0:45,ORL,free throw,,,,,,,1,,2,Jameer Nelson,,,foul,made,,,,
+Al Jefferson,Allan Ray,Gerald Green,Leon Powe,Sebastian Telfair,Darko Milicic,Dwight Howard,Jameer Nelson,Keyon Dooling,Trevor Ariza,1,0:45,ORL,free throw,,,,,,,2,,2,Jameer Nelson,,,foul,made,,,,
+Al Jefferson,Allan Ray,Gerald Green,Leon Powe,Sebastian Telfair,Darko Milicic,Dwight Howard,Jameer Nelson,Keyon Dooling,Trevor Ariza,1,0:32,ORL,foul,,,,,,,,,,Dwight Howard,,,,,,defense 3 second,,
+Al Jefferson,Allan Ray,Gerald Green,Leon Powe,Sebastian Telfair,Darko Milicic,Dwight Howard,Jameer Nelson,Keyon Dooling,Trevor Ariza,1,0:32,BOS,free throw,,,,,,,1,,1,Gerald Green,,,technical,made,,,,
+Al Jefferson,Allan Ray,Gerald Green,Leon Powe,Sebastian Telfair,Darko Milicic,Dwight Howard,Jameer Nelson,Keyon Dooling,Trevor Ariza,1,0:24,BOS,shot,,,,,,,,,,Al Jefferson,,,,missed,,jump,10,10
+Al Jefferson,Allan Ray,Gerald Green,Leon Powe,Sebastian Telfair,Darko Milicic,Dwight Howard,Jameer Nelson,Keyon Dooling,Trevor Ariza,1,0:22,BOS,rebound,,,,,,,,,,Leon Powe,,,,,,off,,
+Al Jefferson,Allan Ray,Gerald Green,Leon Powe,Sebastian Telfair,Darko Milicic,Dwight Howard,Jameer Nelson,Keyon Dooling,Trevor Ariza,1,0:22,BOS,shot,,,Darko Milicic,,,,,,,Leon Powe,,,,missed,,layup,25,6
+Al Jefferson,Allan Ray,Gerald Green,Leon Powe,Sebastian Telfair,Darko Milicic,Dwight Howard,Jameer Nelson,Keyon Dooling,Trevor Ariza,1,0:22,BOS,rebound,,,,,,,,,,,,,,,,,,
+Al Jefferson,Allan Ray,Gerald Green,Leon Powe,Sebastian Telfair,Darko Milicic,Dwight Howard,Jameer Nelson,Keyon Dooling,Trevor Ariza,1,0:00,BOS,shot,Allan Ray,,,,,,,,,Al Jefferson,2,,,made,,jump,38,21
+Al Jefferson,Allan Ray,Gerald Green,Leon Powe,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,11:41,BOS,turnover,,,,,,,,,,Al Jefferson,,,lost ball,,Grant Hill,,,
+Al Jefferson,Allan Ray,Gerald Green,Leon Powe,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,11:38,BOS,foul,,,,,,,,Grant Hill,,Allan Ray,,,,,,shooting,,
+Al Jefferson,Allan Ray,Gerald Green,Leon Powe,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,11:38,ORL,free throw,,,,,,,1,,2,Grant Hill,,,foul,missed,,,,
+Al Jefferson,Allan Ray,Gerald Green,Leon Powe,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,11:38,ORL,rebound,,,,,,,,,,,,,,,,,,
+Al Jefferson,Allan Ray,Gerald Green,Leon Powe,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,11:38,ORL,free throw,,,,,,,2,,2,Grant Hill,,,foul,made,,,,
+Al Jefferson,Allan Ray,Gerald Green,Leon Powe,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,11:28,BOS,shot,Gerald Green,,,,,,,,,Al Jefferson,2,,,made,,dunk,25,6
+Al Jefferson,Allan Ray,Gerald Green,Leon Powe,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,11:13,ORL,foul,,,,,,,,Allan Ray,,Grant Hill,,,,,,offensive,,
+Al Jefferson,Allan Ray,Gerald Green,Leon Powe,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,11:13,ORL,turnover,,,,,,,,,,Grant Hill,,,foul,,,,,
+Al Jefferson,Allan Ray,Gerald Green,Leon Powe,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,10:53,BOS,shot,,,,,,,,,,Al Jefferson,2,,,made,,hook,16,11
+Al Jefferson,Allan Ray,Gerald Green,Leon Powe,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,10:27,ORL,shot,,,,,,,,,,Carlos Arroyo,2,,,made,,driving layup,25,6
+Al Jefferson,Allan Ray,Gerald Green,Leon Powe,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,10:08,ORL,foul,,,,,,,,Gerald Green,,Carlos Arroyo,,,,,,personal,,
+Al Jefferson,Allan Ray,Gerald Green,Leon Powe,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,9:55,BOS,shot,,,Darko Milicic,,,,,,,Al Jefferson,,,,missed,,hook,30,12
+Al Jefferson,Allan Ray,Gerald Green,Leon Powe,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,9:51,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,def,,
+Al Jefferson,Allan Ray,Gerald Green,Leon Powe,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,9:47,BOS,foul,,,,,,,,Dwight Howard,,Al Jefferson,,,,,,personal,,
+Al Jefferson,Allan Ray,Gerald Green,Kendrick Perkins,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,9:47,BOS,sub,,,,Kendrick Perkins,,Leon Powe,,,,,,,,,,,,
+Al Jefferson,Allan Ray,Gerald Green,Kendrick Perkins,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,9:39,ORL,shot,,,,,,,,,,Darko Milicic,2,,,made,,jump,18,25
+Al Jefferson,Allan Ray,Gerald Green,Kendrick Perkins,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,9:17,BOS,shot,Allan Ray,,,,,,,,,Kendrick Perkins,2,,,made,,reverse layup,25,6
+Al Jefferson,Allan Ray,Gerald Green,Kendrick Perkins,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,8:59,ORL,turnover,,,,,,,,,,Dwight Howard,,,lost ball,,Kendrick Perkins,,,
+Al Jefferson,Allan Ray,Gerald Green,Kendrick Perkins,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,8:59,ORL,violation,,,,,,,,,,Trevor Ariza,,,,,,kicked ball,,
+Al Jefferson,Allan Ray,Gerald Green,Kendrick Perkins,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,8:59,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Al Jefferson,Delonte West,Gerald Green,Kendrick Perkins,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,8:59,BOS,sub,,,,Delonte West,,Allan Ray,,,,,,,,,,,,
+Al Jefferson,Delonte West,Gerald Green,Kendrick Perkins,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,8:47,BOS,turnover,,,,,,,,,,Gerald Green,,,out of bounds lost ball turnover,,,,,
+Al Jefferson,Delonte West,Gerald Green,Kendrick Perkins,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,8:30,BOS,foul,,,,,,,,Dwight Howard,,Al Jefferson,,,,,,shooting,,
+Al Jefferson,Delonte West,Gerald Green,Kendrick Perkins,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,8:30,ORL,free throw,,,,,,,1,,2,Dwight Howard,,,foul,missed,,,,
+Al Jefferson,Delonte West,Gerald Green,Kendrick Perkins,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,8:30,ORL,rebound,,,,,,,,,,,,,,,,,,
+Al Jefferson,Delonte West,Gerald Green,Kendrick Perkins,Ryan Gomes,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,8:30,BOS,sub,,,,Ryan Gomes,,Sebastian Telfair,,,,,,,,,,,,
+Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,8:30,BOS,sub,,,,Rajon Rondo,,Al Jefferson,,,,,,,,,,,,
+Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,8:30,ORL,free throw,,,,,,,2,,2,Dwight Howard,,,foul,made,,,,
+Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,8:20,BOS,shot,,,,,,,,,,Ryan Gomes,,,,missed,,jump,34,23
+Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,8:17,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,def,,
+Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,8:12,ORL,shot,,,,,,,,,,Grant Hill,2,,,made,,layup,25,6
+Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,7:46,BOS,shot,,,,,,,,,,Ryan Gomes,,,,missed,,3pt,48,10
+Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,7:43,ORL,rebound,,,,,,,,,,Carlos Arroyo,,,,,,def,,
+Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,7:28,ORL,foul,,,,,,,,Delonte West,,Darko Milicic,,,,,,offensive,,
+Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,7:28,ORL,turnover,,,,,,,,,,Darko Milicic,,,foul,,,,,
+Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,7:16,BOS,shot,,,,,,,,,,Rajon Rondo,,,,missed,,running jump,25,13
+Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,7:15,ORL,rebound,,,,,,,,,,,,,,,,,,
+Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,7:15,BOS,foul,,,,,,,,Dwight Howard,,Kendrick Perkins,,,,,,loose ball,,
+Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Ryan Gomes,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,7:15,BOS,sub,,,,Leon Powe,,Kendrick Perkins,,,,,,,,,,,,
+Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Ryan Gomes,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,7:03,ORL,shot,,,,,,,,,,Carlos Arroyo,,,,missed,,jump,37,17
+Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Ryan Gomes,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,7:01,BOS,rebound,,,,,,,,,,,,,,,,,,
+Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Ryan Gomes,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,7:01,ORL,foul,,,,,,,,Rajon Rondo,,Carlos Arroyo,,,,,,loose ball,,
+Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Ryan Gomes,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,6:50,BOS,shot,,,,,,,,,,Delonte West,,,,missed,,3pt,45,21
+Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Ryan Gomes,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,6:48,BOS,rebound,,,,,,,,,,,,,,,,,,
+Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Ryan Gomes,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,6:48,BOS,turnover,,,,,,,,,,Rajon Rondo,,,inbound turnover,,,,,
+Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Ryan Gomes,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,6:29,ORL,shot,,,,,,,,,,Carlos Arroyo,,,,missed,,jump,36,23
+Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Ryan Gomes,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,6:26,BOS,rebound,,,,,,,,,,Gerald Green,,,,,,def,,
+Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Ryan Gomes,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,6:19,BOS,turnover,,,,,,,,,,Leon Powe,,,lost ball,,Carlos Arroyo,,,
+Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Ryan Gomes,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Trevor Ariza,2,6:16,BOS,foul,,,,,,,,Grant Hill,,Gerald Green,,,,,,shooting,,
+Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Ryan Gomes,Carlos Arroyo,Darko Milicic,Grant Hill,Tony Battie,Trevor Ariza,2,6:16,ORL,sub,,,,Tony Battie,,Dwight Howard,,,,,,,,,,,,
+Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Ryan Gomes,Carlos Arroyo,Darko Milicic,Grant Hill,Tony Battie,Trevor Ariza,2,6:16,ORL,free throw,,,,,,,1,,2,Grant Hill,,,foul,made,,,,
+Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Ryan Gomes,Carlos Arroyo,Darko Milicic,Grant Hill,Tony Battie,Trevor Ariza,2,6:16,ORL,free throw,,,,,,,2,,2,Grant Hill,,,foul,made,,,,
+Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Ryan Gomes,Carlos Arroyo,Darko Milicic,Grant Hill,Tony Battie,Trevor Ariza,2,6:10,BOS,shot,Rajon Rondo,,,,,,,,,Ryan Gomes,2,,,made,,jump,39,19
+Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Ryan Gomes,Carlos Arroyo,Darko Milicic,Grant Hill,Tony Battie,Trevor Ariza,2,5:49,ORL,shot,,,,,,,,,,Trevor Ariza,2,,,made,,driving layup,25,6
+Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Ryan Gomes,Carlos Arroyo,Darko Milicic,Grant Hill,Tony Battie,Trevor Ariza,2,5:49,BOS,foul,,,,,,,,Trevor Ariza,,Gerald Green,,,,,,shooting,,
+Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Ryan Gomes,Carlos Arroyo,Darko Milicic,Grant Hill,Tony Battie,Trevor Ariza,2,5:49,ORL,timeout,,,,,,,,,,,,,,,,regular,,
+Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Carlos Arroyo,Darko Milicic,Grant Hill,Tony Battie,Trevor Ariza,2,5:49,BOS,sub,,,,Allan Ray,,Gerald Green,,,,,,,,,,,,
+Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Grant Hill,Jameer Nelson,Tony Battie,Trevor Ariza,2,5:49,ORL,sub,,,,Jameer Nelson,,Carlos Arroyo,,,,,,,,,,,,
+Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Grant Hill,Jameer Nelson,Tony Battie,Trevor Ariza,2,5:49,ORL,free throw,,,,,,,1,,1,Trevor Ariza,,,foul,missed,,,,
+Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Grant Hill,Jameer Nelson,Tony Battie,Trevor Ariza,2,5:47,BOS,rebound,,,,,,,,,,Leon Powe,,,,,,def,,
+Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Grant Hill,Jameer Nelson,Tony Battie,Trevor Ariza,2,5:41,ORL,foul,,,,,,,,Rajon Rondo,,Tony Battie,,,,,,shooting,,
+Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,2,5:41,ORL,sub,,,,Hedo Turkoglu,,Trevor Ariza,,,,,,,,,,,,
+Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,2,5:41,BOS,free throw,,,,,,,1,,2,Rajon Rondo,,,foul,made,,,,
+Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,2,5:41,BOS,free throw,,,,,,,2,,2,Rajon Rondo,,,foul,missed,,,,
+Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,2,5:40,BOS,rebound,,,,,,,,,,Leon Powe,,,,,,off,,
+Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,2,5:39,BOS,shot,,,,,,,,,,Leon Powe,,,,missed,,layup,25,6
+Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,2,5:37,ORL,rebound,,,,,,,,,,Tony Battie,,,,,,def,,
+Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,2,5:18,ORL,shot,,,,,,,,,,Tony Battie,,,,missed,,jump,25,23
+Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,2,5:16,ORL,rebound,,,,,,,,,,Darko Milicic,,,,,,off,,
+Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,2,5:14,ORL,shot,,,,,,,,,,Darko Milicic,2,,,made,,layup,25,6
+Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,2,4:59,BOS,shot,,,,,,,,,,Ryan Gomes,,,,missed,,running jump,23,13
+Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,2,4:58,BOS,rebound,,,,,,,,,,Leon Powe,,,,,,off,,
+Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,2,4:58,BOS,shot,,,,,,,,,,Leon Powe,2,,,made,,layup,25,6
+Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,2,4:58,ORL,foul,,,,,,,,Leon Powe,,Tony Battie,,,,,,shooting,,
+Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,2,4:58,ORL,sub,,,,Dwight Howard,,Tony Battie,,,,,,,,,,,,
+Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,2,4:58,BOS,free throw,,,,,,,1,,1,Leon Powe,,,foul,made,,,,
+Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,2,4:46,BOS,foul,,,,,,,,Hedo Turkoglu,,Delonte West,,,,,,personal,,
+Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,2,4:46,ORL,free throw,,,,,,,1,,2,Hedo Turkoglu,,,foul,made,,,,
+Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,2,4:46,ORL,free throw,,,,,,,2,,2,Hedo Turkoglu,,,foul,made,,,,
+Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,2,4:33,BOS,shot,,,,,,,,,,Delonte West,,,,missed,,3pt,48,10
+Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,2,4:31,ORL,rebound,,,,,,,,,,Hedo Turkoglu,,,,,,def,,
+Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,2,4:28,ORL,shot,Jameer Nelson,,,,,,,,,Grant Hill,2,,,made,,layup,25,6
+Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,2,4:23,BOS,turnover,,,,,,,,,,Rajon Rondo,,,bad pass,,,,,
+Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,2,4:18,ORL,foul,,,,,,,,Rajon Rondo,,Jameer Nelson,,,,,,offensive,,
+Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,2,4:18,ORL,turnover,,,,,,,,,,Jameer Nelson,,,foul,,,,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,2,4:18,BOS,sub,,,,Gerald Green,,Delonte West,,,,,,,,,,,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,2,4:03,BOS,shot,,,,,,,,,,Gerald Green,,,,missed,,3pt,48,18
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,2,3:58,ORL,rebound,,,,,,,,,,Grant Hill,,,,,,def,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,2,3:53,ORL,shot,,,,,,,,,,Jameer Nelson,,,,missed,,3pt,22,31
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,2,3:51,ORL,rebound,,,,,,,,,,,,,,,,,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,2,3:47,BOS,foul,,,,,,,,,,Ryan Gomes,,,,,,defense 3 second,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,2,3:47,ORL,free throw,,,,,,,1,,1,Jameer Nelson,,,technical,made,,,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,2,3:33,ORL,shot,Hedo Turkoglu,,,,,,,,,Dwight Howard,2,,,made,,dunk,25,6
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,2,3:11,BOS,shot,,,Darko Milicic,,,,,,,Gerald Green,,,,missed,,jump,42,8
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,2,3:08,ORL,rebound,,,,,,,,,,Hedo Turkoglu,,,,,,def,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,2,3:05,ORL,turnover,,,,,,,,,,Hedo Turkoglu,,,bad pass,,Rajon Rondo,,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,2,3:01,BOS,shot,,,,,,,,,,Rajon Rondo,2,,,made,,dunk,25,6
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,2,2:41,ORL,shot,,,,,,,,,,Grant Hill,,,,missed,,jump,36,18
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,2,2:40,BOS,rebound,,,,,,,,,,Ryan Gomes,,,,,,def,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,2,2:23,BOS,shot,,,,,,,,,,Allan Ray,,,,missed,,jump,8,20
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,2,2:21,ORL,rebound,,,,,,,,,,Grant Hill,,,,,,def,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,2,2:15,BOS,foul,,,,,,,,Dwight Howard,,Leon Powe,,,,,,shooting,,
+Allan Ray,Gerald Green,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,2,2:15,BOS,timeout,,,,,,,,,,,,,,,,regular,,
+Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,2,2:15,BOS,sub,,,,Delonte West,,Gerald Green,,,,,,,,,,,,
+Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Sebastian Telfair,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,2,2:15,BOS,sub,,,,Sebastian Telfair,,Allan Ray,,,,,,,,,,,,
+Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Sebastian Telfair,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,2,2:15,ORL,sub,,,,Keyon Dooling,,Grant Hill,,,,,,,,,,,,
+Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Sebastian Telfair,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,2,2:15,ORL,free throw,,,,,,,1,,2,Dwight Howard,,,foul,missed,,,,
+Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Sebastian Telfair,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,2,2:15,ORL,rebound,,,,,,,,,,,,,,,,,,
+Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Sebastian Telfair,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,2,2:15,ORL,free throw,,,,,,,2,,2,Dwight Howard,,,foul,made,,,,
+Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Sebastian Telfair,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,2,1:58,BOS,shot,,,,,,,,,,Ryan Gomes,,,,missed,,driving layup,25,6
+Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Sebastian Telfair,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,2,1:56,BOS,shot,,,,,,,,,,Leon Powe,,,,missed,,tip,25,6
+Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Sebastian Telfair,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,2,1:56,BOS,rebound,,,,,,,,,,Leon Powe,,,,,,off,,
+Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Sebastian Telfair,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,2,1:55,ORL,rebound,,,,,,,,,,Darko Milicic,,,,,,def,,
+Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Sebastian Telfair,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,2,1:48,ORL,turnover,,,,,,,,,,Hedo Turkoglu,,,bad pass,,,,,
+Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Sebastian Telfair,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,2,1:30,BOS,shot,,,,,,,,,,Sebastian Telfair,,,,missed,,driving layup,25,6
+Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Sebastian Telfair,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,2,1:28,ORL,rebound,,,,,,,,,,Jameer Nelson,,,,,,def,,
+Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Sebastian Telfair,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,2,1:10,BOS,foul,,,,,,,,Hedo Turkoglu,,Sebastian Telfair,,,,,,personal,,
+Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Sebastian Telfair,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,2,1:10,ORL,free throw,,,,,,,1,,2,Hedo Turkoglu,,,foul,made,,,,
+Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Hedo Turkoglu,Keyon Dooling,2,1:10,ORL,sub,,,,Carlos Arroyo,,Jameer Nelson,,,,,,,,,,,,
+Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Hedo Turkoglu,Keyon Dooling,2,1:10,ORL,free throw,,,,,,,2,,2,Hedo Turkoglu,,,foul,made,,,,
+Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Hedo Turkoglu,Keyon Dooling,2,0:46,BOS,shot,,,,,,,,,,Sebastian Telfair,,,,missed,,3pt,47,18
+Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Hedo Turkoglu,Keyon Dooling,2,0:45,BOS,shot,,,,,,,,,,Ryan Gomes,2,,,made,,tip,25,6
+Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Hedo Turkoglu,Keyon Dooling,2,0:45,BOS,rebound,,,,,,,,,,Ryan Gomes,,,,,,off,,
+Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Hedo Turkoglu,Keyon Dooling,2,0:32,BOS,foul,,,,,,,,Keyon Dooling,,Ryan Gomes,,,,,,shooting,,
+Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Hedo Turkoglu,Keyon Dooling,2,0:32,ORL,free throw,,,,,,,1,,2,Keyon Dooling,,,foul,made,,,,
+Delonte West,Leon Powe,Rajon Rondo,Ryan Gomes,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Keyon Dooling,Trevor Ariza,2,0:32,ORL,sub,,,,Trevor Ariza,,Hedo Turkoglu,,,,,,,,,,,,
+Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Keyon Dooling,Trevor Ariza,2,0:32,BOS,sub,,,,Gerald Green,,Ryan Gomes,,,,,,,,,,,,
+Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Keyon Dooling,Trevor Ariza,2,0:32,BOS,timeout,,,,,,,,,,,,,,,,short,,
+Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Keyon Dooling,Trevor Ariza,2,0:32,ORL,free throw,,,,,,,2,,2,Keyon Dooling,,,foul,missed,,,,
+Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Keyon Dooling,Trevor Ariza,2,0:31,BOS,rebound,,,,,,,,,,Gerald Green,,,,,,def,,
+Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Keyon Dooling,Trevor Ariza,2,0:17,ORL,violation,,,,,,,,,,Keyon Dooling,,,,,,kicked ball,,
+Allan Ray,Delonte West,Gerald Green,Rajon Rondo,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Keyon Dooling,Trevor Ariza,2,0:17,BOS,sub,,,,Allan Ray,,Leon Powe,,,,,,,,,,,,
+Allan Ray,Delonte West,Gerald Green,Rajon Rondo,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Keyon Dooling,Trevor Ariza,2,0:03,BOS,shot,,,,,,,,,,Allan Ray,,,,missed,,jump,40,22
+Allan Ray,Delonte West,Gerald Green,Rajon Rondo,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Keyon Dooling,Trevor Ariza,2,0:03,BOS,rebound,,,,,,,,,,,,,,,,,,
+Allan Ray,Delonte West,Gerald Green,Rajon Rondo,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Keyon Dooling,Trevor Ariza,2,0:03,BOS,turnover,,,,,,,,,,,,,shot clock turnover,,,,,
+Allan Ray,Delonte West,Gerald Green,Rajon Rondo,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Keyon Dooling,Trevor Ariza,2,0:03,ORL,timeout,,,,,,,,,,,,,,,,short,,
+Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Keyon Dooling,Trevor Ariza,2,0:03,BOS,sub,,,,Leon Powe,,Allan Ray,,,,,,,,,,,,
+Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Keyon Dooling,Trevor Ariza,2,0:00,ORL,shot,,,,,,,,,,Keyon Dooling,,,,missed,,running jump,31,25
+Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Sebastian Telfair,Carlos Arroyo,Darko Milicic,Dwight Howard,Keyon Dooling,Trevor Ariza,2,0:00,ORL,rebound,,,,,,,,,,,,,,,,,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,11:35,BOS,shot,,,,,,,,,,Al Jefferson,2,,,made,,hook,25,13
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,11:07,ORL,shot,,,Kendrick Perkins,,,,,,,Dwight Howard,,,,missed,,jump,24,12
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,11:07,ORL,rebound,,,,,,,,,,,,,,,,,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,11:07,ORL,turnover,,,,,,,,,,,,,shot clock turnover,,,,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,10:54,BOS,shot,Al Jefferson,,,,,,,,,Delonte West,2,,,made,,jump,34,23
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,10:32,ORL,shot,,,Al Jefferson,,,,,,,Grant Hill,,,,missed,,driving layup,25,6
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,10:32,ORL,rebound,,,,,,,,,,,,,,,,,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,10:25,ORL,shot,,,,,,,,,,Hedo Turkoglu,2,,,made,,jump,10,8
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,10:07,BOS,shot,,,,,,,,,,Ryan Gomes,,,,missed,,jump,32,25
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,10:05,ORL,rebound,,,,,,,,,,Tony Battie,,,,,,def,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,9:54,ORL,shot,,,,,,,,,,Hedo Turkoglu,,,,missed,,jump,36,25
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,9:52,BOS,rebound,,,,,,,,,,Kendrick Perkins,,,,,,def,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,9:44,BOS,turnover,,,,,,,,,,Kendrick Perkins,,,bad pass,,Dwight Howard,,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,9:40,ORL,shot,Jameer Nelson,,,,,,,,,Hedo Turkoglu,2,,,made,,layup,25,6
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,9:17,BOS,shot,,,,,,,,,,Al Jefferson,2,,,made,,driving dunk,25,6
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,9:00,ORL,shot,,,,,,,,,,Dwight Howard,2,,,made,,dunk,25,6
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,9:00,BOS,foul,,,,,,,,Dwight Howard,,Kendrick Perkins,,,,,,shooting,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,9:00,ORL,free throw,,,,,,,1,,1,Dwight Howard,,,foul,missed,,,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,8:58,BOS,rebound,,,,,,,,,,Al Jefferson,,,,,,def,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,8:53,ORL,foul,,,,,,,,Ryan Gomes,,Dwight Howard,,,,,,shooting,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,8:53,BOS,free throw,,,,,,,1,,2,Ryan Gomes,,,foul,missed,,,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,8:53,BOS,rebound,,,,,,,,,,,,,,,,,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,8:53,BOS,free throw,,,,,,,2,,2,Ryan Gomes,,,foul,missed,,,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,8:52,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,def,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,8:36,ORL,shot,,,,,,,,,,Tony Battie,,,,missed,,jump,21,19
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,8:34,BOS,rebound,,,,,,,,,,Kendrick Perkins,,,,,,def,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,8:19,BOS,shot,,,,,,,,,,Al Jefferson,,,,missed,,jump,11,9
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,8:17,BOS,rebound,,,,,,,,,,Ryan Gomes,,,,,,off,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,8:16,BOS,shot,,,Hedo Turkoglu,,,,,,,Ryan Gomes,,,,missed,,layup,25,6
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,8:14,ORL,rebound,,,,,,,,,,Jameer Nelson,,,,,,def,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,8:08,BOS,foul,,,,,,,,Dwight Howard,,Delonte West,,,,,,shooting,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,8:08,ORL,free throw,,,,,,,1,,2,Dwight Howard,,,foul,missed,,,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,8:08,ORL,rebound,,,,,,,,,,,,,,,,,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,8:08,ORL,free throw,,,,,,,2,,2,Dwight Howard,,,foul,missed,,,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,8:07,ORL,rebound,,,,,,,,,,Tony Battie,,,,,,off,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,7:49,ORL,shot,Dwight Howard,,,,,,,,,Hedo Turkoglu,3,,,made,,3pt,16,29
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,7:26,BOS,turnover,,,,,,,,,,Ryan Gomes,,,bad pass,,,,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,7:04,ORL,shot,Tony Battie,,,,,,,,,Grant Hill,2,,,made,,driving layup,25,6
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,6:45,BOS,turnover,,,,,,,,,,Kendrick Perkins,,,lost ball,,Dwight Howard,,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,6:41,ORL,shot,Dwight Howard,,,,,,,,,Jameer Nelson,2,,,made,,layup,25,6
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,6:41,BOS,timeout,,,,,,,,,,,,,,,,regular,,
+Al Jefferson,Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,6:41,BOS,sub,,,,Gerald Green,,Ryan Gomes,,,,,,,,,,,,
+Al Jefferson,Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,6:16,BOS,shot,,,,,,,,,,Gerald Green,,,,missed,,3pt,14,41
+Al Jefferson,Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,6:16,BOS,rebound,,,,,,,,,,,,,,,,,,
+Al Jefferson,Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,6:16,BOS,turnover,,,,,,,,,,,,,shot clock turnover,,,,,
+Al Jefferson,Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,6:01,ORL,shot,,,,,,,,,,Hedo Turkoglu,,,,missed,,driving layup,25,6
+Al Jefferson,Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,6:00,BOS,rebound,,,,,,,,,,Al Jefferson,,,,,,def,,
+Al Jefferson,Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,5:39,BOS,shot,Delonte West,,,,,,,,,Rajon Rondo,2,,,made,,jump,42,9
+Al Jefferson,Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,5:21,ORL,shot,,,,,,,,,,Grant Hill,,,,missed,,jump,10,8
+Al Jefferson,Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,5:19,BOS,rebound,,,,,,,,,,Rajon Rondo,,,,,,def,,
+Al Jefferson,Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,5:15,BOS,shot,,,,,,,,,,Delonte West,,,,missed,,jump,40,15
+Al Jefferson,Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,5:13,ORL,rebound,,,,,,,,,,Grant Hill,,,,,,def,,
+Al Jefferson,Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,5:07,ORL,shot,,,,,,,,,,Hedo Turkoglu,,,,missed,,3pt,11,27
+Al Jefferson,Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,5:05,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,off,,
+Al Jefferson,Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,4:59,ORL,shot,,,,,,,,,,Jameer Nelson,,,,missed,,layup,25,6
+Al Jefferson,Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,4:58,BOS,rebound,,,,,,,,,,Delonte West,,,,,,def,,
+Al Jefferson,Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,4:51,BOS,shot,,,Tony Battie,,,,,,,Rajon Rondo,,,,missed,,layup,25,6
+Al Jefferson,Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,4:49,ORL,rebound,,,,,,,,,,Jameer Nelson,,,,,,def,,
+Al Jefferson,Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,4:47,ORL,shot,Jameer Nelson,,,,,,,,,Grant Hill,2,,,made,,layup,25,6
+Al Jefferson,Delonte West,Gerald Green,Kendrick Perkins,Rajon Rondo,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,4:47,BOS,foul,,,,,,,,Grant Hill,,Kendrick Perkins,,,,,,shooting,,
+Al Jefferson,Delonte West,Gerald Green,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Tony Battie,3,4:47,BOS,sub,,,,Ryan Gomes,,Kendrick Perkins,,,,,,,,,,,,
+Al Jefferson,Delonte West,Gerald Green,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,3,4:47,ORL,sub,,,,Darko Milicic,,Tony Battie,,,,,,,,,,,,
+Al Jefferson,Delonte West,Gerald Green,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,3,4:47,ORL,free throw,,,,,,,1,,1,Grant Hill,,,foul,made,,,,
+Al Jefferson,Delonte West,Gerald Green,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,3,4:24,BOS,shot,,,Dwight Howard,,,,,,,Al Jefferson,,,,missed,,jump,11,14
+Al Jefferson,Delonte West,Gerald Green,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,3,4:23,BOS,rebound,,,,,,,,,,Delonte West,,,,,,off,,
+Al Jefferson,Delonte West,Gerald Green,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,3,4:23,BOS,turnover,,,,,,,,,,,,,shot clock turnover,,,,,
+Al Jefferson,Delonte West,Gerald Green,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,3,4:23,ORL,sub,,,,Keyon Dooling,,Grant Hill,,,,,,,,,,,,
+Al Jefferson,Delonte West,Gerald Green,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,3,4:07,ORL,turnover,,,,,,,,,,Darko Milicic,,,bad pass,,Delonte West,,,
+Al Jefferson,Delonte West,Gerald Green,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,3,4:02,BOS,shot,,,,,,,,,,Delonte West,2,,,made,,driving dunk,25,6
+Al Jefferson,Delonte West,Gerald Green,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,3,3:51,ORL,shot,Keyon Dooling,,,,,,,,,Hedo Turkoglu,3,,,made,,3pt,46,20
+Al Jefferson,Delonte West,Gerald Green,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,3,3:38,BOS,shot,Al Jefferson,,,,,,,,,Delonte West,2,,,made,,reverse layup,25,6
+Al Jefferson,Delonte West,Gerald Green,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,3,3:38,ORL,foul,,,,,,,,Delonte West,,Dwight Howard,,,,,,shooting,,
+Al Jefferson,Delonte West,Gerald Green,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,3,3:38,BOS,free throw,,,,,,,1,,1,Delonte West,,,foul,made,,,,
+Al Jefferson,Delonte West,Gerald Green,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,3,3:15,ORL,shot,Jameer Nelson,,,,,,,,,Keyon Dooling,3,,,made,,3pt,2,11
+Al Jefferson,Delonte West,Gerald Green,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,3,2:57,BOS,shot,,,,,,,,,,Delonte West,,,,missed,,driving layup,25,6
+Al Jefferson,Delonte West,Gerald Green,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,3,2:56,ORL,rebound,,,,,,,,,,Darko Milicic,,,,,,def,,
+Al Jefferson,Delonte West,Gerald Green,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,3,2:53,ORL,shot,,,,,,,,,,Keyon Dooling,2,,,made,,driving layup,25,6
+Al Jefferson,Delonte West,Gerald Green,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,3,2:53,BOS,foul,,,,,,,,Keyon Dooling,,Ryan Gomes,,,,,,shooting,,
+Al Jefferson,Delonte West,Gerald Green,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,3,2:53,ORL,timeout,,,,,,,,,,,,,,,,regular,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,3,2:53,BOS,sub,,,,Leon Powe,,Ryan Gomes,,,,,,,,,,,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,3,2:53,ORL,free throw,,,,,,,1,,1,Keyon Dooling,,,foul,made,,,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,3,2:33,BOS,shot,,,,,,,,,,Al Jefferson,2,,,made,,jump hook,19,10
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,3,2:09,BOS,foul,,,,,,,,Jameer Nelson,,Rajon Rondo,,,,,,shooting,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,3,2:09,ORL,free throw,,,,,,,1,,2,Jameer Nelson,,,foul,made,,,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,3,2:09,ORL,free throw,,,,,,,2,,2,Jameer Nelson,,,foul,made,,,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,3,1:51,BOS,shot,Al Jefferson,,,,,,,,,Delonte West,2,,,made,,layup,25,6
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,3,1:35,ORL,shot,,,,,,,,,,Hedo Turkoglu,,,,missed,,3pt,13,28
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,3,1:32,BOS,rebound,,,,,,,,,,Delonte West,,,,,,def,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,3,1:29,ORL,foul,,,,,,,,Al Jefferson,,Hedo Turkoglu,,,,,,personal,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Dwight Howard,Jameer Nelson,Keyon Dooling,Trevor Ariza,3,1:29,ORL,sub,,,,Trevor Ariza,,Hedo Turkoglu,,,,,,,,,,,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Dwight Howard,Jameer Nelson,Keyon Dooling,Trevor Ariza,3,1:23,ORL,foul,,,,,,,,Al Jefferson,,Dwight Howard,,,,,,shooting,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Dwight Howard,Jameer Nelson,Keyon Dooling,Trevor Ariza,3,1:23,BOS,free throw,,,,,,,1,,2,Al Jefferson,,,foul,missed,,,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Dwight Howard,Jameer Nelson,Keyon Dooling,Trevor Ariza,3,1:23,BOS,rebound,,,,,,,,,,,,,,,,,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Dwight Howard,Jameer Nelson,Keyon Dooling,Trevor Ariza,3,1:23,BOS,free throw,,,,,,,2,,2,Al Jefferson,,,foul,missed,,,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Dwight Howard,Jameer Nelson,Keyon Dooling,Trevor Ariza,3,1:23,BOS,rebound,,,,,,,,,,Rajon Rondo,,,,,,off,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Dwight Howard,Jameer Nelson,Keyon Dooling,Trevor Ariza,3,1:14,BOS,shot,Rajon Rondo,,,,,,,,,Al Jefferson,2,,,made,,dunk,25,6
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Dwight Howard,Jameer Nelson,Keyon Dooling,Trevor Ariza,3,0:53,ORL,turnover,,,,,,,,,,Trevor Ariza,,,lost ball,,Rajon Rondo,,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Dwight Howard,Jameer Nelson,Keyon Dooling,Trevor Ariza,3,0:48,BOS,turnover,,,,,,,,,,Rajon Rondo,,,lost ball,,Jameer Nelson,,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Dwight Howard,Jameer Nelson,Keyon Dooling,Trevor Ariza,3,0:37,ORL,shot,,,,,,,,,,Jameer Nelson,3,,,made,,3pt,7,24
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Dwight Howard,Jameer Nelson,Keyon Dooling,Trevor Ariza,3,0:20,BOS,foul,,,,,,,,Jameer Nelson,,Delonte West,,,,,,offensive,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Darko Milicic,Dwight Howard,Jameer Nelson,Keyon Dooling,Trevor Ariza,3,0:20,BOS,turnover,,,,,,,,,,Delonte West,,,foul,,,,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Carlos Arroyo,Darko Milicic,Keyon Dooling,Tony Battie,Trevor Ariza,4,11:47,ORL,shot,,,,,,,,,,Trevor Ariza,,,,missed,,driving layup,25,6
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Carlos Arroyo,Darko Milicic,Keyon Dooling,Tony Battie,Trevor Ariza,4,11:46,ORL,rebound,,,,,,,,,,Trevor Ariza,,,,,,off,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Carlos Arroyo,Darko Milicic,Keyon Dooling,Tony Battie,Trevor Ariza,4,11:39,ORL,turnover,,,,,,,,,,Keyon Dooling,,,step out of bounds turnover,,,,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Carlos Arroyo,Darko Milicic,Keyon Dooling,Tony Battie,Trevor Ariza,4,11:29,ORL,foul,,,,,,,,Rajon Rondo,,Darko Milicic,,,,,,personal,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Carlos Arroyo,Darko Milicic,Keyon Dooling,Tony Battie,Trevor Ariza,4,11:14,BOS,shot,,,,,,,,,,Rajon Rondo,2,,,made,,jump,21,16
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Carlos Arroyo,Darko Milicic,Keyon Dooling,Tony Battie,Trevor Ariza,4,10:54,BOS,foul,,,,,,,,Darko Milicic,,Rajon Rondo,,,,,,personal,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Carlos Arroyo,Darko Milicic,Keyon Dooling,Tony Battie,Trevor Ariza,4,10:42,ORL,shot,,,,,,,,,,Keyon Dooling,,,,missed,,jump,37,18
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Carlos Arroyo,Darko Milicic,Keyon Dooling,Tony Battie,Trevor Ariza,4,10:40,BOS,rebound,,,,,,,,,,Al Jefferson,,,,,,def,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Carlos Arroyo,Darko Milicic,Keyon Dooling,Tony Battie,Trevor Ariza,4,10:30,BOS,shot,,,,,,,,,,Gerald Green,,,,missed,,jump,25,22
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Carlos Arroyo,Darko Milicic,Keyon Dooling,Tony Battie,Trevor Ariza,4,10:29,ORL,rebound,,,,,,,,,,,,,,,,,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Carlos Arroyo,Darko Milicic,Keyon Dooling,Tony Battie,Trevor Ariza,4,10:29,BOS,foul,,,,,,,,Darko Milicic,,Al Jefferson,,,,,,loose ball,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Carlos Arroyo,Darko Milicic,Keyon Dooling,Tony Battie,Trevor Ariza,4,10:19,ORL,turnover,,,,,,,,,,Tony Battie,,,3 second violation,,,,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Carlos Arroyo,Darko Milicic,Keyon Dooling,Tony Battie,Trevor Ariza,4,10:07,BOS,shot,,,,,,,,,,Delonte West,2,,,made,,running jump,30,15
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Carlos Arroyo,Darko Milicic,Keyon Dooling,Tony Battie,Trevor Ariza,4,9:39,ORL,turnover,,,,,,,,,,,,,shot clock turnover,,,,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Carlos Arroyo,Darko Milicic,Keyon Dooling,Tony Battie,Trevor Ariza,4,9:15,BOS,shot,,,,,,,,,,Delonte West,,,,missed,,jump,38,24
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Carlos Arroyo,Darko Milicic,Keyon Dooling,Tony Battie,Trevor Ariza,4,9:13,ORL,rebound,,,,,,,,,,Carlos Arroyo,,,,,,def,,
+Al Jefferson,Delonte West,Gerald Green,Leon Powe,Rajon Rondo,Carlos Arroyo,Darko Milicic,Keyon Dooling,Tony Battie,Trevor Ariza,4,9:06,BOS,foul,,,,,,,,Keyon Dooling,,Gerald Green,,,,,,personal,,
+Al Jefferson,Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Carlos Arroyo,Darko Milicic,Keyon Dooling,Tony Battie,Trevor Ariza,4,9:06,BOS,sub,,,,Allan Ray,,Gerald Green,,,,,,,,,,,,
+Al Jefferson,Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Carlos Arroyo,Darko Milicic,Keyon Dooling,Tony Battie,Trevor Ariza,4,8:53,ORL,shot,Darko Milicic,,,,,,,,,Carlos Arroyo,2,,,made,,jump,38,23
+Al Jefferson,Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Carlos Arroyo,Darko Milicic,Keyon Dooling,Tony Battie,Trevor Ariza,4,8:30,ORL,foul,,,,,,,,Delonte West,,Tony Battie,,,,,,shooting,,
+Al Jefferson,Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Carlos Arroyo,Darko Milicic,Keyon Dooling,Tony Battie,Trevor Ariza,4,8:30,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Al Jefferson,Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Carlos Arroyo,Darko Milicic,Keyon Dooling,Tony Battie,Trevor Ariza,4,8:30,BOS,free throw,,,,,,,1,,2,Delonte West,,,foul,made,,,,
+Al Jefferson,Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Carlos Arroyo,Darko Milicic,Keyon Dooling,Tony Battie,Trevor Ariza,4,8:30,BOS,free throw,,,,,,,2,,2,Delonte West,,,foul,made,,,,
+Al Jefferson,Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Carlos Arroyo,Darko Milicic,Keyon Dooling,Tony Battie,Trevor Ariza,4,8:07,ORL,shot,,,,,,,,,,Tony Battie,,,,missed,,jump,31,22
+Al Jefferson,Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Carlos Arroyo,Darko Milicic,Keyon Dooling,Tony Battie,Trevor Ariza,4,8:06,BOS,rebound,,,,,,,,,,,,,,,,,,
+Al Jefferson,Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Carlos Arroyo,Darko Milicic,Keyon Dooling,Tony Battie,Trevor Ariza,4,7:57,BOS,shot,Rajon Rondo,,,,,,,,,Delonte West,3,,,made,,3pt,40,26
+Al Jefferson,Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Carlos Arroyo,Darko Milicic,Keyon Dooling,Tony Battie,Trevor Ariza,4,7:31,ORL,shot,Carlos Arroyo,,,,,,,,,Keyon Dooling,3,,,made,,3pt,2,12
+Al Jefferson,Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Carlos Arroyo,Darko Milicic,Keyon Dooling,Tony Battie,Trevor Ariza,4,7:19,ORL,foul,,,,,,,,Delonte West,,Tony Battie,,,,,,personal,,
+Al Jefferson,Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Carlos Arroyo,Darko Milicic,Hedo Turkoglu,Keyon Dooling,Trevor Ariza,4,7:19,ORL,sub,,,,Hedo Turkoglu,,Tony Battie,,,,,,,,,,,,
+Al Jefferson,Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Carlos Arroyo,Darko Milicic,Grant Hill,Hedo Turkoglu,Trevor Ariza,4,7:19,ORL,sub,,,,Grant Hill,,Keyon Dooling,,,,,,,,,,,,
+Al Jefferson,Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,4,7:19,ORL,sub,,,,Dwight Howard,,Trevor Ariza,,,,,,,,,,,,
+Al Jefferson,Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,4,7:03,BOS,shot,,,,,,,,,,Al Jefferson,,,,missed,,fade away jumper,34,10
+Al Jefferson,Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,4,7:01,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,def,,
+Al Jefferson,Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,4,6:44,ORL,shot,Dwight Howard,,,,,,,,,Darko Milicic,2,,,made,,dunk,25,6
+Al Jefferson,Allan Ray,Delonte West,Leon Powe,Rajon Rondo,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,4,6:38,BOS,timeout,,,,,,,,,,,,,,,,short,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,4,6:38,BOS,sub,,,,Kendrick Perkins,,Leon Powe,,,,,,,,,,,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,4,6:27,BOS,shot,Delonte West,,,,,,,,,Allan Ray,3,,,made,,3pt,48,11
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,4,6:10,ORL,turnover,,,,,,,,,,Dwight Howard,,,lost ball,,Kendrick Perkins,,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,4,6:07,ORL,foul,,,,,,,,Delonte West,,Hedo Turkoglu,,,,,,shooting,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,4,6:07,BOS,free throw,,,,,,,1,,2,Delonte West,,,foul,missed,,,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,4,6:07,BOS,rebound,,,,,,,,,,,,,,,,,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,4,6:07,BOS,free throw,,,,,,,2,,2,Delonte West,,,foul,made,,,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,4,5:58,ORL,turnover,,,,,,,,,,Carlos Arroyo,,,lost ball,,Allan Ray,,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,4,5:54,BOS,shot,Rajon Rondo,,,,,,,,,Delonte West,2,,,made,,layup,25,6
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Carlos Arroyo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,4,5:53,ORL,timeout,,,,,,,,,,,,,,,,regular,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,5:53,ORL,sub,,,,Jameer Nelson,,Carlos Arroyo,,,,,,,,,,,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,5:35,ORL,shot,,,,,,,,,,Darko Milicic,,,,missed,,hook,34,8
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,5:33,BOS,rebound,,,,,,,,,,Al Jefferson,,,,,,def,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,5:21,BOS,shot,,,Darko Milicic,,,,,,,Delonte West,,,,missed,,layup,25,6
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,5:21,BOS,rebound,,,,,,,,,,,,,,,,,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,5:15,BOS,shot,,,,,,,,,,Allan Ray,,,,missed,,3pt,49,11
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,5:13,BOS,rebound,,,,,,,,,,Kendrick Perkins,,,,,,off,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,5:11,BOS,shot,,,,,,,,,,Kendrick Perkins,2,,,made,,dunk,25,6
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,4:54,ORL,turnover,,,,,,,,,,Dwight Howard,,,bad pass,,Delonte West,,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,4:38,BOS,shot,,,,,,,,,,Al Jefferson,2,,,made,,driving layup,25,6
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,4:38,ORL,timeout,,,,,,,,,,,,,,,,short,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,4:18,ORL,turnover,,,,,,,,,,Jameer Nelson,,,lost ball,,Kendrick Perkins,,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,4:10,BOS,shot,Delonte West,,,,,,,,,Al Jefferson,2,,,made,,hook,17,9
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,3:47,BOS,foul,,,,,,,,Grant Hill,,Allan Ray,,,,,,shooting,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,3:47,ORL,free throw,,,,,,,1,,2,Grant Hill,,,foul,made,,,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,3:47,ORL,free throw,,,,,,,2,,2,Grant Hill,,,foul,made,,,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,3:32,BOS,shot,,,,,,,,,,Delonte West,,,,missed,,fade away jumper,15,11
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,3:30,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,def,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,3:15,ORL,turnover,,,,,,,,,,Jameer Nelson,,,lost ball,,Rajon Rondo,,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,3:11,ORL,foul,,,,,,,,Rajon Rondo,,Grant Hill,,,,,,shooting,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,3:11,BOS,free throw,,,,,,,1,,2,Rajon Rondo,,,foul,made,,,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,3:11,BOS,free throw,,,,,,,2,,2,Rajon Rondo,,,foul,made,,,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,2:50,ORL,shot,,,,,,,,,,Hedo Turkoglu,,,,missed,,3pt,29,32
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,2:48,ORL,rebound,,,,,,,,,,Jameer Nelson,,,,,,off,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,2:47,ORL,turnover,,,,,,,,,,Jameer Nelson,,,out of bounds lost ball turnover,,,,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,2:47,BOS,timeout,,,,,,,,,,,,,,,,regular,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,2:35,BOS,shot,,,Darko Milicic,,,,,,,Delonte West,,,,missed,,driving layup,25,6
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,2:33,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,def,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,2:09,ORL,shot,,,,,,,,,,Hedo Turkoglu,,,,missed,,3pt,6,24
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,2:06,ORL,rebound,,,,,,,,,,Jameer Nelson,,,,,,off,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,1:42,ORL,shot,,,,,,,,,,Dwight Howard,,,,missed,,reverse layup,25,6
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,1:41,BOS,rebound,,,,,,,,,,Al Jefferson,,,,,,def,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,1:30,BOS,shot,Allan Ray,,,,,,,,,Al Jefferson,2,,,made,,jump,19,14
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,1:13,ORL,turnover,,,,,,,,,,Hedo Turkoglu,,,bad pass,,,,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,0:57,BOS,shot,,,,,,,,,,Al Jefferson,2,,,made,,layup,25,6
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,0:42,ORL,shot,,,,,,,,,,Jameer Nelson,,,,missed,,jump,11,17
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,0:40,BOS,rebound,,,,,,,,,,Kendrick Perkins,,,,,,def,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,0:39,BOS,turnover,,,,,,,,,,Delonte West,,,out of bounds lost ball turnover,,,,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Darko Milicic,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,0:39,ORL,timeout,,,,,,,,,,,,,,,,regular,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Carlos Arroyo,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,0:39,ORL,sub,,,,Carlos Arroyo,,Darko Milicic,,,,,,,,,,,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Carlos Arroyo,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,0:14,ORL,shot,,,,,,,,,,Jameer Nelson,,,,missed,,jump,41,19
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Carlos Arroyo,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,0:13,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,off,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Carlos Arroyo,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,4,0:13,BOS,foul,,,,,,,,Dwight Howard,,Al Jefferson,,,,,,shooting,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,4,0:13,ORL,sub,,,,Keyon Dooling,,Carlos Arroyo,,,,,,,,,,,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,4,0:13,ORL,free throw,,,,,,,1,,2,Dwight Howard,,,foul,missed,,,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,4,0:13,ORL,rebound,,,,,,,,,,,,,,,,,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,4,0:13,ORL,free throw,,,,,,,2,,2,Dwight Howard,,,foul,missed,,,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,4,0:12,BOS,rebound,,,,,,,,,,Kendrick Perkins,,,,,,def,,
+Al Jefferson,Allan Ray,Delonte West,Kendrick Perkins,Rajon Rondo,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,4,0:12,BOS,timeout,,,,,,,,,,,,,,,,regular,,
+Al Jefferson,Allan Ray,Delonte West,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,4,0:12,BOS,sub,,,,Ryan Gomes,,Kendrick Perkins,,,,,,,,,,,,
+Al Jefferson,Allan Ray,Delonte West,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,4,0:06,BOS,shot,,,Hedo Turkoglu,,,,,,,Rajon Rondo,,,,missed,,running jump,17,13
+Al Jefferson,Allan Ray,Delonte West,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,4,0:04,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,def,,
+Al Jefferson,Allan Ray,Delonte West,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,4,0:04,BOS,foul,,,,,,,,Dwight Howard,,Rajon Rondo,,,,,,personal,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,4,0:04,BOS,sub,,,,Kendrick Perkins,,Allan Ray,,,,,,,,,,,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,4,0:04,ORL,free throw,,,,,,,1,,2,Dwight Howard,,,foul,missed,,,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,4,0:04,ORL,rebound,,,,,,,,,,,,,,,,,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Jameer Nelson,Keyon Dooling,4,0:04,ORL,sub,,,,Darko Milicic,,Hedo Turkoglu,,,,,,,,,,,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Jameer Nelson,Keyon Dooling,4,0:04,ORL,free throw,,,,,,,2,,2,Dwight Howard,,,foul,made,,,,
+Al Jefferson,Delonte West,Kendrick Perkins,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Jameer Nelson,Keyon Dooling,4,0:04,BOS,timeout,,,,,,,,,,,,,,,,short,,
+Al Jefferson,Allan Ray,Delonte West,Rajon Rondo,Ryan Gomes,Darko Milicic,Dwight Howard,Grant Hill,Jameer Nelson,Keyon Dooling,4,0:04,BOS,sub,,,,Allan Ray,,Kendrick Perkins,,,,,,,,,,,,
+Al Jefferson,Allan Ray,Delonte West,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,4,0:04,ORL,sub,,,,Hedo Turkoglu,,Darko Milicic,,,,,,,,,,,,
+Al Jefferson,Allan Ray,Delonte West,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,4,0:00,BOS,shot,,,Hedo Turkoglu,,,,,,,Delonte West,,,,missed,,jump,35,11
+Al Jefferson,Allan Ray,Delonte West,Rajon Rondo,Ryan Gomes,Dwight Howard,Grant Hill,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,4,0:00,BOS,rebound,,,,,,,,,,,,,,,,,,

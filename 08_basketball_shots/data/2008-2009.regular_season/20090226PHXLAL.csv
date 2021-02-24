@@ -1,0 +1,455 @@
+a1,a2,a3,a4,a5,h1,h2,h3,h4,h5,period,time,team,etype,assist,away,block,entered,home,left,num,opponent,outof,player,points,possession,reason,result,steal,type,x,y
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,12:00,OFF,jump ball,,Shaquille O'Neal,,,Pau Gasol,,,,,,,Leandro Barbosa,,,,,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,11:44,LAL,foul,,,,,,,,,,Lamar Odom,,,,,,defense 3 second,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,11:44,PHX,free throw,,,,,,,1,,1,Leandro Barbosa,,,technical,missed,,,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,11:44,PHX,rebound,,,,,,,,,,,,,,,,,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,11:29,PHX,shot,,,,,,,,,,Leandro Barbosa,,,,missed,,3pt,40,27
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,11:28,LAL,rebound,,,,,,,,,,Pau Gasol,,,,,,def,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,11:18,LAL,shot,,,,,,,,,,Kobe Bryant,2,,,made,,turnaround jump,35,13
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,11:01,PHX,shot,,,Luke Walton,,,,,,,Grant Hill,,,,missed,,running jump,30,12
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,10:59,LAL,rebound,,,,,,,,,,Pau Gasol,,,,,,def,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,10:45,PHX,foul,,,,,,,,Kobe Bryant,,Alando Tucker,,,,,,shooting,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,10:45,LAL,free throw,,,,,,,1,,2,Kobe Bryant,,,foul,made,,,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,10:45,LAL,free throw,,,,,,,2,,2,Kobe Bryant,,,foul,missed,,,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,10:43,PHX,rebound,,,,,,,,,,Grant Hill,,,,,,def,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,10:38,PHX,shot,,,,,,,,,,Jason Richardson,,,,missed,,3pt,17,32
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,10:37,LAL,rebound,,,,,,,,,,Lamar Odom,,,,,,def,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,10:29,LAL,shot,Lamar Odom,,,,,,,,,Kobe Bryant,2,,,made,,jump,22,18
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,10:16,PHX,shot,Grant Hill,,,,,,,,,Shaquille O'Neal,2,,,made,,slam dunk,25,6
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,9:50,LAL,shot,Kobe Bryant,,,,,,,,,Pau Gasol,2,,,made,,slam dunk,25,6
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,9:39,PHX,shot,Leandro Barbosa,,,,,,,,,Shaquille O'Neal,2,,,made,,layup,25,6
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,9:19,LAL,shot,,,,,,,,,,Pau Gasol,2,,,made,,jump,13,22
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,9:08,PHX,shot,Grant Hill,,,,,,,,,Leandro Barbosa,3,,,made,,3pt,1,5
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,8:57,LAL,shot,Derek Fisher,,,,,,,,,Luke Walton,2,,,made,,jump,13,23
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,8:48,PHX,shot,,,,,,,,,,Leandro Barbosa,,,,missed,,jump,25,24
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,8:46,LAL,rebound,,,,,,,,,,Lamar Odom,,,,,,def,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,8:35,LAL,turnover,,,,,,,,,,Kobe Bryant,,,bad pass,,Leandro Barbosa,,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,8:32,PHX,shot,,,,,,,,,,Leandro Barbosa,2,,,made,,driving layup,25,6
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,8:06,LAL,turnover,,,,,,,,,,Lamar Odom,,,bad pass,,Grant Hill,,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,8:01,PHX,shot,Leandro Barbosa,,,,,,,,,Jason Richardson,2,,,made,,slam dunk,25,6
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,7:38,LAL,shot,Pau Gasol,,,,,,,,,Luke Walton,2,,,made,,jump,14,7
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,7:29,PHX,shot,,,,,,,,,,Leandro Barbosa,3,,,made,,3pt,16,31
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,7:09,LAL,shot,,,,,,,,,,Pau Gasol,,,,missed,,turnaround jump,26,14
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,7:07,PHX,rebound,,,,,,,,,,Shaquille O'Neal,,,,,,def,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,7:00,PHX,shot,,,,,,,,,,Jason Richardson,2,,,made,,driving reverse layup,25,6
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,6:48,LAL,shot,,,,,,,,,,Kobe Bryant,2,,,made,,jump,27,30
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,6:36,PHX,shot,Leandro Barbosa,,,,,,,,,Grant Hill,2,,,made,,jump,27,28
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,6:18,LAL,shot,,,,,,,,,,Luke Walton,,,,missed,,jump,19,10
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,6:17,LAL,shot,,,,,,,,,,Lamar Odom,,,,missed,,tip,25,6
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,6:17,LAL,rebound,,,,,,,,,,Lamar Odom,,,,,,off,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,6:15,LAL,shot,,,,,,,,,,Kobe Bryant,2,,,made,,fade away jumper,25,13
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,6:15,LAL,rebound,,,,,,,,,,Kobe Bryant,,,,,,off,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,6:04,PHX,shot,Leandro Barbosa,,,,,,,,,Alando Tucker,2,,,made,,driving reverse layup,25,6
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,5:45,PHX,foul,,,,,,,,Pau Gasol,,Shaquille O'Neal,,,,,,shooting,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,5:45,LAL,timeout,,,,,,,,,,,,,,,,regular,,
+Grant Hill,Jared Dudley,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,5:45,PHX,sub,,,,Jared Dudley,,Alando Tucker,,,,,,,,,,,,
+Grant Hill,Jared Dudley,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,5:45,LAL,free throw,,,,,,,1,,2,Pau Gasol,,,foul,missed,,,,
+Grant Hill,Jared Dudley,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,5:45,LAL,rebound,,,,,,,,,,,,,,,,,,
+Grant Hill,Jared Dudley,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,5:45,LAL,free throw,,,,,,,2,,2,Pau Gasol,,,foul,made,,,,
+Grant Hill,Jared Dudley,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,5:34,PHX,turnover,,,,,,,,,,Leandro Barbosa,,,bad pass,,Kobe Bryant,,,
+Grant Hill,Jared Dudley,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,5:32,PHX,foul,,,,,,,,Kobe Bryant,,Leandro Barbosa,,,,,,personal,,
+Grant Hill,Jared Dudley,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,5:20,LAL,shot,,,,,,,,,,Derek Fisher,2,,,made,,pullup jump,26,19
+Grant Hill,Jared Dudley,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,5:09,LAL,foul,,,,,,,,Jason Richardson,,Derek Fisher,,,,,,personal,,
+Grant Hill,Jared Dudley,Jason Richardson,Leandro Barbosa,Louis Amundson,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,5:09,PHX,sub,,,,Louis Amundson,,Shaquille O'Neal,,,,,,,,,,,,
+Grant Hill,Jared Dudley,Jason Richardson,Leandro Barbosa,Louis Amundson,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,4:59,PHX,shot,,,,,,,,,,Jason Richardson,,,,missed,,3pt,47,7
+Grant Hill,Jared Dudley,Jason Richardson,Leandro Barbosa,Louis Amundson,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,4:58,PHX,rebound,,,,,,,,,,Grant Hill,,,,,,off,,
+Grant Hill,Jared Dudley,Jason Richardson,Leandro Barbosa,Louis Amundson,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,4:52,PHX,shot,,,Lamar Odom,,,,,,,Jason Richardson,,,,missed,,jump,25,12
+Grant Hill,Jared Dudley,Jason Richardson,Leandro Barbosa,Louis Amundson,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,4:50,LAL,rebound,,,,,,,,,,Pau Gasol,,,,,,def,,
+Grant Hill,Jared Dudley,Jason Richardson,Leandro Barbosa,Louis Amundson,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,4:44,LAL,shot,Pau Gasol,,,,,,,,,Lamar Odom,2,,,made,,layup,25,6
+Grant Hill,Jared Dudley,Jason Richardson,Leandro Barbosa,Louis Amundson,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,4:25,LAL,foul,,,,,,,,Jason Richardson,,Kobe Bryant,,,,,,personal,,
+Jared Dudley,Jason Richardson,Leandro Barbosa,Louis Amundson,Matt Barnes,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,4:25,PHX,sub,,,,Matt Barnes,,Grant Hill,,,,,,,,,,,,
+Jared Dudley,Jason Richardson,Leandro Barbosa,Louis Amundson,Matt Barnes,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,4:09,PHX,shot,,,,,,,,,,Matt Barnes,,,,missed,,jump,10,5
+Jared Dudley,Jason Richardson,Leandro Barbosa,Louis Amundson,Matt Barnes,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,4:08,LAL,rebound,,,,,,,,,,Lamar Odom,,,,,,def,,
+Jared Dudley,Jason Richardson,Leandro Barbosa,Louis Amundson,Matt Barnes,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,3:53,LAL,shot,,,,,,,,,,Pau Gasol,,,,missed,,layup,25,6
+Jared Dudley,Jason Richardson,Leandro Barbosa,Louis Amundson,Matt Barnes,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,3:52,LAL,shot,,,,,,,,,,Pau Gasol,2,,,made,,layup,25,6
+Jared Dudley,Jason Richardson,Leandro Barbosa,Louis Amundson,Matt Barnes,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,3:52,LAL,rebound,,,,,,,,,,Pau Gasol,,,,,,off,,
+Jared Dudley,Jason Richardson,Leandro Barbosa,Louis Amundson,Matt Barnes,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,3:43,PHX,shot,,,,,,,,,,Leandro Barbosa,,,,missed,,3pt,15,31
+Jared Dudley,Jason Richardson,Leandro Barbosa,Louis Amundson,Matt Barnes,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,3:42,LAL,rebound,,,,,,,,,,Kobe Bryant,,,,,,def,,
+Jared Dudley,Jason Richardson,Leandro Barbosa,Louis Amundson,Matt Barnes,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,3:31,LAL,shot,,,,,,,,,,Kobe Bryant,2,,,made,,fade away jumper,13,23
+Jared Dudley,Jason Richardson,Leandro Barbosa,Louis Amundson,Matt Barnes,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,3:19,PHX,shot,,,Lamar Odom,,,,,,,Leandro Barbosa,,,,missed,,layup,25,6
+Jared Dudley,Jason Richardson,Leandro Barbosa,Louis Amundson,Matt Barnes,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,3:17,LAL,rebound,,,,,,,,,,Lamar Odom,,,,,,def,,
+Jared Dudley,Jason Richardson,Leandro Barbosa,Louis Amundson,Matt Barnes,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,3:17,LAL,turnover,,,,,,,,,,Lamar Odom,,,traveling,,,,,
+Jared Dudley,Jason Richardson,Leandro Barbosa,Louis Amundson,Matt Barnes,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,3:04,PHX,shot,,,,,,,,,,Jared Dudley,,,,missed,,jump,31,15
+Jared Dudley,Jason Richardson,Leandro Barbosa,Louis Amundson,Matt Barnes,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,3:03,LAL,rebound,,,,,,,,,,Lamar Odom,,,,,,def,,
+Jared Dudley,Jason Richardson,Leandro Barbosa,Louis Amundson,Matt Barnes,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,2:58,PHX,foul,,,,,,,,Pau Gasol,,Louis Amundson,,,,,,shooting,,
+Jared Dudley,Jason Richardson,Leandro Barbosa,Louis Amundson,Matt Barnes,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,1,2:58,PHX,timeout,,,,,,,,,,,,,,,,regular,,
+Jared Dudley,Jason Richardson,Leandro Barbosa,Louis Amundson,Matt Barnes,Derek Fisher,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,1,2:58,LAL,sub,,,,Trevor Ariza,,Luke Walton,,,,,,,,,,,,
+Jared Dudley,Jason Richardson,Leandro Barbosa,Louis Amundson,Matt Barnes,Jordan Farmar,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,1,2:58,LAL,sub,,,,Jordan Farmar,,Derek Fisher,,,,,,,,,,,,
+Jared Dudley,Jason Richardson,Leandro Barbosa,Louis Amundson,Matt Barnes,Jordan Farmar,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,1,2:58,LAL,free throw,,,,,,,1,,2,Pau Gasol,,,foul,made,,,,
+Jared Dudley,Jason Richardson,Leandro Barbosa,Louis Amundson,Matt Barnes,Jordan Farmar,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,1,2:58,LAL,free throw,,,,,,,2,,2,Pau Gasol,,,foul,made,,,,
+Jared Dudley,Jason Richardson,Leandro Barbosa,Louis Amundson,Matt Barnes,Jordan Farmar,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,1,2:41,PHX,shot,,,,,,,,,,Jason Richardson,,,,missed,,jump,43,7
+Jared Dudley,Jason Richardson,Leandro Barbosa,Louis Amundson,Matt Barnes,Jordan Farmar,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,1,2:38,PHX,shot,,,,,,,,,,Louis Amundson,,,,missed,,layup,25,6
+Jared Dudley,Jason Richardson,Leandro Barbosa,Louis Amundson,Matt Barnes,Jordan Farmar,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,1,2:38,PHX,rebound,,,,,,,,,,Louis Amundson,,,,,,off,,
+Jared Dudley,Jason Richardson,Leandro Barbosa,Louis Amundson,Matt Barnes,Jordan Farmar,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,1,2:36,PHX,rebound,,,,,,,,,,Louis Amundson,,,,,,off,,
+Jared Dudley,Jason Richardson,Leandro Barbosa,Louis Amundson,Matt Barnes,Jordan Farmar,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,1,2:35,PHX,shot,,,,,,,,,,Louis Amundson,,,,missed,,tip,25,6
+Jared Dudley,Jason Richardson,Leandro Barbosa,Louis Amundson,Matt Barnes,Jordan Farmar,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,1,2:33,PHX,shot,,,,,,,,,,Jason Richardson,2,,,made,,tip,25,6
+Jared Dudley,Jason Richardson,Leandro Barbosa,Louis Amundson,Matt Barnes,Jordan Farmar,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,1,2:33,PHX,rebound,,,,,,,,,,Jason Richardson,,,,,,off,,
+Jared Dudley,Jason Richardson,Leandro Barbosa,Louis Amundson,Matt Barnes,Jordan Farmar,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,1,2:18,LAL,shot,Kobe Bryant,,,,,,,,,Lamar Odom,2,,,made,,layup,25,6
+Jared Dudley,Jason Richardson,Leandro Barbosa,Louis Amundson,Matt Barnes,Jordan Farmar,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,1,2:18,PHX,foul,,,,,,,,Lamar Odom,,Louis Amundson,,,,,,shooting,,
+Goran Dragic,Jared Dudley,Jason Richardson,Louis Amundson,Matt Barnes,Jordan Farmar,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,1,2:18,PHX,sub,,,,Goran Dragic,,Leandro Barbosa,,,,,,,,,,,,
+Goran Dragic,Jared Dudley,Jason Richardson,Matt Barnes,Shaquille O'Neal,Jordan Farmar,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,1,2:18,PHX,sub,,,,Shaquille O'Neal,,Louis Amundson,,,,,,,,,,,,
+Goran Dragic,Jared Dudley,Jason Richardson,Matt Barnes,Shaquille O'Neal,Jordan Farmar,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,1,2:18,LAL,free throw,,,,,,,1,,1,Lamar Odom,,,foul,missed,,,,
+Goran Dragic,Jared Dudley,Jason Richardson,Matt Barnes,Shaquille O'Neal,Jordan Farmar,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,1,2:17,PHX,rebound,,,,,,,,,,Shaquille O'Neal,,,,,,def,,
+Goran Dragic,Jared Dudley,Jason Richardson,Matt Barnes,Shaquille O'Neal,Jordan Farmar,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,1,2:12,PHX,turnover,,,,,,,,,,Goran Dragic,,,bad pass,,Trevor Ariza,,,
+Goran Dragic,Jared Dudley,Jason Richardson,Matt Barnes,Shaquille O'Neal,Jordan Farmar,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,1,2:09,LAL,shot,Jordan Farmar,,,,,,,,,Kobe Bryant,2,,,made,,layup,25,6
+Goran Dragic,Jared Dudley,Jason Richardson,Matt Barnes,Shaquille O'Neal,Jordan Farmar,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,1,1:55,LAL,foul,,,,,,,,Shaquille O'Neal,,Lamar Odom,,,,,,personal,,
+Goran Dragic,Jared Dudley,Jason Richardson,Matt Barnes,Shaquille O'Neal,Jordan Farmar,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,1,1:46,PHX,shot,,,,,,,,,,Matt Barnes,,,,missed,,3pt,0,5
+Goran Dragic,Jared Dudley,Jason Richardson,Matt Barnes,Shaquille O'Neal,Jordan Farmar,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,1,1:45,PHX,rebound,,,,,,,,,,Shaquille O'Neal,,,,,,off,,
+Goran Dragic,Jared Dudley,Jason Richardson,Matt Barnes,Shaquille O'Neal,Jordan Farmar,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,1,1:44,PHX,turnover,,,,,,,,,,Shaquille O'Neal,,,traveling,,,,,
+Goran Dragic,Jared Dudley,Jason Richardson,Matt Barnes,Shaquille O'Neal,Jordan Farmar,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,1,1:34,LAL,shot,Kobe Bryant,,,,,,,,,Jordan Farmar,2,,,made,,alley oop layup,25,6
+Goran Dragic,Jared Dudley,Jason Richardson,Matt Barnes,Shaquille O'Neal,Jordan Farmar,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,1,1:13,PHX,shot,,,,,,,,,,Jason Richardson,,,,missed,,3pt,9,28
+Goran Dragic,Jared Dudley,Jason Richardson,Matt Barnes,Shaquille O'Neal,Jordan Farmar,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,1,1:12,LAL,rebound,,,,,,,,,,Pau Gasol,,,,,,def,,
+Goran Dragic,Jared Dudley,Jason Richardson,Matt Barnes,Shaquille O'Neal,Jordan Farmar,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,1,0:51,LAL,shot,,,,,,,,,,Trevor Ariza,,,,missed,,jump,41,20
+Goran Dragic,Jared Dudley,Jason Richardson,Matt Barnes,Shaquille O'Neal,Jordan Farmar,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,1,0:50,PHX,rebound,,,,,,,,,,Matt Barnes,,,,,,def,,
+Goran Dragic,Jared Dudley,Jason Richardson,Matt Barnes,Shaquille O'Neal,Jordan Farmar,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,1,0:47,LAL,foul,,,,,,,,Matt Barnes,,Trevor Ariza,,,,,,personal,,
+Goran Dragic,Jared Dudley,Jason Richardson,Matt Barnes,Shaquille O'Neal,Jordan Farmar,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,1,0:47,PHX,free throw,,,,,,,1,,2,Matt Barnes,,,foul,made,,,,
+Goran Dragic,Jared Dudley,Jason Richardson,Matt Barnes,Shaquille O'Neal,Jordan Farmar,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,1,0:47,PHX,free throw,,,,,,,2,,2,Matt Barnes,,,foul,made,,,,
+Goran Dragic,Jared Dudley,Jason Richardson,Matt Barnes,Shaquille O'Neal,Jordan Farmar,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,1,0:38,LAL,shot,,,Shaquille O'Neal,,,,,,,Jordan Farmar,,,,missed,,layup,25,6
+Goran Dragic,Jared Dudley,Jason Richardson,Matt Barnes,Shaquille O'Neal,Jordan Farmar,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,1,0:38,LAL,rebound,,,,,,,,,,,,,,,,,,
+Goran Dragic,Jared Dudley,Jason Richardson,Matt Barnes,Shaquille O'Neal,Jordan Farmar,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,1,0:29,LAL,shot,Kobe Bryant,,,,,,,,,Jordan Farmar,3,,,made,,3pt,41,26
+Goran Dragic,Jared Dudley,Jason Richardson,Matt Barnes,Shaquille O'Neal,Jordan Farmar,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,1,0:14,PHX,turnover,,,,,,,,,,Goran Dragic,,,bad pass,,Trevor Ariza,,,
+Goran Dragic,Jared Dudley,Jason Richardson,Matt Barnes,Shaquille O'Neal,Jordan Farmar,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,1,0:11,PHX,foul,,,,,,,,Trevor Ariza,,Matt Barnes,,,,,,shooting,,
+Goran Dragic,Jared Dudley,Jason Richardson,Matt Barnes,Shaquille O'Neal,Jordan Farmar,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,1,0:11,LAL,free throw,,,,,,,1,,2,Trevor Ariza,,,foul,made,,,,
+Goran Dragic,Jared Dudley,Jason Richardson,Matt Barnes,Shaquille O'Neal,Jordan Farmar,Lamar Odom,Pau Gasol,Sasha Vujacic,Trevor Ariza,1,0:11,LAL,sub,,,,Sasha Vujacic,,Kobe Bryant,,,,,,,,,,,,
+Goran Dragic,Jared Dudley,Jason Richardson,Matt Barnes,Shaquille O'Neal,Jordan Farmar,Lamar Odom,Pau Gasol,Sasha Vujacic,Trevor Ariza,1,0:11,LAL,free throw,,,,,,,2,,2,Trevor Ariza,,,foul,made,,,,
+Goran Dragic,Jared Dudley,Jason Richardson,Matt Barnes,Shaquille O'Neal,Jordan Farmar,Lamar Odom,Pau Gasol,Sasha Vujacic,Trevor Ariza,1,0:01,PHX,shot,Matt Barnes,,,,,,,,,Goran Dragic,2,,,made,,jump,34,19
+Goran Dragic,Jared Dudley,Jason Richardson,Matt Barnes,Shaquille O'Neal,Jordan Farmar,Lamar Odom,Pau Gasol,Sasha Vujacic,Trevor Ariza,1,0:00,LAL,shot,,,,,,,,,,Sasha Vujacic,,,,missed,,3pt,15,61
+Goran Dragic,Jared Dudley,Jason Richardson,Matt Barnes,Shaquille O'Neal,Jordan Farmar,Lamar Odom,Pau Gasol,Sasha Vujacic,Trevor Ariza,1,0:00,LAL,rebound,,,,,,,,,,,,,,,,,,
+Alando Tucker,Goran Dragic,Jared Dudley,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Lamar Odom,Sasha Vujacic,Trevor Ariza,2,11:40,LAL,shot,Sasha Vujacic,,,,,,,,,Trevor Ariza,3,,,made,,3pt,27,32
+Alando Tucker,Goran Dragic,Jared Dudley,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Lamar Odom,Sasha Vujacic,Trevor Ariza,2,11:22,PHX,shot,Alando Tucker,,,,,,,,,Jared Dudley,3,,,made,,3pt,3,6
+Alando Tucker,Goran Dragic,Jared Dudley,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Lamar Odom,Sasha Vujacic,Trevor Ariza,2,11:16,PHX,foul,,,,,,,,Sasha Vujacic,,Shaquille O'Neal,,,,,,shooting,,
+Alando Tucker,Goran Dragic,Jared Dudley,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Lamar Odom,Sasha Vujacic,Trevor Ariza,2,11:16,LAL,free throw,,,,,,,1,,2,Sasha Vujacic,,,foul,made,,,,
+Alando Tucker,Goran Dragic,Jared Dudley,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Lamar Odom,Sasha Vujacic,Trevor Ariza,2,11:16,LAL,free throw,,,,,,,2,,2,Sasha Vujacic,,,foul,made,,,,
+Alando Tucker,Goran Dragic,Jared Dudley,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Lamar Odom,Sasha Vujacic,Trevor Ariza,2,10:54,PHX,shot,,,,,,,,,,Matt Barnes,,,,missed,,layup,25,6
+Alando Tucker,Goran Dragic,Jared Dudley,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Lamar Odom,Sasha Vujacic,Trevor Ariza,2,10:53,LAL,rebound,,,,,,,,,,D.J. Mbenga,,,,,,def,,
+Alando Tucker,Jared Dudley,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Lamar Odom,Sasha Vujacic,Trevor Ariza,2,10:45,PHX,sub,,,,Leandro Barbosa,,Goran Dragic,,,,,,,,,,,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Lamar Odom,Sasha Vujacic,Trevor Ariza,2,10:45,PHX,sub,,,,Grant Hill,,Jared Dudley,,,,,,,,,,,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Lamar Odom,Sasha Vujacic,Trevor Ariza,2,10:39,LAL,shot,Sasha Vujacic,,,,,,,,,D.J. Mbenga,2,,,made,,jump,32,18
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Lamar Odom,Sasha Vujacic,Trevor Ariza,2,10:34,PHX,turnover,,,,,,,,,,Leandro Barbosa,,,bad pass,,,,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Lamar Odom,Sasha Vujacic,Trevor Ariza,2,10:29,LAL,shot,,,,,,,,,,Trevor Ariza,,,,missed,,jump,42,8
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Lamar Odom,Sasha Vujacic,Trevor Ariza,2,10:27,PHX,rebound,,,,,,,,,,Grant Hill,,,,,,def,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Lamar Odom,Sasha Vujacic,Trevor Ariza,2,10:21,LAL,foul,,,,,,,,Shaquille O'Neal,,D.J. Mbenga,,,,,,personal,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Lamar Odom,Sasha Vujacic,Trevor Ariza,2,10:08,PHX,turnover,,,,,,,,,,Matt Barnes,,,bad pass,,D.J. Mbenga,,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Lamar Odom,Sasha Vujacic,Trevor Ariza,2,9:58,LAL,shot,Jordan Farmar,,,,,,,,,D.J. Mbenga,2,,,made,,jump bank,41,8
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Lamar Odom,Sasha Vujacic,Trevor Ariza,2,9:36,PHX,shot,,,,,,,,,,Grant Hill,,,,missed,,jump,31,12
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Lamar Odom,Sasha Vujacic,Trevor Ariza,2,9:35,PHX,rebound,,,,,,,,,,Shaquille O'Neal,,,,,,off,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Lamar Odom,Sasha Vujacic,Trevor Ariza,2,9:34,PHX,shot,,,D.J. Mbenga,,,,,,,Shaquille O'Neal,,,,missed,,layup,25,6
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Lamar Odom,Sasha Vujacic,Trevor Ariza,2,9:32,LAL,rebound,,,,,,,,,,Jordan Farmar,,,,,,def,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Lamar Odom,Sasha Vujacic,Trevor Ariza,2,9:28,LAL,shot,,,,,,,,,,Jordan Farmar,,,,missed,,driving layup,25,6
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Lamar Odom,Sasha Vujacic,Trevor Ariza,2,9:26,PHX,rebound,,,,,,,,,,Leandro Barbosa,,,,,,def,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Lamar Odom,Sasha Vujacic,Trevor Ariza,2,9:20,PHX,shot,,,D.J. Mbenga,,,,,,,Matt Barnes,,,,missed,,layup,25,6
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Lamar Odom,Sasha Vujacic,Trevor Ariza,2,9:17,PHX,rebound,,,,,,,,,,Leandro Barbosa,,,,,,off,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Lamar Odom,Sasha Vujacic,Trevor Ariza,2,9:16,PHX,shot,,,,,,,,,,Leandro Barbosa,2,,,made,,layup,25,6
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Lamar Odom,Sasha Vujacic,Trevor Ariza,2,9:05,LAL,turnover,,,,,,,,,,Jordan Farmar,,,bad pass,,Grant Hill,,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Lamar Odom,Sasha Vujacic,Trevor Ariza,2,9:01,PHX,shot,Leandro Barbosa,,,,,,,,,Matt Barnes,2,,,made,,layup,25,6
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Lamar Odom,Sasha Vujacic,Trevor Ariza,2,8:52,LAL,timeout,,,,,,,,,,,,,,,,regular,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,8:52,LAL,sub,,,,Josh Powell,,Lamar Odom,,,,,,,,,,,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,8:44,LAL,shot,,,,,,,,,,Sasha Vujacic,,,,missed,,3pt,13,30
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,8:43,PHX,rebound,,,,,,,,,,Leandro Barbosa,,,,,,def,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,8:34,LAL,foul,,,,,,,,Shaquille O'Neal,,Josh Powell,,,,,,shooting,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,8:34,PHX,free throw,,,,,,,1,,2,Shaquille O'Neal,,,foul,made,,,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,8:34,PHX,free throw,,,,,,,2,,2,Shaquille O'Neal,,,foul,made,,,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,8:19,LAL,shot,,,,,,,,,,Sasha Vujacic,,,,missed,,3pt,34,33
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,8:18,PHX,rebound,,,,,,,,,,Shaquille O'Neal,,,,,,def,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,8:02,PHX,shot,,,,,,,,,,Shaquille O'Neal,,,,missed,,layup,25,6
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,8:00,PHX,rebound,,,,,,,,,,Alando Tucker,,,,,,off,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,7:59,PHX,shot,,,,,,,,,,Alando Tucker,,,,missed,,layup,25,6
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,7:58,PHX,rebound,,,,,,,,,,Matt Barnes,,,,,,off,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,7:55,PHX,shot,Matt Barnes,,,,,,,,,Alando Tucker,2,,,made,,layup,25,6
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,7:39,LAL,shot,D.J. Mbenga,,,,,,,,,Josh Powell,2,,,made,,step back jump,22,22
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,7:27,PHX,shot,,,,,,,,,,Grant Hill,,,,missed,,3pt,48,10
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,7:25,LAL,rebound,,,,,,,,,,Jordan Farmar,,,,,,def,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,7:20,LAL,shot,Jordan Farmar,,,,,,,,,Sasha Vujacic,2,,,made,,layup,25,6
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,7:12,PHX,shot,,,,,,,,,,Leandro Barbosa,2,,,made,,driving layup,25,6
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Shaquille O'Neal,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,6:59,PHX,foul,,,,,,,,Josh Powell,,Grant Hill,,,,,,personal,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,6:59,PHX,sub,,,,Robin Lopez,,Shaquille O'Neal,,,,,,,,,,,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,6:47,LAL,shot,,,,,,,,,,Trevor Ariza,,,,missed,,3pt,50,11
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,6:46,PHX,rebound,,,,,,,,,,Leandro Barbosa,,,,,,def,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,6:21,PHX,turnover,,,,,,,,,,Alando Tucker,,,bad pass,,Sasha Vujacic,,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,6:15,LAL,shot,Josh Powell,,,,,,,,,Sasha Vujacic,2,,,made,,driving dunk,25,6
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,6:02,LAL,foul,,,,,,,,Leandro Barbosa,,D.J. Mbenga,,,,,,shooting,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,6:02,PHX,free throw,,,,,,,1,,2,Leandro Barbosa,,,foul,made,,,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,6:02,PHX,free throw,,,,,,,2,,2,Leandro Barbosa,,,foul,made,,,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,5:50,LAL,turnover,,,,,,,,,,Jordan Farmar,,,bad pass,,Grant Hill,,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,5:40,PHX,shot,,,,,,,,,,Leandro Barbosa,,,,missed,,driving layup,25,6
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,5:38,LAL,rebound,,,,,,,,,,Josh Powell,,,,,,def,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,5:34,LAL,shot,,,,,,,,,,Jordan Farmar,,,,missed,,driving layup,25,6
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,5:31,PHX,rebound,,,,,,,,,,Grant Hill,,,,,,def,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,5:25,PHX,shot,,,,,,,,,,Matt Barnes,,,,missed,,jump,15,24
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,5:24,LAL,rebound,,,,,,,,,,Jordan Farmar,,,,,,def,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,5:18,LAL,turnover,,,,,,,,,,Jordan Farmar,,,bad pass,,Matt Barnes,,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,5:13,PHX,turnover,,,,,,,,,,Leandro Barbosa,,,bad pass,,Jordan Farmar,,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,5:07,LAL,shot,Trevor Ariza,,,,,,,,,Jordan Farmar,2,,,made,,layup,25,6
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,4:50,PHX,shot,,,,,,,,,,Leandro Barbosa,,,,missed,,layup,25,6
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,4:49,LAL,rebound,,,,,,,,,,Trevor Ariza,,,,,,def,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,4:43,LAL,shot,,,,,,,,,,Jordan Farmar,,,,missed,,layup,25,6
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,4:42,LAL,rebound,,,,,,,,,,Josh Powell,,,,,,off,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,4:41,LAL,shot,,,,,,,,,,Josh Powell,2,,,made,,layup,25,6
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,2,4:33,PHX,timeout,,,,,,,,,,,,,,,,regular,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Robin Lopez,Adam Morrison,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,2,4:33,LAL,sub,,,,Adam Morrison,,Trevor Ariza,,,,,,,,,,,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Robin Lopez,Adam Morrison,D.J. Mbenga,Josh Powell,Lamar Odom,Sasha Vujacic,2,4:33,LAL,sub,,,,Lamar Odom,,Jordan Farmar,,,,,,,,,,,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Robin Lopez,Adam Morrison,D.J. Mbenga,Josh Powell,Kobe Bryant,Lamar Odom,2,4:33,LAL,sub,,,,Kobe Bryant,,Sasha Vujacic,,,,,,,,,,,,
+Alando Tucker,Grant Hill,Leandro Barbosa,Matt Barnes,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Kobe Bryant,Lamar Odom,2,4:33,LAL,sub,,,,Derek Fisher,,D.J. Mbenga,,,,,,,,,,,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Kobe Bryant,Lamar Odom,2,4:33,PHX,sub,,,,Jason Richardson,,Matt Barnes,,,,,,,,,,,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Kobe Bryant,Lamar Odom,2,4:20,PHX,shot,Grant Hill,,,,,,,,,Leandro Barbosa,2,,,made,,jump,46,8
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Kobe Bryant,Lamar Odom,2,4:02,LAL,shot,,,,,,,,,,Lamar Odom,2,,,made,,jump,33,25
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Kobe Bryant,Lamar Odom,2,3:39,PHX,shot,,,,,,,,,,Alando Tucker,,,,missed,,3pt,3,18
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Kobe Bryant,Lamar Odom,2,3:38,PHX,rebound,,,,,,,,,,Grant Hill,,,,,,off,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Kobe Bryant,Lamar Odom,2,3:36,PHX,shot,,,,,,,,,,Grant Hill,2,,,made,,layup,25,6
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Kobe Bryant,Lamar Odom,2,3:23,LAL,shot,Kobe Bryant,,,,,,,,,Lamar Odom,2,,,made,,driving finger roll layup,25,6
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Kobe Bryant,Lamar Odom,2,3:09,PHX,shot,,,,,,,,,,Grant Hill,,,,missed,,jump,34,19
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Kobe Bryant,Lamar Odom,2,3:07,LAL,rebound,,,,,,,,,,Adam Morrison,,,,,,def,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Kobe Bryant,Lamar Odom,2,2:59,PHX,foul,,,,,,,,Josh Powell,,Robin Lopez,,,,,,shooting,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Kobe Bryant,Lamar Odom,2,2:59,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Kobe Bryant,Lamar Odom,2,2:59,LAL,free throw,,,,,,,1,,2,Josh Powell,,,foul,made,,,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Kobe Bryant,Lamar Odom,2,2:59,LAL,free throw,,,,,,,2,,2,Josh Powell,,,foul,made,,,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Kobe Bryant,Lamar Odom,2,2:46,PHX,shot,,,,,,,,,,Jason Richardson,,,,missed,,jump,37,18
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Kobe Bryant,Lamar Odom,2,2:44,PHX,rebound,,,,,,,,,,Robin Lopez,,,,,,off,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Kobe Bryant,Lamar Odom,2,2:43,PHX,shot,,,,,,,,,,Robin Lopez,2,,,made,,slam dunk,25,6
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Kobe Bryant,Lamar Odom,2,2:18,LAL,shot,,,,,,,,,,Kobe Bryant,,,,missed,,jump,5,6
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Kobe Bryant,Lamar Odom,2,2:17,LAL,rebound,,,,,,,,,,Adam Morrison,,,,,,off,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Kobe Bryant,Lamar Odom,2,2:16,LAL,shot,,,,,,,,,,Adam Morrison,2,,,made,,dunk,25,6
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Kobe Bryant,Lamar Odom,2,1:59,LAL,foul,,,,,,,,Grant Hill,,Kobe Bryant,,,,,,personal,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Kobe Bryant,Lamar Odom,2,1:54,LAL,foul,,,,,,,,,,Josh Powell,,,,,,defense 3 second,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Kobe Bryant,Lamar Odom,2,1:54,PHX,free throw,,,,,,,1,,1,Grant Hill,,,technical,made,,,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Kobe Bryant,Lamar Odom,2,1:39,PHX,shot,,,,,,,,,,Leandro Barbosa,,,,missed,,3pt,44,27
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Kobe Bryant,Lamar Odom,2,1:38,PHX,rebound,,,,,,,,,,Robin Lopez,,,,,,off,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Kobe Bryant,Lamar Odom,2,1:37,PHX,shot,,,,,,,,,,Robin Lopez,2,,,made,,layup,25,6
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Kobe Bryant,Lamar Odom,2,1:20,LAL,shot,,,,,,,,,,Adam Morrison,,,,missed,,3pt,21,33
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Kobe Bryant,Lamar Odom,2,1:19,PHX,rebound,,,,,,,,,,Leandro Barbosa,,,,,,def,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Kobe Bryant,Lamar Odom,2,1:10,PHX,shot,,,,,,,,,,Grant Hill,,,,missed,,jump,24,24
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Kobe Bryant,Lamar Odom,2,1:08,LAL,rebound,,,,,,,,,,Kobe Bryant,,,,,,def,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Kobe Bryant,Lamar Odom,2,1:04,LAL,shot,Adam Morrison,,,,,,,,,Lamar Odom,2,,,made,,dunk,25,6
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Kobe Bryant,Lamar Odom,2,0:51,PHX,shot,,,,,,,,,,Leandro Barbosa,,,,missed,,jump,36,8
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Kobe Bryant,Lamar Odom,2,0:50,PHX,rebound,,,,,,,,,,Leandro Barbosa,,,,,,off,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Kobe Bryant,Lamar Odom,2,0:48,PHX,shot,,,,,,,,,,Leandro Barbosa,2,,,made,,jump,32,7
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Kobe Bryant,Lamar Odom,2,0:33,PHX,foul,,,,,,,,Derek Fisher,,Robin Lopez,,,,,,shooting,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Kobe Bryant,Lamar Odom,2,0:33,LAL,free throw,,,,,,,1,,2,Derek Fisher,,,foul,made,,,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Lamar Odom,Shannon Brown,2,0:33,LAL,sub,,,,Shannon Brown,,Kobe Bryant,,,,,,,,,,,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Lamar Odom,Shannon Brown,2,0:33,LAL,free throw,,,,,,,2,,2,Derek Fisher,,,foul,made,,,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Lamar Odom,Shannon Brown,2,0:24,PHX,shot,Grant Hill,,,,,,,,,Robin Lopez,2,,,made,,layup,25,6
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Lamar Odom,Shannon Brown,2,0:00,LAL,shot,,,,,,,,,,Derek Fisher,,,,missed,,layup,25,6
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Lamar Odom,Shannon Brown,2,0:00,PHX,rebound,,,,,,,,,,,,,,,,,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Lamar Odom,Shannon Brown,2,0:00,LAL,foul,,,,,,,,Grant Hill,,Josh Powell,,,,,,loose ball,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Lamar Odom,Shannon Brown,2,0:00,PHX,free throw,,,,,,,1,,2,Grant Hill,,,foul,missed,,,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Lamar Odom,Shannon Brown,2,0:00,PHX,rebound,,,,,,,,,,,,,,,,,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Robin Lopez,Adam Morrison,Derek Fisher,Josh Powell,Lamar Odom,Shannon Brown,2,0:00,PHX,free throw,,,,,,,2,,2,Grant Hill,,,foul,made,,,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,11:51,LAL,shot,Luke Walton,,,,,,,,,Pau Gasol,2,,,made,,alley oop dunk,25,6
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,11:25,PHX,shot,,,,,,,,,,Jason Richardson,,,,missed,,jump,15,20
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,11:24,LAL,rebound,,,,,,,,,,Pau Gasol,,,,,,def,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,11:18,LAL,shot,,,,,,,,,,Kobe Bryant,,,,missed,,3pt,10,28
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,11:17,PHX,rebound,,,,,,,,,,Shaquille O'Neal,,,,,,def,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,11:10,PHX,shot,Grant Hill,,,,,,,,,Shaquille O'Neal,2,,,made,,layup,25,6
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,11:10,LAL,foul,,,,,,,,Shaquille O'Neal,,Pau Gasol,,,,,,shooting,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,11:10,PHX,free throw,,,,,,,1,,1,Shaquille O'Neal,,,foul,made,,,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,10:53,LAL,shot,,,,,,,,,,Pau Gasol,,,,missed,,jump,19,21
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,10:52,PHX,rebound,,,,,,,,,,Jason Richardson,,,,,,def,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,10:40,PHX,shot,,,,,,,,,,Shaquille O'Neal,,,,missed,,layup,25,6
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,10:39,LAL,rebound,,,,,,,,,,Kobe Bryant,,,,,,def,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,10:30,LAL,shot,Lamar Odom,,,,,,,,,Luke Walton,2,,,made,,layup,22,8
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,10:15,PHX,shot,,,,,,,,,,Alando Tucker,3,,,made,,3pt,36,29
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,10:01,LAL,shot,,,,,,,,,,Kobe Bryant,,,,missed,,layup,25,6
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,10:00,PHX,rebound,,,,,,,,,,Shaquille O'Neal,,,,,,def,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,9:55,PHX,shot,Leandro Barbosa,,,,,,,,,Grant Hill,2,,,made,,layup,25,6
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,9:34,LAL,shot,Lamar Odom,,,,,,,,,Pau Gasol,2,,,made,,dunk,25,6
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,9:24,PHX,shot,,,Lamar Odom,,,,,,,Leandro Barbosa,,,,missed,,layup,25,6
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,9:22,LAL,rebound,,,,,,,,,,Pau Gasol,,,,,,def,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,9:15,LAL,shot,Derek Fisher,,,,,,,,,Lamar Odom,2,,,made,,layup,25,6
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,9:01,PHX,turnover,,,,,,,,,,Grant Hill,,,bad pass,,Kobe Bryant,,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,8:55,LAL,shot,Kobe Bryant,,,,,,,,,Lamar Odom,2,,,made,,layup,25,6
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,8:38,PHX,shot,,,Pau Gasol,,,,,,,Shaquille O'Neal,,,,missed,,layup,25,6
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,8:36,LAL,rebound,,,,,,,,,,Lamar Odom,,,,,,def,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,8:30,LAL,shot,Lamar Odom,,,,,,,,,Derek Fisher,3,,,made,,3pt,38,28
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,8:29,PHX,timeout,,,,,,,,,,,,,,,,regular,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,8:14,LAL,foul,,,,,,,,Shaquille O'Neal,,Derek Fisher,,,,,,shooting,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,8:14,PHX,free throw,,,,,,,1,,2,Shaquille O'Neal,,,foul,made,,,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,8:14,PHX,free throw,,,,,,,2,,2,Shaquille O'Neal,,,foul,made,,,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,7:58,LAL,shot,,,,,,,,,,Kobe Bryant,2,,,made,,turnaround bank,40,8
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,7:40,PHX,shot,,,,,,,,,,Leandro Barbosa,,,,missed,,3pt,49,11
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,7:39,LAL,rebound,,,,,,,,,,Lamar Odom,,,,,,def,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,7:25,PHX,foul,,,,,,,,Pau Gasol,,Leandro Barbosa,,,,,,shooting,,
+Alando Tucker,Grant Hill,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,7:25,LAL,free throw,,,,,,,1,,2,Pau Gasol,,,foul,made,,,,
+Grant Hill,Jared Dudley,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,7:25,PHX,sub,,,,Jared Dudley,,Alando Tucker,,,,,,,,,,,,
+Grant Hill,Jared Dudley,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,7:25,LAL,free throw,,,,,,,2,,2,Pau Gasol,,,foul,missed,,,,
+Grant Hill,Jared Dudley,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,7:21,PHX,rebound,,,,,,,,,,Jared Dudley,,,,,,def,,
+Grant Hill,Jared Dudley,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,7:12,PHX,shot,Leandro Barbosa,,,,,,,,,Jason Richardson,3,,,made,,3pt,39,29
+Grant Hill,Jared Dudley,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,6:56,LAL,shot,Pau Gasol,,,,,,,,,Kobe Bryant,2,,,made,,alley oop dunk,25,6
+Grant Hill,Jared Dudley,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,6:37,PHX,turnover,,,,,,,,,,Jason Richardson,,,lost ball,,Kobe Bryant,,,
+Grant Hill,Jared Dudley,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,6:31,LAL,shot,,,Grant Hill,,,,,,,Pau Gasol,,,,missed,,layup,25,6
+Grant Hill,Jared Dudley,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,6:30,PHX,rebound,,,,,,,,,,Grant Hill,,,,,,def,,
+Grant Hill,Jared Dudley,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,6:26,LAL,foul,,,,,,,,Shaquille O'Neal,,Lamar Odom,,,,,,shooting,,
+Grant Hill,Jared Dudley,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,6:26,PHX,free throw,,,,,,,1,,2,Shaquille O'Neal,,,foul,missed,,,,
+Grant Hill,Jared Dudley,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,6:26,PHX,rebound,,,,,,,,,,,,,,,,,,
+Grant Hill,Jared Dudley,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,6:26,PHX,free throw,,,,,,,2,,2,Shaquille O'Neal,,,foul,made,,,,
+Grant Hill,Jared Dudley,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,6:14,LAL,shot,Luke Walton,,,,,,,,,Lamar Odom,2,,,made,,jump,8,6
+Grant Hill,Jared Dudley,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,5:59,PHX,shot,,,,,,,,,,Jason Richardson,,,,missed,,3pt,2,21
+Grant Hill,Jared Dudley,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,5:58,LAL,rebound,,,,,,,,,,Luke Walton,,,,,,def,,
+Grant Hill,Jared Dudley,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,5:51,LAL,shot,,,Shaquille O'Neal,,,,,,,Pau Gasol,,,,missed,,layup,25,6
+Grant Hill,Jared Dudley,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,5:50,PHX,rebound,,,,,,,,,,Jared Dudley,,,,,,def,,
+Grant Hill,Jared Dudley,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,5:35,PHX,turnover,,,,,,,,,,Shaquille O'Neal,,,bad pass,,Derek Fisher,,,
+Grant Hill,Jared Dudley,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,5:29,LAL,shot,,,,,,,,,,Luke Walton,,,,missed,,jump,38,10
+Grant Hill,Jared Dudley,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,5:28,LAL,rebound,,,,,,,,,,Lamar Odom,,,,,,off,,
+Grant Hill,Jared Dudley,Jason Richardson,Leandro Barbosa,Shaquille O'Neal,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,5:15,LAL,shot,,,,,,,,,,Kobe Bryant,2,,,made,,turnaround jump,41,14
+Grant Hill,Jared Dudley,Jason Richardson,Leandro Barbosa,Robin Lopez,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,4:54,PHX,sub,,,,Robin Lopez,,Shaquille O'Neal,,,,,,,,,,,,
+Jared Dudley,Jason Richardson,Leandro Barbosa,Matt Barnes,Robin Lopez,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,4:54,PHX,sub,,,,Matt Barnes,,Grant Hill,,,,,,,,,,,,
+Jared Dudley,Jason Richardson,Leandro Barbosa,Matt Barnes,Robin Lopez,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,4:47,PHX,shot,,,,,,,,,,Leandro Barbosa,,,,missed,,3pt,4,26
+Jared Dudley,Jason Richardson,Leandro Barbosa,Matt Barnes,Robin Lopez,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,4:45,PHX,rebound,,,,,,,,,,Jared Dudley,,,,,,off,,
+Jared Dudley,Jason Richardson,Leandro Barbosa,Matt Barnes,Robin Lopez,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,4:45,PHX,shot,,,,,,,,,,Jared Dudley,2,,,made,,layup,25,6
+Jared Dudley,Jason Richardson,Leandro Barbosa,Matt Barnes,Robin Lopez,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,4:28,LAL,turnover,,,,,,,,,,Lamar Odom,,,bad pass,,Jared Dudley,,,
+Jared Dudley,Jason Richardson,Leandro Barbosa,Matt Barnes,Robin Lopez,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,4:23,PHX,shot,Matt Barnes,,,,,,,,,Jason Richardson,2,,,made,,slam dunk,25,6
+Jared Dudley,Jason Richardson,Leandro Barbosa,Matt Barnes,Robin Lopez,Derek Fisher,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,4:23,LAL,timeout,,,,,,,,,,,,,,,,regular,,
+Jared Dudley,Jason Richardson,Leandro Barbosa,Matt Barnes,Robin Lopez,Jordan Farmar,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,4:23,LAL,sub,,,,Jordan Farmar,,Derek Fisher,,,,,,,,,,,,
+Jared Dudley,Jason Richardson,Leandro Barbosa,Matt Barnes,Robin Lopez,Jordan Farmar,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,4:12,LAL,turnover,,,,,,,,,,Lamar Odom,,,bad pass,,,,,
+Jared Dudley,Jason Richardson,Leandro Barbosa,Matt Barnes,Robin Lopez,Jordan Farmar,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,4:03,LAL,foul,,,,,,,,Robin Lopez,,Kobe Bryant,,,,,,personal,,
+Jared Dudley,Jason Richardson,Leandro Barbosa,Matt Barnes,Robin Lopez,Jordan Farmar,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,3:50,PHX,shot,Jason Richardson,,,,,,,,,Jared Dudley,2,,,made,,jump,31,23
+Jared Dudley,Jason Richardson,Leandro Barbosa,Matt Barnes,Robin Lopez,Jordan Farmar,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,3:39,LAL,shot,Kobe Bryant,,,,,,,,,Lamar Odom,2,,,made,,dunk,25,6
+Jared Dudley,Jason Richardson,Leandro Barbosa,Matt Barnes,Robin Lopez,Jordan Farmar,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,3:26,PHX,shot,,,,,,,,,,Matt Barnes,,,,missed,,3pt,2,7
+Jared Dudley,Jason Richardson,Leandro Barbosa,Matt Barnes,Robin Lopez,Jordan Farmar,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,3:25,LAL,rebound,,,,,,,,,,Jordan Farmar,,,,,,def,,
+Jared Dudley,Jason Richardson,Leandro Barbosa,Matt Barnes,Robin Lopez,Jordan Farmar,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,3:23,PHX,foul,,,,,,,,Jordan Farmar,,Jared Dudley,,,,,,personal,,
+Jared Dudley,Jason Richardson,Leandro Barbosa,Matt Barnes,Robin Lopez,Jordan Farmar,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,3:09,LAL,shot,,,,,,,,,,Pau Gasol,,,,missed,,hook,30,8
+Jared Dudley,Jason Richardson,Leandro Barbosa,Matt Barnes,Robin Lopez,Jordan Farmar,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,3:06,PHX,rebound,,,,,,,,,,Jason Richardson,,,,,,def,,
+Jared Dudley,Jason Richardson,Leandro Barbosa,Matt Barnes,Robin Lopez,Jordan Farmar,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,2:57,PHX,shot,,,,,,,,,,Matt Barnes,,,,missed,,3pt,1,8
+Jared Dudley,Jason Richardson,Leandro Barbosa,Matt Barnes,Robin Lopez,Jordan Farmar,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,2:56,LAL,rebound,,,,,,,,,,Jordan Farmar,,,,,,def,,
+Jared Dudley,Jason Richardson,Leandro Barbosa,Matt Barnes,Robin Lopez,Jordan Farmar,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,2:33,LAL,shot,,,,,,,,,,Luke Walton,,,,missed,,3pt,43,24
+Jared Dudley,Jason Richardson,Leandro Barbosa,Matt Barnes,Robin Lopez,Jordan Farmar,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,2:32,LAL,rebound,,,,,,,,,,Pau Gasol,,,,,,off,,
+Jared Dudley,Jason Richardson,Leandro Barbosa,Matt Barnes,Robin Lopez,Jordan Farmar,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,2:20,LAL,shot,Jordan Farmar,,,,,,,,,Kobe Bryant,3,,,made,,3pt,1,5
+Jared Dudley,Jason Richardson,Leandro Barbosa,Matt Barnes,Robin Lopez,Jordan Farmar,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,2:08,PHX,shot,,,,,,,,,,Jason Richardson,2,,,made,,jump,44,8
+Jared Dudley,Jason Richardson,Leandro Barbosa,Matt Barnes,Robin Lopez,Jordan Farmar,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,1:59,LAL,shot,Luke Walton,,,,,,,,,Lamar Odom,2,,,made,,layup,25,6
+Jared Dudley,Jason Richardson,Leandro Barbosa,Matt Barnes,Robin Lopez,Jordan Farmar,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,1:59,PHX,foul,,,,,,,,Lamar Odom,,Jared Dudley,,,,,,shooting,,
+Jared Dudley,Leandro Barbosa,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Kobe Bryant,Lamar Odom,Luke Walton,Pau Gasol,3,1:59,PHX,sub,,,,Louis Amundson,,Jason Richardson,,,,,,,,,,,,
+Jared Dudley,Leandro Barbosa,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Kobe Bryant,Lamar Odom,Pau Gasol,Trevor Ariza,3,1:59,LAL,sub,,,,Trevor Ariza,,Luke Walton,,,,,,,,,,,,
+Jared Dudley,Leandro Barbosa,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Josh Powell,Kobe Bryant,Lamar Odom,Trevor Ariza,3,1:59,LAL,sub,,,,Josh Powell,,Pau Gasol,,,,,,,,,,,,
+Jared Dudley,Leandro Barbosa,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Josh Powell,Kobe Bryant,Lamar Odom,Trevor Ariza,3,1:59,LAL,free throw,,,,,,,1,,1,Lamar Odom,,,foul,made,,,,
+Jared Dudley,Leandro Barbosa,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Josh Powell,Kobe Bryant,Lamar Odom,Trevor Ariza,3,1:50,PHX,turnover,,,,,,,,,,Leandro Barbosa,,,out of bounds lost ball turnover,,,,,
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Josh Powell,Kobe Bryant,Lamar Odom,Trevor Ariza,3,1:50,PHX,sub,,,,Goran Dragic,,Leandro Barbosa,,,,,,,,,,,,
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Josh Powell,Kobe Bryant,Lamar Odom,Trevor Ariza,3,1:32,LAL,shot,,,,,,,,,,Trevor Ariza,,,,missed,,3pt,49,9
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Josh Powell,Kobe Bryant,Lamar Odom,Trevor Ariza,3,1:31,PHX,rebound,,,,,,,,,,Jared Dudley,,,,,,def,,
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Josh Powell,Kobe Bryant,Lamar Odom,Trevor Ariza,3,1:18,PHX,shot,,,,,,,,,,Goran Dragic,,,,missed,,3pt,42,27
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Josh Powell,Kobe Bryant,Lamar Odom,Trevor Ariza,3,1:17,LAL,rebound,,,,,,,,,,Trevor Ariza,,,,,,def,,
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Josh Powell,Kobe Bryant,Lamar Odom,Trevor Ariza,3,1:13,LAL,shot,Kobe Bryant,,,,,,,,,Lamar Odom,2,,,made,,layup,25,6
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Josh Powell,Lamar Odom,Sasha Vujacic,Trevor Ariza,3,0:57,LAL,sub,,,,Sasha Vujacic,,Kobe Bryant,,,,,,,,,,,,
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Josh Powell,Lamar Odom,Sasha Vujacic,Trevor Ariza,3,0:54,PHX,shot,Matt Barnes,,,,,,,,,Goran Dragic,2,,,made,,driving layup,25,6
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Josh Powell,Lamar Odom,Sasha Vujacic,Trevor Ariza,3,0:46,LAL,shot,,,,,,,,,,Sasha Vujacic,,,,missed,,jump,8,7
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Josh Powell,Lamar Odom,Sasha Vujacic,Trevor Ariza,3,0:44,PHX,rebound,,,,,,,,,,Jared Dudley,,,,,,def,,
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Josh Powell,Lamar Odom,Sasha Vujacic,Trevor Ariza,3,0:40,LAL,foul,,,,,,,,Goran Dragic,,Jordan Farmar,,,,,,shooting,,
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Josh Powell,Lamar Odom,Sasha Vujacic,Trevor Ariza,3,0:40,PHX,free throw,,,,,,,1,,2,Goran Dragic,,,foul,made,,,,
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Josh Powell,Lamar Odom,Sasha Vujacic,Trevor Ariza,3,0:40,PHX,free throw,,,,,,,2,,2,Goran Dragic,,,foul,made,,,,
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Josh Powell,Lamar Odom,Sasha Vujacic,Trevor Ariza,3,0:24,LAL,shot,,,,,,,,,,Sasha Vujacic,,,,missed,,3pt,41,26
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Josh Powell,Lamar Odom,Sasha Vujacic,Trevor Ariza,3,0:22,LAL,rebound,,,,,,,,,,Jordan Farmar,,,,,,off,,
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Josh Powell,Lamar Odom,Sasha Vujacic,Trevor Ariza,3,0:00,LAL,shot,,,Robin Lopez,,,,,,,Sasha Vujacic,,,,missed,,layup,25,6
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Josh Powell,Lamar Odom,Sasha Vujacic,Trevor Ariza,3,0:00,PHX,rebound,,,,,,,,,,,,,,,,,,
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Josh Powell,Pau Gasol,Sasha Vujacic,Trevor Ariza,4,11:45,PHX,turnover,,,,,,,,,,Matt Barnes,,,bad pass,,Trevor Ariza,,,
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Josh Powell,Pau Gasol,Sasha Vujacic,Trevor Ariza,4,11:29,LAL,shot,Trevor Ariza,,,,,,,,,Pau Gasol,2,,,made,,layup,25,6
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Josh Powell,Pau Gasol,Sasha Vujacic,Trevor Ariza,4,11:17,PHX,shot,,,,,,,,,,Goran Dragic,,,,missed,,layup,25,6
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Josh Powell,Pau Gasol,Sasha Vujacic,Trevor Ariza,4,11:16,LAL,rebound,,,,,,,,,,Pau Gasol,,,,,,def,,
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Josh Powell,Pau Gasol,Sasha Vujacic,Trevor Ariza,4,11:07,LAL,turnover,,,,,,,,,,Josh Powell,,,bad pass,,Matt Barnes,,,
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Josh Powell,Pau Gasol,Sasha Vujacic,Trevor Ariza,4,11:02,PHX,shot,,,,,,,,,,Goran Dragic,,,,missed,,layup,25,6
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Josh Powell,Pau Gasol,Sasha Vujacic,Trevor Ariza,4,11:00,LAL,rebound,,,,,,,,,,Trevor Ariza,,,,,,def,,
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Josh Powell,Pau Gasol,Sasha Vujacic,Trevor Ariza,4,10:56,LAL,turnover,,,,,,,,,,Sasha Vujacic,,,bad pass,,Matt Barnes,,,
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Josh Powell,Pau Gasol,Sasha Vujacic,Trevor Ariza,4,10:52,LAL,foul,,,,,,,,Jared Dudley,,Trevor Ariza,,,,,,shooting,,
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Josh Powell,Pau Gasol,Sasha Vujacic,Trevor Ariza,4,10:52,PHX,free throw,,,,,,,1,,2,Jared Dudley,,,foul,made,,,,
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Josh Powell,Pau Gasol,Sasha Vujacic,Trevor Ariza,4,10:52,PHX,free throw,,,,,,,2,,2,Jared Dudley,,,foul,made,,,,
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Josh Powell,Pau Gasol,Sasha Vujacic,Trevor Ariza,4,10:37,LAL,shot,,,,,,,,,,Sasha Vujacic,,,,missed,,layup,25,6
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Josh Powell,Pau Gasol,Sasha Vujacic,Trevor Ariza,4,10:36,LAL,rebound,,,,,,,,,,Sasha Vujacic,,,,,,off,,
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Josh Powell,Pau Gasol,Sasha Vujacic,Trevor Ariza,4,10:30,LAL,shot,Pau Gasol,,,,,,,,,Jordan Farmar,2,,,made,,step back jump,12,6
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Josh Powell,Pau Gasol,Sasha Vujacic,Trevor Ariza,4,10:19,LAL,foul,,,,,,,,Jared Dudley,,Josh Powell,,,,,,shooting,,
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Josh Powell,Pau Gasol,Sasha Vujacic,Trevor Ariza,4,10:19,PHX,free throw,,,,,,,1,,2,Jared Dudley,,,foul,missed,,,,
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,Jordan Farmar,Josh Powell,Pau Gasol,Sasha Vujacic,Trevor Ariza,4,10:19,PHX,rebound,,,,,,,,,,,,,,,,,,
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,10:19,LAL,sub,,,,D.J. Mbenga,,Pau Gasol,,,,,,,,,,,,
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,10:19,PHX,free throw,,,,,,,2,,2,Jared Dudley,,,foul,made,,,,
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,10:04,LAL,shot,,,Robin Lopez,,,,,,,Josh Powell,,,,missed,,layup,25,6
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,10:03,LAL,rebound,,,,,,,,,,Sasha Vujacic,,,,,,off,,
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,9:57,LAL,shot,,,,,,,,,,Trevor Ariza,3,,,made,,3pt,44,26
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,9:46,PHX,turnover,,,,,,,,,,Goran Dragic,,,lost ball,,Trevor Ariza,,,
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,9:32,LAL,turnover,,,,,,,,,,Josh Powell,,,bad pass,,Robin Lopez,,,
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,9:31,LAL,foul,,,,,,,,Goran Dragic,,Trevor Ariza,,,,,,personal,,
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,9:24,PHX,shot,,,,,,,,,,Jared Dudley,,,,missed,,3pt,49,7
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,9:22,LAL,rebound,,,,,,,,,,Trevor Ariza,,,,,,def,,
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,9:10,LAL,shot,D.J. Mbenga,,,,,,,,,Trevor Ariza,2,,,made,,jump,23,11
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,9:10,PHX,foul,,,,,,,,Trevor Ariza,,Robin Lopez,,,,,,shooting,,
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,9:10,LAL,free throw,,,,,,,1,,1,Trevor Ariza,,,foul,missed,,,,
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,9:09,PHX,rebound,,,,,,,,,,,,,,,,,,
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,9:09,LAL,foul,,,,,,,,Robin Lopez,,D.J. Mbenga,,,,,,loose ball,,
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,8:54,PHX,turnover,,,,,,,,,,Matt Barnes,,,out of bounds lost ball turnover,,,,,
+Goran Dragic,Jared Dudley,Louis Amundson,Matt Barnes,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,8:54,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,8:54,PHX,sub,,,,Alando Tucker,,Matt Barnes,,,,,,,,,,,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,8:40,LAL,foul,,,,,,,,Goran Dragic,,D.J. Mbenga,,,,,,offensive,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,8:40,LAL,turnover,,,,,,,,,,D.J. Mbenga,,,foul,,,,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,8:26,LAL,foul,,,,,,,,Goran Dragic,,Jordan Farmar,,,,,,shooting,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,8:26,PHX,free throw,,,,,,,1,,2,Goran Dragic,,,foul,made,,,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,8:26,PHX,free throw,,,,,,,2,,2,Goran Dragic,,,foul,made,,,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,8:11,LAL,shot,,,,,,,,,,Jordan Farmar,,,,missed,,jump,16,25
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,8:10,LAL,rebound,,,,,,,,,,Josh Powell,,,,,,off,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,7:59,LAL,turnover,,,,,,,,,,Jordan Farmar,,,lost ball,,Louis Amundson,,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,7:54,PHX,shot,Goran Dragic,,,,,,,,,Alando Tucker,2,,,made,,layup,25,6
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,7:37,PHX,foul,,,,,,,,Sasha Vujacic,,Goran Dragic,,,,,,personal,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,7:31,LAL,shot,,,,,,,,,,Sasha Vujacic,,,,missed,,jump,8,16
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,7:30,LAL,rebound,,,,,,,,,,Josh Powell,,,,,,off,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,7:19,LAL,foul,,,,,,,,Louis Amundson,,D.J. Mbenga,,,,,,offensive,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,7:19,LAL,turnover,,,,,,,,,,D.J. Mbenga,,,foul,,,,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,7:10,PHX,turnover,,,,,,,,,,Jared Dudley,,,bad pass,,,,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,6:53,LAL,shot,,,,,,,,,,D.J. Mbenga,2,,,made,,slam dunk,25,6
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,6:44,PHX,shot,Goran Dragic,,,,,,,,,Alando Tucker,3,,,made,,3pt,15,32
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,6:20,LAL,shot,,,,,,,,,,D.J. Mbenga,,,,missed,,jump,8,9
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,6:19,PHX,rebound,,,,,,,,,,Alando Tucker,,,,,,def,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,6:12,PHX,shot,,,,,,,,,,Alando Tucker,,,,missed,,jump,39,18
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,6:11,PHX,rebound,,,,,,,,,,Robin Lopez,,,,,,off,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,6:09,PHX,shot,,,,,,,,,,Robin Lopez,,,,missed,,layup,25,6
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,6:08,LAL,rebound,,,,,,,,,,Josh Powell,,,,,,def,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,6:02,LAL,shot,,,,,,,,,,Trevor Ariza,,,,missed,,driving reverse layup,25,6
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,5:56,PHX,rebound,,,,,,,,,,Alando Tucker,,,,,,def,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,5:47,PHX,shot,,,,,,,,,,Jared Dudley,,,,missed,,3pt,1,9
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,5:45,PHX,rebound,,,,,,,,,,Alando Tucker,,,,,,off,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,5:44,PHX,shot,,,,,,,,,,Jared Dudley,2,,,made,,layup,25,6
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,5:44,LAL,violation,,,,,,,,,,Josh Powell,,,,,,defensive goaltending,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,5:30,LAL,shot,Jordan Farmar,,,,,,,,,Sasha Vujacic,2,,,made,,jump,12,20
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,5:18,PHX,shot,,,,,,,,,,Goran Dragic,3,,,made,,3pt,9,28
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,D.J. Mbenga,Jordan Farmar,Josh Powell,Sasha Vujacic,Trevor Ariza,4,5:07,LAL,timeout,,,,,,,,,,,,,,,,regular,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,D.J. Mbenga,Josh Powell,Sasha Vujacic,Trevor Ariza,4,5:07,LAL,sub,,,,Adam Morrison,,Jordan Farmar,,,,,,,,,,,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,Josh Powell,Sasha Vujacic,Shannon Brown,Trevor Ariza,4,5:07,LAL,sub,,,,Shannon Brown,,D.J. Mbenga,,,,,,,,,,,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,Josh Powell,Sasha Vujacic,Shannon Brown,Trevor Ariza,4,4:50,LAL,turnover,,,,,,,,,,,,,shot clock turnover,,,,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,Josh Powell,Sasha Vujacic,Shannon Brown,Trevor Ariza,4,4:39,PHX,shot,,,,,,,,,,Robin Lopez,,,,missed,,hook,27,10
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,Josh Powell,Sasha Vujacic,Shannon Brown,Trevor Ariza,4,4:38,PHX,rebound,,,,,,,,,,,,,,,,,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,Josh Powell,Sasha Vujacic,Shannon Brown,Trevor Ariza,4,4:35,PHX,shot,,,,,,,,,,Alando Tucker,,,,missed,,jump,28,12
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,Josh Powell,Sasha Vujacic,Shannon Brown,Trevor Ariza,4,4:33,PHX,rebound,,,,,,,,,,Robin Lopez,,,,,,off,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,Josh Powell,Sasha Vujacic,Shannon Brown,Trevor Ariza,4,4:32,PHX,shot,,,,,,,,,,Robin Lopez,,,,missed,,layup,25,6
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,Josh Powell,Sasha Vujacic,Shannon Brown,Trevor Ariza,4,4:31,LAL,rebound,,,,,,,,,,Adam Morrison,,,,,,def,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,Josh Powell,Sasha Vujacic,Shannon Brown,Trevor Ariza,4,4:25,PHX,violation,,,,,,,,,,Goran Dragic,,,,,,kicked ball,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,Josh Powell,Sasha Vujacic,Shannon Brown,Trevor Ariza,4,4:20,LAL,shot,Trevor Ariza,,,,,,,,,Sasha Vujacic,3,,,made,,3pt,41,26
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,Josh Powell,Sasha Vujacic,Shannon Brown,Trevor Ariza,4,4:05,PHX,shot,,,,,,,,,,Robin Lopez,,,,missed,,jump,21,7
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,Josh Powell,Sasha Vujacic,Shannon Brown,Trevor Ariza,4,4:03,LAL,rebound,,,,,,,,,,Josh Powell,,,,,,def,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,Josh Powell,Sasha Vujacic,Shannon Brown,Trevor Ariza,4,3:48,LAL,shot,,,,,,,,,,Sasha Vujacic,,,,missed,,3pt,2,6
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,Josh Powell,Sasha Vujacic,Shannon Brown,Trevor Ariza,4,3:47,PHX,rebound,,,,,,,,,,Jared Dudley,,,,,,def,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,Josh Powell,Sasha Vujacic,Shannon Brown,Trevor Ariza,4,3:44,PHX,shot,Goran Dragic,,,,,,,,,Alando Tucker,2,,,made,,layup,25,6
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,Josh Powell,Sasha Vujacic,Shannon Brown,Trevor Ariza,4,3:23,LAL,turnover,,,,,,,,,,Sasha Vujacic,,,traveling,,,,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,Josh Powell,Sasha Vujacic,Shannon Brown,Trevor Ariza,4,3:11,PHX,turnover,,,,,,,,,,Alando Tucker,,,step out of bounds turnover,,,,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,Josh Powell,Sasha Vujacic,Shannon Brown,Trevor Ariza,4,2:57,LAL,shot,Trevor Ariza,,,,,,,,,Sasha Vujacic,3,,,made,,3pt,49,8
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,Josh Powell,Sasha Vujacic,Shannon Brown,Trevor Ariza,4,2:38,PHX,shot,,,,,,,,,,Goran Dragic,,,,missed,,jump,25,21
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,Josh Powell,Sasha Vujacic,Shannon Brown,Trevor Ariza,4,2:37,LAL,rebound,,,,,,,,,,Sasha Vujacic,,,,,,def,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,Josh Powell,Sasha Vujacic,Shannon Brown,Trevor Ariza,4,2:29,LAL,shot,,,,,,,,,,Trevor Ariza,,,,missed,,3pt,41,25
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,Josh Powell,Sasha Vujacic,Shannon Brown,Trevor Ariza,4,2:27,PHX,rebound,,,,,,,,,,Jared Dudley,,,,,,def,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,Josh Powell,Sasha Vujacic,Shannon Brown,Trevor Ariza,4,2:23,PHX,shot,Jared Dudley,,,,,,,,,Louis Amundson,2,,,made,,layup,25,6
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,Josh Powell,Sasha Vujacic,Shannon Brown,Trevor Ariza,4,2:16,LAL,turnover,,,,,,,,,,Adam Morrison,,,bad pass,,Jared Dudley,,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,Josh Powell,Sasha Vujacic,Shannon Brown,Trevor Ariza,4,2:10,PHX,turnover,,,,,,,,,,Jared Dudley,,,lost ball,,Trevor Ariza,,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,Josh Powell,Sasha Vujacic,Shannon Brown,Trevor Ariza,4,2:07,LAL,shot,,,,,,,,,,Shannon Brown,2,,,made,,driving layup,25,6
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,Josh Powell,Sasha Vujacic,Shannon Brown,Trevor Ariza,4,2:07,PHX,foul,,,,,,,,Shannon Brown,,Robin Lopez,,,,,,shooting,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,Josh Powell,Sasha Vujacic,Shannon Brown,Trevor Ariza,4,2:07,PHX,timeout,,,,,,,,,,,,,,,,regular,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,Jordan Farmar,Josh Powell,Shannon Brown,Trevor Ariza,4,2:07,LAL,sub,,,,Jordan Farmar,,Sasha Vujacic,,,,,,,,,,,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,D.J. Mbenga,Jordan Farmar,Shannon Brown,Trevor Ariza,4,2:07,LAL,sub,,,,D.J. Mbenga,,Josh Powell,,,,,,,,,,,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,D.J. Mbenga,Jordan Farmar,Shannon Brown,Trevor Ariza,4,2:07,LAL,free throw,,,,,,,1,,1,Shannon Brown,,,foul,made,,,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,D.J. Mbenga,Jordan Farmar,Shannon Brown,Trevor Ariza,4,1:46,PHX,turnover,,,,,,,,,,Goran Dragic,,,bad pass,,Jordan Farmar,,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,D.J. Mbenga,Jordan Farmar,Shannon Brown,Trevor Ariza,4,1:39,LAL,shot,,,Jared Dudley,,,,,,,D.J. Mbenga,,,,missed,,layup,25,6
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,D.J. Mbenga,Jordan Farmar,Shannon Brown,Trevor Ariza,4,1:37,LAL,rebound,,,,,,,,,,Adam Morrison,,,,,,off,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,D.J. Mbenga,Jordan Farmar,Shannon Brown,Trevor Ariza,4,1:31,LAL,shot,D.J. Mbenga,,,,,,,,,Adam Morrison,3,,,made,,3pt,48,6
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,D.J. Mbenga,Jordan Farmar,Shannon Brown,Trevor Ariza,4,1:23,LAL,foul,,,,,,,,Jared Dudley,,Adam Morrison,,,,,,personal,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,D.J. Mbenga,Jordan Farmar,Shannon Brown,Trevor Ariza,4,1:23,PHX,free throw,,,,,,,1,,2,Jared Dudley,,,foul,made,,,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,D.J. Mbenga,Jordan Farmar,Shannon Brown,Trevor Ariza,4,1:23,PHX,free throw,,,,,,,2,,2,Jared Dudley,,,foul,missed,,,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,D.J. Mbenga,Jordan Farmar,Shannon Brown,Trevor Ariza,4,1:21,LAL,rebound,,,,,,,,,,Trevor Ariza,,,,,,def,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,D.J. Mbenga,Jordan Farmar,Shannon Brown,Trevor Ariza,4,1:02,LAL,shot,,,,,,,,,,D.J. Mbenga,2,,,made,,jump,16,18
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,D.J. Mbenga,Jordan Farmar,Shannon Brown,Trevor Ariza,4,0:55,PHX,shot,,,,,,,,,,Goran Dragic,3,,,made,,3pt,8,27
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,D.J. Mbenga,Jordan Farmar,Shannon Brown,Trevor Ariza,4,0:40,LAL,shot,,,,,,,,,,Adam Morrison,,,,missed,,jump,15,23
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,D.J. Mbenga,Jordan Farmar,Shannon Brown,Trevor Ariza,4,0:39,LAL,rebound,,,,,,,,,,Shannon Brown,,,,,,off,,
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,D.J. Mbenga,Jordan Farmar,Shannon Brown,Trevor Ariza,4,0:30,LAL,shot,Shannon Brown,,,,,,,,,Jordan Farmar,3,,,made,,3pt,42,27
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,D.J. Mbenga,Jordan Farmar,Shannon Brown,Trevor Ariza,4,0:26,PHX,shot,Jared Dudley,,,,,,,,,Alando Tucker,2,,,made,,driving layup,25,6
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,D.J. Mbenga,Jordan Farmar,Shannon Brown,Trevor Ariza,4,0:03,LAL,shot,,,,,,,,,,D.J. Mbenga,,,,missed,,jump,39,6
+Alando Tucker,Goran Dragic,Jared Dudley,Louis Amundson,Robin Lopez,Adam Morrison,D.J. Mbenga,Jordan Farmar,Shannon Brown,Trevor Ariza,4,0:02,PHX,rebound,,,,,,,,,,Jared Dudley,,,,,,def,,

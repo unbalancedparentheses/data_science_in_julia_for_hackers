@@ -1,0 +1,456 @@
+a1,a2,a3,a4,a5,h1,h2,h3,h4,h5,period,time,team,etype,assist,away,block,entered,home,left,num,opponent,outof,player,points,possession,reason,result,steal,type,x,y
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,12:00,OFF,jump ball,,Andris Biedrins,,,Yao Ming,,,,,,,Monta Ellis,,,,,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,11:45,GSW,shot,,,,,,,,,,Monta Ellis,,,,missed,,running jump,21,14
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,11:44,HOU,rebound,,,,,,,,,,Yao Ming,,,,,,def,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,11:30,HOU,shot,,,,,,,,,,Bonzi Wells,,,,missed,,turnaround jump,25,16
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,11:29,HOU,rebound,,,,,,,,,,Yao Ming,,,,,,off,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,11:28,HOU,shot,,,,,,,,,,Yao Ming,2,,,made,,layup,25,6
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,11:28,GSW,foul,,,,,,,,Yao Ming,,Stephen Jackson,,,,,,shooting,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,11:28,HOU,free throw,,,,,,,1,,1,Yao Ming,,,foul,made,,,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,11:07,GSW,shot,Monta Ellis,,,,,,,,,Al Harrington,3,,,made,,3pt,6,22
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,10:49,HOU,shot,,,,,,,,,,Rafer Alston,,,,missed,,running jump,26,13
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,10:47,GSW,rebound,,,,,,,,,,Al Harrington,,,,,,def,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,10:41,HOU,foul,,,,,,,,Baron Davis,,Chuck Hayes,,,,,,personal,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,10:34,GSW,turnover,,,,,,,,,,Baron Davis,,,bad pass,,Shane Battier,,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,10:28,HOU,turnover,,,,,,,,,,Shane Battier,,,bad pass,,Al Harrington,,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,10:23,GSW,shot,,,,,,,,,,Al Harrington,,,,missed,,layup,25,6
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,10:22,GSW,rebound,,,,,,,,,,Baron Davis,,,,,,off,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,10:22,GSW,shot,,,,,,,,,,Baron Davis,2,,,made,,layup,25,6
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,10:05,HOU,shot,,,,,,,,,,Shane Battier,2,,,made,,driving layup,25,6
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,9:51,GSW,shot,,,,,,,,,,Stephen Jackson,2,,,made,,jump,26,25
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,9:38,HOU,shot,Rafer Alston,,,,,,,,,Chuck Hayes,2,,,made,,layup,25,6
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,9:25,HOU,foul,,,,,,,,Stephen Jackson,,Bonzi Wells,,,,,,personal,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,9:15,GSW,turnover,,,,,,,,,,Baron Davis,,,bad pass,,Yao Ming,,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,9:10,HOU,shot,Chuck Hayes,,,,,,,,,Bonzi Wells,2,,,made,,dunk,25,6
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,8:56,GSW,shot,,,,,,,,,,Stephen Jackson,2,,,made,,jump,38,19
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,8:30,HOU,shot,,,,,,,,,,Bonzi Wells,,,,missed,,driving layup,25,6
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,8:29,GSW,rebound,,,,,,,,,,Andris Biedrins,,,,,,def,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,8:24,GSW,shot,Baron Davis,,,,,,,,,Stephen Jackson,3,,,made,,3pt,7,25
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,8:09,HOU,shot,,,Andris Biedrins,,,,,,,Chuck Hayes,,,,missed,,layup,25,6
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,8:07,HOU,rebound,,,,,,,,,,Chuck Hayes,,,,,,off,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,8:06,HOU,shot,,,,,,,,,,Chuck Hayes,,,,missed,,layup,25,6
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,8:05,HOU,rebound,,,,,,,,,,Yao Ming,,,,,,off,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,8:05,GSW,foul,,,,,,,,Yao Ming,,Al Harrington,,,,,,shooting,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,8:05,HOU,free throw,,,,,,,1,,2,Yao Ming,,,foul,made,,,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,8:05,HOU,free throw,,,,,,,2,,2,Yao Ming,,,foul,made,,,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,7:49,GSW,shot,,,,,,,,,,Baron Davis,,,,missed,,3pt,38,28
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,7:48,HOU,rebound,,,,,,,,,,Chuck Hayes,,,,,,def,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,7:40,HOU,shot,,,,,,,,,,Rafer Alston,2,,,made,,jump,28,22
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,7:36,GSW,turnover,,,,,,,,,,Baron Davis,,,bad pass,,,,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,7:25,HOU,shot,,,,,,,,,,Rafer Alston,,,,missed,,3pt,22,32
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,7:23,GSW,rebound,,,,,,,,,,Andris Biedrins,,,,,,def,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,7:07,GSW,shot,,,,,,,,,,Stephen Jackson,,,,missed,,jump,27,25
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,7:06,GSW,rebound,,,,,,,,,,Al Harrington,,,,,,off,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,6:58,GSW,turnover,,,,,,,,,,Baron Davis,,,bad pass,,Bonzi Wells,,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,6:56,GSW,foul,,,,,,,,Bonzi Wells,,Baron Davis,,,,,,personal,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,6:48,HOU,turnover,,,,,,,,,,Yao Ming,,,bad pass,,Baron Davis,,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,6:44,GSW,shot,Baron Davis,,,,,,,,,Monta Ellis,2,,,made,,layup,25,6
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,6:31,GSW,foul,,,,,,,,Yao Ming,,Andris Biedrins,,,,,,personal,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,6:25,HOU,shot,,,,,,,,,,Shane Battier,,,,missed,,3pt,12,26
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,6:24,GSW,rebound,,,,,,,,,,Al Harrington,,,,,,def,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,6:11,GSW,shot,,,Yao Ming,,,,,,,Stephen Jackson,,,,missed,,layup,25,6
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,6:09,HOU,rebound,,,,,,,,,,Yao Ming,,,,,,def,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,6:03,HOU,shot,,,,,,,,,,Shane Battier,,,,missed,,driving layup,25,6
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,6:02,GSW,rebound,,,,,,,,,,Al Harrington,,,,,,def,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,5:56,GSW,shot,,,,,,,,,,Baron Davis,,,,missed,,3pt,15,30
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,5:55,HOU,rebound,,,,,,,,,,Chuck Hayes,,,,,,def,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,5:44,HOU,turnover,,,,,,,,,,Bonzi Wells,,,bad pass,,,,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,5:44,HOU,timeout,,,,,,,,,,,,,,,,regular,,
+Al Harrington,Andris Biedrins,Kelenna Azubuike,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,5:44,GSW,sub,,,,Kelenna Azubuike,,Baron Davis,,,,,,,,,,,,
+Al Harrington,Andris Biedrins,Kelenna Azubuike,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,5:33,GSW,turnover,,,,,,,,,,Stephen Jackson,,,bad pass,,Shane Battier,,,
+Al Harrington,Andris Biedrins,Kelenna Azubuike,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,5:16,HOU,shot,Bonzi Wells,,,,,,,,,Chuck Hayes,2,,,made,,jump hook,25,14
+Al Harrington,Andris Biedrins,Kelenna Azubuike,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,4:54,GSW,shot,Stephen Jackson,,,,,,,,,Monta Ellis,2,,,made,,jump,6,9
+Al Harrington,Andris Biedrins,Kelenna Azubuike,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,4:41,HOU,shot,,,,,,,,,,Bonzi Wells,,,,missed,,fade away jumper,33,8
+Al Harrington,Andris Biedrins,Kelenna Azubuike,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,4:40,GSW,rebound,,,,,,,,,,Kelenna Azubuike,,,,,,def,,
+Al Harrington,Andris Biedrins,Kelenna Azubuike,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,4:31,GSW,shot,,,,,,,,,,Kelenna Azubuike,,,,missed,,driving layup,25,6
+Al Harrington,Andris Biedrins,Kelenna Azubuike,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,4:30,GSW,rebound,,,,,,,,,,,,,,,,,,
+Al Harrington,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,4:30,GSW,sub,,,,Matt Barnes,,Andris Biedrins,,,,,,,,,,,,
+Al Harrington,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,4:27,GSW,shot,,,,,,,,,,Al Harrington,,,,missed,,3pt,13,27
+Al Harrington,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,4:26,HOU,rebound,,,,,,,,,,Chuck Hayes,,,,,,def,,
+Al Harrington,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,4:10,HOU,shot,,,,,,,,,,Bonzi Wells,,,,missed,,layup,25,6
+Al Harrington,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,4:09,GSW,rebound,,,,,,,,,,Kelenna Azubuike,,,,,,def,,
+Al Harrington,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,3:53,GSW,shot,,,,,,,,,,Stephen Jackson,,,,missed,,jump,25,14
+Al Harrington,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,3:52,GSW,rebound,,,,,,,,,,Monta Ellis,,,,,,off,,
+Al Harrington,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,3:50,GSW,shot,,,,,,,,,,Monta Ellis,2,,,made,,putback layup,25,6
+Al Harrington,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,3:37,HOU,shot,Chuck Hayes,,,,,,,,,Yao Ming,2,,,made,,dunk,25,6
+Al Harrington,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,1,3:23,HOU,foul,,,,,,,,Matt Barnes,,Chuck Hayes,,,,,,personal,,
+Al Harrington,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,1,3:23,HOU,sub,,,,Luther Head,,Chuck Hayes,,,,,,,,,,,,
+Al Harrington,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,1,3:19,GSW,shot,,,,,,,,,,Al Harrington,,,,missed,,jump,37,22
+Al Harrington,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,1,3:18,HOU,rebound,,,,,,,,,,Rafer Alston,,,,,,def,,
+Al Harrington,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,1,3:04,HOU,shot,,,,,,,,,,Yao Ming,,,,missed,,jump,35,8
+Al Harrington,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,1,3:02,GSW,rebound,,,,,,,,,,Stephen Jackson,,,,,,def,,
+Al Harrington,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,1,2:59,GSW,turnover,,,,,,,,,,Stephen Jackson,,,lost ball,,Bonzi Wells,,,
+Al Harrington,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,1,2:58,HOU,shot,,,,,,,,,,Bonzi Wells,2,,,made,,dunk,25,6
+Al Harrington,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,1,2:47,GSW,shot,,,,,,,,,,Kelenna Azubuike,,,,missed,,3pt,32,29
+Al Harrington,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,1,2:46,HOU,rebound,,,,,,,,,,Bonzi Wells,,,,,,def,,
+Al Harrington,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,1,2:34,HOU,shot,,,,,,,,,,Luther Head,,,,missed,,3pt,14,27
+Al Harrington,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,1,2:33,GSW,rebound,,,,,,,,,,Matt Barnes,,,,,,def,,
+Al Harrington,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,1,2:24,GSW,shot,,,,,,,,,,Al Harrington,,,,missed,,3pt,2,8
+Al Harrington,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,1,2:23,GSW,rebound,,,,,,,,,,Al Harrington,,,,,,off,,
+Al Harrington,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,1,2:20,HOU,foul,,,,,,,,Matt Barnes,,Yao Ming,,,,,,shooting,,
+Al Harrington,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,1,2:20,GSW,timeout,,,,,,,,,,,,,,,,regular,,
+Al Harrington,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Shane Battier,1,2:20,HOU,sub,,,,Luis Scola,,Yao Ming,,,,,,,,,,,,
+Al Harrington,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Shane Battier,1,2:20,GSW,free throw,,,,,,,1,,2,Matt Barnes,,,foul,made,,,,
+Al Harrington,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Shane Battier,1,2:20,GSW,free throw,,,,,,,2,,2,Matt Barnes,,,foul,made,,,,
+Al Harrington,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Shane Battier,1,2:05,HOU,shot,,,,,,,,,,Bonzi Wells,2,,,made,,driving layup,25,6
+Al Harrington,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Shane Battier,1,2:05,GSW,foul,,,,,,,,Bonzi Wells,,Stephen Jackson,,,,,,shooting,,
+Al Harrington,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Shane Battier,1,2:05,HOU,free throw,,,,,,,1,,1,Bonzi Wells,,,foul,missed,,,,
+Al Harrington,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Shane Battier,1,2:04,GSW,rebound,,,,,,,,,,Kelenna Azubuike,,,,,,def,,
+Al Harrington,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Shane Battier,1,1:41,GSW,shot,Stephen Jackson,,,,,,,,,Matt Barnes,3,,,made,,3pt,2,7
+Al Harrington,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Shane Battier,1,1:22,HOU,turnover,,,,,,,,,,Shane Battier,,,lost ball,,Monta Ellis,,,
+Al Harrington,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Shane Battier,1,1:16,GSW,shot,,,,,,,,,,Stephen Jackson,,,,missed,,jump,10,20
+Al Harrington,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Shane Battier,1,1:15,HOU,rebound,,,,,,,,,,Rafer Alston,,,,,,def,,
+Al Harrington,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Shane Battier,1,1:02,GSW,foul,,,,,,,,,,Matt Barnes,,,,,,defense 3 second,,
+Andris Biedrins,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Shane Battier,1,1:02,GSW,sub,,,,Andris Biedrins,,Al Harrington,,,,,,,,,,,,
+Andris Biedrins,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Shane Battier,1,1:02,HOU,free throw,,,,,,,1,,1,Luther Head,,,technical,made,,,,
+Andris Biedrins,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Monta Ellis,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Shane Battier,1,1:02,GSW,sub,,,,Mickael Pietrus,,Stephen Jackson,,,,,,,,,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Shane Battier,1,1:02,GSW,sub,,,,Baron Davis,,Monta Ellis,,,,,,,,,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Shane Battier,1,0:55,HOU,shot,,,,,,,,,,Luis Scola,,,,missed,,jump,23,18
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Shane Battier,1,0:54,GSW,rebound,,,,,,,,,,Matt Barnes,,,,,,def,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Shane Battier,1,0:37,GSW,shot,Mickael Pietrus,,,,,,,,,Kelenna Azubuike,3,,,made,,3pt,41,26
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Shane Battier,1,0:20,HOU,turnover,,,,,,,,,,Bonzi Wells,,,lost ball,,Matt Barnes,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Shane Battier,1,0:15,GSW,turnover,,,,,,,,,,Matt Barnes,,,lost ball,,Luther Head,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Shane Battier,1,0:10,HOU,shot,,,,,,,,,,Luis Scola,,,,missed,,layup,25,6
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Shane Battier,1,0:09,GSW,rebound,,,,,,,,,,,,,,,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Shane Battier,1,0:00,GSW,shot,,,,,,,,,,Baron Davis,2,,,made,,layup,25,6
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Aaron Brooks,Luis Scola,Luther Head,Shane Battier,Steve Novak,2,11:49,HOU,turnover,,,,,,,,,,Shane Battier,,,bad pass,,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Aaron Brooks,Luis Scola,Luther Head,Shane Battier,Steve Novak,2,11:33,GSW,shot,,,,,,,,,,Andris Biedrins,,,,missed,,jump hook,23,14
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Aaron Brooks,Luis Scola,Luther Head,Shane Battier,Steve Novak,2,11:31,GSW,shot,,,,,,,,,,Kelenna Azubuike,2,,,made,,putback dunk,25,6
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Aaron Brooks,Luis Scola,Luther Head,Shane Battier,Steve Novak,2,11:31,GSW,rebound,,,,,,,,,,Kelenna Azubuike,,,,,,off,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Aaron Brooks,Luis Scola,Luther Head,Shane Battier,Steve Novak,2,11:20,HOU,shot,Steve Novak,,,,,,,,,Luther Head,3,,,made,,3pt,43,23
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Aaron Brooks,Luis Scola,Luther Head,Shane Battier,Steve Novak,2,11:05,GSW,shot,,,,,,,,,,Matt Barnes,,,,missed,,jump,36,25
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Aaron Brooks,Luis Scola,Luther Head,Shane Battier,Steve Novak,2,11:04,HOU,rebound,,,,,,,,,,,,,,,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Aaron Brooks,Luis Scola,Luther Head,Steve Novak,Yao Ming,2,11:03,HOU,sub,,,,Yao Ming,,Shane Battier,,,,,,,,,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Aaron Brooks,Luis Scola,Luther Head,Steve Novak,Yao Ming,2,10:47,GSW,foul,,,,,,,,Aaron Brooks,,Mickael Pietrus,,,,,,shooting,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Aaron Brooks,Luis Scola,Luther Head,Steve Novak,Yao Ming,2,10:47,HOU,free throw,,,,,,,1,,2,Aaron Brooks,,,foul,made,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Aaron Brooks,Luis Scola,Luther Head,Steve Novak,Yao Ming,2,10:47,HOU,free throw,,,,,,,2,,2,Aaron Brooks,,,foul,made,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Aaron Brooks,Luis Scola,Luther Head,Steve Novak,Yao Ming,2,10:32,GSW,shot,,,,,,,,,,Baron Davis,,,,missed,,layup,25,6
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Aaron Brooks,Luis Scola,Luther Head,Steve Novak,Yao Ming,2,10:31,GSW,rebound,,,,,,,,,,Baron Davis,,,,,,off,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Aaron Brooks,Luis Scola,Luther Head,Steve Novak,Yao Ming,2,10:22,GSW,shot,Mickael Pietrus,,,,,,,,,Andris Biedrins,2,,,made,,layup,25,6
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Aaron Brooks,Luis Scola,Luther Head,Steve Novak,Yao Ming,2,9:59,HOU,shot,Yao Ming,,,,,,,,,Luther Head,2,,,made,,reverse layup,25,6
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Aaron Brooks,Luis Scola,Luther Head,Steve Novak,Yao Ming,2,9:45,GSW,shot,,,,,,,,,,Mickael Pietrus,,,,missed,,3pt,39,30
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Aaron Brooks,Luis Scola,Luther Head,Steve Novak,Yao Ming,2,9:44,HOU,rebound,,,,,,,,,,Luther Head,,,,,,def,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Aaron Brooks,Luis Scola,Luther Head,Steve Novak,Yao Ming,2,9:37,HOU,foul,,,,,,,,Andris Biedrins,,Yao Ming,,,,,,offensive,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Aaron Brooks,Luis Scola,Luther Head,Steve Novak,Yao Ming,2,9:37,HOU,turnover,,,,,,,,,,Yao Ming,,,foul,,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Aaron Brooks,Luis Scola,Luther Head,Steve Novak,Yao Ming,2,9:24,GSW,shot,,,,,,,,,,Baron Davis,2,,,made,,running jump,17,7
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Aaron Brooks,Luis Scola,Luther Head,Steve Novak,Yao Ming,2,9:00,HOU,shot,,,,,,,,,,Yao Ming,,,,missed,,turnaround jump,37,8
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Aaron Brooks,Luis Scola,Luther Head,Steve Novak,Yao Ming,2,8:59,GSW,rebound,,,,,,,,,,Matt Barnes,,,,,,def,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Aaron Brooks,Luis Scola,Luther Head,Steve Novak,Yao Ming,2,8:50,GSW,shot,Matt Barnes,,,,,,,,,Mickael Pietrus,2,,,made,,jump,26,26
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Aaron Brooks,Luis Scola,Luther Head,Steve Novak,Yao Ming,2,8:33,HOU,turnover,,,,,,,,,,Aaron Brooks,,,bad pass,,Andris Biedrins,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Aaron Brooks,Luis Scola,Luther Head,Steve Novak,Yao Ming,2,8:30,HOU,foul,,,,,,,,Baron Davis,,Aaron Brooks,,,,,,shooting,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Aaron Brooks,Luis Scola,Luther Head,Steve Novak,Yao Ming,2,8:30,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Aaron Brooks,Luis Scola,Luther Head,Steve Novak,Yao Ming,2,8:30,GSW,free throw,,,,,,,1,,2,Baron Davis,,,foul,made,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Aaron Brooks,Luis Scola,Luther Head,Steve Novak,Yao Ming,2,8:30,GSW,free throw,,,,,,,2,,2,Baron Davis,,,foul,made,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Aaron Brooks,Luis Scola,Luther Head,Steve Novak,Yao Ming,2,8:12,HOU,turnover,,,,,,,,,,Yao Ming,,,poss lost ball turnover,,Andris Biedrins,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Aaron Brooks,Luis Scola,Luther Head,Steve Novak,Yao Ming,2,8:06,GSW,shot,,,,,,,,,,Baron Davis,,,,missed,,3pt,26,31
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Aaron Brooks,Luis Scola,Luther Head,Steve Novak,Yao Ming,2,8:04,GSW,rebound,,,,,,,,,,Matt Barnes,,,,,,off,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Aaron Brooks,Luis Scola,Luther Head,Steve Novak,Yao Ming,2,8:03,HOU,foul,,,,,,,,Kelenna Azubuike,,Yao Ming,,,,,,shooting,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Aaron Brooks,Luis Scola,Luther Head,Steve Novak,Yao Ming,2,8:03,GSW,free throw,,,,,,,1,,2,Kelenna Azubuike,,,foul,missed,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Aaron Brooks,Luis Scola,Luther Head,Steve Novak,Yao Ming,2,8:03,GSW,rebound,,,,,,,,,,,,,,,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Aaron Brooks,Bonzi Wells,Luis Scola,Luther Head,Steve Novak,2,8:03,HOU,sub,,,,Bonzi Wells,,Yao Ming,,,,,,,,,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Steve Novak,2,8:03,HOU,sub,,,,Rafer Alston,,Aaron Brooks,,,,,,,,,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Steve Novak,2,8:03,GSW,free throw,,,,,,,2,,2,Kelenna Azubuike,,,foul,made,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Steve Novak,2,7:52,GSW,foul,,,,,,,,Bonzi Wells,,Matt Barnes,,,,,,shooting,,
+Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Stephen Jackson,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Steve Novak,2,7:52,GSW,sub,,,,Stephen Jackson,,Andris Biedrins,,,,,,,,,,,,
+Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Stephen Jackson,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Steve Novak,2,7:52,HOU,free throw,,,,,,,1,,2,Bonzi Wells,,,foul,made,,,,
+Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Stephen Jackson,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Steve Novak,2,7:52,HOU,free throw,,,,,,,2,,2,Bonzi Wells,,,foul,made,,,,
+Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Stephen Jackson,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Steve Novak,2,7:41,HOU,foul,,,,,,,,,,Bonzi Wells,,,,,,defense 3 second,,
+Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Stephen Jackson,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Steve Novak,2,7:41,GSW,free throw,,,,,,,1,,1,Stephen Jackson,,,technical,missed,,,,
+Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Stephen Jackson,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Steve Novak,2,7:41,GSW,rebound,,,,,,,,,,,,,,,,,,
+Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Stephen Jackson,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Steve Novak,2,7:27,GSW,shot,Kelenna Azubuike,,,,,,,,,Mickael Pietrus,3,,,made,,3pt,2,7
+Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Stephen Jackson,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Steve Novak,2,7:15,HOU,shot,,,,,,,,,,Steve Novak,3,,,made,,3pt,46,23
+Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Stephen Jackson,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Steve Novak,2,7:05,GSW,shot,,,,,,,,,,Mickael Pietrus,,,,missed,,3pt,49,8
+Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Stephen Jackson,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Steve Novak,2,7:04,GSW,rebound,,,,,,,,,,Kelenna Azubuike,,,,,,off,,
+Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Stephen Jackson,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Steve Novak,2,7:01,GSW,shot,,,,,,,,,,Kelenna Azubuike,2,,,made,,layup,25,6
+Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Stephen Jackson,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Steve Novak,2,6:45,HOU,shot,,,,,,,,,,Luis Scola,2,,,made,,reverse layup,25,6
+Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Stephen Jackson,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Steve Novak,2,6:26,GSW,turnover,,,,,,,,,,Kelenna Azubuike,,,bad pass,,Luther Head,,,
+Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Stephen Jackson,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Steve Novak,2,6:18,HOU,turnover,,,,,,,,,,Luis Scola,,,traveling,,,,,
+Al Harrington,Baron Davis,Kelenna Azubuike,Mickael Pietrus,Stephen Jackson,Bonzi Wells,Luis Scola,Luther Head,Rafer Alston,Steve Novak,2,6:01,GSW,sub,,,,Al Harrington,,Matt Barnes,,,,,,,,,,,,
+Al Harrington,Baron Davis,Kelenna Azubuike,Mickael Pietrus,Stephen Jackson,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,6:01,HOU,sub,,,,Shane Battier,,Luther Head,,,,,,,,,,,,
+Al Harrington,Baron Davis,Kelenna Azubuike,Mickael Pietrus,Stephen Jackson,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,6:01,GSW,turnover,,,,,,,,,,Stephen Jackson,,,backcourt turnover,,,,,
+Al Harrington,Baron Davis,Kelenna Azubuike,Mickael Pietrus,Stephen Jackson,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,5:51,HOU,shot,,,,,,,,,,Rafer Alston,,,,missed,,3pt,13,30
+Al Harrington,Baron Davis,Kelenna Azubuike,Mickael Pietrus,Stephen Jackson,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,5:51,GSW,rebound,,,,,,,,,,Al Harrington,,,,,,def,,
+Al Harrington,Baron Davis,Kelenna Azubuike,Mickael Pietrus,Stephen Jackson,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,5:40,GSW,foul,,,,,,,,Shane Battier,,Mickael Pietrus,,,,,,offensive,,
+Al Harrington,Baron Davis,Kelenna Azubuike,Mickael Pietrus,Stephen Jackson,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,5:40,GSW,turnover,,,,,,,,,,Mickael Pietrus,,,foul,,,,,
+Al Harrington,Baron Davis,Kelenna Azubuike,Mickael Pietrus,Stephen Jackson,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,5:40,HOU,timeout,,,,,,,,,,,,,,,,regular,,
+Al Harrington,Baron Davis,Kelenna Azubuike,Mickael Pietrus,Stephen Jackson,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,5:28,HOU,shot,Bonzi Wells,,,,,,,,,Steve Novak,3,,,made,,3pt,11,26
+Al Harrington,Baron Davis,Kelenna Azubuike,Mickael Pietrus,Stephen Jackson,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,5:03,HOU,foul,,,,,,,,Al Harrington,,Luis Scola,,,,,,shooting,,
+Al Harrington,Baron Davis,Kelenna Azubuike,Mickael Pietrus,Stephen Jackson,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,5:03,GSW,free throw,,,,,,,1,,2,Al Harrington,,,foul,missed,,,,
+Al Harrington,Baron Davis,Kelenna Azubuike,Mickael Pietrus,Stephen Jackson,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,5:03,GSW,rebound,,,,,,,,,,,,,,,,,,
+Al Harrington,Baron Davis,Kelenna Azubuike,Monta Ellis,Stephen Jackson,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,5:03,GSW,sub,,,,Monta Ellis,,Mickael Pietrus,,,,,,,,,,,,
+Al Harrington,Baron Davis,Kelenna Azubuike,Monta Ellis,Stephen Jackson,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,5:03,GSW,free throw,,,,,,,2,,2,Al Harrington,,,foul,made,,,,
+Al Harrington,Baron Davis,Kelenna Azubuike,Monta Ellis,Stephen Jackson,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,4:43,HOU,shot,,,,,,,,,,Shane Battier,,,,missed,,jump,6,7
+Al Harrington,Baron Davis,Kelenna Azubuike,Monta Ellis,Stephen Jackson,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,4:43,HOU,rebound,,,,,,,,,,Bonzi Wells,,,,,,off,,
+Al Harrington,Baron Davis,Kelenna Azubuike,Monta Ellis,Stephen Jackson,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,4:41,HOU,turnover,,,,,,,,,,Bonzi Wells,,,out of bounds lost ball turnover,,,,,
+Al Harrington,Baron Davis,Kelenna Azubuike,Monta Ellis,Stephen Jackson,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,4:35,GSW,turnover,,,,,,,,,,Baron Davis,,,discontinue dribble,,,,,
+Al Harrington,Baron Davis,Kelenna Azubuike,Monta Ellis,Stephen Jackson,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,4:15,HOU,shot,,,,,,,,,,Luis Scola,,,,missed,,jump,32,22
+Al Harrington,Baron Davis,Kelenna Azubuike,Monta Ellis,Stephen Jackson,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,4:14,HOU,rebound,,,,,,,,,,Bonzi Wells,,,,,,off,,
+Al Harrington,Baron Davis,Kelenna Azubuike,Monta Ellis,Stephen Jackson,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,4:12,HOU,shot,,,,,,,,,,Bonzi Wells,2,,,made,,putback layup,25,6
+Al Harrington,Baron Davis,Kelenna Azubuike,Monta Ellis,Stephen Jackson,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,4:03,GSW,shot,,,,,,,,,,Stephen Jackson,,,,missed,,3pt,27,33
+Al Harrington,Baron Davis,Kelenna Azubuike,Monta Ellis,Stephen Jackson,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,4:02,HOU,rebound,,,,,,,,,,Luis Scola,,,,,,def,,
+Al Harrington,Baron Davis,Kelenna Azubuike,Monta Ellis,Stephen Jackson,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,3:54,GSW,foul,,,,,,,,Bonzi Wells,,Stephen Jackson,,,,,,personal,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,3:54,GSW,sub,,,,Andris Biedrins,,Kelenna Azubuike,,,,,,,,,,,,
+Al Harrington,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,3:54,GSW,sub,,,,Mickael Pietrus,,Stephen Jackson,,,,,,,,,,,,
+Al Harrington,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,3:47,HOU,shot,,,,,,,,,,Bonzi Wells,,,,missed,,driving layup,25,6
+Al Harrington,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,3:46,HOU,rebound,,,,,,,,,,,,,,,,,,
+Al Harrington,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,3:46,GSW,foul,,,,,,,,Luis Scola,,Al Harrington,,,,,,loose ball,,
+Al Harrington,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,3:38,GSW,foul,,,,,,,,Luis Scola,,Al Harrington,,,,,,personal,,
+Al Harrington,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,3:38,HOU,free throw,,,,,,,1,,2,Luis Scola,,,foul,made,,,,
+Al Harrington,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,3:38,HOU,free throw,,,,,,,2,,2,Luis Scola,,,foul,made,,,,
+Al Harrington,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,3:30,GSW,shot,,,,,,,,,,Monta Ellis,,,,missed,,jump,39,18
+Al Harrington,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,3:29,HOU,rebound,,,,,,,,,,Steve Novak,,,,,,def,,
+Al Harrington,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,3:17,HOU,shot,,,,,,,,,,Bonzi Wells,,,,missed,,reverse layup,25,6
+Al Harrington,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,3:16,GSW,rebound,,,,,,,,,,Andris Biedrins,,,,,,def,,
+Al Harrington,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,3:11,HOU,foul,,,,,,,,Baron Davis,,Rafer Alston,,,,,,shooting,,
+Al Harrington,Andris Biedrins,Baron Davis,Mickael Pietrus,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,3:11,GSW,free throw,,,,,,,1,,2,Baron Davis,,,foul,made,,,,
+Andris Biedrins,Baron Davis,Matt Barnes,Mickael Pietrus,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,3:11,GSW,sub,,,,Matt Barnes,,Al Harrington,,,,,,,,,,,,
+Andris Biedrins,Baron Davis,Matt Barnes,Mickael Pietrus,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,3:11,GSW,free throw,,,,,,,2,,2,Baron Davis,,,foul,made,,,,
+Andris Biedrins,Baron Davis,Matt Barnes,Mickael Pietrus,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,3:00,GSW,foul,,,,,,,,Rafer Alston,,Mickael Pietrus,,,,,,shooting,,
+Andris Biedrins,Baron Davis,Matt Barnes,Mickael Pietrus,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,3:00,HOU,free throw,,,,,,,1,,2,Rafer Alston,,,foul,missed,,,,
+Andris Biedrins,Baron Davis,Matt Barnes,Mickael Pietrus,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,3:00,HOU,rebound,,,,,,,,,,,,,,,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,3:00,GSW,sub,,,,Kelenna Azubuike,,Mickael Pietrus,,,,,,,,,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,3:00,HOU,free throw,,,,,,,2,,2,Rafer Alston,,,foul,missed,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,2:59,GSW,rebound,,,,,,,,,,Monta Ellis,,,,,,def,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,2:48,GSW,foul,,,,,,,,Luis Scola,,Andris Biedrins,,,,,,offensive,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,2:48,GSW,turnover,,,,,,,,,,Andris Biedrins,,,foul,,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,2:48,GSW,timeout,,,,,,,,,,,,,,,,regular,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,2:39,GSW,foul,,,,,,,,Bonzi Wells,,Kelenna Azubuike,,,,,,personal,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,2:39,HOU,free throw,,,,,,,1,,2,Bonzi Wells,,,foul,missed,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,2:39,HOU,rebound,,,,,,,,,,,,,,,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,2:39,HOU,free throw,,,,,,,2,,2,Bonzi Wells,,,foul,made,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,2:32,HOU,foul,,,,,,,,Monta Ellis,,Steve Novak,,,,,,shooting,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,2:32,GSW,free throw,,,,,,,1,,2,Monta Ellis,,,foul,made,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,2:32,GSW,free throw,,,,,,,2,,2,Monta Ellis,,,foul,made,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,2:16,HOU,foul,,,,,,,,Andris Biedrins,,Luis Scola,,,,,,offensive,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,2:16,HOU,turnover,,,,,,,,,,Luis Scola,,,foul,,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,2:04,GSW,shot,,,,,,,,,,Matt Barnes,,,,missed,,3pt,41,28
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,2:02,HOU,rebound,,,,,,,,,,Luis Scola,,,,,,def,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,1:48,HOU,shot,,,,,,,,,,Bonzi Wells,,,,missed,,layup,25,6
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,1:47,HOU,rebound,,,,,,,,,,Luis Scola,,,,,,off,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,1:43,HOU,turnover,,,,,,,,,,Luis Scola,,,lost ball,,Matt Barnes,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,1:37,GSW,foul,,,,,,,,Shane Battier,,Matt Barnes,,,,,,offensive,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,1:37,GSW,turnover,,,,,,,,,,Matt Barnes,,,foul,,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,1:26,HOU,shot,Luis Scola,,,,,,,,,Rafer Alston,3,,,made,,3pt,3,19
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,1:17,GSW,turnover,,,,,,,,,,Baron Davis,,,bad pass,,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,0:54,HOU,shot,,,,,,,,,,Luis Scola,,,,missed,,jump,19,9
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,0:52,GSW,rebound,,,,,,,,,,Andris Biedrins,,,,,,def,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,0:48,GSW,turnover,,,,,,,,,,Matt Barnes,,,lost ball,,Rafer Alston,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,0:46,HOU,shot,Rafer Alston,,,,,,,,,Luis Scola,2,,,made,,driving layup,25,6
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,0:40,GSW,foul,,,,,,,,Luis Scola,,Baron Davis,,,,,,offensive,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,0:40,GSW,turnover,,,,,,,,,,Baron Davis,,,foul,,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,0:32,HOU,shot,,,,,,,,,,Rafer Alston,2,,,made,,driving layup,25,6
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,0:32,GSW,foul,,,,,,,,Rafer Alston,,Andris Biedrins,,,,,,shooting,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,0:32,GSW,foul,,,,,,,,,,Nelson,,,,,,technical,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,0:32,HOU,free throw,,,,,,,1,,1,Steve Novak,,,technical,made,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,0:32,HOU,free throw,,,,,,,1,,1,Steve Novak,,,technical,made,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,0:32,GSW,ejection,,,,,,,,,,Nelson,,,second technical,,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,0:32,GSW,timeout,,,,,,,,,,,,,,,,short,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,0:32,GSW,foul,,,,,,,,,,Nelson,,,,,,technical,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,0:32,HOU,free throw,,,,,,,1,,1,Rafer Alston,,,foul,made,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,0:24,GSW,shot,Matt Barnes,,,,,,,,,Kelenna Azubuike,3,,,made,,3pt,41,29
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,0:02,HOU,shot,Rafer Alston,,,,,,,,,Bonzi Wells,2,,,made,,dunk,25,6
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,0:00,GSW,shot,,,,,,,,,,Baron Davis,,,,missed,,3pt,26,52
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,2,0:00,GSW,rebound,,,,,,,,,,,,,,,,,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,3,11:42,HOU,shot,,,,,,,,,,Bonzi Wells,2,,,made,,jump,11,7
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,3,11:38,HOU,foul,,,,,,,,Stephen Jackson,,Bonzi Wells,,,,,,personal,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,3,11:25,GSW,shot,,,,,,,,,,Al Harrington,,,,missed,,running jump,26,12
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,3,11:23,GSW,rebound,,,,,,,,,,Al Harrington,,,,,,off,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,3,11:21,GSW,shot,,,,,,,,,,Al Harrington,2,,,made,,layup,25,6
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,3,11:08,HOU,shot,,,,,,,,,,Rafer Alston,2,,,made,,jump,44,8
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,3,10:53,GSW,turnover,,,,,,,,,,Monta Ellis,,,bad pass,,Shane Battier,,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,3,10:41,HOU,shot,,,,,,,,,,Shane Battier,,,,missed,,jump,36,21
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,3,10:40,GSW,rebound,,,,,,,,,,Monta Ellis,,,,,,def,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,3,10:26,GSW,shot,,,,,,,,,,Stephen Jackson,,,,missed,,3pt,49,15
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,3,10:24,HOU,rebound,,,,,,,,,,Shane Battier,,,,,,def,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,3,10:06,HOU,shot,,,,,,,,,,Rafer Alston,,,,missed,,3pt,48,5
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,3,10:04,GSW,rebound,,,,,,,,,,Andris Biedrins,,,,,,def,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,3,9:50,GSW,shot,Monta Ellis,,,,,,,,,Baron Davis,3,,,made,,3pt,45,27
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,3,9:32,HOU,shot,Rafer Alston,,,,,,,,,Yao Ming,2,,,made,,hook,26,11
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,3,9:20,GSW,shot,,,Shane Battier,,,,,,,Baron Davis,,,,missed,,layup,25,6
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,3,9:19,GSW,rebound,,,,,,,,,,,,,,,,,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,3,9:11,GSW,shot,,,,,,,,,,Al Harrington,,,,missed,,3pt,44,25
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,3,9:09,HOU,rebound,,,,,,,,,,,,,,,,,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,3,8:53,HOU,shot,Chuck Hayes,,,,,,,,,Rafer Alston,3,,,made,,3pt,37,29
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,3,8:32,GSW,shot,,,,,,,,,,Baron Davis,,,,missed,,3pt,41,30
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,3,8:32,GSW,rebound,,,,,,,,,,,,,,,,,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,3,8:32,HOU,foul,,,,,,,,Andris Biedrins,,Rafer Alston,,,,,,loose ball,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,3,8:24,GSW,shot,,,Yao Ming,,,,,,,Al Harrington,,,,missed,,layup,25,6
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,3,8:21,HOU,rebound,,,,,,,,,,Yao Ming,,,,,,def,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,3,8:16,HOU,shot,,,,,,,,,,Rafer Alston,2,,,made,,driving layup,25,6
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,3,8:14,GSW,timeout,,,,,,,,,,,,,,,,regular,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Chuck Hayes,Luther Head,Rafer Alston,Shane Battier,Yao Ming,3,8:14,HOU,sub,,,,Luther Head,,Bonzi Wells,,,,,,,,,,,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Chuck Hayes,Luther Head,Rafer Alston,Shane Battier,Yao Ming,3,7:56,GSW,shot,,,,,,,,,,Andris Biedrins,2,,,made,,turnaround bank,28,12
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Chuck Hayes,Luther Head,Rafer Alston,Shane Battier,Yao Ming,3,7:39,HOU,turnover,,,,,,,,,,Shane Battier,,,poss lost ball turnover,,,,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Chuck Hayes,Luther Head,Rafer Alston,Shane Battier,Yao Ming,3,7:25,GSW,shot,Stephen Jackson,,,,,,,,,Al Harrington,2,,,made,,layup,25,6
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Chuck Hayes,Luther Head,Rafer Alston,Shane Battier,Yao Ming,3,7:06,HOU,shot,Rafer Alston,,,,,,,,,Shane Battier,3,,,made,,3pt,1,6
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Chuck Hayes,Luther Head,Rafer Alston,Shane Battier,Yao Ming,3,6:44,GSW,turnover,,,,,,,,,,Monta Ellis,,,bad pass,,Chuck Hayes,,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Chuck Hayes,Luther Head,Rafer Alston,Shane Battier,Yao Ming,3,6:40,HOU,shot,Chuck Hayes,,,,,,,,,Luther Head,2,,,made,,layup,25,6
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Chuck Hayes,Luther Head,Rafer Alston,Shane Battier,Yao Ming,3,6:35,GSW,shot,,,,,,,,,,Stephen Jackson,,,,missed,,jump,26,15
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Chuck Hayes,Luther Head,Rafer Alston,Shane Battier,Yao Ming,3,6:32,HOU,rebound,,,,,,,,,,Chuck Hayes,,,,,,def,,
+Al Harrington,Andris Biedrins,Baron Davis,Monta Ellis,Stephen Jackson,Chuck Hayes,Luther Head,Rafer Alston,Shane Battier,Yao Ming,3,6:19,HOU,turnover,,,,,,,,,,Luther Head,,,bad pass,,,,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Chuck Hayes,Luther Head,Rafer Alston,Shane Battier,Yao Ming,3,6:19,GSW,sub,,,,Matt Barnes,,Andris Biedrins,,,,,,,,,,,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Chuck Hayes,Luther Head,Rafer Alston,Shane Battier,Yao Ming,3,6:07,GSW,shot,,,,,,,,,,Monta Ellis,2,,,made,,driving layup,25,6
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Chuck Hayes,Luther Head,Rafer Alston,Shane Battier,Yao Ming,3,5:44,HOU,foul,,,,,,,,Baron Davis,,Yao Ming,,,,,,offensive,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Chuck Hayes,Luther Head,Rafer Alston,Shane Battier,Yao Ming,3,5:44,HOU,turnover,,,,,,,,,,Yao Ming,,,foul,,,,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Chuck Hayes,Luther Head,Rafer Alston,Shane Battier,Yao Ming,3,5:34,GSW,shot,,,,,,,,,,Al Harrington,,,,missed,,jump,9,4
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Chuck Hayes,Luther Head,Rafer Alston,Shane Battier,Yao Ming,3,5:33,HOU,rebound,,,,,,,,,,Shane Battier,,,,,,def,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Chuck Hayes,Luther Head,Rafer Alston,Shane Battier,Yao Ming,3,5:33,GSW,foul,,,,,,,,Shane Battier,,Al Harrington,,,,,,personal,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Chuck Hayes,Luis Scola,Luther Head,Rafer Alston,Shane Battier,3,5:33,HOU,sub,,,,Luis Scola,,Yao Ming,,,,,,,,,,,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Chuck Hayes,Luis Scola,Luther Head,Rafer Alston,Shane Battier,3,5:24,HOU,shot,,,,,,,,,,Rafer Alston,,,,missed,,3pt,15,30
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Chuck Hayes,Luis Scola,Luther Head,Rafer Alston,Shane Battier,3,5:22,GSW,rebound,,,,,,,,,,Baron Davis,,,,,,def,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Chuck Hayes,Luis Scola,Luther Head,Rafer Alston,Shane Battier,3,5:15,GSW,shot,Baron Davis,,,,,,,,,Al Harrington,2,,,made,,layup,25,6
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Chuck Hayes,Luis Scola,Luther Head,Rafer Alston,Shane Battier,3,5:02,HOU,shot,Chuck Hayes,,,,,,,,,Luther Head,2,,,made,,layup,25,6
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Chuck Hayes,Luis Scola,Luther Head,Rafer Alston,Shane Battier,3,4:47,GSW,foul,,,,,,,,Shane Battier,,Stephen Jackson,,,,,,offensive,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Chuck Hayes,Luis Scola,Luther Head,Rafer Alston,Shane Battier,3,4:47,GSW,turnover,,,,,,,,,,Stephen Jackson,,,foul,,,,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Chuck Hayes,Luis Scola,Luther Head,Rafer Alston,Shane Battier,3,4:28,HOU,shot,Luther Head,,,,,,,,,Luis Scola,2,,,made,,jump bank,14,9
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Chuck Hayes,Luis Scola,Luther Head,Rafer Alston,Shane Battier,3,4:12,GSW,shot,,,,,,,,,,Baron Davis,,,,missed,,3pt,14,29
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Chuck Hayes,Luis Scola,Luther Head,Rafer Alston,Shane Battier,3,4:10,HOU,rebound,,,,,,,,,,Shane Battier,,,,,,def,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Chuck Hayes,Luis Scola,Luther Head,Rafer Alston,Shane Battier,3,4:00,HOU,shot,,,,,,,,,,Luis Scola,,,,missed,,jump hook,25,13
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Chuck Hayes,Luis Scola,Luther Head,Rafer Alston,Shane Battier,3,3:59,GSW,rebound,,,,,,,,,,Al Harrington,,,,,,def,,
+Andris Biedrins,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Chuck Hayes,Luis Scola,Luther Head,Rafer Alston,Shane Battier,3,3:50,GSW,sub,,,,Andris Biedrins,,Al Harrington,,,,,,,,,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Chuck Hayes,Luis Scola,Luther Head,Rafer Alston,Shane Battier,3,3:50,GSW,sub,,,,Kelenna Azubuike,,Stephen Jackson,,,,,,,,,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Chuck Hayes,Luis Scola,Luther Head,Rafer Alston,Shane Battier,3,3:41,GSW,turnover,,,,,,,,,,Matt Barnes,,,lost ball,,Chuck Hayes,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Chuck Hayes,Luis Scola,Luther Head,Rafer Alston,Shane Battier,3,3:40,HOU,turnover,,,,,,,,,,Chuck Hayes,,,bad pass,,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Chuck Hayes,Luis Scola,Luther Head,Rafer Alston,Shane Battier,3,3:24,HOU,foul,,,,,,,,Monta Ellis,,Luis Scola,,,,,,shooting,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Chuck Hayes,Luis Scola,Luther Head,Rafer Alston,Shane Battier,3,3:24,GSW,free throw,,,,,,,1,,2,Monta Ellis,,,foul,made,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Chuck Hayes,Luis Scola,Luther Head,Rafer Alston,Shane Battier,3,3:24,GSW,free throw,,,,,,,2,,2,Monta Ellis,,,foul,made,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Chuck Hayes,Luis Scola,Luther Head,Rafer Alston,Shane Battier,3,3:07,HOU,shot,,,,,,,,,,Shane Battier,,,,missed,,hook,36,7
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Chuck Hayes,Luis Scola,Luther Head,Rafer Alston,Shane Battier,3,3:06,GSW,rebound,,,,,,,,,,Andris Biedrins,,,,,,def,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Chuck Hayes,Luis Scola,Luther Head,Rafer Alston,Shane Battier,3,3:01,GSW,turnover,,,,,,,,,,Matt Barnes,,,out of bounds lost ball turnover,,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Chuck Hayes,Luis Scola,Luther Head,Rafer Alston,Shane Battier,3,2:38,HOU,shot,,,,,,,,,,Rafer Alston,,,,missed,,3pt,11,31
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Chuck Hayes,Luis Scola,Luther Head,Rafer Alston,Shane Battier,3,2:38,GSW,rebound,,,,,,,,,,,,,,,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Chuck Hayes,Luis Scola,Luther Head,Rafer Alston,Shane Battier,3,2:38,HOU,foul,,,,,,,,Andris Biedrins,,Shane Battier,,,,,,loose ball,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Chuck Hayes,Luis Scola,Luther Head,Rafer Alston,Shane Battier,3,2:38,HOU,timeout,,,,,,,,,,,,,,,,regular,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,3,2:38,HOU,sub,,,,Steve Novak,,Chuck Hayes,,,,,,,,,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,3,2:24,GSW,shot,,,,,,,,,,Baron Davis,,,,missed,,jump,36,18
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,3,2:23,GSW,rebound,,,,,,,,,,Andris Biedrins,,,,,,off,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,3,2:21,HOU,foul,,,,,,,,Kelenna Azubuike,,Steve Novak,,,,,,shooting,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,3,2:21,GSW,free throw,,,,,,,1,,2,Kelenna Azubuike,,,foul,made,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,3,2:21,GSW,free throw,,,,,,,2,,2,Kelenna Azubuike,,,foul,made,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,3,1:56,HOU,shot,,,,,,,,,,Shane Battier,,,,missed,,3pt,10,27
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,3,1:55,HOU,rebound,,,,,,,,,,Shane Battier,,,,,,off,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,3,1:53,HOU,shot,,,,,,,,,,Shane Battier,2,,,made,,putback layup,25,6
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,3,1:37,GSW,shot,,,,,,,,,,Kelenna Azubuike,,,,missed,,3pt,1,6
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,3,1:35,GSW,rebound,,,,,,,,,,Andris Biedrins,,,,,,off,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,3,1:21,GSW,shot,Matt Barnes,,,,,,,,,Andris Biedrins,2,,,made,,layup,25,6
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,3,1:07,HOU,turnover,,,,,,,,,,Luis Scola,,,traveling,,,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,3,0:55,GSW,shot,,,,,,,,,,Baron Davis,,,,missed,,layup,25,6
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,3,0:53,HOU,rebound,,,,,,,,,,Shane Battier,,,,,,def,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,3,0:48,HOU,turnover,,,,,,,,,,Luther Head,,,bad pass,,Kelenna Azubuike,,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,3,0:47,GSW,shot,,,,,,,,,,Monta Ellis,,,,missed,,layup,25,6
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,3,0:45,GSW,rebound,,,,,,,,,,Matt Barnes,,,,,,off,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,3,0:44,HOU,foul,,,,,,,,Matt Barnes,,Steve Novak,,,,,,shooting,,
+Andris Biedrins,Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,3,0:44,GSW,free throw,,,,,,,1,,2,Matt Barnes,,,foul,made,,,,
+Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Monta Ellis,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,3,0:44,GSW,sub,,,,Mickael Pietrus,,Andris Biedrins,,,,,,,,,,,,
+Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Monta Ellis,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,3,0:44,GSW,free throw,,,,,,,2,,2,Matt Barnes,,,foul,made,,,,
+Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Monta Ellis,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,3,0:31,HOU,turnover,,,,,,,,,,Steve Novak,,,bad pass,,Mickael Pietrus,,,
+Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Monta Ellis,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,3,0:29,GSW,shot,,,,,,,,,,Mickael Pietrus,2,,,made,,dunk,25,6
+Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Monta Ellis,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,3,0:21,GSW,foul,,,,,,,,Rafer Alston,,Matt Barnes,,,,,,shooting,,
+Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Monta Ellis,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,3,0:21,HOU,free throw,,,,,,,1,,2,Rafer Alston,,,foul,made,,,,
+Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Monta Ellis,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,3,0:21,HOU,free throw,,,,,,,2,,2,Rafer Alston,,,foul,made,,,,
+Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Monta Ellis,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,3,0:00,GSW,rebound,,,,,,,,,,,,,,,,,,
+Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Monta Ellis,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,3,0:00,GSW,shot,,,,,,,,,,Matt Barnes,,,,missed,,3pt,7,25
+Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Monta Ellis,Bonzi Wells,Luther Head,Rafer Alston,Steve Novak,Yao Ming,4,11:46,GSW,shot,Kelenna Azubuike,,,,,,,,,Baron Davis,3,,,made,,3pt,2,8
+Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Monta Ellis,Bonzi Wells,Luther Head,Rafer Alston,Steve Novak,Yao Ming,4,11:32,HOU,shot,,,,,,,,,,Steve Novak,,,,missed,,3pt,41,29
+Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Monta Ellis,Bonzi Wells,Luther Head,Rafer Alston,Steve Novak,Yao Ming,4,11:31,HOU,rebound,,,,,,,,,,Yao Ming,,,,,,off,,
+Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Monta Ellis,Bonzi Wells,Luther Head,Rafer Alston,Steve Novak,Yao Ming,4,11:31,GSW,foul,,,,,,,,Yao Ming,,Mickael Pietrus,,,,,,shooting,,
+Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Monta Ellis,Bonzi Wells,Luther Head,Rafer Alston,Steve Novak,Yao Ming,4,11:31,HOU,free throw,,,,,,,1,,2,Yao Ming,,,foul,made,,,,
+Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Monta Ellis,Bonzi Wells,Luther Head,Rafer Alston,Steve Novak,Yao Ming,4,11:31,HOU,free throw,,,,,,,2,,2,Yao Ming,,,foul,made,,,,
+Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Monta Ellis,Bonzi Wells,Luther Head,Rafer Alston,Steve Novak,Yao Ming,4,11:21,GSW,shot,,,,,,,,,,Monta Ellis,2,,,made,,jump,19,21
+Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Monta Ellis,Bonzi Wells,Luther Head,Rafer Alston,Steve Novak,Yao Ming,4,11:09,GSW,foul,,,,,,,,Yao Ming,,Kelenna Azubuike,,,,,,shooting,,
+Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Monta Ellis,Bonzi Wells,Luther Head,Rafer Alston,Steve Novak,Yao Ming,4,11:09,HOU,free throw,,,,,,,1,,2,Yao Ming,,,foul,made,,,,
+Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Monta Ellis,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,4,11:09,HOU,sub,,,,Shane Battier,,Steve Novak,,,,,,,,,,,,
+Baron Davis,Kelenna Azubuike,Matt Barnes,Mickael Pietrus,Monta Ellis,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,4,11:09,HOU,free throw,,,,,,,2,,2,Yao Ming,,,foul,made,,,,
+Baron Davis,Kelenna Azubuike,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,4,11:09,GSW,sub,,,,Stephen Jackson,,Mickael Pietrus,,,,,,,,,,,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,4,11:09,GSW,sub,,,,Al Harrington,,Kelenna Azubuike,,,,,,,,,,,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,4,10:46,GSW,shot,Baron Davis,,,,,,,,,Matt Barnes,2,,,made,,layup,25,6
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,4,10:22,HOU,turnover,,,,,,,,,,Bonzi Wells,,,lost ball,,Al Harrington,,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,4,10:10,GSW,shot,Al Harrington,,,,,,,,,Baron Davis,2,,,made,,jump,22,26
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,4,9:59,GSW,foul,,,,,,,,Bonzi Wells,,Baron Davis,,,,,,personal,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,4,9:51,HOU,foul,,,,,,,,Monta Ellis,,Bonzi Wells,,,,,,offensive,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,4,9:51,HOU,turnover,,,,,,,,,,Bonzi Wells,,,foul,,,,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,4,9:32,GSW,shot,,,,,,,,,,Baron Davis,,,,missed,,jump,44,4
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,4,9:30,HOU,rebound,,,,,,,,,,Yao Ming,,,,,,def,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,4,9:14,HOU,shot,,,,,,,,,,Yao Ming,,,,missed,,layup,25,6
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,4,9:13,GSW,rebound,,,,,,,,,,Al Harrington,,,,,,def,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,4,9:04,GSW,shot,,,,,,,,,,Al Harrington,,,,missed,,3pt,49,5
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,4,9:03,HOU,rebound,,,,,,,,,,Yao Ming,,,,,,def,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,4,8:48,HOU,shot,,,,,,,,,,Rafer Alston,,,,missed,,jump,38,21
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,4,8:47,GSW,rebound,,,,,,,,,,Stephen Jackson,,,,,,def,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,4,8:40,GSW,shot,,,,,,,,,,Matt Barnes,,,,missed,,3pt,49,6
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,4,8:38,GSW,rebound,,,,,,,,,,Monta Ellis,,,,,,off,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,4,8:35,GSW,shot,,,,,,,,,,Monta Ellis,2,,,made,,layup,25,6
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,4,8:33,HOU,timeout,,,,,,,,,,,,,,,,regular,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,4,8:10,HOU,shot,,,,,,,,,,Luther Head,,,,missed,,3pt,32,31
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,4,8:09,GSW,rebound,,,,,,,,,,Matt Barnes,,,,,,def,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,4,7:47,GSW,shot,,,,,,,,,,Baron Davis,2,,,made,,fade away jumper,26,12
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luther Head,Rafer Alston,Shane Battier,Yao Ming,4,7:32,GSW,violation,,,,,,,,,,Al Harrington,,,,,,kicked ball,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,7:32,HOU,sub,,,,Chuck Hayes,,Luther Head,,,,,,,,,,,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,7:23,HOU,shot,,,,,,,,,,Yao Ming,,,,missed,,jump,25,26
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,7:22,GSW,rebound,,,,,,,,,,Monta Ellis,,,,,,def,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,7:14,GSW,shot,,,,,,,,,,Baron Davis,3,,,made,,3pt,11,28
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,6:58,HOU,shot,,,,,,,,,,Rafer Alston,,,,missed,,3pt,41,28
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,6:56,HOU,rebound,,,,,,,,,,,,,,,,,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,6:54,HOU,turnover,,,,,,,,,,Bonzi Wells,,,bad pass,,Baron Davis,,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,6:50,GSW,shot,Baron Davis,,,,,,,,,Monta Ellis,2,,,made,,dunk,25,6
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,6:29,HOU,shot,,,,,,,,,,Rafer Alston,2,,,made,,driving layup,25,6
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,6:11,GSW,shot,,,Yao Ming,,,,,,,Al Harrington,,,,missed,,layup,25,6
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,6:10,GSW,rebound,,,,,,,,,,Al Harrington,,,,,,off,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,6:05,GSW,shot,,,,,,,,,,Matt Barnes,,,,missed,,3pt,44,24
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,6:03,HOU,rebound,,,,,,,,,,Bonzi Wells,,,,,,def,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,5:58,HOU,shot,,,,,,,,,,Bonzi Wells,2,,,made,,driving layup,25,6
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,5:38,GSW,shot,,,Bonzi Wells,,,,,,,Baron Davis,,,,missed,,driving layup,25,6
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,5:37,GSW,rebound,,,,,,,,,,Stephen Jackson,,,,,,off,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,5:32,GSW,shot,Stephen Jackson,,,,,,,,,Al Harrington,3,,,made,,3pt,49,5
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,5:20,HOU,shot,,,,,,,,,,Rafer Alston,2,,,made,,driving layup,25,6
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,5:02,GSW,shot,,,,,,,,,,Baron Davis,,,,missed,,jump,17,9
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,5:01,HOU,rebound,,,,,,,,,,Yao Ming,,,,,,def,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,4:51,GSW,foul,,,,,,,,Rafer Alston,,Monta Ellis,,,,,,shooting,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,4:51,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,4:51,HOU,free throw,,,,,,,1,,2,Rafer Alston,,,foul,made,,,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,4:51,HOU,free throw,,,,,,,2,,2,Rafer Alston,,,foul,missed,,,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,4:50,GSW,rebound,,,,,,,,,,Stephen Jackson,,,,,,def,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,4:28,GSW,shot,Baron Davis,,,,,,,,,Stephen Jackson,3,,,made,,3pt,45,24
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,4:07,HOU,shot,,,,,,,,,,Bonzi Wells,,,,missed,,layup,25,6
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,4:05,GSW,rebound,,,,,,,,,,Al Harrington,,,,,,def,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,3:59,GSW,shot,Al Harrington,,,,,,,,,Stephen Jackson,3,,,made,,3pt,11,28
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,3:46,HOU,shot,Bonzi Wells,,,,,,,,,Yao Ming,2,,,made,,layup,25,6
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,3:46,GSW,foul,,,,,,,,Yao Ming,,Al Harrington,,,,,,shooting,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,3:46,HOU,free throw,,,,,,,1,,1,Yao Ming,,,foul,made,,,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,3:38,HOU,foul,,,,,,,,Monta Ellis,,Rafer Alston,,,,,,personal,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,3:11,HOU,shot,,,,,,,,,,Rafer Alston,,,,missed,,3pt,11,29
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,3:11,GSW,shot,Baron Davis,,,,,,,,,Al Harrington,3,,,made,,3pt,49,7
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,3:09,GSW,rebound,,,,,,,,,,Stephen Jackson,,,,,,def,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,3:06,GSW,shot,,,,,,,,,,Monta Ellis,2,,,made,,layup,26,8
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Chuck Hayes,Rafer Alston,Shane Battier,Yao Ming,4,3:06,HOU,timeout,,,,,,,,,,,,,,,,regular,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Yao Ming,4,3:06,HOU,sub,,,,Luis Scola,,Chuck Hayes,,,,,,,,,,,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Bonzi Wells,Luis Scola,Rafer Alston,Shane Battier,Steve Novak,4,3:06,HOU,sub,,,,Steve Novak,,Yao Ming,,,,,,,,,,,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,4,3:06,HOU,sub,,,,Luther Head,,Bonzi Wells,,,,,,,,,,,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,4,2:49,HOU,shot,,,,,,,,,,Shane Battier,,,,missed,,3pt,7,26
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,4,2:48,HOU,rebound,,,,,,,,,,,,,,,,,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,4,2:45,HOU,shot,,,,,,,,,,Shane Battier,,,,missed,,3pt,1,5
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,4,2:43,GSW,rebound,,,,,,,,,,Monta Ellis,,,,,,def,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,4,2:32,HOU,foul,,,,,,,,Stephen Jackson,,Steve Novak,,,,,,shooting,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,4,2:32,GSW,free throw,,,,,,,1,,2,Stephen Jackson,,,foul,made,,,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,4,2:32,GSW,free throw,,,,,,,2,,2,Stephen Jackson,,,foul,made,,,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,4,2:19,GSW,foul,,,,,,,,Luis Scola,,Stephen Jackson,,,,,,shooting,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,4,2:19,HOU,free throw,,,,,,,1,,2,Luis Scola,,,foul,missed,,,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,4,2:19,HOU,rebound,,,,,,,,,,,,,,,,,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,4,2:19,HOU,free throw,,,,,,,2,,2,Luis Scola,,,foul,made,,,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,4,2:00,GSW,shot,,,,,,,,,,Baron Davis,,,,missed,,layup,25,6
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,4,1:58,HOU,rebound,,,,,,,,,,Steve Novak,,,,,,def,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,4,1:52,HOU,shot,,,Matt Barnes,,,,,,,Luis Scola,,,,missed,,layup,25,6
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,4,1:51,GSW,rebound,,,,,,,,,,Baron Davis,,,,,,def,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,4,1:29,GSW,shot,,,,,,,,,,Stephen Jackson,3,,,made,,3pt,44,29
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,4,1:12,HOU,shot,,,,,,,,,,Luther Head,,,,missed,,3pt,12,28
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,4,1:11,GSW,rebound,,,,,,,,,,Baron Davis,,,,,,def,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,4,0:50,GSW,shot,,,,,,,,,,Stephen Jackson,,,,missed,,3pt,45,28
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,4,0:48,HOU,rebound,,,,,,,,,,Steve Novak,,,,,,def,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,4,0:44,HOU,shot,,,Baron Davis,,,,,,,Luther Head,,,,missed,,layup,25,6
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,4,0:41,GSW,rebound,,,,,,,,,,Baron Davis,,,,,,def,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,4,0:22,GSW,shot,,,,,,,,,,Baron Davis,,,,missed,,3pt,13,30
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,4,0:21,HOU,rebound,,,,,,,,,,Steve Novak,,,,,,def,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,4,0:13,HOU,shot,,,,,,,,,,Luther Head,,,,missed,,jump,36,24
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,4,0:12,HOU,rebound,,,,,,,,,,Steve Novak,,,,,,off,,
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,4,0:11,HOU,shot,,,,,,,,,,Steve Novak,,,,missed,,layup,25,6
+Al Harrington,Baron Davis,Matt Barnes,Monta Ellis,Stephen Jackson,Luis Scola,Luther Head,Rafer Alston,Shane Battier,Steve Novak,4,0:11,GSW,rebound,,,,,,,,,,,,,,,,,,

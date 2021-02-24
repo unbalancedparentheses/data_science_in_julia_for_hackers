@@ -1,0 +1,420 @@
+a1,a2,a3,a4,a5,h1,h2,h3,h4,h5,period,time,team,etype,assist,away,block,entered,home,left,num,opponent,outof,player,points,possession,reason,result,steal,type,x,y
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,12:00,OFF,jump ball,,Josh Smith,,,Joel Przybilla,,,,,,,Joe Johnson,,,,,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,11:42,POR,foul,,,,,,,,Joe Johnson,,Nicolas Batum,,,,,,shooting,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,11:42,ATL,free throw,,,,,,,1,,2,Joe Johnson,,,foul,made,,,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,11:42,ATL,free throw,,,,,,,2,,2,Joe Johnson,,,foul,missed,,,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,11:41,POR,rebound,,,,,,,,,,Joel Przybilla,,,,,,def,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,11:39,POR,shot,,,,,,,,,,LaMarcus Aldridge,,,,missed,,jump,18,22
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,11:26,POR,rebound,,,,,,,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,11:26,ATL,foul,,,,,,,,Joel Przybilla,,Al Horford,,,,,,loose ball,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,11:17,POR,shot,LaMarcus Aldridge,,,,,,,,,Steve Blake,2,,,made,,jump,45,7
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,10:58,ATL,shot,Joe Johnson,,,,,,,,,Mike Bibby,2,,,made,,jump,43,7
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,10:42,POR,shot,,,,,,,,,,LaMarcus Aldridge,2,,,made,,jump,33,6
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,10:42,ATL,foul,,,,,,,,LaMarcus Aldridge,,Josh Smith,,,,,,shooting,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,10:42,POR,free throw,,,,,,,1,,1,LaMarcus Aldridge,,,foul,made,,,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,10:22,ATL,shot,Joe Johnson,,,,,,,,,Josh Smith,2,,,made,,jump hook,23,11
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,10:06,POR,shot,,,,,,,,,,Steve Blake,2,,,made,,pullup jump,24,22
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,9:53,ATL,shot,,,,,,,,,,Mike Bibby,,,,missed,,jump,8,12
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,9:52,POR,rebound,,,,,,,,,,Brandon Roy,,,,,,def,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,9:45,POR,shot,,,,,,,,,,Steve Blake,,,,missed,,3pt,47,14
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,9:44,ATL,rebound,,,,,,,,,,Joe Johnson,,,,,,def,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,9:30,ATL,shot,,,,,,,,,,Marvin Williams,,,,missed,,3pt,2,6
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,9:28,ATL,rebound,,,,,,,,,,Mike Bibby,,,,,,off,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,9:21,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,jump,5,12
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,9:20,POR,rebound,,,,,,,,,,Joel Przybilla,,,,,,def,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,9:15,POR,shot,,,Josh Smith,,,,,,,Nicolas Batum,,,,missed,,dunk,25,6
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,9:13,ATL,rebound,,,,,,,,,,Al Horford,,,,,,def,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,9:08,ATL,turnover,,,,,,,,,,Al Horford,,,lost ball,,Brandon Roy,,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,9:00,POR,shot,,,,,,,,,,Nicolas Batum,,,,missed,,3pt,48,7
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,9:00,ATL,rebound,,,,,,,,,,Marvin Williams,,,,,,def,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,8:42,ATL,shot,,,Nicolas Batum,,,,,,,Al Horford,,,,missed,,dunk,25,6
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,8:42,ATL,rebound,,,,,,,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,8:38,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,jump,41,7
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,8:38,POR,rebound,,,,,,,,,,Steve Blake,,,,,,def,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,8:30,POR,shot,,,,,,,,,,LaMarcus Aldridge,,,,missed,,layup,25,6
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,8:29,POR,shot,,,,,,,,,,LaMarcus Aldridge,2,,,made,,tip,25,6
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,8:29,POR,rebound,,,,,,,,,,LaMarcus Aldridge,,,,,,off,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,8:06,ATL,shot,,,,,,,,,,Joe Johnson,2,,,made,,driving jump,24,9
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,7:57,POR,turnover,,,,,,,,,,LaMarcus Aldridge,,,bad pass,,Al Horford,,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,7:53,ATL,shot,Joe Johnson,,,,,,,,,Marvin Williams,2,,,made,,reverse layup,25,6
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,7:37,POR,shot,Steve Blake,,,,,,,,,Brandon Roy,2,,,made,,driving dunk,25,6
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,7:12,POR,foul,,,,,,,,Al Horford,,Joel Przybilla,,,,,,personal,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,6:59,ATL,turnover,,,,,,,,,,Joe Johnson,,,lost ball,,Joel Przybilla,,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,6:55,POR,shot,,,Josh Smith,,,,,,,Steve Blake,,,,missed,,driving layup,25,6
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,6:54,POR,rebound,,,,,,,,,,LaMarcus Aldridge,,,,,,off,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,6:42,POR,shot,,,,,,,,,,LaMarcus Aldridge,,,,missed,,turnaround jump,16,18
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,6:41,ATL,rebound,,,,,,,,,,Joe Johnson,,,,,,def,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,6:35,ATL,shot,Joe Johnson,,,,,,,,,Marvin Williams,2,,,made,,jump,7,17
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,6:15,POR,shot,,,,,,,,,,Nicolas Batum,,,,missed,,3pt,47,16
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,6:13,ATL,rebound,,,,,,,,,,Joe Johnson,,,,,,def,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,6:10,ATL,shot,Joe Johnson,,,,,,,,,Marvin Williams,2,,,made,,layup,25,6
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,6:03,POR,timeout,,,,,,,,,,,,,,,,regular,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,5:44,POR,shot,,,,,,,,,,Brandon Roy,,,,missed,,jump,42,19
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,5:43,ATL,rebound,,,,,,,,,,Al Horford,,,,,,def,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,5:25,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,driving reverse layup,25,6
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,5:24,ATL,shot,,,,,,,,,,Josh Smith,2,,,made,,tip,25,6
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,5:24,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,off,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,5:12,POR,shot,,,,,,,,,,Brandon Roy,2,,,made,,floating jump,22,9
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,4:51,ATL,shot,,,,,,,,,,Al Horford,2,,,made,,running hook,19,11
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,4:39,POR,shot,,,,,,,,,,Steve Blake,2,,,made,,jump,12,21
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,4:27,ATL,turnover,,,,,,,,,,Mike Bibby,,,bad pass,,Brandon Roy,,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,4:23,POR,shot,Nicolas Batum,,,,,,,,,Brandon Roy,2,,,made,,dunk,25,6
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,4:02,ATL,foul,,,,,,,,Joel Przybilla,,Marvin Williams,,,,,,offensive,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,4:02,ATL,turnover,,,,,,,,,,Marvin Williams,,,foul,,,,,
+Al Horford,Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,1,4:02,ATL,sub,,,,Maurice Evans,,Marvin Williams,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Steve Blake,Travis Outlaw,1,4:02,POR,sub,,,,Travis Outlaw,,Nicolas Batum,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Steve Blake,Travis Outlaw,1,3:37,POR,shot,,,,,,,,,,LaMarcus Aldridge,,,,missed,,fade away jumper,39,21
+Al Horford,Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Steve Blake,Travis Outlaw,1,3:36,ATL,rebound,,,,,,,,,,Al Horford,,,,,,def,,
+Al Horford,Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Steve Blake,Travis Outlaw,1,3:24,ATL,shot,Al Horford,,,,,,,,,Maurice Evans,3,,,made,,3pt,7,23
+Al Horford,Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Steve Blake,Travis Outlaw,1,3:08,POR,shot,,,,,,,,,,Brandon Roy,,,,missed,,jump,16,25
+Al Horford,Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Steve Blake,Travis Outlaw,1,3:06,POR,rebound,,,,,,,,,,Joel Przybilla,,,,,,off,,
+Al Horford,Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Steve Blake,Travis Outlaw,1,3:05,POR,shot,,,,,,,,,,Joel Przybilla,,,,missed,,layup,25,6
+Al Horford,Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Steve Blake,Travis Outlaw,1,3:03,ATL,rebound,,,,,,,,,,Joe Johnson,,,,,,def,,
+Al Horford,Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Steve Blake,Travis Outlaw,1,2:52,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,layup,25,6
+Al Horford,Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Steve Blake,Travis Outlaw,1,2:49,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,off,,
+Al Horford,Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Steve Blake,Travis Outlaw,1,2:49,ATL,shot,,,,,,,,,,Josh Smith,2,,,made,,layup,25,6
+Al Horford,Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Steve Blake,Travis Outlaw,1,2:49,POR,foul,,,,,,,,Josh Smith,,Joel Przybilla,,,,,,shooting,,
+Al Horford,Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Steve Blake,Travis Outlaw,1,2:49,ATL,timeout,,,,,,,,,,,,,,,,regular,,
+Al Horford,Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,1,2:49,POR,sub,,,,Rudy Fernandez,,Joel Przybilla,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,1,2:49,POR,sub,,,,Channing Frye,,Brandon Roy,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,1,2:49,ATL,sub,,,,Zaza Pachulia,,Al Horford,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,1,2:49,ATL,free throw,,,,,,,1,,1,Josh Smith,,,foul,made,,,,
+Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,1,2:28,POR,shot,,,,,,,,,,LaMarcus Aldridge,,,,missed,,jump,10,18
+Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,1,2:26,ATL,rebound,,,,,,,,,,Zaza Pachulia,,,,,,def,,
+Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,1,2:09,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,jump,25,26
+Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,1,2:09,POR,rebound,,,,,,,,,,Channing Frye,,,,,,def,,
+Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,1,1:51,POR,shot,,,,,,,,,,Steve Blake,,,,missed,,3pt,26,31
+Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,1,1:50,ATL,rebound,,,,,,,,,,Joe Johnson,,,,,,def,,
+Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,1,1:37,POR,foul,,,,,,,,Mike Bibby,,Steve Blake,,,,,,shooting,,
+Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,1,1:37,ATL,free throw,,,,,,,1,,2,Mike Bibby,,,foul,made,,,,
+Josh Smith,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,1,1:37,ATL,sub,,,,Ronald Murray,,Joe Johnson,,,,,,,,,,,,
+Josh Smith,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,1,1:37,POR,sub,,,,Sergio Rodriguez,,Steve Blake,,,,,,,,,,,,
+Josh Smith,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,1,1:37,ATL,free throw,,,,,,,2,,2,Mike Bibby,,,foul,missed,,,,
+Josh Smith,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,1,1:36,POR,rebound,,,,,,,,,,LaMarcus Aldridge,,,,,,def,,
+Josh Smith,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,1,1:13,POR,shot,,,,,,,,,,Rudy Fernandez,,,,missed,,3pt,44,24
+Josh Smith,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,1,1:12,POR,rebound,,,,,,,,,,Channing Frye,,,,,,off,,
+Josh Smith,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,1,1:10,POR,shot,,,,,,,,,,Channing Frye,,,,missed,,layup,25,6
+Josh Smith,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,1,1:10,POR,rebound,,,,,,,,,,LaMarcus Aldridge,,,,,,off,,
+Josh Smith,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,1,1:08,POR,shot,,,,,,,,,,LaMarcus Aldridge,2,,,made,,dunk,25,6
+Josh Smith,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,1,0:59,ATL,shot,,,,,,,,,,Mike Bibby,2,,,made,,running jump,30,23
+Josh Smith,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,1,0:47,POR,shot,,,,,,,,,,Channing Frye,,,,missed,,jump,22,27
+Josh Smith,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,1,0:45,POR,rebound,,,,,,,,,,LaMarcus Aldridge,,,,,,off,,
+Josh Smith,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,1,0:44,POR,shot,,,,,,,,,,LaMarcus Aldridge,2,,,made,,dunk,25,6
+Josh Smith,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,1,0:27,ATL,turnover,,,,,,,,,,Ronald Murray,,,bad pass,,Channing Frye,,,
+Josh Smith,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,1,0:16,POR,shot,Rudy Fernandez,,,,,,,,,Channing Frye,2,,,made,,jump,5,7
+Josh Smith,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,1,0:00,ATL,timeout,,,,,,,,,,,,,,,,short,,
+Josh Smith,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Channing Frye,Joel Przybilla,LaMarcus Aldridge,Rudy Fernandez,Travis Outlaw,1,0:00,POR,sub,,,,Joel Przybilla,,Sergio Rodriguez,,,,,,,,,,,,
+Josh Smith,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Rudy Fernandez,Travis Outlaw,1,0:00,POR,sub,,,,Nicolas Batum,,Channing Frye,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Zaza Pachulia,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Rudy Fernandez,Travis Outlaw,1,0:00,ATL,sub,,,,Joe Johnson,,Maurice Evans,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Zaza Pachulia,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Rudy Fernandez,Travis Outlaw,1,0:00,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,jump,40,14
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Zaza Pachulia,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Rudy Fernandez,Travis Outlaw,1,0:00,ATL,rebound,,,,,,,,,,,,,,,,,,
+Al Horford,Marvin Williams,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,11:34,POR,shot,,,,,,,,,,Sergio Rodriguez,,,,missed,,jump,16,27
+Al Horford,Marvin Williams,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,11:32,ATL,rebound,,,,,,,,,,Al Horford,,,,,,def,,
+Al Horford,Marvin Williams,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,11:11,ATL,shot,,,,,,,,,,Maurice Evans,,,,missed,,3pt,3,16
+Al Horford,Marvin Williams,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,11:09,POR,rebound,,,,,,,,,,Sergio Rodriguez,,,,,,def,,
+Al Horford,Marvin Williams,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,11:04,POR,shot,,,Al Horford,,,,,,,Sergio Rodriguez,,,,missed,,driving layup,25,6
+Al Horford,Marvin Williams,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,11:03,POR,shot,,,,,,,,,,LaMarcus Aldridge,2,,,made,,putback layup,25,6
+Al Horford,Marvin Williams,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,11:03,POR,rebound,,,,,,,,,,LaMarcus Aldridge,,,,,,off,,
+Al Horford,Marvin Williams,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,11:03,ATL,foul,,,,,,,,LaMarcus Aldridge,,Marvin Williams,,,,,,shooting,,
+Al Horford,Marvin Williams,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,11:03,POR,free throw,,,,,,,1,,1,LaMarcus Aldridge,,,foul,made,,,,
+Al Horford,Marvin Williams,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,10:48,ATL,shot,Marvin Williams,,,,,,,,,Ronald Murray,2,,,made,,running jump,26,17
+Al Horford,Marvin Williams,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,10:28,POR,shot,,,,,,,,,,Channing Frye,,,,missed,,jump,17,27
+Al Horford,Marvin Williams,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,10:27,ATL,rebound,,,,,,,,,,Marvin Williams,,,,,,def,,
+Al Horford,Marvin Williams,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,10:10,ATL,shot,,,,,,,,,,Zaza Pachulia,,,,missed,,hook,25,12
+Al Horford,Marvin Williams,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,10:09,ATL,rebound,,,,,,,,,,Maurice Evans,,,,,,off,,
+Al Horford,Marvin Williams,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,10:08,ATL,shot,,,,,,,,,,Maurice Evans,,,,missed,,reverse layup,25,6
+Al Horford,Marvin Williams,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,10:05,POR,rebound,,,,,,,,,,Travis Outlaw,,,,,,def,,
+Al Horford,Marvin Williams,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,9:52,POR,shot,Rudy Fernandez,,,,,,,,,Travis Outlaw,3,,,made,,3pt,45,19
+Al Horford,Marvin Williams,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,9:28,ATL,shot,,,,,,,,,,Ronald Murray,2,,,made,,pullup jump,35,21
+Al Horford,Marvin Williams,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,9:14,POR,turnover,,,,,,,,,,LaMarcus Aldridge,,,lost ball,,Zaza Pachulia,,,
+Al Horford,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,9:14,ATL,sub,,,,Mike Bibby,,Marvin Williams,,,,,,,,,,,,
+Al Horford,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Brandon Roy,Channing Frye,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,9:14,POR,sub,,,,Brandon Roy,,LaMarcus Aldridge,,,,,,,,,,,,
+Al Horford,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Brandon Roy,Channing Frye,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,8:55,ATL,turnover,,,,,,,,,,Zaza Pachulia,,,3 second violation,,,,,
+Al Horford,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Brandon Roy,Channing Frye,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,8:55,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Al Horford,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Brandon Roy,Joel Przybilla,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,8:55,POR,sub,,,,Joel Przybilla,,Channing Frye,,,,,,,,,,,,
+Al Horford,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Brandon Roy,Joel Przybilla,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,8:32,POR,shot,Rudy Fernandez,,,,,,,,,Joel Przybilla,2,,,made,,turnaround hook,26,9
+Al Horford,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Brandon Roy,Joel Przybilla,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,8:12,ATL,foul,,,,,,,,Joel Przybilla,,Al Horford,,,,,,offensive,,
+Al Horford,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Brandon Roy,Joel Przybilla,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,8:12,ATL,turnover,,,,,,,,,,Al Horford,,,foul,,,,,
+Josh Smith,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Brandon Roy,Joel Przybilla,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,8:12,ATL,sub,,,,Josh Smith,,Al Horford,,,,,,,,,,,,
+Josh Smith,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Brandon Roy,Joel Przybilla,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,8:03,POR,shot,,,,,,,,,,Sergio Rodriguez,2,,,made,,driving reverse layup,25,6
+Josh Smith,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Brandon Roy,Joel Przybilla,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,7:51,ATL,shot,,,,,,,,,,Maurice Evans,,,,missed,,3pt,6,22
+Josh Smith,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Brandon Roy,Joel Przybilla,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,7:50,POR,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Zaza Pachulia,Brandon Roy,Joel Przybilla,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,7:50,ATL,sub,,,,Joe Johnson,,Maurice Evans,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Zaza Pachulia,Brandon Roy,Joel Przybilla,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,7:38,POR,shot,,,,,,,,,,Rudy Fernandez,,,,missed,,3pt,11,27
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Zaza Pachulia,Brandon Roy,Joel Przybilla,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,7:36,ATL,rebound,,,,,,,,,,Mike Bibby,,,,,,def,,
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Zaza Pachulia,Brandon Roy,Joel Przybilla,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,7:28,ATL,shot,,,,,,,,,,Mike Bibby,2,,,made,,pullup jump,23,24
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Zaza Pachulia,Brandon Roy,Joel Przybilla,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,7:05,POR,shot,,,,,,,,,,Sergio Rodriguez,,,,missed,,jump,32,9
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Zaza Pachulia,Brandon Roy,Joel Przybilla,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,7:04,POR,rebound,,,,,,,,,,Rudy Fernandez,,,,,,off,,
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Zaza Pachulia,Brandon Roy,Joel Przybilla,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,7:03,POR,shot,,,,,,,,,,Rudy Fernandez,2,,,made,,jump,25,13
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Zaza Pachulia,Brandon Roy,Joel Przybilla,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,6:37,ATL,shot,Joe Johnson,,,,,,,,,Mike Bibby,3,,,made,,3pt,6,22
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Zaza Pachulia,Brandon Roy,Joel Przybilla,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,6:28,POR,turnover,,,,,,,,,,Sergio Rodriguez,,,palming turnover,,,,,
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Zaza Pachulia,Brandon Roy,Joel Przybilla,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,6:17,ATL,shot,Ronald Murray,,,,,,,,,Joe Johnson,3,,,made,,3pt,40,25
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Zaza Pachulia,Brandon Roy,Joel Przybilla,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,5:52,POR,shot,,,,,,,,,,Brandon Roy,,,,missed,,turnaround fade away,34,12
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Zaza Pachulia,Brandon Roy,Joel Przybilla,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,5:51,POR,shot,,,,,,,,,,Joel Przybilla,2,,,made,,tip,25,6
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Zaza Pachulia,Brandon Roy,Joel Przybilla,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,5:51,POR,rebound,,,,,,,,,,Joel Przybilla,,,,,,off,,
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Zaza Pachulia,Brandon Roy,Joel Przybilla,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,5:32,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,jump,24,23
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Zaza Pachulia,Brandon Roy,Joel Przybilla,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,5:31,POR,rebound,,,,,,,,,,Joel Przybilla,,,,,,def,,
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Zaza Pachulia,Brandon Roy,Joel Przybilla,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,5:22,POR,timeout,,,,,,,,,,,,,,,,regular,,
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Solomon Jones,Brandon Roy,Joel Przybilla,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,2,5:22,ATL,sub,,,,Solomon Jones,,Zaza Pachulia,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Solomon Jones,Brandon Roy,Joel Przybilla,Rudy Fernandez,Steve Blake,Travis Outlaw,2,5:22,POR,sub,,,,Steve Blake,,Sergio Rodriguez,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Solomon Jones,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,2,5:22,POR,sub,,,,LaMarcus Aldridge,,Joel Przybilla,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Solomon Jones,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,2,5:11,POR,shot,,,,,,,,,,Brandon Roy,2,,,made,,driving finger roll layup,25,9
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Solomon Jones,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,2,4:49,ATL,shot,Mike Bibby,,,,,,,,,Ronald Murray,3,,,made,,3pt,30,31
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Solomon Jones,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,2,4:32,POR,shot,,,,,,,,,,Brandon Roy,2,,,made,,jump,35,23
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Solomon Jones,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,2,4:10,ATL,shot,,,Travis Outlaw,,,,,,,Josh Smith,,,,missed,,turnaround jump,19,10
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Solomon Jones,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,2,4:09,POR,rebound,,,,,,,,,,Brandon Roy,,,,,,def,,
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Solomon Jones,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,2,4:05,POR,shot,,,,,,,,,,Rudy Fernandez,,,,missed,,driving layup,25,6
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Solomon Jones,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,2,4:04,POR,shot,,,,,,,,,,Brandon Roy,2,,,made,,tip,25,6
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Solomon Jones,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,2,4:04,POR,rebound,,,,,,,,,,Brandon Roy,,,,,,off,,
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Solomon Jones,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,2,3:47,ATL,shot,,,,,,,,,,Joe Johnson,2,,,made,,jump,30,10
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Solomon Jones,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,2,3:35,POR,shot,,,,,,,,,,Rudy Fernandez,,,,missed,,3pt,48,9
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Solomon Jones,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,2,3:34,ATL,rebound,,,,,,,,,,Solomon Jones,,,,,,def,,
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Solomon Jones,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,2,3:27,POR,foul,,,,,,,,Joe Johnson,,LaMarcus Aldridge,,,,,,personal,,
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Solomon Jones,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,2,3:20,ATL,shot,,,,,,,,,,Mike Bibby,2,,,made,,pullup jump,13,23
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Solomon Jones,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,2,2:58,POR,shot,,,,,,,,,,Brandon Roy,,,,missed,,3pt,46,18
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Solomon Jones,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,2,2:58,ATL,rebound,,,,,,,,,,Ronald Murray,,,,,,def,,
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Solomon Jones,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,2,2:40,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,3pt,2,8
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Solomon Jones,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,2,2:39,ATL,rebound,,,,,,,,,,Solomon Jones,,,,,,off,,
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Solomon Jones,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,2,2:17,ATL,shot,,,,,,,,,,Ronald Murray,,,,missed,,3pt,47,7
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Solomon Jones,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,2,2:16,POR,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Solomon Jones,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,2,2:16,ATL,timeout,,,,,,,,,,,,,,,,regular,,
+Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Solomon Jones,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,2,2:16,ATL,sub,,,,Maurice Evans,,Ronald Murray,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Solomon Jones,Brandon Roy,Jerryd Bayless,LaMarcus Aldridge,Steve Blake,Travis Outlaw,2,2:16,POR,sub,,,,Jerryd Bayless,,Rudy Fernandez,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Solomon Jones,Brandon Roy,Jerryd Bayless,LaMarcus Aldridge,Steve Blake,Travis Outlaw,2,2:04,POR,shot,,,,,,,,,,Brandon Roy,,,,missed,,running jump,32,6
+Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Solomon Jones,Brandon Roy,Jerryd Bayless,LaMarcus Aldridge,Steve Blake,Travis Outlaw,2,2:03,ATL,rebound,,,,,,,,,,Mike Bibby,,,,,,def,,
+Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Solomon Jones,Brandon Roy,Jerryd Bayless,LaMarcus Aldridge,Steve Blake,Travis Outlaw,2,1:56,ATL,shot,,,,,,,,,,Mike Bibby,2,,,made,,jump,15,23
+Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Solomon Jones,Brandon Roy,Jerryd Bayless,LaMarcus Aldridge,Steve Blake,Travis Outlaw,2,1:40,POR,shot,,,,,,,,,,LaMarcus Aldridge,2,,,made,,jump,36,22
+Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Solomon Jones,Brandon Roy,Jerryd Bayless,LaMarcus Aldridge,Steve Blake,Travis Outlaw,2,1:15,ATL,shot,,,,,,,,,,Maurice Evans,,,,missed,,3pt,2,13
+Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Solomon Jones,Brandon Roy,Jerryd Bayless,LaMarcus Aldridge,Steve Blake,Travis Outlaw,2,1:15,ATL,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Solomon Jones,Brandon Roy,Jerryd Bayless,LaMarcus Aldridge,Steve Blake,Travis Outlaw,2,1:15,POR,foul,,,,,,,,Joe Johnson,,Brandon Roy,,,,,,loose ball,,
+Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Solomon Jones,Brandon Roy,Jerryd Bayless,LaMarcus Aldridge,Steve Blake,Travis Outlaw,2,1:10,ATL,shot,,,,,,,,,,Mike Bibby,,,,missed,,3pt,30,30
+Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Solomon Jones,Brandon Roy,Jerryd Bayless,LaMarcus Aldridge,Steve Blake,Travis Outlaw,2,1:09,POR,rebound,,,,,,,,,,Travis Outlaw,,,,,,def,,
+Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Solomon Jones,Brandon Roy,Jerryd Bayless,LaMarcus Aldridge,Steve Blake,Travis Outlaw,2,0:53,POR,shot,Jerryd Bayless,,,,,,,,,Steve Blake,2,,,made,,pullup jump,36,7
+Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Solomon Jones,Brandon Roy,Jerryd Bayless,LaMarcus Aldridge,Steve Blake,Travis Outlaw,2,0:34,POR,foul,,,,,,,,,,Jerryd Bayless,,,,,,defense 3 second,,
+Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Solomon Jones,Brandon Roy,Jerryd Bayless,LaMarcus Aldridge,Steve Blake,Travis Outlaw,2,0:34,ATL,free throw,,,,,,,1,,1,Joe Johnson,,,technical,made,,,,
+Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Solomon Jones,Brandon Roy,Jerryd Bayless,LaMarcus Aldridge,Steve Blake,Travis Outlaw,2,0:22,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,running jump,24,10
+Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Solomon Jones,Brandon Roy,Jerryd Bayless,LaMarcus Aldridge,Steve Blake,Travis Outlaw,2,0:20,POR,rebound,,,,,,,,,,Brandon Roy,,,,,,def,,
+Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Solomon Jones,Brandon Roy,Jerryd Bayless,LaMarcus Aldridge,Steve Blake,Travis Outlaw,2,0:15,POR,shot,Jerryd Bayless,,,,,,,,,LaMarcus Aldridge,2,,,made,,dunk,25,6
+Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Solomon Jones,Brandon Roy,Jerryd Bayless,LaMarcus Aldridge,Steve Blake,Travis Outlaw,2,0:03,ATL,turnover,,,,,,,,,,Mike Bibby,,,bad pass,,Jerryd Bayless,,,
+Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Solomon Jones,Brandon Roy,Jerryd Bayless,LaMarcus Aldridge,Steve Blake,Travis Outlaw,2,0:00,ATL,foul,,,,,,,,Steve Blake,,Maurice Evans,,,,,,shooting,,
+Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Solomon Jones,Brandon Roy,Jerryd Bayless,LaMarcus Aldridge,Steve Blake,Travis Outlaw,2,0:00,POR,free throw,,,,,,,1,,3,Steve Blake,,,foul,missed,,,,
+Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Solomon Jones,Brandon Roy,Jerryd Bayless,LaMarcus Aldridge,Steve Blake,Travis Outlaw,2,0:00,POR,free throw,,,,,,,2,,3,Steve Blake,,,foul,made,,,,
+Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Solomon Jones,Brandon Roy,Jerryd Bayless,LaMarcus Aldridge,Steve Blake,Travis Outlaw,2,0:00,POR,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Solomon Jones,Brandon Roy,Jerryd Bayless,LaMarcus Aldridge,Steve Blake,Travis Outlaw,2,0:00,POR,free throw,,,,,,,3,,3,Steve Blake,,,foul,missed,,,,
+Joe Johnson,Josh Smith,Maurice Evans,Mike Bibby,Solomon Jones,Brandon Roy,Jerryd Bayless,LaMarcus Aldridge,Steve Blake,Travis Outlaw,2,0:00,ATL,rebound,,,,,,,,,,Joe Johnson,,,,,,def,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,11:40,POR,shot,,,,,,,,,,Steve Blake,,,,missed,,3pt,2,5
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,11:39,POR,rebound,,,,,,,,,,Joel Przybilla,,,,,,off,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,11:30,POR,turnover,,,,,,,,,,Steve Blake,,,bad pass,,Mike Bibby,,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,11:26,ATL,turnover,,,,,,,,,,Mike Bibby,,,bad pass,,Nicolas Batum,,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,11:06,POR,shot,,,,,,,,,,Nicolas Batum,,,,missed,,3pt,3,5
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,11:05,ATL,rebound,,,,,,,,,,Mike Bibby,,,,,,def,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,10:49,ATL,shot,,,,,,,,,,Marvin Williams,,,,missed,,3pt,47,6
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,10:48,POR,rebound,,,,,,,,,,Joel Przybilla,,,,,,def,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,10:35,POR,shot,LaMarcus Aldridge,,,,,,,,,Steve Blake,3,,,made,,3pt,17,30
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,10:18,ATL,turnover,,,,,,,,,,Mike Bibby,,,bad pass,,Joel Przybilla,,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,10:12,POR,shot,,,,,,,,,,LaMarcus Aldridge,2,,,made,,slam dunk,25,6
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,9:49,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,jump,25,29
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,9:48,POR,rebound,,,,,,,,,,Joel Przybilla,,,,,,def,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,9:34,POR,shot,,,,,,,,,,LaMarcus Aldridge,,,,missed,,driving hook,22,8
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,9:33,ATL,rebound,,,,,,,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,9:33,POR,foul,,,,,,,,Marvin Williams,,Joel Przybilla,,,,,,loose ball,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,9:21,ATL,turnover,,,,,,,,,,Josh Smith,,,traveling,,,,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,9:07,POR,shot,,,,,,,,,,Nicolas Batum,,,,missed,,running jump,18,15
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,9:07,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,def,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,9:02,ATL,shot,,,LaMarcus Aldridge,,,,,,,Al Horford,,,,missed,,layup,25,6
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,9:02,ATL,rebound,,,,,,,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,8:51,ATL,shot,,,,,,,,,,Joe Johnson,2,,,made,,fade away jumper,38,6
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,8:32,POR,shot,Steve Blake,,,,,,,,,Brandon Roy,3,,,made,,3pt,2,5
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,8:18,ATL,shot,Joe Johnson,,,,,,,,,Mike Bibby,3,,,made,,3pt,16,29
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,8:02,POR,shot,,,Josh Smith,,,,,,,LaMarcus Aldridge,,,,missed,,dunk,25,6
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,8:01,POR,rebound,,,,,,,,,,LaMarcus Aldridge,,,,,,off,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,7:59,POR,shot,,,Al Horford,,,,,,,LaMarcus Aldridge,,,,missed,,layup,25,6
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,7:58,ATL,rebound,,,,,,,,,,Al Horford,,,,,,def,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,7:55,ATL,shot,,,Nicolas Batum,,,,,,,Joe Johnson,,,,missed,,layup,25,6
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,7:55,ATL,rebound,,,,,,,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,7:48,ATL,shot,,,,,,,,,,Joe Johnson,3,,,made,,3pt,2,6
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,7:32,POR,shot,,,,,,,,,,Brandon Roy,2,,,made,,jump,26,27
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,7:23,ATL,shot,,,,,,,,,,Marvin Williams,2,,,made,,running jump,22,20
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,7:15,POR,shot,,,,,,,,,,Brandon Roy,,,,missed,,jump,35,15
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,7:15,POR,rebound,,,,,,,,,,Nicolas Batum,,,,,,off,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,7:01,POR,shot,Brandon Roy,,,,,,,,,Nicolas Batum,2,,,made,,pullup jump,37,18
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,6:55,POR,foul,,,,,,,,Al Horford,,Nicolas Batum,,,,,,shooting,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,6:55,ATL,free throw,,,,,,,1,,2,Al Horford,,,foul,missed,,,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,6:55,ATL,rebound,,,,,,,,,,,,,,,,,,
+Al Horford,Joe Johnson,Marvin Williams,Mike Bibby,Zaza Pachulia,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,6:55,ATL,sub,,,,Zaza Pachulia,,Josh Smith,,,,,,,,,,,,
+Al Horford,Joe Johnson,Marvin Williams,Mike Bibby,Zaza Pachulia,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,6:55,ATL,free throw,,,,,,,2,,2,Al Horford,,,foul,made,,,,
+Al Horford,Joe Johnson,Marvin Williams,Mike Bibby,Zaza Pachulia,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,6:40,POR,shot,,,,,,,,,,LaMarcus Aldridge,2,,,made,,step back jump,33,20
+Al Horford,Joe Johnson,Marvin Williams,Mike Bibby,Zaza Pachulia,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,6:18,ATL,shot,Marvin Williams,,,,,,,,,Mike Bibby,2,,,made,,jump,4,8
+Al Horford,Joe Johnson,Marvin Williams,Mike Bibby,Zaza Pachulia,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,6:08,ATL,foul,,,,,,,,Brandon Roy,,Marvin Williams,,,,,,personal,,
+Al Horford,Joe Johnson,Marvin Williams,Mike Bibby,Zaza Pachulia,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,5:54,POR,shot,Steve Blake,,,,,,,,,LaMarcus Aldridge,2,,,made,,jump,40,21
+Al Horford,Joe Johnson,Marvin Williams,Mike Bibby,Zaza Pachulia,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,5:38,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,jump,25,13
+Al Horford,Joe Johnson,Marvin Williams,Mike Bibby,Zaza Pachulia,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,5:37,POR,rebound,,,,,,,,,,Joel Przybilla,,,,,,def,,
+Al Horford,Joe Johnson,Marvin Williams,Mike Bibby,Zaza Pachulia,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,5:22,POR,shot,Nicolas Batum,,,,,,,,,Joel Przybilla,2,,,made,,dunk,25,6
+Al Horford,Joe Johnson,Marvin Williams,Mike Bibby,Zaza Pachulia,Brandon Roy,Joel Przybilla,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,5:12,ATL,timeout,,,,,,,,,,,,,,,,regular,,
+Al Horford,Joe Johnson,Marvin Williams,Mike Bibby,Zaza Pachulia,Brandon Roy,Channing Frye,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,5:12,POR,sub,,,,Channing Frye,,Joel Przybilla,,,,,,,,,,,,
+Al Horford,Joe Johnson,Marvin Williams,Mike Bibby,Zaza Pachulia,Brandon Roy,Channing Frye,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,5:06,ATL,shot,Al Horford,,,,,,,,,Joe Johnson,2,,,made,,pullup jump,15,20
+Al Horford,Joe Johnson,Marvin Williams,Mike Bibby,Zaza Pachulia,Brandon Roy,Channing Frye,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,4:39,POR,shot,,,,,,,,,,Brandon Roy,,,,missed,,fade away jumper,20,23
+Al Horford,Joe Johnson,Marvin Williams,Mike Bibby,Zaza Pachulia,Brandon Roy,Channing Frye,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,4:37,POR,rebound,,,,,,,,,,Nicolas Batum,,,,,,off,,
+Al Horford,Joe Johnson,Marvin Williams,Mike Bibby,Zaza Pachulia,Brandon Roy,Channing Frye,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,4:34,POR,shot,,,,,,,,,,Steve Blake,,,,missed,,3pt,22,31
+Al Horford,Joe Johnson,Marvin Williams,Mike Bibby,Zaza Pachulia,Brandon Roy,Channing Frye,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,4:33,ATL,rebound,,,,,,,,,,,,,,,,,,
+Al Horford,Joe Johnson,Marvin Williams,Mike Bibby,Zaza Pachulia,Brandon Roy,Channing Frye,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,4:15,ATL,shot,Al Horford,,,,,,,,,Marvin Williams,3,,,made,,3pt,14,28
+Al Horford,Joe Johnson,Marvin Williams,Mike Bibby,Zaza Pachulia,Brandon Roy,Channing Frye,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,3:56,POR,turnover,,,,,,,,,,LaMarcus Aldridge,,,3 second violation,,,,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Channing Frye,LaMarcus Aldridge,Nicolas Batum,Steve Blake,3,3:56,ATL,sub,,,,Josh Smith,,Zaza Pachulia,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Channing Frye,LaMarcus Aldridge,Steve Blake,Travis Outlaw,3,3:56,POR,sub,,,,Travis Outlaw,,Nicolas Batum,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Travis Outlaw,3,3:56,POR,sub,,,,Rudy Fernandez,,Steve Blake,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Travis Outlaw,3,3:35,ATL,shot,,,,,,,,,,Marvin Williams,,,,missed,,pullup jump,17,25
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Travis Outlaw,3,3:34,POR,rebound,,,,,,,,,,Travis Outlaw,,,,,,def,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Travis Outlaw,3,3:19,POR,shot,,,,,,,,,,Brandon Roy,2,,,made,,pullup jump,34,21
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Travis Outlaw,3,3:04,ATL,shot,,,,,,,,,,Marvin Williams,,,,missed,,3pt,2,8
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Travis Outlaw,3,3:02,POR,rebound,,,,,,,,,,Channing Frye,,,,,,def,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Travis Outlaw,3,2:54,POR,shot,Rudy Fernandez,,,,,,,,,Travis Outlaw,3,,,made,,3pt,2,7
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Travis Outlaw,3,2:34,ATL,turnover,,,,,,,,,,Josh Smith,,,lost ball,,Channing Frye,,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Travis Outlaw,3,2:31,POR,shot,Channing Frye,,,,,,,,,Travis Outlaw,2,,,made,,dunk,25,6
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Travis Outlaw,3,2:13,ATL,shot,Josh Smith,,,,,,,,,Mike Bibby,2,,,made,,jump,37,5
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Travis Outlaw,3,1:48,POR,shot,,,,,,,,,,Rudy Fernandez,,,,missed,,3pt,25,31
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Travis Outlaw,3,1:47,POR,rebound,,,,,,,,,,Brandon Roy,,,,,,off,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Travis Outlaw,3,1:35,POR,shot,,,,,,,,,,Brandon Roy,,,,missed,,driving reverse layup,25,6
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Travis Outlaw,3,1:34,ATL,rebound,,,,,,,,,,Joe Johnson,,,,,,def,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Travis Outlaw,3,1:22,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,running jump,24,15
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Travis Outlaw,3,1:21,ATL,rebound,,,,,,,,,,Joe Johnson,,,,,,off,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Travis Outlaw,3,1:17,ATL,shot,,,,,,,,,,Mike Bibby,,,,missed,,3pt,48,6
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Travis Outlaw,3,1:17,POR,rebound,,,,,,,,,,Brandon Roy,,,,,,def,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Travis Outlaw,3,1:10,POR,shot,Brandon Roy,,,,,,,,,Rudy Fernandez,3,,,made,,3pt,2,6
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Travis Outlaw,3,0:50,POR,foul,,,,,,,,Mike Bibby,,Channing Frye,,,,,,shooting,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Travis Outlaw,3,0:50,POR,timeout,,,,,,,,,,,,,,,,regular,,
+Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Travis Outlaw,3,0:50,ATL,sub,,,,Ronald Murray,,Al Horford,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Zaza Pachulia,Brandon Roy,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Travis Outlaw,3,0:50,ATL,sub,,,,Zaza Pachulia,,Marvin Williams,,,,,,,,,,,,
+Josh Smith,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Brandon Roy,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Travis Outlaw,3,0:50,ATL,sub,,,,Maurice Evans,,Joe Johnson,,,,,,,,,,,,
+Josh Smith,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,3,0:50,POR,sub,,,,Sergio Rodriguez,,Brandon Roy,,,,,,,,,,,,
+Josh Smith,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,3,0:50,ATL,free throw,,,,,,,1,,2,Mike Bibby,,,foul,made,,,,
+Josh Smith,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,3,0:50,ATL,free throw,,,,,,,2,,2,Mike Bibby,,,foul,made,,,,
+Josh Smith,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,3,0:35,POR,shot,,,,,,,,,,Travis Outlaw,,,,missed,,3pt,24,31
+Josh Smith,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,3,0:33,ATL,rebound,,,,,,,,,,Mike Bibby,,,,,,def,,
+Josh Smith,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,3,0:22,ATL,shot,Mike Bibby,,,,,,,,,Josh Smith,2,,,made,,jump,7,9
+Josh Smith,Maurice Evans,Mike Bibby,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,3,0:06,ATL,foul,,,,,,,,Sergio Rodriguez,,Mike Bibby,,,,,,personal,,
+Josh Smith,Mario West,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,3,0:06,ATL,sub,,,,Mario West,,Mike Bibby,,,,,,,,,,,,
+Josh Smith,Mario West,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,3,0:01,POR,shot,Sergio Rodriguez,,,,,,,,,Rudy Fernandez,2,,,made,,reverse layup,25,6
+Josh Smith,Mario West,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,3,0:00,ATL,shot,,,,,,,,,,Ronald Murray,,,,missed,,3pt,39,58
+Josh Smith,Mario West,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,3,0:00,ATL,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,4,11:45,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,driving layup,25,6
+Joe Johnson,Josh Smith,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,4,11:43,ATL,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,4,11:37,POR,foul,,,,,,,,Ronald Murray,,Channing Frye,,,,,,shooting,,
+Joe Johnson,Josh Smith,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,4,11:37,ATL,free throw,,,,,,,1,,2,Ronald Murray,,,foul,made,,,,
+Joe Johnson,Josh Smith,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,4,11:37,ATL,free throw,,,,,,,2,,2,Ronald Murray,,,foul,missed,,,,
+Joe Johnson,Josh Smith,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,4,11:35,POR,rebound,,,,,,,,,,Sergio Rodriguez,,,,,,def,,
+Joe Johnson,Josh Smith,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,4,11:16,POR,shot,,,,,,,,,,Rudy Fernandez,2,,,made,,fade away jumper,21,14
+Joe Johnson,Josh Smith,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,4,10:55,POR,foul,,,,,,,,Joe Johnson,,Travis Outlaw,,,,,,shooting,,
+Joe Johnson,Josh Smith,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,4,10:55,ATL,free throw,,,,,,,1,,2,Joe Johnson,,,foul,made,,,,
+Joe Johnson,Josh Smith,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,4,10:55,ATL,free throw,,,,,,,2,,2,Joe Johnson,,,foul,made,,,,
+Joe Johnson,Josh Smith,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,4,10:39,OFF,jump ball,,Ronald Murray,,,Sergio Rodriguez,,,,,,,Joe Johnson,,,,,,
+Joe Johnson,Josh Smith,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,4,10:39,POR,turnover,,,,,,,,,,Sergio Rodriguez,,,lost ball,,Ronald Murray,,,
+Joe Johnson,Josh Smith,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,4,10:18,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,driving reverse layup,25,6
+Joe Johnson,Josh Smith,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,4,10:18,POR,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,4,10:18,ATL,foul,,,,,,,,Channing Frye,,Zaza Pachulia,,,,,,loose ball,,
+Joe Johnson,Josh Smith,Maurice Evans,Ronald Murray,Zaza Pachulia,Channing Frye,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,4,10:18,ATL,foul,,,,,,,,Channing Frye,,Zaza Pachulia,,,,,,technical,,
+Joe Johnson,Josh Smith,Maurice Evans,Ronald Murray,Zaza Pachulia,Joel Przybilla,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,4,10:18,POR,sub,,,,Joel Przybilla,,Channing Frye,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Maurice Evans,Ronald Murray,Zaza Pachulia,Joel Przybilla,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,4,10:18,POR,free throw,,,,,,,1,,1,Rudy Fernandez,,,technical,missed,,,,
+Joe Johnson,Josh Smith,Maurice Evans,Ronald Murray,Zaza Pachulia,Joel Przybilla,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,4,10:18,POR,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Maurice Evans,Ronald Murray,Zaza Pachulia,Brandon Roy,Joel Przybilla,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,4,10:18,POR,sub,,,,Brandon Roy,,LaMarcus Aldridge,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Smith,Maurice Evans,Ronald Murray,Brandon Roy,Joel Przybilla,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,4,10:18,ATL,sub,,,,Al Horford,,Zaza Pachulia,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Smith,Maurice Evans,Ronald Murray,Brandon Roy,Joel Przybilla,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,4,10:02,POR,shot,,,,,,,,,,Joel Przybilla,,,,missed,,layup,25,6
+Al Horford,Joe Johnson,Josh Smith,Maurice Evans,Ronald Murray,Brandon Roy,Joel Przybilla,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,4,10:01,POR,shot,,,,,,,,,,Joel Przybilla,,,,missed,,layup,25,6
+Al Horford,Joe Johnson,Josh Smith,Maurice Evans,Ronald Murray,Brandon Roy,Joel Przybilla,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,4,10:01,POR,rebound,,,,,,,,,,Joel Przybilla,,,,,,off,,
+Al Horford,Joe Johnson,Josh Smith,Maurice Evans,Ronald Murray,Brandon Roy,Joel Przybilla,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,4,9:59,ATL,rebound,,,,,,,,,,Ronald Murray,,,,,,def,,
+Al Horford,Joe Johnson,Josh Smith,Maurice Evans,Ronald Murray,Brandon Roy,Joel Przybilla,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,4,9:42,POR,foul,,,,,,,,Al Horford,,Joel Przybilla,,,,,,shooting,,
+Al Horford,Joe Johnson,Josh Smith,Maurice Evans,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,4,9:42,POR,sub,,,,LaMarcus Aldridge,,Joel Przybilla,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Smith,Maurice Evans,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,4,9:42,ATL,free throw,,,,,,,1,,2,Al Horford,,,foul,missed,,,,
+Al Horford,Joe Johnson,Josh Smith,Maurice Evans,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Sergio Rodriguez,Travis Outlaw,4,9:42,ATL,rebound,,,,,,,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Smith,Maurice Evans,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,9:42,POR,sub,,,,Steve Blake,,Sergio Rodriguez,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Smith,Maurice Evans,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,9:42,ATL,free throw,,,,,,,2,,2,Al Horford,,,foul,made,,,,
+Al Horford,Joe Johnson,Josh Smith,Maurice Evans,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,9:25,POR,shot,Brandon Roy,,,,,,,,,Rudy Fernandez,3,,,made,,3pt,10,25
+Al Horford,Joe Johnson,Josh Smith,Maurice Evans,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,9:14,POR,foul,,,,,,,,Joe Johnson,,Travis Outlaw,,,,,,personal,,
+Al Horford,Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,9:14,ATL,sub,,,,Mike Bibby,,Maurice Evans,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,9:09,POR,foul,,,,,,,,Ronald Murray,,Rudy Fernandez,,,,,,shooting,,
+Al Horford,Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,9:09,ATL,free throw,,,,,,,1,,2,Ronald Murray,,,foul,made,,,,
+Al Horford,Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,9:09,ATL,free throw,,,,,,,2,,2,Ronald Murray,,,foul,made,,,,
+Al Horford,Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,8:58,POR,shot,Steve Blake,,,,,,,,,Brandon Roy,2,,,made,,alley oop layup,25,6
+Al Horford,Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,8:37,ATL,shot,Ronald Murray,,,,,,,,,Josh Smith,2,,,made,,reverse layup,25,6
+Al Horford,Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,8:20,ATL,foul,,,,,,,,Travis Outlaw,,Josh Smith,,,,,,shooting,,
+Al Horford,Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,8:20,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Al Horford,Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,8:20,POR,free throw,,,,,,,1,,2,Travis Outlaw,,,foul,made,,,,
+Al Horford,Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,8:20,POR,free throw,,,,,,,2,,2,Travis Outlaw,,,foul,made,,,,
+Al Horford,Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,7:59,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,layup,25,6
+Al Horford,Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,7:58,POR,rebound,,,,,,,,,,Brandon Roy,,,,,,def,,
+Al Horford,Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,7:50,POR,shot,Steve Blake,,,,,,,,,Brandon Roy,3,,,made,,3pt,37,27
+Al Horford,Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,7:28,POR,foul,,,,,,,,,,Rudy Fernandez,,,,,,defense 3 second,,
+Al Horford,Joe Johnson,Josh Smith,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,7:28,ATL,free throw,,,,,,,1,,1,Joe Johnson,,,technical,made,,,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,7:28,ATL,sub,,,,Marvin Williams,,Ronald Murray,,,,,,,,,,,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,7:17,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,3pt,24,30
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,7:16,POR,rebound,,,,,,,,,,Travis Outlaw,,,,,,def,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,7:00,ATL,foul,,,,,,,,Brandon Roy,,Josh Smith,,,,,,personal,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,6:53,POR,shot,Brandon Roy,,,,,,,,,LaMarcus Aldridge,2,,,made,,jump,28,26
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,6:30,ATL,shot,,,,,,,,,,Mike Bibby,,,,missed,,3pt,42,26
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,6:29,POR,rebound,,,,,,,,,,LaMarcus Aldridge,,,,,,def,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,6:15,ATL,foul,,,,,,,,Brandon Roy,,Josh Smith,,,,,,shooting,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,6:15,POR,free throw,,,,,,,1,,2,Brandon Roy,,,foul,made,,,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,6:15,POR,free throw,,,,,,,2,,2,Brandon Roy,,,foul,missed,,,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,6:14,POR,rebound,,,,,,,,,,Travis Outlaw,,,,,,off,,
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,6:03,POR,shot,,,,,,,,,,Brandon Roy,2,,,made,,jump,19,23
+Al Horford,Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,5:51,ATL,timeout,,,,,,,,,,,,,,,,regular,,
+Al Horford,Joe Johnson,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,5:51,ATL,sub,,,,Ronald Murray,,Josh Smith,,,,,,,,,,,,
+Al Horford,Joe Johnson,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,5:34,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,reverse layup,25,6
+Al Horford,Joe Johnson,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,5:32,ATL,rebound,,,,,,,,,,Al Horford,,,,,,off,,
+Al Horford,Joe Johnson,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,5:32,ATL,turnover,,,,,,,,,,,,,shot clock turnover,,,,,
+Al Horford,Joe Johnson,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,5:18,POR,shot,,,,,,,,,,Brandon Roy,,,,missed,,driving layup,25,6
+Al Horford,Joe Johnson,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,5:17,ATL,rebound,,,,,,,,,,Marvin Williams,,,,,,def,,
+Al Horford,Joe Johnson,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,5:11,ATL,shot,,,,,,,,,,Mike Bibby,2,,,made,,reverse layup,25,6
+Al Horford,Joe Johnson,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,4:44,POR,shot,Brandon Roy,,,,,,,,,Steve Blake,2,,,made,,jump,30,28
+Al Horford,Joe Johnson,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,4:33,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,3pt,3,11
+Al Horford,Joe Johnson,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,4:31,ATL,shot,,,,,,,,,,Marvin Williams,,,,missed,,tip,25,6
+Al Horford,Joe Johnson,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,4:31,ATL,rebound,,,,,,,,,,Marvin Williams,,,,,,off,,
+Al Horford,Joe Johnson,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,4:30,POR,rebound,,,,,,,,,,LaMarcus Aldridge,,,,,,def,,
+Al Horford,Joe Johnson,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,4:11,POR,shot,,,,,,,,,,Brandon Roy,,,,missed,,jump,21,25
+Al Horford,Joe Johnson,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,4:10,ATL,rebound,,,,,,,,,,Mike Bibby,,,,,,def,,
+Al Horford,Joe Johnson,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,4:04,POR,foul,,,,,,,,Mike Bibby,,Steve Blake,,,,,,personal,,
+Al Horford,Joe Johnson,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,4:04,ATL,free throw,,,,,,,1,,2,Mike Bibby,,,foul,made,,,,
+Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,4:04,ATL,sub,,,,Josh Smith,,Al Horford,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,4:04,ATL,free throw,,,,,,,2,,2,Mike Bibby,,,foul,made,,,,
+Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,3:50,ATL,foul,,,,,,,,Travis Outlaw,,Joe Johnson,,,,,,shooting,,
+Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,3:50,POR,free throw,,,,,,,1,,2,Travis Outlaw,,,foul,made,,,,
+Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,3:50,POR,free throw,,,,,,,2,,2,Travis Outlaw,,,foul,made,,,,
+Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,3:41,ATL,shot,,,,,,,,,,Joe Johnson,2,,,made,,layup,25,6
+Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,3:19,POR,shot,,,,,,,,,,Steve Blake,,,,missed,,3pt,47,6
+Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,3:18,ATL,rebound,,,,,,,,,,Ronald Murray,,,,,,def,,
+Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,3:14,POR,foul,,,,,,,,Ronald Murray,,LaMarcus Aldridge,,,,,,shooting,,
+Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,3:14,ATL,free throw,,,,,,,1,,2,Ronald Murray,,,foul,made,,,,
+Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,3:14,ATL,free throw,,,,,,,2,,2,Ronald Murray,,,foul,missed,,,,
+Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,3:13,POR,rebound,,,,,,,,,,LaMarcus Aldridge,,,,,,def,,
+Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,2:52,POR,shot,,,,,,,,,,Rudy Fernandez,3,,,made,,3pt,9,25
+Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,2:35,ATL,shot,,,,,,,,,,Marvin Williams,,,,missed,,jump,4,15
+Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,2:35,POR,rebound,,,,,,,,,,Rudy Fernandez,,,,,,def,,
+Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,2:19,POR,shot,,,,,,,,,,LaMarcus Aldridge,,,,missed,,jump,36,14
+Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,2:18,ATL,rebound,,,,,,,,,,Marvin Williams,,,,,,def,,
+Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,2:08,ATL,shot,Ronald Murray,,,,,,,,,Marvin Williams,2,,,made,,layup,25,6
+Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,2:08,POR,timeout,,,,,,,,,,,,,,,,regular,,
+Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,1:46,POR,shot,,,,,,,,,,Steve Blake,,,,missed,,3pt,4,19
+Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,1:45,POR,rebound,,,,,,,,,,LaMarcus Aldridge,,,,,,off,,
+Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,1:27,POR,turnover,,,,,,,,,,Rudy Fernandez,,,lost ball,,Ronald Murray,,,
+Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,1:23,ATL,shot,Ronald Murray,,,,,,,,,Marvin Williams,2,,,made,,dunk,25,6
+Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,1:03,POR,shot,,,,,,,,,,Travis Outlaw,,,,missed,,turnaround jump,21,21
+Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,1:01,ATL,rebound,,,,,,,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,1:01,ATL,timeout,,,,,,,,,,,,,,,,regular,,
+Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,0:54,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,turnaround bank,15,11
+Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,0:53,POR,rebound,,,,,,,,,,Travis Outlaw,,,,,,def,,
+Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,0:31,POR,shot,,,,,,,,,,Steve Blake,,,,missed,,turnaround jump,20,16
+Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,0:30,ATL,rebound,,,,,,,,,,Marvin Williams,,,,,,def,,
+Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,0:26,ATL,shot,,,,,,,,,,Ronald Murray,2,,,made,,driving finger roll layup,25,6
+Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,0:24,ATL,foul,,,,,,,,Rudy Fernandez,,Mike Bibby,,,,,,personal,,
+Joe Johnson,Josh Smith,Marvin Williams,Mike Bibby,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,0:24,POR,free throw,,,,,,,1,,2,Rudy Fernandez,,,foul,made,,,,
+Joe Johnson,Josh Smith,Mario West,Marvin Williams,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,0:24,ATL,sub,,,,Mario West,,Mike Bibby,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Mario West,Marvin Williams,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,0:24,POR,free throw,,,,,,,2,,2,Rudy Fernandez,,,foul,made,,,,
+Joe Johnson,Josh Smith,Mario West,Marvin Williams,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,0:18,ATL,shot,,,,,,,,,,Ronald Murray,2,,,made,,driving dunk,25,6
+Joe Johnson,Josh Smith,Mario West,Marvin Williams,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,0:17,ATL,foul,,,,,,,,Rudy Fernandez,,Marvin Williams,,,,,,personal,,
+Joe Johnson,Josh Smith,Mario West,Marvin Williams,Ronald Murray,Brandon Roy,LaMarcus Aldridge,Rudy Fernandez,Steve Blake,Travis Outlaw,4,0:17,POR,free throw,,,,,,,1,,2,Rudy Fernandez,,,foul,made,,,,
+Joe Johnson,Josh Smith,Mario West,Marvin Williams,Ronald Murray,Brandon Roy,Michael Ruffin,Rudy Fernandez,Steve Blake,Travis Outlaw,4,0:17,POR,sub,,,,Michael Ruffin,,LaMarcus Aldridge,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Mario West,Marvin Williams,Ronald Murray,Michael Ruffin,Nicolas Batum,Rudy Fernandez,Steve Blake,Travis Outlaw,4,0:17,POR,sub,,,,Nicolas Batum,,Brandon Roy,,,,,,,,,,,,
+Joe Johnson,Josh Smith,Mario West,Marvin Williams,Ronald Murray,Michael Ruffin,Nicolas Batum,Rudy Fernandez,Steve Blake,Travis Outlaw,4,0:17,POR,free throw,,,,,,,2,,2,Rudy Fernandez,,,foul,made,,,,
+Joe Johnson,Josh Smith,Mario West,Marvin Williams,Ronald Murray,Michael Ruffin,Nicolas Batum,Rudy Fernandez,Steve Blake,Travis Outlaw,4,0:11,ATL,shot,,,,,,,,,,Ronald Murray,2,,,made,,driving reverse layup,25,6
+Joe Johnson,Josh Smith,Mario West,Marvin Williams,Ronald Murray,Michael Ruffin,Nicolas Batum,Rudy Fernandez,Steve Blake,Travis Outlaw,4,0:07,POR,turnover,,,,,,,,,,Rudy Fernandez,,,bad pass,,Joe Johnson,,,
+Joe Johnson,Josh Smith,Mario West,Marvin Williams,Ronald Murray,Michael Ruffin,Nicolas Batum,Rudy Fernandez,Steve Blake,Travis Outlaw,4,0:04,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,3pt,49,14
+Joe Johnson,Josh Smith,Mario West,Marvin Williams,Ronald Murray,Michael Ruffin,Nicolas Batum,Rudy Fernandez,Steve Blake,Travis Outlaw,4,0:02,POR,rebound,,,,,,,,,,,,,,,,,,

@@ -1,0 +1,405 @@
+a1,a2,a3,a4,a5,h1,h2,h3,h4,h5,period,time,team,etype,assist,away,block,entered,home,left,num,opponent,outof,player,points,possession,reason,result,steal,type,x,y
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,12:00,OFF,jump ball,,Tyson Chandler,,,Mehmet Okur,,,,,,,C.J. Miles,,,,,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,11:49,UTA,shot,Deron Williams,,,,,,,,,C.J. Miles,2,,,made,,jump,38,23
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,11:26,NOH,shot,,,,,,,,,,Morris Peterson,,,,missed,,3pt,2,8
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,11:25,NOH,rebound,,,,,,,,,,Tyson Chandler,,,,,,off,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,11:23,NOH,shot,,,,,,,,,,Tyson Chandler,,,,missed,,layup,25,6
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,11:22,UTA,rebound,,,,,,,,,,Carlos Boozer,,,,,,def,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,11:14,UTA,shot,,,David West,,,,,,,Deron Williams,,,,missed,,layup,25,6
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,11:12,NOH,rebound,,,,,,,,,,Chris Paul,,,,,,def,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,11:07,NOH,shot,Chris Paul,,,,,,,,,Peja Stojakovic,2,,,made,,jump,5,5
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,10:43,UTA,shot,,,,,,,,,,Deron Williams,2,,,made,,jump,37,22
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,10:17,NOH,shot,,,,,,,,,,Morris Peterson,,,,missed,,layup,25,6
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,10:17,NOH,rebound,,,,,,,,,,Morris Peterson,,,,,,off,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,10:16,UTA,foul,,,,,,,,Morris Peterson,,Mehmet Okur,,,,,,shooting,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,10:16,NOH,free throw,,,,,,,1,,2,Morris Peterson,,,foul,missed,,,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,10:16,NOH,rebound,,,,,,,,,,,,,,,,,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,10:16,NOH,free throw,,,,,,,2,,2,Morris Peterson,,,foul,missed,,,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,10:15,UTA,rebound,,,,,,,,,,Carlos Boozer,,,,,,def,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,9:54,NOH,foul,,,,,,,,Deron Williams,,Chris Paul,,,,,,personal,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,9:47,UTA,shot,Deron Williams,,,,,,,,,Ronnie Brewer,2,,,made,,jump,14,20
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,9:24,NOH,shot,Chris Paul,,,,,,,,,Morris Peterson,3,,,made,,3pt,48,7
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,9:02,UTA,shot,,,,,,,,,,Mehmet Okur,2,,,made,,jump,20,23
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,8:51,NOH,shot,,,,,,,,,,Chris Paul,,,,missed,,layup,25,6
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,8:50,UTA,rebound,,,,,,,,,,Mehmet Okur,,,,,,def,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,8:49,UTA,turnover,,,,,,,,,,Mehmet Okur,,,bad pass,,Tyson Chandler,,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,8:47,NOH,turnover,,,,,,,,,,Tyson Chandler,,,bad pass,,Mehmet Okur,,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,8:42,UTA,shot,Deron Williams,,,,,,,,,Ronnie Brewer,2,,,made,,layup,25,6
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,8:27,NOH,shot,Chris Paul,,,,,,,,,Peja Stojakovic,2,,,made,,jump,4,5
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,8:10,UTA,shot,Ronnie Brewer,,,,,,,,,Carlos Boozer,2,,,made,,fade away jumper,32,22
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,7:48,NOH,shot,,,,,,,,,,Peja Stojakovic,,,,missed,,running jump,44,3
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,7:46,NOH,rebound,,,,,,,,,,Chris Paul,,,,,,off,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,7:45,UTA,foul,,,,,,,,Tyson Chandler,,Carlos Boozer,,,,,,personal,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,7:45,NOH,free throw,,,,,,,1,,2,Tyson Chandler,,,foul,made,,,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,7:45,NOH,free throw,,,,,,,2,,2,Tyson Chandler,,,foul,missed,,,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,7:44,UTA,rebound,,,,,,,,,,Mehmet Okur,,,,,,def,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,7:29,UTA,shot,,,,,,,,,,Carlos Boozer,,,,missed,,jump bank,21,9
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,7:28,NOH,rebound,,,,,,,,,,Tyson Chandler,,,,,,def,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,7:23,UTA,foul,,,,,,,,Peja Stojakovic,,Ronnie Brewer,,,,,,personal,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,7:17,NOH,shot,,,,,,,,,,Chris Paul,,,,missed,,jump,17,20
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,7:16,NOH,rebound,,,,,,,,,,Tyson Chandler,,,,,,off,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,7:09,NOH,shot,Peja Stojakovic,,,,,,,,,Tyson Chandler,2,,,made,,reverse layup,25,6
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,6:53,UTA,shot,,,,,,,,,,Deron Williams,2,,,made,,jump,30,21
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,6:36,NOH,shot,,,C.J. Miles,,,,,,,Chris Paul,,,,missed,,driving layup,25,6
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,6:36,NOH,rebound,,,,,,,,,,,,,,,,,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,1,6:31,UTA,foul,,,,,,,,Morris Peterson,,Ronnie Brewer,,,,,,personal,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,1,6:31,UTA,sub,,,,Kyle Korver,,Ronnie Brewer,,,,,,,,,,,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,1,6:31,NOH,free throw,,,,,,,1,,2,Morris Peterson,,,foul,made,,,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,1,6:31,NOH,free throw,,,,,,,2,,2,Morris Peterson,,,foul,made,,,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,1,6:21,NOH,foul,,,,,,,,Deron Williams,,Chris Paul,,,,,,personal,,
+Bobby Jackson,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,1,6:21,NOH,sub,,,,Bobby Jackson,,Chris Paul,,,,,,,,,,,,
+Bobby Jackson,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,1,6:08,UTA,shot,,,,,,,,,,Carlos Boozer,,,,missed,,jump,33,21
+Bobby Jackson,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,1,6:07,NOH,rebound,,,,,,,,,,Bobby Jackson,,,,,,def,,
+Bobby Jackson,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,1,5:55,NOH,shot,,,,,,,,,,David West,2,,,made,,jump,24,11
+Bobby Jackson,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,1,5:39,UTA,shot,,,,,,,,,,Kyle Korver,,,,missed,,jump,35,19
+Bobby Jackson,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,1,5:37,NOH,rebound,,,,,,,,,,Tyson Chandler,,,,,,def,,
+Bobby Jackson,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,1,5:28,NOH,shot,,,,,,,,,,David West,,,,missed,,jump,6,3
+Bobby Jackson,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,1,5:26,UTA,rebound,,,,,,,,,,Deron Williams,,,,,,def,,
+Bobby Jackson,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,1,5:18,UTA,shot,,,,,,,,,,Mehmet Okur,,,,missed,,3pt,43,22
+Bobby Jackson,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,1,5:17,UTA,rebound,,,,,,,,,,,,,,,,,,
+Bobby Jackson,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,1,5:16,UTA,timeout,,,,,,,,,,,,,,,,regular,,
+Bobby Jackson,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,1,5:14,UTA,shot,,,Morris Peterson,,,,,,,C.J. Miles,,,,missed,,layup,25,6
+Bobby Jackson,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,1,5:12,NOH,rebound,,,,,,,,,,Tyson Chandler,,,,,,def,,
+Bobby Jackson,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,1,4:59,NOH,shot,Tyson Chandler,,,,,,,,,Peja Stojakovic,2,,,made,,jump,44,3
+Bobby Jackson,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,1,4:47,UTA,turnover,,,,,,,,,,C.J. Miles,,,lost ball,,Peja Stojakovic,,,
+Bobby Jackson,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,1,4:30,NOH,shot,,,,,,,,,,David West,,,,missed,,jump,31,11
+Bobby Jackson,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,1,4:28,NOH,rebound,,,,,,,,,,Bobby Jackson,,,,,,off,,
+Bobby Jackson,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,1,4:19,NOH,turnover,,,,,,,,,,David West,,,traveling,,,,,
+Bobby Jackson,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,1,4:00,UTA,shot,,,,,,,,,,Carlos Boozer,,,,missed,,jump,27,23
+Bobby Jackson,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,1,3:59,NOH,rebound,,,,,,,,,,David West,,,,,,def,,
+Bobby Jackson,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,1,3:40,NOH,shot,,,,,,,,,,David West,,,,missed,,jump,42,4
+Bobby Jackson,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,1,3:39,UTA,rebound,,,,,,,,,,Carlos Boozer,,,,,,def,,
+Bobby Jackson,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,1,3:32,UTA,shot,,,,,,,,,,Kyle Korver,,,,missed,,3pt,47,10
+Bobby Jackson,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,1,3:30,NOH,rebound,,,,,,,,,,Tyson Chandler,,,,,,def,,
+Bobby Jackson,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,1,3:19,NOH,turnover,,,,,,,,,,Bobby Jackson,,,bad pass,,,,,
+Bobby Jackson,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,1,3:19,UTA,sub,,,,Matt Harpring,,C.J. Miles,,,,,,,,,,,,
+Bobby Jackson,David West,Melvin Ely,Morris Peterson,Peja Stojakovic,Carlos Boozer,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,1,3:19,NOH,sub,,,,Melvin Ely,,Tyson Chandler,,,,,,,,,,,,
+Bobby Jackson,David West,Melvin Ely,Morris Peterson,Peja Stojakovic,Carlos Boozer,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,1,3:01,UTA,shot,Matt Harpring,,,,,,,,,Mehmet Okur,3,,,made,,3pt,33,29
+Bobby Jackson,David West,Melvin Ely,Morris Peterson,Peja Stojakovic,Carlos Boozer,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,1,2:36,NOH,shot,,,,,,,,,,Melvin Ely,,,,missed,,jump,19,8
+Bobby Jackson,David West,Melvin Ely,Morris Peterson,Peja Stojakovic,Carlos Boozer,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,1,2:35,UTA,rebound,,,,,,,,,,Carlos Boozer,,,,,,def,,
+Bobby Jackson,David West,Melvin Ely,Morris Peterson,Peja Stojakovic,Carlos Boozer,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,1,2:31,UTA,shot,Deron Williams,,,,,,,,,Matt Harpring,2,,,made,,running layup,25,6
+Bobby Jackson,David West,Melvin Ely,Morris Peterson,Peja Stojakovic,Carlos Boozer,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,1,2:09,NOH,turnover,,,,,,,,,,Peja Stojakovic,,,lost ball,,Deron Williams,,,
+Bobby Jackson,David West,Melvin Ely,Morris Peterson,Peja Stojakovic,Carlos Boozer,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,1,2:08,NOH,foul,,,,,,,,Deron Williams,,Bobby Jackson,,,,,,personal,,
+Bobby Jackson,David West,Melvin Ely,Morris Peterson,Peja Stojakovic,Carlos Boozer,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,1,2:08,NOH,timeout,,,,,,,,,,,,,,,,regular,,
+Bobby Jackson,David West,Melvin Ely,Morris Peterson,Peja Stojakovic,Carlos Boozer,Deron Williams,Kyle Korver,Matt Harpring,Paul Millsap,1,2:08,UTA,sub,,,,Paul Millsap,,Mehmet Okur,,,,,,,,,,,,
+Bobby Jackson,David West,Melvin Ely,Morris Peterson,Peja Stojakovic,Carlos Boozer,Kyle Korver,Matt Harpring,Paul Millsap,Ronnie Price,1,2:08,UTA,sub,,,,Ronnie Price,,Deron Williams,,,,,,,,,,,,
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Kyle Korver,Matt Harpring,Paul Millsap,Ronnie Price,1,2:08,NOH,sub,,,,Jannero Pargo,,Morris Peterson,,,,,,,,,,,,
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Kyle Korver,Matt Harpring,Paul Millsap,Ronnie Price,1,1:58,NOH,violation,,,,,,,,,,Jannero Pargo,,,,,,kicked ball,,
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Kyle Korver,Matt Harpring,Paul Millsap,Ronnie Price,1,1:45,UTA,shot,,,,,,,,,,Matt Harpring,,,,missed,,jump,44,17
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Kyle Korver,Matt Harpring,Paul Millsap,Ronnie Price,1,1:44,NOH,rebound,,,,,,,,,,Melvin Ely,,,,,,def,,
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Kyle Korver,Matt Harpring,Paul Millsap,Ronnie Price,1,1:26,UTA,foul,,,,,,,,David West,,Kyle Korver,,,,,,shooting,,
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Kyle Korver,Matt Harpring,Paul Millsap,Ronnie Price,1,1:26,NOH,free throw,,,,,,,1,,2,David West,,,foul,made,,,,
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Kyle Korver,Matt Harpring,Paul Millsap,Ronnie Price,1,1:26,NOH,free throw,,,,,,,2,,2,David West,,,foul,made,,,,
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Kyle Korver,Matt Harpring,Paul Millsap,Ronnie Price,1,1:11,UTA,shot,,,,,,,,,,Ronnie Price,,,,missed,,3pt,34,28
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Kyle Korver,Matt Harpring,Paul Millsap,Ronnie Price,1,1:09,NOH,rebound,,,,,,,,,,David West,,,,,,def,,
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Kyle Korver,Matt Harpring,Paul Millsap,Ronnie Price,1,0:56,NOH,shot,,,,,,,,,,Melvin Ely,2,,,made,,jump hook,18,8
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Kyle Korver,Matt Harpring,Paul Millsap,Ronnie Price,1,0:43,NOH,foul,,,,,,,,Paul Millsap,,David West,,,,,,personal,,
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Kyle Korver,Matt Harpring,Paul Millsap,Ronnie Price,1,0:32,NOH,foul,,,,,,,,Carlos Boozer,,Jannero Pargo,,,,,,personal,,
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Kyle Korver,Matt Harpring,Paul Millsap,Ronnie Price,1,0:32,UTA,free throw,,,,,,,1,,2,Carlos Boozer,,,foul,missed,,,,
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Kyle Korver,Matt Harpring,Paul Millsap,Ronnie Price,1,0:32,UTA,rebound,,,,,,,,,,,,,,,,,,
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Kyle Korver,Matt Harpring,Paul Millsap,Ronnie Price,1,0:32,UTA,free throw,,,,,,,2,,2,Carlos Boozer,,,foul,made,,,,
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Kyle Korver,Matt Harpring,Paul Millsap,Ronnie Price,1,0:11,NOH,turnover,,,,,,,,,,David West,,,lost ball,,Ronnie Price,,,
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Kyle Korver,Matt Harpring,Paul Millsap,Ronnie Price,1,0:11,NOH,foul,,,,,,,,Ronnie Price,,David West,,,,,,loose ball,,
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Kyle Korver,Matt Harpring,Paul Millsap,Ronnie Price,1,0:11,UTA,free throw,,,,,,,1,,2,Ronnie Price,,,foul,missed,,,,
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Kyle Korver,Matt Harpring,Paul Millsap,Ronnie Price,1,0:11,UTA,rebound,,,,,,,,,,,,,,,,,,
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Kyle Korver,Matt Harpring,Paul Millsap,Ronnie Price,1,0:11,UTA,free throw,,,,,,,2,,2,Ronnie Price,,,foul,made,,,,
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Kyle Korver,Matt Harpring,Paul Millsap,Ronnie Price,1,0:00,NOH,shot,,,,,,,,,,Jannero Pargo,,,,missed,,jump,33,22
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Kyle Korver,Matt Harpring,Paul Millsap,Ronnie Price,1,0:00,UTA,rebound,,,,,,,,,,Paul Millsap,,,,,,def,,
+Chris Paul,Jannero Pargo,Melvin Ely,Rasual Butler,Ryan Bowen,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,Ronnie Price,2,11:39,NOH,shot,,,Paul Millsap,,,,,,,Melvin Ely,,,,missed,,dunk,25,6
+Chris Paul,Jannero Pargo,Melvin Ely,Rasual Butler,Ryan Bowen,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,Ronnie Price,2,11:35,NOH,rebound,,,,,,,,,,Ryan Bowen,,,,,,off,,
+Chris Paul,Jannero Pargo,Melvin Ely,Rasual Butler,Ryan Bowen,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,Ronnie Price,2,11:22,NOH,shot,,,,,,,,,,Rasual Butler,,,,missed,,3pt,7,22
+Chris Paul,Jannero Pargo,Melvin Ely,Rasual Butler,Ryan Bowen,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,Ronnie Price,2,11:20,UTA,rebound,,,,,,,,,,Paul Millsap,,,,,,def,,
+Chris Paul,Jannero Pargo,Melvin Ely,Rasual Butler,Ryan Bowen,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,Ronnie Price,2,11:04,UTA,shot,,,,,,,,,,Paul Millsap,,,,missed,,reverse layup,25,6
+Chris Paul,Jannero Pargo,Melvin Ely,Rasual Butler,Ryan Bowen,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,Ronnie Price,2,11:02,NOH,rebound,,,,,,,,,,Ryan Bowen,,,,,,def,,
+Chris Paul,Jannero Pargo,Melvin Ely,Rasual Butler,Ryan Bowen,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,Ronnie Price,2,10:48,NOH,turnover,,,,,,,,,,Chris Paul,,,poss lost ball turnover,,,,,
+Chris Paul,Jannero Pargo,Melvin Ely,Rasual Butler,Ryan Bowen,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,Ronnie Price,2,10:38,UTA,shot,Ronnie Price,,,,,,,,,Kyle Korver,3,,,made,,3pt,2,6
+Chris Paul,Jannero Pargo,Melvin Ely,Rasual Butler,Ryan Bowen,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,Ronnie Price,2,10:21,UTA,foul,,,,,,,,Melvin Ely,,Ronnie Price,,,,,,personal,,
+Chris Paul,Jannero Pargo,Rasual Butler,Ryan Bowen,Tyson Chandler,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,Ronnie Price,2,10:21,NOH,sub,,,,Tyson Chandler,,Melvin Ely,,,,,,,,,,,,
+Chris Paul,Jannero Pargo,Rasual Butler,Ryan Bowen,Tyson Chandler,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,Ronnie Price,2,10:09,UTA,foul,,,,,,,,Jannero Pargo,,Matt Harpring,,,,,,shooting,,
+Chris Paul,Jannero Pargo,Rasual Butler,Ryan Bowen,Tyson Chandler,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,Ronnie Price,2,10:09,NOH,free throw,,,,,,,1,,2,Jannero Pargo,,,foul,made,,,,
+Chris Paul,Jannero Pargo,Rasual Butler,Ryan Bowen,Tyson Chandler,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,Ronnie Price,2,10:09,NOH,free throw,,,,,,,2,,2,Jannero Pargo,,,foul,made,,,,
+Chris Paul,Jannero Pargo,Rasual Butler,Ryan Bowen,Tyson Chandler,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,Ronnie Price,2,9:53,UTA,shot,Ronnie Price,,,,,,,,,Kyle Korver,3,,,made,,3pt,38,27
+Chris Paul,Jannero Pargo,Rasual Butler,Ryan Bowen,Tyson Chandler,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,Ronnie Price,2,9:42,NOH,shot,,,,,,,,,,Chris Paul,,,,missed,,running jump,24,13
+Chris Paul,Jannero Pargo,Rasual Butler,Ryan Bowen,Tyson Chandler,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,Ronnie Price,2,9:41,NOH,rebound,,,,,,,,,,Chris Paul,,,,,,off,,
+Chris Paul,Jannero Pargo,Rasual Butler,Ryan Bowen,Tyson Chandler,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,Ronnie Price,2,9:39,NOH,shot,,,,,,,,,,Chris Paul,2,,,made,,jump,25,16
+Chris Paul,Jannero Pargo,Rasual Butler,Ryan Bowen,Tyson Chandler,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,Ronnie Price,2,9:26,UTA,turnover,,,,,,,,,,Paul Millsap,,,poss lost ball turnover,,,,,
+Chris Paul,Jannero Pargo,Rasual Butler,Ryan Bowen,Tyson Chandler,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,Ronnie Price,2,9:14,NOH,turnover,,,,,,,,,,Chris Paul,,,lost ball,,Ronnie Price,,,
+Chris Paul,Jannero Pargo,Rasual Butler,Ryan Bowen,Tyson Chandler,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,Ronnie Price,2,9:05,UTA,shot,Ronnie Price,,,,,,,,,Kyle Korver,3,,,made,,3pt,40,26
+Chris Paul,Jannero Pargo,Rasual Butler,Ryan Bowen,Tyson Chandler,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,Ronnie Price,2,8:52,UTA,foul,,,,,,,,Jannero Pargo,,Kyle Korver,,,,,,personal,,
+Chris Paul,Jannero Pargo,Rasual Butler,Ryan Bowen,Tyson Chandler,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,Ronnie Price,2,8:52,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Chris Paul,Jannero Pargo,Rasual Butler,Ryan Bowen,Tyson Chandler,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,2,8:52,UTA,sub,,,,Deron Williams,,Ronnie Price,,,,,,,,,,,,
+Chris Paul,Jannero Pargo,Rasual Butler,Ryan Bowen,Tyson Chandler,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,2,8:41,NOH,shot,,,,,,,,,,Tyson Chandler,,,,missed,,jump hook,23,15
+Chris Paul,Jannero Pargo,Rasual Butler,Ryan Bowen,Tyson Chandler,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,2,8:40,UTA,rebound,,,,,,,,,,Paul Millsap,,,,,,def,,
+Chris Paul,Jannero Pargo,Rasual Butler,Ryan Bowen,Tyson Chandler,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,2,8:22,UTA,shot,Mehmet Okur,,,,,,,,,Kyle Korver,3,,,made,,3pt,18,29
+Chris Paul,Jannero Pargo,Rasual Butler,Ryan Bowen,Tyson Chandler,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,2,8:10,NOH,turnover,,,,,,,,,,Jannero Pargo,,,bad pass,,Mehmet Okur,,,
+Chris Paul,Jannero Pargo,Rasual Butler,Ryan Bowen,Tyson Chandler,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,2,7:54,UTA,shot,,,,,,,,,,Kyle Korver,,,,missed,,3pt,48,13
+Chris Paul,Jannero Pargo,Rasual Butler,Ryan Bowen,Tyson Chandler,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,2,7:53,NOH,rebound,,,,,,,,,,Jannero Pargo,,,,,,def,,
+Chris Paul,Jannero Pargo,Rasual Butler,Ryan Bowen,Tyson Chandler,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,2,7:45,NOH,shot,,,,,,,,,,Jannero Pargo,,,,missed,,jump,12,21
+Chris Paul,Jannero Pargo,Rasual Butler,Ryan Bowen,Tyson Chandler,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,2,7:44,UTA,rebound,,,,,,,,,,Mehmet Okur,,,,,,def,,
+Chris Paul,Jannero Pargo,Rasual Butler,Ryan Bowen,Tyson Chandler,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,2,7:34,UTA,shot,Paul Millsap,,,,,,,,,Deron Williams,3,,,made,,3pt,12,27
+Chris Paul,Jannero Pargo,Rasual Butler,Ryan Bowen,Tyson Chandler,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,2,7:25,NOH,timeout,,,,,,,,,,,,,,,,regular,,
+Chris Paul,Jannero Pargo,Peja Stojakovic,Ryan Bowen,Tyson Chandler,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,2,7:25,NOH,sub,,,,Peja Stojakovic,,Rasual Butler,,,,,,,,,,,,
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,2,7:25,NOH,sub,,,,David West,,Ryan Bowen,,,,,,,,,,,,
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,2,7:11,NOH,shot,,,,,,,,,,David West,,,,missed,,jump,27,15
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,2,7:10,UTA,rebound,,,,,,,,,,Paul Millsap,,,,,,def,,
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,2,6:58,UTA,turnover,,,,,,,,,,Deron Williams,,,bad pass,,,,,
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,2,6:48,NOH,shot,,,,,,,,,,Chris Paul,2,,,made,,driving layup,25,6
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,2,6:33,UTA,shot,,,,,,,,,,Kyle Korver,,,,missed,,jump,45,3
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,2,6:31,UTA,shot,,,David West,,,,,,,Matt Harpring,,,,missed,,layup,25,6
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,2,6:31,UTA,rebound,,,,,,,,,,Matt Harpring,,,,,,off,,
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,2,6:30,NOH,rebound,,,,,,,,,,Tyson Chandler,,,,,,def,,
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,2,6:21,NOH,shot,,,,,,,,,,Chris Paul,,,,missed,,jump,23,24
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,2,6:18,UTA,rebound,,,,,,,,,,Kyle Korver,,,,,,def,,
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,2,6:05,UTA,shot,Deron Williams,,,,,,,,,Mehmet Okur,3,,,made,,3pt,42,23
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,2,5:42,UTA,foul,,,,,,,,David West,,Paul Millsap,,,,,,shooting,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,2,5:42,NOH,sub,,,,Morris Peterson,,Jannero Pargo,,,,,,,,,,,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Ronnie Brewer,2,5:42,UTA,sub,,,,Ronnie Brewer,,Matt Harpring,,,,,,,,,,,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,2,5:42,UTA,sub,,,,Carlos Boozer,,Paul Millsap,,,,,,,,,,,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,2,5:42,NOH,free throw,,,,,,,1,,2,David West,,,foul,made,,,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,2,5:42,NOH,free throw,,,,,,,2,,2,David West,,,foul,made,,,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,2,5:25,UTA,shot,,,,,,,,,,Carlos Boozer,,,,missed,,jump,25,12
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,2,5:24,NOH,rebound,,,,,,,,,,Peja Stojakovic,,,,,,def,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,2,5:09,NOH,shot,Peja Stojakovic,,,,,,,,,Morris Peterson,3,,,made,,3pt,2,6
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,2,4:51,UTA,shot,,,,,,,,,,Mehmet Okur,,,,missed,,3pt,31,30
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,2,4:50,NOH,rebound,,,,,,,,,,Tyson Chandler,,,,,,def,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,2,4:37,NOH,shot,,,,,,,,,,David West,2,,,made,,jump,28,23
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,2,4:24,NOH,foul,,,,,,,,Deron Williams,,Morris Peterson,,,,,,personal,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,2,4:09,UTA,shot,,,,,,,,,,Kyle Korver,,,,missed,,running jump,28,18
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,2,4:07,NOH,rebound,,,,,,,,,,David West,,,,,,def,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,2,3:52,NOH,shot,,,,,,,,,,Chris Paul,2,,,made,,running jump,17,11
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,2,3:30,UTA,shot,,,,,,,,,,Kyle Korver,,,,missed,,jump,35,11
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,2,3:28,NOH,rebound,,,,,,,,,,Tyson Chandler,,,,,,def,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,2,3:23,NOH,shot,,,,,,,,,,Morris Peterson,,,,missed,,3pt,49,11
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,2,3:22,UTA,rebound,,,,,,,,,,Deron Williams,,,,,,def,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,2,3:17,UTA,shot,,,,,,,,,,Ronnie Brewer,,,,missed,,driving layup,25,6
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,2,3:16,UTA,shot,,,,,,,,,,Carlos Boozer,2,,,made,,tip,25,6
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,2,3:16,UTA,rebound,,,,,,,,,,Carlos Boozer,,,,,,off,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,2,3:11,NOH,shot,Chris Paul,,,,,,,,,Morris Peterson,2,,,made,,layup,25,6
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,2,2:49,UTA,timeout,,,,,,,,,,,,,,,,regular,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Matt Harpring,Mehmet Okur,Ronnie Brewer,2,2:49,UTA,sub,,,,Matt Harpring,,Kyle Korver,,,,,,,,,,,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Matt Harpring,Mehmet Okur,Ronnie Brewer,2,2:47,UTA,shot,,,,,,,,,,Matt Harpring,,,,missed,,jump,40,16
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Matt Harpring,Mehmet Okur,Ronnie Brewer,2,2:45,UTA,rebound,,,,,,,,,,Ronnie Brewer,,,,,,off,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Matt Harpring,Mehmet Okur,Ronnie Brewer,2,2:37,UTA,shot,,,,,,,,,,Carlos Boozer,2,,,made,,layup,25,6
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Matt Harpring,Mehmet Okur,Ronnie Brewer,2,2:22,NOH,foul,,,,,,,,Matt Harpring,,Tyson Chandler,,,,,,offensive,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Matt Harpring,Mehmet Okur,Ronnie Brewer,2,2:22,NOH,turnover,,,,,,,,,,Tyson Chandler,,,foul,,,,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Matt Harpring,Mehmet Okur,Ronnie Brewer,2,2:02,UTA,shot,,,,,,,,,,Ronnie Brewer,,,,missed,,jump,22,25
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Matt Harpring,Mehmet Okur,Ronnie Brewer,2,1:55,NOH,rebound,,,,,,,,,,Tyson Chandler,,,,,,def,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Matt Harpring,Mehmet Okur,Ronnie Brewer,2,1:50,NOH,shot,,,,,,,,,,Chris Paul,,,,missed,,3pt,36,28
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Matt Harpring,Mehmet Okur,Ronnie Brewer,2,1:48,UTA,rebound,,,,,,,,,,Mehmet Okur,,,,,,def,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Matt Harpring,Mehmet Okur,Ronnie Brewer,2,1:39,UTA,shot,,,,,,,,,,Carlos Boozer,,,,missed,,jump,15,20
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Matt Harpring,Mehmet Okur,Ronnie Brewer,2,1:38,NOH,rebound,,,,,,,,,,Chris Paul,,,,,,def,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Matt Harpring,Mehmet Okur,Ronnie Brewer,2,1:35,NOH,shot,Chris Paul,,,,,,,,,Tyson Chandler,2,,,made,,slam dunk,25,6
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Matt Harpring,Mehmet Okur,Ronnie Brewer,2,1:16,UTA,shot,Deron Williams,,,,,,,,,Matt Harpring,2,,,made,,jump,28,20
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Matt Harpring,Mehmet Okur,Ronnie Brewer,2,0:50,NOH,shot,,,,,,,,,,Chris Paul,,,,missed,,running jump,18,14
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Matt Harpring,Mehmet Okur,Ronnie Brewer,2,0:49,UTA,rebound,,,,,,,,,,Mehmet Okur,,,,,,def,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Matt Harpring,Mehmet Okur,Ronnie Brewer,2,0:40,UTA,shot,Ronnie Brewer,,,,,,,,,Mehmet Okur,3,,,made,,3pt,39,26
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Matt Harpring,Mehmet Okur,Ronnie Brewer,2,0:32,NOH,turnover,,,,,,,,,,Chris Paul,,,bad pass,,Ronnie Brewer,,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Matt Harpring,Mehmet Okur,Ronnie Brewer,2,0:29,UTA,shot,,,,,,,,,,Ronnie Brewer,2,,,made,,dunk,25,6
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Matt Harpring,Mehmet Okur,Ronnie Brewer,2,0:09,NOH,shot,,,,,,,,,,Morris Peterson,,,,missed,,jump,3,7
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Matt Harpring,Mehmet Okur,Ronnie Brewer,2,0:08,UTA,rebound,,,,,,,,,,,,,,,,,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Matt Harpring,Mehmet Okur,Ronnie Brewer,2,0:08,NOH,foul,,,,,,,,Matt Harpring,,Tyson Chandler,,,,,,personal,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Matt Harpring,Mehmet Okur,2,0:08,UTA,sub,,,,C.J. Miles,,Ronnie Brewer,,,,,,,,,,,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Matt Harpring,Mehmet Okur,2,0:01,UTA,turnover,,,,,,,,,,Deron Williams,,,lost ball,,Chris Paul,,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,11:47,NOH,shot,,,,,,,,,,Peja Stojakovic,,,,missed,,jump,28,26
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,11:46,UTA,rebound,,,,,,,,,,Carlos Boozer,,,,,,def,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,11:25,UTA,shot,,,,,,,,,,Mehmet Okur,,,,missed,,jump,40,15
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,11:24,UTA,rebound,,,,,,,,,,Carlos Boozer,,,,,,off,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,11:18,UTA,shot,Deron Williams,,,,,,,,,C.J. Miles,3,,,made,,3pt,1,10
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,11:02,NOH,shot,,,Mehmet Okur,,,,,,,David West,,,,missed,,jump,26,14
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,11:01,UTA,rebound,,,,,,,,,,Carlos Boozer,,,,,,def,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,10:56,UTA,shot,Deron Williams,,,,,,,,,Carlos Boozer,2,,,made,,running layup,25,6
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,10:56,NOH,foul,,,,,,,,Carlos Boozer,,David West,,,,,,shooting,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,10:56,UTA,free throw,,,,,,,1,,1,Carlos Boozer,,,foul,missed,,,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,10:55,NOH,rebound,,,,,,,,,,Peja Stojakovic,,,,,,def,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,10:41,UTA,foul,,,,,,,,Tyson Chandler,,Mehmet Okur,,,,,,shooting,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,10:41,NOH,free throw,,,,,,,1,,2,Tyson Chandler,,,foul,made,,,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,10:41,NOH,free throw,,,,,,,2,,2,Tyson Chandler,,,foul,made,,,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,10:23,UTA,shot,,,,,,,,,,Deron Williams,2,,,made,,jump,6,13
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,9:59,UTA,foul,,,,,,,,Tyson Chandler,,Carlos Boozer,,,,,,shooting,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,9:59,NOH,free throw,,,,,,,1,,2,Tyson Chandler,,,foul,missed,,,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,9:59,NOH,rebound,,,,,,,,,,,,,,,,,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,9:59,NOH,free throw,,,,,,,2,,2,Tyson Chandler,,,foul,made,,,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,9:49,UTA,shot,,,,,,,,,,C.J. Miles,,,,missed,,jump,17,25
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,9:46,UTA,rebound,,,,,,,,,,Carlos Boozer,,,,,,off,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,9:39,UTA,shot,,,,,,,,,,Deron Williams,2,,,made,,running dunk,25,6
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,9:16,NOH,shot,,,,,,,,,,David West,2,,,made,,driving layup,25,6
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,8:58,UTA,shot,Deron Williams,,,,,,,,,Ronnie Brewer,2,,,made,,jump,5,5
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,8:42,NOH,foul,,,,,,,,C.J. Miles,,Peja Stojakovic,,,,,,offensive,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,8:42,NOH,turnover,,,,,,,,,,Peja Stojakovic,,,foul,,,,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,8:28,NOH,foul,,,,,,,,Deron Williams,,Chris Paul,,,,,,personal,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,8:22,UTA,shot,,,David West,,,,,,,Mehmet Okur,,,,missed,,layup,25,6
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,8:22,UTA,rebound,,,,,,,,,,,,,,,,,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,8:16,UTA,shot,,,,,,,,,,Deron Williams,3,,,made,,3pt,34,28
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,7:49,NOH,shot,,,,,,,,,,Chris Paul,,,,missed,,3pt,39,26
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,7:48,UTA,rebound,,,,,,,,,,Mehmet Okur,,,,,,def,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,7:39,UTA,foul,,,,,,,,David West,,Carlos Boozer,,,,,,offensive,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,7:39,UTA,turnover,,,,,,,,,,Carlos Boozer,,,foul,,,,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,7:17,NOH,turnover,,,,,,,,,,Morris Peterson,,,lost ball,,Ronnie Brewer,,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,7:14,NOH,foul,,,,,,,,Ronnie Brewer,,Chris Paul,,,,,,shooting,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,7:14,UTA,foul,,,,,,,,,,Ronnie Brewer,,,,,,technical,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,7:14,NOH,free throw,,,,,,,1,,1,Chris Paul,,,technical,missed,,,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,7:14,UTA,rebound,,,,,,,,,,,,,,,,,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,7:14,UTA,free throw,,,,,,,1,,2,Ronnie Brewer,,,foul,made,,,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,7:14,UTA,free throw,,,,,,,2,,2,Ronnie Brewer,,,foul,made,,,,
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,6:53,NOH,shot,David West,,,,,,,,,Morris Peterson,3,,,made,,3pt,2,8
+Chris Paul,David West,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,6:43,NOH,foul,,,,,,,,Deron Williams,,Chris Paul,,,,,,personal,,
+David West,Jannero Pargo,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,6:43,NOH,sub,,,,Jannero Pargo,,Chris Paul,,,,,,,,,,,,
+David West,Jannero Pargo,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,6:33,UTA,turnover,,,,,,,,,,Ronnie Brewer,,,bad pass,,Jannero Pargo,,,
+David West,Jannero Pargo,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,6:17,NOH,turnover,,,,,,,,,,David West,,,lost ball,,Ronnie Brewer,,,
+David West,Jannero Pargo,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,6:14,NOH,foul,,,,,,,,C.J. Miles,,Jannero Pargo,,,,,,shooting,,
+David West,Jannero Pargo,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,6:14,UTA,free throw,,,,,,,1,,2,C.J. Miles,,,foul,missed,,,,
+David West,Jannero Pargo,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,6:14,UTA,rebound,,,,,,,,,,,,,,,,,,
+David West,Jannero Pargo,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,6:14,UTA,free throw,,,,,,,2,,2,C.J. Miles,,,foul,made,,,,
+David West,Jannero Pargo,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,5:49,NOH,shot,Peja Stojakovic,,,,,,,,,Jannero Pargo,3,,,made,,3pt,32,31
+David West,Jannero Pargo,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,5:29,UTA,shot,,,,,,,,,,Carlos Boozer,,,,missed,,jump hook,15,3
+David West,Jannero Pargo,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,5:27,NOH,rebound,,,,,,,,,,Tyson Chandler,,,,,,def,,
+David West,Jannero Pargo,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,5:13,NOH,shot,,,,,,,,,,Peja Stojakovic,,,,missed,,fade away jumper,41,4
+David West,Jannero Pargo,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,5:13,UTA,rebound,,,,,,,,,,Carlos Boozer,,,,,,def,,
+David West,Jannero Pargo,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,5:01,UTA,shot,,,,,,,,,,C.J. Miles,,,,missed,,3pt,42,23
+David West,Jannero Pargo,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,5:00,NOH,rebound,,,,,,,,,,,,,,,,,,
+David West,Jannero Pargo,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,5:00,UTA,timeout,,,,,,,,,,,,,,,,regular,,
+David West,Jannero Pargo,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,4:47,NOH,shot,,,,,,,,,,Jannero Pargo,2,,,made,,jump,24,13
+David West,Jannero Pargo,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,4:21,UTA,shot,Mehmet Okur,,,,,,,,,Deron Williams,3,,,made,,3pt,8,24
+David West,Jannero Pargo,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,4:02,NOH,turnover,,,,,,,,,,Tyson Chandler,,,lost ball,,C.J. Miles,,,
+David West,Jannero Pargo,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,3:58,UTA,shot,,,,,,,,,,C.J. Miles,2,,,made,,dunk,25,6
+David West,Jannero Pargo,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,3:43,NOH,shot,,,,,,,,,,Jannero Pargo,2,,,made,,jump,36,13
+David West,Jannero Pargo,Morris Peterson,Peja Stojakovic,Tyson Chandler,C.J. Miles,Carlos Boozer,Deron Williams,Mehmet Okur,Ronnie Brewer,3,3:26,UTA,turnover,,,,,,,,,,Mehmet Okur,,,bad pass,,,,,
+David West,Jannero Pargo,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Matt Harpring,Mehmet Okur,Ronnie Brewer,3,3:26,UTA,sub,,,,Matt Harpring,,C.J. Miles,,,,,,,,,,,,
+David West,Jannero Pargo,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Matt Harpring,Paul Millsap,Ronnie Brewer,3,3:26,UTA,sub,,,,Paul Millsap,,Mehmet Okur,,,,,,,,,,,,
+David West,Jannero Pargo,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Matt Harpring,Paul Millsap,Ronnie Brewer,3,3:13,NOH,shot,,,,,,,,,,David West,,,,missed,,jump,31,13
+David West,Jannero Pargo,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Matt Harpring,Paul Millsap,Ronnie Brewer,3,3:11,UTA,rebound,,,,,,,,,,Carlos Boozer,,,,,,def,,
+David West,Jannero Pargo,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Matt Harpring,Paul Millsap,Ronnie Brewer,3,3:08,UTA,turnover,,,,,,,,,,Deron Williams,,,lost ball,,Jannero Pargo,,,
+David West,Jannero Pargo,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Matt Harpring,Paul Millsap,Ronnie Brewer,3,3:05,NOH,shot,Tyson Chandler,,,,,,,,,David West,2,,,made,,layup,25,6
+David West,Jannero Pargo,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Matt Harpring,Paul Millsap,Ronnie Brewer,3,2:51,NOH,foul,,,,,,,,Deron Williams,,Jannero Pargo,,,,,,shooting,,
+David West,Jannero Pargo,Morris Peterson,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Matt Harpring,Paul Millsap,Ronnie Brewer,3,2:51,NOH,timeout,,,,,,,,,,,,,,,,regular,,
+David West,Jannero Pargo,Melvin Ely,Morris Peterson,Peja Stojakovic,Carlos Boozer,Deron Williams,Matt Harpring,Paul Millsap,Ronnie Brewer,3,2:51,NOH,sub,,,,Melvin Ely,,Tyson Chandler,,,,,,,,,,,,
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Deron Williams,Matt Harpring,Paul Millsap,Ronnie Brewer,3,2:51,NOH,sub,,,,Bobby Jackson,,Morris Peterson,,,,,,,,,,,,
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Deron Williams,Matt Harpring,Paul Millsap,Ronnie Brewer,3,2:51,UTA,free throw,,,,,,,1,,2,Deron Williams,,,foul,made,,,,
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Deron Williams,Matt Harpring,Paul Millsap,Ronnie Brewer,3,2:51,UTA,free throw,,,,,,,2,,2,Deron Williams,,,foul,made,,,,
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Matt Harpring,Paul Millsap,Ronnie Brewer,Ronnie Price,3,2:37,UTA,sub,,,,Ronnie Price,,Deron Williams,,,,,,,,,,,,
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Matt Harpring,Paul Millsap,Ronnie Brewer,Ronnie Price,3,2:30,NOH,shot,,,,,,,,,,Bobby Jackson,,,,missed,,jump,39,18
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Matt Harpring,Paul Millsap,Ronnie Brewer,Ronnie Price,3,2:28,UTA,rebound,,,,,,,,,,Ronnie Price,,,,,,def,,
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Matt Harpring,Paul Millsap,Ronnie Brewer,Ronnie Price,3,2:09,NOH,foul,,,,,,,,Carlos Boozer,,Melvin Ely,,,,,,shooting,,
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Matt Harpring,Paul Millsap,Ronnie Brewer,Ronnie Price,3,2:09,UTA,free throw,,,,,,,1,,2,Carlos Boozer,,,foul,made,,,,
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Matt Harpring,Paul Millsap,Ronnie Brewer,Ronnie Price,3,2:09,UTA,free throw,,,,,,,2,,2,Carlos Boozer,,,foul,made,,,,
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Matt Harpring,Paul Millsap,Ronnie Brewer,Ronnie Price,3,1:58,NOH,shot,Bobby Jackson,,,,,,,,,Peja Stojakovic,3,,,made,,3pt,11,26
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Matt Harpring,Paul Millsap,Ronnie Brewer,Ronnie Price,3,1:43,UTA,shot,Paul Millsap,,,,,,,,,Carlos Boozer,2,,,made,,jump,35,22
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Matt Harpring,Paul Millsap,Ronnie Brewer,Ronnie Price,3,1:32,NOH,shot,,,,,,,,,,David West,,,,missed,,jump,43,15
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Matt Harpring,Paul Millsap,Ronnie Brewer,Ronnie Price,3,1:30,UTA,rebound,,,,,,,,,,Ronnie Brewer,,,,,,def,,
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Matt Harpring,Paul Millsap,Ronnie Brewer,Ronnie Price,3,1:09,UTA,shot,,,,,,,,,,Carlos Boozer,2,,,made,,driving layup,25,6
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Matt Harpring,Paul Millsap,Ronnie Brewer,Ronnie Price,3,0:49,NOH,shot,,,,,,,,,,Jannero Pargo,3,,,made,,3pt,36,28
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Matt Harpring,Paul Millsap,Ronnie Brewer,Ronnie Price,3,0:32,UTA,shot,,,,,,,,,,Carlos Boozer,,,,missed,,fade away jumper,34,18
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Matt Harpring,Paul Millsap,Ronnie Brewer,Ronnie Price,3,0:30,UTA,shot,,,,,,,,,,Matt Harpring,,,,missed,,layup,25,6
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Matt Harpring,Paul Millsap,Ronnie Brewer,Ronnie Price,3,0:30,UTA,rebound,,,,,,,,,,Matt Harpring,,,,,,off,,
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Matt Harpring,Paul Millsap,Ronnie Brewer,Ronnie Price,3,0:29,UTA,rebound,,,,,,,,,,Matt Harpring,,,,,,off,,
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Matt Harpring,Paul Millsap,Ronnie Brewer,Ronnie Price,3,0:28,UTA,shot,Matt Harpring,,,,,,,,,Carlos Boozer,2,,,made,,layup,25,6
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Matt Harpring,Paul Millsap,Ronnie Brewer,Ronnie Price,3,0:28,NOH,foul,,,,,,,,Carlos Boozer,,Melvin Ely,,,,,,shooting,,
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Matt Harpring,Paul Millsap,Ronnie Brewer,Ronnie Price,3,0:28,UTA,free throw,,,,,,,1,,1,Carlos Boozer,,,foul,missed,,,,
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Matt Harpring,Paul Millsap,Ronnie Brewer,Ronnie Price,3,0:28,NOH,rebound,,,,,,,,,,Melvin Ely,,,,,,def,,
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Matt Harpring,Paul Millsap,Ronnie Brewer,Ronnie Price,3,0:08,NOH,shot,,,,,,,,,,Jannero Pargo,,,,missed,,jump,21,26
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Matt Harpring,Paul Millsap,Ronnie Brewer,Ronnie Price,3,0:07,UTA,rebound,,,,,,,,,,Carlos Boozer,,,,,,def,,
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Matt Harpring,Paul Millsap,Ronnie Brewer,Ronnie Price,3,0:00,UTA,shot,,,,,,,,,,Ronnie Brewer,,,,missed,,jump,25,17
+Bobby Jackson,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Matt Harpring,Paul Millsap,Ronnie Brewer,Ronnie Price,3,0:00,UTA,rebound,,,,,,,,,,,,,,,,,,
+Bobby Jackson,Jannero Pargo,Julian Wright,Melvin Ely,Ryan Bowen,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,4,11:40,UTA,shot,Deron Williams,,,,,,,,,Kyle Korver,3,,,made,,3pt,1,5
+Bobby Jackson,Jannero Pargo,Julian Wright,Melvin Ely,Ryan Bowen,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,4,11:19,UTA,foul,,,,,,,,Bobby Jackson,,Matt Harpring,,,,,,shooting,,
+Bobby Jackson,Jannero Pargo,Julian Wright,Melvin Ely,Ryan Bowen,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,4,11:19,NOH,free throw,,,,,,,1,,2,Bobby Jackson,,,foul,made,,,,
+Bobby Jackson,Jannero Pargo,Julian Wright,Melvin Ely,Ryan Bowen,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,4,11:19,NOH,free throw,,,,,,,2,,2,Bobby Jackson,,,foul,missed,,,,
+Bobby Jackson,Jannero Pargo,Julian Wright,Melvin Ely,Ryan Bowen,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,4,11:18,UTA,rebound,,,,,,,,,,Mehmet Okur,,,,,,def,,
+Bobby Jackson,Jannero Pargo,Julian Wright,Melvin Ely,Ryan Bowen,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,4,11:04,UTA,shot,Kyle Korver,,,,,,,,,Matt Harpring,2,,,made,,jump,20,11
+Bobby Jackson,Jannero Pargo,Julian Wright,Melvin Ely,Ryan Bowen,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,4,11:04,NOH,foul,,,,,,,,Matt Harpring,,Ryan Bowen,,,,,,shooting,,
+Bobby Jackson,Jannero Pargo,Julian Wright,Melvin Ely,Ryan Bowen,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,4,11:04,UTA,free throw,,,,,,,1,,1,Matt Harpring,,,foul,missed,,,,
+Bobby Jackson,Jannero Pargo,Julian Wright,Melvin Ely,Ryan Bowen,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,4,11:02,NOH,rebound,,,,,,,,,,Melvin Ely,,,,,,def,,
+Bobby Jackson,Jannero Pargo,Julian Wright,Melvin Ely,Ryan Bowen,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,4,10:53,NOH,shot,Bobby Jackson,,,,,,,,,Melvin Ely,2,,,made,,jump,39,13
+Bobby Jackson,Jannero Pargo,Julian Wright,Melvin Ely,Ryan Bowen,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,4,10:34,UTA,shot,,,,,,,,,,Mehmet Okur,,,,missed,,jump,34,25
+Bobby Jackson,Jannero Pargo,Julian Wright,Melvin Ely,Ryan Bowen,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,4,10:33,NOH,rebound,,,,,,,,,,Julian Wright,,,,,,def,,
+Bobby Jackson,Jannero Pargo,Julian Wright,Melvin Ely,Ryan Bowen,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,4,10:27,NOH,shot,Julian Wright,,,,,,,,,Jannero Pargo,3,,,made,,3pt,24,30
+Bobby Jackson,Jannero Pargo,Julian Wright,Melvin Ely,Ryan Bowen,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,4,10:07,UTA,shot,,,,,,,,,,Matt Harpring,,,,missed,,jump,46,5
+Bobby Jackson,Jannero Pargo,Julian Wright,Melvin Ely,Ryan Bowen,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,4,10:06,NOH,rebound,,,,,,,,,,Melvin Ely,,,,,,def,,
+Bobby Jackson,Jannero Pargo,Julian Wright,Melvin Ely,Ryan Bowen,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,4,10:00,NOH,shot,Jannero Pargo,,,,,,,,,Bobby Jackson,3,,,made,,3pt,42,24
+Bobby Jackson,Jannero Pargo,Julian Wright,Melvin Ely,Ryan Bowen,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,4,9:35,UTA,shot,,,,,,,,,,Mehmet Okur,,,,missed,,jump,20,24
+Bobby Jackson,Jannero Pargo,Julian Wright,Melvin Ely,Ryan Bowen,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,4,9:34,NOH,rebound,,,,,,,,,,Ryan Bowen,,,,,,def,,
+Bobby Jackson,Jannero Pargo,Julian Wright,Melvin Ely,Ryan Bowen,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,4,9:21,NOH,shot,Melvin Ely,,,,,,,,,Jannero Pargo,2,,,made,,jump,45,4
+Bobby Jackson,Jannero Pargo,Julian Wright,Melvin Ely,Ryan Bowen,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,4,9:20,UTA,timeout,,,,,,,,,,,,,,,,regular,,
+Bobby Jackson,Jannero Pargo,Julian Wright,Melvin Ely,Ryan Bowen,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,4,9:16,NOH,foul,,,,,,,,Deron Williams,,Jannero Pargo,,,,,,shooting,,
+Bobby Jackson,Jannero Pargo,Julian Wright,Melvin Ely,Ryan Bowen,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,4,9:16,UTA,free throw,,,,,,,1,,2,Deron Williams,,,foul,missed,,,,
+Bobby Jackson,Jannero Pargo,Julian Wright,Melvin Ely,Ryan Bowen,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,4,9:16,UTA,rebound,,,,,,,,,,,,,,,,,,
+Bobby Jackson,Jannero Pargo,Julian Wright,Melvin Ely,Ryan Bowen,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,4,9:16,UTA,free throw,,,,,,,2,,2,Deron Williams,,,foul,made,,,,
+Bobby Jackson,Jannero Pargo,Julian Wright,Melvin Ely,Ryan Bowen,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,4,8:54,NOH,shot,,,,,,,,,,Jannero Pargo,2,,,made,,fade away jumper,32,17
+Bobby Jackson,Jannero Pargo,Julian Wright,Melvin Ely,Ryan Bowen,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,4,8:35,UTA,shot,,,,,,,,,,Matt Harpring,,,,missed,,running jump,23,11
+Bobby Jackson,Jannero Pargo,Julian Wright,Melvin Ely,Ryan Bowen,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,4,8:33,UTA,shot,,,,,,,,,,Paul Millsap,,,,missed,,tip,25,6
+Bobby Jackson,Jannero Pargo,Julian Wright,Melvin Ely,Ryan Bowen,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,4,8:33,UTA,rebound,,,,,,,,,,Paul Millsap,,,,,,off,,
+Bobby Jackson,Jannero Pargo,Julian Wright,Melvin Ely,Ryan Bowen,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,4,8:31,NOH,rebound,,,,,,,,,,Julian Wright,,,,,,def,,
+Bobby Jackson,Jannero Pargo,Julian Wright,Melvin Ely,Ryan Bowen,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,Paul Millsap,4,8:20,NOH,shot,,,,,,,,,,Jannero Pargo,2,,,made,,jump,38,23
+Bobby Jackson,Jannero Pargo,Julian Wright,Melvin Ely,Ryan Bowen,Carlos Boozer,Deron Williams,Kyle Korver,Matt Harpring,Mehmet Okur,4,8:05,UTA,sub,,,,Carlos Boozer,,Paul Millsap,,,,,,,,,,,,
+Bobby Jackson,Jannero Pargo,Julian Wright,Melvin Ely,Ryan Bowen,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,8:05,UTA,sub,,,,Ronnie Brewer,,Matt Harpring,,,,,,,,,,,,
+Bobby Jackson,Jannero Pargo,Julian Wright,Ryan Bowen,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,8:05,NOH,sub,,,,Tyson Chandler,,Melvin Ely,,,,,,,,,,,,
+Bobby Jackson,Jannero Pargo,Julian Wright,Ryan Bowen,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,7:55,UTA,shot,,,,,,,,,,Deron Williams,,,,missed,,3pt,34,29
+Bobby Jackson,Jannero Pargo,Julian Wright,Ryan Bowen,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,7:54,NOH,rebound,,,,,,,,,,Julian Wright,,,,,,def,,
+Bobby Jackson,Jannero Pargo,Julian Wright,Ryan Bowen,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,7:42,NOH,shot,,,,,,,,,,Bobby Jackson,,,,missed,,jump,45,11
+Bobby Jackson,Jannero Pargo,Julian Wright,Ryan Bowen,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,7:41,UTA,rebound,,,,,,,,,,Carlos Boozer,,,,,,def,,
+Bobby Jackson,Jannero Pargo,Julian Wright,Ryan Bowen,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,7:30,UTA,shot,Carlos Boozer,,,,,,,,,Deron Williams,2,,,made,,layup,25,6
+Bobby Jackson,Jannero Pargo,Julian Wright,Ryan Bowen,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,7:15,NOH,turnover,,,,,,,,,,Julian Wright,,,traveling,,,,,
+Bobby Jackson,Jannero Pargo,Julian Wright,Ryan Bowen,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,6:54,UTA,shot,,,,,,,,,,Deron Williams,2,,,made,,running jump,26,11
+Bobby Jackson,Jannero Pargo,Julian Wright,Ryan Bowen,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,6:54,NOH,foul,,,,,,,,Deron Williams,,Tyson Chandler,,,,,,shooting,,
+Chris Paul,Jannero Pargo,Julian Wright,Ryan Bowen,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,6:54,NOH,sub,,,,Chris Paul,,Bobby Jackson,,,,,,,,,,,,
+Chris Paul,Jannero Pargo,Julian Wright,Ryan Bowen,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,6:54,UTA,free throw,,,,,,,1,,1,Deron Williams,,,foul,made,,,,
+Chris Paul,Jannero Pargo,Julian Wright,Ryan Bowen,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,6:44,UTA,foul,,,,,,,,Jannero Pargo,,Ronnie Brewer,,,,,,shooting,,
+Chris Paul,David West,Jannero Pargo,Julian Wright,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,6:44,NOH,sub,,,,David West,,Ryan Bowen,,,,,,,,,,,,
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,6:44,NOH,sub,,,,Peja Stojakovic,,Julian Wright,,,,,,,,,,,,
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,6:44,NOH,free throw,,,,,,,1,,2,Jannero Pargo,,,foul,missed,,,,
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,6:44,NOH,rebound,,,,,,,,,,,,,,,,,,
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,6:44,NOH,free throw,,,,,,,2,,2,Jannero Pargo,,,foul,made,,,,
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,6:28,UTA,shot,Kyle Korver,,,,,,,,,Carlos Boozer,2,,,made,,jump,40,13
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,6:11,NOH,shot,,,,,,,,,,Jannero Pargo,2,,,made,,jump,12,17
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,5:51,UTA,shot,,,,,,,,,,Deron Williams,2,,,made,,driving layup,25,6
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,5:42,NOH,foul,,,,,,,,Kyle Korver,,Tyson Chandler,,,,,,offensive,,
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,5:42,NOH,turnover,,,,,,,,,,Tyson Chandler,,,foul,,,,,
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,5:42,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,5:29,UTA,shot,,,,,,,,,,Carlos Boozer,,,,missed,,jump hook,29,11
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,5:27,NOH,rebound,,,,,,,,,,David West,,,,,,def,,
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,5:06,NOH,shot,,,,,,,,,,David West,,,,missed,,jump,44,11
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,5:05,UTA,rebound,,,,,,,,,,Deron Williams,,,,,,def,,
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,4:46,UTA,shot,,,,,,,,,,Kyle Korver,3,,,made,,3pt,36,28
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,4:36,NOH,turnover,,,,,,,,,,Chris Paul,,,lost ball,,Mehmet Okur,,,
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,4:31,UTA,shot,,,,,,,,,,Ronnie Brewer,,,,missed,,dunk,25,6
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,4:29,NOH,rebound,,,,,,,,,,Peja Stojakovic,,,,,,def,,
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,4:24,NOH,turnover,,,,,,,,,,Chris Paul,,,3 second violation,,,,,
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,4:03,UTA,turnover,,,,,,,,,,Mehmet Okur,,,lost ball,,David West,,,
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,3:56,NOH,shot,Chris Paul,,,,,,,,,Peja Stojakovic,3,,,made,,3pt,43,22
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,3:33,UTA,shot,,,,,,,,,,Deron Williams,2,,,made,,jump,13,19
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,3:18,NOH,shot,,,,,,,,,,Peja Stojakovic,,,,missed,,3pt,14,28
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,3:16,UTA,rebound,,,,,,,,,,Carlos Boozer,,,,,,def,,
+Chris Paul,David West,Jannero Pargo,Peja Stojakovic,Tyson Chandler,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,2:55,NOH,timeout,,,,,,,,,,,,,,,,regular,,
+Chris Paul,David West,Jannero Pargo,Melvin Ely,Peja Stojakovic,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,2:55,NOH,sub,,,,Melvin Ely,,Tyson Chandler,,,,,,,,,,,,
+Chris Paul,David West,Jannero Pargo,Julian Wright,Melvin Ely,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,2:55,NOH,sub,,,,Julian Wright,,Peja Stojakovic,,,,,,,,,,,,
+Chris Paul,Jannero Pargo,Julian Wright,Melvin Ely,Ryan Bowen,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,2:55,NOH,sub,,,,Ryan Bowen,,David West,,,,,,,,,,,,
+Jannero Pargo,Julian Wright,Melvin Ely,Morris Peterson,Ryan Bowen,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,2:55,NOH,sub,,,,Morris Peterson,,Chris Paul,,,,,,,,,,,,
+Jannero Pargo,Julian Wright,Melvin Ely,Morris Peterson,Ryan Bowen,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,2:53,UTA,shot,,,,,,,,,,Kyle Korver,,,,missed,,jump,11,15
+Jannero Pargo,Julian Wright,Melvin Ely,Morris Peterson,Ryan Bowen,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,2:52,NOH,rebound,,,,,,,,,,Melvin Ely,,,,,,def,,
+Jannero Pargo,Julian Wright,Melvin Ely,Morris Peterson,Ryan Bowen,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,2:39,NOH,shot,,,,,,,,,,Jannero Pargo,,,,missed,,3pt,29,30
+Jannero Pargo,Julian Wright,Melvin Ely,Morris Peterson,Ryan Bowen,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,2:37,UTA,rebound,,,,,,,,,,Carlos Boozer,,,,,,def,,
+Jannero Pargo,Julian Wright,Melvin Ely,Morris Peterson,Ryan Bowen,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,2:25,UTA,shot,Deron Williams,,,,,,,,,Mehmet Okur,3,,,made,,3pt,12,26
+Jannero Pargo,Julian Wright,Melvin Ely,Morris Peterson,Ryan Bowen,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,2:00,NOH,shot,,,,,,,,,,Morris Peterson,,,,missed,,jump,5,16
+Jannero Pargo,Julian Wright,Melvin Ely,Morris Peterson,Ryan Bowen,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,1:59,UTA,rebound,,,,,,,,,,Carlos Boozer,,,,,,def,,
+Jannero Pargo,Julian Wright,Melvin Ely,Morris Peterson,Ryan Bowen,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,1:43,UTA,shot,,,,,,,,,,Mehmet Okur,,,,missed,,3pt,44,21
+Jannero Pargo,Julian Wright,Melvin Ely,Morris Peterson,Ryan Bowen,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,1:42,UTA,rebound,,,,,,,,,,Carlos Boozer,,,,,,off,,
+Jannero Pargo,Julian Wright,Melvin Ely,Morris Peterson,Ryan Bowen,Carlos Boozer,Deron Williams,Kyle Korver,Mehmet Okur,Ronnie Brewer,4,1:28,NOH,foul,,,,,,,,Ronnie Brewer,,Morris Peterson,,,,,,shooting,,
+Jannero Pargo,Julian Wright,Melvin Ely,Morris Peterson,Ryan Bowen,Deron Williams,Kyle Korver,Mehmet Okur,Paul Millsap,Ronnie Brewer,4,1:28,UTA,sub,,,,Paul Millsap,,Carlos Boozer,,,,,,,,,,,,
+Jannero Pargo,Julian Wright,Melvin Ely,Morris Peterson,Ryan Bowen,Deron Williams,Jarron Collins,Kyle Korver,Paul Millsap,Ronnie Brewer,4,1:28,UTA,sub,,,,Jarron Collins,,Mehmet Okur,,,,,,,,,,,,
+Jannero Pargo,Julian Wright,Melvin Ely,Morris Peterson,Ryan Bowen,Jarron Collins,Kyle Korver,Paul Millsap,Ronnie Brewer,Ronnie Price,4,1:28,UTA,sub,,,,Ronnie Price,,Deron Williams,,,,,,,,,,,,
+Jannero Pargo,Julian Wright,Melvin Ely,Morris Peterson,Ryan Bowen,Jarron Collins,Kyle Korver,Paul Millsap,Ronnie Brewer,Ronnie Price,4,1:28,UTA,free throw,,,,,,,1,,2,Ronnie Brewer,,,foul,missed,,,,
+Jannero Pargo,Julian Wright,Melvin Ely,Morris Peterson,Ryan Bowen,Jarron Collins,Kyle Korver,Paul Millsap,Ronnie Brewer,Ronnie Price,4,1:28,UTA,rebound,,,,,,,,,,,,,,,,,,
+Jannero Pargo,Julian Wright,Melvin Ely,Morris Peterson,Ryan Bowen,Jarron Collins,Kyle Korver,Paul Millsap,Ronnie Brewer,Ronnie Price,4,1:28,UTA,free throw,,,,,,,2,,2,Ronnie Brewer,,,foul,made,,,,
+Jannero Pargo,Julian Wright,Melvin Ely,Morris Peterson,Ryan Bowen,Jarron Collins,Kyle Korver,Paul Millsap,Ronnie Brewer,Ronnie Price,4,1:10,NOH,shot,,,,,,,,,,Jannero Pargo,,,,missed,,3pt,33,30
+Jannero Pargo,Julian Wright,Melvin Ely,Morris Peterson,Ryan Bowen,Jarron Collins,Kyle Korver,Paul Millsap,Ronnie Brewer,Ronnie Price,4,1:08,NOH,rebound,,,,,,,,,,Morris Peterson,,,,,,off,,
+Jannero Pargo,Julian Wright,Melvin Ely,Morris Peterson,Ryan Bowen,Jarron Collins,Kyle Korver,Paul Millsap,Ronnie Brewer,Ronnie Price,4,1:03,NOH,shot,,,,,,,,,,Morris Peterson,3,,,made,,3pt,41,24
+Jannero Pargo,Julian Wright,Melvin Ely,Morris Peterson,Ryan Bowen,Jarron Collins,Kyle Korver,Paul Millsap,Ronnie Brewer,Ronnie Price,4,0:44,UTA,shot,Paul Millsap,,,,,,,,,Kyle Korver,2,,,made,,jump,39,25
+Jannero Pargo,Julian Wright,Melvin Ely,Morris Peterson,Ryan Bowen,Jarron Collins,Kyle Korver,Paul Millsap,Ronnie Brewer,Ronnie Price,4,0:33,NOH,shot,,,,,,,,,,Julian Wright,,,,missed,,hook,25,11
+Jannero Pargo,Julian Wright,Melvin Ely,Morris Peterson,Ryan Bowen,Jarron Collins,Kyle Korver,Paul Millsap,Ronnie Brewer,Ronnie Price,4,0:33,NOH,rebound,,,,,,,,,,Ryan Bowen,,,,,,off,,
+Jannero Pargo,Julian Wright,Melvin Ely,Morris Peterson,Ryan Bowen,Jarron Collins,Kyle Korver,Paul Millsap,Ronnie Brewer,Ronnie Price,4,0:33,UTA,foul,,,,,,,,Ryan Bowen,,Paul Millsap,,,,,,shooting,,
+Jannero Pargo,Julian Wright,Melvin Ely,Morris Peterson,Ryan Bowen,Jarron Collins,Kyle Korver,Paul Millsap,Ronnie Brewer,Ronnie Price,4,0:33,NOH,free throw,,,,,,,1,,2,Ryan Bowen,,,foul,made,,,,
+Jannero Pargo,Julian Wright,Melvin Ely,Morris Peterson,Ryan Bowen,Jarron Collins,Kyle Korver,Paul Millsap,Ronnie Brewer,Ronnie Price,4,0:33,NOH,free throw,,,,,,,2,,2,Ryan Bowen,,,foul,made,,,,
+Jannero Pargo,Julian Wright,Melvin Ely,Morris Peterson,Ryan Bowen,Jarron Collins,Kyle Korver,Paul Millsap,Ronnie Brewer,Ronnie Price,4,0:12,NOH,foul,,,,,,,,Ronnie Price,,Morris Peterson,,,,,,shooting,,
+Jannero Pargo,Julian Wright,Melvin Ely,Morris Peterson,Ryan Bowen,Jarron Collins,Kyle Korver,Paul Millsap,Ronnie Brewer,Ronnie Price,4,0:12,UTA,free throw,,,,,,,1,,2,Ronnie Price,,,foul,made,,,,
+Jannero Pargo,Julian Wright,Melvin Ely,Morris Peterson,Ryan Bowen,Jarron Collins,Kyle Korver,Paul Millsap,Ronnie Brewer,Ronnie Price,4,0:12,UTA,free throw,,,,,,,2,,2,Ronnie Price,,,foul,made,,,,
+Jannero Pargo,Julian Wright,Melvin Ely,Morris Peterson,Ryan Bowen,Jarron Collins,Kyle Korver,Paul Millsap,Ronnie Brewer,Ronnie Price,4,0:05,NOH,turnover,,,,,,,,,,Jannero Pargo,,,lost ball,,Ronnie Brewer,,,

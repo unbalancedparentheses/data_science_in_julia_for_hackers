@@ -1,0 +1,469 @@
+a1,a2,a3,a4,a5,h1,h2,h3,h4,h5,period,time,team,etype,assist,away,block,entered,home,left,num,opponent,outof,player,points,possession,reason,result,steal,type,x,y
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,12:00,OFF,jump ball,,Josh Smith,,,Dwight Howard,,,,,,,Rashard Lewis,,,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,11:42,ORL,shot,,,,,,,,,,Keith Bogans,,,,missed,,fade away jumper,19,12
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,11:40,ORL,rebound,,,,,,,,,,Keith Bogans,,,,,,off,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,11:32,ORL,shot,Jameer Nelson,,,,,,,,,Dwight Howard,2,,,made,,jump hook,30,7
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,11:14,ATL,shot,,,,,,,,,,Joe Johnson,2,,,made,,jump,25,13
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,11:14,ORL,violation,,,,,,,,,,Dwight Howard,,,,,,defensive goaltending,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,10:49,ORL,shot,,,,,,,,,,Hedo Turkoglu,,,,missed,,3pt,1,16
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,10:48,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,def,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,10:40,ORL,foul,,,,,,,,Josh Smith,,Jameer Nelson,,,,,,shooting,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,10:40,ATL,free throw,,,,,,,1,,2,Josh Smith,,,foul,made,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,10:40,ATL,free throw,,,,,,,2,,2,Josh Smith,,,foul,missed,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,10:39,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,def,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,10:27,ORL,shot,,,,,,,,,,Jameer Nelson,2,,,made,,jump,20,16
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,10:09,ATL,shot,Anthony Johnson,,,,,,,,,Marvin Williams,2,,,made,,jump,39,18
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,10:02,ORL,turnover,,,,,,,,,,Dwight Howard,,,traveling,,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,9:41,ATL,shot,,,,,,,,,,Al Horford,,,,missed,,jump,33,13
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,9:39,ORL,rebound,,,,,,,,,,Hedo Turkoglu,,,,,,def,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,9:36,ATL,foul,,,,,,,,Dwight Howard,,Al Horford,,,,,,personal,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,9:22,ORL,shot,,,,,,,,,,Jameer Nelson,,,,missed,,layup,25,6
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,9:21,ATL,rebound,,,,,,,,,,Anthony Johnson,,,,,,def,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,9:11,ATL,shot,,,,,,,,,,Al Horford,,,,missed,,layup,25,6
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,9:10,ORL,rebound,,,,,,,,,,Hedo Turkoglu,,,,,,def,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,9:05,ATL,foul,,,,,,,,Dwight Howard,,Al Horford,,,,,,personal,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,9:05,ATL,sub,,,,Lorenzen Wright,,Al Horford,,,,,,,,,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,8:53,ATL,foul,,,,,,,,Dwight Howard,,Josh Smith,,,,,,shooting,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,8:53,ORL,free throw,,,,,,,1,,2,Dwight Howard,,,foul,missed,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,8:53,ORL,rebound,,,,,,,,,,,,,,,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,8:53,ORL,free throw,,,,,,,2,,2,Dwight Howard,,,foul,missed,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,8:52,ATL,rebound,,,,,,,,,,Marvin Williams,,,,,,def,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,8:31,ATL,shot,Joe Johnson,,,,,,,,,Anthony Johnson,2,,,made,,jump,16,10
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,8:18,ORL,shot,,,,,,,,,,Keith Bogans,,,,missed,,3pt,48,10
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,8:16,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,def,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,8:12,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,running jump,19,11
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,8:09,ORL,rebound,,,,,,,,,,Hedo Turkoglu,,,,,,def,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,7:58,ORL,shot,,,,,,,,,,Hedo Turkoglu,,,,missed,,3pt,13,29
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,7:57,ATL,rebound,,,,,,,,,,Anthony Johnson,,,,,,def,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,7:46,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,3pt,43,24
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,7:45,ORL,rebound,,,,,,,,,,,,,,,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,7:31,ORL,shot,,,,,,,,,,Hedo Turkoglu,2,,,made,,jump bank,18,19
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,7:14,ORL,foul,,,,,,,,Marvin Williams,,Rashard Lewis,,,,,,personal,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,7:07,ATL,shot,,,,,,,,,,Anthony Johnson,,,,missed,,jump,19,25
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,7:06,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,def,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,7:00,ORL,turnover,,,,,,,,,,Jameer Nelson,,,lost ball,,Anthony Johnson,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,6:53,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,jump,8,15
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,6:51,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,off,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,6:42,ATL,shot,Josh Smith,,,,,,,,,Joe Johnson,3,,,made,,3pt,2,9
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,6:29,ORL,shot,,,,,,,,,,Jameer Nelson,2,,,made,,jump,40,17
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,6:16,ATL,shot,Marvin Williams,,,,,,,,,Anthony Johnson,2,,,made,,jump,45,10
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,5:57,ORL,shot,,,,,,,,,,Hedo Turkoglu,2,,,made,,layup,25,6
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,1,5:36,ORL,timeout,,,,,,,,,,,,,,,,regular,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,5:36,ORL,sub,,,,Brian Cook,,Hedo Turkoglu,,,,,,,,,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,5:29,ATL,shot,,,,,,,,,,Marvin Williams,,,,missed,,jump,25,16
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,5:27,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,def,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,5:11,ORL,shot,,,,,,,,,,Keith Bogans,,,,missed,,jump,35,20
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,5:09,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,off,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,5:07,ATL,foul,,,,,,,,Rashard Lewis,,Marvin Williams,,,,,,loose ball,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,4:56,ORL,shot,,,,,,,,,,Rashard Lewis,,,,missed,,jump,34,22
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,4:55,ATL,rebound,,,,,,,,,,Joe Johnson,,,,,,def,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,4:42,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,fade away jumper,36,9
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,4:41,ORL,rebound,,,,,,,,,,Rashard Lewis,,,,,,def,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,4:25,ORL,turnover,,,,,,,,,,Rashard Lewis,,,bad pass,,Joe Johnson,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,4:22,ATL,shot,Joe Johnson,,,,,,,,,Anthony Johnson,2,,,made,,layup,25,6
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,4:22,ORL,violation,,,,,,,,,,Jameer Nelson,,,,,,defensive goaltending,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,4:06,ORL,turnover,,,,,,,,,,Dwight Howard,,,lost ball,,Lorenzen Wright,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,4:01,ATL,shot,Josh Smith,,,,,,,,,Marvin Williams,2,,,made,,slam dunk,25,6
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,3:50,ORL,shot,Jameer Nelson,,,,,,,,,Rashard Lewis,3,,,made,,3pt,21,32
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,3:28,ATL,shot,Lorenzen Wright,,,,,,,,,Joe Johnson,2,,,made,,jump,42,16
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,3:15,ORL,foul,,,,,,,,Josh Smith,,Brian Cook,,,,,,offensive,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,3:15,ORL,turnover,,,,,,,,,,Brian Cook,,,foul,,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Keith Bogans,Rashard Lewis,1,3:15,ATL,timeout,,,,,,,,,,,,,,,,regular,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Maurice Evans,Rashard Lewis,1,3:15,ORL,sub,,,,Maurice Evans,,Keith Bogans,,,,,,,,,,,,
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Maurice Evans,Rashard Lewis,1,3:15,ATL,sub,,,,Acie Law,,Anthony Johnson,,,,,,,,,,,,
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Maurice Evans,Rashard Lewis,1,3:00,ATL,shot,,,Dwight Howard,,,,,,,Marvin Williams,,,,missed,,driving layup,25,6
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Maurice Evans,Rashard Lewis,1,3:00,ATL,rebound,,,,,,,,,,,,,,,,,,
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Maurice Evans,Rashard Lewis,1,2:51,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,jump,19,22
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Maurice Evans,Rashard Lewis,1,2:49,ORL,rebound,,,,,,,,,,Jameer Nelson,,,,,,def,,
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Maurice Evans,Rashard Lewis,1,2:38,ORL,shot,,,,,,,,,,Jameer Nelson,,,,missed,,jump,11,21
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Maurice Evans,Rashard Lewis,1,2:37,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,def,,
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Maurice Evans,Rashard Lewis,1,2:24,ATL,shot,,,,,,,,,,Josh Smith,2,,,made,,jump,22,16
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Maurice Evans,Rashard Lewis,1,2:24,ORL,foul,,,,,,,,Josh Smith,,Brian Cook,,,,,,shooting,,
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Maurice Evans,Rashard Lewis,1,2:24,ATL,free throw,,,,,,,1,,1,Josh Smith,,,foul,made,,,,
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Maurice Evans,Rashard Lewis,1,2:01,ORL,shot,,,,,,,,,,Brian Cook,,,,missed,,3pt,42,26
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Maurice Evans,Rashard Lewis,1,2:00,ATL,rebound,,,,,,,,,,Acie Law,,,,,,def,,
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Maurice Evans,Rashard Lewis,1,1:51,ATL,shot,,,,,,,,,,Acie Law,2,,,made,,jump,26,23
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Maurice Evans,Rashard Lewis,1,1:36,ORL,shot,,,,,,,,,,Brian Cook,,,,missed,,jump,25,15
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Maurice Evans,Rashard Lewis,1,1:34,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,def,,
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Maurice Evans,Rashard Lewis,1,1:28,ATL,shot,,,,,,,,,,Acie Law,,,,missed,,jump,15,15
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Maurice Evans,Rashard Lewis,1,1:27,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,def,,
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Maurice Evans,Rashard Lewis,1,1:18,ORL,shot,,,,,,,,,,Jameer Nelson,,,,missed,,jump,26,25
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Maurice Evans,Rashard Lewis,1,1:18,ORL,rebound,,,,,,,,,,,,,,,,,,
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Maurice Evans,Rashard Lewis,1,1:18,ATL,foul,,,,,,,,Dwight Howard,,Lorenzen Wright,,,,,,loose ball,,
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Jameer Nelson,Keyon Dooling,Maurice Evans,1,1:18,ORL,sub,,,,Keyon Dooling,,Rashard Lewis,,,,,,,,,,,,
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Hedo Turkoglu,Keyon Dooling,Maurice Evans,1,1:18,ORL,sub,,,,Hedo Turkoglu,,Jameer Nelson,,,,,,,,,,,,
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Hedo Turkoglu,Keyon Dooling,Maurice Evans,1,1:18,ORL,free throw,,,,,,,1,,2,Dwight Howard,,,foul,made,,,,
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Hedo Turkoglu,Keyon Dooling,Maurice Evans,1,1:18,ORL,free throw,,,,,,,2,,2,Dwight Howard,,,foul,missed,,,,
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Hedo Turkoglu,Keyon Dooling,Maurice Evans,1,1:18,ORL,rebound,,,,,,,,,,Hedo Turkoglu,,,,,,off,,
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Hedo Turkoglu,Keyon Dooling,Maurice Evans,1,1:06,ORL,shot,,,,,,,,,,Hedo Turkoglu,,,,missed,,running jump,29,11
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Hedo Turkoglu,Keyon Dooling,Maurice Evans,1,1:06,ATL,rebound,,,,,,,,,,,,,,,,,,
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Brian Cook,Dwight Howard,Hedo Turkoglu,Keyon Dooling,Maurice Evans,1,1:06,ORL,foul,,,,,,,,Lorenzen Wright,,Dwight Howard,,,,,,loose ball,,
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keyon Dooling,Maurice Evans,1,1:06,ORL,sub,,,,Carlos Arroyo,,Brian Cook,,,,,,,,,,,,
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keyon Dooling,Maurice Evans,1,0:51,ATL,shot,Marvin Williams,,,,,,,,,Joe Johnson,2,,,made,,jump,34,23
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keyon Dooling,Maurice Evans,1,0:39,ATL,foul,,,,,,,,Keyon Dooling,,Lorenzen Wright,,,,,,shooting,,
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keyon Dooling,Maurice Evans,1,0:39,ORL,free throw,,,,,,,1,,2,Keyon Dooling,,,foul,made,,,,
+Acie Law,Joe Johnson,Josh Smith,Marvin Williams,Shelden Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keyon Dooling,Maurice Evans,1,0:39,ATL,sub,,,,Shelden Williams,,Lorenzen Wright,,,,,,,,,,,,
+Acie Law,Joe Johnson,Josh Smith,Marvin Williams,Shelden Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keyon Dooling,Maurice Evans,1,0:39,ORL,free throw,,,,,,,2,,2,Keyon Dooling,,,foul,made,,,,
+Acie Law,Joe Johnson,Josh Smith,Marvin Williams,Shelden Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keyon Dooling,Maurice Evans,1,0:31,ATL,shot,Acie Law,,,,,,,,,Shelden Williams,2,,,made,,layup,25,6
+Acie Law,Joe Johnson,Josh Smith,Marvin Williams,Shelden Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keyon Dooling,Maurice Evans,1,0:13,ORL,shot,Carlos Arroyo,,,,,,,,,Hedo Turkoglu,3,,,made,,3pt,14,29
+Acie Law,Joe Johnson,Josh Smith,Marvin Williams,Shelden Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keyon Dooling,Maurice Evans,1,0:00,ATL,shot,,,,,,,,,,Joe Johnson,2,,,made,,jump,32,22
+Acie Law,Joe Johnson,Marvin Williams,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keyon Dooling,Maurice Evans,2,11:48,ATL,foul,,,,,,,,Keyon Dooling,,Shelden Williams,,,,,,offensive,,
+Acie Law,Joe Johnson,Marvin Williams,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keyon Dooling,Maurice Evans,2,11:48,ATL,turnover,,,,,,,,,,Shelden Williams,,,foul,,,,,
+Acie Law,Joe Johnson,Marvin Williams,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keyon Dooling,Maurice Evans,2,11:27,ORL,shot,,,Shelden Williams,,,,,,,Hedo Turkoglu,,,,missed,,dunk,25,6
+Acie Law,Joe Johnson,Marvin Williams,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keyon Dooling,Maurice Evans,2,11:26,ORL,rebound,,,,,,,,,,,,,,,,,,
+Acie Law,Joe Johnson,Marvin Williams,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keyon Dooling,Maurice Evans,2,11:20,ORL,shot,Carlos Arroyo,,,,,,,,,Adonal Foyle,2,,,made,,hook,26,13
+Acie Law,Joe Johnson,Marvin Williams,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keyon Dooling,Maurice Evans,2,10:59,ATL,shot,,,,,,,,,,Acie Law,,,,missed,,jump,18,15
+Acie Law,Joe Johnson,Marvin Williams,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keyon Dooling,Maurice Evans,2,10:58,ORL,rebound,,,,,,,,,,Adonal Foyle,,,,,,def,,
+Acie Law,Joe Johnson,Marvin Williams,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keyon Dooling,Maurice Evans,2,10:41,ORL,shot,Hedo Turkoglu,,,,,,,,,Carlos Arroyo,3,,,made,,3pt,44,23
+Acie Law,Joe Johnson,Marvin Williams,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keyon Dooling,Maurice Evans,2,10:21,ATL,shot,Joe Johnson,,,,,,,,,Shelden Williams,2,,,made,,jump,7,9
+Acie Law,Joe Johnson,Marvin Williams,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keyon Dooling,Maurice Evans,2,10:08,ORL,shot,Carlos Arroyo,,,,,,,,,Adonal Foyle,2,,,made,,hook,25,14
+Acie Law,Joe Johnson,Marvin Williams,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keyon Dooling,Maurice Evans,2,9:51,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,hook,31,13
+Acie Law,Joe Johnson,Marvin Williams,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keyon Dooling,Maurice Evans,2,9:49,ORL,rebound,,,,,,,,,,Adonal Foyle,,,,,,def,,
+Acie Law,Joe Johnson,Marvin Williams,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keyon Dooling,Maurice Evans,2,9:44,ORL,shot,,,,,,,,,,Maurice Evans,,,,missed,,jump,9,10
+Acie Law,Joe Johnson,Marvin Williams,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keyon Dooling,Maurice Evans,2,9:42,ATL,rebound,,,,,,,,,,Marvin Williams,,,,,,def,,
+Acie Law,Joe Johnson,Marvin Williams,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keyon Dooling,Maurice Evans,2,9:33,ATL,shot,,,,,,,,,,Salim Stoudamire,,,,missed,,jump,21,27
+Acie Law,Joe Johnson,Marvin Williams,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keyon Dooling,Maurice Evans,2,9:32,ORL,rebound,,,,,,,,,,Carlos Arroyo,,,,,,def,,
+Acie Law,Joe Johnson,Marvin Williams,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keyon Dooling,Maurice Evans,2,9:24,ORL,foul,,,,,,,,Shelden Williams,,Adonal Foyle,,,,,,offensive,,
+Acie Law,Joe Johnson,Marvin Williams,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keyon Dooling,Maurice Evans,2,9:24,ORL,turnover,,,,,,,,,,Adonal Foyle,,,foul,,,,,
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keyon Dooling,Maurice Evans,2,9:24,ATL,sub,,,,Josh Smith,,Marvin Williams,,,,,,,,,,,,
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Keyon Dooling,2,9:24,ORL,sub,,,,Keith Bogans,,Maurice Evans,,,,,,,,,,,,
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Keyon Dooling,2,9:11,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,jump,23,14
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Keyon Dooling,2,9:10,ATL,rebound,,,,,,,,,,Shelden Williams,,,,,,off,,
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Keyon Dooling,2,9:08,ATL,shot,,,,,,,,,,Shelden Williams,2,,,made,,hook,21,10
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Keyon Dooling,2,8:53,ORL,shot,,,,,,,,,,Carlos Arroyo,2,,,made,,jump,40,20
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Keyon Dooling,2,8:45,ORL,violation,,,,,,,,,,Keyon Dooling,,,,,,kicked ball,,
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Keyon Dooling,2,8:45,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Keith Bogans,Keyon Dooling,Rashard Lewis,2,8:45,ORL,sub,,,,Rashard Lewis,,Hedo Turkoglu,,,,,,,,,,,,
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Keith Bogans,Keyon Dooling,Rashard Lewis,2,8:31,ATL,shot,,,,,,,,,,Salim Stoudamire,,,,missed,,3pt,39,28
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Keith Bogans,Keyon Dooling,Rashard Lewis,2,8:29,ATL,rebound,,,,,,,,,,Shelden Williams,,,,,,off,,
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Keith Bogans,Keyon Dooling,Rashard Lewis,2,8:27,ATL,shot,,,,,,,,,,Shelden Williams,2,,,made,,hook,25,11
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Keith Bogans,Keyon Dooling,Rashard Lewis,2,8:08,ORL,shot,,,,,,,,,,Keyon Dooling,,,,missed,,jump,11,18
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Keith Bogans,Keyon Dooling,Rashard Lewis,2,8:08,ATL,rebound,,,,,,,,,,,,,,,,,,
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Keith Bogans,Keyon Dooling,Rashard Lewis,2,7:52,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,jump,18,13
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Keith Bogans,Keyon Dooling,Rashard Lewis,2,7:51,ORL,rebound,,,,,,,,,,Adonal Foyle,,,,,,def,,
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Keith Bogans,Keyon Dooling,Rashard Lewis,2,7:43,ORL,foul,,,,,,,,Salim Stoudamire,,Rashard Lewis,,,,,,offensive,,
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Keith Bogans,Keyon Dooling,Rashard Lewis,2,7:43,ORL,turnover,,,,,,,,,,Rashard Lewis,,,foul,,,,,
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Keith Bogans,Keyon Dooling,Rashard Lewis,2,7:27,ATL,shot,,,,,,,,,,Joe Johnson,2,,,made,,running jump,21,15
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Keith Bogans,Keyon Dooling,Rashard Lewis,2,7:10,ORL,shot,,,,,,,,,,Rashard Lewis,,,,missed,,3pt,44,23
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Keith Bogans,Keyon Dooling,Rashard Lewis,2,7:09,ATL,rebound,,,,,,,,,,Salim Stoudamire,,,,,,def,,
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Keith Bogans,Keyon Dooling,Rashard Lewis,2,6:57,ORL,foul,,,,,,,,Acie Law,,Carlos Arroyo,,,,,,personal,,
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Keith Bogans,Keyon Dooling,Rashard Lewis,2,6:45,ATL,shot,,,,,,,,,,Acie Law,,,,missed,,running jump,24,15
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Keith Bogans,Keyon Dooling,Rashard Lewis,2,6:43,ORL,rebound,,,,,,,,,,Rashard Lewis,,,,,,def,,
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Keith Bogans,Keyon Dooling,Rashard Lewis,2,6:36,ORL,shot,,,,,,,,,,Carlos Arroyo,,,,missed,,3pt,32,31
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Keith Bogans,Keyon Dooling,Rashard Lewis,2,6:35,ATL,rebound,,,,,,,,,,Shelden Williams,,,,,,def,,
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Keith Bogans,Keyon Dooling,Rashard Lewis,2,6:25,ATL,shot,,,,,,,,,,Salim Stoudamire,,,,missed,,driving layup,25,6
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Keith Bogans,Keyon Dooling,Rashard Lewis,2,6:24,ATL,rebound,,,,,,,,,,Shelden Williams,,,,,,off,,
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Keith Bogans,Keyon Dooling,Rashard Lewis,2,6:22,ATL,shot,,,,,,,,,,Shelden Williams,2,,,made,,layup,25,6
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Keith Bogans,Keyon Dooling,Rashard Lewis,2,6:15,ORL,timeout,,,,,,,,,,,,,,,,regular,,
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Adonal Foyle,Carlos Arroyo,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,6:15,ORL,sub,,,,Hedo Turkoglu,,Keyon Dooling,,,,,,,,,,,,
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Adonal Foyle,Dwight Howard,Hedo Turkoglu,Keith Bogans,Rashard Lewis,2,6:15,ORL,sub,,,,Dwight Howard,,Carlos Arroyo,,,,,,,,,,,,
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,6:15,ORL,sub,,,,Jameer Nelson,,Adonal Foyle,,,,,,,,,,,,
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,6:10,ATL,foul,,,,,,,,Hedo Turkoglu,,Acie Law,,,,,,shooting,,
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,6:10,ORL,free throw,,,,,,,1,,2,Hedo Turkoglu,,,foul,made,,,,
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,6:10,ORL,free throw,,,,,,,2,,2,Hedo Turkoglu,,,foul,made,,,,
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,5:54,ATL,shot,,,,,,,,,,Salim Stoudamire,,,,missed,,3pt,44,24
+Acie Law,Joe Johnson,Josh Smith,Salim Stoudamire,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,5:53,ORL,rebound,,,,,,,,,,Keith Bogans,,,,,,def,,
+Acie Law,Joe Johnson,Josh Smith,Marvin Williams,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,5:38,ATL,sub,,,,Marvin Williams,,Salim Stoudamire,,,,,,,,,,,,
+Acie Law,Joe Johnson,Josh Smith,Marvin Williams,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,5:36,ORL,turnover,,,,,,,,,,Keith Bogans,,,bad pass,,Acie Law,,,
+Acie Law,Joe Johnson,Josh Smith,Marvin Williams,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,5:33,ATL,shot,Acie Law,,,,,,,,,Shelden Williams,2,,,made,,slam dunk,25,6
+Acie Law,Joe Johnson,Josh Smith,Marvin Williams,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,5:33,ORL,foul,,,,,,,,Shelden Williams,,Jameer Nelson,,,,,,shooting,,
+Acie Law,Joe Johnson,Josh Smith,Marvin Williams,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,5:33,ATL,free throw,,,,,,,1,,1,Shelden Williams,,,foul,missed,,,,
+Acie Law,Joe Johnson,Josh Smith,Marvin Williams,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,5:32,ORL,rebound,,,,,,,,,,Rashard Lewis,,,,,,def,,
+Acie Law,Joe Johnson,Josh Smith,Marvin Williams,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,5:20,ORL,shot,,,,,,,,,,Jameer Nelson,,,,missed,,3pt,48,10
+Acie Law,Joe Johnson,Josh Smith,Marvin Williams,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,5:19,ATL,rebound,,,,,,,,,,Shelden Williams,,,,,,def,,
+Acie Law,Joe Johnson,Josh Smith,Marvin Williams,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,5:07,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,jump,20,15
+Acie Law,Joe Johnson,Josh Smith,Marvin Williams,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,5:05,ORL,rebound,,,,,,,,,,Keith Bogans,,,,,,def,,
+Acie Law,Joe Johnson,Josh Smith,Marvin Williams,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,5:00,ORL,shot,Jameer Nelson,,,,,,,,,Rashard Lewis,2,,,made,,running jump,32,12
+Acie Law,Joe Johnson,Josh Smith,Marvin Williams,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,5:00,ATL,violation,,,,,,,,,,Josh Smith,,,,,,defensive goaltending,,
+Acie Law,Joe Johnson,Josh Smith,Marvin Williams,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,5:00,ATL,foul,,,,,,,,,,Josh Smith,,,,,,hanging technical,,
+Acie Law,Joe Johnson,Josh Smith,Marvin Williams,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,5:00,ORL,free throw,,,,,,,1,,1,Rashard Lewis,,,technical,made,,,,
+Acie Law,Joe Johnson,Josh Smith,Marvin Williams,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,4:46,ORL,foul,,,,,,,,,,Hedo Turkoglu,,,,,,defense 3 second,,
+Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,4:46,ATL,sub,,,,Anthony Johnson,,Acie Law,,,,,,,,,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,4:46,ATL,free throw,,,,,,,1,,1,Joe Johnson,,,technical,made,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,4:37,ATL,shot,,,,,,,,,,Marvin Williams,,,,missed,,running jump,29,16
+Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,4:35,ATL,rebound,,,,,,,,,,Shelden Williams,,,,,,off,,
+Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,4:25,ATL,turnover,,,,,,,,,,Joe Johnson,,,3 second violation,,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,4:12,ORL,shot,,,,,,,,,,Rashard Lewis,2,,,made,,driving layup,25,6
+Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,4:12,ATL,foul,,,,,,,,Rashard Lewis,,Marvin Williams,,,,,,shooting,,
+Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,4:12,ORL,free throw,,,,,,,1,,1,Rashard Lewis,,,foul,made,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,3:47,ATL,turnover,,,,,,,,,,,,,shot clock turnover,,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Mario West,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,3:47,ATL,sub,,,,Mario West,,Marvin Williams,,,,,,,,,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Mario West,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,3:25,ORL,shot,,,,,,,,,,Rashard Lewis,,,,missed,,3pt,25,32
+Anthony Johnson,Joe Johnson,Josh Smith,Mario West,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,3:24,ATL,rebound,,,,,,,,,,Shelden Williams,,,,,,def,,
+Anthony Johnson,Joe Johnson,Josh Smith,Mario West,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,3:04,ATL,shot,Joe Johnson,,,,,,,,,Josh Smith,3,,,made,,3pt,20,32
+Anthony Johnson,Joe Johnson,Josh Smith,Mario West,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,2:47,ORL,turnover,,,,,,,,,,Jameer Nelson,,,traveling,,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Mario West,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,2:47,ATL,timeout,,,,,,,,,,,,,,,,regular,,
+Anthony Johnson,Joe Johnson,Josh Smith,Mario West,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,2:26,ATL,shot,,,,,,,,,,Anthony Johnson,,,,missed,,3pt,11,26
+Anthony Johnson,Joe Johnson,Josh Smith,Mario West,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,2:24,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,def,,
+Anthony Johnson,Joe Johnson,Josh Smith,Mario West,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,2:09,ORL,shot,,,,,,,,,,Rashard Lewis,,,,missed,,3pt,48,12
+Anthony Johnson,Joe Johnson,Josh Smith,Mario West,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,2:07,ATL,rebound,,,,,,,,,,Mario West,,,,,,def,,
+Anthony Johnson,Joe Johnson,Josh Smith,Mario West,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,1:48,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,hook,24,15
+Anthony Johnson,Joe Johnson,Josh Smith,Mario West,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,1:46,ATL,rebound,,,,,,,,,,Anthony Johnson,,,,,,off,,
+Anthony Johnson,Joe Johnson,Josh Smith,Mario West,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,1:44,ATL,shot,,,,,,,,,,Anthony Johnson,2,,,made,,running jump,23,11
+Anthony Johnson,Joe Johnson,Josh Smith,Mario West,Shelden Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,1:28,ATL,foul,,,,,,,,Dwight Howard,,Shelden Williams,,,,,,personal,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Mario West,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,1:28,ATL,sub,,,,Lorenzen Wright,,Shelden Williams,,,,,,,,,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Mario West,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,1:23,ORL,shot,Rashard Lewis,,,,,,,,,Keith Bogans,3,,,made,,3pt,2,12
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Mario West,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,1:00,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,jump,41,14
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Mario West,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,0:58,ORL,rebound,,,,,,,,,,Keith Bogans,,,,,,def,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Mario West,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,0:55,ORL,turnover,,,,,,,,,,Keith Bogans,,,bad pass,,Josh Smith,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Mario West,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,0:52,ATL,shot,,,,,,,,,,Josh Smith,2,,,made,,slam dunk,25,6
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Mario West,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,2,0:42,ATL,foul,,,,,,,,Dwight Howard,,Lorenzen Wright,,,,,,personal,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Mario West,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,2,0:42,ORL,sub,,,,Maurice Evans,,Rashard Lewis,,,,,,,,,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Mario West,Solomon Jones,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,2,0:42,ATL,sub,,,,Solomon Jones,,Lorenzen Wright,,,,,,,,,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Mario West,Solomon Jones,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,2,0:42,ORL,free throw,,,,,,,1,,2,Dwight Howard,,,foul,made,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Mario West,Solomon Jones,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,2,0:42,ORL,free throw,,,,,,,2,,2,Dwight Howard,,,foul,made,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Mario West,Solomon Jones,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,2,0:26,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,jump,41,10
+Anthony Johnson,Joe Johnson,Josh Smith,Mario West,Solomon Jones,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,2,0:25,ORL,rebound,,,,,,,,,,Maurice Evans,,,,,,def,,
+Anthony Johnson,Joe Johnson,Josh Smith,Mario West,Solomon Jones,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,2,0:04,ORL,shot,,,,,,,,,,Jameer Nelson,,,,missed,,jump,32,26
+Anthony Johnson,Joe Johnson,Josh Smith,Mario West,Solomon Jones,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,2,0:02,ATL,rebound,,,,,,,,,,Anthony Johnson,,,,,,def,,
+Anthony Johnson,Joe Johnson,Josh Smith,Mario West,Solomon Jones,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,2,0:00,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,layup,25,6
+Anthony Johnson,Joe Johnson,Josh Smith,Mario West,Solomon Jones,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,2,0:00,ATL,rebound,,,,,,,,,,,,,,,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,11:40,ATL,shot,Anthony Johnson,,,,,,,,,Al Horford,2,,,made,,dunk,25,6
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,11:27,ATL,foul,,,,,,,,Dwight Howard,,Al Horford,,,,,,personal,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,11:13,ORL,shot,,,,,,,,,,Dwight Howard,2,,,made,,hook,33,12
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,10:58,ATL,shot,Anthony Johnson,,,,,,,,,Al Horford,2,,,made,,layup,25,6
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,10:58,ORL,foul,,,,,,,,Al Horford,,Rashard Lewis,,,,,,shooting,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,10:58,ATL,free throw,,,,,,,1,,1,Al Horford,,,foul,made,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,10:46,ATL,foul,,,,,,,,Dwight Howard,,Anthony Johnson,,,,,,personal,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,10:38,ATL,foul,,,,,,,,Dwight Howard,,Josh Smith,,,,,,shooting,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,10:38,ORL,free throw,,,,,,,1,,2,Dwight Howard,,,foul,missed,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,10:38,ORL,rebound,,,,,,,,,,,,,,,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,10:38,ORL,free throw,,,,,,,2,,2,Dwight Howard,,,foul,missed,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,10:37,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,def,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,10:15,ATL,shot,Anthony Johnson,,,,,,,,,Joe Johnson,3,,,made,,3pt,44,23
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,10:10,ORL,turnover,,,,,,,,,,Jameer Nelson,,,bad pass,,Anthony Johnson,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,9:49,ATL,shot,,,,,,,,,,Anthony Johnson,,,,missed,,running jump,35,10
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,9:47,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,def,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,9:42,ATL,foul,,,,,,,,Keith Bogans,,Joe Johnson,,,,,,shooting,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,9:42,ORL,free throw,,,,,,,1,,2,Keith Bogans,,,foul,missed,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,9:42,ORL,rebound,,,,,,,,,,,,,,,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,9:42,ORL,free throw,,,,,,,2,,2,Keith Bogans,,,foul,made,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,9:24,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,3pt,24,32
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,9:23,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,def,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,9:12,ORL,shot,,,,,,,,,,Keith Bogans,,,,missed,,3pt,38,28
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,9:12,ORL,rebound,,,,,,,,,,,,,,,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,9:12,ATL,foul,,,,,,,,Dwight Howard,,Al Horford,,,,,,loose ball,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,9:12,ATL,sub,,,,Lorenzen Wright,,Al Horford,,,,,,,,,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,9:12,ORL,free throw,,,,,,,1,,2,Dwight Howard,,,foul,missed,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,9:12,ORL,rebound,,,,,,,,,,,,,,,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,9:12,ORL,free throw,,,,,,,2,,2,Dwight Howard,,,foul,missed,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,9:12,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,def,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,8:55,ATL,shot,,,,,,,,,,Marvin Williams,2,,,made,,turnaround jump,36,11
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,8:42,ORL,shot,,,,,,,,,,Keith Bogans,2,,,made,,driving layup,25,6
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,8:28,ORL,foul,,,,,,,,Marvin Williams,,Dwight Howard,,,,,,shooting,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,8:28,ATL,free throw,,,,,,,1,,2,Marvin Williams,,,foul,made,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,8:28,ATL,free throw,,,,,,,2,,2,Marvin Williams,,,foul,made,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,8:12,ORL,shot,Rashard Lewis,,,,,,,,,Keith Bogans,3,,,made,,3pt,18,30
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,7:42,ATL,shot,,,,,,,,,,Marvin Williams,,,,missed,,jump,40,10
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,7:41,ORL,rebound,,,,,,,,,,,,,,,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,7:29,ORL,shot,,,,,,,,,,Rashard Lewis,,,,missed,,3pt,8,25
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,7:28,ATL,rebound,,,,,,,,,,Marvin Williams,,,,,,def,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,7:14,ATL,turnover,,,,,,,,,,Joe Johnson,,,bad pass,,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,7:07,ORL,shot,Jameer Nelson,,,,,,,,,Dwight Howard,2,,,made,,alley oop dunk,25,6
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,6:52,ORL,foul,,,,,,,,Joe Johnson,,Keith Bogans,,,,,,personal,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,6:45,ATL,turnover,,,,,,,,,,Josh Smith,,,traveling,,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,6:30,ORL,turnover,,,,,,,,,,Hedo Turkoglu,,,bad pass,,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,6:16,ORL,foul,,,,,,,,Josh Smith,,Dwight Howard,,,,,,shooting,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,6:16,ATL,free throw,,,,,,,1,,2,Josh Smith,,,foul,made,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,6:16,ATL,free throw,,,,,,,2,,2,Josh Smith,,,foul,missed,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,6:14,ORL,rebound,,,,,,,,,,Rashard Lewis,,,,,,def,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Rashard Lewis,3,6:10,ORL,timeout,,,,,,,,,,,,,,,,regular,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,3,6:10,ORL,sub,,,,Maurice Evans,,Rashard Lewis,,,,,,,,,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,3,6:02,ORL,shot,,,,,,,,,,Maurice Evans,,,,missed,,3pt,49,10
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,3,6:01,ATL,rebound,,,,,,,,,,Anthony Johnson,,,,,,def,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,3,5:44,ATL,shot,,,Hedo Turkoglu,,,,,,,Josh Smith,,,,missed,,jump,20,9
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,3,5:44,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,off,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keith Bogans,Maurice Evans,3,5:44,ORL,foul,,,,,,,,Josh Smith,,Hedo Turkoglu,,,,,,shooting,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Maurice Evans,3,5:44,ORL,sub,,,,Keyon Dooling,,Jameer Nelson,,,,,,,,,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Maurice Evans,3,5:44,ATL,free throw,,,,,,,1,,2,Josh Smith,,,foul,made,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Maurice Evans,3,5:44,ORL,violation,,,,,,,,,,Hedo Turkoglu,,,,,,lane,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Maurice Evans,3,5:44,ATL,free throw,,,,,,,2,,2,Josh Smith,,,foul,missed,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Maurice Evans,3,5:43,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,def,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Maurice Evans,3,5:33,ORL,turnover,,,,,,,,,,Keyon Dooling,,,lost ball,,Marvin Williams,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Maurice Evans,3,5:29,ATL,shot,Josh Smith,,,,,,,,,Marvin Williams,2,,,made,,dunk,25,6
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Maurice Evans,3,5:07,ORL,shot,Maurice Evans,,,,,,,,,Dwight Howard,2,,,made,,hook bank,19,9
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Maurice Evans,3,4:41,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,jump,35,15
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Maurice Evans,3,4:40,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,def,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Maurice Evans,3,4:19,ORL,shot,,,Josh Smith,,,,,,,Dwight Howard,,,,missed,,layup,25,6
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Maurice Evans,3,4:17,ORL,shot,,,,,,,,,,Hedo Turkoglu,2,,,made,,layup,25,6
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Maurice Evans,3,4:17,ORL,rebound,,,,,,,,,,Hedo Turkoglu,,,,,,off,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Maurice Evans,3,3:56,ATL,shot,,,Dwight Howard,,,,,,,Marvin Williams,,,,missed,,jump,31,11
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Maurice Evans,3,3:56,ATL,rebound,,,,,,,,,,,,,,,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Maurice Evans,3,3:56,ATL,timeout,,,,,,,,,,,,,,,,regular,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,3,3:56,ORL,sub,,,,Carlos Arroyo,,Maurice Evans,,,,,,,,,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,3,3:54,ORL,foul,,,,,,,,Josh Smith,,Hedo Turkoglu,,,,,,shooting,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,3,3:54,ATL,free throw,,,,,,,1,,2,Josh Smith,,,foul,made,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,3,3:54,ATL,free throw,,,,,,,2,,2,Josh Smith,,,foul,made,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,3,3:41,ORL,shot,,,,,,,,,,Hedo Turkoglu,,,,missed,,3pt,18,31
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,3,3:41,ATL,rebound,,,,,,,,,,,,,,,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,3,3:30,ATL,turnover,,,,,,,,,,Anthony Johnson,,,discontinue dribble,,,,,
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,3,3:30,ATL,sub,,,,Acie Law,,Anthony Johnson,,,,,,,,,,,,
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,3,3:15,ORL,shot,,,Lorenzen Wright,,,,,,,Keyon Dooling,,,,missed,,driving layup,25,6
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,3,3:13,ATL,rebound,,,,,,,,,,Joe Johnson,,,,,,def,,
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,3,3:06,ATL,turnover,,,,,,,,,,Josh Smith,,,bad pass,,Dwight Howard,,,
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,3,2:47,ORL,shot,,,,,,,,,,Keith Bogans,,,,missed,,3pt,17,30
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,3,2:47,ORL,rebound,,,,,,,,,,,,,,,,,,
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,3,2:47,ATL,foul,,,,,,,,Hedo Turkoglu,,Joe Johnson,,,,,,personal,,
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,3,2:47,ORL,free throw,,,,,,,1,,2,Hedo Turkoglu,,,foul,made,,,,
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,3,2:47,ORL,free throw,,,,,,,2,,2,Hedo Turkoglu,,,foul,made,,,,
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,3,2:27,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,running jump,35,13
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,3,2:24,ATL,shot,,,,,,,,,,Lorenzen Wright,,,,missed,,tip,25,6
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,3,2:24,ATL,rebound,,,,,,,,,,Lorenzen Wright,,,,,,off,,
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,3,2:22,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,def,,
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,3,2:17,ORL,shot,Keyon Dooling,,,,,,,,,Hedo Turkoglu,3,,,made,,3pt,1,13
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,3,1:55,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,jump,21,17
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,3,1:53,ORL,rebound,,,,,,,,,,Carlos Arroyo,,,,,,def,,
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,3,1:48,ORL,shot,,,,,,,,,,Hedo Turkoglu,,,,missed,,layup,25,6
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,3,1:45,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,def,,
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,3,1:33,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,jump,19,14
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,3,1:31,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,def,,
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,3,1:20,ORL,shot,Carlos Arroyo,,,,,,,,,Keith Bogans,3,,,made,,3pt,49,12
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,3,1:17,ATL,timeout,,,,,,,,,,,,,,,,regular,,
+Acie Law,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Keith Bogans,Keyon Dooling,Rashard Lewis,3,1:17,ORL,sub,,,,Rashard Lewis,,Hedo Turkoglu,,,,,,,,,,,,
+Acie Law,Anthony Johnson,Joe Johnson,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Keith Bogans,Keyon Dooling,Rashard Lewis,3,1:17,ATL,sub,,,,Anthony Johnson,,Josh Smith,,,,,,,,,,,,
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keith Bogans,Keyon Dooling,Rashard Lewis,3,1:17,ATL,sub,,,,Josh Smith,,Marvin Williams,,,,,,,,,,,,
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keith Bogans,Keyon Dooling,Rashard Lewis,3,0:53,ATL,shot,,,,,,,,,,Acie Law,,,,missed,,jump,11,10
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keith Bogans,Keyon Dooling,Rashard Lewis,3,0:51,ATL,rebound,,,,,,,,,,Lorenzen Wright,,,,,,off,,
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keith Bogans,Keyon Dooling,Rashard Lewis,3,0:42,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,jump,34,12
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keith Bogans,Keyon Dooling,Rashard Lewis,3,0:38,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,def,,
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keith Bogans,Keyon Dooling,Rashard Lewis,3,0:37,ORL,turnover,,,,,,,,,,Dwight Howard,,,bad pass,,Josh Smith,,,
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keith Bogans,Keyon Dooling,Rashard Lewis,3,0:35,ATL,shot,Josh Smith,,,,,,,,,Joe Johnson,2,,,made,,layup,25,6
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keith Bogans,Keyon Dooling,Rashard Lewis,3,0:19,ATL,foul,,,,,,,,Keyon Dooling,,Anthony Johnson,,,,,,shooting,,
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keith Bogans,Keyon Dooling,Rashard Lewis,3,0:19,ORL,free throw,,,,,,,1,,2,Keyon Dooling,,,foul,missed,,,,
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keith Bogans,Keyon Dooling,Rashard Lewis,3,0:19,ORL,rebound,,,,,,,,,,,,,,,,,,
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keith Bogans,Keyon Dooling,Rashard Lewis,3,0:19,ORL,free throw,,,,,,,2,,2,Keyon Dooling,,,foul,missed,,,,
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keith Bogans,Keyon Dooling,Rashard Lewis,3,0:18,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,def,,
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keith Bogans,Keyon Dooling,Rashard Lewis,3,0:02,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,3pt,38,28
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keith Bogans,Keyon Dooling,Rashard Lewis,3,0:01,ORL,rebound,,,,,,,,,,,,,,,,,,
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keith Bogans,Keyon Dooling,Rashard Lewis,3,0:00,ORL,shot,,,,,,,,,,Keith Bogans,,,,missed,,3pt,7,36
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keith Bogans,Keyon Dooling,Rashard Lewis,3,0:00,ORL,rebound,,,,,,,,,,,,,,,,,,
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keith Bogans,Keyon Dooling,Rashard Lewis,4,11:38,ORL,shot,,,,,,,,,,Keith Bogans,,,,missed,,jump,42,15
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keith Bogans,Keyon Dooling,Rashard Lewis,4,11:37,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,def,,
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keith Bogans,Keyon Dooling,Rashard Lewis,4,11:22,ORL,foul,,,,,,,,Lorenzen Wright,,Carlos Arroyo,,,,,,shooting,,
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keith Bogans,Keyon Dooling,Rashard Lewis,4,11:22,ATL,free throw,,,,,,,1,,2,Lorenzen Wright,,,foul,made,,,,
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keyon Dooling,Maurice Evans,Rashard Lewis,4,11:22,ORL,sub,,,,Maurice Evans,,Keith Bogans,,,,,,,,,,,,
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keyon Dooling,Maurice Evans,Rashard Lewis,4,11:22,ATL,free throw,,,,,,,2,,2,Lorenzen Wright,,,foul,missed,,,,
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keyon Dooling,Maurice Evans,Rashard Lewis,4,11:21,ORL,rebound,,,,,,,,,,Rashard Lewis,,,,,,def,,
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keyon Dooling,Maurice Evans,Rashard Lewis,4,11:00,ORL,shot,,,,,,,,,,Keyon Dooling,,,,missed,,layup,25,6
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keyon Dooling,Maurice Evans,Rashard Lewis,4,10:58,ORL,rebound,,,,,,,,,,Maurice Evans,,,,,,off,,
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keyon Dooling,Maurice Evans,Rashard Lewis,4,10:56,ORL,shot,,,,,,,,,,Maurice Evans,,,,missed,,tip,25,6
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keyon Dooling,Maurice Evans,Rashard Lewis,4,10:55,ORL,rebound,,,,,,,,,,Maurice Evans,,,,,,off,,
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keyon Dooling,Maurice Evans,Rashard Lewis,4,10:55,ORL,rebound,,,,,,,,,,,,,,,,,,
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keyon Dooling,Maurice Evans,Rashard Lewis,4,10:55,ORL,shot,,,Josh Smith,,,,,,,Maurice Evans,,,,missed,,tip,25,6
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keyon Dooling,Maurice Evans,Rashard Lewis,4,10:47,ATL,foul,,,,,,,,Dwight Howard,,Lorenzen Wright,,,,,,shooting,,
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keyon Dooling,Maurice Evans,Rashard Lewis,4,10:47,ORL,free throw,,,,,,,1,,2,Dwight Howard,,,foul,made,,,,
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keyon Dooling,Maurice Evans,Rashard Lewis,4,10:47,ORL,free throw,,,,,,,2,,2,Dwight Howard,,,foul,missed,,,,
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keyon Dooling,Maurice Evans,Rashard Lewis,4,10:46,ATL,rebound,,,,,,,,,,Lorenzen Wright,,,,,,def,,
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keyon Dooling,Maurice Evans,Rashard Lewis,4,10:25,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,hook,26,14
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keyon Dooling,Maurice Evans,Rashard Lewis,4,10:23,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,def,,
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keyon Dooling,Maurice Evans,Rashard Lewis,4,10:19,ORL,shot,,,,,,,,,,Keyon Dooling,2,,,made,,driving layup,25,6
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keyon Dooling,Maurice Evans,Rashard Lewis,4,10:05,ATL,foul,,,,,,,,Carlos Arroyo,,Acie Law,,,,,,offensive,,
+Acie Law,Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Carlos Arroyo,Dwight Howard,Keyon Dooling,Maurice Evans,Rashard Lewis,4,10:05,ATL,turnover,,,,,,,,,,Acie Law,,,foul,,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Keyon Dooling,Maurice Evans,Rashard Lewis,4,10:05,ATL,sub,,,,Marvin Williams,,Acie Law,,,,,,,,,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Keyon Dooling,Maurice Evans,Rashard Lewis,4,9:50,ORL,shot,,,,,,,,,,Dwight Howard,,,,missed,,hook,32,13
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Keyon Dooling,Maurice Evans,Rashard Lewis,4,9:49,ATL,rebound,,,,,,,,,,Joe Johnson,,,,,,def,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Keyon Dooling,Maurice Evans,Rashard Lewis,4,9:36,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,layup,25,6
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Keyon Dooling,Maurice Evans,Rashard Lewis,4,9:35,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,def,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Keyon Dooling,Maurice Evans,Rashard Lewis,4,9:29,ORL,turnover,,,,,,,,,,Carlos Arroyo,,,lost ball,,Anthony Johnson,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Keyon Dooling,Maurice Evans,Rashard Lewis,4,9:12,ATL,shot,,,,,,,,,,Anthony Johnson,2,,,made,,jump,25,18
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Keyon Dooling,Maurice Evans,Rashard Lewis,4,8:53,ORL,turnover,,,,,,,,,,Dwight Howard,,,bad pass,,Josh Smith,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Keyon Dooling,Maurice Evans,Rashard Lewis,4,8:27,ATL,shot,Anthony Johnson,,,,,,,,,Josh Smith,3,,,made,,3pt,44,24
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Carlos Arroyo,Dwight Howard,Keyon Dooling,Maurice Evans,Rashard Lewis,4,8:19,ORL,timeout,,,,,,,,,,,,,,,,regular,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keyon Dooling,Maurice Evans,Rashard Lewis,4,8:19,ORL,sub,,,,Hedo Turkoglu,,Carlos Arroyo,,,,,,,,,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keyon Dooling,Maurice Evans,Rashard Lewis,4,8:09,ORL,shot,Hedo Turkoglu,,,,,,,,,Rashard Lewis,3,,,made,,3pt,11,26
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keyon Dooling,Maurice Evans,Rashard Lewis,4,7:43,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,running jump,30,12
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keyon Dooling,Maurice Evans,Rashard Lewis,4,7:42,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,def,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keyon Dooling,Maurice Evans,Rashard Lewis,4,7:29,ORL,shot,Hedo Turkoglu,,,,,,,,,Keyon Dooling,3,,,made,,3pt,2,12
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keyon Dooling,Maurice Evans,Rashard Lewis,4,7:04,ORL,foul,,,,,,,,Marvin Williams,,Keyon Dooling,,,,,,shooting,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keyon Dooling,Maurice Evans,Rashard Lewis,4,7:04,ATL,free throw,,,,,,,1,,2,Marvin Williams,,,foul,made,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keyon Dooling,Maurice Evans,Rashard Lewis,4,7:04,ATL,free throw,,,,,,,2,,2,Marvin Williams,,,foul,made,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keyon Dooling,Maurice Evans,Rashard Lewis,4,6:51,ORL,foul,,,,,,,,Josh Smith,,Dwight Howard,,,,,,offensive,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keyon Dooling,Maurice Evans,Rashard Lewis,4,6:51,ORL,turnover,,,,,,,,,,Dwight Howard,,,foul,,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keyon Dooling,Maurice Evans,Rashard Lewis,4,6:31,ATL,shot,,,,,,,,,,Marvin Williams,,,,missed,,jump,33,16
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keyon Dooling,Maurice Evans,Rashard Lewis,4,6:29,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,def,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keyon Dooling,Maurice Evans,Rashard Lewis,4,6:21,ORL,shot,,,,,,,,,,Keyon Dooling,,,,missed,,layup,25,6
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keyon Dooling,Maurice Evans,Rashard Lewis,4,6:20,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,def,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keyon Dooling,Maurice Evans,Rashard Lewis,4,6:14,ATL,turnover,,,,,,,,,,Anthony Johnson,,,bad pass,,Dwight Howard,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keyon Dooling,Maurice Evans,Rashard Lewis,4,6:08,ORL,foul,,,,,,,,Anthony Johnson,,Rashard Lewis,,,,,,offensive,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keyon Dooling,Maurice Evans,Rashard Lewis,4,6:08,ORL,turnover,,,,,,,,,,Rashard Lewis,,,foul,,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keyon Dooling,Maurice Evans,Rashard Lewis,4,6:08,ATL,timeout,,,,,,,,,,,,,,,,regular,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,4,6:08,ORL,sub,,,,Jameer Nelson,,Keyon Dooling,,,,,,,,,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,4,5:45,ORL,foul,,,,,,,,Joe Johnson,,Dwight Howard,,,,,,shooting,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,4,5:45,ATL,free throw,,,,,,,1,,2,Joe Johnson,,,foul,made,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,4,5:45,ATL,free throw,,,,,,,2,,2,Joe Johnson,,,foul,made,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,4,5:35,ORL,shot,,,,,,,,,,Rashard Lewis,,,,missed,,3pt,5,21
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,4,5:33,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,def,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,4,5:16,ATL,shot,,,,,,,,,,Josh Smith,2,,,made,,jump,36,23
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,4,5:01,ORL,shot,,,,,,,,,,Jameer Nelson,,,,missed,,3pt,33,30
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,4,4:59,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,def,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,4,4:45,ATL,shot,,,,,,,,,,Joe Johnson,,,,missed,,jump,42,14
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,4,4:44,ORL,rebound,,,,,,,,,,Dwight Howard,,,,,,def,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,4,4:31,ORL,shot,,,,,,,,,,Hedo Turkoglu,,,,missed,,3pt,9,25
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,4,4:29,ATL,rebound,,,,,,,,,,Anthony Johnson,,,,,,def,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,4,4:05,ATL,shot,,,,,,,,,,Lorenzen Wright,,,,missed,,hook,16,11
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,4,4:03,ORL,rebound,,,,,,,,,,Hedo Turkoglu,,,,,,def,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,4,3:55,ORL,shot,,,,,,,,,,Rashard Lewis,,,,missed,,3pt,48,11
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,4,3:53,ORL,rebound,,,,,,,,,,Rashard Lewis,,,,,,off,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,4,3:47,ORL,shot,Hedo Turkoglu,,,,,,,,,Maurice Evans,2,,,made,,jump,29,19
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,4,3:21,ATL,shot,,,,,,,,,,Josh Smith,,,,missed,,hook,26,16
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,4,3:20,ORL,rebound,,,,,,,,,,Hedo Turkoglu,,,,,,def,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Maurice Evans,Rashard Lewis,4,3:13,ATL,foul,,,,,,,,Hedo Turkoglu,,Marvin Williams,,,,,,shooting,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Maurice Evans,Rashard Lewis,4,3:13,ORL,sub,,,,Keith Bogans,,Jameer Nelson,,,,,,,,,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,3:13,ORL,sub,,,,Keyon Dooling,,Maurice Evans,,,,,,,,,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Lorenzen Wright,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,3:13,ORL,free throw,,,,,,,1,,2,Hedo Turkoglu,,,foul,made,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,3:13,ATL,sub,,,,Al Horford,,Lorenzen Wright,,,,,,,,,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,3:13,ORL,free throw,,,,,,,2,,2,Hedo Turkoglu,,,foul,missed,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,3:13,ORL,rebound,,,,,,,,,,Rashard Lewis,,,,,,off,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,3:05,ORL,shot,,,Josh Smith,,,,,,,Hedo Turkoglu,,,,missed,,driving layup,25,6
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,3:03,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,def,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,2:53,ATL,shot,,,,,,,,,,Josh Smith,2,,,made,,layup,25,6
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,2:41,ATL,foul,,,,,,,,Hedo Turkoglu,,Anthony Johnson,,,,,,personal,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,2:41,OFF,timeout,,,,,,,,,,,,,,,,official,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,2:37,ORL,shot,,,,,,,,,,Dwight Howard,,,,missed,,hook,25,12
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,2:36,ATL,rebound,,,,,,,,,,Al Horford,,,,,,def,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,2:22,ATL,shot,,,,,,,,,,Al Horford,2,,,made,,slam dunk,25,6
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,2:04,ORL,shot,,,,,,,,,,Hedo Turkoglu,2,,,made,,driving layup,25,6
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,1:34,ATL,shot,Josh Smith,,,,,,,,,Anthony Johnson,3,,,made,,3pt,11,28
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,1:34,ORL,timeout,,,,,,,,,,,,,,,,regular,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,1:30,ORL,shot,Dwight Howard,,,,,,,,,Hedo Turkoglu,3,,,made,,3pt,25,32
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,1:30,ATL,timeout,,,,,,,,,,,,,,,,short,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,Rashard Lewis,4,1:30,ORL,sub,,,,Jameer Nelson,,Keith Bogans,,,,,,,,,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,Rashard Lewis,4,1:30,ORL,foul,,,,,,,,Joe Johnson,,Keyon Dooling,,,,,,personal,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,Rashard Lewis,4,1:25,ORL,foul,,,,,,,,Josh Smith,,Rashard Lewis,,,,,,personal,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,Rashard Lewis,4,1:25,ATL,free throw,,,,,,,1,,2,Josh Smith,,,foul,missed,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,Rashard Lewis,4,1:25,ATL,rebound,,,,,,,,,,,,,,,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,1:25,ORL,sub,,,,Keith Bogans,,Jameer Nelson,,,,,,,,,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,1:25,ATL,free throw,,,,,,,2,,2,Josh Smith,,,foul,made,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,1:13,ATL,foul,,,,,,,,Dwight Howard,,Josh Smith,,,,,,shooting,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,1:13,ORL,free throw,,,,,,,1,,2,Dwight Howard,,,foul,made,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,Rashard Lewis,4,1:13,ORL,sub,,,,Jameer Nelson,,Keith Bogans,,,,,,,,,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,Rashard Lewis,4,1:13,ORL,free throw,,,,,,,2,,2,Dwight Howard,,,foul,made,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,Rashard Lewis,4,1:08,ORL,foul,,,,,,,,Anthony Johnson,,Hedo Turkoglu,,,,,,personal,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,Rashard Lewis,4,1:08,ATL,free throw,,,,,,,1,,2,Anthony Johnson,,,foul,made,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,Rashard Lewis,4,1:08,ATL,free throw,,,,,,,2,,2,Anthony Johnson,,,foul,made,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,Rashard Lewis,4,0:54,ATL,foul,,,,,,,,Jameer Nelson,,Anthony Johnson,,,,,,shooting,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,Rashard Lewis,4,0:54,ORL,free throw,,,,,,,1,,2,Jameer Nelson,,,foul,made,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,Maurice Evans,4,0:54,ORL,sub,,,,Maurice Evans,,Rashard Lewis,,,,,,,,,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,Maurice Evans,4,0:54,ORL,free throw,,,,,,,2,,2,Jameer Nelson,,,foul,made,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,Maurice Evans,4,0:46,ORL,foul,,,,,,,,Josh Smith,,Hedo Turkoglu,,,,,,personal,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,Maurice Evans,4,0:46,ATL,free throw,,,,,,,1,,2,Josh Smith,,,foul,made,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Jameer Nelson,Keyon Dooling,Rashard Lewis,4,0:46,ORL,sub,,,,Rashard Lewis,,Maurice Evans,,,,,,,,,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,0:46,ORL,sub,,,,Keith Bogans,,Jameer Nelson,,,,,,,,,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,0:46,ATL,free throw,,,,,,,2,,2,Josh Smith,,,foul,made,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,0:46,ORL,timeout,,,,,,,,,,,,,,,,short,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,0:44,ORL,shot,,,Josh Smith,,,,,,,Rashard Lewis,,,,missed,,3pt,27,32
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,0:42,ATL,rebound,,,,,,,,,,Joe Johnson,,,,,,def,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,0:39,ORL,foul,,,,,,,,Joe Johnson,,Keyon Dooling,,,,,,personal,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,0:39,ATL,free throw,,,,,,,1,,2,Joe Johnson,,,foul,missed,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,0:39,ATL,rebound,,,,,,,,,,,,,,,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,0:39,ATL,free throw,,,,,,,2,,2,Joe Johnson,,,foul,made,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,0:32,ORL,shot,Hedo Turkoglu,,,,,,,,,Rashard Lewis,3,,,made,,3pt,2,13
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,0:31,ORL,foul,,,,,,,,Joe Johnson,,Keyon Dooling,,,,,,personal,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,0:31,ATL,free throw,,,,,,,1,,2,Joe Johnson,,,foul,made,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,0:31,ATL,free throw,,,,,,,2,,2,Joe Johnson,,,foul,made,,,,
+Al Horford,Anthony Johnson,Joe Johnson,Josh Smith,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,0:31,ORL,timeout,,,,,,,,,,,,,,,,short,,
+Anthony Johnson,Joe Johnson,Josh Smith,Mario West,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,0:31,ATL,sub,,,,Mario West,,Al Horford,,,,,,,,,,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Mario West,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,0:30,ORL,turnover,,,,,,,,,,Hedo Turkoglu,,,bad pass,,Josh Smith,,,
+Anthony Johnson,Joe Johnson,Josh Smith,Mario West,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,0:27,ATL,shot,,,,,,,,,,Josh Smith,2,,,made,,slam dunk,25,6
+Anthony Johnson,Joe Johnson,Josh Smith,Mario West,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,0:19,ORL,shot,,,,,,,,,,Keyon Dooling,,,,missed,,layup,25,6
+Anthony Johnson,Joe Johnson,Josh Smith,Mario West,Marvin Williams,Dwight Howard,Hedo Turkoglu,Keith Bogans,Keyon Dooling,Rashard Lewis,4,0:17,ATL,rebound,,,,,,,,,,Josh Smith,,,,,,def,,
