@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.18
+# v0.12.20
 
 using Markdown
 using InteractiveUtils
@@ -50,21 +50,21 @@ md"""$\frac{dPrey}{dt} = Prey*(b_{prey} - m_{prey})$
 """
 
 # ╔═╡ dbf274d6-2844-11eb-2cb3-f78a78e14d92
-md"""The population at time *t* multiplies at both rates because if the population is zero there can be no births or deaths. This leads us to the simplest ecological model, in which per capita growth is the difference between the birth rate and the mortality rate. 
+md"""The population at time t multiplies at both rates because if the population is zero there can be no births or deaths. This leads us to the simplest ecological model, in which per capita growth is the difference between the birth rate and the mortality rate. 
 
 #### Parentheses on differential equations
 
 Before anyone freaks out, lets talk a little bit about that strange notation.
 
-As we said above, the prey´s population will **grow** proportionally to the birth rate and the actual population. And we also said that the population will **shrink** proportional to the mortality rate and its actual population. Can you realize that we are describing **change**? 
+As we said above, the prey´s population will grow proportionally to the birth rate and the actual population. And we also said that the population will shrink proportional to the mortality rate and its actual population. Can you realize that we are describing change? 
 
 So that is exactly what the equation is saying! You can read that horrendous $d$ as change! So, the entire term $\frac{dPrey}{dt}=$ is just saying "The change of the pupulation over time (that´s why the $dt$ term is deviding there) is equal to..." and that´s it! 
 
-This can be a difficult concept to understand because we are very used to work with **absolute** values. But sometimes (In fact, very often) it is much more easier to describe change over absolute values. And this is one of this cases. But, for now, lets leave this up to here, we will take it up again in the next chapter. 
+This can be a difficult concept to understand because we are very used to work with absolute values. But sometimes (In fact, very often) it is much more easier to describe change over absolute values. And this is one of this cases. But, for now, lets leave this up to here, we will take it up again in the next chapter. 
 
 #### Returning to LotkaVolterra
 
-But the model we are looking for have to explain the *interaction* between the two species. To do so, we must include the Pradator Population in order to modify the mortality rate of the Prey, leaving us with:
+But the model we are looking for have to explain the interaction between the two species. To do so, we must include the Pradator Population in order to modify the mortality rate of the Prey, leaving us with:
 """
 
 # ╔═╡ e0f34b58-2845-11eb-0480-9d200fc79403
@@ -181,7 +181,7 @@ The powerful SciML engine allows us to make Bayesian inferences but from dynamic
 
 #### Visualizing the results
 
-As always, it is very interesting to be able to observe the uncertainty that Bayesianism provides us *within* our model. Let´s go for it!
+As always, it is very interesting to be able to observe the uncertainty that Bayesianism provides us within our model. Let´s go for it!
 
 First we should make a smaller sampling of the distributions of each parameter so that the number of models we plot does not become a problem when visualizing:
 "
@@ -195,7 +195,7 @@ begin
 end;
 
 # ╔═╡ dee1f67c-291a-11eb-11ba-7d6b7129b15c
-md"And now let's solve the system of differential equations for each of the combinations of parameters that we form, saving them in *solutions* so that later we can use this array in the plotting. You can scroll left and see the solution to the 101 models we propouse (Notice that we add one final model using the mean of each parameter)"
+md"And now let's solve the system of differential equations for each of the combinations of parameters that we form, saving them in solutions so that later we can use this array in the plotting. You can scroll left and see the solution to the 101 models we propouse (Notice that we add one final model using the mean of each parameter)"
 
 # ╔═╡ 3794d5aa-291b-11eb-1e16-31c59b6d37a2
 begin
@@ -210,7 +210,7 @@ begin
 	
 	problem1 = ODEProblem(lotka_volterra,u0,(0.0,30.0),p_mean)
 	push!(solutions, solve(problem1, Tsit5(), saveat = 0.1))
-end
+end ;
 
 # ╔═╡ 6244beac-291e-11eb-3f26-df3907063992
 md"The last step is simply to plot each of the models we generate. I also added the data points with which we infer all the model, to be able to appreciate the almost perfect fit:"
