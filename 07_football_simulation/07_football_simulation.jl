@@ -42,9 +42,9 @@ In the case of a glass, we could weigh it with a scale. Then, by pushing it, we 
 
 However, as we try to advance in our understanding of reality, we arrive at more and more complex models and many times we are not so lucky to be able to define them with simple observable variables.
 
-For example, this is very common in the economic sciences, where models are created with variables such as "quality of life". Economists will try to measure this latent variable with other variables that can be observed (such as quality of life, schooling rate, number of hospitals for a certain number of inhabitants, etc), but that do not have an obvious and direct relationship as if they had newton's equations.
+For example, this is very common in the economic sciences, where models are created with variables such as "quality of life". Economists will try to measure this latent variable with other variables that can be observed (such as GDP per capita, schooling rate, number of hospitals for a certain number of inhabitants, etc), but that do not have an obvious and direct relationship as if they had newton's equations.
 
-This type of latent variables are used in different models to gain greater abstraction and to be able to obtain information that a priori is not found at first sight in the data. For example, in the case of economics, from concrete measures of a country's economy it is possible to generalize knowledge and be able to infer an abstract variable such as quality of life.
+This type of latent variables are used in different models to gain greater abstraction and to be able to obtain information that is not found at first sight in the data. For example, in the case of economics, from concrete measures of a country's economy it is possible to generalize knowledge and be able to infer an abstract variable such as quality of life.
 
 ### Bayesian hierarchical models
 
@@ -661,6 +661,11 @@ Other thing is that we suppose that the two matches were independent, when the s
 
 
 Anyway, we just learned that modeling is not a easy task. But the way to get better is proposing them, testing them and learning from them. In other words, the only way to learn is doing them (as any other skill in life). So, relax, model and have fun :)
+
+## Summary
+
+In this chapter we have learned about bayesian hierarchical models and how to use simulations to count different possible outcomes. First, we talked about latent variables and how important they are for gaining more abstraction in our models. After explaning the pro's of the hierarchical models, we proceed on building a model to get a deeper understanding of the Premier League. After inferring its parameters, we have used visualizations to understand the influence of attack and defense power in the league. Finally, we ran a simulation in order to calculate the probabilities of each possible outcome of a match between Liverpool and Manchester City.
+
 "
 
 # ╔═╡ fcb7e8d2-2071-11eb-020d-7bb1d53f8a6d
