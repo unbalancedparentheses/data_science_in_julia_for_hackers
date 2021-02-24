@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.18
+# v0.12.20
 
 using Markdown
 using InteractiveUtils
@@ -37,43 +37,43 @@ In order to start understanding if that farytale is possible, first we need to u
 
 But before any of you run off in fear, let's demystify this subject a little. What is a differential equation and why are them useful?
 
-Well the first thing to denote is that differential equations emerge whenever it´s easier to describe **change** than **absolute** values. As we saw in the Ultima Online Catastrophe, it is much easier to describe and define why populations grow or shrink, rather than explain why they have the particular absolute values in a particular point in time. Come on! it´s much more easy to comprehend that if there are lots of predators, the prey´s population will shrink than understand why there are, for example, 223,543 prays and 112,764 predators the 6 of may. Does this make sense?
+Well the first thing to denote is that differential equations emerge whenever it´s easier to describe change than absolute values. As we saw in the Ultima Online Catastrophe, it is much easier to describe and define why populations grow or shrink, rather than explain why they have the particular absolute values in a particular point in time. Come on! it´s much more easy to comprehend that if there are lots of predators, the prey´s population will shrink than understand why there are, for example, 223,543 prays and 112,764 predators the 6 of may. Does this make sense?
 
 $\frac{dPrey}{dt} = Prey*(b_{prey} - m_{prey}*Pred)$
 
 $\frac{dPred}{dt} = Pred*(b_{pred}*Prey - m_{pred})$
 
-Remember that *d* can be read as change and the hole expresion "$\frac{dPrey}{dt} =$" is just saying "The change of Prey´s population over time is equal to ..." and the other part, as we already saw in the last chapter, is answering "hey! that change is proportional to the Prey´s population (because they reproduce) and to the *interaction* with the Predator population, that contributes to the Prey´s mortality rate". Isn´t that beautiful? 
+Remember that d can be read as change and the hole expresion "$\frac{dPrey}{dt} =$" is just saying "The change of Prey´s population over time is equal to ..." and the other part, as we already saw in the last chapter, is answering "hey! that change is proportional to the Prey´s population (because they reproduce) and to the interaction with the Predator population, that contributes to the Prey´s mortality rate". Isn´t that beautiful? 
 
-Now, try to think a way to put the *absolute* values of each population over time into equations. Have any clue? No? As we said, *change* is much easier to decribe.
+Now, try to think a way to put the absolute values of each population over time into equations. Have any clue? No? As we said, change is much easier to decribe.
 
 Or you can take a much more familiar example: In Newtonian Mechanics motion is describe in terms of Force.
 
 $F = m*a$
 
-But Force determines acceleration, which itself is a statement about *change*. We are so familiar with that equation that we tend to forget that it **is** a differential equation (and as Steven mention, is the mother of all differential equations).
+But Force determines acceleration, which itself is a statement about change. We are so familiar with that equation that we tend to forget that it is a differential equation (and as Steven mention, is the mother of all differential equations).
 
 $F = m*\frac{dVelocity}{dt}$
 
 $F = m*\frac{d^2Position}{dt^2}$
 
-This transformation is just showing something that everyone already knows: Acceleration is the change of Velocity over time, and Velocity is the change of position over time. And that implies that Acceleration is the *second* derivative (change) on position over time.
+This transformation is just showing something that everyone already knows: Acceleration is the change of Velocity over time, and Velocity is the change of position over time. And that implies that Acceleration is the second derivative (change) on position over time.
 
 So, Okey. We just learned that the language of differential equations is fundamental for doing science. So, if we want the computer to learn equations that explain scientific events, it must need to know how to deal with this type of equations. And this is easily solved by the Scientific Machine Learning ([SciML](https://sciml.ai/)) ecosystem.
 
 ## Scientific Machine Learning for model discovery
 
-But dealing with differential equations is not the main thing that SciML has to offer us. Istead it give us the way to **do** science in cooperation **with** the artificial intelligence. What?? To be able to comprehen this, let´s rewiew how "classic" machine learning works.
+But dealing with differential equations is not the main thing that SciML has to offer us. Istead it give us the way to do science in cooperation with the artificial intelligence. What?? To be able to comprehen this, let´s rewiew how "classic" machine learning works.
 
-It turns out that an neural network is *literally* a function. Is a function in the sense that it takes a bunch of numbers, applies a series of transformations, and return another bunch of numbers:
+It turns out that an neural network is literally a function. Is a function in the sense that it takes a bunch of numbers, applies a series of transformations, and return another bunch of numbers:
 
 $f(x) = y <=> ANN(x) = y$
 
-So, Artificial Neural Networks are functions. But they are especial function, as they can *change* the connections that made the specific function they represent. They do this in a process called *training* where they adjust its connections (parameters) in order to correctly predict. So, with only one neural network, we can "represent" lots of functions. What's more, there is this *Universal Approximation Theorem* that says that a neural network that is deep and wide enough (that is, has enough parameters) can approximate **any** function. You only need to feed it with enough data, so it can learn the optimal set of weights for its parameters.
+So, Artificial Neural Networks are functions. But they are especial function, as they can change the connections that made the specific function they represent. They do this in a process called training where they adjust its connections (parameters) in order to correctly predict. So, with only one neural network, we can "represent" lots of functions. What's more, there is this Universal Approximation Theorem that says that a neural network that is deep and wide enough (that is, has enough parameters) can approximate any function. You only need to feed it with enough data, so it can learn the optimal set of weights for its parameters.
 
 This is why neural networks come hand in hand with big data: you need lot of data in order to let the neural network learn the correct weights. But there is a problem: Big data cost billions, or may not even be available! (if you don't believe me, ask the Large Hadron Collider scientists to run 1 million experiments to train a NN, I'm sure they'll be happy to help you :P)
 
-Can you imagine a way to drastically reduce the data needed to train the NN in a significant way? Well, how about *incorporating* scientific knowledge into machine learning?. If we think it for a moment, we can realize that a scientific model is worth a thousand datasets. The equations works like a proxy of thousand of experiments, people investigating, years of research. in other words: tons of data. 
+Can you imagine a way to drastically reduce the data needed to train the NN in a significant way? Well, how about incorporating scientific knowledge into machine learning?. If we think it for a moment, we can realize that a scientific model is worth a thousand datasets. The equations works like a proxy of thousand of experiments, people investigating, years of research. in other words: tons of data. 
 
 So if we create a way to inform all of that precious data, so it can focus in learning an specific part of the equation (some part that we don´t know), it could do it with a minimum quantity of data! Lucky us, [Christopher Rackauckas](https://github.com/ChrisRackauckas) and his team already found a way.
 
@@ -134,7 +134,7 @@ And finally we arrive at the day when the madness begins.
 
 Garriot wakes up early, doesn´t have any breakfast and goes to meet his team. Everything is ready. The countdown start: 3, 2, 1... And the game is online, running.
 
-After the champagne, hugs and a little celebration Garriot return to the work and start to analize the metrics to see if everything is okey, and it does. He relax a little bit until something calls his attention: The curves of carnivorous and herbivorous animals are a little different than they should be. There are still **too few points** (only four hours from the release) to be alarmed, but he decide to do a deeper analysis. Luckily, a few days ago, he had read a paper on the Universal ODEs, so he thinks they can help him in this case.
+After the champagne, hugs and a little celebration Garriot return to the work and start to analize the metrics to see if everything is okey, and it does. He relax a little bit until something calls his attention: The curves of carnivorous and herbivorous animals are a little different than they should be. There are still too few points (only four hours from the release) to be alarmed, but he decide to do a deeper analysis. Luckily, a few days ago, he had read a paper on the Universal ODEs, so he thinks they can help him in this case.
 """
 
 # ╔═╡ 3bb32294-5423-11eb-1c75-27dc2f242255
@@ -176,10 +176,10 @@ plot!(expected_solution, alpha = 0.5)
 end
 
 # ╔═╡ d1854f4c-5432-11eb-0b97-bfa7c03dc941
-md"""As you can see, the animals were taking more time to recover. The *period* of the cycle was longer than ir should be: A clear sing that something were killing them.
+md"""As you can see, the animals were taking more time to recover. The period of the cycle was longer than ir should be: A clear sing that something were killing them.
 But he wanted to be sure. The Universal ODEs were key to do so.
 
-So, he start thinking "I know that the model has to be running cause I can see it in the code! So maybe, something external is producing this divergence. Something that I don´t know. But something that a *Neural Network* could find out" Let´s see """
+So, he start thinking "I know that the model has to be running cause I can see it in the code! So maybe, something external is producing this divergence. Something that I don´t know. But something that a Neural Network could find out" Let´s see """
 
 # ╔═╡ f7df46d0-5434-11eb-0ca4-8351f558b138
 begin
@@ -208,13 +208,13 @@ So lets stop for a minute to analize the code that Garriot just propose.
 
 In the first two lines, he just define the Neural Network that is going to learn the missing components of the two equations (one for the dynamics of the Pray and other for the dynamics of the Predator) and fill the variable p with its untrained parameters.
 
-Then, he is defining the Universal Differential Equation. Where he is specifying the parts of the model that he knows, and adding a Neural Network to learn others things that might be happening (and we know that indeed **were** happening). In other words, he is proposing:
+Then, he is defining the Universal Differential Equation. Where he is specifying the parts of the model that he knows, and adding a Neural Network to learn others things that might be happening (and we know that indeed were happening). In other words, he is proposing:
 
 $\frac{dPrey}{dt} = Prey*(1.3 - 0.9*Pred) + ANN_1(prey, pred)$
 
 $\frac{dPred}{dt} = Pred*(0.8*Prey - 1.8) + ANN_2(prey, pred)$
 
-So, as we already know, he is just adding a **function**. Which one? We already know that those are $Prey*players_{prey}$ and $Pred*players_{pred}$ (and $players_{pred}=players_{prey}=0.4$), but Garriot doesn´t, and is exactly what the Neural Network is going to learn for him.
+So, as we already know, he is just adding a function. Which one? We already know that those are $Prey*players_{prey}$ and $Pred*players_{pred}$ (and $players_{pred}=players_{prey}=0.4$), but Garriot doesn´t, and is exactly what the Neural Network is going to learn for him.
 
 """
 
@@ -286,7 +286,7 @@ plot!(solution.t, X', title="The trained NN have fitted well")
 end
 
 # ╔═╡ 58a1294c-544c-11eb-27ca-8512bc3d5461
-md"""Nice! Now that we have our Neural Network already learned the **Input-Output** relation in order to the entire system behave as the data Garriot were seeing in that Infamous morning, we need to transform that Input-Output behaviour into some function. We do this in order to *gain* interpretability of what may be happening and, in a scientific frame, learn the underling model. We do this by creating a [Function Space](https://en.wikipedia.org/wiki/Function_space) in order to the NN learn which function (or linear combination of those) is the best one to describe that Input-Output relation. The loss function to do so is designed in a way that the result will be the least complex one, that is, the answer will be the simplest function that behave like the NN.
+md"""Nice! Now that we have our Neural Network already learned the Input-Output relation in order to the entire system behave as the data Garriot were seeing in that Infamous morning, we need to transform that Input-Output behaviour into some function. We do this in order to gain interpretability of what may be happening and, in a scientific frame, learn the underling model. We do this by creating a [Function Space](https://en.wikipedia.org/wiki/Function_space) in order to the NN learn which function (or linear combination of those) is the best one to describe that Input-Output relation. The loss function to do so is designed in a way that the result will be the least complex one, that is, the answer will be the simplest function that behave like the NN.
 """
 
 # ╔═╡ b38b9410-544e-11eb-220b-5746f897b5f4
@@ -324,7 +324,7 @@ end
 basis
 
 # ╔═╡ 23be1198-5451-11eb-07b7-e76b21ff565a
-md"So, as you can see above, we just created a **Function Space** of 29 dimensions. That space include *every* possible [linear combination](https://en.wikipedia.org/wiki/Linear_combination#:~:text=From%20Wikipedia%2C%20the%20free%20encyclopedia,a%20and%20b%20are%20constants) of each dimension. And we are going to ask to SINDy to give us the simplest function that shows the same Input-Output behaviour the Neural Network just learned.
+md"So, as you can see above, we just created a Function Space of 29 dimensions. That space include every possible [linear combination](https://en.wikipedia.org/wiki/Linear_combination#:~:text=From%20Wikipedia%2C%20the%20free%20encyclopedia,a%20and%20b%20are%20constants) of each dimension. And we are going to ask to SINDy to give us the simplest function that shows the same Input-Output behaviour the Neural Network just learned.
 
 Without saying more, let's do it!"
 
@@ -363,7 +363,7 @@ $\frac{dPrey}{dt} = Prey*(1.3 - 0.9*Pred - players_{prey})$
 
 $\frac{dPred}{dt} = Pred*(0.8*Prey - 1.8 - players_{pred})$
 
-And that we also define that $players_{prey} = players_{pred} = 0.4$, the recover parameter from de NN **should** $-0.4$. Does it makes sense?
+And that we also define that $players_{prey} = players_{pred} = 0.4$, the recover parameter from de NN should $-0.4$. Does it makes sense?
 
 Lets ask for the parameters then:
 """
@@ -390,7 +390,7 @@ end
 parameters(Ψf)
 
 # ╔═╡ fe88958e-54e5-11eb-12bc-01ad625d85c5
-md"So we recover the equations and its parameters with an outstanding acurracy. And that is even more incredible if we remember that we did this with a **minimum** of data."
+md"So we recover the equations and its parameters with an outstanding acurracy. And that is even more incredible if we remember that we did this with a minimum of data."
 
 # ╔═╡ e6ec4364-54eb-11eb-1bf6-83db426cd32f
 md"After seeing that, Garriot took a big deep breath. He immediately understood what was going on. The players were mass killing the animals. He called his team and start planning the strategy to face this, not knowing that already was a lost cause...  "
