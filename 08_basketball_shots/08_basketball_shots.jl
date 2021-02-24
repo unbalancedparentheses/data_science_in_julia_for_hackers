@@ -28,8 +28,8 @@ end;
 
 # ╔═╡ edeabd04-204e-11eb-1c63-118f10ca070a
 begin
-using Images
-img = load("./images/basket_court.png")
+	using Images
+	img = load("./images/basket_court.png")
 end
 
 # ╔═╡ 66aee544-2072-11eb-2a78-37d0f33e66e6
@@ -48,21 +48,26 @@ md" When playing basketball we can ask ourself: how likely is it to score given 
 first(shots)
 
 # ╔═╡ e915d9bc-204e-11eb-0f8c-d52fc2084322
-md"*But how we interpret the data?*
+md"
+But how do we interpret the data?
 
-In the sketch below we show the drawing of a basketball court, its dimensions and how to interpret the data in the table."
+Below we show a sketch of a basketball court, its dimensions and how to interpret the data in the table."
 
 # ╔═╡ f2c2b5b6-204e-11eb-2fec-21e285391c03
-md"So, the *x* and *y* axis have their origin at the hoop, and we compute the distance from this point to where the shot was made. Also, we compute the angle with respect to the *x* axis, showed as θ in the sketch. In the data we have the period, which can take values from 1 to 4, meaning the period in which the shot was made."
+md"
+So, the *x* and *y* axis have their origin at the hoop, and we compute the distance from this point to where the shot was made.
+Also, we compute the angle with respect to the *x* axis, showed as θ in the sketch. 
+In the data we have the period, which can take values from 1 to 4, meaning the period in which the shot was made.
+"
 
 # ╔═╡ f7e32184-204e-11eb-2e22-efc3d9821674
 md"We now plot where the shots where made:"
 
 # ╔═╡ f1b51206-2056-11eb-2ef9-7de142b32797
 begin
-histogram2d(shots.y[1:10000], shots.x[1:10000], bins=(50,30))
-ylabel!("y axis")
-xlabel!("x axis")
+	histogram2d(shots.y[1:10000], shots.x[1:10000], bins=(50,30))
+	ylabel!("y axis")
+	xlabel!("x axis")
 end
 
 # ╔═╡ 326336c4-2058-11eb-23bd-e5cc758bc9c2
@@ -85,16 +90,16 @@ end
 
 # ╔═╡ e0524328-2063-11eb-1f81-5535a281701f
 begin
-histogram(shots_made.y[1:10000], legend=false, nbins=40)
-xlabel!("x axis")
-ylabel!("Counts")
+	histogram(shots_made.y[1:10000], legend=false, nbins=40)
+	xlabel!("x axis")
+	ylabel!("Counts")
 end
 
 # ╔═╡ 475af57e-2064-11eb-0aa8-e3e07cf6b7c9
 begin
-histogram(shots_made.x[1:10000], legend=false, nbins=45)
-xlabel!("y axis")
-ylabel!("Counts")
+	histogram(shots_made.x[1:10000], legend=false, nbins=45)
+	xlabel!("y axis")
+	ylabel!("Counts")
 end
 
 # ╔═╡ 8190de9e-2068-11eb-03b2-25f3b9183dbe
@@ -247,14 +252,11 @@ md"The output of the sampling  tell us also some information about sampled value
 
 # ╔═╡ 4bfeeb80-2299-11eb-1c8c-55b953664f5a
 # Sample using HMC.
-chain = mapreduce(c -> sample(logistic_regression(shots.distance[1:n] ./ maximum(shots.distance[1:n] ), shots.angle[1:n], shots.result[1:n], n), HMC(0.05, 10), 1500),
+chain = mapreduce(c -> sample(logistic_regression(shots.distance[1:n] ./ maximum(shots.distance[1:n] ), shots.angle[1:n], shots.result[1:n], n), NUTS(), 1500),
     chainscat,
     1:3
-)
+);
 
-
-# ╔═╡ c55e5af0-76b4-11eb-0c0b-ad1f6ad8eade
-chain.logevidence
 
 # ╔═╡ 1dba6ec6-2371-11eb-0ebf-c94f7620bab7
 md"#### Traceplot
@@ -395,20 +397,8 @@ end
 chain_exp = mapreduce(c -> sample(logistic_regression_exp(shots.distance[1:n] ./ maximum(shots.distance[1:n] ), shots.angle[1:n], shots.result[1:n], n), HMC(0.05, 10), 1500),
     chainscat,
     1:3
-)
+);
 
-
-# ╔═╡ 12ab3ff6-76b7-11eb-1cdf-ff3949259215
-sample(logistic_regression_exp(shots.distance[1:n] ./ maximum(shots.distance[1:n] ), shots.angle[1:n], shots.result[1:n], n), HMC(0.05, 10), 1500)
-
-# ╔═╡ 46350780-76b7-11eb-20c6-9785f803200c
-cc = shots.distance[1:n] ./ maximum(shots.distance[1:n])
-
-# ╔═╡ db475ca6-76b7-11eb-2b99-2ff395318953
-sample(logistic_regression_exp(cc, shots.angle[1:n], collect(shots.result[1:n]), n), HMC(0.05, 10), 1500)
-
-# ╔═╡ 0c5bc566-76b8-11eb-353b-1b81f6a9bf3a
-shots.angle
 
 # ╔═╡ 8bec6010-2429-11eb-30a1-29cee0e4df0f
 md"Plotting the traceplot we see again that the variable angle has little importance since the parameter *c*, that can be related to the importance of the *angle* variable for the probability of scoring, is centered at 0."
@@ -501,7 +491,7 @@ n_ = 500
 chain_period1 = mapreduce(c -> sample(logistic_regression_period(shots_period1.distance[1:n_] ./ maximum(shots_period1.distance[1:n_] ),shots_period1.result[1:n_], n_), HMC(0.05, 10), 1500),
     chainscat,
     1:3
-)
+);
 
 # ╔═╡ 623fa138-2365-11eb-1470-d7739f7d80e8
 shots_period2= filter(x->x.period==2, shots);
@@ -570,7 +560,7 @@ md"Finally, we see that for the periods 1 and 4, the first and the last periods,
 # ╠═8e40725c-235c-11eb-1401-0f6312dbc5ad
 # ╟─e915d9bc-204e-11eb-0f8c-d52fc2084322
 # ╠═edeabd04-204e-11eb-1c63-118f10ca070a
-# ╟─f2c2b5b6-204e-11eb-2fec-21e285391c03
+# ╠═f2c2b5b6-204e-11eb-2fec-21e285391c03
 # ╟─f7e32184-204e-11eb-2e22-efc3d9821674
 # ╠═f1b51206-2056-11eb-2ef9-7de142b32797
 # ╟─326336c4-2058-11eb-23bd-e5cc758bc9c2
@@ -604,7 +594,6 @@ md"Finally, we see that for the periods 1 and 4, the first and the last periods,
 # ╠═44276f54-2299-11eb-2dd1-f96d8a232987
 # ╟─c971fae4-2396-11eb-1070-e7fa7f4f6cc4
 # ╠═4bfeeb80-2299-11eb-1c8c-55b953664f5a
-# ╠═c55e5af0-76b4-11eb-0c0b-ad1f6ad8eade
 # ╟─1dba6ec6-2371-11eb-0ebf-c94f7620bab7
 # ╠═240d2902-2069-11eb-0a57-878337b4c980
 # ╟─8bd6e516-22a1-11eb-0082-95cf09350dbd
@@ -626,10 +615,6 @@ md"Finally, we see that for the periods 1 and 4, the first and the last periods,
 # ╟─3091f30c-2428-11eb-1489-edcc26610813
 # ╠═3b9e03bc-22b6-11eb-2ae5-23eefb618fc7
 # ╠═db4c533a-22b6-11eb-2afa-47c5379ff7a3
-# ╠═12ab3ff6-76b7-11eb-1cdf-ff3949259215
-# ╠═46350780-76b7-11eb-20c6-9785f803200c
-# ╠═db475ca6-76b7-11eb-2b99-2ff395318953
-# ╠═0c5bc566-76b8-11eb-353b-1b81f6a9bf3a
 # ╟─8bec6010-2429-11eb-30a1-29cee0e4df0f
 # ╟─21cb52b8-22b7-11eb-221e-4d614103652d
 # ╟─307dbd5a-22b7-11eb-3ed6-9bb6fe3066e3
