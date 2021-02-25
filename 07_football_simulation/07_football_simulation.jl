@@ -91,7 +91,7 @@ end
 matches_df
 
 # ╔═╡ 7f0c72d4-1f9e-11eb-06f1-cb587d7e5436
-teams = unique(collect(matches_df[1]))
+teams = unique(collect(matches_df[:,1]))
 
 # ╔═╡ 868e5c8c-1ed3-11eb-291c-fb26d512c103
 md"""So, we have the data of the 380 matches that were played in the Premier League 2017/2018 and our challenge is to be able to analyze the characteristics of these teams. 
@@ -100,7 +100,7 @@ A priori it may seem that we are missing data, that with the data we have we can
 
 #### Creating our stories
 
-Okay, let's see what information we have from our data: 
+Let's see what information we have from our data: 
 On one hand we have specified the names of each team and which one is local. On the other hand, we have the number of goals scored.
 
 A possible approach to this data is to realize that the goals scored by each team can be modeled with a poisson distribution. 
@@ -140,7 +140,7 @@ md"""This leaves one attack and one defense parameter for each team, and a globa
 
 #### Letting the information flow 
 
-Okay, we are already getting much closer to the initial goal we set. As a last step, we must be able to make the information flow between the two independent poissons that we proposed to model the score of each of the two teams that are playing. We need to do that precisely because we have proposed that the poissons are independent, but we need that when making the inference of the parameters the model can access the information from both scores so it can catch the correlation between them. In other words, we have to find a way to interconnect our model.
+We are already getting much closer to the initial goal we set. As a last step, we must be able to make the information flow between the two independent poissons that we proposed to model the score of each of the two teams that are playing. We need to do that precisely because we have proposed that the poissons are independent, but we need that when making the inference of the parameters the model can access the information from both scores so it can catch the correlation between them. In other words, we have to find a way to interconnect our model.
 
 And that is exactly what hierarchical Bayesian models allow us to do. How? By letting us choose probability distributions for the parameters that represent the characteristics of both equipment. With the addition that these parameters will share the same prior distributions. Let's see how:
 
@@ -234,7 +234,7 @@ So let´s run it and see if all of this effort was worth it:
 """
 
 # ╔═╡ f3f4bfba-203f-11eb-142c-a187112744d2
-model = football_matches(matches_df[1], matches_df[2], matches_df[3], matches_df[4], teams)
+model = football_matches(matches_df[:,1], matches_df[:,2], matches_df[:,3], matches_df[:,4], teams)
 
 # ╔═╡ 2ce4435c-2040-11eb-1670-e39ad4cc690c
 posterior = sample(model, NUTS(),3000);
@@ -273,7 +273,8 @@ end;
 
 # ╔═╡ 4ae7d968-206f-11eb-1925-c5b5a31e6940
 begin
-using Plots
+	using Plots
+	gr()
 histogram(post_home, legend=false, title="Posterior distribution of home parameter")
 end
 
@@ -333,7 +334,7 @@ end
 mean(teams_att[11])
 
 # ╔═╡ 6924f372-2059-11eb-2b98-6f4b65b777f4
-md"Okay, when comparing the league champion against a mid-table team, we can clearly see the superiority in attack. For now, it seems that the inference comes in handy. 
+md"When comparing the league champion against a mid-table team, we can clearly see the superiority in attack. For now, it seems that the inference comes in handy. 
 
 Let's try now to have an overview of the attacking powers of each team. To do this, just take the average of each and plot it next to the standard deviation 
 "
@@ -373,7 +374,9 @@ sorted_names = abbr_names[sorted_att]
 # ╔═╡ abace764-2062-11eb-2949-fd9e86b50f17
 begin
 	scatter(1:20, teams_att_μ[sorted_att], grid=false, legend=false, yerror=teams_att_σ[sorted_att], color=:blue, title="Premier league 17/18 teams attack power")
-	annotate!(collect(1:20), teams_att_μ[sorted_att] .+ 0.238, text.(sorted_names, :black, :center, 8))
+	#annotate!(collect(1:20), teams_att_μ[sorted_att] .+ 0.238, text.(sorted_names, :black, :center, 8))
+	annotate!([(x, y + 0.238, text(team, 8, :center, :black)) for (x, y, team) in zip(1:20, teams_att_μ[sorted_att], sorted_names)])
+
 	ylabel!("Mean team attack")
 end
 
@@ -391,7 +394,7 @@ end
 # ╔═╡ 539e68b4-2066-11eb-09c2-b337241c36bc
 begin
 	scatter(1:20, teams_def_μ[sorted_def], grid=false, legend=false, yerror=teams_def_σ[sorted_def], color=:blue, title="Premier league 17/18 teams defence power")
-	annotate!(collect(1:20), teams_def_μ[sorted_def] .+ 0.2, text.(sorted_names_def, :black, :center, 8))
+	annotate!([(x, y + 0.2, text(team, 8, :center, :black)) for (x, y, team) in zip(1:20, teams_def_μ[sorted_def], sorted_names_def)])
 	ylabel!("Mean team defence")
 end
 
@@ -417,12 +420,15 @@ end
 
 # ╔═╡ ee45d48e-206a-11eb-0edf-2b8b893bb583
 begin
-scatter(teams_att_μ, teams_def_μ, legend=false)
-annotate!(teams_att_μ, teams_def_μ.+ 0.016, text.(abbr_names, :black, :center, 6))
-annotate!(teams_att_μ, teams_def_μ.- 0.016, text.(position, :left, :center, 5))
+	scatter(teams_att_μ, teams_def_μ, legend=false)
+#	annotate!(teams_att_μ, teams_def_μ.+ 0.016, text.(abbr_names, :black, :center, 6))
+	annotate!([(x, y + 0.016, text(team, 6, :center, :black)) for (x, y, team) in zip(teams_att_μ, teams_def_μ, abbr_names)])
 
-xlabel!("Mean team attack")
-ylabel!("Mean team defence")
+	#annotate!(teams_att_μ, teams_def_μ.- 0.016, text.(position, :left, :center, 5))
+	annotate!([(x, y - 0.016, text(team, 5, :center, :black)) for (x, y, team) in zip(teams_att_μ, teams_def_μ, position)])
+
+	xlabel!("Mean team attack")
+	ylabel!("Mean team defence")
 end
 
 # ╔═╡ c794f45e-206b-11eb-33c4-05bc429ba846
@@ -436,7 +442,7 @@ Well, we went from having a problem that seemed almost impossible to have a soli
 
 So we close our laptop and go with all this analysis to the sport bookmarker and start explain it to them. They are fascinated with it as now they have lot more precious information about each team, in order to make data grounded bets. Its a total victory!
 
-We are about to go when suddenly, one guy that have been quiet the hole time, say "in two weeks is the **2017–18 UEFA Champions League´s** quarter-final and Manchester City plays against the Liverpool, two teams that be have already analize! Can any analysis be done to see the possible results and their probabilities?" 
+We are about to go when suddenly, one guy that have been quiet the hole time, say "in two weeks is the 2017–18 UEFA Champions League´s quarter-final and Manchester City plays against the Liverpool, two teams that be have already analize! Can any analysis be done to see the possible results and their probabilities?" 
 
 We think for a moment: "Yes, we have each teams strengths and weaknesses and they are also from the same league, so the home parameter would be the same"... Okey, we said, lets give it a try!
 
@@ -564,7 +570,7 @@ liv_as_home_simulations = simulate_matches(mci_att_post, mci_def_post,
 										   liv_att_post, liv_def_post,                                                            post_home, 1000)
 
 # ╔═╡ 801ed646-59b2-11eb-23d0-03607ec04dc9
-md"Looking those matrices could be not as enlightening as we wanted to. A good way to fix this is graphing them with a *heatmap*"
+md"Looking those matrices could be not as enlightening as we wanted to. A good way to fix this is graphing them with a heatmap"
 
 # ╔═╡ df9ac5a8-59b2-11eb-3e09-21c5ca6d68d3
 function match_heatmaps(matrix_t1_as_home, matrix_t2_as_home,
@@ -657,7 +663,7 @@ As data scientist that we are, our labor is to came up with possible solutions t
 
 The logic of a cup tournament is different than the league. In the first one, if you lose, you have to return to your house and the other advances to the next round. And in the league, you have to be consistent to the hole year. Maybe a draw is good for you, as your goal is to make the most difference in points. So try to extrapolate the model to other tournament maybe questionable. 
 
-Other thing is that we suppose that the two matches were independent, when the second one is *conditioned* to the first! As the Liverpool won the first match, the Manchester had to played to the second game with the aim of making at least 3 goals while Liverpool were only focus in the defence.
+Other thing is that we suppose that the two matches were independent, when the second one is conditioned to the first! As the Liverpool won the first match, the Manchester had to played to the second game with the aim of making at least 3 goals while Liverpool were only focus in the defence.
 
 
 Anyway, we just learned that modeling is not a easy task. But the way to get better is proposing them, testing them and learning from them. In other words, the only way to learn is doing them (as any other skill in life). So, relax, model and have fun :)
