@@ -374,7 +374,6 @@ sorted_names = abbr_names[sorted_att]
 # ╔═╡ abace764-2062-11eb-2949-fd9e86b50f17
 begin
 	scatter(1:20, teams_att_μ[sorted_att], grid=false, legend=false, yerror=teams_att_σ[sorted_att], color=:blue, title="Premier league 17/18 teams attack power")
-	#annotate!(collect(1:20), teams_att_μ[sorted_att] .+ 0.238, text.(sorted_names, :black, :center, 8))
 	annotate!([(x, y + 0.238, text(team, 8, :center, :black)) for (x, y, team) in zip(1:20, teams_att_μ[sorted_att], sorted_names)])
 
 	ylabel!("Mean team attack")
@@ -421,10 +420,8 @@ end
 # ╔═╡ ee45d48e-206a-11eb-0edf-2b8b893bb583
 begin
 	scatter(teams_att_μ, teams_def_μ, legend=false)
-#	annotate!(teams_att_μ, teams_def_μ.+ 0.016, text.(abbr_names, :black, :center, 6))
 	annotate!([(x, y + 0.016, text(team, 6, :center, :black)) for (x, y, team) in zip(teams_att_μ, teams_def_μ, abbr_names)])
-
-	#annotate!(teams_att_μ, teams_def_μ.- 0.016, text.(position, :left, :center, 5))
+	
 	annotate!([(x, y - 0.016, text(team, 5, :center, :black)) for (x, y, team) in zip(teams_att_μ, teams_def_μ, position)])
 
 	xlabel!("Mean team attack")
