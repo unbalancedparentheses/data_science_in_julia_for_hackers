@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.17
+# v0.12.20
 
 using Markdown
 using InteractiveUtils
@@ -65,7 +65,7 @@ $y_{T+1|T}^- =0 * y_1 + 0 * y_2  + ... + 1 * y_T = y_T$
 
 But like many things in life, the optimal solution is usually somewhere in between the extremes. 
 
-Okay then, a better solution would be one that allows us to take into account all the values of the series, but that the importance we are going to assign to it will decrease as we move away from older values. But how do we do this?
+So, a better solution would be one that allows us to take into account all the values of the series, but that the importance we are going to assign to it will decrease as we move away from older values. But how do we do this?
 
 ## Exponential Smoothing
 
@@ -232,7 +232,7 @@ end
 # ╔═╡ 4ea1c9a2-365d-11eb-129f-c302bb22fbe5
 md"This is a very cool graphic to look at. It illustrates very clearly how small alphas look mostly like an **average** of the time series values and, as it starts to get closer to 1, it looks more like taking the last value in the series as a future prediction. As we said at the beginning of the chapter, this method allows us to find intermediate points between the two extremes.
 
-Well, okey. It's very nice to see how the graphs change as the alpha does... but how do we find the best alpha and l0 so that the fit is the best?
+It's very nice to see how the graphs change as the alpha does... but how do we find the best alpha and l0 so that the fit is the best?
 
 #### Loss functions
 
@@ -318,7 +318,7 @@ md"""To use this function more efficiently it is necessary to define a range for
 
 Also, one trick to keep in mind is that this package accepts "univariate" functions, that is, the function you enter only has to have one parameter to optimize. This is not entirely true since, although only one parameter has to be passed, it can be a vector, so that several parameters can be optimized. This is why we define a wrapper function **SES\_loss\_** that facilitates the calculation. 
 
-Okey then! With everything ready, let's look for the values of alpha and lo that minimize our error function:
+With everything ready, let's look for the values of alpha and lo that minimize our error function:
 """
 
 # ╔═╡ c77faf84-3a37-11eb-0946-3101879ffb51

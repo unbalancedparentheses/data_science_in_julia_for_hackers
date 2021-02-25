@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.18
+# v0.12.20
 
 using Markdown
 using InteractiveUtils
@@ -59,7 +59,7 @@ $F = m*\frac{d^2Position}{dt^2}$
 
 This transformation is just showing something that everyone already knows: Acceleration is the change of Velocity over time, and Velocity is the change of position over time. And that implies that Acceleration is the *second* derivative (change) on position over time.
 
-So, Okey. We just learned that the language of differential equations is fundamental for doing science. So, if we want the computer to learn equations that explain scientific events, it must need to know how to deal with this type of equations. And this is easily solved by the Scientific Machine Learning ([SciML](https://sciml.ai/)) ecosystem.
+We just learned that the language of differential equations is fundamental for doing science. So, if we want the computer to learn equations that explain scientific events, it must need to know how to deal with this type of equations. And this is easily solved by the Scientific Machine Learning ([SciML](https://sciml.ai/)) ecosystem.
 
 ## Scientific Machine Learning for model discovery
 
@@ -134,7 +134,7 @@ And finally we arrive at the day when the madness begins.
 
 Garriot wakes up early, doesn´t have any breakfast and goes to meet his team. Everything is ready. The countdown start: 3, 2, 1... And the game is online, running.
 
-After the champagne, hugs and a little celebration Garriot return to the work and start to analize the metrics to see if everything is okey, and it does. He relax a little bit until something calls his attention: The curves of carnivorous and herbivorous animals are a little different than they should be. There are still **too few points** (only four hours from the release) to be alarmed, but he decide to do a deeper analysis. Luckily, a few days ago, he had read a paper on the Universal ODEs, so he thinks they can help him in this case.
+After the champagne, hugs and a little celebration Garriot returns to work and starts to analyze the metrics to see if everything is alright, and it does. He relax a little bit until something calls his attention: The curves of carnivorous and herbivorous animals are a little different than they should be. There are still **too few points** (only four hours from the release) to be alarmed, but he decides to do a deeper analysis. Luckily, a few days ago, he had read a paper on the Universal ODEs, so he thinks they can help him in this case.
 """
 
 # ╔═╡ 3bb32294-5423-11eb-1c75-27dc2f242255
