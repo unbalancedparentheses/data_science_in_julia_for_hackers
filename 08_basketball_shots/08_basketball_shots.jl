@@ -560,7 +560,7 @@ md"Finally, we see that for the periods 1 and 4, the first and the last periods,
 # ╠═8e40725c-235c-11eb-1401-0f6312dbc5ad
 # ╟─e915d9bc-204e-11eb-0f8c-d52fc2084322
 # ╠═edeabd04-204e-11eb-1c63-118f10ca070a
-# ╠═f2c2b5b6-204e-11eb-2fec-21e285391c03
+# ╟─f2c2b5b6-204e-11eb-2fec-21e285391c03
 # ╟─f7e32184-204e-11eb-2e22-efc3d9821674
 # ╠═f1b51206-2056-11eb-2ef9-7de142b32797
 # ╟─326336c4-2058-11eb-23bd-e5cc758bc9c2
