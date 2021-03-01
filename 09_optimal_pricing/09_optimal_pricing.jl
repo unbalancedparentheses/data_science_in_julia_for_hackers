@@ -477,6 +477,10 @@ md"""So, for every dollar we "lost" in average profitability, we gained more tha
 Regardless of each person decision, the important thing about the Bayesian framework is that it allows us to include uncertainty in our models and use it to our advantage to make more informed and intelligent decisions. 
 
 Instead of wanting to forget and get rid of uncertainty, Bayesianism allows us to accept that this is an inherent feature of reality and to take advantage of it. Being able to narrow down how sure we are about the inferences we make gives us an invaluable advantage when making decisions.
+
+### Summary
+
+In this chapter we have learned some basics concepts of economics such as the price elasticity of demand for a product, or the Pareto distribution of income and wealth. Then, we estimated the demand curve of a possible new product, performing a pilot test to see the relationship between price and quantity demanded. Thanks to Bayesian inference we were able to use the uncertainty we had to our advantage, quantifying the trade-off between expected return and the variability of it, making possible to perform a well informed decision.
 """
 
 # ╔═╡ 03117e4c-5b65-11eb-2973-6f2eaf3d9199
