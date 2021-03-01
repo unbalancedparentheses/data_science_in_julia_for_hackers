@@ -333,6 +333,10 @@ But like every difficult moment, this one also left great lessons. From that mom
 This was the beginning of a very Bayesian way of thinking, in which we start with a priori hypotheses that are tested with reality to modify the old beliefs, and gain a deeper understanding of what is really happening. 
 
 It makes sense, doesn't it? After all, getting comfortable with our beliefs never is a very good option, and going out into the world to learn new things seem like a more interesting one.
+
+### Summary
+
+In this chapter we have learned about the usefulness of differential equations for modeling complex relationships occurring in nature, specifically the Lotka-Volterra model. We used Turing and some SciML libraries to estimate the model parameters given some data points of two species, hunter and prey, interacting with each other. Finally, we build an intuition of how the system is modified by varying the value of certain parameters.
 "
 
 # ╔═╡ a71c7d44-35a8-11eb-1bb5-858fa2666109
