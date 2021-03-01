@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.20
+# v0.12.21
 
 using Markdown
 using InteractiveUtils
@@ -71,12 +71,13 @@ As a first approach, science is a method that was conceived to help humans defin
 And note that we said "method", because this is all it really is: a methodology which ensures that we are as objective and data-driven as possible.
 
 It is common to think that one does this by observation. 
-We observe all around us, and we look for theories to best explain the mass of facts. But this idea did not convince [Sir Karl Popper](https://en.wikipedia.org/wiki/Karl_Popper) (1902-1994), the scientific philosopher, who began to think more deeply about the key issues dividing scientific theories from non-scientific ones. 
-The problem, as Popper saw it, is that some bodies of knowledge more properly named pseudosciences would be considered scientific if the “Observe & Deduce” operating definition were left alone. 
+We observe all around us, and we look for theories to best explain the mass of facts. 
+But if we think about it for a moment, this way of defining scientific theories as conjectures (or models) that can make predictions, is not enough on its own. 
+The problem is that some bodies of knowledge more properly named pseudosciences would be considered scientific if the “Observe & Deduce” operating definition were left alone. 
 
-What Popper brilliantly discovered is that what makes a theory truly scientific is not its ability to generate predictions or the number of cases positively confirming it, but its possibility to be falsified. 
-Moreover, in his own words "Every ‘good’ scientific theory is a prohibition: it forbids certain things to happen. 
-The more a theory forbids, the better it is" and he said that because if the theory is forbidding something to happend, you can desing an experiment and try to make that happen. 
+A much more correct and general way to define what makes a theory truly scientific is not its ability to generate predictions or the number of cases positively confirming it, but its possibility to be falsified. 
+And in this way, every ‘good’ scientific theory is a prohibition: it forbids certain things to happen. 
+The more a theory forbids, the better it is. And this is because, if the theory is forbidding something to happend, you can desing an experiment and try to make that happen. 
 From true scientific theories is easy to make the following statement "If x happens, it would show demonstrably that theory y is not true". 
 It’s the opposite of looking for verification; you must try to show the theory is incorrect, and if you fail to do so, thereby strengthen it.
 
