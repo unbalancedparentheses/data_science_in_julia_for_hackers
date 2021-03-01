@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.20
+# v0.12.21
 
 using Markdown
 using InteractiveUtils
@@ -393,7 +393,11 @@ parameters(Ψf)
 md"So we recover the equations and its parameters with an outstanding acurracy. And that is even more incredible if we remember that we did this with a **minimum** of data."
 
 # ╔═╡ e6ec4364-54eb-11eb-1bf6-83db426cd32f
-md"After seeing that, Garriot took a big deep breath. He immediately understood what was going on. The players were mass killing the animals. He called his team and start planning the strategy to face this, not knowing that already was a lost cause...  "
+md"""After seeing that, Garriot took a big deep breath. He immediately understood what was going on. The players were mass killing the animals. He called his team and start planning the strategy to face this, not knowing that already was a lost cause...  
+
+### Summary
+
+In this chapter we continue to deepen our understanding of systems of differential equations and their complex behavior. We went a step further, introducing the concept of "Universal Differential Equations" which allow us, given a very small amount of data, to estimate some unknow term of the system. This opens a very big door, connecting machine learning and science, which can greatly enhance the production of knowledge."""
 
 # ╔═╡ aac56d4e-54e7-11eb-2d8a-1f21c386ef8d
 md"""### References
