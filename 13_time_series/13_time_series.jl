@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.20
+# v0.12.21
 
 using Markdown
 using InteractiveUtils
@@ -795,7 +795,14 @@ md"Well, good! We started this chapter not knowing how to tackle time series for
 
 As a final summary, when dealing with a time series it is very important to be able to define if it has any latent variables such as trend or seasonality. Once we can find that underlying information, we will be able to generate forecasts with confidence. We just need to look deeper.
 
-### Bibliography
+### Summary
+
+In this chapter we have learned the basic foundations of time series analysis. 
+We have defined what a time serie is and delve into a particular method: The Exponential Smoothing. 
+After building up an intuition of how the simple exponential smoothing works, we continued to introduce more complex versions of the method as the various problems we set ourselves required it. 
+The simple, trended and seasonality methods were presented and coded, generating in that way a much greater understanding of how they work.
+
+### References
 
 - [Forecasting: Principles and Practice, Chap 7](https://otexts.com/fpp2/expsmooth.html)
 
