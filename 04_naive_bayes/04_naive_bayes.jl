@@ -91,7 +91,7 @@ begin
 	prepare!(all_words_text, strip_articles)
 	prepare!(all_words_text, strip_pronouns)
 	vocabulary = filter(x -> x != "", split(TextAnalysis.text(all_words_text)))
-	clean_words_df = raw_df[vocabulary]
+	clean_words_df = raw_df[!, vocabulary]
 	# the columns of this matrix will be each mail now
 	data_matrix = Matrix(clean_words_df)'
 end;
