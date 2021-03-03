@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.20
+# v0.12.21
 
 using Markdown
 using InteractiveUtils
@@ -28,22 +28,22 @@ end
 begin
 	using CSV
 	using DataFrames
-	rain_data = CSV.read("/Users/lambda/Desktop/Julia/Libro/bayes_book/prob_intro/data/historico_precipitaciones.csv", DataFrame)
+	rain_data = CSV.read("data/historico_precipitaciones.csv", DataFrame)
 	colnames = ["Year", "Month", "mm", "Days"]
-	names!(rain_data, Symbol.(colnames))
+	rename!(rain_data, Symbol.(colnames))
 	
-	for i in 1:length(rain_data[:Month])
-		if rain_data[:Month][i] == "Enero" rain_data[:Month][i] = "January"
-		elseif rain_data[:Month][i] == "Febrero" rain_data[:Month][i] = "February"
-		elseif rain_data[:Month][i] == "Marzo" rain_data[:Month][i] = "March"
-		elseif rain_data[:Month][i] == "Abril" rain_data[:Month][i] = "April"
-		elseif rain_data[:Month][i] == "Mayo" rain_data[:Month][i] = "May"
-		elseif rain_data[:Month][i] == "Junio" rain_data[:Month][i] = "June" 
-		elseif rain_data[:Month][i] == "Julio" rain_data[:Month][i] = "July"  				elseif rain_data[:Month][i] == "Agosto" rain_data[:Month][i] = "August" 
-		elseif rain_data[:Month][i] == "Septiembre" rain_data[:Month][i] = "September" 
-		elseif rain_data[:Month][i] == "Octubre" rain_data[:Month][i] = "October"
-		elseif rain_data[:Month][i] == "Noviembre" rain_data[:Month][i] = "November"
-		elseif rain_data[:Month][i] == "Diciembre" rain_data[:Month][i] = "December"
+	for i in 1:length(rain_data[:,:Month])
+		if rain_data[i,:Month] == "Enero" rain_data[i,:Month] = "January"
+		elseif rain_data[i,:Month]== "Febrero" rain_data[i,:Month] = "February"
+		elseif rain_data[i,:Month] == "Marzo" rain_data[i,:Month] = "March"
+		elseif rain_data[i,:Month] == "Abril" rain_data[i,:Month] = "April"
+		elseif rain_data[i,:Month] == "Mayo" rain_data[i,:Month] = "May"
+		elseif rain_data[i,:Month] == "Junio" rain_data[i,:Month] = "June" 
+		elseif rain_data[i,:Month] == "Julio" rain_data[i,:Month] = "July"  				elseif rain_data[i,:Month]== "Agosto" rain_data[i,:Month] = "August" 
+		elseif rain_data[i,:Month] == "Septiembre" rain_data[i,:Month] = "September" 
+		elseif rain_data[i,:Month] == "Octubre" rain_data[i,:Month] = "October"
+		elseif rain_data[i,:Month] == "Noviembre" rain_data[i,:Month] = "November"
+		elseif rain_data[i,:Month] == "Diciembre" rain_data[i,:Month] = "December"
 		end
 	end
 end;
@@ -210,7 +210,7 @@ Now plotting the histogram for the column of rainfall in mm we have the figure s
 
 # ╔═╡ 14317216-1251-11eb-1912-ef5685acd473
 begin
-	histogram(rain_data["mm"], bins=20, legend=false, size=(450, 300))
+	histogram(rain_data[:,"mm"], bins=20, legend=false, size=(450, 300))
 	title!("Monthly rainfall in Buenos Aires")
 	xlabel!("Rainfall (mm)")
 	ylabel!("Frequency")
@@ -224,7 +224,7 @@ So, we normalize the histogram obtaining:"
 
 # ╔═╡ 178f5f72-12e7-11eb-2282-c19f2b58ae58
 begin
-	histogram(rain_data["mm"], bins=20, legend=false, normalize=true, size=(450, 300))
+	histogram(rain_data[:,"mm"], bins=20, legend=false, normalize=true, size=(450, 300))
 	title!("Monthly rainfall in Buenos Aires")
 	xlabel!("Rainfall [mm]")
 	ylabel!("Frequency")
@@ -397,6 +397,14 @@ md"
 Considering that we have only tried 100 times, the probabilities have been estimated pretty well! Each distribution assigns a high-enough probability to the true value of the bandit probabilities and it's surroundings. Another strategies rather than the Thompson sampling can be tested to see how well they perform, this was just a simple example to apply Bayesian probability.
 "
 
+# ╔═╡ 49b84f96-7c2f-11eb-3bf8-bde596991317
+md"
+### Summary
+In this chapter we start showing the basics concepts of statistics.
+Then we see how we can approach problems in a Bayesian way. How our first beliefs on a hypothesis can be updated with the income of new data and the most common probability distribution plots, that is the way bayesians represent probability.
+At last, we solve the multi-armed bandit problem thinking in a Bayesian way.
+"
+
 # ╔═╡ 32df0e98-35a2-11eb-1121-5f731785abbb
 md"
 ### References
@@ -432,7 +440,7 @@ md"
 # ╟─be8cb9ee-1483-11eb-1637-f3770319f3ed
 # ╠═14317216-1251-11eb-1912-ef5685acd473
 # ╟─c770092e-12e6-11eb-0711-0196e27d573e
-# ╟─178f5f72-12e7-11eb-2282-c19f2b58ae58
+# ╠═178f5f72-12e7-11eb-2282-c19f2b58ae58
 # ╟─6a45327a-1254-11eb-2334-07eb5a961b02
 # ╟─cc3a3236-1949-11eb-3021-3d5a81bfa6a6
 # ╟─d1aade6e-550d-11eb-1eea-7751ef152b7a
@@ -458,4 +466,5 @@ md"
 # ╠═c822a558-54f1-11eb-162b-398bd542ded1
 # ╠═e3b582b0-54f1-11eb-3ffa-67a92240e659
 # ╟─0d541d38-59a5-11eb-3404-f13d3e5150d4
-# ╠═32df0e98-35a2-11eb-1121-5f731785abbb
+# ╟─49b84f96-7c2f-11eb-3bf8-bde596991317
+# ╟─32df0e98-35a2-11eb-1121-5f731785abbb
