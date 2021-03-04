@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.18
+# v0.12.21
 
 using Markdown
 using InteractiveUtils
@@ -235,7 +235,13 @@ plot(plots[3], plots_[3], title = ["Posterior for Uniform prior and 4 outcomes" 
 md"So in this case, incorporating our beliefs in the prior distribution we saw the model reached faster the more plausible values for *p*, needing less outcomes to reach a very similar posterior distribution. When we used an uniform prior, we were conservative, meaning that we said we didn't know anything about *p* so we assign equal probability for all values. Sometimes these kind of distribution (uniform distributions), called a non-informative prior, can be maybe too conservative, being in some cases not helpful at all. They even can slow the convergence of the model to the more plausible values for our posterior, as shown."
 
 # ╔═╡ 92a7cfaa-1a2e-11eb-06f2-f50e91cfbba0
-md" ### Bayesian Bandits "
+md" ### Summary 
+
+In this chapter we gave an introduction to Probabilistic Programming Languages exploring the classic coin flipping example in a Bayesian way.
+
+We use the Julia library Turing.jl to instantiate a model where we set the prior probability and the distribution of the outcomes of our experiment. Then we use the Markov Chain Monte Carlo algorithm for sampling and saw how our posterior distribution updates with the input of new outcomes.
+
+Finally, we experiment on how changes in our prior distributions affect the results we obtain"
 
 # ╔═╡ 95efe302-35a4-11eb-17ac-3f0ad66fb164
 md"
@@ -278,5 +284,5 @@ md"
 # ╟─e407fa56-1af7-11eb-18c2-79423a9e4135
 # ╠═efa0b506-1af7-11eb-2a9a-cb08f7f2d715
 # ╟─f719af54-1af7-11eb-05d3-ff9aef8fb6ed
-# ╠═92a7cfaa-1a2e-11eb-06f2-f50e91cfbba0
+# ╟─92a7cfaa-1a2e-11eb-06f2-f50e91cfbba0
 # ╟─95efe302-35a4-11eb-17ac-3f0ad66fb164
