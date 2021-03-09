@@ -400,9 +400,12 @@ Considering that we have only tried 100 times, the probabilities have been estim
 # ╔═╡ 49b84f96-7c2f-11eb-3bf8-bde596991317
 md"
 ### Summary
-In this chapter we start showing the basics concepts of statistics.
-Then we see how we can approach problems in a Bayesian way. How our first beliefs on a hypothesis can be updated with the income of new data and the most common probability distribution plots, that is the way bayesians represent probability.
-At last, we solve the multi-armed bandit problem thinking in a Bayesian way.
+In this chapter we introduced the basic concepts of probability. We talked about probability of independent events and also conditional probability to arrive at the Bayes' theorem.
+
+Then we addressed  the two main approaches to probability, the frequentist approach and in particular the Bayesian one where our initial beliefs can be updated with the income of new data. We also learned whats is a probability distribution giving some examples and why Bayesians use them to represent probability
+
+Finally, we saw the multi-armed bandit problem where with a limited amount of casino chips we want to estimate the best win probability of 3 slot machines. To solved it we constructed a Bayesian model using the Thompson sampling algorithm 
+
 "
 
 # ╔═╡ 32df0e98-35a2-11eb-1121-5f731785abbb
