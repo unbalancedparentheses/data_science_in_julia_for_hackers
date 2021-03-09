@@ -152,7 +152,7 @@ We can see in the plot below, showing the posterior or updated distribution of *
 # ╔═╡ 0c570210-1af6-11eb-1d5d-5f78f2a000fd
 begin
 	p_summary = chain[:p]
-	plot(p_summary, seriestype = :histogram, normed=true, legend=false, size=(400, 250), color="purple", alpha=0.7)
+	plot(p_summary, seriestype = :histogram, normed=true, legend=false, size=(500, 250), color="purple", alpha=0.7)
 	title!("Posterior distribution of p after getting tails")
 	ylabel!("Probability")
 	xlabel!("p")
@@ -239,9 +239,10 @@ md" ### Summary
 
 In this chapter we gave an introduction to Probabilistic Programming Languages exploring the classic coin flipping example in a Bayesian way.
 
-We use the Julia library Turing.jl to instantiate a model where we set the prior probability and the distribution of the outcomes of our experiment. Then we use the Markov Chain Monte Carlo algorithm for sampling and saw how our posterior distribution updates with the input of new outcomes.
+First we saw that in this kind of Bernoulli trial scenario, where the experiment has two possible outcomes 0 or 1, it is a good idea to set our likelihood  to have a binomial distribution. Later we explained the concept of sampling and why we used it to make an update on our beliefs.Then we used the Julia library Turing.jl to create a probabilistic model setting our prior probability to be an uniform distribution and the likelihood to have a binomial one. So we sampled our model with the Markov Chain Monte Carlo algorithm and saw how the posterior probability was updated every time we input a new coin flip result.
 
-Finally, we experiment on how changes in our prior distributions affect the results we obtain"
+Finally we repeated the experiment but this time we set our prior probability to have a beta distribution centered around 0.5, and saw how this affected the results of the model.
+"
 
 # ╔═╡ 95efe302-35a4-11eb-17ac-3f0ad66fb164
 md"
