@@ -798,7 +798,7 @@ As a final summary, when dealing with a time series it is very important to be a
 ### Summary
 
 In this chapter we have learned the basic foundations of time series analysis. 
-We have defined what a time serie is and delve into a particular method: The Exponential Smoothing. 
+We have defined what a time series is and delve into a particular method: The exponential smoothing. 
 After building up an intuition of how the simple exponential smoothing works, we continued to introduce more complex versions of the method as the various problems we set ourselves required it. 
 The simple, trended and seasonality methods were presented and coded, generating in that way a much greater understanding of how they work.
 
