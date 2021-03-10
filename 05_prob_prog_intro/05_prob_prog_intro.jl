@@ -237,11 +237,15 @@ md"So in this case, incorporating our beliefs in the prior distribution we saw t
 # ╔═╡ 92a7cfaa-1a2e-11eb-06f2-f50e91cfbba0
 md" ### Summary 
 
-In this chapter we gave an introduction to Probabilistic Programming Languages exploring the classic coin flipping example in a Bayesian way.
+In this chapter we gave an introduction to probabilistic programming languages exploring the classic coin flipping example in a Bayesian way.
+ 
+First we saw that in this kind of Bernoulli trial scenario, where the experiment has two possible outcomes 0 or 1, it is a good idea to set our likelihood to have a binomial distribution.
+Later we explained the concept of sampling and why we used it to make an update on our beliefs.
+Then we used the Julia library Turing.jl to create a probabilistic model setting our prior probability to be a uniform distribution and the likelihood to have a binomial one. 
+So we sampled our model with the Markov Chain Monte Carlo algorithm and saw how the posterior probability was updated every time we input a new coin flip result.
+ 
+Finally, we repeated the experiment but this time we set our prior probability to have a beta distribution centered around 0.5, and saw how this affected the results of the model.
 
-First we saw that in this kind of Bernoulli trial scenario, where the experiment has two possible outcomes 0 or 1, it is a good idea to set our likelihood  to have a binomial distribution. Later we explained the concept of sampling and why we used it to make an update on our beliefs.Then we used the Julia library Turing.jl to create a probabilistic model setting our prior probability to be an uniform distribution and the likelihood to have a binomial one. So we sampled our model with the Markov Chain Monte Carlo algorithm and saw how the posterior probability was updated every time we input a new coin flip result.
-
-Finally we repeated the experiment but this time we set our prior probability to have a beta distribution centered around 0.5, and saw how this affected the results of the model.
 "
 
 # ╔═╡ 95efe302-35a4-11eb-17ac-3f0ad66fb164
