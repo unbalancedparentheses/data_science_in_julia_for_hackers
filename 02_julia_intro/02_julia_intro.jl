@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.20
+# v0.12.21
 
 using Markdown
 using InteractiveUtils
@@ -117,7 +117,7 @@ You can add subscripts by using '_' and superscripts by using '^', followed by t
 julia> L\_0 # and next we press tab
 julia> L₀
 ```
-The basic number types are also supported in Julia. We can explore this with the function typeof(), which spits out the type of its argument, as it is represented in Julia. Let's see some examples,
+The basic number types are also supported in Julia. We can explore this with the function `typeof()`, which spits out the type of its argument, as it is represented in Julia. Let's see some examples,
 
 ```julia
 julia>typeof(2)
@@ -267,7 +267,7 @@ julia> [1 1 2; 4 1 0; 3 3 1]
  4  1  0
  3  3  1
 ```
-The length and shape of arrays can be obtained using the length() and size() functions respectiverly, like so
+The length and shape of arrays can be obtained using the `length()` and `size()` functions respectiverly, like so
 
 ```julia
 julia> length([1, -1, 2, 0])
@@ -365,7 +365,7 @@ julia> hcat([1, 2, 3], [4, 5, 6]) # this stacks the two arrays one next to the o
 
 With some of these basic tools to start getting your hands dirty in Julia, we can get 
 going into some other functionalities like loops and function definitions.
-We have already seen a for loop. For loops are started with a for keyword, followed by the name of the iterator and the range of iterations we want our loop to cover. Below this ```for``` statement we write what we want to be performed in each loop and we finish with an end keyword statement.
+We have already seen a for loop. For loops are started with a `for` keyword, followed by the name of the iterator and the range of iterations we want our loop to cover. Below this ```for``` statement we write what we want to be performed in each loop and we finish with an end keyword statement.
 Let's return to the example we made earlier,
 ```julia
 julia> for i in 1:100
@@ -388,7 +388,7 @@ julia> for element in arr
 2
 ```
 As you can see, the loop was done for each element of the array. It might be convenient sometimes to iterate over a collection. 
-Following with the basics, conditional statements in Julia are very similar to most languages. Essentially, a conditional statement starts with the if keyword, followed by the condition that must be evaluated to true or false, and then the body of the action to apply if the condition evaluates to true. Then, an elseif keyword can be used to ask for another condition, and an else  keyword to apply some statement when the other conditions evaluate to false. Finally, like it is usual in Julia, the conditional statement block finishes whith an end keyword. As an example, 
+Following with the basics, conditional statements in Julia are very similar to most languages. Essentially, a conditional statement starts with the `if` keyword, followed by the condition that must be evaluated to true or false, and then the body of the action to apply if the condition evaluates to true. Then, an `elseif` keyword can be used to ask for another condition, and an `else`  keyword to apply some statement when the other conditions evaluate to false. Finally, like it is usual in Julia, the conditional statement block finishes whith an `end` keyword. As an example, 
 
 ```julia
 julia> x = 3
@@ -423,7 +423,7 @@ fibonacci (generic function with 1 method)
 Here, we first made some variable assignments, variables $n1$, $n2$ and $m$ were asigned values 0, 1 and 10. Variables are assigned simply by writing the name of the 
 variable followed by an 'equal' sign, and followed finally by the value you want to
 store in that variable. There is no need to declare the data type of the value you are going to store.
-Then, we defined the function body for the fibonacci series computation. Function blocks start with the function keyword, followed by the name of the function and the 
+Then, we defined the function body for the fibonacci series computation. Function blocks start with the `function` keyword, followed by the name of the function and the 
 arguments between brackets, all separated by commas. In this function, the arguments 
 will be the first two numbers of the sequence and the total length of the fibonacci 
 sequence. 
@@ -438,7 +438,7 @@ of integers. The new part is the one between parenthesis, ```julia (undef, m)```
 just means we are initializing the array with undefined values –which will be later modifyed by us–, and that there will be a number $m$ of them. Don't worry too much if 
 you don't understand all this right now, though.
 We then proceed to assign the two first elements of the sequence and calculate the 
-rest with a for loop. Finally, an end keyword is necessary at the end of the for loop and another one to end the definition of the function.
+rest with a for loop. Finally, an `end` keyword is necessary at the end of the for loop and another one to end the definition of the function.
 Evaluating our function in the variables $n1$, $n2$ and $m$ already defined, gives us:
 
 ```julia
@@ -482,7 +482,7 @@ julia> isPositive.([-1, 1, 3, -5])
 As you can see, we had broadcasted the function isPositive() we defined, over every 
 element of an array, by adding a dot next to the end of the function name, previous to 
 the parenthesis. Is is as easy as that! Once you start using this feature, you will notice how useful it is.
-One thing concearning functions in Julia is the 'bang'(!) convention. Functions that have a name ending with an exclamation mark (or bang), are functions that change their imputs in-place. Consider the example of the pop! function from the Julia Base package. Watch closely what happens to the array over we apply the function
+One thing concearning functions in Julia is the 'bang'(!) convention. Functions that have a name ending with an exclamation mark (or bang), are functions that change their imputs in-place. Consider the example of the `pop!` function from the Julia Base package. Watch closely what happens to the array over we apply the function
 
 ```julia
 julia> arr = [1, 2, 3];
@@ -493,7 +493,7 @@ julia> arr
  1
  2
 ```
-Did you understand what happened? At first, we defined and array. Then, we applied the pop!() function, which, as the name suggests, pops the last element of the array. But notice that when we call our arr variable to see what it is storing, now the number 3 is gone. This is what functions with a bang do and what we mean with modifying in-place. Try to follow this convention whenever you define a function that will modify other objects in-place!
+Did you understand what happened? At first, we defined and array. Then, we applied the `pop!()` function, which, as the name suggests, pops the last element of the array. But notice that when we call our arr variable to see what it is storing, now the number 3 is gone. This is what functions with a bang do and what we mean with modifying in-place. Try to follow this convention whenever you define a function that will modify other objects in-place!
 
 Sometimes, you will be in a situation where you may need to use some function, bit you really aren't interested in giving it a special name and storing it. For this kind of situations, an anonymous or lambda function is what you may need. Typically anonymous functions will be used as arguments to higher-order functions. This is just a fancy name to functions that accept other functions as arguments, that is what makes them of higher-order. One of the most ubiquitous example of these type of functions is the ```map()``` function. You can think of this function as a way to broadcast any function over a collection.
 Anonymous functions are created using the arrow ```->``` syntax. At the left-hand side of the arrow, you must specify what the arguments of the function will be and their name. At the right side of the arrow, you write the recipe of the things to do with this arguments. Let's use an anonymous function to define a not-anonymous function, just to illustrate the point.
@@ -535,7 +535,7 @@ Let's make a plot of the 10 first numbers in the fibonacci sequence. For this, w
 
 # ╔═╡ f453c7b0-544e-11eb-137c-1d027edb83e6
 md"
-The only really important argument of the scatter function in the example above is sequence, the first one, which tells the function what is the data we want to plot. The other arguments are just details to make the visualization prettier. Here we have used the scatter function because we want a discrete plot for our sequence. In case we wanted a continuous one, we could have used plot(). Let's see this applied to our fibonacci sequence:
+The only really important argument of the scatter function in the example above is sequence, the first one, which tells the function what is the data we want to plot. The other arguments are just details to make the visualization prettier. Here we have used the scatter function because we want a discrete plot for our sequence. In case we wanted a continuous one, we could have used `plot()`. Let's see this applied to our fibonacci sequence:
 "
 
 # ╔═╡ 03641078-544f-11eb-1dab-37614a0bdbc7
@@ -549,7 +549,7 @@ end
 
 # ╔═╡ 11f33ecc-544f-11eb-35d5-27a280cdce1b
 md"
-In the example above, a plot is created when we call the plot() function. What the scatter!() call then does, is to modify the global state of the plot in-place. If not done this way, both plots wouldn't be sketched together.
+In the example above, a plot is created when we call the `plot()` function. What the `scatter!()` call then does, is to modify the global state of the plot in-place. If not done this way, both plots wouldn't be sketched together.
 
 ### Introducing DataFrames.jl
 When dealing with any type of data in large quantities, it is essential to have a 

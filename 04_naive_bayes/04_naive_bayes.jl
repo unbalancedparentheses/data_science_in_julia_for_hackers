@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.20
+# v0.12.21
 
 using Markdown
 using InteractiveUtils
@@ -100,7 +100,7 @@ end;
 # ╔═╡ 6397358e-2854-11eb-1cd0-35821750d743
 md"
 First, we would like to filter some words that are very common in the english language, such as articles and pronouns, and that will most likely add noise rather than information to our classification algorithm. For this we will use two Julia packages that are specially designed for working with texts of any type. These are Languages.jl and TextAnalysis.jl. 
-A good practice when dealing with models that learn from data like the one we are going to implement, is to divide our data in two: a training set and a testing set. We need to measure how good our model is performing, so we will train it with some data, and test it with some other data the model has never seen. This way we may be sure that the model is not tricking us. In Julia, the package MLDataUtils has some nice functionalities for data manipulations like this. We will use the functions splitobs to split our dataset in a train set and a test set and shuffleobs to randomize the order of our data in the split.
+A good practice when dealing with models that learn from data like the one we are going to implement, is to divide our data in two: a training set and a testing set. We need to measure how good our model is performing, so we will train it with some data, and test it with some other data the model has never seen. This way we may be sure that the model is not tricking us. In Julia, the package MLDataUtils has some nice functionalities for data manipulations like this. We will use the functions `splitobs()` to split our dataset in a train set and a test set and shuffleobs to randomize the order of our data in the split.
 It is important also to pass a labels array to our split function so that it knows how to properly split our dataset.
 "
 
@@ -120,8 +120,8 @@ $P(word_i|ham) = \frac{N_{word_i|ham} + \alpha}{N_{ham} + \alpha N_{vocabulary}}
 
 With this formulas in mind, we now know exactly what we have to calculate from our data. We are going to need the numbers $N_{word_i|spam}$ and $N_{word_i|ham}$ for each word, that is, the number of times that a given word $w_i$ is used in the spam and ham categories, respectively. Then $N_{spam}$ and $N_{ham}$ are the total number of times that words are used in the spam and ham categories (considering all the repetitions of the same words too), and finally, $N_{vocabulary}$ is the total number of unique words in the dataset. $α$ is just a smoothing parameter, so that probability of words that, for example, are not in the spam categoriy don't give 0 probability.
 
-As all this information will be particular for our dataset, so a clever way to aggregate all this is tu use a Julia struct, and we can define the attributes of the struct that we will be using over and over for the prediction. Below we can see the implementation. The relevant attributes of the struct will be words_count_ham and words_count_spam, two dictionaries containing the frequency of appearance of each word in the ham and spam datasets, N_ham and N_spam the total number of words appearing in each category, and finally vocabulary, an array with all the unique words in our dataset.
-The line BayesSpamFilter() = new() is just the constructor of this struct. When we instantiate the filter, all the attributes will be undefined and we will have to define some functions to fill this variables with values relevant to our particular problem.  
+As all this information will be particular for our dataset, so a clever way to aggregate all this is tu use a Julia struct, and we can define the attributes of the struct that we will be using over and over for the prediction. Below we can see the implementation. The relevant attributes of the struct will be `words_count_ham` and `words_count_spam`, two dictionaries containing the frequency of appearance of each word in the ham and spam datasets, `N_ham` and `N_spam` the total number of words appearing in each category, and finally `vocabulary`, an array with all the unique words in our dataset.
+The line `BayesSpamFilter() = new()` is just the constructor of this struct. When we instantiate the filter, all the attributes will be undefined and we will have to define some functions to fill this variables with values relevant to our particular problem.  
 "
 
 # ╔═╡ 018f2c24-28e1-11eb-1de2-53ad33f4fd61
@@ -136,7 +136,7 @@ end
 
 # ╔═╡ 4a067d1e-28e5-11eb-3a2a-232cedcb83b6
 md"
-Now we are going to proceed to define some functions that will be important for our filter implementation. The function word_data below will help for counting the occurrencies of each word in ham and spam categories.
+Now we are going to proceed to define some functions that will be important for our filter implementation. The function `word_data` below will help for counting the occurrencies of each word in ham and spam categories.
 "
 
 # ╔═╡ f409ac78-284f-11eb-349a-d3314219032c
@@ -152,7 +152,10 @@ end
 
 # ╔═╡ 33b3fcbc-29ce-11eb-2925-6df6bae3b7bf
 md"
-Next, we will define the fit! function for our spam filter struct. We are using the bang(!) convention for the functions that modify in-place their arguments, in this case, the spam filter struc itself. This will be the function that will fit our model to the data, a typical procedure in Data Science and Machine Learning areas. This fit function will use mainly the words_count function defined before to fill all the undefined parameters in the filter's struct.
+Next, we will define the `fit!` function for our spam filter struct.
+We are using the bang(!) convention for the functions that modify in-place their arguments, in this case, the spam filter struc itself.
+This will be the function that will fit our model to the data, a typical procedure in Data Science and Machine Learning areas.
+This fit function will use mainly the `words_count` function defined before to fill all the undefined parameters in the filter's struct.
 "
 
 # ╔═╡ 167917b4-2850-11eb-1c4f-896fcbe79966
@@ -179,7 +182,7 @@ end
 
 # ╔═╡ 3b5cd01c-29d8-11eb-2260-a3f029106a08
 md"
-We are now almost ready to make some predictions and test our model. The function below is just the implementation of the formula TAL that we have already talked about. It will be used internally by the next function defined, spam\_predict, which will recieve a new email –the one we would want to classify as spam or ham–, our fitted model, and two parameters, α which we have already discussed in the formula for $P(word_i|spam)$ and $P(word_i|ham)$, and tol. We saw that the calculation for $P(email|spam)$ and $P(email|ham)$ required the multiplication of each $P(word_i|spam)$ and $P(word_i|ham)$ term. When mails are too large, i.e., they have a lot of words, this multiplication may lead to very small probabilities, up to the point that the computer interprets those probabilities as zero. This can't happen, as we need values of $P(email|spam)$ and $P(email|ham)$ that are largar than zero so we can multiply them by $P(spam)$ and $P(ham)$ respectively and compare these values to make a prediction. The parameter tol is the maximum tolerance for the number of unique words in an email. If this number is greater than the parameter tol, only the most frequent words will be considered and the rest will be neglected. How many of these most frequent words? the first 'tol' most frequent words!
+We are now almost ready to make some predictions and test our model. The function below is just the implementation of the formula TAL that we have already talked about. It will be used internally by the next function defined, `spam_predict`, which will recieve a new email –the one we would want to classify as spam or ham–, our fitted model, and two parameters, α which we have already discussed in the formula for $P(word_i|spam)$ and $P(word_i|ham)$, and tol. We saw that the calculation for $P(email|spam)$ and $P(email|ham)$ required the multiplication of each $P(word_i|spam)$ and $P(word_i|ham)$ term. When mails are too large, i.e., they have a lot of words, this multiplication may lead to very small probabilities, up to the point that the computer interprets those probabilities as zero. This can't happen, as we need values of $P(email|spam)$ and $P(email|ham)$ that are largar than zero so we can multiply them by $P(spam)$ and $P(ham)$ respectively and compare these values to make a prediction. The parameter tol is the maximum tolerance for the number of unique words in an email. If this number is greater than the parameter tol, only the most frequent words will be considered and the rest will be neglected. How many of these most frequent words? the first 'tol' most frequent words!
 "
 
 # ╔═╡ 327eca7e-2850-11eb-22a0-3b25c80c3a10
@@ -318,7 +321,7 @@ corpus = "la la la le li li holaaa hola holu"
 # ╠═167917b4-2850-11eb-1c4f-896fcbe79966
 # ╟─dd737292-29d6-11eb-355b-01615c670896
 # ╠═23588558-2850-11eb-2702-cd4fed557e7f
-# ╟─3b5cd01c-29d8-11eb-2260-a3f029106a08
+# ╠═3b5cd01c-29d8-11eb-2260-a3f029106a08
 # ╠═327eca7e-2850-11eb-22a0-3b25c80c3a10
 # ╠═3fe86ada-2850-11eb-12db-cf51560e9f75
 # ╠═4328faac-2850-11eb-3978-f9ccbf409a8a
@@ -328,5 +331,5 @@ corpus = "la la la le li li holaaa hola holu"
 # ╠═aa9f7ea4-2850-11eb-33e2-ade40fd0a360
 # ╠═55955e22-28fc-11eb-0153-83f34561665b
 # ╠═e8ea2bd0-2903-11eb-176f-a527049a3968
-# ╠═7fb08fa2-29b9-11eb-39d5-f74320ac9609
+# ╟─7fb08fa2-29b9-11eb-39d5-f74320ac9609
 # ╠═23fc8684-29d2-11eb-235c-29e2fad3bd5d

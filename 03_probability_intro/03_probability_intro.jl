@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.20
+# v0.12.21
 
 using Markdown
 using InteractiveUtils
@@ -352,7 +352,7 @@ end
 
 # ╔═╡ 1d2fded6-551d-11eb-3680-9d0faf78dc6f
 md"
-With all these functions defined, we are ready to make an experiment and actually see how our strategy works. We will define beforehand a number of trials and the true probabilities of the slot machines. When the experiment is over, we will see how well were the probabilities of each machine were estimated, and the reward we accumulated. If you come up with some other novel strategy, you can test it doing a similar experiment and see how well the probabilities were estimated and the final reward you got. First, we define the total number of trials we are going to make, and then the true probabilities of each slot machine. Ath the end, we'll see how well these probabilities were estimated, or, in other words, how well the Thompson sampling helped in the process of gathering information abiyt the bandits.
+With all these functions defined, we are ready to make an experiment and actually see how our strategy works. We will define beforehand a number of trials and the true probabilities of the slot machines. When the experiment is over, we will see how well were the probabilities of each machine were estimated, and the reward we accumulated. If you come up with some other novel strategy, you can test it doing a similar experiment and see how well the probabilities were estimated and the final reward you got. First, we define the total number of trials we are going to make, and then the true probabilities of each slot machine. At the end, we'll see how well these probabilities were estimated, or, in other words, how well the Thompson sampling helped in the process of gathering information abiyt the bandits.
 "
 
 # ╔═╡ b5174e84-54f1-11eb-1fbb-afb237e1fdf2
