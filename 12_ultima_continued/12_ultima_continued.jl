@@ -400,6 +400,7 @@ md"""After seeing that, Garriot took a big deep breath. He immediately understoo
 In this chapter we continue to deepen our understanding of systems of differential equations and their complex behavior.
 We went a step further, introducing the concept of universal differential equations which allow us, given a very small amount of data, to estimate some unknown term of the system.
 This opens a very big door, connecting machine learning and science, which can greatly enhance the production of knowledge.
+"""
 
 # ╔═╡ aac56d4e-54e7-11eb-2d8a-1f21c386ef8d
 md"""### References
@@ -436,7 +437,7 @@ md"""### References
 # ╠═d84d16c2-5447-11eb-0caf-6d099ef176a7
 # ╠═d9ec41a0-5448-11eb-09f9-ffbb2a896a64
 # ╠═03e26dea-5449-11eb-38dc-957ea73db154
-# ╟─58a1294c-544c-11eb-27ca-8512bc3d5461
+# ╠═58a1294c-544c-11eb-27ca-8512bc3d5461
 # ╠═b38b9410-544e-11eb-220b-5746f897b5f4
 # ╠═d58d6d84-544e-11eb-17b8-91723456fc15
 # ╠═5a6dcdc8-5451-11eb-2a2f-cbc4f35844c0
@@ -450,5 +451,5 @@ md"""### References
 # ╠═520b2d00-5457-11eb-349f-3bec665738fd
 # ╠═fef7edba-54dd-11eb-3025-35fe9ffae6ac
 # ╟─fe88958e-54e5-11eb-12bc-01ad625d85c5
-# ╟─e6ec4364-54eb-11eb-1bf6-83db426cd32f
+# ╠═e6ec4364-54eb-11eb-1bf6-83db426cd32f
 # ╟─aac56d4e-54e7-11eb-2d8a-1f21c386ef8d
