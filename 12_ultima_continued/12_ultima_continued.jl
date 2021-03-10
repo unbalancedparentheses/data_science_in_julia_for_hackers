@@ -397,7 +397,9 @@ md"""After seeing that, Garriot took a big deep breath. He immediately understoo
 
 ### Summary
 
-In this chapter we continue to deepen our understanding of systems of differential equations and their complex behavior. We went a step further, introducing the concept of "Universal Differential Equations" which allow us, given a very small amount of data, to estimate some unknow term of the system. This opens a very big door, connecting machine learning and science, which can greatly enhance the production of knowledge."""
+In this chapter we continue to deepen our understanding of systems of differential equations and their complex behavior.
+We went a step further, introducing the concept of universal differential equations which allow us, given a very small amount of data, to estimate some unknown term of the system.
+This opens a very big door, connecting machine learning and science, which can greatly enhance the production of knowledge.
 
 # ╔═╡ aac56d4e-54e7-11eb-2d8a-1f21c386ef8d
 md"""### References
