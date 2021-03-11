@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.20
+# v0.12.21
 
 using Markdown
 using InteractiveUtils
@@ -50,7 +50,7 @@ md"""$\frac{dPrey}{dt} = Prey*(b_{prey} - m_{prey})$
 """
 
 # ╔═╡ dbf274d6-2844-11eb-2cb3-f78a78e14d92
-md"""The population at time t multiplies at both rates because if the population is zero there can be no births or deaths. This leads us to the simplest ecological model, in which per capita growth is the difference between the birth rate and the mortality rate. 
+md"""The population at time *t* multiplies at both rates because if the population is zero there can be no births or deaths. This leads us to the simplest ecological model, in which per capita growth is the difference between the birth rate and the mortality rate. 
 
 #### Parentheses on differential equations
 

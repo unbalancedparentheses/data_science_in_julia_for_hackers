@@ -248,24 +248,24 @@ model = Chain(
 
 # ╔═╡ caa54c16-4929-11eb-3664-95384a8f8c42
 md"
-All the layers are stacked up with the Chain function. Let's see in some more detail what the information in each layer means:
+All the layers are stacked up with the `Chain` function. Let's see in some more detail what the information in each layer means:
 ```julia
 Conv((3, 3), 1=>32, pad=(1,1), relu)
 ```
 First, $(3,3)$ makes reference to the size of the filters that are applied in the convolutional layer, in this case, of width and height 3. Then we have the $1=>32$ section. This stands for the number of channels in each pixel we stard and end with. We start with a single channel (we have transformed our images to grayscale) and we end with 32. This means we will be applying 32 filters in this particular layer.
 The $pad=(1,1)$ argument stands for the padding done to the input image of layer. A border is padded to these so that the output image of the layer does not shrink in the convolutional process and we loose information at the corners. 
-Finally, the relu argument specifies what is the activation function of the filters.
+Finally, the `relu` argument specifies what is the activation function of the filters.
 
 Then we have our next layer,
 ```julia
 Maxpool((2,2))
 ```
 Again, $(2,2)$ is the size of the sliding window that is responsible for the pooling in this layer.
-After repeating this convolutional-poolin layers, we first apply the flatten function, that, as the name implies, flattens the stack of filtered images we accumulated as we walked through the network so we can feed this flattened array to a dense layer,
+After repeating this convolutional-poolin layers, we first apply the `flatten` function, that, as the name implies, flattens the stack of filtered images we accumulated as we walked through the network so we can feed this flattened array to a dense layer,
 ```julia
 Dense(15488, 2)
 ```
-As discussed, this is a fully connected layer, with its arguments being input and output sizes, respectively. Finally, the softmax function converts our output to probabilities.
+As discussed, this is a fully connected layer, with its arguments being input and output sizes, respectively. Finally, the `softmax` function converts our output to probabilities.
 "
 
 # ╔═╡ ff819b8a-493b-11eb-022d-99c19e54e69b

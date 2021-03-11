@@ -43,7 +43,7 @@ $\frac{dPrey}{dt} = Prey*(b_{prey} - m_{prey}*Pred)$
 
 $\frac{dPred}{dt} = Pred*(b_{pred}*Prey - m_{pred})$
 
-Remember that d can be read as change and the hole expresion "$\frac{dPrey}{dt} =$" is just saying "The change of Prey´s population over time is equal to ..." and the other part, as we already saw in the last chapter, is answering "hey! that change is proportional to the Prey´s population (because they reproduce) and to the interaction with the Predator population, that contributes to the Prey´s mortality rate". Isn´t that beautiful? 
+Remember that *d* can be read as change and the hole expresion "$\frac{dPrey}{dt} =$" is just saying "The change of Prey´s population over time is equal to ..." and the other part, as we already saw in the last chapter, is answering "hey! that change is proportional to the Prey´s population (because they reproduce) and to the interaction with the Predator population, that contributes to the Prey´s mortality rate". Isn´t that beautiful? 
 
 Now, try to think a way to put the absolute values of each population over time into equations. Have any clue? No? As we said, change is much easier to decribe.
 
@@ -69,7 +69,7 @@ It turns out that an neural network is literally a function. Is a function in th
 
 $f(x) = y <=> ANN(x) = y$
 
-So, Artificial Neural Networks are functions. But they are especial function, as they can change the connections that made the specific function they represent. They do this in a process called training where they adjust its connections (parameters) in order to correctly predict. So, with only one neural network, we can "represent" lots of functions. What's more, there is this Universal Approximation Theorem that says that a neural network that is deep and wide enough (that is, has enough parameters) can approximate any function. You only need to feed it with enough data, so it can learn the optimal set of weights for its parameters.
+So, Artificial Neural Networks are functions. But they are especial function, as they can change the connections that made the specific function they represent. They do this in a process called training where they adjust its connections (parameters) in order to correctly predict. So, with only one neural network, we can "represent" lots of functions. What's more, there is this universal approximation theorem that says that a neural network that is deep and wide enough (that is, has enough parameters) can approximate any function. You only need to feed it with enough data, so it can learn the optimal set of weights for its parameters.
 
 This is why neural networks come hand in hand with big data: you need lot of data in order to let the neural network learn the correct weights. But there is a problem: Big data cost billions, or may not even be available! (if you don't believe me, ask the Large Hadron Collider scientists to run 1 million experiments to train a NN, I'm sure they'll be happy to help you :P)
 

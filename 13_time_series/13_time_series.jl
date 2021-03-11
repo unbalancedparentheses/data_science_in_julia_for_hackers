@@ -533,7 +533,7 @@ But surely you are thinking that assuming that the trend is going to be maintain
 
 It is known that this type of methods usually overestimate the values of the variable to predict, exactly because they suppose that the tendency continues. 
 
-A improvement of this method that helps to deal with this problem it is the Damped trend methods. Basically, what it does is add a coefficient that flattens the curve as we want to make more distant predictions in time. This improvement makes better predictions than the common trend methods, leaving the formulas as:
+A improvement of this method that helps to deal with this problem it is the damped trend methods. Basically, what it does is add a coefficient that flattens the curve as we want to make more distant predictions in time. This improvement makes better predictions than the common trend methods, leaving the formulas as:
 
 $y_{T+h|T}^- = l_t + (ϕ + ϕ^2 + ... + ϕ^h)b_t$
 
