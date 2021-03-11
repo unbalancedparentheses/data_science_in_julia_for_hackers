@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.18
+# v0.12.21
 
 using Markdown
 using InteractiveUtils
@@ -88,7 +88,7 @@ end
 matches_df
 
 # ╔═╡ 7f0c72d4-1f9e-11eb-06f1-cb587d7e5436
-teams = unique(collect(matches_df[1]))
+teams = unique(collect(matches_df[:,1]))
 
 # ╔═╡ 868e5c8c-1ed3-11eb-291c-fb26d512c103
 md"""So, we have the data of the 380 matches that were played in the Premier League 2017/2018 and our challenge is to be able to analyze the characteristics of these teams. 
@@ -221,17 +221,17 @@ end
 # ╔═╡ f3f0b6f8-2033-11eb-0f9e-d951d791001d
 md"""As you can see, the turing code is very clear and direct. In the first block we define our hyperpriors for the distributions of the characteristics of the equipment.
 
-In the second one, we define the priors distributions that will encapsulate the information about the attack and defense powers of the teams. With the filldist function we are telling Turing that we need as many of these parameters as there are teams in the league length(teams)
+In the second one, we define the priors distributions that will encapsulate the information about the attack and defense powers of the teams. With the `filldist` function we are telling Turing that we need as many of these parameters as there are teams in the league `length(teams)`.
 
 Then, we calculate the average of the defense and attack parameters that we are going to use to centralize those variables, and we use the LogPoisson distribution to allow the theta to take some negative value in the inference process and give more sensitivity to the parameters that make it up.
 
-As we said before, we will model the thetas for each game played in the league, that's why the for of the last block goes from 1 to length(home_teams), which is the list that contains who was the local team of each game played.
+As we said before, we will model the thetas for each game played in the league, that's why the `for` of the last block goes from 1 to `length(home_teams)`, which is the list that contains who was the local team of each game played.
 
 So let´s run it and see if all of this effort was worth it:
 """
 
 # ╔═╡ f3f4bfba-203f-11eb-142c-a187112744d2
-model = football_matches(matches_df[1], matches_df[2], matches_df[3], matches_df[4], teams)
+model = football_matches(matches_df[:,1], matches_df[:,2], matches_df[:,3], matches_df[:,4], teams)
 
 # ╔═╡ 2ce4435c-2040-11eb-1670-e39ad4cc690c
 posterior = sample(model, NUTS(),3000);

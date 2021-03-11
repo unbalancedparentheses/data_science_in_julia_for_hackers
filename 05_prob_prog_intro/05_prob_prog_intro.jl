@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.20
+# v0.12.21
 
 using Markdown
 using InteractiveUtils
@@ -73,7 +73,7 @@ Because we can assign equal probability for each value of $p$ between 0 and 1, w
 md"
 So how do we model the outcomes of flipping a coin?
 
-Well, if we search for some similar type of experiment, we find that all processes in which we have two possible outcomes –heads or tails in our case–, and some probability  p of success –probability of heads–, these are called Bernoulli trials. The experiment of performing a number $N$ of Bernoulli trials, gives us the so called Binomial distribution. For a fixed value of $N$ and $p$, the Bernoulli distribution gives us the probability of obtaining different number of heads (and tails too, if we know the total number of trials and the number of times we got heads, we know that the remaining number of times we got tails). Here, $N$ and $p$ are the parameters of our distribution.
+Well, if we search for some similar type of experiment, we find that all processes in which we have two possible outcomes –heads or tails in our case–, and some probability *p* of success –probability of heads–, these are called Bernoulli trials. The experiment of performing a number $N$ of Bernoulli trials, gives us the so called Binomial distribution. For a fixed value of $N$ and $p$, the Bernoulli distribution gives us the probability of obtaining different number of heads (and tails too, if we know the total number of trials and the number of times we got heads, we know that the remaining number of times we got tails). Here, $N$ and $p$ are the parameters of our distribution.
 "
 
 # ╔═╡ 1ec4a39e-1af3-11eb-29e3-5d78e4c4613a
@@ -93,7 +93,7 @@ When we perform our experiment, the outcomes will be registered and in conjuncti
 "
 
 # ╔═╡ 102b4be2-1ae4-11eb-049d-470a33703b49
-md"The model coinflip is shown below. It is implemented using the Turing.jl library, which will be handling all the details about the relationship between the variables of our model, our data and the sampling and computing. To define a model we use the macro @model previous to a function definition as we have already done. The argument that this function will recieve is the data from our experiment. Inside this function, we must write the explicit relationship of the all the variables involved in a logical way.
+md"The model coinflip is shown below. It is implemented using the Turing.jl library, which will be handling all the details about the relationship between the variables of our model, our data and the sampling and computing. To define a model we use the macro `@model` previous to a function definition as we have already done. The argument that this function will recieve is the data from our experiment. Inside this function, we must write the explicit relationship of the all the variables involved in a logical way.
 Stochastic variables –variables that are obtained randomly, following a probability distribution–, are defined with a '~' symbol, while deterministic variables –variables that are defined deterministically by other variables–, are defined with a '=' symbol.
 "
 
@@ -116,7 +116,7 @@ end
 # ╔═╡ cbe1d1f2-1af4-11eb-0be3-b1a02280acf9
 md"
 coinflip receives the N outcomes of our flips, an array of lenght N with 0 or 1 values, 0 values indicating tails and 1 indicating heads. 
-The idea is that with each new value of outcome, the model will be updating its believes about the parameter p and this is what the for loop is doing: we are saying that each outcome comes from a Bernoulli distribution with a parameter p, a success probability, shared for all the outcomes.
+The idea is that with each new value of outcome, the model will be updating its believes about the parameter *p* and this is what the for loop is doing: we are saying that each outcome comes from a Bernoulli distribution with a parameter *p*, a success probability, shared for all the outcomes.
 
 Suppose we have run the experiment 10 times and had the outcomes:
 "
@@ -127,7 +127,7 @@ outcome = [0, 1, 1, 0, 1, 0, 0, 1, 1, 1]
 # ╔═╡ 53a6c39a-1af5-11eb-0b5a-9546a81e000f
 md"So, we got 6 heads and 4 tails.
 
-Now, we are going to see now how the model, for our unknown parameter p, is updated. We will start by giving only just one input value to the model, adding one input at a time. Finally, we will give the model all outcomes values as input."
+Now, we are going to see now how the model, for our unknown parameter *p*, is updated. We will start by giving only just one input value to the model, adding one input at a time. Finally, we will give the model all outcomes values as input."
 
 # ╔═╡ 9211bea0-1af5-11eb-09d3-e36d0aed4866
 begin
@@ -142,11 +142,11 @@ end;
 
 # ╔═╡ fa37b106-1af5-11eb-11df-97aada833767
 md"
-So now we plot below the posterior distribution of p after our model updated, seeing just the first outcome, a 0 value or a tail. 
+So now we plot below the posterior distribution of *p* after our model updated, seeing just the first outcome, a 0 value or a tail. 
 
-How this single outcome have affected our beliefs about p?
+How this single outcome have affected our beliefs about *p*?
 
-We can see in the plot below, showing the posterior or updated distribution of p, that the values of p near to 0 have more probability than before, recalling that all values had the same probability, which makes sense if all our model has seen is a faliure, so it lowers the probability for values of p that suggest high rates of success.
+We can see in the plot below, showing the posterior or updated distribution of *p*, that the values of *p* near to 0 have more probability than before, recalling that all values had the same probability, which makes sense if all our model has seen is a faliure, so it lowers the probability for values of *p* that suggest high rates of success.
 "
 
 # ╔═╡ 0c570210-1af6-11eb-1d5d-5f78f2a000fd
@@ -160,7 +160,7 @@ end
 
 # ╔═╡ 44037220-1af6-11eb-0fee-bbc3f71f6c08
 md"
-Let's continue now including the remainig outcomes and see how the model is updated. We have plotted below the posterior probability of p adding outcomes to our model updating its beliefs.
+Let's continue now including the remainig outcomes and see how the model is updated. We have plotted below the posterior probability of *p* adding outcomes to our model updating its beliefs.
 "
 
 # ╔═╡ 5280080e-1af6-11eb-3137-75116ca79102
@@ -180,12 +180,12 @@ begin
 end
 
 # ╔═╡ 849c78fe-1af6-11eb-20f0-df587758e966
-md" We see that with each new value the model believes more and more that the value of p is far from 0 or 1, because if it was the case we would have only heads or tails. The model prefers values the of p in between, being the values near 0.5 more plausible with each update."
+md" We see that with each new value the model believes more and more that the value of *p* is far from 0 or 1, because if it was the case we would have only heads or tails. The model prefers values the of *p* in between, being the values near 0.5 more plausible with each update."
 
 # ╔═╡ 9150c71e-1af6-11eb-1036-8b1b45ed95c4
 md"What if we wanted to include more previous knowledge about the success rate p?
 
-Let's say we know that the value of p is near 0.5 but we are not so sure about the exact value, and we want the model to find the plausibility for the values of p. Then including this knowledge, our prior distribution for p will have higher probability for values near 0.5, and low probability for values near 0 or 1. Seaching again in our repertoire of distributions, one that fulfill our wishes is a Beta distribution with parameters α=2 and β=2. It is ploted below." 
+Let's say we know that the value of *p* is near 0.5 but we are not so sure about the exact value, and we want the model to find the plausibility for the values of *p*. Then including this knowledge, our prior distribution for *p* will have higher probability for values near 0.5, and low probability for values near 0 or 1. Seaching again in our repertoire of distributions, one that fulfill our wishes is a Beta distribution with parameters α=2 and β=2. It is ploted below." 
 
 # ╔═╡ d0f945f6-1af6-11eb-1f99-e79e7de8af80
 md"Now we define again our model just changing the distribution for p, as shown:"
@@ -226,13 +226,13 @@ begin
 end
 
 # ╔═╡ e407fa56-1af7-11eb-18c2-79423a9e4135
-md" To illustrate the affirmation made before, we can compare for example the posterior distributions obtained only with the first 4 outcomes for both models, the one with a uniform prior and the other with the beta prior. The plots are shown below. We see that some values near 0 and 1 have still high probability for the model with a uniform prior for p, while in the model with a beta prior the values near 0.5 have higher probability. That's because if we tell the model from the beginning that p near 0 and 1 have less probability, it catchs up faster that probabilities near 0.5 are higher."
+md" To illustrate the affirmation made before, we can compare for example the posterior distributions obtained only with the first 4 outcomes for both models, the one with a uniform prior and the other with the beta prior. The plots are shown below. We see that some values near 0 and 1 have still high probability for the model with a uniform prior for p, while in the model with a beta prior the values near 0.5 have higher probability. That's because if we tell the model from the beginning that *p* near 0 and 1 have less probability, it catchs up faster that probabilities near 0.5 are higher."
 
 # ╔═╡ efa0b506-1af7-11eb-2a9a-cb08f7f2d715
 plot(plots[3], plots_[3], title = ["Posterior for Uniform prior and 4 outcomes" "Posterior for Beta prior and 4 outcomes"], titleloc = :center, titlefont = font(8), layout=2, size=(450, 300))
 
 # ╔═╡ f719af54-1af7-11eb-05d3-ff9aef8fb6ed
-md"So in this case, incorporating our beliefs in the prior distribution we saw the model reached faster the more plausible values for p, needing less outcomes to reach a very similar posterior distribution. When we used an uniform prior, we were conservative, meaning that we said we didn't know anything about p so we assign equal probability for all values. Sometimes these kind of distribution (uniform distributions), called a non-informative prior, can be maybe too conservative, being in some cases not helpful at all. They even can slow the convergence of the model to the more plausible values for our posterior, as shown."
+md"So in this case, incorporating our beliefs in the prior distribution we saw the model reached faster the more plausible values for *p*, needing less outcomes to reach a very similar posterior distribution. When we used an uniform prior, we were conservative, meaning that we said we didn't know anything about *p* so we assign equal probability for all values. Sometimes these kind of distribution (uniform distributions), called a non-informative prior, can be maybe too conservative, being in some cases not helpful at all. They even can slow the convergence of the model to the more plausible values for our posterior, as shown."
 
 # ╔═╡ 92a7cfaa-1a2e-11eb-06f2-f50e91cfbba0
 md" ### Bayesian Bandits "

@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.20
+# v0.12.21
 
 using Markdown
 using InteractiveUtils
@@ -38,9 +38,9 @@ end
 # ╔═╡ 9e309302-1ada-11eb-3bb0-f90dbdea8bb9
 md"To simplify, we approximate the escape velocity as:
 
-$v_{escape}=\sqrt{2g_{planet}r_{planet}}$
+$v_{escape}=\sqrt{2*g_{planet}*r_{planet}}$
 
-where r is the radius of the planet and g the constant of gravity at the surface. Suppose that we remember from school that the velocity of scape from Earth is $11\frac{km}{s}$ and that the radius of Mars if half of the earth's. "
+where *r* is the radius of the planet and *g* the constant of gravity at the surface. Suppose that we remember from school that the velocity of scape from Earth is $11\frac{km}{s}$ and that the radius of Mars if half of the earth's. "
 
 # ╔═╡ b92e1dfa-1acb-11eb-3aae-a90766806c63
 md"
@@ -48,7 +48,7 @@ We remember that the gravity of Earth at its surface is $9.8\frac{m}{s^2}$, so a
 "
 
 # ╔═╡ b54dec82-1883-11eb-0a61-313724e1a335
-md"We are going to calculate the constant $g_{mars}$ just throwing stones. We are going to explain a bit the equations regarding the experiment. The topic we need to revisit is Proyectile Motion. "
+md"We are going to calculate the constant $g_{mars}$ just throwing stones. We are going to explain a bit the equations regarding the experiment. The topic we need to revisit is proyectile motion. "
 
 # ╔═╡ 424b96de-1884-11eb-06fe-032b13ea20eb
 md" ## Proyectile Motion"
@@ -57,16 +57,16 @@ md" ## Proyectile Motion"
 md" Gravity pulls us down to Earth, or in our case, to Mars. This means that we have an acceletation, since there is a force. Recalling the newton equation:
 
 $\overrightarrow{F} = m * \overrightarrow{a}$
- where m is the mass of the object, $\overrightarrow{F}$ is the force(it's what make us fall) and $\overrightarrow{a}$ is the acceleration, in our case is what we call gravity $\overrightarrow{g}$. The arrow $\overrightarrow{}$ over the letter means that the quantity have a direction in space, in our case, gravity is pointing to the center of the Earth, or Mars.
+ where *m* is the mass of the object, $\overrightarrow{F}$ is the force(it's what make us fall) and $\overrightarrow{a}$ is the acceleration, in our case is what we call gravity $\overrightarrow{g}$. The arrow $\overrightarrow{}$ over the letter means that the quantity have a direction in space, in our case, gravity is pointing to the center of the Earth, or Mars.
 
 How can we derive the motion of the stones with that equation?
 
-In the figure below we show a sketch of the problem: We have the 2 axis, x and y, the x normally is parallel to the ground and the y axis is perpendicular, pointing to the sky. We also draw the initial velocity $v_0$ of the proyectile, and the angle $\theta$ with respect to the ground. Also it's important to notice that the gravity points in the opposite direction of the y axis."
+In the figure below we show a sketch of the problem: We have the 2 axis, *x* and *y*, the *x* normally is parallel to the ground and the *y* axis is perpendicular, pointing to the sky. We also draw the initial velocity $v_0$ of the proyectile, and the angle $\theta$ with respect to the ground. Also it's important to notice that the gravity points in the opposite direction of the *y* axis."
 
 # ╔═╡ 677b95c2-1888-11eb-18be-0de8ca145819
-md" But what are the trayectory of the proyectile? and how the coordinates x and y evolve with time?
+md" But what are the trayectory of the proyectile? and how the coordinates *x* and *y* evolve with time?
 
-If we remember from school, the equations of x and y over time is: 
+If we remember from school, the equations of *x* and *y* over time is: 
 "
 
 # ╔═╡ 1b1054a2-1888-11eb-030c-eb8400485617
@@ -80,13 +80,13 @@ md"where $t$ is the time at which we want to know the coordinates.
 
 What the equations tell us?
 
-If we see the evolution of the projectile in the x axis only, it follows a straight line (until it hits the ground) and in the y axis the movement follows a parabola, but how we interpret that? 
+If we see the evolution of the projectile in the *x* axis only, it follows a straight line (until it hits the ground) and in the *y* axis the movement follows a parabola, but how we interpret that? 
 
 We can imagine what happens if we trow a stone to the sky: the stone starts to go up and then, at some point, it reaches the highest position it can go. Then, the stone starts to go down. 
 
 How does the velocity evolve in this trajectory?
 
-Since the begining, the velocity starts decreasing until it has the value of 0 at the highest point, where the stone stops for a moment, then it changes its direction and start to increase again, pointing towards the ground. Ploting the evolution of the height of the stone, we obtain the plot shown below.  We see that, at the begining the stone starts to go up fast and then it slows down. We see that for each value of y there are 2 values of t that satisfies the equation, thats because the stone pass twice for each point, except for the highest value of y."
+Since the begining, the velocity starts decreasing until it has the value of 0 at the highest point, where the stone stops for a moment, then it changes its direction and start to increase again, pointing towards the ground. Ploting the evolution of the height of the stone, we obtain the plot shown below.  We see that, at the begining the stone starts to go up fast and then it slows down. We see that for each value of *y* there are 2 values of *t* that satisfies the equation, thats because the stone pass twice for each point, except for the highest value of *y*."
 
 # ╔═╡ a7a85d46-1938-11eb-08a0-89db330ff595
 begin 
@@ -94,7 +94,7 @@ begin
 end
 
 # ╔═╡ 1fec143a-1942-11eb-39da-199d7106c3f2
-md"So, in the example we ahve just explained, we have that the throwing angle is θ=90°, so sin(90°)=1, the trajectory in y becomes:"
+md"So, in the example we ahve just explained, we have that the throwing angle is θ=90°, so sin(90°)=1, the trajectory in *y* becomes:"
 
 # ╔═╡ 6b3f00d0-1942-11eb-3b05-e58cdfb0684c
 md"
@@ -111,10 +111,10 @@ Those two equations are the ones plotted in the previous sketch, a parabola and 
 
 
 # ╔═╡ 2606d934-1947-11eb-3b59-7d8982c70a2a
-md" It's worth to notice that at each value y of the trajectory, the velocity could have 2 values, just differing in its sign, meaning it can has 2 directions, but with the same magnitude. So keep in mind that when you throw an object to the sky, when it returns to you, the velocity will be the same with the one you threw it."
+md" It's worth to notice that at each value *y* of the trajectory, the velocity could have 2 values, just differing in its sign, meaning it can has 2 directions, but with the same magnitude. So keep in mind that when you throw an object to the sky, when it returns to you, the velocity will be the same with the one you threw it."
 
 # ╔═╡ ca26b694-1d14-11eb-27ec-dd65c1decce8
-md"## Calculating the constant g of Mars"
+md"## Calculating the constant *g* of Mars"
 
 # ╔═╡ a26eaa4c-1938-11eb-1e8c-a1e95af7fe04
 md"Now that we have understood the equations we will work with, we ask:
@@ -142,9 +142,9 @@ md"Suppose we did the experiment and we have measured then the 5 points, Δx and
 t_measured = [3.91, 4.57, 5.43, 4.85, 3.15]
 
 # ╔═╡ 745b181c-194b-11eb-031b-b39abb04e353
-md"Now, how we estimate the constant g from those points?
+md"Now, how we estimate the constant *g* from those points?
 
-Using the equations of the trajectory, when the stone hits the ground, y(t) = 0, since we take the start of the y coordinate in the ground (negleting the initial height with respect to the maximum height), so finding the other then the initial point that fulfill this equation, we find that:
+Using the equations of the trajectory, when the stone hits the ground, y(t) = 0, since we take the start of the *y* coordinate in the ground (negleting the initial height with respect to the maximum height), so finding the other then the initial point that fulfill this equation, we find that:
 
 $t_{f} = \frac{2*v_{0}*sin(θ)}{g}$
 
@@ -175,7 +175,7 @@ md"So, the model we are going to propose is a linear regression. A linear equati
 
 $y=m*x +b$
 
-where m is the slope of the curve and b is called the intercept. In our case, if we take x to be $\frac{t_{f}^2}{2}$, the slope of the curve is g and the intercep is 0. So, in our linear model we are going to propose that each point in the curve is:
+where *m* is the slope of the curve and *b* is called the intercept. In our case, if we take *x* to be $\frac{t_{f}^2}{2}$, the slope of the curve is *g* and the intercep is 0. So, in our linear model we are going to propose that each point in the curve is:
 
 $\mu = m*x + b$
 
@@ -198,7 +198,7 @@ $\Delta x[i]= Normal(\mu[i],\sigma^2)$
 "
 
 # ╔═╡ 15913052-1a16-11eb-3c85-5d9f5c40a4bb
-md"Where g has a distribution we will propose next. The first distribution we are going to propose is a Uniform distribution for g, between the values of 0 and 10"
+md"Where *g* has a distribution we will propose next. The first distribution we are going to propose is a Uniform distribution for *g*, between the values of 0 and 10"
 
 # ╔═╡ f5623f04-1a17-11eb-1d92-4ff256b15332
 begin
@@ -239,7 +239,7 @@ chain_uniform = sample(gravity_uniform(t_measured, Δx_measured, θ), HMC(ϵ, τ
 end;
 
 # ╔═╡ 8197a7de-1a18-11eb-34f5-69527c179e4f
-md"Plotting the posterior distribution for p we that the values are mostly between 2 and 5, with the maximun near 3,8. Can we narrow the values we obtain?"
+md"Plotting the posterior distribution for *p* we that the values are mostly between 2 and 5, with the maximun near 3,8. Can we narrow the values we obtain?"
 
 # ╔═╡ bcaa8d3e-1a0c-11eb-0118-d59af31cc354
 begin
@@ -249,7 +249,7 @@ begin
 end
 
 # ╔═╡ 9769da36-1a19-11eb-21ec-63f612b19380
-md"As a second obtion, we can propose a Gaussian distribution instead of a uniforn distribution for g, like the one shown below, with a mean of 5 and a variance of 2, and let the model update its beliefs with the points we have."
+md"As a second obtion, we can propose a Gaussian distribution instead of a uniforn distribution for *g*, like the one shown below, with a mean of 5 and a variance of 2, and let the model update its beliefs with the points we have."
 
 # ╔═╡ bb570a5e-1a19-11eb-26ca-0dd1a523dc5d
 begin
@@ -260,7 +260,7 @@ ylabel!("Probability")
 end
 
 # ╔═╡ f61779cc-1a1b-11eb-02ae-9332216c7760
-md" We define then the model with a gaussian distribution as a prior for g:"
+md" We define then the model with a gaussian distribution as a prior for *g*:"
 
 # ╔═╡ 950c347a-1952-11eb-2bef-1fd9c4223209
 begin
@@ -295,7 +295,7 @@ end
 # ╔═╡ 73734d22-1953-11eb-0b03-7dda4b7d450d
 md"We see that the plausible values for the gravity have a clear center in 3.7 and now the distribution is narrower, that's good, but we can do better.
 
-If we observe the prior distribution proposed of g, we see that some values are negative, which has no sense because if that would the case when you trow the stone, it would go up and up, escaping from the planet. 
+If we observe the prior distribution proposed of *g*, we see that some values are negative, which has no sense because if that would the case when you trow the stone, it would go up and up, escaping from the planet. 
 
 We propose then a new model for not allowing the negative values to happen. The distribution we are interested in is a LogNormal distribution. In the plot below is the prior distribution for g, a LogNormal distribution with mean 1.5 and variance of 0.5."
 
@@ -345,7 +345,7 @@ md"Now that we have a good understanding of the equations and the overall proble
 We want to know what are the most convenient angle to do the experiment and to measure or if it doesn't matter."
 
 # ╔═╡ 730d6e62-1a25-11eb-09cd-4133b7f6c59a
-md"To do the analysis we need to see how the angle influence the computation of g, so solving the equation for g we have:
+md"To do the analysis we need to see how the angle influence the computation of *g*, so solving the equation for *g* we have:
 
 $g = \frac{2*tg(\theta)*\Delta x}{t^{2}_f}$
 "
