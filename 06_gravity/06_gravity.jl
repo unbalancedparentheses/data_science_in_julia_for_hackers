@@ -456,12 +456,12 @@ md"Finally, we obtained the escape velocity scape from Mars."
 # ╔═╡ dade6450-81d2-11eb-310b-6599ff45856c
 md"
 ### Summary
-In this Chapter we had to find the escape velocity from Mars. 
-To make it we first needed to find the gravity of Mars, so we started with a physical description of the problem and concluded that by measuring the distance and time of a rock throw plus some Bayesian analysis we could infer the gravity of Mars.
+In this chapter we had to find the escape velocity from Mars. 
+To solve this problem, we first needed to find the gravity of Mars, so we started with a physical description of the problem and concluded that by measuring the distance and time of a rock throw plus some Bayesian analysis we could infer the gravity of Mars.
 
-Then we created a first probabilistic model setting our prior probability to be a uniform distribution and the likelihood to have a normal distribution.
-We Sampled the model and obtained our first posterior probability.
-We repeated this process two more times but changed the prior distribution of the model for more accurate ones, first with a normal distribution and then with a logarithmic one. 
+Then we created a simple probabilistic model, with the prior probability set to a uniform distribution and the likelihood to a normal distribution.
+We sampled the model and obtained our first posterior probability.
+We repeated this process two more times, changing the prior distribution of the model for more accurate ones, first with a normal distribution and then with a logarithmic one. 
 
 Finally, we used the gravity we inferred to calculate the escape velocity from Mars.
 "
