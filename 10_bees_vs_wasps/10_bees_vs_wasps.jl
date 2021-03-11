@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.20
+# v0.12.21
 
 using Markdown
 using InteractiveUtils
@@ -29,7 +29,7 @@ You may or may not like bees. Either if you are afraid of them stinging you, or 
 
 # ╔═╡ 70f367f4-3be4-11eb-0a64-b9258c771d20
 begin
-	scale = 0.8
+	scale = 0.5
 	im = load("images/pollination.jpg")
 	im = imresize(im, Int(floor(scale*size(im)[1])), Int(floor(scale*size(im)[2])))
 end
@@ -76,7 +76,11 @@ A typical representation of how a neural network operates looks something like t
 "
 
 # ╔═╡ 72ae2826-3e51-11eb-3c71-87b8019085a8
-load("images/conv_net.png")
+begin
+	scale_two = 0.3
+	conv_net =load("images/conv_net.png")
+	conv_net = imresize(conv_net, Int(floor(scale_two*size(conv_net)[1])), Int(floor(scale_two*size(conv_net)[2])))
+end
 
 # ╔═╡ 30b40e16-3e53-11eb-1fae-bddf5a8ac229
 md"
