@@ -397,17 +397,17 @@ md"
 Considering that we have only tried 100 times, the probabilities have been estimated pretty well! Each distribution assigns a high-enough probability to the true value of the bandit probabilities and it's surroundings. Another strategies rather than the Thompson sampling can be tested to see how well they perform, this was just a simple example to apply Bayesian probability.
 "
 
-# ╔═╡ 49b84f96-7c2f-11eb-3bf8-bde596991317
+# ╔═╡ 1b4c0804-82b3-11eb-208c-a1fac34852cf
 md"
 ### Summary
 In this chapter we introduced the basic concepts of probability.
-We talked about probability of independent events and also conditional probability to arrive at the Bayes' theorem.
+We talked about the probability of independent events and about conditional probability, which led us to Bayes' theorem.
 
-Then we addressed the two main approaches to probability, the frequentist approach and in particular the Bayesian one where our initial beliefs can be updated with the income of new data.
-We also learned what is a probability distribution giving some examples and why Bayesians use them to represent probability.
+Then, we addressed the two main approaches to probability: the frequentist approach and the Bayesian one, where our initial beliefs can be updated with the addition of new data.
+We also learned what a probability distribution is, we went over a few examples and saw why Bayesians use them to represent probability.
 
-Finally, we saw the multi-armed bandit problem where with a limited amount of casino chips we want to estimate the best win probability of 3 slot machines.
-To solved it we constructed a Bayesian model using the Thompson sampling algorithm.
+Finally, we saw the multi-armed bandit problem in which we have a limited amount of resources and must allocate them between competing alternatives to infer the one with the highest success probability.
+To solve it we constructed a Bayesian model using the Thompson sampling algorithm.
 "
 
 # ╔═╡ 32df0e98-35a2-11eb-1121-5f731785abbb
@@ -471,5 +471,5 @@ md"
 # ╠═c822a558-54f1-11eb-162b-398bd542ded1
 # ╠═e3b582b0-54f1-11eb-3ffa-67a92240e659
 # ╟─0d541d38-59a5-11eb-3404-f13d3e5150d4
-# ╟─49b84f96-7c2f-11eb-3bf8-bde596991317
+# ╟─1b4c0804-82b3-11eb-208c-a1fac34852cf
 # ╟─32df0e98-35a2-11eb-1121-5f731785abbb
