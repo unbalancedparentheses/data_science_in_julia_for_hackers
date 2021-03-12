@@ -400,7 +400,7 @@ Considering that we have only tried 100 times, the probabilities have been estim
 # ╔═╡ 1b4c0804-82b3-11eb-208c-a1fac34852cf
 md"
 ### Summary
-In this chapter we introduced the basic concepts of probability.
+In this chapter, we introduced the basic concepts of probability.
 We talked about the probability of independent events and about conditional probability, which led us to Bayes' theorem.
 
 Then, we addressed the two main approaches to probability: the frequentist approach and the Bayesian one, where our initial beliefs can be updated with the addition of new data.
