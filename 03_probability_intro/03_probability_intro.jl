@@ -406,8 +406,8 @@ We talked about the probability of independent events and about conditional prob
 Then, we addressed the two main approaches to probability: the frequentist approach and the Bayesian one, where our initial beliefs can be updated with the addition of new data.
 We also learned what a probability distribution is, we went over a few examples and saw why Bayesians use them to represent probability.
 
-Finally, we saw the multi-armed bandit problem in which we have a limited amount of resources and must allocate them between competing alternatives to infer the one with the highest success probability.
-To solve it we constructed a Bayesian model using the Thompson sampling algorithm.
+Finally, we saw the multi-armed bandit problem in which we have a limited amount of resources and must allocate them among competing alternatives to infer the one with the highest probability of success.
+To solve it, we constructed a Bayesian model using the Thompson sampling algorithm.
 "
 
 # ╔═╡ 32df0e98-35a2-11eb-1121-5f731785abbb
