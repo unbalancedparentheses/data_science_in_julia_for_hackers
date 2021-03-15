@@ -265,28 +265,26 @@ spam_filter_accurracy(x_test, y_test, spam_filter, 1)
 md"
 ### Summary
 In this chapter, we have used a naive-bayes approach to build a simple email spam filter. 
-First, a contextualization of the topic was made and the origin of the spam word was discussed.
-Then, the dataset and the theoretical framework was introduced. Using Bayes' theorem, and the data available, we assign a probability of belonging to a spam or a ham email to each word of the dataset. 
-Thus, the probability of a new email belonging to the spam category, is the product of the probabilities of each of its constituent words.
-Later, the data was pre-processed and a struct was defined for the spam filter object. Functions were implemented to fit the spam filter object to the data.
+First, the dataset and the theoretical framework were introduced. Using Bayes' theorem and the data available, we assigned probability of belonging to a spam or ham email to each word of the email dataset. The probability of a new email being classified as spam is therefore the product of the probabilities of each of its constituent words.
+Later, the data was pre-processed and a struct was defined for the spam filter object. Functions were then implemented to fit the spam filter object to the data.
 Finally, a metric for evaluating the accuracy of the model was implemented, giving a result of approximately $0.95$.
 "
 
 # ╔═╡ 96834844-6d45-11eb-39a5-737dd8e43cb1
 md" ### References
+* [What is Spam Filtering?](https://www.mailchannels.com/what-is-spam-filtering/)
+* [Artificial Intelligence in Python: A Comprehensive Guide to Building Intelligent Apps for Python Beginners and Developers](https://www.amazon.com/Artificial-Intelligence-Python-Comprehensive-Intelligent-ebook/dp/B01IRD0LBY)
+* [Data Algorithms: Recipes for scaling up with Hadoop and Spark](https://www.amazon.com/Data-Algorithms-Recipes-Scaling-Hadoop/dp/1491906189)
+* [Doing Data Science: Straight talk from the frontline](https://www.oreilly.com/library/view/doing-data-science/9781449363871/)
 * [How the word 'Spam' came to mean 'Junk Message'](http://www.todayifoundout.com/index.php/2010/09/how-the-word-spam-came-to-mean-junk-message/)
 * [Monty Python Sketch - YouTube](https://www.youtube.com/watch?v=zLih-WQwBSc)
-* [What is Spam Filtering?](https://www.mailchannels.com/what-is-spam-filtering/)
-* [Naive Bayes Classifiers - GeeksforGeeks](https://www.geeksforgeeks.org/naive-bayes-classifiers/)
-* [Spam Filter in Python: Naive Bayes from Scratch](https://www.kdnuggets.com/2020/07/spam-filter-python-naive-bayes-scratch.html)
-* [Naive Bayes Explained](https://www.upgrad.com/blog/naive-bayes-explained/)
 "
 
 # ╔═╡ Cell order:
 # ╟─0de04b90-2835-11eb-1369-01c64bc38c42
 # ╠═b519d90e-2834-11eb-1c48-0307b18584de
 # ╟─03a60d0e-2835-11eb-239c-c3b43694607c
-# ╟─78c91c38-4eae-11eb-3569-07af96eb6881
+# ╠═78c91c38-4eae-11eb-3569-07af96eb6881
 # ╟─6fbd7c76-4eae-11eb-124f-fbbda19ba636
 # ╟─6ce18f50-4eaf-11eb-0189-ede5b110341c
 # ╟─c898651a-4eac-11eb-26ac-ddb1885afc13
