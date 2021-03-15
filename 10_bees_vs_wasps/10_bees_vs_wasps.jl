@@ -341,6 +341,22 @@ md"
 We see that the accuracy got a little better now, reaching a maximum of $85\%$. For now this will be enough, but there are many things we can do to improve the performance of the model. Hopefully this chapter had given some starting point for you to dig deeper into these topic if it is of your interest!
 "
 
+# ╔═╡ c838ce7e-8562-11eb-12a9-4d5fed79fb02
+md"
+### Summary
+In this chapter, we implemented a convolutional neural network that discriminated between pictures of bees and wasps.
+
+First, we saw how neural networks work and explained their training process, where we set a loss function that indicates how our model is performing and feed it with labeled data so that their parameters find the right setting to optimize the loss function. 
+Then we explained that convolutional neural networks are a particular kind of neural networks with the characteristic that their layers contain filters and have a great performance working with images.
+
+Thus, we decided to create a simple convolutional neural network to classify the bees and wasps pictures.
+We pre-processed our data, converting all images to gray scale and changing their resolution to keep the convolutional neural networks as simple as possible.
+To train the neural networks in an efficient way we divided the data in small batches and passed forward to the model in small groups.
+Then we plotted the accuracy and loss function of our model to see how it performed.
+Finally, we tried to improve our model, so we decreased the learning rate and trained again our model, obtaining better accuracy. 
+
+"
+
 # ╔═╡ aff7a9f4-3bb4-11eb-154c-cd119af4d850
 md"
 ### References
@@ -396,4 +412,5 @@ md"
 # ╠═48afbed0-3b32-11eb-09f8-2d31a0ae583c
 # ╠═523e8666-3b32-11eb-1e2f-f53ad63acd1e
 # ╟─e01a6f0e-4a1e-11eb-2ea6-850ba1652f08
+# ╟─c838ce7e-8562-11eb-12a9-4d5fed79fb02
 # ╟─aff7a9f4-3bb4-11eb-154c-cd119af4d850
