@@ -558,21 +558,20 @@ md"
 In this chapter, we used the NBA shooting data of the season 2006-2007 to analyze how the scoring probability is affected by some variables, such as the distance from the hoop and the angle of shooting.
 
 
-First, we inspected the data plotting a heatplot of all the shots made and histograms of the scored ones. 
-As our goal was to study the scoring probability, a Bernoulli trial situation, we decided to use a Bernoulli model. 
+First, we inspected the data by plotting a heatplot of all the shots made and making histograms of the ones that scored.
+As our goal was to study the probability of scoring, which is a Bernoulli trial situation, we decided to use a Bernoulli model.
 Since the only parameter needed in a Bernoulli distribution is the probability *p* of having a success, we modeled *p* as a logistic function: $p\sim logistic(a+ b*distance[i] + c*angle[i])$
 
-We set the prior probability of the parameters *a* and *c* to a normal distribution and * b* to a log-normal one. 
-So we constructed our logistic regression model and sampled it using the Markov Monte Carlo algorithm.
-To get a better understanding of the sampling process we made a traceplot that shows the sampled values in a sequential order.
+We set the prior probability of the parameters *a* and *c* to a normal distribution and *b* to a log-normal one. 
+Thus, we constructed our logistic regression model and sampled it using the Markov Monte Carlo algorithm.
+To gain a better understanding of the sampling process, we made a traceplot that shows the sampled values in a sequential order.
 
 Later, we decided to try with a more complex logistic regression model, similar to the first one but this time modifying the distance parameter: $p\sim logistic(a+ b^{distance[i]} + c*angle[i])$ 
 
 
 We set the prior distribution of *b* to a beta distribution and constructed the second logistic regression model, sampled it and plotted the results.
 
-Finally, we saw if the scoring percentage is the same in all the periods. 
-
+Finally, we analyzed the results to see if the period of the game affects the probability of scoring.
 "
 
 # ╔═╡ Cell order:
