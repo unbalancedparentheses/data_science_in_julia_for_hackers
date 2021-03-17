@@ -552,6 +552,28 @@ end
 # ╔═╡ 60defa1c-242f-11eb-13b2-1f77ecbe291f
 md"Finally, we see that for the periods 1 and 4, the first and the last periods, the probabity of scoring is slightly higher than the other two periods, meaning that players are somewhat better scoring in those periods."
 
+# ╔═╡ 6341de9e-836a-11eb-371d-e9b4a3a2f743
+md"
+### Summary
+In this chapter, we used the NBA shooting data of the season 2006-2007 to analyze how the scoring probability is affected by some variables, such as the distance from the hoop and the angle of shooting.
+
+
+First, we inspected the data by plotting a heatplot of all the shots made and making histograms of the ones that scored.
+As our goal was to study the probability of scoring, which is a Bernoulli trial situation, we decided to use a Bernoulli model.
+Since the only parameter needed in a Bernoulli distribution is the probability *p* of having a success, we modeled *p* as a logistic function: $p\sim logistic(a+ b*distance[i] + c*angle[i])$
+
+We set the prior probability of the parameters *a* and *c* to a normal distribution and *b* to a log-normal one. 
+Thus, we constructed our logistic regression model and sampled it using the Markov Monte Carlo algorithm.
+To gain a better understanding of the sampling process, we made a traceplot that shows the sampled values in a sequential order.
+
+Later, we decided to try with a more complex logistic regression model, similar to the first one but this time modifying the distance parameter: $p\sim logistic(a+ b^{distance[i]} + c*angle[i])$ 
+
+
+We set the prior distribution of *b* to a beta distribution and constructed the second logistic regression model, sampled it and plotted the results.
+
+Finally, we analyzed the results to see if the period of the game affects the probability of scoring.
+"
+
 # ╔═╡ Cell order:
 # ╟─b4257f94-204e-11eb-258e-0524565c4d41
 # ╠═fa821e30-2293-11eb-3ba4-e3a7ca987312
@@ -576,7 +598,7 @@ md"Finally, we see that for the periods 1 and 4, the first and the last periods,
 # ╠═66aee544-2072-11eb-2a78-37d0f33e66e6
 # ╠═3d9b284e-2073-11eb-0b69-e7bcb7241843
 # ╟─bb2a837a-2073-11eb-0109-e76c0f370cea
-# ╟─29426866-2075-11eb-114a-674a286cc586
+# ╠═29426866-2075-11eb-114a-674a286cc586
 # ╟─901ad6f8-2075-11eb-13fc-f3d501387757
 # ╟─c312e2a4-2075-11eb-2faf-d55d61c9d39c
 # ╟─d4ce7370-2075-11eb-220d-136d89b3daa9
@@ -605,7 +627,7 @@ md"Finally, we see that for the periods 1 and 4, the first and the last periods,
 # ╟─333b9190-22b0-11eb-2ac5-b1ec28e7d258
 # ╟─f2a57c44-22ae-11eb-3f24-bda8faec4762
 # ╟─7adfd7ca-22b2-11eb-1334-5985564fd195
-# ╟─b24672a0-22b2-11eb-35e3-97f9ef153243
+# ╠═b24672a0-22b2-11eb-35e3-97f9ef153243
 # ╠═39cc64c2-22b4-11eb-0ac8-918f817537d2
 # ╟─90fbe58e-22b3-11eb-376f-7b525f5ac609
 # ╟─5fb5edb0-22b5-11eb-0ff4-291bf910d4ca
@@ -640,3 +662,4 @@ md"Finally, we see that for the periods 1 and 4, the first and the last periods,
 # ╟─a873acde-242e-11eb-31d7-0165fc71d465
 # ╟─5d4fcd4a-2367-11eb-1c5f-fb9961b9a3d4
 # ╟─60defa1c-242f-11eb-13b2-1f77ecbe291f
+# ╟─6341de9e-836a-11eb-371d-e9b4a3a2f743
