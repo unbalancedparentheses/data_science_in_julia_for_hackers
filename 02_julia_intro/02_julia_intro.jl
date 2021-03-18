@@ -632,7 +632,7 @@ You can also add a new column very easily,
 
 # ╔═╡ eb9c5a88-60b0-11eb-2553-9bdd07a9625d
 begin
-	df_.height = 1.72
+	df_.height = [1.72]
 	df_
 end
 
