@@ -797,11 +797,11 @@ As a final summary, when dealing with a time series it is very important to be a
 
 ### Summary
 
-In this chapter, we have learned the basic foundations of time series analysis. 
-We have defined what a time series is and delved into a particular method, the exponential smoothing, that allows us to take into account the most distant values of our data.
+In this chapter, we learned the basic foundations of time series analysis. 
+We defined what a time series is and delved into a particular method, the exponential smoothing, that allows us to take into account the most distant values of our data.
 Finally, we explained more complex versions of the method and used them to make predictions in different kinds of scenarios.
 When the processes followed a marked tendency, we used the trend method and the damped trend method to make long term predictions. 
-When the process was highly correlated with the seasonality of the year, like the quantity of air passengers in Australia, we utilized the Holt-Winters’ seasonal method.
+When the process exhibited seasonal trends, we utilized the Holt-Winters’ seasonal method.
 
 ### References
 
