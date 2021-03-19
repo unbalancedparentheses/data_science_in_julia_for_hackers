@@ -643,9 +643,6 @@ C++ was released in 1980
 
 """
 
-# ╔═╡ fe236de2-875f-11eb-2c18-49ab8584d861
-
-
 # ╔═╡ fe6c55de-875f-11eb-205c-53d913ae225f
 md"
 Now that the most important details of syntax have been discussed, let's focus our attention into some packages of Julia's ecosystem."
@@ -762,7 +759,7 @@ You can also add a new column very easily,
 
 # ╔═╡ eb9c5a88-60b0-11eb-2553-9bdd07a9625d
 begin
-	df_.height = 1.72
+	df_.height = [1.72]
 	df_
 end
 
@@ -886,8 +883,7 @@ md"
 # ╟─c2272800-6007-11eb-1736-b7f334dbba2f
 # ╟─292d20ea-5a8e-11eb-2a96-a37689e468ca
 # ╟─01ca39ee-5a9c-11eb-118e-afae416cfca4
-# ╠═fda97ed8-875f-11eb-372e-4f982ff9b958
-# ╠═fe236de2-875f-11eb-2c18-49ab8584d861
+# ╟─fda97ed8-875f-11eb-372e-4f982ff9b958
 # ╟─fe6c55de-875f-11eb-205c-53d913ae225f
 # ╟─d1ae60a8-544e-11eb-15b5-97188dc41aa8
 # ╟─e36a4352-544e-11eb-2331-43f864bb01d5
