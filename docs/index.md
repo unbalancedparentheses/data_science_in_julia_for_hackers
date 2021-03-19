@@ -1,3 +1,9 @@
+![Bayes hacking](images/bayes-hacker.png)
+
+***This book is currently in a beta version. We are looking forward to getting feedback and criticism, which you can mail to martina.cantaro@lambdaclass.com***
+
+***Thank you!***
+
 ## Data Science in Julia for Hackers
 A book written by Federico Carrone, Herman Obst Demaestri and Mariano Nicolini.
 
