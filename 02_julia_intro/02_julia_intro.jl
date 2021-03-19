@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.20
+# v0.12.21
 
 using Markdown
 using InteractiveUtils
@@ -35,9 +35,14 @@ end
 # ╔═╡ 0a4fc5fc-544d-11eb-0189-6b1c959b1eb1
 md"
 # Meeting Julia
-Julia is a young, free, open-source and promising general-purpose language, designed and developed by Jeff Bezason, Alan Edelman, Viral B. Shah and Stefan Karpinski in MIT. 
-For years, programming languages were limited to either having a simple syntax, being readable, and having good abstraction capabilities, or being designed for technical, high-performance and resource-intensive computations. This led applied scientists to face the task of not only learning two different languages –one high-level, the other low-level-, but also learning how to have them communicate with one another, which is far from trivial in many cases. This is what Julia creators called the *two-language problem*, and it costs programmers and scientists valuable time and effort which may be better invested in solving the actual problems that they needed to compute. Julia is designed to bridge the gap, as it is created from scratch to be both fast and easy to understand, even for people who are not programmers or computer scientists.
-	Julia is dynamically typed and is great for interactive use. It also uses multiple dispatch as a core design concept, which adds to the composability of the language. In conventional, single-dispatched, object-oriented programming languages, when invoking a method, one of the arguments has a special treatment since it determines which of the methods contained in a function is going to be applied. Multiple dispatch is a generalization of this for all the arguments of the function, so the method applied is going to be the one that matches exactly the number of types of the function call.
+
+Julia is a free and open-source general-purpose language, designed and developed by Jeff Bezason, Alan Edelman, Viral B. Shah and Stefan Karpinski in MIT. 
+Julia is created from scratch to be both fast and easy to understand, even for people who are not programmers or computer scientists. It has abstraction capabilities of high-level languages, while also being really fast, as its slogan calls “Julia looks like Python, feels like Lisp, runs like Fortran”.
+
+Before Julia, programming languages were limited to either having a simple syntax and good abstraction capabilities or being high-performance as solving resource-intensive computations required to. This led applied scientists to face the task of not only learning two different languages, but also learning how to have them communicating with one another. This difficulty is called the *two-language problem*, which Julia creators aim to solve with this new language. 
+
+Julia is dynamically typed and is great for interactive use. It also uses multiple dispatch as a core design concept, which adds to the composability of the language. In conventional, single-dispatched programming languages, when invoking a method, one of the arguments has a special treatment since it determines which of the methods contained in a function is going to be applied. Multiple dispatch is a generalization of this for all the arguments of the function, so the method applied is going to be the one that matches exactly the number of types of the function call.
+
 "
 
 # ╔═╡ c2272800-6007-11eb-1736-b7f334dbba2f
@@ -547,10 +552,42 @@ begin
 	scatter!(sequence, label=false, color="purple", size=(450, 300))
 end
 
+# ╔═╡ 53a0950c-6d79-11eb-0914-4de1f259e95e
+md"
+In the example above, a plot is created when we call the ```plot()``` function. What the ```scatter!()``` call then does, is to modify the global state of the plot in-place. If not done this way, both plots wouldn't be sketched together.
+
+A nice feature that the Plots.jl package offers, is the fact of changing plotting backends. There exist various plotting packages in Julia, and each one has its own special features and aesthetic flavour. The Plots.jl package integrates these plotting libraries and acts as an interface to communicate with them in an easy way.
+By default, the ```GR``` backend is the one used. In fact, this was the plotting engine that generated the plots we have already done. The most used and maintained plotting backends up to date, are the already mentioned ```GR```, ```Plotly/PlotlyJS```, ```PyPlot```, ```UnicodePlots``` and ```InspectDR```.
+The backend you choose will depend on the particular situation you are facing. For a detailed explanation on backends, we recommend you visit the Julia Plots [documentation](https://docs.juliaplots.org/latest/backends/). Through the book we will be focusing on the ```GR```backend, but as a demonstration of the ease of changing from one backend to another, consider the code below.
+The only thing added to the code for plotting that we have already used, is the ```pyplot()``` call to change the backend. If you have already coded in Python, you will feel familiar with this plotting backend. 
+"
+
+# ╔═╡ 7572d6ac-7127-11eb-1dec-9d5919434ca0
+begin
+	pyplot()
+	plot(sequence, xlabel="x", ylabel="Fibonacci", linewidth=3, label=false, color="green", size=(450, 300))
+	scatter!(sequence, label=false, color="purple", size=(450, 300))
+end
+
+# ╔═╡ aeb24808-7136-11eb-3f55-b55c445423fa
+md"
+Analogously, we can use the ```plotlyjs``` backend, which is specially suited for interactivity.
+"
+
+# ╔═╡ 1c5c95e4-7138-11eb-0116-314aab362756
+begin
+	plotlyjs()
+	plot(sequence, xlabel="x", ylabel="Fibonacci", linewidth=3, label=false, color="green", size=(450, 300))
+	scatter!(sequence, label=false, color="purple", size=(450, 300))
+end
+
+# ╔═╡ 0ae33f2c-7139-11eb-1239-5bb34937a949
+md"
+Each of these backends has its own scope, so there may be plots that one backend can do that another can't. For example, 3D plots are not supported for all backends. The details are well explained in the Julia documentation.
+"
+
 # ╔═╡ 11f33ecc-544f-11eb-35d5-27a280cdce1b
 md"
-In the example above, a plot is created when we call the plot() function. What the scatter!() call then does, is to modify the global state of the plot in-place. If not done this way, both plots wouldn't be sketched together.
-
 ### Introducing DataFrames.jl
 When dealing with any type of data in large quantities, it is essential to have a 
 framework to organize and manipulate it in an efficient way. If you have previously 
@@ -679,12 +716,31 @@ begin
 	CSV.write("./data/modified_iris.csv", iris_df)
 end;
 
+# ╔═╡ 3625d788-6d71-11eb-3878-97c4ad01ffb4
+md"
+Plotting Dataframes data is very easy. Suppose we want to plot the flower features from the iris dataset, all in one single plot. These features correspond to the columns two to five of the dataframe. Thinking about it as a matrix, you can access these data by selecting all the rows for each of the corresponding columns. In the code below, a loop is performed over the columns of interest. The ```plot()``` statement, with no arguments, is a way to create an empty instance of a plot, like a blank canvas. This empty plot will be successively overwritten by each call to ```plot!()```. Finally, we make a call to ```current()```, to display the plot. You may be wondering why is this necessary. Notice that all the plotting happens inside a loop, hence the plotting iterations are not displayed. It is more efficient to display the finished plot when the loop is over than to update each plot as it overwrites the previous one.
+"
+
+# ╔═╡ 08b5d43e-6d66-11eb-0645-91568ff3b368
+begin
+	gr()
+	plot()
+	for i in 2:5
+		plot!(iris_df[:,i], legend=false)
+	end
+	xlabel!("Flower")
+	ylabel!("Centimeters (cm)")
+	title!("Flower features")
+	current()
+end
+		
+
 # ╔═╡ 03a43280-6003-11eb-1df8-a5833659f0a8
 md"
 ### Summary
 In this chapter we have introduced the Julia language, the motivations behind its creation, features, installation and basic building blocks for writing some code. 
 First we discussed some basic Julia operators and datatypes. Some special features of the language such as how to write different kinds of arrays and broadcasting were detailed. We then followed with an overview of how functions work in Julia, and how to make your own.
-Finally, we introduced some packages of the Julia ecosystem, mainly the Plots.jl package for plotting, and DataFrames.jl for data organization and manipulation.
+Finally, we introduced some packages of the Julia ecosystem, mainly the Plots.jl package for plotting and changing backends, and DataFrames.jl for data organization and manipulation.
 "
 
 # ╔═╡ 1f2086cc-544f-11eb-339e-1d31f4b4eb4b
@@ -694,6 +750,7 @@ md"
 * [Julia REPL](https://docs.julialang.org/en/v1/stdlib/REPL/)
 * [Learn X in Y minutes](https://learnxinyminutes.com/docs/julia/)
 * [Introducing Julia](https://en.wikibooks.org/wiki/Introducing_Julia)
+* [Julia Plots - Backends](https://docs.juliaplots.org/latest/backends/)
 * [Data Science with Julia](https://www.amazon.com/Data-Science-Julia-Paul-McNicholas/dp/1138499986)
 * [Comma Separated Values](https://en.wikipedia.org/wiki/Comma-separated_values)
 * [Iris Dataset](https://en.wikipedia.org/wiki/Iris_flower_data_set)
@@ -710,6 +767,11 @@ md"
 # ╟─f453c7b0-544e-11eb-137c-1d027edb83e6
 # ╠═03641078-544f-11eb-1dab-37614a0bdbc7
 # ╠═093aac02-544f-11eb-1221-4dfc049d4652
+# ╟─53a0950c-6d79-11eb-0914-4de1f259e95e
+# ╠═7572d6ac-7127-11eb-1dec-9d5919434ca0
+# ╟─aeb24808-7136-11eb-3f55-b55c445423fa
+# ╠═1c5c95e4-7138-11eb-0116-314aab362756
+# ╟─0ae33f2c-7139-11eb-1239-5bb34937a949
 # ╟─11f33ecc-544f-11eb-35d5-27a280cdce1b
 # ╠═123c9e1a-5f25-11eb-2aa8-756adae10d51
 # ╟─7fbacda8-5f3f-11eb-2d85-c702f205cc6b
@@ -737,5 +799,7 @@ md"
 # ╠═9917300e-5fe2-11eb-2bed-e1891671fdd6
 # ╟─c056d31a-5fe5-11eb-1cdd-43abf761bc90
 # ╠═da6fa616-6001-11eb-017f-5d75ec317675
+# ╟─3625d788-6d71-11eb-3878-97c4ad01ffb4
+# ╠═08b5d43e-6d66-11eb-0645-91568ff3b368
 # ╟─03a43280-6003-11eb-1df8-a5833659f0a8
 # ╟─1f2086cc-544f-11eb-339e-1d31f4b4eb4b
