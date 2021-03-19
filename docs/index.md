@@ -1,10 +1,14 @@
+## We are placed to receive your feedback 
+This book is currently in a beta version. We are looking forward to getting feedback and criticism, which you can mail to martina.cantaro@lambdaclass.com .
+Thank you!
+
 ## Data Science in Julia for Hackers
 A book written by Federico Carrone, Herman Obst Demaestri and Mariano Nicolini.
 
 Thanks to Martina Cantaro, Camilo Plata, Manuel Puebla, Lucas Raúl Fernandez Piana, Osvaldo Martin, Iñaki Garay and Mariana Vinyolas.
 
 # Prologue
----
+---s
 >*We have a habit in writing articles published in scientific journals to make the work as finished as possible, to cover up all the tracks, to not worry about the blind alleys or describe how you had the wrong idea first, and so on* - **Richard Feynman**
 
 >*Only that what’s open can be true. Full transparency is best for me and you* - **OpenBSD**
