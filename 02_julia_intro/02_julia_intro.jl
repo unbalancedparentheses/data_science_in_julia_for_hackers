@@ -524,13 +524,15 @@ The first argument of the map function, is another function. You can use functio
 "
 
 # ╔═╡ fda97ed8-875f-11eb-372e-4f982ff9b958
-md"""Now lets introdice another data collection: Dictionaries.
-A dictionary is a collection of key-value pairs.
-You can think them like as an array but insted of being indexed by a sequence of numbers they are indexed based on keys, where each key connects to their value.
+md"""
+Now let's introduce another data collection: Dictionaries.
 
-To create a dictionary we use the pre-defined keyword `Dict()`.
-This keyword accepts key-value pairs as arguments and generates a dictionary. 
-So we end with `Dict(key1 => value1, key2 => value2)`
+A dictionary is a collection of key-value pairs.
+You can think of them as an array, but instead of being indexed by a sequence of numbers they are indexed by keys, each one linked to a value.
+
+To create a dictionary we use the function `Dict()` with the key-value pairs as arguments.
+
+`Dict(key1 => value1, key2 => value2)`.
 
 ```julia
 julia> Dict("A"=>1,"B"=>2)
@@ -539,13 +541,13 @@ Dict{String,Int64} with 2 entries:
   "A" => 1
 ```
 So we created our first dictionary.
-Lets rewiev what Julia REPL prints out:
-`Dict{String,Int64}` is telling us the valueTypes that julia automatically assigns to the pair (key,value).
+Let's review what the Julia REPL prints out:
+
+`Dict{String,Int64}` tells us the dictionary data type that Julia automatically assigns to the pair (key,value).
 In this example the keys will be strings and the values integers.
-Finally, it prints all the elements (key => value) of the dictionary.
+Finally, it prints all the (key => value) elements of the dictionary.
 
-
-In julia, the keys and values of a dictionary can be of any valuetype.
+In Julia, the keys and values of a dictionary can be of any type.
 
 ```julia
 julia> Dict("x"=>1.4,"y"=>5.3)
@@ -558,11 +560,11 @@ Dict{Int64,Float64} with 2 entries:
   2 => 100.0
   1 => 10.0
 ```
+Letting Julia automatically assign the data type can cause bugs or errors when adding new elements.
+Thus, it is a good practice to assign the data type of the dictionary ourselves. 
+To do it, we just need to indicate it in between brackets { } after the `Dict` keyword:
 
-Leting Julia assign the valuetypes of our dictionary isn`t a good practice.
-We can assign them ourself, you just have to indicate them in beetwen `{ }` after the `Dict` keyword:
-
-`Dict{key valuetype, value valuetype}(key1=>value1,key1=>value1)`.
+`Dict{key type, value type}(key1 => value1, key2 => value2)`
 
 ```julia
 julia> Dict{Int64,String}(1 => "Hello", 2 => "Word")
@@ -570,9 +572,9 @@ Dict{Int64,String} with 2 entries:
   2 => "Word"
   1 => "Hello"
 ```
+Now let's see the dictionary's basic functions.
 
-Now lets create a dictionary to see the basic functions.
-The languages dictionary that contains the programing language`s name as the key and their released year as the value.
+First, we will create a dictionary called "languages" that contains the names of programming languages as keys and their release year as values.
 
 ```julia
 julia> languages = Dict{String,Int64}("Julia"=>2012, "Java"=>1995, "Python"=>1990)
@@ -584,14 +586,15 @@ Dict{String,Int64} with 3 entries:
 
 ```
 
+To grab a key's value we need to indicate it in between brackets [].
 
-
-To grab a key`s value you need to indicated it in beetwen brackets [].
 ```julia
 julia> languages["Julia"]
 2012
 ```
+
 We can easily add an element to the dictionary.
+
 ```julia
 julia> languages["C++"] = 1980
 1980
@@ -604,7 +607,7 @@ Dict{String,Int64} with 4 entries:
   "C++"    => 1980
 ```
 
-Modify a key\`s value
+When we want to modify a key's value.
 
 ```julia
 julia> languages["Python"]=1991
@@ -617,9 +620,8 @@ Dict{String,Int64} with 3 entries:
   "C++"    => 1980
 
 ```
-Notice that the way of adding or modifing an element are identical.
-That is because keys of a dictionary can never be same, each key must be unique and once you added to the dictionary yo can`t modify it.
-
+Notice that the ways of adding and modifying an element are identical.
+That is because keys of a dictionary can never be repeated, each key must be unique and once added they can't be modified.
 
 To delete an element we use the `delete!` method.
 ```julia
@@ -630,7 +632,7 @@ Dict{String,Int64} with 3 entries:
   "C++"    => 1980
 ```
 
-To finish lets see how to iterate over a dictionary:
+To finish, let's see how to iterate over a dictionary.
 
 ```julia
 julia> for(key,value) in languages
@@ -643,13 +645,14 @@ C++ was released in 1980
 
 """
 
+
 # ╔═╡ fe6c55de-875f-11eb-205c-53d913ae225f
 md"
-Now that the most important details of syntax have been discussed, let's focus our attention into some packages of Julia's ecosystem."
+Now that the most important details of syntax have been discussed, let's focus our attention on some packages of Julia's ecosystem."
 
 # ╔═╡ d1ae60a8-544e-11eb-15b5-97188dc41aa8
 md"
-# **Julia's Ecosystem**: Basic plotting and DataFrames manipulation
+# **Julia's Ecosystem**: Basic plotting and manipulation of DataFrames
 Julia's ecosystem is composed by a variety of libraries which focus on techical domains such as Data Science (DataFrames.jl, CSV.jl, JSON.jl), Machine Learning (MLJ.jl, Flux.jl, Turing.jl) and Scientific Computing (DifferentialEquations.jl), as well as more general purpose programming (HTTP.jl, Dash.jl). 
 We will now consider one of the libraries that will be accompanying us throughout the book to make visualizations, Plots.jl. There are some another great packages like Gadfly.jl and VegaLite.jl, but Plots will be the best to get you started. Let's import the library with the 'using' keyword and start making some plots. We will plot the first ten numbers of the fibonacci sequence using the ```scatter()``` function.
 "
