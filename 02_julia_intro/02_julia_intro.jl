@@ -521,9 +521,134 @@ julia> map(x -> x^2 + 5, [2, 4, 6, 3, 3])
  14
 ```
 The first argument of the map function, is another function. You can use functions already defined if you want, but with the help of anonymous functions you can simply create a function that will be used only inside map. The function we specified in the first argument, is then applied to every member of the array in the second argument. 
-
-Now that the most important details of syntax have been discussed, let's focus our attention into some packages of Julia's ecosystem.
 "
+
+# ╔═╡ fda97ed8-875f-11eb-372e-4f982ff9b958
+md"""Now lets introdice another data collection: Dictionaries.
+A dictionary is a collection of key-value pairs.
+You can think them like as an array but insted of being indexed by a sequence of numbers they are indexed based on keys, where each key connects to their value.
+
+To create a dictionary we use the pre-defined keyword `Dict()`.
+This keyword accepts key-value pairs as arguments and generates a dictionary. 
+So we end with `Dict(key1 => value1, key2 => value2)`
+
+```julia
+julia> Dict("A"=>1,"B"=>2)
+Dict{String,Int64} with 2 entries:
+  "B" => 2
+  "A" => 1
+```
+So we created our first dictionary.
+Lets rewiev what Julia REPL prints out:
+`Dict{String,Int64}` is telling us the valueTypes that julia automatically assigns to the pair (key,value).
+In this example the keys will be strings and the values integers.
+Finally, it prints all the elements (key => value) of the dictionary.
+
+
+In julia, the keys and values of a dictionary can be of any valuetype.
+
+```julia
+julia> Dict("x"=>1.4,"y"=>5.3)
+Dict{String,Float64} with 2 entries:
+  "x" => 1.4
+  "y" => 5.3
+
+julia> Dict(1=>10.0,2=>100.0)
+Dict{Int64,Float64} with 2 entries:
+  2 => 100.0
+  1 => 10.0
+```
+
+Leting Julia assign the valuetypes of our dictionary isn`t a good practice.
+We can assign them ourself, you just have to indicate them in beetwen `{ }` after the `Dict` keyword:
+
+`Dict{key valuetype, value valuetype}(key1=>value1,key1=>value1)`.
+
+```julia
+julia> Dict{Int64,String}(1 => "Hello", 2 => "Word")
+Dict{Int64,String} with 2 entries:
+  2 => "Word"
+  1 => "Hello"
+```
+
+Now lets create a dictionary to see the basic functions.
+The languages dictionary that contains the programing language`s name as the key and their released year as the value.
+
+```julia
+julia> languages = Dict{String,Int64}("Julia"=>2012, "Java"=>1995, "Python"=>1990)
+
+Dict{String,Int64} with 3 entries:
+  "Julia"  => 2012
+  "Python" => 1990
+  "Java"   => 1995
+
+```
+
+
+
+To grab a key`s value you need to indicated it in beetwen brackets [].
+```julia
+julia> languages["Julia"]
+2012
+```
+We can easily add an element to the dictionary.
+```julia
+julia> languages["C++"] = 1980
+1980
+
+julia> languages
+Dict{String,Int64} with 4 entries:
+  "Julia"  => 2012
+  "Python" => 1990
+  "Java"   => 1995
+  "C++"    => 1980
+```
+
+Modify a key\`s value
+
+```julia
+julia> languages["Python"]=1991
+1991
+
+julia> languages
+Dict{String,Int64} with 3 entries:
+  "Julia"  => 2012
+  "Python" => 1991
+  "C++"    => 1980
+
+```
+Notice that the way of adding or modifing an element are identical.
+That is because keys of a dictionary can never be same, each key must be unique and once you added to the dictionary yo can`t modify it.
+
+
+To delete an element we use the `delete!` method.
+```julia
+julia> delete!(languages,"Java")
+Dict{String,Int64} with 3 entries:
+  "Julia"  => 2012
+  "Python" => 1990
+  "C++"    => 1980
+```
+
+To finish lets see how to iterate over a dictionary:
+
+```julia
+julia> for(key,value) in languages
+               println("$key was released in $value")
+       end
+Julia was released in 2012
+Python was released in 1991
+C++ was released in 1980
+```
+
+"""
+
+# ╔═╡ fe236de2-875f-11eb-2c18-49ab8584d861
+
+
+# ╔═╡ fe6c55de-875f-11eb-205c-53d913ae225f
+md"
+Now that the most important details of syntax have been discussed, let's focus our attention into some packages of Julia's ecosystem."
 
 # ╔═╡ d1ae60a8-544e-11eb-15b5-97188dc41aa8
 md"
@@ -761,6 +886,9 @@ md"
 # ╟─c2272800-6007-11eb-1736-b7f334dbba2f
 # ╟─292d20ea-5a8e-11eb-2a96-a37689e468ca
 # ╟─01ca39ee-5a9c-11eb-118e-afae416cfca4
+# ╠═fda97ed8-875f-11eb-372e-4f982ff9b958
+# ╠═fe236de2-875f-11eb-2c18-49ab8584d861
+# ╟─fe6c55de-875f-11eb-205c-53d913ae225f
 # ╟─d1ae60a8-544e-11eb-15b5-97188dc41aa8
 # ╟─e36a4352-544e-11eb-2331-43f864bb01d5
 # ╠═eb62587c-544e-11eb-2cdf-833c27b9793c
