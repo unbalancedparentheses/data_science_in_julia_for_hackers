@@ -8,7 +8,7 @@ using InteractiveUtils
 md"""
 ## The difference between Science and Technology
 
-Anyone would agree that science and technology have a lot in common, but what are the essential differences between them? and how do they interact between each other? 
+Anyone would agree that science and technology have a lot in common, but what are the essential differences between them? And how do they interact with each other? 
 These are fundamental questions for us, and ones that most people don't have a clear answer for. 
 This leads to misconceptions about key aspects on, for example, how knowledge is created and, more generally, how the world operates. 
 
@@ -20,11 +20,11 @@ And then, of course, it is useful to formalize our knowledge in order to be able
 
 ## What is technology?
 
-Technology is the practice that allows us as humans to transform reality. 
-And here it is important to clarify that it is not something "new”, it has been with us since the very beginning of the human era, and it is really what makes us different from other animals. 
+Technology is the practice that allows us humans to transform reality. 
+We have been doing it since the very beginning of the human era, and it is really what makes us different from other animals. 
 
 Technology enables us to expand our capabilities.
-From taking a long, pointy stick to reach fruit high up in a tree, through transforming an entire landscape by building a huge electric dam, to the creation of artificial intelligence that helps us solve our deepest puzzles. 
+From taking a long, pointy stick to reach fruit high up in a tree, to transforming an entire landscape by building a huge electric dam, to the creation of artificial intelligence that helps us solve our deepest puzzles. 
 With technology we transform our experience in the world.
 
 It is evident that the more we know about the reality in which we live, the more we will be able to modify it. 
@@ -32,25 +32,25 @@ But from this idea comes a very important question: what is the order in which i
 Is it necessary first to have an absolute understanding of the process we are trying to modify? 
 Or is technology created in a more chaotic process, through trial and error?
 
-So let's think for a moment, does a child need to know the gear mechanisms of a bicycle in order to be able to use it? Does Lionel Messi need to know about fluid dynamics to make the ball take a curved trajectory? Did the Romans need to know the Navier-Stokes equation in order to build their huge aqueducts? 
-Maybe you are thinking that these are very specific cases, but the reality is that those examples share a general and universal property: the knowledge is acquired based on experimentation, implementation and heuristics, pure trial and error and with much less theoretical knowledge than many believe. 
-And technological innovation tends to follows the same mechanism, it was discovered by people that were taking risks, taking action, with a pure trial-and-error experiential manner and, above all, without anyone truly understanding the theory behind.
+Does a child need to know the gear mechanisms of a bicycle to learn to ride it? Does Lionel Messi need to know about fluid dynamics to make the ball take a curved trajectory? Did the Romans need to know the Navier-Stokes equation in order to build their huge aqueducts? 
+Knowledge is often acquired through experimentation, implementation and heuristics, in a process that involves more trial and error and less theoretical knowledge than many believe.
+And technological innovation tends to follows the same mechanism. Many breakthroughs were made by people who were taking risks, exploring, and stumbling in the dark with a destination in mind but no clear directions to get there, with theories only taking their definitive form once they arrived to a solution and were able to look back on what they had discovered.
 
-The current understanding of how knowledge is produced does not match how it actually happens, and may even work against our society's development.
-Nowadays, there is a kind of linear thinking model in which it is taken for granted that the process of knowledge production has a very specific way of occurring: first, academic and theoretical discoveries are made. And only then, with all of that formalization achieve, one can start thinking of putting it into practical use.
+The current understanding of how knowledge is produced does not reflect how it actually happens in many cases. Having a better understanding of this process can help us do it better.
+Many people think of the innovation process as a more or less linear path that begins with theoretical discoveries, and only after formalization is achieved, practical uses are invented.
 This type of thinking is counterproductive because, being so widespread, it causes many people to be more concerned with constantly acquiring theoretical knowledge, rather than taking action and immersing themselves in practice.
+Fear of failure, of not getting it exactly right on the first try, also plays a role, perhaps encouraged by the way we tell stories about innovation.
 
-By looking at the history of technology and innovation a repeating pattern can be seen: there is a constant differentiation between the people who do and the people who watch and then narrate. 
-"The History Written by the Losers" would [Nassim Nicholas Taleb](https://en.wikipedia.org/wiki/Nassim_Nicholas_Taleb) said, the people that are doing stuff don't have time for writing. 
-And it is not only that the non-practitioners are the ones who write about the findings of others, but as time goes by and because of this prevailing thought about the order of knowledge creation, society ends up being convinced that there was indeed an arduous intellectual and academic work first, and then came its implementation.
+By looking at the history of technology and innovation, and who writes it, we see that the people who made the discoveries are rarely the ones who write the books about them. 
+As [Nassim Nicholas Taleb](https://en.wikipedia.org/wiki/Nassim_Nicholas_Taleb) said in "The History Written by the Losers", the people that are doing stuff don't have time for writing. 
+And perhaps because the non-practitioners are the ones who write about the findings of others, as time goes by, society ends up being convinced that there was indeed an arduous intellectual and academic work first, and then came its implementation.
 That –apparently– common sense in which knowledge is built from a purely intellectual work that can be done in the armchair at home, and that only after acquiring this sacred theoretical knowledge it is possible to come up with technology or innovation, is the one we need to question.
 
 This confusion in the order in which technological advances occur is seen constantly and in the most varied areas of the history of innovation. 
-Take, for example, the development of the jet engine. It really had nothing to do with the discoveries of physicists researching, but to the cleverness and practical heuristics based on trial and error that engineers have developed, although in academic books it is stated the other way around. Or in a really practical field, finances. There, senior traders that have been deploying several heuristics to make their trades, build portfolios that are much more complex than the ones generated by the pricing formulas that academics invented based on the trial-and-error experiences of people who are immersed in the market. 
-And this happened because, in the process of trying to generalize this heuristics into formal equations, the academics are constantly introducing fragilities. 
-That is, in the process of finding the laws that rules those dynamic systems, lot of cases are left behind, thing that does not happen to experienced traders. 
-And the worst thing? After doing so, finance PhDs can't understand how traders can correctly assing prices to financial derivatives without knowing several theorems... 
-So the wheel is broken.
+Take, for example, the development of the jet engine. It really had nothing to do with the discoveries of physicists researching, but with the cleverness and practical heuristics based on trial and error that engineers had developed, although in academic books it is stated the other way around. Or in a really practical field, finances. For years, senior traders that have been deploying several heuristics to make their trades, build portfolios that are much more complex and better performing than the ones generated by the pricing formulas that academics came up with and often didn't stand the test of time.
+And this happened because, in the process of trying to generalize these heuristics into formal equations, the academics are constantly introducing fragility. 
+That is, in the process of finding the laws that rule those dynamic systems, lot of cases are ignored, something that doesn't happen to experienced traders. 
+What cements the gap between theory and practice, is that finance PhDs then fail to understand how traders can correctly assign prices to financial derivatives without being familiar with a corpus of theorems that, to them, are indispensable to understand market dynamics.
 
 We are makers. We are hackers. And, as such, we learn by doing. 
 That is another sign of how different technology is from the sciences. 
