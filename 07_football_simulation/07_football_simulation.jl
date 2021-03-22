@@ -679,6 +679,27 @@ md"### Bibliography
 
 "
 
+# ╔═╡ 094c4b94-8b57-11eb-3731-f9d63210182c
+md" ### Give us feedback
+ 
+ 
+This book is currently in a beta version. We are looking forward to getting feedback and criticism:
+  * Submit a GitHub issue **[here](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues)**.
+  * Mail us to **martina.cantaro@lambdaclass.com**
+ 
+Thank you!
+ 
+"
+
+
+# ╔═╡ 0a39835a-8b57-11eb-3b0e-97a3dd382dbb
+md"
+[Next chapter](https://datasciencejuliahackers.com/08_basketball_shots.jl.html)
+"
+ 
+
+
+
 # ╔═╡ Cell order:
 # ╟─2414104e-1d41-11eb-37cb-9b5cee78a98b
 # ╟─3b7f8a1e-1d42-11eb-1ab1-c11fda416e80
@@ -774,3 +795,5 @@ md"### Bibliography
 # ╠═85bcf944-59cf-11eb-0834-fd898b31a776
 # ╟─cbe72dd2-59d0-11eb-34fe-31533b6139f7
 # ╟─fcb7e8d2-2071-11eb-020d-7bb1d53f8a6d
+# ╟─094c4b94-8b57-11eb-3731-f9d63210182c
+# ╟─0a39835a-8b57-11eb-3b0e-97a3dd382dbb
