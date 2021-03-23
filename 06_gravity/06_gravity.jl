@@ -17,6 +17,14 @@ using Turing
 using StatsPlots
 end
 
+# ╔═╡ ffb305f0-8bdd-11eb-33ec-953f9068f69e
+md"### To do list
+ 
+We are currently working on:
+
+";
+
+
 # ╔═╡ 8b60ead6-187a-11eb-1993-558456e7d356
 md"# Escaping from Mars!
 
@@ -488,6 +496,7 @@ md"
 v0 = [10, 12, 14, 13, 8]; #m/s
 
 # ╔═╡ Cell order:
+# ╟─ffb305f0-8bdd-11eb-33ec-953f9068f69e
 # ╟─8b60ead6-187a-11eb-1993-558456e7d356
 # ╟─972d18fe-1acc-11eb-0b4f-4d1fdc1a4d2c
 # ╟─9e309302-1ada-11eb-3bb0-f90dbdea8bb9
