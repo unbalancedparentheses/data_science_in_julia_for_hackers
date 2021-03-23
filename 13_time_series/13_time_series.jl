@@ -809,6 +809,17 @@ When the process exhibited seasonal trends, we utilized the Holt-Winters’ seas
 
 "
 
+# ╔═╡ 8ade9490-8b6c-11eb-30f5-89ca2fab1b48
+md" ### Give us feedback
+ 
+ 
+This book is currently in a beta version. We are looking forward to getting feedback and criticism:
+  * Submit a GitHub issue **[here](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues)**.
+  * Mail us to **martina.cantaro@lambdaclass.com**
+ 
+Thank you!
+"
+
 # ╔═╡ Cell order:
 # ╟─01cbe438-34d1-11eb-087b-b5294ea7b996
 # ╟─477dbb82-34d1-11eb-13f4-41b080ce2e00
@@ -874,3 +885,4 @@ When the process exhibited seasonal trends, we utilized the Holt-Winters’ seas
 # ╠═cb92e0c2-3f13-11eb-35eb-397810833061
 # ╠═4c144296-3f13-11eb-16aa-839e299d6a63
 # ╟─ec31dcb0-3fa7-11eb-102d-a3b7787cdf1d
+# ╟─8ade9490-8b6c-11eb-30f5-89ca2fab1b48
