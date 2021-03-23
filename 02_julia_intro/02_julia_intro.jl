@@ -32,6 +32,16 @@ begin
 	iris_df = CSV.File("./data/Iris.csv") |> DataFrame
 end
 
+# ╔═╡ e7c41f16-8b46-11eb-0cfc-776986dd6049
+md"### To do list
+
+We are currently working on:
+
+* Explain why we use Julia instead of Python or R [#75](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues/75).
+* Show how to install a Julia package [#78](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues/78).
+* Add unicodes list [#17](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues/17).
+"
+
 # ╔═╡ 0a4fc5fc-544d-11eb-0189-6b1c959b1eb1
 md"
 # Meeting Julia
@@ -881,8 +891,26 @@ md"
 * [Iris Dataset](https://en.wikipedia.org/wiki/Iris_flower_data_set)
 "
 
+# ╔═╡ eb4b0fd0-8b48-11eb-0777-c9d72dfe20c7
+md" ### Give us feedback
+
+
+This book is currently in a beta version. We are looking forward to getting feedback and criticism:
+  * Submit a GitHub issue **[here](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues)**.
+  * Mail us to **martina.cantaro@lambdaclass.com**
+
+Thank you!
+
+"
+
+# ╔═╡ ecb0b100-8b4f-11eb-2f31-538ad792d76d
+md"
+[Next chapter](https://datasciencejuliahackers.com/03_probability_intro.jl.html)
+"
+
 # ╔═╡ Cell order:
-# ╟─0a4fc5fc-544d-11eb-0189-6b1c959b1eb1
+# ╟─e7c41f16-8b46-11eb-0cfc-776986dd6049
+# ╠═0a4fc5fc-544d-11eb-0189-6b1c959b1eb1
 # ╟─c2272800-6007-11eb-1736-b7f334dbba2f
 # ╟─292d20ea-5a8e-11eb-2a96-a37689e468ca
 # ╟─01ca39ee-5a9c-11eb-118e-afae416cfca4
@@ -930,3 +958,5 @@ md"
 # ╠═08b5d43e-6d66-11eb-0645-91568ff3b368
 # ╟─03a43280-6003-11eb-1df8-a5833659f0a8
 # ╟─1f2086cc-544f-11eb-339e-1d31f4b4eb4b
+# ╟─eb4b0fd0-8b48-11eb-0777-c9d72dfe20c7
+# ╟─ecb0b100-8b4f-11eb-2f31-538ad792d76d
