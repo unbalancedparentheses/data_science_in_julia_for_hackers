@@ -466,6 +466,24 @@ We repeated this process two more times, changing the prior distribution of the 
 Finally, we used the gravity we inferred to calculate the escape velocity from Mars.
 "
 
+# ╔═╡ 86027556-8b79-11eb-1503-472d63093c04
+md" ### Give us feedback
+ 
+ 
+This book is currently in a beta version. We are looking forward to getting feedback and criticism:
+  * Submit a GitHub issue **[here](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues)**.
+  * Mail us to **martina.cantaro@lambdaclass.com**
+ 
+Thank you!
+"
+
+
+# ╔═╡ 857344d0-8b79-11eb-0e02-1359ef1a2423
+md"
+[Next chapter](https://datasciencejuliahackers.com/07_football_simulation.jl.html)
+"
+
+
 # ╔═╡ 37847564-186a-11eb-399a-c1023c4ea7ed
 v0 = [10, 12, 14, 13, 8]; #m/s
 
@@ -539,4 +557,6 @@ v0 = [10, 12, 14, 13, 8]; #m/s
 # ╠═fcf260ce-1ae3-11eb-28a4-556a8fbd5335
 # ╟─22ea7608-1ae5-11eb-0e4d-b15d79ea5b59
 # ╟─dade6450-81d2-11eb-310b-6599ff45856c
+# ╟─86027556-8b79-11eb-1503-472d63093c04
+# ╟─857344d0-8b79-11eb-0e02-1359ef1a2423
 # ╟─37847564-186a-11eb-399a-c1023c4ea7ed
