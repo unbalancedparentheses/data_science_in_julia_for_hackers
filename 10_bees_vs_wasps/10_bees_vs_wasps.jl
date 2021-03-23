@@ -367,6 +367,24 @@ md"
 * [How Convolutional Neural Networks work](https://www.youtube.com/watch?v=FmpDIaiMIeA)
 "
 
+# ╔═╡ 88c5d278-8b7a-11eb-163e-5f6e3d788c3f
+md" ### Give us feedback
+ 
+ 
+This book is currently in a beta version. We are looking forward to getting feedback and criticism:
+  * Submit a GitHub issue **[here](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues)**.
+  * Mail us to **martina.cantaro@lambdaclass.com**
+ 
+Thank you!
+"
+
+
+# ╔═╡ 87ee9c0e-8b7a-11eb-2203-bfe145b087eb
+md"
+[Next chapter](https://datasciencejuliahackers.com/11_ultima_online.jl.html)
+"
+
+
 # ╔═╡ Cell order:
 # ╟─14e76c12-3b30-11eb-12de-ab2d1a9dbca8
 # ╟─dc5adaaa-3bca-11eb-1a53-e1fc8729cc1f
@@ -414,3 +432,5 @@ md"
 # ╟─e01a6f0e-4a1e-11eb-2ea6-850ba1652f08
 # ╟─c838ce7e-8562-11eb-12a9-4d5fed79fb02
 # ╟─aff7a9f4-3bb4-11eb-154c-cd119af4d850
+# ╟─88c5d278-8b7a-11eb-163e-5f6e3d788c3f
+# ╟─87ee9c0e-8b7a-11eb-2203-bfe145b087eb
