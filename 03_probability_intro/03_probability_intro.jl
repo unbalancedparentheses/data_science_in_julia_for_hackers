@@ -48,11 +48,26 @@ begin
 	end
 end;
 
+# ╔═╡ b71a6256-8c1a-11eb-18d5-c52f6eb61247
+md"### To do list
+ 
+
+";
+
+
 # ╔═╡ 84b10156-5116-11eb-1a6d-13f625300801
 md"
 # Introduction to Probability
-In this book, probability and statistics topics will be discussed extensively. Mainly the Bayesian interpretation of probability and Bayesian statistics. But we first need an intuitive conceptual basis to build on top of that. 
-We won't assume any prior knowledge, so let's start from the basics. What *is* probability? Probability si a measure of uncertainty of a particular event happening or the degree of confidence about some statement or hypothesis, that we express with a number ranging from $0$ to $1$. The number $0$ means we know with certainty that the event will not happen (or that the hypothesis is false), while the number $1$ means we know with certainty that the event will happen (or that the hypothesis is true). How exactly this number is linked to each event is something that is far from trivial and indeed is a discussion that has been going for years. Later on we will dive deeper into that rabbit hole, but for the moment lets not worry about how exacly this is defined or calculated: assume we have well established method for the time being. The important thing now will be the different rules that emerge from the nature of these events.
+In this book, probability and statistics topics will be discussed extensively. Mainly the Bayesian interpretation of probability and Bayesian statistics.
+But we first need an intuitive conceptual basis to build on top of that. 
+We won't assume any prior knowledge, so let's start from the basics.
+What *is* probability? Probability is a measure of our belief that a particular event will occur, and we express this with a number ranging from $0$ to $1$.
+The number $0$ means we have the strongest possible belief that the event will not happen: We are sure it will not happen.
+The number $1$ means we have the strongest possible belief that the event will happen: We are sure it will happen. 
+Probability, being a measure of our own belief or certainty in the occurrence of an event, does not determine whether the event occurs or not. 
+For this reason, events may still occur when we assign them probability $0$, and they might not occur if we assign them probability $1$.
+How exactly this number is linked to each event is something that is far from trivial and indeed is a discussion that has been going for years. Later on we'll dive deeper into that rabbit hole, but for the moment let's not worry about how exactly this is defined or calculated: assume we have a well established method for the time being. The important thing now will be the different rules that emerge from the nature of these events.
+
 
 We can start reasoning about probabilities of events with an example. Say we know that the probability of raining today in Buenos Aires is $0.8$. In a more mathematical form, we can say that
 
@@ -74,16 +89,24 @@ $P(A|B)\text{ or }P(B|A)$
 In general, $P(A|B)$ and $P(B|A)$, which reads as 'the conditional probability of A given B' and 'the conditional probability of B given A',
 are not equal, that's why I have written the two possibilities. The way to interpret this, for example $P(A|B)$, is: 'the probability of the event A happening, *given* that we know the event B occured'. The analogous interpretation for $P(B|A)$ would be 'the probability of event B happening, given that we know the event A occured'. Altough it may sound as if this implies an order in the occurance of the events, that isn't necessary the case. What in reality has an actual order in this statement is our knowledge of what things happened. If we say, for example, $P(A|B)$, then what we know first is event B, and given this knowledge, we want to know the probability of event A.
 
-Let's see in a simple example how this conditional probability arises from two non-independent events. Assume we have, again, the event R 'it will rain today in Buenos Aires', and another event H, 'staying at home today'. Applying what we learned, we would first ask ourselves if these two events are independent or interdependent. If they were completely independent one from another, when trying to compute the conditional probabilities, for example $P(R|H)$, we will have
+Let's see how conditional probability works.
+Suppose the next event, where R stands for  'it will rain today in Buenos Aires' and V for 'the Mount Merapi volcano will erupt'. Since the two variables are completely independent one from another, when trying to compute the conditional probabilities, for example $P(V|R)$, we will have
 
-$P(R|H) = P(R)$
+$P(V|R) = P(V)$
 
-What this equation is telling us, is that the information that the event H happened, does not affect the probability of event R. That is the bare definition of independence! However, this only means the event R is independent from the event H. This does not automatically mean that the event H is endependent of R. In fact, if we pay a little more attention to how these events relate one another, we have our answer.
-The probability of raining today in Buenos Aires won't change by the fact I stay at home or not. I can't change the climate, at least in that direct way. So effectively, $P(R|H) = P(R)$ is correct. But what if we invert the events? In this case, if we think about it for a second we will notice that
+What this equation is telling us, is that the information that the event R happened, does not affect the probability of event R. That is the bare definition of independence! 
+
+
+Now let's consider another event H, 'I am staying at home today'. Since I live in Buenos Aires and like to stay home on rainy days.
 
 $P(H|R) \neq P(H)$
 
-Indeed, if we know that it is raining, the probability of staying at home should be affected! In my case, I would much prefer to stay at home, so that probability will be higher. 
+Indeed, if it is raining, the probability of me staying at home is affected! 
+It will be higher. 
+
+$P(H|R) > P(H)$
+
+
 At this point, we would state a formula that relates conditional probability and conjoint probability. For two general events A and B, this is
 
 $P(A\text{ and }B) = P(A)P(B|A)$
@@ -143,12 +166,15 @@ To understand the full power of Bayesian probability we have to extend the notio
 # ╔═╡ 2d9482ce-1252-11eb-0cc7-35ad9c288ef8
 md"
 # Probability distributions
-So far we have been talking of probabilities of particular events. **Probability distributions**, on the other hand, help us compute probabilities of various events. These are functions that connect each event in an 'event space' to some probability. What do we mean by 'event space'? For example, consider the distribution of heights of adult women, given approximately by a **Normal distribution**,
+So far we have been talking of probabilities of particular events. Probability distributions also called robability density, on the other hand, help us compute probabilities of various events. These are functions that connect each event in an 'event space' to some probability. What do we mean by 'event space'? For example, consider the distribution of heights of adult women, given approximately by a **Normal distribution**,
 "
 
 # ╔═╡ 351923ee-5436-11eb-2bf6-8d024a64e83e
 md"
-In this example, the event space is just all the possible heights a woman could have, in other words, the 'x' axis. The 'y' axis, in the other hand, represents the probability that, if we select a woman randomly, she will have a given height. For example, the probability that a randomly selected woman will be 60 inches tall is approximately $0.06$. Having a distribution, one can ask questions like 'what is the probability of a randomly selected woman being 60 inches or taller?'. This could be answered by summing the probabilities of all heights 60 and up.
+In this example, the event space is just all the possible heights a woman could have, in other words, the 'x' axis. The 'y' axis, on the other hand, represents the probability. 
+What do we mean by probability? For example, suppose we want to know the probability that a randomly selected woman measures between 60 and 65 inches.
+To know it we need calculate the area under the distribution curve in the intervals x = [60,65]
+
 
 Any mathematical function satisfying certain requirements can be a probability distribution. There are lots of these type of functions, and each one has its own shape and distinctive properties.
 
@@ -423,7 +449,26 @@ md"
 * [Bandit Algs page](https://banditalgs.com/)
 "
 
+# ╔═╡ 394ddf0a-8c1b-11eb-05da-13d28342df75
+md" ### Give us feedback
+ 
+ 
+This book is currently in a beta version. We are looking forward to getting feedback and criticism:
+  * Submit a GitHub issue **[here](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues)**.
+  * Mail us to **martina.cantaro@lambdaclass.com**
+ 
+Thank you!
+"
+
+
+# ╔═╡ 4b235516-8c1b-11eb-012e-6d76290f3f27
+md"
+[Next chapter](https://datasciencejuliahackers.com/03_probability_intro.jl.html)
+"
+
+
 # ╔═╡ Cell order:
+# ╟─b71a6256-8c1a-11eb-18d5-c52f6eb61247
 # ╟─84b10156-5116-11eb-1a6d-13f625300801
 # ╟─2d9482ce-1252-11eb-0cc7-35ad9c288ef8
 # ╠═e6ecfce4-54e5-11eb-2ff6-3bb479c286af
@@ -473,3 +518,5 @@ md"
 # ╟─0d541d38-59a5-11eb-3404-f13d3e5150d4
 # ╟─1b4c0804-82b3-11eb-208c-a1fac34852cf
 # ╟─32df0e98-35a2-11eb-1121-5f731785abbb
+# ╟─394ddf0a-8c1b-11eb-05da-13d28342df75
+# ╟─4b235516-8c1b-11eb-012e-6d76290f3f27
