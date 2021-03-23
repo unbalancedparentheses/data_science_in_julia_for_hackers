@@ -20,6 +20,15 @@ begin
 	using DiffEqFlux, Flux
 end
 
+# ╔═╡ 99368032-8b96-11eb-25c0-2b58dda0ff7b
+ 
+md"### To do list
+ 
+We are currently working on:
+ 
+";
+
+
 # ╔═╡ 2139fac8-4ec7-11eb-1625-bf9aab9b1c2c
 md"""# Letting the computer do science
 
@@ -410,7 +419,26 @@ md"""### References
 * [Universal Differential Equations - Chris Rackauchas](https://github.com/ChrisRackauckas/universal_differential_equations)
 """
 
+# ╔═╡ db20ac98-8b96-11eb-070b-45ed21d6904e
+md"### Give us feedback
+ 
+ 
+This book is currently in a beta version. We are looking forward to getting feedback and criticism:
+  * Submit a GitHub issue **[here](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues)**.
+  * Mail us to **martina.cantaro@lambdaclass.com**
+ 
+Thank you!
+"
+
+
+# ╔═╡ daae07e2-8b96-11eb-2e5a-8969fa01dbf4
+md"
+[Next chapter](https://datasciencejuliahackers.com/13_time_series.jl.html)
+"
+
+
 # ╔═╡ Cell order:
+# ╟─99368032-8b96-11eb-25c0-2b58dda0ff7b
 # ╟─2139fac8-4ec7-11eb-1625-bf9aab9b1c2c
 # ╠═fa3ab76e-5413-11eb-36f1-e5117d887fc7
 # ╠═247a6e7e-5417-11eb-3509-3d349198ec43
@@ -451,5 +479,7 @@ md"""### References
 # ╠═520b2d00-5457-11eb-349f-3bec665738fd
 # ╠═fef7edba-54dd-11eb-3025-35fe9ffae6ac
 # ╟─fe88958e-54e5-11eb-12bc-01ad625d85c5
-# ╠═e6ec4364-54eb-11eb-1bf6-83db426cd32f
+# ╟─e6ec4364-54eb-11eb-1bf6-83db426cd32f
 # ╟─aac56d4e-54e7-11eb-2d8a-1f21c386ef8d
+# ╟─db20ac98-8b96-11eb-070b-45ed21d6904e
+# ╟─daae07e2-8b96-11eb-2e5a-8969fa01dbf4
