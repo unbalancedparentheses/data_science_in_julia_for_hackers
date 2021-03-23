@@ -38,6 +38,14 @@ begin
 	using StatsFuns: logistic
 end
 
+# ╔═╡ 79145330-8bdf-11eb-1153-a7a081365531
+md"### To do list
+ 
+We are currently working on:
+ 
+";
+
+
 # ╔═╡ b4257f94-204e-11eb-258e-0524565c4d41
 md"# Basketball: how likely is it to score? "
 
@@ -593,6 +601,7 @@ md"
 
 
 # ╔═╡ Cell order:
+# ╟─79145330-8bdf-11eb-1153-a7a081365531
 # ╟─b4257f94-204e-11eb-258e-0524565c4d41
 # ╠═fa821e30-2293-11eb-3ba4-e3a7ca987312
 # ╟─cc25e57c-204e-11eb-23a6-7d5a88113776
