@@ -37,6 +37,14 @@ begin
 	title!("Prior distribution for p")
 end
 
+# ╔═╡ 3a8615d2-8be3-11eb-3913-b97d04bb053a
+md"### To do list
+ 
+We are currently working on:
+ 
+";
+
+
 # ╔═╡ 9608da48-1acd-11eb-102a-27fbac1ec88c
 md" # Probabilistic Programming"
 
@@ -274,6 +282,7 @@ md"
 
 
 # ╔═╡ Cell order:
+# ╟─3a8615d2-8be3-11eb-3913-b97d04bb053a
 # ╟─9608da48-1acd-11eb-102a-27fbac1ec88c
 # ╟─14b8e170-1ad9-11eb-2111-3784e7029ba0
 # ╟─e8557342-1adc-11eb-3978-33880f4a97a2
