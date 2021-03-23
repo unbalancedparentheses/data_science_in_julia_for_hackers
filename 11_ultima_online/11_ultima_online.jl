@@ -13,6 +13,14 @@ using CSV, DataFrames
 # ╔═╡ 5e4becd6-2855-11eb-3c87-cdcf7b5a849d
 using Turing, MCMCChains
 
+# ╔═╡ 1c68799c-8be2-11eb-3f11-a1861060b86d
+md"### To do list
+ 
+We are currently working on:
+ 
+";
+
+
 # ╔═╡ 74cc60be-2821-11eb-3ad7-e581052437bd
 md"""# The Ultima Online Catastrophe
 
@@ -346,7 +354,26 @@ md"### References
 - [Turing Bayesian Differential Equation](https://turing.ml/dev/tutorials/10-bayesiandiffeq/)
 - [Garriot telling the Story](https://www.youtube.com/watch?v=KFNxJVTJleE&ab_channel=ArsTechnica)"
 
+# ╔═╡ e00277e6-8b5f-11eb-2626-3d60478516a7
+md" ### Give us feedback
+ 
+ 
+This book is currently in a beta version. We are looking forward to getting feedback and criticism:
+  * Submit a GitHub issue **[here](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues)**.
+  * Mail us to **martina.cantaro@lambdaclass.com**
+ 
+Thank you!
+"
+
+
+# ╔═╡ e112c96a-8b5f-11eb-06a3-5bf82866ea17
+md"
+[Next chapter](https://datasciencejuliahackers.com/12_ultima_continued.jl.html)
+"
+
+
 # ╔═╡ Cell order:
+# ╟─1c68799c-8be2-11eb-3f11-a1861060b86d
 # ╟─74cc60be-2821-11eb-3ad7-e581052437bd
 # ╟─39dd435a-2840-11eb-02af-cd234775c966
 # ╟─88ea0418-2840-11eb-21c7-99f98c018463
@@ -405,3 +432,5 @@ md"### References
 # ╠═b59baa88-29c9-11eb-1645-f103a056dbca
 # ╟─0e53ba34-29d5-11eb-3540-bbc2a0127cf5
 # ╟─a71c7d44-35a8-11eb-1bb5-858fa2666109
+# ╟─e00277e6-8b5f-11eb-2626-3d60478516a7
+# ╟─e112c96a-8b5f-11eb-06a3-5bf82866ea17
