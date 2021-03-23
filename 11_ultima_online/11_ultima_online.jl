@@ -13,6 +13,14 @@ using CSV, DataFrames
 # ╔═╡ 5e4becd6-2855-11eb-3c87-cdcf7b5a849d
 using Turing, MCMCChains
 
+# ╔═╡ 1c68799c-8be2-11eb-3f11-a1861060b86d
+md"### To do list
+ 
+We are currently working on:
+ 
+";
+
+
 # ╔═╡ 74cc60be-2821-11eb-3ad7-e581052437bd
 md"""# The Ultima Online Catastrophe
 
@@ -365,6 +373,7 @@ md"
 
 
 # ╔═╡ Cell order:
+# ╟─1c68799c-8be2-11eb-3f11-a1861060b86d
 # ╟─74cc60be-2821-11eb-3ad7-e581052437bd
 # ╟─39dd435a-2840-11eb-02af-cd234775c966
 # ╟─88ea0418-2840-11eb-21c7-99f98c018463
