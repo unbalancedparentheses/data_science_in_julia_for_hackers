@@ -199,7 +199,7 @@ end
 
 # ╔═╡ 557c43da-5435-11eb-2e62-8fc988c6cc7a
 begin
-# Define the neueral network which learns L(x, y, y(t-τ))
+# Define the neueral network 
 L = FastChain(FastDense(2, 32, tanh),FastDense(32, 32, tanh), FastDense(32, 2))
 p = initial_params(L)
 
@@ -289,7 +289,7 @@ begin
 L̂ = L(Xₙ,res2.minimizer)
 # Plot the data and the approximation
 NNsolution = predict(res2.minimizer)
-# Trained on noisy data vs real solution
+# Plot Trained on noisy data vs real solution
 plot(solution.t, NNsolution')
 plot!(solution.t, X', title="The trained NN have fitted well")
 end
@@ -300,11 +300,11 @@ md"""Nice! Now that we have our Neural Network already learned the **Input-Outpu
 
 # ╔═╡ b38b9410-544e-11eb-220b-5746f897b5f4
 begin
-## Sparse Identification 
+## Let´s continue with the Sparse Identification 
 
 # Create a Basis
 @variables u[1:2]
-# Lots of polynomials
+# Add many polynomial to the Basis
 polys = Operation[1]
 
 for i ∈ 1:5
@@ -322,7 +322,7 @@ end
 
 # ╔═╡ d58d6d84-544e-11eb-17b8-91723456fc15
 begin
-# And some other stuff
+# And some sinusoidal functions
 h = [cos.(u)...; sin.(u)...; polys...]
 basis = Basis(h, u)
 	
@@ -343,7 +343,7 @@ begin
 opt = SR3()
 # Create the thresholds which should be used in the search process
 λ = exp10.(-7:0.1:3)
-# Target function to choose the results from; x = L0 of coefficients and L2-Error of the model
+# Target function to choose the results from.
 g(x) = x[1] < 1 ? Inf : norm(x, 2)
 	
 Ψ = SINDy(Xₙ[:, 2:end], L̂[:, 2:end], basis, λ,  opt, g = g, maxiter = 10000, normalize = true, denoise = true)
@@ -391,7 +391,7 @@ unknown_eq = ODEFunction(unknown_sys)
 # Just the equations
 b = Basis((u, p, t)->unknown_eq(u, [1.; 1.], t), u)
 
-# Retune for better parameters -> we could also use DiffEqFlux or other parameter estimation tools here.
+# Retune for better parameters (we already know the equations)
 Ψf = SINDy(Xₙ[:, 2:end], L̂[:, 2:end], b, STRRidge(0.01), maxiter = 100, convergence_error = 1e-18)
 end
 
@@ -465,7 +465,7 @@ md"
 # ╠═d84d16c2-5447-11eb-0caf-6d099ef176a7
 # ╠═d9ec41a0-5448-11eb-09f9-ffbb2a896a64
 # ╠═03e26dea-5449-11eb-38dc-957ea73db154
-# ╠═58a1294c-544c-11eb-27ca-8512bc3d5461
+# ╟─58a1294c-544c-11eb-27ca-8512bc3d5461
 # ╠═b38b9410-544e-11eb-220b-5746f897b5f4
 # ╠═d58d6d84-544e-11eb-17b8-91723456fc15
 # ╠═5a6dcdc8-5451-11eb-2a2f-cbc4f35844c0
