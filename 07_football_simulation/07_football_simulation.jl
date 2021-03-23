@@ -16,6 +16,14 @@ using Turing
 # ╔═╡ 3312a490-577d-11eb-08b2-9917572d77a3
 using LinearAlgebra
 
+# ╔═╡ ed4b583a-8bde-11eb-3537-a580e9e706d0
+md"### To do list
+ 
+We are currently working on:
+ 
+";
+
+
 # ╔═╡ 2414104e-1d41-11eb-37cb-9b5cee78a98b
 md"## Creating our conjectures"
 
@@ -701,6 +709,7 @@ md"
 
 
 # ╔═╡ Cell order:
+# ╟─ed4b583a-8bde-11eb-3537-a580e9e706d0
 # ╟─2414104e-1d41-11eb-37cb-9b5cee78a98b
 # ╟─3b7f8a1e-1d42-11eb-1ab1-c11fda416e80
 # ╟─4e4385b4-203b-11eb-0c5b-cbe41156401b
