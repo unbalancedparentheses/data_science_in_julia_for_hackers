@@ -46,7 +46,7 @@ We are currently working on:
 md"
 # Meeting Julia
 
-Julia is a free and open-source general-purpose language, designed and developed by Jeff Bezason, Alan Edelman, Viral B. Shah and Stefan Karpinski in MIT. 
+Julia is a free and open-source general-purpose language, designed and developed by Jeff Bezanson, Alan Edelman, Viral B. Shah and Stefan Karpinski in MIT. 
 Julia is created from scratch to be both fast and easy to understand, even for people who are not programmers or computer scientists. It has abstraction capabilities of high-level languages, while also being really fast, as its slogan calls “Julia looks like Python, feels like Lisp, runs like Fortran”.
 
 Before Julia, programming languages were limited to either having a simple syntax and good abstraction capabilities or being high-performance as solving resource-intensive computations required to. This led applied scientists to face the task of not only learning two different languages, but also learning how to have them communicating with one another. This difficulty is called the *two-language problem*, which Julia creators aim to solve with this new language. 

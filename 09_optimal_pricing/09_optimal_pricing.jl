@@ -29,6 +29,14 @@ plot(-10:0.01:10,Cauchy(), xlim=(-10,10),label="Cauchy(0,1)")
 plot!(Normal(), xlim=(-10,10), label="Normal(0,1)")
 end
 
+# ╔═╡ 39b6c758-8be0-11eb-30cb-7d7442920974
+md"### To do list
+ 
+We are currently working on:
+ 
+";
+
+
 # ╔═╡ 5f171c4c-1567-11eb-0d69-f116e79738b5
 md"# Overview
 
@@ -490,7 +498,26 @@ md"### References
 
 "
 
+# ╔═╡ 2ec2da4e-8b5e-11eb-3cee-9d75549739a2
+md" ### Give us feedback
+ 
+ 
+This book is currently in a beta version. We are looking forward to getting feedback and criticism:
+  * Submit a GitHub issue **[here](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues)**.
+  * Mail us to **martina.cantaro@lambdaclass.com**
+ 
+Thank you!
+"
+
+
+# ╔═╡ 2dea0886-8b5e-11eb-1dfa-2d44174693c1
+md"
+[Next chapter](https://datasciencejuliahackers.com/10_bees_vs_wasps.jl.html)
+"
+
+
 # ╔═╡ Cell order:
+# ╟─39b6c758-8be0-11eb-30cb-7d7442920974
 # ╟─5f171c4c-1567-11eb-0d69-f116e79738b5
 # ╟─b53fe140-1567-11eb-134b-39d6066eb06d
 # ╠═ca9a04c0-1567-11eb-39f6-3fac127be101
@@ -558,3 +585,5 @@ md"### References
 # ╠═ee7544f8-17d4-11eb-251d-f3c04a5a32e7
 # ╟─32997ca8-1869-11eb-2bc6-11da0327e0b8
 # ╟─03117e4c-5b65-11eb-2973-6f2eaf3d9199
+# ╟─2ec2da4e-8b5e-11eb-3cee-9d75549739a2
+# ╟─2dea0886-8b5e-11eb-1dfa-2d44174693c1

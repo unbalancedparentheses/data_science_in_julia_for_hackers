@@ -38,6 +38,14 @@ begin
 	using StatsFuns: logistic
 end
 
+# ╔═╡ 79145330-8bdf-11eb-1153-a7a081365531
+md"### To do list
+ 
+We are currently working on:
+ 
+";
+
+
 # ╔═╡ b4257f94-204e-11eb-258e-0524565c4d41
 md"# Basketball: how likely is it to score? "
 
@@ -574,7 +582,26 @@ We set the prior distribution of *b* to a beta distribution and constructed the 
 Finally, we analyzed the results to see if the period of the game affects the probability of scoring.
 "
 
+# ╔═╡ 0cab33d6-8b5c-11eb-3d54-4945548bbf39
+md" ### Give us feedback
+ 
+ 
+This book is currently in a beta version. We are looking forward to getting feedback and criticism:
+  * Submit a GitHub issue **[here](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues)**.
+  * Mail us to **martina.cantaro@lambdaclass.com**
+ 
+Thank you!
+"
+
+
+# ╔═╡ 0c12a7d8-8b5c-11eb-2dad-bb312eb48da9
+md"
+[Next chapter](https://datasciencejuliahackers.com/09_optimal_pricing.jl.html)
+"
+
+
 # ╔═╡ Cell order:
+# ╟─79145330-8bdf-11eb-1153-a7a081365531
 # ╟─b4257f94-204e-11eb-258e-0524565c4d41
 # ╠═fa821e30-2293-11eb-3ba4-e3a7ca987312
 # ╟─cc25e57c-204e-11eb-23a6-7d5a88113776
@@ -596,9 +623,9 @@ Finally, we analyzed the results to see if the period of the game affects the pr
 # ╟─8dd89dca-2394-11eb-2d34-2d584b8e8fbd
 # ╟─3d1794bc-2066-11eb-0ab3-7320911a9964
 # ╠═66aee544-2072-11eb-2a78-37d0f33e66e6
-# ╠═3d9b284e-2073-11eb-0b69-e7bcb7241843
+# ╟─3d9b284e-2073-11eb-0b69-e7bcb7241843
 # ╟─bb2a837a-2073-11eb-0109-e76c0f370cea
-# ╠═29426866-2075-11eb-114a-674a286cc586
+# ╟─29426866-2075-11eb-114a-674a286cc586
 # ╟─901ad6f8-2075-11eb-13fc-f3d501387757
 # ╟─c312e2a4-2075-11eb-2faf-d55d61c9d39c
 # ╟─d4ce7370-2075-11eb-220d-136d89b3daa9
@@ -608,7 +635,7 @@ Finally, we analyzed the results to see if the period of the game affects the pr
 # ╟─71ff112e-229f-11eb-3c78-b9e8a77b0b65
 # ╟─b99b3b7a-229f-11eb-238f-73ea6d44f206
 # ╟─f207b090-229c-11eb-3567-d5bd1c42d9b4
-# ╟─36ced550-229d-11eb-1dbd-df184e970a68
+# ╠═36ced550-229d-11eb-1dbd-df184e970a68
 # ╟─5b229308-22a0-11eb-1805-d7b1fbd63e5c
 # ╟─9823f6a4-22b2-11eb-0c36-a9bfc81e09e0
 # ╟─ad764842-2076-11eb-2aad-778de3b5c484
@@ -621,13 +648,13 @@ Finally, we analyzed the results to see if the period of the game affects the pr
 # ╟─8bd6e516-22a1-11eb-0082-95cf09350dbd
 # ╟─7ee40f42-22a5-11eb-2fc0-f579fe0917be
 # ╟─d4143c48-22a1-11eb-00f3-afc11310b56b
-# ╟─d9720614-22ad-11eb-1dde-1f243605ee34
+# ╠═d9720614-22ad-11eb-1dde-1f243605ee34
 # ╟─ad665eb4-22b0-11eb-022a-ffd6a969392e
 # ╟─18a2518e-22b0-11eb-1a12-edb99072a6c5
-# ╟─333b9190-22b0-11eb-2ac5-b1ec28e7d258
+# ╠═333b9190-22b0-11eb-2ac5-b1ec28e7d258
 # ╟─f2a57c44-22ae-11eb-3f24-bda8faec4762
 # ╟─7adfd7ca-22b2-11eb-1334-5985564fd195
-# ╠═b24672a0-22b2-11eb-35e3-97f9ef153243
+# ╟─b24672a0-22b2-11eb-35e3-97f9ef153243
 # ╠═39cc64c2-22b4-11eb-0ac8-918f817537d2
 # ╟─90fbe58e-22b3-11eb-376f-7b525f5ac609
 # ╟─5fb5edb0-22b5-11eb-0ff4-291bf910d4ca
@@ -638,10 +665,10 @@ Finally, we analyzed the results to see if the period of the game affects the pr
 # ╠═3b9e03bc-22b6-11eb-2ae5-23eefb618fc7
 # ╠═db4c533a-22b6-11eb-2afa-47c5379ff7a3
 # ╟─8bec6010-2429-11eb-30a1-29cee0e4df0f
-# ╟─21cb52b8-22b7-11eb-221e-4d614103652d
+# ╠═21cb52b8-22b7-11eb-221e-4d614103652d
 # ╟─307dbd5a-22b7-11eb-3ed6-9bb6fe3066e3
 # ╟─72762930-242a-11eb-3526-2da82f4f9af0
-# ╟─5f7eaac4-22b7-11eb-00d5-9b9dd02d9d94
+# ╠═5f7eaac4-22b7-11eb-00d5-9b9dd02d9d94
 # ╟─0ba9956a-242b-11eb-12b3-8d84d80d0634
 # ╟─a7e7e342-22b8-11eb-0ae2-211dc1ec64d8
 # ╟─04457280-22b9-11eb-27bf-07b8a704f5b5
@@ -660,6 +687,8 @@ Finally, we analyzed the results to see if the period of the game affects the pr
 # ╠═768611a8-2366-11eb-0073-0bb804405f74
 # ╟─6b5ca676-2360-11eb-3cf7-33602907075c
 # ╟─a873acde-242e-11eb-31d7-0165fc71d465
-# ╟─5d4fcd4a-2367-11eb-1c5f-fb9961b9a3d4
+# ╠═5d4fcd4a-2367-11eb-1c5f-fb9961b9a3d4
 # ╟─60defa1c-242f-11eb-13b2-1f77ecbe291f
 # ╟─6341de9e-836a-11eb-371d-e9b4a3a2f743
+# ╟─0cab33d6-8b5c-11eb-3d54-4945548bbf39
+# ╟─0c12a7d8-8b5c-11eb-2dad-bb312eb48da9

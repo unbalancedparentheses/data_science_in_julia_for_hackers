@@ -16,6 +16,14 @@ begin
 	using Images
 end
 
+# ╔═╡ 60e6973a-8b6e-11eb-2b72-d168283b6031
+md"### To do list
+ 
+We are currently working on:
+ 
+* Explain how to measure the model performance when the categories are not balanced [#85](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues/85).
+"
+
 # ╔═╡ 0de04b90-2835-11eb-1369-01c64bc38c42
 md"
 # Naive Bayes: Spam or Ham?
@@ -280,7 +288,26 @@ md" ### References
 * [Monty Python Sketch - YouTube](https://www.youtube.com/watch?v=zLih-WQwBSc)
 "
 
+# ╔═╡ 603fcd02-8b6f-11eb-3290-d3f1b70dadfe
+md" ### Give us feedback
+ 
+ 
+This book is currently in a beta version. We are looking forward to getting feedback and criticism:
+  * Submit a GitHub issue **[here](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues)**.
+  * Mail us to **martina.cantaro@lambdaclass.com**
+ 
+Thank you!
+"
+
+
+# ╔═╡ 5f7efaa8-8b6f-11eb-2d26-65988dde9ea5
+md"
+[Next chapter](https://datasciencejuliahackers.com/05_prob_prog_intro.jl.html)
+"
+
+
 # ╔═╡ Cell order:
+# ╟─60e6973a-8b6e-11eb-2b72-d168283b6031
 # ╟─0de04b90-2835-11eb-1369-01c64bc38c42
 # ╠═b519d90e-2834-11eb-1c48-0307b18584de
 # ╟─03a60d0e-2835-11eb-239c-c3b43694607c
@@ -311,3 +338,5 @@ md" ### References
 # ╠═aa9f7ea4-2850-11eb-33e2-ade40fd0a360
 # ╟─3ce2070a-7156-11eb-1204-3d1850c7abee
 # ╟─96834844-6d45-11eb-39a5-737dd8e43cb1
+# ╟─603fcd02-8b6f-11eb-3290-d3f1b70dadfe
+# ╟─5f7efaa8-8b6f-11eb-2d26-65988dde9ea5
