@@ -10,6 +10,13 @@ using Plots
 # ╔═╡ c470f03c-3a33-11eb-3929-7f8c45b6fdcd
 using Optim
 
+# ╔═╡ 9ad5e3a0-8be2-11eb-0ca1-b9a933682476
+md"### To do list
+ 
+We are currently working on:
+ 
+";
+
 # ╔═╡ 01cbe438-34d1-11eb-087b-b5294ea7b996
 md"# Predicting the future"
 
@@ -821,6 +828,7 @@ Thank you!
 "
 
 # ╔═╡ Cell order:
+# ╟─9ad5e3a0-8be2-11eb-0ca1-b9a933682476
 # ╟─01cbe438-34d1-11eb-087b-b5294ea7b996
 # ╟─477dbb82-34d1-11eb-13f4-41b080ce2e00
 # ╠═bd9c45d2-34da-11eb-1f0f-6bb545666f98
