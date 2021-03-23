@@ -255,6 +255,24 @@ md"
 * [Not a monad tutorial article about Soss.jl](https://notamonadtutorial.com/soss-probabilistic-programming-with-julia-6acc5add5549)
 "
 
+# ╔═╡ a77d01ca-8b78-11eb-34dc-b18bf984bf22
+md" ### Give us feedback
+ 
+ 
+This book is currently in a beta version. We are looking forward to getting feedback and criticism:
+  * Submit a GitHub issue **[here](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues)**.
+  * Mail us to **martina.cantaro@lambdaclass.com**
+ 
+Thank you!
+"
+
+
+# ╔═╡ a8fda810-8b78-11eb-21af-d18ab85709b7
+md"
+[Next chapter](https://datasciencejuliahackers.com/06_gravity.jl.html)
+"
+
+
 # ╔═╡ Cell order:
 # ╟─9608da48-1acd-11eb-102a-27fbac1ec88c
 # ╟─14b8e170-1ad9-11eb-2111-3784e7029ba0
@@ -291,3 +309,5 @@ md"
 # ╟─f719af54-1af7-11eb-05d3-ff9aef8fb6ed
 # ╟─92a7cfaa-1a2e-11eb-06f2-f50e91cfbba0
 # ╟─95efe302-35a4-11eb-17ac-3f0ad66fb164
+# ╟─a77d01ca-8b78-11eb-34dc-b18bf984bf22
+# ╟─a8fda810-8b78-11eb-21af-d18ab85709b7
