@@ -29,6 +29,14 @@ plot(-10:0.01:10,Cauchy(), xlim=(-10,10),label="Cauchy(0,1)")
 plot!(Normal(), xlim=(-10,10), label="Normal(0,1)")
 end
 
+# ╔═╡ 39b6c758-8be0-11eb-30cb-7d7442920974
+md"### To do list
+ 
+We are currently working on:
+ 
+";
+
+
 # ╔═╡ 5f171c4c-1567-11eb-0d69-f116e79738b5
 md"# Overview
 
@@ -509,6 +517,7 @@ md"
 
 
 # ╔═╡ Cell order:
+# ╟─39b6c758-8be0-11eb-30cb-7d7442920974
 # ╟─5f171c4c-1567-11eb-0d69-f116e79738b5
 # ╟─b53fe140-1567-11eb-134b-39d6066eb06d
 # ╠═ca9a04c0-1567-11eb-39f6-3fac127be101
