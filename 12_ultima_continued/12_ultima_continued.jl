@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.20
+# v0.12.21
 
 using Markdown
 using InteractiveUtils
@@ -403,6 +403,24 @@ md"""### References
 * [Universal Differential Equations - Chris Rackauchas](https://github.com/ChrisRackauckas/universal_differential_equations)
 """
 
+# ╔═╡ addd9f7a-8b69-11eb-1f58-5dcc8cfd35d5
+md" ### Give us feedback
+ 
+ 
+This book is currently in a beta version. We are looking forward to getting feedback and criticism:
+  * Submit a GitHub issue **[here](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues)**.
+  * Mail us to **martina.cantaro@lambdaclass.com**
+ 
+Thank you!
+"
+
+
+# ╔═╡ ad46f444-8b69-11eb-17f2-c7c4689e4cae
+md"
+[Next chapter](https://datasciencejuliahackers.com/13_time_series.jl.html)
+"
+
+
 # ╔═╡ Cell order:
 # ╟─2139fac8-4ec7-11eb-1625-bf9aab9b1c2c
 # ╠═fa3ab76e-5413-11eb-36f1-e5117d887fc7
@@ -446,3 +464,5 @@ md"""### References
 # ╟─fe88958e-54e5-11eb-12bc-01ad625d85c5
 # ╟─e6ec4364-54eb-11eb-1bf6-83db426cd32f
 # ╟─aac56d4e-54e7-11eb-2d8a-1f21c386ef8d
+# ╟─addd9f7a-8b69-11eb-1f58-5dcc8cfd35d5
+# ╟─ad46f444-8b69-11eb-17f2-c7c4689e4cae
