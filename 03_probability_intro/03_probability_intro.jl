@@ -103,11 +103,11 @@ In general, $P(A|B)$ and $P(B|A)$, which reads as 'the conditional probability o
 are not equal, that's why I have written the two possibilities. The way to interpret this, for example $P(A|B)$, is: 'the probability of the event A happening, *given* that we know the event B occured'. The analogous interpretation for $P(B|A)$ would be 'the probability of event B happening, given that we know the event A occured'. Altough it may sound as if this implies an order in the occurance of the events, that isn't necessary the case. What in reality has an actual order in this statement is our knowledge of what things happened. If we say, for example, $P(A|B)$, then what we know first is event B, and given this knowledge, we want to know the probability of event A.
 
 Let's see how conditional probability works.
-Suppose the next event, where R stands for 'it will rain today in Buenos Aires' and V for 'the Mount Merapi volcano will erupt'. Since the two variables are completely independent one from another, when trying to compute the conditional probabilities, for example $P(V|R)$, we will have
+Suppose the next event, where R stands for 'it will rain today in Buenos Aires' and V for 'the Mount Merapi volcano will erupt'. Since this two variables are completely independent one from another, when we compute the conditional probabilities, for example $P(V|R)$, we will have
 
 $P(V|R) = P(V)$
 
-What this equation is telling us, is that the information that the event R happened, does not affect the probability of event R. That is the bare definition of independence! 
+What this equation is telling us, is that the information that the event R happened, does not affect the probability of event V. That is the bare definition of independence! 
 
 
 Now let's consider another event H, 'I am staying at home today'. Since I live in Buenos Aires and like to stay home on rainy days.
@@ -177,7 +177,9 @@ To understand the full power of Bayesian probability we have to extend the notio
 # ╔═╡ 2d9482ce-1252-11eb-0cc7-35ad9c288ef8
 md"
 # Probability distributions
-So far we have been talking of probabilities of particular events. Probability distributions also called robability density, on the other hand, help us compute probabilities of various events. These are functions that connect each event in an 'event space' to some probability. What do we mean by 'event space'? For example, consider the distribution of heights of adult women, given approximately by a **Normal distribution**,
+So far, we have been talking of probabilities of particular events.
+Probability distributions also called probability density, on the other hand, help us compute probabilities of various events.
+These are functions that connect each event in an 'event space' to some probability. What do we mean by 'event space'? For example, consider the distribution of heights of adult women, given approximately by a **Normal distribution**,
 "
 
 # ╔═╡ 351923ee-5436-11eb-2bf6-8d024a64e83e
