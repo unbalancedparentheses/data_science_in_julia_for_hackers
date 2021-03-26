@@ -55,6 +55,19 @@ md"### To do list
 ";
 
 
+# ╔═╡ 044ed4a0-8e49-11eb-1eca-71bb66552959
+md"### To do list
+ 
+We are currently working on:
+ 
+* Add description of sampling and Bayesian way of thinking [#47](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues/47).
+* Add appendix with mathematical definitions [#100](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues/100).
+* Distinguish between discrete and continues cases [#102](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues/102).
+* Improve definitions [#101](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues/101).
+* Improve the code to translate the name of the months [#103](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues/103).
+"
+
+
 # ╔═╡ 84b10156-5116-11eb-1a6d-13f625300801
 md"
 # Introduction to Probability
@@ -90,7 +103,7 @@ In general, $P(A|B)$ and $P(B|A)$, which reads as 'the conditional probability o
 are not equal, that's why I have written the two possibilities. The way to interpret this, for example $P(A|B)$, is: 'the probability of the event A happening, *given* that we know the event B occured'. The analogous interpretation for $P(B|A)$ would be 'the probability of event B happening, given that we know the event A occured'. Altough it may sound as if this implies an order in the occurance of the events, that isn't necessary the case. What in reality has an actual order in this statement is our knowledge of what things happened. If we say, for example, $P(A|B)$, then what we know first is event B, and given this knowledge, we want to know the probability of event A.
 
 Let's see how conditional probability works.
-Suppose the next event, where R stands for  'it will rain today in Buenos Aires' and V for 'the Mount Merapi volcano will erupt'. Since the two variables are completely independent one from another, when trying to compute the conditional probabilities, for example $P(V|R)$, we will have
+Suppose the next event, where R stands for 'it will rain today in Buenos Aires' and V for 'the Mount Merapi volcano will erupt'. Since the two variables are completely independent one from another, when trying to compute the conditional probabilities, for example $P(V|R)$, we will have
 
 $P(V|R) = P(V)$
 
@@ -103,8 +116,6 @@ $P(H|R) \neq P(H)$
 
 Indeed, if it is raining, the probability of me staying at home is affected! 
 It will be higher. 
-
-$P(H|R) > P(H)$
 
 
 At this point, we would state a formula that relates conditional probability and conjoint probability. For two general events A and B, this is
@@ -175,14 +186,14 @@ md"
 In this example, the event space is just all the possible heights a woman could have, in other words, the *x* axis.
 The *y* axis, on the other hand, represents the probability density.
 
-To not delve into complex definitions, we can think of the *x* label as a steel bar and the *y* label the density of each infinitesimal point of  the bar.
+To not delve into complex definitions, we can think of the *x* label as a steel bar and the *y* label the density of each infinitesimal point of the bar.
 If we want to know the mass of a specific segment we need to calculate the area below the curve of that segment (integrate the segment mathematically talking).
-Since we are using the probability density, what we calculated is the probability. 
+Since we are using the probability density, instead of the mass what we obtain is the probability. 
 
 For example, suppose we want to know the probability that a randomly selected woman measures between 60 and 65 inches.
 To know it we need to calculate the area under the distribution curve in the intervals x = [60,65].
 
-Keep in mind that the *x* label contains all possible events, in this case all possible woman´s heights, so the are below the curve of all the *x*  label is equal to 1.
+Keep in mind, that the *x* label contains all possible events, in this case all possible woman´s heights, so the area below the curve of all the *x* label is equal to 1.
 
 Any mathematical function satisfying certain requirements can be a probability distribution. There are lots of these type of functions, and each one has its own shape and distinctive properties.
 
@@ -253,7 +264,7 @@ end
 # ╔═╡ c770092e-12e6-11eb-0711-0196e27d573e
 md"
 Histograms can be interpreted as probability distributions. The reason behind this is because we have registered some total number $N$ of events that happened in some time interval (in this case, one month) and we grouped the number of times each one ocurred. In this line of reasoning, events that happened most are more likely to happen, and hence we can say they have a higher probability associated to them. Something important to consider about histograms when dealing with a continuous variable such as, in our case, milimeters of monthly rainfall, are *bins* and bin size. When working with such continuous variables, the domain in which our data expresses itself (in this case, from 0 mm to approximately 450 mm) is divided in discrete intervals. In this way, given a bin size of 20mm, when constructing our histogram we have to ask 'how many rainy days have given us a precipitation measurement between 100mm and 120mm?', and then we register that number in that bin. This process is repeated for all bins to obtain our histogram.
-We have earlier said that probability has to be a number between 0 and 1, so how can it be that these relative frequencies are linked to probabilities? What we should do now is to *normalize* our histogram to have the frequency values constrained. Normalizing is just the action of adjusting the scale of variables, without changing the relative values of our data. Below we show the normalized histogram. You will notice that the frequency values are very low now. The reason for this is that when normalizing, we impose to our histogram data that the sum of the counts of all our events (or, thinking graphically, the total area of the histogram) must be 1. But why? As probability tell us how plausible is an event, if we take into account all the events, we expect that the probability of all those events to be the maximum value, and that value is set up to 1 by convention. In that way we can compare plausibilities across different events, therefore when we say that some event has a probability of 0.6 to occur, for any event it means the same, no matter if we are talking about the probability of raining or the probability of being hit by a car.
+We have earlier said that probability has to be a number between 0 and 1, so how can it be that these relative frequencies are linked to probabilities? What we should do now is to *normalize* our histogram to have the frequency values constrained. Normalizing is just the action of adjusting the scale of variables, without changing the relative values of our data. Below we show the normalized histogram. You will notice that the frequency values are very low now. The reason for this is that when normalizing, we impose to our histogram data that the sum of the counts of all our events (or, thinking graphically, the total area of the histogram) must be 1. But why? As probability tell us how plausible is an event, if we take into account all the events, we expect that the probability of all those events to be the maximum value, and that value is 1 by convention. In that way we can compare plausibilities across different events, therefore when we say that some event has a probability of 0.6 to occur, for any event it means the same, no matter if we are talking about the probability of raining or the probability of being hit by a car.
 So, we normalize the histogram obtaining:"
 
 # ╔═╡ 178f5f72-12e7-11eb-2282-c19f2b58ae58
@@ -471,17 +482,18 @@ Thank you!
 
 # ╔═╡ 4b235516-8c1b-11eb-012e-6d76290f3f27
 md"
-[Next chapter](https://datasciencejuliahackers.com/03_probability_intro.jl.html)
+[Next chapter](https://datasciencejuliahackers.com/04_naive_bayes.jl.html)
 "
 
 
 # ╔═╡ Cell order:
 # ╟─b71a6256-8c1a-11eb-18d5-c52f6eb61247
+# ╟─044ed4a0-8e49-11eb-1eca-71bb66552959
 # ╟─84b10156-5116-11eb-1a6d-13f625300801
 # ╟─2d9482ce-1252-11eb-0cc7-35ad9c288ef8
 # ╠═e6ecfce4-54e5-11eb-2ff6-3bb479c286af
 # ╠═8b06866e-5424-11eb-3cb6-f9afabefcd70
-# ╠═351923ee-5436-11eb-2bf6-8d024a64e83e
+# ╟─351923ee-5436-11eb-2bf6-8d024a64e83e
 # ╟─4a6f2768-543e-11eb-1846-f9e35aa961d2
 # ╠═0ac3353a-543d-11eb-08fe-d35a4c0f0bbc
 # ╠═ecec1854-543c-11eb-0d11-b342e4d246e1
