@@ -65,6 +65,8 @@ We are currently working on:
 * Distinguish between discrete and continues cases [#102](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues/102).
 * Improve definitions [#101](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues/101).
 * Improve the code to translate the name of the months [#103](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues/103).
+* Explain cumulative distribution function [#105](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues/105).
+
 "
 
 
@@ -171,15 +173,15 @@ This may sound a bit confusing at first, but if you look closely for some time a
 
 It is interesting to give a little more detail on the epistemological interpretation of this entire theorem. We start from some initial hypothesis and we assign some probability to it (the Prior). How exactly this has to be done is uncertain, in fact, there are ways to encode that you don't know nothing about the validity of the hypothesis. But the important part is that, if you already knew something about it, you can include that in your priors. For example, if you are trying to estimate some parameter that you know is positive definite, then you can use priors that are defined only for positive values. From that starting point, then, you have a methodical way to update your beliefs by collecting data, and with this data, give rise to the Posterior probability, which hopefully will be more accurate than our Prior probability. 
 What is nice about the Bayesian framework is that we always account for the uncertainty of the world. We start with some probability and end with another probability, but uncertainty is always present. This is what real life is about.
-To understand the full power of Bayesian probability we have to extend the notion of probability to *probability distributions*. We will discuss this topic in the following section.
+To understand the full power of Bayesian probability we have to extend the notion of probability to *probability density*. We will discuss this topic in the following section.
 "
 
 # ╔═╡ 2d9482ce-1252-11eb-0cc7-35ad9c288ef8
 md"
-# Probability distributions
+# Probability density
 So far, we have been talking of probabilities of particular events.
-Probability distributions also called probability density, on the other hand, help us compute probabilities of various events.
-These are functions that connect each event in an 'event space' to some probability. What do we mean by 'event space'? For example, consider the distribution of heights of adult women, given approximately by a **Normal distribution**,
+Probability density, on the other hand, help us compute probabilities of various events.
+These are functions that connect each event in an 'event space' to some probability. What do we mean by 'event space'? For example, consider the density probability of heights of adult women, given approximately by a **Normal distribution**,
 "
 
 # ╔═╡ 351923ee-5436-11eb-2bf6-8d024a64e83e
@@ -193,13 +195,13 @@ If we want to know the mass of a specific segment we need to calculate the area 
 Since we are using the probability density, instead of the mass what we obtain is the probability. 
 
 For example, suppose we want to know the probability that a randomly selected woman measures between 60 and 65 inches.
-To know it we need to calculate the area under the distribution curve in the intervals x = [60,65].
+To know it we need to calculate the area under the density curve in the intervals x = [60,65].
 
 Keep in mind, that the *x* label contains all possible events, in this case all possible woman´s heights, so the area below the curve of all the *x* label is equal to 1.
 
-Any mathematical function satisfying certain requirements can be a probability distribution. There are lots of these type of functions, and each one has its own shape and distinctive properties.
+Any mathematical function satisfying certain requirements can be a probability density. There are lots of these type of functions, and each one has its own shape and distinctive properties.
 
-We will introduce some important probability distributions so that you can have a better understanding of what all this is about. Probably, the concept of the Normal distribution –also refered as the Gaussian– was already familiar to you, as it is one of the most popular and widely used distributions in some fields and in popular culture. The shape of this distribution is governed by two *parameters*, usually represented by the Greek letters $\mu$ and $\sigma$. Roughly speaking, $\mu$ is associated with the center of the distribution and $\sigma$ with how wide it is. 
+We will introduce some important probability density functions so that you can have a better understanding of what all this is about. Probably, the concept of the Normal distribution –also refered as the Gaussian– was already familiar to you, as it is one of the most popular and widely used distributions in some fields and in popular culture. The shape of this distribution is governed by two *parameters*, usually represented by the Greek letters $\mu$ and $\sigma$. Roughly speaking, $\mu$ is associated with the center of the distribution and $\sigma$ with how wide it is. 
 "
 
 # ╔═╡ 4a6f2768-543e-11eb-1846-f9e35aa961d2
@@ -218,7 +220,7 @@ plot(Normal(μ,σ), xlabel="x", ylabel="P(x)", lw=4, color="purple", label=false
 
 # ╔═╡ 6db26aa0-543e-11eb-3258-27c7b15323fb
 md" 
-Every probability distribution that is defined by a mathematical function, has a set of parameters that defines the distribution's shape and behaviour, and changing them will influence the distribution in different ways, depending on the one we are working with. 
+Every probability density that is defined by a mathematical function, has a set of parameters that defines the distribution's shape and behaviour, and changing them will influence the distribution in different ways, depending on the one we are working with. 
 
 Another widely used distribution is the *exponential*. Below you can see how it looks like. It is governed by only one parameter, $\alpha$, which basically represents the rate of decrease in probability as $x$ gets bigger. 
 "
@@ -265,7 +267,7 @@ end
 
 # ╔═╡ c770092e-12e6-11eb-0711-0196e27d573e
 md"
-Histograms can be interpreted as probability distributions. The reason behind this is because we have registered some total number $N$ of events that happened in some time interval (in this case, one month) and we grouped the number of times each one ocurred. In this line of reasoning, events that happened most are more likely to happen, and hence we can say they have a higher probability associated to them. Something important to consider about histograms when dealing with a continuous variable such as, in our case, milimeters of monthly rainfall, are *bins* and bin size. When working with such continuous variables, the domain in which our data expresses itself (in this case, from 0 mm to approximately 450 mm) is divided in discrete intervals. In this way, given a bin size of 20mm, when constructing our histogram we have to ask 'how many rainy days have given us a precipitation measurement between 100mm and 120mm?', and then we register that number in that bin. This process is repeated for all bins to obtain our histogram.
+Histograms can be interpreted as an approximation of the probability density function. The reason behind this is because we have registered some total number $N$ of events that happened in some time interval (in this case, one month) and we grouped the number of times each one ocurred. In this line of reasoning, events that happened most are more likely to happen, and hence we can say they have a higher probability associated to them. Something important to consider about histograms when dealing with a continuous variable such as, in our case, milimeters of monthly rainfall, are *bins* and bin size. When working with such continuous variables, the domain in which our data expresses itself (in this case, from 0 mm to approximately 450 mm) is divided in discrete intervals. In this way, given a bin size of 20mm, when constructing our histogram we have to ask 'how many rainy days have given us a precipitation measurement between 100mm and 120mm?', and then we register that number in that bin. This process is repeated for all bins to obtain our histogram.
 We have earlier said that probability has to be a number between 0 and 1, so how can it be that these relative frequencies are linked to probabilities? What we should do now is to *normalize* our histogram to have the frequency values constrained. Normalizing is just the action of adjusting the scale of variables, without changing the relative values of our data. Below we show the normalized histogram. You will notice that the frequency values are very low now. The reason for this is that when normalizing, we impose to our histogram data that the sum of the counts of all our events (or, thinking graphically, the total area of the histogram) must be 1. But why? As probability tell us how plausible is an event, if we take into account all the events, we expect that the probability of all those events to be the maximum value, and that value is 1 by convention. In that way we can compare plausibilities across different events, therefore when we say that some event has a probability of 0.6 to occur, for any event it means the same, no matter if we are talking about the probability of raining or the probability of being hit by a car.
 So, we normalize the histogram obtaining:"
 
@@ -289,12 +291,12 @@ I'm making some assumptions that are often implied working with histograms and m
 
 # ╔═╡ cc3a3236-1949-11eb-3021-3d5a81bfa6a6
 md"
-So far we have been talking about histograms as probability distributions. Distributions such as these, that are built from the outcome of an experiment are called *empirical* distributions. This means that they arise from direct measurements, not from an underlying analytical function. When dealing with most real-world examples, histograms will represent distributions we will obtain for our updated beliefs, so they are a really important concept for what will come in the book.
+So far we have been talking about histograms as probability density functions. Distributions such as these, that are built from the outcome of an experiment are called *empirical* distributions. This means that they arise from direct measurements, not from an underlying analytical function. When dealing with most real-world examples, histograms will represent distributions we will obtain for our updated beliefs, so they are a really important concept for what will come in the book.
 "
 
 # ╔═╡ d1aade6e-550d-11eb-1eea-7751ef152b7a
 md"
-All the concepts we developed about probability distributions, are directly applied to our Bayesian formalism. The prior, likelihood and posterior probabilities are really *probability distributions*, and that is really how we treat Bayes' theorem mathematically and computationally.
+All the concepts we developed about probability density, are directly applied to our Bayesian formalism. The prior, likelihood and posterior probabilities are really *probability densities*, and that is really how we treat Bayes' theorem mathematically and computationally.
 "
 
 # ╔═╡ 3b8ea6fc-54f1-11eb-0a00-3f465d1f2d22
