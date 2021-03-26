@@ -21,7 +21,7 @@ begin
 	using Plots
 	using Distributions
 	
-	plot(Normal(64, 3), xlabel="Height (in)", ylabel="Probability", legend=false, size=(400, 300))
+	plot(Normal(64, 3), xlabel="Height (in)", ylabel="Probability density", legend=false, size=(400, 300))
 end
 
 # ╔═╡ e45d76d4-1250-11eb-14d7-c30fcb5a5b72
@@ -171,10 +171,18 @@ So far we have been talking of probabilities of particular events. Probability d
 
 # ╔═╡ 351923ee-5436-11eb-2bf6-8d024a64e83e
 md"
-In this example, the event space is just all the possible heights a woman could have, in other words, the 'x' axis. The 'y' axis, on the other hand, represents the probability. 
-What do we mean by probability? For example, suppose we want to know the probability that a randomly selected woman measures between 60 and 65 inches.
-To know it we need calculate the area under the distribution curve in the intervals x = [60,65]
 
+In this example, the event space is just all the possible heights a woman could have, in other words, the *x* axis.
+The *y* axis, on the other hand, represents the probability density.
+
+To not delve into complex definitions, we can think of the *x* label as a steel bar and the *y* label the density of each infinitesimal point of  the bar.
+If we want to know the mass of a specific segment we need to calculate the area below the curve of that segment (integrate the segment mathematically talking).
+Since we are using the probability density, what we calculated is the probability. 
+
+For example, suppose we want to know the probability that a randomly selected woman measures between 60 and 65 inches.
+To know it we need to calculate the area under the distribution curve in the intervals x = [60,65].
+
+Keep in mind that the *x* label contains all possible events, in this case all possible woman´s heights, so the are below the curve of all the *x*  label is equal to 1.
 
 Any mathematical function satisfying certain requirements can be a probability distribution. There are lots of these type of functions, and each one has its own shape and distinctive properties.
 
@@ -473,7 +481,7 @@ md"
 # ╟─2d9482ce-1252-11eb-0cc7-35ad9c288ef8
 # ╠═e6ecfce4-54e5-11eb-2ff6-3bb479c286af
 # ╠═8b06866e-5424-11eb-3cb6-f9afabefcd70
-# ╟─351923ee-5436-11eb-2bf6-8d024a64e83e
+# ╠═351923ee-5436-11eb-2bf6-8d024a64e83e
 # ╟─4a6f2768-543e-11eb-1846-f9e35aa961d2
 # ╠═0ac3353a-543d-11eb-08fe-d35a4c0f0bbc
 # ╠═ecec1854-543c-11eb-0d11-b342e4d246e1
