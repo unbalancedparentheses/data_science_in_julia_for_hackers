@@ -1,8 +1,12 @@
 # Data Science in Julia for Hackers
 
-*This book is currently in a beta version. We are looking forward to getting feedback and criticism, which you can mail to **martina.cantaro@lambdaclass.com***
+*This book is currently in a beta version. We are looking forward to getting feedback and criticism:*
+  * *Submit a GitHub issue **[here](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues)***
+  * *Mail us to **martina.cantaro@lambdaclass.com***
 
 *Thank you!*
+
+*The pdf version of the book will be available in a few weeks*
 
 
 ![Bayes hacking](images/bayes-hacker.png)
