@@ -497,7 +497,7 @@ julia> isPositive.([-1, 1, 3, -5])
 As you can see, we had broadcasted the function isPositive() we defined, over every 
 element of an array, by adding a dot next to the end of the function name, previous to 
 the parenthesis. Is is as easy as that! Once you start using this feature, you will notice how useful it is.
-One thing concearning functions in Julia is the 'bang'(!) convention. Functions that have a name ending with an exclamation mark (or bang), are functions that change their imputs in-place. Consider the example of the pop! function from the Julia Base package. Watch closely what happens to the array over we apply the function
+One thing concearning functions in Julia is the 'bang'(!) convention. Functions that have a name ending with an exclamation mark (or bang), are functions that change their inputs in-place. Consider the example of the pop! function from the Julia Base package. Watch closely what happens to the array over we apply the function
 
 ```julia
 julia> arr = [1, 2, 3];
