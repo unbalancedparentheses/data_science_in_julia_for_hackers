@@ -46,7 +46,9 @@ In real-life scenarios, when making decisions we almost never have all the neces
 
 Bayesian inference allows us to do this because of it approach of a statistical problem. From its point of view, the data obtained on an event is fixed. They are observations that have already happened and there is nothing stochastic about it. So the data is deterministic.
 
-On the contrary, the parameters of the models we propose to describe such data are stochastic, following a given probability distribution. In this way, the inference that is made is on the complete distributions of our parameters, which allows us, precisely, to include the uncertainty into our models."
+On the contrary, the parameters of the models we propose to describe such data are stochastic, following a given probability distribution. In this way, the inference that is made is on the complete distributions of our parameters, which allows us, precisely, to include the uncertainty into our models.
+
+Before starting we want to thank [Chad Scherrer](https://github.com/cscherrer) since this chapter is inspired by his [article](https://cscherrer.github.io/post/max-profit/)"
 
 # ╔═╡ b53fe140-1567-11eb-134b-39d6066eb06d
 md"## Optimal pricing
