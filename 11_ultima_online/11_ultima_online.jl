@@ -109,7 +109,7 @@ plot(sol)
 # ╔═╡ 4aff3714-284b-11eb-2047-814ca175e07b
 md"""#### Obtaining the model from the data
 
-Back to the terrible case of Ultima Online. Suppose we had data on the population of predators and prey that were in harmony during the game at a given time. If we wanted to venture out and analyze what parameters Garriot and his team used to model their great ecosystem, would it be possible? Of course it is, we just need to add a little Bayesianism.
+Back to the terrible case of Ultima Online. Suppose we had data on the population of predators and prey that were in harmony during the game at a given time. If we wanted to venture out and analyze what parameters Garriott and his team used to model their great ecosystem, would it be possible? Of course it is, we just need to add a little Bayesianism.
 """
 
 # ╔═╡ e3da565c-2851-11eb-0fa7-a3cd80bb9d63
@@ -340,7 +340,7 @@ md"### References
 
 - [SciML](https://sciml.ai/)
 - [Turing Bayesian Differential Equation](https://turing.ml/dev/tutorials/10-bayesiandiffeq/)
-- [Garriot telling the Story](https://www.youtube.com/watch?v=KFNxJVTJleE&ab_channel=ArsTechnica)"
+- [Garriott telling the Story](https://www.youtube.com/watch?v=KFNxJVTJleE&ab_channel=ArsTechnica)"
 
 # ╔═╡ Cell order:
 # ╟─74cc60be-2821-11eb-3ad7-e581052437bd
