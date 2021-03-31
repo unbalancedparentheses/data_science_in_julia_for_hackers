@@ -13,6 +13,13 @@ macro bind(def, element)
     end
 end
 
+# ╔═╡ 634bc548-91a1-11eb-26e9-634645f0b269
+#This librarys are just for uploading images into the Pluto notebook
+begin
+	using Images
+	using ImageTransformations
+end
+
 # ╔═╡ e6ecfce4-54e5-11eb-2ff6-3bb479c286af
 using StatsPlots
 
@@ -70,57 +77,263 @@ We are currently working on:
 "
 
 
-# ╔═╡ 84b10156-5116-11eb-1a6d-13f625300801
+# ╔═╡ 1db7ef38-9198-11eb-3fee-b1806424dc37
 md"
 # Introduction to Probability
-In this book, probability and statistics topics will be discussed extensively. Mainly the Bayesian interpretation of probability and Bayesian statistics.
-But we first need an intuitive conceptual basis to build on top of that. 
-We won't assume any prior knowledge, so let's start from the basics.
-What *is* probability? Probability is a measure of our belief that a particular event will occur, and we express this with a number ranging from $0$ to $1$.
+In this book, probability and statistics topics will be discussed extensively. Mainly the Bayesian interpretation of probability and Bayesian statistics. But we first need an intuitive conceptual basis to build on top of that. We won't assume any prior knowledge, so let's start from the basics. 
+
+Probability is a mathematical field that aims to measure the uncertainty of a particular event happening or the degree of confidence about some statement or hypothesis.
+As any other mathematical field probability has their own axioms and definitions that we will start seeing in this chapter.A main characteristic of probability is that it is substantially related to real word practice.
+It gains practical value and an intuitive meaning in connection with real or conceptual experiments.
+
+
+Therefore,lets start defining some concepts with an experiment. 
+
+"
+
+# ╔═╡ 37f8c246-9198-11eb-2c0b-71b3d3c4e3ee
+md"
+## Events, sample spaces and sample points
+
+So, let's make our first experiment. We have a box with 4 balls, each one of different colors: blue, red, green and white.
+
+"
+
+# ╔═╡ 379722dc-9198-11eb-3ab2-3b69a1b8eb2e
+imresize(load("images/box-experiment.jpg"), (336, 400))
+
+# ╔═╡ 3720628e-9198-11eb-3138-19bb419b7b6e
+md"We put our hands inside the box, take out two random balls at the same time  and anote the color. 
+
+So lets see how many possible outputs has our experiment
+
+1. Red Green
+1. Red Blue
+1. Red White
+1. Green Blue
+1. Green White
+1. Blue White
+
+Notice that since we don't care about the orden in which the balls are taken out, saying “Red and Green” is equal to “Green and Red”
+
+For uniform terminology, we define each possible output of the experiment as a sample point, and the sample space as aggregate of all the possible outcomes of our experiment.
+In this example the sample space will contain 6 sample points.
+
+Sample space = $\{(R,G), (R,B), (R,W), (G,B), (G,W), (B,W)\}$
+
+So, suppose we want to see all the cases in which the white ball was taken out, we can describe it as an aggregate of sample points.
+
+
+“The white ball was taken” = $\{(R,W), (G,W), (B,W)\}$
+
+These observations about the experiment are called events.
+An event is defined as an aggregate of sample points and by convention, we use a capital letter to represent them
+
+
+
+A = “The red wall was not taken” = $\{(G,B)(G,W)(B,W)\}$
+
+B = “The green and the blue ball were taken” = $\{(G,B)\}$
+
+
+
+
+### Relation among events
+
+We can represent events using Venn diagrams. Lets see it with an example.
+
+continuing with our experiment, we got out sample space:
+
+Sample space = S =  $\{(R,G), (R,B), (R,W), (G,B), (G,W), (B,W)\}$
+
+And let's analyze this two events
+
+A = “The white ball was taken” = $\{(R,W), (G,W), (B,W)\}$
+
+B= “The red wall was not taken” = $\{(G,B)(G,W)(B,W)\}$
+
+"
+
+# ╔═╡ 9745ec60-919a-11eb-172e-5df02c330a57
+imresize(load("images/venn-1.jpg"), (336, 400))
+
+# ╔═╡ bccb252a-923f-11eb-0665-5d96561f7d1d
+md"
+The rectangle represents the sample space S. Since it represents all the possible outputs of our experiment, nothing can be outside of it.
+
+Then we represent the event A , that contains the 3 sample points  $\{(R,W), (G,W)$ and $(B,W)\}$, with a red circle.
+
+The event consisting of all points not contained in the event A will be called the complementary event (or negation) o f A and will be denoted by A'.
+
+$A´= {(R,G),(R,B),(G,B)}$
+
+Notice that if we created a new event that contains all the sample points of A and A´, we obtain the sample space.
+
+
+"
+
+# ╔═╡ 98d90100-919a-11eb-04cd-4729037de830
+imresize(load("images/venn-3.jpg"), (336, 400))
+
+# ╔═╡ d8e086b8-9241-11eb-33f2-03786ca67fa1
+md"
+Now let's take into play the event B.
+The points $(G,W)$ and $(B,W)$ are present in the event A and B. So we must represent them in this way:
+"
+
+# ╔═╡ 985fcce0-919a-11eb-0fa6-9d8ca380ce4e
+imresize(load("images/venn-2.jpg"), (336, 400))
+
+# ╔═╡ 75091186-9242-11eb-1fdf-fddc652f1453
+md"
+The blue area contains the sample points that are in both events, in this case $(G,W)$ and $(B,W)$. Is defined as the intersection of A and B and we represent it $A \cap B$
+
+In the other hand, red area contains the points  that are only present in the event A, in this case $(R,W)$ .
+Analogously the green area contains the points  that are only present in the event A, in this case $(G,B)$ .
+"
+
+# ╔═╡ cf075ae6-922f-11eb-1ff2-b70737c34f82
+md"""
+## Probability	
+
+Now that we are introduced to the event, sample point and sample space concepts we can start talking about probability.
+
+Probability is a measure of our belief that a particular event will occur, and we express this with a number ranging from $0$ to $1$.
 The number $0$ means we have the strongest possible belief that the event will not happen: We are sure it will not happen.
 The number $1$ means we have the strongest possible belief that the event will happen: We are sure it will happen. 
 Probability, being a measure of our own belief or certainty in the occurrence of an event, does not determine whether the event occurs or not. 
 For this reason, events may still occur when we assign them probability $0$, and they might not occur if we assign them probability $1$.
-How exactly this number is linked to each event is something that is far from trivial and indeed is a discussion that has been going for years. Later on we'll dive deeper into that rabbit hole, but for the moment let's not worry about how exactly this is defined or calculated: assume we have a well established method for the time being. The important thing now will be the different rules that emerge from the nature of these events.
+How exactly this number is linked to each event is something that is far from trivial and indeed is a discussion that has been going for years. Later on we'll dive deeper into that rabbit hole, but for the moment let's not worry about how exactly this is defined or calculated: assume we have a well established method for the time being. 
+The important thing now will be the different rules that emerge from the nature of these events.
+
+By definition, the probability of the entire sample space $S$ is unity, or $P\{S\} = 1$. 
+It follows that for any event $A$: $0 <P\{A\} <1$.
+
+In our experiment we can consider that all the sample points have the same probability of going out so we assign ⅙ to each point.
+Another way we can assign probabilities to each sample point is with the popular formula:
+
+$P(A) = \frac{success \ cases} {total \ cases}$ 
+
+$P((R,W))= \frac{1}{6}$
+
+The probability $P(A)$ of any event $A$ is the sum of the probabilities o f all sample points in it.
 
 
-We can start reasoning about probabilities of events with an example. Say we know that the probability of raining today in Buenos Aires is $0.8$. In a more mathematical form, we can say that
-
-$P(R) = 0.8,$
-
-where $R$ stands for the event 'it will rain in Buenos Aires today'. Now let's think about another event, for example, the eruption of the Mount Merapi volcano in Indonesia. Say we consulted some geologists and the probability of that eruption happening today is of $0.005$. Mathematically, we say
-
-$P(V) = 0.005,$
-
-where V, in this case, stands for the event 'the volcano will erupt today'. Let's analyze the nature of these events a little bit. Are they related? Technically, we can think everything in our planet is interconnected with everything else, Butterfly Effect and all that story. But in practice, it is fair to assume these two events are pretty independent from one another. In a more formal way, what this is telling us is that knowing the probability of one of the events does not give us information about the probability of the other event. That is the definition of independence in this context. In the language of probabilities, we can write a special property for independent events,
-
-$P(\text{R and V}) = P(R)P(V).$
-
-Coloquially, this means that the probability of both of events 'it will rain in Buenos Aires today' and 'the volcano will erupt today' happening together is equal to the product of each of the probabilities of each one happening individually. Calculating the probability of various events happening at the same time is known as calculating the *joint probability* of the events. When the events are not independent from one another, unfortunately, things are not so simple. This leads us into another important concept, and really fundamental to the Bayesian interpretation of probability, which we will discuss later on. 
-When events are not independent, it is relevant to talk about *conditional probability*. Conditional probability of two events A and B is noted as
-
-$P(A|B)\text{ or }P(B|A)$
-
-In general, $P(A|B)$ and $P(B|A)$, which reads as 'the conditional probability of A given B' and 'the conditional probability of B given A',
-are not equal, that's why I have written the two possibilities. The way to interpret this, for example $P(A|B)$, is: 'the probability of the event A happening, *given* that we know the event B occured'. The analogous interpretation for $P(B|A)$ would be 'the probability of event B happening, given that we know the event A occured'. Altough it may sound as if this implies an order in the occurance of the events, that isn't necessary the case. What in reality has an actual order in this statement is our knowledge of what things happened. If we say, for example, $P(A|B)$, then what we know first is event B, and given this knowledge, we want to know the probability of event A.
-
-Let's see how conditional probability works.
-Suppose the next event, where R stands for 'it will rain today in Buenos Aires' and V for 'the Mount Merapi volcano will erupt'. Since this two variables are completely independent one from another, when we compute the conditional probabilities, for example $P(V|R)$, we will have
-
-$P(V|R) = P(V)$
-
-What this equation is telling us, is that the information that the event R happened, does not affect the probability of event V. That is the bare definition of independence! 
 
 
-Now let's consider another event H, 'I am staying at home today'. Since I live in Buenos Aires and like to stay home on rainy days.
+For A = "The white ball was taken" = $\{(R,W), (G,W), (B,W)\}$
 
-$P(H|R) \neq P(H)$
-
-Indeed, if it is raining, the probability of me staying at home is affected! 
-It will be higher. 
+$P(A) = P(R,W) + P(G,W)+ P(B,W) = \frac{1}{6}+ \frac{1}{6} + \frac{1}{6} = \frac{3}{6} = 0.5$
 
 
-At this point, we would state a formula that relates conditional probability and conjoint probability. For two general events A and B, this is
+
+$P(A´) = P(R,G) + P(R,B) + P(G,B) =  \frac{1}{6}+ \frac{1}{6} + \frac{1}{6} = 0.5$
+
+
+B= "The red wall was not taken" = $\{(G,B)(G,W)(B,W)\}$
+ 
+$P(B) =  \frac{3}{6}$
+
+$A \cap B = \{(G,W),(B,W)$
+
+$P(A \cap B) = \frac{2}{6}$
+
+
+
+For any two events A and B the probability that either A or B or both occur is given by
+
+$ P(A \cup B) = P(A) + P(B) - P(A \cap B)$
+
+
+$ P(A \cup B) =$ $\frac{3}{6} + \frac{3}{6} - \frac{1}{6}$ $= \frac{5}{6}$
+
+Another example:
+
+$ P(A \cup A´)= P(A) + P(A´) - P(A \cap A´) = \frac{3}{6} + \frac{3}{6} - 0= 1 $
+
+
+"""
+
+# ╔═╡ cacbb7b2-9234-11eb-0224-a302d0238b87
+md"""
+## Conditional probability
+
+The notion of conditional probability is a basic tool of probability theory. 
+
+Let's put it in a formal way, $P(A|B)$ and $P(B|A)$, which reads as 'the conditional probability of A given B' and 'the conditional probability of B given A', are not equal. 
+The way to interpret this, for example $P(A|B)$, is: 'the probability of the event A happening, given that we know the event B occured'. 
+The analogous interpretation for  $P(B|A)$ would be 'the probability of event B happening, given that we know the event A occured'.
+Although it may sound as if this implies an order in the occurrence of the events, that isn't necessarily the case. What in reality has an actual order in this statement is our knowledge of what things happened.
+ If we say, for example, , then what we know first is event B, and given this knowledge, we want to know the probability of event A.
+
+To see it in a graphical way 
+
+"""
+
+# ╔═╡ e3b1639e-9234-11eb-2b54-07fe7519b5db
+imresize(load("images/venn-4.jpg"), (336, 400))
+
+# ╔═╡ e33850ee-9234-11eb-2161-1b207ba6bb12
+md"""
+
+Notice that, since we now B occurred we can truncate the sample space to the B event, and now calculate the probability of A
+
+$P(A|B) =  \frac{P(A \cap B)}{P(B)}$
+
+Lets see an example.
+
+A = “I pick a red and a green ball”
+
+B = “I pick a red ball”
+
+So P(A|B) would read as, what is the probability of picking a red and a green ball knowing that i already pick one red ball.
+
+
+$A = \{(R,G),(R,B),(R,W)\} => P(A) = \frac{3}{6}$
+$B = \{(R,G)\} => P(B) => \frac{3}{6}$
+$A \cap B = \{(R,G)\} => P(A \cap B) = \frac{1}{6}$
+
+
+$P(A|B) =  \frac{P(A \cap B)}{P(B)}$ 
+
+$P(A|B) = \frac{1}{6}  ÷ \frac{3}{6}  = \frac{1}{3}$
+
+Now let's move on from our experiment
+"""
+
+
+# ╔═╡ 2feab95a-925c-11eb-0959-ad38cc3ddae6
+md"
+## Joint probability
+
+We refer to joint probability as the probability of two events occurring together and at the same time. Lets see how it work with an example
+
+Imagine we want to study this 3 events:
+R= “Today It will rain”
+L = “The number 39 will win the lottery”
+
+Let's analyze the nature of these events a little bit. Are they related? 
+Technically, we can think everything in our planet is interconnected with everything else, but in practice, it is fair to assume these two events are pretty independent from one another.
+ In a more formal way, what this is telling us is that knowing the probability of one of the events does not give us information about the probability of the other event. 
+That is the definition of independence in this context. 
+
+In the language of probabilities, we can write a special property for independent events.
+$P(R and L) = P(R) * P(L)$
+Colloquially, this means that the probability of both events “Today It will rain” and “The number 39 will win the lottery” happening together is equal to the product of each of the probabilities of each one happening individually.
+ 
+When the events are not independent from one another, we can use the conditional probability of events we saw earlier.
+Now lets study the joint probability of this two events:
+R= “Today It will rain”
+H= “humidity will exceed 50%”
+
+ If it is raining, there is a high probability that the humidity levels will rise, so the probability of humidity exceeding 50% will be affected.
+
+To calculated this joint probability we use:
+
+$P(H\text{ and }R) = P(R)P(H|R)$
+
+
+For two general events A and B, this is
 
 $P(A\text{ and }B) = P(A)P(B|A)$
 
@@ -128,11 +341,19 @@ With this formula in mind, and another property of conjunction probability,
 
 $P(A\text{ and }B) = P(B\text{ and }A)$
 
-which just means what we naturally interpret of two events happening *at the same time*. If the two events do happen at the same time, it doesn't matter if we write $B\text{ and }A)$ or $A\text{ and }B$, setting an order in the expression is just a consequence of having to write it. Just as like doing $2 + 3$ or $3 + 2$, the 'and' logical operator is commutative. We now proceed to derive the famous **Bayes' theorem**! We write 
+which just means what we naturally interpret of two events happening at the same time.
+If the two events do happen at the same time, it doesn't matter if we write $B\text{ and }A)$ or $A\text{ and }B$, setting an order in the expression is just a consequence of having to write it. 
+Just like doing $2 + 3$ or $3 + 2$, the 'and' logical operator is commutative.
+"
+
+# ╔═╡ 39a5328a-9267-11eb-2cb4-4181b250b0b8
+md"## Bayes theorem 
+
+With this concepts in mind we will now proceed to derive the famous Bayes' theorem
+
 
 $P(B\text{ and }A) = P(B)P(A|B),$
 
-and putting all the pieces together, 
 
 $P(B)P(A|B) = P(A)P(B|A) \implies P(A|B) = \frac{P(A)P(B|A)}{P(B)}$
 
@@ -493,7 +714,23 @@ md"
 # ╔═╡ Cell order:
 # ╟─b71a6256-8c1a-11eb-18d5-c52f6eb61247
 # ╟─044ed4a0-8e49-11eb-1eca-71bb66552959
-# ╟─84b10156-5116-11eb-1a6d-13f625300801
+# ╟─1db7ef38-9198-11eb-3fee-b1806424dc37
+# ╟─37f8c246-9198-11eb-2c0b-71b3d3c4e3ee
+# ╠═634bc548-91a1-11eb-26e9-634645f0b269
+# ╟─379722dc-9198-11eb-3ab2-3b69a1b8eb2e
+# ╟─3720628e-9198-11eb-3138-19bb419b7b6e
+# ╟─9745ec60-919a-11eb-172e-5df02c330a57
+# ╟─bccb252a-923f-11eb-0665-5d96561f7d1d
+# ╟─98d90100-919a-11eb-04cd-4729037de830
+# ╟─d8e086b8-9241-11eb-33f2-03786ca67fa1
+# ╠═985fcce0-919a-11eb-0fa6-9d8ca380ce4e
+# ╟─75091186-9242-11eb-1fdf-fddc652f1453
+# ╟─cf075ae6-922f-11eb-1ff2-b70737c34f82
+# ╟─cacbb7b2-9234-11eb-0224-a302d0238b87
+# ╠═e3b1639e-9234-11eb-2b54-07fe7519b5db
+# ╠═e33850ee-9234-11eb-2161-1b207ba6bb12
+# ╠═2feab95a-925c-11eb-0959-ad38cc3ddae6
+# ╠═39a5328a-9267-11eb-2cb4-4181b250b0b8
 # ╟─2d9482ce-1252-11eb-0cc7-35ad9c288ef8
 # ╠═e6ecfce4-54e5-11eb-2ff6-3bb479c286af
 # ╠═8b06866e-5424-11eb-3cb6-f9afabefcd70
