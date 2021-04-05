@@ -14,7 +14,7 @@ macro bind(def, element)
 end
 
 # ╔═╡ 634bc548-91a1-11eb-26e9-634645f0b269
-#This librarys are just for uploading images into the Pluto notebook
+#This libraries are just for uploading images into the Pluto notebook
 begin
 	using Images
 	using ImageTransformations
@@ -33,9 +33,13 @@ end
 begin
 	using CSV
 	using DataFrames
+	#Read the CSV file and transform it into a DataFrame
 	rain_data = CSV.read("data/historico_precipitaciones.csv", DataFrame)
+	#Rename the columns 
 	colnames = ["Year", "Month", "mm", "Days"]
-	rename!(rain_data, Symbol.(colnames))
+	rename!(rain_data, Symbol.(colnames)) #Symbol is the type of object used to represent the labels of a dataset
+	
+	#We use a dictionary to translate de Month names 
 	translate = Dict("Enero" => "January" ,"Febrero" => "February" ,"Marzo" => "March" ,"Abril" => "April" ,"Mayo" => "May" ,"Junio" => "June"  ,"Julio" => "July"   ,"Agosto" => "August"  ,"Septiembre" => "September"  ,"Octubre" => "October" ,"Noviembre" => "November" ,"Diciembre" => "December")
 	
 	for i in 1:length(rain_data[:,:Month])
@@ -44,24 +48,12 @@ begin
 end
 
 
-# ╔═╡ b71a6256-8c1a-11eb-18d5-c52f6eb61247
-md"### To do list
- 
-
-";
-
-
 # ╔═╡ 044ed4a0-8e49-11eb-1eca-71bb66552959
 md"### To do list
  
 We are currently working on:
  
-* Add description of sampling and Bayesian way of thinking [#47](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues/47).
 * Add appendix with mathematical definitions [#100](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues/100).
-* Distinguish between discrete and continues cases [#102](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues/102).
-* Improve definitions [#101](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues/101).
-* Improve the code to translate the name of the months [#103](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues/103).
-* Explain cumulative distribution function [#105](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues/105).
 
 "
 
@@ -69,14 +61,17 @@ We are currently working on:
 # ╔═╡ 1db7ef38-9198-11eb-3fee-b1806424dc37
 md"
 # Introduction to Probability
-In this book, probability and statistics topics will be discussed extensively. Mainly the Bayesian interpretation of probability and Bayesian statistics. But we first need an intuitive conceptual basis to build on top of that. We won't assume any prior knowledge, so let's start from the basics. 
+In this book, probability and statistics topics will be discussed extensively. 
+Mainly the Bayesian interpretation of probability and Bayesian statistics. 
+But we first need an intuitive conceptual basis to build on top of that. 
+We won't assume any prior knowledge, so let's start from the basics. 
 
 Probability is a mathematical field that aims to measure the uncertainty of a particular event happening or the degree of confidence about some statement or hypothesis.
 As any other mathematical field probability has their own axioms and definitions that we will start seeing in this chapter.A main characteristic of probability is that it is substantially related to real word practice.
 It gains practical value and an intuitive meaning in connection with real or conceptual experiments.
 
 
-Therefore,lets start defining some concepts with an experiment. 
+Therefore, lets start defining some concepts with an experiment.
 
 "
 
@@ -84,7 +79,8 @@ Therefore,lets start defining some concepts with an experiment.
 md"
 ## Events, sample spaces and sample points
 
-So, let's make our first experiment. We have a box with 4 balls, each one of different colors: blue, red, green and white.
+So, let's make our first experiment. 
+We have a box with 4 balls, each one of different colors: blue, red, green and white.
 
 "
 
@@ -92,18 +88,18 @@ So, let's make our first experiment. We have a box with 4 balls, each one of dif
 imresize(load("images/box-experiment.jpg"), (336, 400))
 
 # ╔═╡ 3720628e-9198-11eb-3138-19bb419b7b6e
-md"We put our hands inside the box, take out two random balls at the same time  and anote the color. 
+md"We put our hands inside the box, take out two random balls at the same time and anote the color. 
 
 So lets see how many possible outputs has our experiment
 
-1. Red Green
-1. Red Blue
-1. Red White
-1. Green Blue
-1. Green White
-1. Blue White
+1. Red Green = $(R,G)$
+1. Red Blue = $(R,B)$
+1. Red White = $(R,W)$
+1. Green Blue = $(G,B)$
+1. Green White = $(G,W)$
+1. Blue White = $(B,W)$
 
-Notice that since we don't care about the orden in which the balls are taken out, saying “Red and Green” is equal to “Green and Red”
+Notice that, since we don't care about the orden in which the balls are taken out, saying “Red and Green” is equal to “Green and Red”.
 
 For uniform terminology, we define each possible output of the experiment as a sample point, and the sample space as aggregate of all the possible outcomes of our experiment.
 In this example the sample space will contain 6 sample points.
@@ -116,7 +112,7 @@ So, suppose we want to see all the cases in which the white ball was taken out, 
 “The white ball was taken” = $\{(R,W), (G,W), (B,W)\}$
 
 These observations about the experiment are called events.
-An event is defined as an aggregate of sample points and by convention, we use a capital letter to represent them
+An event is defined as an aggregate of sample points and by convention, we use a capital letter to represent them:
 
 
 
@@ -129,11 +125,11 @@ B = “The green and the blue ball were taken” = $\{(G,B)\}$
 
 ### Relation among events
 
-We can represent events using Venn diagrams. Lets see it with an example.
+We can represent events and the relation between them using Venn diagrams.
 
-continuing with our experiment, we got out sample space:
+Continuing with our experiment, we got our sample space:
 
-Sample space = S =  $\{(R,G), (R,B), (R,W), (G,B), (G,W), (B,W)\}$
+Sample space = S = $\{(R,G), (R,B), (R,W), (G,B), (G,W), (B,W)\}$
 
 And let's analyze this two events
 
@@ -143,23 +139,24 @@ B= “The red wall was not taken” = $\{(G,B)(G,W)(B,W)\}$
 
 "
 
+
 # ╔═╡ 9745ec60-919a-11eb-172e-5df02c330a57
 imresize(load("images/venn-1.jpg"), (336, 400))
 
 # ╔═╡ bccb252a-923f-11eb-0665-5d96561f7d1d
 md"
-The rectangle represents the sample space S. Since it represents all the possible outputs of our experiment, nothing can be outside of it.
+The rectangle represents the sample space S. Since it represents all the possible outputs of our experiment, nothing can be outside it.
 
-Then we represent the event A , that contains the 3 sample points  $\{(R,W), (G,W)$ and $(B,W)\}$, with a red circle.
+Then we represent the event A , that contains the 3 sample points $\{(R,W), (G,W)$ and $(B,W)\}$, with a red circle.
 
-The event consisting of all points not contained in the event A will be called the complementary event (or negation) o f A and will be denoted by A'.
+The event consisting of all points not contained in the event A will be called the complementary event (or negation) of A and is denoted by A'.
 
 $A´= {(R,G),(R,B),(G,B)}$
 
 Notice that if we created a new event that contains all the sample points of A and A´, we obtain the sample space.
 
-
 "
+
 
 # ╔═╡ 98d90100-919a-11eb-04cd-4729037de830
 imresize(load("images/venn-3.jpg"), (336, 400))
@@ -175,15 +172,15 @@ imresize(load("images/venn-2.jpg"), (336, 400))
 
 # ╔═╡ 75091186-9242-11eb-1fdf-fddc652f1453
 md"
-The blue area contains the sample points that are in both events, in this case $(G,W)$ and $(B,W)$. Is defined as the intersection of A and B and we represent it $A \cap B$
+The blue area contains the sample points that are in both events, in this case $(G,W)$ and $(B,W)$. Is defined as the intersection of A and B and is denoted by $A \cap B$.
 
-In the other hand, red area contains the points  that are only present in the event A, in this case $(R,W)$ .
-Analogously the green area contains the points  that are only present in the event A, in this case $(G,B)$ .
+On the other hand, the red area contains the points that are only present in the event A, in this case $(R,W)$ .
+Analogously the green area contains the points that are only present in the event A, in this case $(G,B)$ .
 "
 
 # ╔═╡ cf075ae6-922f-11eb-1ff2-b70737c34f82
 md"""
-## Probability	
+## Probability
 
 Now that we are introduced to the event, sample point and sample space concepts we can start talking about probability.
 
@@ -194,7 +191,7 @@ Probability, being a measure of our own belief or certainty in the occurrence of
 For this reason, events may still occur when we assign them probability $0$, and they might not occur if we assign them probability $1$.
 
 By definition, the probability of the entire sample space $S$ is unity, or $P\{S\} = 1$. 
-It follows that for any event $A$: $0 <P\{A\} <1$.
+It follows that for any event $A$: $0 <P(A) <1$.
 
 In our experiment we can consider that all the sample points have the same probability of going out so we assign ⅙ to each point.
 Another way we can assign probabilities to each sample point is with the popular formula:
@@ -203,10 +200,7 @@ $P(A) = \frac{success \ cases} {total \ cases}$
 
 $P((R,W))= \frac{(R,W)}{(R,G),(R,B),(R,W),(G,B),(G,W),(B,W)} =\frac{1}{6}$
 
-The probability $P(A)$ of any event $A$ is the sum of the probabilities o f all sample points in it.
-
-
-
+The probability $P(A)$ of any event $A$ is the sum of the probabilities of all sample points in it.
 
 For A = "The white ball was taken" = $\{(R,W), (G,W), (B,W)\}$
 
@@ -214,12 +208,12 @@ $P(A) = P(R,W) + P(G,W)+ P(B,W) = \frac{1}{6}+ \frac{1}{6} + \frac{1}{6} = \frac
 
 
 
-$P(A´) = P(R,G) + P(R,B) + P(G,B) =  \frac{1}{6}+ \frac{1}{6} + \frac{1}{6} = 0.5$
+$P(A´) = P(R,G) + P(R,B) + P(G,B) = \frac{1}{6}+ \frac{1}{6} + \frac{1}{6} = 0.5$
 
 
 B= "The red wall was not taken" = $\{(G,B)(G,W)(B,W)\}$
  
-$P(B) =  \frac{3}{6}$
+$P(B) = \frac{3}{6}$
 
 $A \cap B = \{(G,W),(B,W)$
 
@@ -249,13 +243,15 @@ The notion of conditional probability is a basic tool of probability theory.
 
 Let's put it in a formal way, $P(A|B)$ and $P(B|A)$, which reads as 'the conditional probability of A given B' and 'the conditional probability of B given A', are not equal. 
 The way to interpret this, for example $P(A|B)$, is: 'the probability of the event A happening, given that we know the event B occured'. 
-The analogous interpretation for  $P(B|A)$ would be 'the probability of event B happening, given that we know the event A occured'.
-Although it may sound as if this implies an order in the occurrence of the events, that isn't necessarily the case. What in reality has an actual order in this statement is our knowledge of what things happened.
- If we say, for example, , then what we know first is event B, and given this knowledge, we want to know the probability of event A.
+The analogous interpretation for $P(B|A)$ would be 'the probability of event B happening, given that we know the event A occured'.
+Although it may sound as if this implies an order in the occurrence of the events, that isn't necessarily the case.
+What in reality has an actual order in this statement is our knowledge of what things happened.
+If we say, for example $P(A|B)$, then what we know first is event B, and given this knowledge, we want to know the probability of event A.
 
-To see it in a graphical way 
+To see it in a graphical way:
 
 """
+
 
 # ╔═╡ e3b1639e-9234-11eb-2b54-07fe7519b5db
 imresize(load("images/venn-4.jpg"), (336, 400))
@@ -263,9 +259,9 @@ imresize(load("images/venn-4.jpg"), (336, 400))
 # ╔═╡ e33850ee-9234-11eb-2161-1b207ba6bb12
 md"""
 
-Notice that, since we now B occurred we can truncate the sample space to the B event, and now calculate the probability of A
+Notice that, since we now B occurred we can truncate the sample space to the B event, and now calculate the probability of A.
 
-$P(A|B) =  \frac{P(A \cap B)}{P(B)}$
+$P(A|B) = \frac{P(A \cap B)}{P(B)}$
 
 Lets see an example.
 
@@ -273,7 +269,7 @@ A = “I pick a red and a green ball”
 
 B = “I pick a red ball”
 
-So P(A|B) would read as, what is the probability of picking a red and a green ball knowing that i already pick one red ball.
+So P(A|B) is interpreted as the probability of picking a red and a green ball knowing that I already pick one red ball.
 
 
 $A = \{(R,G),(R,B),(R,W)\} => P(A) = \frac{3}{6}$
@@ -281,11 +277,11 @@ $B = \{(R,G)\} => P(B) => \frac{3}{6}$
 $A \cap B = \{(R,G)\} => P(A \cap B) = \frac{1}{6}$
 
 
-$P(A|B) =  \frac{P(A \cap B)}{P(B)}$ 
+$P(A|B) = \frac{P(A \cap B)}{P(B)}$ 
 
-$P(A|B) = \frac{1}{6}  ÷ \frac{3}{6}  = \frac{1}{3}$
+$P(A|B) = \frac{1}{6} ÷ \frac{3}{6} = \frac{1}{3}$
 
-Now let's move on from our experiment
+Now let's move on from our experiment.
 """
 
 
@@ -293,34 +289,42 @@ Now let's move on from our experiment
 md"
 ## Joint probability
 
-We refer to joint probability as the probability of two events occurring together and at the same time. Lets see how it work with an example
+We refer to joint probability as the probability of two events occurring together and at the same time. 
+Let's see how it works with an example.
 
-Imagine we want to study this 3 events:
+Imagine we want to study this two events:
+
 R= “Today It will rain”
+
 L = “The number 39 will win the lottery”
 
-Let's analyze the nature of these events a little bit. Are they related? 
+Let's analyze the nature of these events a little bit, are they related? 
 Technically, we can think everything in our planet is interconnected with everything else, but in practice, it is fair to assume these two events are pretty independent from one another.
- In a more formal way, what this is telling us is that knowing the probability of one of the events does not give us information about the probability of the other event. 
+In a more formal way, what this is telling us is that knowing the probability of one of the events does not give us information about the probability of the other event. 
 That is the definition of independence in this context. 
 
 In the language of probabilities, we can write a special property for independent events.
+
 $P(R and L) = P(R) * P(L)$
+
 Colloquially, this means that the probability of both events “Today It will rain” and “The number 39 will win the lottery” happening together is equal to the product of each of the probabilities of each one happening individually.
  
 When the events are not independent from one another, we can use the conditional probability of events we saw earlier.
-Now lets study the joint probability of this two events:
+
+Now, lets study the joint probability of this two events:
+
 R= “Today It will rain”
+
 H= “humidity will exceed 50%”
 
- If it is raining, there is a high probability that the humidity levels will rise, so the probability of humidity exceeding 50% will be affected.
+If it is raining, there is a high probability that the humidity levels will rise, so the probability of humidity exceeding 50% will be affected.
 
 To calculated this joint probability we use:
 
 $P(H\text{ and }R) = P(R)P(H|R)$
 
 
-For two general events A and B, this is
+For two general events A and B, this is:
 
 $P(A\text{ and }B) = P(A)P(B|A)$
 
@@ -389,27 +393,30 @@ md"
 # Probability distributions
 So far, we have been talking of probabilities of particular events.
 Probability distributions, on the other hand, help us compute probabilities of various events.
-We can distinguish between discrete and continuous cases depending on the posibble output of the experiment
+We can distinguish between discrete and continuous cases depending on the possible output of the experiment.
 "
 
 # ╔═╡ f36ea8bc-9623-11eb-24a2-155b112db75b
 md"
 ## Discrete Case
-If the outputs of our experiment are discrete, then its distribution is called a probability mass functions, where we assigning a probability to each possible outcome.
+If the outputs of our experiment are discrete, then its distribution is called a probability mass function, where we assign a probability to each possible outcome.
 
 One of the most popular distributions is the Poisson distribution.
-Suppose I want to visualize the probability of reciving *x* spam mail on Mondays.
+Suppose I want to visualize the probability of receiving *x* spam mails on Mondays.
 "
 
+
 # ╔═╡ e369ca40-9624-11eb-3d71-7719b56e0559
-md"Here we represent the probability of reciving *x* spam mail in a day.
-The interpretation of this graph if pretty pretty straightforward. 
-The probability of receiving 0 spam emails on a Mondays it is aproximatly 0.2, for 1 spam email is slightly higher tha 0.3 and so on, we have the probability of each posible output.
+md"
+Here we represent the probability of receiving *x* spam mail in a day.
+The interpretation of this graph is pretty straightforward. 
+The probability of receiving 0 spam emails on a Monday is approximately 0.2, for 1 spam email is slightly higher than 0.3 and so on, we have the probability of each possible output.
 
 By replicating the code below in a Pluto notebook, you will be able to create sliders to play around with the values of μ and σ and see how the Poisson distribution changes.
 
-
 "
+
+
 
 # ╔═╡ 59b04ef6-962a-11eb-29ce-8d401d3a59d7
 @bind  λ	html"<input type=range min=0.5 max=5 step=0.1>"
@@ -418,11 +425,12 @@ By replicating the code below in a Pluto notebook, you will be able to create sl
 bar(Poisson(λ), xlabel="x", ylabel="Probability", legend=false, size=(400, 300))
 
 # ╔═╡ e356a712-9624-11eb-15a9-49a7548e0b5b
-md"## Continuos cases
-Insted of a probability mass function, a continuous random variable has a probability denstity function.
+md"## Continuous cases
+Instead of a probability mass function, a continuous random variable has a probability density function.
 
 For example, consider the density probability of heights of adult women, given approximately by a Normal distribution,
 "
+
 
 # ╔═╡ 8b06866e-5424-11eb-3cb6-f9afabefcd70
 begin
@@ -432,7 +440,6 @@ end
 
 # ╔═╡ 351923ee-5436-11eb-2bf6-8d024a64e83e
 md"
-
 In this example, the event space is just all the possible heights a woman could have, in other words, the *x* axis.
 The *y* axis, on the other hand, represents the probability density.
 
@@ -445,12 +452,10 @@ To know it we need to calculate the area under the density curve in the interval
 
 Keep in mind, that the *x* label contains all possible events, in this case all possible woman´s heights, so the area below the curve of all the *x* label is equal to 1.
 
-An alternative description of the distribution is the cumulative distribution function also called the distribution function. We obtein it by integrating the density function and describes the probability that the random variable is no larger than a given value
-
-Any mathematical function satisfying certain requirements can be a probability density. There are lots of these type of functions, and each one has its own shape and distinctive properties.
-
+An alternative description of the distribution is the cumulative distribution function also called the distribution function. It describes the probability that the random variable is no larger than a given value. We obtain it by integrating the density function and 
 
 "
+
 
 # ╔═╡ 470c38aa-962d-11eb-3a5e-9589407766ec
 imresize(load("images/density and cumulative functions.png"), (300, 860))
@@ -460,11 +465,15 @@ md"On the left is the probability density functio and on the right is the cumula
 
 # ╔═╡ 3b70af62-962d-11eb-3dcd-437040700958
 md"
+Any mathematical function satisfying certain requirements can be a probability density. 
+There are lots of these types of functions, and each one has its own shape and distinctive properties.
 
-Any mathematical function satisfying certain requirements can be a probability density. There are lots of these type of functions, and each one has its own shape and distinctive properties.
-
-We will introduce some important probability density functions so that you can have a better understanding of what all this is about. Probably, the concept of the Normal distribution –also refered as the Gaussian– was already familiar to you, as it is one of the most popular and widely used distributions in some fields and in popular culture. The shape of this distribution is governed by two *parameters*, usually represented by the Greek letters $\mu$ and $\sigma$. Roughly speaking, $\mu$ is associated with the center of the distribution and $\sigma$ with how wide it is
+We will introduce some important probability density functions so that you can have a better understanding of what all this is about.
+Probably, the concept of the Normal distribution –also referred as the Gaussian– was already familiar to you, as it is one of the most popular and widely used distributions in some fields and in popular culture.
+The shape of this distribution is governed by two *parameters*, usually represented by the Greek letters $\mu$ and $\sigma$. Roughly speaking, $\mu$ is associated with the center of the distribution and $\sigma$ with how wide it is
 "
+ 
+
 
 # ╔═╡ 4a6f2768-543e-11eb-1846-f9e35aa961d2
 md"
@@ -484,7 +493,8 @@ plot(Normal(μ,σ), xlabel="x", ylabel="P(x)", lw=4, color="purple", label=false
 md" 
 Every probability density that is defined by a mathematical function, has a set of parameters that defines the distribution's shape and behaviour, and changing them will influence the distribution in different ways, depending on the one we are working with. 
 
-Another widely used distribution is the *exponential*. Below you can see how it looks like. It is governed by only one parameter, $\alpha$, which basically represents the rate of decrease in probability as $x$ gets bigger. 
+Another widely used distribution is the *exponential*. Below you can see how it looks.
+It is governed by only one parameter, $\alpha$, which basically represents the rate of decrease in probability as $x$ gets bigger. 
 "
 
 # ╔═╡ 90c1b258-543e-11eb-3f8e-3f167fab2db0
@@ -739,6 +749,8 @@ md"
 * [Mixture Distribution](https://www.johndcook.com/blog/mixture_distribution/)
 * [A contextual bandit bake-off](https://arxiv.org/pdf/1802.04064.pdf)
 * [Bandit Algs page](https://banditalgs.com/)
+* [Bayesian Methods for Hackers](https://www.amazon.com/Bayesian-Methods-Hackers-Probabilistic-Addison-Wesley/dp/0133902838)
+* [An Introduction to Probability Theory and Its Applications, Vol. 1](https://www.amazon.com/Introduction-Probability-Theory-Applications-Vol/dp/0471257087)
 "
 
 # ╔═╡ 394ddf0a-8c1b-11eb-05da-13d28342df75
@@ -760,7 +772,6 @@ md"
 
 
 # ╔═╡ Cell order:
-# ╟─b71a6256-8c1a-11eb-18d5-c52f6eb61247
 # ╟─044ed4a0-8e49-11eb-1eca-71bb66552959
 # ╟─1db7ef38-9198-11eb-3fee-b1806424dc37
 # ╟─37f8c246-9198-11eb-2c0b-71b3d3c4e3ee
@@ -771,11 +782,11 @@ md"
 # ╟─bccb252a-923f-11eb-0665-5d96561f7d1d
 # ╟─98d90100-919a-11eb-04cd-4729037de830
 # ╟─d8e086b8-9241-11eb-33f2-03786ca67fa1
-# ╠═985fcce0-919a-11eb-0fa6-9d8ca380ce4e
+# ╟─985fcce0-919a-11eb-0fa6-9d8ca380ce4e
 # ╟─75091186-9242-11eb-1fdf-fddc652f1453
 # ╟─cf075ae6-922f-11eb-1ff2-b70737c34f82
 # ╟─cacbb7b2-9234-11eb-0224-a302d0238b87
-# ╠═e3b1639e-9234-11eb-2b54-07fe7519b5db
+# ╟─e3b1639e-9234-11eb-2b54-07fe7519b5db
 # ╟─e33850ee-9234-11eb-2161-1b207ba6bb12
 # ╟─2feab95a-925c-11eb-0959-ad38cc3ddae6
 # ╟─39a5328a-9267-11eb-2cb4-4181b250b0b8
