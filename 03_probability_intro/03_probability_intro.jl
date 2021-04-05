@@ -36,22 +36,13 @@ begin
 	rain_data = CSV.read("data/historico_precipitaciones.csv", DataFrame)
 	colnames = ["Year", "Month", "mm", "Days"]
 	rename!(rain_data, Symbol.(colnames))
+	translate = Dict("Enero" => "January" ,"Febrero" => "February" ,"Marzo" => "March" ,"Abril" => "April" ,"Mayo" => "May" ,"Junio" => "June"  ,"Julio" => "July"   ,"Agosto" => "August"  ,"Septiembre" => "September"  ,"Octubre" => "October" ,"Noviembre" => "November" ,"Diciembre" => "December")
 	
 	for i in 1:length(rain_data[:,:Month])
-		if rain_data[i,:Month] == "Enero" rain_data[i,:Month] = "January"
-		elseif rain_data[i,:Month]== "Febrero" rain_data[i,:Month] = "February"
-		elseif rain_data[i,:Month] == "Marzo" rain_data[i,:Month] = "March"
-		elseif rain_data[i,:Month] == "Abril" rain_data[i,:Month] = "April"
-		elseif rain_data[i,:Month] == "Mayo" rain_data[i,:Month] = "May"
-		elseif rain_data[i,:Month] == "Junio" rain_data[i,:Month] = "June" 
-		elseif rain_data[i,:Month] == "Julio" rain_data[i,:Month] = "July"  				elseif rain_data[i,:Month]== "Agosto" rain_data[i,:Month] = "August" 
-		elseif rain_data[i,:Month] == "Septiembre" rain_data[i,:Month] = "September" 
-		elseif rain_data[i,:Month] == "Octubre" rain_data[i,:Month] = "October"
-		elseif rain_data[i,:Month] == "Noviembre" rain_data[i,:Month] = "November"
-		elseif rain_data[i,:Month] == "Diciembre" rain_data[i,:Month] = "December"
-		end
+    	rain_data[i,:Month] = translate[rain_data[i,:Month]]
 	end
-end;
+end
+
 
 # ╔═╡ b71a6256-8c1a-11eb-18d5-c52f6eb61247
 md"### To do list
