@@ -20,15 +20,13 @@ begin
 	using ImageTransformations
 end
 
-# ╔═╡ e6ecfce4-54e5-11eb-2ff6-3bb479c286af
-using StatsPlots
-
-# ╔═╡ 8b06866e-5424-11eb-3cb6-f9afabefcd70
+# ╔═╡ f2f027e4-9623-11eb-1065-8b698262faf3
 begin
 	using Plots
 	using Distributions
+	using StatsPlots
 	
-	plot(Normal(64, 3), xlabel="Height (in)", ylabel="Probability density", legend=false, size=(400, 300))
+	bar(Poisson(1.5), xlabel="Spam emails", ylabel="Probability", legend=false, size=(400, 300))
 end
 
 # ╔═╡ e45d76d4-1250-11eb-14d7-c30fcb5a5b72
@@ -203,8 +201,6 @@ The number $0$ means we have the strongest possible belief that the event will n
 The number $1$ means we have the strongest possible belief that the event will happen: We are sure it will happen. 
 Probability, being a measure of our own belief or certainty in the occurrence of an event, does not determine whether the event occurs or not. 
 For this reason, events may still occur when we assign them probability $0$, and they might not occur if we assign them probability $1$.
-How exactly this number is linked to each event is something that is far from trivial and indeed is a discussion that has been going for years. Later on we'll dive deeper into that rabbit hole, but for the moment let's not worry about how exactly this is defined or calculated: assume we have a well established method for the time being. 
-The important thing now will be the different rules that emerge from the nature of these events.
 
 By definition, the probability of the entire sample space $S$ is unity, or $P\{S\} = 1$. 
 It follows that for any event $A$: $0 <P\{A\} <1$.
@@ -214,7 +210,7 @@ Another way we can assign probabilities to each sample point is with the popular
 
 $P(A) = \frac{success \ cases} {total \ cases}$ 
 
-$P((R,W))= \frac{1}{6}$
+$P((R,W))= \frac{(R,W)}{(R,G),(R,B),(R,W),(G,B),(G,W),(B,W)} =\frac{1}{6}$
 
 The probability $P(A)$ of any event $A$ is the sum of the probabilities o f all sample points in it.
 
@@ -399,11 +395,49 @@ To understand the full power of Bayesian probability we have to extend the notio
 
 # ╔═╡ 2d9482ce-1252-11eb-0cc7-35ad9c288ef8
 md"
-# Probability density
+# Probability distributions
 So far, we have been talking of probabilities of particular events.
-Probability density, on the other hand, help us compute probabilities of various events.
-These are functions that connect each event in an 'event space' to some probability. What do we mean by 'event space'? For example, consider the density probability of heights of adult women, given approximately by a **Normal distribution**,
+Probability distributions, on the other hand, help us compute probabilities of various events.
+We can distinguish between discrete and continuous cases depending on the posibble output of the experiment
 "
+
+# ╔═╡ f36ea8bc-9623-11eb-24a2-155b112db75b
+md"
+## Discrete Case
+If the outputs of our experiment are discrete, then its distribution is called a probability mass functions, where we assigning a probability to each possible outcome.
+
+One of the most popular distributions is the Poisson distribution.
+Suppose I want to visualize the probability of reciving *x* spam mail on Mondays.
+"
+
+# ╔═╡ e369ca40-9624-11eb-3d71-7719b56e0559
+md"Here we represent the probability of reciving *x* spam mail in a day.
+The interpretation of this graph if pretty pretty straightforward. 
+The probability of receiving 0 spam emails on a Mondays it is aproximatly 0.2, for 1 spam email is slightly higher tha 0.3 and so on, we have the probability of each posible output.
+
+By replicating the code below in a Pluto notebook, you will be able to create sliders to play around with the values of μ and σ and see how the Poisson distribution changes.
+
+
+"
+
+# ╔═╡ 59b04ef6-962a-11eb-29ce-8d401d3a59d7
+@bind  λ	html"<input type=range min=0.5 max=5 step=0.1>"
+
+# ╔═╡ 0aa945c6-962b-11eb-3313-3deb23234ac5
+bar(Poisson(λ), xlabel="x", ylabel="Probability", legend=false, size=(400, 300))
+
+# ╔═╡ e356a712-9624-11eb-15a9-49a7548e0b5b
+md"## Continuos cases
+Insted of a probability mass function, a continuous random variable has a probability denstity function.
+
+For example, consider the density probability of heights of adult women, given approximately by a Normal distribution,
+"
+
+# ╔═╡ 8b06866e-5424-11eb-3cb6-f9afabefcd70
+begin
+
+	plot(Normal(64, 3), xlabel="Height (in)", ylabel="Probability density", legend=false, size=(400, 300))
+end
 
 # ╔═╡ 351923ee-5436-11eb-2bf6-8d024a64e83e
 md"
@@ -420,9 +454,25 @@ To know it we need to calculate the area under the density curve in the interval
 
 Keep in mind, that the *x* label contains all possible events, in this case all possible woman´s heights, so the area below the curve of all the *x* label is equal to 1.
 
+An alternative description of the distribution is the cumulative distribution function also called the distribution function. We obtein it by integrating the density function and describes the probability that the random variable is no larger than a given value
+
 Any mathematical function satisfying certain requirements can be a probability density. There are lots of these type of functions, and each one has its own shape and distinctive properties.
 
-We will introduce some important probability density functions so that you can have a better understanding of what all this is about. Probably, the concept of the Normal distribution –also refered as the Gaussian– was already familiar to you, as it is one of the most popular and widely used distributions in some fields and in popular culture. The shape of this distribution is governed by two *parameters*, usually represented by the Greek letters $\mu$ and $\sigma$. Roughly speaking, $\mu$ is associated with the center of the distribution and $\sigma$ with how wide it is. 
+
+"
+
+# ╔═╡ 470c38aa-962d-11eb-3a5e-9589407766ec
+imresize(load("images/density and cumulative functions.png"), (300, 860))
+
+# ╔═╡ c25042f4-962d-11eb-262a-79876563bb90
+md"On the left is the probability density functio and on the right is the cumulative distribution function, which is the area under the probability density curve."
+
+# ╔═╡ 3b70af62-962d-11eb-3dcd-437040700958
+md"
+
+Any mathematical function satisfying certain requirements can be a probability density. There are lots of these type of functions, and each one has its own shape and distinctive properties.
+
+We will introduce some important probability density functions so that you can have a better understanding of what all this is about. Probably, the concept of the Normal distribution –also refered as the Gaussian– was already familiar to you, as it is one of the most popular and widely used distributions in some fields and in popular culture. The shape of this distribution is governed by two *parameters*, usually represented by the Greek letters $\mu$ and $\sigma$. Roughly speaking, $\mu$ is associated with the center of the distribution and $\sigma$ with how wide it is
 "
 
 # ╔═╡ 4a6f2768-543e-11eb-1846-f9e35aa961d2
@@ -465,7 +515,13 @@ As the book progresses, we will be using a lot of different distributions. They 
 # ╔═╡ fbaac2e0-1252-11eb-1d8a-e7ba0193ea9b
 md"
 ## Histograms
-To illustrate some of these concepts we have been learning, we are going to use [monthly rainfall data](https://data.buenosaires.gob.ar/dataset/registro-precipitaciones-ciudad) from the city of Buenos Aires, Argentina, since 1991. The **histogram** of the data is shown below. You may be wondering what a histogram is. An histogram is a plot that tells us the counts or relative frequencies of a given set of events."
+To illustrate some of these concepts we have been learning, we are going to use [monthly rainfall data](https://data.buenosaires.gob.ar/dataset/registro-precipitaciones-ciudad) from the city of Buenos Aires, Argentina, since 1991. 
+The **histogram** of the data is shown below. 
+You may be wondering what a histogram is. 
+An histogram is a plot that tells us the counts or relative frequencies of a given set of events.
+
+As a data scientist you are constanly working with datasets and a great first approach to that dataset is by constructing a histogram.
+To construct a histogram, the first step is to bin the range of values that is, divide the entire range of values into a series of intervals and then count how many values fall into each interval"
 
 # ╔═╡ 748f8114-1483-11eb-15c0-879e4e1dec8c
 md"We can see the first few rows of our data, with columns corresponding to the year, the month, the rain precipitation (in millimeters) and the number of days it rained in that month."
@@ -488,7 +544,8 @@ end
 
 # ╔═╡ c770092e-12e6-11eb-0711-0196e27d573e
 md"
-Histograms can be interpreted as an approximation of the probability density function. The reason behind this is because we have registered some total number $N$ of events that happened in some time interval (in this case, one month) and we grouped the number of times each one ocurred. In this line of reasoning, events that happened most are more likely to happen, and hence we can say they have a higher probability associated to them. Something important to consider about histograms when dealing with a continuous variable such as, in our case, milimeters of monthly rainfall, are *bins* and bin size. When working with such continuous variables, the domain in which our data expresses itself (in this case, from 0 mm to approximately 450 mm) is divided in discrete intervals. In this way, given a bin size of 20mm, when constructing our histogram we have to ask 'how many rainy days have given us a precipitation measurement between 100mm and 120mm?', and then we register that number in that bin. This process is repeated for all bins to obtain our histogram.
+Histograms give us a good approximation of the probability density function. 
+The reason behind this is because we have registered some total number $N$ of events that happened in some time interval (in this case, one month) and we grouped the number of times each one ocurred. In this line of reasoning, events that happened most are more likely to happen, and hence we can say they have a higher probability associated to them. Something important to consider about histograms when dealing with a continuous variable such as, in our case, milimeters of monthly rainfall, are *bins* and bin size. When working with such continuous variables, the domain in which our data expresses itself (in this case, from 0 mm to approximately 450 mm) is divided in discrete intervals. In this way, given a bin size of 20mm, when constructing our histogram we have to ask 'how many rainy days have given us a precipitation measurement between 100mm and 120mm?', and then we register that number in that bin. This process is repeated for all bins to obtain our histogram.
 We have earlier said that probability has to be a number between 0 and 1, so how can it be that these relative frequencies are linked to probabilities? What we should do now is to *normalize* our histogram to have the frequency values constrained. Normalizing is just the action of adjusting the scale of variables, without changing the relative values of our data. Below we show the normalized histogram. You will notice that the frequency values are very low now. The reason for this is that when normalizing, we impose to our histogram data that the sum of the counts of all our events (or, thinking graphically, the total area of the histogram) must be 1. But why? As probability tell us how plausible is an event, if we take into account all the events, we expect that the probability of all those events to be the maximum value, and that value is 1 by convention. In that way we can compare plausibilities across different events, therefore when we say that some event has a probability of 0.6 to occur, for any event it means the same, no matter if we are talking about the probability of raining or the probability of being hit by a car.
 So, we normalize the histogram obtaining:"
 
@@ -728,13 +785,21 @@ md"
 # ╟─cf075ae6-922f-11eb-1ff2-b70737c34f82
 # ╟─cacbb7b2-9234-11eb-0224-a302d0238b87
 # ╠═e3b1639e-9234-11eb-2b54-07fe7519b5db
-# ╠═e33850ee-9234-11eb-2161-1b207ba6bb12
-# ╠═2feab95a-925c-11eb-0959-ad38cc3ddae6
-# ╠═39a5328a-9267-11eb-2cb4-4181b250b0b8
+# ╟─e33850ee-9234-11eb-2161-1b207ba6bb12
+# ╟─2feab95a-925c-11eb-0959-ad38cc3ddae6
+# ╟─39a5328a-9267-11eb-2cb4-4181b250b0b8
 # ╟─2d9482ce-1252-11eb-0cc7-35ad9c288ef8
-# ╠═e6ecfce4-54e5-11eb-2ff6-3bb479c286af
+# ╟─f36ea8bc-9623-11eb-24a2-155b112db75b
+# ╠═f2f027e4-9623-11eb-1065-8b698262faf3
+# ╟─e369ca40-9624-11eb-3d71-7719b56e0559
+# ╠═59b04ef6-962a-11eb-29ce-8d401d3a59d7
+# ╠═0aa945c6-962b-11eb-3313-3deb23234ac5
+# ╟─e356a712-9624-11eb-15a9-49a7548e0b5b
 # ╠═8b06866e-5424-11eb-3cb6-f9afabefcd70
 # ╟─351923ee-5436-11eb-2bf6-8d024a64e83e
+# ╟─470c38aa-962d-11eb-3a5e-9589407766ec
+# ╟─c25042f4-962d-11eb-262a-79876563bb90
+# ╟─3b70af62-962d-11eb-3dcd-437040700958
 # ╟─4a6f2768-543e-11eb-1846-f9e35aa961d2
 # ╠═0ac3353a-543d-11eb-08fe-d35a4c0f0bbc
 # ╠═ecec1854-543c-11eb-0d11-b342e4d246e1
@@ -769,7 +834,7 @@ md"
 # ╟─55dfa6e8-551c-11eb-25e6-e30a5610c866
 # ╠═6583cf5c-551c-11eb-0b06-d766337f0b94
 # ╟─4910dcda-551b-11eb-12bc-d5d56465989b
-# ╟─aef28744-54f1-11eb-033a-138128439906
+# ╠═aef28744-54f1-11eb-033a-138128439906
 # ╟─1d2fded6-551d-11eb-3680-9d0faf78dc6f
 # ╠═b5174e84-54f1-11eb-1fbb-afb237e1fdf2
 # ╠═ba0851e0-54f1-11eb-2b22-1512dfc999f3
