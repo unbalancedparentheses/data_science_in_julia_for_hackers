@@ -21,8 +21,8 @@ md"### To do list
  
 We are currently working on:
  
-* Explain how to measure the model performance when the categories are not balanced [#85](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues/85).
-"
+
+";
 
 # ╔═╡ 0de04b90-2835-11eb-1369-01c64bc38c42
 md"
