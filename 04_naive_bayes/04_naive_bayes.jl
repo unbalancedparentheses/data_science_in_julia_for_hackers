@@ -239,26 +239,25 @@ Finally we arrived to the point of actually testing our model. This is what the 
 "
 
 # ╔═╡ 4e470cba-2850-11eb-3563-cd9ead36f468
-function spam_filter_accurracy(x_test, y_test, model::BayesSpamFilter, α, tol=200)
-    N = length(y_test)
-    predictions = Array{Int64,1}(undef, N)
-    correct = 0
-    for i in 1:N
-        email = string([repeat(string(word, " "), n) for (word, n) in zip(model.vocabulary, x_test[:,i])]...)
-        p_ham, p_spam = spam_predict(email, model, α, tol)
-        if p_ham > p_spam
-            predictions[i] = 0
-            if y_test[i] == 0
-                correct += 1
-            end
-        else
-            predictions[i] = 1
-            if y_test[i] == 1
-                correct += 1
-            end
-        end
-    end
-    return correct/N
+#This function classify each mail into Ham(0) or Spam(1)
+function get_predictions(x_test, y_test, model::BayesSpamFilter, α, tol=200)
+ N = length(y_test)
+  predictions = Array{Int64, 1}(undef,N)
+  for i in 1:N
+    email = string([repeat(string(word, " "),N) for (word,N) in zip(model.vocabulary, x_test[:, i])]...)
+    pham, pspam = spam_predict(email, model, α, tol)
+    pred = argmax([pham, pspam]) - 1
+    predictions[i] = pred
+  end
+  return predictions
+end
+
+# ╔═╡ da3a76fc-96ee-11eb-2990-9902266f9e9c
+function spam_filter_accurracy(predictions, actual)
+ N = length(predictions)
+  correct = sum(predictions .== actual)
+  accuracy = correct /N
+  return accuracy
 end
 
 # ╔═╡ 71cc0158-29e3-11eb-0206-8d29109f858f
@@ -266,8 +265,68 @@ md"
 As you can see below, the model (at least under this simple metric) is performing very well! An accurray of almost 0.95 is quite astonishing for a model so *naive* and simple, but it works!
 "
 
+# ╔═╡ 1f06c2d4-96ef-11eb-11e4-87f86b9d28f1
+predictions = get_predictions(x_test, y_test, spam_filter, 1)
+
 # ╔═╡ aa9f7ea4-2850-11eb-33e2-ade40fd0a360
-spam_filter_accurracy(x_test, y_test, spam_filter, 1)
+spam_filter_accurracy(predictions, y_test)
+
+# ╔═╡ bc6b59a0-96eb-11eb-08e0-87d26b1d1d44
+md"But let's take into account one more point. 
+Our model classifieds mail into spam or ham. And the amount of ham mails is considerably higher than the spam ones. We can calculated this percentage:
+"
+
+# ╔═╡ a75fc9e2-970e-11eb-1e45-b14df45e0ccd
+sum(predictions)/length(predictions)
+
+# ╔═╡ 66fbbd2e-96f6-11eb-0de6-0f7efe4fd3a1
+md"This classification problemas where there is an unequal distribution of classes in the dataset are called Imbalanced classification problems.
+
+So a good way to see how our model is performing is to construct a confusion matrix.
+A Confusion matrix is an N x N matrix, where N is the number of target classes. 
+The matrix compares the actual target values with those predicted by the our model. 
+Lets construct one for our model:
+"
+
+# ╔═╡ bdd5f9c0-96fb-11eb-252d-d976eedf81e9
+function splam_filter_confusion_matrix(y_test,predictions)
+	
+	#We create the matrix and calculated their values
+	confusion_matrix= [0 0 ; 0 0]
+	
+	confusion_matrix[1,1] = sum(isequal(y_test[i],0) & isequal(predictions[i],0) for i in 1:length(y_test))
+	confusion_matrix[1,2] = sum(isequal(y_test[i],1) & isequal(predictions[i],0) for i in 1:length(y_test))
+	confusion_matrix[2,1] = sum(isequal(y_test[i],0) & isequal(predictions[i],1) for i in 1:length(y_test))
+	confusion_matrix[2,2] = sum(isequal(y_test[i],1) & isequal(predictions[i],1) for i in 1:length(y_test))
+	
+	#Now we convert the confusion matrix into a DataFrame 
+	confusion_df = DataFrame(Prediction = String[],
+
+                Ham_mail = Int64[],
+
+                Spam_mail = Int64[])
+
+	confusion_df = vcat(confusion_df,DataFrame(Prediction = "Model predicted Ham", Ham_mail = confusion_matrix[1,1] , Spam_mail = confusion_matrix[1,2]))
+
+	confusion_df = vcat(confusion_df ,DataFrame(Prediction = "Model predicted Spam", Ham_mail = confusion_matrix[2,1] , Spam_mail = confusion_matrix[2,2]))
+	
+	return confusion_df
+    
+	
+end
+
+# ╔═╡ 66863c2a-96f6-11eb-0cc4-0573fe5b890e
+confusion_matrix = splam_filter_confusion_matrix(y_test[:],predictions)
+
+# ╔═╡ 894d8cd8-970d-11eb-0c37-4997f3d1b85b
+md"So now we can calculate the accuracy of the model segmented by category.
+"
+
+# ╔═╡ 6a3a8f08-9708-11eb-0343-2bb2055ef097
+ham_accuracy = confusion_matrix[1,"Ham_mail"]/(confusion_matrix[1,"Ham_mail"] + confusion_matrix[2,"Ham_mail"])
+
+# ╔═╡ 2ef4aa8a-96fd-11eb-27dd-c32b885e51f8
+spam_accuracy = confusion_matrix[2,"Spam_mail"]/(confusion_matrix[1,"Spam_mail"] + confusion_matrix[2,"Spam_mail"])
 
 # ╔═╡ 3ce2070a-7156-11eb-1204-3d1850c7abee
 md"
@@ -275,7 +334,7 @@ md"
 In this chapter, we have used a naive-bayes approach to build a simple email spam filter. 
 First, the dataset and the theoretical framework were introduced. Using Bayes' theorem and the data available, we assigned probability of belonging to a spam or ham email to each word of the email dataset. The probability of a new email being classified as spam is therefore the product of the probabilities of each of its constituent words.
 Later, the data was pre-processed and a struct was defined for the spam filter object. Functions were then implemented to fit the spam filter object to the data.
-Finally, a metric for evaluating the accuracy of the model was implemented, giving a result of approximately $0.95$.
+Finally, we evaluated our model performance calculating the accuracy and making a confusion matrix.
 "
 
 # ╔═╡ 96834844-6d45-11eb-39a5-737dd8e43cb1
@@ -334,8 +393,18 @@ md"
 # ╠═4328faac-2850-11eb-3978-f9ccbf409a8a
 # ╟─89ee9bea-29e0-11eb-37a6-b16988b0a187
 # ╠═4e470cba-2850-11eb-3563-cd9ead36f468
+# ╠═da3a76fc-96ee-11eb-2990-9902266f9e9c
 # ╟─71cc0158-29e3-11eb-0206-8d29109f858f
+# ╠═1f06c2d4-96ef-11eb-11e4-87f86b9d28f1
 # ╠═aa9f7ea4-2850-11eb-33e2-ade40fd0a360
+# ╟─bc6b59a0-96eb-11eb-08e0-87d26b1d1d44
+# ╠═a75fc9e2-970e-11eb-1e45-b14df45e0ccd
+# ╟─66fbbd2e-96f6-11eb-0de6-0f7efe4fd3a1
+# ╠═bdd5f9c0-96fb-11eb-252d-d976eedf81e9
+# ╠═66863c2a-96f6-11eb-0cc4-0573fe5b890e
+# ╟─894d8cd8-970d-11eb-0c37-4997f3d1b85b
+# ╠═6a3a8f08-9708-11eb-0343-2bb2055ef097
+# ╠═2ef4aa8a-96fd-11eb-27dd-c32b885e51f8
 # ╟─3ce2070a-7156-11eb-1204-3d1850c7abee
 # ╟─96834844-6d45-11eb-39a5-737dd8e43cb1
 # ╟─603fcd02-8b6f-11eb-3290-d3f1b70dadfe
