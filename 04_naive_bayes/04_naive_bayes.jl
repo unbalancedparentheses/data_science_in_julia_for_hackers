@@ -262,7 +262,7 @@ end
 
 # ╔═╡ 71cc0158-29e3-11eb-0206-8d29109f858f
 md"
-As you can see below, the model (at least under this simple metric) is performing very well! An accurray of almost 0.95 is quite astonishing for a model so *naive* and simple, but it works!
+As you can see below, the model (at least under this simple metric) is performing very well! An accurray of about 0.95 is quite astonishing for a model so *naive* and simple, but it works!
 "
 
 # ╔═╡ 1f06c2d4-96ef-11eb-11e4-87f86b9d28f1
@@ -272,8 +272,9 @@ predictions = get_predictions(x_test, y_test, spam_filter, 1)
 spam_filter_accurracy(predictions, y_test)
 
 # ╔═╡ bc6b59a0-96eb-11eb-08e0-87d26b1d1d44
-md"But let's take into account one more point. 
-Our model classifieds mail into spam or ham. And the amount of ham mails is considerably higher than the spam ones. We can calculated this percentage:
+md"But we have to take into account one more thing. 
+Our model classify mails into spam or ham and the amount of ham mails is considerably higher than the spam ones. 
+We can calculated this percentage:
 "
 
 # ╔═╡ a75fc9e2-970e-11eb-1e45-b14df45e0ccd
