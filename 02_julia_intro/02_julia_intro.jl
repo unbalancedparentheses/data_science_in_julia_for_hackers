@@ -37,10 +37,8 @@ md"### To do list
 
 We are currently working on:
 
-* Explain why we use Julia instead of Python or R [#75](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues/75).
-* Show how to install a Julia package [#78](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues/78).
-* Add unicodes list [#17](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues/17).
-"
+
+";
 
 # ╔═╡ 0a4fc5fc-544d-11eb-0189-6b1c959b1eb1
 md"
@@ -98,6 +96,7 @@ The 'pkg' word in the prompt will mean you are successfully in the package manag
 ```
 
 It is as simple as that! Beware that all Julia commands are case-sensitive, so be sure to write the package name –and in the future, all functions and variables too– correctly.
+
 "
 
 # ╔═╡ 292d20ea-5a8e-11eb-2a96-a37689e468ca
@@ -687,7 +686,19 @@ Now that the most important details of syntax have been discussed, let's focus o
 md"
 # **Julia's Ecosystem**: Basic plotting and manipulation of DataFrames
 Julia's ecosystem is composed by a variety of libraries which focus on techical domains such as Data Science (DataFrames.jl, CSV.jl, JSON.jl), Machine Learning (MLJ.jl, Flux.jl, Turing.jl) and Scientific Computing (DifferentialEquations.jl), as well as more general purpose programming (HTTP.jl, Dash.jl). 
-We will now consider one of the libraries that will be accompanying us throughout the book to make visualizations, Plots.jl. There are some another great packages like Gadfly.jl and VegaLite.jl, but Plots will be the best to get you started. Let's import the library with the 'using' keyword and start making some plots. We will plot the first ten numbers of the fibonacci sequence using the ```scatter()``` function.
+We will now consider one of the libraries that will be accompanying us throughout the book to make visualizations, Plots.jl. 
+
+To install the Plots.jl library we need to go to the Julia package manager mode as we saw earlier.
+
+```julia
+julia> ]
+(@v1.5) pkg>
+(@v1.5) pkg> add Plots.jl
+```
+
+There are some another great packages like Gadfly.jl and VegaLite.jl, but Plots will be the best to get you started. Let's import the library with the 'using' keyword and start making some plots. We will plot the first ten numbers of the fibonacci sequence using the ```scatter()``` function.
+
+
 "
 
 # ╔═╡ e36a4352-544e-11eb-2331-43f864bb01d5
@@ -695,6 +706,9 @@ md"
 ### Plotting with Plots.jl
 Let's make a plot of the 10 first numbers in the fibonacci sequence. For this, we can make use of the ```scatter()``` function:
 "
+
+# ╔═╡ 0fbbb1ae-97da-11eb-32fe-695b420d3096
+
 
 # ╔═╡ f453c7b0-544e-11eb-137c-1d027edb83e6
 md"
@@ -941,6 +955,7 @@ md"
 # ╟─fe6c55de-875f-11eb-205c-53d913ae225f
 # ╟─d1ae60a8-544e-11eb-15b5-97188dc41aa8
 # ╟─e36a4352-544e-11eb-2331-43f864bb01d5
+# ╠═0fbbb1ae-97da-11eb-32fe-695b420d3096
 # ╠═eb62587c-544e-11eb-2cdf-833c27b9793c
 # ╟─f453c7b0-544e-11eb-137c-1d027edb83e6
 # ╠═03641078-544f-11eb-1dab-37614a0bdbc7
