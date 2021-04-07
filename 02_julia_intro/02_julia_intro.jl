@@ -152,7 +152,7 @@ julia> \euler # and next we press tab
 julia> ℯ
 ℯ = 2.7182818284590...
 ```
-
+You can see all the unicodes supported by Julia [here](https://docs.julialang.org/en/v1/manual/unicode-input/) 
 
 The basic number types are also supported in Julia. We can explore this with the function *typeof()*, which spits out the type of its argument, as it is represented in Julia. Let's see some examples,
 
