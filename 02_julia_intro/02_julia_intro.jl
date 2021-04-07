@@ -123,15 +123,38 @@ julia> 2x
 
 For this same purpose, Julia has a great variety of unicode characters, which enables us to write things like Greek letters and subscripts/superscripts, making our code much more beautiful and easy to read in a mathematical form. In general, unicode characters are activated by using '\', followed by the name of the character and then pressing the 'tab' key. For example,
 ```julia
-julia> \pi # and next we press tab
-julia> π
+julia> \beta # and next we press tab
+julia> β
 ```
+
 
 You can add subscripts by using '_' and superscripts by using '^', followed by the character(s) you want to modify and then pressing Tab. For example, 
 ```julia
 julia> L\_0 # and next we press tab
 julia> L₀
 ```
+
+Unicodes behave as any other letter of the you keyboard, you can use them in a string or as variable to assign them values
+```julia
+julia> β = 5
+5
+
+julia> \"The ⌀ of the circle is $β \"
+\"The ⌀ of the circle is 5 \"
+```
+
+Some popular greek letters have their values already assigned.
+```julia
+julia> \pi # and next we press tab
+julia> π
+π = 3.1415926535897...
+
+julia> \euler # and next we press tab
+julia> ℯ
+ℯ = 2.7182818284590...
+```
+
+
 The basic number types are also supported in Julia. We can explore this with the function *typeof()*, which spits out the type of its argument, as it is represented in Julia. Let's see some examples,
 
 ```julia
@@ -910,7 +933,7 @@ md"
 
 # ╔═╡ Cell order:
 # ╟─e7c41f16-8b46-11eb-0cfc-776986dd6049
-# ╠═0a4fc5fc-544d-11eb-0189-6b1c959b1eb1
+# ╟─0a4fc5fc-544d-11eb-0189-6b1c959b1eb1
 # ╟─c2272800-6007-11eb-1736-b7f334dbba2f
 # ╟─292d20ea-5a8e-11eb-2a96-a37689e468ca
 # ╟─01ca39ee-5a9c-11eb-118e-afae416cfca4
