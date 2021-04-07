@@ -44,7 +44,7 @@ We are currently working on:
 md"
 # Meeting Julia
 
-Julia is a free and open-source general-purpose language, designed and developed by Jeff Bezanson, Alan Edelman, Viral B. Shah and Stefan Karpinski in MIT. 
+Julia is a free and open-source general-purpose language, designed and developed by Jeff Bezanson, Alan Edelman, Viral B. Shah and Stefan Karpinski at MIT. 
 Julia is created from scratch to be both fast and easy to understand, even for people who are not programmers or computer scientists. It has abstraction capabilities of high-level languages, while also being really fast, as its slogan calls “Julia looks like Python, feels like Lisp, runs like Fortran”.
 
 Before Julia, programming languages were limited to either having a simple syntax and good abstraction capabilities or being high-performance as solving resource-intensive computations required to. This led applied scientists to face the task of not only learning two different languages, but also learning how to have them communicating with one another. This difficulty is called the *two-language problem*, which Julia creators aim to solve with this new language. 
@@ -56,17 +56,17 @@ Julia is dynamically typed and is great for interactive use. It also uses multip
 # ╔═╡ c2272800-6007-11eb-1736-b7f334dbba2f
 md"
 ## Installation
-For the installation process, we recommend you follow the instructional provided by the Julia team:
+For the installation process, we recommend you follow the instructions provided by the Julia team:
 > [Platform Specific Instructions for Official Binaries](https://julialang.org/downloads/platform/): These instructions will get you through a fresh installation of Julia depending on the specifications of your computer. It is a barebones installation, so it will only include the basic Julia packages.
 
-All along the book, we are going to use specific Julia packages, that you may or may not have already installed. Julia has a built-in packet manager that makes the task of installing new packages and checking compatibilities very easy. 
+All along the book, we are going to use specific Julia packages that you may or may not have already installed. Julia has a built-in packet manager that makes the task of installing new packages and checking compatibilities very easy. 
 First, you will need to start a Julia session. For this, type in your terminal
 ```julia
 ~ julia
 julia>
 ```
 
-At this point, your will have started your Julia session. What you see right now is a 
+At this point, your Julia session will have started. What you see right now is a 
 **Julia REPL** (read-eval-print loop), an interactive command line prompt. Here you 
 can quickly evaluate Julia expressions, get help about different Julia functionalities
 and much more. The REPL has a set of different modes you can activate with different keybindings. The *Julian mode* is the default one, where you can directly type any Julia expression and press the Enter key to evaluate and print it. The *help mode* is activated with an interrogation sign '?'. You will notice that the prompt will now change,
@@ -107,7 +107,7 @@ As with every programming language, it is useful to know some of the basic opera
 The common arithmetical and logical operations are all available in Julia:
 
 * $ + $: Add operator
-* $ - $: Substract operator
+* $ - $: Subtract operator
 * $ * $: Product operator
 * $ / $: Division operator
 
@@ -233,7 +233,7 @@ julia> \"This is a Julia string!\"
 \"This is a Julia string!\"
 ```
 
-You can access some particular character of a string by writing the index of that character in the string between brackets right next to the string. Likewise, you can access some substring by writing the first and the last index of the substring you want, separated by a colo, all this between brackets. This is called *slicing*, and will be very useful later when working with arrays. As an example of this,
+You can access some particular character of a string by writing the index of that character in the string between brackets right next to the string. Likewise, you can access some substring by writing the first and the last index of the substring you want, separated by a colon, all this between brackets. This is called *slicing*, and will be very useful later when working with arrays. As an example of this,
 
 ```julia
 julia> \"This is a Julia string!\"[1] # this will output the first character of the string and other related information.
@@ -243,13 +243,13 @@ julia> \"This is a Julia string!\"[1:4] # this will output the substring obtaine
 \"This\"
 ```
 
-A really useful tool when using strings is *string interpolation*. This is a way to evaluate an expression inside a string and print it. This is done usually by writing a dollar symbol $ \$  $ followed by the expression between parnethesis. For example,
+A really useful tool when using strings is *string interpolation*. This is a way to evaluate an expression inside a string and print it. This is done usually by writing a dollar symbol $ \$  $ followed by the expression between parentheses. For example,
 
 ```julia
 julia> \"The product between 4 and 5 is $(4 * 5)\"
 \"The product between 4 and 5 is 20\"
 ```
-This couldn't be a programming introduction if we didn't include a 'Hello World!' printing, right? Printing in Julia is very easy. You have, essentially, two functions for the printing process: print() and println(). The former will print the string you pass in the argument, without creating a new line. What this means is that, for example, if you are in a Julia REPL and you call the print() function two or more times, the printed strings will be concatenated in the same line, while successive calls to the println() function will print every new string in a new, separated line from the previous one. To ilustrate these concepts, consider the next examples. We haven't talked about for loops yet, so don't worry about that for now. Just notice how the output changes when we make a print() or println() call.
+This couldn't be a programming introduction if we didn't include a 'Hello World!' printing, right? Printing in Julia is very easy. You have, essentially, two functions for the printing process: print() and println(). The former will print the string you pass in the argument, without creating a new line. What this means is that, for example, if you are in a Julia REPL and you call the print() function two or more times, the printed strings will be concatenated in the same line, while successive calls to the println() function will print every new string in a new, separated line from the previous one. To illustrate these concepts, consider the next examples. We haven't talked about `for` loops yet, so don't worry about that for now. Just notice how the output changes when we make a print() or println() call.
 
 ```julia
 julia> for i in 1:3
@@ -268,7 +268,7 @@ julia> for i in 1:3
 It's time now to start introducing collections of data in Julia. We will start by talking about arrays.  As in many other programming languages, arrays in Julia can be created by listing objects between square brackets separated by commas. For example, 
 
 ```julia
-julia> [1, 2, 3]
+julia> int_array = [1, 2, 3]
 3-element Array{Int64,1}:
  1
  2
@@ -283,10 +283,10 @@ julia> str_array = [\"Hello\", \"World\"]
 As you can see, arrays can store any type of data. If all the data in the array is of the same type, it will be compiled as an array of that data type. You can see that in the patter that the Julia REPL prints out:
 
 1) Firstly, it tells how many elements there are in the collection. In our case, 3 elements in int_array and 2 elements in str_array. When dealing with higher dimensionality arrays, the shape will be informed.
-2) It gives information about the type and dimensionality of the array. The first element inside the curly brackets, informs us about the type of every member of the array, if they are all the same. If this is not the case, type 'Any' will appear, meaning that the collection of objects inside the array is not homogeneous in its type. Compilation of Julia code tends to be faster when arrays have a defined type, so it is recommended to use these unless needed. The second element between the curly braces tells us how many dimentions are there in the array. In these examples we have one-dimentional arrays, hence a 1 is printed. Later we will be introducing matrices and, naturally, a 2 will appear in this place instead a 1.
+2) It gives information about the type and dimensionality of the array. The first element inside the curly brackets, informs us about the type of every member of the array, if they are all the same. If this is not the case, type 'Any' will appear, meaning that the collection of objects inside the array is not homogeneous in its type. Compilation of Julia code tends to be faster when arrays have a defined type, so it is recommended to use these unless needed. The second element between the curly braces tells us how many dimensions are there in the array. In these examples we have one-dimensional arrays, hence a 1 is printed. Later we will be introducing matrices and, naturally, a 2 will appear in this place instead a 1.
 3) Finally, the content of the array is printed in a columnar way.
 
-When building Julia, the convention has been set so that it has column-major ordering. So you can think of standard one-dimentional arrays as –and in fact it will be mandatory when doing calculations between vectors, matrices and the like– column vectors.
+When building Julia, the convention has been set so that it has column-major ordering. So you can think of standard one-dimensional arrays as –and in fact it will be mandatory when doing calculations between vectors, matrices and the like– column vectors.
 A row vector (or a $1$x$n$ array), in the other hand, can be defined using whitespaces instead of commas,
 
 ```julia
@@ -295,7 +295,8 @@ julia> [3 2 1 4]
  3  2  1  4
 ```
 
-Matrices are built –in contrast to other languages, were they are thought as an 'array of arrays'– separating the numbers in a row by whitespaces, just like the example of a row vector, and using a semicolon to simbolize the end of the row. Then you complete the rest of the rows with the same procedure. As an example,
+Matrices are built –in contrast to other languages, where they are thought as an 'array of arrays'– separating the numbers in a row by whitespaces, just like the example of a row vector, and using a semicolon to symbolize the end of the row.
+Then you complete the rest of the rows with the same procedure. As an example,
 
 ```julia
 julia> [1 1 2; 4 1 0; 3 3 1]
@@ -304,7 +305,7 @@ julia> [1 1 2; 4 1 0; 3 3 1]
  4  1  0
  3  3  1
 ```
-The length and shape of arrays can be obtained using the *length()* and *size()* functions respectiverly, like so
+The length and shape of arrays can be obtained using the *length()* and *size()* functions respectively.
 
 ```julia
 julia> length([1, -1, 2, 0])
@@ -425,7 +426,7 @@ julia> for element in arr
 2
 ```
 As you can see, the loop was done for each element of the array. It might be convenient sometimes to iterate over a collection. 
-Following with the basics, conditional statements in Julia are very similar to most languages. Essentially, a conditional statement starts with the *if* keyword, followed by the condition that must be evaluated to true or false, and then the body of the action to apply if the condition evaluates to true. Then, an *elseif* keyword can be used to ask for another condition, and an *else*  keyword to apply some statement when the other conditions evaluate to false. Finally, like it is usual in Julia, the conditional statement block finishes whith an *end* keyword. As an example, 
+Following with the basics, conditional statements in Julia are very similar to most languages. Essentially, a conditional statement starts with the *if* keyword, followed by the condition that must be evaluated to true or false, and then the body of the action to apply if the condition evaluates to true. Then, an *elseif* keyword can be used to ask for another condition, and an *else*  keyword to apply some statement when the other conditions evaluate to false. Finally, like it is usual in Julia, the conditional statement block finishes with an *end* keyword. As an example, 
 
 ```julia
 julia> x = 3
@@ -457,7 +458,7 @@ julia> function fibonacci(n1, n2, m)
 fibonacci (generic function with 1 method)
 ```
 
-Here, we first made some variable assignments, variables $n1$, $n2$ and $m$ were asigned values 0, 1 and 10. Variables are assigned simply by writing the name of the 
+Here, we first made some variable assignments, variables $n1$, $n2$ and $m$ were assigned values 0, 1 and 10. Variables are assigned simply by writing the name of the 
 variable followed by an 'equal' sign, and followed finally by the value you want to
 store in that variable. There is no need to declare the data type of the value you are going to store.
 Then, we defined the function body for the fibonacci series computation. Function blocks start with the *function* keyword, followed by the name of the function and the 
@@ -468,11 +469,10 @@ Inside the body of the function, everything is indented. Although this is not st
 necessary for the code to run, it is a good practice to have from the beginning, since we want our code to be readable.
 At first, we initialize an array of integers of one dimension and length $m$, by 
 allocating memory. This way of initializing an array is not strictly necessary, you 
-could have initialized an empty array and start filling it later in the code. But is 
-definitely a good practice to learn for a situation like this, where we know how long our array is going to be and optimizing code performance in Julia. 
-The memory allocation for this array is done by initializing the array as we have already seen earlier. ```julia {Int64,1}```just means we want a one-dimentional array
+could have initialized an empty array and start filling it later in the code. But it is definitely a good practice to learn for a situation like this, where we know how long our array is going to be and optimizing code performance in Julia. 
+The memory allocation for this array is done by initializing the array as we have already seen earlier. ```julia {Int64,1}```just means we want a one-dimensional array
 of integers. The new part is the one between parenthesis, ```julia (undef, m)```. This 
-just means we are initializing the array with undefined values –which will be later modifyed by us–, and that there will be a number $m$ of them. Don't worry too much if 
+just means we are initializing the array with undefined values –which will be later modified by us–, and that there will be a number $m$ of them. Don't worry too much if 
 you don't understand all this right now, though.
 We then proceed to assign the two first elements of the sequence and calculate the 
 rest with a for loop. Finally, an *end* keyword is necessary at the end of the for loop and another one to end the definition of the function.
@@ -518,8 +518,8 @@ julia> isPositive.([-1, 1, 3, -5])
 
 As you can see, we had broadcasted the function isPositive() we defined, over every 
 element of an array, by adding a dot next to the end of the function name, previous to 
-the parenthesis. Is is as easy as that! Once you start using this feature, you will notice how useful it is.
-One thing concearning functions in Julia is the 'bang'(!) convention. Functions that have a name ending with an exclamation mark (or bang), are functions that change their imputs in-place. Consider the example of the pop! function from the Julia Base package. Watch closely what happens to the array over we apply the function
+the parenthesis. It is as easy as that! Once you start using this feature, you will notice how useful it is.
+One thing concerning functions in Julia is the 'bang'(!) convention. Functions that have a name ending with an exclamation mark (or bang), are functions that change their inputs in-place. Consider the example of the pop! function from the Julia Base package. Watch closely what happens to the array over we apply the function
 
 ```julia
 julia> arr = [1, 2, 3];
@@ -530,10 +530,16 @@ julia> arr
  1
  2
 ```
-Did you understand what happened? At first, we defined and array. Then, we applied the pop!() function, which, as the name suggests, pops the last element of the array. But notice that when we call our *arr* variable to see what it is storing, now the number 3 is gone. This is what functions with a bang do and what we mean with modifying *in-place*. Try to follow this convention whenever you define a function that will modify other objects in-place!
+Did you understand what happened? At first, we defined an array. Then, we applied the pop!() function, which, as the name suggests, pops the last element of the array. But notice that when we call our *arr* variable to see what it is storing, now the number 3 is gone. This is what functions with a bang do and what we mean with modifying *in-place*. Try to follow this convention whenever you define a function that will modify other objects in-place!
 
-Sometimes, you will be in a situation where you may need to use some function, bit you really aren't interested in giving it a special name and storing it. For this kind of situations, an *anonymous* or *lambda* function is what you may need. Typically anonymous functions will be used as arguments to *higher-order functions*. This is just a fancy name to functions that accept other functions as arguments, that is what makes them of higher-order. One of the most ubiquitous example of these type of functions is the ```map()``` function. You can think of this function as a way to broadcast **any** function over a collection.
-Anonymous functions are created using the arrow ```->``` syntax. At the left-hand side of the arrow, you must specify what the arguments of the function will be and their name. At the right side of the arrow, you write the recipe of the things to do with this arguments. Let's use an anonymous function to define a not-anonymous function, just to illustrate the point.
+Sometimes, you will be in a situation where you may need to use some function, but you really aren't interested in giving it a special name and storing it.
+For these kinds of situations, an *anonymous* or *lambda* function is what you may need.
+Typically anonymous functions will be used as arguments to *higher-order functions*. This is just a fancy name to functions that accept other functions as arguments, that is what makes them of higher-order.
+We can create an anonymous function using the ```map()``` keyword. 
+You can think of this function as a way to broadcast **any** function over a collection.
+Anonymous functions are created using the arrow ```->``` syntax. At the left-hand side of the arrow, you must specify what the arguments of the function will be and their name.
+At the right side of the arrow, you write the recipe of the things to do with these arguments.
+Let's use an anonymous function to define a not-anonymous function, just to illustrate the point.
 
 ```julia
 julia> f = (x,y) -> x + y 
@@ -685,7 +691,7 @@ Now that the most important details of syntax have been discussed, let's focus o
 # ╔═╡ d1ae60a8-544e-11eb-15b5-97188dc41aa8
 md"
 # **Julia's Ecosystem**: Basic plotting and manipulation of DataFrames
-Julia's ecosystem is composed by a variety of libraries which focus on techical domains such as Data Science (DataFrames.jl, CSV.jl, JSON.jl), Machine Learning (MLJ.jl, Flux.jl, Turing.jl) and Scientific Computing (DifferentialEquations.jl), as well as more general purpose programming (HTTP.jl, Dash.jl). 
+Julia's ecosystem is composed by a variety of libraries which focus on technical domains such as Data Science (DataFrames.jl, CSV.jl, JSON.jl), Machine Learning (MLJ.jl, Flux.jl, Turing.jl) and Scientific Computing (DifferentialEquations.jl), as well as more general purpose programming (HTTP.jl, Dash.jl). 
 We will now consider one of the libraries that will be accompanying us throughout the book to make visualizations, Plots.jl. 
 
 To install the Plots.jl library we need to go to the Julia package manager mode as we saw earlier.
@@ -696,7 +702,8 @@ julia> ]
 (@v1.5) pkg> add Plots.jl
 ```
 
-There are some another great packages like Gadfly.jl and VegaLite.jl, but Plots will be the best to get you started. Let's import the library with the 'using' keyword and start making some plots. We will plot the first ten numbers of the fibonacci sequence using the ```scatter()``` function.
+There are some other great packages like Gadfly.jl and VegaLite.jl, but Plots will be the best to get you started. Let's import the library with the 'using' keyword and start making some plots. 
+We will plot the first ten numbers of the fibonacci sequence using the ```scatter()``` function.
 
 
 "
@@ -706,9 +713,6 @@ md"
 ### Plotting with Plots.jl
 Let's make a plot of the 10 first numbers in the fibonacci sequence. For this, we can make use of the ```scatter()``` function:
 "
-
-# ╔═╡ 0fbbb1ae-97da-11eb-32fe-695b420d3096
-
 
 # ╔═╡ f453c7b0-544e-11eb-137c-1d027edb83e6
 md"
@@ -755,7 +759,7 @@ end
 
 # ╔═╡ 0ae33f2c-7139-11eb-1239-5bb34937a949
 md"
-Each of these backends has its own scope, so there may be plots that one backend can do that another can't. For example, 3D plots are not supported for all backends. The details are well explained in the Julia documentation.
+Each of these backends has its own scope, so there may be plots that one backend can do that other can't. For example, 3D plots are not supported for all backends. The details are well explained in the Julia documentation.
 "
 
 # ╔═╡ 11f33ecc-544f-11eb-35d5-27a280cdce1b
@@ -771,7 +775,8 @@ Let's see how to construct and load data into a dataframe. There are many ways y
 
 # ╔═╡ 7fbacda8-5f3f-11eb-2d85-c702f205cc6b
 md"
-As you can see, the column names were initialized with values $x1, x2, ...$. We probabily would want to rename them with more meaningful names. To do this, we have the ```rename!()``` function. Remember that this function has a bang, so it changes the dataframe in-place, be careful!
+As you can see, the column names were initialized with values $x1, x2, ...$. 
+We probably would want to rename them with more meaningful names. To do this, we have the ```rename!()``` function. Remember that this function has a bang, so it changes the dataframe in-place, be careful!
 Below we rename the columns of our dataframe,
 "
 
@@ -877,8 +882,9 @@ To work with CSV files, the package CSV.jl is your best choice in Julia. Loading
 
 # ╔═╡ c056d31a-5fe5-11eb-1cdd-43abf761bc90
 md"
-Here we used the pipeline operator ```|>```, which is mainly some Julian syntactical sugar. It resambles the flow of information. First, the ```CSV.File()```function, loads the CSV file and creates a CSV File object, that is passed to the ```DataFrame()```function, to give us finally a dataframe. 
-Once you have worked on a dataframe cleaning data or modifying it, you can write a CSV text file from it and in this way, you can share your work with other people.
+Here we used the pipeline operator ```|>```, which is mainly some Julia syntactic sugar. 
+It resembles the flow of information. First, the ```CSV.File()```function, loads the CSV file and creates a CSV File object, that is passed to the ```DataFrame()```function, to give us finally a dataframe. 
+Once you have worked on the dataframe cleaning data or modifying it, you can write a CSV text file from it and in this way, you can share your work with other people.
 For example, consider I want to filter one of the species of plants, 'Iris-setosa', and then I want to write a file with this modified data to share it with someone,
 "
 
@@ -890,7 +896,7 @@ end;
 
 # ╔═╡ 3625d788-6d71-11eb-3878-97c4ad01ffb4
 md"
-Plotting Dataframes data is very easy. Suppose we want to plot the flower features from the iris dataset, all in one single plot. These features correspond to the columns two to five of the dataframe. Thinking about it as a matrix, you can access these data by selecting all the rows for each of the corresponding columns. In the code below, a loop is performed over the columns of interest. The ```plot()``` statement, with no arguments, is a way to create an empty instance of a plot, like a blank canvas. This empty plot will be successively overwritten by each call to ```plot!()```. Finally, we make a call to ```current()```, to display the plot. You may be wondering why is this necessary. Notice that all the plotting happens inside a loop, hence the plotting iterations are not displayed. It is more efficient to display the finished plot when the loop is over than to update each plot as it overwrites the previous one.
+Plotting Dataframes data is very easy. Suppose we want to plot the flower features from the iris dataset, all in one single plot. These features correspond to the columns two to five of the dataframe. Thinking about it as a matrix, you can access these data by selecting all the rows for each of the corresponding columns. In the code below, a loop is performed over the columns of interest. The ```plot()``` statement, with no arguments, is a way to create an empty instance of a plot, like a blank canvas. This empty plot will be successively overwritten by each call to ```plot!()```. Finally, we make a call to ```current()```, to display the plot. You may be wondering why this is necessary. Notice that all the plotting happens inside a loop, hence the plotting iterations are not displayed. It is more efficient to display the finished plot when the loop is over than to update each plot as it overwrites the previous one.
 "
 
 # ╔═╡ 08b5d43e-6d66-11eb-0645-91568ff3b368
@@ -955,7 +961,6 @@ md"
 # ╟─fe6c55de-875f-11eb-205c-53d913ae225f
 # ╟─d1ae60a8-544e-11eb-15b5-97188dc41aa8
 # ╟─e36a4352-544e-11eb-2331-43f864bb01d5
-# ╠═0fbbb1ae-97da-11eb-32fe-695b420d3096
 # ╠═eb62587c-544e-11eb-2cdf-833c27b9793c
 # ╟─f453c7b0-544e-11eb-137c-1d027edb83e6
 # ╠═03641078-544f-11eb-1dab-37614a0bdbc7
