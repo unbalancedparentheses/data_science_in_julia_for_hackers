@@ -362,13 +362,14 @@ this is the flipping of a coin. To know the probability of obtaining
 heads when flipping a coin, a frequentist will tell you to perform an 
 experiment with a lot of coin tosses (say, 1000 repetitions). You write 
 down the outcome (heads or tails) of each flip and then you calculate the 
-heads ratio over the toal amount of repetitions, i.e.: $P(H) = 511 / 1000 
+heads ratio over the total amount of repetitions, i.e.: $P(H) = 511 / 1000 
 = 0,511$. This will be your probability from a pure frequentist point of 
 view.
 
 The Bayesian point of view has a more general interpretation. It is not bound to the frequency of events. Probability is thought as a degree of uncertainty about the event happening and also takes into account our current state of knowledge about that event. In a Bayesian way of thinking one could assign (and actually it is done extensively) a probability to events such as the election of some politician, while in the frequentist view this would make no sense, since we can't make large repetitions of the election to know the frequency underlying that event.
 
-You might be asking yourself: How does this Bayesian probability work? What is the hidden mechanism inside of it? Take another look at Bayes' theorem. We have talked about it applying to events and hypothesis. To really get a grasp of the meaning behind the Baseyian interpretation of probability, we should think about some hypothesis $H$ and some data $D$ we are interested in to check the validity of our hypothesis. In this view, Bayes' theorem is written as
+You might be asking yourself: How does this Bayesian probability work? What is the hidden mechanism inside of it? Take another look at Bayes' theorem. We have talked about it applying to events and hypotheses. 
+To really get a grasp of the meaning behind the Baseyian interpretation of probability, we should think about some hypothesis $H$ and some data $D$ we are interested in to check the validity of our hypothesis. In this view, Bayes' theorem is written as
 
 $P(H|D) = \frac{P(D|H)P(H)}{P(D)}$
 
@@ -383,7 +384,7 @@ This may sound a bit confusing at first, but if you look closely for some time a
 
 * P(H|D): The famous **Posterior probability**. Again, remembering the definition of conditional probability, it is clear this represents the probability of our hypothesis being true, given that we collected some data $D$. 
 
-It is interesting to give a little more detail on the epistemological interpretation of this entire theorem. We start from some initial hypothesis and we assign some probability to it (the Prior). How exactly this has to be done is uncertain, in fact, there are ways to encode that you don't know nothing about the validity of the hypothesis. But the important part is that, if you already knew something about it, you can include that in your priors. For example, if you are trying to estimate some parameter that you know is positive definite, then you can use priors that are defined only for positive values. From that starting point, then, you have a methodical way to update your beliefs by collecting data, and with this data, give rise to the Posterior probability, which hopefully will be more accurate than our Prior probability. 
+It is interesting to give a little more detail on the epistemological interpretation of this entire theorem. We start from some initial hypothesis and we assign some probability to it (the Prior). How exactly this has to be done is uncertain, in fact, there are ways to encode that you don't know anything about the validity of the hypothesis. But the important part is that, if you already knew something about it, you can include that in your priors. For example, if you are trying to estimate some parameter that you know is positive definite, then you can use priors that are defined only for positive values. From that starting point, then, you have a methodical way to update your beliefs by collecting data, and with this data, give rise to the Posterior probability, which hopefully will be more accurate than our Prior probability. 
 What is nice about the Bayesian framework is that we always account for the uncertainty of the world. We start with some probability and end with another probability, but uncertainty is always present. This is what real life is about.
 To understand the full power of Bayesian probability we have to extend the notion of probability to *probability density*. We will discuss this topic in the following section.
 "
@@ -450,7 +451,7 @@ Since we are using the probability density, instead of the mass what we obtain i
 For example, suppose we want to know the probability that a randomly selected woman measures between 60 and 65 inches.
 To know it we need to calculate the area under the density curve in the intervals x = [60,65].
 
-Keep in mind, that the *x* label contains all possible events, in this case all possible woman´s heights, so the area below the curve of all the *x* label is equal to 1.
+Keep in mind that the *x* label contains all possible events, in this case all possible women´s heights, so the area below the curve of all the *x* label is equal to 1.
 
 An alternative description of the distribution is the cumulative distribution function also called the distribution function. It describes the probability that the random variable is no larger than a given value. We obtain it by integrating the density function and 
 
@@ -461,7 +462,7 @@ An alternative description of the distribution is the cumulative distribution fu
 imresize(load("images/density and cumulative functions.png"), (300, 860))
 
 # ╔═╡ c25042f4-962d-11eb-262a-79876563bb90
-md"On the left is the probability density functio and on the right is the cumulative distribution function, which is the area under the probability density curve."
+md"On the left is the probability density function and on the right is the cumulative distribution function, which is the area under the probability density curve."
 
 # ╔═╡ 3b70af62-962d-11eb-3dcd-437040700958
 md"
@@ -521,7 +522,7 @@ The **histogram** of the data is shown below.
 You may be wondering what a histogram is. 
 An histogram is a plot that tells us the counts or relative frequencies of a given set of events.
 
-As a data scientist you are constanly working with datasets and a great first approach to that dataset is by constructing a histogram.
+As a data scientist you are constantly working with datasets and a great first approach to that dataset is by constructing a histogram.
 To construct a histogram, the first step is to bin the range of values that is, divide the entire range of values into a series of intervals and then count how many values fall into each interval"
 
 # ╔═╡ 748f8114-1483-11eb-15c0-879e4e1dec8c
@@ -546,8 +547,10 @@ end
 # ╔═╡ c770092e-12e6-11eb-0711-0196e27d573e
 md"
 Histograms give us a good approximation of the probability density function. 
-The reason behind this is because we have registered some total number $N$ of events that happened in some time interval (in this case, one month) and we grouped the number of times each one ocurred. In this line of reasoning, events that happened most are more likely to happen, and hence we can say they have a higher probability associated to them. Something important to consider about histograms when dealing with a continuous variable such as, in our case, milimeters of monthly rainfall, are *bins* and bin size. When working with such continuous variables, the domain in which our data expresses itself (in this case, from 0 mm to approximately 450 mm) is divided in discrete intervals. In this way, given a bin size of 20mm, when constructing our histogram we have to ask 'how many rainy days have given us a precipitation measurement between 100mm and 120mm?', and then we register that number in that bin. This process is repeated for all bins to obtain our histogram.
-We have earlier said that probability has to be a number between 0 and 1, so how can it be that these relative frequencies are linked to probabilities? What we should do now is to *normalize* our histogram to have the frequency values constrained. Normalizing is just the action of adjusting the scale of variables, without changing the relative values of our data. Below we show the normalized histogram. You will notice that the frequency values are very low now. The reason for this is that when normalizing, we impose to our histogram data that the sum of the counts of all our events (or, thinking graphically, the total area of the histogram) must be 1. But why? As probability tell us how plausible is an event, if we take into account all the events, we expect that the probability of all those events to be the maximum value, and that value is 1 by convention. In that way we can compare plausibilities across different events, therefore when we say that some event has a probability of 0.6 to occur, for any event it means the same, no matter if we are talking about the probability of raining or the probability of being hit by a car.
+The reason behind this is because we have registered some total number $N$ of events that happened in some time interval (in this case, one month) and we grouped the number of times each one ocurred.
+In this line of reasoning, events that happened most are more likely to happen, and hence we can say they have a higher probability associated with them. Something important to consider about histograms when dealing with a continuous variable such as, in our case, millimeters of monthly rainfall, are *bins* and bin size.
+When working with such continuous variables, the domain in which our data expresses itself (in this case, from 0 mm to approximately 450 mm) is divided in discrete intervals. In this way, given a bin size of 20mm, when constructing our histogram we have to ask 'how many rainy days have given us a precipitation measurement between 100mm and 120mm?', and then we register that number in that bin. This process is repeated for all bins to obtain our histogram.
+We have earlier said that probability has to be a number between 0 and 1, so how can it be that these relative frequencies are linked to probabilities? What we should do now is to *normalize* our histogram to have the frequency values constrained. Normalizing is just the action of adjusting the scale of variables, without changing the relative values of our data. Below we show the normalized histogram. You will notice that the frequency values are very low now. The reason for this is that when normalizing, we impose to our histogram data that the sum of the counts of all our events (or, thinking graphically, the total area of the histogram) must be 1. But why? As probability tells us how plausible is an event, if we take into account all the events, we expect that the probability of all those events to be the maximum value, and that value is 1 by convention. In that way we can compare plausibilities across different events, therefore when we say that some event has a probability of 0.6 to occur, for any event it means the same, no matter if we are talking about the probability of raining or the probability of being hit by a car.
 So, we normalize the histogram obtaining:"
 
 # ╔═╡ 178f5f72-12e7-11eb-2282-c19f2b58ae58
@@ -581,14 +584,14 @@ All the concepts we developed about probability density, are directly applied to
 # ╔═╡ 3b8ea6fc-54f1-11eb-0a00-3f465d1f2d22
 md"
 ### Example: Bayesian Bandits
-Now we are going to tackle a famous problem that may help us to understand a little bit how to incorporate what we learned about Bayesian probability and some features of the Julia language. Here we present the **bandit** or **multi-armed bandit** problem. Altough it is conceived thinking about a strategy for a casino situation, there exist a lot of different settings where the same strategy could be applied.
+Now we are going to tackle a famous problem that may help us to understand a little bit how to incorporate what we learned about Bayesian probability and some features of the Julia language. Here we present the **bandit** or **multi-armed bandit** problem. Although it is conceived thinking about a strategy for a casino situation, there exist a lot of different settings where the same strategy could be applied.
 
 The situation, in it's simpler form, goes like this: you are in a casino, with a limited amount of casino chips. In front of you there are some slot machines (say, three of them for simplicity). Each machine has some probability *$p_m$* of giving you \$1 associated with it, but every machine has a different probability. There are two main problems. First, we don't know these probabilities beforehand, so we will have to develop some explorative process in order to gather information about the machines. The second problem is that our chips –and thus our possible trials– are limited, and we want to take the most profit we can out of the machines. How do we do this? Finding the machine with the highest success probability and keep playing on it. This tradeoff is commonly known as *explore vs. exploit*. If we had one million chips we could simply play a lot of times in each machine and thus make a good estimate about their probabilities, but our reward may not be very good, because we would have played so many chips in machines that were not our best option. Conversely, we may have found a machine which we know that has a good success probability, but if we don't explore the other machines also, we won't know if it is the best of our options.
 "
 
 # ╔═╡ 86a1ea8c-54f1-11eb-194c-c93861393ab6
 md"
-This is a kind of problem that is very suited for the Bayesian way of thinking. We start with some information about the slot machines (in the worst case, we know nothing), and we will update our beliefs with the results of our trials. A methodology exists for these explore vs. exploit dilemmas, within many others, which is called **Thompson sampling**. The algorithm underlying the Thomposon sampling can be thought in these succesive steps:
+This is a kind of problem that is very suited for the Bayesian way of thinking. We start with some information about the slot machines (in the worst case, we know nothing), and we will update our beliefs with the results of our trials. A methodology exists for these explore vs. exploit dilemmas, within many others, which is called **Thompson sampling**. The algorithm underlying the Thompson sampling can be thought in these successive steps:
 
 1) First, assign some probability distribution for your knowledge of the success probability of each slot machine.
 2) Sample randomly from each of these distributions and check which is the maximum sampled probability. 
@@ -612,7 +615,7 @@ scatter(Binomial(N, p), xlim=300, label=false, title="Binomial distribution", si
 md"
 We choose this distribution as it models properly our situation, with $p$ being the probability we estimate of succeeding  with a particular machine, and $N$ the number of trials we make on the machine. The two possible outcomes are success (we win \$1) or fail (we don't win anything)
 
-So we now use a prior tu set our knowledge before making a trial on the slot machine. The thing is, there exists a mathematical hack called *conjugate priors*. When a likelihood distribution is multiplied by its conjugate prior, the posterior distribution is the same as the prior with its corresponding parameters updated. This trick frees us from the need of using more computation-expensive techniques, that we will be using later in the book.
+So we now use a prior to set our knowledge before making a trial on the slot machine. The thing is, there exists a mathematical hack called *conjugate priors*. When a likelihood distribution is multiplied by its conjugate prior, the posterior distribution is the same as the prior with its corresponding parameters updated. This trick frees us from the need of using more computation-expensive techniques, that we will be using later in the book.
 In the particular case of the Binomial distribution, the conjugate prior is the *Beta distribution*. This is a very flexible distribution, as we can obtain a lot of other distributions as particular cases of the Beta, with specific combinations of its parameters. Below you can see some of the fancy shapes this Beta distribution can obtain
 "
 
@@ -680,7 +683,8 @@ end
 
 # ╔═╡ 1d2fded6-551d-11eb-3680-9d0faf78dc6f
 md"
-With all these functions defined, we are ready to make an experiment and actually see how our strategy works. We will define beforehand a number of trials and the true probabilities of the slot machines. When the experiment is over, we will see how well were the probabilities of each machine were estimated, and the reward we accumulated. If you come up with some other novel strategy, you can test it doing a similar experiment and see how well the probabilities were estimated and the final reward you got. First, we define the total number of trials we are going to make, and then the *true* probabilities of each slot machine. Ath the end, we'll see how well these probabilities were estimated, or, in other words, how well the Thompson sampling helped in the process of gathering information abiyt the bandits.
+With all these functions defined, we are ready to make an experiment and actually see how our strategy works. We will define beforehand a number of trials and the true probabilities of the slot machines. When the experiment is over, we will see how well were the probabilities of each machine were estimated, and the reward we accumulated. If you come up with some other novel strategy, you can test it doing a similar experiment and see how well the probabilities were estimated and the final reward you got. First, we define the total number of trials we are going to make, and then the *true* probabilities of each slot machine. 
+At the end, we'll see how well these probabilities were estimated, or, in other words, how well the Thompson sampling helped in the process of gathering information about the bandits.
 "
 
 # ╔═╡ b5174e84-54f1-11eb-1fbb-afb237e1fdf2
@@ -722,7 +726,8 @@ bandit_plot
 
 # ╔═╡ 0d541d38-59a5-11eb-3404-f13d3e5150d4
 md"
-Considering that we have only tried 100 times, the probabilities have been estimated pretty well! Each distribution assigns a high-enough probability to the true value of the bandit probabilities and it's surroundings. Another strategies rather than the Thompson sampling can be tested to see how well they perform, this was just a simple example to apply Bayesian probability.
+Considering that we have only tried 100 times, the probabilities have been estimated pretty well! Each distribution assigns a high-enough probability to the true value of the bandit probabilities and its surroundings. 
+Other strategies rather than the Thompson sampling can be tested to see how well they perform, this was just a simple example to apply Bayesian probability.
 "
 
 # ╔═╡ 1b4c0804-82b3-11eb-208c-a1fac34852cf
@@ -800,7 +805,7 @@ md"
 # ╠═8b06866e-5424-11eb-3cb6-f9afabefcd70
 # ╟─351923ee-5436-11eb-2bf6-8d024a64e83e
 # ╟─470c38aa-962d-11eb-3a5e-9589407766ec
-# ╟─c25042f4-962d-11eb-262a-79876563bb90
+# ╠═c25042f4-962d-11eb-262a-79876563bb90
 # ╟─3b70af62-962d-11eb-3dcd-437040700958
 # ╟─4a6f2768-543e-11eb-1846-f9e35aa961d2
 # ╠═0ac3353a-543d-11eb-08fe-d35a4c0f0bbc
@@ -811,7 +816,7 @@ md"
 # ╠═820e10b2-543e-11eb-3866-3b9fabe04884
 # ╠═9eae0268-543e-11eb-27d0-c3a726d245d5
 # ╟─49deb9d4-543f-11eb-2202-03ced64292a4
-# ╟─fbaac2e0-1252-11eb-1d8a-e7ba0193ea9b
+# ╠═fbaac2e0-1252-11eb-1d8a-e7ba0193ea9b
 # ╠═e45d76d4-1250-11eb-14d7-c30fcb5a5b72
 # ╟─748f8114-1483-11eb-15c0-879e4e1dec8c
 # ╟─a1028154-1252-11eb-363b-1722388a481e
