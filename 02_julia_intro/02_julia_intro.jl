@@ -40,6 +40,21 @@ We are currently working on:
 
 ";
 
+# ╔═╡ 41e20700-9881-11eb-3067-d54b34ae1f92
+md"
+# Why Julia
+You may be wondering why we write this book using Julia instead of other languages like Python or R. 
+
+There are several reasons why Julia is a great language for Data Science. 
+Julia was developed by a team of scientists who wanted a tool to address problems they typically encountered while doing research. 
+So we end up with a language that performs as fast as C and is as readable as Python, allowing us to write highly performant code in a simple way.
+Julia is already being used in many top-tier tech companies and scientific research.
+Also there are plenty of scientists and engineers of different disciplines collaborating with Julia, which gives us a wide range of possibilities to approach different problems.
+
+This makes us conclude that Julia is an excellent option to solve the data science problems presented in this book.
+
+"
+
 # ╔═╡ 0a4fc5fc-544d-11eb-0189-6b1c959b1eb1
 md"
 # Meeting Julia
@@ -953,6 +968,7 @@ md"
 
 # ╔═╡ Cell order:
 # ╟─e7c41f16-8b46-11eb-0cfc-776986dd6049
+# ╟─41e20700-9881-11eb-3067-d54b34ae1f92
 # ╟─0a4fc5fc-544d-11eb-0189-6b1c959b1eb1
 # ╟─c2272800-6007-11eb-1736-b7f334dbba2f
 # ╟─292d20ea-5a8e-11eb-2a96-a37689e468ca
