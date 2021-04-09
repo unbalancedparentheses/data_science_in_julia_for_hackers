@@ -546,12 +546,22 @@ end
 
 # ╔═╡ c770092e-12e6-11eb-0711-0196e27d573e
 md"
-Histograms give us a good approximation of the probability density function. 
+Histograms give us a good approximation of the probability density or mass function. 
 The reason behind this is because we have registered some total number $N$ of events that happened in some time interval (in this case, one month) and we grouped the number of times each one occurred.
 In this line of reasoning, events that happened most are more likely to happen, and hence we can say they have a higher probability associated with them. Something important to consider about histograms when dealing with a continuous variable such as, in our case, millimeters of monthly rainfall, are *bins* and bin size.
 When working with such continuous variables, the domain in which our data expresses itself (in this case, from 0 mm to approximately 450 mm) is divided in discrete intervals. In this way, given a bin size of 20mm, when constructing our histogram we have to ask 'how many rainy days have given us a precipitation measurement between 100mm and 120mm?', and then we register that number in that bin. This process is repeated for all bins to obtain our histogram.
-We have earlier said that probability has to be a number between 0 and 1, so how can it be that these relative frequencies are linked to probabilities? What we should do now is to *normalize* our histogram to have the frequency values constrained. Normalizing is just the action of adjusting the scale of variables, without changing the relative values of our data. Below we show the normalized histogram. You will notice that the frequency values are very low now. The reason for this is that when normalizing, we impose to our histogram data that the sum of the counts of all our events (or, thinking graphically, the total area of the histogram) must be 1. But why? As probability tells us how plausible is an event, if we take into account all the events, we expect that the probability of all those events to be the maximum value, and that value is 1 by convention. In that way we can compare plausibilities across different events, therefore when we say that some event has a probability of 0.6 to occur, for any event it means the same, no matter if we are talking about the probability of raining or the probability of being hit by a car.
+
+We have earlier said that probability has to be a number between 0 and 1, so how can it be that these relative frequencies are linked to probabilities? 
+What we should do now is to *normalize* our histogram to have the frequency values constrained. 
+Normalizing is just the action of adjusting the scale of variables, without changing the relative values of our data.
+Below we show the normalized histogram.
+You will notice that the frequency values are very low now. The reason for this is that when normalizing, we impose to our histogram data that the sum of the counts of all our events (or, thinking graphically, the total area of the histogram) must be 1. 
+But why?
+As probability tells us how plausible is an event, if we take into account all the events, we expect that the probability of all those events to be the maximum value, and that value is 1 by convention. 
+When we normalize a histogram, we obtain another histogram that approaches the probability density function.
 So, we normalize the histogram obtaining:"
+
+
 
 # ╔═╡ 178f5f72-12e7-11eb-2282-c19f2b58ae58
 begin
