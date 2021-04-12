@@ -96,7 +96,7 @@ Let's start building a solution for our problem and the details will be discusse
 # preprocessing of the data
 begin
 	all_words = names(raw_df)[2:end-1];
-	all_words_text = StringDocument(string([string(word, " ") for word in all_words]...))
+	all_words_text = StringDocument(join(all_words, " "))
 	prepare!(all_words_text, strip_articles)
 	prepare!(all_words_text, strip_pronouns)
 	vocabulary = filter(x -> x != "", split(TextAnalysis.text(all_words_text)))
@@ -187,7 +187,7 @@ end
 
 # ╔═╡ 3b5cd01c-29d8-11eb-2260-a3f029106a08
 md"
-We are now almost ready to make some predictions and test our model. The function below is just the implementation of the formula TAL that we have already talked about. It will be used internally by the next function defined, *spam_predict*, which will receive a new email –the one we would want to classify as spam or ham–, our fitted model, and two parameters, α which we have already discussed in the formula for $P(word_i|spam)$ and $P(word_i|ham)$, and *tol*. We saw that the calculation for $P(email|spam)$ and $P(email|ham)$ required the multiplication of each $P(word_i|spam)$ and $P(word_i|ham)$ term. When mails are too large, i.e., they have a lot of words, this multiplication may lead to very small probabilities, up to the point that the computer interprets those probabilities as zero. This can't happen, as we need values of $P(email|spam)$ and $P(email|ham)$ that are larger than zero so we can multiply them by $P(spam)$ and $P(ham)$ respectively and compare these values to make a prediction. The parameter *tol* is the maximum tolerance for the number of unique words in an email. If this number is greater than the parameter *tol*, only the most frequent words will be considered and the rest will be neglected. How many of these most frequent words? the first '*tol*' most frequent words!
+We are now almost ready to make some predictions and test our model. The function below is just the implementation of the formula TAL that we have already talked about. It will be used internally by the next function defined, `spam_predict`, which will receive a new email –the one we would want to classify as spam or ham–, our fitted model, and two parameters, α which we have already discussed in the formula for $P(word_i|spam)$ and $P(word_i|ham)$, and *tol*. We saw that the calculation for $P(email|spam)$ and $P(email|ham)$ required the multiplication of each $P(word_i|spam)$ and $P(word_i|ham)$ term. When mails are too large, i.e., they have a lot of words, this multiplication may lead to very small probabilities, up to the point that the computer interprets those probabilities as zero. This can't happen, as we need values of $P(email|spam)$ and $P(email|ham)$ that are larger than zero so we can multiply them by $P(spam)$ and $P(ham)$ respectively and compare these values to make a prediction. The parameter *tol* is the maximum tolerance for the number of unique words in an email. If this number is greater than the parameter *tol*, only the most frequent words will be considered and the rest will be neglected. How many of these most frequent words? the first '*tol*' most frequent words!
 "
 
 # ╔═╡ 327eca7e-2850-11eb-22a0-3b25c80c3a10
@@ -213,8 +213,9 @@ function spam_predict(email, model::BayesSpamFilter, α, tol=100)
     
     email_ham_probability = BigFloat(1)
     email_spam_probability = BigFloat(1)
-    
-    for word in [wrd for wrd in email_words if wrd in vocabulary]
+	
+
+    for word in intersect(email_words, model.vocabulary)
         word_ham_prob, word_spam_prob = word_spam_probability(word, model.words_count_ham, model.words_count_spam, model.N_ham, model.N_spam, n_vocabulary, α)
         email_ham_probability *= word_ham_prob
         email_spam_probability *= word_spam_prob
@@ -253,6 +254,12 @@ function get_predictions(x_test, y_test, model::BayesSpamFilter, α, tol=200)
   return predictions
 end
 
+# ╔═╡ ddc54c9a-9bb5-11eb-0b9d-0f176a5dd4d6
+md"Here we can see our model predicts the test mails, 0 for ham and 1 for spam"
+
+# ╔═╡ c3241e66-9bb5-11eb-03f4-d740b374c728
+predictions = get_predictions(x_test, y_test, spam_filter, 1)
+
 # ╔═╡ da3a76fc-96ee-11eb-2990-9902266f9e9c
 function spam_filter_accuracy(predictions, actual)
  N = length(predictions)
@@ -266,20 +273,20 @@ md"
 As you can see below, the model (at least under this simple metric) is performing very well! An accuracy of about 0.95 is quite astonishing for a model so *naive* and simple, but it works!
 "
 
-# ╔═╡ 1f06c2d4-96ef-11eb-11e4-87f86b9d28f1
-predictions = get_predictions(x_test, y_test, spam_filter, 1)
-
 # ╔═╡ aa9f7ea4-2850-11eb-33e2-ade40fd0a360
 spam_filter_accuracy(predictions, y_test)
 
 # ╔═╡ bc6b59a0-96eb-11eb-08e0-87d26b1d1d44
 md"But we have to take into account one more thing. 
 Our model classifies mails into spam or ham and the amount of ham mails is considerably higher than the spam ones. 
-We can calculated this percentage:
+Let's see the percentages
 "
 
+# ╔═╡ 6936f00a-9bb7-11eb-12e9-dd8f0775db3d
+sum(x_train)/length(x_train)
+
 # ╔═╡ a75fc9e2-970e-11eb-1e45-b14df45e0ccd
-sum(predictions)/length(predictions)
+md" So we know that  only the $(round(sum(x_train)/length(x_train),digits=2))% of the mails in the train section are spam  "
 
 # ╔═╡ 66fbbd2e-96f6-11eb-0de6-0f7efe4fd3a1
 md"This classification problemas where there is an unequal distribution of classes in the dataset are called Imbalanced classification problems.
@@ -376,7 +383,7 @@ md"
 # ╟─6fbd7c76-4eae-11eb-124f-fbbda19ba636
 # ╟─6ce18f50-4eaf-11eb-0189-ede5b110341c
 # ╟─c898651a-4eac-11eb-26ac-ddb1885afc13
-# ╟─4f79bc6c-2835-11eb-3ac9-5d49e01ee5d4
+# ╠═4f79bc6c-2835-11eb-3ac9-5d49e01ee5d4
 # ╟─702eaee0-2841-11eb-0401-83a736f40421
 # ╠═a4437b50-284b-11eb-18a8-4df3c742f35a
 # ╟─6397358e-2854-11eb-1cd0-35821750d743
@@ -394,13 +401,15 @@ md"
 # ╠═3fe86ada-2850-11eb-12db-cf51560e9f75
 # ╠═4328faac-2850-11eb-3978-f9ccbf409a8a
 # ╟─89ee9bea-29e0-11eb-37a6-b16988b0a187
-# ╟─4e470cba-2850-11eb-3563-cd9ead36f468
+# ╠═4e470cba-2850-11eb-3563-cd9ead36f468
+# ╟─ddc54c9a-9bb5-11eb-0b9d-0f176a5dd4d6
+# ╠═c3241e66-9bb5-11eb-03f4-d740b374c728
 # ╠═da3a76fc-96ee-11eb-2990-9902266f9e9c
 # ╟─71cc0158-29e3-11eb-0206-8d29109f858f
-# ╠═1f06c2d4-96ef-11eb-11e4-87f86b9d28f1
 # ╠═aa9f7ea4-2850-11eb-33e2-ade40fd0a360
 # ╟─bc6b59a0-96eb-11eb-08e0-87d26b1d1d44
-# ╠═a75fc9e2-970e-11eb-1e45-b14df45e0ccd
+# ╠═6936f00a-9bb7-11eb-12e9-dd8f0775db3d
+# ╟─a75fc9e2-970e-11eb-1e45-b14df45e0ccd
 # ╟─66fbbd2e-96f6-11eb-0de6-0f7efe4fd3a1
 # ╠═bdd5f9c0-96fb-11eb-252d-d976eedf81e9
 # ╠═66863c2a-96f6-11eb-0cc4-0573fe5b890e
