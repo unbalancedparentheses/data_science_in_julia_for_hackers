@@ -102,7 +102,7 @@ Let´s see how were the system equilibrium that he decided.
 
 # ╔═╡ 247a6e7e-5417-11eb-3509-3d349198ec43
 begin
-#The Lotka-Volterra model Garriot define for Ultima Online
+#The Lotka-Volterra model Garriott define for Ultima Online
 
 function lotka_volterra(du,u,p,t)
   prey, pred  = u
@@ -132,15 +132,15 @@ md"""So the system seems in complete equilibrium.
 
 And finally we arrive at the day when the madness begins.
 
-Garriot wakes up early, doesn´t have any breakfast and goes to meet his team. Everything is ready. The countdown start: 3, 2, 1... And the game is online, running.
+Garriott wakes up early, doesn´t have any breakfast and goes to meet his team. Everything is ready. The countdown start: 3, 2, 1... And the game is online, running.
 
-After the champagne, hugs and a little celebration Garriot returns to work and starts to analyze the metrics to see if everything is alright, and it does. He relax a little bit until something calls his attention: The curves of carnivorous and herbivorous animals are a little different than they should be. There are still **too few points** (only four hours from the release) to be alarmed, but he decides to do a deeper analysis. Luckily, a few days ago, he had read a paper on the Universal ODEs, so he thinks they can help him in this case.
+After the champagne, hugs and a little celebration Garriott returns to work and starts to analyze the metrics to see if everything is alright, and it does. He relax a little bit until something calls his attention: The curves of carnivorous and herbivorous animals are a little different than they should be. There are still **too few points** (only four hours from the release) to be alarmed, but he decides to do a deeper analysis. Luckily, a few days ago, he had read a paper on the Universal ODEs, so he thinks they can help him in this case.
 """
 
 # ╔═╡ 3bb32294-5423-11eb-1c75-27dc2f242255
 function lotka_volterra_players(du,u,p,t)
     #Lotka-Volterra function with players that hunt
-	#Of course, Garriot doesn´t know about this new players part of the equation. 
+	#Of course, Garriott doesn´t know about this new players part of the equation. 
 	#He only saw some differences in the real curve vs the one he expected.
 	
     birth_prey, mort_prey, birth_pred, mort_pred, players_prey, players_pred = p
@@ -159,7 +159,7 @@ end;
 
 # ╔═╡ 8de32f8c-5423-11eb-24c6-5be06370cb3f
 begin
-scatter(solution, alpha = 0.25, title="The data Garriot was seeing")
+scatter(solution, alpha = 0.25, title="The data Garriott was seeing")
 plot!(solution, alpha = 0.5)
 end
 
@@ -171,7 +171,7 @@ end;
 
 # ╔═╡ 5d5c55a0-5426-11eb-0e93-27e67f42dc8e
 begin
-scatter(expected_solution, alpha = 0.25, title="The data Garriot was expecting to see")
+scatter(expected_solution, alpha = 0.25, title="The data Garriott was expecting to see")
 plot!(expected_solution, alpha = 0.5)
 end
 
@@ -204,7 +204,7 @@ end
 
 # ╔═╡ a0b0497a-5436-11eb-0bad-f564c6033968
 md"""
-So lets stop for a minute to analize the code that Garriot just propose.
+So lets stop for a minute to analize the code that Garriott just propose.
 
 In the first two lines, he just define the Neural Network that is going to learn the missing components of the two equations (one for the dynamics of the Pray and other for the dynamics of the Predator) and fill the variable p with its untrained parameters.
 
@@ -214,7 +214,7 @@ $\frac{dPrey}{dt} = Prey*(1.3 - 0.9*Pred) + ANN_1(prey, pred)$
 
 $\frac{dPred}{dt} = Pred*(0.8*Prey - 1.8) + ANN_2(prey, pred)$
 
-So, as we already know, he is just adding a **function**. Which one? We already know that those are $Prey*players_{prey}$ and $Pred*players_{pred}$ (and $players_{pred}=players_{prey}=0.4$), but Garriot doesn´t, and is exactly what the Neural Network is going to learn for him.
+So, as we already know, he is just adding a **function**. Which one? We already know that those are $Prey*players_{prey}$ and $Pred*players_{pred}$ (and $players_{pred}=players_{prey}=0.4$), but Garriott doesn´t, and is exactly what the Neural Network is going to learn for him.
 
 """
 
@@ -286,7 +286,7 @@ plot!(solution.t, X', title="The trained NN have fitted well")
 end
 
 # ╔═╡ 58a1294c-544c-11eb-27ca-8512bc3d5461
-md"""Nice! Now that we have our Neural Network already learned the **Input-Output** relation in order to the entire system behave as the data Garriot were seeing in that Infamous morning, we need to transform that Input-Output behaviour into some function. We do this in order to *gain* interpretability of what may be happening and, in a scientific frame, learn the underling model. We do this by creating a [Function Space](https://en.wikipedia.org/wiki/Function_space) in order to the NN learn which function (or linear combination of those) is the best one to describe that Input-Output relation. The loss function to do so is designed in a way that the result will be the least complex one, that is, the answer will be the simplest function that behave like the NN.
+md"""Nice! Now that we have our Neural Network already learned the **Input-Output** relation in order to the entire system behave as the data Garriott were seeing in that Infamous morning, we need to transform that Input-Output behaviour into some function. We do this in order to *gain* interpretability of what may be happening and, in a scientific frame, learn the underling model. We do this by creating a [Function Space](https://en.wikipedia.org/wiki/Function_space) in order to the NN learn which function (or linear combination of those) is the best one to describe that Input-Output relation. The loss function to do so is designed in a way that the result will be the least complex one, that is, the answer will be the simplest function that behave like the NN.
 """
 
 # ╔═╡ b38b9410-544e-11eb-220b-5746f897b5f4
@@ -357,7 +357,7 @@ $\frac{dPrey}{dt} = Prey*(1.3 - 0.9*Pred) + p_1*Prey = Prey*(1.3 - 0.9*Pred + p1
 
 $\frac{dPred}{dt} = Pred*(0.8*Prey - 1.8) + p_2*Pred = Pred*(0.8*Prey - 1.8 + p2)$
 
-So, Remembering that we define the data Garriot was seeing as:
+So, Remembering that we define the data Garriott was seeing as:
 
 $\frac{dPrey}{dt} = Prey*(1.3 - 0.9*Pred - players_{prey})$
 
@@ -393,7 +393,7 @@ parameters(Ψf)
 md"So we recover the equations and its parameters with an outstanding acurracy. And that is even more incredible if we remember that we did this with a **minimum** of data."
 
 # ╔═╡ e6ec4364-54eb-11eb-1bf6-83db426cd32f
-md"""After seeing that, Garriot took a big deep breath. He immediately understood what was going on. The players were mass killing the animals. He called his team and start planning the strategy to face this, not knowing that already was a lost cause...  
+md"""After seeing that, Garriott took a big deep breath. He immediately understood what was going on. The players were mass killing the animals. He called his team and start planning the strategy to face this, not knowing that already was a lost cause...  
 
 ### Summary
 
