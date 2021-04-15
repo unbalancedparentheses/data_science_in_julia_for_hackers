@@ -4,12 +4,9 @@
 using Markdown
 using InteractiveUtils
 
-# ╔═╡ 16bbab4c-9e0a-11eb-0c09-9d4a16be0389
-using StatsPlots
-
 # ╔═╡ fa3ab76e-5413-11eb-36f1-e5117d887fc7
 begin
-	using DifferentialEquations, DiffEqSensitivity
+	using DifferentialEquations, DiffEqSensitivity, StatsPlots
 	using Plots
 	gr()
 end
@@ -470,7 +467,6 @@ md"
 # ╟─2139fac8-4ec7-11eb-1625-bf9aab9b1c2c
 # ╟─16fe9d46-9e0a-11eb-190d-d1460f88e124
 # ╟─16fe62ca-9e0a-11eb-02b7-ef09706fb897
-# ╠═16bbab4c-9e0a-11eb-0c09-9d4a16be0389
 # ╠═fa3ab76e-5413-11eb-36f1-e5117d887fc7
 # ╠═247a6e7e-5417-11eb-3509-3d349198ec43
 # ╠═c64260e8-5417-11eb-2c5e-df8a41e3c0b5
