@@ -43,15 +43,15 @@ We are currently working on:
 # ╔═╡ 41e20700-9881-11eb-3067-d54b34ae1f92
 md"
 # Why Julia
-You may be wondering why we write this book using Julia instead of other languages like Python or R. 
+People have asked us why we wrote this book using Julia instead of Python or R, which are the current standards in the data science world. 
+While Python and R are also great choices, Julia is an up and coming language that will surely have an impact in the coming years.
 
-There are several reasons why Julia is a great language for Data Science. 
-Julia was developed by a team of scientists who wanted a tool to address problems they typically encountered while doing research. 
-So we end up with a language that performs as fast as C and is as readable as Python, allowing us to write highly performant code in a simple way.
-Julia is already being used in many top-tier tech companies and scientific research.
-Also there are plenty of scientists and engineers of different disciplines collaborating with Julia, which gives us a wide range of possibilities to approach different problems.
-
-This makes us conclude that Julia is an excellent option to solve the data science problems presented in this book.
+It performs faster than pure R and Python (as fast as C) while maintaining the same degree of readability, allowing us to write highly performant code in a simple way.
+Julia is already being used in many top-tier tech companies and scientific research —there are plenty of scientists and engineers of different disciplines collaborating with Julia, which gives us a wide range of possibilities to approach different problems.
+Often, libraries in languages like Python or R are optimized to be performant, but this usually involves writing code in other languages better suited for this task such as C or Fortran, as well as writing code to manage the communication between the high level language and the low level one. 
+Julia, in the other hand, expands the possibilities of people who have concrete problems that involve a lot of computation. 
+Libraries can be developed to be performant in plain Julia code, following some basic coding guidelines to get the most out of it. 
+This enables useful libraries to be created by people without programming or Computer Science expertise.
 
 "
 
@@ -184,7 +184,7 @@ Complex{Int64}
 "
 
 # ╔═╡ 01ca39ee-5a9c-11eb-118e-afae416cfca4
-md"
+md"""
 These were examples of integers, floats and complex numbers. All data types in Julia start with a capital letter.
 Notice that if you want to do something like,
 ```julia
@@ -248,7 +248,7 @@ julia> \"This is a Julia string!\"
 \"This is a Julia string!\"
 ```
 
-You can access some particular character of a string by writing the index of that character in the string between brackets right next to the string. Likewise, you can access some substring by writing the first and the last index of the substring you want, separated by a colon, all this between brackets. This is called *slicing*, and will be very useful later when working with arrays. As an example of this,
+You can access a particular character of a string by writing the index of that character in the string between brackets right next to the string. Likewise, you can access a substring by writing the first and the last index of the substring you want, separated by a colon, all this between brackets. This is called *slicing*, and it will be very useful later when working with arrays. Here's an example:
 
 ```julia
 julia> \"This is a Julia string!\"[1] # this will output the first character of the string and other related information.
@@ -258,26 +258,22 @@ julia> \"This is a Julia string!\"[1:4] # this will output the substring obtaine
 \"This\"
 ```
 
-A really useful tool when using strings is *string interpolation*. This is a way to evaluate an expression inside a string and print it. This is done usually by writing a dollar symbol $ \$  $ followed by the expression between parentheses. For example,
+A really useful tool when using strings is *string interpolation*. This is a way to evaluate an expression inside a string and print it. This is usually done by writing a dollar symbol $ \$  $ followed by the expression between parentheses. For example,
 
 ```julia
 julia> \"The product between 4 and 5 is $(4 * 5)\"
 \"The product between 4 and 5 is 20\"
 ```
-This couldn't be a programming introduction if we didn't include a 'Hello World!' printing, right? Printing in Julia is very easy. You have, essentially, two functions for the printing process: print() and println(). The former will print the string you pass in the argument, without creating a new line. What this means is that, for example, if you are in a Julia REPL and you call the print() function two or more times, the printed strings will be concatenated in the same line, while successive calls to the println() function will print every new string in a new, separated line from the previous one. To illustrate these concepts, consider the next examples. We haven't talked about `for` loops yet, so don't worry about that for now. Just notice how the output changes when we make a print() or println() call.
+This wouldn't be a programming introduction if we didn't include printing 'Hello World!', right? Printing in Julia is very easy. There are two functions for printing: `print()` and `println()`. The former will print the string you pass in the argument, without creating a new line. What this means is that, for example, if you are in a Julia REPL and you call the `print()` function two or more times, the printed strings will be concatenated in the same line, while successive calls to the `println()` function will print every new string in a new, separated line from the previous one. 
 
 ```julia
-julia> for i in 1:3
-           print(i)
-       end
-123
+julia> print("Hello"); print(" world!")
+Hello world!
 
-julia> for i in 1:3
-           println(i)
-       end
-1
-2
-3
+
+julia> println("Hello"); println("world!")
+Hello
+world!
 ```
 
 It's time now to start introducing collections of data in Julia. We will start by talking about arrays.  As in many other programming languages, arrays in Julia can be created by listing objects between square brackets separated by commas. For example, 
@@ -298,7 +294,17 @@ julia> str_array = [\"Hello\", \"World\"]
 As you can see, arrays can store any type of data. If all the data in the array is of the same type, it will be compiled as an array of that data type. You can see that in the patter that the Julia REPL prints out:
 
 1) Firstly, it tells how many elements there are in the collection. In our case, 3 elements in int_array and 2 elements in str_array. When dealing with higher dimensionality arrays, the shape will be informed.
-2) It gives information about the type and dimensionality of the array. The first element inside the curly brackets, informs us about the type of every member of the array, if they are all the same. If this is not the case, type 'Any' will appear, meaning that the collection of objects inside the array is not homogeneous in its type. Compilation of Julia code tends to be faster when arrays have a defined type, so it is recommended to use these unless needed. The second element between the curly braces tells us how many dimensions are there in the array. In these examples we have one-dimensional arrays, hence a 1 is printed. Later we will be introducing matrices and, naturally, a 2 will appear in this place instead a 1.
+
+2) Secondly, the output shows the type and dimensionality of the array. 
+The first element inside the curly brackets specifies the type of every member of the array, if they are all the same. If this is not the case, type 'Any' will appear, meaning that the collection of objects inside the array is not homogeneous in its type.
+
+Compilation of Julia code tends to be faster when arrays have a defined type, so it is recommended to use homogeneous types when possible.
+
+The second element inside the curly braces tells us how many dimensions there arein the array.
+Our example shows two one-dimensional arrays, hence a 1 is printed.
+Later, we will introduce matrices and, naturally, a 2 will appear in this place instead a 1.
+
+
 3) Finally, the content of the array is printed in a columnar way.
 
 When building Julia, the convention has been set so that it has column-major ordering. So you can think of standard one-dimensional arrays as –and in fact it will be mandatory when doing calculations between vectors, matrices and the like– column vectors.
@@ -549,9 +555,9 @@ Did you understand what happened? At first, we defined an array. Then, we applie
 
 Sometimes, you will be in a situation where you may need to use some function, but you really aren't interested in giving it a special name and storing it.
 For these kinds of situations, an *anonymous* or *lambda* function is what you may need.
-Typically anonymous functions will be used as arguments to *higher-order functions*. This is just a fancy name to functions that accept other functions as arguments, that is what makes them of higher-order.
-We can create an anonymous function using the ```map()``` keyword. 
-You can think of this function as a way to broadcast **any** function over a collection.
+Typically, anonymous functions will be used as arguments to *higher-order functions*. This is just a fancy name to functions that accept other functions as arguments, that is what makes them of higher-order.
+We can create an anonymous function and apply it to each element of a collection using the ```map()``` keyword. 
+You can think of the `map()` function as a way to broadcast *any* function over a collection.
 Anonymous functions are created using the arrow ```->``` syntax. At the left-hand side of the arrow, you must specify what the arguments of the function will be and their name.
 At the right side of the arrow, you write the recipe of the things to do with these arguments.
 Let's use an anonymous function to define a not-anonymous function, just to illustrate the point.
@@ -562,8 +568,9 @@ julia> f = (x,y) -> x + y
 julia> f(2,3)
 5
 ```
-You can think about what we done here as if $f$ were a variable that is storing some function. Then, when calling $f(2,3)$ Julia understands we want to evaluate the function it is storing with the values 2 and 3.
+You can think about what we did as if $f$ were a variable that is storing some function. Then, when calling $f(2,3)$ Julia understands we want to evaluate the function it is storing with the values 2 and 3.
 Let's see now how the higher-order function ```map()``` uses anonymous functions,
+
 ```julia
 julia> map(x -> x^2 + 5, [2, 4, 6, 3, 3])
 5-element Array{Int64,1}:
@@ -573,22 +580,24 @@ julia> map(x -> x^2 + 5, [2, 4, 6, 3, 3])
  14
  14
 ```
-The first argument of the map function, is another function. You can use functions already defined if you want, but with the help of anonymous functions you can simply create a function that will be used only inside map. The function we specified in the first argument, is then applied to every member of the array in the second argument. 
-"
+
+The first argument of the map function is another function. You can define new functions and then use them inside map, but with the help of anonymous functions you can simply create a throw-away function inside map's arguments. This function we pass as an argument, is then applied to every member of the array we input as the second argument.
+
+"""
 
 # ╔═╡ fda97ed8-875f-11eb-372e-4f982ff9b958
 md"""
 Now let's introduce another data collection: Dictionaries.
 
 A dictionary is a collection of key-value pairs.
-You can think of them as an array, but instead of being indexed by a sequence of numbers they are indexed by keys, each one linked to a value.
+You can think of them as arrays, but instead of being indexed by a sequence of numbers they are indexed by keys, each one linked to a value.
 
 To create a dictionary we use the function `Dict()` with the key-value pairs as arguments.
 
 `Dict(key1 => value1, key2 => value2)`.
 
 ```julia
-julia> Dict("A"=>1,"B"=>2)
+julia> Dict("A" => 1, "B" => 2)
 Dict{String,Int64} with 2 entries:
   "B" => 2
   "A" => 1
@@ -597,18 +606,18 @@ So we created our first dictionary.
 Let's review what the Julia REPL prints out:
 
 `Dict{String,Int64}` tells us the dictionary data type that Julia automatically assigns to the pair (key,value).
-In this example the keys will be strings and the values integers.
+In this example, the keys will be strings and the values, integers.
 Finally, it prints all the (key => value) elements of the dictionary.
 
 In Julia, the keys and values of a dictionary can be of any type.
 
 ```julia
-julia> Dict("x"=>1.4,"y"=>5.3)
+julia> Dict("x" => 1.4, "y" => 5.3)
 Dict{String,Float64} with 2 entries:
   "x" => 1.4
   "y" => 5.3
 
-julia> Dict(1=>10.0,2=>100.0)
+julia> Dict(1 => 10.0, 2 => 100.0)
 Dict{Int64,Float64} with 2 entries:
   2 => 100.0
   1 => 10.0
@@ -630,7 +639,7 @@ Now let's see the dictionary's basic functions.
 First, we will create a dictionary called "languages" that contains the names of programming languages as keys and their release year as values.
 
 ```julia
-julia> languages = Dict{String,Int64}("Julia"=>2012, "Java"=>1995, "Python"=>1990)
+julia> languages = Dict{String,Int64}("Julia" => 2012, "Java" => 1995, "Python" => 1990)
 
 Dict{String,Int64} with 3 entries:
   "Julia"  => 2012
@@ -660,10 +669,10 @@ Dict{String,Int64} with 4 entries:
   "C++"    => 1980
 ```
 
-When we want to modify a key's value.
+We do something similar to modify a key's value:
 
 ```julia
-julia> languages["Python"]=1991
+julia> languages["Python"] = 1991
 1991
 
 julia> languages
@@ -673,8 +682,9 @@ Dict{String,Int64} with 3 entries:
   "C++"    => 1980
 
 ```
-Notice that the ways of adding and modifying an element are identical.
-That is because keys of a dictionary can never be repeated, each key must be unique and once added they can't be modified.
+Notice that the ways of adding and modifying a value are identical.
+That is because keys of a dictionary can never be repeated or modified. Since each key is unique, assigning a new value for a key overrides the previous one.
+
 
 To delete an element we use the `delete!` method.
 ```julia
@@ -701,7 +711,7 @@ C++ was released in 1980
 
 # ╔═╡ fe6c55de-875f-11eb-205c-53d913ae225f
 md"
-Now that the most important details of syntax have been discussed, let's focus our attention on some packages of Julia's ecosystem."
+Now that we have discussed the most important details of Julia's syntax, let's focus our attention on some of the packages in Julia's ecosystem."
 
 # ╔═╡ d1ae60a8-544e-11eb-15b5-97188dc41aa8
 md"
@@ -968,7 +978,7 @@ md"
 
 # ╔═╡ Cell order:
 # ╟─e7c41f16-8b46-11eb-0cfc-776986dd6049
-# ╟─41e20700-9881-11eb-3067-d54b34ae1f92
+# ╠═41e20700-9881-11eb-3067-d54b34ae1f92
 # ╟─0a4fc5fc-544d-11eb-0189-6b1c959b1eb1
 # ╟─c2272800-6007-11eb-1736-b7f334dbba2f
 # ╟─292d20ea-5a8e-11eb-2a96-a37689e468ca
