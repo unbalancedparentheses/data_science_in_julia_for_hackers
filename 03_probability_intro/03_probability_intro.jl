@@ -67,30 +67,28 @@ But we first need an intuitive conceptual basis to build on top of that.
 We won't assume any prior knowledge, so let's start from the basics. 
 
 Probability is a mathematical field that aims to measure the uncertainty of a particular event happening or the degree of confidence about some statement or hypothesis.
-As any other mathematical field probability has their own axioms and definitions that we will start seeing in this chapter.A main characteristic of probability is that it is substantially related to real word practice.
+As any other mathematical field, probability has their own axioms and definitions that we will start seeing in this chapter.A main characteristic of probability is that it is substantially related to real word practice.
 It gains practical value and an intuitive meaning in connection with real or conceptual experiments.
 
 
-Therefore, lets start defining some concepts with an experiment.
-
+Therefore, a nice way to introduce some of these concepts is by means of an experiment. Without further ado, let's get started.
 "
 
 # ╔═╡ 37f8c246-9198-11eb-2c0b-71b3d3c4e3ee
 md"
 ## Events, sample spaces and sample points
 
-So, let's make our first experiment. 
-We have a box with 4 balls, each one of different colors: blue, red, green and white.
-
+Let's make our first experiment. 
+Consider a box with four balls inside of it, each one of these of a different color: blue, red, green and white.
 "
 
 # ╔═╡ 379722dc-9198-11eb-3ab2-3b69a1b8eb2e
 imresize(load("images/box-experiment.jpg"), (336, 400))
 
 # ╔═╡ 3720628e-9198-11eb-3138-19bb419b7b6e
-md"We put our hands inside the box, take out two random balls at the same time and anote the color. 
+md"The experiment goes like this: We put our hands inside the box and take two balls at random, at the same time, and write down their colors. For example, red and green. We will refer to this outcome as $(R,G)$.
 
-So lets see how many possible outputs has our experiment
+The possible outputs of our experiment are:
 
 1. Red Green = $(R,G)$
 1. Red Blue = $(R,B)$
@@ -125,17 +123,17 @@ B = “The green and the blue ball were taken” = $\{(G,B)\}$
 
 ### Relation among events
 
-We can represent events and the relation between them using Venn diagrams.
+Events and the relationship between them can be represented using Venn diagrams. These are used widely in set theory, and since we are developing our probabilistic intuition thinking about possible outcomes as sets, they come in handy in this process.
 
-Continuing with our experiment, we got our sample space:
+Back to our experiment, the sample space consisted of:
 
 Sample space = S = $\{(R,G), (R,B), (R,W), (G,B), (G,W), (B,W)\}$
 
-And let's analyze this two events
+Consider these two events,
 
 A = “The white ball was taken” = $\{(R,W), (G,W), (B,W)\}$
 
-B= “The red wall was not taken” = $\{(G,B)(G,W)(B,W)\}$
+B = “The red wall was not taken” = $\{(G,B)(G,W)(B,W)\}$
 
 "
 
@@ -147,13 +145,13 @@ imresize(load("images/venn-1.jpg"), (336, 400))
 md"
 The rectangle represents the sample space S. Since it represents all the possible outputs of our experiment, nothing can be outside it.
 
-Then we represent the event A , that contains the 3 sample points $\{(R,W), (G,W)$ and $(B,W)\}$, with a red circle.
+Then we represent the event A, that contains the 3 sample points $\{(R,W), (G,W)$ and $(B,W)\}$, with a red circle.
 
-The event consisting of all points not contained in the event A will be called the complementary event (or negation) of A and is denoted by A'.
+The event consisting of all points not contained in the event A is defined as the complementary event (or negation) of A and is denoted by A'.
 
 $A´= {(R,G),(R,B),(G,B)}$
 
-Notice that if we created a new event that contains all the sample points of A and A´, we obtain the sample space.
+Notice that if we created a new event that contains all the sample points of A and A´, we would have obtained the sample space.
 
 "
 
@@ -164,7 +162,7 @@ imresize(load("images/venn-3.jpg"), (336, 400))
 # ╔═╡ d8e086b8-9241-11eb-33f2-03786ca67fa1
 md"
 Now let's take into play the event B.
-The points $(G,W)$ and $(B,W)$ are present in the event A and B. So we must represent them in this way:
+The points $(G,W)$ and $(B,W)$ are both present in the events A and B, so we must represent them in this way:
 "
 
 # ╔═╡ 985fcce0-919a-11eb-0fa6-9d8ca380ce4e
@@ -172,19 +170,19 @@ imresize(load("images/venn-2.jpg"), (336, 400))
 
 # ╔═╡ 75091186-9242-11eb-1fdf-fddc652f1453
 md"
-The blue area contains the sample points that are in both events, in this case $(G,W)$ and $(B,W)$. Is defined as the intersection of A and B and is denoted by $A \cap B$.
+The blue area contains the sample points that are in both events, in this case $(G,W)$ and $(B,W)$. It is defined as the intersection of A and B and is denoted by $A \cap B$.
 
 On the other hand, the red area contains the points that are only present in the event A, in this case $(R,W)$ .
-Analogously the green area contains the points that are only present in the event A, in this case $(G,B)$ .
+Analogously, the green area contains the points that are only present in the event A, in this case $(G,B)$ .
 "
 
 # ╔═╡ cf075ae6-922f-11eb-1ff2-b70737c34f82
 md"""
 ## Probability
 
-Now that we are introduced to the event, sample point and sample space concepts we can start talking about probability.
+Now that we have introduced the event, sample point and sample space concepts, we can start talking about probability.
 
-Probability is a measure of our belief that a particular event will occur, and we express this with a number ranging from $0$ to $1$.
+Probability is a measure of our belief that a particular event will occur, and we express it with a number ranging from $0$ to $1$.
 The number $0$ means we have the strongest possible belief that the event will not happen: We are sure it will not happen.
 The number $1$ means we have the strongest possible belief that the event will happen: We are sure it will happen. 
 Probability, being a measure of our own belief or certainty in the occurrence of an event, does not determine whether the event occurs or not. 
@@ -200,7 +198,7 @@ $P(A) = \frac{success \ cases} {total \ cases}$
 
 $P((R,W))= \frac{(R,W)}{(R,G),(R,B),(R,W),(G,B),(G,W),(B,W)} =\frac{1}{6}$
 
-The probability $P(A)$ of any event $A$ is the sum of the probabilities of all sample points in it.
+The probability $P(A)$ of any event $A$ is the sum of the probabilities of each of the sample points in it.
 
 For A = "The white ball was taken" = $\{(R,W), (G,W), (B,W)\}$
 
@@ -248,7 +246,7 @@ Although it may sound as if this implies an order in the occurrence of the event
 What in reality has an actual order in this statement is our knowledge of what things happened.
 If we say, for example $P(A|B)$, then what we know first is event B, and given this knowledge, we want to know the probability of event A.
 
-To see it in a graphical way:
+To see it in a visual way:
 
 """
 
@@ -269,7 +267,7 @@ A = “I pick a red and a green ball”
 
 B = “I pick a red ball”
 
-So P(A|B) is interpreted as the probability of picking a red and a green ball knowing that I already pick one red ball.
+P(A|B) is interpreted as the probability of picking a red and a green ball knowing that I already picked one red ball.
 
 
 $A = \{(R,G),(R,B),(R,W)\} => P(A) = \frac{3}{6}$
@@ -294,7 +292,7 @@ Let's see how it works with an example.
 
 Imagine we want to study this two events:
 
-R= “Today It will rain”
+R = “Today It will rain”
 
 L = “The number 39 will win the lottery”
 
@@ -313,18 +311,18 @@ When the events are not independent from one another, we can use the conditional
 
 Now, lets study the joint probability of this two events:
 
-R= “Today It will rain”
+R = “Today It will rain”
 
-H= “humidity will exceed 50%”
+H = “humidity will exceed 50%”
 
 If it is raining, there is a high probability that the humidity levels will rise, so the probability of humidity exceeding 50% will be affected.
 
-To calculated this joint probability we use:
+To calculate the joint probability of these two events, we use the formula,
 
 $P(H\text{ and }R) = P(R)P(H|R)$
 
 
-For two general events A and B, this is:
+In a more general way, for two arbitrary events A and B,
 
 $P(A\text{ and }B) = P(A)P(B|A)$
 
@@ -400,7 +398,7 @@ We can distinguish between discrete and continuous cases depending on the possib
 # ╔═╡ f36ea8bc-9623-11eb-24a2-155b112db75b
 md"
 ## Discrete Case
-If the outputs of our experiment are discrete, then its distribution is called a probability mass function, where we assign a probability to each possible outcome.
+If the outputs of our experiment are discrete, then the probability distribution is called a probability mass function, where we assign a probability to each possible outcome.
 
 One of the most popular distributions is the Poisson distribution.
 Suppose I want to visualize the probability of receiving *x* spam mails on Mondays.
@@ -797,7 +795,7 @@ md"
 # ╟─bccb252a-923f-11eb-0665-5d96561f7d1d
 # ╟─98d90100-919a-11eb-04cd-4729037de830
 # ╟─d8e086b8-9241-11eb-33f2-03786ca67fa1
-# ╟─985fcce0-919a-11eb-0fa6-9d8ca380ce4e
+# ╠═985fcce0-919a-11eb-0fa6-9d8ca380ce4e
 # ╟─75091186-9242-11eb-1fdf-fddc652f1453
 # ╟─cf075ae6-922f-11eb-1ff2-b70737c34f82
 # ╟─cacbb7b2-9234-11eb-0224-a302d0238b87
