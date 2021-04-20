@@ -49,7 +49,7 @@ While Python and R are also great choices, Julia is an up and coming language th
 It performs faster than pure R and Python (as fast as C) while maintaining the same degree of readability, allowing us to write highly performant code in a simple way.
 Julia is already being used in many top-tier tech companies and scientific research —there are plenty of scientists and engineers of different disciplines collaborating with Julia, which gives us a wide range of possibilities to approach different problems.
 Often, libraries in languages like Python or R are optimized to be performant, but this usually involves writing code in other languages better suited for this task such as C or Fortran, as well as writing code to manage the communication between the high level language and the low level one. 
-Julia, in the other hand, expands the possibilities of people who have concrete problems that involve a lot of computation. 
+Julia, on the other hand, expands the possibilities of people who have concrete problems that involve a lot of computation. 
 Libraries can be developed to be performant in plain Julia code, following some basic coding guidelines to get the most out of it. 
 This enables useful libraries to be created by people without programming or Computer Science expertise.
 
@@ -66,7 +66,7 @@ Before Julia, programming languages were limited to either having a simple synta
 This led applied scientists to face the task of not only learning two different languages, but also learning how to have them communicating with one another. 
 This difficulty is called the two-language problem, which Julia creators aim to solve with this new language. 
 
-Julia is dinamically typed and great for interactive use. It also uses multiple dispatch as a core design concept, which adds to the composability of the language. In conventional, single-dispatched programming languages, when invoking a method, one of the arguments has a special treatment since it determines which of the methods contained in a function is going to be applied. Multiple dispatch is a generalization of this for all the arguments of the function, so the method applied is going to be the one that matches exactly the number of types of the function call.
+Julia is dynamically typed and great for interactive use. It also uses multiple dispatch as a core design concept, which adds to the composability of the language. In conventional, single-dispatched programming languages, when invoking a method, one of the arguments has a special treatment since it determines which of the methods contained in a function is going to be applied. Multiple dispatch is a generalization of this for all the arguments of the function, so the method applied is going to be the one that matches exactly the number of types of the function call.
 
 "
 
@@ -106,7 +106,7 @@ Maybe one of the most used, along with the default Julian mode, is the *package 
 julia> ]
 (@v1.5) pkg>
 ```
-If you see the word 'pkg' word in the prompt, it means you accessed the package manager successfully. To add a new package, you just need to write
+If you see the word 'pkg' in the prompt, it means you accessed the package manager successfully. To add a new package, you just need to write
 
 ```julia
 (@v1.5) pkg> add NewPackage
