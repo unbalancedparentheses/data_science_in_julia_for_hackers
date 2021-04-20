@@ -62,9 +62,11 @@ md"
 Julia is a free and open-source general-purpose language, designed and developed by Jeff Bezanson, Alan Edelman, Viral B. Shah and Stefan Karpinski at MIT. 
 Julia is created from scratch to be both fast and easy to understand, even for people who are not programmers or computer scientists. It has abstraction capabilities of high-level languages, while also being really fast, as its slogan calls “Julia looks like Python, feels like Lisp, runs like Fortran”.
 
-Before Julia, programming languages were limited to either having a simple syntax and good abstraction capabilities or being high-performance as solving resource-intensive computations required to. This led applied scientists to face the task of not only learning two different languages, but also learning how to have them communicating with one another. This difficulty is called the *two-language problem*, which Julia creators aim to solve with this new language. 
+Before Julia, programming languages were limited to either having a simple syntax and good abstraction capabilities and therefore user-friendly or being high-performance, which was necessary to solve resource-intensive computations.
+This led applied scientists to face the task of not only learning two different languages, but also learning how to have them communicating with one another. 
+This difficulty is called the *two-language problem*, which Julia creators aim to solve with this new language. 
 
-Julia is dynamically typed and is great for interactive use. It also uses multiple dispatch as a core design concept, which adds to the composability of the language. In conventional, single-dispatched programming languages, when invoking a method, one of the arguments has a special treatment since it determines which of the methods contained in a function is going to be applied. Multiple dispatch is a generalization of this for all the arguments of the function, so the method applied is going to be the one that matches exactly the number of types of the function call.
+Julia is dinamically typed and great for interactive use. It also uses multiple dispatch as a core design concept, which adds to the composability of the language. In conventional, single-dispatched programming languages, when invoking a method, one of the arguments has a special treatment since it determines which of the methods contained in a function is going to be applied. Multiple dispatch is a generalization of this for all the arguments of the function, so the method applied is going to be the one that matches exactly the number of types of the function call.
 
 "
 
@@ -72,9 +74,9 @@ Julia is dynamically typed and is great for interactive use. It also uses multip
 md"
 ## Installation
 For the installation process, we recommend you follow the instructions provided by the Julia team:
-> [Platform Specific Instructions for Official Binaries](https://julialang.org/downloads/platform/): These instructions will get you through a fresh installation of Julia depending on the specifications of your computer. It is a barebones installation, so it will only include the basic Julia packages.
+> [Platform Specific Instructions for Official Binaries](https://julialang.org/downloads/platform/): These instructions will get you through a fresh installation of Julia depending on the specifications of your computer. It is a bare bones installation, so it will only include the basic Julia packages.
 
-All along the book, we are going to use specific Julia packages that you may or may not have already installed. Julia has a built-in packet manager that makes the task of installing new packages and checking compatibilities very easy. 
+All along the book, we are going to use specific Julia packages that you have to install before calling them in your code. Julia has a built-in packet manager that makes the task of installing new packages and checking compatibilities very easy.
 First, you will need to start a Julia session. For this, type in your terminal
 ```julia
 ~ julia
@@ -104,7 +106,7 @@ Maybe one of the most used, along with the default Julian mode, is the *package 
 julia> ]
 (@v1.5) pkg>
 ```
-The 'pkg' word in the prompt will mean you are successfully in the package manager. To add some new package, you just need to write
+The 'pkg' word in the prompt will mean you are successfully in the package manager. To add a new package, you just need to write
 
 ```julia
 (@v1.5) pkg> add NewPackage
@@ -135,7 +137,7 @@ you can simply do
 julia> 2x
 ```
 
-For this same purpose, Julia has a great variety of unicode characters, which enables us to write things like Greek letters and subscripts/superscripts, making our code much more beautiful and easy to read in a mathematical form. In general, unicode characters are activated by using '\', followed by the name of the character and then pressing the 'tab' key. For example,
+For this same purpose, Julia has a great variety of unicode characters, which enable us to write things like Greek letters and subscripts/superscripts, making our code much more beautiful and easy to read in a mathematical form. In general, unicode characters are activated by using '\', followed by the name of the character and then pressing the 'tab' key. For example,
 ```julia
 julia> \beta # and next we press tab
 julia> β
@@ -148,7 +150,7 @@ julia> L\_0 # and next we press tab
 julia> L₀
 ```
 
-Unicodes behave as any other letter of the you keyboard, you can use them in a string or as variable to assign them values
+Unicodes behave as any other letter of the you keyboard, you can use them in a string or as variables to assign them values
 ```julia
 julia> β = 5
 5
@@ -157,7 +159,7 @@ julia> \"The ⌀ of the circle is $β \"
 \"The ⌀ of the circle is 5 \"
 ```
 
-Some popular greek letters have their values already assigned.
+Some popular Greek letters have their values already assigned.
 ```julia
 julia> \pi # and next we press tab
 julia> π
@@ -169,7 +171,7 @@ julia> ℯ
 ```
 You can see all the unicodes supported by Julia [here](https://docs.julialang.org/en/v1/manual/unicode-input/) 
 
-The basic number types are also supported in Julia. We can explore this with the function *typeof()*, which spits out the type of its argument, as it is represented in Julia. Let's see some examples,
+The basic number types are also supported in Julia. We can explore this with the function *typeof()*, which outputs the type of its argument, as it is represented in Julia. Let's see some examples,
 
 ```julia
 julia>typeof(2)
@@ -264,7 +266,10 @@ A really useful tool when using strings is *string interpolation*. This is a way
 julia> \"The product between 4 and 5 is $(4 * 5)\"
 \"The product between 4 and 5 is 20\"
 ```
-This wouldn't be a programming introduction if we didn't include printing 'Hello World!', right? Printing in Julia is very easy. There are two functions for printing: `print()` and `println()`. The former will print the string you pass in the argument, without creating a new line. What this means is that, for example, if you are in a Julia REPL and you call the `print()` function two or more times, the printed strings will be concatenated in the same line, while successive calls to the `println()` function will print every new string in a new, separated line from the previous one. 
+This wouldn't be a programming introduction if we didn't include printing 'Hello World!', right? Printing in Julia is very easy. There are two functions for printing: `print()` and `println()`. The former will print the string you pass in the argument, without creating a new line. What this means is that, for example, if you are in a Julia REPL and you call the `print()` function two or more times, the printed strings will be concatenated in the same line, while successive calls to the `println()` function will print every new string in a new, separated line from the previous one.
+So, to show this we will need to execute two print actions in one console line. 
+To execute multiple actions in one line you just need to separate them with a ;.
+
 
 ```julia
 julia> print("Hello"); print(" world!")
@@ -291,23 +296,25 @@ julia> str_array = [\"Hello\", \"World\"]
  \"World\"
 ```
 
-As you can see, arrays can store any type of data. If all the data in the array is of the same type, it will be compiled as an array of that data type. You can see that in the patter that the Julia REPL prints out:
+As you can see, arrays can store any type of data. If all the data in the array is of the same type, it will be compiled as an array of that data type. You can see that in the pattern that the Julia REPL prints out:
 
-1) Firstly, it tells how many elements there are in the collection. In our case, 3 elements in int_array and 2 elements in str_array. When dealing with higher dimensionality arrays, the shape will be informed.
+1. Firstly, it displays how many elements there are in the collection. In our case, 3 elements in int\_array and 2 elements in str\_array. When dealing with higher dimensionality arrays, the shape will be informed.
 
-2) Secondly, the output shows the type and dimensionality of the array. 
-The first element inside the curly brackets specifies the type of every member of the array, if they are all the same. If this is not the case, type 'Any' will appear, meaning that the collection of objects inside the array is not homogeneous in its type.
 
-Compilation of Julia code tends to be faster when arrays have a defined type, so it is recommended to use homogeneous types when possible.
+2. Secondly, the output shows the type and dimensionality of the array. 
+   The first element inside the curly brackets specifies the type of every member of the array, if they are all the same. If this is not the case, type 'Any' will appear, meaning that the collection of objects inside the array is not homogeneous in its type.
 
-The second element inside the curly braces tells us how many dimensions there arein the array.
-Our example shows two one-dimensional arrays, hence a 1 is printed.
-Later, we will introduce matrices and, naturally, a 2 will appear in this place instead a 1.
+   Compilation of Julia code tends to be faster when arrays have a defined type, so it is recommended to use homogeneous types when possible.
+
+   The second element inside the curly braces tells us how many dimensions there arein the array. Our example shows two one-dimensional arrays, hence a 1 is printed. Later, we will introduce matrices and, naturally, a 2 will appear in this place instead a 1.
 
 
 3) Finally, the content of the array is printed in a columnar way.
 
-When building Julia, the convention has been set so that it has column-major ordering. So you can think of standard one-dimensional arrays as –and in fact it will be mandatory when doing calculations between vectors, matrices and the like– column vectors.
+When building Julia, the convention has been set so that it has column-major ordering.
+So you can think of standard one-dimensional arrays as column vectors, and in fact this will be mandatory when doing calculations between vectors or matrices.
+
+
 A row vector (or a $1$x$n$ array), in the other hand, can be defined using whitespaces instead of commas,
 
 ```julia
@@ -316,8 +323,8 @@ julia> [3 2 1 4]
  3  2  1  4
 ```
 
-Matrices are built –in contrast to other languages, where they are thought as an 'array of arrays'– separating the numbers in a row by whitespaces, just like the example of a row vector, and using a semicolon to symbolize the end of the row.
-Then you complete the rest of the rows with the same procedure. As an example,
+In contrast to other languages, where matrices are expressed as 'arrays of arrays', in Julia we write the numbers in succession separated by whitespaces, and we use a semicolon to indicate the end of the row, just like we saw in the example of a row vector.
+For example,
 
 ```julia
 julia> [1 1 2; 4 1 0; 3 3 1]
@@ -353,7 +360,7 @@ Stacktrace:
  [1] top-level scope at REPL[18]:1
 ```
 
-As you can see, the expression throws an error. If you watch this error closely, it gives you a good suggestion about what to do. If we now try writing a period '.' right before the plus sign, we get
+As you can see, the expression returns an error. If you watch this error message closely, it gives you a good suggestion about what to do. If we now try writing a period '.' right before the plus sign, we get
 
 ```julia
 julia> 2 .+ [1, 1, 1]
@@ -363,7 +370,7 @@ julia> 2 .+ [1, 1, 1]
  3
 ```
 
-What we have done is to *broadcast* the sum operator '+' over the entire array. This is done by adding a period before the operator we want to broadcast. In this way we can write complicated expressions in a much cleaner, simpler and compact way. This can be done with any of the operators we have already seen,
+What we did was broadcast the sum operator '+' over the entire array. This is done by adding a period before the operator we want to broadcast. In this way we can write complicated expressions in a much cleaner, simpler and compact way. This can be done with any of the operators we have already seen,
 
 ```julia
 julia> 3 .> [2, 4, 5] # this will output a bit array with 0s as false and 1s as true
@@ -373,7 +380,7 @@ julia> 3 .> [2, 4, 5] # this will output a bit array with 0s as false and 1s as 
  0
 ```
 
-If we do a broadcasting operation between two arrays with the same shapes, whatever operation you are broadcasting will be done element-wise. For example,
+If we do a broadcasting operation between two arrays with the same shape, whatever operation you are broadcasting will be done element-wise. For example,
 
 ```julia
 julia> [7, 2, 1] .* [10, 4, 8]
@@ -447,7 +454,9 @@ julia> for element in arr
 2
 ```
 As you can see, the loop was done for each element of the array. It might be convenient sometimes to iterate over a collection. 
-Following with the basics, conditional statements in Julia are very similar to most languages. Essentially, a conditional statement starts with the *if* keyword, followed by the condition that must be evaluated to true or false, and then the body of the action to apply if the condition evaluates to true. Then, an *elseif* keyword can be used to ask for another condition, and an *else*  keyword to apply some statement when the other conditions evaluate to false. Finally, like it is usual in Julia, the conditional statement block finishes with an *end* keyword. As an example, 
+
+Conditional statements in Julia are very similar to most languages.
+Essentially, a conditional statement starts with the `if` keyword, followed by the condition that must be evaluated to true or false, and then the body of the action to apply if the condition evaluates to true. Then, optional `elseif` keywords may be used to check for additional conditions, and an optional `else` keyword at the end to execute a piece of code if all of the conditions above evaluate to false. Finally, as usual in Julia, the conditional statement block finishes with an `end` keyword.
 
 ```julia
 julia> x = 3
@@ -514,7 +523,7 @@ julia> fibonacci(n1, n2, m)
  34
 ```
 
-Remember the broadcasting operation, that dot we added to the beginning of another operator to make it appy over an entire collection of objects? It turns out that this can be done with functions as well! Consider the following function,
+Remember the broadcasting operation, that dot we added to the beginning of another operator to apply it on an entire collection of objects? It turns out that this can be done with functions as well! Consider the following function,
 
 ```julia
 julia> function isPositive(x)
@@ -537,27 +546,31 @@ julia> isPositive.([-1, 1, 3, -5])
  0
 ```
 
-As you can see, we had broadcasted the function isPositive() we defined, over every 
-element of an array, by adding a dot next to the end of the function name, previous to 
-the parenthesis. It is as easy as that! Once you start using this feature, you will notice how useful it is.
-One thing concerning functions in Julia is the 'bang'(!) convention. Functions that have a name ending with an exclamation mark (or bang), are functions that change their inputs in-place. Consider the example of the pop! function from the Julia Base package. Watch closely what happens to the array over we apply the function
+As you can see, we broadcasted the `isPositive()` function over every element of an array by adding a dot next to the end of the function name.
+It is as easy as that! Once you start using this feature, you will notice how useful it is.
+One thing concerning functions in Julia is the 'bang'(!) convention. Functions that have a name ending with an exclamation mark (or bang), are functions that change their inputs in-place. Consider the example of the pop! function from the Julia Base package. Watch closely what happens to the array over which we apply the function.
 
 ```julia
-julia> arr = [1, 2, 3];
-julia> pop!(arr)
+julia> arr = [1, 2, 3]
+julia> n = pop!(arr)
 3
 julia> arr
 2-element Array{Int64,1}:
  1
  2
+julia> n
+3
 ```
-Did you understand what happened? At first, we defined an array. Then, we applied the pop!() function, which, as the name suggests, pops the last element of the array. But notice that when we call our *arr* variable to see what it is storing, now the number 3 is gone. This is what functions with a bang do and what we mean with modifying *in-place*. Try to follow this convention whenever you define a function that will modify other objects in-place!
+Did you understand what happened? First, we defined an array. Then, we applied the `pop!()` function, which returns the last element of the array and assigns it to n. 
+But notice that when we call our arr variable to see what it is storing, now the number 3 is gone. 
+This is what functions with a bang do and what we mean with modifying *in-place*. 
+Try to follow this convention whenever you define a function that will modify other objects in-place!
 
-Sometimes, you will be in a situation where you may need to use some function, but you really aren't interested in giving it a special name and storing it.
-For these kinds of situations, an *anonymous* or *lambda* function is what you may need.
-Typically, anonymous functions will be used as arguments to *higher-order functions*. This is just a fancy name to functions that accept other functions as arguments, that is what makes them of higher-order.
-We can create an anonymous function and apply it to each element of a collection using the ```map()``` keyword. 
-You can think of the `map()` function as a way to broadcast *any* function over a collection.
+Sometimes, you will be in a situation where you may need to use some function, but you don't really need to give it name and store it, because it's not very relevant to your code.
+For these kinds of situations, an *anonymous* or *lambda* function may be what you need.
+Typically, anonymous functions will be used as arguments to higher-order functions. This is just a fancy name to functions that accept other functions as arguments, that is what makes them of higher-order.
+We can create an anonymous function and apply it to each element of a collection by using the ```map()``` keyword. 
+You can think of the `map()` function as a way to broadcast any function over a collection.
 Anonymous functions are created using the arrow ```->``` syntax. At the left-hand side of the arrow, you must specify what the arguments of the function will be and their name.
 At the right side of the arrow, you write the recipe of the things to do with these arguments.
 Let's use an anonymous function to define a not-anonymous function, just to illustrate the point.
@@ -569,7 +582,8 @@ julia> f(2,3)
 5
 ```
 You can think about what we did as if $f$ were a variable that is storing some function. Then, when calling $f(2,3)$ Julia understands we want to evaluate the function it is storing with the values 2 and 3.
-Let's see now how the higher-order function ```map()``` uses anonymous functions,
+Let's see now how the higher-order function ```map()``` uses anonymous functions.
+We will broadcast our anonymous function x^2 + 5 over all the elements of an array.
 
 ```julia
 julia> map(x -> x^2 + 5, [2, 4, 6, 3, 3])
