@@ -106,13 +106,13 @@ Maybe one of the most used, along with the default Julian mode, is the *package 
 julia> ]
 (@v1.5) pkg>
 ```
-The 'pkg' word in the prompt will mean you are successfully in the package manager. To add a new package, you just need to write
+If you see the word 'pkg' word in the prompt, it means you accessed the package manager successfully. To add a new package, you just need to write
 
 ```julia
 (@v1.5) pkg> add NewPackage
 ```
 
-It is as simple as that! Beware that all Julia commands are case-sensitive, so be sure to write the package name –and in the future, all functions and variables too– correctly.
+It is as simple as that! All Julia commands are case-sensitive, so be sure to write the package name –and in the future, all functions and variables too– correctly.
 
 "
 
@@ -150,7 +150,7 @@ julia> L\_0 # and next we press tab
 julia> L₀
 ```
 
-Unicodes behave as any other letter of the you keyboard, you can use them in a string or as variables to assign them values
+Unicodes behave just like any other letter of your keyboard. You can use them inside strings or as variable names and assign them a value.
 ```julia
 julia> β = 5
 5
@@ -159,7 +159,7 @@ julia> \"The ⌀ of the circle is $β \"
 \"The ⌀ of the circle is 5 \"
 ```
 
-Some popular Greek letters have their values already assigned.
+Some popular Greek letters already have their values assigned.
 ```julia
 julia> \pi # and next we press tab
 julia> π
@@ -250,7 +250,7 @@ julia> \"This is a Julia string!\"
 \"This is a Julia string!\"
 ```
 
-You can access a particular character of a string by writing the index of that character in the string between brackets right next to the string. Likewise, you can access a substring by writing the first and the last index of the substring you want, separated by a colon, all this between brackets. This is called *slicing*, and it will be very useful later when working with arrays. Here's an example:
+You can access a particular character of a string by writing the index of that character in the string between brackets right next to it. Likewise, you can access a substring by writing the first and the last index of the substring you want, separated by a colon, all this between brackets. This is called *slicing*, and it will be very useful later when working with arrays. Here's an example:
 
 ```julia
 julia> \"This is a Julia string!\"[1] # this will output the first character of the string and other related information.
