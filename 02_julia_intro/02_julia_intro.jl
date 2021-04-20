@@ -64,7 +64,7 @@ Julia is created from scratch to be both fast and easy to understand, even for p
 
 Before Julia, programming languages were limited to either having a simple syntax and good abstraction capabilities and therefore user-friendly or being high-performance, which was necessary to solve resource-intensive computations.
 This led applied scientists to face the task of not only learning two different languages, but also learning how to have them communicating with one another. 
-This difficulty is called the *two-language problem*, which Julia creators aim to solve with this new language. 
+This difficulty is called the two-language problem, which Julia creators aim to solve with this new language. 
 
 Julia is dinamically typed and great for interactive use. It also uses multiple dispatch as a core design concept, which adds to the composability of the language. In conventional, single-dispatched programming languages, when invoking a method, one of the arguments has a special treatment since it determines which of the methods contained in a function is going to be applied. Multiple dispatch is a generalization of this for all the arguments of the function, so the method applied is going to be the one that matches exactly the number of types of the function call.
 
@@ -171,7 +171,7 @@ julia> ℯ
 ```
 You can see all the unicodes supported by Julia [here](https://docs.julialang.org/en/v1/manual/unicode-input/) 
 
-The basic number types are also supported in Julia. We can explore this with the function *typeof()*, which outputs the type of its argument, as it is represented in Julia. Let's see some examples,
+The basic number types are also supported in Julia. We can explore this with the function `typeof()`, which outputs the type of its argument, as it is represented in Julia. Let's see some examples,
 
 ```julia
 julia>typeof(2)
@@ -333,7 +333,7 @@ julia> [1 1 2; 4 1 0; 3 3 1]
  4  1  0
  3  3  1
 ```
-The length and shape of arrays can be obtained using the *length()* and *size()* functions respectively.
+The length and shape of arrays can be obtained using the `length()` and `size()` functions respectively.
 
 ```julia
 julia> length([1, -1, 2, 0])
@@ -431,7 +431,7 @@ julia> hcat([1, 2, 3], [4, 5, 6]) # this stacks the two arrays one next to the o
 
 With some of these basic tools to start getting your hands dirty in Julia, we can get 
 going into some other functionalities like loops and function definitions.
-We have already seen a for loop. For loops are started with a *for* keyword, followed by the name of the iterator and the range of iterations we want our loop to cover. Below this ```for``` statement we write what we want to be performed in each loop and we finish with an *end* keyword statement.
+We have already seen a for loop. For loops are started with a `for` keyword, followed by the name of the iterator and the range of iterations we want our loop to cover. Below this ```for``` statement we write what we want to be performed in each loop and we finish with an `end` keyword statement.
 Let's return to the example we made earlier,
 ```julia
 julia> for i in 1:100
@@ -491,7 +491,7 @@ fibonacci (generic function with 1 method)
 Here, we first made some variable assignments, variables $n1$, $n2$ and $m$ were assigned values 0, 1 and 10. Variables are assigned simply by writing the name of the 
 variable followed by an 'equal' sign, and followed finally by the value you want to
 store in that variable. There is no need to declare the data type of the value you are going to store.
-Then, we defined the function body for the fibonacci series computation. Function blocks start with the *function* keyword, followed by the name of the function and the 
+Then, we defined the function body for the fibonacci series computation. Function blocks start with the `function` keyword, followed by the name of the function and the 
 arguments between brackets, all separated by commas. In this function, the arguments 
 will be the first two numbers of the sequence and the total length of the fibonacci 
 sequence. 
@@ -505,7 +505,7 @@ of integers. The new part is the one between parenthesis, ```julia (undef, m)```
 just means we are initializing the array with undefined values –which will be later modified by us–, and that there will be a number $m$ of them. Don't worry too much if 
 you don't understand all this right now, though.
 We then proceed to assign the two first elements of the sequence and calculate the 
-rest with a for loop. Finally, an *end* keyword is necessary at the end of the for loop and another one to end the definition of the function.
+rest with a for loop. Finally, an `end` keyword is necessary at the end of the for loop and another one to end the definition of the function.
 Evaluating our function in the variables $n1$, $n2$ and $m$ already defined, gives us:
 
 ```julia
@@ -729,7 +729,7 @@ Now that we have discussed the most important details of Julia's syntax, let's f
 
 # ╔═╡ d1ae60a8-544e-11eb-15b5-97188dc41aa8
 md"
-# **Julia's Ecosystem**: Basic plotting and manipulation of DataFrames
+# Julia's Ecosystem: Basic plotting and manipulation of DataFrames
 Julia's ecosystem is composed by a variety of libraries which focus on technical domains such as Data Science (DataFrames.jl, CSV.jl, JSON.jl), Machine Learning (MLJ.jl, Flux.jl, Turing.jl) and Scientific Computing (DifferentialEquations.jl), as well as more general purpose programming (HTTP.jl, Dash.jl). 
 We will now consider one of the libraries that will be accompanying us throughout the book to make visualizations, Plots.jl. 
 
@@ -755,7 +755,7 @@ Let's make a plot of the 10 first numbers in the fibonacci sequence. For this, w
 
 # ╔═╡ f453c7b0-544e-11eb-137c-1d027edb83e6
 md"
-The only really important argument of the scatter function in the example above is *sequence*, the first one, which tells the function what is the data we want to plot. The other arguments are just details to make the visualization prettier. Here we have used the *scatter* function because we want a discrete plot for our sequence. In case we wanted a continuous one, we could have used *plot()*. Let's see this applied to our fibonacci sequence:
+The only really important argument of the scatter function in the example above is *sequence*, the first one, which tells the function what is the data we want to plot. The other arguments are just details to make the visualization prettier. Here we have used the scatter function because we want a discrete plot for our sequence. In case we wanted a continuous one, we could have used `plot()`. Let's see this applied to our fibonacci sequence:
 "
 
 # ╔═╡ 03641078-544f-11eb-1dab-37614a0bdbc7
@@ -908,7 +908,7 @@ filter(col -> col[1] < 0.5, df)
 
 # ╔═╡ 94730e2a-5fdc-11eb-2939-0b1ec1283463
 md"
-A very usual application of dataframes is when dealing with CSV data. In case you are new to the term, CSV stands for **Comma Separated Values**. As the name indicates, 
+A very usual application of dataframes is when dealing with CSV data. In case you are new to the term, CSV stands for Comma Separated Values. As the name indicates, 
 these are files where each line is a data record, composed by values separated by 
 commas. In essence, a way to store tabular data. A lot of the datasets around the 
 internet are available in this format, and naturally, the DataFrame.jl package is well 
