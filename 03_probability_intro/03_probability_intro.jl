@@ -64,10 +64,10 @@ md"
 In this book, probability and statistics topics will be discussed extensively. 
 Mainly the Bayesian interpretation of probability and Bayesian statistics. 
 But we first need an intuitive conceptual basis to build on top of that. 
-We won't assume any prior knowledge, so let's start from the basics. 
+This chapter will build the foundations of probability theory, so we will assume minimal knowledge on the field and start from the basics.
 
 Probability is a mathematical field that aims to measure the uncertainty of a particular event happening or the degree of confidence about some statement or hypothesis.
-As any other mathematical field, probability has their own axioms and definitions that we will start seeing in this chapter.A main characteristic of probability is that it is substantially related to real word practice.
+As any other mathematical field, probability has its own axioms and definitions, and we will start learning them as we work through this chapter. An important feature of probability is how related it is to real world problems.
 It gains practical value and an intuitive meaning in connection with real or conceptual experiments.
 
 
