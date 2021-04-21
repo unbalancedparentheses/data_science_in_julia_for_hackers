@@ -67,11 +67,13 @@ But we first need an intuitive conceptual basis to build on top of that.
 This chapter will build the foundations of probability theory, so we will assume minimal knowledge on the field and start from the basics.
 
 Probability is a mathematical field that aims to measure the uncertainty of a particular event happening or the degree of confidence about some statement or hypothesis.
-As any other mathematical field, probability has its own axioms and definitions, and we will start learning them as we work through this chapter. An important feature of probability is how related it is to real world problems.
-It gains practical value and an intuitive meaning in connection with real or conceptual experiments.
-
+As any other mathematical field, probability has its own axioms and definitions, and we will start learning them as we work through this chapter. 
+An important feature of probability is how related it is to real world problems.
+The most fruitful probabilities fields are the ones that approach this kind of problem. 
+You can see them being used in almost every scientific discipline.
 
 Therefore, a nice way to introduce some of these concepts is by means of an experiment. Without further ado, let's get started.
+.
 "
 
 # ╔═╡ 37f8c246-9198-11eb-2c0b-71b3d3c4e3ee
@@ -99,26 +101,30 @@ The possible outputs of our experiment are:
 
 Notice that, since we don't care about the orden in which the balls are taken out, saying “Red and Green” is equal to “Green and Red”.
 
-For uniform terminology, we define each possible output of the experiment as a sample point, and the sample space as aggregate of all the possible outcomes of our experiment.
-In this example the sample space will contain 6 sample points.
+To establish some terminology, we will define each possible output of the experiment as a sample point or simply a sample, and sample space as the aggregate of all the possible outcomes of an experiment.
+
+In our example, the sample space will consist of a total of 6 sample points.
+This sample space can be thought schematically as a set containing all the possible sample points:
 
 Sample space = $\{(R,G), (R,B), (R,W), (G,B), (G,W), (B,W)\}$
 
-So, suppose we want to see all the cases in which the white ball was taken out, we can describe it as an aggregate of sample points.
+Suppose we wanted to know all the cases in which the white ball was taken out.
+This could be described as a subset of the sample space, the ones with the color white as one of the outcomes.
 
 
 “The white ball was taken” = $\{(R,W), (G,W), (B,W)\}$
 
-These observations about the experiment are called events.
-An event is defined as an aggregate of sample points and by convention, we use a capital letter to represent them:
+These subsets of the sample space are called events.
+There are as many events as possible subsets of the sample space, and they define everything we can expect from a given experiment. 
+They can be expressed in colloquial language, as we can see in the example above; the event 'The white ball was taken', corresponds to the subset ${(R,W), (G,W), (B,W)}$. 
+This is so because the three sample points have a white ball among their constituent colors, and they represent all the possible realizations of our experiment that make our event true.
+It is usual to denote an event by a capital letter, commonly near the start of the alphabet: A,B,C,….
 
-
+Other possible events associated with our experiment are,
 
 A = “The red wall was not taken” = $\{(G,B)(G,W)(B,W)\}$
 
 B = “The green and the blue ball were taken” = $\{(G,B)\}$
-
-
 
 
 ### Relation among events
@@ -161,7 +167,7 @@ imresize(load("images/venn-3.jpg"), (336, 400))
 
 # ╔═╡ d8e086b8-9241-11eb-33f2-03786ca67fa1
 md"
-Now let's take into play the event B.
+Now let's take into account the event B.
 The points $(G,W)$ and $(B,W)$ are both present in the events A and B, so we must represent them in this way:
 "
 
@@ -191,8 +197,12 @@ For this reason, events may still occur when we assign them probability $0$, and
 By definition, the probability of the entire sample space $S$ is unity, or $P\{S\} = 1$. 
 It follows that for any event $A$: $0 <P(A) <1$.
 
-In our experiment we can consider that all the sample points have the same probability of going out so we assign ⅙ to each point.
-Another way we can assign probabilities to each sample point is with the popular formula:
+In our experiment we can consider that all the sample points have the same realization probability, so we assign $\frac{1}{6}$ to each one.
+Of course, this is an assumption we make, considering that no ball has some distinctive property and that they are distributed randomly in the box.
+For example, if one of the balls had a rugged surface, the equal probabilities assumption would not hold.
+But let's keep it simple
+
+Since we consider that all the sample points have the same realization probability, another way we can assign probabilities to each one is with the popular formula:
 
 $P(A) = \frac{success \ cases} {total \ cases}$ 
 
@@ -239,8 +249,10 @@ md"""
 
 The notion of conditional probability is a basic tool of probability theory. 
 
-Let's put it in a formal way, $P(A|B)$ and $P(B|A)$, which reads as 'the conditional probability of A given B' and 'the conditional probability of B given A', are not equal. 
-The way to interpret this, for example $P(A|B)$, is: 'the probability of the event A happening, given that we know the event B occurred'. 
+Given two events A and B, the conditional probability of A given B, is noted as $P(A|B)$. 
+Similarly, the conditional probability of B given A is noted as $P(B|A)$.
+In general, these two probabilities need not to be equal.
+The way to interpret $P(A|B)$ is: 'the probability of the event A happening, given that we know the event B occurred'. 
 The analogous interpretation for $P(B|A)$ would be 'the probability of event B happening, given that we know the event A occurred'.
 Although it may sound as if this implies an order in the occurrence of the events, that isn't necessarily the case.
 What in reality has an actual order in this statement is our knowledge of what things happened.
@@ -261,7 +273,7 @@ Notice that, since we now B occurred we can truncate the sample space to the B e
 
 $P(A|B) = \frac{P(A \cap B)}{P(B)}$
 
-Lets see an example.
+Consider these two events,
 
 A = “I pick a red and a green ball”
 
@@ -279,7 +291,7 @@ $P(A|B) = \frac{P(A \cap B)}{P(B)}$
 
 $P(A|B) = \frac{1}{6} ÷ \frac{3}{6} = \frac{1}{3}$
 
-Now let's move on from our experiment.
+Now, let's conclude our experiment and delve into more interesting problems.
 """
 
 
@@ -288,6 +300,8 @@ md"
 ## Joint probability
 
 We refer to joint probability as the probability of two events occurring together and at the same time. 
+For two general events A and B, their joint probability is denoted: $P(A\text{ and }B)$
+
 Let's see how it works with an example.
 
 Imagine we want to study this two events:
@@ -303,7 +317,7 @@ That is the definition of independence in this context.
 
 In the language of probabilities, we can write a special property for independent events.
 
-$P(R and L) = P(R) * P(L)$
+$P(R\text{ and }L) = P(R) * P(L)$
 
 Colloquially, this means that the probability of both events “Today It will rain” and “The number 39 will win the lottery” happening together is equal to the product of each of the probabilities of each one happening individually.
  
@@ -315,7 +329,7 @@ R = “Today It will rain”
 
 H = “humidity will exceed 50%”
 
-If it is raining, there is a high probability that the humidity levels will rise, so the probability of humidity exceeding 50% will be affected.
+If it is raining, there is a high probability that the humidity levels will rise, so it is natural to think about this events as dependent.
 
 To calculate the joint probability of these two events, we use the formula,
 
@@ -338,11 +352,12 @@ Just like doing $2 + 3$ or $3 + 2$, the 'and' logical operator is commutative.
 # ╔═╡ 39a5328a-9267-11eb-2cb4-4181b250b0b8
 md"## Bayes theorem 
 
-With this concepts in mind we will now proceed to derive the famous Bayes' theorem
+With this concepts in mind we will now proceed to derive the famous Bayes' theorem.
 
 
 $P(B\text{ and }A) = P(B)P(A|B),$
 
+And putting all the pieces together, 
 
 $P(B)P(A|B) = P(A)P(B|A) \implies P(A|B) = \frac{P(A)P(B|A)}{P(B)}$
 
@@ -411,7 +426,7 @@ Here we represent the probability of receiving *x* spam mail in a day.
 The interpretation of this graph is pretty straightforward. 
 The probability of receiving 0 spam emails on a Monday is approximately 0.2, for 1 spam email is slightly higher than 0.3 and so on, we have the probability of each possible output.
 
-By replicating the code below in a Pluto notebook, you will be able to create sliders to play around with the values of μ and σ and see how the Poisson distribution changes.
+By replicating the code below in a Pluto notebook, you will be able to create sliders to play around with the value of $λ$  see how the Poisson distribution changes.
 
 "
 
@@ -425,7 +440,7 @@ bar(Poisson(λ), xlabel="x", ylabel="Probability", legend=false, size=(400, 300)
 
 # ╔═╡ e356a712-9624-11eb-15a9-49a7548e0b5b
 md"## Continuous cases
-Instead of a probability mass function, a continuous random variable has a probability density function.
+Instead of a probability mass function, a continuous variable has a probability density function.
 
 For example, consider the density probability of heights of adult women, given approximately by a Normal distribution,
 "
@@ -446,6 +461,11 @@ To not delve into complex definitions, we can think of the *x* label as a steel 
 If we want to know the mass of a specific segment we need to calculate the area below the curve of that segment (integrate the segment mathematically talking).
 Since we are using the probability density, instead of the mass what we obtain is the probability. 
 
+When we work with continuous variables it is pointless to talk about the probability of a single x value. 
+Think of it in a mathematical way, in a number line there are infinity points in between 0 and 0,01. 
+In this case, our continuous variable is women's height, since there are infinitely possible heights it has no sense to talk about the probability of a single height, like $P(6 in)$.
+
+Probability in the continuous case is always computed in an interval.
 For example, suppose we want to know the probability that a randomly selected woman measures between 60 and 65 inches.
 To know it we need to calculate the area under the density curve in the intervals x = [60,65].
 
@@ -476,7 +496,7 @@ The shape of this distribution is governed by two *parameters*, usually represen
 
 # ╔═╡ 4a6f2768-543e-11eb-1846-f9e35aa961d2
 md"
-By replicating the code below in a Pluto notebook, you will be able to create sliders to play around with the values of μ and σ and see how the shape of the  Normal distribution changes.
+Again, two sliders to change the values of $μ$ and $σ$ and see how the shape of the  Normal distribution changes.
 "
 
 # ╔═╡ 0ac3353a-543d-11eb-08fe-d35a4c0f0bbc
@@ -498,7 +518,7 @@ It is governed by only one parameter, $\alpha$, which basically represents the r
 
 # ╔═╡ 90c1b258-543e-11eb-3f8e-3f167fab2db0
 md"
-Again, a slider to change the value of the $α$ parameter of exponential distribution can be implemented if you replicate the code below. 
+One last slider to change the value of the $α$ parameter of exponential distribution can be implemented if you replicate the code below. 
 "
 
 # ╔═╡ 820e10b2-543e-11eb-3866-3b9fabe04884
