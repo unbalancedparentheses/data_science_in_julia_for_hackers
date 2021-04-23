@@ -300,15 +300,24 @@ md"
 ## Joint probability
 
 We refer to joint probability as the probability of two events occurring together and at the same time. 
-For two general events A and B, their joint probability is denoted: $P(A\text{ and }B)$
+For two general events A and B, their joint probability is denoted:
+ $P(A\text{ and }B)$
 
 Let's see how it works with an example.
 
-Imagine we want to study this two events:
+Imagine we want to calculate the probability of these two events occurring together and at the same time, denoted :$P(L\text{ and }R)$ 
 
 R = “Today It will rain”
 
 L = “The number 39 will win the lottery”
+
+To calculate the joint probability of these two events, we use the formula,
+
+$P(A\text{ and }B) = P(A)P(B|A)$
+
+For the events R and L:
+
+$P(R\text{ and }L) = P(R)P(L|R)$
 
 Let's analyze the nature of these events a little bit, are they related? 
 Technically, we can think everything in our planet is interconnected with everything else, but in practice, it is fair to assume these two events are pretty independent from one another.
@@ -317,24 +326,26 @@ That is the definition of independence in this context.
 
 In the language of probabilities, we can write a special property for independent events.
 
+$P(R|L) = P(R) \text{ either } P(L|R) = P(L)$
+
+replacing in the joint probability formula, 
+
 $P(R\text{ and }L) = P(R) * P(L)$
 
 Colloquially, this means that the probability of both events “Today It will rain” and “The number 39 will win the lottery” happening together is equal to the product of each of the probabilities of each one happening individually.
  
-When the events are not independent from one another, we can use the conditional probability of events we saw earlier.
 
-Now, lets study the joint probability of this two events:
+Now, lets study the joint probability of this two not independent events:
 
 R = “Today It will rain”
 
 H = “humidity will exceed 50%”
 
-If it is raining, there is a high probability that the humidity levels will rise, so it is natural to think about this events as dependent.
+If it is raining, there is a high probability that the humidity levels will rise, so it is natural to think about these events as dependent.
 
-To calculate the joint probability of these two events, we use the formula,
+To calculate the joint probability:
 
 $P(H\text{ and }R) = P(R)P(H|R)$
-
 
 In a more general way, for two arbitrary events A and B,
 
