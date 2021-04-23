@@ -1,5 +1,7 @@
 # Data Science in Julia for Hackers
 
+NOTE: We are about to migrate the book from a simple HTML generated with Pluto.jl to a bookdown version that let's you launch a Pluto.jl of each chapter.
+
 A book written by Federico Carrone, Herman Obst Demaestri and Mariano Nicolini, with a focus on applied knowledge and computational techniques,
 written in the Julia language.
 

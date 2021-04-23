@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.20
+# v0.12.21
 
 using Markdown
 using InteractiveUtils
@@ -21,38 +21,68 @@ begin
 	using Plots
 	using Distributions
 	
-	plot(Normal(64, 3), xlabel="Height (in)", ylabel="Probability", legend=false, size=(400, 300))
+	plot(Normal(64, 3), xlabel="Height (in)", ylabel="Probability density", legend=false, size=(400, 300))
 end
 
 # ╔═╡ e45d76d4-1250-11eb-14d7-c30fcb5a5b72
 begin
 	using CSV
 	using DataFrames
-	rain_data = CSV.read("/Users/lambda/Desktop/Julia/Libro/bayes_book/prob_intro/data/historico_precipitaciones.csv", DataFrame)
+	rain_data = CSV.read("data/historico_precipitaciones.csv", DataFrame)
 	colnames = ["Year", "Month", "mm", "Days"]
-	names!(rain_data, Symbol.(colnames))
+	rename!(rain_data, Symbol.(colnames))
 	
-	for i in 1:length(rain_data[:Month])
-		if rain_data[:Month][i] == "Enero" rain_data[:Month][i] = "January"
-		elseif rain_data[:Month][i] == "Febrero" rain_data[:Month][i] = "February"
-		elseif rain_data[:Month][i] == "Marzo" rain_data[:Month][i] = "March"
-		elseif rain_data[:Month][i] == "Abril" rain_data[:Month][i] = "April"
-		elseif rain_data[:Month][i] == "Mayo" rain_data[:Month][i] = "May"
-		elseif rain_data[:Month][i] == "Junio" rain_data[:Month][i] = "June" 
-		elseif rain_data[:Month][i] == "Julio" rain_data[:Month][i] = "July"  				elseif rain_data[:Month][i] == "Agosto" rain_data[:Month][i] = "August" 
-		elseif rain_data[:Month][i] == "Septiembre" rain_data[:Month][i] = "September" 
-		elseif rain_data[:Month][i] == "Octubre" rain_data[:Month][i] = "October"
-		elseif rain_data[:Month][i] == "Noviembre" rain_data[:Month][i] = "November"
-		elseif rain_data[:Month][i] == "Diciembre" rain_data[:Month][i] = "December"
+	for i in 1:length(rain_data[:,:Month])
+		if rain_data[i,:Month] == "Enero" rain_data[i,:Month] = "January"
+		elseif rain_data[i,:Month]== "Febrero" rain_data[i,:Month] = "February"
+		elseif rain_data[i,:Month] == "Marzo" rain_data[i,:Month] = "March"
+		elseif rain_data[i,:Month] == "Abril" rain_data[i,:Month] = "April"
+		elseif rain_data[i,:Month] == "Mayo" rain_data[i,:Month] = "May"
+		elseif rain_data[i,:Month] == "Junio" rain_data[i,:Month] = "June" 
+		elseif rain_data[i,:Month] == "Julio" rain_data[i,:Month] = "July"  				elseif rain_data[i,:Month]== "Agosto" rain_data[i,:Month] = "August" 
+		elseif rain_data[i,:Month] == "Septiembre" rain_data[i,:Month] = "September" 
+		elseif rain_data[i,:Month] == "Octubre" rain_data[i,:Month] = "October"
+		elseif rain_data[i,:Month] == "Noviembre" rain_data[i,:Month] = "November"
+		elseif rain_data[i,:Month] == "Diciembre" rain_data[i,:Month] = "December"
 		end
 	end
 end;
 
+# ╔═╡ b71a6256-8c1a-11eb-18d5-c52f6eb61247
+md"### To do list
+ 
+
+";
+
+
+# ╔═╡ 044ed4a0-8e49-11eb-1eca-71bb66552959
+md"### To do list
+ 
+We are currently working on:
+ 
+* Add description of sampling and Bayesian way of thinking [#47](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues/47).
+* Add appendix with mathematical definitions [#100](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues/100).
+* Distinguish between discrete and continues cases [#102](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues/102).
+* Improve definitions [#101](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues/101).
+* Improve the code to translate the name of the months [#103](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues/103).
+* Explain cumulative distribution function [#105](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues/105).
+
+"
+
+
 # ╔═╡ 84b10156-5116-11eb-1a6d-13f625300801
 md"
 # Introduction to Probability
-In this book, probability and statistics topics will be discussed extensively. Mainly the Bayesian interpretation of probability and Bayesian statistics. But we first need an intuitive conceptual basis to build on top of that. 
-We won't assume any prior knowledge, so let's start from the basics. What *is* probability? Probability is a measure of uncertainty of a particular event happening or the degree of confidence about some statement or hypothesis, that we express with a number ranging from $0$ to $1$. The number $0$ means we know with certainty that the event will not happen (or that the hypothesis is false), while the number $1$ means we know with certainty that the event will happen (or that the hypothesis is true). How exactly this number is linked to each event is something that is far from trivial and indeed is a discussion that has been going for years. Later on we will dive deeper into that rabbit hole, but for the moment lets not worry about how exactly this is defined or calculated: assume we have well established method for the time being. The important thing now will be the different rules that emerge from the nature of these events.
+
+In this book, probability and statistics topics will be discussed extensively.
+Mainly, the Bayesian interpretation of probability and Bayesian statistics. 
+But we first need an intuitive conceptual basis to build on top of. 
+We won't assume any prior knowledge, so let's start from the basics. What is probability? 
+Probability is a measure of uncertainty of a particular event happening or the degree of confidence about some statement or hypothesis, that we express with a number ranging from $0$ to $1$. 
+The number $0$ means we know with certainty that the event will not happen (or that the hypothesis is false), while the number $1$ means we know with certainty that the event will happen (or that the hypothesis is true). 
+How exactly this number is linked to each event is something that is far from trivial and indeed it's an open discussion that has been going for years. 
+Later on, we will dive deeper into that rabbit hole, but for the moment lets not worry about how exactly this is defined or calculated: assume we have a well established method for the time being. 
+What concerns us now are the different rules that emerge from the nature of these events.
 
 We can start reasoning about probabilities of events with an example. Say we know that the probability of raining today in Buenos Aires is $0.8$. In a more mathematical form, we can say that
 
@@ -74,16 +104,21 @@ $P(A|B)\text{ or }P(B|A)$
 In general, $P(A|B)$ and $P(B|A)$, which reads as 'the conditional probability of A given B' and 'the conditional probability of B given A',
 are not equal, that's why I have written the two possibilities. The way to interpret this, for example $P(A|B)$, is: 'the probability of the event A happening, *given* that we know the event B occurred'. The analogous interpretation for $P(B|A)$ would be 'the probability of event B happening, given that we know the event A occurred'. Although it may sound as if this implies an order in the occurrence of the events, that isn't necessary the case. What in reality has an actual order in this statement is our knowledge of what things happened. If we say, for example, $P(A|B)$, then what we know first is event B, and given this knowledge, we want to know the probability of event A.
 
-Let's see in a simple example how this conditional probability arises from two non-independent events. Assume we have, again, the event R 'it will rain today in Buenos Aires', and another event H, 'staying at home today'. Applying what we learned, we would first ask ourselves if these two events are independent or interdependent. If they were completely independent one from another, when trying to compute the conditional probabilities, for example $P(R|H)$, we will have
+Let's see how conditional probability works.
+Suppose the next event, where R stands for 'it will rain today in Buenos Aires' and V for 'the Mount Merapi volcano will erupt'. Since this two variables are completely independent one from another, when we compute the conditional probabilities, for example $P(V|R)$, we will have
 
-$P(R|H) = P(R)$
+$P(V|R) = P(V)$
 
-What this equation is telling us, is that the information that the event H happened, does not affect the probability of event R. That is the bare definition of independence! However, this only means the event R is independent from the event H. This does not automatically mean that the event H is independent of R. In fact, if we pay a little more attention to how these events relate one another, we have our answer.
-The probability of raining today in Buenos Aires won't change by the fact I stay at home or not. I can't change the climate, at least in that direct way. So effectively, $P(R|H) = P(R)$ is correct. But what if we invert the events? In this case, if we think about it for a second we will notice that
+What this equation is telling us, is that the information that the event R happened, does not affect the probability of event V. That is the definition of independence! 
+
+Now let's consider another event H, 'I am staying at home today'. Since I live in Buenos Aires and like to stay home on rainy days.
 
 $P(H|R) \neq P(H)$
 
-Indeed, if we know that it is raining, the probability of staying at home should be affected! In my case, I would much prefer to stay at home, so that probability will be higher. 
+Indeed, if it is raining, the probability of me staying at home is affected! 
+It will be higher. 
+
+
 At this point, we would state a formula that relates conditional probability and conjoint probability. For two general events A and B, this is
 
 $P(A\text{ and }B) = P(A)P(B|A)$
@@ -137,23 +172,35 @@ This may sound a bit confusing at first, but if you look closely for some time a
 
 It is interesting to give a little more detail on the epistemological interpretation of this entire theorem. We start from some initial hypothesis and we assign some probability to it (the Prior). How exactly this has to be done is uncertain, in fact, there are ways to encode that you don't know nothing about the validity of the hypothesis. But the important part is that, if you already knew something about it, you can include that in your priors. For example, if you are trying to estimate some parameter that you know is positive definite, then you can use priors that are defined only for positive values. From that starting point, then, you have a methodical way to update your beliefs by collecting data, and with this data, give rise to the Posterior probability, which hopefully will be more accurate than our Prior probability. 
 What is nice about the Bayesian framework is that we always account for the uncertainty of the world. We start with some probability and end with another probability, but uncertainty is always present. This is what real life is about.
-To understand the full power of Bayesian probability we have to extend the notion of probability to *probability distributions*. We will discuss this topic in the following section.
+To understand the full power of Bayesian probability we have to extend the notion of probability to *probability density*. We will discuss this topic in the following section.
 "
 
 # ╔═╡ 2d9482ce-1252-11eb-0cc7-35ad9c288ef8
 md"
-# Probability distributions
-So far we have been talking of probabilities of particular events. **Probability distributions**, on the other hand, help us compute probabilities of various events. These are functions that connect each event in an 'event space' to some probability. What do we mean by 'event space'? For example, consider the distribution of heights of adult women, given approximately by a **Normal distribution**,
+# Probability density
+So far, we have been talking of probabilities of particular events.
+Probability density, on the other hand, help us compute probabilities of various events.
+These are functions that connect each event in an 'event space' to some probability. What do we mean by 'event space'? For example, consider the density probability of heights of adult women, given approximately by a **Normal distribution**,
 "
 
 # ╔═╡ 351923ee-5436-11eb-2bf6-8d024a64e83e
 md"
-In this example, the event space is just all the possible heights a woman could have, in other words, the 'x' axis. The 'y' axis, in the other hand, represents the probability that, if we select a woman randomly, she will have a given height. For example, the probability that a randomly selected woman will be 60 inches tall is approximately $0.06$. Having a distribution, one can ask questions like 'what is the probability of a randomly selected woman being 60 inches or taller?'. This could be answered by summing the probabilities of all heights 60 and up.
 
-Any mathematical function satisfying certain requirements can be a probability distribution. There are lots of these type of functions, and each one has its own shape and distinctive properties.
+In this example, the event space is just all the possible heights a woman could have, in other words, the *x* axis.
+The *y* axis, on the other hand, represents the probability density.
 
-We will introduce some important probability distributions so that you can have a better understanding of what all this is about. Probably, the concept of the Normal distribution –also referred as the Gaussian– was already familiar to you, as it is one of the most popular and widely used distributions in some fields and in popular culture. The shape of this distribution is governed by two *parameters*, usually represented by the Greek letters $\mu$ and $\sigma$. Roughly speaking, $\mu$ is associated with the center of the distribution and $\sigma$ with how wide it is. 
-"
+To avoid delving into complex definitions, we can think of the *x* label as a steel bar and the *y* label the density of each infinitesimal point of the bar.
+If we want to know the mass of a specific segment we need to calculate the area below the curve of that segment (integrate the segment mathematically talking).
+Since we are using the probability density, instead of the mass what we obtain is the probability. 
+
+For example, suppose we want to know the probability that a randomly selected woman measures between 60 and 65 inches.
+To know it we need to calculate the area under the density curve in the intervals x = [60,65].
+
+Keep in mind, that the *x* label contains all possible events, in this case all possible woman´s heights, so the area below the curve of all the *x* label is equal to 1.
+
+Any mathematical function satisfying certain requirements can be a probability density. There are lots of these type of functions, and each one has its own shape and distinctive properties.
+
+We will introduce some important probability density functions so that you can have a better understanding of what all this is about. Probably, the concept of the Normal distribution –also refered as the Gaussian– was already familiar to you, as it is one of the most popular and widely used distributions in some fields and in popular culture. The shape of this distribution is governed by two *parameters*, usually represented by the Greek letters $\mu$ and $\sigma$. Roughly speaking, $\mu$ is associated with the center of the distribution and $\sigma$ with how wide it is. 
 
 # ╔═╡ 4a6f2768-543e-11eb-1846-f9e35aa961d2
 md"
@@ -171,7 +218,7 @@ plot(Normal(μ,σ), xlabel="x", ylabel="P(x)", lw=4, color="purple", label=false
 
 # ╔═╡ 6db26aa0-543e-11eb-3258-27c7b15323fb
 md" 
-Every probability distribution that is defined by a mathematical function, has a set of parameters that defines the distribution's shape and behaviour, and changing them will influence the distribution in different ways, depending on the one we are working with. 
+Every probability density that is defined by a mathematical function, has a set of parameters that defines the distribution's shape and behaviour, and changing them will influence the distribution in different ways, depending on the one we are working with. 
 
 Another widely used distribution is the *exponential*. Below you can see how it looks like. It is governed by only one parameter, $\alpha$, which basically represents the rate of decrease in probability as $x$ gets bigger. 
 "
@@ -210,7 +257,7 @@ Now plotting the histogram for the column of rainfall in mm we have the figure s
 
 # ╔═╡ 14317216-1251-11eb-1912-ef5685acd473
 begin
-	histogram(rain_data["mm"], bins=20, legend=false, size=(450, 300))
+	histogram(rain_data[:,"mm"], bins=20, legend=false, size=(450, 300))
 	title!("Monthly rainfall in Buenos Aires")
 	xlabel!("Rainfall (mm)")
 	ylabel!("Frequency")
@@ -218,13 +265,16 @@ end
 
 # ╔═╡ c770092e-12e6-11eb-0711-0196e27d573e
 md"
-Histograms can be interpreted as probability distributions. The reason behind this is because we have registered some total number $N$ of events that happened in some time interval (in this case, one month) and we grouped the number of times each one occurred. In this line of reasoning, events that happened most are more likely to happen, and hence we can say they have a higher probability associated to them. Something important to consider about histograms when dealing with a continuous variable such as, in our case, millimeters of monthly rainfall, are *bins* and bin size. When working with such continuous variables, the domain in which our data expresses itself (in this case, from 0 mm to approximately 450 mm) is divided in discrete intervals. In this way, given a bin size of 20mm, when constructing our histogram we have to ask 'how many rainy days have given us a precipitation measurement between 100mm and 120mm?', and then we register that number in that bin. This process is repeated for all bins to obtain our histogram.
-We have earlier said that probability has to be a number between 0 and 1, so how can it be that these relative frequencies are linked to probabilities? What we should do now is to *normalize* our histogram to have the frequency values constrained. Normalizing is just the action of adjusting the scale of variables, without changing the relative values of our data. Below we show the normalized histogram. You will notice that the frequency values are very low now. The reason for this is that when normalizing, we impose to our histogram data that the sum of the counts of all our events (or, thinking graphically, the total area of the histogram) must be 1. But why? As probability tell us how plausible is an event, if we take into account all the events, we expect that the probability of all those events to be the maximum value, and that value is set up to 1 by convention. In that way we can compare plausibilities across different events, therefore when we say that some event has a probability of 0.6 to occur, for any event it means the same, no matter if we are talking about the probability of raining or the probability of being hit by a car.
+
+Histograms can be interpreted as an approximation of the probability density function. The reason behind this is that we have registered some total number $N$ of events that happened in some time interval (in this case, one month) and we grouped the number of times each one ocurred. 
+In this line of reasoning, events that we have observed more times are more likely to happen, and hence we can say they have a higher probability associated to them. Something important about histograms we need to consider when dealing with a continuous variable (such as, in our case, milimeters of monthly rainfall) are bins and bin size. When working with such continuous variables, the domain of our data (in this case, from 0 mm to approximately 450 mm) is divided in discrete intervals. In this way, given a bin size of 20mm, when constructing our histogram we have to ask 'how many rainy days have given us a precipitation measurement between 100mm and 120mm?', and then we register that number in that bin. This process is repeated for all bins to obtain our histogram.
+Earlier, we said that probability has to be a number between 0 and 1, so how can it be that these relative frequencies are linked to probabilities? What we should do now is to *normalize* our histogram to have the frequency values constrained. Normalizing is just the action of adjusting the scale of variables, without changing the relative values of our data. Below we show the normalized histogram. You will notice that the frequency values are very low now. The reason for this is that when normalizing, we impose to our histogram data that the sum of the counts of all our events (or, thinking graphically, the total area of the histogram) must be 1. But why? As probability tell us how plausible is an event, if we take into account all the events, we expect that the probability of all those events to be the maximum value, and that value is 1 by convention. In that way we can compare plausibilities across different events, therefore when we say that some event has a probability of 0.6 to occur, for any event it means the same, no matter if we are talking about the probability of raining or the probability of being hit by a car.
+
 So, we normalize the histogram obtaining:"
 
 # ╔═╡ 178f5f72-12e7-11eb-2282-c19f2b58ae58
 begin
-	histogram(rain_data["mm"], bins=20, legend=false, normalize=true, size=(450, 300))
+	histogram(rain_data[:,"mm"], bins=20, legend=false, normalize=true, size=(450, 300))
 	title!("Monthly rainfall in Buenos Aires")
 	xlabel!("Rainfall [mm]")
 	ylabel!("Frequency")
@@ -242,12 +292,12 @@ I'm making some assumptions that are often implied working with histograms and m
 
 # ╔═╡ cc3a3236-1949-11eb-3021-3d5a81bfa6a6
 md"
-So far we have been talking about histograms as probability distributions. Distributions such as these, that are built from the outcome of an experiment are called *empirical* distributions. This means that they arise from direct measurements, not from an underlying analytical function. When dealing with most real-world examples, histograms will represent distributions we will obtain for our updated beliefs, so they are a really important concept for what will come in the book.
+So far we have been talking about histograms as probability density functions. Distributions such as these, that are built from the outcome of an experiment are called *empirical* distributions. This means that they arise from direct measurements, not from an underlying analytical function. When dealing with most real-world examples, histograms will represent distributions we will obtain for our updated beliefs, so they are a really important concept for what will come in the book.
 "
 
 # ╔═╡ d1aade6e-550d-11eb-1eea-7751ef152b7a
 md"
-All the concepts we developed about probability distributions, are directly applied to our Bayesian formalism. The prior, likelihood and posterior probabilities are really *probability distributions*, and that is really how we treat Bayes' theorem mathematically and computationally.
+All the concepts we developed about probability density, are directly applied to our Bayesian formalism. The prior, likelihood and posterior probabilities are really *probability densities*, and that is really how we treat Bayes' theorem mathematically and computationally.
 "
 
 # ╔═╡ 3b8ea6fc-54f1-11eb-0a00-3f465d1f2d22
@@ -397,6 +447,19 @@ md"
 Considering that we have only tried 100 times, the probabilities have been estimated pretty well! Each distribution assigns a high-enough probability to the true value of the bandit probabilities and it's surroundings. Another strategies rather than the Thompson sampling can be tested to see how well they perform, this was just a simple example to apply Bayesian probability.
 "
 
+# ╔═╡ 1b4c0804-82b3-11eb-208c-a1fac34852cf
+md"
+### Summary
+In this chapter, we introduced the basic concepts of probability.
+We talked about the probability of independent events and about conditional probability, which led us to Bayes' theorem.
+
+Then, we addressed the two main approaches to probability: the frequentist approach and the Bayesian one, where our initial beliefs can be updated with the addition of new data.
+We also learned what a probability distribution is, we went over a few examples and saw why Bayesians use them to represent probability.
+
+Finally, we saw the multi-armed bandit problem in which we have a limited amount of resources and must allocate them among competing alternatives to infer the one with the highest probability of success.
+To solve it, we constructed a Bayesian model using the Thompson sampling algorithm.
+"
+
 # ╔═╡ 32df0e98-35a2-11eb-1121-5f731785abbb
 md"
 ### References
@@ -410,7 +473,27 @@ md"
 * [Bandit Algs page](https://banditalgs.com/)
 "
 
+# ╔═╡ 394ddf0a-8c1b-11eb-05da-13d28342df75
+md" ### Give us feedback
+ 
+ 
+This book is currently in a beta version. We are looking forward to getting feedback and criticism:
+  * Submit a GitHub issue **[here](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues)**.
+  * Mail us to **martina.cantaro@lambdaclass.com**
+ 
+Thank you!
+"
+
+
+# ╔═╡ 4b235516-8c1b-11eb-012e-6d76290f3f27
+md"
+[Next chapter](https://datasciencejuliahackers.com/04_naive_bayes.jl.html)
+"
+
+
 # ╔═╡ Cell order:
+# ╟─b71a6256-8c1a-11eb-18d5-c52f6eb61247
+# ╟─044ed4a0-8e49-11eb-1eca-71bb66552959
 # ╟─84b10156-5116-11eb-1a6d-13f625300801
 # ╟─2d9482ce-1252-11eb-0cc7-35ad9c288ef8
 # ╠═e6ecfce4-54e5-11eb-2ff6-3bb479c286af
@@ -432,7 +515,7 @@ md"
 # ╟─be8cb9ee-1483-11eb-1637-f3770319f3ed
 # ╠═14317216-1251-11eb-1912-ef5685acd473
 # ╟─c770092e-12e6-11eb-0711-0196e27d573e
-# ╟─178f5f72-12e7-11eb-2282-c19f2b58ae58
+# ╠═178f5f72-12e7-11eb-2282-c19f2b58ae58
 # ╟─6a45327a-1254-11eb-2334-07eb5a961b02
 # ╟─cc3a3236-1949-11eb-3021-3d5a81bfa6a6
 # ╟─d1aade6e-550d-11eb-1eea-7751ef152b7a
@@ -458,4 +541,7 @@ md"
 # ╠═c822a558-54f1-11eb-162b-398bd542ded1
 # ╠═e3b582b0-54f1-11eb-3ffa-67a92240e659
 # ╟─0d541d38-59a5-11eb-3404-f13d3e5150d4
-# ╠═32df0e98-35a2-11eb-1121-5f731785abbb
+# ╟─1b4c0804-82b3-11eb-208c-a1fac34852cf
+# ╟─32df0e98-35a2-11eb-1121-5f731785abbb
+# ╟─394ddf0a-8c1b-11eb-05da-13d28342df75
+# ╟─4b235516-8c1b-11eb-012e-6d76290f3f27
