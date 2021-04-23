@@ -118,7 +118,7 @@ These subsets of the sample space are called events.
 There are as many events as possible subsets of the sample space, and they define everything we can expect from a given experiment. 
 They can be expressed in colloquial language, as we can see in the example above; the event 'The white ball was taken', corresponds to the subset ${(R,W), (G,W), (B,W)}$. 
 This is so because the three sample points have a white ball among their constituent colors, and they represent all the possible realizations of our experiment that make our event true.
-It is usual to denote an event by a capital letter, commonly near the start of the alphabet: A,B,C,….
+We use capital letters to denote events
 
 Other possible events associated with our experiment are,
 
@@ -269,7 +269,7 @@ imresize(load("images/venn-4.jpg"), (336, 400))
 # ╔═╡ e33850ee-9234-11eb-2161-1b207ba6bb12
 md"""
 
-Notice that, since we now B occurred we can truncate the sample space to the B event, and now calculate the probability of A.
+Notice that, since we know B occurred we can truncate the sample space to the B event, and now calculate the probability of A.
 
 $P(A|B) = \frac{P(A \cap B)}{P(B)}$
 
