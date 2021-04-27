@@ -7,8 +7,8 @@
 ---
 
 There are two ways in which you can read this book:
-1. From our web page https://datasciencejuliahackers.com/
-2. If you prefer a dynamic version of the book, you can download the [GitHub repo](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers) and run the .jl files in a Pluto notebook
+ * From our web page https://datasciencejuliahackers.com/
+ * If you prefer a dynamic version of the book, you can download the [GitHub repo](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers) and run the .jl files in a Pluto notebook
 
 A PDF version will also be available soon.
 
