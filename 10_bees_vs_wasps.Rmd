@@ -1,6 +1,6 @@
+# (PART)  Deep Learning {.unnumbered}
 # Image classification
 
-# {TITLE}
 
 ```{julia, echo=FALSE}
 cd("./10_bees_vs_wasps/") 
