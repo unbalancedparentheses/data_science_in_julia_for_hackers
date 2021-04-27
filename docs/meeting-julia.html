@@ -172,7 +172,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="part"><span><b>II Bayesian Statistics</b></span></li>
 <li class="chapter" data-level="3" data-path="probability-introduction.html"><a href="probability-introduction.html"><i class="fa fa-check"></i><b>3</b> Probability introduction</a></li>
-<li class="chapter" data-level="4" data-path="spam-filter.html"><a href="spam-filter.html"><i class="fa fa-check"></i><b>4</b> Spam filter</a></li>
+<li class="chapter" data-level="4" data-path="spam-filter.html"><a href="spam-filter.html"><i class="fa fa-check"></i><b>4</b> Spam filter</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="spam-filter.html"><a href="spam-filter.html#naive-bayes-spam-or-ham"><i class="fa fa-check"></i><b>4.1</b> Naive Bayes: Spam or Ham?</a></li>
+<li class="chapter" data-level="4.2" data-path="spam-filter.html"><a href="spam-filter.html#summary-1"><i class="fa fa-check"></i><b>4.2</b> Summary</a></li>
+<li class="chapter" data-level="4.3" data-path="spam-filter.html"><a href="spam-filter.html#references-2"><i class="fa fa-check"></i><b>4.3</b> References</a></li>
+<li class="chapter" data-level="4.4" data-path="spam-filter.html"><a href="spam-filter.html#give-us-feedback-1"><i class="fa fa-check"></i><b>4.4</b> Give us feedback</a></li>
+</ul></li>
 <li class="chapter" data-level="5" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html"><i class="fa fa-check"></i><b>5</b> Probabilistic programming</a></li>
 <li class="chapter" data-level="6" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html"><i class="fa fa-check"></i><b>6</b> Escaping from Mars</a></li>
 <li class="chapter" data-level="7" data-path="football-simulation.html"><a href="football-simulation.html"><i class="fa fa-check"></i><b>7</b> Football simulation</a></li>
@@ -778,7 +784,7 @@ We will plot the first ten numbers of the fibonacci sequence using the <code>sca
 <span id="cb51-5"><a href="meeting-julia.html#cb51-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb51-6"><a href="meeting-julia.html#cb51-6" aria-hidden="true" tabindex="-1"></a>    scatter(sequence<span class="op">,</span> xlabel<span class="op">=</span><span class="st">&quot;n&quot;</span><span class="op">,</span> ylabel<span class="op">=</span><span class="st">&quot;Fibonacci(n)&quot;</span><span class="op">,</span> color<span class="op">=</span><span class="st">&quot;purple&quot;</span><span class="op">,</span> label<span class="op">=</span><span class="ex">false</span><span class="op">,</span> size<span class="op">=</span>(<span class="fl">450</span><span class="op">,</span> <span class="fl">300</span>))</span>
 <span id="cb51-7"><a href="meeting-julia.html#cb51-7" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
-<p><img src="data_science_in_julia_for_hackers_files/figure-html/unnamed-chunk-2-J1.png" /><!-- --></p>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_2_plot_1-J1.png" /><!-- --></p>
 <div id="plotting-with-plots.jl" class="section level3" number="2.5.1">
 <h3><span class="header-section-number">2.5.1</span> Plotting with Plots.jl</h3>
 <p>Let’s make a plot of the 10 first numbers in the fibonacci sequence.
@@ -789,12 +795,12 @@ Here we have used the scatter function because we want a discrete plot for our s
 In case we wanted a continuous one, we could have used <code>plot()</code>.
 Let’s see this applied to our fibonacci sequence:</p>
 <div class="sourceCode" id="cb52"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb52-1"><a href="meeting-julia.html#cb52-1" aria-hidden="true" tabindex="-1"></a>plot(sequence<span class="op">,</span> xlabel<span class="op">=</span><span class="st">&quot;x&quot;</span><span class="op">,</span> ylabel<span class="op">=</span><span class="st">&quot;Fibonacci&quot;</span><span class="op">,</span> linewidth<span class="op">=</span><span class="fl">3</span><span class="op">,</span> label<span class="op">=</span><span class="ex">false</span><span class="op">,</span> color<span class="op">=</span><span class="st">&quot;green&quot;</span><span class="op">,</span> size<span class="op">=</span>(<span class="fl">450</span><span class="op">,</span> <span class="fl">300</span>))</span></code></pre></div>
-<p><img src="data_science_in_julia_for_hackers_files/figure-html/unnamed-chunk-3-J1.png" /><!-- --></p>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_2_plot_2-J1.png" /><!-- --></p>
 <div class="sourceCode" id="cb53"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb53-1"><a href="meeting-julia.html#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
 <span id="cb53-2"><a href="meeting-julia.html#cb53-2" aria-hidden="true" tabindex="-1"></a>    plot(sequence<span class="op">,</span> xlabel<span class="op">=</span><span class="st">&quot;x&quot;</span><span class="op">,</span> ylabel<span class="op">=</span><span class="st">&quot;Fibonacci&quot;</span><span class="op">,</span> linewidth<span class="op">=</span><span class="fl">3</span><span class="op">,</span> label<span class="op">=</span><span class="ex">false</span><span class="op">,</span> color<span class="op">=</span><span class="st">&quot;green&quot;</span><span class="op">,</span> size<span class="op">=</span>(<span class="fl">450</span><span class="op">,</span> <span class="fl">300</span>))</span>
 <span id="cb53-3"><a href="meeting-julia.html#cb53-3" aria-hidden="true" tabindex="-1"></a>    scatter<span class="op">!</span>(sequence<span class="op">,</span> label<span class="op">=</span><span class="ex">false</span><span class="op">,</span> color<span class="op">=</span><span class="st">&quot;purple&quot;</span><span class="op">,</span> size<span class="op">=</span>(<span class="fl">450</span><span class="op">,</span> <span class="fl">300</span>))</span>
 <span id="cb53-4"><a href="meeting-julia.html#cb53-4" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
-<p><img src="data_science_in_julia_for_hackers_files/figure-html/unnamed-chunk-4-J1.png" /><!-- --></p>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_2_plot_3-J1.png" /><!-- --></p>
 <p>In the example above, a plot is created when we call the <code>plot()</code> function.
 What the <code>scatter!()</code> call then does, is to modify the global state of the plot in-place.
 If not done this way, both plots wouldn’t be sketched together.</p>
@@ -814,14 +820,14 @@ If you have already coded in Python, you will feel familiar with this plotting b
 <span id="cb54-3"><a href="meeting-julia.html#cb54-3" aria-hidden="true" tabindex="-1"></a>    plot(sequence<span class="op">,</span> xlabel<span class="op">=</span><span class="st">&quot;x&quot;</span><span class="op">,</span> ylabel<span class="op">=</span><span class="st">&quot;Fibonacci&quot;</span><span class="op">,</span> linewidth<span class="op">=</span><span class="fl">3</span><span class="op">,</span> label<span class="op">=</span><span class="ex">false</span><span class="op">,</span> color<span class="op">=</span><span class="st">&quot;green&quot;</span><span class="op">,</span> size<span class="op">=</span>(<span class="fl">450</span><span class="op">,</span> <span class="fl">300</span>))</span>
 <span id="cb54-4"><a href="meeting-julia.html#cb54-4" aria-hidden="true" tabindex="-1"></a>    scatter<span class="op">!</span>(sequence<span class="op">,</span> label<span class="op">=</span><span class="ex">false</span><span class="op">,</span> color<span class="op">=</span><span class="st">&quot;purple&quot;</span><span class="op">,</span> size<span class="op">=</span>(<span class="fl">450</span><span class="op">,</span> <span class="fl">300</span>))</span>
 <span id="cb54-5"><a href="meeting-julia.html#cb54-5" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
-<p><img src="data_science_in_julia_for_hackers_files/figure-html/unnamed-chunk-5-J1.png" /><!-- --></p>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_2_plot_4-J1.png" /><!-- --></p>
 <p>Analogously, we can use the <code>plotlyjs</code> backend, which is specially suited for interactivity.</p>
 <div class="sourceCode" id="cb55"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb55-1"><a href="meeting-julia.html#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
 <span id="cb55-2"><a href="meeting-julia.html#cb55-2" aria-hidden="true" tabindex="-1"></a>    plotlyjs()</span>
 <span id="cb55-3"><a href="meeting-julia.html#cb55-3" aria-hidden="true" tabindex="-1"></a>    plot(sequence<span class="op">,</span> xlabel<span class="op">=</span><span class="st">&quot;x&quot;</span><span class="op">,</span> ylabel<span class="op">=</span><span class="st">&quot;Fibonacci&quot;</span><span class="op">,</span> linewidth<span class="op">=</span><span class="fl">3</span><span class="op">,</span> label<span class="op">=</span><span class="ex">false</span><span class="op">,</span> color<span class="op">=</span><span class="st">&quot;green&quot;</span><span class="op">,</span> size<span class="op">=</span>(<span class="fl">450</span><span class="op">,</span> <span class="fl">300</span>))</span>
 <span id="cb55-4"><a href="meeting-julia.html#cb55-4" aria-hidden="true" tabindex="-1"></a>    scatter<span class="op">!</span>(sequence<span class="op">,</span> label<span class="op">=</span><span class="ex">false</span><span class="op">,</span> color<span class="op">=</span><span class="st">&quot;purple&quot;</span><span class="op">,</span> size<span class="op">=</span>(<span class="fl">450</span><span class="op">,</span> <span class="fl">300</span>))</span>
 <span id="cb55-5"><a href="meeting-julia.html#cb55-5" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
-<p><img src="data_science_in_julia_for_hackers_files/figure-html/unnamed-chunk-6-J1.png" /><!-- --></p>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_2_plot_5-J1.png" /><!-- --></p>
 <p>Each of these backends has its own scope, so there may be plots that one backend can do that other can’t.
 For example, 3D plots are not supported for all backends.
 The details are well explained in the Julia documentation.
@@ -1053,7 +1059,7 @@ It is more efficient to display the finished plot when the loop is over than to 
 <span id="cb85-9"><a href="meeting-julia.html#cb85-9" aria-hidden="true" tabindex="-1"></a>    title<span class="op">!</span>(<span class="st">&quot;Flower features&quot;</span>)</span>
 <span id="cb85-10"><a href="meeting-julia.html#cb85-10" aria-hidden="true" tabindex="-1"></a>    current()</span>
 <span id="cb85-11"><a href="meeting-julia.html#cb85-11" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
-<p><img src="data_science_in_julia_for_hackers_files/figure-html/unnamed-chunk-22-J1.png" /><!-- --></p>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_2_plot_6-J1.png" /><!-- --></p>
 </div>
 </div>
 <div id="summary" class="section level2" number="2.6">

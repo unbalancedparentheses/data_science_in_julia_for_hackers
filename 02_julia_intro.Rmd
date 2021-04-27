@@ -794,7 +794,7 @@ There are some other great packages like Gadfly.jl and VegaLite.jl, but Plots wi
 Let's import the library with the 'using' keyword and start making some plots.
 We will plot the first ten numbers of the fibonacci sequence using the `scatter()` function.
 
-```{julia}
+```{julia chap_2_plot_1}
 begin
 	using Plots
 	
@@ -815,12 +815,12 @@ Here we have used the scatter function because we want a discrete plot for our s
 In case we wanted a continuous one, we could have used `plot()`.
 Let's see this applied to our fibonacci sequence:
 
-```{julia}
+```{julia chap_2_plot_2}
 plot(sequence, xlabel="x", ylabel="Fibonacci", linewidth=3, label=false, color="green", size=(450, 300))
 
 ```
 
-```{julia}
+```{julia chap_2_plot_3}
 begin
 	plot(sequence, xlabel="x", ylabel="Fibonacci", linewidth=3, label=false, color="green", size=(450, 300))
 	scatter!(sequence, label=false, color="purple", size=(450, 300))
@@ -844,7 +844,7 @@ Through the book we will be focusing on the `GR`backend, but as a demonstration 
 The only thing added to the code for plotting that we have already used, is the `pyplot()` call to change the backend.
 If you have already coded in Python, you will feel familiar with this plotting backend.
 
-```{julia}
+```{julia chap_2_plot_4}
 begin
 	pyplot()
 	plot(sequence, xlabel="x", ylabel="Fibonacci", linewidth=3, label=false, color="green", size=(450, 300))
@@ -855,7 +855,7 @@ end
 
 Analogously, we can use the `plotlyjs` backend, which is specially suited for interactivity.
 
-```{julia}
+```{julia chap_2_plot_5}
 begin
 	plotlyjs()
 	plot(sequence, xlabel="x", ylabel="Fibonacci", linewidth=3, label=false, color="green", size=(450, 300))
@@ -1042,7 +1042,7 @@ You may be wondering why this is necessary.
 Notice that all the plotting happens inside a loop, hence the plotting iterations are not displayed.
 It is more efficient to display the finished plot when the loop is over than to update each plot as it overwrites the previous one.
 
-```{julia}
+```{julia chap_2_plot_6}
 begin
 	gr()
 	plot()
