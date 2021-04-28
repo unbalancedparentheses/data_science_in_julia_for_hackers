@@ -1,7 +1,5 @@
 ---
 title: "Data Science in Julia for Hackers"
-author: "Lambdaclass"
-date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
