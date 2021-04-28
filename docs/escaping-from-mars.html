@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 6 Escaping from Mars | Data Science in Julia for Hackers</title>
+  <meta name="description" content="Chapter 6 Escaping from Mars | Data Science in Julia for Hackers" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 6 Escaping from Mars | Data Science in Julia for Hackers" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Chapter 6 Escaping from Mars | Data Science in Julia for Hackers" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 6 Escaping from Mars | Data Science in Julia for Hackers" />
+  
+  <meta name="twitter:description" content="Chapter 6 Escaping from Mars | Data Science in Julia for Hackers" />
+  
+
+<meta name="author" content="Lambdaclass" />
+
+
+<meta name="date" content="2021-04-27" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="probabilistic-programming.html"/>
+<link rel="next" href="football-simulation.html"/>
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+  <li><a href="./">Data Science in Julia for Hackers</a></li>
+
+  <li class="divider"></li>
+  <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a>
+  <ul>
+  <li class="chapter" data-level="" data-path="index.html"><a href="index.html#prologue"><i class="fa fa-check"></i>Prologue</a></li>
+  <li class="chapter" data-level="" data-path="index.html"><a href="index.html#table-of-contents"><i class="fa fa-check"></i>Table of contents</a>
+  <ul>
+  <li class="chapter" data-level="" data-path="index.html"><a href="index.html#part-i-data-science-and-julia"><i class="fa fa-check"></i>Part I: Data Science and Julia</a></li>
+  <li class="chapter" data-level="" data-path="index.html"><a href="index.html#part-ii-bayesian-statistics"><i class="fa fa-check"></i>Part II: Bayesian Statistics</a></li>
+  <li class="chapter" data-level="" data-path="index.html"><a href="index.html#part-iii-machine-learning"><i class="fa fa-check"></i>Part III: Machine Learning</a></li>
+  <li class="chapter" data-level="" data-path="index.html"><a href="index.html#part-iv-deep-learning"><i class="fa fa-check"></i>Part IV: Deep Learning</a></li>
+  <li class="chapter" data-level="" data-path="index.html"><a href="index.html#part-v-scientific-machine-learning"><i class="fa fa-check"></i>Part V: Scientific Machine Learning</a></li>
+  <li class="chapter" data-level="" data-path="index.html"><a href="index.html#part-vi-time-series-and-forecasting"><i class="fa fa-check"></i>Part VI: Time Series and Forecasting</a></li>
+  </ul></li>
+  </ul></li>
+  <li class="part"><span><b>I Data Science and Julia</b></span></li>
+  <li class="chapter" data-level="1" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html"><i class="fa fa-check"></i><b>1</b> Science technology and epistemology</a>
+  <ul>
+  <li class="chapter" data-level="1.1" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#the-difference-between-science-and-technology"><i class="fa fa-check"></i><b>1.1</b> The difference between Science and Technology</a></li>
+  <li class="chapter" data-level="1.2" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#what-is-technology"><i class="fa fa-check"></i><b>1.2</b> What is technology?</a></li>
+  <li class="chapter" data-level="1.3" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#references"><i class="fa fa-check"></i><b>1.3</b> References</a></li>
+  </ul></li>
+  <li class="chapter" data-level="2" data-path="meeting-julia.html"><a href="meeting-julia.html"><i class="fa fa-check"></i><b>2</b> Meeting Julia</a>
+  <ul>
+  <li class="chapter" data-level="2.1" data-path="meeting-julia.html"><a href="meeting-julia.html#why-julia"><i class="fa fa-check"></i><b>2.1</b> Why Julia</a></li>
+  <li class="chapter" data-level="2.2" data-path="meeting-julia.html"><a href="meeting-julia.html#julia-presentation"><i class="fa fa-check"></i><b>2.2</b> Julia presentation</a></li>
+  <li class="chapter" data-level="2.3" data-path="meeting-julia.html"><a href="meeting-julia.html#installation"><i class="fa fa-check"></i><b>2.3</b> Installation</a></li>
+  <li class="chapter" data-level="2.4" data-path="meeting-julia.html"><a href="meeting-julia.html#first-steps-into-the-julia-world"><i class="fa fa-check"></i><b>2.4</b> First steps into the Julia world</a></li>
+  <li class="chapter" data-level="2.5" data-path="meeting-julia.html"><a href="meeting-julia.html#julias-ecosystem-basic-plotting-and-manipulation-of-dataframes"><i class="fa fa-check"></i><b>2.5</b> Julia’s Ecosystem: Basic plotting and manipulation of DataFrames</a>
+  <ul>
+  <li class="chapter" data-level="2.5.1" data-path="meeting-julia.html"><a href="meeting-julia.html#plotting-with-plots.jl"><i class="fa fa-check"></i><b>2.5.1</b> Plotting with Plots.jl</a></li>
+  <li class="chapter" data-level="2.5.2" data-path="meeting-julia.html"><a href="meeting-julia.html#introducing-dataframes.jl"><i class="fa fa-check"></i><b>2.5.2</b> Introducing DataFrames.jl</a></li>
+  </ul></li>
+  <li class="chapter" data-level="2.6" data-path="meeting-julia.html"><a href="meeting-julia.html#summary"><i class="fa fa-check"></i><b>2.6</b> Summary</a></li>
+  <li class="chapter" data-level="2.7" data-path="meeting-julia.html"><a href="meeting-julia.html#references-1"><i class="fa fa-check"></i><b>2.7</b> References</a></li>
+  <li class="chapter" data-level="2.8" data-path="meeting-julia.html"><a href="meeting-julia.html#give-us-feedback"><i class="fa fa-check"></i><b>2.8</b> Give us feedback</a></li>
+  </ul></li>
+  <li class="part"><span><b>II Bayesian Statistics</b></span></li>
+  
+  <li class="chapter" data-level="3" data-path="probability-introduction.html"><a href="probability-introduction.html"><i class="fa fa-check"></i><b>3</b> Probability introduction</a>
+  <ul>
+  <li class="chapter" data-level="3.1" data-path="probability-introduction.html"><a href="probability-introduction.html#introduction-to-probability"><i class="fa fa-check"></i><b>3.1</b> Introduction to Probability</a></li>
+  <li class="chapter" data-level="3.2" data-path="probability-introduction.html"><a href="probability-introduction.html#events-sample-spaces-and-sample-points"><i class="fa fa-check"></i><b>3.2</b> Events, sample spaces and sample points</a>
+  <ul>
+  <li class="chapter" data-level="3.2.1" data-path="probability-introduction.html"><a href="probability-introduction.html#relation-among-events"><i class="fa fa-check"></i><b>3.2.1</b> Relation among events</a></li>
+  </ul></li>
+  <li class="chapter" data-level="3.3" data-path="probability-introduction.html"><a href="probability-introduction.html#probability"><i class="fa fa-check"></i><b>3.3</b> Probability</a></li>
+  <li class="chapter" data-level="3.4" data-path="probability-introduction.html"><a href="probability-introduction.html#conditional-probability"><i class="fa fa-check"></i><b>3.4</b> Conditional probability</a></li>
+  <li class="chapter" data-level="3.5" data-path="probability-introduction.html"><a href="probability-introduction.html#joint-probability"><i class="fa fa-check"></i><b>3.5</b> Joint probability</a></li>
+  <li class="chapter" data-level="3.6" data-path="probability-introduction.html"><a href="probability-introduction.html#bayes-theorem"><i class="fa fa-check"></i><b>3.6</b> Bayes theorem</a></li>
+  <li class="chapter" data-level="3.7" data-path="probability-introduction.html"><a href="probability-introduction.html#probability-distributions"><i class="fa fa-check"></i><b>3.7</b> Probability distributions</a>
+  <ul>
+  <li class="chapter" data-level="3.7.1" data-path="probability-introduction.html"><a href="probability-introduction.html#discrete-case"><i class="fa fa-check"></i><b>3.7.1</b> Discrete Case</a></li>
+  <li class="chapter" data-level="3.7.2" data-path="probability-introduction.html"><a href="probability-introduction.html#continuous-cases"><i class="fa fa-check"></i><b>3.7.2</b> Continuous cases</a></li>
+  <li class="chapter" data-level="3.7.3" data-path="probability-introduction.html"><a href="probability-introduction.html#histograms"><i class="fa fa-check"></i><b>3.7.3</b> Histograms</a></li>
+  </ul></li>
+  <li class="chapter" data-level="3.8" data-path="probability-introduction.html"><a href="probability-introduction.html#example-bayesian-bandits"><i class="fa fa-check"></i><b>3.8</b> Example: Bayesian Bandits</a></li>
+  <li class="chapter" data-level="3.9" data-path="probability-introduction.html"><a href="probability-introduction.html#summary-1"><i class="fa fa-check"></i><b>3.9</b> Summary</a></li>
+  <li class="chapter" data-level="3.10" data-path="probability-introduction.html"><a href="probability-introduction.html#references-2"><i class="fa fa-check"></i><b>3.10</b> References</a></li>
+  <li class="chapter" data-level="3.11" data-path="probability-introduction.html"><a href="probability-introduction.html#give-us-feedback-1"><i class="fa fa-check"></i><b>3.11</b> Give us feedback</a></li>
+  </ul></li>
+  <li class="chapter" data-level="4" data-path="spam-filter.html"><a href="spam-filter.html"><i class="fa fa-check"></i><b>4</b> Spam filter</a>
+  <ul>
+  <li class="chapter" data-level="4.1" data-path="spam-filter.html"><a href="spam-filter.html#naive-bayes-spam-or-ham"><i class="fa fa-check"></i><b>4.1</b> Naive Bayes: Spam or Ham?</a></li>
+  <li class="chapter" data-level="4.2" data-path="spam-filter.html"><a href="spam-filter.html#summary-2"><i class="fa fa-check"></i><b>4.2</b> Summary</a></li>
+  <li class="chapter" data-level="4.3" data-path="spam-filter.html"><a href="spam-filter.html#references-3"><i class="fa fa-check"></i><b>4.3</b> References</a></li>
+  <li class="chapter" data-level="4.4" data-path="spam-filter.html"><a href="spam-filter.html#give-us-feedback-2"><i class="fa fa-check"></i><b>4.4</b> Give us feedback</a></li>
+  </ul></li>
+  <li class="chapter" data-level="5" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html"><i class="fa fa-check"></i><b>5</b> Probabilistic programming</a>
+  <ul>
+  <li class="chapter" data-level="5.1" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#coin-flipping-example"><i class="fa fa-check"></i><b>5.1</b> Coin flipping example</a></li>
+  <li class="chapter" data-level="5.2" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#summary-3"><i class="fa fa-check"></i><b>5.2</b> Summary</a></li>
+  <li class="chapter" data-level="5.3" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#references-4"><i class="fa fa-check"></i><b>5.3</b> References</a></li>
+  <li class="chapter" data-level="5.4" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#give-us-feedback-3"><i class="fa fa-check"></i><b>5.4</b> Give us feedback</a></li>
+  </ul></li>
+  <li class="chapter" data-level="6" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html"><i class="fa fa-check"></i><b>6</b> Escaping from Mars</a>
+  <ul>
+  <li class="chapter" data-level="6.1" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#calculating-the-constant-g-of-mars"><i class="fa fa-check"></i><b>6.1</b> Calculating the constant g of Mars</a></li>
+  <li class="chapter" data-level="6.2" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#optimizing-the-throwing-angle"><i class="fa fa-check"></i><b>6.2</b> Optimizing the throwing angle</a>
+  <ul>
+  <li class="chapter" data-level="6.2.1" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#calculating-the-escape-velocity"><i class="fa fa-check"></i><b>6.2.1</b> Calculating the escape velocity</a></li>
+  </ul></li>
+  <li class="chapter" data-level="6.3" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#summary-4"><i class="fa fa-check"></i><b>6.3</b> Summary</a></li>
+  <li class="chapter" data-level="6.4" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#give-us-feedback-4"><i class="fa fa-check"></i><b>6.4</b> Give us feedback</a></li>
+  </ul></li>
+  <li class="chapter" data-level="7" data-path="football-simulation.html"><a href="football-simulation.html"><i class="fa fa-check"></i><b>7</b> Football simulation</a>
+  <ul>
+  <li class="chapter" data-level="7.1" data-path="football-simulation.html"><a href="football-simulation.html#creating-our-conjectures"><i class="fa fa-check"></i><b>7.1</b> Creating our conjectures</a>
+  <ul>
+  <li class="chapter" data-level="7.1.1" data-path="football-simulation.html"><a href="football-simulation.html#bayesian-hierarchical-models"><i class="fa fa-check"></i><b>7.1.1</b> Bayesian hierarchical models</a></li>
+  </ul></li>
+  <li class="chapter" data-level="7.2" data-path="football-simulation.html"><a href="football-simulation.html#simulate-possible-realities"><i class="fa fa-check"></i><b>7.2</b> Simulate possible realities</a></li>
+  <li class="chapter" data-level="7.3" data-path="football-simulation.html"><a href="football-simulation.html#summary-5"><i class="fa fa-check"></i><b>7.3</b> Summary</a></li>
+  <li class="chapter" data-level="7.4" data-path="football-simulation.html"><a href="football-simulation.html#bibliography"><i class="fa fa-check"></i><b>7.4</b> Bibliography</a></li>
+  <li class="chapter" data-level="7.5" data-path="football-simulation.html"><a href="football-simulation.html#give-us-feedback-5"><i class="fa fa-check"></i><b>7.5</b> Give us feedback</a></li>
+  </ul></li>
+  <li class="chapter" data-level="8" data-path="basketball-shots.html"><a href="basketball-shots.html"><i class="fa fa-check"></i><b>8</b> Basketball shots</a>
+  <ul>
+  <li class="chapter" data-level="8.0.1" data-path="basketball-shots.html"><a href="basketball-shots.html#modeling-the-probability-of-scoring"><i class="fa fa-check"></i><b>8.0.1</b> Modeling the probability of scoring</a></li>
+  <li class="chapter" data-level="8.1" data-path="basketball-shots.html"><a href="basketball-shots.html#prior-predictive-checks-part-i"><i class="fa fa-check"></i><b>8.1</b> Prior Predictive Checks: Part I</a>
+  <ul>
+  <li class="chapter" data-level="8.1.1" data-path="basketball-shots.html"><a href="basketball-shots.html#defining-our-model-and-computing-posteriors"><i class="fa fa-check"></i><b>8.1.1</b> Defining our model and computing posteriors</a></li>
+  </ul></li>
+  <li class="chapter" data-level="8.2" data-path="basketball-shots.html"><a href="basketball-shots.html#new-model-and-prior-predictive-checks-part-ii"><i class="fa fa-check"></i><b>8.2</b> New model and prior predictive checks: Part II</a>
+  <ul>
+  <li class="chapter" data-level="8.2.1" data-path="basketball-shots.html"><a href="basketball-shots.html#defining-the-new-model-and-computing-posteriors"><i class="fa fa-check"></i><b>8.2.1</b> Defining the new model and computing posteriors</a></li>
+  </ul></li>
+  <li class="chapter" data-level="8.3" data-path="basketball-shots.html"><a href="basketball-shots.html#does-the-period-affect-the-probability-of-scoring"><i class="fa fa-check"></i><b>8.3</b> Does the Period affect the probability of scoring?</a></li>
+  <li class="chapter" data-level="8.4" data-path="basketball-shots.html"><a href="basketball-shots.html#summary-6"><i class="fa fa-check"></i><b>8.4</b> Summary</a></li>
+  <li class="chapter" data-level="8.5" data-path="basketball-shots.html"><a href="basketball-shots.html#give-us-feedback-6"><i class="fa fa-check"></i><b>8.5</b> Give us feedback</a></li>
+  </ul></li>
+  <li class="chapter" data-level="9" data-path="optimal-pricing.html"><a href="optimal-pricing.html"><i class="fa fa-check"></i><b>9</b> Optimal pricing</a>
+  <ul>
+  <li class="chapter" data-level="9.1" data-path="optimal-pricing.html"><a href="optimal-pricing.html#overview"><i class="fa fa-check"></i><b>9.1</b> Overview</a></li>
+  <li class="chapter" data-level="9.2" data-path="optimal-pricing.html"><a href="optimal-pricing.html#optimal-pricing-1"><i class="fa fa-check"></i><b>9.2</b> Optimal pricing</a>
+  <ul>
+  <li class="chapter" data-level="9.2.1" data-path="optimal-pricing.html"><a href="optimal-pricing.html#price-vs-quantity-model"><i class="fa fa-check"></i><b>9.2.1</b> Price vs Quantity model</a></li>
+  <li class="chapter" data-level="9.2.2" data-path="optimal-pricing.html"><a href="optimal-pricing.html#price-elasticity-of-demand"><i class="fa fa-check"></i><b>9.2.2</b> Price elasticity of demand</a></li>
+  </ul></li>
+  <li class="chapter" data-level="9.3" data-path="optimal-pricing.html"><a href="optimal-pricing.html#maximizing-profit"><i class="fa fa-check"></i><b>9.3</b> Maximizing profit</a></li>
+  <li class="chapter" data-level="9.4" data-path="optimal-pricing.html"><a href="optimal-pricing.html#summary-7"><i class="fa fa-check"></i><b>9.4</b> Summary</a></li>
+  <li class="chapter" data-level="9.5" data-path="optimal-pricing.html"><a href="optimal-pricing.html#references-5"><i class="fa fa-check"></i><b>9.5</b> References</a></li>
+  <li class="chapter" data-level="9.6" data-path="optimal-pricing.html"><a href="optimal-pricing.html#give-us-feedback-7"><i class="fa fa-check"></i><b>9.6</b> Give us feedback</a></li>
+  </ul></li>
+  <li class="part"><span><b>III Deep Learning</b></span></li>
+  <li class="chapter" data-level="10" data-path="image-classification.html"><a href="image-classification.html"><i class="fa fa-check"></i><b>10</b> Image classification</a>
+  <ul>
+  <li class="chapter" data-level="10.1" data-path="image-classification.html"><a href="image-classification.html#bee-population-control-what-would-happen-if-bees-go-extinct"><i class="fa fa-check"></i><b>10.1</b> Bee population control: What would happen if bees go extinct?</a></li>
+  <li class="chapter" data-level="10.2" data-path="image-classification.html"><a href="image-classification.html#machine-learning-overview"><i class="fa fa-check"></i><b>10.2</b> Machine Learning Overview</a></li>
+  <li class="chapter" data-level="10.3" data-path="image-classification.html"><a href="image-classification.html#neural-networks-and-convolutional-neural-networks"><i class="fa fa-check"></i><b>10.3</b> Neural networks and convolutional neural networks</a></li>
+  <li class="chapter" data-level="10.4" data-path="image-classification.html"><a href="image-classification.html#summary-8"><i class="fa fa-check"></i><b>10.4</b> Summary</a></li>
+  <li class="chapter" data-level="10.5" data-path="image-classification.html"><a href="image-classification.html#references-6"><i class="fa fa-check"></i><b>10.5</b> References</a></li>
+  <li class="chapter" data-level="10.6" data-path="image-classification.html"><a href="image-classification.html#give-us-feedback-8"><i class="fa fa-check"></i><b>10.6</b> Give us feedback</a></li>
+  </ul></li>
+  <li class="part"><span><b>IV Scientific Machine Learning</b></span></li>
+  <li class="chapter" data-level="11" data-path="ultima-online.html"><a href="ultima-online.html"><i class="fa fa-check"></i><b>11</b> Ultima online</a>
+  <ul>
+  <li class="chapter" data-level="11.1" data-path="ultima-online.html"><a href="ultima-online.html#the-ultima-online-catastrophe"><i class="fa fa-check"></i><b>11.1</b> The Ultima Online Catastrophe</a>
+  <ul>
+  <li class="chapter" data-level="11.1.1" data-path="ultima-online.html"><a href="ultima-online.html#the-lotka-volterra-model-for-population-dynamics"><i class="fa fa-check"></i><b>11.1.1</b> The Lotka-Volterra model for population dynamics</a></li>
+  </ul></li>
+  <li class="chapter" data-level="11.2" data-path="ultima-online.html"><a href="ultima-online.html#summary-9"><i class="fa fa-check"></i><b>11.2</b> Summary</a></li>
+  <li class="chapter" data-level="11.3" data-path="ultima-online.html"><a href="ultima-online.html#references-7"><i class="fa fa-check"></i><b>11.3</b> References</a></li>
+  <li class="chapter" data-level="11.4" data-path="ultima-online.html"><a href="ultima-online.html#give-us-feedback-9"><i class="fa fa-check"></i><b>11.4</b> Give us feedback</a></li>
+  </ul></li>
+  <li class="chapter" data-level="12" data-path="ultima-continued.html"><a href="ultima-continued.html"><i class="fa fa-check"></i><b>12</b> Ultima continued</a>
+  <ul>
+  <li class="chapter" data-level="12.1" data-path="ultima-continued.html"><a href="ultima-continued.html#the-language-of-science"><i class="fa fa-check"></i><b>12.1</b> The language of science</a></li>
+  <li class="chapter" data-level="12.2" data-path="ultima-continued.html"><a href="ultima-continued.html#scientific-machine-learning-for-model-discovery"><i class="fa fa-check"></i><b>12.2</b> Scientific Machine Learning for model discovery</a>
+  <ul>
+  <li class="chapter" data-level="12.2.1" data-path="ultima-continued.html"><a href="ultima-continued.html#looking-for-the-catastrophe-culprit"><i class="fa fa-check"></i><b>12.2.1</b> Looking for the catastrophe culprit</a></li>
+  <li class="chapter" data-level="12.2.2" data-path="ultima-continued.html"><a href="ultima-continued.html#the-infamous-day-begins."><i class="fa fa-check"></i><b>12.2.2</b> The infamous day begins.</a></li>
+  </ul></li>
+  <li class="chapter" data-level="12.3" data-path="ultima-continued.html"><a href="ultima-continued.html#summary-10"><i class="fa fa-check"></i><b>12.3</b> Summary</a></li>
+  <li class="chapter" data-level="12.4" data-path="ultima-continued.html"><a href="ultima-continued.html#references-8"><i class="fa fa-check"></i><b>12.4</b> References</a></li>
+  <li class="chapter" data-level="12.5" data-path="ultima-continued.html"><a href="ultima-continued.html#give-us-feedback-10"><i class="fa fa-check"></i><b>12.5</b> Give us feedback</a></li>
+  </ul></li>
+  <li class="chapter" data-level="13" data-path="time-series.html"><a href="time-series.html"><i class="fa fa-check"></i><b>13</b> Time series</a>
+  <ul>
+  <li class="chapter" data-level="13.1" data-path="time-series.html"><a href="time-series.html#predicting-the-future"><i class="fa fa-check"></i><b>13.1</b> Predicting the future</a></li>
+  <li class="chapter" data-level="13.2" data-path="time-series.html"><a href="time-series.html#exponential-smoothing"><i class="fa fa-check"></i><b>13.2</b> Exponential Smoothing</a>
+  <ul>
+  <li class="chapter" data-level="13.2.1" data-path="time-series.html"><a href="time-series.html#weighted-average-and-component-form"><i class="fa fa-check"></i><b>13.2.1</b> Weighted average and Component form</a></li>
+  <li class="chapter" data-level="13.2.2" data-path="time-series.html"><a href="time-series.html#optimization-or-fitting-process"><i class="fa fa-check"></i><b>13.2.2</b> Optimization (or Fitting) Process</a></li>
+  <li class="chapter" data-level="13.2.3" data-path="time-series.html"><a href="time-series.html#trend-methods"><i class="fa fa-check"></i><b>13.2.3</b> Trend Methods</a></li>
+  <li class="chapter" data-level="13.2.4" data-path="time-series.html"><a href="time-series.html#seasonality-methods"><i class="fa fa-check"></i><b>13.2.4</b> Seasonality Methods</a></li>
+  </ul></li>
+  <li class="chapter" data-level="13.3" data-path="time-series.html"><a href="time-series.html#summary-11"><i class="fa fa-check"></i><b>13.3</b> Summary</a></li>
+  <li class="chapter" data-level="13.4" data-path="time-series.html"><a href="time-series.html#references-9"><i class="fa fa-check"></i><b>13.4</b> References</a></li>
+  <li class="chapter" data-level="13.5" data-path="time-series.html"><a href="time-series.html#give-us-feedback-11"><i class="fa fa-check"></i><b>13.5</b> Give us feedback</a></li>
+  </ul></li>
+  <li class="divider"></li>
+  <li><a href="https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers" target="blank">Published with bookdown</a></li>
+  
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Data Science in Julia for Hackers</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="escaping-from-mars" class="section level1" number="6">
+<h1><span class="header-section-number">Chapter 6</span> Escaping from Mars</h1>
+<p>Suppose you landed on Mars by mistake and you want to leave that rocky planet and return home. To escape from a planet you need a very important piece of information: the escaping velocity from the planet.</p>
+<p>What on Mars is the escape velocity?</p>
+<p>We are going to use the same experiment that Newton thought when thinking about escaping from the gravity of Earth. Gravity pulls us down, so if we shoot a cannonball, as in the sketch shown below, what will happen? For some velocities, the cannonball will return to Earth, but there’s a velocity at which it scapes since the gravitational pull is not enough to bring it back to the surface. That velocity is called escape velocity.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb1-1"><a href="escaping-from-mars.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span> </span>
+<span id="cb1-2"><a href="escaping-from-mars.html#cb1-2" aria-hidden="true" tabindex="-1"></a>    im_0 <span class="op">=</span> load(<span class="st">&quot;./06_gravity/images/cannonball_.png&quot;</span>)</span>
+<span id="cb1-3"><a href="escaping-from-mars.html#cb1-3" aria-hidden="true" tabindex="-1"></a>    plot(im_0)</span>
+<span id="cb1-4"><a href="escaping-from-mars.html#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="co">#img_small = imresize(im_0, ratio=1/3)</span></span>
+<span id="cb1-5"><a href="escaping-from-mars.html#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_6_plot_1-J1.png" /><!-- -->
+To simplify, we approximate the escape velocity as:</p>
+<p><span class="math inline">\(v_{escape}=\sqrt{2*g_{planet}*r_{planet}}\)</span></p>
+<p>where <span class="math inline">\(r\)</span> is the radius of the planet and <span class="math inline">\(g\)</span> the constant of gravity at the surface. Suppose that we remember from school that the velocity of scape from Earth is <span class="math inline">\(11\frac{km}{s}\)</span> and that the radius of Mars if half of the earth’s.</p>
+<p>We remember that the gravity of Earth at its surface is <span class="math inline">\(9.8\frac{m}{s^2}\)</span>, so all we need to estimate the escape velocity of Mars is the gravity of the planet at its surface. So we decide to make an experiment and gather some data. But what exactly do you need to measure? Let’s see.</p>
+<p>We are going to calculate the constant <span class="math inline">\(g_{mars}\)</span> just throwing stones. We are going to explain a bit the equations regarding the experiment. The topic we need to revisit is Proyectile Motion.</p>
+<p>## Proyectile Motion</p>
+<p>Gravity pulls us down to Earth, or in our case, to Mars. This means that we have an acceletation, since there is a force. Recalling the newton equation:</p>
+<p><span class="math inline">\(\overrightarrow{F} = m * \overrightarrow{a}\)</span>
+where <span class="math inline">\(m\)</span> is the mass of the object, <span class="math inline">\(\overrightarrow{F}\)</span> is the force(it’s what make us fall) and <span class="math inline">\(\overrightarrow{a}\)</span> is the acceleration, in our case is what we call gravity <span class="math inline">\(\overrightarrow{g}\)</span>. The arrow <span class="math inline">\(\overrightarrow{}\)</span> over the letter means that the quantity have a direction in space, in our case, gravity is pointing to the center of the Earth, or Mars.</p>
+<p><em>How can we derive the motion of the stones with that equation?</em></p>
+<p>In the figure below we show a sketch of the problem: We have the 2 axis, <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>, the <span class="math inline">\(x\)</span> normally is parallel to the ground and the <span class="math inline">\(y\)</span> axis is perpendicular, pointing to the sky. We also draw the initial velocity <span class="math inline">\(v_0\)</span> of the proyectile, and the angle <span class="math inline">\(\theta\)</span> with respect to the ground. Also it’s important to notice that the gravity points in the opposite direction of the <span class="math inline">\(y\)</span> axis.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb2-1"><a href="escaping-from-mars.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span> </span>
+<span id="cb2-2"><a href="escaping-from-mars.html#cb2-2" aria-hidden="true" tabindex="-1"></a>    im_1 <span class="op">=</span> load(<span class="st">&quot;./06_gravity/images/trajectory.png&quot;</span>)</span>
+<span id="cb2-3"><a href="escaping-from-mars.html#cb2-3" aria-hidden="true" tabindex="-1"></a>    plot(im_1)</span>
+<span id="cb2-4"><a href="escaping-from-mars.html#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_6_plot_2-J1.png" /><!-- -->
+<em>But what are the trayectory of the proyectile? and how the coordinates <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> evolve with time?</em></p>
+<p>If we remember from school, the equations of <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> over time is:</p>
+<p><span class="math inline">\(x(t) = v_0*t*cos(θ)\)</span></p>
+<p><span class="math inline">\(y(t) = v_0*t*sin(θ) -\frac{g*t^2}{2}\)</span>
+where <span class="math inline">\(t\)</span> is the time at which we want to know the coordinates.</p>
+<p><em>What the equations tell us?</em></p>
+<p>If we see the evolution of the projectile in the <span class="math inline">\(x\)</span> axis only, it follows a straight line (until it hits the ground) and in the <span class="math inline">\(y\)</span> axis the movement follows a parabola, but how we interpret that?</p>
+<p>We can imagine what happens if we trow a stone to the sky: the stone starts to go up and then, at some point, it reaches the highest position it can go. Then, the stone starts to go down.</p>
+<p><em>How does the velocity evolve in this trajectory?</em></p>
+<p>Since the begining, the velocity starts decreasing until it has the value of 0 at the highest point, where the stone stops for a moment, then it changes its direction and start to increase again, pointing towards the ground. Ploting the evolution of the height of the stone, we obtain the plot shown below. We see that, at the begining the stone starts to go up fast and then it slows down. We see that for each value of <span class="math inline">\(y\)</span> there are 2 values of <span class="math inline">\(t\)</span> that satisfies the equation, thats because the stone pass twice for each point, except for the highest value of <span class="math inline">\(y\)</span>.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb3-1"><a href="escaping-from-mars.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span> </span>
+<span id="cb3-2"><a href="escaping-from-mars.html#cb3-2" aria-hidden="true" tabindex="-1"></a>    im_3 <span class="op">=</span> load(<span class="st">&quot;./06_gravity/images/img90_.png&quot;</span>)</span>
+<span id="cb3-3"><a href="escaping-from-mars.html#cb3-3" aria-hidden="true" tabindex="-1"></a>    plot(im_3)</span>
+<span id="cb3-4"><a href="escaping-from-mars.html#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_6_plot_3-J1.png" /><!-- --></p>
+<p>So, in the example we ahve just explained, we have that the throwing angle is θ=90°, so sin(90°)=1, the trajectory in <span class="math inline">\(y\)</span> becomes:</p>
+<p><span class="math inline">\(y(t) = v_0*t -\frac{g*t^2}{2}\)</span>
+And the velocity, which is the derivative of the above equation becomes:
+<span class="math inline">\(v_{y}(t) = v_{0} -g*t\)</span></p>
+<p>Those two equations are the ones plotted in the previous sketch, a parabola and a straight line that decreases with time.
+It’s worth to notice that at each value <span class="math inline">\(y\)</span> of the trajectory, the velocity could have 2 values, just differing in its sign, meaning it can has 2 directions, but with the same magnitude. So keep in mind that when you throw an object to the sky, when it returns to you, the velocity will be the same with the one you threw it.</p>
+<div id="calculating-the-constant-g-of-mars" class="section level2" number="6.1">
+<h2><span class="header-section-number">6.1</span> Calculating the constant g of Mars</h2>
+<p>Now that we have understood the equations we will work with, we ask:</p>
+<p><em>how do we set the experiment and what do we need to measure?</em></p>
+<p>The experiment set up will go like this:
+- One person will be throwing stones with an angle.
+- The other person will be far, watching from some distance, measuring the time since the other throw the stone and it hits the ground. The other measurement we will need is the distance Δx the stone travelled.
+- Also, for the first iteration of the experiment, suppose we only keep the measurements with and initial angle θ~45° (we will loosen this constrain in a bit).</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb4-1"><a href="escaping-from-mars.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span> </span>
+<span id="cb4-2"><a href="escaping-from-mars.html#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="cn">im</span> <span class="op">=</span> load(<span class="st">&quot;./06_gravity/images/sketch_2.png&quot;</span>)</span>
+<span id="cb4-3"><a href="escaping-from-mars.html#cb4-3" aria-hidden="true" tabindex="-1"></a>    plot(<span class="cn">im</span>)</span>
+<span id="cb4-4"><a href="escaping-from-mars.html#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_6_plot_4-J1.png" /><!-- -->
+Suppose we did the experiment and we have measured then the 5 points, Δx and Δt, shown below:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb5-1"><a href="escaping-from-mars.html#cb5-1" aria-hidden="true" tabindex="-1"></a>Δx_measured <span class="op">=</span> [<span class="fl">25.94</span><span class="op">,</span> <span class="fl">38.84</span><span class="op">,</span> <span class="fl">52.81</span><span class="op">,</span> <span class="fl">45.54</span><span class="op">,</span> <span class="fl">17.24</span>]</span></code></pre></div>
+<pre><code>## 5-element Array{Float64,1}:
+##  25.94
+##  38.84
+##  52.81
+##  45.54
+##  17.24</code></pre>
+<div class="sourceCode" id="cb7"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb7-1"><a href="escaping-from-mars.html#cb7-1" aria-hidden="true" tabindex="-1"></a>t_measured <span class="op">=</span> [<span class="fl">3.91</span><span class="op">,</span> <span class="fl">4.57</span><span class="op">,</span> <span class="fl">5.43</span><span class="op">,</span> <span class="fl">4.85</span><span class="op">,</span> <span class="fl">3.15</span>]</span></code></pre></div>
+<pre><code>## 5-element Array{Float64,1}:
+##  3.91
+##  4.57
+##  5.43
+##  4.85
+##  3.15</code></pre>
+<p><em>Now, how we estimate the constant g from those points?</em></p>
+<p>Using the equations of the trajectory, when the stone hits the ground, y(t) = 0, since we take the start of the <span class="math inline">\(y\)</span> coordinate in the ground (negleting the initial height with respect to the maximum height), so finding the other then the initial point that fulfill this equation, we find that:</p>
+<p><span class="math inline">\(t_{f} = \frac{2*v_{0}*sin(θ)}{g}\)</span></p>
+<p>where <span class="math inline">\(t_{f}\)</span> is the time at which the stone hits the ground, the time we have measured.
+And replacing this time in the x(t) equation we find that:</p>
+<p><span class="math inline">\(Δx=t_{f}*v_{0}*cos(θ)\)</span></p>
+<p>where Δx is the distance traveled by the stone.</p>
+<p>So, solving for <span class="math inline">\(v_{0}\)</span>m, the initial velocity, an unknown quantity, we have:</p>
+<p><span class="math inline">\(v_{0}=\frac{Δx}{t_{f}cos(θ)}\)</span></p>
+<p>Then replacing it in the equation of <span class="math inline">\(t_{f}\)</span> and solving for <span class="math inline">\(\Delta x\)</span> we obtain:</p>
+<p><span class="math inline">\(Δx=\frac{g*t_{f}^2}{2*tg(θ)}\)</span></p>
+<p>So, the model we are going to propose is a <strong>linear regression</strong>. A linear equation has the form:</p>
+<p><span class="math inline">\(y=m*x +b\)</span></p>
+<p>where <span class="math inline">\(m\)</span> is the slope of the curve and <span class="math inline">\(b\)</span> is called the intercept. In our case, if we take <span class="math inline">\(x\)</span> to be <span class="math inline">\(\frac{t_{f}^2}{2}\)</span>, the slope of the curve is g and the intercep is 0. So, in our linear model we are going to propose that each point in the curve is:</p>
+<p><span class="math inline">\(\mu = m*x + b\)</span></p>
+<p><span class="math inline">\(y \sim Normal(\mu,\sigma^2)\)</span></p>
+<p>So, what this says is that each point of the regresion is drawn from a gaussian distribution with its center correnponding with a point in the line, as shown in the plot below.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb9-1"><a href="escaping-from-mars.html#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span> </span>
+<span id="cb9-2"><a href="escaping-from-mars.html#cb9-2" aria-hidden="true" tabindex="-1"></a>    im_4 <span class="op">=</span> load(<span class="st">&quot;./06_gravity/images/line_.png&quot;</span>)</span>
+<span id="cb9-3"><a href="escaping-from-mars.html#cb9-3" aria-hidden="true" tabindex="-1"></a>    plot(im_4)</span>
+<span id="cb9-4"><a href="escaping-from-mars.html#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_6_plot_5-J1.png" /><!-- -->
+So, our linear model will be:</p>
+<p><span class="math inline">\(g \sim Distribution\_to\_be\_proposed()\)</span>
+<span class="math inline">\(\mu[i] = g*\frac{t_{f}^2[i]}{2}\)</span>
+<span class="math inline">\(\Delta x[i]= Normal(\mu[i],\sigma^2)\)</span></p>
+<p>Where <span class="math inline">\(g\)</span> has a distribution we will propose next. The first distribution we are going to propose is a uniform distribution for g, between the values of 0 and 10</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb10-1"><a href="escaping-from-mars.html#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb10-2"><a href="escaping-from-mars.html#cb10-2" aria-hidden="true" tabindex="-1"></a>plot(Uniform(<span class="fl">0</span><span class="op">,</span><span class="fl">10</span>)<span class="op">,</span>xlim<span class="op">=</span>(<span class="op">-</span><span class="fl">1</span><span class="op">,</span><span class="fl">11</span>)<span class="op">,</span> ylim<span class="op">=</span>(<span class="fl">0</span><span class="op">,</span><span class="fl">0.2</span>)<span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span><span class="op">,</span> fill<span class="op">=</span>(<span class="fl">0</span><span class="op">,</span> <span class="fl">.5</span><span class="op">,:</span>lightblue))</span>
+<span id="cb10-3"><a href="escaping-from-mars.html#cb10-3" aria-hidden="true" tabindex="-1"></a>title<span class="op">!</span>(<span class="st">&quot;Uniform prior distribution for g&quot;</span>)</span>
+<span id="cb10-4"><a href="escaping-from-mars.html#cb10-4" aria-hidden="true" tabindex="-1"></a>xlabel<span class="op">!</span>(<span class="st">&quot;g_mars&quot;</span>)</span>
+<span id="cb10-5"><a href="escaping-from-mars.html#cb10-5" aria-hidden="true" tabindex="-1"></a>ylabel<span class="op">!</span>(<span class="st">&quot;Probability&quot;</span>)</span>
+<span id="cb10-6"><a href="escaping-from-mars.html#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_6_plot_6-J1.png" /><!-- -->
+Now we define the model in Turing and sample from the posterior distribution.</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb11-1"><a href="escaping-from-mars.html#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb11-2"><a href="escaping-from-mars.html#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="pp">@model</span> gravity_uniform(t_final<span class="op">,</span> x_final<span class="op">,</span> θ) <span class="op">=</span> <span class="kw">begin</span></span>
+<span id="cb11-3"><a href="escaping-from-mars.html#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># The number of observations.</span></span>
+<span id="cb11-4"><a href="escaping-from-mars.html#cb11-4" aria-hidden="true" tabindex="-1"></a>    g <span class="op">~</span> Uniform(<span class="fl">0</span><span class="op">,</span><span class="fl">10</span>)</span>
+<span id="cb11-5"><a href="escaping-from-mars.html#cb11-5" aria-hidden="true" tabindex="-1"></a>    μ <span class="op">=</span> g <span class="op">.*</span> (t_final<span class="op">.*</span>t_final<span class="op">./</span><span class="fl">2</span>)</span>
+<span id="cb11-6"><a href="escaping-from-mars.html#cb11-6" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb11-7"><a href="escaping-from-mars.html#cb11-7" aria-hidden="true" tabindex="-1"></a>    N <span class="op">=</span> length(t_final)</span>
+<span id="cb11-8"><a href="escaping-from-mars.html#cb11-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> n <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>N</span>
+<span id="cb11-9"><a href="escaping-from-mars.html#cb11-9" aria-hidden="true" tabindex="-1"></a>            x_final[n] <span class="op">~</span> Normal(μ[n]<span class="op">,</span> <span class="fl">10</span>)</span>
+<span id="cb11-10"><a href="escaping-from-mars.html#cb11-10" aria-hidden="true" tabindex="-1"></a>        <span class="kw">end</span></span>
+<span id="cb11-11"><a href="escaping-from-mars.html#cb11-11" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span><span class="op">;</span></span>
+<span id="cb11-12"><a href="escaping-from-mars.html#cb11-12" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb12-1"><a href="escaping-from-mars.html#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb12-2"><a href="escaping-from-mars.html#cb12-2" aria-hidden="true" tabindex="-1"></a>iterations <span class="op">=</span> <span class="fl">10000</span></span>
+<span id="cb12-3"><a href="escaping-from-mars.html#cb12-3" aria-hidden="true" tabindex="-1"></a>ϵ <span class="op">=</span> <span class="fl">0.05</span></span>
+<span id="cb12-4"><a href="escaping-from-mars.html#cb12-4" aria-hidden="true" tabindex="-1"></a>τ <span class="op">=</span> <span class="fl">10</span></span>
+<span id="cb12-5"><a href="escaping-from-mars.html#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span><span class="op">;</span></span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb13-1"><a href="escaping-from-mars.html#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb13-2"><a href="escaping-from-mars.html#cb13-2" aria-hidden="true" tabindex="-1"></a>θ <span class="op">=</span> <span class="fl">45</span></span>
+<span id="cb13-3"><a href="escaping-from-mars.html#cb13-3" aria-hidden="true" tabindex="-1"></a>chain_uniform <span class="op">=</span> sample(gravity_uniform(t_measured<span class="op">,</span> Δx_measured<span class="op">,</span> θ)<span class="op">,</span> HMC(ϵ<span class="op">,</span> τ)<span class="op">,</span> iterations<span class="op">,</span> progress<span class="op">=</span><span class="ex">false</span>)<span class="op">;</span></span>
+<span id="cb13-4"><a href="escaping-from-mars.html#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span><span class="op">;</span></span></code></pre></div>
+<p>Plotting the posterior distribution for p we that the values are mostly between 2 and 5, with the maximun near 3,8. Can we narrow the values we obtain?</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb14-1"><a href="escaping-from-mars.html#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb14-2"><a href="escaping-from-mars.html#cb14-2" aria-hidden="true" tabindex="-1"></a>    histogram(chain_uniform[<span class="op">:</span>g]<span class="op">,</span> xlim<span class="op">=</span>[<span class="fl">1</span><span class="op">,</span><span class="fl">6</span>]<span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span><span class="op">,</span> normalized<span class="op">=</span><span class="ex">true</span>)</span>
+<span id="cb14-3"><a href="escaping-from-mars.html#cb14-3" aria-hidden="true" tabindex="-1"></a>    xlabel<span class="op">!</span>(<span class="st">&quot;g_mars&quot;</span>)</span>
+<span id="cb14-4"><a href="escaping-from-mars.html#cb14-4" aria-hidden="true" tabindex="-1"></a>    title<span class="op">!</span>(<span class="st">&quot;Posterior distribution for g with uniform distribution&quot;</span>)</span>
+<span id="cb14-5"><a href="escaping-from-mars.html#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_6_plot_7-J1.png" /><!-- --></p>
+<p>As a second obtion, we can propose a Gaussian distribution instead of a uniforn distribution for <span class="math inline">\(g\)</span>, like the one shown below, with a mean of 5 and a variance of 2, and let the model update its beliefs with the points we have.</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb15-1"><a href="escaping-from-mars.html#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb15-2"><a href="escaping-from-mars.html#cb15-2" aria-hidden="true" tabindex="-1"></a>plot(Normal(<span class="fl">5</span><span class="op">,</span><span class="fl">2</span>)<span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span><span class="op">,</span> fill<span class="op">=</span>(<span class="fl">0</span><span class="op">,</span> <span class="fl">.5</span><span class="op">,:</span>lightblue))</span>
+<span id="cb15-3"><a href="escaping-from-mars.html#cb15-3" aria-hidden="true" tabindex="-1"></a>title<span class="op">!</span>(<span class="st">&quot;Normal prior distribution for g&quot;</span>)</span>
+<span id="cb15-4"><a href="escaping-from-mars.html#cb15-4" aria-hidden="true" tabindex="-1"></a>xlabel<span class="op">!</span>(<span class="st">&quot;g_mars&quot;</span>)</span>
+<span id="cb15-5"><a href="escaping-from-mars.html#cb15-5" aria-hidden="true" tabindex="-1"></a>ylabel<span class="op">!</span>(<span class="st">&quot;Probability&quot;</span>)</span>
+<span id="cb15-6"><a href="escaping-from-mars.html#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_6_plot_8-J1.png" /><!-- --></p>
+<p>We define then the model with a gaussian distribution as a prior for <span class="math inline">\(g\)</span>:</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb16-1"><a href="escaping-from-mars.html#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb16-2"><a href="escaping-from-mars.html#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="pp">@model</span> gravity_normal(t_final<span class="op">,</span> x_final<span class="op">,</span> θ) <span class="op">=</span> <span class="kw">begin</span></span>
+<span id="cb16-3"><a href="escaping-from-mars.html#cb16-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># The number of observations.</span></span>
+<span id="cb16-4"><a href="escaping-from-mars.html#cb16-4" aria-hidden="true" tabindex="-1"></a>    N <span class="op">=</span> length(t_final)</span>
+<span id="cb16-5"><a href="escaping-from-mars.html#cb16-5" aria-hidden="true" tabindex="-1"></a>    g <span class="op">~</span> Normal(<span class="fl">6</span><span class="op">,</span><span class="fl">2</span>)</span>
+<span id="cb16-6"><a href="escaping-from-mars.html#cb16-6" aria-hidden="true" tabindex="-1"></a>    μ <span class="op">=</span> g <span class="op">.*</span> (t_final<span class="op">.*</span>t_final<span class="op">./</span><span class="fl">2</span>)</span>
+<span id="cb16-7"><a href="escaping-from-mars.html#cb16-7" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb16-8"><a href="escaping-from-mars.html#cb16-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> n <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>N</span>
+<span id="cb16-9"><a href="escaping-from-mars.html#cb16-9" aria-hidden="true" tabindex="-1"></a>            x_final[n] <span class="op">~</span> Normal(μ[n]<span class="op">,</span> <span class="fl">3</span>)</span>
+<span id="cb16-10"><a href="escaping-from-mars.html#cb16-10" aria-hidden="true" tabindex="-1"></a>        <span class="kw">end</span></span>
+<span id="cb16-11"><a href="escaping-from-mars.html#cb16-11" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span><span class="op">;</span></span>
+<span id="cb16-12"><a href="escaping-from-mars.html#cb16-12" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p>Now we sample values from the posterior distribution and plot and histogram with the values obtained:</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb17-1"><a href="escaping-from-mars.html#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb17-2"><a href="escaping-from-mars.html#cb17-2" aria-hidden="true" tabindex="-1"></a>chain_normal <span class="op">=</span> sample(gravity_normal(t_measured<span class="op">,</span> Δx_measured<span class="op">,</span> θ)<span class="op">,</span> HMC(ϵ<span class="op">,</span> τ)<span class="op">,</span> iterations<span class="op">,</span> progress<span class="op">=</span><span class="ex">false</span>)<span class="op">;</span></span>
+<span id="cb17-3"><a href="escaping-from-mars.html#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span><span class="op">;</span></span></code></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb18-1"><a href="escaping-from-mars.html#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb18-2"><a href="escaping-from-mars.html#cb18-2" aria-hidden="true" tabindex="-1"></a>    histogram(chain_normal[<span class="op">:</span>g]<span class="op">,</span> xlim<span class="op">=</span>[<span class="fl">3</span><span class="op">,</span><span class="fl">4.5</span>]<span class="op">,</span>legend<span class="op">=</span><span class="ex">false</span><span class="op">,</span> normalized<span class="op">=</span><span class="ex">true</span>)</span>
+<span id="cb18-3"><a href="escaping-from-mars.html#cb18-3" aria-hidden="true" tabindex="-1"></a>    xlabel<span class="op">!</span>(<span class="st">&quot;g_mars&quot;</span>)</span>
+<span id="cb18-4"><a href="escaping-from-mars.html#cb18-4" aria-hidden="true" tabindex="-1"></a>    title<span class="op">!</span>(<span class="st">&quot;Posterior distribution for g with Normal distribution&quot;</span>)</span>
+<span id="cb18-5"><a href="escaping-from-mars.html#cb18-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-6"><a href="escaping-from-mars.html#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_6_plot_9-J1.png" /><!-- -->
+We see that the plausible values for the gravity have a clear center in 3.7 and now the distribution is narrower, that’s good, but we can do better.</p>
+<p>If we observe the prior distribution proposed of <span class="math inline">\(g\)</span>, we see that some values are negative, which has no sense because if that would the case when you trow the stone, it would go up and up, escaping from the planet.</p>
+<p>We propose then a new model for not allowing the negative values to happen. The distribution we are interested in is a LogNormal distribution. In the plot below is the prior distribution for g, a LogNormal distribution with mean 1.5 and variance of 0.5.</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb19-1"><a href="escaping-from-mars.html#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb19-2"><a href="escaping-from-mars.html#cb19-2" aria-hidden="true" tabindex="-1"></a>plot(LogNormal(<span class="fl">1</span><span class="op">,</span><span class="fl">0.5</span>)<span class="op">,</span> xlim<span class="op">=</span>(<span class="fl">0</span><span class="op">,</span><span class="fl">10</span>)<span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span><span class="op">,</span> fill<span class="op">=</span>(<span class="fl">0</span><span class="op">,</span> <span class="fl">.5</span><span class="op">,:</span>lightblue))</span>
+<span id="cb19-3"><a href="escaping-from-mars.html#cb19-3" aria-hidden="true" tabindex="-1"></a>title<span class="op">!</span>(<span class="st">&quot;Prior LogNormal Distribution for g&quot;</span>)</span>
+<span id="cb19-4"><a href="escaping-from-mars.html#cb19-4" aria-hidden="true" tabindex="-1"></a>ylabel<span class="op">!</span>(<span class="st">&quot;Probability&quot;</span>)</span>
+<span id="cb19-5"><a href="escaping-from-mars.html#cb19-5" aria-hidden="true" tabindex="-1"></a>xlabel<span class="op">!</span>(<span class="st">&quot;g&quot;</span>)</span>
+<span id="cb19-6"><a href="escaping-from-mars.html#cb19-6" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_6_plot_10-J1.png" /><!-- --></p>
+<p>The model <em>gravity_lognormal</em> defined below has now a LogNormal prior. We sample the posterior distribution after updating with the data measured.</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb20-1"><a href="escaping-from-mars.html#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb20-2"><a href="escaping-from-mars.html#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="pp">@model</span> gravity_lognormal(t_final<span class="op">,</span> x_final<span class="op">,</span> θ) <span class="op">=</span> <span class="kw">begin</span></span>
+<span id="cb20-3"><a href="escaping-from-mars.html#cb20-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># The number of observations.</span></span>
+<span id="cb20-4"><a href="escaping-from-mars.html#cb20-4" aria-hidden="true" tabindex="-1"></a>    N <span class="op">=</span> length(t_final)</span>
+<span id="cb20-5"><a href="escaping-from-mars.html#cb20-5" aria-hidden="true" tabindex="-1"></a>    g <span class="op">~</span> LogNormal(<span class="fl">0.5</span><span class="op">,</span><span class="fl">0.5</span>)</span>
+<span id="cb20-6"><a href="escaping-from-mars.html#cb20-6" aria-hidden="true" tabindex="-1"></a>    μ <span class="op">=</span> g <span class="op">.*</span> (t_final<span class="op">.*</span>t_final<span class="op">./</span><span class="fl">2</span>)</span>
+<span id="cb20-7"><a href="escaping-from-mars.html#cb20-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> n <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>N</span>
+<span id="cb20-8"><a href="escaping-from-mars.html#cb20-8" aria-hidden="true" tabindex="-1"></a>            x_final[n] <span class="op">~</span> Normal(μ[n]<span class="op">,</span> <span class="fl">3</span>)</span>
+<span id="cb20-9"><a href="escaping-from-mars.html#cb20-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
+<span id="cb20-10"><a href="escaping-from-mars.html#cb20-10" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span><span class="op">;</span></span>
+<span id="cb20-11"><a href="escaping-from-mars.html#cb20-11" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb21-1"><a href="escaping-from-mars.html#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb21-2"><a href="escaping-from-mars.html#cb21-2" aria-hidden="true" tabindex="-1"></a>chain_lognormal <span class="op">=</span> sample(gravity_lognormal(t_measured<span class="op">,</span> Δx_measured<span class="op">,</span> θ)<span class="op">,</span> HMC(ϵ<span class="op">,</span> τ)<span class="op">,</span> iterations<span class="op">,</span> progress<span class="op">=</span><span class="ex">false</span>)<span class="op">;</span></span>
+<span id="cb21-3"><a href="escaping-from-mars.html#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span><span class="op">;</span></span></code></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb22-1"><a href="escaping-from-mars.html#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb22-2"><a href="escaping-from-mars.html#cb22-2" aria-hidden="true" tabindex="-1"></a>    histogram(chain_lognormal[<span class="op">:</span>g]<span class="op">,</span> xlim<span class="op">=</span>[<span class="fl">3</span><span class="op">,</span><span class="fl">4.5</span>]<span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span><span class="op">,</span> normalized<span class="op">=</span><span class="ex">true</span>)</span>
+<span id="cb22-3"><a href="escaping-from-mars.html#cb22-3" aria-hidden="true" tabindex="-1"></a>    xlabel<span class="op">!</span>(<span class="st">&quot;g_mars&quot;</span>)</span>
+<span id="cb22-4"><a href="escaping-from-mars.html#cb22-4" aria-hidden="true" tabindex="-1"></a>    title<span class="op">!</span>(<span class="st">&quot;Posterior distribution for g with LogNormal distribution&quot;</span>)</span>
+<span id="cb22-5"><a href="escaping-from-mars.html#cb22-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-6"><a href="escaping-from-mars.html#cb22-6" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_6_plot_11-J1.png" /><!-- --></p>
+</div>
+<div id="optimizing-the-throwing-angle" class="section level2" number="6.2">
+<h2><span class="header-section-number">6.2</span> Optimizing the throwing angle</h2>
+<p>Now that we have a good understanding of the equations and the overall problem, we are going to add some difficulties and we will loosen a constrain we have imposed: Suppose that the device employed to measure the angle has an error of 15°, no matter the angle.</p>
+<p><em>We want to know what are the most convenient angle to do the experiment and to measure or if it doesn’t matter.</em></p>
+<p>To do the analysis we need to see how the angle influence the computation of <span class="math inline">\(g\)</span>, so solving the equation for <span class="math inline">\(g\)</span> we have:</p>
+<p><span class="math inline">\(g = \frac{2*tg(\theta)*\Delta x}{t^{2}_f}\)</span></p>
+<p>We can plot then the tangent of θ, with and error of 15° and see what is its maximum and minimun value:</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb23-1"><a href="escaping-from-mars.html#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb23-2"><a href="escaping-from-mars.html#cb23-2" aria-hidden="true" tabindex="-1"></a>angles <span class="op">=</span> <span class="fl">0</span><span class="op">:</span><span class="fl">0.1</span><span class="op">:</span><span class="fl">70</span></span>
+<span id="cb23-3"><a href="escaping-from-mars.html#cb23-3" aria-hidden="true" tabindex="-1"></a>error <span class="op">=</span> <span class="fl">15</span><span class="op">/</span><span class="fl">2</span></span>
+<span id="cb23-4"><a href="escaping-from-mars.html#cb23-4" aria-hidden="true" tabindex="-1"></a>μ <span class="op">=</span> tan.(deg2rad.(angles))</span>
+<span id="cb23-5"><a href="escaping-from-mars.html#cb23-5" aria-hidden="true" tabindex="-1"></a>ribbon <span class="op">=</span> tan.(deg2rad.(angles .<span class="op">+</span> error)) <span class="op">-</span> μ</span>
+<span id="cb23-6"><a href="escaping-from-mars.html#cb23-6" aria-hidden="true" tabindex="-1"></a>plot(angles<span class="op">,</span> μ<span class="op">,</span> ribbon<span class="op">=</span>ribbon<span class="op">,</span> color<span class="op">=</span><span class="st">&quot;lightblue&quot;</span><span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span>)</span>
+<span id="cb23-7"><a href="escaping-from-mars.html#cb23-7" aria-hidden="true" tabindex="-1"></a>ylabel<span class="op">!</span>(<span class="st">&quot;tan(θ)&quot;</span>)</span>
+<span id="cb23-8"><a href="escaping-from-mars.html#cb23-8" aria-hidden="true" tabindex="-1"></a>xlabel<span class="op">!</span>(<span class="st">&quot;θ [deg]&quot;</span>)</span>
+<span id="cb23-9"><a href="escaping-from-mars.html#cb23-9" aria-hidden="true" tabindex="-1"></a>title<span class="op">!</span>(<span class="st">&quot;tan(θ) and its error&quot;</span>)</span>
+<span id="cb23-10"><a href="escaping-from-mars.html#cb23-10" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_6_plot_12-J1.png" /><!-- --></p>
+<p>But we don’t care about the absolute value of the error, we want the relavite error, so plotting the percentual error we have:</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb24-1"><a href="escaping-from-mars.html#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb24-2"><a href="escaping-from-mars.html#cb24-2" aria-hidden="true" tabindex="-1"></a>er<span class="op">=</span> tan.(deg2rad.(angles .<span class="op">+</span> error)) .<span class="op">-</span> tan.(deg2rad.(angles .<span class="op">-</span> error))</span>
+<span id="cb24-3"><a href="escaping-from-mars.html#cb24-3" aria-hidden="true" tabindex="-1"></a>perc_error <span class="op">=</span> er <span class="op">.*</span> <span class="fl">100</span> <span class="op">./</span> μ</span>
+<span id="cb24-4"><a href="escaping-from-mars.html#cb24-4" aria-hidden="true" tabindex="-1"></a>plot(angles<span class="op">,</span> er <span class="op">.*</span> <span class="fl">100</span> <span class="op">./</span> μ<span class="op">,</span> xlim<span class="op">=</span>(<span class="fl">5</span><span class="op">,</span><span class="fl">70</span>)<span class="op">,</span> ylim<span class="op">=</span>(<span class="fl">0</span><span class="op">,</span><span class="fl">200</span>)<span class="op">,</span> color<span class="op">=</span><span class="st">&quot;lightblue&quot;</span><span class="op">,</span> legend<span class="op">=</span><span class="ex">true</span><span class="op">,</span> lw<span class="op">=</span><span class="fl">3</span><span class="op">,</span> label<span class="op">=</span><span class="st">&quot;Percentual error&quot;</span>)</span>
+<span id="cb24-5"><a href="escaping-from-mars.html#cb24-5" aria-hidden="true" tabindex="-1"></a>vline<span class="op">!</span>([angles[findfirst(x<span class="op">-&gt;</span>x<span class="op">==</span>minimum(perc_error)<span class="op">,</span> perc_error)]]<span class="op">,</span> lw<span class="op">=</span><span class="fl">3</span><span class="op">,</span> label<span class="op">=</span><span class="st">&quot;Minimum error&quot;</span>)</span>
+<span id="cb24-6"><a href="escaping-from-mars.html#cb24-6" aria-hidden="true" tabindex="-1"></a>ylabel<span class="op">!</span>(<span class="st">&quot;Δtan(θ)/θ&quot;</span>)</span>
+<span id="cb24-7"><a href="escaping-from-mars.html#cb24-7" aria-hidden="true" tabindex="-1"></a>xlabel<span class="op">!</span>(<span class="st">&quot;θ [deg]&quot;</span>)</span>
+<span id="cb24-8"><a href="escaping-from-mars.html#cb24-8" aria-hidden="true" tabindex="-1"></a>title<span class="op">!</span>(<span class="st">&quot;Percentual error&quot;</span>)</span>
+<span id="cb24-9"><a href="escaping-from-mars.html#cb24-9" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_6_plot_13-J1.png" /><!-- --></p>
+<p>So, now we see that the lowest percentual error is obtained when we work in angles near 45°, so we are good to go and we can use the data we measured adding the error in the angle.
+We now define the new model, where we include an uncertainty in the angle. We propose an uniform prior for the angle centered at 45°, the angle we think the measurement was done.</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb25-1"><a href="escaping-from-mars.html#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb25-2"><a href="escaping-from-mars.html#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="pp">@model</span> gravity_angle_uniform(t_final<span class="op">,</span> x_final<span class="op">,</span> θ) <span class="op">=</span> <span class="kw">begin</span></span>
+<span id="cb25-3"><a href="escaping-from-mars.html#cb25-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># The number of observations.</span></span>
+<span id="cb25-4"><a href="escaping-from-mars.html#cb25-4" aria-hidden="true" tabindex="-1"></a>    error <span class="op">=</span> <span class="fl">15</span></span>
+<span id="cb25-5"><a href="escaping-from-mars.html#cb25-5" aria-hidden="true" tabindex="-1"></a>    angle <span class="op">~</span> Uniform(<span class="fl">45</span><span class="op">-</span>error<span class="op">/</span><span class="fl">2</span><span class="op">,</span> <span class="fl">45</span> <span class="op">+</span> error<span class="op">/</span><span class="fl">2</span>)</span>
+<span id="cb25-6"><a href="escaping-from-mars.html#cb25-6" aria-hidden="true" tabindex="-1"></a>    g <span class="op">~</span> LogNormal(log(<span class="fl">4</span>)<span class="op">,</span><span class="fl">0.3</span>)</span>
+<span id="cb25-7"><a href="escaping-from-mars.html#cb25-7" aria-hidden="true" tabindex="-1"></a>    μ <span class="op">=</span> g <span class="op">.*</span> (t_final<span class="op">.*</span>t_final<span class="op">./</span>(<span class="fl">2</span> <span class="op">*</span> tan.(deg2rad(angle))))</span>
+<span id="cb25-8"><a href="escaping-from-mars.html#cb25-8" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb25-9"><a href="escaping-from-mars.html#cb25-9" aria-hidden="true" tabindex="-1"></a>    N <span class="op">=</span> length(t_final)</span>
+<span id="cb25-10"><a href="escaping-from-mars.html#cb25-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> n <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>N</span>
+<span id="cb25-11"><a href="escaping-from-mars.html#cb25-11" aria-hidden="true" tabindex="-1"></a>            x_final[n] <span class="op">~</span> Normal(μ[n]<span class="op">,</span> <span class="fl">10</span>)</span>
+<span id="cb25-12"><a href="escaping-from-mars.html#cb25-12" aria-hidden="true" tabindex="-1"></a>        <span class="kw">end</span></span>
+<span id="cb25-13"><a href="escaping-from-mars.html#cb25-13" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span><span class="op">;</span></span>
+<span id="cb25-14"><a href="escaping-from-mars.html#cb25-14" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb26"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb26-1"><a href="escaping-from-mars.html#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb26-2"><a href="escaping-from-mars.html#cb26-2" aria-hidden="true" tabindex="-1"></a>chain_uniform_angle <span class="op">=</span> sample(gravity_angle_uniform(t_measured<span class="op">,</span> Δx_measured<span class="op">,</span> θ)<span class="op">,</span> HMC(ϵ<span class="op">,</span> τ)<span class="op">,</span> iterations<span class="op">,</span> progress<span class="op">=</span><span class="ex">false</span>)<span class="op">;</span></span>
+<span id="cb26-3"><a href="escaping-from-mars.html#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span><span class="op">;</span></span></code></pre></div>
+<div class="sourceCode" id="cb27"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb27-1"><a href="escaping-from-mars.html#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb27-2"><a href="escaping-from-mars.html#cb27-2" aria-hidden="true" tabindex="-1"></a>    histogram(chain_uniform_angle[<span class="op">:</span>g]<span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span><span class="op">,</span> normalized<span class="op">=</span><span class="ex">true</span>)</span>
+<span id="cb27-3"><a href="escaping-from-mars.html#cb27-3" aria-hidden="true" tabindex="-1"></a>    xlabel<span class="op">!</span>(<span class="st">&quot;g_mars&quot;</span>)</span>
+<span id="cb27-4"><a href="escaping-from-mars.html#cb27-4" aria-hidden="true" tabindex="-1"></a>    ylabel<span class="op">!</span>(<span class="st">&quot;Probability&quot;</span>)</span>
+<span id="cb27-5"><a href="escaping-from-mars.html#cb27-5" aria-hidden="true" tabindex="-1"></a>    title<span class="op">!</span>(<span class="st">&quot;Posterior distribution for g, including uncertainty in the angle&quot;</span>)</span>
+<span id="cb27-6"><a href="escaping-from-mars.html#cb27-6" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_6_plot_14-J1.png" /><!-- --></p>
+<div id="calculating-the-escape-velocity" class="section level3" number="6.2.1">
+<h3><span class="header-section-number">6.2.1</span> Calculating the escape velocity</h3>
+<p>Now that we have calculated the gravity, we are going to calculate the escape velocity.</p>
+<p><em>What data do we have until now?</em></p>
+<p>we know from the begining that:</p>
+<p><span class="math inline">\(R_{Earth}\approxeq 2R_{Mars}\)</span>
+<span class="math inline">\(g_{Earth}\approxeq 9.8\)</span></p>
+<p>and we have also computed the distribution of the plausible values of <span class="math inline">\(g_{Mars}\)</span>.</p>
+<p>So, replacing them in the equation of the escape velocity:</p>
+<p><span class="math inline">\(\frac{v_{Mars}}{v_{Earth}} =\sqrt{\frac{g_{Mars}*R_{Mars}}{g_{Earth}*R_{Earth}}}\)</span></p>
+<p>so,</p>
+<p><span class="math inline">\(\frac{v_{Mars}}{11} =\sqrt{\frac{g_{Mars}*2*\cancel{R_{Mars}}}{9.8*\cancel{R_{Mars}}}} \qquad \left[\frac{km}{s} \right]\)</span></p>
+<p><span class="math inline">\(v_{Mars} =11 * \sqrt{\frac{g_{Mars}}{9.8*2}} \qquad \left[\frac{km}{s} \right]\)</span></p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb28-1"><a href="escaping-from-mars.html#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb28-2"><a href="escaping-from-mars.html#cb28-2" aria-hidden="true" tabindex="-1"></a>    v <span class="op">=</span> <span class="fl">11</span> <span class="op">.*</span> sqrt.(chain_uniform_angle[<span class="op">:</span>g] <span class="op">./</span> (<span class="fl">9.8</span><span class="op">*</span><span class="fl">2</span>))</span>
+<span id="cb28-3"><a href="escaping-from-mars.html#cb28-3" aria-hidden="true" tabindex="-1"></a>    histogram(v<span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span><span class="op">,</span> normalized<span class="op">=</span><span class="ex">true</span>)</span>
+<span id="cb28-4"><a href="escaping-from-mars.html#cb28-4" aria-hidden="true" tabindex="-1"></a>    title<span class="op">!</span>(<span class="st">&quot;Escape velocity from Mars&quot;</span>)</span>
+<span id="cb28-5"><a href="escaping-from-mars.html#cb28-5" aria-hidden="true" tabindex="-1"></a>    xlabel<span class="op">!</span>(<span class="st">&quot;Escape Velocity of Mars [km/s]&quot;</span>)</span>
+<span id="cb28-6"><a href="escaping-from-mars.html#cb28-6" aria-hidden="true" tabindex="-1"></a>    ylabel<span class="op">!</span>(<span class="st">&quot;Probability&quot;</span>)</span>
+<span id="cb28-7"><a href="escaping-from-mars.html#cb28-7" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb28-8"><a href="escaping-from-mars.html#cb28-8" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_6_plot_15-J1.png" /><!-- --></p>
+<p>Finally, we obtained the escape velocity scape from Mars.</p>
+</div>
+</div>
+<div id="summary-2" class="section level2" number="6.3">
+<h2><span class="header-section-number">6.3</span> Summary</h2>
+<p>In this chapter we had to find the escape velocity from Mars.
+To solve this problem, we first needed to find the gravity of Mars, so we started with a physical description of the problem and concluded that by measuring the distance and time of a rock throw plus some Bayesian analysis we could infer the gravity of Mars.</p>
+<p>Then we created a simple probabilistic model, with the prior probability set to a uniform distribution and the likelihood to a normal distribution.
+We sampled the model and obtained our first posterior probability.
+We repeated this process two more times, changing the prior distribution of the model for more accurate ones, first with a normal distribution and then with a logarithmic one.</p>
+<p>Finally, we used the gravity we inferred to calculate the escape velocity from Mars.</p>
+</div>
+<div id="give-us-feedback-2" class="section level2" number="6.4">
+<h2><span class="header-section-number">6.4</span> Give us feedback</h2>
+<p>This book is currently in a beta version.
+We are looking forward to getting feedback and criticism:</p>
+<ul>
+<li>Submit a GitHub issue <a href="https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues"><strong>here</strong></a>.</li>
+<li>Mail us to <a href="mailto:martina.cantaro@lambdaclass.com" class="email"><strong>martina.cantaro@lambdaclass.com</strong></a></li>
+</ul>
+<p>Thank you!</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="probabilistic-programming.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="football-simulation.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["data_science_in_julia_for_hackers.pdf", "data_science_in_julia_for_hackers.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

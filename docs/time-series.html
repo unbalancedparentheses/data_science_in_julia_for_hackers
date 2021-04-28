@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 13 Time series | Data Science in Julia for Hackers</title>
+  <meta name="description" content="Chapter 13 Time series | Data Science in Julia for Hackers" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 13 Time series | Data Science in Julia for Hackers" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Chapter 13 Time series | Data Science in Julia for Hackers" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 13 Time series | Data Science in Julia for Hackers" />
+  
+  <meta name="twitter:description" content="Chapter 13 Time series | Data Science in Julia for Hackers" />
+  
+
+<meta name="author" content="Lambdaclass" />
+
+
+<meta name="date" content="2021-04-28" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="ultima-continued.html"/>
+
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Data Science in Julia for Hackers</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#prologue"><i class="fa fa-check"></i>Prologue</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#table-of-contents"><i class="fa fa-check"></i>Table of contents</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#part-i-data-science-and-julia"><i class="fa fa-check"></i>Part I: Data Science and Julia</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#part-ii-bayesian-statistics"><i class="fa fa-check"></i>Part II: Bayesian Statistics</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#part-iii-machine-learning"><i class="fa fa-check"></i>Part III: Machine Learning</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#part-iv-deep-learning"><i class="fa fa-check"></i>Part IV: Deep Learning</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#part-v-scientific-machine-learning"><i class="fa fa-check"></i>Part V: Scientific Machine Learning</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#part-vi-time-series-and-forecasting"><i class="fa fa-check"></i>Part VI: Time Series and Forecasting</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>I Data Science and Julia</b></span></li>
+<li class="chapter" data-level="1" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html"><i class="fa fa-check"></i><b>1</b> Science technology and epistemology</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#the-difference-between-science-and-technology"><i class="fa fa-check"></i><b>1.1</b> The difference between Science and Technology</a></li>
+<li class="chapter" data-level="1.2" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#what-is-technology"><i class="fa fa-check"></i><b>1.2</b> What is technology?</a></li>
+<li class="chapter" data-level="1.3" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#references"><i class="fa fa-check"></i><b>1.3</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="meeting-julia.html"><a href="meeting-julia.html"><i class="fa fa-check"></i><b>2</b> Meeting Julia</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="meeting-julia.html"><a href="meeting-julia.html#why-julia"><i class="fa fa-check"></i><b>2.1</b> Why Julia</a></li>
+<li class="chapter" data-level="2.2" data-path="meeting-julia.html"><a href="meeting-julia.html#julia-presentation"><i class="fa fa-check"></i><b>2.2</b> Julia presentation</a></li>
+<li class="chapter" data-level="2.3" data-path="meeting-julia.html"><a href="meeting-julia.html#installation"><i class="fa fa-check"></i><b>2.3</b> Installation</a></li>
+<li class="chapter" data-level="2.4" data-path="meeting-julia.html"><a href="meeting-julia.html#first-steps-into-the-julia-world"><i class="fa fa-check"></i><b>2.4</b> First steps into the Julia world</a></li>
+<li class="chapter" data-level="2.5" data-path="meeting-julia.html"><a href="meeting-julia.html#julias-ecosystem-basic-plotting-and-manipulation-of-dataframes"><i class="fa fa-check"></i><b>2.5</b> Julia’s Ecosystem: Basic plotting and manipulation of DataFrames</a>
+<ul>
+<li class="chapter" data-level="2.5.1" data-path="meeting-julia.html"><a href="meeting-julia.html#plotting-with-plots.jl"><i class="fa fa-check"></i><b>2.5.1</b> Plotting with Plots.jl</a></li>
+<li class="chapter" data-level="2.5.2" data-path="meeting-julia.html"><a href="meeting-julia.html#introducing-dataframes.jl"><i class="fa fa-check"></i><b>2.5.2</b> Introducing DataFrames.jl</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="meeting-julia.html"><a href="meeting-julia.html#summary"><i class="fa fa-check"></i><b>2.6</b> Summary</a></li>
+<li class="chapter" data-level="2.7" data-path="meeting-julia.html"><a href="meeting-julia.html#references-1"><i class="fa fa-check"></i><b>2.7</b> References</a></li>
+<li class="chapter" data-level="2.8" data-path="meeting-julia.html"><a href="meeting-julia.html#give-us-feedback"><i class="fa fa-check"></i><b>2.8</b> Give us feedback</a></li>
+</ul></li>
+<li class="part"><span><b>II Bayesian Statistics</b></span></li>
+
+<li class="chapter" data-level="3" data-path="probability-introduction.html"><a href="probability-introduction.html"><i class="fa fa-check"></i><b>3</b> Probability introduction</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="probability-introduction.html"><a href="probability-introduction.html#introduction-to-probability"><i class="fa fa-check"></i><b>3.1</b> Introduction to Probability</a></li>
+<li class="chapter" data-level="3.2" data-path="probability-introduction.html"><a href="probability-introduction.html#events-sample-spaces-and-sample-points"><i class="fa fa-check"></i><b>3.2</b> Events, sample spaces and sample points</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="probability-introduction.html"><a href="probability-introduction.html#relation-among-events"><i class="fa fa-check"></i><b>3.2.1</b> Relation among events</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="probability-introduction.html"><a href="probability-introduction.html#probability"><i class="fa fa-check"></i><b>3.3</b> Probability</a></li>
+<li class="chapter" data-level="3.4" data-path="probability-introduction.html"><a href="probability-introduction.html#conditional-probability"><i class="fa fa-check"></i><b>3.4</b> Conditional probability</a></li>
+<li class="chapter" data-level="3.5" data-path="probability-introduction.html"><a href="probability-introduction.html#joint-probability"><i class="fa fa-check"></i><b>3.5</b> Joint probability</a></li>
+<li class="chapter" data-level="3.6" data-path="probability-introduction.html"><a href="probability-introduction.html#bayes-theorem"><i class="fa fa-check"></i><b>3.6</b> Bayes theorem</a></li>
+<li class="chapter" data-level="3.7" data-path="probability-introduction.html"><a href="probability-introduction.html#probability-distributions"><i class="fa fa-check"></i><b>3.7</b> Probability distributions</a>
+<ul>
+<li class="chapter" data-level="3.7.1" data-path="probability-introduction.html"><a href="probability-introduction.html#discrete-case"><i class="fa fa-check"></i><b>3.7.1</b> Discrete Case</a></li>
+<li class="chapter" data-level="3.7.2" data-path="probability-introduction.html"><a href="probability-introduction.html#continuous-cases"><i class="fa fa-check"></i><b>3.7.2</b> Continuous cases</a></li>
+<li class="chapter" data-level="3.7.3" data-path="probability-introduction.html"><a href="probability-introduction.html#histograms"><i class="fa fa-check"></i><b>3.7.3</b> Histograms</a></li>
+</ul></li>
+<li class="chapter" data-level="3.8" data-path="probability-introduction.html"><a href="probability-introduction.html#example-bayesian-bandits"><i class="fa fa-check"></i><b>3.8</b> Example: Bayesian Bandits</a></li>
+<li class="chapter" data-level="3.9" data-path="probability-introduction.html"><a href="probability-introduction.html#summary-1"><i class="fa fa-check"></i><b>3.9</b> Summary</a></li>
+<li class="chapter" data-level="3.10" data-path="probability-introduction.html"><a href="probability-introduction.html#references-2"><i class="fa fa-check"></i><b>3.10</b> References</a></li>
+<li class="chapter" data-level="3.11" data-path="probability-introduction.html"><a href="probability-introduction.html#give-us-feedback-1"><i class="fa fa-check"></i><b>3.11</b> Give us feedback</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="spam-filter.html"><a href="spam-filter.html"><i class="fa fa-check"></i><b>4</b> Spam filter</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="spam-filter.html"><a href="spam-filter.html#naive-bayes-spam-or-ham"><i class="fa fa-check"></i><b>4.1</b> Naive Bayes: Spam or Ham?</a></li>
+<li class="chapter" data-level="4.2" data-path="spam-filter.html"><a href="spam-filter.html#summary-2"><i class="fa fa-check"></i><b>4.2</b> Summary</a></li>
+<li class="chapter" data-level="4.3" data-path="spam-filter.html"><a href="spam-filter.html#references-3"><i class="fa fa-check"></i><b>4.3</b> References</a></li>
+<li class="chapter" data-level="4.4" data-path="spam-filter.html"><a href="spam-filter.html#give-us-feedback-2"><i class="fa fa-check"></i><b>4.4</b> Give us feedback</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html"><i class="fa fa-check"></i><b>5</b> Probabilistic programming</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#coin-flipping-example"><i class="fa fa-check"></i><b>5.1</b> Coin flipping example</a></li>
+<li class="chapter" data-level="5.2" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#summary-3"><i class="fa fa-check"></i><b>5.2</b> Summary</a></li>
+<li class="chapter" data-level="5.3" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#references-4"><i class="fa fa-check"></i><b>5.3</b> References</a></li>
+<li class="chapter" data-level="5.4" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#give-us-feedback-3"><i class="fa fa-check"></i><b>5.4</b> Give us feedback</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html"><i class="fa fa-check"></i><b>6</b> Escaping from Mars</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#calculating-the-constant-g-of-mars"><i class="fa fa-check"></i><b>6.1</b> Calculating the constant g of Mars</a></li>
+<li class="chapter" data-level="6.2" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#optimizing-the-throwing-angle"><i class="fa fa-check"></i><b>6.2</b> Optimizing the throwing angle</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#calculating-the-escape-velocity"><i class="fa fa-check"></i><b>6.2.1</b> Calculating the escape velocity</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#summary-4"><i class="fa fa-check"></i><b>6.3</b> Summary</a></li>
+<li class="chapter" data-level="6.4" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#give-us-feedback-4"><i class="fa fa-check"></i><b>6.4</b> Give us feedback</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="football-simulation.html"><a href="football-simulation.html"><i class="fa fa-check"></i><b>7</b> Football simulation</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="football-simulation.html"><a href="football-simulation.html#creating-our-conjectures"><i class="fa fa-check"></i><b>7.1</b> Creating our conjectures</a>
+<ul>
+<li class="chapter" data-level="7.1.1" data-path="football-simulation.html"><a href="football-simulation.html#bayesian-hierarchical-models"><i class="fa fa-check"></i><b>7.1.1</b> Bayesian hierarchical models</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="football-simulation.html"><a href="football-simulation.html#simulate-possible-realities"><i class="fa fa-check"></i><b>7.2</b> Simulate possible realities</a></li>
+<li class="chapter" data-level="7.3" data-path="football-simulation.html"><a href="football-simulation.html#summary-5"><i class="fa fa-check"></i><b>7.3</b> Summary</a></li>
+<li class="chapter" data-level="7.4" data-path="football-simulation.html"><a href="football-simulation.html#bibliography"><i class="fa fa-check"></i><b>7.4</b> Bibliography</a></li>
+<li class="chapter" data-level="7.5" data-path="football-simulation.html"><a href="football-simulation.html#give-us-feedback-5"><i class="fa fa-check"></i><b>7.5</b> Give us feedback</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="basketball-shots.html"><a href="basketball-shots.html"><i class="fa fa-check"></i><b>8</b> Basketball shots</a>
+<ul>
+<li class="chapter" data-level="8.0.1" data-path="basketball-shots.html"><a href="basketball-shots.html#modeling-the-probability-of-scoring"><i class="fa fa-check"></i><b>8.0.1</b> Modeling the probability of scoring</a></li>
+<li class="chapter" data-level="8.1" data-path="basketball-shots.html"><a href="basketball-shots.html#prior-predictive-checks-part-i"><i class="fa fa-check"></i><b>8.1</b> Prior Predictive Checks: Part I</a>
+<ul>
+<li class="chapter" data-level="8.1.1" data-path="basketball-shots.html"><a href="basketball-shots.html#defining-our-model-and-computing-posteriors"><i class="fa fa-check"></i><b>8.1.1</b> Defining our model and computing posteriors</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="basketball-shots.html"><a href="basketball-shots.html#new-model-and-prior-predictive-checks-part-ii"><i class="fa fa-check"></i><b>8.2</b> New model and prior predictive checks: Part II</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="basketball-shots.html"><a href="basketball-shots.html#defining-the-new-model-and-computing-posteriors"><i class="fa fa-check"></i><b>8.2.1</b> Defining the new model and computing posteriors</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="basketball-shots.html"><a href="basketball-shots.html#does-the-period-affect-the-probability-of-scoring"><i class="fa fa-check"></i><b>8.3</b> Does the Period affect the probability of scoring?</a></li>
+<li class="chapter" data-level="8.4" data-path="basketball-shots.html"><a href="basketball-shots.html#summary-6"><i class="fa fa-check"></i><b>8.4</b> Summary</a></li>
+<li class="chapter" data-level="8.5" data-path="basketball-shots.html"><a href="basketball-shots.html#give-us-feedback-6"><i class="fa fa-check"></i><b>8.5</b> Give us feedback</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="optimal-pricing.html"><a href="optimal-pricing.html"><i class="fa fa-check"></i><b>9</b> Optimal pricing</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="optimal-pricing.html"><a href="optimal-pricing.html#overview"><i class="fa fa-check"></i><b>9.1</b> Overview</a></li>
+<li class="chapter" data-level="9.2" data-path="optimal-pricing.html"><a href="optimal-pricing.html#optimal-pricing-1"><i class="fa fa-check"></i><b>9.2</b> Optimal pricing</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="optimal-pricing.html"><a href="optimal-pricing.html#price-vs-quantity-model"><i class="fa fa-check"></i><b>9.2.1</b> Price vs Quantity model</a></li>
+<li class="chapter" data-level="9.2.2" data-path="optimal-pricing.html"><a href="optimal-pricing.html#price-elasticity-of-demand"><i class="fa fa-check"></i><b>9.2.2</b> Price elasticity of demand</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="optimal-pricing.html"><a href="optimal-pricing.html#maximizing-profit"><i class="fa fa-check"></i><b>9.3</b> Maximizing profit</a></li>
+<li class="chapter" data-level="9.4" data-path="optimal-pricing.html"><a href="optimal-pricing.html#summary-7"><i class="fa fa-check"></i><b>9.4</b> Summary</a></li>
+<li class="chapter" data-level="9.5" data-path="optimal-pricing.html"><a href="optimal-pricing.html#references-5"><i class="fa fa-check"></i><b>9.5</b> References</a></li>
+<li class="chapter" data-level="9.6" data-path="optimal-pricing.html"><a href="optimal-pricing.html#give-us-feedback-7"><i class="fa fa-check"></i><b>9.6</b> Give us feedback</a></li>
+</ul></li>
+<li class="part"><span><b>III Deep Learning</b></span></li>
+<li class="chapter" data-level="10" data-path="image-classification.html"><a href="image-classification.html"><i class="fa fa-check"></i><b>10</b> Image classification</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="image-classification.html"><a href="image-classification.html#bee-population-control-what-would-happen-if-bees-go-extinct"><i class="fa fa-check"></i><b>10.1</b> Bee population control: What would happen if bees go extinct?</a></li>
+<li class="chapter" data-level="10.2" data-path="image-classification.html"><a href="image-classification.html#machine-learning-overview"><i class="fa fa-check"></i><b>10.2</b> Machine Learning Overview</a></li>
+<li class="chapter" data-level="10.3" data-path="image-classification.html"><a href="image-classification.html#neural-networks-and-convolutional-neural-networks"><i class="fa fa-check"></i><b>10.3</b> Neural networks and convolutional neural networks</a></li>
+<li class="chapter" data-level="10.4" data-path="image-classification.html"><a href="image-classification.html#summary-8"><i class="fa fa-check"></i><b>10.4</b> Summary</a></li>
+<li class="chapter" data-level="10.5" data-path="image-classification.html"><a href="image-classification.html#references-6"><i class="fa fa-check"></i><b>10.5</b> References</a></li>
+<li class="chapter" data-level="10.6" data-path="image-classification.html"><a href="image-classification.html#give-us-feedback-8"><i class="fa fa-check"></i><b>10.6</b> Give us feedback</a></li>
+</ul></li>
+<li class="part"><span><b>IV Scientific Machine Learning</b></span></li>
+<li class="chapter" data-level="11" data-path="ultima-online.html"><a href="ultima-online.html"><i class="fa fa-check"></i><b>11</b> Ultima online</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="ultima-online.html"><a href="ultima-online.html#the-ultima-online-catastrophe"><i class="fa fa-check"></i><b>11.1</b> The Ultima Online Catastrophe</a>
+<ul>
+<li class="chapter" data-level="11.1.1" data-path="ultima-online.html"><a href="ultima-online.html#the-lotka-volterra-model-for-population-dynamics"><i class="fa fa-check"></i><b>11.1.1</b> The Lotka-Volterra model for population dynamics</a></li>
+</ul></li>
+<li class="chapter" data-level="11.2" data-path="ultima-online.html"><a href="ultima-online.html#summary-9"><i class="fa fa-check"></i><b>11.2</b> Summary</a></li>
+<li class="chapter" data-level="11.3" data-path="ultima-online.html"><a href="ultima-online.html#references-7"><i class="fa fa-check"></i><b>11.3</b> References</a></li>
+<li class="chapter" data-level="11.4" data-path="ultima-online.html"><a href="ultima-online.html#give-us-feedback-9"><i class="fa fa-check"></i><b>11.4</b> Give us feedback</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="ultima-continued.html"><a href="ultima-continued.html"><i class="fa fa-check"></i><b>12</b> Ultima continued</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="ultima-continued.html"><a href="ultima-continued.html#the-language-of-science"><i class="fa fa-check"></i><b>12.1</b> The language of science</a></li>
+<li class="chapter" data-level="12.2" data-path="ultima-continued.html"><a href="ultima-continued.html#scientific-machine-learning-for-model-discovery"><i class="fa fa-check"></i><b>12.2</b> Scientific Machine Learning for model discovery</a>
+<ul>
+<li class="chapter" data-level="12.2.1" data-path="ultima-continued.html"><a href="ultima-continued.html#looking-for-the-catastrophe-culprit"><i class="fa fa-check"></i><b>12.2.1</b> Looking for the catastrophe culprit</a></li>
+<li class="chapter" data-level="12.2.2" data-path="ultima-continued.html"><a href="ultima-continued.html#the-infamous-day-begins."><i class="fa fa-check"></i><b>12.2.2</b> The infamous day begins.</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="ultima-continued.html"><a href="ultima-continued.html#summary-10"><i class="fa fa-check"></i><b>12.3</b> Summary</a></li>
+<li class="chapter" data-level="12.4" data-path="ultima-continued.html"><a href="ultima-continued.html#references-8"><i class="fa fa-check"></i><b>12.4</b> References</a></li>
+<li class="chapter" data-level="12.5" data-path="ultima-continued.html"><a href="ultima-continued.html#give-us-feedback-10"><i class="fa fa-check"></i><b>12.5</b> Give us feedback</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="time-series.html"><a href="time-series.html"><i class="fa fa-check"></i><b>13</b> Time series</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="time-series.html"><a href="time-series.html#predicting-the-future"><i class="fa fa-check"></i><b>13.1</b> Predicting the future</a></li>
+<li class="chapter" data-level="13.2" data-path="time-series.html"><a href="time-series.html#exponential-smoothing"><i class="fa fa-check"></i><b>13.2</b> Exponential Smoothing</a>
+<ul>
+<li class="chapter" data-level="13.2.1" data-path="time-series.html"><a href="time-series.html#weighted-average-and-component-form"><i class="fa fa-check"></i><b>13.2.1</b> Weighted average and Component form</a></li>
+<li class="chapter" data-level="13.2.2" data-path="time-series.html"><a href="time-series.html#optimization-or-fitting-process"><i class="fa fa-check"></i><b>13.2.2</b> Optimization (or Fitting) Process</a></li>
+<li class="chapter" data-level="13.2.3" data-path="time-series.html"><a href="time-series.html#trend-methods"><i class="fa fa-check"></i><b>13.2.3</b> Trend Methods</a></li>
+<li class="chapter" data-level="13.2.4" data-path="time-series.html"><a href="time-series.html#seasonality-methods"><i class="fa fa-check"></i><b>13.2.4</b> Seasonality Methods</a></li>
+</ul></li>
+<li class="chapter" data-level="13.3" data-path="time-series.html"><a href="time-series.html#summary-11"><i class="fa fa-check"></i><b>13.3</b> Summary</a></li>
+<li class="chapter" data-level="13.4" data-path="time-series.html"><a href="time-series.html#references-9"><i class="fa fa-check"></i><b>13.4</b> References</a></li>
+<li class="chapter" data-level="13.5" data-path="time-series.html"><a href="time-series.html#give-us-feedback-11"><i class="fa fa-check"></i><b>13.5</b> Give us feedback</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Data Science in Julia for Hackers</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="time-series" class="section level1" number="13">
+<h1><span class="header-section-number">Chapter 13</span> Time series</h1>
+<div id="predicting-the-future" class="section level2" number="13.1">
+<h2><span class="header-section-number">13.1</span> Predicting the future</h2>
+<p>Let’s imagine this situation for a moment. We are sitting quietly in our house thinking about the beauty of data analysis, when an old friend calls us: Terry. We haven’t seen him for a long time, but he tells us that he is forming an important investment fund for which he needs to get some experts in statistics.</p>
+<p>The idea is simple, he needs to generate predictive models of the supply and demand of certain commodities so that later, with this precious information, he can determine if the prices of those products are going to go down or up. Then you simply buy long or short positions (you don’t need to know much about that, basically you are betting on that prices are going to go up or down, respectively) on the stock market, hoping to make a lot of money.</p>
+<p>With respect to the data, what you have available are long series with all the values that were taken by the supply and demand over time. In other words, we have time series.</p>
+<p>This type of data has the particularity that its values are correlated since they are values of the same variable that changes over time. For example, the total amount of energy demanded by a nation today is closely related to yesterday’s demand, and so on.</p>
+<p>For a moment we are paralyzed and realize that we never encounter this type of problem. We take a breath for a few seconds and remember everything we learned about Bayesianism, about neural networks, about dynamic systems. It may be complex, but we will certainly succeed.</p>
+<p>We tell Terry we’re in. He smiles and gives us the first series: Peanut Chocolate.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb1-1"><a href="time-series.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb1-2"><a href="time-series.html#cb1-2" aria-hidden="true" tabindex="-1"></a>chocolate_sales <span class="op">=</span> [<span class="fl">445.36</span><span class="op">,</span><span class="fl">453.20</span><span class="op">,</span><span class="fl">454.41</span><span class="op">,</span><span class="fl">422.38</span><span class="op">,</span><span class="fl">456.04</span><span class="op">,</span><span class="fl">440.39</span><span class="op">,</span><span class="fl">425.19</span><span class="op">,</span><span class="fl">486.21</span><span class="op">,</span><span class="fl">500.43</span><span class="op">,</span><span class="fl">521.28</span><span class="op">,</span><span class="fl">508.95</span><span class="op">,</span><span class="fl">488.89</span><span class="op">,</span><span class="fl">509.87</span><span class="op">,</span><span class="fl">456.72</span><span class="op">,</span><span class="fl">473.82</span><span class="op">,</span><span class="fl">525.95</span><span class="op">,</span><span class="fl">549.83</span><span class="op">,</span><span class="fl">542.34</span>]</span>
+<span id="cb1-3"><a href="time-series.html#cb1-3" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-4"><a href="time-series.html#cb1-4" aria-hidden="true" tabindex="-1"></a>plot(chocolate_sales<span class="op">,</span> title<span class="op">=</span><span class="st">&quot;Daily peanut chocolate sales&quot;</span><span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span><span class="op">,</span> ylabel<span class="op">=</span><span class="st">&quot;units&quot;</span><span class="op">,</span> xlabel<span class="op">=</span><span class="st">&quot;days&quot;</span>)</span>
+<span id="cb1-5"><a href="time-series.html#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_13_plot_1-J1.png" /><!-- --></p>
+<p>As we just said: Notice that the variables they are asking us to work with are values that are evolving over time, so they take the name of <strong>Time Series</strong>. This kind of variables are the ones we are going to deal with in this chapter and have the particularity that, as they evolve in time, the values they take are related to the previous ones. So can you think of something to solve the problem of predicting the next value the series is going to have?</p>
+<p>Many ideas must be coming to your mind. Surely some of them thought of taking as a forecast value the average of all the previous ones and some others have thought of taking directly the last value of the series, justifying that the very old values do not affect the next ones. That is to say:
+<span class="math inline">\(y_{T+1|T}^- =\frac{1}{T} * \sum_{t=1}^{T}y_t\)</span>
+Where T is the number of periods for which we have data. Or:</p>
+<p><span class="math inline">\(y_{T+1|T}^- = y_T\)</span>
+Where we would always take the last value in the series to predict the next.</p>
+<p>If we observe this carefully, we might realize that these are two extreme cases of the same methodology: assigning “weights” to the previous values to predict the next one. Basically this is the way we have to indicate how much we are interested in the old observations and how much in the new ones.</p>
+<p>In the case of simple averaging, we would be saying that we care exactly the same about all the observations, since from the first to the last they are all multiplied by the same weights:</p>
+<p><span class="math inline">\(y_{T+1|T}^- =\frac{1}{T} * y_1 + \frac{1}{T} * y_2 + ... + \frac{1}{T} * y_T\)</span>
+<span class="math inline">\(\sum_{t=1}^{T}\frac{1}{T} = 1\)</span></p>
+<p>The second equation is only telling us that the sum of all the weights is equal to 1.
+Which also happens in the other case, where we assign the weight of the last value equal to 1 and leave all the others at zero:</p>
+<p><span class="math inline">\(y_{T+1|T}^- =0 * y_1 + 0 * y_2 + ... + 1 * y_T = y_T\)</span></p>
+<p>But like many things in life, the optimal solution is usually somewhere in between the extremes.</p>
+<p>So, a better solution would be one that allows us to take into account all the values of the series, but that the importance we are going to assign to it will decrease as we move away from older values. But how do we do this?</p>
+</div>
+<div id="exponential-smoothing" class="section level2" number="13.2">
+<h2><span class="header-section-number">13.2</span> Exponential Smoothing</h2>
+<p>A very interesting idea to implement our idea of finding a method that allows us to take into account the most distant values, but assigning them a lesser weight, is that of the <strong>Exponential Smoothing</strong>.</p>
+<p>The name may sound very complicated or crazy to you. The reality is that it is very simple. Basically, what we propose is to assign weights that are decreasing exponentially as the observations are getting older, getting to give a preponderant value to the closest values, but without resigning the valuable information that the previous values offer us:</p>
+<p><span class="math inline">\(y_{T+1|T}^- = α*y_T + α(1-α)*y_{T-1} + α(1-α)^2*y_{T-2} + ... + α(1-α)^{T-1}*y_1\)</span></p>
+<p>That is:</p>
+<p><span class="math inline">\(y_{T+1|T}^- = \sum_{i=0}^{T-1}α(1-α)^j * y_{T-i}\)</span></p>
+<p>Watch these two formulas for a while until you make sure you understand that they are the same :)</p>
+<p>This way of writing the method is especially useful because it allows us to regulate how much weight we want to assign to the past values. What does this mean? That we can control how quickly the value of the weights will decline over time. As a general rule, with alpha values close to 1, a lot of weight will be given to the close values and the weights will decay very quickly, and with alpha getting close to 0 the decay will be smoother. Let´s see it:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb2-1"><a href="time-series.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb2-2"><a href="time-series.html#cb2-2" aria-hidden="true" tabindex="-1"></a>    alphas <span class="op">=</span> [<span class="fl">0.2</span><span class="op">,</span> <span class="fl">0.5</span><span class="op">,</span> <span class="fl">0.8</span>]</span>
+<span id="cb2-3"><a href="time-series.html#cb2-3" aria-hidden="true" tabindex="-1"></a>    results <span class="op">=</span> []</span>
+<span id="cb2-4"><a href="time-series.html#cb2-4" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-5"><a href="time-series.html#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> alpha <span class="kw">in</span> alphas</span>
+<span id="cb2-6"><a href="time-series.html#cb2-6" aria-hidden="true" tabindex="-1"></a>        weights <span class="op">=</span> []</span>
+<span id="cb2-7"><a href="time-series.html#cb2-7" aria-hidden="true" tabindex="-1"></a>        <span class="kw">for</span> i <span class="kw">in</span> <span class="fl">0</span><span class="op">:</span><span class="fl">10</span></span>
+<span id="cb2-8"><a href="time-series.html#cb2-8" aria-hidden="true" tabindex="-1"></a>            weight <span class="op">=</span> alpha<span class="op">*</span>(<span class="fl">1</span><span class="op">-</span>alpha)<span class="op">^</span>i</span>
+<span id="cb2-9"><a href="time-series.html#cb2-9" aria-hidden="true" tabindex="-1"></a>            push<span class="op">!</span>(weights<span class="op">,</span> weight)</span>
+<span id="cb2-10"><a href="time-series.html#cb2-10" aria-hidden="true" tabindex="-1"></a>        <span class="kw">end</span></span>
+<span id="cb2-11"><a href="time-series.html#cb2-11" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb2-12"><a href="time-series.html#cb2-12" aria-hidden="true" tabindex="-1"></a>        push<span class="op">!</span>(results<span class="op">,</span> weights)</span>
+<span id="cb2-13"><a href="time-series.html#cb2-13" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
+<span id="cb2-14"><a href="time-series.html#cb2-14" aria-hidden="true" tabindex="-1"></a>results</span>
+<span id="cb2-15"><a href="time-series.html#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<pre><code>## 3-element Array{Any,1}:
+##  Any[0.2, 0.16000000000000003, 0.12800000000000003, 0.10240000000000003, 0.08192000000000002, 0.06553600000000002, 0.052428800000000025, 0.041943040000000015, 0.033554432000000016, 0.026843545600000015, 0.021474836480000013]
+##  Any[0.5, 0.25, 0.125, 0.0625, 0.03125, 0.015625, 0.0078125, 0.00390625, 0.001953125, 0.0009765625, 0.00048828125]
+##  Any[0.8, 0.15999999999999998, 0.03199999999999999, 0.006399999999999996, 0.001279999999999999, 0.0002559999999999997, 5.119999999999994e-5, 1.0239999999999985e-5, 2.0479999999999963e-6, 4.095999999999992e-7, 8.191999999999982e-8]</code></pre>
+<div class="sourceCode" id="cb4"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb4-1"><a href="time-series.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb4-2"><a href="time-series.html#cb4-2" aria-hidden="true" tabindex="-1"></a>    scatter(results[<span class="fl">1</span>]<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;α=0.2&quot;</span><span class="op">,</span> title<span class="op">=</span><span class="st">&quot;Weight evolution with different values of alpha&quot;</span>)</span>
+<span id="cb4-3"><a href="time-series.html#cb4-3" aria-hidden="true" tabindex="-1"></a>    plot<span class="op">!</span>(results[<span class="fl">1</span>]<span class="op">,</span> label<span class="op">=</span><span class="ex">false</span><span class="op">,</span> color<span class="op">=</span><span class="st">&quot;blue&quot;</span>)</span>
+<span id="cb4-4"><a href="time-series.html#cb4-4" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb4-5"><a href="time-series.html#cb4-5" aria-hidden="true" tabindex="-1"></a>    scatter<span class="op">!</span>(results[<span class="fl">2</span>]<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;α=0.5&quot;</span>)</span>
+<span id="cb4-6"><a href="time-series.html#cb4-6" aria-hidden="true" tabindex="-1"></a>    plot<span class="op">!</span>(results[<span class="fl">2</span>]<span class="op">,</span> label<span class="op">=</span><span class="ex">false</span><span class="op">,</span> color<span class="op">=</span><span class="st">&quot;green&quot;</span>)</span>
+<span id="cb4-7"><a href="time-series.html#cb4-7" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb4-8"><a href="time-series.html#cb4-8" aria-hidden="true" tabindex="-1"></a>    scatter<span class="op">!</span>(results[<span class="fl">3</span>]<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;α=0.8&quot;</span><span class="op">,</span> color<span class="op">=</span><span class="st">&quot;red&quot;</span>)</span>
+<span id="cb4-9"><a href="time-series.html#cb4-9" aria-hidden="true" tabindex="-1"></a>    plot<span class="op">!</span>(results[<span class="fl">3</span>]<span class="op">,</span> label<span class="op">=</span><span class="ex">false</span><span class="op">,</span> color<span class="op">=</span><span class="st">&quot;red&quot;</span><span class="op">,</span> xlabel<span class="op">=</span><span class="st">&quot;Time periods&quot;</span><span class="op">,</span> ylabel<span class="op">=</span><span class="st">&quot;Weight&quot;</span>)</span>
+<span id="cb4-10"><a href="time-series.html#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_13_plot_2-J1.png" /><!-- --></p>
+<p>As we said, as alpha gets closer to one, the importance of the closer values is greater and greater and when it gets closer to zero the opposite happens, that is, the importance is “more distributed” among all the observations. For example, in the case of choosing alpha = 0.5 we would have:</p>
+<p><span class="math inline">\(y_{T+1|T}^- = 0.5*y_T + 0.25*y_{T-1} + 0.125*y_{T-2} + 0.0625*y_{T-3} + ...\)</span></p>
+<p>Well, then it seems we have a method that is good for estimating this kind of time series. But you’re probably wondering… How do we choose the optimal alpha?</p>
+<p>The basic strategy is to go through the entire time serie predicting each of the values it has with the previous ones and then look for the alpha that minimizes the difference between them. Let’s see it:
+For this, we have to introduce two new ways of writing the same method.</p>
+<div id="weighted-average-and-component-form" class="section level3" number="13.2.1">
+<h3><span class="header-section-number">13.2.1</span> Weighted average and Component form</h3>
+<p>Another way to write the same method and that will help us later with the choice of the alpha that best describes our data series is the <strong>Weighted average form</strong>. It simply proposes that the next value is a weighted average between the last value in the time series and the last prediction made:</p>
+<p><span class="math inline">\(y_{t+1|t}^- = αy_t + (1-α)*y_{t|t-1}^-\)</span></p>
+<p>Notice that now the sub-index is changed from T to t, denoting that we are referring to any point of the time series and that, to calculate the prediction we are going to use the previous points of the series.</p>
+<p>This is really very useful, since we can in this way go through all the time series and generate predictions for each point of it:</p>
+<p>First, defining the prediction for the first value of the series as</p>
+<p><span class="math inline">\(y_{1|0}^- = lo\)</span></p>
+<p><span class="math inline">\(y_{2|1}^- = αy_1 + (1-α)*lo\)</span></p>
+<p><span class="math inline">\(y_{3|2}^- = αy_2 + (1-α)*y_{2|1}^-\)</span></p>
+<p><span class="math inline">\(...\)</span></p>
+<p><span class="math inline">\(y_{T+1|T}^- = αy_T + (1-α)*y_{T|T-1}^-\)</span></p>
+<p>And if we substitute each equation within the other, we get the equation for prediction:</p>
+<p><span class="math inline">\(y_{3|2}^- = αy_1 + (1-α)*y_{2|1}^-\)</span></p>
+<p><span class="math inline">\(y_{3|2}^- = αy_1 + (1-α)*(αy_1 + (1-α)*lo)\)</span></p>
+<p><span class="math inline">\(y_{3|2}^- = αy_1 + (1-α)*αy_1 + (1-α)^2*lo\)</span></p>
+<p><span class="math inline">\(...\)</span></p>
+<p><span class="math inline">\(y_{T+1|T}^- = \sum_{i=0}^{T-1}α(1-α)^j * y_{T-i} + (1-α)^T*lo\)</span></p>
+<p>And as <span class="math inline">\((1-\alpha)^T\)</span> decays exponentially, for not very high values of T this term already becomes zero. So we obtain the same predicting formula as before.</p>
+<p>Well, this is very good! We already have a way to go through the whole time series and make the predictions. This will be very useful since we can make these predictions for different alpha values and observe which one best approximates the whole series. Once this optimal alpha is obtained in this fitting process, we will be able to make the prediction for the future period.</p>
+<p>Finally, there is one last way to define our models called <strong>Component form</strong></p>
+<p><span class="math inline">\(y_{t+h|t}^- = l_t\)</span></p>
+<p><span class="math inline">\(l_t = α*y_t + (1 - α)*l_{t-1}\)</span></p>
+<p>In the case of the <strong>Simple Exponential Smoothing</strong> it is identical to the <strong>Weighted average form</strong>, but it will make our work easier later when we want to make the analysis more complex.</p>
+</div>
+<div id="optimization-or-fitting-process" class="section level3" number="13.2.2">
+<h3><span class="header-section-number">13.2.2</span> Optimization (or Fitting) Process</h3>
+<p>Let’s start by seeing how using different alpha values we obtain different predicted value curves, defining a function that will make us the predictions of each value in the time series given a starting point (l0) and an alpha:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb5-1"><a href="time-series.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> SES_weight(α<span class="op">,</span> l0<span class="op">,</span> time_serie)</span>
+<span id="cb5-2"><a href="time-series.html#cb5-2" aria-hidden="true" tabindex="-1"></a>    N <span class="op">=</span> length(time_serie)</span>
+<span id="cb5-3"><a href="time-series.html#cb5-3" aria-hidden="true" tabindex="-1"></a>    y_pred <span class="op">=</span> <span class="fl">0</span></span>
+<span id="cb5-4"><a href="time-series.html#cb5-4" aria-hidden="true" tabindex="-1"></a>    pred <span class="op">=</span> []</span>
+<span id="cb5-5"><a href="time-series.html#cb5-5" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb5-6"><a href="time-series.html#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>(N)</span>
+<span id="cb5-7"><a href="time-series.html#cb5-7" aria-hidden="true" tabindex="-1"></a>        <span class="kw">if</span> i <span class="op">==</span> <span class="fl">1</span></span>
+<span id="cb5-8"><a href="time-series.html#cb5-8" aria-hidden="true" tabindex="-1"></a>            y_pred <span class="op">=</span> l0</span>
+<span id="cb5-9"><a href="time-series.html#cb5-9" aria-hidden="true" tabindex="-1"></a>        <span class="kw">else</span></span>
+<span id="cb5-10"><a href="time-series.html#cb5-10" aria-hidden="true" tabindex="-1"></a>            y_pred <span class="op">=</span> time_serie[i <span class="op">-</span> <span class="fl">1</span>] <span class="op">*</span> α <span class="op">+</span> y_pred <span class="op">*</span> (<span class="fl">1</span> <span class="op">-</span> α)</span>
+<span id="cb5-11"><a href="time-series.html#cb5-11" aria-hidden="true" tabindex="-1"></a>        <span class="kw">end</span></span>
+<span id="cb5-12"><a href="time-series.html#cb5-12" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb5-13"><a href="time-series.html#cb5-13" aria-hidden="true" tabindex="-1"></a>        push<span class="op">!</span>(pred<span class="op">,</span> y_pred)     </span>
+<span id="cb5-14"><a href="time-series.html#cb5-14" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
+<span id="cb5-15"><a href="time-series.html#cb5-15" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb5-16"><a href="time-series.html#cb5-16" aria-hidden="true" tabindex="-1"></a>    <span class="kw">return</span> pred</span>
+<span id="cb5-17"><a href="time-series.html#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<pre><code>## SES_weight (generic function with 1 method)</code></pre>
+<p>Let’s read the above algorithm together to make sure we understand that you are applying the formula explained above.</p>
+<p>The function SES_weight receives three parameters: The alpha to make the calculation, the value of the first lo prediction, and the time series in question.</p>
+<p>The algorithm begins by obtaining the number of points that the time series has and defining a vector in which we will be depositing all the predicted values of each point of it. Then it begins to iterate on the time series applying the formula mentioned above:</p>
+<p>For the first predicted value <span class="math inline">\(y_{1|0}^- = y_{pred} = lo\)</span> and for the following ones we apply the formula <span class="math inline">\(y_{t+1|t}^- = α*y_t + (1-α)*y_{t|t-1}^-\)</span>. Makes sense, right?</p>
+<p>Then let’s get to work and see how our prediction curve fits the real data.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb7-1"><a href="time-series.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb7-2"><a href="time-series.html#cb7-2" aria-hidden="true" tabindex="-1"></a>    pred_1 <span class="op">=</span> SES_weight(<span class="fl">0.2</span><span class="op">,</span> <span class="fl">445.36</span><span class="op">,</span> chocolate_sales)</span>
+<span id="cb7-3"><a href="time-series.html#cb7-3" aria-hidden="true" tabindex="-1"></a>    pred_2 <span class="op">=</span> SES_weight(<span class="fl">0.5</span><span class="op">,</span> <span class="fl">445.36</span><span class="op">,</span> chocolate_sales)</span>
+<span id="cb7-4"><a href="time-series.html#cb7-4" aria-hidden="true" tabindex="-1"></a>    pred_3 <span class="op">=</span> SES_weight(<span class="fl">0.8</span><span class="op">,</span> <span class="fl">445.36</span><span class="op">,</span> chocolate_sales)</span>
+<span id="cb7-5"><a href="time-series.html#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb8-1"><a href="time-series.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb8-2"><a href="time-series.html#cb8-2" aria-hidden="true" tabindex="-1"></a>    plot(chocolate_sales<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;Data&quot;</span><span class="op">,</span> legend<span class="op">=:</span>topleft)</span>
+<span id="cb8-3"><a href="time-series.html#cb8-3" aria-hidden="true" tabindex="-1"></a>    p1 <span class="op">=</span> plot<span class="op">!</span>(pred_1<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;α=0.2 fit&quot;</span>)</span>
+<span id="cb8-4"><a href="time-series.html#cb8-4" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-5"><a href="time-series.html#cb8-5" aria-hidden="true" tabindex="-1"></a>    plot(chocolate_sales<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;Data&quot;</span><span class="op">,</span> legend<span class="op">=:</span>topleft)</span>
+<span id="cb8-6"><a href="time-series.html#cb8-6" aria-hidden="true" tabindex="-1"></a>    p2 <span class="op">=</span> plot<span class="op">!</span>(pred_2<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;α=0.5 fit&quot;</span>)</span>
+<span id="cb8-7"><a href="time-series.html#cb8-7" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-8"><a href="time-series.html#cb8-8" aria-hidden="true" tabindex="-1"></a>    plot(chocolate_sales<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;Data&quot;</span><span class="op">,</span> legend<span class="op">=:</span>topleft)</span>
+<span id="cb8-9"><a href="time-series.html#cb8-9" aria-hidden="true" tabindex="-1"></a>    p3 <span class="op">=</span> plot<span class="op">!</span>(pred_3<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;α=0.8 fit&quot;</span>)</span>
+<span id="cb8-10"><a href="time-series.html#cb8-10" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-11"><a href="time-series.html#cb8-11" aria-hidden="true" tabindex="-1"></a>    plot(p1<span class="op">,</span> p2<span class="op">,</span> p3)    </span>
+<span id="cb8-12"><a href="time-series.html#cb8-12" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_13_plot_3-J1.png" /><!-- -->
+This is a very cool graphic to look at. It illustrates very clearly how small alphas look mostly like an average of the time series values and, as it starts to get closer to 1, it looks more like taking the last value in the series as a future prediction. As we said at the beginning of the chapter, this method allows us to find intermediate points between the two extremes.</p>
+<p>It’s very nice to see how the graphs change as the alpha does… but how do we find the best alpha and l0 so that the fit is the best?</p>
+<div id="loss-functions" class="section level4" number="13.2.2.1">
+<h4><span class="header-section-number">13.2.2.1</span> Loss functions</h4>
+<p>Somehow we have to be able to quantify how close the predicted curve is to the actual data curve. A very elegant way to do it is defining an error function or loss function which will return, for a certain value of the parameters to be optimized, a global number that tells us just how similar both curves are.</p>
+<p>For example, one could go point by point looking at the real value of the time series and subtract the predicted value for that same point: <span class="math inline">\(y_{t} - y_{t|t-1}^-\)</span>. This subtraction is usually called a residual or error, so:</p>
+<p><span class="math inline">\(e = y_{t} - y_{t|t-1}^-\)</span></p>
+<p>Then you add up all those differences and get the overall value of difference between the two series, right?</p>
+<p>Well, actually there is one more step to go. As it can happen that sometimes the predicted value is greater than the value of the time series, the subtraction of these would be negative and in the same way, if the predicted value is lesser the subtraction will take a positive value. This is a complication when adding up these errors since they could cancel each other out.</p>
+<p>To solve this, we usually take the absolute value of the subtraction, or the square values. Now the sum of the residuals will not be cancelled, no matter if it is positive or negative:</p>
+<p><span class="math inline">\(SSE = \sum_{i=1}^{T}(y_{t} - y_{t|t-1}^-)^2 = \sum_{i=1}^{T}e^2\)</span></p>
+<p><span class="math inline">\(SAE = \sum_{i=1}^{T}|y_{t} - y_{t|t-1}^-| = \sum_{i=1}^{T}|e|\)</span></p>
+<p>Great! Now that we have a logical and quantitative methodology to determine how well our model is fitting the data, all that remains is to implement it. Let’s go for it!</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb9-1"><a href="time-series.html#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> SES_weight_loss(α<span class="op">,</span> l0<span class="op">,</span> time_serie)</span>
+<span id="cb9-2"><a href="time-series.html#cb9-2" aria-hidden="true" tabindex="-1"></a>    loss <span class="op">=</span> <span class="fl">0</span></span>
+<span id="cb9-3"><a href="time-series.html#cb9-3" aria-hidden="true" tabindex="-1"></a>    N <span class="op">=</span> length(time_serie)</span>
+<span id="cb9-4"><a href="time-series.html#cb9-4" aria-hidden="true" tabindex="-1"></a>    y_pred <span class="op">=</span> <span class="fl">0</span></span>
+<span id="cb9-5"><a href="time-series.html#cb9-5" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb9-6"><a href="time-series.html#cb9-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>(N)</span>
+<span id="cb9-7"><a href="time-series.html#cb9-7" aria-hidden="true" tabindex="-1"></a>        <span class="kw">if</span> i <span class="op">==</span> <span class="fl">1</span></span>
+<span id="cb9-8"><a href="time-series.html#cb9-8" aria-hidden="true" tabindex="-1"></a>            y_pred <span class="op">=</span> l0</span>
+<span id="cb9-9"><a href="time-series.html#cb9-9" aria-hidden="true" tabindex="-1"></a>        <span class="kw">else</span></span>
+<span id="cb9-10"><a href="time-series.html#cb9-10" aria-hidden="true" tabindex="-1"></a>            y_pred <span class="op">=</span> time_serie[i <span class="op">-</span> <span class="fl">1</span>] <span class="op">*</span> α <span class="op">+</span> y_pred <span class="op">*</span> (<span class="fl">1</span> <span class="op">-</span> α)</span>
+<span id="cb9-11"><a href="time-series.html#cb9-11" aria-hidden="true" tabindex="-1"></a>        <span class="kw">end</span></span>
+<span id="cb9-12"><a href="time-series.html#cb9-12" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb9-13"><a href="time-series.html#cb9-13" aria-hidden="true" tabindex="-1"></a>        loss <span class="op">+=</span> (time_serie[i] <span class="op">-</span> y_pred)<span class="op">^</span><span class="fl">2</span>  </span>
+<span id="cb9-14"><a href="time-series.html#cb9-14" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
+<span id="cb9-15"><a href="time-series.html#cb9-15" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb9-16"><a href="time-series.html#cb9-16" aria-hidden="true" tabindex="-1"></a>    <span class="kw">return</span> loss</span>
+<span id="cb9-17"><a href="time-series.html#cb9-17" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<pre><code>## SES_weight_loss (generic function with 1 method)</code></pre>
+<p>As you can see in the code we take the sum of errors squared as an error function. This algorithm is very similar to the previous one (with which we obtained each predicted point) only that now instead of saving the value, we compute its residual with the real data and we add it to the variable “loss.”</p>
+<p>As a result we have a function that has as a parameter a time series, alpha and lo; and returns a number that is telling us the general error. Obviously that is the number we want to minimize.</p>
+<p>Let’s see how the function behaves if we leave fixed lo (actually it is a value that we have to find with the minimization, but we know that it has to be near to the first value of the series) and we change alpha.</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb11-1"><a href="time-series.html#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb11-2"><a href="time-series.html#cb11-2" aria-hidden="true" tabindex="-1"></a>    aplhas <span class="op">=</span> collect(<span class="fl">0</span><span class="op">:</span><span class="fl">0.01</span><span class="op">:</span><span class="fl">1</span>)</span>
+<span id="cb11-3"><a href="time-series.html#cb11-3" aria-hidden="true" tabindex="-1"></a>    a <span class="op">=</span> <span class="dt">Array</span>{<span class="dt">Float64</span>}(<span class="cn">undef</span><span class="op">,</span> length(aplhas))</span>
+<span id="cb11-4"><a href="time-series.html#cb11-4" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb11-5"><a href="time-series.html#cb11-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>length(aplhas)</span>
+<span id="cb11-6"><a href="time-series.html#cb11-6" aria-hidden="true" tabindex="-1"></a>        a[i] <span class="op">=</span> SES_weight_loss(aplhas[i]<span class="op">,</span> <span class="fl">445.36</span><span class="op">,</span> chocolate_sales)</span>
+<span id="cb11-7"><a href="time-series.html#cb11-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
+<span id="cb11-8"><a href="time-series.html#cb11-8" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb11-9"><a href="time-series.html#cb11-9" aria-hidden="true" tabindex="-1"></a>    plot(<span class="fl">0</span><span class="op">:</span><span class="fl">0.01</span><span class="op">:</span><span class="fl">1</span><span class="op">,</span> a<span class="op">,</span> xlabel<span class="op">=</span><span class="st">&quot;Alpha&quot;</span><span class="op">,</span> ylabel<span class="op">=</span><span class="st">&quot;Loss&quot;</span><span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span><span class="op">,</span> title<span class="op">=</span><span class="st">&quot;Loss function for different values of alpha&quot;</span>)</span>
+<span id="cb11-10"><a href="time-series.html#cb11-10" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_13_plot_4-J1.png" /><!-- --></p>
+<p>It is really very subtle, but the error function is not strictly decreasing. In fact, somewhere between 0.8 and 0.9 the function starts to grow again, so the minimum is there.</p>
+<p>For this kind of problems Julia has a package to optimize functions:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb12-1"><a href="time-series.html#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> SES_loss_(params<span class="op">,</span> time_serie<span class="op">=</span>chocolate_sales)</span>
+<span id="cb12-2"><a href="time-series.html#cb12-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">return</span> SES_weight_loss(params[<span class="fl">1</span>]<span class="op">,</span> params[<span class="fl">2</span>]<span class="op">,</span> time_serie)</span>
+<span id="cb12-3"><a href="time-series.html#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<pre><code>## SES_loss_ (generic function with 2 methods)</code></pre>
+<div class="sourceCode" id="cb14"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb14-1"><a href="time-series.html#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb14-2"><a href="time-series.html#cb14-2" aria-hidden="true" tabindex="-1"></a>    lower <span class="op">=</span> [<span class="fl">0</span>.<span class="op">,</span> <span class="fl">400</span>.]</span>
+<span id="cb14-3"><a href="time-series.html#cb14-3" aria-hidden="true" tabindex="-1"></a>    upper <span class="op">=</span> [<span class="fl">1</span>.<span class="op">,</span> <span class="fl">500</span>.]</span>
+<span id="cb14-4"><a href="time-series.html#cb14-4" aria-hidden="true" tabindex="-1"></a>    initial_x <span class="op">=</span> [<span class="fl">0.6</span><span class="op">,</span> <span class="fl">450</span>.]</span>
+<span id="cb14-5"><a href="time-series.html#cb14-5" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb14-6"><a href="time-series.html#cb14-6" aria-hidden="true" tabindex="-1"></a>    res <span class="op">=</span> optimize(SES_loss_<span class="op">,</span>lower<span class="op">,</span> upper<span class="op">,</span> initial_x)</span>
+<span id="cb14-7"><a href="time-series.html#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<pre><code>##  * Status: success
+## 
+##  * Candidate solution
+##     Final objective value:     1.423677e+04
+## 
+##  * Found with
+##     Algorithm:     Fminbox with L-BFGS
+## 
+##  * Convergence measures
+##     |x - x&#39;|               = 1.38e-10 ≰ 0.0e+00
+##     |x - x&#39;|/|x&#39;|          = 3.09e-13 ≰ 0.0e+00
+##     |f(x) - f(x&#39;)|         = 0.00e+00 ≤ 0.0e+00
+##     |f(x) - f(x&#39;)|/|f(x&#39;)| = 0.00e+00 ≤ 0.0e+00
+##     |g(x)|                 = 6.73e-10 ≤ 1.0e-08
+## 
+##  * Work counters
+##     Seconds run:   0  (vs limit Inf)
+##     Iterations:    6
+##     f(x) calls:    347
+##     ∇f(x) calls:   347</code></pre>
+<p>To use this function more efficiently it is necessary to define a range for the parameters in which the algorithm will perform the search and also a starting point (obviously within that range).</p>
+<p>Also, one trick to keep in mind is that this package accepts “univariate” functions, that is, the function you enter only has to have one parameter to optimize. This is not entirely true since, although only one parameter has to be passed, it can be a vector, so that several parameters can be optimized. This is why we define a wrapper function <code>SES\_loss\_</code> that facilitates the calculation.</p>
+<p>With everything ready, let’s look for the values of alpha and lo that minimize our error function:</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb16-1"><a href="time-series.html#cb16-1" aria-hidden="true" tabindex="-1"></a>optim <span class="op">=</span> Optim.minimizer(res)</span></code></pre></div>
+<pre><code>## 2-element Array{Float64,1}:
+##    0.833783557110595
+##  446.57308867544805</code></pre>
+<p>And this is how we came to fit our model, obtaining the best parameters to try to predict the next sales of our beloved peanut chocolate</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb18-1"><a href="time-series.html#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> SES_weight_forecast(α<span class="op">,</span> l0<span class="op">,</span> time_serie<span class="op">,</span> n_pred)</span>
+<span id="cb18-2"><a href="time-series.html#cb18-2" aria-hidden="true" tabindex="-1"></a>    N <span class="op">=</span> length(time_serie)</span>
+<span id="cb18-3"><a href="time-series.html#cb18-3" aria-hidden="true" tabindex="-1"></a>    y_pred <span class="op">=</span> <span class="fl">0</span></span>
+<span id="cb18-4"><a href="time-series.html#cb18-4" aria-hidden="true" tabindex="-1"></a>    pred <span class="op">=</span> []</span>
+<span id="cb18-5"><a href="time-series.html#cb18-5" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb18-6"><a href="time-series.html#cb18-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>(N)</span>
+<span id="cb18-7"><a href="time-series.html#cb18-7" aria-hidden="true" tabindex="-1"></a>        <span class="kw">if</span> i <span class="op">==</span> <span class="fl">1</span></span>
+<span id="cb18-8"><a href="time-series.html#cb18-8" aria-hidden="true" tabindex="-1"></a>            y_pred <span class="op">=</span> l0</span>
+<span id="cb18-9"><a href="time-series.html#cb18-9" aria-hidden="true" tabindex="-1"></a>        <span class="kw">else</span></span>
+<span id="cb18-10"><a href="time-series.html#cb18-10" aria-hidden="true" tabindex="-1"></a>            y_pred <span class="op">=</span> time_serie[i <span class="op">-</span> <span class="fl">1</span>] <span class="op">*</span> α <span class="op">+</span> y_pred <span class="op">*</span> (<span class="fl">1</span> <span class="op">-</span> α)</span>
+<span id="cb18-11"><a href="time-series.html#cb18-11" aria-hidden="true" tabindex="-1"></a>        <span class="kw">end</span></span>
+<span id="cb18-12"><a href="time-series.html#cb18-12" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb18-13"><a href="time-series.html#cb18-13" aria-hidden="true" tabindex="-1"></a>        push<span class="op">!</span>(pred<span class="op">,</span> y_pred)</span>
+<span id="cb18-14"><a href="time-series.html#cb18-14" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
+<span id="cb18-15"><a href="time-series.html#cb18-15" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb18-16"><a href="time-series.html#cb18-16" aria-hidden="true" tabindex="-1"></a>    y_pred <span class="op">=</span> time_serie[N] <span class="op">*</span> α <span class="op">+</span> y_pred <span class="op">*</span> (<span class="fl">1</span> <span class="op">-</span> α)</span>
+<span id="cb18-17"><a href="time-series.html#cb18-17" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb18-18"><a href="time-series.html#cb18-18" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> j <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>n_pred</span>
+<span id="cb18-19"><a href="time-series.html#cb18-19" aria-hidden="true" tabindex="-1"></a>        push<span class="op">!</span>(pred<span class="op">,</span> y_pred)</span>
+<span id="cb18-20"><a href="time-series.html#cb18-20" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
+<span id="cb18-21"><a href="time-series.html#cb18-21" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb18-22"><a href="time-series.html#cb18-22" aria-hidden="true" tabindex="-1"></a>    <span class="kw">return</span> pred</span>
+<span id="cb18-23"><a href="time-series.html#cb18-23" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<pre><code>## SES_weight_forecast (generic function with 1 method)</code></pre>
+<p>As you can see, the simple exponential smoothing method only gives us a forward value. In other words, it predicts a constant value into the future. This happens because these types of time series have no latent variables defined, such as trend or seasonality. These are variables that add information to the model and allow us to make different predictions for each time we want to predict.</p>
+<p>But do not worry about that for now, we will study it well in a short time. For now, let’s see how the prediction would look like.</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb20-1"><a href="time-series.html#cb20-1" aria-hidden="true" tabindex="-1"></a>forecast <span class="op">=</span> SES_weight_forecast(<span class="fl">0.833784</span><span class="op">,</span> <span class="fl">446.573</span><span class="op">,</span> chocolate_sales<span class="op">,</span> <span class="fl">5</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb21-1"><a href="time-series.html#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb21-2"><a href="time-series.html#cb21-2" aria-hidden="true" tabindex="-1"></a>    plot(<span class="fl">1</span><span class="op">:</span><span class="fl">18</span><span class="op">,</span> chocolate_sales<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;Data&quot;</span><span class="op">,</span> legend<span class="op">=:</span>topleft)</span>
+<span id="cb21-3"><a href="time-series.html#cb21-3" aria-hidden="true" tabindex="-1"></a>    plot<span class="op">!</span>(<span class="fl">1</span><span class="op">:</span><span class="fl">18</span><span class="op">,</span> forecast[<span class="fl">1</span><span class="op">:</span><span class="fl">18</span>]<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;Fitted&quot;</span>)</span>
+<span id="cb21-4"><a href="time-series.html#cb21-4" aria-hidden="true" tabindex="-1"></a>    plot<span class="op">!</span>(<span class="fl">18</span><span class="op">:</span><span class="fl">23</span><span class="op">,</span> forecast[<span class="fl">18</span><span class="op">:</span><span class="kw">end</span>]<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;Forecast&quot;</span>)</span>
+<span id="cb21-5"><a href="time-series.html#cb21-5" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_13_plot_5-J1.png" /><!-- --></p>
+<p>Perfect! We already have an initial model to attack problems where there is a lot of variability. But this is not always the case.</p>
+<p>That same night we talked to Terry, showed him the progress and he loves the direction we are going. He tells us that he has another time series to analyze and that he has a different behavior than the previous one, apparently this one shows a trend in the values…</p>
+<p>Let’s see:</p>
+</div>
+</div>
+<div id="trend-methods" class="section level3" number="13.2.3">
+<h3><span class="header-section-number">13.2.3</span> Trend Methods</h3>
+<p>Now that we have built up an intuition of how Simple Exponential Smoothing logic works, wouldn’t it be good to have some additional method that allows us to learn if our time series has a certain tendency?</p>
+<p>But what does this mean in the first place? It means that there are some processes that inherently, by their nature, follow a marked tendency beyond random noise</p>
+<p>For example, if we take the amount of AirPassenger in Australia from 1990 to 2016, we find this graph:</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb22-1"><a href="time-series.html#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb22-2"><a href="time-series.html#cb22-2" aria-hidden="true" tabindex="-1"></a>time_ <span class="op">=</span> collect(<span class="fl">1990</span><span class="op">:</span><span class="fl">2016</span>)</span>
+<span id="cb22-3"><a href="time-series.html#cb22-3" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> [<span class="fl">17.55</span><span class="op">,</span><span class="fl">21.86</span><span class="op">,</span><span class="fl">23.89</span><span class="op">,</span><span class="fl">26.93</span><span class="op">,</span><span class="fl">26.89</span><span class="op">,</span><span class="fl">28.83</span><span class="op">,</span><span class="fl">30.08</span><span class="op">,</span><span class="fl">30.95</span><span class="op">,</span><span class="fl">30.19</span><span class="op">,</span><span class="fl">31.58</span><span class="op">,</span><span class="fl">32.58</span><span class="op">,</span><span class="fl">33.48</span><span class="op">,</span><span class="fl">39.02</span><span class="op">,</span><span class="fl">41.39</span><span class="op">,</span><span class="fl">41.60</span><span class="op">,</span> <span class="fl">44.66</span><span class="op">,</span><span class="fl">46.95</span><span class="op">,</span><span class="fl">48.73</span><span class="op">,</span><span class="fl">51.49</span><span class="op">,</span><span class="fl">50.03</span><span class="op">,</span><span class="fl">60.64</span><span class="op">,</span><span class="fl">63.36</span><span class="op">,</span><span class="fl">66.36</span><span class="op">,</span><span class="fl">68.20</span><span class="op">,</span><span class="fl">68.12</span><span class="op">,</span><span class="fl">69.78</span><span class="op">,</span><span class="fl">72.60</span>]</span>
+<span id="cb22-4"><a href="time-series.html#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb23-1"><a href="time-series.html#cb23-1" aria-hidden="true" tabindex="-1"></a>plot(time_<span class="op">,</span> data<span class="op">,</span> label<span class="op">=</span><span class="ex">false</span>)</span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_13_plot_6-J1.png" /><!-- --></p>
+<p>In this type of problem, it would not make any sense for all the predictions to be constant. Here is more latent information that we can get from the data: The trend.</p>
+<p>This will be key since, once obtained, it will allow us to generate new values as we want to make more distant forecasts in time.</p>
+<p>But how do we include this in our exponential smoothing model?</p>
+<div id="holts-linear-trend-method" class="section level4" number="13.2.3.1">
+<h4><span class="header-section-number">13.2.3.1</span> Holt’s linear trend method</h4>
+<p>This method for making predictions with time series that have a trend consists of a prediction equation and two smoothing equations, one to determine the level and another for the slope (or trend):</p>
+<p><span class="math inline">\(y_{T+h|T}^- = l_t + hb_t\)</span></p>
+<p><span class="math inline">\(l_t = αy_t + (1 - α)(l_{t-1} + b_{t-1})\)</span></p>
+<p><span class="math inline">\(b_t = β*(l_t - l_{t-1}) + (1 - β)b_{t-1}\)</span></p>
+<p>In this way, the equation for making predictions is simply to take the last predicted level (up to here it is equal to the Simple Exponential Smoothing) and add as many “slopes” as periods ahead we want to predict. The value of the slope to make the forecast is also the last predicted one.</p>
+<p>As you can see, the values of alpha and beta are going to weigh each of the Smoothing equations.</p>
+<p>On the one hand, alpha will weight the values of the previous real observation <span class="math inline">\(y_{t-1}\)</span> and the predicted one using the prediction equation with the values of l and b above, to obtain the actual value of the level <span class="math inline">\(l_{t}\)</span></p>
+<p>On the other hand, the beta value will be telling us how much we are going to let the value of the slope be modified. This value has the function of weighting between the current slope found <span class="math inline">\(l_t - l_{t-1}\)</span> against the estimated slope in the previous point, to calculate the estimation of the slope in the current period.
+In this way, small beta values indicate that the slope is unlikely to change over time, and high values allow the slope to change freely (the value of the “current” slope <span class="math inline">\(l_t - l_{t-1}\)</span> becomes preponderant in the estimation).</p>
+<p>With this method, then, forecasts stop being flat to become trended. With this idea in mind, let’s translate the math into code again:</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb24-1"><a href="time-series.html#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> HLT_loss(time_serie<span class="op">,</span> α<span class="op">,</span> β<span class="op">,</span> l0<span class="op">,</span> b0)</span>
+<span id="cb24-2"><a href="time-series.html#cb24-2" aria-hidden="true" tabindex="-1"></a>    N <span class="op">=</span> length(time_serie)</span>
+<span id="cb24-3"><a href="time-series.html#cb24-3" aria-hidden="true" tabindex="-1"></a>    l_t <span class="op">=</span> <span class="fl">0</span></span>
+<span id="cb24-4"><a href="time-series.html#cb24-4" aria-hidden="true" tabindex="-1"></a>    b_t <span class="op">=</span> <span class="fl">0</span></span>
+<span id="cb24-5"><a href="time-series.html#cb24-5" aria-hidden="true" tabindex="-1"></a>    l_t_ <span class="op">=</span> <span class="fl">0</span> <span class="co">#Variable to save l(t-1)</span></span>
+<span id="cb24-6"><a href="time-series.html#cb24-6" aria-hidden="true" tabindex="-1"></a>    loss <span class="op">=</span> <span class="fl">0</span></span>
+<span id="cb24-7"><a href="time-series.html#cb24-7" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb24-8"><a href="time-series.html#cb24-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>(N)</span>
+<span id="cb24-9"><a href="time-series.html#cb24-9" aria-hidden="true" tabindex="-1"></a>        <span class="kw">if</span> i <span class="op">==</span> <span class="fl">1</span></span>
+<span id="cb24-10"><a href="time-series.html#cb24-10" aria-hidden="true" tabindex="-1"></a>            l_t <span class="op">=</span> l0</span>
+<span id="cb24-11"><a href="time-series.html#cb24-11" aria-hidden="true" tabindex="-1"></a>            b_t <span class="op">=</span> b0</span>
+<span id="cb24-12"><a href="time-series.html#cb24-12" aria-hidden="true" tabindex="-1"></a>        <span class="kw">else</span></span>
+<span id="cb24-13"><a href="time-series.html#cb24-13" aria-hidden="true" tabindex="-1"></a>            l_t <span class="op">=</span> time_serie[i <span class="op">-</span> <span class="fl">1</span>] <span class="op">*</span> α <span class="op">+</span> (l_t <span class="op">+</span> b_t) <span class="op">*</span> (<span class="fl">1</span> <span class="op">-</span> α) <span class="co">#b_t is taking b(t-1) value</span></span>
+<span id="cb24-14"><a href="time-series.html#cb24-14" aria-hidden="true" tabindex="-1"></a>            b_t <span class="op">=</span> β <span class="op">*</span> (l_t <span class="op">-</span> l_t_) <span class="op">+</span> (<span class="fl">1</span> <span class="op">-</span> β) <span class="op">*</span> b_t</span>
+<span id="cb24-15"><a href="time-series.html#cb24-15" aria-hidden="true" tabindex="-1"></a>        <span class="kw">end</span></span>
+<span id="cb24-16"><a href="time-series.html#cb24-16" aria-hidden="true" tabindex="-1"></a>        l_t_ <span class="op">=</span> l_t</span>
+<span id="cb24-17"><a href="time-series.html#cb24-17" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb24-18"><a href="time-series.html#cb24-18" aria-hidden="true" tabindex="-1"></a>        y_pred <span class="op">=</span> l_t <span class="op">+</span> b_t</span>
+<span id="cb24-19"><a href="time-series.html#cb24-19" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb24-20"><a href="time-series.html#cb24-20" aria-hidden="true" tabindex="-1"></a>        loss <span class="op">+=</span> (time_serie[i] <span class="op">-</span> y_pred)<span class="op">^</span><span class="fl">2</span>  </span>
+<span id="cb24-21"><a href="time-series.html#cb24-21" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
+<span id="cb24-22"><a href="time-series.html#cb24-22" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb24-23"><a href="time-series.html#cb24-23" aria-hidden="true" tabindex="-1"></a>    <span class="kw">return</span> loss</span>
+<span id="cb24-24"><a href="time-series.html#cb24-24" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<pre><code>## HLT_loss (generic function with 1 method)</code></pre>
+<p>This function is doing exactly the same as <code>SES\_weight\_loss</code>, which we defined earlier. It is good to clarify that, like it, the method needs an initial slope to make the estimation of the first value of the time series. Let’s see which parameters optimize the model with the data we have!</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb26-1"><a href="time-series.html#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> HLT_loss_(params<span class="op">,</span> time_serie<span class="op">=</span>data)</span>
+<span id="cb26-2"><a href="time-series.html#cb26-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">return</span> HLT_loss(time_serie<span class="op">,</span> params[<span class="fl">1</span>]<span class="op">,</span> params[<span class="fl">2</span>]<span class="op">,</span> params[<span class="fl">3</span>]<span class="op">,</span> params[<span class="fl">4</span>])</span>
+<span id="cb26-3"><a href="time-series.html#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<pre><code>## HLT_loss_ (generic function with 2 methods)</code></pre>
+<div class="sourceCode" id="cb28"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb28-1"><a href="time-series.html#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span> </span>
+<span id="cb28-2"><a href="time-series.html#cb28-2" aria-hidden="true" tabindex="-1"></a>    lower_ <span class="op">=</span> [<span class="fl">0</span>.<span class="op">,</span> <span class="fl">0</span>.<span class="op">,</span> <span class="fl">10</span>.<span class="op">,</span> <span class="fl">1</span>.]</span>
+<span id="cb28-3"><a href="time-series.html#cb28-3" aria-hidden="true" tabindex="-1"></a>    upper_ <span class="op">=</span> [<span class="fl">1</span>.<span class="op">,</span> <span class="fl">1</span>.<span class="op">,</span><span class="fl">30</span>.<span class="op">,</span> <span class="fl">3</span>]</span>
+<span id="cb28-4"><a href="time-series.html#cb28-4" aria-hidden="true" tabindex="-1"></a>    initial_x_ <span class="op">=</span> [<span class="fl">0.5</span><span class="op">,</span> <span class="fl">0.5</span><span class="op">,</span> <span class="fl">15</span>.<span class="op">,</span> <span class="fl">2</span>.]</span>
+<span id="cb28-5"><a href="time-series.html#cb28-5" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb28-6"><a href="time-series.html#cb28-6" aria-hidden="true" tabindex="-1"></a>    res1 <span class="op">=</span> optimize(HLT_loss_<span class="op">,</span> lower_<span class="op">,</span> upper_<span class="op">,</span> initial_x_)</span>
+<span id="cb28-7"><a href="time-series.html#cb28-7" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<pre><code>##  * Status: success
+## 
+##  * Candidate solution
+##     Final objective value:     1.284222e+02
+## 
+##  * Found with
+##     Algorithm:     Fminbox with L-BFGS
+## 
+##  * Convergence measures
+##     |x - x&#39;|               = 1.88e-09 ≰ 0.0e+00
+##     |x - x&#39;|/|x&#39;|          = 1.17e-10 ≰ 0.0e+00
+##     |f(x) - f(x&#39;)|         = 0.00e+00 ≤ 0.0e+00
+##     |f(x) - f(x&#39;)|/|f(x&#39;)| = 0.00e+00 ≤ 0.0e+00
+##     |g(x)|                 = 2.35e-09 ≤ 1.0e-08
+## 
+##  * Work counters
+##     Seconds run:   0  (vs limit Inf)
+##     Iterations:    4
+##     f(x) calls:    456
+##     ∇f(x) calls:   456</code></pre>
+<p>As with the “SES” we define a wrapper function to be able to perform the optimization. The minimum and maximum values of lo are obtained with the same criterion: The optimal value has to be close to the first value of the time series, since it is going to be its estimation. With respect to the minimum and maximum value of the slope the criterion is again looking into the data: If you see the graph of the time series you can clearly see that the slope has to be between 1 and 3 (you can see that every 5 years that pass, the number of passengers increases by 10, more or less).</p>
+<p>Let´s see the optimal values for the parameters:</p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb30-1"><a href="time-series.html#cb30-1" aria-hidden="true" tabindex="-1"></a>optim1 <span class="op">=</span> Optim.minimizer(res1)</span></code></pre></div>
+<pre><code>## 4-element Array{Float64,1}:
+##   0.8215406656136957
+##   1.6174079495295674e-13
+##  15.84752428792649
+##   2.098148935300456</code></pre>
+<p>Perfect! Now that we have the optimal parameters to perform the forecast, we just need to define a function that performs it. For example:</p>
+<div class="sourceCode" id="cb32"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb32-1"><a href="time-series.html#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> HLT_forecast(time_serie<span class="op">,</span> α<span class="op">,</span> β<span class="op">,</span> l0<span class="op">,</span> b0<span class="op">,</span> n_pred)</span>
+<span id="cb32-2"><a href="time-series.html#cb32-2" aria-hidden="true" tabindex="-1"></a>    N <span class="op">=</span> length(time_serie)</span>
+<span id="cb32-3"><a href="time-series.html#cb32-3" aria-hidden="true" tabindex="-1"></a>    l_t <span class="op">=</span> <span class="fl">0</span></span>
+<span id="cb32-4"><a href="time-series.html#cb32-4" aria-hidden="true" tabindex="-1"></a>    b_t <span class="op">=</span> <span class="fl">0</span></span>
+<span id="cb32-5"><a href="time-series.html#cb32-5" aria-hidden="true" tabindex="-1"></a>    l_t_ <span class="op">=</span> <span class="fl">0</span> </span>
+<span id="cb32-6"><a href="time-series.html#cb32-6" aria-hidden="true" tabindex="-1"></a>    pred <span class="op">=</span> []</span>
+<span id="cb32-7"><a href="time-series.html#cb32-7" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb32-8"><a href="time-series.html#cb32-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>(N)</span>
+<span id="cb32-9"><a href="time-series.html#cb32-9" aria-hidden="true" tabindex="-1"></a>        <span class="kw">if</span> i <span class="op">==</span> <span class="fl">1</span></span>
+<span id="cb32-10"><a href="time-series.html#cb32-10" aria-hidden="true" tabindex="-1"></a>            l_t <span class="op">=</span> l0</span>
+<span id="cb32-11"><a href="time-series.html#cb32-11" aria-hidden="true" tabindex="-1"></a>            b_t <span class="op">=</span> b0</span>
+<span id="cb32-12"><a href="time-series.html#cb32-12" aria-hidden="true" tabindex="-1"></a>        <span class="kw">else</span></span>
+<span id="cb32-13"><a href="time-series.html#cb32-13" aria-hidden="true" tabindex="-1"></a>            l_t <span class="op">=</span> time_serie[i <span class="op">-</span> <span class="fl">1</span>] <span class="op">*</span> α <span class="op">+</span> (l_t <span class="op">+</span> b_t) <span class="op">*</span> (<span class="fl">1</span> <span class="op">-</span> α) <span class="co">#b_t &quot;is&quot; b(t-1)</span></span>
+<span id="cb32-14"><a href="time-series.html#cb32-14" aria-hidden="true" tabindex="-1"></a>            b_t <span class="op">=</span> β <span class="op">*</span> (l_t <span class="op">-</span> l_t_) <span class="op">+</span> (<span class="fl">1</span> <span class="op">-</span> β) <span class="op">*</span> b_t</span>
+<span id="cb32-15"><a href="time-series.html#cb32-15" aria-hidden="true" tabindex="-1"></a>        <span class="kw">end</span></span>
+<span id="cb32-16"><a href="time-series.html#cb32-16" aria-hidden="true" tabindex="-1"></a>        l_t_ <span class="op">=</span> l_t</span>
+<span id="cb32-17"><a href="time-series.html#cb32-17" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
+<span id="cb32-18"><a href="time-series.html#cb32-18" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb32-19"><a href="time-series.html#cb32-19" aria-hidden="true" tabindex="-1"></a>    l_t <span class="op">=</span> time_serie[<span class="kw">end</span>] <span class="op">*</span> α <span class="op">+</span> (l_t <span class="op">+</span> b_t) <span class="op">*</span> (<span class="fl">1</span> <span class="op">-</span> α)</span>
+<span id="cb32-20"><a href="time-series.html#cb32-20" aria-hidden="true" tabindex="-1"></a>    b_t <span class="op">=</span> β <span class="op">*</span> (l_t <span class="op">-</span> l_t_) <span class="op">+</span> (<span class="fl">1</span> <span class="op">-</span> β) <span class="op">*</span> b_t</span>
+<span id="cb32-21"><a href="time-series.html#cb32-21" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb32-22"><a href="time-series.html#cb32-22" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>n_pred</span>
+<span id="cb32-23"><a href="time-series.html#cb32-23" aria-hidden="true" tabindex="-1"></a>        y_pred <span class="op">=</span> l_t <span class="op">+</span> b_t <span class="op">*</span> i</span>
+<span id="cb32-24"><a href="time-series.html#cb32-24" aria-hidden="true" tabindex="-1"></a>        push<span class="op">!</span>(pred<span class="op">,</span> y_pred)</span>
+<span id="cb32-25"><a href="time-series.html#cb32-25" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
+<span id="cb32-26"><a href="time-series.html#cb32-26" aria-hidden="true" tabindex="-1"></a>                </span>
+<span id="cb32-27"><a href="time-series.html#cb32-27" aria-hidden="true" tabindex="-1"></a>    <span class="kw">return</span> vcat(time_serie<span class="op">,</span> pred)</span>
+<span id="cb32-28"><a href="time-series.html#cb32-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-29"><a href="time-series.html#cb32-29" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<pre><code>## HLT_forecast (generic function with 1 method)</code></pre>
+<p>As you can see in the function, the first part of it (the first for) goes through the entire time series using the parameters already optimized and making the best predictions for each point.</p>
+<p>Then, when we reach the end of the time series, the second “for” begins (it will iterate the amount of periods we want to predict, value that we enter as “<span class="math inline">\(n\_pred\)</span>”) to make now forecasts of periods that have not yet happened. To do this, it simply uses the last “level” that was estimated for the last value of the time series, and adds up as many slopes as periods we want: <span class="math inline">\(y_{pred} = l_t + b_t * i\)</span></p>
+<p>Finally, it returns a concatenation of the time series plus the values we ask it to predict.</p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb34-1"><a href="time-series.html#cb34-1" aria-hidden="true" tabindex="-1"></a>data_forecasted <span class="op">=</span> HLT_forecast(data<span class="op">,</span> <span class="fl">0.8321</span><span class="op">,</span> <span class="fl">0.0001</span><span class="op">,</span> <span class="fl">15.57</span><span class="op">,</span> <span class="fl">2.102</span><span class="op">,</span> <span class="fl">15</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb35"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb35-1"><a href="time-series.html#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb35-2"><a href="time-series.html#cb35-2" aria-hidden="true" tabindex="-1"></a>plot(time_<span class="op">,</span> data_forecasted[<span class="fl">1</span><span class="op">:</span>length(data)]<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;Data&quot;</span><span class="op">,</span> legend<span class="op">=:</span>topleft)</span>
+<span id="cb35-3"><a href="time-series.html#cb35-3" aria-hidden="true" tabindex="-1"></a>plot<span class="op">!</span>(time_[<span class="kw">end</span>]<span class="op">:</span>(time_[<span class="kw">end</span>]<span class="op">+</span><span class="fl">15</span>)<span class="op">,</span> data_forecasted[length(data)<span class="op">:</span><span class="kw">end</span>]<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;Forecast&quot;</span><span class="op">,</span> title<span class="op">=</span><span class="st">&quot;Forecast for 15 periods ahead&quot;</span>)</span>
+<span id="cb35-4"><a href="time-series.html#cb35-4" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_13_plot_7-J1.png" /><!-- --></p>
+<p>And so it is. We already built a tool that allows us to make predictions for variables that show a trend.</p>
+<p>But surely you are thinking that assuming that the trend is going to be maintained during all the years that we are forecasting is a bit excessive? And it’s true that it is.</p>
+<p>It is known that this type of methods usually overestimate the values of the variable to predict, exactly because they suppose that the tendency continues.</p>
+<p>A improvement of this method that helps to deal with this problem it is the <strong>Damped trend methods</strong>. Basically, what it does is add a coefficient that flattens the curve as we want to make more distant predictions in time. This improvement makes better predictions than the common trend methods, leaving the formulas as:</p>
+<p><span class="math inline">\(y_{T+h|T}^- = l_t + (ϕ + ϕ^2 + ... + ϕ^h)b_t\)</span></p>
+<p><span class="math inline">\(l_t = αy_t + (1 - α)(l_{t-1} + ϕ*b_{t-1})\)</span></p>
+<p><span class="math inline">\(b_t = β*(l_t - l_{t-1}) + (1 - β)*ϕ*b_{t-1}\)</span></p>
+<p>In this way, at the time of making the predictions and as we want to make them over more distant periods, instead of adding a unit of b_t to each one, we add a smaller fraction each time until the sum is practically constant.</p>
+<p>For example, before, with the simple trend method, if we want to estimate the value of the next period the count to be done was (assuming, for example, that <span class="math inline">\(l_t\)</span> and <span class="math inline">\(b_t\)</span> in the last period of the time series were worth 300 and 1.5):</p>
+<p><span class="math inline">\(y_{T+1|T}^- = 300 + 1.5 = 301.5\)</span></p>
+<p>and if we wanted to make a forecast for the next period to the one just calculated, it would be:</p>
+<p><span class="math inline">\(y_{T+2|T}^- = 300 + 1.5 + 1.5 = 300 + 1.5*2 = 303\)</span></p>
+<p>That is, a constant unit of <span class="math inline">\(b_t\)</span> is added for each new period that is predicted.</p>
+<p>On the other hand, when we use the “damped method” the fraction of <span class="math inline">\(b_t\)</span> that we are adding falls exponentially, since we are multiplying it by a number less than 1 and that is rising to an increasing power. Following the same example, and adding a damping parameter equal to 0.9, we would obtain:</p>
+<p><span class="math inline">\(y_{T+1|T}^- = 300 + 0.9*1.5 = 300 + 1.35 = 301.35\)</span></p>
+<p><span class="math inline">\(y_{T+2|T}^- = 300 + 0.9*1.5 + 0.9^2 * 1.5 = 300 + 0.9*1.5 + 0.81 * 1.5 = 302.565\)</span></p>
+<p>The process continues in this way until the value of <span class="math inline">\(ϕ^t\)</span> is zero, that is to say that although it continues going further in the periods, to the result of the forecast no longer is added any significant term. This is why it is said that the damped method tends to make flat forecasts in the long term.</p>
+<p>Finally, let’s note that the damping parameter takes values between 1 and 0. being completely identical to the simple trend method for a value of 1 and completely flat for a value of 0. Let´s see:</p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb36-1"><a href="time-series.html#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> Damped_HLT_forecast(time_serie<span class="op">,</span> α<span class="op">,</span> β<span class="op">,</span> l0<span class="op">,</span> b0<span class="op">,</span> ϕ<span class="op">,</span> n_pred)</span>
+<span id="cb36-2"><a href="time-series.html#cb36-2" aria-hidden="true" tabindex="-1"></a>    N <span class="op">=</span> length(time_serie)</span>
+<span id="cb36-3"><a href="time-series.html#cb36-3" aria-hidden="true" tabindex="-1"></a>    l_t <span class="op">=</span> <span class="fl">0</span></span>
+<span id="cb36-4"><a href="time-series.html#cb36-4" aria-hidden="true" tabindex="-1"></a>    b_t <span class="op">=</span> <span class="fl">0</span></span>
+<span id="cb36-5"><a href="time-series.html#cb36-5" aria-hidden="true" tabindex="-1"></a>    l_t_ <span class="op">=</span> <span class="fl">0</span> </span>
+<span id="cb36-6"><a href="time-series.html#cb36-6" aria-hidden="true" tabindex="-1"></a>    pred <span class="op">=</span> []</span>
+<span id="cb36-7"><a href="time-series.html#cb36-7" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb36-8"><a href="time-series.html#cb36-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>(N)</span>
+<span id="cb36-9"><a href="time-series.html#cb36-9" aria-hidden="true" tabindex="-1"></a>        <span class="kw">if</span> i <span class="op">==</span> <span class="fl">1</span></span>
+<span id="cb36-10"><a href="time-series.html#cb36-10" aria-hidden="true" tabindex="-1"></a>            l_t <span class="op">=</span> l0</span>
+<span id="cb36-11"><a href="time-series.html#cb36-11" aria-hidden="true" tabindex="-1"></a>            b_t <span class="op">=</span> b0</span>
+<span id="cb36-12"><a href="time-series.html#cb36-12" aria-hidden="true" tabindex="-1"></a>        <span class="kw">else</span></span>
+<span id="cb36-13"><a href="time-series.html#cb36-13" aria-hidden="true" tabindex="-1"></a>            l_t <span class="op">=</span> time_serie[i <span class="op">-</span> <span class="fl">1</span>] <span class="op">*</span> α <span class="op">+</span> (l_t <span class="op">+</span> b_t) <span class="op">*</span> (<span class="fl">1</span> <span class="op">-</span> α) <span class="co">#b_t &quot;is&quot; b(t-1)</span></span>
+<span id="cb36-14"><a href="time-series.html#cb36-14" aria-hidden="true" tabindex="-1"></a>            b_t <span class="op">=</span> β <span class="op">*</span> (l_t <span class="op">-</span> l_t_) <span class="op">+</span> (<span class="fl">1</span> <span class="op">-</span> β) <span class="op">*</span> b_t </span>
+<span id="cb36-15"><a href="time-series.html#cb36-15" aria-hidden="true" tabindex="-1"></a>        <span class="kw">end</span></span>
+<span id="cb36-16"><a href="time-series.html#cb36-16" aria-hidden="true" tabindex="-1"></a>        l_t_ <span class="op">=</span> l_t</span>
+<span id="cb36-17"><a href="time-series.html#cb36-17" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb36-18"><a href="time-series.html#cb36-18" aria-hidden="true" tabindex="-1"></a>        y_pred <span class="op">=</span> l_t <span class="op">+</span> b_t</span>
+<span id="cb36-19"><a href="time-series.html#cb36-19" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
+<span id="cb36-20"><a href="time-series.html#cb36-20" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb36-21"><a href="time-series.html#cb36-21" aria-hidden="true" tabindex="-1"></a>    l_t <span class="op">=</span> time_serie[<span class="kw">end</span>] <span class="op">*</span> α <span class="op">+</span> (l_t <span class="op">+</span> b_t) <span class="op">*</span> (<span class="fl">1</span> <span class="op">-</span> α)</span>
+<span id="cb36-22"><a href="time-series.html#cb36-22" aria-hidden="true" tabindex="-1"></a>    b_t <span class="op">=</span> β <span class="op">*</span> (l_t <span class="op">-</span> l_t_) <span class="op">+</span> (<span class="fl">1</span> <span class="op">-</span> β) <span class="op">*</span> b_t</span>
+<span id="cb36-23"><a href="time-series.html#cb36-23" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb36-24"><a href="time-series.html#cb36-24" aria-hidden="true" tabindex="-1"></a>    phi <span class="op">=</span> <span class="fl">0</span></span>
+<span id="cb36-25"><a href="time-series.html#cb36-25" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb36-26"><a href="time-series.html#cb36-26" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>n_pred</span>
+<span id="cb36-27"><a href="time-series.html#cb36-27" aria-hidden="true" tabindex="-1"></a>        phi <span class="op">+=</span> ϕ<span class="op">^</span>i</span>
+<span id="cb36-28"><a href="time-series.html#cb36-28" aria-hidden="true" tabindex="-1"></a>        y_pred <span class="op">=</span> l_t <span class="op">+</span> b_t <span class="op">*</span> phi</span>
+<span id="cb36-29"><a href="time-series.html#cb36-29" aria-hidden="true" tabindex="-1"></a>        push<span class="op">!</span>(pred<span class="op">,</span> y_pred)</span>
+<span id="cb36-30"><a href="time-series.html#cb36-30" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
+<span id="cb36-31"><a href="time-series.html#cb36-31" aria-hidden="true" tabindex="-1"></a>                </span>
+<span id="cb36-32"><a href="time-series.html#cb36-32" aria-hidden="true" tabindex="-1"></a>    <span class="kw">return</span> vcat(time_serie<span class="op">,</span> pred)</span>
+<span id="cb36-33"><a href="time-series.html#cb36-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-34"><a href="time-series.html#cb36-34" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<pre><code>## Damped_HLT_forecast (generic function with 1 method)</code></pre>
+<div class="sourceCode" id="cb38"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb38-1"><a href="time-series.html#cb38-1" aria-hidden="true" tabindex="-1"></a>damped_forecast <span class="op">=</span> Damped_HLT_forecast(data<span class="op">,</span> <span class="fl">0.8321</span><span class="op">,</span> <span class="fl">0.0001</span><span class="op">,</span> <span class="fl">15.57</span><span class="op">,</span> <span class="fl">2.102</span><span class="op">,</span> <span class="fl">0.96</span> <span class="op">,</span> <span class="fl">15</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb39"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb39-1"><a href="time-series.html#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb39-2"><a href="time-series.html#cb39-2" aria-hidden="true" tabindex="-1"></a>plot(time_<span class="op">,</span> damped_forecast[<span class="fl">1</span><span class="op">:</span>length(data)]<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;Data&quot;</span><span class="op">,</span> legend<span class="op">=:</span>topleft)</span>
+<span id="cb39-3"><a href="time-series.html#cb39-3" aria-hidden="true" tabindex="-1"></a>plot<span class="op">!</span>(time_[<span class="kw">end</span>]<span class="op">:</span>(time_[<span class="kw">end</span>]<span class="op">+</span><span class="fl">15</span>)<span class="op">,</span> data_forecasted[length(data)<span class="op">:</span><span class="kw">end</span>]<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;Holt´s Forecast&quot;</span>)</span>
+<span id="cb39-4"><a href="time-series.html#cb39-4" aria-hidden="true" tabindex="-1"></a>plot<span class="op">!</span>(time_[<span class="kw">end</span>]<span class="op">:</span>(time_[<span class="kw">end</span>]<span class="op">+</span><span class="fl">15</span>)<span class="op">,</span> damped_forecast[length(data)<span class="op">:</span><span class="kw">end</span>]<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;Damped Forecast&quot;</span><span class="op">,</span> title<span class="op">=</span><span class="st">&quot;Damped forecast with ϕ=0.96&quot;</span>)</span>
+<span id="cb39-5"><a href="time-series.html#cb39-5" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_13_plot_8-J1.png" /><!-- --></p>
+<p>Incredible! Terry calls us and tells us that using the “damped” model was key to a trade he made. He is very excited about our work and gives us one last challenge.</p>
+<p>He tells us that he is trying to enter more complex markets, particularly tourism, but that he doesn’t understand how to approach this type of series since they show a lot of variability. For example, we start analysing the visitor nights in Australia spent by international tourists:</p>
+<div class="sourceCode" id="cb40"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb40-1"><a href="time-series.html#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb40-2"><a href="time-series.html#cb40-2" aria-hidden="true" tabindex="-1"></a>australia_tourist <span class="op">=</span> [<span class="fl">42.20566</span><span class="op">,</span> <span class="fl">24.64917</span><span class="op">,</span> <span class="fl">32.66734</span><span class="op">,</span> <span class="fl">37.25735</span><span class="op">,</span> <span class="fl">45.24246</span><span class="op">,</span> <span class="fl">29.35048</span><span class="op">,</span> <span class="fl">36.34421</span><span class="op">,</span> <span class="fl">41.78208</span><span class="op">,</span> <span class="fl">49.27660</span><span class="op">,</span> <span class="fl">31.27540</span><span class="op">,</span> <span class="fl">37.85063</span><span class="op">,</span> <span class="fl">38.83704</span><span class="op">,</span> <span class="fl">51.23690</span><span class="op">,</span> <span class="fl">31.83855</span><span class="op">,</span> <span class="fl">41.32342</span><span class="op">,</span> <span class="fl">42.79900</span><span class="op">,</span> <span class="fl">55.70836</span><span class="op">,</span> <span class="fl">33.40714</span><span class="op">,</span> <span class="fl">42.31664</span><span class="op">,</span> <span class="fl">45.15712</span><span class="op">,</span> <span class="fl">59.57608</span><span class="op">,</span> <span class="fl">34.83733</span><span class="op">,</span> <span class="fl">44.84168</span><span class="op">,</span> <span class="fl">46.97125</span><span class="op">,</span> <span class="fl">60.01903</span><span class="op">,</span> <span class="fl">38.37118</span><span class="op">,</span> <span class="fl">46.97586</span><span class="op">,</span> <span class="fl">50.73380</span><span class="op">,</span> <span class="fl">61.64687</span><span class="op">,</span> <span class="fl">39.29957</span><span class="op">,</span> <span class="fl">52.67121</span><span class="op">,</span> <span class="fl">54.33232</span><span class="op">,</span> <span class="fl">66.83436</span><span class="op">,</span> <span class="fl">40.87119</span><span class="op">,</span> <span class="fl">51.82854</span><span class="op">,</span> <span class="fl">57.49191</span><span class="op">,</span> <span class="fl">65.25147</span><span class="op">,</span> <span class="fl">43.06121</span><span class="op">,</span> <span class="fl">54.76076</span><span class="op">,</span> <span class="fl">59.83447</span><span class="op">,</span> <span class="fl">73.25703</span><span class="op">,</span> <span class="fl">47.69662</span><span class="op">,</span> <span class="fl">61.09777</span><span class="op">,</span> <span class="fl">66.05576</span>]</span>
+<span id="cb40-3"><a href="time-series.html#cb40-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-4"><a href="time-series.html#cb40-4" aria-hidden="true" tabindex="-1"></a>time <span class="op">=</span> collect(<span class="fl">2005</span><span class="op">:</span><span class="fl">0.25</span><span class="op">:</span><span class="fl">2015.75</span>)</span>
+<span id="cb40-5"><a href="time-series.html#cb40-5" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb41"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb41-1"><a href="time-series.html#cb41-1" aria-hidden="true" tabindex="-1"></a>plot(time<span class="op">,</span> australia_tourist<span class="op">,</span> xlabel<span class="op">=</span><span class="st">&quot;Year&quot;</span><span class="op">,</span> ylabel<span class="op">=</span><span class="st">&quot;&quot;&quot;Nigth visitors (millions)&quot;&quot;&quot;</span><span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span>)</span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_13_plot_9-J1.png" /><!-- --></p>
+<p>As you can see, the series shows a lot of variability. The values go up and down constantly.</p>
+<p>After being a long time with Terry looking for ideas to address this type of data we realize that these ups and downs are not random, indeed, the form is repeated year after year! We realize that we are facing a problem with seasonality.</p>
+</div>
+</div>
+<div id="seasonality-methods" class="section level3" number="13.2.4">
+<h3><span class="header-section-number">13.2.4</span> Seasonality Methods</h3>
+<p>For this type of model, in addition to the level and trend parameters, it is necessary to add another component that captures the time of year (actually it can be any other period in which seasonality occurs) in which we are and somehow influences the predicted outcome.</p>
+<p>In this way, the level and trend parameters will behave as we have already studied them, but the seasonality parameter will be adjusting (adding and subtracting or multiplying and dividing, depending on the method) the predicted level.</p>
+<p>In the same line with the Exponential smoothing that we have been studying, the model can be made more complex to add an additive or multiplicative seasonality. Here we will stop at the additive:</p>
+<div id="holt-winters-seasonal-additive-method" class="section level4" number="13.2.4.1">
+<h4><span class="header-section-number">13.2.4.1</span> Holt-Winters’ seasonal additive method</h4>
+<p>For this method, we will need to add a smoothing equation for the seasonality parameters. In addition, we will have to indicate the frequency with which the seasonality occurs in the analyzed period and denote it with the letter <span class="math inline">\(m\)</span>. For example, for a monthly seasonality <span class="math inline">\(m = 12\)</span> and for a semester one <span class="math inline">\(m = 2\)</span>.</p>
+<p>So, the model becomes like this:</p>
+<p><span class="math inline">\(y_{T+h|T}^- = l_t + hb_t + s_{t+h-m(k+1)}\)</span></p>
+<p><span class="math inline">\(l_t = α(y_t - s_{t-m}) + (1 - α)(l_{t-1} + b_{t-1})\)</span></p>
+<p><span class="math inline">\(b_t = β*(l_t - l_{t-1}) + (1 - β)b_{t-1}\)</span></p>
+<p><span class="math inline">\(s_t = γ(y_t - l_{t-1} - b_{t-1}) + (1 - γ)s_{t-m}\)</span></p>
+<p>As we had already anticipated, the seasonality term is added to the forecast equation. The term <span class="math inline">\(k\)</span> is the integer part of <span class="math inline">\((h-1)/m\)</span> and its function is to ensure that we always make predictions with the values of the parameters in the last year of the time series we have as data.</p>
+<p>The level equation is still a weighted average, only now the seasonal component is added to the observation <span class="math inline">\((y_t - s_{t-m})\)</span>. The other part of the average is the non-seasonal forecast <span class="math inline">\((l_{t-1} + b_{t-1})\)</span>.</p>
+<p>The trend equation remains the same, and the seasonality equation also represents a weighted average between the current <span class="math inline">\((y_t - l_{t-1} - b_{t-1})\)</span> and previous year’s index for the same season <span class="math inline">\(s_{t-m}\)</span>. This average is weighted by the γ parameter.</p>
+<p>Now so, let’s put these weird equations into code:</p>
+<div class="sourceCode" id="cb42"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb42-1"><a href="time-series.html#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> HW_Seasonal(time_serie<span class="op">,</span> α<span class="op">,</span> β<span class="op">,</span> γ<span class="op">,</span> l0<span class="op">,</span> b0<span class="op">,</span> s0<span class="op">,</span> m)</span>
+<span id="cb42-2"><a href="time-series.html#cb42-2" aria-hidden="true" tabindex="-1"></a>    N <span class="op">=</span> length(time_serie)</span>
+<span id="cb42-3"><a href="time-series.html#cb42-3" aria-hidden="true" tabindex="-1"></a>    l_t <span class="op">=</span> <span class="fl">0</span></span>
+<span id="cb42-4"><a href="time-series.html#cb42-4" aria-hidden="true" tabindex="-1"></a>    b_t <span class="op">=</span> <span class="fl">0</span></span>
+<span id="cb42-5"><a href="time-series.html#cb42-5" aria-hidden="true" tabindex="-1"></a>    l_t_ <span class="op">=</span> <span class="fl">0</span> <span class="co">#Variable to save l(t-1)</span></span>
+<span id="cb42-6"><a href="time-series.html#cb42-6" aria-hidden="true" tabindex="-1"></a>    b_t_ <span class="op">=</span> <span class="fl">0</span> <span class="co">#Variable to save b(t-1)</span></span>
+<span id="cb42-7"><a href="time-series.html#cb42-7" aria-hidden="true" tabindex="-1"></a>    s_ <span class="op">=</span> <span class="fl">0</span></span>
+<span id="cb42-8"><a href="time-series.html#cb42-8" aria-hidden="true" tabindex="-1"></a>    s <span class="op">=</span> s0</span>
+<span id="cb42-9"><a href="time-series.html#cb42-9" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb42-10"><a href="time-series.html#cb42-10" aria-hidden="true" tabindex="-1"></a>    pred <span class="op">=</span> []</span>
+<span id="cb42-11"><a href="time-series.html#cb42-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-12"><a href="time-series.html#cb42-12" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> <span class="fl">0</span><span class="op">:</span>(N <span class="op">-</span> <span class="fl">1</span>)</span>
+<span id="cb42-13"><a href="time-series.html#cb42-13" aria-hidden="true" tabindex="-1"></a>        <span class="kw">if</span> i <span class="op">==</span> <span class="fl">0</span></span>
+<span id="cb42-14"><a href="time-series.html#cb42-14" aria-hidden="true" tabindex="-1"></a>            l_t <span class="op">=</span> l0</span>
+<span id="cb42-15"><a href="time-series.html#cb42-15" aria-hidden="true" tabindex="-1"></a>            b_t <span class="op">=</span> b0</span>
+<span id="cb42-16"><a href="time-series.html#cb42-16" aria-hidden="true" tabindex="-1"></a>        <span class="kw">else</span></span>
+<span id="cb42-17"><a href="time-series.html#cb42-17" aria-hidden="true" tabindex="-1"></a>            l_t <span class="op">=</span> (time_serie[i] <span class="op">-</span> s_) <span class="op">*</span> α <span class="op">+</span> (l_t_ <span class="op">+</span> b_t_) <span class="op">*</span> (<span class="fl">1</span> <span class="op">-</span> α) </span>
+<span id="cb42-18"><a href="time-series.html#cb42-18" aria-hidden="true" tabindex="-1"></a>            b_t <span class="op">=</span> β <span class="op">*</span> (l_t <span class="op">-</span> l_t_) <span class="op">+</span> (<span class="fl">1</span> <span class="op">-</span> β) <span class="op">*</span> b_t_</span>
+<span id="cb42-19"><a href="time-series.html#cb42-19" aria-hidden="true" tabindex="-1"></a>        <span class="kw">end</span></span>
+<span id="cb42-20"><a href="time-series.html#cb42-20" aria-hidden="true" tabindex="-1"></a>        l_t_ <span class="op">=</span> l_t</span>
+<span id="cb42-21"><a href="time-series.html#cb42-21" aria-hidden="true" tabindex="-1"></a>        b_t_ <span class="op">=</span> b_t</span>
+<span id="cb42-22"><a href="time-series.html#cb42-22" aria-hidden="true" tabindex="-1"></a>        s_ <span class="op">=</span> s[i%m <span class="op">+</span> <span class="fl">1</span>]</span>
+<span id="cb42-23"><a href="time-series.html#cb42-23" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb42-24"><a href="time-series.html#cb42-24" aria-hidden="true" tabindex="-1"></a>        y_pred <span class="op">=</span> l_t <span class="op">+</span> b_t <span class="op">+</span> s[i%m <span class="op">+</span> <span class="fl">1</span>]</span>
+<span id="cb42-25"><a href="time-series.html#cb42-25" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb42-26"><a href="time-series.html#cb42-26" aria-hidden="true" tabindex="-1"></a>        push<span class="op">!</span>(pred<span class="op">,</span> y_pred)</span>
+<span id="cb42-27"><a href="time-series.html#cb42-27" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb42-28"><a href="time-series.html#cb42-28" aria-hidden="true" tabindex="-1"></a>        s[i%m <span class="op">+</span> <span class="fl">1</span>] <span class="op">=</span> γ <span class="op">*</span> (time_serie[i <span class="op">+</span> <span class="fl">1</span>] <span class="op">-</span> l_t_ <span class="op">-</span> b_t_) <span class="op">+</span> (<span class="fl">1</span> <span class="op">-</span> γ) <span class="op">*</span> s[i%m <span class="op">+</span> <span class="fl">1</span>]   </span>
+<span id="cb42-29"><a href="time-series.html#cb42-29" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
+<span id="cb42-30"><a href="time-series.html#cb42-30" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb42-31"><a href="time-series.html#cb42-31" aria-hidden="true" tabindex="-1"></a>    <span class="kw">return</span> pred</span>
+<span id="cb42-32"><a href="time-series.html#cb42-32" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<pre><code>## HW_Seasonal (generic function with 1 method)</code></pre>
+<p>What this code does is, given the optimal values of each parameter, it makes the prediction of the next point (h = 1) and stores them in the “pred” array. Staying a while analyzing how the algorithm is working is an excellent way to ensure full understanding of the method :)</p>
+<p>To obtain these parameters it is necessary to write the loss function as we have been doing in the previous ones. As a challenge for the reader, we propose to write this loss function using this one as a basis. To help you, you can look at the intimate relationship between the functions that are storing the predictions and the loss functions already written in the previous methods.</p>
+<p>In this particular case, in which our data is quarterly, m = 4. Doing the same procedure as always to optimize the function is obtained:</p>
+<div class="sourceCode" id="cb44"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb44-1"><a href="time-series.html#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb44-2"><a href="time-series.html#cb44-2" aria-hidden="true" tabindex="-1"></a>α <span class="op">=</span> <span class="fl">0.262198</span></span>
+<span id="cb44-3"><a href="time-series.html#cb44-3" aria-hidden="true" tabindex="-1"></a>β <span class="op">=</span> <span class="fl">2.45705e-15</span></span>
+<span id="cb44-4"><a href="time-series.html#cb44-4" aria-hidden="true" tabindex="-1"></a>γ <span class="op">=</span> <span class="fl">0.454665</span></span>
+<span id="cb44-5"><a href="time-series.html#cb44-5" aria-hidden="true" tabindex="-1"></a>l0 <span class="op">=</span> <span class="fl">32.4906</span></span>
+<span id="cb44-6"><a href="time-series.html#cb44-6" aria-hidden="true" tabindex="-1"></a>b0 <span class="op">=</span> <span class="fl">0.701097</span></span>
+<span id="cb44-7"><a href="time-series.html#cb44-7" aria-hidden="true" tabindex="-1"></a>s0 <span class="op">=</span> [<span class="fl">9.20323</span><span class="op">,</span> <span class="op">-</span><span class="fl">9.18886</span><span class="op">,</span> <span class="op">-</span><span class="fl">2.13981</span><span class="op">,</span> <span class="fl">1.35917</span>]</span>
+<span id="cb44-8"><a href="time-series.html#cb44-8" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span><span class="op">;</span></span></code></pre></div>
+<p>It is interesting to stop and look at these values that we obtained.</p>
+<p>First of all it is remarkable how, for the first time, the parameter <span class="math inline">\(α\)</span> is taking a relatively low. This makes perfect sense, as the values are now much more connected to values further away than the immediate previous one, for example. They are connected precisely because of their seasonality.</p>
+<p>It is also interesting to note how for the initial values of the seasonality not only one value is needed, but also 4. As a general case, as much as m, the frequency of the seasonality, will be needed. This can be seen as we now need to have a whole “year 0” to make the estimates for the first year of the time series.</p>
+<p>Now, let’s see the function in action:</p>
+<div class="sourceCode" id="cb45"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb45-1"><a href="time-series.html#cb45-1" aria-hidden="true" tabindex="-1"></a>season_fitted <span class="op">=</span> HW_Seasonal(australia_tourist<span class="op">,</span> <span class="fl">0.262198</span><span class="op">,</span> <span class="fl">2.45705e-15</span><span class="op">,</span> <span class="fl">0.454665</span><span class="op">,</span> <span class="fl">32.4906</span><span class="op">,</span> <span class="fl">0.701097</span><span class="op">,</span> [<span class="fl">9.20323</span><span class="op">,</span> <span class="op">-</span><span class="fl">9.18886</span><span class="op">,</span> <span class="op">-</span><span class="fl">2.13981</span><span class="op">,</span> <span class="fl">1.35917</span>]<span class="op">,</span> <span class="fl">4</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb46"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb46-1"><a href="time-series.html#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb46-2"><a href="time-series.html#cb46-2" aria-hidden="true" tabindex="-1"></a>plot(time<span class="op">,</span> season_fitted<span class="op">,</span> label <span class="op">=</span> <span class="st">&quot;fitted&quot;</span>)</span>
+<span id="cb46-3"><a href="time-series.html#cb46-3" aria-hidden="true" tabindex="-1"></a>plot<span class="op">!</span>(time<span class="op">,</span> australia_tourist<span class="op">,</span> label <span class="op">=</span> <span class="st">&quot;data&quot;</span><span class="op">,</span> legend<span class="op">=:</span>topleft)</span>
+<span id="cb46-4"><a href="time-series.html#cb46-4" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_13_plot_10-J1.png" /><!-- --></p>
+<p>As you can see, the fit is very good. It is also interesting how you can appreciate the exponential smooth in the step between the valley and the peak: It starts without having it and therefore the adjusted series neither, but as it appears, the model learns it and also starts to forecast it.</p>
+<p>Excellent! Now that we have our model, it’s time to use it and call Terry to tell him what actions to take in his trading strategy:</p>
+<div class="sourceCode" id="cb47"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb47-1"><a href="time-series.html#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> HW_Seasonal_forecast(time_serie<span class="op">,</span> α<span class="op">,</span> β<span class="op">,</span> γ<span class="op">,</span> l0<span class="op">,</span> b0<span class="op">,</span> s0<span class="op">,</span> m<span class="op">,</span> n_pred)</span>
+<span id="cb47-2"><a href="time-series.html#cb47-2" aria-hidden="true" tabindex="-1"></a>    N <span class="op">=</span> length(time_serie)</span>
+<span id="cb47-3"><a href="time-series.html#cb47-3" aria-hidden="true" tabindex="-1"></a>    l_t <span class="op">=</span> <span class="fl">0</span></span>
+<span id="cb47-4"><a href="time-series.html#cb47-4" aria-hidden="true" tabindex="-1"></a>    b_t <span class="op">=</span> <span class="fl">0</span></span>
+<span id="cb47-5"><a href="time-series.html#cb47-5" aria-hidden="true" tabindex="-1"></a>    l_t_ <span class="op">=</span> <span class="fl">0</span> <span class="co">#Variable to save l(t-1)</span></span>
+<span id="cb47-6"><a href="time-series.html#cb47-6" aria-hidden="true" tabindex="-1"></a>    b_t_ <span class="op">=</span> <span class="fl">0</span> <span class="co">#Variable to save b(t-1)</span></span>
+<span id="cb47-7"><a href="time-series.html#cb47-7" aria-hidden="true" tabindex="-1"></a>    s_ <span class="op">=</span> <span class="fl">0</span></span>
+<span id="cb47-8"><a href="time-series.html#cb47-8" aria-hidden="true" tabindex="-1"></a>    s <span class="op">=</span> s0</span>
+<span id="cb47-9"><a href="time-series.html#cb47-9" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb47-10"><a href="time-series.html#cb47-10" aria-hidden="true" tabindex="-1"></a>    pred <span class="op">=</span> []</span>
+<span id="cb47-11"><a href="time-series.html#cb47-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-12"><a href="time-series.html#cb47-12" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> <span class="fl">0</span><span class="op">:</span>(N <span class="op">-</span> <span class="fl">1</span>)</span>
+<span id="cb47-13"><a href="time-series.html#cb47-13" aria-hidden="true" tabindex="-1"></a>        <span class="kw">if</span> i <span class="op">==</span> <span class="fl">0</span></span>
+<span id="cb47-14"><a href="time-series.html#cb47-14" aria-hidden="true" tabindex="-1"></a>            l_t <span class="op">=</span> l0</span>
+<span id="cb47-15"><a href="time-series.html#cb47-15" aria-hidden="true" tabindex="-1"></a>            b_t <span class="op">=</span> b0</span>
+<span id="cb47-16"><a href="time-series.html#cb47-16" aria-hidden="true" tabindex="-1"></a>        <span class="kw">else</span></span>
+<span id="cb47-17"><a href="time-series.html#cb47-17" aria-hidden="true" tabindex="-1"></a>            l_t <span class="op">=</span> (time_serie[i] <span class="op">-</span> s_) <span class="op">*</span> α <span class="op">+</span> (l_t_ <span class="op">+</span> b_t_) <span class="op">*</span> (<span class="fl">1</span> <span class="op">-</span> α) </span>
+<span id="cb47-18"><a href="time-series.html#cb47-18" aria-hidden="true" tabindex="-1"></a>            b_t <span class="op">=</span> β <span class="op">*</span> (l_t <span class="op">-</span> l_t_) <span class="op">+</span> (<span class="fl">1</span> <span class="op">-</span> β) <span class="op">*</span> b_t_</span>
+<span id="cb47-19"><a href="time-series.html#cb47-19" aria-hidden="true" tabindex="-1"></a>        <span class="kw">end</span></span>
+<span id="cb47-20"><a href="time-series.html#cb47-20" aria-hidden="true" tabindex="-1"></a>        l_t_ <span class="op">=</span> l_t</span>
+<span id="cb47-21"><a href="time-series.html#cb47-21" aria-hidden="true" tabindex="-1"></a>        b_t_ <span class="op">=</span> b_t</span>
+<span id="cb47-22"><a href="time-series.html#cb47-22" aria-hidden="true" tabindex="-1"></a>        s_ <span class="op">=</span> s[i%m <span class="op">+</span> <span class="fl">1</span>]</span>
+<span id="cb47-23"><a href="time-series.html#cb47-23" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb47-24"><a href="time-series.html#cb47-24" aria-hidden="true" tabindex="-1"></a>        y_pred <span class="op">=</span> l_t <span class="op">+</span> b_t <span class="op">+</span> s[i%m <span class="op">+</span> <span class="fl">1</span>]</span>
+<span id="cb47-25"><a href="time-series.html#cb47-25" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb47-26"><a href="time-series.html#cb47-26" aria-hidden="true" tabindex="-1"></a>        push<span class="op">!</span>(pred<span class="op">,</span> y_pred)</span>
+<span id="cb47-27"><a href="time-series.html#cb47-27" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb47-28"><a href="time-series.html#cb47-28" aria-hidden="true" tabindex="-1"></a>        s[i%m <span class="op">+</span> <span class="fl">1</span>] <span class="op">=</span> γ <span class="op">*</span> (time_serie[i <span class="op">+</span> <span class="fl">1</span>] <span class="op">-</span> l_t_ <span class="op">-</span> b_t_) <span class="op">+</span> (<span class="fl">1</span> <span class="op">-</span> γ) <span class="op">*</span> s[i%m <span class="op">+</span> <span class="fl">1</span>]   </span>
+<span id="cb47-29"><a href="time-series.html#cb47-29" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
+<span id="cb47-30"><a href="time-series.html#cb47-30" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb47-31"><a href="time-series.html#cb47-31" aria-hidden="true" tabindex="-1"></a>    l_t <span class="op">=</span> (time_serie[<span class="kw">end</span>] <span class="op">-</span> s_) <span class="op">*</span> α <span class="op">+</span> (l_t <span class="op">+</span> b_t) <span class="op">*</span> (<span class="fl">1</span> <span class="op">-</span> α)</span>
+<span id="cb47-32"><a href="time-series.html#cb47-32" aria-hidden="true" tabindex="-1"></a>    b_t <span class="op">=</span> β <span class="op">*</span> (l_t <span class="op">-</span> l_t_) <span class="op">+</span> (<span class="fl">1</span> <span class="op">-</span> β) <span class="op">*</span> b_t_</span>
+<span id="cb47-33"><a href="time-series.html#cb47-33" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb47-34"><a href="time-series.html#cb47-34" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> N<span class="op">:</span>(N<span class="op">+</span>n_pred <span class="op">-</span> <span class="fl">1</span>) <span class="co">#sino hace una pred de mas</span></span>
+<span id="cb47-35"><a href="time-series.html#cb47-35" aria-hidden="true" tabindex="-1"></a>        y_pred <span class="op">=</span> l_t <span class="op">+</span> b_t<span class="op">*</span>(i<span class="op">-</span>N<span class="op">+</span><span class="fl">1</span>) <span class="op">+</span> s[i%m <span class="op">+</span> <span class="fl">1</span>] </span>
+<span id="cb47-36"><a href="time-series.html#cb47-36" aria-hidden="true" tabindex="-1"></a>        <span class="co">#The trend has to be added as many times as periods we want to forecast.</span></span>
+<span id="cb47-37"><a href="time-series.html#cb47-37" aria-hidden="true" tabindex="-1"></a>        push<span class="op">!</span>(pred<span class="op">,</span> y_pred)</span>
+<span id="cb47-38"><a href="time-series.html#cb47-38" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span> </span>
+<span id="cb47-39"><a href="time-series.html#cb47-39" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb47-40"><a href="time-series.html#cb47-40" aria-hidden="true" tabindex="-1"></a>    <span class="kw">return</span> pred</span>
+<span id="cb47-41"><a href="time-series.html#cb47-41" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<pre><code>## HW_Seasonal_forecast (generic function with 1 method)</code></pre>
+<div class="sourceCode" id="cb49"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb49-1"><a href="time-series.html#cb49-1" aria-hidden="true" tabindex="-1"></a>season_forecast <span class="op">=</span> HW_Seasonal_forecast(australia_tourist<span class="op">,</span> <span class="fl">0.262198</span><span class="op">,</span> <span class="fl">2.45705e-15</span><span class="op">,</span> <span class="fl">0.454665</span><span class="op">,</span> <span class="fl">32.4906</span><span class="op">,</span> <span class="fl">0.701097</span><span class="op">,</span> [<span class="fl">9.20323</span><span class="op">,</span> <span class="op">-</span><span class="fl">9.18886</span><span class="op">,</span> <span class="op">-</span><span class="fl">2.13981</span><span class="op">,</span> <span class="fl">1.35917</span>]<span class="op">,</span> <span class="fl">4</span><span class="op">,</span> <span class="fl">8</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb50"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb50-1"><a href="time-series.html#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb50-2"><a href="time-series.html#cb50-2" aria-hidden="true" tabindex="-1"></a>    plot(time<span class="op">,</span> australia_tourist<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;Data&quot;</span><span class="op">,</span> legend<span class="op">=:</span>topleft)</span>
+<span id="cb50-3"><a href="time-series.html#cb50-3" aria-hidden="true" tabindex="-1"></a>    plot<span class="op">!</span>(time<span class="op">,</span> season_forecast[<span class="fl">1</span><span class="op">:</span><span class="fl">44</span>]<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;Fitted&quot;</span>)</span>
+<span id="cb50-4"><a href="time-series.html#cb50-4" aria-hidden="true" tabindex="-1"></a>    plot<span class="op">!</span>(time[<span class="kw">end</span>]<span class="op">:</span><span class="fl">0.25</span><span class="op">:</span>time[<span class="kw">end</span>]<span class="op">+</span><span class="fl">2</span><span class="op">,</span> season_forecast[<span class="fl">44</span><span class="op">:</span><span class="kw">end</span>]<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;Forecast&quot;</span>)</span>
+<span id="cb50-5"><a href="time-series.html#cb50-5" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_13_plot_11-J1.png" /><!-- --></p>
+<p>Well, good! We started this chapter not knowing how to tackle time series forecasting problems and ended up building a wide variety of models for different types of data, all while making our friend Terry a lot of money!</p>
+<p>As a final summary, when dealing with a time series it is very important to be able to define if it has any latent variables such as trend or seasonality. Once we can find that underlying information, we will be able to generate forecasts with confidence. We just need to look deeper.</p>
+</div>
+</div>
+</div>
+<div id="summary-11" class="section level2" number="13.3">
+<h2><span class="header-section-number">13.3</span> Summary</h2>
+<p>In this chapter, we learned the basic foundations of time series analysis.
+We defined what a time series is and delved into a particular method, the exponential smoothing, that allows us to take into account the most distant values of our data.
+Finally, we explained more complex versions of the method and used them to make predictions in different kinds of scenarios.
+When the processes followed a marked tendency, we used the trend method and the damped trend method to make long term predictions.
+When the process exhibited seasonal trends, we utilized the Holt-Winters’ seasonal method.</p>
+</div>
+<div id="references-9" class="section level2" number="13.4">
+<h2><span class="header-section-number">13.4</span> References</h2>
+<ul>
+<li><a href="https://otexts.com/fpp2/expsmooth.html">Forecasting: Principles and Practice, Chap 7</a></li>
+</ul>
+</div>
+<div id="give-us-feedback-11" class="section level2" number="13.5">
+<h2><span class="header-section-number">13.5</span> Give us feedback</h2>
+<p>This book is currently in a beta version.
+We are looking forward to getting feedback and criticism:</p>
+<ul>
+<li>Submit a GitHub issue <a href="https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues"><strong>here</strong></a>.</li>
+<li>Mail us to <a href="mailto:martina.cantaro@lambdaclass.com"><strong>martina.cantaro@lambdaclass.com</strong></a></li>
+</ul>
+<p>Thank you!</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="ultima-continued.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["data_science_in_julia_for_hackers.pdf", "data_science_in_julia_for_hackers.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
