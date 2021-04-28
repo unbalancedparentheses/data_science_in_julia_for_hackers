@@ -20,68 +20,90 @@ begin
 	using DiffEqFlux, Flux
 end
 
+# ╔═╡ 99368032-8b96-11eb-25c0-2b58dda0ff7b
+ 
+md"### To do list
+ 
+We are currently working on:
+ 
+";
+
+
 # ╔═╡ 2139fac8-4ec7-11eb-1625-bf9aab9b1c2c
 md"""# Letting the computer do science
 
 Let's think a little. What do you think is the process by which scientific discoveries are made? 
 
-First, you have some situation or event of interest from which you want to discover the rules that govern it. Second, you carefully design the experiments to get as much unbiased data as you can. Third, you analyze that data to gain some knowledge and, hopefully, you can begin to write some equations that condense the underling process. Finally, you keep doing experiments to confirm that the equations you have invented are correct. You are doing science, my friend!
+First, you have some situation or event of interest from which you want to discover the rules that govern it. Second, you carefully design the experiments to get as much unbiased data as you can. Third, you analyze that data to gain some knowledge and, hopefully, you can begin to write some equations that condense the underlying process. Finally, you keep doing experiments to confirm that the equations you have invented are correct. You are doing science, my friend!
 
 Throughout the book, we were learning a wide variety of statistical methods that sought to be as general as possible, but that required us to define the model to be used. The equations, then, were already defined and the algorithm only had to find the best parameters (or distribution of them) to fit that model to the data. 
 
-But what if I tell you that now we can start "talking" with the computer. That we can ask the computer to learn the model itself with the data. Not the parameters. But the equations that govern the process generating the data we give to the computer. Even more, that now we can "share" some incomplete knowledge that we have of some process and ask the computer to learn, with minimun data, the part of the knowledge that we lack. What? Is that even posible? Let´s see.   
+But what if I tell you that now we can start "talking" with the computer. That we can ask the computer to learn the model itself with the data. Not the parameters. But the equations that govern the process generating the data we give to the computer. 
+Even more, that now we can "share" some incomplete knowledge that we have of some process and ask the computer to learn, with minimum data, the part of the knowledge that we lack. 
+What? Is that even possible?.   
 
 ## The language of science
 
-In order to start understanding if that farytale is possible, first we need to understand the ways we have to "encoding" the dynamics of those processes. As [Steven Strogatz](http://www.stevenstrogatz.com/) said "Since Newton, mankind has come to realize that the law of physics are always expressed in the language of differential equations". And we can argue that it is a language that not only belongs to physics, but to all science and, in general, to the world in which we live. 
+In order to start understanding if that fairytale is possible, first we need to understand the ways we have to "encoding" the dynamics of those processes.
+As [Steven Strogatz](http://www.stevenstrogatz.com/) said "Since Newton, mankind has come to realize that the laws of physics are always expressed in the language of differential equations". 
+And we can argue that it is a language that not only belongs to physics, but to all science and, in general, to the world in which we live. 
 
-But before any of you run off in fear, let's demystify this subject a little. What is a differential equation and why are them useful?
+But before any of you run off in fear, let's demystify this subject a little. 
+What is a differential equation and why are they useful?
 
-Well the first thing to denote is that differential equations emerge whenever it´s easier to describe **change** than **absolute** values. As we saw in the Ultima Online Catastrophe, it is much easier to describe and define why populations grow or shrink, rather than explain why they have the particular absolute values in a particular point in time. Come on! it´s much more easy to comprehend that if there are lots of predators, the prey´s population will shrink than understand why there are, for example, 223,543 prays and 112,764 predators the 6 of may. Does this make sense?
+Well the first thing to denote is that differential equations emerge whenever it's easier to describe change than absolute values. As we saw in the Ultima Online Catastrophe, it is much easier to describe and define why populations grow or shrink, rather than explain why they have the particular absolute values in a particular point in time. Come on! It's much more easy to comprehend that if there are lots of predators, the prey's population will shrink than understand why there are, for example, 223,543 prays and 112,764 predators the 6 of may. Does this make sense?
 
 $\frac{dPrey}{dt} = Prey*(b_{prey} - m_{prey}*Pred)$
 
 $\frac{dPred}{dt} = Pred*(b_{pred}*Prey - m_{pred})$
 
-Remember that *d* can be read as change and the hole expresion "$\frac{dPrey}{dt} =$" is just saying "The change of Prey´s population over time is equal to ..." and the other part, as we already saw in the last chapter, is answering "hey! that change is proportional to the Prey´s population (because they reproduce) and to the *interaction* with the Predator population, that contributes to the Prey´s mortality rate". Isn´t that beautiful? 
+Remember that d can be read as change and the hole expression "$\frac{dPrey}{dt} =$" is just saying "The change of prey's population over time is equal to ..." and the other part, as we already saw in the last chapter, is answering "hey! that change is proportional to the prey's population (because they reproduce) and to the interaction with the Predator population, that contributes to the prey's mortality rate". Isn't that beautiful? 
 
-Now, try to think a way to put the *absolute* values of each population over time into equations. Have any clue? No? As we said, *change* is much easier to decribe.
+Now, try to think a way to put the absolute values of each population over time into equations. Have any clue? No? As we said, change is much easier to describe.
 
-Or you can take a much more familiar example: In Newtonian Mechanics motion is describe in terms of Force.
+Or you can take a much more familiar example: In Newtonian Mechanics motion is described in terms of Force.
 
 $F = m*a$
 
-But Force determines acceleration, which itself is a statement about *change*. We are so familiar with that equation that we tend to forget that it **is** a differential equation (and as Steven mention, is the mother of all differential equations).
+But Force determines acceleration, which itself is a statement about change. We are so familiar with that equation that we tend to forget that it is a differential equation (and as Steven mentions, is the mother of all differential equations).
 
 $F = m*\frac{dVelocity}{dt}$
 
 $F = m*\frac{d^2Position}{dt^2}$
 
-This transformation is just showing something that everyone already knows: Acceleration is the change of Velocity over time, and Velocity is the change of position over time. And that implies that Acceleration is the *second* derivative (change) on position over time.
+This transformation is just showing something that everyone already knows: Acceleration is the change of Velocity over time, and Velocity is the change of position over time. And that implies that Acceleration is the second derivative (change) on position over time.
 
-We just learned that the language of differential equations is fundamental for doing science. So, if we want the computer to learn equations that explain scientific events, it must need to know how to deal with this type of equations. And this is easily solved by the Scientific Machine Learning ([SciML](https://sciml.ai/)) ecosystem.
+We just learned that the language of differential equations is fundamental for doing science. So, if we want the computer to learn equations that explain scientific events, it must know how to deal with this type of equations. And this is easily solved by the Scientific Machine Learning ([SciML](https://sciml.ai/)) ecosystem.
 
 ## Scientific Machine Learning for model discovery
 
-But dealing with differential equations is not the main thing that SciML has to offer us. Istead it give us the way to **do** science in cooperation **with** the artificial intelligence. What?? To be able to comprehen this, let´s rewiew how "classic" machine learning works.
+But dealing with differential equations is not the main thing that SciML has to offer us. Instead it gives us the way to do science in cooperation with  artificial intelligence. 
+What? To be able to comprehend this, let's rewiew how "classic" machine learning works.
 
-It turns out that an neural network is *literally* a function. Is a function in the sense that it takes a bunch of numbers, applies a series of transformations, and return another bunch of numbers:
+It turns out that a neural network is literally a function. 
+Is a function in the sense that it takes a bunch of numbers, applies a series of transformations, and return another bunch of numbers:
 
 $f(x) = y <=> ANN(x) = y$
 
-So, Artificial Neural Networks are functions. But they are especial function, as they can *change* the connections that made the specific function they represent. They do this in a process called *training* where they adjust its connections (parameters) in order to correctly predict. So, with only one neural network, we can "represent" lots of functions. What's more, there is this *Universal Approximation Theorem* that says that a neural network that is deep and wide enough (that is, has enough parameters) can approximate **any** function. You only need to feed it with enough data, so it can learn the optimal set of weights for its parameters.
+So, artificial neural networks are functions. 
+But they are special functions, as they can change the connections that made the specific function they represent. 
+They do this in a process called training where they adjust its connections (parameters) in order to correctly predict. So, with only one neural network, we can "represent" lots of functions. What's more, there is this Universal Approximation Theorem that says that a neural network that is deep and wide enough (that is, has enough parameters) can approximate any function. You only need to feed it with enough data, so it can learn the optimal set of weights for its parameters.
 
-This is why neural networks come hand in hand with big data: you need lot of data in order to let the neural network learn the correct weights. But there is a problem: Big data cost billions, or may not even be available! (if you don't believe me, ask the Large Hadron Collider scientists to run 1 million experiments to train a NN, I'm sure they'll be happy to help you :P)
+This is why neural networks come hand in hand with big data: you need a lot of data in order to let the neural network learn the correct weights.
+But there is a problem: Big data costs billions, or may not even be available! (if you don't believe me, ask the Large Hadron Collider scientists to run 1 million experiments to train a NN, I'm sure they'll be happy to help you :P)
 
-Can you imagine a way to drastically reduce the data needed to train the NN in a significant way? Well, how about *incorporating* scientific knowledge into machine learning?. If we think it for a moment, we can realize that a scientific model is worth a thousand datasets. The equations works like a proxy of thousand of experiments, people investigating, years of research. in other words: tons of data. 
+Can you imagine a way to drastically reduce the data needed to train the NN in a significant way?
+Well, how about incorporating scientific knowledge into machine learning?
+If we think it for a moment, we can realize that a scientific model is worth a thousand datasets.
+The equations work like a proxy of thousands of experiments, people investigating, years of research. in other words: tons of data. 
 
-So if we create a way to inform all of that precious data, so it can focus in learning an specific part of the equation (some part that we don´t know), it could do it with a minimum quantity of data! Lucky us, [Christopher Rackauckas](https://github.com/ChrisRackauckas) and his team already found a way.
+So if we create a way to inform all of that precious data, so it can focus on learning a specific part of the equation (some part that we don't know), it could do it with a minimum quantity of data! Lucky us, [Christopher Rackauckas](https://github.com/ChrisRackauckas) and his team already found a way.
 
-The concept about we are talking is called "Universal Differential Equations". Let´s use them to recover some missing equation components from the Virtual Catastrophe from the last chapter!
+The concept we are talking about is called "Universal Differential Equations". Let's use them to recover some missing equation components from the Virtual Catastrophe from the last chapter!
 
 ### Looking for the catastrophe culprit
 
-So lets imagine again (yes, we imagine lots of things in this book) that we are [Richard Garriott](https://en.wikipedia.org/wiki/Richard_Garriott) a day before the release of his game. He was tuning the last details of his virtual ecosystem. The model is simple but powerful, and ready to go:
+So let's imagine again (yes, we imagine lots of things in this book) that we are [Richard Garriott](https://en.wikipedia.org/wiki/Richard_Garriott) a day before the release of his game. He was tuning the last details of his virtual ecosystem. The model is simple but powerful, and ready to go:
 
 $\frac{dPrey}{dt} = Prey*(b_{prey} - m_{prey}*Pred) = Prey*(1.3 - 0.9*Pred)$
 
@@ -96,13 +118,19 @@ $m_{pred} = 1.8$
 
 He smiles and happily goes to sleep, thinking that tomorrow is the big day.
 
-Let´s see how were the system equilibrium that he decided. 
+Let's see how were the system equilibrium that he decided. 
 
 """
 
+# ╔═╡ 16fe9d46-9e0a-11eb-190d-d1460f88e124
+
+
+# ╔═╡ 16fe62ca-9e0a-11eb-02b7-ef09706fb897
+
+
 # ╔═╡ 247a6e7e-5417-11eb-3509-3d349198ec43
 begin
-#The Lotka-Volterra model Garriot define for Ultima Online
+#The Lotka-Volterra model Garriott define for Ultima Online
 
 function lotka_volterra(du,u,p,t)
   prey, pred  = u
@@ -132,15 +160,15 @@ md"""So the system seems in complete equilibrium.
 
 And finally we arrive at the day when the madness begins.
 
-Garriot wakes up early, doesn´t have any breakfast and goes to meet his team. Everything is ready. The countdown start: 3, 2, 1... And the game is online, running.
+Garriott wakes up early, doesn't have any breakfast and goes to meet his team. Everything is ready. The countdown starts: 3, 2, 1... And the game is online, running.
 
-After the champagne, hugs and a little celebration Garriot returns to work and starts to analyze the metrics to see if everything is alright, and it does. He relax a little bit until something calls his attention: The curves of carnivorous and herbivorous animals are a little different than they should be. There are still **too few points** (only four hours from the release) to be alarmed, but he decides to do a deeper analysis. Luckily, a few days ago, he had read a paper on the Universal ODEs, so he thinks they can help him in this case.
+After the champagne, hugs and a little celebration Garriott returns to work and starts to analyze the metrics to see if everything is alright, and it does. He relax a little bit until something calls his attention: The curves of carnivorous and herbivorous animals are a little different than they should be. There are still too few points (only four hours from the release) to be alarmed, but he decides to do a deeper analysis. Luckily, a few days ago, he had read a paper on the Universal ODEs, so he thinks they can help him in this case.
 """
 
 # ╔═╡ 3bb32294-5423-11eb-1c75-27dc2f242255
 function lotka_volterra_players(du,u,p,t)
     #Lotka-Volterra function with players that hunt
-	#Of course, Garriot doesn´t know about this new players part of the equation. 
+	#Of course, Garriott doesn't know about this new players part of the equation. 
 	#He only saw some differences in the real curve vs the one he expected.
 	
     birth_prey, mort_prey, birth_pred, mort_pred, players_prey, players_pred = p
@@ -159,7 +187,7 @@ end;
 
 # ╔═╡ 8de32f8c-5423-11eb-24c6-5be06370cb3f
 begin
-scatter(solution, alpha = 0.25, title="The data Garriot was seeing")
+scatter(solution, alpha = 0.25, title="The data Garriott was seeing")
 plot!(solution, alpha = 0.5)
 end
 
@@ -171,26 +199,26 @@ end;
 
 # ╔═╡ 5d5c55a0-5426-11eb-0e93-27e67f42dc8e
 begin
-scatter(expected_solution, alpha = 0.25, title="The data Garriot was expecting to see")
+scatter(expected_solution, alpha = 0.25, title="The data Garriott was expecting to see")
 plot!(expected_solution, alpha = 0.5)
 end
 
 # ╔═╡ d1854f4c-5432-11eb-0b97-bfa7c03dc941
-md"""As you can see, the animals were taking more time to recover. The *period* of the cycle was longer than ir should be: A clear sing that something were killing them.
+md"""As you can see, the animals were taking more time to recover. The period of the cycle was longer than it should be: A clear sign that something was killing them.
 But he wanted to be sure. The Universal ODEs were key to do so.
 
-So, he start thinking "I know that the model has to be running cause I can see it in the code! So maybe, something external is producing this divergence. Something that I don´t know. But something that a *Neural Network* could find out" Let´s see """
+So, he start thinking "I know that the model has to be running cause I can see it in the code! So maybe, something external is producing this divergence. Something that I don't know. But something that a neural network could find out" Let's see """
 
 # ╔═╡ f7df46d0-5434-11eb-0ca4-8351f558b138
 begin
 X = Array(solution)	
-#And let´s add some noise to make it more difficult. Why? Because its fun!	
+#And let's add some noise to make it more difficult. Why? Because its fun!	
 Xₙ = X + Float32(1e-3)*randn(eltype(X), size(X))
 end
 
 # ╔═╡ 557c43da-5435-11eb-2e62-8fc988c6cc7a
 begin
-# Define the neueral network which learns L(x, y, y(t-τ))
+# Define the neural network 
 L = FastChain(FastDense(2, 32, tanh),FastDense(32, 32, tanh), FastDense(32, 2))
 p = initial_params(L)
 
@@ -204,17 +232,17 @@ end
 
 # ╔═╡ a0b0497a-5436-11eb-0bad-f564c6033968
 md"""
-So lets stop for a minute to analize the code that Garriot just propose.
+So let's stop for a minute to analyze the code that Garriott just proposed.
 
-In the first two lines, he just define the Neural Network that is going to learn the missing components of the two equations (one for the dynamics of the Pray and other for the dynamics of the Predator) and fill the variable p with its untrained parameters.
+In the first two lines, he just defines the neural network, that is going to learn the missing components of the two equations (one for the dynamics of the Pray and other for the dynamics of the Predator) and fill the variable p with its untrained parameters.
 
-Then, he is defining the Universal Differential Equation. Where he is specifying the parts of the model that he knows, and adding a Neural Network to learn others things that might be happening (and we know that indeed **were** happening). In other words, he is proposing:
+Then, he is defining the Universal Differential Equation. Where he is specifying the parts of the model that he knows, and adding a neural network to learn other things that might be happening (and we know that indeed were happening). In other words, he is proposing:
 
 $\frac{dPrey}{dt} = Prey*(1.3 - 0.9*Pred) + ANN_1(prey, pred)$
 
 $\frac{dPred}{dt} = Pred*(0.8*Prey - 1.8) + ANN_2(prey, pred)$
 
-So, as we already know, he is just adding a **function**. Which one? We already know that those are $Prey*players_{prey}$ and $Pred*players_{pred}$ (and $players_{pred}=players_{prey}=0.4$), but Garriot doesn´t, and is exactly what the Neural Network is going to learn for him.
+So, as we already know, he is just adding a function. Which one? We already know that those are $Prey*players_{prey}$ and $Pred*players_{pred}$ (and $players_{pred}=players_{prey}=0.4$), but Garriott doesn't, and is exactly what the neural network is going to learn for him.
 
 """
 
@@ -248,7 +276,7 @@ begin
 	
 const losses = []
 
-#just adding a callback to supervise the network´s learning
+#just adding a callback to supervise the network's learning
 callback(θ,l,pred) = begin
     push!(losses, l)
     if length(losses)%50==0
@@ -280,22 +308,25 @@ begin
 L̂ = L(Xₙ,res2.minimizer)
 # Plot the data and the approximation
 NNsolution = predict(res2.minimizer)
-# Trained on noisy data vs real solution
+# Plot Trained on noisy data vs real solution
 plot(solution.t, NNsolution')
 plot!(solution.t, X', title="The trained NN have fitted well")
 end
 
 # ╔═╡ 58a1294c-544c-11eb-27ca-8512bc3d5461
-md"""Nice! Now that we have our Neural Network already learned the **Input-Output** relation in order to the entire system behave as the data Garriot were seeing in that Infamous morning, we need to transform that Input-Output behaviour into some function. We do this in order to *gain* interpretability of what may be happening and, in a scientific frame, learn the underling model. We do this by creating a [Function Space](https://en.wikipedia.org/wiki/Function_space) in order to the NN learn which function (or linear combination of those) is the best one to describe that Input-Output relation. The loss function to do so is designed in a way that the result will be the least complex one, that is, the answer will be the simplest function that behave like the NN.
+md"""Nice! Now that we have our neural network already learned the Input-Output relation in order for the entire system to behave as the data Garriott were seeing in that Infamous morning, we need to transform that Input-Output behaviour into some function.
+We do this in order to gain interpretability of what may be happening and, in a scientific frame, learn the underlying model. 
+We do this by creating a [function space](https://en.wikipedia.org/wiki/Function_space) in order to the NN learn which function (or linear combination of those) is the best one to describe that Input-Output relation.
+ The loss function to do so is designed in a way that the result will be the least complex one, that is, the answer will be the simplest function that behaves like the NN.
 """
 
 # ╔═╡ b38b9410-544e-11eb-220b-5746f897b5f4
 begin
-## Sparse Identification 
+## Let's continue with the Sparse Identification 
 
 # Create a Basis
 @variables u[1:2]
-# Lots of polynomials
+# Add many polynomial to the Basis
 polys = Operation[1]
 
 for i ∈ 1:5
@@ -313,7 +344,7 @@ end
 
 # ╔═╡ d58d6d84-544e-11eb-17b8-91723456fc15
 begin
-# And some other stuff
+# And some sinusoidal functions
 h = [cos.(u)...; sin.(u)...; polys...]
 basis = Basis(h, u)
 	
@@ -324,7 +355,8 @@ end
 basis
 
 # ╔═╡ 23be1198-5451-11eb-07b7-e76b21ff565a
-md"So, as you can see above, we just created a **Function Space** of 29 dimensions. That space include *every* possible [linear combination](https://en.wikipedia.org/wiki/Linear_combination#:~:text=From%20Wikipedia%2C%20the%20free%20encyclopedia,a%20and%20b%20are%20constants) of each dimension. And we are going to ask to SINDy to give us the simplest function that shows the same Input-Output behaviour the Neural Network just learned.
+md"So, as you can see above, we just created a function space of 29 dimensions. That space includes every possible [linear combination](https://en.wikipedia.org/wiki/Linear_combination#:~:text=From%20Wikipedia%2C%20the%20free%20encyclopedia,a%20and%20b%20are%20constants) of each dimension. 
+And we are going to ask SINDy to give us the simplest function that shows the same Input-Output behaviour the neural network just learned.
 
 Without saying more, let's do it!"
 
@@ -334,7 +366,7 @@ begin
 opt = SR3()
 # Create the thresholds which should be used in the search process
 λ = exp10.(-7:0.1:3)
-# Target function to choose the results from; x = L0 of coefficients and L2-Error of the model
+# Target function to choose the results from.
 g(x) = x[1] < 1 ? Inf : norm(x, 2)
 	
 Ψ = SINDy(Xₙ[:, 2:end], L̂[:, 2:end], basis, λ,  opt, g = g, maxiter = 10000, normalize = true, denoise = true)
@@ -357,13 +389,13 @@ $\frac{dPrey}{dt} = Prey*(1.3 - 0.9*Pred) + p_1*Prey = Prey*(1.3 - 0.9*Pred + p1
 
 $\frac{dPred}{dt} = Pred*(0.8*Prey - 1.8) + p_2*Pred = Pred*(0.8*Prey - 1.8 + p2)$
 
-So, Remembering that we define the data Garriot was seeing as:
+So, Remembering that we define the data Garriott was seeing as:
 
 $\frac{dPrey}{dt} = Prey*(1.3 - 0.9*Pred - players_{prey})$
 
 $\frac{dPred}{dt} = Pred*(0.8*Prey - 1.8 - players_{pred})$
 
-And that we also define that $players_{prey} = players_{pred} = 0.4$, the recover parameter from de NN **should** $-0.4$. Does it makes sense?
+And that we also define that $players_{prey} = players_{pred} = 0.4$, the recover parameter from de NN should $-0.4$. Does it make sense?
 
 Lets ask for the parameters then:
 """
@@ -382,7 +414,7 @@ unknown_eq = ODEFunction(unknown_sys)
 # Just the equations
 b = Basis((u, p, t)->unknown_eq(u, [1.; 1.], t), u)
 
-# Retune for better parameters -> we could also use DiffEqFlux or other parameter estimation tools here.
+# Retune for better parameters (we already know the equations)
 Ψf = SINDy(Xₙ[:, 2:end], L̂[:, 2:end], b, STRRidge(0.01), maxiter = 100, convergence_error = 1e-18)
 end
 
@@ -390,10 +422,19 @@ end
 parameters(Ψf)
 
 # ╔═╡ fe88958e-54e5-11eb-12bc-01ad625d85c5
-md"So we recover the equations and its parameters with an outstanding acurracy. And that is even more incredible if we remember that we did this with a **minimum** of data."
+md"So we recover the equations and its parameters with an outstanding accuracy.
+And that is even more incredible if we remember that we did this with a minimum of data."
 
 # ╔═╡ e6ec4364-54eb-11eb-1bf6-83db426cd32f
-md"After seeing that, Garriot took a big deep breath. He immediately understood what was going on. The players were mass killing the animals. He called his team and start planning the strategy to face this, not knowing that already was a lost cause...  "
+md"""After seeing that, Garriott took a big deep breath. He immediately understood what was going on. The players were mass killing the animals. 
+He called his team and started planning the strategy to face this, not knowing that it already was a lost cause...  
+
+### Summary
+
+In this chapter, we continued to deepen our understanding of systems of differential equations and their complex behavior.
+We went a step further, introducing the concept of universal differential equations which allow us, given a very small amount of data, to estimate some unknown term of the system.
+This opens a very big door, connecting machine learning and science, which can greatly enhance the production of knowledge.
+"""
 
 # ╔═╡ aac56d4e-54e7-11eb-2d8a-1f21c386ef8d
 md"""### References
@@ -403,8 +444,29 @@ md"""### References
 * [Universal Differential Equations - Christopher Rackauckas](https://github.com/ChrisRackauckas/universal_differential_equations)
 """
 
+# ╔═╡ db20ac98-8b96-11eb-070b-45ed21d6904e
+md"### Give us feedback
+ 
+ 
+This book is currently in a beta version. We are looking forward to getting feedback and criticism:
+  * Submit a GitHub issue **[here](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues)**.
+  * Mail us to **martina.cantaro@lambdaclass.com**
+ 
+Thank you!
+"
+
+
+# ╔═╡ daae07e2-8b96-11eb-2e5a-8969fa01dbf4
+md"
+[Next chapter](https://datasciencejuliahackers.com/13_time_series.jl.html)
+"
+
+
 # ╔═╡ Cell order:
+# ╟─99368032-8b96-11eb-25c0-2b58dda0ff7b
 # ╟─2139fac8-4ec7-11eb-1625-bf9aab9b1c2c
+# ╟─16fe9d46-9e0a-11eb-190d-d1460f88e124
+# ╟─16fe62ca-9e0a-11eb-02b7-ef09706fb897
 # ╠═fa3ab76e-5413-11eb-36f1-e5117d887fc7
 # ╠═247a6e7e-5417-11eb-3509-3d349198ec43
 # ╠═c64260e8-5417-11eb-2c5e-df8a41e3c0b5
@@ -446,3 +508,5 @@ md"""### References
 # ╟─fe88958e-54e5-11eb-12bc-01ad625d85c5
 # ╟─e6ec4364-54eb-11eb-1bf6-83db426cd32f
 # ╟─aac56d4e-54e7-11eb-2d8a-1f21c386ef8d
+# ╟─db20ac98-8b96-11eb-070b-45ed21d6904e
+# ╟─daae07e2-8b96-11eb-2e5a-8969fa01dbf4
