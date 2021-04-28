@@ -1,8 +1,6 @@
-# (PART)  Deep Learning {.unnumbered}
 # Image classification
 
-
-```{julia, echo=FALSE}
+```{julia chap_10_libraries, cache = TRUE, echo=FALSE}
 cd("./10_bees_vs_wasps/") 
 import Pkg
 Pkg.activate(".")
@@ -10,6 +8,7 @@ Pkg.activate(".")
 using Markdown
 using InteractiveUtils
 using Images
+using ImageMagick
 using Flux, Flux.Data
 using Flux: onehotbatch, throttle, crossentropy, @epochs
 using MLDataUtils
@@ -20,16 +19,14 @@ using Plots
 ```
 
 ## Bee population control: What would happen if bees go extinct?
----
+
 
 You may or may not like bees. Either if you are afraid of them stinging you, or if you are addicted to the golden and sweet substance they produce, there is something we must agree on: their crucial role in maintaining the balance in the natural ecosystem, and in particular, they are vital for our human interests also. Bees are one of the biggest contributors to pollination of plants, hence their existence is so important to all lifeforms, and also to our economy.
 In fact, almost 70% of the production of fruits, vegetables and seeds depend directly on this pollination process to happen.
 
-```{julia ,echo=FALSE} 
+```{julia chap_10_plot_1,echo=FALSE} 
 begin
-	scale = 0.5
-	im = load("images/pollination.jpg")
-	plot(imresize(im, Int(floor(scale*size(im)[1])), Int(floor(scale*size(im)[2]))))	
+plot(load("10_bees_vs_wasps/images/pollination.jpg"),axis=nothing,border=:none,size=(320,279))
 end
 ```
 
@@ -47,12 +44,12 @@ The approach to this type of problems is to let computers learn from experience,
 This is why the data gathering, munging and cleaning processes are so important.
 Not only from an efficiency and accuracy perspective, but most importantly from an ethical one. It is essential for everybody who is implementing or training a model to consider how it will be used.
 
-```{julia , echo=FALSE} 
-plot(load("images/venn.png") |> (x -> imresize(x, Int(floor(0.7*size(x)[1])), Int(floor(0.7*size(x)[2])))))
+```{julia chap_10_plot_2 , echo=FALSE} 
+plot(ImageMagick.load("10_bees_vs_wasps/images/venn.png"),axis=nothing,border=:none,size=(402,264))
 ```
 
 ## Neural networks and convolutional neural networks
----
+
 In the big set of models classified as artificial intelligence, one of the most basic steps when facing a problem is the task of feature engineering or feature extraction from the data. Features can be defined as properties that are relevant to our model and that summarize the data in some way. 
 For example, if we are working with sound data and we want to make a pitch classifier, we could extract features from the raw data as averages of spectral power in different frequency ranges.
 A similar approach can be thought when working with images, taking the averages of different colors may be relevant for certain classification problems. 
@@ -63,7 +60,7 @@ In this way, high-level representations –the harder ones to learn for computer
 These layers are constituted by neurons that are activated in a non-linear fashion by the activation of neurons at the previous layer.
 What do we mean by non-linear? It literally means there is not a linear relationship between the input of the neuron and its output. Consider the sigmoid function:
 
-```{julia} 
+```{julia chap_10_plot_3 } 
 begin
 	gr()
 	plot(-10:0.5:10, sigmoid.(-10:0.5:10), label=false, title="sigmoid function", lw=2, size=(400, 300), color="Green")
@@ -78,11 +75,9 @@ The architecture of the connection between these neurons will depend on the neur
 Each one of these has a special area of application. We will be focusing on convolutional neural networks here, composed of convolutional layers. But first, lets build a little intuition about how a trained neural network works and how it was trained.
 A typical representation of how a neural network operates looks something like this:
 
-```{julia, echo=FALSE} 
+```{julia chap_10_plot_4 , echo=FALSE} 
 begin
-	scale_two = 0.3
-	conv_net =load("images/conv_net.png")
-	plot(imresize(conv_net, Int(floor(scale_two*size(conv_net)[1])), Int(floor(scale_two*size(conv_net)[2]))))
+plot(load("10_bees_vs_wasps/images/conv_net.png"),axis=nothing,border=:none,size=(384,323))
 end
 ```
 
@@ -133,7 +128,7 @@ end
 n_resolution = 90
 ```
 
-```{julia chap_10_process_images , CACHE = TRUE} 
+```julia
 begin
 	process_images("10_bees_vs_wasps/data/bee1", n_resolution, n_resolution)
 	process_images("10_bees_vs_wasps/data/bee2", n_resolution, n_resolution)
@@ -142,40 +137,41 @@ begin
 end
 ```
 
-```{julia chap_10_readdir , CACHE = TRUE,results = FALSE} 
+```julia
 begin
-	bee1_dir = readdir("10_bees_vs_wasps/preprocessed_data/bee1")
-	bee2_dir = readdir("10_bees_vs_wasps/preprocessed_data/bee2")
-	wasp1_dir = readdir("10_bees_vs_wasps/preprocessed_data/wasp1")
-	wasp2_dir = readdir("10_bees_vs_wasps/preprocessed_data/wasp2");
-end;
-```
-```{julia chap_10_load , CACHE = TRUE,results = FALSE}
-begin
-	# we load the pre-proccessed images
-	bees1 = load.("10_bees_vs_wasps/preprocessed_data/bee1/" .* bee1_dir)
-	bees2 = load.("10_bees_vs_wasps/preprocessed_data/bee2/" .* bee2_dir)
-	wasp1 = load.("10_bees_vs_wasps/preprocessed_data/wasp1/" .* wasp1_dir)
-	wasp2 = load.("10_bees_vs_wasps/preprocessed_data/wasp2/" .* wasp2_dir);
+	bee1_dir = readdir("preprocessed_10_bees_vs_wasps/data/bee1")
+	bee2_dir = readdir("preprocessed_10_bees_vs_wasps/data/bee2")
+	wasp1_dir = readdir("preprocessed_10_bees_vs_wasps/data/wasp1")
+	wasp2_dir = readdir("preprocessed_10_bees_vs_wasps/data/wasp2");
 end;
 ```
 
-```{julia} 
+```julia
+begin
+	# we load the pre-proccessed images
+	bees1 = load.("preprocessed_10_bees_vs_wasps/data/bee1/" .* bee1_dir)
+	bees2 = load.("preprocessed_10_bees_vs_wasps/data/bee2/" .* bee2_dir)
+	wasp1 = load.("preprocessed_10_bees_vs_wasps/data/wasp1/" .* wasp1_dir)
+	wasp2 = load.("preprocessed_10_bees_vs_wasps/data/wasp2/" .* wasp2_dir);
+end;
+```
+
+```julia
 # we concatenate all bees and wasp images
 bees = vcat(bees1, bees2);
 ```
 
-```{julia} 
+```julia
 wasps = vcat(wasp1, wasp2);
 ```
 
-```{julia} 
+```julia
 data = vcat(bees, wasps);
 ```
 
 At this point, our data is ready and loaded, but we have a little work to do before we start building our network. We will first label our images with a 0 for bees and a 1 for wasps, and then, as we already did in the email spam filter chapter, we will split our data and labels in a training and a test set. Again, this is the standard procedure to ensure our model is giving meaningful results.
 
-```{julia,results = FALSE} 
+```julia
 begin
 	labels = vcat([0 for _ in 1:length(bees)], [1 for _ in 1:length(wasps)])
 	(x_train, y_train), (x_test, y_test) = splitobs(shuffleobs((data, labels)), at = 0.7)
@@ -196,7 +192,7 @@ function make_minibatch(X, Y, idxs)
 end
 ```
 
-```{julia,results = FALSE} 
+```julia
 begin
 	# here we define the train and test sets.
 	batchsize = 128
@@ -291,7 +287,7 @@ end
 
 With all this work done, we are in position to finally start training our neural network! For this purpose we use the $train!()$ function. We must specify as arguments the loss function, the parameters of our model, the training data, the optimizer we are going to use and finally the callback function. Let's train for 10 epochs and see how our network is performing.
 
-```{julia chap_10_train , CACHE = TRUE } 
+```julia
 # here we train our model for n_epochs times.
 @epochs 10 Flux.train!(L, ps, train_set, opt;
                cb = Flux.throttle(update_loss!, 8))
@@ -299,7 +295,13 @@ With all this work done, we are in position to finally start training our neural
 
 That was some hard training! Finally it is over. Let's plot how the model performed over the process.
 
-```{julia} 
+```{julia , echo=FALSE, results = FALSE}
+train_loss = [0.68,0.67,0.65,0.65,0.64,0.63,0.63,0.62,0.61,0.61,0.58,0.57,0.59,0.54,0.53,0.51,0.55,0.55,0.51,0.50,0.47,0.60,0.47,0.48,0.47,0.46,0.44,0.43,0.44,0.50,0.42,0.48,0.42,0.46,0.45,0.44,0.43,0.41,0.43,0.39,0.50,0.40,0.43,0.47,0.40,0.39,0.39,0.38,0.39,0.36,0.36,0.38,0.37,0.38,0.35,0.34,0.38,0.34,0.34,0.37,0.35,0.41,0.35,0.35,0.34,0.34,0.35,0.32,0.32,0.33,0.34,0.34,0.31,0.30,0.31,0.32,0.29,0.31,0.31,0.31,0.32,0.28,0.28,0.28,0.32,0.28,0.27,0.28,0.29,0.28]
+test_loss = [0.69,0.67,0.65,0.65,0.64,0.64,0.63,0.62,0.61,0.62,0.59,0.59,0.61,0.56,0.55,0.54,0.57,0.58,0.53,0.53,0.50,0.63,0.50,0.52,0.50,0.49,0.47,0.47,0.47,0.54,0.46,0.53,0.47,0.50,0.50,0.49,0.48,0.46,0.49,0.44,0.57,0.46,0.49,0.54,0.46,0.45,0.45,0.44,0.46,0.43,0.43,0.45,0.45,0.46,0.42,0.42,0.46,0.42,0.43,0.46,0.43,0.50,0.43,0.44,0.42,0.43,0.44,0.42,0.42,0.42,0.44,0.45,0.41,0.41,0.42,0.42,0.41,0.42,0.42,0.43,0.45,0.40,0.40,0.40,0.44,0.41,0.40,0.41,0.42,0.43]
+acc = [0.61,0.61,0.61,0.60,0.61,0.61,0.61,0.68,0.69,0.69,0.69,0.70,0.65,0.72,0.73,0.73,0.70,0.71,0.73,0.73,0.75,0.65,0.75,0.74,0.75,0.76,0.77,0.78,0.76,0.74,0.78,0.74,0.77,0.75,0.76,0.76,0.77,0.78,0.75,0.80,0.74,0.77,0.76,0.75,0.79,0.80,0.78,0.79,0.79,0.80,0.79,0.79,0.80,0.78,0.79,0.79,0.78,0.81,0.80,0.78,0.79,0.77,0.81,0.80,0.80,0.80,0.80,0.82,0.81,0.81,0.81,0.79,0.80,0.80,0.80,0.81,0.82,0.81,0.81,0.81,0.80,0.81,0.81,0.81,0.80,0.82,0.81,0.82,0.81,0.81]
+```
+
+```{julia chap_10_plot_5} 
 begin
 	plot(train_loss, xlabel="Iterations", title="Model Training", label="Train loss", lw=2, alpha=0.9)
 	plot!(test_loss, label="Test loss", lw=2, alpha=0.9)
@@ -319,14 +321,21 @@ For example, we can train our network for some epochs more with a slower learnin
 opt_2 = ADAM(0.0005)
 ```
 
-```{julia chap_10_train_two , CACHE = TRUE} 
+```julia 
 @epochs 5 Flux.train!(L, ps, train_set, opt_2;
                cb = Flux.throttle(update_loss!, 8))
 ```
 
-```{julia} 
+```{julia, echo=FALSE, results = FALSE}
+train_loss = vcat(train_loss, [0.29,0.31,0.30,0.27,0.26,0.26,0.26,0.27,0.26,0.29,0.28,0.27,0.25,0.26,0.26,0.24,0.26,0.25,0.28,0.25,0.25,0.23,0.24,0.24,0.26,0.26,0.24,0.26,0.24,0.23,0.23,0.23,0.23,0.25,0.25,0.23,0.24,0.22,0.22,0.22,0.22,0.22,0.22,0.25,0.26])
+test_loss = vcat(test_loss,[0.42,0.46,0.42,0.40,0.40,0.40,0.41,0.41,0.41,0.44,0.43,0.42,0.41,0.41,0.42,0.40,0.41,0.42,0.43,0.42,0.41,0.40,0.41,0.40,0.43,0.42,0.42,0.42,0.41,0.41,0.40,0.41,0.40,0.43,0.42,0.41,0.42,0.41,0.41,0.41,0.41,0.41,0.41,0.43,0.47])
+acc = vcat(acc,[0.81,0.78,0.81,0.81,0.82,0.82,0.81,0.82,0.81,0.81,0.80,0.81,0.82,0.82,0.81,0.82,0.82,0.81,0.82,0.81,0.82,0.81,0.82,0.82,0.81,0.82,0.81,0.82,0.82,0.82,0.82,0.82,0.82,0.81,0.82,0.82,0.82,0.82,0.82,0.82,0.82,0.82,0.82,0.81,0.80])
+
+```
+
+```{julia chap_10_plot_6} 
 begin
-	plot(train_loss, xlabel="Iterations", title="Model Training", label="Train loss", lw=2, alpha=0.9)
+	plot(train_loss, xlabel="Iterations", title="Model Training", label="Train loss", lw=2, alpha=0.9, legend = :right)
 	plot!(test_loss, label="Test loss", lw=2, alpha=0.9)
 	plot!(acc, label="Accuracy", lw=2, alpha=0.9)
 	vline!([82], lw=2, label=false)
@@ -364,6 +373,8 @@ This book is currently in a beta version.
 We are looking forward to getting feedback and criticism:
 
 -   Submit a GitHub issue [**here**](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues).
--   Mail us to [**martina.cantaro\@lambdaclass.com**](mailto:martina.cantaro@lambdaclass.com){.email}
+-   Mail us to [**martina.cantaro\@lambdaclass.com**](mailto:martina.cantaro@lambdaclass.com)
 
 Thank you!
+
+
