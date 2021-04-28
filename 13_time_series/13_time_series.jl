@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.20
+# v0.12.21
 
 using Markdown
 using InteractiveUtils
@@ -9,6 +9,13 @@ using Plots
 
 # ╔═╡ c470f03c-3a33-11eb-3929-7f8c45b6fdcd
 using Optim
+
+# ╔═╡ 9ad5e3a0-8be2-11eb-0ca1-b9a933682476
+md"### To do list
+ 
+We are currently working on:
+ 
+";
 
 # ╔═╡ 01cbe438-34d1-11eb-087b-b5294ea7b996
 md"# Predicting the future"
@@ -795,13 +802,33 @@ md"Well, good! We started this chapter not knowing how to tackle time series for
 
 As a final summary, when dealing with a time series it is very important to be able to define if it has any latent variables such as trend or seasonality. Once we can find that underlying information, we will be able to generate forecasts with confidence. We just need to look deeper.
 
-### Bibliography
+### Summary
+
+In this chapter, we learned the basic foundations of time series analysis. 
+We defined what a time series is and delved into a particular method, the exponential smoothing, that allows us to take into account the most distant values of our data.
+Finally, we explained more complex versions of the method and used them to make predictions in different kinds of scenarios.
+When the processes followed a marked tendency, we used the trend method and the damped trend method to make long term predictions. 
+When the process exhibited seasonal trends, we utilized the Holt-Winters’ seasonal method.
+
+### References
 
 - [Forecasting: Principles and Practice, Chap 7](https://otexts.com/fpp2/expsmooth.html)
 
 "
 
+# ╔═╡ 8ade9490-8b6c-11eb-30f5-89ca2fab1b48
+md" ### Give us feedback
+ 
+ 
+This book is currently in a beta version. We are looking forward to getting feedback and criticism:
+  * Submit a GitHub issue **[here](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues)**.
+  * Mail us to **martina.cantaro@lambdaclass.com**
+ 
+Thank you!
+"
+
 # ╔═╡ Cell order:
+# ╟─9ad5e3a0-8be2-11eb-0ca1-b9a933682476
 # ╟─01cbe438-34d1-11eb-087b-b5294ea7b996
 # ╟─477dbb82-34d1-11eb-13f4-41b080ce2e00
 # ╠═bd9c45d2-34da-11eb-1f0f-6bb545666f98
@@ -866,3 +893,4 @@ As a final summary, when dealing with a time series it is very important to be a
 # ╠═cb92e0c2-3f13-11eb-35eb-397810833061
 # ╠═4c144296-3f13-11eb-16aa-839e299d6a63
 # ╟─ec31dcb0-3fa7-11eb-102d-a3b7787cdf1d
+# ╟─8ade9490-8b6c-11eb-30f5-89ca2fab1b48
