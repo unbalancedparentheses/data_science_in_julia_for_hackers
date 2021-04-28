@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 4 Probability distributions | Data Science in Julia for Hackers</title>
+  <meta name="description" content="Chapter 4 Probability distributions | Data Science in Julia for Hackers" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 4 Probability distributions | Data Science in Julia for Hackers" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Chapter 4 Probability distributions | Data Science in Julia for Hackers" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 4 Probability distributions | Data Science in Julia for Hackers" />
+  
+  <meta name="twitter:description" content="Chapter 4 Probability distributions | Data Science in Julia for Hackers" />
+  
+
+<meta name="author" content="Lambdaclass" />
+
+
+<meta name="date" content="2021-04-28" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="probability-introduction.html"/>
+<link rel="next" href="spam-filter.html"/>
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Data Science in Julia for Hackers</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#open-source"><i class="fa fa-check"></i>Open source</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#prologue"><i class="fa fa-check"></i>Prologue</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#table-of-contents"><i class="fa fa-check"></i>Table of contents</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#part-i-data-science-and-julia"><i class="fa fa-check"></i>Part I: Data Science and Julia</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#part-ii-bayesian-statistics"><i class="fa fa-check"></i>Part II: Bayesian Statistics</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#part-iii-machine-learning"><i class="fa fa-check"></i>Part III: Machine Learning</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#part-iv-deep-learning"><i class="fa fa-check"></i>Part IV: Deep Learning</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#part-v-scientific-machine-learning"><i class="fa fa-check"></i>Part V: Scientific Machine Learning</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#part-vi-time-series-and-forecasting"><i class="fa fa-check"></i>Part VI: Time Series and Forecasting</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html"><i class="fa fa-check"></i><b>1</b> Science technology and epistemology</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#the-difference-between-science-and-technology"><i class="fa fa-check"></i><b>1.1</b> The difference between Science and Technology</a></li>
+<li class="chapter" data-level="1.2" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#what-is-technology"><i class="fa fa-check"></i><b>1.2</b> What is technology?</a></li>
+<li class="chapter" data-level="1.3" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#references"><i class="fa fa-check"></i><b>1.3</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="meeting-julia.html"><a href="meeting-julia.html"><i class="fa fa-check"></i><b>2</b> Meeting Julia</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="meeting-julia.html"><a href="meeting-julia.html#why-julia"><i class="fa fa-check"></i><b>2.1</b> Why Julia</a></li>
+<li class="chapter" data-level="2.2" data-path="meeting-julia.html"><a href="meeting-julia.html#julia-presentation"><i class="fa fa-check"></i><b>2.2</b> Julia presentation</a></li>
+<li class="chapter" data-level="2.3" data-path="meeting-julia.html"><a href="meeting-julia.html#installation"><i class="fa fa-check"></i><b>2.3</b> Installation</a></li>
+<li class="chapter" data-level="2.4" data-path="meeting-julia.html"><a href="meeting-julia.html#first-steps-into-the-julia-world"><i class="fa fa-check"></i><b>2.4</b> First steps into the Julia world</a></li>
+<li class="chapter" data-level="2.5" data-path="meeting-julia.html"><a href="meeting-julia.html#julias-ecosystem-basic-plotting-and-manipulation-of-dataframes"><i class="fa fa-check"></i><b>2.5</b> Julia’s Ecosystem: Basic plotting and manipulation of DataFrames</a>
+<ul>
+<li class="chapter" data-level="2.5.1" data-path="meeting-julia.html"><a href="meeting-julia.html#plotting-with-plots.jl"><i class="fa fa-check"></i><b>2.5.1</b> Plotting with Plots.jl</a></li>
+<li class="chapter" data-level="2.5.2" data-path="meeting-julia.html"><a href="meeting-julia.html#introducing-dataframes.jl"><i class="fa fa-check"></i><b>2.5.2</b> Introducing DataFrames.jl</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="meeting-julia.html"><a href="meeting-julia.html#summary"><i class="fa fa-check"></i><b>2.6</b> Summary</a></li>
+<li class="chapter" data-level="2.7" data-path="meeting-julia.html"><a href="meeting-julia.html#references-1"><i class="fa fa-check"></i><b>2.7</b> References</a></li>
+<li class="chapter" data-level="2.8" data-path="meeting-julia.html"><a href="meeting-julia.html#give-us-feedback"><i class="fa fa-check"></i><b>2.8</b> Give us feedback</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="probability-introduction.html"><a href="probability-introduction.html"><i class="fa fa-check"></i><b>3</b> Probability introduction</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="probability-introduction.html"><a href="probability-introduction.html#introduction-to-probability"><i class="fa fa-check"></i><b>3.1</b> Introduction to Probability</a></li>
+<li class="chapter" data-level="3.2" data-path="probability-introduction.html"><a href="probability-introduction.html#events-sample-spaces-and-sample-points"><i class="fa fa-check"></i><b>3.2</b> Events, sample spaces and sample points</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="probability-introduction.html"><a href="probability-introduction.html#relation-among-events"><i class="fa fa-check"></i><b>3.2.1</b> Relation among events</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="probability-introduction.html"><a href="probability-introduction.html#probability"><i class="fa fa-check"></i><b>3.3</b> Probability</a></li>
+<li class="chapter" data-level="3.4" data-path="probability-introduction.html"><a href="probability-introduction.html#conditional-probability"><i class="fa fa-check"></i><b>3.4</b> Conditional probability</a></li>
+<li class="chapter" data-level="3.5" data-path="probability-introduction.html"><a href="probability-introduction.html#joint-probability"><i class="fa fa-check"></i><b>3.5</b> Joint probability</a></li>
+<li class="chapter" data-level="3.6" data-path="probability-introduction.html"><a href="probability-introduction.html#bayes-theorem"><i class="fa fa-check"></i><b>3.6</b> Bayes theorem</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="probability-distributions.html"><a href="probability-distributions.html"><i class="fa fa-check"></i><b>4</b> Probability distributions</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="probability-distributions.html"><a href="probability-distributions.html#discrete-case"><i class="fa fa-check"></i><b>4.1</b> Discrete Case</a></li>
+<li class="chapter" data-level="4.2" data-path="probability-distributions.html"><a href="probability-distributions.html#continuous-cases"><i class="fa fa-check"></i><b>4.2</b> Continuous cases</a></li>
+<li class="chapter" data-level="4.3" data-path="probability-distributions.html"><a href="probability-distributions.html#histograms"><i class="fa fa-check"></i><b>4.3</b> Histograms</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="probability-distributions.html"><a href="probability-distributions.html#example-bayesian-bandits"><i class="fa fa-check"></i><b>4.3.1</b> Example: Bayesian Bandits</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="probability-distributions.html"><a href="probability-distributions.html#summary-1"><i class="fa fa-check"></i><b>4.4</b> Summary</a></li>
+<li class="chapter" data-level="4.5" data-path="probability-distributions.html"><a href="probability-distributions.html#references-2"><i class="fa fa-check"></i><b>4.5</b> References</a></li>
+<li class="chapter" data-level="4.6" data-path="probability-distributions.html"><a href="probability-distributions.html#give-us-feedback-1"><i class="fa fa-check"></i><b>4.6</b> Give us feedback</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="spam-filter.html"><a href="spam-filter.html"><i class="fa fa-check"></i><b>5</b> Spam filter</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="spam-filter.html"><a href="spam-filter.html#naive-bayes-spam-or-ham"><i class="fa fa-check"></i><b>5.1</b> Naive Bayes: Spam or Ham?</a></li>
+<li class="chapter" data-level="5.2" data-path="spam-filter.html"><a href="spam-filter.html#summary-2"><i class="fa fa-check"></i><b>5.2</b> Summary</a></li>
+<li class="chapter" data-level="5.3" data-path="spam-filter.html"><a href="spam-filter.html#references-3"><i class="fa fa-check"></i><b>5.3</b> References</a></li>
+<li class="chapter" data-level="5.4" data-path="spam-filter.html"><a href="spam-filter.html#give-us-feedback-2"><i class="fa fa-check"></i><b>5.4</b> Give us feedback</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html"><i class="fa fa-check"></i><b>6</b> Probabilistic programming</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#coin-flipping-example"><i class="fa fa-check"></i><b>6.1</b> Coin flipping example</a></li>
+<li class="chapter" data-level="6.2" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#summary-3"><i class="fa fa-check"></i><b>6.2</b> Summary</a></li>
+<li class="chapter" data-level="6.3" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#references-4"><i class="fa fa-check"></i><b>6.3</b> References</a></li>
+<li class="chapter" data-level="6.4" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#give-us-feedback-3"><i class="fa fa-check"></i><b>6.4</b> Give us feedback</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html"><i class="fa fa-check"></i><b>7</b> Escaping from Mars</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#calculating-the-constant-g-of-mars"><i class="fa fa-check"></i><b>7.1</b> Calculating the constant g of Mars</a></li>
+<li class="chapter" data-level="7.2" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#optimizing-the-throwing-angle"><i class="fa fa-check"></i><b>7.2</b> Optimizing the throwing angle</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#calculating-the-escape-velocity"><i class="fa fa-check"></i><b>7.2.1</b> Calculating the escape velocity</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#summary-4"><i class="fa fa-check"></i><b>7.3</b> Summary</a></li>
+<li class="chapter" data-level="7.4" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#give-us-feedback-4"><i class="fa fa-check"></i><b>7.4</b> Give us feedback</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="football-simulation.html"><a href="football-simulation.html"><i class="fa fa-check"></i><b>8</b> Football simulation</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="football-simulation.html"><a href="football-simulation.html#creating-our-conjectures"><i class="fa fa-check"></i><b>8.1</b> Creating our conjectures</a>
+<ul>
+<li class="chapter" data-level="8.1.1" data-path="football-simulation.html"><a href="football-simulation.html#bayesian-hierarchical-models"><i class="fa fa-check"></i><b>8.1.1</b> Bayesian hierarchical models</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="football-simulation.html"><a href="football-simulation.html#simulate-possible-realities"><i class="fa fa-check"></i><b>8.2</b> Simulate possible realities</a></li>
+<li class="chapter" data-level="8.3" data-path="football-simulation.html"><a href="football-simulation.html#summary-5"><i class="fa fa-check"></i><b>8.3</b> Summary</a></li>
+<li class="chapter" data-level="8.4" data-path="football-simulation.html"><a href="football-simulation.html#bibliography"><i class="fa fa-check"></i><b>8.4</b> Bibliography</a></li>
+<li class="chapter" data-level="8.5" data-path="football-simulation.html"><a href="football-simulation.html#give-us-feedback-5"><i class="fa fa-check"></i><b>8.5</b> Give us feedback</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="basketball-shots.html"><a href="basketball-shots.html"><i class="fa fa-check"></i><b>9</b> Basketball shots</a>
+<ul>
+<li class="chapter" data-level="9.0.1" data-path="basketball-shots.html"><a href="basketball-shots.html#modeling-the-probability-of-scoring"><i class="fa fa-check"></i><b>9.0.1</b> Modeling the probability of scoring</a></li>
+<li class="chapter" data-level="9.1" data-path="basketball-shots.html"><a href="basketball-shots.html#prior-predictive-checks-part-i"><i class="fa fa-check"></i><b>9.1</b> Prior Predictive Checks: Part I</a>
+<ul>
+<li class="chapter" data-level="9.1.1" data-path="basketball-shots.html"><a href="basketball-shots.html#defining-our-model-and-computing-posteriors"><i class="fa fa-check"></i><b>9.1.1</b> Defining our model and computing posteriors</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="basketball-shots.html"><a href="basketball-shots.html#new-model-and-prior-predictive-checks-part-ii"><i class="fa fa-check"></i><b>9.2</b> New model and prior predictive checks: Part II</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="basketball-shots.html"><a href="basketball-shots.html#defining-the-new-model-and-computing-posteriors"><i class="fa fa-check"></i><b>9.2.1</b> Defining the new model and computing posteriors</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="basketball-shots.html"><a href="basketball-shots.html#does-the-period-affect-the-probability-of-scoring"><i class="fa fa-check"></i><b>9.3</b> Does the Period affect the probability of scoring?</a></li>
+<li class="chapter" data-level="9.4" data-path="basketball-shots.html"><a href="basketball-shots.html#summary-6"><i class="fa fa-check"></i><b>9.4</b> Summary</a></li>
+<li class="chapter" data-level="9.5" data-path="basketball-shots.html"><a href="basketball-shots.html#give-us-feedback-6"><i class="fa fa-check"></i><b>9.5</b> Give us feedback</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="optimal-pricing.html"><a href="optimal-pricing.html"><i class="fa fa-check"></i><b>10</b> Optimal pricing</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="optimal-pricing.html"><a href="optimal-pricing.html#overview"><i class="fa fa-check"></i><b>10.1</b> Overview</a></li>
+<li class="chapter" data-level="10.2" data-path="optimal-pricing.html"><a href="optimal-pricing.html#optimal-pricing-1"><i class="fa fa-check"></i><b>10.2</b> Optimal pricing</a>
+<ul>
+<li class="chapter" data-level="10.2.1" data-path="optimal-pricing.html"><a href="optimal-pricing.html#price-vs-quantity-model"><i class="fa fa-check"></i><b>10.2.1</b> Price vs Quantity model</a></li>
+<li class="chapter" data-level="10.2.2" data-path="optimal-pricing.html"><a href="optimal-pricing.html#price-elasticity-of-demand"><i class="fa fa-check"></i><b>10.2.2</b> Price elasticity of demand</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="optimal-pricing.html"><a href="optimal-pricing.html#maximizing-profit"><i class="fa fa-check"></i><b>10.3</b> Maximizing profit</a></li>
+<li class="chapter" data-level="10.4" data-path="optimal-pricing.html"><a href="optimal-pricing.html#summary-7"><i class="fa fa-check"></i><b>10.4</b> Summary</a></li>
+<li class="chapter" data-level="10.5" data-path="optimal-pricing.html"><a href="optimal-pricing.html#references-5"><i class="fa fa-check"></i><b>10.5</b> References</a></li>
+<li class="chapter" data-level="10.6" data-path="optimal-pricing.html"><a href="optimal-pricing.html#give-us-feedback-7"><i class="fa fa-check"></i><b>10.6</b> Give us feedback</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="image-classification.html"><a href="image-classification.html"><i class="fa fa-check"></i><b>11</b> Image classification</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="image-classification.html"><a href="image-classification.html#bee-population-control-what-would-happen-if-bees-go-extinct"><i class="fa fa-check"></i><b>11.1</b> Bee population control: What would happen if bees go extinct?</a></li>
+<li class="chapter" data-level="11.2" data-path="image-classification.html"><a href="image-classification.html#machine-learning-overview"><i class="fa fa-check"></i><b>11.2</b> Machine Learning Overview</a></li>
+<li class="chapter" data-level="11.3" data-path="image-classification.html"><a href="image-classification.html#neural-networks-and-convolutional-neural-networks"><i class="fa fa-check"></i><b>11.3</b> Neural networks and convolutional neural networks</a></li>
+<li class="chapter" data-level="11.4" data-path="image-classification.html"><a href="image-classification.html#summary-8"><i class="fa fa-check"></i><b>11.4</b> Summary</a></li>
+<li class="chapter" data-level="11.5" data-path="image-classification.html"><a href="image-classification.html#references-6"><i class="fa fa-check"></i><b>11.5</b> References</a></li>
+<li class="chapter" data-level="11.6" data-path="image-classification.html"><a href="image-classification.html#give-us-feedback-8"><i class="fa fa-check"></i><b>11.6</b> Give us feedback</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="ultima-online.html"><a href="ultima-online.html"><i class="fa fa-check"></i><b>12</b> Ultima online</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="ultima-online.html"><a href="ultima-online.html#the-ultima-online-catastrophe"><i class="fa fa-check"></i><b>12.1</b> The Ultima Online Catastrophe</a>
+<ul>
+<li class="chapter" data-level="12.1.1" data-path="ultima-online.html"><a href="ultima-online.html#the-lotka-volterra-model-for-population-dynamics"><i class="fa fa-check"></i><b>12.1.1</b> The Lotka-Volterra model for population dynamics</a></li>
+</ul></li>
+<li class="chapter" data-level="12.2" data-path="ultima-online.html"><a href="ultima-online.html#summary-9"><i class="fa fa-check"></i><b>12.2</b> Summary</a></li>
+<li class="chapter" data-level="12.3" data-path="ultima-online.html"><a href="ultima-online.html#references-7"><i class="fa fa-check"></i><b>12.3</b> References</a></li>
+<li class="chapter" data-level="12.4" data-path="ultima-online.html"><a href="ultima-online.html#give-us-feedback-9"><i class="fa fa-check"></i><b>12.4</b> Give us feedback</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="ultima-continued.html"><a href="ultima-continued.html"><i class="fa fa-check"></i><b>13</b> Ultima continued</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="ultima-continued.html"><a href="ultima-continued.html#the-language-of-science"><i class="fa fa-check"></i><b>13.1</b> The language of science</a></li>
+<li class="chapter" data-level="13.2" data-path="ultima-continued.html"><a href="ultima-continued.html#scientific-machine-learning-for-model-discovery"><i class="fa fa-check"></i><b>13.2</b> Scientific Machine Learning for model discovery</a>
+<ul>
+<li class="chapter" data-level="13.2.1" data-path="ultima-continued.html"><a href="ultima-continued.html#looking-for-the-catastrophe-culprit"><i class="fa fa-check"></i><b>13.2.1</b> Looking for the catastrophe culprit</a></li>
+<li class="chapter" data-level="13.2.2" data-path="ultima-continued.html"><a href="ultima-continued.html#the-infamous-day-begins."><i class="fa fa-check"></i><b>13.2.2</b> The infamous day begins.</a></li>
+</ul></li>
+<li class="chapter" data-level="13.3" data-path="ultima-continued.html"><a href="ultima-continued.html#summary-10"><i class="fa fa-check"></i><b>13.3</b> Summary</a></li>
+<li class="chapter" data-level="13.4" data-path="ultima-continued.html"><a href="ultima-continued.html#references-8"><i class="fa fa-check"></i><b>13.4</b> References</a></li>
+<li class="chapter" data-level="13.5" data-path="ultima-continued.html"><a href="ultima-continued.html#give-us-feedback-10"><i class="fa fa-check"></i><b>13.5</b> Give us feedback</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="time-series.html"><a href="time-series.html"><i class="fa fa-check"></i><b>14</b> Time series</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="time-series.html"><a href="time-series.html#predicting-the-future"><i class="fa fa-check"></i><b>14.1</b> Predicting the future</a></li>
+<li class="chapter" data-level="14.2" data-path="time-series.html"><a href="time-series.html#exponential-smoothing"><i class="fa fa-check"></i><b>14.2</b> Exponential Smoothing</a>
+<ul>
+<li class="chapter" data-level="14.2.1" data-path="time-series.html"><a href="time-series.html#weighted-average-and-component-form"><i class="fa fa-check"></i><b>14.2.1</b> Weighted average and Component form</a></li>
+<li class="chapter" data-level="14.2.2" data-path="time-series.html"><a href="time-series.html#optimization-or-fitting-process"><i class="fa fa-check"></i><b>14.2.2</b> Optimization (or Fitting) Process</a></li>
+<li class="chapter" data-level="14.2.3" data-path="time-series.html"><a href="time-series.html#trend-methods"><i class="fa fa-check"></i><b>14.2.3</b> Trend Methods</a></li>
+<li class="chapter" data-level="14.2.4" data-path="time-series.html"><a href="time-series.html#seasonality-methods"><i class="fa fa-check"></i><b>14.2.4</b> Seasonality Methods</a></li>
+</ul></li>
+<li class="chapter" data-level="14.3" data-path="time-series.html"><a href="time-series.html#summary-11"><i class="fa fa-check"></i><b>14.3</b> Summary</a></li>
+<li class="chapter" data-level="14.4" data-path="time-series.html"><a href="time-series.html#references-9"><i class="fa fa-check"></i><b>14.4</b> References</a></li>
+<li class="chapter" data-level="14.5" data-path="time-series.html"><a href="time-series.html#give-us-feedback-11"><i class="fa fa-check"></i><b>14.5</b> Give us feedback</a></li>
+</ul></li>
+<li class="part"><span><b>I Epilogue</b></span></li>
+<li class="chapter" data-level="" data-path="epilogue.html"><a href="epilogue.html"><i class="fa fa-check"></i>Epilogue</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Data Science in Julia for Hackers</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="probability-distributions" class="section level1" number="4">
+<h1><span class="header-section-number">Chapter 4</span> Probability distributions</h1>
+<p>So far, we have been talking of probabilities of particular events.
+Probability distributions, on the other hand, help us compute probabilities of various events.
+We can distinguish between discrete and continuous cases depending on the possible output of the experiment.</p>
+<div id="discrete-case" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Discrete Case</h2>
+<p>If the outputs of our experiment are discrete, then the probability distribution is called a probability mass function, where we assign a probability to each possible outcome.</p>
+<p>One of the most popular distributions is the Poisson distribution.
+Suppose I want to visualize the probability of receiving <em>x</em> spam mails on Mondays.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb7-1"><a href="probability-distributions.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb7-2"><a href="probability-distributions.html#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">using</span> Distributions</span>
+<span id="cb7-3"><a href="probability-distributions.html#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">using</span> StatsPlots</span>
+<span id="cb7-4"><a href="probability-distributions.html#cb7-4" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb7-5"><a href="probability-distributions.html#cb7-5" aria-hidden="true" tabindex="-1"></a>    bar(Poisson(<span class="fl">1.5</span>)<span class="op">,</span> xlabel<span class="op">=</span><span class="st">&quot;Spam emails&quot;</span><span class="op">,</span> ylabel<span class="op">=</span><span class="st">&quot;Probability&quot;</span><span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span><span class="op">,</span> size<span class="op">=</span>(<span class="fl">400</span><span class="op">,</span> <span class="fl">300</span>))</span>
+<span id="cb7-6"><a href="probability-distributions.html#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_03_plot_6-J1.png" /><!-- --></p>
+<p>Here we represent the probability of receiving <em>x</em> spam mail in a day.
+The interpretation of this graph is pretty straightforward.
+The probability of receiving 0 spam emails on a Monday is approximately 0.2, for 1 spam email is slightly higher than 0.3 and so on, we have the probability of each possible output.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb8-1"><a href="probability-distributions.html#cb8-1" aria-hidden="true" tabindex="-1"></a>λ<span class="op">=</span><span class="fl">4</span></span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb9-1"><a href="probability-distributions.html#cb9-1" aria-hidden="true" tabindex="-1"></a>bar(Poisson(λ)<span class="op">,</span> xlabel<span class="op">=</span><span class="st">&quot;x&quot;</span><span class="op">,</span> ylabel<span class="op">=</span><span class="st">&quot;Probability&quot;</span><span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span><span class="op">,</span> size<span class="op">=</span>(<span class="fl">400</span><span class="op">,</span> <span class="fl">300</span>))</span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/unnamed-chunk-61-J1.png" /><!-- --></p>
+</div>
+<div id="continuous-cases" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> Continuous cases</h2>
+<p>Instead of a probability mass function, a continuous variable has a probability density function.</p>
+<p>For example, consider the density probability of heights of adult women, given approximately by a Normal distribution,</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb10-1"><a href="probability-distributions.html#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb10-2"><a href="probability-distributions.html#cb10-2" aria-hidden="true" tabindex="-1"></a>    plot(Normal(<span class="fl">64</span><span class="op">,</span> <span class="fl">3</span>)<span class="op">,</span> xlabel<span class="op">=</span><span class="st">&quot;Height (in)&quot;</span><span class="op">,</span> ylabel<span class="op">=</span><span class="st">&quot;Probability density&quot;</span><span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span><span class="op">,</span> size<span class="op">=</span>(<span class="fl">400</span><span class="op">,</span> <span class="fl">300</span>))</span>
+<span id="cb10-3"><a href="probability-distributions.html#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_03_plot_7-J1.png" /><!-- --></p>
+<p>In this example, the event space is just all the possible heights a woman could have, in other words, the <em>x</em> axis.
+The <em>y</em> axis, on the other hand, represents the probability density.</p>
+<p>To not delve into complex definitions, we can think of the <em>x</em> label as a steel bar and the <em>y</em> label the density of each infinitesimal point of the bar.
+If we want to know the mass of a specific segment we need to calculate the area below the curve of that segment (integrate the segment mathematically talking).
+Since we are using the probability density, instead of the mass what we obtain is the probability.</p>
+<p>When we work with continuous variables it is pointless to talk about the probability of a single x value.
+Think of it in a mathematical way, in a number line there are infinity points in between 0 and 0,01.
+In this case, our continuous variable is women’s height, since there are infinitely possible heights it has no sense to talk about the probability of a single height, like <span class="math inline">\(P(6 in)\)</span>.</p>
+<p>Probability in the continuous case is always computed in an interval.
+For example, suppose we want to know the probability that a randomly selected woman measures between 60 and 65 inches.
+To know it we need to calculate the area under the density curve in the intervals x = [60,65].</p>
+<p>Keep in mind that the <em>x</em> label contains all possible events, in this case all possible women´s heights, so the area below the curve of all the <em>x</em> label is equal to 1.</p>
+<p>An alternative description of the distribution is the cumulative distribution function also called the distribution function. It describes the probability that the random variable is no larger than a given value. We obtain it by integrating the density function and</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb11-1"><a href="probability-distributions.html#cb11-1" aria-hidden="true" tabindex="-1"></a>plot(imresize(load(<span class="st">&quot;./03_probability_intro/images/density and cumulative functions.png&quot;</span>)<span class="op">,</span> (<span class="fl">300</span><span class="op">,</span> <span class="fl">860</span>))<span class="op">,</span>axis<span class="op">=</span><span class="cn">nothing</span><span class="op">,</span>border<span class="op">=:</span>none)</span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_03_plot_8-J1.png" /><!-- --></p>
+<p>On the left is the probability density function and on the right is the cumulative distribution function, which is the area under the probability density curve.</p>
+<p>Any mathematical function satisfying certain requirements can be a probability density.
+There are lots of these types of functions, and each one has its own shape and distinctive properties.</p>
+<p>We will introduce some important probability density functions so that you can have a better understanding of what all this is about.
+Probably, the concept of the Normal distribution –also referred as the Gaussian– was already familiar to you, as it is one of the most popular and widely used distributions in some fields and in popular culture.
+The shape of this distribution is governed by two <em>parameters</em>, usually represented by the Greek letters <span class="math inline">\(\mu\)</span> and <span class="math inline">\(\sigma\)</span>. Roughly speaking, <span class="math inline">\(\mu\)</span> is associated with the center of the distribution and <span class="math inline">\(\sigma\)</span> with how wide it is</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb12-1"><a href="probability-distributions.html#cb12-1" aria-hidden="true" tabindex="-1"></a>μ <span class="op">=</span> <span class="fl">0</span></span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb13-1"><a href="probability-distributions.html#cb13-1" aria-hidden="true" tabindex="-1"></a> σ<span class="op">=</span> <span class="fl">2.5</span></span></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb14-1"><a href="probability-distributions.html#cb14-1" aria-hidden="true" tabindex="-1"></a>plot(Normal(μ<span class="op">,</span>σ)<span class="op">,</span> xlabel<span class="op">=</span><span class="st">&quot;x&quot;</span><span class="op">,</span> ylabel<span class="op">=</span><span class="st">&quot;P(x)&quot;</span><span class="op">,</span> lw<span class="op">=</span><span class="fl">4</span><span class="op">,</span> color<span class="op">=</span><span class="st">&quot;purple&quot;</span><span class="op">,</span> label<span class="op">=</span><span class="ex">false</span><span class="op">,</span> size<span class="op">=</span>(<span class="fl">450</span><span class="op">,</span> <span class="fl">300</span>)<span class="op">,</span> alpha<span class="op">=</span><span class="fl">0.8</span><span class="op">,</span> title<span class="op">=</span><span class="st">&quot;Normal distribution&quot;</span><span class="op">,</span> xlim<span class="op">=</span>(<span class="op">-</span><span class="fl">10</span><span class="op">,</span> <span class="fl">10</span>))</span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_03_plot_9-J1.png" /><!-- --></p>
+<p>Every probability density that is defined by a mathematical function, has a set of parameters that defines the distribution’s shape and behaviour, and changing them will influence the distribution in different ways, depending on the one we are working with.</p>
+<p>Another widely used distribution is the <em>exponential</em>. Below you can see how it looks.
+It is governed by only one parameter, <span class="math inline">\(\alpha\)</span>, which basically represents the rate of decrease in probability as <span class="math inline">\(x\)</span> gets bigger.</p>
+<p>One last slider to change the value of the <span class="math inline">\(α\)</span> parameter of exponential distribution can be implemented if you replicate the code below.</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb15-1"><a href="probability-distributions.html#cb15-1" aria-hidden="true" tabindex="-1"></a>α<span class="op">=</span> <span class="fl">1.5</span></span></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb16-1"><a href="probability-distributions.html#cb16-1" aria-hidden="true" tabindex="-1"></a>plot(Exponential(α)<span class="op">,</span> xlabel<span class="op">=</span><span class="st">&quot;x&quot;</span><span class="op">,</span> ylabel<span class="op">=</span><span class="st">&quot;P(x)&quot;</span><span class="op">,</span> lw<span class="op">=</span><span class="fl">4</span><span class="op">,</span> color<span class="op">=</span><span class="st">&quot;blue&quot;</span><span class="op">,</span> label<span class="op">=</span><span class="ex">false</span><span class="op">,</span> size<span class="op">=</span>(<span class="fl">450</span><span class="op">,</span> <span class="fl">300</span>)<span class="op">,</span> alpha<span class="op">=</span><span class="fl">0.8</span><span class="op">,</span> title<span class="op">=</span><span class="st">&quot;Exponential distribution&quot;</span><span class="op">,</span> xlim<span class="op">=</span>(<span class="fl">0</span><span class="op">,</span> <span class="fl">10</span>))</span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_03_plot_10-J1.png" /><!-- --></p>
+<p>As the book progresses, we will be using a lot of different distributions. They are an important building block in probability and statistics. In the next section, we will discuss a little bit about how probability arises from gathering data.</p>
+</div>
+<div id="histograms" class="section level2" number="4.3">
+<h2><span class="header-section-number">4.3</span> Histograms</h2>
+<p>To illustrate some of these concepts we have been learning, we are going to use <a href="https://data.buenosaires.gob.ar/dataset/registro-precipitaciones-ciudad">monthly rainfall data</a> from the city of Buenos Aires, Argentina, since 1991.
+The <strong>histogram</strong> of the data is shown below.
+You may be wondering what a histogram is.
+An histogram is a plot that tells us the counts or relative frequencies of a given set of events.</p>
+<p>As a data scientist you are constantly working with datasets and a great first approach to that dataset is by constructing a histogram.
+To construct a histogram, the first step is to bin the range of values that is, divide the entire range of values into a series of intervals and then count how many values fall into each interval</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb17-1"><a href="probability-distributions.html#cb17-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-2"><a href="probability-distributions.html#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb17-3"><a href="probability-distributions.html#cb17-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">using</span> CSV</span>
+<span id="cb17-4"><a href="probability-distributions.html#cb17-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">using</span> DataFrames</span>
+<span id="cb17-5"><a href="probability-distributions.html#cb17-5" aria-hidden="true" tabindex="-1"></a>    <span class="co">#Read the CSV file and transform it into a DataFrame</span></span>
+<span id="cb17-6"><a href="probability-distributions.html#cb17-6" aria-hidden="true" tabindex="-1"></a>    rain_data <span class="op">=</span> CSV.<span class="cn">read</span>(<span class="st">&quot;./03_probability_intro/data/historico_precipitaciones.csv&quot;</span><span class="op">,</span> DataFrame)</span>
+<span id="cb17-7"><a href="probability-distributions.html#cb17-7" aria-hidden="true" tabindex="-1"></a>    <span class="co">#Rename the columns </span></span>
+<span id="cb17-8"><a href="probability-distributions.html#cb17-8" aria-hidden="true" tabindex="-1"></a>    colnames <span class="op">=</span> [<span class="st">&quot;Year&quot;</span><span class="op">,</span> <span class="st">&quot;Month&quot;</span><span class="op">,</span> <span class="st">&quot;mm&quot;</span><span class="op">,</span> <span class="st">&quot;Days&quot;</span>]</span>
+<span id="cb17-9"><a href="probability-distributions.html#cb17-9" aria-hidden="true" tabindex="-1"></a>    rename<span class="op">!</span>(rain_data<span class="op">,</span> <span class="dt">Symbol</span>.(colnames)) <span class="co">#Symbol is the type of object used to represent the labels of a dataset</span></span>
+<span id="cb17-10"><a href="probability-distributions.html#cb17-10" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb17-11"><a href="probability-distributions.html#cb17-11" aria-hidden="true" tabindex="-1"></a>    <span class="co">#We use a dictionary to translate de Month names </span></span>
+<span id="cb17-12"><a href="probability-distributions.html#cb17-12" aria-hidden="true" tabindex="-1"></a>    translate <span class="op">=</span> <span class="dt">Dict</span>(<span class="st">&quot;Enero&quot;</span> <span class="op">=&gt;</span> <span class="st">&quot;January&quot;</span> <span class="op">,</span><span class="st">&quot;Febrero&quot;</span> <span class="op">=&gt;</span> <span class="st">&quot;February&quot;</span> <span class="op">,</span><span class="st">&quot;Marzo&quot;</span> <span class="op">=&gt;</span> <span class="st">&quot;March&quot;</span> <span class="op">,</span><span class="st">&quot;Abril&quot;</span> <span class="op">=&gt;</span> <span class="st">&quot;April&quot;</span> <span class="op">,</span><span class="st">&quot;Mayo&quot;</span> <span class="op">=&gt;</span> <span class="st">&quot;May&quot;</span> <span class="op">,</span><span class="st">&quot;Junio&quot;</span> <span class="op">=&gt;</span> <span class="st">&quot;June&quot;</span>  <span class="op">,</span><span class="st">&quot;Julio&quot;</span> <span class="op">=&gt;</span> <span class="st">&quot;July&quot;</span>   <span class="op">,</span><span class="st">&quot;Agosto&quot;</span> <span class="op">=&gt;</span> <span class="st">&quot;August&quot;</span>  <span class="op">,</span><span class="st">&quot;Septiembre&quot;</span> <span class="op">=&gt;</span> <span class="st">&quot;September&quot;</span>  <span class="op">,</span><span class="st">&quot;Octubre&quot;</span> <span class="op">=&gt;</span> <span class="st">&quot;October&quot;</span> <span class="op">,</span><span class="st">&quot;Noviembre&quot;</span> <span class="op">=&gt;</span> <span class="st">&quot;November&quot;</span> <span class="op">,</span><span class="st">&quot;Diciembre&quot;</span> <span class="op">=&gt;</span> <span class="st">&quot;December&quot;</span>)</span>
+<span id="cb17-13"><a href="probability-distributions.html#cb17-13" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb17-14"><a href="probability-distributions.html#cb17-14" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>length(rain_data[<span class="op">:,:</span>Month])</span>
+<span id="cb17-15"><a href="probability-distributions.html#cb17-15" aria-hidden="true" tabindex="-1"></a>        rain_data[i<span class="op">,:</span>Month] <span class="op">=</span> translate[rain_data[i<span class="op">,:</span>Month]]</span>
+<span id="cb17-16"><a href="probability-distributions.html#cb17-16" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
+<span id="cb17-17"><a href="probability-distributions.html#cb17-17" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p>We can see the first few rows of our data, with columns corresponding to the year, the month, the rain precipitation (in millimeters) and the number of days it rained in that month.</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb18-1"><a href="probability-distributions.html#cb18-1" aria-hidden="true" tabindex="-1"></a>first(rain_data<span class="op">,</span> <span class="fl">8</span>)</span></code></pre></div>
+<pre><code>## 8×4 DataFrame
+##  Row │ Year   Month     mm       Days
+##      │ Int64  String    Float64  Int64
+## ─────┼─────────────────────────────────
+##    1 │  1991  January     190.0      7
+##    2 │  1991  February     30.5      6
+##    3 │  1991  March        55.0      8
+##    4 │  1991  April       125.6     12
+##    5 │  1991  May          68.4      7
+##    6 │  1991  June        119.7     10
+##    7 │  1991  July         89.3      8
+##    8 │  1991  August       66.4      7</code></pre>
+<p>Now plotting the histogram for the column of rainfall in mm we have the figure shown below. Plotting a histogram is very easy with the Plots.jl package. You just have to pass the array you want to make the histogram of and the number of bins. The other arguments are self-explanatory, and are just to make the plot nicer.</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb20-1"><a href="probability-distributions.html#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb20-2"><a href="probability-distributions.html#cb20-2" aria-hidden="true" tabindex="-1"></a>    histogram(rain_data[<span class="op">:,</span><span class="st">&quot;mm&quot;</span>]<span class="op">,</span> bins<span class="op">=</span><span class="fl">20</span><span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span><span class="op">,</span> size<span class="op">=</span>(<span class="fl">450</span><span class="op">,</span> <span class="fl">300</span>))</span>
+<span id="cb20-3"><a href="probability-distributions.html#cb20-3" aria-hidden="true" tabindex="-1"></a>    title<span class="op">!</span>(<span class="st">&quot;Monthly rainfall in Buenos Aires&quot;</span>)</span>
+<span id="cb20-4"><a href="probability-distributions.html#cb20-4" aria-hidden="true" tabindex="-1"></a>    xlabel<span class="op">!</span>(<span class="st">&quot;Rainfall (mm)&quot;</span>)</span>
+<span id="cb20-5"><a href="probability-distributions.html#cb20-5" aria-hidden="true" tabindex="-1"></a>    ylabel<span class="op">!</span>(<span class="st">&quot;Frequency&quot;</span>)</span>
+<span id="cb20-6"><a href="probability-distributions.html#cb20-6" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_03_plot_11-J1.png" /><!-- --></p>
+<p>Histograms give us a good approximation of the probability density or mass function.
+The reason behind this is because we have registered some total number <span class="math inline">\(N\)</span> of events that happened in some time interval (in this case, one month) and we grouped the number of times each one occurred.
+In this line of reasoning, events that happened most are more likely to happen, and hence we can say they have a higher probability associated with them. Something important to consider about histograms when dealing with a continuous variable such as, in our case, millimeters of monthly rainfall, are <em>bins</em> and bin size.
+When working with such continuous variables, the domain in which our data expresses itself (in this case, from 0 mm to approximately 450 mm) is divided in discrete intervals. In this way, given a bin size of 20mm, when constructing our histogram we have to ask ‘how many rainy days have given us a precipitation measurement between 100mm and 120mm?’ and then we register that number in that bin. This process is repeated for all bins to obtain our histogram.</p>
+<p>We have earlier said that probability has to be a number between 0 and 1, so how can it be that these relative frequencies are linked to probabilities?
+What we should do now is to <em>normalize</em> our histogram to have the frequency values constrained.
+Normalizing is just the action of adjusting the scale of variables, without changing the relative values of our data.
+Below we show the normalized histogram.
+You will notice that the frequency values are very low now. The reason for this is that when normalizing, we impose to our histogram data that the sum of the counts of all our events (or, thinking graphically, the total area of the histogram) must be 1.
+But why?
+As probability tells us how plausible is an event, if we take into account all the events, we expect that the probability of all those events to be the maximum value, and that value is 1 by convention.
+When we normalize a histogram, we obtain another histogram that approaches the probability density function.
+So, we normalize the histogram obtaining:</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb21-1"><a href="probability-distributions.html#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb21-2"><a href="probability-distributions.html#cb21-2" aria-hidden="true" tabindex="-1"></a>    histogram(rain_data[<span class="op">:,</span><span class="st">&quot;mm&quot;</span>]<span class="op">,</span> bins<span class="op">=</span><span class="fl">20</span><span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span><span class="op">,</span> normalize<span class="op">=</span><span class="ex">true</span><span class="op">,</span> size<span class="op">=</span>(<span class="fl">450</span><span class="op">,</span> <span class="fl">300</span>))</span>
+<span id="cb21-3"><a href="probability-distributions.html#cb21-3" aria-hidden="true" tabindex="-1"></a>    title<span class="op">!</span>(<span class="st">&quot;Monthly rainfall in Buenos Aires&quot;</span>)</span>
+<span id="cb21-4"><a href="probability-distributions.html#cb21-4" aria-hidden="true" tabindex="-1"></a>    xlabel<span class="op">!</span>(<span class="st">&quot;Rainfall [mm]&quot;</span>)</span>
+<span id="cb21-5"><a href="probability-distributions.html#cb21-5" aria-hidden="true" tabindex="-1"></a>    ylabel<span class="op">!</span>(<span class="st">&quot;Frequency&quot;</span>)</span>
+<span id="cb21-6"><a href="probability-distributions.html#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_03_plot_12-J1.png" /><!-- --></p>
+<p>There is a lot we can say about this plot. First, it is worth noting that a rainfall amount less than <span class="math inline">\(0\)</span>mm is not possible, that’s why we don’t have any event in this region. On the other hand, we see that a monthly rainfall higher than <span class="math inline">\(300\)</span>mm is a rare event, and a rainfall higher than <span class="math inline">\(400\)</span>mm is even less
+likely to happen.</p>
+<p>But why am I inferring how likely is an event to happen in the future with data from the past?</p>
+<p>I’m making some assumptions that are often implied working with histograms and measured data: the first assumption is that the data is representative for the variable in consideration, meaning that the data of rainfall was measured well, that it isn’t measured just during winter for example, when we know rainfall is most common. The other big assumption is that things in the future will not change much from things in the past, so if we do the measure again for some time in the near future, the shape of the histogram is going to be more or less the same. These assumptions may or may not hold in the real events, but this doesn’t mean there is something wrong with our analysis or how we model our data. It’s just that we chose some assumptions that seem reasonable with the information we have. And we always have to make some assumptions to obtain answers.</p>
+<p>So far we have been talking about histograms as probability density functions. Distributions such as these, that are built from the outcome of an experiment are called <em>empirical</em> distributions. This means that they arise from direct measurements, not from an underlying analytical function. When dealing with most real-world examples, histograms will represent distributions we will obtain for our updated beliefs, so they are a really important concept for what will come in the book.</p>
+<p>All the concepts we developed about probability density, are directly applied to our Bayesian formalism. The prior, likelihood and posterior probabilities are really <em>probability densities</em>, and that is really how we treat Bayes’ theorem mathematically and computationally.</p>
+<div id="example-bayesian-bandits" class="section level3" number="4.3.1">
+<h3><span class="header-section-number">4.3.1</span> Example: Bayesian Bandits</h3>
+<p>Now we are going to tackle a famous problem that may help us to understand a little bit how to incorporate what we learned about Bayesian probability and some features of the Julia language. Here we present the <strong>bandit</strong> or <strong>multi-armed bandit</strong> problem. Although it is conceived thinking about a strategy for a casino situation, there exist a lot of different settings where the same strategy could be applied.</p>
+<p>The situation, in it’s simpler form, goes like this: you are in a casino, with a limited amount of casino chips. In front of you there are some slot machines (say, three of them for simplicity). Each machine has some probability <em><span class="math inline">\(p_m\)</span></em> of giving you $1 associated with it, but every machine has a different probability. There are two main problems. First, we don’t know these probabilities beforehand, so we will have to develop some explorative process in order to gather information about the machines. The second problem is that our chips –and thus our possible trials– are limited, and we want to take the most profit we can out of the machines. How do we do this? Finding the machine with the highest success probability and keep playing on it. This tradeoff is commonly known as <em>explore vs. exploit</em>. If we had one million chips we could simply play a lot of times in each machine and thus make a good estimate about their probabilities, but our reward may not be very good, because we would have played so many chips in machines that were not our best option. Conversely, we may have found a machine which we know that has a good success probability, but if we don’t explore the other machines also, we won’t know if it is the best of our options.</p>
+<p>This is a kind of problem that is very suited for the Bayesian way of thinking. We start with some information about the slot machines (in the worst case, we know nothing), and we will update our beliefs with the results of our trials. A methodology exists for these explore vs. exploit dilemmas, within many others, which is called <strong>Thompson sampling</strong>. The algorithm underlying the Thompson sampling can be thought in these successive steps:</p>
+<ol style="list-style-type: decimal">
+<li>First, assign some probability distribution for your knowledge of the success probability of each slot machine.</li>
+<li>Sample randomly from each of these distributions and check which is the maximum sampled probability.</li>
+<li>Pull the arm of the machine corresponding to that maximum value.</li>
+<li>Update the probability with the result of the experiment.</li>
+<li>Repeat from step 2.</li>
+</ol>
+<p>Here we will take some advantage about the math that can be used to model our situation. To model the generation of our data, we can use a distribution we have not yet introduced, the <em>Binomial</em> distribution. This distribution arises when you repeat some experiment that has two possible outcomes, a number N of times. In each individual experiment, the outcomes have some probability <span class="math inline">\(p\)</span> and <span class="math inline">\(1-p\)</span> of happening (because there are only two). Let’s see what this Binomial distribution looks like,</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb22-1"><a href="probability-distributions.html#cb22-1" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> <span class="fl">0.5</span></span></code></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb23-1"><a href="probability-distributions.html#cb23-1" aria-hidden="true" tabindex="-1"></a>N <span class="op">=</span> <span class="fl">250</span></span></code></pre></div>
+<div class="sourceCode" id="cb24"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb24-1"><a href="probability-distributions.html#cb24-1" aria-hidden="true" tabindex="-1"></a>scatter(Binomial(N<span class="op">,</span> p)<span class="op">,</span> xlim<span class="op">=</span><span class="fl">300</span><span class="op">,</span> label<span class="op">=</span><span class="ex">false</span><span class="op">,</span> title<span class="op">=</span><span class="st">&quot;Binomial distribution&quot;</span><span class="op">,</span> size<span class="op">=</span>(<span class="fl">500</span><span class="op">,</span> <span class="fl">350</span>)<span class="op">,</span> xlabel<span class="op">=</span><span class="st">&quot;Number of succeses&quot;</span>)</span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_03_plot_13-J1.png" /><!-- --></p>
+<p>We choose this distribution as it models properly our situation, with <span class="math inline">\(p\)</span> being the probability we estimate of succeeding with a particular machine, and <span class="math inline">\(N\)</span> the number of trials we make on the machine. The two possible outcomes are success (we win $1) or fail (we don’t win anything)</p>
+<p>So we now use a prior to set our knowledge before making a trial on the slot machine. The thing is, there exists a mathematical hack called <em>conjugate priors</em>. When a likelihood distribution is multiplied by its conjugate prior, the posterior distribution is the same as the prior with its corresponding parameters updated. This trick frees us from the need of using more computation-expensive techniques, that we will be using later in the book.
+In the particular case of the Binomial distribution, the conjugate prior is the <em>Beta distribution</em>. This is a very flexible distribution, as we can obtain a lot of other distributions as particular cases of the Beta, with specific combinations of its parameters. Below you can see some of the fancy shapes this Beta distribution can obtain</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb25-1"><a href="probability-distributions.html#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb25-2"><a href="probability-distributions.html#cb25-2" aria-hidden="true" tabindex="-1"></a>    plot(Beta(<span class="fl">1</span><span class="op">,</span> <span class="fl">1</span>)<span class="op">,</span> ylim<span class="op">=</span>(<span class="fl">0</span><span class="op">,</span> <span class="fl">5</span>)<span class="op">,</span> size<span class="op">=</span>(<span class="fl">400</span><span class="op">,</span> <span class="fl">300</span>)<span class="op">,</span> label<span class="op">=</span><span class="ex">false</span><span class="op">,</span> xlabel<span class="op">=</span><span class="st">&quot;x&quot;</span><span class="op">,</span> ylabel<span class="op">=</span><span class="st">&quot;P(x)&quot;</span><span class="op">,</span> title<span class="op">=</span><span class="st">&quot;Beta distribution shapes&quot;</span>)</span>
+<span id="cb25-3"><a href="probability-distributions.html#cb25-3" aria-hidden="true" tabindex="-1"></a>    plot<span class="op">!</span>(Beta(<span class="fl">0.5</span><span class="op">,</span> <span class="fl">0.5</span>)<span class="op">,</span> label<span class="op">=</span><span class="ex">false</span>)</span>
+<span id="cb25-4"><a href="probability-distributions.html#cb25-4" aria-hidden="true" tabindex="-1"></a>    plot<span class="op">!</span>(Beta(<span class="fl">5</span><span class="op">,</span> <span class="fl">5</span>)<span class="op">,</span> label<span class="op">=</span><span class="ex">false</span>)</span>
+<span id="cb25-5"><a href="probability-distributions.html#cb25-5" aria-hidden="true" tabindex="-1"></a>    plot<span class="op">!</span>(Beta(<span class="fl">10</span><span class="op">,</span> <span class="fl">3</span>)<span class="op">,</span> label<span class="op">=</span><span class="ex">false</span>)</span>
+<span id="cb25-6"><a href="probability-distributions.html#cb25-6" aria-hidden="true" tabindex="-1"></a>    plot<span class="op">!</span>(Beta(<span class="fl">3</span><span class="op">,</span> <span class="fl">10</span>)<span class="op">,</span> label<span class="op">=</span><span class="ex">false</span>)</span>
+<span id="cb25-7"><a href="probability-distributions.html#cb25-7" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_03_plot_14-J1.png" /><!-- --></p>
+<p>To start formalizing our problem a bit, we are going to start building our bandits. This is just a way to name our slot machines and some information associated with them. How will we do this? With the help of Julia’s <em>struct</em>. These are objects we can create in Julia and that can be used to store information that has meaning as an entire block. In our case, some relevant information would be to store the probability of each slot machine, and the number of trials. It is more comfortable to carry all this information in one big block, as we later can start creating as many bandits we want, and it would be impossible to keep track of all the parameters.
+Above we define a struct of a <em>beta bandit</em>, which will store the real probability of success of the bandit, the parameters <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> of the Beta distribution, and the total number of tries <span class="math inline">\(N\)</span> of the bandit. This would correspond to the first step in the Thompson sampling algorithm.</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb26-1"><a href="probability-distributions.html#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb26-2"><a href="probability-distributions.html#cb26-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">mutable struct</span> beta_bandit</span>
+<span id="cb26-3"><a href="probability-distributions.html#cb26-3" aria-hidden="true" tabindex="-1"></a>        <span class="co"># the real success probability of the bandit</span></span>
+<span id="cb26-4"><a href="probability-distributions.html#cb26-4" aria-hidden="true" tabindex="-1"></a>        p<span class="op">::</span><span class="dt">Float64</span></span>
+<span id="cb26-5"><a href="probability-distributions.html#cb26-5" aria-hidden="true" tabindex="-1"></a>        <span class="co"># a parameter from the beta distribution (successes)</span></span>
+<span id="cb26-6"><a href="probability-distributions.html#cb26-6" aria-hidden="true" tabindex="-1"></a>        a<span class="op">::</span><span class="dt">Int64</span></span>
+<span id="cb26-7"><a href="probability-distributions.html#cb26-7" aria-hidden="true" tabindex="-1"></a>        <span class="co"># b parameter from the beta distribution (fails)</span></span>
+<span id="cb26-8"><a href="probability-distributions.html#cb26-8" aria-hidden="true" tabindex="-1"></a>        b<span class="op">::</span><span class="dt">Int64</span></span>
+<span id="cb26-9"><a href="probability-distributions.html#cb26-9" aria-hidden="true" tabindex="-1"></a>        <span class="co"># total number of trials of bandit</span></span>
+<span id="cb26-10"><a href="probability-distributions.html#cb26-10" aria-hidden="true" tabindex="-1"></a>        N<span class="op">::</span><span class="dt">Int64</span></span>
+<span id="cb26-11"><a href="probability-distributions.html#cb26-11" aria-hidden="true" tabindex="-1"></a>        <span class="co"># initialization of the Beta distribution with parameters a=1, b=1 (uniform distribution)</span></span>
+<span id="cb26-12"><a href="probability-distributions.html#cb26-12" aria-hidden="true" tabindex="-1"></a>        beta_bandit(p<span class="op">=</span>p<span class="op">,</span> a<span class="op">=</span><span class="fl">1</span><span class="op">,</span> b<span class="op">=</span><span class="fl">1</span><span class="op">,</span> N<span class="op">=</span><span class="fl">0</span>) <span class="op">=</span> <span class="kw">new</span>(p<span class="op">,</span> a<span class="op">,</span> b<span class="op">,</span> N)</span>
+<span id="cb26-13"><a href="probability-distributions.html#cb26-13" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
+<span id="cb26-14"><a href="probability-distributions.html#cb26-14" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p>Given that we have constructed our bandit and assigned a probability distribution to it, we define the function to sample from the distribution, as we will be needing it for the second step of the Thompson sampling algorithm.</p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb27-1"><a href="probability-distributions.html#cb27-1" aria-hidden="true" tabindex="-1"></a>sample_bandit(bandit<span class="op">::</span>beta_bandit) <span class="op">=</span> rand(Beta(bandit.a<span class="op">,</span> bandit.b))</span></code></pre></div>
+<pre><code>## sample_bandit (generic function with 1 method)</code></pre>
+<p>Now we need some function to pull an arm of the slot machine and actually test if we get a success or not. This will help us in the second step of the algorithm.</p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb29-1"><a href="probability-distributions.html#cb29-1" aria-hidden="true" tabindex="-1"></a>pull_arm(bandit<span class="op">::</span>beta_bandit) <span class="op">=</span> bandit.p <span class="op">&gt;</span> rand()</span></code></pre></div>
+<pre><code>## pull_arm (generic function with 1 method)</code></pre>
+<p>Finally, we define another function to update the bandit information, based on the result of pulling an arm. This corresponds to the forth step in the Thompson sampling algorithm.</p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb31-1"><a href="probability-distributions.html#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> update_bandit(bandit<span class="op">::</span>beta_bandit<span class="op">,</span> outcome<span class="op">::</span><span class="dt">Bool</span>)</span>
+<span id="cb31-2"><a href="probability-distributions.html#cb31-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">if</span> outcome</span>
+<span id="cb31-3"><a href="probability-distributions.html#cb31-3" aria-hidden="true" tabindex="-1"></a>        bandit.a <span class="op">+=</span> <span class="fl">1</span></span>
+<span id="cb31-4"><a href="probability-distributions.html#cb31-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">else</span></span>
+<span id="cb31-5"><a href="probability-distributions.html#cb31-5" aria-hidden="true" tabindex="-1"></a>        bandit.b <span class="op">+=</span> <span class="fl">1</span></span>
+<span id="cb31-6"><a href="probability-distributions.html#cb31-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
+<span id="cb31-7"><a href="probability-distributions.html#cb31-7" aria-hidden="true" tabindex="-1"></a>    bandit.N <span class="op">+=</span> <span class="fl">1</span></span>
+<span id="cb31-8"><a href="probability-distributions.html#cb31-8" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<pre><code>## update_bandit (generic function with 1 method)</code></pre>
+<p>With all these functions defined, we are ready to make an experiment and actually see how our strategy works. We will define beforehand a number of trials and the true probabilities of the slot machines. When the experiment is over, we will see how well were the probabilities of each machine were estimated, and the reward we accumulated. If you come up with some other novel strategy, you can test it doing a similar experiment and see how well the probabilities were estimated and the final reward you got. First, we define the total number of trials we are going to make, and then the <em>true</em> probabilities of each slot machine.
+At the end, we’ll see how well these probabilities were estimated, or, in other words, how well the Thompson sampling helped in the process of gathering information about the bandits.</p>
+<div class="sourceCode" id="cb33"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb33-1"><a href="probability-distributions.html#cb33-1" aria-hidden="true" tabindex="-1"></a>N_TRIALS <span class="op">=</span> <span class="fl">100</span></span></code></pre></div>
+<pre><code>## 100</code></pre>
+<div class="sourceCode" id="cb35"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb35-1"><a href="probability-distributions.html#cb35-1" aria-hidden="true" tabindex="-1"></a>BANDIT_PROBABILITIES <span class="op">=</span> [<span class="fl">0.3</span><span class="op">,</span> <span class="fl">0.5</span><span class="op">,</span> <span class="fl">0.75</span>]</span></code></pre></div>
+<pre><code>## 3-element Array{Float64,1}:
+##  0.3
+##  0.5
+##  0.75</code></pre>
+<div class="sourceCode" id="cb37"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb37-1"><a href="probability-distributions.html#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> beta_bandit_experiment(band_probs<span class="op">,</span> trials)</span>
+<span id="cb37-2"><a href="probability-distributions.html#cb37-2" aria-hidden="true" tabindex="-1"></a>    bandits <span class="op">=</span> [beta_bandit(p) <span class="kw">for</span> p <span class="kw">in</span> band_probs]</span>
+<span id="cb37-3"><a href="probability-distributions.html#cb37-3" aria-hidden="true" tabindex="-1"></a>    reward <span class="op">=</span> <span class="fl">0</span></span>
+<span id="cb37-4"><a href="probability-distributions.html#cb37-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>trials</span>
+<span id="cb37-5"><a href="probability-distributions.html#cb37-5" aria-hidden="true" tabindex="-1"></a><span class="co">#       _, mxidx = findmax([rand(Beta(bandit.a, bandit.b)) for bandit in bandits])</span></span>
+<span id="cb37-6"><a href="probability-distributions.html#cb37-6" aria-hidden="true" tabindex="-1"></a>        _<span class="op">,</span> mxidx <span class="op">=</span> findmax([sample_bandit(bandit) <span class="kw">for</span> bandit <span class="kw">in</span> bandits])</span>
+<span id="cb37-7"><a href="probability-distributions.html#cb37-7" aria-hidden="true" tabindex="-1"></a>        best_bandit <span class="op">=</span> bandits[mxidx]</span>
+<span id="cb37-8"><a href="probability-distributions.html#cb37-8" aria-hidden="true" tabindex="-1"></a>        exp <span class="op">=</span> pull_arm(best_bandit)</span>
+<span id="cb37-9"><a href="probability-distributions.html#cb37-9" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb37-10"><a href="probability-distributions.html#cb37-10" aria-hidden="true" tabindex="-1"></a>        <span class="kw">if</span> exp</span>
+<span id="cb37-11"><a href="probability-distributions.html#cb37-11" aria-hidden="true" tabindex="-1"></a>            reward <span class="op">+=</span> <span class="fl">1</span></span>
+<span id="cb37-12"><a href="probability-distributions.html#cb37-12" aria-hidden="true" tabindex="-1"></a>        <span class="kw">end</span></span>
+<span id="cb37-13"><a href="probability-distributions.html#cb37-13" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb37-14"><a href="probability-distributions.html#cb37-14" aria-hidden="true" tabindex="-1"></a>        update_bandit(best_bandit<span class="op">,</span> exp)</span>
+<span id="cb37-15"><a href="probability-distributions.html#cb37-15" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
+<span id="cb37-16"><a href="probability-distributions.html#cb37-16" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb37-17"><a href="probability-distributions.html#cb37-17" aria-hidden="true" tabindex="-1"></a>    plot()</span>
+<span id="cb37-18"><a href="probability-distributions.html#cb37-18" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>length(bandits)</span>
+<span id="cb37-19"><a href="probability-distributions.html#cb37-19" aria-hidden="true" tabindex="-1"></a>        display(plot<span class="op">!</span>(Beta(bandits[i].a<span class="op">,</span> bandits[i].b)<span class="op">,</span> xlim<span class="op">=</span>(<span class="fl">0</span><span class="op">,</span> <span class="fl">1</span>)<span class="op">,</span> lw<span class="op">=</span><span class="fl">2</span><span class="op">,</span>                          xlabel<span class="op">=</span><span class="st">&quot;Success probability of bandit&quot;</span><span class="op">,</span> ylabel<span class="op">=</span><span class="st">&quot;Probability density&quot;</span>))</span>
+<span id="cb37-20"><a href="probability-distributions.html#cb37-20" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
+<span id="cb37-21"><a href="probability-distributions.html#cb37-21" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb37-22"><a href="probability-distributions.html#cb37-22" aria-hidden="true" tabindex="-1"></a>    <span class="kw">return</span> reward<span class="op">,</span> current()</span>
+<span id="cb37-23"><a href="probability-distributions.html#cb37-23" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<pre><code>## beta_bandit_experiment (generic function with 1 method)</code></pre>
+<div class="sourceCode" id="cb39"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb39-1"><a href="probability-distributions.html#cb39-1" aria-hidden="true" tabindex="-1"></a>rew<span class="op">,</span> bandit_plot <span class="op">=</span> beta_bandit_experiment(BANDIT_PROBABILITIES<span class="op">,</span> N_TRIALS)<span class="op">;</span></span></code></pre></div>
+<div class="sourceCode" id="cb40"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb40-1"><a href="probability-distributions.html#cb40-1" aria-hidden="true" tabindex="-1"></a>bandit_plot</span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_03_plot_15-J1.png" /><!-- --></p>
+<p>Considering that we have only tried 100 times, the probabilities have been estimated pretty well! Each distribution assigns a high-enough probability to the true value of the bandit probabilities and its surroundings.
+Other strategies rather than the Thompson sampling can be tested to see how well they perform, this was just a simple example to apply Bayesian probability.</p>
+</div>
+</div>
+<div id="summary-1" class="section level2" number="4.4">
+<h2><span class="header-section-number">4.4</span> Summary</h2>
+<p>In this chapter, we introduced the basic concepts of probability.
+We talked about the probability of independent events and about conditional probability, which led us to Bayes’ theorem.</p>
+<p>Then, we addressed the two main approaches to probability: the frequentist approach and the Bayesian one, where our initial beliefs can be updated with the addition of new data.
+We also learned what a probability distribution is, we went over a few examples and saw why Bayesians use them to represent probability.</p>
+<p>Finally, we saw the multi-armed bandit problem in which we have a limited amount of resources and must allocate them among competing alternatives to infer the one with the highest probability of success.
+To solve it, we constructed a Bayesian model using the Thompson sampling algorithm.</p>
+</div>
+<div id="references-2" class="section level2" number="4.5">
+<h2><span class="header-section-number">4.5</span> References</h2>
+<ul>
+<li><a href="https://www.amazon.com/Bayesian-Statistics-Fun-Will-Kurt/dp/1593279566">Bayesian Statistics the fun way</a></li>
+<li><a href="https://www.amazon.com/Infinite-Powers-Calculus-Reveals-Universe/dp/0358299284/ref=sr_1_1?dchild=1&amp;keywords=Infinite+Powers&amp;qid=1613753162&amp;s=books&amp;sr=1-1">Infinite Powers: How Calculus Reveals the Secrets of the Universe</a></li>
+<li><a href="https://www.amazon.com/Statistical-Rethinking-Bayesian-Examples-Chapman/dp/1482253445">Statistical Rethinking</a></li>
+<li><a href="https://www.amazon.com/Think-Bayes-Bayesian-Statistics-Python/dp/1449370780">ThinkBayes</a></li>
+<li><a href="https://www.amazon.com/Think-Stats-Exploratory-Data-Analysis/dp/1491907339">ThinkStats</a></li>
+<li><a href="https://www.johndcook.com/blog/mixture_distribution/">Mixture Distribution</a></li>
+<li><a href="https://arxiv.org/pdf/1802.04064.pdf">A contextual bandit bake-off</a></li>
+<li><a href="https://banditalgs.com/">Bandit Algs page</a></li>
+<li><a href="https://www.amazon.com/Bayesian-Methods-Hackers-Probabilistic-Addison-Wesley/dp/0133902838">Bayesian Methods for Hackers</a></li>
+<li><a href="https://www.amazon.com/Introduction-Probability-Theory-Applications-Vol/dp/0471257087">An Introduction to Probability Theory and Its Applications, Vol. 1</a></li>
+</ul>
+</div>
+<div id="give-us-feedback-1" class="section level2" number="4.6">
+<h2><span class="header-section-number">4.6</span> Give us feedback</h2>
+<p>This book is currently in a beta version.
+We are looking forward to getting feedback and criticism:</p>
+<ul>
+<li>Submit a GitHub issue <a href="https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues"><strong>here</strong></a>.</li>
+<li>Mail us to <a href="mailto:martina.cantaro@lambdaclass.com"><strong>martina.cantaro@lambdaclass.com</strong></a></li>
+</ul>
+<p>Thank you!</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="probability-introduction.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="spam-filter.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["data_science_in_julia_for_hackers.pdf", "data_science_in_julia_for_hackers.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

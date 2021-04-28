@@ -36,7 +36,7 @@ end
 ```
 
 ```{julia chap_03_plot_1} 
-plot(imresize(load("./03_probability_intro/images/box-experiment.jpg"), (336, 400)))
+plot(imresize(load("./03_probability_intro/images/box-experiment.jpg"), (336, 400)),axis=nothing,border=:none)
 ```
 
 The experiment goes like this: We put our hands inside the box and take two balls at random, at the same time, and write down their colors. For example, red and green. We will refer to this outcome as $(R,G)$.
@@ -93,7 +93,7 @@ B = “The red wall was not taken” = $\{(G,B)(G,W)(B,W)\}$
 
 
 ```{julia chap_03_plot_2} 
-imresize(load("images/venn-1.jpg"), (336, 400))
+plot(imresize(load("./03_probability_intro/images/venn-1.jpg"), (336, 400)) ,axis=nothing,border=:none)
 ```
 
 The rectangle represents the sample space S. Since it represents all the possible outputs of our experiment, nothing can be outside it.
@@ -108,14 +108,14 @@ Notice that if we created a new event that contains all the sample points of A a
 
 
 ```{julia chap_03_plot_3} 
-imresize(load("images/venn-3.jpg"), (336, 400))
+plot(imresize(load("./03_probability_intro/images/venn-3.jpg"), (336, 400)) ,axis=nothing,border=:none)
 ```
 
 Now let's take into account the event B.
 The points $(G,W)$ and $(B,W)$ are both present in the events A and B, so we must represent them in this way:
 
 ```{julia chap_03_plot_4} 
-imresize(load("images/venn-2.jpg"), (336, 400))
+plot(imresize(load("./03_probability_intro/images/venn-2.jpg"), (336, 400)) ,axis=nothing,border=:none)
 ```
 
 The blue area contains the sample points that are in both events, in this case $(G,W)$ and $(B,W)$. It is defined as the intersection of A and B and is denoted by $A \cap B$.
@@ -198,7 +198,7 @@ To see it in a visual way:
 
 
 ```{julia chap_03_plot_5} 
-imresize(load("images/venn-4.jpg"), (336, 400))
+plot(imresize(load("./03_probability_intro/images/venn-4.jpg"), (336, 400)) ,axis=nothing,border=:none)
 ```
 
 Notice that, since we know B occurred we can truncate the sample space to the B event, and now calculate the probability of A.
@@ -339,13 +339,13 @@ What is nice about the Bayesian framework is that we always account for the unce
 To understand the full power of Bayesian probability we have to extend the notion of probability to *probability density*. We will discuss this topic in the following section.
 
 
-# Probability distributions
+## Probability distributions
 So far, we have been talking of probabilities of particular events.
 Probability distributions, on the other hand, help us compute probabilities of various events.
 We can distinguish between discrete and continuous cases depending on the possible output of the experiment.
 
 
-## Discrete Case
+### Discrete Case
 If the outputs of our experiment are discrete, then the probability distribution is called a probability mass function, where we assign a probability to each possible outcome.
 
 One of the most popular distributions is the Poisson distribution.
@@ -364,18 +364,16 @@ Here we represent the probability of receiving *x* spam mail in a day.
 The interpretation of this graph is pretty straightforward. 
 The probability of receiving 0 spam emails on a Monday is approximately 0.2, for 1 spam email is slightly higher than 0.3 and so on, we have the probability of each possible output.
 
-By replicating the code below in a Pluto notebook, you will be able to create sliders to play around with the value of $λ$  see how the Poisson distribution changes.
 
-
-```{julia} 
-@bind  λ	html"<input type=range min=0.5 max=5 step=0.1>"
+```{julia , results=FALSE} 
+λ=4
 ```
 
 ```{julia} 
 bar(Poisson(λ), xlabel="x", ylabel="Probability", legend=false, size=(400, 300))
 ```
 
-## Continuous cases
+### Continuous cases
 Instead of a probability mass function, a continuous variable has a probability density function.
 
 For example, consider the density probability of heights of adult women, given approximately by a Normal distribution,
@@ -407,7 +405,7 @@ An alternative description of the distribution is the cumulative distribution fu
 
 
 ```{julia chap_03_plot_8} 
-imresize(load("images/density and cumulative functions.png"), (300, 860))
+plot(imresize(load("./03_probability_intro/images/density and cumulative functions.png"), (300, 860)),axis=nothing,border=:none)
 ```
 
 On the left is the probability density function and on the right is the cumulative distribution function, which is the area under the probability density curve.
@@ -420,14 +418,13 @@ Probably, the concept of the Normal distribution –also referred as the Gaussia
 The shape of this distribution is governed by two *parameters*, usually represented by the Greek letters $\mu$ and $\sigma$. Roughly speaking, $\mu$ is associated with the center of the distribution and $\sigma$ with how wide it is
 
 
-Again, two sliders to change the values of $μ$ and $σ$ and see how the shape of the  Normal distribution changes.
 
-```{julia} 
-@bind μ html"<input type=range min=-1 max=1 step=0.1>"
+```{julia , results=FALSE} 
+μ = 0
 ```
 
-```{julia} 
-@bind σ html"<input type=range min=0.1 max=5 step=0.5>"
+```{julia , results=FALSE} 
+ σ= 2.5
 ```
 
 ```{julia chap_03_plot_9} 
@@ -442,8 +439,8 @@ It is governed by only one parameter, $\alpha$, which basically represents the r
 
 One last slider to change the value of the $α$ parameter of exponential distribution can be implemented if you replicate the code below. 
 
-```{julia} 
-@bind α html"<input type=range min=0.2 max=3 step=0.1>"
+```{julia ,results=FALSE} 
+α= 1.5
 ```
 
 ```{julia chap_03_plot_10} 
@@ -453,7 +450,7 @@ plot(Exponential(α), xlabel="x", ylabel="P(x)", lw=4, color="blue", label=false
 As the book progresses, we will be using a lot of different distributions. They are an important building block in probability and statistics. In the next section, we will discuss a little bit about how probability arises from gathering data.
 
 
-## Histograms
+### Histograms
 To illustrate some of these concepts we have been learning, we are going to use [monthly rainfall data](https://data.buenosaires.gob.ar/dataset/registro-precipitaciones-ciudad) from the city of Buenos Aires, Argentina, since 1991. 
 The **histogram** of the data is shown below. 
 You may be wondering what a histogram is. 
@@ -461,13 +458,13 @@ An histogram is a plot that tells us the counts or relative frequencies of a giv
 
 As a data scientist you are constantly working with datasets and a great first approach to that dataset is by constructing a histogram.
 To construct a histogram, the first step is to bin the range of values that is, divide the entire range of values into a series of intervals and then count how many values fall into each interval
-```{julia} 
 
+```{julia} 
 begin
 	using CSV
 	using DataFrames
 	#Read the CSV file and transform it into a DataFrame
-	rain_data = CSV.read("data/historico_precipitaciones.csv", DataFrame)
+	rain_data = CSV.read("./03_probability_intro/data/historico_precipitaciones.csv", DataFrame)
 	#Rename the columns 
 	colnames = ["Year", "Month", "mm", "Days"]
 	rename!(rain_data, Symbol.(colnames)) #Symbol is the type of object used to represent the labels of a dataset
@@ -536,7 +533,7 @@ So far we have been talking about histograms as probability density functions. D
 All the concepts we developed about probability density, are directly applied to our Bayesian formalism. The prior, likelihood and posterior probabilities are really *probability densities*, and that is really how we treat Bayes' theorem mathematically and computationally.
 
 
-### Example: Bayesian Bandits
+## Example: Bayesian Bandits
 Now we are going to tackle a famous problem that may help us to understand a little bit how to incorporate what we learned about Bayesian probability and some features of the Julia language. Here we present the **bandit** or **multi-armed bandit** problem. Although it is conceived thinking about a strategy for a casino situation, there exist a lot of different settings where the same strategy could be applied.
 
 The situation, in it's simpler form, goes like this: you are in a casino, with a limited amount of casino chips. In front of you there are some slot machines (say, three of them for simplicity). Each machine has some probability *$p_m$* of giving you \$1 associated with it, but every machine has a different probability. There are two main problems. First, we don't know these probabilities beforehand, so we will have to develop some explorative process in order to gather information about the machines. The second problem is that our chips –and thus our possible trials– are limited, and we want to take the most profit we can out of the machines. How do we do this? Finding the machine with the highest success probability and keep playing on it. This tradeoff is commonly known as *explore vs. exploit*. If we had one million chips we could simply play a lot of times in each machine and thus make a good estimate about their probabilities, but our reward may not be very good, because we would have played so many chips in machines that were not our best option. Conversely, we may have found a machine which we know that has a good success probability, but if we don't explore the other machines also, we won't know if it is the best of our options.
@@ -552,12 +549,12 @@ This is a kind of problem that is very suited for the Bayesian way of thinking. 
 
 Here we will take some advantage about the math that can be used to model our situation. To model the generation of our data, we can use a distribution we have not  yet introduced, the *Binomial* distribution. This distribution arises when you repeat some experiment that has two possible outcomes, a number N of times. In each individual experiment, the outcomes have some probability $p$ and $1-p$ of happening (because there are only two). Let's see what this Binomial distribution looks like,
 
-```{julia} 
-@bind p html"<input type=range min=0.01 max=0.99 step=0.01>"
+```{julia ,results = FALSE} 
+p = 0.5
 ```
 
-```{julia} 
-@bind N html"<input type=range min=1 max=500 step=1>"
+```{julia ,results = FALSE} 
+N = 250
 ```
 
 ```{julia chap_03_plot_13} 
