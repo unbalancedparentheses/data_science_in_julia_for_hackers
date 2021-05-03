@@ -10,6 +10,8 @@ description: "Data Science in Julia for Hackers"
 
 # Introduction {.unnumbered}
 
+![Bayes hacking](images/bayes-hacker.png)
+
 This book was written by Federico Carrone, Herman Obst Demaestri and Mariano Nicolini.
 
 Thanks to Martina Cantaro, Pedro Fontana, Camilo Plata, Manuel Puebla, Lucas Raúl Fernandez Piana, Osvaldo Martin, Iñaki Garay and Mariana Vinyolas.
@@ -27,8 +29,6 @@ There are two ways in which you can read this book:
   * If you prefer a dynamic version of the book, you can download the [GitHub repo](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers) and run the .jl files in a Pluto notebook
 
 A PDF version will also be available soon.
-
-![Bayes hacking](images/bayes-hacker.png)
 
 ## Prologue {.unnumbered}
 
