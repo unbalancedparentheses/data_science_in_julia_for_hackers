@@ -230,19 +230,7 @@ We sampled our model with the Markov chain Monte Carlo algorithm and saw how the
  
 Finally, we created a new model with the prior probability set to a normal distribution centered on $p$ = 0.5 which gave us more accurate results.
 
-
-
 ## References
 
 * [Turing.jl website](https://turing.ml/dev/)
 * [Not a monad tutorial article about Soss.jl](https://notamonadtutorial.com/soss-probabilistic-programming-with-julia-6acc5add5549)
-
-## Give us feedback
-
-This book is currently in a beta version.
-We are looking forward to getting feedback and criticism:
-
--   Submit a GitHub issue [**here**](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues).
--   Mail us to [**martina.cantaro\@lambdaclass.com**](mailto:martina.cantaro@lambdaclass.com)
-
-Thank you!
