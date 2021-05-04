@@ -692,13 +692,3 @@ To solve it, we constructed a Bayesian model using the Thompson sampling algorit
 * [Bandit Algs page](https://banditalgs.com/)
 * [Bayesian Methods for Hackers](https://www.amazon.com/Bayesian-Methods-Hackers-Probabilistic-Addison-Wesley/dp/0133902838)
 * [An Introduction to Probability Theory and Its Applications, Vol. 1](https://www.amazon.com/Introduction-Probability-Theory-Applications-Vol/dp/0471257087)
-
-## Give us feedback
-
-This book is currently in a beta version.
-We are looking forward to getting feedback and criticism:
-
--   Submit a GitHub issue [**here**](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues).
--   Mail us to [**martina.cantaro\@lambdaclass.com**](mailto:martina.cantaro@lambdaclass.com)
-
-Thank you!

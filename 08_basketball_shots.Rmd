@@ -568,15 +568,3 @@ We set the prior distribution of $b$ to a beta distribution and constructed the 
 
 Finally, we analyzed the results to see if the period of the game affects the probability of scoring.
 
-
-## Give us feedback
-
-This book is currently in a beta version.
-We are looking forward to getting feedback and criticism:
-
--   Submit a GitHub issue [**here**](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues).
--   Mail us to [**martina.cantaro\@lambdaclass.com**](mailto:martina.cantaro@lambdaclass.com){.email}
-
-Thank you!
-
-
