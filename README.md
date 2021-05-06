@@ -1,12 +1,13 @@
 # Data Science in Julia for Hackers
 
+This is still a beta version of the book. We hope to finish it in the following months.
+
+You can visit the book page [here](https://datasciencejuliahackers.com/)
+
 A book written by Federico Carrone, Herman Obst Demaestri and Mariano Nicolini, with a focus on applied knowledge and computational techniques,
 written in the Julia language.
 
 Thanks to Martina Cantaro, Camilo Plata, Manuel Puebla, Lucas Raúl Fernandez Piana, Osvaldo Martin, Iñaki Garay and Mariana Vinyolas.
-
-You can visit the book page [here](https://datasciencejuliahackers.com/)
-
 
 ## Table of contents
 

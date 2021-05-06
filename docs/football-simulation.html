@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 7 Football simulation | Data Science in Julia for Hackers</title>
+  <meta name="description" content="Chapter 7 Football simulation | Data Science in Julia for Hackers" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 7 Football simulation | Data Science in Julia for Hackers" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Chapter 7 Football simulation | Data Science in Julia for Hackers" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 7 Football simulation | Data Science in Julia for Hackers" />
+  
+  <meta name="twitter:description" content="Chapter 7 Football simulation | Data Science in Julia for Hackers" />
+  
+
+<meta name="author" content="Lambdaclass" />
+
+
+<meta name="date" content="2021-04-27" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="escaping-from-mars.html"/>
+<link rel="next" href="basketball-shots.html"/>
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+  <li><a href="./">Data Science in Julia for Hackers</a></li>
+
+  <li class="divider"></li>
+  <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a>
+  <ul>
+  <li class="chapter" data-level="" data-path="index.html"><a href="index.html#prologue"><i class="fa fa-check"></i>Prologue</a></li>
+  </ul></li>
+  <li class="part"><span><b>I Data Science and Julia</b></span></li>
+  <li class="chapter" data-level="1" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html"><i class="fa fa-check"></i><b>1</b> Science technology and epistemology</a>
+  <ul>
+  <li class="chapter" data-level="1.1" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#the-difference-between-science-and-technology"><i class="fa fa-check"></i><b>1.1</b> The difference between Science and Technology</a></li>
+  <li class="chapter" data-level="1.2" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#what-is-technology"><i class="fa fa-check"></i><b>1.2</b> What is technology?</a></li>
+  <li class="chapter" data-level="1.3" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#references"><i class="fa fa-check"></i><b>1.3</b> References</a></li>
+  </ul></li>
+  <li class="chapter" data-level="2" data-path="meeting-julia.html"><a href="meeting-julia.html"><i class="fa fa-check"></i><b>2</b> Meeting Julia</a>
+  <ul>
+  <li class="chapter" data-level="2.1" data-path="meeting-julia.html"><a href="meeting-julia.html#why-julia"><i class="fa fa-check"></i><b>2.1</b> Why Julia</a></li>
+  <li class="chapter" data-level="2.2" data-path="meeting-julia.html"><a href="meeting-julia.html#julia-presentation"><i class="fa fa-check"></i><b>2.2</b> Julia presentation</a></li>
+  <li class="chapter" data-level="2.3" data-path="meeting-julia.html"><a href="meeting-julia.html#installation"><i class="fa fa-check"></i><b>2.3</b> Installation</a></li>
+  <li class="chapter" data-level="2.4" data-path="meeting-julia.html"><a href="meeting-julia.html#first-steps-into-the-julia-world"><i class="fa fa-check"></i><b>2.4</b> First steps into the Julia world</a></li>
+  <li class="chapter" data-level="2.5" data-path="meeting-julia.html"><a href="meeting-julia.html#julias-ecosystem-basic-plotting-and-manipulation-of-dataframes"><i class="fa fa-check"></i><b>2.5</b> Julia’s Ecosystem: Basic plotting and manipulation of DataFrames</a>
+  <ul>
+  <li class="chapter" data-level="2.5.1" data-path="meeting-julia.html"><a href="meeting-julia.html#plotting-with-plots.jl"><i class="fa fa-check"></i><b>2.5.1</b> Plotting with Plots.jl</a></li>
+  <li class="chapter" data-level="2.5.2" data-path="meeting-julia.html"><a href="meeting-julia.html#introducing-dataframes.jl"><i class="fa fa-check"></i><b>2.5.2</b> Introducing DataFrames.jl</a></li>
+  </ul></li>
+  <li class="chapter" data-level="2.6" data-path="meeting-julia.html"><a href="meeting-julia.html#summary"><i class="fa fa-check"></i><b>2.6</b> Summary</a></li>
+  <li class="chapter" data-level="2.7" data-path="meeting-julia.html"><a href="meeting-julia.html#references-1"><i class="fa fa-check"></i><b>2.7</b> References</a></li>
+  </ul></li>
+  <li class="part"><span><b>II Bayesian Statistics</b></span></li>
+  
+  <li class="chapter" data-level="3" data-path="probability-introduction.html"><a href="probability-introduction.html"><i class="fa fa-check"></i><b>3</b> Probability introduction</a>
+  <ul>
+  <li class="chapter" data-level="3.1" data-path="probability-introduction.html"><a href="probability-introduction.html#introduction-to-probability"><i class="fa fa-check"></i><b>3.1</b> Introduction to Probability</a></li>
+  <li class="chapter" data-level="3.2" data-path="probability-introduction.html"><a href="probability-introduction.html#events-sample-spaces-and-sample-points"><i class="fa fa-check"></i><b>3.2</b> Events, sample spaces and sample points</a>
+  <ul>
+  <li class="chapter" data-level="3.2.1" data-path="probability-introduction.html"><a href="probability-introduction.html#relation-among-events"><i class="fa fa-check"></i><b>3.2.1</b> Relation among events</a></li>
+  </ul></li>
+  <li class="chapter" data-level="3.3" data-path="probability-introduction.html"><a href="probability-introduction.html#probability"><i class="fa fa-check"></i><b>3.3</b> Probability</a></li>
+  <li class="chapter" data-level="3.4" data-path="probability-introduction.html"><a href="probability-introduction.html#conditional-probability"><i class="fa fa-check"></i><b>3.4</b> Conditional probability</a></li>
+  <li class="chapter" data-level="3.5" data-path="probability-introduction.html"><a href="probability-introduction.html#joint-probability"><i class="fa fa-check"></i><b>3.5</b> Joint probability</a></li>
+  <li class="chapter" data-level="3.6" data-path="probability-introduction.html"><a href="probability-introduction.html#bayes-theorem"><i class="fa fa-check"></i><b>3.6</b> Bayes theorem</a></li>
+  <li class="chapter" data-level="3.7" data-path="probability-introduction.html"><a href="probability-introduction.html#probability-distributions"><i class="fa fa-check"></i><b>3.7</b> Probability distributions</a>
+  <ul>
+  <li class="chapter" data-level="3.7.1" data-path="probability-introduction.html"><a href="probability-introduction.html#discrete-case"><i class="fa fa-check"></i><b>3.7.1</b> Discrete Case</a></li>
+  <li class="chapter" data-level="3.7.2" data-path="probability-introduction.html"><a href="probability-introduction.html#continuous-cases"><i class="fa fa-check"></i><b>3.7.2</b> Continuous cases</a></li>
+  <li class="chapter" data-level="3.7.3" data-path="probability-introduction.html"><a href="probability-introduction.html#histograms"><i class="fa fa-check"></i><b>3.7.3</b> Histograms</a></li>
+  </ul></li>
+  <li class="chapter" data-level="3.8" data-path="probability-introduction.html"><a href="probability-introduction.html#example-bayesian-bandits"><i class="fa fa-check"></i><b>3.8</b> Example: Bayesian Bandits</a></li>
+  <li class="chapter" data-level="3.9" data-path="probability-introduction.html"><a href="probability-introduction.html#summary-1"><i class="fa fa-check"></i><b>3.9</b> Summary</a></li>
+  <li class="chapter" data-level="3.10" data-path="probability-introduction.html"><a href="probability-introduction.html#references-2"><i class="fa fa-check"></i><b>3.10</b> References</a></li>
+  </ul></li>
+  <li class="chapter" data-level="4" data-path="spam-filter.html"><a href="spam-filter.html"><i class="fa fa-check"></i><b>4</b> Spam filter</a>
+  <ul>
+  <li class="chapter" data-level="4.1" data-path="spam-filter.html"><a href="spam-filter.html#naive-bayes-spam-or-ham"><i class="fa fa-check"></i><b>4.1</b> Naive Bayes: Spam or Ham?</a></li>
+  <li class="chapter" data-level="4.2" data-path="spam-filter.html"><a href="spam-filter.html#summary-2"><i class="fa fa-check"></i><b>4.2</b> Summary</a></li>
+  <li class="chapter" data-level="4.3" data-path="spam-filter.html"><a href="spam-filter.html#references-3"><i class="fa fa-check"></i><b>4.3</b> References</a></li>
+  </ul></li>
+  <li class="chapter" data-level="5" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html"><i class="fa fa-check"></i><b>5</b> Probabilistic programming</a>
+  <ul>
+  <li class="chapter" data-level="5.1" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#coin-flipping-example"><i class="fa fa-check"></i><b>5.1</b> Coin flipping example</a></li>
+  <li class="chapter" data-level="5.2" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#summary-3"><i class="fa fa-check"></i><b>5.2</b> Summary</a></li>
+  <li class="chapter" data-level="5.3" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#references-4"><i class="fa fa-check"></i><b>5.3</b> References</a></li>
+  </ul></li>
+  <li class="chapter" data-level="6" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html"><i class="fa fa-check"></i><b>6</b> Escaping from Mars</a>
+  <ul>
+  <li class="chapter" data-level="6.1" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#calculating-the-constant-g-of-mars"><i class="fa fa-check"></i><b>6.1</b> Calculating the constant g of Mars</a></li>
+  <li class="chapter" data-level="6.2" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#optimizing-the-throwing-angle"><i class="fa fa-check"></i><b>6.2</b> Optimizing the throwing angle</a>
+  <ul>
+  <li class="chapter" data-level="6.2.1" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#calculating-the-escape-velocity"><i class="fa fa-check"></i><b>6.2.1</b> Calculating the escape velocity</a></li>
+  </ul></li>
+  <li class="chapter" data-level="6.3" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#summary-4"><i class="fa fa-check"></i><b>6.3</b> Summary</a></li>
+  </ul></li>
+  <li class="chapter" data-level="7" data-path="football-simulation.html"><a href="football-simulation.html"><i class="fa fa-check"></i><b>7</b> Football simulation</a>
+  <ul>
+  <li class="chapter" data-level="7.1" data-path="football-simulation.html"><a href="football-simulation.html#creating-our-conjectures"><i class="fa fa-check"></i><b>7.1</b> Creating our conjectures</a>
+  <ul>
+  <li class="chapter" data-level="7.1.1" data-path="football-simulation.html"><a href="football-simulation.html#bayesian-hierarchical-models"><i class="fa fa-check"></i><b>7.1.1</b> Bayesian hierarchical models</a></li>
+  </ul></li>
+  <li class="chapter" data-level="7.2" data-path="football-simulation.html"><a href="football-simulation.html#simulate-possible-realities"><i class="fa fa-check"></i><b>7.2</b> Simulate possible realities</a></li>
+  <li class="chapter" data-level="7.3" data-path="football-simulation.html"><a href="football-simulation.html#summary-5"><i class="fa fa-check"></i><b>7.3</b> Summary</a></li>
+  <li class="chapter" data-level="7.4" data-path="football-simulation.html"><a href="football-simulation.html#bibliography"><i class="fa fa-check"></i><b>7.4</b> Bibliography</a></li>
+  </ul></li>
+  <li class="chapter" data-level="8" data-path="basketball-shots.html"><a href="basketball-shots.html"><i class="fa fa-check"></i><b>8</b> Basketball shots</a>
+  <ul>
+  <li class="chapter" data-level="8.0.1" data-path="basketball-shots.html"><a href="basketball-shots.html#modeling-the-probability-of-scoring"><i class="fa fa-check"></i><b>8.0.1</b> Modeling the probability of scoring</a></li>
+  <li class="chapter" data-level="8.1" data-path="basketball-shots.html"><a href="basketball-shots.html#prior-predictive-checks-part-i"><i class="fa fa-check"></i><b>8.1</b> Prior Predictive Checks: Part I</a>
+  <ul>
+  <li class="chapter" data-level="8.1.1" data-path="basketball-shots.html"><a href="basketball-shots.html#defining-our-model-and-computing-posteriors"><i class="fa fa-check"></i><b>8.1.1</b> Defining our model and computing posteriors</a></li>
+  </ul></li>
+  <li class="chapter" data-level="8.2" data-path="basketball-shots.html"><a href="basketball-shots.html#new-model-and-prior-predictive-checks-part-ii"><i class="fa fa-check"></i><b>8.2</b> New model and prior predictive checks: Part II</a>
+  <ul>
+  <li class="chapter" data-level="8.2.1" data-path="basketball-shots.html"><a href="basketball-shots.html#defining-the-new-model-and-computing-posteriors"><i class="fa fa-check"></i><b>8.2.1</b> Defining the new model and computing posteriors</a></li>
+  </ul></li>
+  <li class="chapter" data-level="8.3" data-path="basketball-shots.html"><a href="basketball-shots.html#does-the-period-affect-the-probability-of-scoring"><i class="fa fa-check"></i><b>8.3</b> Does the Period affect the probability of scoring?</a></li>
+  <li class="chapter" data-level="8.4" data-path="basketball-shots.html"><a href="basketball-shots.html#summary-6"><i class="fa fa-check"></i><b>8.4</b> Summary</a></li>
+  </ul></li>
+  <li class="chapter" data-level="9" data-path="optimal-pricing.html"><a href="optimal-pricing.html"><i class="fa fa-check"></i><b>9</b> Optimal pricing</a>
+  <ul>
+  <li class="chapter" data-level="9.1" data-path="optimal-pricing.html"><a href="optimal-pricing.html#overview"><i class="fa fa-check"></i><b>9.1</b> Overview</a></li>
+  <li class="chapter" data-level="9.2" data-path="optimal-pricing.html"><a href="optimal-pricing.html#optimal-pricing-1"><i class="fa fa-check"></i><b>9.2</b> Optimal pricing</a>
+  <ul>
+  <li class="chapter" data-level="9.2.1" data-path="optimal-pricing.html"><a href="optimal-pricing.html#price-vs-quantity-model"><i class="fa fa-check"></i><b>9.2.1</b> Price vs Quantity model</a></li>
+  <li class="chapter" data-level="9.2.2" data-path="optimal-pricing.html"><a href="optimal-pricing.html#price-elasticity-of-demand"><i class="fa fa-check"></i><b>9.2.2</b> Price elasticity of demand</a></li>
+  </ul></li>
+  <li class="chapter" data-level="9.3" data-path="optimal-pricing.html"><a href="optimal-pricing.html#maximizing-profit"><i class="fa fa-check"></i><b>9.3</b> Maximizing profit</a></li>
+  <li class="chapter" data-level="9.4" data-path="optimal-pricing.html"><a href="optimal-pricing.html#summary-7"><i class="fa fa-check"></i><b>9.4</b> Summary</a></li>
+  <li class="chapter" data-level="9.5" data-path="optimal-pricing.html"><a href="optimal-pricing.html#references-5"><i class="fa fa-check"></i><b>9.5</b> References</a></li>
+  </ul></li>
+  <li class="part"><span><b>III Deep Learning</b></span></li>
+  <li class="chapter" data-level="10" data-path="image-classification.html"><a href="image-classification.html"><i class="fa fa-check"></i><b>10</b> Image classification</a>
+  <ul>
+  <li class="chapter" data-level="10.1" data-path="image-classification.html"><a href="image-classification.html#bee-population-control-what-would-happen-if-bees-go-extinct"><i class="fa fa-check"></i><b>10.1</b> Bee population control: What would happen if bees go extinct?</a></li>
+  <li class="chapter" data-level="10.2" data-path="image-classification.html"><a href="image-classification.html#machine-learning-overview"><i class="fa fa-check"></i><b>10.2</b> Machine Learning Overview</a></li>
+  <li class="chapter" data-level="10.3" data-path="image-classification.html"><a href="image-classification.html#neural-networks-and-convolutional-neural-networks"><i class="fa fa-check"></i><b>10.3</b> Neural networks and convolutional neural networks</a></li>
+  <li class="chapter" data-level="10.4" data-path="image-classification.html"><a href="image-classification.html#summary-8"><i class="fa fa-check"></i><b>10.4</b> Summary</a></li>
+  <li class="chapter" data-level="10.5" data-path="image-classification.html"><a href="image-classification.html#references-6"><i class="fa fa-check"></i><b>10.5</b> References</a></li>
+  </ul></li>
+  <li class="part"><span><b>IV Scientific Machine Learning</b></span></li>
+  <li class="chapter" data-level="11" data-path="ultima-online.html"><a href="ultima-online.html"><i class="fa fa-check"></i><b>11</b> Ultima online</a>
+  <ul>
+  <li class="chapter" data-level="11.1" data-path="ultima-online.html"><a href="ultima-online.html#the-ultima-online-catastrophe"><i class="fa fa-check"></i><b>11.1</b> The Ultima Online Catastrophe</a>
+  <ul>
+  <li class="chapter" data-level="11.1.1" data-path="ultima-online.html"><a href="ultima-online.html#the-lotka-volterra-model-for-population-dynamics"><i class="fa fa-check"></i><b>11.1.1</b> The Lotka-Volterra model for population dynamics</a></li>
+  </ul></li>
+  <li class="chapter" data-level="11.2" data-path="ultima-online.html"><a href="ultima-online.html#summary-9"><i class="fa fa-check"></i><b>11.2</b> Summary</a></li>
+  <li class="chapter" data-level="11.3" data-path="ultima-online.html"><a href="ultima-online.html#references-7"><i class="fa fa-check"></i><b>11.3</b> References</a></li>
+  </ul></li>
+  <li class="chapter" data-level="12" data-path="ultima-continued.html"><a href="ultima-continued.html"><i class="fa fa-check"></i><b>12</b> Ultima continued</a>
+  <ul>
+  <li class="chapter" data-level="12.1" data-path="ultima-continued.html"><a href="ultima-continued.html#the-language-of-science"><i class="fa fa-check"></i><b>12.1</b> The language of science</a></li>
+  <li class="chapter" data-level="12.2" data-path="ultima-continued.html"><a href="ultima-continued.html#scientific-machine-learning-for-model-discovery"><i class="fa fa-check"></i><b>12.2</b> Scientific Machine Learning for model discovery</a>
+  <ul>
+  <li class="chapter" data-level="12.2.1" data-path="ultima-continued.html"><a href="ultima-continued.html#looking-for-the-catastrophe-culprit"><i class="fa fa-check"></i><b>12.2.1</b> Looking for the catastrophe culprit</a></li>
+  <li class="chapter" data-level="12.2.2" data-path="ultima-continued.html"><a href="ultima-continued.html#the-infamous-day-begins."><i class="fa fa-check"></i><b>12.2.2</b> The infamous day begins.</a></li>
+  </ul></li>
+  <li class="chapter" data-level="12.3" data-path="ultima-continued.html"><a href="ultima-continued.html#summary-10"><i class="fa fa-check"></i><b>12.3</b> Summary</a></li>
+  <li class="chapter" data-level="12.4" data-path="ultima-continued.html"><a href="ultima-continued.html#references-8"><i class="fa fa-check"></i><b>12.4</b> References</a></li>
+  </ul></li>
+  <li class="part"><span><b>V Time Series and Forecasting</b></span></li>
+  <li class="chapter" data-level="13" data-path="time-series.html"><a href="time-series.html"><i class="fa fa-check"></i><b>13</b> Time series</a>
+  <ul>
+  <li class="chapter" data-level="13.1" data-path="time-series.html"><a href="time-series.html#predicting-the-future"><i class="fa fa-check"></i><b>13.1</b> Predicting the future</a></li>
+  <li class="chapter" data-level="13.2" data-path="time-series.html"><a href="time-series.html#exponential-smoothing"><i class="fa fa-check"></i><b>13.2</b> Exponential Smoothing</a>
+  <ul>
+  <li class="chapter" data-level="13.2.1" data-path="time-series.html"><a href="time-series.html#weighted-average-and-component-form"><i class="fa fa-check"></i><b>13.2.1</b> Weighted average and Component form</a></li>
+  <li class="chapter" data-level="13.2.2" data-path="time-series.html"><a href="time-series.html#optimization-or-fitting-process"><i class="fa fa-check"></i><b>13.2.2</b> Optimization (or Fitting) Process</a></li>
+  <li class="chapter" data-level="13.2.3" data-path="time-series.html"><a href="time-series.html#trend-methods"><i class="fa fa-check"></i><b>13.2.3</b> Trend Methods</a></li>
+  <li class="chapter" data-level="13.2.4" data-path="time-series.html"><a href="time-series.html#seasonality-methods"><i class="fa fa-check"></i><b>13.2.4</b> Seasonality Methods</a></li>
+  </ul></li>
+  <li class="chapter" data-level="13.3" data-path="time-series.html"><a href="time-series.html#summary-11"><i class="fa fa-check"></i><b>13.3</b> Summary</a></li>
+  <li class="chapter" data-level="13.4" data-path="time-series.html"><a href="time-series.html#references-9"><i class="fa fa-check"></i><b>13.4</b> References</a></li>
+  </ul></li>
+  <li class="divider"></li>
+  <li><a href="https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers" target="blank">Published with bookdown</a></li>
+  
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Data Science in Julia for Hackers</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="football-simulation" class="section level1" number="7">
+<h1><span class="header-section-number">Chapter 7</span> Football simulation</h1>
+<div class="sourceCode" id="cb1"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb1-1"><a href="football-simulation.html#cb1-1" aria-hidden="true" tabindex="-1"></a>cd(<span class="st">&quot;./07_football_simulation/&quot;</span>) </span>
+<span id="cb1-2"><a href="football-simulation.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">import</span> Pkg</span>
+<span id="cb1-3"><a href="football-simulation.html#cb1-3" aria-hidden="true" tabindex="-1"></a>Pkg.activate(<span class="st">&quot;.&quot;</span>)</span>
+<span id="cb1-4"><a href="football-simulation.html#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="football-simulation.html#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> Markdown</span>
+<span id="cb1-6"><a href="football-simulation.html#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> InteractiveUtils</span>
+<span id="cb1-7"><a href="football-simulation.html#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> JSON</span>
+<span id="cb1-8"><a href="football-simulation.html#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> DataFrames</span>
+<span id="cb1-9"><a href="football-simulation.html#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> StatsPlots</span>
+<span id="cb1-10"><a href="football-simulation.html#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> Turing</span>
+<span id="cb1-11"><a href="football-simulation.html#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> Plots</span>
+<span id="cb1-12"><a href="football-simulation.html#cb1-12" aria-hidden="true" tabindex="-1"></a>gr()</span>
+<span id="cb1-13"><a href="football-simulation.html#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> LinearAlgebra</span></code></pre></div>
+<div id="creating-our-conjectures" class="section level2" number="7.1">
+<h2><span class="header-section-number">7.1</span> Creating our conjectures</h2>
+<p>If there is one thing we can all agree on, it is that the reality in which we live is complex. The explanation for the things we usually see, and have naturalized in our daily lives, is usually quite complex and requires abstraction from what “is simply seen.”</p>
+<p>In order to give an explanation and gain a deeper understanding of the things we see, we tend to generate models that seek to explain them in a simple and generalized way. In this way we can reduce the noise of our observations to general rules that “govern” them.</p>
+<p>For example, it is obvious to everyone that if we push a glass it will move in the same direction as we did. We also know that if we keep pushing it and it goes beyond the limits of the table, it will fall to the floor. But one thing is to have the intuition of what’s going to happen, and another is to have an understanding of the laws that govern that movement. In this case, they are the Newton´s Law´s of motion:</p>
+<p>$ ^{} = m*^{}$
+In this way, and with only one formula, it is possible to gain an understanding that is generalizable to many aspects of reality.</p>
+<div id="observable-variables-vs-latent-variables" class="section level4" number="7.1.0.1">
+<h4><span class="header-section-number">7.1.0.1</span> Observable variables vs Latent variables</h4>
+<p>Now, it is worth noting that in this case all the variables that make up our model are observable. This means that they can be measured directly.</p>
+<p>In the case of a glass, we could weigh it with a scale. Then, by pushing it, we could measure the acceleration it acquired and from these two measurements we could obtain the force we applied to it. So, every parameter of the model is fully defined.</p>
+<p>However, as we try to advance in our understanding of reality, we arrive at more and more complex models and many times we are not so lucky to be able to define them with simple observable variables.</p>
+<p>For example, this is very common in the economic sciences, where models are created with variables such as “quality of life.” Economists will try to measure this latent variable with other variables that can be observed (such as GDP per capita, schooling rate, number of hospitals for a certain number of inhabitants, etc), but that do not have an obvious and direct relationship as if they had newton’s equations.</p>
+<p>This type of latent variables are used in different models to gain greater abstraction and to be able to obtain information that is not found at first sight in the data. For example, in the case of economics, from concrete measures of a country’s economy it is possible to generalize knowledge and be able to infer an abstract variable such as quality of life.</p>
+</div>
+<div id="bayesian-hierarchical-models" class="section level3" number="7.1.1">
+<h3><span class="header-section-number">7.1.1</span> Bayesian hierarchical models</h3>
+<p>The Bayesian framework allows us to build statistical models that can generalize the information obtained from the data and make inferences from latent variables.</p>
+<p>A nice way to think about this kind of models is that they allow us to build our “story” about which are the variables that generate the data we are observing. Basically, they allow us to increase the “depth” of our model by indicating that the parameters of our prior distributions also follow other probability distributions.</p>
+<p>This sure is sounding very strange. Don’t worry, let’s move on to an example to clarify it.</p>
+<div id="football-analysis" class="section level4" number="7.1.1.1">
+<h4><span class="header-section-number">7.1.1.1</span> Football analysis</h4>
+<p>Let’s imagine for a moment that we are brilliant statisticians. We find ourselves looking for new interesting challenges to solve and we come across a sports bookmaker. They tell us that they want to expand into football betting and that they would like us to be able to build a model that allows them to analyze the strengths and weaknesses of English Premier League teams. They are interested because they want to be able to predict possible outcomes and thus be able to price the bets.</p>
+<p>The problem is that, as they have never worked in this sector before, they only have the results of the league matches. So what can we do?</p>
+<p>We have the data stored in a specific format called JSON, so the first thing to do is to parse and visualize it</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb2-1"><a href="football-simulation.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb2-2"><a href="football-simulation.html#cb2-2" aria-hidden="true" tabindex="-1"></a>england_league <span class="op">=</span> JSON.parsefile(<span class="st">&quot;./07_football_simulation/matches_England.json&quot;</span>)</span>
+<span id="cb2-3"><a href="football-simulation.html#cb2-3" aria-hidden="true" tabindex="-1"></a>matches_df <span class="op">=</span> DataFrame(home <span class="op">=</span> []<span class="op">,</span> away <span class="op">=</span> []<span class="op">,</span> score_home <span class="op">=</span> []<span class="op">,</span> score_away <span class="op">=</span> [])</span>
+<span id="cb2-4"><a href="football-simulation.html#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span><span class="op">;</span></span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb3-1"><a href="football-simulation.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb3-2"><a href="football-simulation.html#cb3-2" aria-hidden="true" tabindex="-1"></a>    matches <span class="op">=</span> []</span>
+<span id="cb3-3"><a href="football-simulation.html#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> match <span class="kw">in</span> england_league</span>
+<span id="cb3-4"><a href="football-simulation.html#cb3-4" aria-hidden="true" tabindex="-1"></a>        push<span class="op">!</span>(matches<span class="op">,</span> split(match[<span class="st">&quot;label&quot;</span>]<span class="op">,</span> <span class="st">&quot;,&quot;</span>))</span>
+<span id="cb3-5"><a href="football-simulation.html#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span>
+<span id="cb3-6"><a href="football-simulation.html#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb4-1"><a href="football-simulation.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb4-2"><a href="football-simulation.html#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="kw">for</span> match <span class="kw">in</span> matches</span>
+<span id="cb4-3"><a href="football-simulation.html#cb4-3" aria-hidden="true" tabindex="-1"></a>    home<span class="op">,</span> away <span class="op">=</span> split(match[<span class="fl">1</span>]<span class="op">,</span> <span class="st">&quot; - &quot;</span>)</span>
+<span id="cb4-4"><a href="football-simulation.html#cb4-4" aria-hidden="true" tabindex="-1"></a>    score_home<span class="op">,</span> score_away <span class="op">=</span> split(match[<span class="fl">2</span>]<span class="op">,</span> <span class="st">&quot; - &quot;</span>)</span>
+<span id="cb4-5"><a href="football-simulation.html#cb4-5" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb4-6"><a href="football-simulation.html#cb4-6" aria-hidden="true" tabindex="-1"></a>    push<span class="op">!</span>(matches_df<span class="op">,</span>[home<span class="op">,</span> away<span class="op">,</span> parse(<span class="dt">Int</span><span class="op">,</span>score_home)<span class="op">,</span> parse(<span class="dt">Int</span><span class="op">,</span>score_away)])</span>
+<span id="cb4-7"><a href="football-simulation.html#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span>
+<span id="cb4-8"><a href="football-simulation.html#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span> </span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb5-1"><a href="football-simulation.html#cb5-1" aria-hidden="true" tabindex="-1"></a>matches_df</span></code></pre></div>
+<pre><code>## 380×4 DataFrame
+##  Row │ home                    away                    score_home  score_away
+##      │ Any                     Any                     Any         Any
+## ─────┼────────────────────────────────────────────────────────────────────────
+##    1 │ Burnley                 AFC Bournemouth         1           2
+##    2 │ Crystal Palace          West Bromwich Albion    2           0
+##    3 │ Huddersfield Town       Arsenal                 0           1
+##    4 │ Liverpool               Brighton &amp; Hove Albion  4           0
+##    5 │ Manchester United       Watford                 1           0
+##    6 │ Newcastle United        Chelsea                 3           0
+##    7 │ Southampton             Manchester City         0           1
+##    8 │ Swansea City            Stoke City              1           2
+##   ⋮  │           ⋮                       ⋮                 ⋮           ⋮
+##  374 │ Chelsea                 Burnley                 2           3
+##  375 │ Crystal Palace          Huddersfield Town       0           3
+##  376 │ Everton                 Stoke City              1           0
+##  377 │ Southampton             Swansea City            0           0
+##  378 │ West Bromwich Albion    AFC Bournemouth         1           0
+##  379 │ Watford                 Liverpool               3           3
+##  380 │ Arsenal                 Leicester City          4           3
+##                                                               365 rows omitted</code></pre>
+<div class="sourceCode" id="cb7"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb7-1"><a href="football-simulation.html#cb7-1" aria-hidden="true" tabindex="-1"></a>teams <span class="op">=</span> unique(collect(matches_df[<span class="op">:,</span><span class="fl">1</span>]))</span></code></pre></div>
+<pre><code>## 20-element Array{Any,1}:
+##  &quot;Burnley&quot;
+##  &quot;Crystal Palace&quot;
+##  &quot;Huddersfield Town&quot;
+##  &quot;Liverpool&quot;
+##  &quot;Manchester United&quot;
+##  &quot;Newcastle United&quot;
+##  &quot;Southampton&quot;
+##  &quot;Swansea City&quot;
+##  &quot;Tottenham Hotspur&quot;
+##  &quot;West Ham United&quot;
+##  &quot;Manchester City&quot;
+##  &quot;Leicester City&quot;
+##  &quot;Chelsea&quot;
+##  &quot;Arsenal&quot;
+##  &quot;Everton&quot;
+##  &quot;AFC Bournemouth&quot;
+##  &quot;Watford&quot;
+##  &quot;West Bromwich Albion&quot;
+##  &quot;Stoke City&quot;
+##  &quot;Brighton &amp; Hove Albion&quot;</code></pre>
+<p>So, we have the data of the 380 matches that were played in the Premier League 2017/2018 and our challenge is to be able to analyze the characteristics of these teams.</p>
+<p>A priori it may seem that we are missing data, that with the data we have we cannot infer “characteristics” specific to each team. At most, it might be possible to see who the teams that scored the most goals, the averages of goals per game or how the positions were after the tournament, but to obtain characteristics of the teams? how could we face this problem?</p>
+</div>
+<div id="creating-our-stories" class="section level4" number="7.1.1.2">
+<h4><span class="header-section-number">7.1.1.2</span> Creating our stories</h4>
+<p>Let’s see what information we have from our data:
+On one hand we have specified the names of each team and which one is local. On the other hand, we have the number of goals scored.</p>
+<p>A possible approach to this data is to realize that the goals scored by each team can be modeled with a poisson distribution.</p>
+<p>Why? You have to remember that this distribution describes “arrivals” - discrete events - in a continuum. For example, it is widely used to describe customer arrivals to a location as time passes or failures in continuous industrial processes (e.g. failure in the production of a pipe).</p>
+<p>In this particular case, we could propose that the goals scored by a team are the discrete events that occur in the time continuum that the game last:</p>
+<p><span class="math inline">\(Score \sim Poisson(θ)\)</span></p>
+<p>Well, we have an improvement. We’ve already told our model how to think about goals scored.</p>
+<p>Now we can use the flexibility of Bayesianism to indicate what the “goal rate” of our Poisson depends on. You can think of it literally as the number of goals a team scores per unit of time. And this is where we have to take advantage of all the information provided by the data set.</p>
+<p>As expected, this rate has to be particular to each match the team plays and take into account the opponent. We can therefore propose that the scoring rate of each team (in each particular match) depends on the “attacking power” of the team on the one hand, and the “defensive power” of the opponent on the other:</p>
+<p><span class="math inline">\(θ_{team1} \sim att_{team1} + def_{team2}\)</span></p>
+<p>In this way we could be capturing, from the results of each game, the attack and defence strengths of each team.</p>
+<p>Another latent variable that we could obtain, given the data, is if there is an effect that increases (or decreases) the goal rate related to whether the team is local or not. This would also help - in case there is indeed an effect - in not the attack and defence parameters be disrupted by having to “contain” that information.</p>
+<p><span class="math inline">\(θ_{home} \sim home + att_{home} + def_{away}\)</span>
+<span class="math inline">\(θ_{away} \sim att_{away} + def_{home}\)</span></p>
+<p>This leaves one attack and one defense parameter for each team, and a global league parameter that indicates the effect of being local on the scoring rate.</p>
+</div>
+<div id="letting-the-information-flow" class="section level4" number="7.1.1.3">
+<h4><span class="header-section-number">7.1.1.3</span> Letting the information flow</h4>
+<p>We are already getting much closer to the initial goal we set. As a last step, we must be able to make the information flow between the two independent poissons that we proposed to model the score of each of the two teams that are playing. We need to do that precisely because we have proposed that the poissons are independent, but we need that when making the inference of the parameters the model can access the information from both scores so it can catch the correlation between them. In other words, we have to find a way to interconnect our model.</p>
+<p>And that is exactly what hierarchical Bayesian models allow us to do. How? By letting us choose probability distributions for the parameters that represent the characteristics of both equipment. With the addition that these parameters will share the same prior distributions. Let’s see how:</p>
+<p>The first thing to do, as we already know, is to assign the prior distributions of our attack and defense parameters. A reasonable idea would be to propose that they follow a normal distribution since it is consistent that there are some teams that have a very good defense, so the parameter would take negative values; or there may be others that have a very bad one, taking positive values (since they would “add up” to the goal rate of the opposing team). The normal distribution allows us to contemplate both cases.</p>
+<p>Now, when choosing the parameters we are not going to stop and assign fixed numbers, but we will continue to deepen the model and add another layer of distributions:</p>
+<p><span class="math inline">\(att_{t} \sim Normal(μ_{att}, σ_{att})\)</span>
+<span class="math inline">\(def_{t} \sim Normal(μ_{def}, σ_{def})\)</span>
+Where the t sub-index is indicating us that there are a couple of these parameters for each team.</p>
+<p>Then, as a last step to have our model defined, we have to assign the priority distributions that follow the parameters of each normal distribution. We have to define our hyper priors.</p>
+<p><span class="math inline">\(μ_{att}, μ_{def} \sim Normal(0, 0.1)\)</span>
+<span class="math inline">\(σ_{att}, σ_{def} \sim Exponential(1)\)</span></p>
+<p>We must not forget the parameter that represents the advantage of being local
+<span class="math inline">\(home \sim Normal(0,1)\)</span>.</p>
+<p>Now that our model is fully define, let’s add one last restriction to the characteristics of the teams to make it easier to compare them: subtract the average of all the attack and defence powers from each one. In this way we will have the features centred on zero, with negative values for the teams that have less attacking power than the average and positive values for those that have more. As we already said, the opposite analysis applies to the defence, negative values are the ones that will indicate that a team has a strong defence as they will be “subtracting” from the scoring rate of the opponent. This is equivalent to introducing the restriction:</p>
+<p><span class="math inline">\(\sum att_{t} = 0\)</span>
+<span class="math inline">\(\sum def_{t} = 0\)</span>
+Let’s translate all this into Turing code:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb9-1"><a href="football-simulation.html#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb9-2"><a href="football-simulation.html#cb9-2" aria-hidden="true" tabindex="-1"></a>    <span class="pp">@model</span> <span class="kw">function</span> football_matches(home_teams<span class="op">,</span> away_teams<span class="op">,</span> score_home<span class="op">,</span> score_away<span class="op">,</span> teams)</span>
+<span id="cb9-3"><a href="football-simulation.html#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">#hyper priors</span></span>
+<span id="cb9-4"><a href="football-simulation.html#cb9-4" aria-hidden="true" tabindex="-1"></a>    σatt <span class="op">~</span> Exponential(<span class="fl">1</span>)</span>
+<span id="cb9-5"><a href="football-simulation.html#cb9-5" aria-hidden="true" tabindex="-1"></a>    σdeff <span class="op">~</span> Exponential(<span class="fl">1</span>)</span>
+<span id="cb9-6"><a href="football-simulation.html#cb9-6" aria-hidden="true" tabindex="-1"></a>    μatt <span class="op">~</span> Normal(<span class="fl">0</span><span class="op">,</span><span class="fl">0.1</span>)</span>
+<span id="cb9-7"><a href="football-simulation.html#cb9-7" aria-hidden="true" tabindex="-1"></a>    μdef <span class="op">~</span> Normal(<span class="fl">0</span><span class="op">,</span><span class="fl">0.1</span>)</span>
+<span id="cb9-8"><a href="football-simulation.html#cb9-8" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb9-9"><a href="football-simulation.html#cb9-9" aria-hidden="true" tabindex="-1"></a>    home <span class="op">~</span> Normal(<span class="fl">0</span><span class="op">,</span><span class="fl">1</span>)</span>
+<span id="cb9-10"><a href="football-simulation.html#cb9-10" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb9-11"><a href="football-simulation.html#cb9-11" aria-hidden="true" tabindex="-1"></a>    <span class="co">#Team-specific effects  </span></span>
+<span id="cb9-12"><a href="football-simulation.html#cb9-12" aria-hidden="true" tabindex="-1"></a>    att <span class="op">~</span> filldist(Normal(μatt<span class="op">,</span> σatt)<span class="op">,</span> length(teams))</span>
+<span id="cb9-13"><a href="football-simulation.html#cb9-13" aria-hidden="true" tabindex="-1"></a>    def <span class="op">~</span> filldist(Normal(μatt<span class="op">,</span> σdeff)<span class="op">,</span> length(teams))</span>
+<span id="cb9-14"><a href="football-simulation.html#cb9-14" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb9-15"><a href="football-simulation.html#cb9-15" aria-hidden="true" tabindex="-1"></a>    dict <span class="op">=</span> <span class="dt">Dict</span>{<span class="dt">String</span><span class="op">,</span> <span class="dt">Int64</span>}()</span>
+<span id="cb9-16"><a href="football-simulation.html#cb9-16" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> (i<span class="op">,</span> team) <span class="kw">in</span> enumerate(teams)</span>
+<span id="cb9-17"><a href="football-simulation.html#cb9-17" aria-hidden="true" tabindex="-1"></a>        dict[team] <span class="op">=</span> i</span>
+<span id="cb9-18"><a href="football-simulation.html#cb9-18" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
+<span id="cb9-19"><a href="football-simulation.html#cb9-19" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb9-20"><a href="football-simulation.html#cb9-20" aria-hidden="true" tabindex="-1"></a>    <span class="co">#Zero-sum constrains</span></span>
+<span id="cb9-21"><a href="football-simulation.html#cb9-21" aria-hidden="true" tabindex="-1"></a>    offset <span class="op">=</span> mean(att) <span class="op">+</span> mean(def)</span>
+<span id="cb9-22"><a href="football-simulation.html#cb9-22" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb9-23"><a href="football-simulation.html#cb9-23" aria-hidden="true" tabindex="-1"></a>    log_θ_home <span class="op">=</span> <span class="dt">Vector</span>{<span class="dt">Real</span>}(<span class="cn">undef</span><span class="op">,</span> length(home_teams))</span>
+<span id="cb9-24"><a href="football-simulation.html#cb9-24" aria-hidden="true" tabindex="-1"></a>    log_θ_away <span class="op">=</span> <span class="dt">Vector</span>{<span class="dt">Real</span>}(<span class="cn">undef</span><span class="op">,</span> length(home_teams))</span>
+<span id="cb9-25"><a href="football-simulation.html#cb9-25" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb9-26"><a href="football-simulation.html#cb9-26" aria-hidden="true" tabindex="-1"></a>    <span class="co">#Modeling score-rate and scores (as many as there were games in the league) </span></span>
+<span id="cb9-27"><a href="football-simulation.html#cb9-27" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>length(home_teams)</span>
+<span id="cb9-28"><a href="football-simulation.html#cb9-28" aria-hidden="true" tabindex="-1"></a>        <span class="co">#score-rate</span></span>
+<span id="cb9-29"><a href="football-simulation.html#cb9-29" aria-hidden="true" tabindex="-1"></a>        log_θ_home[i] <span class="op">=</span> home <span class="op">+</span> att[dict[home_teams[i]]] <span class="op">+</span> def[dict[away_teams[i]]] <span class="op">-</span> offset</span>
+<span id="cb9-30"><a href="football-simulation.html#cb9-30" aria-hidden="true" tabindex="-1"></a>        log_θ_away[i] <span class="op">=</span> att[dict[away_teams[i]]] <span class="op">+</span> def[dict[home_teams[i]]] <span class="op">-</span> offset</span>
+<span id="cb9-31"><a href="football-simulation.html#cb9-31" aria-hidden="true" tabindex="-1"></a>        <span class="co">#scores</span></span>
+<span id="cb9-32"><a href="football-simulation.html#cb9-32" aria-hidden="true" tabindex="-1"></a>        score_home[i] <span class="op">~</span> LogPoisson(log_θ_home[i])</span>
+<span id="cb9-33"><a href="football-simulation.html#cb9-33" aria-hidden="true" tabindex="-1"></a>        score_away[i] <span class="op">~</span> LogPoisson(log_θ_away[i])</span>
+<span id="cb9-34"><a href="football-simulation.html#cb9-34" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
+<span id="cb9-35"><a href="football-simulation.html#cb9-35" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb9-36"><a href="football-simulation.html#cb9-36" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
+<span id="cb9-37"><a href="football-simulation.html#cb9-37" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<pre><code>## football_matches (generic function with 1 method)</code></pre>
+<p>As you can see, the turing code is very clear and direct. In the first block we define our hyperpriors for the distributions of the characteristics of the equipment.</p>
+<p>In the second one, we define the priors distributions that will encapsulate the information about the attack and defense powers of the teams. With the <em>filldist</em> function we are telling Turing that we need as many of these parameters as there are teams in the league <em>length(teams)</em></p>
+<p>Then, we calculate the average of the defense and attack parameters that we are going to use to centralize those variables, and we use the LogPoisson distribution to allow the theta to take some negative value in the inference process and give more sensitivity to the parameters that make it up.</p>
+<p>As we said before, we will model the thetas for each game played in the league, that’s why the <em>for</em> of the last block goes from 1 to <em>length(home_teams)</em>, which is the list that contains who was the local team of each game played.</p>
+<p>So let´s run it and see if all of this effort was worth it:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb11-1"><a href="football-simulation.html#cb11-1" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> football_matches(matches_df[<span class="op">:,</span><span class="fl">1</span>]<span class="op">,</span> matches_df[<span class="op">:,</span><span class="fl">2</span>]<span class="op">,</span> matches_df[<span class="op">:,</span><span class="fl">3</span>]<span class="op">,</span> matches_df[<span class="op">:,</span><span class="fl">4</span>]<span class="op">,</span> teams)</span></code></pre></div>
+<pre><code>## DynamicPPL.Model{var&quot;#213#214&quot;,(:home_teams, :away_teams, :score_home, :score_away, :teams),(),(),NTuple{5,Array{Any,1}},Tuple{}}(:football_matches, var&quot;#213#214&quot;(), (home_teams = Any[&quot;Burnley&quot;, &quot;Crystal Palace&quot;, &quot;Huddersfield Town&quot;, &quot;Liverpool&quot;, &quot;Manchester United&quot;, &quot;Newcastle United&quot;, &quot;Southampton&quot;, &quot;Swansea City&quot;, &quot;Tottenham Hotspur&quot;, &quot;West Ham United&quot;  …  &quot;Manchester United&quot;, &quot;Newcastle United&quot;, &quot;Brighton &amp; Hove Albion&quot;, &quot;Chelsea&quot;, &quot;Crystal Palace&quot;, &quot;Everton&quot;, &quot;Southampton&quot;, &quot;West Bromwich Albion&quot;, &quot;Watford&quot;, &quot;Arsenal&quot;], away_teams = Any[&quot;AFC Bournemouth&quot;, &quot;West Bromwich Albion&quot;, &quot;Arsenal&quot;, &quot;Brighton &amp; Hove Albion&quot;, &quot;Watford&quot;, &quot;Chelsea&quot;, &quot;Manchester City&quot;, &quot;Stoke City&quot;, &quot;Leicester City&quot;, &quot;Everton&quot;  …  &quot;West Ham United&quot;, &quot;Tottenham Hotspur&quot;, &quot;Manchester City&quot;, &quot;Burnley&quot;, &quot;Huddersfield Town&quot;, &quot;Stoke City&quot;, &quot;Swansea City&quot;, &quot;AFC Bournemouth&quot;, &quot;Liverpool&quot;, &quot;Leicester City&quot;], score_home = Any[1, 2, 0, 4, 1, 3, 0, 1, 5, 3  …  4, 0, 0, 2, 0, 1, 0, 1, 3, 4], score_away = Any[2, 0, 1, 0, 0, 0, 1, 2, 4, 1  …  0, 2, 2, 3, 3, 0, 0, 0, 3, 3], teams = Any[&quot;Burnley&quot;, &quot;Crystal Palace&quot;, &quot;Huddersfield Town&quot;, &quot;Liverpool&quot;, &quot;Manchester United&quot;, &quot;Newcastle United&quot;, &quot;Southampton&quot;, &quot;Swansea City&quot;, &quot;Tottenham Hotspur&quot;, &quot;West Ham United&quot;, &quot;Manchester City&quot;, &quot;Leicester City&quot;, &quot;Chelsea&quot;, &quot;Arsenal&quot;, &quot;Everton&quot;, &quot;AFC Bournemouth&quot;, &quot;Watford&quot;, &quot;West Bromwich Albion&quot;, &quot;Stoke City&quot;, &quot;Brighton &amp; Hove Albion&quot;]), NamedTuple())</code></pre>
+<div class="sourceCode" id="cb13"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb13-1"><a href="football-simulation.html#cb13-1" aria-hidden="true" tabindex="-1"></a>posterior <span class="op">=</span> sample(model<span class="op">,</span> NUTS()<span class="op">,</span><span class="fl">3000</span>)<span class="op">;</span></span></code></pre></div>
+</div>
+<div id="analyzing-the-results" class="section level4" number="7.1.1.4">
+<h4><span class="header-section-number">7.1.1.4</span> Analyzing the results</h4>
+<p>In order to compare and corroborate that the inference of our model makes sense, it is key to have the ranking table of how the teams actually performed in the 2017/2018 Premier League.</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb14-1"><a href="football-simulation.html#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb14-2"><a href="football-simulation.html#cb14-2" aria-hidden="true" tabindex="-1"></a>    table_positions <span class="op">=</span> </span>
+<span id="cb14-3"><a href="football-simulation.html#cb14-3" aria-hidden="true" tabindex="-1"></a>    [<span class="fl">11</span><span class="op">,</span> <span class="fl">5</span><span class="op">,</span> <span class="fl">9</span><span class="op">,</span> <span class="fl">4</span><span class="op">,</span> <span class="fl">13</span><span class="op">,</span> <span class="fl">14</span><span class="op">,</span> <span class="fl">1</span><span class="op">,</span> <span class="fl">15</span><span class="op">,</span> <span class="fl">12</span><span class="op">,</span> <span class="fl">6</span><span class="op">,</span> <span class="fl">2</span><span class="op">,</span> <span class="fl">16</span><span class="op">,</span> <span class="fl">10</span><span class="op">,</span> <span class="fl">17</span><span class="op">,</span> <span class="fl">20</span><span class="op">,</span> <span class="fl">3</span><span class="op">,</span> <span class="fl">7</span><span class="op">,</span> <span class="fl">8</span><span class="op">,</span> <span class="fl">19</span><span class="op">,</span> <span class="fl">18</span>]</span>
+<span id="cb14-4"><a href="football-simulation.html#cb14-4" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb14-5"><a href="football-simulation.html#cb14-5" aria-hidden="true" tabindex="-1"></a>    games_won <span class="op">=</span> </span>
+<span id="cb14-6"><a href="football-simulation.html#cb14-6" aria-hidden="true" tabindex="-1"></a>    [<span class="fl">32</span><span class="op">,</span> <span class="fl">25</span><span class="op">,</span> <span class="fl">23</span><span class="op">,</span> <span class="fl">21</span><span class="op">,</span> <span class="fl">21</span><span class="op">,</span> <span class="fl">19</span><span class="op">,</span> <span class="fl">14</span><span class="op">,</span> <span class="fl">13</span><span class="op">,</span> <span class="fl">12</span><span class="op">,</span> <span class="fl">12</span><span class="op">,</span> <span class="fl">11</span><span class="op">,</span> <span class="fl">11</span><span class="op">,</span> <span class="fl">10</span><span class="op">,</span> <span class="fl">11</span><span class="op">,</span> <span class="fl">9</span><span class="op">,</span> <span class="fl">9</span><span class="op">,</span> <span class="fl">7</span><span class="op">,</span> <span class="fl">8</span><span class="op">,</span> <span class="fl">7</span><span class="op">,</span> <span class="fl">6</span>]</span>
+<span id="cb14-7"><a href="football-simulation.html#cb14-7" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb14-8"><a href="football-simulation.html#cb14-8" aria-hidden="true" tabindex="-1"></a>    teams_ <span class="op">=</span> []</span>
+<span id="cb14-9"><a href="football-simulation.html#cb14-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> table_positions</span>
+<span id="cb14-10"><a href="football-simulation.html#cb14-10" aria-hidden="true" tabindex="-1"></a>        push<span class="op">!</span>(teams_<span class="op">,</span> teams[i])</span>
+<span id="cb14-11"><a href="football-simulation.html#cb14-11" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
+<span id="cb14-12"><a href="football-simulation.html#cb14-12" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb14-13"><a href="football-simulation.html#cb14-13" aria-hidden="true" tabindex="-1"></a>    table_position_df <span class="op">=</span> DataFrame(Table_of_positions <span class="op">=</span> teams_<span class="op">,</span> Wins <span class="op">=</span> games_won)</span>
+<span id="cb14-14"><a href="football-simulation.html#cb14-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-15"><a href="football-simulation.html#cb14-15" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<pre><code>## 20×2 DataFrame
+##  Row │ Table_of_positions      Wins
+##      │ Any                     Int64
+## ─────┼───────────────────────────────
+##    1 │ Manchester City            32
+##    2 │ Manchester United          25
+##    3 │ Tottenham Hotspur          23
+##    4 │ Liverpool                  21
+##    5 │ Chelsea                    21
+##    6 │ Arsenal                    19
+##    7 │ Burnley                    14
+##    8 │ Everton                    13
+##   ⋮  │           ⋮               ⋮
+##   14 │ Watford                    11
+##   15 │ Brighton &amp; Hove Albion      9
+##   16 │ Huddersfield Town           9
+##   17 │ Southampton                 7
+##   18 │ Swansea City                8
+##   19 │ Stoke City                  7
+##   20 │ West Bromwich Albion        6
+##                        5 rows omitted</code></pre>
+<p>Let’s now explore a little bit the a posteriori values we obtained.</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb16-1"><a href="football-simulation.html#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb16-2"><a href="football-simulation.html#cb16-2" aria-hidden="true" tabindex="-1"></a>    post_att <span class="op">=</span> collect(get(posterior<span class="op">,</span> <span class="op">:</span>att)[<span class="fl">1</span>])</span>
+<span id="cb16-3"><a href="football-simulation.html#cb16-3" aria-hidden="true" tabindex="-1"></a>    post_def <span class="op">=</span> collect(get(posterior<span class="op">,</span> <span class="op">:</span>def)[<span class="fl">1</span>])</span>
+<span id="cb16-4"><a href="football-simulation.html#cb16-4" aria-hidden="true" tabindex="-1"></a>    post_home <span class="op">=</span> collect(get(posterior<span class="op">,</span> <span class="op">:</span>home)[<span class="fl">1</span>])</span>
+<span id="cb16-5"><a href="football-simulation.html#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span><span class="op">;</span></span></code></pre></div>
+<p>As a first measure to analyze, it is interesting to see and quantify (if any) the effect that being local has on the score rate:</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb17-1"><a href="football-simulation.html#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb17-2"><a href="football-simulation.html#cb17-2" aria-hidden="true" tabindex="-1"></a>histogram(post_home<span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span><span class="op">,</span> title<span class="op">=</span><span class="st">&quot;Posterior distribution of home parameter&quot;</span>)</span>
+<span id="cb17-3"><a href="football-simulation.html#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_7_plot_1-J1.png" /><!-- --></p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb18-1"><a href="football-simulation.html#cb18-1" aria-hidden="true" tabindex="-1"></a>mean(post_home)</span></code></pre></div>
+<pre><code>## 0.33686240343298207</code></pre>
+<p>So, to include in the model the parameter home was a good idea. indeed being local provides a very big advantage.</p>
+<p>Beyond the fact that it is interesting to be able to quantify how much the location influences the scoring rate of the teams, including it in the analysis allow us to have better estimates of the defense and attack parameters of the teams. This is true because if it had not been included, this positive effect would have manifested itself in the only parameters it would have found, the attack and defense parameters, deforming the real measure of these.</p>
+<p>So, being confident that we are on the right track, let´s find the attack and defence parameters of each team.</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb20-1"><a href="football-simulation.html#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb20-2"><a href="football-simulation.html#cb20-2" aria-hidden="true" tabindex="-1"></a>    teams_att <span class="op">=</span> []</span>
+<span id="cb20-3"><a href="football-simulation.html#cb20-3" aria-hidden="true" tabindex="-1"></a>    teams_def <span class="op">=</span> []</span>
+<span id="cb20-4"><a href="football-simulation.html#cb20-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>length(post_att)</span>
+<span id="cb20-5"><a href="football-simulation.html#cb20-5" aria-hidden="true" tabindex="-1"></a>        push<span class="op">!</span>(teams_att<span class="op">,</span> post_att[i])</span>
+<span id="cb20-6"><a href="football-simulation.html#cb20-6" aria-hidden="true" tabindex="-1"></a>        push<span class="op">!</span>(teams_def<span class="op">,</span> post_def[i])</span>
+<span id="cb20-7"><a href="football-simulation.html#cb20-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
+<span id="cb20-8"><a href="football-simulation.html#cb20-8" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p>This way we obtain all the samples of the posterior distributions for each one of the parameters of each equipment. Scroll right to explore the entire array.</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb21-1"><a href="football-simulation.html#cb21-1" aria-hidden="true" tabindex="-1"></a>teams_att</span></code></pre></div>
+<pre><code>## 20-element Array{Any,1}:
+##  [-0.18090024686390502; -0.18090024686390502; … ; -0.16573884930286759; -0.3439790559859556]
+##  [-0.07494771563641511; -0.07494771563641511; … ; -0.31064108478291863; -0.6074908737245488]
+##  [-0.4345387754919156; -0.4345387754919156; … ; -0.6601329157212812; -0.8409985169957397]
+##  [0.7161088201304119; 0.7161088201304119; … ; 0.46069353543827973; 0.3692063451783453]
+##  [0.21002495452716094; 0.21002495452716094; … ; 0.3381096840666081; 0.24130401196215717]
+##  [-0.2893690437361058; -0.2893690437361058; … ; -0.05354295477869071; -0.1683633335724508]
+##  [-0.32245249657001374; -0.32245249657001374; … ; -0.3081413544589372; -0.5029828165516821]
+##  [-0.4082966867877258; -0.4082966867877258; … ; -0.4289373609671487; -0.42196251217599656]
+##  [0.4723197336648258; 0.4723197336648258; … ; 0.3114348605459087; 0.26261859464565873]
+##  [0.11077926757468014; 0.11077926757468014; … ; -0.269820905686255; -0.23961744196277243]
+##  [0.7180815003512169; 0.7180815003512169; … ; 0.7375543869512592; 0.5360354249465629]
+##  [0.05462890665259072; 0.05462890665259072; … ; 0.24100888011769692; 0.20404677178474454]
+##  [0.32297900326230805; 0.32297900326230805; … ; 0.20956330983379784; 0.2004456703414366]
+##  [0.37875220549886734; 0.37875220549886734; … ; 0.3396597505727132; 0.49497638979530467]
+##  [-0.13205287876681; -0.13205287876681; … ; -0.1808864525895278; -0.2644273156779394]
+##  [0.13704130476591125; 0.13704130476591125; … ; -0.23245035663992358; -0.27698513995281515]
+##  [-0.12769583762262163; -0.12769583762262163; … ; 0.02142178262609712; -0.3751841421277524]
+##  [-0.32907455808501346; -0.32907455808501346; … ; -0.7205915517029087; -0.43194608971047693]
+##  [-0.4720982918978399; -0.4720982918978399; … ; -0.3911544659047821; -0.48097620126791846]
+##  [-0.09612826966957531; -0.09612826966957531; … ; -0.5888737573782096; -0.4206953573460519]</code></pre>
+<p>For example, if we would like to se the posterior distribution of the attack parameter for Burnley:</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb23-1"><a href="football-simulation.html#cb23-1" aria-hidden="true" tabindex="-1"></a>teams[<span class="fl">1</span>]</span></code></pre></div>
+<pre><code>## &quot;Burnley&quot;</code></pre>
+<div class="sourceCode" id="cb25"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb25-1"><a href="football-simulation.html#cb25-1" aria-hidden="true" tabindex="-1"></a>histogram(teams_att[<span class="fl">1</span>]<span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span><span class="op">,</span> title<span class="op">=</span><span class="st">&quot;Posterior distribution of Burnley´s attack power&quot;</span>)</span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_7_plot_2-J1.png" /><!-- --></p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb26-1"><a href="football-simulation.html#cb26-1" aria-hidden="true" tabindex="-1"></a>mean(teams_att[<span class="fl">1</span>])</span></code></pre></div>
+<pre><code>## -0.27877220840086075</code></pre>
+<p>Comparing it to the attacking power of Manchester City, champion of the Premier league:</p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb28-1"><a href="football-simulation.html#cb28-1" aria-hidden="true" tabindex="-1"></a>teams[<span class="fl">11</span>]</span></code></pre></div>
+<pre><code>## &quot;Manchester City&quot;</code></pre>
+<div class="sourceCode" id="cb30"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb30-1"><a href="football-simulation.html#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb30-2"><a href="football-simulation.html#cb30-2" aria-hidden="true" tabindex="-1"></a>    histogram(teams_att[<span class="fl">11</span>]<span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span><span class="op">,</span> title<span class="op">=</span><span class="st">&quot;Posterior distribution of Manchester City´s attack power&quot;</span>)</span>
+<span id="cb30-3"><a href="football-simulation.html#cb30-3" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_7_plot_3-J1.png" /><!-- --></p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb31-1"><a href="football-simulation.html#cb31-1" aria-hidden="true" tabindex="-1"></a>mean(teams_att[<span class="fl">11</span>])</span></code></pre></div>
+<pre><code>## 0.7137999426855425</code></pre>
+<p>When comparing the league champion against a mid-table team, we can clearly see the superiority in attack. For now, it seems that the inference comes in handy.</p>
+<p>Let’s try now to have an overview of the attacking powers of each team. To do this, just take the average of each and plot it next to the standard deviation</p>
+<div class="sourceCode" id="cb33"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb33-1"><a href="football-simulation.html#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb33-2"><a href="football-simulation.html#cb33-2" aria-hidden="true" tabindex="-1"></a>    teams_att_μ <span class="op">=</span> mean.(teams_att)</span>
+<span id="cb33-3"><a href="football-simulation.html#cb33-3" aria-hidden="true" tabindex="-1"></a>    teams_def_μ <span class="op">=</span> mean.(teams_def)</span>
+<span id="cb33-4"><a href="football-simulation.html#cb33-4" aria-hidden="true" tabindex="-1"></a>    teams_att_σ <span class="op">=</span> std.(teams_att)</span>
+<span id="cb33-5"><a href="football-simulation.html#cb33-5" aria-hidden="true" tabindex="-1"></a>    teams_def_σ <span class="op">=</span> std.(teams_def)</span>
+<span id="cb33-6"><a href="football-simulation.html#cb33-6" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span><span class="op">;</span></span></code></pre></div>
+<p>Remember that the “.” operator is used for broadcasting. This means that it will apply the function to each component of the array</p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb34-1"><a href="football-simulation.html#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb34-2"><a href="football-simulation.html#cb34-2" aria-hidden="true" tabindex="-1"></a>    teams_att_μ</span>
+<span id="cb34-3"><a href="football-simulation.html#cb34-3" aria-hidden="true" tabindex="-1"></a>    sorted_att <span class="op">=</span> sortperm(teams_att_μ)</span>
+<span id="cb34-4"><a href="football-simulation.html#cb34-4" aria-hidden="true" tabindex="-1"></a>    abbr_names <span class="op">=</span> [t[<span class="fl">1</span><span class="op">:</span><span class="fl">3</span>] <span class="kw">for</span> t <span class="kw">in</span> teams]</span>
+<span id="cb34-5"><a href="football-simulation.html#cb34-5" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span><span class="op">;</span></span></code></pre></div>
+<div class="sourceCode" id="cb35"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb35-1"><a href="football-simulation.html#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb35-2"><a href="football-simulation.html#cb35-2" aria-hidden="true" tabindex="-1"></a>    abbr_names[<span class="fl">5</span>] <span class="op">=</span> <span class="st">&quot;Mun&quot;</span></span>
+<span id="cb35-3"><a href="football-simulation.html#cb35-3" aria-hidden="true" tabindex="-1"></a>    abbr_names[<span class="fl">10</span>] <span class="op">=</span> <span class="st">&quot;Whu&quot;</span></span>
+<span id="cb35-4"><a href="football-simulation.html#cb35-4" aria-hidden="true" tabindex="-1"></a>    abbr_names[<span class="fl">11</span>] <span class="op">=</span> <span class="st">&quot;Mci&quot;</span></span>
+<span id="cb35-5"><a href="football-simulation.html#cb35-5" aria-hidden="true" tabindex="-1"></a>    abbr_names[<span class="fl">16</span>] <span class="op">=</span> <span class="st">&quot;Bou&quot;</span></span>
+<span id="cb35-6"><a href="football-simulation.html#cb35-6" aria-hidden="true" tabindex="-1"></a>    abbr_names[<span class="fl">18</span>] <span class="op">=</span> <span class="st">&quot;Wba&quot;</span></span>
+<span id="cb35-7"><a href="football-simulation.html#cb35-7" aria-hidden="true" tabindex="-1"></a>    abbr_names[<span class="fl">19</span>] <span class="op">=</span> <span class="st">&quot;Stk&quot;</span></span>
+<span id="cb35-8"><a href="football-simulation.html#cb35-8" aria-hidden="true" tabindex="-1"></a>    abbr_names[<span class="fl">20</span>] <span class="op">=</span> <span class="st">&quot;Bha&quot;</span></span>
+<span id="cb35-9"><a href="football-simulation.html#cb35-9" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span><span class="op">;</span></span></code></pre></div>
+<div class="sourceCode" id="cb36"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb36-1"><a href="football-simulation.html#cb36-1" aria-hidden="true" tabindex="-1"></a>sorted_names <span class="op">=</span> abbr_names[sorted_att]</span></code></pre></div>
+<pre><code>## 20-element Array{SubString{String},1}:
+##  &quot;Swa&quot;
+##  &quot;Hud&quot;
+##  &quot;Wba&quot;
+##  &quot;Bha&quot;
+##  &quot;Stk&quot;
+##  &quot;Bur&quot;
+##  &quot;Sou&quot;
+##  &quot;New&quot;
+##  &quot;Eve&quot;
+##  &quot;Wat&quot;
+##  &quot;Cry&quot;
+##  &quot;Bou&quot;
+##  &quot;Whu&quot;
+##  &quot;Lei&quot;
+##  &quot;Che&quot;
+##  &quot;Mun&quot;
+##  &quot;Tot&quot;
+##  &quot;Ars&quot;
+##  &quot;Liv&quot;
+##  &quot;Mci&quot;</code></pre>
+<div class="sourceCode" id="cb38"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb38-1"><a href="football-simulation.html#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb38-2"><a href="football-simulation.html#cb38-2" aria-hidden="true" tabindex="-1"></a>    scatter(<span class="fl">1</span><span class="op">:</span><span class="fl">20</span><span class="op">,</span> teams_att_μ[sorted_att]<span class="op">,</span> grid<span class="op">=</span><span class="ex">false</span><span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span><span class="op">,</span> yerror<span class="op">=</span>teams_att_σ[sorted_att]<span class="op">,</span> color<span class="op">=:</span>blue<span class="op">,</span> title<span class="op">=</span><span class="st">&quot;Premier league 17/18 teams attack power&quot;</span>)</span>
+<span id="cb38-3"><a href="football-simulation.html#cb38-3" aria-hidden="true" tabindex="-1"></a>    annotate<span class="op">!</span>([(x<span class="op">,</span> y <span class="op">+</span> <span class="fl">0.238</span><span class="op">,</span> text(team<span class="op">,</span> <span class="fl">8</span><span class="op">,</span> <span class="op">:</span>center<span class="op">,</span> <span class="op">:</span>black)) <span class="kw">for</span> (x<span class="op">,</span> y<span class="op">,</span> team) <span class="kw">in</span> zip(<span class="fl">1</span><span class="op">:</span><span class="fl">20</span><span class="op">,</span> teams_att_μ[sorted_att]<span class="op">,</span> sorted_names)])</span>
+<span id="cb38-4"><a href="football-simulation.html#cb38-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-5"><a href="football-simulation.html#cb38-5" aria-hidden="true" tabindex="-1"></a>    ylabel<span class="op">!</span>(<span class="st">&quot;Mean team attack&quot;</span>)</span>
+<span id="cb38-6"><a href="football-simulation.html#cb38-6" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_7_plot_4-J1.png" /><!-- --></p>
+<p>Although there is a high correlation between the attacking power of each team and its position on the table after the league ends, it is clear that this is not enough to explain the results. For example, Manchester City was the league’s sub-champion, but only appeared in fifth place.</p>
+<p>Let’s explore what happens to the defence power:</p>
+<div class="sourceCode" id="cb39"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb39-1"><a href="football-simulation.html#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb39-2"><a href="football-simulation.html#cb39-2" aria-hidden="true" tabindex="-1"></a>    sorted_def <span class="op">=</span> sortperm(teams_def_μ)</span>
+<span id="cb39-3"><a href="football-simulation.html#cb39-3" aria-hidden="true" tabindex="-1"></a>    sorted_names_def <span class="op">=</span> abbr_names[sorted_def]</span>
+<span id="cb39-4"><a href="football-simulation.html#cb39-4" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<pre><code>## 20-element Array{SubString{String},1}:
+##  &quot;Mun&quot;
+##  &quot;Mci&quot;
+##  &quot;Tot&quot;
+##  &quot;Bur&quot;
+##  &quot;Che&quot;
+##  &quot;Liv&quot;
+##  &quot;New&quot;
+##  &quot;Ars&quot;
+##  &quot;Bha&quot;
+##  &quot;Cry&quot;
+##  &quot;Swa&quot;
+##  &quot;Wba&quot;
+##  &quot;Sou&quot;
+##  &quot;Hud&quot;
+##  &quot;Eve&quot;
+##  &quot;Lei&quot;
+##  &quot;Bou&quot;
+##  &quot;Wat&quot;
+##  &quot;Stk&quot;
+##  &quot;Whu&quot;</code></pre>
+<div class="sourceCode" id="cb41"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb41-1"><a href="football-simulation.html#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb41-2"><a href="football-simulation.html#cb41-2" aria-hidden="true" tabindex="-1"></a>    scatter(<span class="fl">1</span><span class="op">:</span><span class="fl">20</span><span class="op">,</span> teams_def_μ[sorted_def]<span class="op">,</span> grid<span class="op">=</span><span class="ex">false</span><span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span><span class="op">,</span> yerror<span class="op">=</span>teams_def_σ[sorted_def]<span class="op">,</span> color<span class="op">=:</span>blue<span class="op">,</span> title<span class="op">=</span><span class="st">&quot;Premier league 17/18 teams defence power&quot;</span>)</span>
+<span id="cb41-3"><a href="football-simulation.html#cb41-3" aria-hidden="true" tabindex="-1"></a>    annotate<span class="op">!</span>([(x<span class="op">,</span> y <span class="op">+</span> <span class="fl">0.2</span><span class="op">,</span> text(team<span class="op">,</span> <span class="fl">8</span><span class="op">,</span> <span class="op">:</span>center<span class="op">,</span> <span class="op">:</span>black)) <span class="kw">for</span> (x<span class="op">,</span> y<span class="op">,</span> team) <span class="kw">in</span> zip(<span class="fl">1</span><span class="op">:</span><span class="fl">20</span><span class="op">,</span> teams_def_μ[sorted_def]<span class="op">,</span> sorted_names_def)])</span>
+<span id="cb41-4"><a href="football-simulation.html#cb41-4" aria-hidden="true" tabindex="-1"></a>    ylabel<span class="op">!</span>(<span class="st">&quot;Mean team defence&quot;</span>)</span>
+<span id="cb41-5"><a href="football-simulation.html#cb41-5" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_7_plot_5-J1.png" /><!-- --></p>
+<p>To read this graph we have to remember that the defense effect is better the more negative it is, since it is representing the scoring rate that takes away from the opponent team. As we already said:
+<span class="math inline">\(θ_{team1} \sim att_{team1} + def_{team2}\)</span>.</p>
+<p>As the <span class="math inline">\(def_{team2}\)</span> is adding up in the equation, if it take negative values, it is going to start substracting the scoring rate of the oponent.</p>
+<p>Things, then, begin to make a little more sense. Now we can see that Manchester United is the team with the strongest defence, so being second in the overall is not extrange.</p>
+<p>To gain a deeper understanding of what´s going on here, let’s chart both characteristics together. This is going to let us see the combined effect they have. Also i´m going to add the final position of each team to improve the interpretability.</p>
+<div class="sourceCode" id="cb42"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb42-1"><a href="football-simulation.html#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb42-2"><a href="football-simulation.html#cb42-2" aria-hidden="true" tabindex="-1"></a>    table_position <span class="op">=</span> </span>
+<span id="cb42-3"><a href="football-simulation.html#cb42-3" aria-hidden="true" tabindex="-1"></a>    [<span class="fl">11</span><span class="op">,</span> <span class="fl">5</span><span class="op">,</span> <span class="fl">9</span><span class="op">,</span> <span class="fl">4</span><span class="op">,</span> <span class="fl">13</span><span class="op">,</span> <span class="fl">14</span><span class="op">,</span> <span class="fl">1</span><span class="op">,</span> <span class="fl">15</span><span class="op">,</span> <span class="fl">12</span><span class="op">,</span> <span class="fl">6</span><span class="op">,</span> <span class="fl">2</span><span class="op">,</span> <span class="fl">16</span><span class="op">,</span> <span class="fl">10</span><span class="op">,</span> <span class="fl">17</span><span class="op">,</span> <span class="fl">20</span><span class="op">,</span> <span class="fl">3</span><span class="op">,</span> <span class="fl">7</span><span class="op">,</span> <span class="fl">8</span><span class="op">,</span> <span class="fl">19</span><span class="op">,</span> <span class="fl">18</span>]</span>
+<span id="cb42-4"><a href="football-simulation.html#cb42-4" aria-hidden="true" tabindex="-1"></a>    position <span class="op">=</span> sortperm(table_position)</span>
+<span id="cb42-5"><a href="football-simulation.html#cb42-5" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<pre><code>## 20-element Array{Int64,1}:
+##   7
+##  11
+##  16
+##   4
+##   2
+##  10
+##  17
+##  18
+##   3
+##  13
+##   1
+##   9
+##   5
+##   6
+##   8
+##  12
+##  14
+##  20
+##  19
+##  15</code></pre>
+<div class="sourceCode" id="cb44"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb44-1"><a href="football-simulation.html#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb44-2"><a href="football-simulation.html#cb44-2" aria-hidden="true" tabindex="-1"></a>    scatter(teams_att_μ<span class="op">,</span> teams_def_μ<span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span>)</span>
+<span id="cb44-3"><a href="football-simulation.html#cb44-3" aria-hidden="true" tabindex="-1"></a>    annotate<span class="op">!</span>([(x<span class="op">,</span> y <span class="op">+</span> <span class="fl">0.016</span><span class="op">,</span> text(team<span class="op">,</span> <span class="fl">6</span><span class="op">,</span> <span class="op">:</span>center<span class="op">,</span> <span class="op">:</span>black)) <span class="kw">for</span> (x<span class="op">,</span> y<span class="op">,</span> team) <span class="kw">in</span> zip(teams_att_μ<span class="op">,</span> teams_def_μ<span class="op">,</span> abbr_names)])</span>
+<span id="cb44-4"><a href="football-simulation.html#cb44-4" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb44-5"><a href="football-simulation.html#cb44-5" aria-hidden="true" tabindex="-1"></a>    annotate<span class="op">!</span>([(x<span class="op">,</span> y <span class="op">-</span> <span class="fl">0.016</span><span class="op">,</span> text(team<span class="op">,</span> <span class="fl">5</span><span class="op">,</span> <span class="op">:</span>center<span class="op">,</span> <span class="op">:</span>black)) <span class="kw">for</span> (x<span class="op">,</span> y<span class="op">,</span> team) <span class="kw">in</span> zip(teams_att_μ<span class="op">,</span> teams_def_μ<span class="op">,</span> position)])</span>
+<span id="cb44-6"><a href="football-simulation.html#cb44-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-7"><a href="football-simulation.html#cb44-7" aria-hidden="true" tabindex="-1"></a>    xlabel<span class="op">!</span>(<span class="st">&quot;Mean team attack&quot;</span>)</span>
+<span id="cb44-8"><a href="football-simulation.html#cb44-8" aria-hidden="true" tabindex="-1"></a>    ylabel<span class="op">!</span>(<span class="st">&quot;Mean team defence&quot;</span>)</span>
+<span id="cb44-9"><a href="football-simulation.html#cb44-9" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_7_plot_6-J1.png" /><!-- --></p>
+<p>Well, great! Now we have some interesting information to analyze the teams and the league in general. It´s easier now to perceive how the two features interact with each other, comparing between teams and being able to see how that affects the final position.</p>
+<p>For example, looking at the cases of Liverpool and Tottenham, or Leicester City and Everton; one could say (against general common sense) that the power of defense has a greater effect on the performance of each team than the attack. But we leave you to do those analysis for the betting house.</p>
+<p>Well, we went from having a problem that seemed almost impossible to have a solid solution, with a quantitative analysis of the characteristics of each team. We even know how much the localization of the teams increases the scoring rate. We were able to achieve this thanks to the hierarchical framework that Bayesianism provides us. Using this tool allows us to create models proposing latent variables that cannot be observed, to infer them and to gain a much deeper and more generalized knowledge than we had at first. You just have to imagine a good story.</p>
+</div>
+</div>
+</div>
+<div id="simulate-possible-realities" class="section level2" number="7.2">
+<h2><span class="header-section-number">7.2</span> Simulate possible realities</h2>
+<p>So we close our laptop and go with all this analysis to the sport bookmarker and start explain it to them. They are fascinated with it as now they have lot more precious information about each team, in order to make data grounded bets. Its a total victory!</p>
+<p>We are about to go when suddenly, one guy that have been quiet the hole time, say “in two weeks is the 2017–18 UEFA Champions League´s quarter-final and Manchester City plays against the Liverpool, two teams that be have already analize! Can any analysis be done to see the possible results and their probabilities?”</p>
+<p>We think for a moment: “Yes, we have each teams strengths and weaknesses and they are also from the same league, so the home parameter would be the same”… Okey, we said, lets give it a try!</p>
+<p>Can you imagine a way to solve this problem?</p>
+<p>Well, we have the posterior characteristics of each team. And we have inferred from the data of football metches that the have played. So maybe we can do the opposite and, given the parameters of attack, defense and location of each teams, we could simulate a series of matches between them. We could actually simulate millions of these matches! Then we should only see which results occurred the most and with that we could obtain the <strong>probability</strong> of occurrence. At least sounds great, doesn´t it?</p>
+<p>First, lets see the parameters that we alredy have:</p>
+<div class="sourceCode" id="cb45"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb45-1"><a href="football-simulation.html#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb45-2"><a href="football-simulation.html#cb45-2" aria-hidden="true" tabindex="-1"></a>    mci_att_post <span class="op">=</span> collect(get(posterior<span class="op">,</span> <span class="op">:</span>att)[<span class="op">:</span>att])[<span class="fl">11</span>][<span class="op">:,</span><span class="fl">1</span>]<span class="op">;</span></span>
+<span id="cb45-3"><a href="football-simulation.html#cb45-3" aria-hidden="true" tabindex="-1"></a>    mci_def_post <span class="op">=</span> collect(get(posterior<span class="op">,</span> <span class="op">:</span>def)[<span class="op">:</span>def])[<span class="fl">11</span>][<span class="op">:,</span><span class="fl">1</span>]<span class="op">;</span></span>
+<span id="cb45-4"><a href="football-simulation.html#cb45-4" aria-hidden="true" tabindex="-1"></a>    liv_att_post <span class="op">=</span> collect(get(posterior<span class="op">,</span> <span class="op">:</span>att)[<span class="op">:</span>att])[<span class="fl">4</span>][<span class="op">:,</span><span class="fl">1</span>]<span class="op">;</span></span>
+<span id="cb45-5"><a href="football-simulation.html#cb45-5" aria-hidden="true" tabindex="-1"></a>    liv_def_post <span class="op">=</span> collect(get(posterior<span class="op">,</span> <span class="op">:</span>def)[<span class="op">:</span>def])[<span class="fl">4</span>][<span class="op">:,</span><span class="fl">1</span>]<span class="op">;</span></span>
+<span id="cb45-6"><a href="football-simulation.html#cb45-6" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<pre><code>## 1-dimensional AxisArray{Float64,1,...} with axes:
+##     :iter, 1:1:3000
+## And data, a 3000-element Array{Float64,1}:
+##  -0.14127633046233565
+##  -0.14127633046233565
+##  -0.05053133489843006
+##  -0.07514465398861586
+##  -0.07514465398861586
+##  -0.10471948473583875
+##  -0.28175995736524234
+##  -0.15303827555897243
+##  -0.14692888360457546
+##  -0.09454474198311694
+##   ⋮
+##  -0.18469049252732028
+##  -0.2885710890412246
+##   0.019476004192453975
+##  -0.35157803749478506
+##  -0.21662548176089821
+##  -0.42251326999973665
+##  -0.16609275679471963
+##  -0.12283358268025013
+##  -0.2817987822642521</code></pre>
+<div class="sourceCode" id="cb47"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb47-1"><a href="football-simulation.html#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb47-2"><a href="football-simulation.html#cb47-2" aria-hidden="true" tabindex="-1"></a>    ha1 <span class="op">=</span> histogram(mci_att_post<span class="op">,</span> title<span class="op">=</span><span class="st">&quot;Manchester City attack&quot;</span><span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span>)</span>
+<span id="cb47-3"><a href="football-simulation.html#cb47-3" aria-hidden="true" tabindex="-1"></a>    ha2 <span class="op">=</span> histogram(liv_att_post<span class="op">,</span> title<span class="op">=</span><span class="st">&quot;Liverpool attack&quot;</span><span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span>)</span>
+<span id="cb47-4"><a href="football-simulation.html#cb47-4" aria-hidden="true" tabindex="-1"></a>    plot(ha1<span class="op">,</span> ha2<span class="op">,</span> layout<span class="op">=</span>(<span class="fl">1</span><span class="op">,</span><span class="fl">2</span>))</span>
+<span id="cb47-5"><a href="football-simulation.html#cb47-5" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_7_plot_7-J1.png" /><!-- --></p>
+<div class="sourceCode" id="cb48"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb48-1"><a href="football-simulation.html#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb48-2"><a href="football-simulation.html#cb48-2" aria-hidden="true" tabindex="-1"></a>    hd1 <span class="op">=</span> histogram(mci_def_post<span class="op">,</span> title<span class="op">=</span><span class="st">&quot;Manchester City defense&quot;</span><span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span>)</span>
+<span id="cb48-3"><a href="football-simulation.html#cb48-3" aria-hidden="true" tabindex="-1"></a>    hd2 <span class="op">=</span> histogram(liv_def_post<span class="op">,</span> title<span class="op">=</span><span class="st">&quot;Liverpool defense&quot;</span><span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span>)</span>
+<span id="cb48-4"><a href="football-simulation.html#cb48-4" aria-hidden="true" tabindex="-1"></a>    plot(hd1<span class="op">,</span> hd2<span class="op">,</span> layout<span class="op">=</span>(<span class="fl">1</span><span class="op">,</span><span class="fl">2</span>))</span>
+<span id="cb48-5"><a href="football-simulation.html#cb48-5" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_7_plot_8-J1.png" /><!-- --></p>
+<p>So it seems that the Manchester City have a little advantage over Liverpool. And this is reasonable. The Manchester City was the champion of the Premier League that year while the Liverpool came only fourth. But let stop talking, and start to simulate outcomes!</p>
+<div class="sourceCode" id="cb49"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb49-1"><a href="football-simulation.html#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This function simulates matches given the attack, defense and home parameters.</span></span>
+<span id="cb49-2"><a href="football-simulation.html#cb49-2" aria-hidden="true" tabindex="-1"></a><span class="co"># The first pair of parameters alwas correspond to the home team.</span></span>
+<span id="cb49-3"><a href="football-simulation.html#cb49-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-4"><a href="football-simulation.html#cb49-4" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> simulate_matches_(att₁<span class="op">,</span> def₁<span class="op">,</span> att₂<span class="op">,</span> def₂<span class="op">,</span> home<span class="op">,</span> n_matches<span class="op">,</span> home_team <span class="op">=</span> <span class="fl">1</span>)</span>
+<span id="cb49-5"><a href="football-simulation.html#cb49-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">if</span> home_team <span class="op">==</span> <span class="fl">1</span></span>
+<span id="cb49-6"><a href="football-simulation.html#cb49-6" aria-hidden="true" tabindex="-1"></a>        logθ₁ <span class="op">=</span> home <span class="op">+</span> att₁ <span class="op">+</span> def₂</span>
+<span id="cb49-7"><a href="football-simulation.html#cb49-7" aria-hidden="true" tabindex="-1"></a>        logθ₂ <span class="op">=</span> att₂ <span class="op">+</span> def₁</span>
+<span id="cb49-8"><a href="football-simulation.html#cb49-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-9"><a href="football-simulation.html#cb49-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">elseif</span> home_team <span class="op">==</span> <span class="fl">2</span></span>
+<span id="cb49-10"><a href="football-simulation.html#cb49-10" aria-hidden="true" tabindex="-1"></a>        logθ₁ <span class="op">=</span> att₁ <span class="op">+</span> def₂</span>
+<span id="cb49-11"><a href="football-simulation.html#cb49-11" aria-hidden="true" tabindex="-1"></a>        logθ₂ <span class="op">=</span> home <span class="op">+</span> att₂ <span class="op">+</span> def₁</span>
+<span id="cb49-12"><a href="football-simulation.html#cb49-12" aria-hidden="true" tabindex="-1"></a>    <span class="kw">else</span></span>
+<span id="cb49-13"><a href="football-simulation.html#cb49-13" aria-hidden="true" tabindex="-1"></a>        <span class="kw">return</span> <span class="dt">DomainError</span>(home_team<span class="op">,</span> <span class="st">&quot;Invalid home_team value&quot;</span>)</span>
+<span id="cb49-14"><a href="football-simulation.html#cb49-14" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
+<span id="cb49-15"><a href="football-simulation.html#cb49-15" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb49-16"><a href="football-simulation.html#cb49-16" aria-hidden="true" tabindex="-1"></a>    scores₁ <span class="op">=</span> rand(LogPoisson(logθ₁)<span class="op">,</span> n_matches)</span>
+<span id="cb49-17"><a href="football-simulation.html#cb49-17" aria-hidden="true" tabindex="-1"></a>    scores₂ <span class="op">=</span> rand(LogPoisson(logθ₂)<span class="op">,</span> n_matches)</span>
+<span id="cb49-18"><a href="football-simulation.html#cb49-18" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb49-19"><a href="football-simulation.html#cb49-19" aria-hidden="true" tabindex="-1"></a>    results <span class="op">=</span> [(s₁<span class="op">,</span> s₂) <span class="kw">for</span> (s₁<span class="op">,</span> s₂) <span class="kw">in</span> zip(scores₁<span class="op">,</span> scores₂)]</span>
+<span id="cb49-20"><a href="football-simulation.html#cb49-20" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb49-21"><a href="football-simulation.html#cb49-21" aria-hidden="true" tabindex="-1"></a>    <span class="kw">return</span> results</span>
+<span id="cb49-22"><a href="football-simulation.html#cb49-22" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<pre><code>## simulate_matches_ (generic function with 2 methods)</code></pre>
+<div class="sourceCode" id="cb51"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb51-1"><a href="football-simulation.html#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> simulate_matches(team1_att_post<span class="op">,</span> team1_def_post<span class="op">,</span> team2_att_post<span class="op">,</span> team2_def_post<span class="op">,</span> home_post<span class="op">,</span> n_matches)</span>
+<span id="cb51-2"><a href="football-simulation.html#cb51-2" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb51-3"><a href="football-simulation.html#cb51-3" aria-hidden="true" tabindex="-1"></a>    team1_as_home_results <span class="op">=</span> <span class="dt">Tuple</span>{<span class="dt">Int64</span><span class="op">,</span><span class="dt">Int64</span>}[]</span>
+<span id="cb51-4"><a href="football-simulation.html#cb51-4" aria-hidden="true" tabindex="-1"></a>    team2_as_home_results <span class="op">=</span> <span class="dt">Tuple</span>{<span class="dt">Int64</span><span class="op">,</span><span class="dt">Int64</span>}[]</span>
+<span id="cb51-5"><a href="football-simulation.html#cb51-5" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb51-6"><a href="football-simulation.html#cb51-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> (t1_att<span class="op">,</span> t1_def<span class="op">,</span> t2_att<span class="op">,</span> t2_def<span class="op">,</span> home) <span class="kw">in</span> zip(team1_att_post<span class="op">,</span> team1_def_post<span class="op">,</span> </span>
+<span id="cb51-7"><a href="football-simulation.html#cb51-7" aria-hidden="true" tabindex="-1"></a>                                                      team2_att_post<span class="op">,</span> team2_def_post<span class="op">,</span></span>
+<span id="cb51-8"><a href="football-simulation.html#cb51-8" aria-hidden="true" tabindex="-1"></a>                                                      home_post)</span>
+<span id="cb51-9"><a href="football-simulation.html#cb51-9" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb51-10"><a href="football-simulation.html#cb51-10" aria-hidden="true" tabindex="-1"></a>        team1_as_home_results <span class="op">=</span> vcat(team1_as_home_results<span class="op">,</span> </span>
+<span id="cb51-11"><a href="football-simulation.html#cb51-11" aria-hidden="true" tabindex="-1"></a>                                     simulate_matches_(t1_att<span class="op">,</span> t1_def<span class="op">,</span> t2_att<span class="op">,</span></span>
+<span id="cb51-12"><a href="football-simulation.html#cb51-12" aria-hidden="true" tabindex="-1"></a>                                                       t2_def<span class="op">,</span> home<span class="op">,</span> n_matches<span class="op">,</span> <span class="fl">1</span>))</span>
+<span id="cb51-13"><a href="football-simulation.html#cb51-13" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb51-14"><a href="football-simulation.html#cb51-14" aria-hidden="true" tabindex="-1"></a>        team2_as_home_results <span class="op">=</span> vcat(team2_as_home_results<span class="op">,</span></span>
+<span id="cb51-15"><a href="football-simulation.html#cb51-15" aria-hidden="true" tabindex="-1"></a>                                     simulate_matches_(t1_att<span class="op">,</span> t1_def<span class="op">,</span> t2_att<span class="op">,</span>                                                             t2_def<span class="op">,</span> home<span class="op">,</span> n_matches<span class="op">,</span> <span class="fl">2</span>))</span>
+<span id="cb51-16"><a href="football-simulation.html#cb51-16" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
+<span id="cb51-17"><a href="football-simulation.html#cb51-17" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb51-18"><a href="football-simulation.html#cb51-18" aria-hidden="true" tabindex="-1"></a>    max_t1_as_home <span class="op">=</span> maximum(map(x <span class="op">-&gt;</span> x[<span class="fl">1</span>]<span class="op">,</span> team1_as_home_results))</span>
+<span id="cb51-19"><a href="football-simulation.html#cb51-19" aria-hidden="true" tabindex="-1"></a>    max_t2_as_away <span class="op">=</span> maximum(map(x <span class="op">-&gt;</span> x[<span class="fl">2</span>]<span class="op">,</span> team1_as_home_results))</span>
+<span id="cb51-20"><a href="football-simulation.html#cb51-20" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb51-21"><a href="football-simulation.html#cb51-21" aria-hidden="true" tabindex="-1"></a>    max_t1_as_away <span class="op">=</span> maximum(map(x <span class="op">-&gt;</span> x[<span class="fl">1</span>]<span class="op">,</span> team2_as_home_results))</span>
+<span id="cb51-22"><a href="football-simulation.html#cb51-22" aria-hidden="true" tabindex="-1"></a>    max_t2_as_home <span class="op">=</span> maximum(map(x <span class="op">-&gt;</span> x[<span class="fl">2</span>]<span class="op">,</span> team2_as_home_results))</span>
+<span id="cb51-23"><a href="football-simulation.html#cb51-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb51-24"><a href="football-simulation.html#cb51-24" aria-hidden="true" tabindex="-1"></a>    matrix_t1_as_home <span class="op">=</span> zeros(<span class="dt">Float64</span><span class="op">,</span> (max_t1_as_home <span class="op">+</span> <span class="fl">1</span><span class="op">,</span> max_t2_as_away <span class="op">+</span> <span class="fl">1</span>))</span>
+<span id="cb51-25"><a href="football-simulation.html#cb51-25" aria-hidden="true" tabindex="-1"></a>    matrix_t2_as_home <span class="op">=</span> zeros(<span class="dt">Float64</span><span class="op">,</span> (max_t1_as_away <span class="op">+</span> <span class="fl">1</span><span class="op">,</span> max_t2_as_home <span class="op">+</span> <span class="fl">1</span>))</span>
+<span id="cb51-26"><a href="football-simulation.html#cb51-26" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb51-27"><a href="football-simulation.html#cb51-27" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> match <span class="kw">in</span> team1_as_home_results</span>
+<span id="cb51-28"><a href="football-simulation.html#cb51-28" aria-hidden="true" tabindex="-1"></a>        matrix_t1_as_home[match[<span class="fl">1</span>] <span class="op">+</span> <span class="fl">1</span><span class="op">,</span> match[<span class="fl">2</span>] <span class="op">+</span> <span class="fl">1</span>] <span class="op">+=</span> <span class="fl">1</span></span>
+<span id="cb51-29"><a href="football-simulation.html#cb51-29" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
+<span id="cb51-30"><a href="football-simulation.html#cb51-30" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb51-31"><a href="football-simulation.html#cb51-31" aria-hidden="true" tabindex="-1"></a>    normalize<span class="op">!</span>(matrix_t1_as_home<span class="op">,</span> <span class="fl">1</span>)</span>
+<span id="cb51-32"><a href="football-simulation.html#cb51-32" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb51-33"><a href="football-simulation.html#cb51-33" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> match <span class="kw">in</span> team2_as_home_results</span>
+<span id="cb51-34"><a href="football-simulation.html#cb51-34" aria-hidden="true" tabindex="-1"></a>        matrix_t2_as_home[match[<span class="fl">1</span>] <span class="op">+</span> <span class="fl">1</span><span class="op">,</span> match[<span class="fl">2</span>] <span class="op">+</span> <span class="fl">1</span>] <span class="op">+=</span> <span class="fl">1</span></span>
+<span id="cb51-35"><a href="football-simulation.html#cb51-35" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
+<span id="cb51-36"><a href="football-simulation.html#cb51-36" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb51-37"><a href="football-simulation.html#cb51-37" aria-hidden="true" tabindex="-1"></a>    normalize<span class="op">!</span>(matrix_t2_as_home<span class="op">,</span> <span class="fl">1</span>)</span>
+<span id="cb51-38"><a href="football-simulation.html#cb51-38" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb51-39"><a href="football-simulation.html#cb51-39" aria-hidden="true" tabindex="-1"></a>    <span class="kw">return</span> matrix_t1_as_home<span class="op">,</span> matrix_t2_as_home</span>
+<span id="cb51-40"><a href="football-simulation.html#cb51-40" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<pre><code>## simulate_matches (generic function with 1 method)</code></pre>
+<p>So what are those functions exactly doing?</p>
+<p>Well, the first one is the simplest. It just simulates matches with a specific set of attack, defense and location parameters. So we have the parameters that define the Poisson´s rate parameters “<span class="math inline">\(θ\)</span>” fixed (here we have to remember that every match is a sample from the two <span class="math inline">\(LogPoisson\)</span> distributions, each one modelating each teams score in a given match). And it simulates as many matches as the <span class="math inline">\(n_{matches}\)</span> parameter indicates in order to get a broad sampling of the two poisson distributions, that is, to have a good sampling of possible match results with those fixed parameters. That way we can obtain, given those parameters, which are the most likely results to occur. Lets take the parameter´s approximate mean (you can check them in the histograms of above) as an example to see what happen :</p>
+<div class="sourceCode" id="cb53"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb53-1"><a href="football-simulation.html#cb53-1" aria-hidden="true" tabindex="-1"></a>mean(mci_att_post)</span></code></pre></div>
+<pre><code>## 0.7137999426855425</code></pre>
+<div class="sourceCode" id="cb55"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb55-1"><a href="football-simulation.html#cb55-1" aria-hidden="true" tabindex="-1"></a>simulate_matches_(<span class="fl">0.75</span><span class="op">,</span> <span class="op">-</span><span class="fl">0.35</span><span class="op">,</span> <span class="fl">0.55</span><span class="op">,</span> <span class="op">-</span><span class="fl">0.2</span><span class="op">,</span> <span class="fl">0.33</span><span class="op">,</span> <span class="fl">1000</span><span class="op">,</span> <span class="fl">2</span>)</span></code></pre></div>
+<pre><code>## 1000-element Array{Tuple{Int64,Int64},1}:
+##  (0, 2)
+##  (4, 3)
+##  (1, 1)
+##  (1, 0)
+##  (1, 1)
+##  (2, 4)
+##  (4, 1)
+##  (0, 3)
+##  (0, 2)
+##  (3, 2)
+##  ⋮
+##  (2, 3)
+##  (4, 0)
+##  (1, 5)
+##  (1, 2)
+##  (2, 1)
+##  (0, 3)
+##  (2, 1)
+##  (1, 1)
+##  (0, 2)</code></pre>
+<p>As you can see, we just generated 1000 simulated matches with an specific set of fix parameters. The “2” is just indicating that the liverpool (second team) is local. But as good bayesians that we are, we don´t want to use only the parameters mean, we want to use the hole distribution. And that´s what the second function is doing: It takes each parameter distribution as input and generate 1000 simulations for each posterior distributions points. As we made 3000 iterations in the calculation of the posterior, the function is going to simulate 3,000,000 matches. Sounds good, isn´t it?</p>
+<p>Finally, It creates a matrix in which each of its positions is indicating a possible outcome and the value it takes will indicate the number of times over the 3,000,000 simulations in which that result came out. For example, the position (1,1) (top left of the matrix), is representing the matches whose results were 1 to 1. Also, the maximum length of the matrix is given by the maximum number of goals that have been scored in the simulation. Does it makes sense?</p>
+<p>The <span class="math inline">\(normalize!(matrix\_t1\_as\_home, 1)\)</span> line is only converting the absolute number of times a result came up, into a proportion. That is, in this case, is going to divide all positions by 3,000,000.</p>
+<p>So, lets see it in action!</p>
+<div class="sourceCode" id="cb57"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb57-1"><a href="football-simulation.html#cb57-1" aria-hidden="true" tabindex="-1"></a>mci_as_home_simulations<span class="op">,</span> </span>
+<span id="cb57-2"><a href="football-simulation.html#cb57-2" aria-hidden="true" tabindex="-1"></a>liv_as_home_simulations <span class="op">=</span> simulate_matches(mci_att_post<span class="op">,</span> mci_def_post<span class="op">,</span> </span>
+<span id="cb57-3"><a href="football-simulation.html#cb57-3" aria-hidden="true" tabindex="-1"></a>                                           liv_att_post<span class="op">,</span> liv_def_post<span class="op">,</span>                                                            post_home<span class="op">,</span> <span class="fl">1000</span>)</span></code></pre></div>
+<pre><code>## ([0.03750966666666667 0.03669033333333334 … 0.0 0.0; 0.074616 0.07623033333333334 … 0.0 0.0; … ; 3.3333333333333335e-7 0.0 … 0.0 0.0; 3.3333333333333335e-7 3.3333333333333335e-7 … 0.0 0.0], [0.045136 0.06135666666666667 … 0.0 0.0; 0.06540433333333334 0.09315833333333334 … 3.3333333333333335e-7 0.0; … ; 0.0 0.0 … 0.0 0.0; 0.0 0.0 … 0.0 0.0])</code></pre>
+<p>Looking those matrices could be not as enlightening as we wanted to. A good way to fix this is graphing them with a heatmap.</p>
+<div class="sourceCode" id="cb59"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb59-1"><a href="football-simulation.html#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> match_heatmaps(matrix_t1_as_home<span class="op">,</span> matrix_t2_as_home<span class="op">,</span></span>
+<span id="cb59-2"><a href="football-simulation.html#cb59-2" aria-hidden="true" tabindex="-1"></a>                        team1_name<span class="op">=</span><span class="st">&quot;Team 1&quot;</span><span class="op">,</span> team2_name<span class="op">=</span><span class="st">&quot;Team 2&quot;</span>)    </span>
+<span id="cb59-3"><a href="football-simulation.html#cb59-3" aria-hidden="true" tabindex="-1"></a>    gr()   </span>
+<span id="cb59-4"><a href="football-simulation.html#cb59-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb59-5"><a href="football-simulation.html#cb59-5" aria-hidden="true" tabindex="-1"></a>    x_t1_home <span class="op">=</span> string.(<span class="fl">0</span><span class="op">:</span><span class="fl">10</span>)</span>
+<span id="cb59-6"><a href="football-simulation.html#cb59-6" aria-hidden="true" tabindex="-1"></a>    y_t1_home <span class="op">=</span> string.(<span class="fl">0</span><span class="op">:</span><span class="fl">10</span>)</span>
+<span id="cb59-7"><a href="football-simulation.html#cb59-7" aria-hidden="true" tabindex="-1"></a>    heat_t1_home <span class="op">=</span> heatmap(x_t1_home<span class="op">,</span></span>
+<span id="cb59-8"><a href="football-simulation.html#cb59-8" aria-hidden="true" tabindex="-1"></a>                           y_t1_home<span class="op">,</span></span>
+<span id="cb59-9"><a href="football-simulation.html#cb59-9" aria-hidden="true" tabindex="-1"></a>                           matrix_t1_as_home[<span class="fl">1</span><span class="op">:</span><span class="fl">11</span><span class="op">,</span> <span class="fl">1</span><span class="op">:</span><span class="fl">11</span>]<span class="op">,</span></span>
+<span id="cb59-10"><a href="football-simulation.html#cb59-10" aria-hidden="true" tabindex="-1"></a>                           xlabel<span class="op">=</span><span class="st">&quot;$team2_name score&quot;</span><span class="op">,</span> ylabel<span class="op">=</span><span class="st">&quot;$team1_name score&quot;</span><span class="op">,</span></span>
+<span id="cb59-11"><a href="football-simulation.html#cb59-11" aria-hidden="true" tabindex="-1"></a>                           title<span class="op">=</span><span class="st">&quot;$team1_name as home&quot;</span>)</span>
+<span id="cb59-12"><a href="football-simulation.html#cb59-12" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb59-13"><a href="football-simulation.html#cb59-13" aria-hidden="true" tabindex="-1"></a>    x_t2_home <span class="op">=</span> string.(<span class="fl">0</span><span class="op">:</span><span class="fl">10</span>)</span>
+<span id="cb59-14"><a href="football-simulation.html#cb59-14" aria-hidden="true" tabindex="-1"></a>    y_t2_home <span class="op">=</span> string.(<span class="fl">0</span><span class="op">:</span><span class="fl">10</span>)</span>
+<span id="cb59-15"><a href="football-simulation.html#cb59-15" aria-hidden="true" tabindex="-1"></a>    heat_t2_home <span class="op">=</span> heatmap(x_t2_home<span class="op">,</span></span>
+<span id="cb59-16"><a href="football-simulation.html#cb59-16" aria-hidden="true" tabindex="-1"></a>                           y_t2_home<span class="op">,</span></span>
+<span id="cb59-17"><a href="football-simulation.html#cb59-17" aria-hidden="true" tabindex="-1"></a>                           matrix_t2_as_home[<span class="fl">1</span><span class="op">:</span><span class="fl">11</span><span class="op">,</span> <span class="fl">1</span><span class="op">:</span><span class="fl">11</span>]<span class="op">,</span></span>
+<span id="cb59-18"><a href="football-simulation.html#cb59-18" aria-hidden="true" tabindex="-1"></a>                           xlabel<span class="op">=</span><span class="st">&quot;$team2_name score&quot;</span><span class="op">,</span> ylabel<span class="op">=</span><span class="st">&quot;$team1_name score&quot;</span><span class="op">,</span></span>
+<span id="cb59-19"><a href="football-simulation.html#cb59-19" aria-hidden="true" tabindex="-1"></a>                           title<span class="op">=</span><span class="st">&quot;$team2_name as home&quot;</span>)</span>
+<span id="cb59-20"><a href="football-simulation.html#cb59-20" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb59-21"><a href="football-simulation.html#cb59-21" aria-hidden="true" tabindex="-1"></a>    plot(heat_t1_home<span class="op">,</span> heat_t2_home<span class="op">,</span> layout<span class="op">=</span>(<span class="fl">1</span><span class="op">,</span><span class="fl">2</span>)<span class="op">,</span> size<span class="op">=</span>(<span class="fl">900</span><span class="op">,</span> <span class="fl">300</span>))</span>
+<span id="cb59-22"><a href="football-simulation.html#cb59-22" aria-hidden="true" tabindex="-1"></a>    current()   </span>
+<span id="cb59-23"><a href="football-simulation.html#cb59-23" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<pre><code>## match_heatmaps (generic function with 3 methods)</code></pre>
+<div class="sourceCode" id="cb61"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb61-1"><a href="football-simulation.html#cb61-1" aria-hidden="true" tabindex="-1"></a>match_heatmaps(mci_as_home_simulations<span class="op">,</span> liv_as_home_simulations<span class="op">,</span> <span class="st">&quot;Manchester City&quot;</span><span class="op">,</span> <span class="st">&quot;Liverpool&quot;</span>)</span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_7_plot_9-J1.png" /><!-- --></p>
+<p>And Voilà! We have our beautiful heatmaps indicating which of the possible outcomes are the most probable! As we expected chances favour the Manchester City. To make this analysis even more quantitative, we can add up the probabilities of all outcomes that mean a win for one of the teams to get the overall probability of Manchester City winning, Liverpool winning or a draw occurring:</p>
+<div class="sourceCode" id="cb62"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb62-1"><a href="football-simulation.html#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> win_and_lose_probability(simulation)</span>
+<span id="cb62-2"><a href="football-simulation.html#cb62-2" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb62-3"><a href="football-simulation.html#cb62-3" aria-hidden="true" tabindex="-1"></a>    team1_winning_prob <span class="op">=</span> <span class="fl">0</span></span>
+<span id="cb62-4"><a href="football-simulation.html#cb62-4" aria-hidden="true" tabindex="-1"></a>    team2_winning_prob <span class="op">=</span> <span class="fl">0</span></span>
+<span id="cb62-5"><a href="football-simulation.html#cb62-5" aria-hidden="true" tabindex="-1"></a>    draw_prob <span class="op">=</span> <span class="fl">0</span></span>
+<span id="cb62-6"><a href="football-simulation.html#cb62-6" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb62-7"><a href="football-simulation.html#cb62-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>size(simulation<span class="op">,</span> <span class="fl">1</span>)</span>
+<span id="cb62-8"><a href="football-simulation.html#cb62-8" aria-hidden="true" tabindex="-1"></a>        <span class="kw">for</span> j <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>size(simulation<span class="op">,</span> <span class="fl">2</span>)</span>
+<span id="cb62-9"><a href="football-simulation.html#cb62-9" aria-hidden="true" tabindex="-1"></a>            <span class="kw">if</span> i <span class="op">&gt;</span> j</span>
+<span id="cb62-10"><a href="football-simulation.html#cb62-10" aria-hidden="true" tabindex="-1"></a>                team1_winning_prob <span class="op">+=</span> simulation[i<span class="op">,</span>j]</span>
+<span id="cb62-11"><a href="football-simulation.html#cb62-11" aria-hidden="true" tabindex="-1"></a>            <span class="kw">elseif</span> i <span class="op">&lt;</span> j</span>
+<span id="cb62-12"><a href="football-simulation.html#cb62-12" aria-hidden="true" tabindex="-1"></a>                team2_winning_prob <span class="op">+=</span> simulation[i<span class="op">,</span>j]</span>
+<span id="cb62-13"><a href="football-simulation.html#cb62-13" aria-hidden="true" tabindex="-1"></a>            <span class="kw">else</span></span>
+<span id="cb62-14"><a href="football-simulation.html#cb62-14" aria-hidden="true" tabindex="-1"></a>                draw_prob <span class="op">+=</span> simulation[i<span class="op">,</span>j]</span>
+<span id="cb62-15"><a href="football-simulation.html#cb62-15" aria-hidden="true" tabindex="-1"></a>            <span class="kw">end</span></span>
+<span id="cb62-16"><a href="football-simulation.html#cb62-16" aria-hidden="true" tabindex="-1"></a>        <span class="kw">end</span></span>
+<span id="cb62-17"><a href="football-simulation.html#cb62-17" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
+<span id="cb62-18"><a href="football-simulation.html#cb62-18" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb62-19"><a href="football-simulation.html#cb62-19" aria-hidden="true" tabindex="-1"></a>    <span class="kw">return</span> team1_winning_prob<span class="op">,</span> team2_winning_prob<span class="op">,</span> draw_prob</span>
+<span id="cb62-20"><a href="football-simulation.html#cb62-20" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<pre><code>## win_and_lose_probability (generic function with 1 method)</code></pre>
+<div class="sourceCode" id="cb64"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb64-1"><a href="football-simulation.html#cb64-1" aria-hidden="true" tabindex="-1"></a>win_and_lose_probability(liv_as_home_simulations)</span></code></pre></div>
+<pre><code>## (0.4049976666666663, 0.3673773333333333, 0.22762500000000002)</code></pre>
+<div class="sourceCode" id="cb66"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb66-1"><a href="football-simulation.html#cb66-1" aria-hidden="true" tabindex="-1"></a>win_and_lose_probability(mci_as_home_simulations)</span></code></pre></div>
+<pre><code>## (0.6434680000000004, 0.1718793333333333, 0.18465266666666666)</code></pre>
+<p>So the probability of winning for the Manchester City were 0.41 (or 41%) in the first match of the quarters final, with Liverpool as home, 0.37 for the Liverpool and 0.22 probability of a draw. In the second, with Manchester City as home, the chances were 0.65, 0.17 and 0.18 respectively.</p>
+<p>We also can ask for the probability of a specific score:</p>
+<div class="sourceCode" id="cb68"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb68-1"><a href="football-simulation.html#cb68-1" aria-hidden="true" tabindex="-1"></a>get_score_probability(score1<span class="op">::</span><span class="dt">Int64</span><span class="op">,</span> score2<span class="op">::</span><span class="dt">Int64</span><span class="op">,</span> simulation) <span class="op">=</span> simulation[score1<span class="op">+</span><span class="fl">1</span><span class="op">,</span> score2<span class="op">+</span><span class="fl">1</span>]</span></code></pre></div>
+<pre><code>## get_score_probability (generic function with 1 method)</code></pre>
+<div class="sourceCode" id="cb70"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb70-1"><a href="football-simulation.html#cb70-1" aria-hidden="true" tabindex="-1"></a>get_score_probability(<span class="fl">1</span><span class="op">,</span> <span class="fl">1</span><span class="op">,</span> liv_as_home_simulations)</span></code></pre></div>
+<pre><code>## 0.09315833333333334</code></pre>
+<div class="sourceCode" id="cb72"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb72-1"><a href="football-simulation.html#cb72-1" aria-hidden="true" tabindex="-1"></a>get_score_probability(<span class="fl">2</span><span class="op">,</span> <span class="fl">1</span><span class="op">,</span> mci_as_home_simulations)</span></code></pre></div>
+<pre><code>## 0.08423366666666667</code></pre>
+<p>So the most possible outcomes accumulates around 8-9% of probability</p>
+<p>What really happened wasn’t expected. The Liverpool won 3-0 being home in the first round of the quarters final. And then Liverpool won 2-1 in Manchester´s estadium! It was really unexpected. The Manchester was the favorite by far, the probability was on his side, and still could not beat Liverpool.</p>
+<div class="sourceCode" id="cb74"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb74-1"><a href="football-simulation.html#cb74-1" aria-hidden="true" tabindex="-1"></a>get_score_probability(<span class="fl">0</span><span class="op">,</span> <span class="fl">3</span><span class="op">,</span> liv_as_home_simulations)</span></code></pre></div>
+<pre><code>## 0.023740666666666667</code></pre>
+<div class="sourceCode" id="cb76"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb76-1"><a href="football-simulation.html#cb76-1" aria-hidden="true" tabindex="-1"></a>get_score_probability(<span class="fl">1</span><span class="op">,</span> <span class="fl">2</span><span class="op">,</span> mci_as_home_simulations)</span></code></pre></div>
+<pre><code>## 0.041998</code></pre>
+<p>Still, the model assigns some probability to those results. Here is the information, then, you have to decide what to do with it.</p>
+<p>As data scientist that we are, our labor is to came up with possible solutions to a problem, try it, have fun, and learn from it in order to be able to came up with better solutions. It is a very good practice to constructively criticize the models that we develop. So, can you think of improvements for our model? Well, I help you with some ideas:</p>
+<p>The logic of a cup tournament is different than the league. In the first one, if you lose, you have to return to your house and the other advances to the next round. And in the league, you have to be consistent to the hole year. Maybe a draw is good for you, as your goal is to make the most difference in points. So try to extrapolate the model to other tournament maybe questionable.</p>
+<p>Other thing is that we suppose that the two matches were independent, when the second one is conditioned to the first! As the Liverpool won the first match, the Manchester had to played to the second game with the aim of making at least 3 goals while Liverpool were only focus in the defence.</p>
+<p>Anyway, we just learned that modeling is not a easy task. But the way to get better is proposing them, testing them and learning from them. In other words, the only way to learn is doing them (as any other skill in life). So, relax, model and have fun :)</p>
+</div>
+<div id="summary-2" class="section level2" number="7.3">
+<h2><span class="header-section-number">7.3</span> Summary</h2>
+<p>In this chapter we have learned about bayesian hierarchical models and how to use simulations to count different possible outcomes. First, we talked about latent variables and how important they are for gaining more abstraction in our models. After explaning the pro’s of the hierarchical models, we proceed on building a model to get a deeper understanding of the Premier League. After inferring its parameters, we have used visualizations to understand the influence of attack and defense power in the league. Finally, we ran a simulation in order to calculate the probabilities of each possible outcome of a match between Liverpool and Manchester City.</p>
+</div>
+<div id="bibliography" class="section level2" number="7.4">
+<h2><span class="header-section-number">7.4</span> Bibliography</h2>
+<ul>
+<li><a href="https://discovery.ucl.ac.uk/id/eprint/16040/1/16040.pdf">Paper of Gianluca Baio and Marta A. Blangiardo</a></li>
+<li><a href="http://danielweitzenfeld.github.io/passtheroc/blog/2014/10/28/bayes-premier-league/">Post of Daniel Weitzenfeld</a></li>
+</ul>
+</div>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="escaping-from-mars.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="basketball-shots.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["data_science_in_julia_for_hackers.pdf", "data_science_in_julia_for_hackers.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
