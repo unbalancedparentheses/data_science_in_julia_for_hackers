@@ -33,7 +33,7 @@ To use Bookdown you first need to install:
     </ul>
     ```
 
-    Now you can open the .html file and see that the section dividers are now displayed in the left-side index of the book.
+    Finally, you can open the .html file and see that the section dividers are now displayed in the left-side index of the book.
 
 
 
