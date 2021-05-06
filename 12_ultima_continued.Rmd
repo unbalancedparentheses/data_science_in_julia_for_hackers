@@ -105,8 +105,11 @@ $\frac{dPred}{dt} = Pred*(b_{pred}*Prey - m_{pred}) = Pred*(0.8*Prey - 1.8)$
 So after a delicate tuning, he determines that the best parameters for his virtual ecosystem are:
 
 $b_{prey} = 1.3$
+
 $m_{prey} = 0.9$
+
 $b_{pred} = 0.8$
+
 $m_{pred} = 1.8$
 
 He smiles and happily goes to sleep, thinking that tomorrow is the big day.
