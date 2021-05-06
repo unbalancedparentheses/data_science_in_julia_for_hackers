@@ -652,7 +652,7 @@ Anyway, we just learned that modeling is not a easy task. But the way to get bet
 In this chapter we have learned about bayesian hierarchical models and how to use simulations to count different possible outcomes. First, we talked about latent variables and how important they are for gaining more abstraction in our models. After explaning the pro's of the hierarchical models, we proceed on building a model to get a deeper understanding of the Premier League. After inferring its parameters, we have used visualizations to understand the influence of attack and defense power in the league. Finally, we ran a simulation in order to calculate the probabilities of each possible outcome of a match between Liverpool and Manchester City.
 
 
-## Bibliography 
+## References 
 
 - [Paper of Gianluca Baio and Marta A. Blangiardo](https://discovery.ucl.ac.uk/id/eprint/16040/1/16040.pdf)
 - [Post of Daniel Weitzenfeld](http://danielweitzenfeld.github.io/passtheroc/blog/2014/10/28/bayes-premier-league/)

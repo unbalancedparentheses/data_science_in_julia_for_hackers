@@ -306,6 +306,7 @@ end
 *Parameters c vs log a for sampled values from the posterior distributions.*
 
 As you can see, the point cloud is well dispersed so multicollinearity is not going to be a problem for us.
+
 ## Maximizing profit
 
 Now that we have estimated our posterior distributions, we will try to answer the following question: what is the price that will give us the maximum profit? 
