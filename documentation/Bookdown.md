@@ -15,7 +15,7 @@ To use Bookdown you first need to install:
 
 3. Since Data science in Julia for hackers has chapters that involve a lot of computation we render each chapter separately.
 
-    Run the following method in the RStudio console:
+    To render a chapter, we run the following method in the RStudio console:
 
     `bookdown::preview_chapter(“{Rmd_file}”)`
     
@@ -23,7 +23,7 @@ To use Bookdown you first need to install:
 
     `Output created: docs/{title}.html`
 
-4. If you open the html file, you will notice that in the left-side index the sections dividers are missing. So you will need to add them manually. 
+4. If you open the .html file, you will notice that in the left-side index the sections dividers are missing. So you will need to add them manually: 
 
     Open the .html file, copy the summary code from another chapter and replace it in the one you just created: 
 
