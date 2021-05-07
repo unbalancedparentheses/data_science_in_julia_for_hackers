@@ -28,6 +28,7 @@ begin
 	#img_small = imresize(im_0, ratio=1/3)
 end
 ```
+
 To simplify, we approximate the escape velocity as:
 
 $v_{escape}=\sqrt{2*g_{planet}*r_{planet}}$
@@ -43,17 +44,20 @@ We are going to calculate the constant $g_{mars}$ just throwing stones. We are g
  Gravity pulls us down to Earth, or in our case, to Mars. This means that we have an acceletation, since there is a force. Recalling the newton equation:
 
 $\overrightarrow{F} = m * \overrightarrow{a}$
+
  where $m$ is the mass of the object, $\overrightarrow{F}$ is the force(it's what make us fall) and $\overrightarrow{a}$ is the acceleration, in our case is what we call gravity $\overrightarrow{g}$. The arrow $\overrightarrow{}$ over the letter means that the quantity have a direction in space, in our case, gravity is pointing to the center of the Earth, or Mars.
 
 *How can we derive the motion of the stones with that equation?*
 
 In the figure below we show a sketch of the problem: We have the 2 axis, $x$ and $y$, the $x$ normally is parallel to the ground and the $y$ axis is perpendicular, pointing to the sky. We also draw the initial velocity $v_0$ of the proyectile, and the angle $\theta$ with respect to the ground. Also it's important to notice that the gravity points in the opposite direction of the $y$ axis.
+
 ```{julia chap_6_plot_2} 
 begin 
 	im_1 = load("./06_gravity/images/trajectory.png")
 	plot(im_1)
 end
 ```
+
  *But what are the trayectory of the proyectile? and how the coordinates $x$ and $y$ evolve with time?*
 
 If we remember from school, the equations of $x$ and $y$ over time is: 
@@ -105,13 +109,17 @@ begin
 	plot(im)
 end
 ```
+
 Suppose we did the experiment and we have measured then the 5 points, Δx and Δt, shown below:
+
 ```{julia} 
 Δx_measured = [25.94, 38.84, 52.81, 45.54, 17.24]
 ```
+
 ```{julia} 
 t_measured = [3.91, 4.57, 5.43, 4.85, 3.15]
 ```
+
 *Now, how we estimate the constant g from those points?*
 
 Using the equations of the trajectory, when the stone hits the ground, y(t) = 0, since we take the start of the $y$ coordinate in the ground (negleting the initial height with respect to the maximum height), so finding the other then the initial point that fulfill this equation, we find that:
@@ -151,12 +159,14 @@ begin
 	plot(im_4)
 end
 ```
- So, our linear model will be:
+
+So, our linear model will be:
 
 $g \sim Distribution\_to\_be\_proposed()$
-$\mu[i] = g*\frac{t_{f}^2[i]}{2}$
-$\Delta x[i]= Normal(\mu[i],\sigma^2)$
 
+$\mu[i] = g*\frac{t_{f}^2[i]}{2}$
+
+$\Delta x[i]= Normal(\mu[i],\sigma^2)$
 
 Where $g$ has a distribution we will propose next. The first distribution we are going to propose is a uniform distribution for g, between the values of 0 and 10
 
@@ -168,6 +178,7 @@ xlabel!("g_mars")
 ylabel!("Probability")
 end
 ```
+
 Now we define the model in Turing and sample from the posterior distribution.
 
 ```{julia,results = FALSE} 
@@ -221,7 +232,7 @@ ylabel!("Probability")
 end
 ```
 
- We define then the model with a gaussian distribution as a prior for $g$:
+We define then the model with a gaussian distribution as a prior for $g$:
  
 ```{julia,results = FALSE} 
 begin
@@ -254,6 +265,7 @@ begin
 
 end
 ```
+
 We see that the plausible values for the gravity have a clear center in 3.7 and now the distribution is narrower, that's good, but we can do better.
 
 If we observe the prior distribution proposed of $g$, we see that some values are negative, which has no sense because if that would the case when you trow the stone, it would go up and up, escaping from the planet. 
@@ -381,6 +393,7 @@ Now that we have calculated the gravity, we are going to calculate the escape ve
 we know from the begining that:
 
 $R_{Earth}\approxeq 2R_{Mars}$
+
 $g_{Earth}\approxeq 9.8$
 
 and we have also computed the distribution of the plausible values of $g_{Mars}$.
