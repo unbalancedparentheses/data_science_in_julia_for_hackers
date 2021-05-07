@@ -482,6 +482,7 @@ end
 ```julia 
 Ψ.equations[1]
 ```
+
 ```{julia , echo=FALSE,}
 "p₁ * u₁"
 ```
@@ -515,6 +516,7 @@ Lets ask for the parameters then:
 ```julia 
 parameters(Ψ)
 ```
+
 ```{julia , echo=FALSE,}
 "-0.36237425,  -0.40059045"
 ```
@@ -537,6 +539,7 @@ end
 ```julia 
 parameters(Ψf)
 ```
+
 ```{julia , echo=FALSE,}
 "-0.39629772, -0.40179992"
 ```
