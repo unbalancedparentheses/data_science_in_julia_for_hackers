@@ -21,10 +21,10 @@ What on Mars is the escape velocity?
 
 We are going to use the same experiment that Newton thought when thinking about escaping from the gravity of Earth. Gravity pulls us down, so if we shoot a cannonball, as in the sketch shown below, what will happen? For some velocities, the cannonball will return to Earth, but there's a velocity at which it scapes since the gravitational pull is not enough to bring it back to the surface. That velocity is called escape velocity.
 
-```{julia chap_6_plot_1} 
+```{julia chap_6_plot_1, echo=FALSE} 
 begin 
 	im_0 = load("./06_gravity/images/cannonball_.png")
-	plot(im_0)
+	plot(im_0,axis=nothing,border=:none)
 	#img_small = imresize(im_0, ratio=1/3)
 end
 ```
@@ -51,10 +51,10 @@ $\overrightarrow{F} = m * \overrightarrow{a}$
 
 In the figure below we show a sketch of the problem: We have the 2 axis, $x$ and $y$, the $x$ normally is parallel to the ground and the $y$ axis is perpendicular, pointing to the sky. We also draw the initial velocity $v_0$ of the proyectile, and the angle $\theta$ with respect to the ground. Also it's important to notice that the gravity points in the opposite direction of the $y$ axis.
 
-```{julia chap_6_plot_2} 
+```{julia chap_6_plot_2, echo=FALSE} 
 begin 
 	im_1 = load("./06_gravity/images/trajectory.png")
-	plot(im_1)
+	plot(im_1, axis=nothing,border=:none)
 end
 ```
 
@@ -77,10 +77,10 @@ We can imagine what happens if we trow a stone to the sky: the stone starts to g
 
 Since the begining, the velocity starts decreasing until it has the value of 0 at the highest point, where the stone stops for a moment, then it changes its direction and start to increase again, pointing towards the ground. Ploting the evolution of the height of the stone, we obtain the plot shown below.  We see that, at the begining the stone starts to go up fast and then it slows down. We see that for each value of $y$ there are 2 values of $t$ that satisfies the equation, thats because the stone pass twice for each point, except for the highest value of $y$.
 
-```{julia chap_6_plot_3} 
+```{julia chap_6_plot_3, echo=FALSE} 
 begin 
 	im_3 = load("./06_gravity/images/img90_.png")
-	plot(im_3)
+	plot(im_3,axis=nothing,border=:none)
 end
 ```
 
@@ -103,10 +103,10 @@ The experiment set up will go like this:
 - The other person will be far, watching from some distance, measuring the time since the other throw the stone and it hits the ground. The other measurement we will need is the distance Δx the stone travelled.
 - Also, for the first iteration of the experiment, suppose we only keep the measurements with and initial angle θ~45° (we will loosen this constrain in a bit). 
 
-```{julia chap_6_plot_4} 
+```{julia chap_6_plot_4, echo=FALSE} 
 begin 
 	im = load("./06_gravity/images/sketch_2.png")
-	plot(im)
+	plot(im, axis=nothing,border=:none)
 end
 ```
 
@@ -153,10 +153,10 @@ $y \sim Normal(\mu,\sigma^2)$
 
 So, what this says is that each point of the regresion is drawn from a gaussian distribution with its center correnponding with a point in the line, as shown in the plot below.
 
-```{julia chap_6_plot_5} 
+```{julia chap_6_plot_5, echo=FALSE} 
 begin 
 	im_4 = load("./06_gravity/images/line_.png")
-	plot(im_4)
+	plot(im_4, axis=nothing,border=:none)
 end
 ```
 
@@ -404,7 +404,7 @@ $\frac{v_{Mars}}{v_{Earth}} =\sqrt{\frac{g_{Mars}*R_{Mars}}{g_{Earth}*R_{Earth}}
 
 so,
 
-$\frac{v_{Mars}}{11} =\sqrt{\frac{g_{Mars}*2*\cancel{R_{Mars}}}{9.8*\cancel{R_{Mars}}}} \qquad \left[\frac{km}{s} \right]$
+$\frac{v_{Mars}}{11} =\sqrt{\frac{g_{Mars}*2*R_{Mars}}{9.8*R_{Mars}}} \qquad \left[\frac{km}{s} \right]$
 
 $v_{Mars} =11 * \sqrt{\frac{g_{Mars}}{9.8*2}} \qquad \left[\frac{km}{s} \right]$
 

@@ -49,9 +49,9 @@ But how do we interpret the data?
 
 Below we show a sketch of a basketball court, its dimensions and how to interpret the data in the table.
 
-```{julia chap_8_plot_1}
+```{julia chap_8_plot_1, echo=FALSE}
 begin
-	plot(load("./08_basketball_shots/images/basket_court.png"))
+	plot(load("./08_basketball_shots/images/basket_court.png") ,axis=nothing,border=:none)
 end
 ```
 
