@@ -28,6 +28,7 @@ The origin of this term can be tracked to the 1970s, where the British surreal c
 ```{julia chap_4_plot_1, echo=FALSE}
 plot(imresize(load("./04_naive_bayes/imgs/spam.jpg"), (300, 400)), axis=nothing)
 ```
+
 Although the exact moment where this was first translated to different types of internet messages such as emails or chat messages can't be stated clearly, it is a well known fact that users in each of these messaging instances chose the word 'spam' as a reference to Monty Python's sketch, where spam was itself something unwanted, popping all over the menu and annoyingly trying to drown out the conversation.
 
 ```{julia chap_4_plot_2 , echo=FALSE}
@@ -253,6 +254,7 @@ As you can see below, the model (at least under this simple metric) is performin
 ```{julia}
 spam_filter_accuracy(predictions, y_test)
 ```
+
 But we have to take into account one more thing. 
 Our model classifies mails into spam or ham and the amount of ham mails is considerably higher than the spam ones. 
 Let's see the percentages
@@ -311,6 +313,7 @@ So now we can calculate the accuracy of the model segmented by category.
 ham_accuracy = confusion_matrix[1,"Ham_mail"]/(confusion_matrix[1,"Ham_mail"] + confusion_matrix[2,"Ham_mail"])
 
 ```
+
 ```{julia}
 spam_accuracy = confusion_matrix[2,"Spam_mail"]/(confusion_matrix[1,"Spam_mail"] + confusion_matrix[2,"Spam_mail"])
 ```

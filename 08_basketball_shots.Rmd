@@ -107,7 +107,7 @@ We see that more shot are made as we get near the hoop, as expected.
 
 It is important to notice that we are not showing the probability of scoring, we are just showing the distribution of shot scored, not how likely is it to score.
 
-### Modeling the probability of scoring
+## Modeling the probability of scoring
 
 The first model we are going to propose is a Bernoulli model.
 

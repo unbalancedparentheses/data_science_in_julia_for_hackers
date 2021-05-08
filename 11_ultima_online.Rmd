@@ -1,6 +1,5 @@
 # Ultima online
 
-
 ```{julia chapter_11_libraries, cache = TRUE , results = FALSE, echo=FALSE}
 cd("./11_ultima_online/") 
 import Pkg

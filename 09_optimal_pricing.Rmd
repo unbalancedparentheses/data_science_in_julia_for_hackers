@@ -213,7 +213,7 @@ But why do we subtract the mean for the price values?  It´s a good practice to 
 
 In our problem, we said we have already recorded some points of the curve for our product. And to do it we simply run the pilot test, fixing a price and counting the amount of product we sold. We can infer employing this data the “demand curve”, then we can propose a profit function for the new product and finally find the price that maximizes our profit. In the figure 2 we plot the points recorded in the pilot test. At first sight they seem to follow the expected relationship but it is not a perfect curve, right? They have some kind of "noise". Well, after all we could say that the reality is noisy.
 
-```{julia}
+```{julia chap_9_plot_6}
 begin
 	#Our points from the pilot test
 	Price = [1500, 2500, 4000, 5000] 
@@ -236,7 +236,7 @@ begin
 end;
 ```
 
-```{julia chap_9_plot_6}
+```{julia chap_9_plot_7}
 begin
 	post_loga = collect(get(posterior, :loga))
 	post_c = collect(get(posterior, :c))
@@ -284,7 +284,7 @@ end
 
 Here we are creating an array of as many rows as price values we want to observe and with as many columns as samples we have of each of our log and c parameters, that is, as many columns as models we have at our disposal. Let´s plot them all and se what happen:
 
-```{julia chap_9_plot_7}
+```{julia chap_9_plot_8}
 begin
 	plot(p,q[:,1], xlim=(1000,6000))
 	for i in collect(1:length(post_c[1]))
@@ -303,7 +303,7 @@ As a last check (even if we have already taken preventive measures), we want to 
 
 To evaluate multicollinearity between the two parameters of our model, we plot the sampled values, one against the other. In the figure 4, we don't see a pattern, they seem to be decorrelated, therefore multicollinearity is not present in our model, so we are good to go and we can continue with the problem.
 
-```{julia}
+```{julia chap_9_plot_9}
 begin
 scatter(post_loga, post_c, legend=false)
 xlabel!("log a")
@@ -363,7 +363,7 @@ unfav = mxval[1] - std(profit[mxindx[1][1], : ])
 fav = mxval[1] + std(profit[mxindx[1][1], : ])
 ```
 
-```{julia chap_9_plot_8}
+```{julia chap_9_plot_10}
 begin
 s = latexstring("\\mu_{Profit}")
 s2 = latexstring("\\mu_{Profit} \\pm \\sigma_{Profit}")
@@ -398,7 +398,7 @@ In order to see this, it would be interesting to graph the standard deviation of
 std_p = [std(profit[i, : ]) for i in collect(1:length(p))];
 ```
 
-```{julia chap_9_plot_10}
+```{julia chap_9_plot_11}
 plot(p,std_p, legend=false, xlabel = "Price", ylabel= "Std deviation of profit", lw=2)
 ```
 
@@ -433,7 +433,7 @@ unfav_4000 = mean(profit_4000) - std(profit_4000)
 mean(profit_4000) + std(profit_4000)
 ```
 
-```{julia chap_9_plot_11}
+```{julia chap_9_plot_12}
 begin	
 plot(p,mean(profit, dims=2) + std(profit, dims=2),  color = "orange", lw=2, label =s2)
 plot!(p,mean(profit, dims=2), color = "red", lw=4, label="")
