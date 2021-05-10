@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 12 Ultima continued | Data Science in Julia for Hackers</title>
+  <meta name="description" content="Chapter 12 Ultima continued | Data Science in Julia for Hackers" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 12 Ultima continued | Data Science in Julia for Hackers" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Chapter 12 Ultima continued | Data Science in Julia for Hackers" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 12 Ultima continued | Data Science in Julia for Hackers" />
+  
+  <meta name="twitter:description" content="Chapter 12 Ultima continued | Data Science in Julia for Hackers" />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="ultima-online.html"/>
+<link rel="next" href="time-series.html"/>
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+  <li><a href="./">Data Science in Julia for Hackers</a></li>
+
+  <li class="divider"></li>
+  <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a>
+  <ul>
+  <li class="chapter" data-level="" data-path="index.html"><a href="index.html#prologue"><i class="fa fa-check"></i>Prologue</a></li>
+  </ul></li>
+  <li class="part"><span><b>I Data Science and Julia</b></span></li>
+  <li class="chapter" data-level="1" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html"><i class="fa fa-check"></i><b>1</b> Science technology and epistemology</a>
+  <ul>
+  <li class="chapter" data-level="1.1" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#the-difference-between-science-and-technology"><i class="fa fa-check"></i><b>1.1</b> The difference between Science and Technology</a></li>
+  <li class="chapter" data-level="1.2" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#what-is-technology"><i class="fa fa-check"></i><b>1.2</b> What is technology?</a></li>
+  <li class="chapter" data-level="1.3" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#references"><i class="fa fa-check"></i><b>1.3</b> References</a></li>
+  </ul></li>
+  <li class="chapter" data-level="2" data-path="meeting-julia.html"><a href="meeting-julia.html"><i class="fa fa-check"></i><b>2</b> Meeting Julia</a>
+  <ul>
+  <li class="chapter" data-level="2.1" data-path="meeting-julia.html"><a href="meeting-julia.html#why-julia"><i class="fa fa-check"></i><b>2.1</b> Why Julia</a></li>
+  <li class="chapter" data-level="2.2" data-path="meeting-julia.html"><a href="meeting-julia.html#julia-presentation"><i class="fa fa-check"></i><b>2.2</b> Julia presentation</a></li>
+  <li class="chapter" data-level="2.3" data-path="meeting-julia.html"><a href="meeting-julia.html#installation"><i class="fa fa-check"></i><b>2.3</b> Installation</a></li>
+  <li class="chapter" data-level="2.4" data-path="meeting-julia.html"><a href="meeting-julia.html#first-steps-into-the-julia-world"><i class="fa fa-check"></i><b>2.4</b> First steps into the Julia world</a></li>
+  <li class="chapter" data-level="2.5" data-path="meeting-julia.html"><a href="meeting-julia.html#julias-ecosystem-basic-plotting-and-manipulation-of-dataframes"><i class="fa fa-check"></i><b>2.5</b> Julia’s Ecosystem: Basic plotting and manipulation of DataFrames</a>
+  <ul>
+  <li class="chapter" data-level="2.5.1" data-path="meeting-julia.html"><a href="meeting-julia.html#plotting-with-plots.jl"><i class="fa fa-check"></i><b>2.5.1</b> Plotting with Plots.jl</a></li>
+  <li class="chapter" data-level="2.5.2" data-path="meeting-julia.html"><a href="meeting-julia.html#introducing-dataframes.jl"><i class="fa fa-check"></i><b>2.5.2</b> Introducing DataFrames.jl</a></li>
+  </ul></li>
+  <li class="chapter" data-level="2.6" data-path="meeting-julia.html"><a href="meeting-julia.html#summary"><i class="fa fa-check"></i><b>2.6</b> Summary</a></li>
+  <li class="chapter" data-level="2.7" data-path="meeting-julia.html"><a href="meeting-julia.html#references-1"><i class="fa fa-check"></i><b>2.7</b> References</a></li>
+  </ul></li>
+  <li class="part"><span><b>II Bayesian Statistics</b></span></li>
+  <li class="chapter" data-level="3" data-path="probability-introduction.html"><a href="probability-introduction.html"><i class="fa fa-check"></i><b>3</b> Probability introduction</a>
+  <ul>
+  <li class="chapter" data-level="3.1" data-path="probability-introduction.html"><a href="probability-introduction.html#introduction-to-probability"><i class="fa fa-check"></i><b>3.1</b> Introduction to Probability</a></li>
+  <li class="chapter" data-level="3.2" data-path="probability-introduction.html"><a href="probability-introduction.html#events-sample-spaces-and-sample-points"><i class="fa fa-check"></i><b>3.2</b> Events, sample spaces and sample points</a>
+  <ul>
+  <li class="chapter" data-level="3.2.1" data-path="probability-introduction.html"><a href="probability-introduction.html#relation-among-events"><i class="fa fa-check"></i><b>3.2.1</b> Relation among events</a></li>
+  </ul></li>
+  <li class="chapter" data-level="3.3" data-path="probability-introduction.html"><a href="probability-introduction.html#probability"><i class="fa fa-check"></i><b>3.3</b> Probability</a></li>
+  <li class="chapter" data-level="3.4" data-path="probability-introduction.html"><a href="probability-introduction.html#conditional-probability"><i class="fa fa-check"></i><b>3.4</b> Conditional probability</a></li>
+  <li class="chapter" data-level="3.5" data-path="probability-introduction.html"><a href="probability-introduction.html#joint-probability"><i class="fa fa-check"></i><b>3.5</b> Joint probability</a></li>
+  <li class="chapter" data-level="3.6" data-path="probability-introduction.html"><a href="probability-introduction.html#bayes-theorem"><i class="fa fa-check"></i><b>3.6</b> Bayes theorem</a></li>
+  <li class="chapter" data-level="3.7" data-path="probability-introduction.html"><a href="probability-introduction.html#probability-distributions"><i class="fa fa-check"></i><b>3.7</b> Probability distributions</a>
+  <ul>
+  <li class="chapter" data-level="3.7.1" data-path="probability-introduction.html"><a href="probability-introduction.html#discrete-case"><i class="fa fa-check"></i><b>3.7.1</b> Discrete Case</a></li>
+  <li class="chapter" data-level="3.7.2" data-path="probability-introduction.html"><a href="probability-introduction.html#continuous-cases"><i class="fa fa-check"></i><b>3.7.2</b> Continuous cases</a></li>
+  <li class="chapter" data-level="3.7.3" data-path="probability-introduction.html"><a href="probability-introduction.html#histograms"><i class="fa fa-check"></i><b>3.7.3</b> Histograms</a></li>
+  </ul></li>
+  <li class="chapter" data-level="3.8" data-path="probability-introduction.html"><a href="probability-introduction.html#example-bayesian-bandits"><i class="fa fa-check"></i><b>3.8</b> Example: Bayesian Bandits</a></li>
+  <li class="chapter" data-level="3.9" data-path="probability-introduction.html"><a href="probability-introduction.html#summary-1"><i class="fa fa-check"></i><b>3.9</b> Summary</a></li>
+  <li class="chapter" data-level="3.10" data-path="probability-introduction.html"><a href="probability-introduction.html#references-2"><i class="fa fa-check"></i><b>3.10</b> References</a></li>
+  </ul></li>
+  <li class="chapter" data-level="4" data-path="spam-filter.html"><a href="spam-filter.html"><i class="fa fa-check"></i><b>4</b> Spam filter</a>
+  <ul>
+  <li class="chapter" data-level="4.1" data-path="spam-filter.html"><a href="spam-filter.html#naive-bayes-spam-or-ham"><i class="fa fa-check"></i><b>4.1</b> Naive Bayes: Spam or Ham?</a></li>
+  <li class="chapter" data-level="4.2" data-path="spam-filter.html"><a href="spam-filter.html#summary-2"><i class="fa fa-check"></i><b>4.2</b> Summary</a></li>
+  <li class="chapter" data-level="4.3" data-path="spam-filter.html"><a href="spam-filter.html#references-3"><i class="fa fa-check"></i><b>4.3</b> References</a></li>
+  </ul></li>
+  <li class="chapter" data-level="5" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html"><i class="fa fa-check"></i><b>5</b> Probabilistic programming</a>
+  <ul>
+  <li class="chapter" data-level="5.1" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#coin-flipping-example"><i class="fa fa-check"></i><b>5.1</b> Coin flipping example</a></li>
+  <li class="chapter" data-level="5.2" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#summary-3"><i class="fa fa-check"></i><b>5.2</b> Summary</a></li>
+  <li class="chapter" data-level="5.3" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#references-4"><i class="fa fa-check"></i><b>5.3</b> References</a></li>
+  </ul></li>
+  <li class="chapter" data-level="6" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html"><i class="fa fa-check"></i><b>6</b> Escaping from Mars</a>
+  <ul>
+  <li class="chapter" data-level="6.1" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#calculating-the-constant-g-of-mars"><i class="fa fa-check"></i><b>6.1</b> Calculating the constant g of Mars</a></li>
+  <li class="chapter" data-level="6.2" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#optimizing-the-throwing-angle"><i class="fa fa-check"></i><b>6.2</b> Optimizing the throwing angle</a>
+  <ul>
+  <li class="chapter" data-level="6.2.1" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#calculating-the-escape-velocity"><i class="fa fa-check"></i><b>6.2.1</b> Calculating the escape velocity</a></li>
+  </ul></li>
+  <li class="chapter" data-level="6.3" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#summary-4"><i class="fa fa-check"></i><b>6.3</b> Summary</a></li>
+  </ul></li>
+  <li class="chapter" data-level="7" data-path="football-simulation.html"><a href="football-simulation.html"><i class="fa fa-check"></i><b>7</b> Football simulation</a>
+  <ul>
+  <li class="chapter" data-level="7.1" data-path="football-simulation.html"><a href="football-simulation.html#creating-our-conjectures"><i class="fa fa-check"></i><b>7.1</b> Creating our conjectures</a>
+  <ul>
+  <li class="chapter" data-level="7.1.1" data-path="football-simulation.html"><a href="football-simulation.html#bayesian-hierarchical-models"><i class="fa fa-check"></i><b>7.1.1</b> Bayesian hierarchical models</a></li>
+  </ul></li>
+  <li class="chapter" data-level="7.2" data-path="football-simulation.html"><a href="football-simulation.html#simulate-possible-realities"><i class="fa fa-check"></i><b>7.2</b> Simulate possible realities</a></li>
+  <li class="chapter" data-level="7.3" data-path="football-simulation.html"><a href="football-simulation.html#summary-5"><i class="fa fa-check"></i><b>7.3</b> Summary</a></li>
+  <li class="chapter" data-level="7.4" data-path="football-simulation.html"><a href="football-simulation.html#references-5"><i class="fa fa-check"></i><b>7.4</b> References</a></li>
+  </ul></li>
+  <li class="chapter" data-level="8" data-path="basketball-shots.html"><a href="basketball-shots.html"><i class="fa fa-check"></i><b>8</b> Basketball shots</a>
+  <ul>
+  <li class="chapter" data-level="8.1" data-path="basketball-shots.html"><a href="basketball-shots.html#modeling-the-probability-of-scoring"><i class="fa fa-check"></i><b>8.1</b> Modeling the probability of scoring</a></li>
+  <li class="chapter" data-level="8.2" data-path="basketball-shots.html"><a href="basketball-shots.html#prior-predictive-checks-part-i"><i class="fa fa-check"></i><b>8.2</b> Prior Predictive Checks: Part I</a></li>
+  <li class="chapter" data-level="8.3" data-path="basketball-shots.html"><a href="basketball-shots.html#new-model-and-prior-predictive-checks-part-ii"><i class="fa fa-check"></i><b>8.3</b> New model and prior predictive checks: Part II</a>
+  <ul>
+  <li class="chapter" data-level="8.3.1" data-path="basketball-shots.html"><a href="basketball-shots.html#defining-the-new-model-and-computing-posteriors"><i class="fa fa-check"></i><b>8.3.1</b> Defining the new model and computing posteriors</a></li>
+  </ul></li>
+  <li class="chapter" data-level="8.4" data-path="basketball-shots.html"><a href="basketball-shots.html#does-the-period-affect-the-probability-of-scoring"><i class="fa fa-check"></i><b>8.4</b> Does the Period affect the probability of scoring?</a></li>
+  <li class="chapter" data-level="8.5" data-path="basketball-shots.html"><a href="basketball-shots.html#summary-6"><i class="fa fa-check"></i><b>8.5</b> Summary</a></li>
+  </ul></li>
+  <li class="chapter" data-level="9" data-path="optimal-pricing.html"><a href="optimal-pricing.html"><i class="fa fa-check"></i><b>9</b> Optimal pricing</a>
+  <ul>
+  <li class="chapter" data-level="9.1" data-path="optimal-pricing.html"><a href="optimal-pricing.html#overview"><i class="fa fa-check"></i><b>9.1</b> Overview</a></li>
+  <li class="chapter" data-level="9.2" data-path="optimal-pricing.html"><a href="optimal-pricing.html#optimal-pricing-1"><i class="fa fa-check"></i><b>9.2</b> Optimal pricing</a>
+  <ul>
+  <li class="chapter" data-level="9.2.1" data-path="optimal-pricing.html"><a href="optimal-pricing.html#price-vs-quantity-model"><i class="fa fa-check"></i><b>9.2.1</b> Price vs Quantity model</a></li>
+  <li class="chapter" data-level="9.2.2" data-path="optimal-pricing.html"><a href="optimal-pricing.html#price-elasticity-of-demand"><i class="fa fa-check"></i><b>9.2.2</b> Price elasticity of demand</a></li>
+  </ul></li>
+  <li class="chapter" data-level="9.3" data-path="optimal-pricing.html"><a href="optimal-pricing.html#maximizing-profit"><i class="fa fa-check"></i><b>9.3</b> Maximizing profit</a></li>
+  <li class="chapter" data-level="9.4" data-path="optimal-pricing.html"><a href="optimal-pricing.html#summary-7"><i class="fa fa-check"></i><b>9.4</b> Summary</a></li>
+  <li class="chapter" data-level="9.5" data-path="optimal-pricing.html"><a href="optimal-pricing.html#references-6"><i class="fa fa-check"></i><b>9.5</b> References</a></li>
+  </ul></li>
+  <li class="part"><span><b>III Deep Learning</b></span></li>
+  <li class="chapter" data-level="10" data-path="image-classification.html"><a href="image-classification.html"><i class="fa fa-check"></i><b>10</b> Image classification</a>
+  <ul>
+  <li class="chapter" data-level="10.1" data-path="image-classification.html"><a href="image-classification.html#bee-population-control-what-would-happen-if-bees-go-extinct"><i class="fa fa-check"></i><b>10.1</b> Bee population control: What would happen if bees go extinct?</a></li>
+  <li class="chapter" data-level="10.2" data-path="image-classification.html"><a href="image-classification.html#machine-learning-overview"><i class="fa fa-check"></i><b>10.2</b> Machine Learning Overview</a></li>
+  <li class="chapter" data-level="10.3" data-path="image-classification.html"><a href="image-classification.html#neural-networks-and-convolutional-neural-networks"><i class="fa fa-check"></i><b>10.3</b> Neural networks and convolutional neural networks</a></li>
+  <li class="chapter" data-level="10.4" data-path="image-classification.html"><a href="image-classification.html#summary-8"><i class="fa fa-check"></i><b>10.4</b> Summary</a></li>
+  <li class="chapter" data-level="10.5" data-path="image-classification.html"><a href="image-classification.html#references-7"><i class="fa fa-check"></i><b>10.5</b> References</a></li>
+  </ul></li>
+  <li class="part"><span><b>IV Scientific Machine Learning</b></span></li>
+  <li class="chapter" data-level="11" data-path="ultima-online.html"><a href="ultima-online.html"><i class="fa fa-check"></i><b>11</b> Ultima online</a>
+  <ul>
+  <li class="chapter" data-level="11.1" data-path="ultima-online.html"><a href="ultima-online.html#the-ultima-online-catastrophe"><i class="fa fa-check"></i><b>11.1</b> The Ultima Online Catastrophe</a>
+  <ul>
+  <li class="chapter" data-level="11.1.1" data-path="ultima-online.html"><a href="ultima-online.html#the-lotka-volterra-model-for-population-dynamics"><i class="fa fa-check"></i><b>11.1.1</b> The Lotka-Volterra model for population dynamics</a></li>
+  </ul></li>
+  <li class="chapter" data-level="11.2" data-path="ultima-online.html"><a href="ultima-online.html#summary-9"><i class="fa fa-check"></i><b>11.2</b> Summary</a></li>
+  <li class="chapter" data-level="11.3" data-path="ultima-online.html"><a href="ultima-online.html#references-8"><i class="fa fa-check"></i><b>11.3</b> References</a></li>
+  </ul></li>
+  <li class="chapter" data-level="12" data-path="ultima-continued.html"><a href="ultima-continued.html"><i class="fa fa-check"></i><b>12</b> Ultima continued</a>
+  <ul>
+  <li class="chapter" data-level="12.1" data-path="ultima-continued.html"><a href="ultima-continued.html#the-language-of-science"><i class="fa fa-check"></i><b>12.1</b> The language of science</a></li>
+  <li class="chapter" data-level="12.2" data-path="ultima-continued.html"><a href="ultima-continued.html#scientific-machine-learning-for-model-discovery"><i class="fa fa-check"></i><b>12.2</b> Scientific Machine Learning for model discovery</a>
+  <ul>
+  <li class="chapter" data-level="12.2.1" data-path="ultima-continued.html"><a href="ultima-continued.html#looking-for-the-catastrophe-culprit"><i class="fa fa-check"></i><b>12.2.1</b> Looking for the catastrophe culprit</a></li>
+  <li class="chapter" data-level="12.2.2" data-path="ultima-continued.html"><a href="ultima-continued.html#the-infamous-day-begins."><i class="fa fa-check"></i><b>12.2.2</b> The infamous day begins.</a></li>
+  </ul></li>
+  <li class="chapter" data-level="12.3" data-path="ultima-continued.html"><a href="ultima-continued.html#summary-10"><i class="fa fa-check"></i><b>12.3</b> Summary</a></li>
+  <li class="chapter" data-level="12.4" data-path="ultima-continued.html"><a href="ultima-continued.html#references-9"><i class="fa fa-check"></i><b>12.4</b> References</a></li>
+  </ul></li>
+  <li class="part"><span><b>V Time Series and Forecasting</b></span></li>
+  <li class="chapter" data-level="13" data-path="time-series.html"><a href="time-series.html"><i class="fa fa-check"></i><b>13</b> Time series</a>
+  <ul>
+  <li class="chapter" data-level="13.1" data-path="time-series.html"><a href="time-series.html#predicting-the-future"><i class="fa fa-check"></i><b>13.1</b> Predicting the future</a></li>
+  <li class="chapter" data-level="13.2" data-path="time-series.html"><a href="time-series.html#exponential-smoothing"><i class="fa fa-check"></i><b>13.2</b> Exponential Smoothing</a>
+  <ul>
+  <li class="chapter" data-level="13.2.1" data-path="time-series.html"><a href="time-series.html#weighted-average-and-component-form"><i class="fa fa-check"></i><b>13.2.1</b> Weighted average and Component form</a></li>
+  <li class="chapter" data-level="13.2.2" data-path="time-series.html"><a href="time-series.html#optimization-or-fitting-process"><i class="fa fa-check"></i><b>13.2.2</b> Optimization (or Fitting) Process</a></li>
+  <li class="chapter" data-level="13.2.3" data-path="time-series.html"><a href="time-series.html#trend-methods"><i class="fa fa-check"></i><b>13.2.3</b> Trend Methods</a></li>
+  <li class="chapter" data-level="13.2.4" data-path="time-series.html"><a href="time-series.html#seasonality-methods"><i class="fa fa-check"></i><b>13.2.4</b> Seasonality Methods</a></li>
+  </ul></li>
+  <li class="chapter" data-level="13.3" data-path="time-series.html"><a href="time-series.html#summary-11"><i class="fa fa-check"></i><b>13.3</b> Summary</a></li>
+  <li class="chapter" data-level="13.4" data-path="time-series.html"><a href="time-series.html#references-10"><i class="fa fa-check"></i><b>13.4</b> References</a></li>
+  </ul></li>
+  <li class="divider"></li>
+  <li><a href="https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers" target="blank">Published with bookdown</a></li>
+    
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Data Science in Julia for Hackers</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="ultima-continued" class="section level1" number="12">
+<h1><span class="header-section-number">Chapter 12</span> Ultima continued</h1>
+<div class="sourceCode" id="cb1"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb1-1"><a href="ultima-continued.html#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-2"><a href="ultima-continued.html#cb1-2" aria-hidden="true" tabindex="-1"></a>cd(<span class="st">&quot;./12_ultima_continued/&quot;</span>) </span>
+<span id="cb1-3"><a href="ultima-continued.html#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">import</span> Pkg</span>
+<span id="cb1-4"><a href="ultima-continued.html#cb1-4" aria-hidden="true" tabindex="-1"></a>Pkg.activate(<span class="st">&quot;.&quot;</span>)</span>
+<span id="cb1-5"><a href="ultima-continued.html#cb1-5" aria-hidden="true" tabindex="-1"></a>Pkg.instantiate()</span>
+<span id="cb1-6"><a href="ultima-continued.html#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="ultima-continued.html#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> DifferentialEquations</span>
+<span id="cb1-8"><a href="ultima-continued.html#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> DiffEqSensitivity</span>
+<span id="cb1-9"><a href="ultima-continued.html#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> StatsPlots</span>
+<span id="cb1-10"><a href="ultima-continued.html#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> Plots</span>
+<span id="cb1-11"><a href="ultima-continued.html#cb1-11" aria-hidden="true" tabindex="-1"></a>gr()</span>
+<span id="cb1-12"><a href="ultima-continued.html#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> OrdinaryDiffEq</span>
+<span id="cb1-13"><a href="ultima-continued.html#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> ModelingToolkit</span>
+<span id="cb1-14"><a href="ultima-continued.html#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> DataDrivenDiffEq</span>
+<span id="cb1-15"><a href="ultima-continued.html#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> LinearAlgebra</span>
+<span id="cb1-16"><a href="ultima-continued.html#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> Optim</span>
+<span id="cb1-17"><a href="ultima-continued.html#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> DiffEqFlux</span>
+<span id="cb1-18"><a href="ultima-continued.html#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> Flux</span></code></pre></div>
+<p>##Letting the computer do science</p>
+<p>Let’s think a little. What do you think is the process by which scientific discoveries are made?</p>
+<p>First, you have some situation or event of interest from which you want to discover the rules that govern it. Second, you carefully design the experiments to get as much unbiased data as you can. Third, you analyze that data to gain some knowledge and, hopefully, you can begin to write some equations that condense the underlying process. Finally, you keep doing experiments to confirm that the equations you have invented are correct. You are doing science, my friend!</p>
+<p>Throughout the book, we were learning a wide variety of statistical methods that sought to be as general as possible, but that required us to define the model to be used. The equations, then, were already defined and the algorithm only had to find the best parameters (or distribution of them) to fit that model to the data.</p>
+<p>But what if I tell you that now we can start “talking” with the computer. That we can ask the computer to learn the model itself with the data. Not the parameters. But the equations that govern the process generating the data we give to the computer.
+Even more, that now we can “share” some incomplete knowledge that we have of some process and ask the computer to learn, with minimum data, the part of the knowledge that we lack.
+What? Is that even possible?.</p>
+<div id="the-language-of-science" class="section level2" number="12.1">
+<h2><span class="header-section-number">12.1</span> The language of science</h2>
+<p>In order to start understanding if that fairytale is possible, first we need to understand the ways we have to “encoding” the dynamics of those processes.
+As <a href="http://www.stevenstrogatz.com/">Steven Strogatz</a> said “Since Newton, mankind has come to realize that the laws of physics are always expressed in the language of differential equations.”
+And we can argue that it is a language that not only belongs to physics, but to all science and, in general, to the world in which we live.</p>
+<p>But before any of you run off in fear, let’s demystify this subject a little.
+What is a differential equation and why are they useful?</p>
+<p>Well the first thing to denote is that differential equations emerge whenever it’s easier to describe change than absolute values. As we saw in the Ultima Online Catastrophe, it is much easier to describe and define why populations grow or shrink, rather than explain why they have the particular absolute values in a particular point in time. Come on! It’s much more easy to comprehend that if there are lots of predators, the prey’s population will shrink than understand why there are, for example, 223,543 prays and 112,764 predators the 6 of may. Does this make sense?</p>
+<p><span class="math inline">\(\frac{dPrey}{dt} = Prey*(b_{prey} - m_{prey}*Pred)\)</span></p>
+<p><span class="math inline">\(\frac{dPred}{dt} = Pred*(b_{pred}*Prey - m_{pred})\)</span></p>
+<p>Remember that d can be read as change and the hole expression “<span class="math inline">\(\frac{dPrey}{dt} =\)</span>” is just saying “The change of prey’s population over time is equal to …” and the other part, as we already saw in the last chapter, is answering “hey! that change is proportional to the prey’s population (because they reproduce) and to the interaction with the Predator population, that contributes to the prey’s mortality rate.” Isn’t that beautiful?</p>
+<p>Now, try to think a way to put the absolute values of each population over time into equations. Have any clue? No? As we said, change is much easier to describe.</p>
+<p>Or you can take a much more familiar example: In Newtonian Mechanics motion is described in terms of Force.</p>
+<p><span class="math inline">\(F = m*a\)</span></p>
+<p>But Force determines acceleration, which itself is a statement about change. We are so familiar with that equation that we tend to forget that it is a differential equation (and as Steven mentions, is the mother of all differential equations).</p>
+<p><span class="math inline">\(F = m*\frac{dVelocity}{dt}\)</span></p>
+<p><span class="math inline">\(F = m*\frac{d^2Position}{dt^2}\)</span></p>
+<p>This transformation is just showing something that everyone already knows: Acceleration is the change of Velocity over time, and Velocity is the change of position over time. And that implies that Acceleration is the second derivative (change) on position over time.</p>
+<p>We just learned that the language of differential equations is fundamental for doing science. So, if we want the computer to learn equations that explain scientific events, it must know how to deal with this type of equations. And this is easily solved by the Scientific Machine Learning (<a href="https://sciml.ai/">SciML</a>) ecosystem.</p>
+</div>
+<div id="scientific-machine-learning-for-model-discovery" class="section level2" number="12.2">
+<h2><span class="header-section-number">12.2</span> Scientific Machine Learning for model discovery</h2>
+<p>But dealing with differential equations is not the main thing that SciML has to offer us. Instead it gives us the way to do science in cooperation with artificial intelligence.
+What? To be able to comprehend this, let’s rewiew how “classic” machine learning works.</p>
+<p>It turns out that a neural network is literally a function.
+Is a function in the sense that it takes a bunch of numbers, applies a series of transformations, and return another bunch of numbers:</p>
+<p><span class="math inline">\(f(x) = y &lt;=&gt; ANN(x) = y\)</span></p>
+<p>So, artificial neural networks are functions.
+But they are special functions, as they can change the connections that made the specific function they represent.
+They do this in a process called training where they adjust its connections (parameters) in order to correctly predict. So, with only one neural network, we can “represent” lots of functions. What’s more, there is this Universal Approximation Theorem that says that a neural network that is deep and wide enough (that is, has enough parameters) can approximate any function. You only need to feed it with enough data, so it can learn the optimal set of weights for its parameters.</p>
+<p>This is why neural networks come hand in hand with big data: you need a lot of data in order to let the neural network learn the correct weights.
+But there is a problem: Big data costs billions, or may not even be available! (if you don’t believe me, ask the Large Hadron Collider scientists to run 1 million experiments to train a NN, I’m sure they’ll be happy to help you :P)</p>
+<p>Can you imagine a way to drastically reduce the data needed to train the NN in a significant way?
+Well, how about incorporating scientific knowledge into machine learning?
+If we think it for a moment, we can realize that a scientific model is worth a thousand datasets.
+The equations work like a proxy of thousands of experiments, people investigating, years of research. in other words: tons of data.</p>
+<p>So if we create a way to inform all of that precious data, so it can focus on learning a specific part of the equation (some part that we don’t know), it could do it with a minimum quantity of data! Lucky us, <a href="https://github.com/ChrisRackauckas">Christopher Rackauckas</a> and his team already found a way.</p>
+<p>The concept we are talking about is called “Universal Differential Equations.” Let’s use them to recover some missing equation components from the Virtual Catastrophe from the last chapter!</p>
+<div id="looking-for-the-catastrophe-culprit" class="section level3" number="12.2.1">
+<h3><span class="header-section-number">12.2.1</span> Looking for the catastrophe culprit</h3>
+<p>So let’s imagine again (yes, we imagine lots of things in this book) that we are <a href="https://en.wikipedia.org/wiki/Richard_Garriott">Richard Garriott</a> a day before the release of his game. He was tuning the last details of his virtual ecosystem. The model is simple but powerful, and ready to go:</p>
+<p><span class="math inline">\(\frac{dPrey}{dt} = Prey*(b_{prey} - m_{prey}*Pred) = Prey*(1.3 - 0.9*Pred)\)</span></p>
+<p><span class="math inline">\(\frac{dPred}{dt} = Pred*(b_{pred}*Prey - m_{pred}) = Pred*(0.8*Prey - 1.8)\)</span></p>
+<p>So after a delicate tuning, he determines that the best parameters for his virtual ecosystem are:</p>
+<p><span class="math inline">\(b_{prey} = 1.3\)</span></p>
+<p><span class="math inline">\(m_{prey} = 0.9\)</span></p>
+<p><span class="math inline">\(b_{pred} = 0.8\)</span></p>
+<p><span class="math inline">\(m_{pred} = 1.8\)</span></p>
+<p>He smiles and happily goes to sleep, thinking that tomorrow is the big day.</p>
+<p>Let’s see how were the system equilibrium that he decided.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb2-1"><a href="ultima-continued.html#cb2-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-2"><a href="ultima-continued.html#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb2-3"><a href="ultima-continued.html#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">#The Lotka-Volterra model Garriott define for Ultima Online</span></span>
+<span id="cb2-4"><a href="ultima-continued.html#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="ultima-continued.html#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> lotka_volterra(du<span class="op">,</span>u<span class="op">,</span>p<span class="op">,</span>t)</span>
+<span id="cb2-6"><a href="ultima-continued.html#cb2-6" aria-hidden="true" tabindex="-1"></a>  prey<span class="op">,</span> pred  <span class="op">=</span> u</span>
+<span id="cb2-7"><a href="ultima-continued.html#cb2-7" aria-hidden="true" tabindex="-1"></a>  birth_prey<span class="op">,</span> mort_prey<span class="op">,</span> birth_pred<span class="op">,</span> mort_pred <span class="op">=</span> p</span>
+<span id="cb2-8"><a href="ultima-continued.html#cb2-8" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-9"><a href="ultima-continued.html#cb2-9" aria-hidden="true" tabindex="-1"></a>  du[<span class="fl">1</span>] <span class="op">=</span> dprey <span class="op">=</span> (birth_prey <span class="op">-</span> mort_prey <span class="op">*</span> pred)<span class="op">*</span>prey</span>
+<span id="cb2-10"><a href="ultima-continued.html#cb2-10" aria-hidden="true" tabindex="-1"></a>  du[<span class="fl">2</span>] <span class="op">=</span> dpred <span class="op">=</span> (birth_pred <span class="op">*</span> prey <span class="op">-</span> mort_pred)<span class="op">*</span>pred</span>
+<span id="cb2-11"><a href="ultima-continued.html#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span>
+<span id="cb2-12"><a href="ultima-continued.html#cb2-12" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-13"><a href="ultima-continued.html#cb2-13" aria-hidden="true" tabindex="-1"></a>p0 <span class="op">=</span> <span class="dt">Float32</span>[<span class="fl">1.3</span><span class="op">,</span> <span class="fl">0.9</span><span class="op">,</span> <span class="fl">0.8</span><span class="op">,</span> <span class="fl">1.8</span>]</span>
+<span id="cb2-14"><a href="ultima-continued.html#cb2-14" aria-hidden="true" tabindex="-1"></a>u0 <span class="op">=</span> <span class="dt">Float32</span>[<span class="fl">0.44249296</span><span class="op">,</span><span class="fl">4.6280594</span>]</span>
+<span id="cb2-15"><a href="ultima-continued.html#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-16"><a href="ultima-continued.html#cb2-16" aria-hidden="true" tabindex="-1"></a>prob_ <span class="op">=</span> ODEProblem(lotka_volterra<span class="op">,</span>u0<span class="op">,</span>(<span class="fl">0.0</span><span class="op">,</span><span class="fl">40.0</span>)<span class="op">,</span>p0)</span>
+<span id="cb2-17"><a href="ultima-continued.html#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-18"><a href="ultima-continued.html#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span><span class="op">;</span></span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb3-1"><a href="ultima-continued.html#cb3-1" aria-hidden="true" tabindex="-1"></a>sol <span class="op">=</span> solve(prob_<span class="op">,</span>Tsit5())<span class="op">;</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb4-1"><a href="ultima-continued.html#cb4-1" aria-hidden="true" tabindex="-1"></a>plot(sol)</span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_12_plot_01-J1.png" /><!-- --></p>
+<p>So the system seems in complete equilibrium.</p>
+</div>
+<div id="the-infamous-day-begins." class="section level3" number="12.2.2">
+<h3><span class="header-section-number">12.2.2</span> The infamous day begins.</h3>
+<p>And finally we arrive at the day when the madness begins.</p>
+<p>Garriott wakes up early, doesn’t have any breakfast and goes to meet his team. Everything is ready. The countdown starts: 3, 2, 1… And the game is online, running.</p>
+<p>After the champagne, hugs and a little celebration Garriott returns to work and starts to analyze the metrics to see if everything is alright, and it does. He relax a little bit until something calls his attention: The curves of carnivorous and herbivorous animals are a little different than they should be. There are still too few points (only four hours from the release) to be alarmed, but he decides to do a deeper analysis. Luckily, a few days ago, he had read a paper on the Universal ODEs, so he thinks they can help him in this case.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb5-1"><a href="ultima-continued.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> lotka_volterra_players(du<span class="op">,</span>u<span class="op">,</span>p<span class="op">,</span>t)</span>
+<span id="cb5-2"><a href="ultima-continued.html#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">#Lotka-Volterra function with players that hunt</span></span>
+<span id="cb5-3"><a href="ultima-continued.html#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">#Of course, Garriott doesn&#39;t know about this new players part of the equation. </span></span>
+<span id="cb5-4"><a href="ultima-continued.html#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="co">#He only saw some differences in the real curve vs the one he expected.</span></span>
+<span id="cb5-5"><a href="ultima-continued.html#cb5-5" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb5-6"><a href="ultima-continued.html#cb5-6" aria-hidden="true" tabindex="-1"></a>    birth_prey<span class="op">,</span> mort_prey<span class="op">,</span> birth_pred<span class="op">,</span> mort_pred<span class="op">,</span> players_prey<span class="op">,</span> players_pred <span class="op">=</span> p</span>
+<span id="cb5-7"><a href="ultima-continued.html#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-8"><a href="ultima-continued.html#cb5-8" aria-hidden="true" tabindex="-1"></a>    du[<span class="fl">1</span>]  <span class="op">=</span> (birth_prey <span class="op">-</span> mort_prey <span class="op">*</span> u[<span class="fl">2</span>] <span class="op">-</span> players_prey)<span class="op">*</span>u[<span class="fl">1</span>]</span>
+<span id="cb5-9"><a href="ultima-continued.html#cb5-9" aria-hidden="true" tabindex="-1"></a>    du[<span class="fl">2</span>]  <span class="op">=</span> (birth_pred <span class="op">*</span> u[<span class="fl">1</span>] <span class="op">-</span> mort_pred <span class="op">-</span> players_pred)<span class="op">*</span>u[<span class="fl">2</span>]</span>
+<span id="cb5-10"><a href="ultima-continued.html#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<pre><code>## lotka_volterra_players (generic function with 1 method)</code></pre>
+<div class="sourceCode" id="cb7"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb7-1"><a href="ultima-continued.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb7-2"><a href="ultima-continued.html#cb7-2" aria-hidden="true" tabindex="-1"></a>tspan <span class="op">=</span> (<span class="fl">0.0f0</span><span class="op">,</span><span class="fl">4.0f0</span>)</span>
+<span id="cb7-3"><a href="ultima-continued.html#cb7-3" aria-hidden="true" tabindex="-1"></a>p_ <span class="op">=</span> <span class="dt">Float32</span>[<span class="fl">1.3</span><span class="op">,</span> <span class="fl">0.9</span><span class="op">,</span> <span class="fl">0.8</span><span class="op">,</span> <span class="fl">1.8</span><span class="op">,</span> <span class="fl">0.4</span><span class="op">,</span> <span class="fl">0.4</span>]</span>
+<span id="cb7-4"><a href="ultima-continued.html#cb7-4" aria-hidden="true" tabindex="-1"></a>prob <span class="op">=</span> ODEProblem(lotka_volterra_players<span class="op">,</span> u0<span class="op">,</span>tspan<span class="op">,</span> p_)</span>
+<span id="cb7-5"><a href="ultima-continued.html#cb7-5" aria-hidden="true" tabindex="-1"></a>solution <span class="op">=</span> solve(prob<span class="op">,</span> Vern7()<span class="op">,</span> abstol<span class="op">=</span><span class="fl">1e-12</span><span class="op">,</span> reltol<span class="op">=</span><span class="fl">1e-12</span><span class="op">,</span> saveat <span class="op">=</span> <span class="fl">0.1</span>)</span>
+<span id="cb7-6"><a href="ultima-continued.html#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span><span class="op">;</span></span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb8-1"><a href="ultima-continued.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb8-2"><a href="ultima-continued.html#cb8-2" aria-hidden="true" tabindex="-1"></a>scatter(solution<span class="op">,</span> alpha <span class="op">=</span> <span class="fl">0.25</span><span class="op">,</span> title<span class="op">=</span><span class="st">&quot;The data Garriott was seeing&quot;</span>)</span>
+<span id="cb8-3"><a href="ultima-continued.html#cb8-3" aria-hidden="true" tabindex="-1"></a>plot<span class="op">!</span>(solution<span class="op">,</span> alpha <span class="op">=</span> <span class="fl">0.5</span>)</span>
+<span id="cb8-4"><a href="ultima-continued.html#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_12_plot_02-J1.png" /><!-- --></p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb9-1"><a href="ultima-continued.html#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb9-2"><a href="ultima-continued.html#cb9-2" aria-hidden="true" tabindex="-1"></a>expected_prob <span class="op">=</span> ODEProblem(lotka_volterra<span class="op">,</span> u0<span class="op">,</span>tspan<span class="op">,</span> p0)</span>
+<span id="cb9-3"><a href="ultima-continued.html#cb9-3" aria-hidden="true" tabindex="-1"></a>expected_solution <span class="op">=</span> solve(expected_prob<span class="op">,</span> Vern7()<span class="op">,</span> abstol<span class="op">=</span><span class="fl">1e-12</span><span class="op">,</span> reltol<span class="op">=</span><span class="fl">1e-12</span><span class="op">,</span> saveat <span class="op">=</span> <span class="fl">0.1</span>)</span>
+<span id="cb9-4"><a href="ultima-continued.html#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span><span class="op">;</span></span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb10-1"><a href="ultima-continued.html#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb10-2"><a href="ultima-continued.html#cb10-2" aria-hidden="true" tabindex="-1"></a>scatter(expected_solution<span class="op">,</span> alpha <span class="op">=</span> <span class="fl">0.25</span><span class="op">,</span> title<span class="op">=</span><span class="st">&quot;The data Garriott was expecting to see&quot;</span>)</span>
+<span id="cb10-3"><a href="ultima-continued.html#cb10-3" aria-hidden="true" tabindex="-1"></a>plot<span class="op">!</span>(expected_solution<span class="op">,</span> alpha <span class="op">=</span> <span class="fl">0.5</span>)</span>
+<span id="cb10-4"><a href="ultima-continued.html#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_12_plot_03-J1.png" /><!-- --></p>
+<p>As you can see, the animals were taking more time to recover. The period of the cycle was longer than it should be: A clear sign that something was killing them.
+But he wanted to be sure. The Universal ODEs were key to do so.</p>
+<p>So, he start thinking “I know that the model has to be running cause I can see it in the code! So maybe, something external is producing this divergence. Something that I don’t know. But something that a neural network could find out” Let’s see</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb11-1"><a href="ultima-continued.html#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb11-2"><a href="ultima-continued.html#cb11-2" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> <span class="dt">Array</span>(solution) </span>
+<span id="cb11-3"><a href="ultima-continued.html#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co">#And let&#39;s add some noise to make it more difficult. Why? Because its fun!  </span></span>
+<span id="cb11-4"><a href="ultima-continued.html#cb11-4" aria-hidden="true" tabindex="-1"></a>Xₙ <span class="op">=</span> X <span class="op">+</span> <span class="dt">Float32</span>(<span class="fl">1e-3</span>)<span class="op">*</span>randn(eltype(X)<span class="op">,</span> size(X))</span>
+<span id="cb11-5"><a href="ultima-continued.html#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<pre><code>## 2×41 Array{Float32,2}:
+##  0.442945  0.33029  0.264175  0.226047  …  1.67949     1.83597     2.0087
+##  4.62768   3.83025  3.1463    2.57406      0.00464618  0.00585841  0.00441693</code></pre>
+<div class="sourceCode" id="cb13"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb13-1"><a href="ultima-continued.html#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb13-2"><a href="ultima-continued.html#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the neural network </span></span>
+<span id="cb13-3"><a href="ultima-continued.html#cb13-3" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> FastChain(FastDense(<span class="fl">2</span><span class="op">,</span> <span class="fl">32</span><span class="op">,</span> tanh)<span class="op">,</span>FastDense(<span class="fl">32</span><span class="op">,</span> <span class="fl">32</span><span class="op">,</span> tanh)<span class="op">,</span> FastDense(<span class="fl">32</span><span class="op">,</span> <span class="fl">2</span>))</span>
+<span id="cb13-4"><a href="ultima-continued.html#cb13-4" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> initial_params(L)</span>
+<span id="cb13-5"><a href="ultima-continued.html#cb13-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-6"><a href="ultima-continued.html#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> dudt_(u<span class="op">,</span> p<span class="op">,</span>t)</span>
+<span id="cb13-7"><a href="ultima-continued.html#cb13-7" aria-hidden="true" tabindex="-1"></a>    prey<span class="op">,</span> pred <span class="op">=</span> u</span>
+<span id="cb13-8"><a href="ultima-continued.html#cb13-8" aria-hidden="true" tabindex="-1"></a>    z <span class="op">=</span> L(u<span class="op">,</span>p)</span>
+<span id="cb13-9"><a href="ultima-continued.html#cb13-9" aria-hidden="true" tabindex="-1"></a>    [p_[<span class="fl">1</span>]<span class="op">*</span>prey <span class="op">-</span> p_[<span class="fl">2</span>]<span class="op">*</span>prey<span class="op">*</span>pred <span class="op">+</span> z[<span class="fl">1</span>]<span class="op">,</span></span>
+<span id="cb13-10"><a href="ultima-continued.html#cb13-10" aria-hidden="true" tabindex="-1"></a>    <span class="op">-</span>p_[<span class="fl">4</span>]<span class="op">*</span>pred <span class="op">+</span> p_[<span class="fl">3</span>]<span class="op">*</span>prey<span class="op">*</span>pred <span class="op">+</span> z[<span class="fl">2</span>]]</span>
+<span id="cb13-11"><a href="ultima-continued.html#cb13-11" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span>
+<span id="cb13-12"><a href="ultima-continued.html#cb13-12" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<pre><code>## dudt_ (generic function with 1 method)</code></pre>
+<p>So let’s stop for a minute to analyze the code that Garriott just proposed.</p>
+<p>In the first two lines, he just defines the neural network, that is going to learn the missing components of the two equations (one for the dynamics of the Pray and other for the dynamics of the Predator) and fill the variable p with its untrained parameters.</p>
+<p>Then, he is defining the Universal Differential Equation. Where he is specifying the parts of the model that he knows, and adding a neural network to learn other things that might be happening (and we know that indeed were happening). In other words, he is proposing:</p>
+<p><span class="math inline">\(\frac{dPrey}{dt} = Prey*(1.3 - 0.9*Pred) + ANN_1(prey, pred)\)</span></p>
+<p><span class="math inline">\(\frac{dPred}{dt} = Pred*(0.8*Prey - 1.8) + ANN_2(prey, pred)\)</span></p>
+<p>So, as we already know, he is just adding a function. Which one? We already know that those are <span class="math inline">\(Prey*players_{prey}\)</span> and <span class="math inline">\(Pred*players_{pred}\)</span> (and <span class="math inline">\(players_{pred}=players_{prey}=0.4\)</span>), but Garriott doesn’t, and is exactly what the neural network is going to learn for him.</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb15-1"><a href="ultima-continued.html#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb15-2"><a href="ultima-continued.html#cb15-2" aria-hidden="true" tabindex="-1"></a>    prob_nn <span class="op">=</span> ODEProblem(dudt_<span class="op">,</span>u0<span class="op">,</span> tspan<span class="op">,</span> p)</span>
+<span id="cb15-3"><a href="ultima-continued.html#cb15-3" aria-hidden="true" tabindex="-1"></a>    sol_nn <span class="op">=</span> solve(prob_nn<span class="op">,</span> Tsit5()<span class="op">,</span> u0 <span class="op">=</span> u0<span class="op">,</span> p <span class="op">=</span> p<span class="op">,</span> saveat <span class="op">=</span> solution.t)</span>
+<span id="cb15-4"><a href="ultima-continued.html#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span><span class="op">;</span></span></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb16-1"><a href="ultima-continued.html#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb16-2"><a href="ultima-continued.html#cb16-2" aria-hidden="true" tabindex="-1"></a>plot(solution)</span>
+<span id="cb16-3"><a href="ultima-continued.html#cb16-3" aria-hidden="true" tabindex="-1"></a>plot<span class="op">!</span>(sol_nn<span class="op">,</span> title<span class="op">=</span><span class="st">&quot;The untrained NN is far from the real curve&quot;</span>)</span>
+<span id="cb16-4"><a href="ultima-continued.html#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_12_plot_04-J1.png" /><!-- --></p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb17-1"><a href="ultima-continued.html#cb17-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-2"><a href="ultima-continued.html#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> predict(θ)</span>
+<span id="cb17-3"><a href="ultima-continued.html#cb17-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Array</span>(solve(prob_nn<span class="op">,</span> Vern7()<span class="op">,</span> u0 <span class="op">=</span> u0<span class="op">,</span> p<span class="op">=</span>θ<span class="op">,</span> saveat <span class="op">=</span> solution.t<span class="op">,</span></span>
+<span id="cb17-4"><a href="ultima-continued.html#cb17-4" aria-hidden="true" tabindex="-1"></a>                         abstol<span class="op">=</span><span class="fl">1e-6</span><span class="op">,</span> reltol<span class="op">=</span><span class="fl">1e-6</span><span class="op">,</span></span>
+<span id="cb17-5"><a href="ultima-continued.html#cb17-5" aria-hidden="true" tabindex="-1"></a>                         sensealg <span class="op">=</span> InterpolatingAdjoint(autojacvec<span class="op">=</span>ReverseDiffVJP())))</span>
+<span id="cb17-6"><a href="ultima-continued.html#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<pre><code>## predict (generic function with 1 method)</code></pre>
+<div class="sourceCode" id="cb19"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb19-1"><a href="ultima-continued.html#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> loss(θ)</span>
+<span id="cb19-2"><a href="ultima-continued.html#cb19-2" aria-hidden="true" tabindex="-1"></a>    pred <span class="op">=</span> predict(θ)</span>
+<span id="cb19-3"><a href="ultima-continued.html#cb19-3" aria-hidden="true" tabindex="-1"></a>    sum(abs2<span class="op">,</span> Xₙ .<span class="op">-</span> pred)<span class="op">,</span> pred </span>
+<span id="cb19-4"><a href="ultima-continued.html#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<pre><code>## loss (generic function with 1 method)</code></pre>
+<div class="sourceCode" id="cb21"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb21-1"><a href="ultima-continued.html#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb21-2"><a href="ultima-continued.html#cb21-2" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb21-3"><a href="ultima-continued.html#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> losses <span class="op">=</span> []</span>
+<span id="cb21-4"><a href="ultima-continued.html#cb21-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-5"><a href="ultima-continued.html#cb21-5" aria-hidden="true" tabindex="-1"></a><span class="co">#just adding a callback to supervise the network&#39;s learning</span></span>
+<span id="cb21-6"><a href="ultima-continued.html#cb21-6" aria-hidden="true" tabindex="-1"></a>callback(θ<span class="op">,</span>l<span class="op">,</span>pred) <span class="op">=</span> <span class="kw">begin</span></span>
+<span id="cb21-7"><a href="ultima-continued.html#cb21-7" aria-hidden="true" tabindex="-1"></a>    push<span class="op">!</span>(losses<span class="op">,</span> l)</span>
+<span id="cb21-8"><a href="ultima-continued.html#cb21-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">if</span> length(losses)%<span class="fl">50</span><span class="op">==</span><span class="fl">0</span></span>
+<span id="cb21-9"><a href="ultima-continued.html#cb21-9" aria-hidden="true" tabindex="-1"></a>        println(<span class="st">&quot;Current loss after $(length(losses)) iterations: $(losses[end])&quot;</span>)</span>
+<span id="cb21-10"><a href="ultima-continued.html#cb21-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
+<span id="cb21-11"><a href="ultima-continued.html#cb21-11" aria-hidden="true" tabindex="-1"></a>    <span class="ex">false</span></span>
+<span id="cb21-12"><a href="ultima-continued.html#cb21-12" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span>
+<span id="cb21-13"><a href="ultima-continued.html#cb21-13" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb21-14"><a href="ultima-continued.html#cb21-14" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p>And lets train the NN!!</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb22-1"><a href="ultima-continued.html#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># First train with ADAM for better convergence</span></span>
+<span id="cb22-2"><a href="ultima-continued.html#cb22-2" aria-hidden="true" tabindex="-1"></a>res1 <span class="op">=</span> DiffEqFlux.sciml_train(loss<span class="op">,</span> p<span class="op">,</span> ADAM(<span class="fl">0.01</span>)<span class="op">,</span> cb<span class="op">=</span>callback<span class="op">,</span> maxiters <span class="op">=</span> <span class="fl">200</span>)<span class="op">;</span></span></code></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb23-1"><a href="ultima-continued.html#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Train with BFGS</span></span>
+<span id="cb23-2"><a href="ultima-continued.html#cb23-2" aria-hidden="true" tabindex="-1"></a>res2 <span class="op">=</span> DiffEqFlux.sciml_train(loss<span class="op">,</span> res1.minimizer<span class="op">,</span> BFGS(initial_stepnorm<span class="op">=</span><span class="fl">0.01</span>)<span class="op">,</span> cb<span class="op">=</span>callback<span class="op">,</span> maxiters <span class="op">=</span> <span class="fl">10000</span>)<span class="op">;</span></span></code></pre></div>
+<div class="sourceCode" id="cb24"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb24-1"><a href="ultima-continued.html#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the losses</span></span>
+<span id="cb24-2"><a href="ultima-continued.html#cb24-2" aria-hidden="true" tabindex="-1"></a>plot(losses<span class="op">,</span> yaxis <span class="op">=</span> <span class="op">:</span>log<span class="op">,</span> xaxis <span class="op">=</span> <span class="op">:</span>log<span class="op">,</span> xlabel <span class="op">=</span> <span class="st">&quot;Iterations&quot;</span><span class="op">,</span> ylabel <span class="op">=</span> <span class="st">&quot;Loss&quot;</span>)</span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_12_plot_05-J1.png" /><!-- --></p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb25-1"><a href="ultima-continued.html#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb25-2"><a href="ultima-continued.html#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Neural network guess</span></span>
+<span id="cb25-3"><a href="ultima-continued.html#cb25-3" aria-hidden="true" tabindex="-1"></a>L̂ <span class="op">=</span> L(Xₙ<span class="op">,</span>res2.minimizer)</span>
+<span id="cb25-4"><a href="ultima-continued.html#cb25-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the data and the approximation</span></span>
+<span id="cb25-5"><a href="ultima-continued.html#cb25-5" aria-hidden="true" tabindex="-1"></a>NNsolution <span class="op">=</span> predict(res2.minimizer)</span></code></pre></div>
+<div class="sourceCode" id="cb26"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb26-1"><a href="ultima-continued.html#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot Trained on noisy data vs real solution</span></span>
+<span id="cb26-2"><a href="ultima-continued.html#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb26-3"><a href="ultima-continued.html#cb26-3" aria-hidden="true" tabindex="-1"></a>plot(solution.t<span class="op">,</span> NNsolution)</span>
+<span id="cb26-4"><a href="ultima-continued.html#cb26-4" aria-hidden="true" tabindex="-1"></a>plot<span class="op">!</span>(solution.t<span class="op">,</span> X<span class="op">,</span> title<span class="op">=</span><span class="st">&quot;The trained NN have fitted well&quot;</span>)</span>
+<span id="cb26-5"><a href="ultima-continued.html#cb26-5" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_12_plot_06-J1.png" /><!-- --></p>
+<p>Nice! Now that we have our neural network already learned the Input-Output relation in order for the entire system to behave as the data Garriott were seeing in that Infamous morning, we need to transform that Input-Output behaviour into some function.
+We do this in order to gain interpretability of what may be happening and, in a scientific frame, learn the underlying model.
+We do this by creating a <a href="https://en.wikipedia.org/wiki/Function_space">function space</a> in order to the NN learn which function (or linear combination of those) is the best one to describe that Input-Output relation.
+The loss function to do so is designed in a way that the result will be the least complex one, that is, the answer will be the simplest function that behaves like the NN.</p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb27-1"><a href="ultima-continued.html#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb27-2"><a href="ultima-continued.html#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="co">## Let&#39;s continue with the Sparse Identification </span></span>
+<span id="cb27-3"><a href="ultima-continued.html#cb27-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-4"><a href="ultima-continued.html#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a Basis</span></span>
+<span id="cb27-5"><a href="ultima-continued.html#cb27-5" aria-hidden="true" tabindex="-1"></a><span class="pp">@variables</span> u[<span class="fl">1</span><span class="op">:</span><span class="fl">2</span>]</span>
+<span id="cb27-6"><a href="ultima-continued.html#cb27-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Add many polynomial to the Basis</span></span>
+<span id="cb27-7"><a href="ultima-continued.html#cb27-7" aria-hidden="true" tabindex="-1"></a>polys <span class="op">=</span> Operation[<span class="fl">1</span>]</span>
+<span id="cb27-8"><a href="ultima-continued.html#cb27-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-9"><a href="ultima-continued.html#cb27-9" aria-hidden="true" tabindex="-1"></a><span class="kw">for</span> i ∈ <span class="fl">1</span><span class="op">:</span><span class="fl">5</span></span>
+<span id="cb27-10"><a href="ultima-continued.html#cb27-10" aria-hidden="true" tabindex="-1"></a>    push<span class="op">!</span>(polys<span class="op">,</span> u[<span class="fl">1</span>]<span class="op">^</span>i)</span>
+<span id="cb27-11"><a href="ultima-continued.html#cb27-11" aria-hidden="true" tabindex="-1"></a>    push<span class="op">!</span>(polys<span class="op">,</span> u[<span class="fl">2</span>]<span class="op">^</span>i)</span>
+<span id="cb27-12"><a href="ultima-continued.html#cb27-12" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> j ∈ i<span class="op">:</span><span class="fl">5</span></span>
+<span id="cb27-13"><a href="ultima-continued.html#cb27-13" aria-hidden="true" tabindex="-1"></a>        <span class="kw">if</span> i <span class="op">!=</span> j</span>
+<span id="cb27-14"><a href="ultima-continued.html#cb27-14" aria-hidden="true" tabindex="-1"></a>            push<span class="op">!</span>(polys<span class="op">,</span> (u[<span class="fl">1</span>]<span class="op">^</span>i)<span class="op">*</span>(u[<span class="fl">2</span>]<span class="op">^</span>j))</span>
+<span id="cb27-15"><a href="ultima-continued.html#cb27-15" aria-hidden="true" tabindex="-1"></a>            push<span class="op">!</span>(polys<span class="op">,</span> u[<span class="fl">2</span>]<span class="op">^</span>i<span class="op">*</span>u[<span class="fl">1</span>]<span class="op">^</span>i)</span>
+<span id="cb27-16"><a href="ultima-continued.html#cb27-16" aria-hidden="true" tabindex="-1"></a>        <span class="kw">end</span></span>
+<span id="cb27-17"><a href="ultima-continued.html#cb27-17" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
+<span id="cb27-18"><a href="ultima-continued.html#cb27-18" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span>
+<span id="cb27-19"><a href="ultima-continued.html#cb27-19" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb27-20"><a href="ultima-continued.html#cb27-20" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb28"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb28-1"><a href="ultima-continued.html#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb28-2"><a href="ultima-continued.html#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="co"># And some sinusoidal functions</span></span>
+<span id="cb28-3"><a href="ultima-continued.html#cb28-3" aria-hidden="true" tabindex="-1"></a>h <span class="op">=</span> [cos.(u)<span class="op">...;</span> sin.(u)<span class="op">...;</span> polys<span class="op">...</span>]</span>
+<span id="cb28-4"><a href="ultima-continued.html#cb28-4" aria-hidden="true" tabindex="-1"></a>basis <span class="op">=</span> Basis(h<span class="op">,</span> u)</span>
+<span id="cb28-5"><a href="ultima-continued.html#cb28-5" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb28-6"><a href="ultima-continued.html#cb28-6" aria-hidden="true" tabindex="-1"></a>h</span>
+<span id="cb28-7"><a href="ultima-continued.html#cb28-7" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span><span class="op">;</span></span></code></pre></div>
+<div class="sourceCode" id="cb29"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb29-1"><a href="ultima-continued.html#cb29-1" aria-hidden="true" tabindex="-1"></a>basis</span></code></pre></div>
+<pre><code>## &quot;29 dimensional basis in [u₁,u₂]&quot;</code></pre>
+<p>So, as you can see above, we just created a function space of 29 dimensions. That space includes every possible <a href="https://en.wikipedia.org/wiki/Linear_combination#:~:text=From%20Wikipedia%2C%20the%20free%20encyclopedia,a%20and%20b%20are%20constants">linear combination</a> of each dimension.
+And we are going to ask SINDy to give us the simplest function that shows the same Input-Output behaviour the neural network just learned.</p>
+<p>Without saying more, let’s do it!</p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb31-1"><a href="ultima-continued.html#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb31-2"><a href="ultima-continued.html#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Create an optimizer for the SINDy problem</span></span>
+<span id="cb31-3"><a href="ultima-continued.html#cb31-3" aria-hidden="true" tabindex="-1"></a>opt <span class="op">=</span> SR3()</span>
+<span id="cb31-4"><a href="ultima-continued.html#cb31-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the thresholds which should be used in the search process</span></span>
+<span id="cb31-5"><a href="ultima-continued.html#cb31-5" aria-hidden="true" tabindex="-1"></a>λ <span class="op">=</span> exp10.(<span class="op">-</span><span class="fl">7</span><span class="op">:</span><span class="fl">0.1</span><span class="op">:</span><span class="fl">3</span>)</span>
+<span id="cb31-6"><a href="ultima-continued.html#cb31-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Target function to choose the results from.</span></span>
+<span id="cb31-7"><a href="ultima-continued.html#cb31-7" aria-hidden="true" tabindex="-1"></a>g(x) <span class="op">=</span> x[<span class="fl">1</span>] <span class="op">&lt;</span> <span class="fl">1</span> ? <span class="cn">Inf</span> <span class="op">:</span> norm(x<span class="op">,</span> <span class="fl">2</span>)</span>
+<span id="cb31-8"><a href="ultima-continued.html#cb31-8" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb31-9"><a href="ultima-continued.html#cb31-9" aria-hidden="true" tabindex="-1"></a>Ψ <span class="op">=</span> SINDy(Xₙ[<span class="op">:,</span> <span class="fl">2</span><span class="op">:</span><span class="kw">end</span>]<span class="op">,</span> L̂[<span class="op">:,</span> <span class="fl">2</span><span class="op">:</span><span class="kw">end</span>]<span class="op">,</span> basis<span class="op">,</span> λ<span class="op">,</span>  opt<span class="op">,</span> g <span class="op">=</span> g<span class="op">,</span> maxiter <span class="op">=</span> <span class="fl">10000</span><span class="op">,</span> normalize <span class="op">=</span> <span class="ex">true</span><span class="op">,</span> denoise <span class="op">=</span> <span class="ex">true</span>)</span>
+<span id="cb31-10"><a href="ultima-continued.html#cb31-10" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb32"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb32-1"><a href="ultima-continued.html#cb32-1" aria-hidden="true" tabindex="-1"></a>Ψ.equations[<span class="fl">1</span>]</span></code></pre></div>
+<pre><code>## &quot;p₁ * u₁&quot;</code></pre>
+<div class="sourceCode" id="cb34"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb34-1"><a href="ultima-continued.html#cb34-1" aria-hidden="true" tabindex="-1"></a>Ψ.equations[<span class="fl">2</span>]</span></code></pre></div>
+<pre><code>## &quot;p₂ * u₂&quot;</code></pre>
+<p>OMG! The equations were perfectly restored! You can read this as:</p>
+<p><span class="math inline">\(ANN_1(prey, pred) = p_1*u_1 = p_1*Prey\)</span></p>
+<p><span class="math inline">\(ANN_2(prey, pred) = p_2*u_2 = p_2*Pred\)</span></p>
+<p><span class="math inline">\(\frac{dPrey}{dt} = Prey*(1.3 - 0.9*Pred) + p_1*Prey = Prey*(1.3 - 0.9*Pred + p1)\)</span></p>
+<p><span class="math inline">\(\frac{dPred}{dt} = Pred*(0.8*Prey - 1.8) + p_2*Pred = Pred*(0.8*Prey - 1.8 + p2)\)</span></p>
+<p>So, Remembering that we define the data Garriott was seeing as:</p>
+<p><span class="math inline">\(\frac{dPrey}{dt} = Prey*(1.3 - 0.9*Pred - players_{prey})\)</span></p>
+<p><span class="math inline">\(\frac{dPred}{dt} = Pred*(0.8*Prey - 1.8 - players_{pred})\)</span></p>
+<p>And that we also define that <span class="math inline">\(players_{prey} = players_{pred} = 0.4\)</span>, the recover parameter from de NN should <span class="math inline">\(-0.4\)</span>. Does it make sense?</p>
+<p>Lets ask for the parameters then:</p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb36-1"><a href="ultima-continued.html#cb36-1" aria-hidden="true" tabindex="-1"></a>parameters(Ψ)</span></code></pre></div>
+<pre><code>## &quot;-0.36237425,  -0.40059045&quot;</code></pre>
+<p>So, the parameters are a bit off. But now that we have the equations restored, we can run another SINDy to gain much more accuracy:</p>
+<div class="sourceCode" id="cb38"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb38-1"><a href="ultima-continued.html#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb38-2"><a href="ultima-continued.html#cb38-2" aria-hidden="true" tabindex="-1"></a>unknown_sys <span class="op">=</span> ODESystem(Ψ)</span>
+<span id="cb38-3"><a href="ultima-continued.html#cb38-3" aria-hidden="true" tabindex="-1"></a>unknown_eq <span class="op">=</span> ODEFunction(unknown_sys)</span>
+<span id="cb38-4"><a href="ultima-continued.html#cb38-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-5"><a href="ultima-continued.html#cb38-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Just the equations</span></span>
+<span id="cb38-6"><a href="ultima-continued.html#cb38-6" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> Basis((u<span class="op">,</span> p<span class="op">,</span> t)<span class="op">-&gt;</span>unknown_eq(u<span class="op">,</span> [<span class="fl">1</span>.<span class="op">;</span> <span class="fl">1</span>.]<span class="op">,</span> t)<span class="op">,</span> u)</span>
+<span id="cb38-7"><a href="ultima-continued.html#cb38-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-8"><a href="ultima-continued.html#cb38-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Retune for better parameters (we already know the equations)</span></span>
+<span id="cb38-9"><a href="ultima-continued.html#cb38-9" aria-hidden="true" tabindex="-1"></a>Ψf <span class="op">=</span> SINDy(Xₙ[<span class="op">:,</span> <span class="fl">2</span><span class="op">:</span><span class="kw">end</span>]<span class="op">,</span> L̂[<span class="op">:,</span> <span class="fl">2</span><span class="op">:</span><span class="kw">end</span>]<span class="op">,</span> b<span class="op">,</span> STRRidge(<span class="fl">0.01</span>)<span class="op">,</span> maxiter <span class="op">=</span> <span class="fl">100</span><span class="op">,</span> convergence_error <span class="op">=</span> <span class="fl">1e-18</span>)</span>
+<span id="cb38-10"><a href="ultima-continued.html#cb38-10" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb39"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb39-1"><a href="ultima-continued.html#cb39-1" aria-hidden="true" tabindex="-1"></a>parameters(Ψf)</span></code></pre></div>
+<pre><code>## &quot;-0.39629772, -0.40179992&quot;</code></pre>
+<p>So we recover the equations and its parameters with an outstanding accuracy.
+And that is even more incredible if we remember that we did this with a minimum of data.
+After seeing that, Garriott took a big deep breath. He immediately understood what was going on. The players were mass killing the animals.
+He called his team and started planning the strategy to face this, not knowing that it already was a lost cause…</p>
+</div>
+</div>
+<div id="summary-10" class="section level2" number="12.3">
+<h2><span class="header-section-number">12.3</span> Summary</h2>
+<p>In this chapter, we continued to deepen our understanding of systems of differential equations and their complex behavior.
+We went a step further, introducing the concept of universal differential equations which allow us, given a very small amount of data, to estimate some unknown term of the system.
+This opens a very big door, connecting machine learning and science, which can greatly enhance the production of knowledge.</p>
+</div>
+<div id="references-9" class="section level2" number="12.4">
+<h2><span class="header-section-number">12.4</span> References</h2>
+<ul>
+<li><p><a href="https://arxiv.org/abs/2001.04385">Universal Differential Equations for Scientific Machine Learning Paper</a></p></li>
+<li><p><a href="https://github.com/ChrisRackauckas/universal_differential_equations">Universal Differential Equations - Chris Rackauchas</a></p></li>
+</ul>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="ultima-online.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="time-series.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["data_science_in_julia_for_hackers.pdf", "data_science_in_julia_for_hackers.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

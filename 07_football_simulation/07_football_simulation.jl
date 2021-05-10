@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.20
+# v0.12.21
 
 using Markdown
 using InteractiveUtils
@@ -12,6 +12,17 @@ end
 
 # ╔═╡ 5f83510e-1fc5-11eb-3c40-83a844bf2907
 using Turing
+
+# ╔═╡ 3312a490-577d-11eb-08b2-9917572d77a3
+using LinearAlgebra
+
+# ╔═╡ ed4b583a-8bde-11eb-3537-a580e9e706d0
+md"### To do list
+ 
+We are currently working on:
+ 
+";
+
 
 # ╔═╡ 2414104e-1d41-11eb-37cb-9b5cee78a98b
 md"## Creating our conjectures"
@@ -26,7 +37,7 @@ For example, it is obvious to everyone that if we push a glass it will move in t
 """
 
 # ╔═╡ 4e4385b4-203b-11eb-0c5b-cbe41156401b
-md"$ \vec{F}^{\} = m*\vec{a}^{\} $"
+md"$ \vec{F}^{\} = m*\vec{a}^{\}$"
 
 # ╔═╡ 2dca2f42-203b-11eb-2cb3-0d6a3823cdcd
 md"""In this way, and with only one formula, it is possible to gain an understanding that is generalizable to many aspects of reality. 
@@ -39,9 +50,9 @@ In the case of a glass, we could weigh it with a scale. Then, by pushing it, we 
 
 However, as we try to advance in our understanding of reality, we arrive at more and more complex models and many times we are not so lucky to be able to define them with simple observable variables.
 
-For example, this is very common in the economic sciences, where models are created with variables such as "quality of life". Economists will try to measure this latent variable with other variables that can be observed (such as quality of life, schooling rate, number of hospitals for a certain number of inhabitants, etc), but that do not have an obvious and direct relationship as if they had newton's equations.
+For example, this is very common in the economic sciences, where models are created with variables such as "quality of life". Economists will try to measure this latent variable with other variables that can be observed (such as GDP per capita, schooling rate, number of hospitals for a certain number of inhabitants, etc), but that do not have an obvious and direct relationship as if they had newton's equations.
 
-This type of latent variables are used in different models to gain greater abstraction and to be able to obtain information that a priori is not found at first sight in the data. For example, in the case of economics, from concrete measures of a country's economy it is possible to generalize knowledge and be able to infer an abstract variable such as quality of life.
+This type of latent variables are used in different models to gain greater abstraction and to be able to obtain information that is not found at first sight in the data. For example, in the case of economics, from concrete measures of a country's economy it is possible to generalize knowledge and be able to infer an abstract variable such as quality of life.
 
 ### Bayesian hierarchical models
 
@@ -270,7 +281,8 @@ end;
 
 # ╔═╡ 4ae7d968-206f-11eb-1925-c5b5a31e6940
 begin
-using Plots
+	using Plots
+	gr()
 histogram(post_home, legend=false, title="Posterior distribution of home parameter")
 end
 
@@ -370,7 +382,8 @@ sorted_names = abbr_names[sorted_att]
 # ╔═╡ abace764-2062-11eb-2949-fd9e86b50f17
 begin
 	scatter(1:20, teams_att_μ[sorted_att], grid=false, legend=false, yerror=teams_att_σ[sorted_att], color=:blue, title="Premier league 17/18 teams attack power")
-	annotate!(collect(1:20), teams_att_μ[sorted_att] .+ 0.238, text.(sorted_names, :black, :center, 8))
+	annotate!([(x, y + 0.238, text(team, 8, :center, :black)) for (x, y, team) in zip(1:20, teams_att_μ[sorted_att], sorted_names)])
+
 	ylabel!("Mean team attack")
 end
 
@@ -388,7 +401,7 @@ end
 # ╔═╡ 539e68b4-2066-11eb-09c2-b337241c36bc
 begin
 	scatter(1:20, teams_def_μ[sorted_def], grid=false, legend=false, yerror=teams_def_σ[sorted_def], color=:blue, title="Premier league 17/18 teams defence power")
-	annotate!(collect(1:20), teams_def_μ[sorted_def] .+ 0.2, text.(sorted_names_def, :black, :center, 8))
+	annotate!([(x, y + 0.2, text(team, 8, :center, :black)) for (x, y, team) in zip(1:20, teams_def_μ[sorted_def], sorted_names_def)])
 	ylabel!("Mean team defence")
 end
 
@@ -414,20 +427,257 @@ end
 
 # ╔═╡ ee45d48e-206a-11eb-0edf-2b8b893bb583
 begin
-scatter(teams_att_μ, teams_def_μ, legend=false)
-annotate!(teams_att_μ, teams_def_μ.+ 0.016, text.(abbr_names, :black, :center, 6))
-annotate!(teams_att_μ, teams_def_μ.- 0.016, text.(position, :left, :center, 5))
+	scatter(teams_att_μ, teams_def_μ, legend=false)
+	annotate!([(x, y + 0.016, text(team, 6, :center, :black)) for (x, y, team) in zip(teams_att_μ, teams_def_μ, abbr_names)])
+	
+	annotate!([(x, y - 0.016, text(team, 5, :center, :black)) for (x, y, team) in zip(teams_att_μ, teams_def_μ, position)])
 
-xlabel!("Mean team attack")
-ylabel!("Mean team defence")
+	xlabel!("Mean team attack")
+	ylabel!("Mean team defence")
 end
 
 # ╔═╡ c794f45e-206b-11eb-33c4-05bc429ba846
-md"Well, great! Now we have some interesting information to analyze the teams and the league in general. It´s easier now to perceive how the two features interact with each other, comparing between teams and being able to see how that affects the final position. 
+md"""Well, great! Now we have some interesting information to analyze the teams and the league in general. It´s easier now to perceive how the two features interact with each other, comparing between teams and being able to see how that affects the final position. 
 
 For example, looking at the cases of Liverpool and Tottenham, or Leicester City and Everton; one could say (against general common sense) that the power of defense has a greater effect on the performance of each team than the attack. But we leave you to do those analysis for the betting house.
 
-Well, we went from having a problem that seemed almost impossible to have a solid solution, with a quantitative analysis of the characteristics of each team. We even know how much the localization of the teams increases the scoring rate. We were able to achieve this thanks to the hierarchical framework that Bayesianism provides us. Using this tool allows us to create models proposing latent variables that cannot be observed, to infer them and to gain a much deeper and more generalized knowledge than we had at first. You just have to imagine a good story."
+Well, we went from having a problem that seemed almost impossible to have a solid solution, with a quantitative analysis of the characteristics of each team. We even know how much the localization of the teams increases the scoring rate. We were able to achieve this thanks to the hierarchical framework that Bayesianism provides us. Using this tool allows us to create models proposing latent variables that cannot be observed, to infer them and to gain a much deeper and more generalized knowledge than we had at first. You just have to imagine a good story.
+
+## Simulate possible realities
+
+So we close our laptop and go with all this analysis to the sport bookmarker and start explain it to them. They are fascinated with it as now they have lot more precious information about each team, in order to make data grounded bets. Its a total victory!
+
+We are about to go when suddenly, one guy that have been quiet the hole time, say "in two weeks is the 2017–18 UEFA Champions League´s quarter-final and Manchester City plays against the Liverpool, two teams that be have already analize! Can any analysis be done to see the possible results and their probabilities?" 
+
+We think for a moment: "Yes, we have each teams strengths and weaknesses and they are also from the same league, so the home parameter would be the same"... Okey, we said, lets give it a try!
+
+Can you imagine a way to solve this problem?
+
+Well, we have the posterior characteristics of each team. And we have inferred from the data of football metches that the have played. So maybe we can do the opposite and, given the parameters of attack, defense and location of each teams, we could simulate a series of matches between them. We could actually simulate millions of these matches! Then we should only see which results occurred the most and with that we could obtain the **probability** of occurrence. At least sounds great, doesn´t it?
+
+First, lets see the parameters that we alredy have:
+"""
+
+# ╔═╡ ce82fbea-5779-11eb-2c2f-d9174c989e58
+begin
+	mci_att_post = collect(get(posterior, :att)[:att])[11][:,1];
+	mci_def_post = collect(get(posterior, :def)[:def])[11][:,1];
+	liv_att_post = collect(get(posterior, :att)[:att])[4][:,1];
+	liv_def_post = collect(get(posterior, :def)[:def])[4][:,1];
+end
+
+# ╔═╡ f414cdfc-5779-11eb-194a-f3e052d6acb9
+begin
+	ha1 = histogram(mci_att_post, title="Manchester City attack", legend=false)
+	ha2 = histogram(liv_att_post, title="Liverpool attack", legend=false)
+	plot(ha1, ha2, layout=(1,2))
+end
+
+# ╔═╡ 19844c48-577a-11eb-3bea-99ae3a6aeaa8
+begin
+	hd1 = histogram(mci_def_post, title="Manchester City defense", legend=false)
+	hd2 = histogram(liv_def_post, title="Liverpool defense", legend=false)
+	plot(hd1, hd2, layout=(1,2))
+end
+
+# ╔═╡ 9d5734ae-577a-11eb-2208-c1ec0795197e
+md"So it seems that the Manchester City have a little advantage over Liverpool. And this is reasonable. The Manchester City was the champion of the Premier League that year while the Liverpool came only fourth. But let stop talking, and start to simulate outcomes! "
+
+# ╔═╡ 5d05b034-577b-11eb-2fb0-332df95dd04f
+# This function simulates matches given the attack, defense and home parameters.
+# The first pair of parameters alwas correspond to the home team.
+
+function simulate_matches_(att₁, def₁, att₂, def₂, home, n_matches, home_team = 1)
+    if home_team == 1
+        logθ₁ = home + att₁ + def₂
+        logθ₂ = att₂ + def₁
+
+    elseif home_team == 2
+        logθ₁ = att₁ + def₂
+        logθ₂ = home + att₂ + def₁
+    else
+        return DomainError(home_team, "Invalid home_team value")
+    end
+    
+    scores₁ = rand(LogPoisson(logθ₁), n_matches)
+    scores₂ = rand(LogPoisson(logθ₂), n_matches)
+    
+    results = [(s₁, s₂) for (s₁, s₂) in zip(scores₁, scores₂)]
+    
+    return results
+end
+
+# ╔═╡ 6234b58c-577b-11eb-1272-a9fd7c56349b
+function simulate_matches(team1_att_post, team1_def_post, team2_att_post, team2_def_post, home_post, n_matches)
+    
+    team1_as_home_results = Tuple{Int64,Int64}[]
+    team2_as_home_results = Tuple{Int64,Int64}[]
+    
+    for (t1_att, t1_def, t2_att, t2_def, home) in zip(team1_att_post, team1_def_post, 
+                                                      team2_att_post, team2_def_post,
+                                                      home_post)
+        
+        team1_as_home_results = vcat(team1_as_home_results, 
+									 simulate_matches_(t1_att, t1_def, t2_att,
+													   t2_def, home, n_matches, 1))
+        
+        team2_as_home_results = vcat(team2_as_home_results,
+									 simulate_matches_(t1_att, t1_def, t2_att, 															   t2_def, home, n_matches, 2))
+    end
+    
+    max_t1_as_home = maximum(map(x -> x[1], team1_as_home_results))
+    max_t2_as_away = maximum(map(x -> x[2], team1_as_home_results))
+    
+    max_t1_as_away = maximum(map(x -> x[1], team2_as_home_results))
+    max_t2_as_home = maximum(map(x -> x[2], team2_as_home_results))
+
+    matrix_t1_as_home = zeros(Float64, (max_t1_as_home + 1, max_t2_as_away + 1))
+    matrix_t2_as_home = zeros(Float64, (max_t1_as_away + 1, max_t2_as_home + 1))
+    
+    for match in team1_as_home_results
+        matrix_t1_as_home[match[1] + 1, match[2] + 1] += 1
+    end
+    
+	normalize!(matrix_t1_as_home, 1)
+    
+    for match in team2_as_home_results
+        matrix_t2_as_home[match[1] + 1, match[2] + 1] += 1
+    end
+    
+	normalize!(matrix_t2_as_home, 1)
+    
+    return matrix_t1_as_home, matrix_t2_as_home
+end
+
+# ╔═╡ 0c43bfbc-577c-11eb-1a03-b78035d5057c
+md"""So what are those functions exactly doing? 
+
+Well, the first one is the simplest. It just simulates matches with a specific set of attack, defense and location parameters. So we have the parameters that define the Poisson´s rate parameters "$θ$" fixed (here we have to remember that every match is a sample from the two $LogPoisson$ distributions, each one modelating each teams score in a given match). And it simulates as many matches as the $n_{matches}$ parameter indicates in order to get a broad sampling of the two poisson distributions, that is, to have a good sampling of possible match results with those fixed parameters. That way we can obtain, given those parameters, which are the most likely results to occur. Lets take the parameter´s approximate mean (you can check them in the histograms of above) as an example to see what happen :"""
+
+# ╔═╡ e4e3350e-59ad-11eb-3132-574bd9505a7f
+mean(mci_att_post)
+
+# ╔═╡ e6bd3b9a-59a5-11eb-3c64-93fa5eaf192c
+simulate_matches_(0.75, -0.35, 0.55, -0.2, 0.33, 1000, 2)
+
+# ╔═╡ f5b332d0-59ad-11eb-1e93-8da5b52be991
+md"""As you can see, we just generated 1000 simulated matches with an specific set of fix parameters. The "2" is just indicating that the liverpool (second team) is local. But as good bayesians that we are, we don´t want to use only the parameters mean, we want to use the hole distribution. And that´s what the second function is doing: It takes each parameter distribution as input and generate 1000 simulations for each posterior distributions points. As we made 3000 iterations in the calculation of the posterior, the function is going to simulate 3,000,000 matches. Sounds good, isn´t it?
+
+Finally, It creates a matrix in which each of its positions is indicating a possible outcome and the value it takes will indicate the number of times over the 3,000,000 simulations in which that result came out. For example, the position (1,1) (top left of the matrix), is representing the matches whose results were 1 to 1. Also, the maximum length of the matrix is given by the maximum number of goals that have been scored in the simulation. Does it makes sense? 
+
+The $normalize!(matrix\_t1\_as\_home, 1)$ line is only converting the absolute number of times a result came up, into a proportion. That is, in this case, is going to divide all positions by 3,000,000. 
+
+So, lets see it in action!"""
+
+# ╔═╡ 650c93ee-577c-11eb-02ef-3fcd1f442fda
+mci_as_home_simulations, 
+liv_as_home_simulations = simulate_matches(mci_att_post, mci_def_post, 
+										   liv_att_post, liv_def_post,                                                            post_home, 1000)
+
+# ╔═╡ 801ed646-59b2-11eb-23d0-03607ec04dc9
+md"Looking those matrices could be not as enlightening as we wanted to. A good way to fix this is graphing them with a heatmap"
+
+# ╔═╡ df9ac5a8-59b2-11eb-3e09-21c5ca6d68d3
+function match_heatmaps(matrix_t1_as_home, matrix_t2_as_home,
+                        team1_name="Team 1", team2_name="Team 2")    
+    gr()   
+
+    x_t1_home = string.(0:10)
+    y_t1_home = string.(0:10)
+    heat_t1_home = heatmap(x_t1_home,
+                           y_t1_home,
+                           matrix_t1_as_home[1:11, 1:11],
+                           xlabel="$team2_name score", ylabel="$team1_name score",
+                           title="$team1_name as home")
+    
+    x_t2_home = string.(0:10)
+    y_t2_home = string.(0:10)
+    heat_t2_home = heatmap(x_t2_home,
+                           y_t2_home,
+                           matrix_t2_as_home[1:11, 1:11],
+                           xlabel="$team2_name score", ylabel="$team1_name score",
+                           title="$team2_name as home")
+    
+    plot(heat_t1_home, heat_t2_home, layout=(1,2), size=(900, 300))
+    current()   
+end
+
+# ╔═╡ ea212ed6-59b2-11eb-24ae-9f1a9a4da974
+match_heatmaps(mci_as_home_simulations, liv_as_home_simulations, "Manchester City", "Liverpool")
+
+# ╔═╡ 07f12d6c-59b3-11eb-2efe-cd96a6ee2867
+md"And Voilà! We have our beautiful heatmaps indicating which of the possible outcomes are the most probable! As we expected chances favour the Manchester City. To make this analysis even more quantitative, we can add up the probabilities of all outcomes that mean a win for one of the teams to get the overall probability of Manchester City winning, Liverpool winning or a draw occurring:"
+
+# ╔═╡ 1ef1447a-59b8-11eb-2fd8-f900fb3ce02c
+function win_and_lose_probability(simulation)
+    
+    team1_winning_prob = 0
+    team2_winning_prob = 0
+    draw_prob = 0
+    
+    for i in 1:size(simulation, 1)
+        for j in 1:size(simulation, 2)
+            if i > j
+                team1_winning_prob += simulation[i,j]
+            elseif i < j
+                team2_winning_prob += simulation[i,j]
+            else
+                draw_prob += simulation[i,j]
+            end
+        end
+    end
+    
+    return team1_winning_prob, team2_winning_prob, draw_prob
+end
+
+# ╔═╡ 821f397a-59c8-11eb-09d2-9b8102128ca5
+win_and_lose_probability(liv_as_home_simulations)
+
+# ╔═╡ 239ddf2e-59b8-11eb-153d-af38e52f4a8f
+win_and_lose_probability(mci_as_home_simulations)
+
+# ╔═╡ 74355b96-59c8-11eb-1998-497b28294071
+md"So the probability of winning for the Manchester City were 0.41 (or 41%) in the first match of the quarters final, with Liverpool as home, 0.37 for the Liverpool and 0.22 probability of a draw. In the second, with Manchester City as home, the chances were 0.65, 0.17 and 0.18 respectively.
+
+We also can ask for the probability of a specific score:"
+
+# ╔═╡ 11b43056-59cc-11eb-3d29-917205fe9592
+get_score_probability(score1::Int64, score2::Int64, simulation) = simulation[score1+1, score2+1]
+
+# ╔═╡ 46306124-59cc-11eb-2919-97f8ced0b8bd
+get_score_probability(1, 1, liv_as_home_simulations)
+
+# ╔═╡ 105c4540-59d1-11eb-05a3-4f895c782785
+get_score_probability(2, 1, mci_as_home_simulations)
+
+# ╔═╡ 78ab3b6a-59cc-11eb-1705-273fd202ced3
+md"So the most possible outcomes accumulates around 8-9% of probability
+
+What really happened wasn't expected. The Liverpool won 3-0 being home in the first round of the quarters final. And then Liverpool won 2-1 in Manchester´s estadium! It was really unexpected. The Manchester was the favorite by far, the probability was on his side, and still could not beat Liverpool."
+
+# ╔═╡ a80d9bc0-59cf-11eb-22aa-bff0f84cf6b5
+get_score_probability(0, 3, liv_as_home_simulations)
+
+# ╔═╡ 85bcf944-59cf-11eb-0834-fd898b31a776
+get_score_probability(1, 2, mci_as_home_simulations)
+
+# ╔═╡ cbe72dd2-59d0-11eb-34fe-31533b6139f7
+md"Still, the model assigns some probability to those results. Here is the information, then, you have to decide what to do with it.
+
+As data scientist that we are, our labor is to came up with possible solutions to a problem, try it, have fun, and learn from it in order to be able to came up with better solutions. It is a very good practice to constructively criticize the models that we develop. So, can you think of improvements for our model? Well, I help you with some ideas: 
+
+The logic of a cup tournament is different than the league. In the first one, if you lose, you have to return to your house and the other advances to the next round. And in the league, you have to be consistent to the hole year. Maybe a draw is good for you, as your goal is to make the most difference in points. So try to extrapolate the model to other tournament maybe questionable. 
+
+Other thing is that we suppose that the two matches were independent, when the second one is conditioned to the first! As the Liverpool won the first match, the Manchester had to played to the second game with the aim of making at least 3 goals while Liverpool were only focus in the defence.
+
+
+Anyway, we just learned that modeling is not a easy task. But the way to get better is proposing them, testing them and learning from them. In other words, the only way to learn is doing them (as any other skill in life). So, relax, model and have fun :)
+
+## Summary
+
+In this chapter we have learned about bayesian hierarchical models and how to use simulations to count different possible outcomes. First, we talked about latent variables and how important they are for gaining more abstraction in our models. After explaning the pro's of the hierarchical models, we proceed on building a model to get a deeper understanding of the Premier League. After inferring its parameters, we have used visualizations to understand the influence of attack and defense power in the league. Finally, we ran a simulation in order to calculate the probabilities of each possible outcome of a match between Liverpool and Manchester City.
+
+"
 
 # ╔═╡ fcb7e8d2-2071-11eb-020d-7bb1d53f8a6d
 md"### Bibliography 
@@ -437,7 +687,29 @@ md"### Bibliography
 
 "
 
+# ╔═╡ 094c4b94-8b57-11eb-3731-f9d63210182c
+md" ### Give us feedback
+ 
+ 
+This book is currently in a beta version. We are looking forward to getting feedback and criticism:
+  * Submit a GitHub issue **[here](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues)**.
+  * Mail us to **martina.cantaro@lambdaclass.com**
+ 
+Thank you!
+ 
+"
+
+
+# ╔═╡ 0a39835a-8b57-11eb-3b0e-97a3dd382dbb
+md"
+[Next chapter](https://datasciencejuliahackers.com/08_basketball_shots.jl.html)
+"
+ 
+
+
+
 # ╔═╡ Cell order:
+# ╟─ed4b583a-8bde-11eb-3537-a580e9e706d0
 # ╟─2414104e-1d41-11eb-37cb-9b5cee78a98b
 # ╟─3b7f8a1e-1d42-11eb-1ab1-c11fda416e80
 # ╟─4e4385b4-203b-11eb-0c5b-cbe41156401b
@@ -504,4 +776,33 @@ md"### Bibliography
 # ╠═b8f9bae8-206a-11eb-1426-031f6fd05fd6
 # ╠═ee45d48e-206a-11eb-0edf-2b8b893bb583
 # ╟─c794f45e-206b-11eb-33c4-05bc429ba846
+# ╠═ce82fbea-5779-11eb-2c2f-d9174c989e58
+# ╠═f414cdfc-5779-11eb-194a-f3e052d6acb9
+# ╠═19844c48-577a-11eb-3bea-99ae3a6aeaa8
+# ╟─9d5734ae-577a-11eb-2208-c1ec0795197e
+# ╠═3312a490-577d-11eb-08b2-9917572d77a3
+# ╠═5d05b034-577b-11eb-2fb0-332df95dd04f
+# ╠═6234b58c-577b-11eb-1272-a9fd7c56349b
+# ╟─0c43bfbc-577c-11eb-1a03-b78035d5057c
+# ╠═e4e3350e-59ad-11eb-3132-574bd9505a7f
+# ╠═e6bd3b9a-59a5-11eb-3c64-93fa5eaf192c
+# ╟─f5b332d0-59ad-11eb-1e93-8da5b52be991
+# ╠═650c93ee-577c-11eb-02ef-3fcd1f442fda
+# ╟─801ed646-59b2-11eb-23d0-03607ec04dc9
+# ╠═df9ac5a8-59b2-11eb-3e09-21c5ca6d68d3
+# ╠═ea212ed6-59b2-11eb-24ae-9f1a9a4da974
+# ╟─07f12d6c-59b3-11eb-2efe-cd96a6ee2867
+# ╠═1ef1447a-59b8-11eb-2fd8-f900fb3ce02c
+# ╠═821f397a-59c8-11eb-09d2-9b8102128ca5
+# ╠═239ddf2e-59b8-11eb-153d-af38e52f4a8f
+# ╟─74355b96-59c8-11eb-1998-497b28294071
+# ╠═11b43056-59cc-11eb-3d29-917205fe9592
+# ╠═46306124-59cc-11eb-2919-97f8ced0b8bd
+# ╠═105c4540-59d1-11eb-05a3-4f895c782785
+# ╟─78ab3b6a-59cc-11eb-1705-273fd202ced3
+# ╠═a80d9bc0-59cf-11eb-22aa-bff0f84cf6b5
+# ╠═85bcf944-59cf-11eb-0834-fd898b31a776
+# ╟─cbe72dd2-59d0-11eb-34fe-31533b6139f7
 # ╟─fcb7e8d2-2071-11eb-020d-7bb1d53f8a6d
+# ╟─094c4b94-8b57-11eb-3731-f9d63210182c
+# ╟─0a39835a-8b57-11eb-3b0e-97a3dd382dbb

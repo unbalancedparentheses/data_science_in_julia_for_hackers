@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.2
+# v0.12.21
 
 using Markdown
 using InteractiveUtils
@@ -16,6 +16,14 @@ using Plots
 using Turing
 using StatsPlots
 end
+
+# ╔═╡ ffb305f0-8bdd-11eb-33ec-953f9068f69e
+md"### To do list
+ 
+We are currently working on:
+
+";
+
 
 # ╔═╡ 8b60ead6-187a-11eb-1993-558456e7d356
 md"# Escaping from Mars!
@@ -453,10 +461,42 @@ end
 # ╔═╡ 22ea7608-1ae5-11eb-0e4d-b15d79ea5b59
 md"Finally, we obtained the escape velocity scape from Mars."
 
+# ╔═╡ dade6450-81d2-11eb-310b-6599ff45856c
+md"
+### Summary
+In this chapter we had to find the escape velocity from Mars. 
+To solve this problem, we first needed to find the gravity of Mars, so we started with a physical description of the problem and concluded that by measuring the distance and time of a rock throw plus some Bayesian analysis we could infer the gravity of Mars.
+
+Then we created a simple probabilistic model, with the prior probability set to a uniform distribution and the likelihood to a normal distribution.
+We sampled the model and obtained our first posterior probability.
+We repeated this process two more times, changing the prior distribution of the model for more accurate ones, first with a normal distribution and then with a logarithmic one. 
+
+Finally, we used the gravity we inferred to calculate the escape velocity from Mars.
+"
+
+# ╔═╡ 86027556-8b79-11eb-1503-472d63093c04
+md" ### Give us feedback
+ 
+ 
+This book is currently in a beta version. We are looking forward to getting feedback and criticism:
+  * Submit a GitHub issue **[here](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues)**.
+  * Mail us to **martina.cantaro@lambdaclass.com**
+ 
+Thank you!
+"
+
+
+# ╔═╡ 857344d0-8b79-11eb-0e02-1359ef1a2423
+md"
+[Next chapter](https://datasciencejuliahackers.com/07_football_simulation.jl.html)
+"
+
+
 # ╔═╡ 37847564-186a-11eb-399a-c1023c4ea7ed
 v0 = [10, 12, 14, 13, 8]; #m/s
 
 # ╔═╡ Cell order:
+# ╟─ffb305f0-8bdd-11eb-33ec-953f9068f69e
 # ╟─8b60ead6-187a-11eb-1993-558456e7d356
 # ╟─972d18fe-1acc-11eb-0b4f-4d1fdc1a4d2c
 # ╟─9e309302-1ada-11eb-3bb0-f90dbdea8bb9
@@ -495,20 +535,20 @@ v0 = [10, 12, 14, 13, 8]; #m/s
 # ╠═b3d511d4-1a0c-11eb-213a-9dc628b75d5d
 # ╠═de2c1e8c-1a0c-11eb-281d-cfd0e038f61d
 # ╟─8197a7de-1a18-11eb-34f5-69527c179e4f
-# ╟─bcaa8d3e-1a0c-11eb-0118-d59af31cc354
+# ╠═bcaa8d3e-1a0c-11eb-0118-d59af31cc354
 # ╟─9769da36-1a19-11eb-21ec-63f612b19380
 # ╟─bb570a5e-1a19-11eb-26ca-0dd1a523dc5d
 # ╟─f61779cc-1a1b-11eb-02ae-9332216c7760
 # ╠═950c347a-1952-11eb-2bef-1fd9c4223209
 # ╟─ef7350d2-19f0-11eb-1ffa-9991926d4dd9
 # ╟─ea26e290-1952-11eb-2459-19bc54917685
-# ╟─fcdda73e-1952-11eb-01dc-83bb0830da47
+# ╠═fcdda73e-1952-11eb-01dc-83bb0830da47
 # ╟─73734d22-1953-11eb-0b03-7dda4b7d450d
 # ╟─7b5a92a8-19f7-11eb-027a-c9c04f88b6dc
 # ╟─69235290-1a20-11eb-0dfd-77c64ba4b78b
 # ╠═faf37432-19fc-11eb-3bfe-534cdbd6102d
 # ╠═736ec5da-19fc-11eb-038a-15db3980fa42
-# ╟─944976d0-19fc-11eb-22ad-8d8d33b55d7c
+# ╠═944976d0-19fc-11eb-22ad-8d8d33b55d7c
 # ╟─156381ee-1a22-11eb-28bb-d9f8ae75bc39
 # ╟─f816003a-1a23-11eb-2124-e59991aa0e5e
 # ╟─730d6e62-1a25-11eb-09cd-4133b7f6c59a
@@ -525,4 +565,7 @@ v0 = [10, 12, 14, 13, 8]; #m/s
 # ╟─c45349a2-1ae0-11eb-3f6e-ebb0e02c01f2
 # ╠═fcf260ce-1ae3-11eb-28a4-556a8fbd5335
 # ╟─22ea7608-1ae5-11eb-0e4d-b15d79ea5b59
+# ╟─dade6450-81d2-11eb-310b-6599ff45856c
+# ╟─86027556-8b79-11eb-1503-472d63093c04
+# ╟─857344d0-8b79-11eb-0e02-1359ef1a2423
 # ╟─37847564-186a-11eb-399a-c1023c4ea7ed

@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.20
+# v0.12.21
 
 using Markdown
 using InteractiveUtils
@@ -29,7 +29,7 @@ You may or may not like bees. Either if you are afraid of them stinging you, or 
 
 # ╔═╡ 70f367f4-3be4-11eb-0a64-b9258c771d20
 begin
-	scale = 0.8
+	scale = 0.5
 	im = load("images/pollination.jpg")
 	im = imresize(im, Int(floor(scale*size(im)[1])), Int(floor(scale*size(im)[2])))
 end
@@ -76,7 +76,11 @@ A typical representation of how a neural network operates looks something like t
 "
 
 # ╔═╡ 72ae2826-3e51-11eb-3c71-87b8019085a8
-load("images/conv_net.png")
+begin
+	scale_two = 0.3
+	conv_net =load("images/conv_net.png")
+	conv_net = imresize(conv_net, Int(floor(scale_two*size(conv_net)[1])), Int(floor(scale_two*size(conv_net)[2])))
+end
 
 # ╔═╡ 30b40e16-3e53-11eb-1fae-bddf5a8ac229
 md"
@@ -102,8 +106,6 @@ Now that we have a general idea of what Deep Learning and Neural Networks are, l
 md"
 The dataset we will be working with is available to us, once again, thanks to [Kaggle](https://www.kaggle.com/). It consists of 3184 images of bees and 4945 of wasps. These are RGB images, meaning that they contain the information of colour. Also, they come in a variety of different sizes.
 Digital images are composed of pixels, which are the minimum piece of information in them. In a colored image, each pixel has three channels: R for Red, G for Green and B for Blue. As their names imply, these channels gives the information of the value of red, green and blue colors in that pixels. For the human vision, a combination of these channels is sufficient to percieve any color in our visual spectrum.
-
-**TALK ABAOUT CONES AND RODS IN HUMAN EYE.
 
 Gray scale images, in the other hand, have only one channel per pixel, that is associated with the amount of light coded in that pixel. Naturally, working with gray scale images is easier from a computational perspective. For our problem, we want to stay as simple as possible, so we are going to transform all images to gray scale. As we are dealing with a simple classification problem, the color information probably won't we contributing too much, so we can save some training time using gray scale images. 
 We would also resize all images to a common size, another simplification we are adopting to our problem, making them smaller, but not too small so we don't lose a lot of information that could be valuable for the network.
