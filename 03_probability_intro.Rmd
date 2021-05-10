@@ -135,7 +135,7 @@ Probability, being a measure of our own belief or certainty in the occurrence of
 For this reason, events may still occur when we assign them probability $0$, and they might not occur if we assign them probability $1$.
 
 By definition, the probability of the entire sample space $S$ is unity, or $P\{S\} = 1$. 
-It follows that for any event $A$: $0 <P(A) <1$.
+It follows that for any event $A: 0 <P(A) <1$.
 
 In our experiment we can consider that all the sample points have the same realization probability, so we assign $\frac{1}{6}$ to each one.
 Of course, this is an assumption we make, considering that no ball has some distinctive property and that they are distributed randomly in the box.
@@ -154,10 +154,7 @@ For A = "The white ball was taken" = $\{(R,W), (G,W), (B,W)\}$
 
 $P(A) = P(R,W) + P(G,W)+ P(B,W) = \frac{1}{6}+ \frac{1}{6} + \frac{1}{6} = \frac{3}{6} = 0.5$
 
-
-
 $P(A´) = P(R,G) + P(R,B) + P(G,B) = \frac{1}{6}+ \frac{1}{6} + \frac{1}{6} = 0.5$
-
 
 B= "The red wall was not taken" = $\{(G,B)(G,W)(B,W)\}$
  
@@ -171,14 +168,14 @@ $P(A \cap B) = \frac{2}{6}$
 
 For any two events A and B the probability that either A or B or both occur is given by
 
-$ P(A \cup B) = P(A) + P(B) - P(A \cap B)$
+$P(A \cup B) = P(A) + P(B) - P(A \cap B)$
 
 
-$ P(A \cup B) =$ $\frac{3}{6} + \frac{3}{6} - \frac{1}{6}$ $= \frac{5}{6}$
+$P(A \cup B) =\frac{3}{6} + \frac{3}{6} - \frac{1}{6}= \frac{5}{6}$
 
 Another example:
 
-$ P(A \cup A´)= P(A) + P(A´) - P(A \cap A´) = \frac{3}{6} + \frac{3}{6} - 0= 1 $
+$P(A \cup A´)= P(A) + P(A´) - P(A \cap A´) = \frac{3}{6} + \frac{3}{6} - 0= 1$
 
 
 ## Conditional probability
@@ -215,9 +212,10 @@ P(A|B) is interpreted as the probability of picking a red and a green ball knowi
 
 
 $A = \{(R,G),(R,B),(R,W)\} => P(A) = \frac{3}{6}$
-$B = \{(R,G)\} => P(B) => \frac{3}{6}$
-$A \cap B = \{(R,G)\} => P(A \cap B) = \frac{1}{6}$
 
+$B = \{(R,G)\} => P(B) => \frac{3}{6}$
+
+$A \cap B = \{(R,G)\} => P(A \cap B) = \frac{1}{6}$
 
 $P(A|B) = \frac{P(A \cap B)}{P(B)}$ 
 
@@ -230,7 +228,8 @@ Now, let's conclude our experiment and delve into more interesting problems.
 
 We refer to joint probability as the probability of two events occurring together and at the same time. 
 For two general events A and B, their joint probability is denoted:
- $P(A\text{ and }B)$
+
+$P(A\text{ and }B)$
 
 Let's see how it works with an example.
 
@@ -291,8 +290,7 @@ Just like doing $2 + 3$ or $3 + 2$, the 'and' logical operator is commutative.
 
 With this concepts in mind we will now proceed to derive the famous Bayes' theorem.
 
-
-$P(B\text{ and }A) = P(B)P(A|B),$
+$P(B\text{ and }A) = P(B)P(A|B)$
 
 And putting all the pieces together, 
 
@@ -369,7 +367,7 @@ The probability of receiving 0 spam emails on a Monday is approximately 0.2, for
 λ=4
 ```
 
-```{julia} 
+```{julia chap_03_plot_16} 
 bar(Poisson(λ), xlabel="x", ylabel="Probability", legend=false, size=(400, 300))
 ```
 
@@ -531,7 +529,6 @@ So far we have been talking about histograms as probability density functions. D
 
 
 All the concepts we developed about probability density, are directly applied to our Bayesian formalism. The prior, likelihood and posterior probabilities are really *probability densities*, and that is really how we treat Bayes' theorem mathematically and computationally.
-
 
 ## Example: Bayesian Bandits
 Now we are going to tackle a famous problem that may help us to understand a little bit how to incorporate what we learned about Bayesian probability and some features of the Julia language. Here we present the **bandit** or **multi-armed bandit** problem. Although it is conceived thinking about a strategy for a casino situation, there exist a lot of different settings where the same strategy could be applied.

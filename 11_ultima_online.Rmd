@@ -1,6 +1,5 @@
 # Ultima online
 
-
 ```{julia chapter_11_libraries, cache = TRUE , results = FALSE, echo=FALSE}
 cd("./11_ultima_online/") 
 import Pkg
@@ -37,9 +36,13 @@ To begin to understand how this complex ecosystem was created, it makes sense to
 The idea is the same as we mentioned above. In this case, we will have a "prey" population that will have such a reproduction rate that:
 
 $Prey Population_{t+1} \sim PreyPopulation_{t} * BirthRate$
+
 And a mortality rate that will be also affected by the prey population
+
 $Prey Population_{t+1} \sim PreyPopulation_{t}* MortalityRate$
+
 So, calling PreyPopulation as $Prey$, Birthrate as $b_{prey}$ and Mortality rate as $m_{prey}$ for simplicity, we can write this as:
+
 $\frac{dPrey}{dt} = Prey*(b_{prey} - m_{prey})$
 
 The population at time $t$ multiplies at both rates because if the population is zero there can be no births or deaths. This leads us to the simplest ecological model, in which per capita growth is the difference between the birth rate and the mortality rate. 
@@ -59,8 +62,11 @@ This can be a difficult concept to understand because we are very used to work w
 But the model we are looking for have to explain the interaction between the two species. To do so, we must include the Pradator Population in order to modify the mortality rate of the Prey, leaving us with:
 
 $\frac{dPrey}{dt} = Prey*(b_{prey} - m_{prey}*Pred)$
+
 In a similar way we can think the interaction on the side of the predator, were the mortality rate would be constant and the birth rate will depend upon the Prey population:
+
 $\frac{dPred}{dt} = Pred*(b_{pred}*Prey - m_{pred})$
+
 In this way we obtain the Lotka-Volterra model in which the population dynamics is determined by a system of coupled ordinal differential equations (ODEs). This is a very powerful model which tells us that two hunter-prey populations in equilibrium will oscillate without finding a stable value. In order to see it, we will have to use some [SciML](https://sciml.ai/) libraries
 
 #### SciML to simulate population dynamics

@@ -217,7 +217,7 @@ Neural networks can get much more complicated than what we have discussed, but t
 
 Below we show how the CNN we have discussed is implemented in Julia using the Flux package.
 
-```{julia} 
+```julia 
 # here we define our convolutional neural network model.
 # la última capa densa tiene que tener un input que depende de la resolución de las imágenes. 
 model = Chain(
