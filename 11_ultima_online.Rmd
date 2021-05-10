@@ -101,7 +101,7 @@ plot(sol)
 
 #### Obtaining the model from the data
 
-Back to the terrible case of Ultima Online. Suppose we had data on the population of predators and prey that were in harmony during the game at a given time. If we wanted to venture out and analyze what parameters Garriot and his team used to model their great ecosystem, would it be possible? Of course it is, we just need to add a little Bayesianism.
+Back to the terrible case of Ultima Online. Suppose we had data on the population of predators and prey that were in harmony during the game at a given time. If we wanted to venture out and analyze what parameters Garriott and his team used to model their great ecosystem, would it be possible? Of course it is, we just need to add a little Bayesianism.
 
 ```{julia}
 data = CSV.read("./11_ultima_online/ultima_online_data.csv", DataFrame)
@@ -342,4 +342,4 @@ In this chapter we have learned about the usefulness of differential equations f
 
 - [SciML](https://sciml.ai/)
 - [Turing Bayesian Differential Equation](https://turing.ml/dev/tutorials/10-bayesiandiffeq/)
-- [Garriot telling the Story](https://www.youtube.com/watch?v=KFNxJVTJleE&ab_channel=ArsTechnica)
+- [Garriott telling the Story](https://www.youtube.com/watch?v=KFNxJVTJleE&ab_channel=ArsTechnica)
