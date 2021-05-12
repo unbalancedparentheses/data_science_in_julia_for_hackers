@@ -40,15 +40,13 @@ We are currently working on:
 # ╔═╡ 5f171c4c-1567-11eb-0d69-f116e79738b5
 md"# Overview
 
-In a bayesian framework we can work intrinsically with the uncertainty of the data. It allows us to include it in our models. This is especially beneficial when we want to take a decision based on the results of a model. In this type of problem, if we optimize the expected value of the function we want to maximize, we obtain just a number, losing all the information and richness uncertainty can give us.
+In a bayesian framework we can work intrinsically with the uncertainty of the data. It allows us to include it in our models. This is especially beneficial when we want to make a decision based on the results of a model. In this type of problem, if we optimize the expected value of the function we want to maximize, we obtain just a number, losing all the information and richness uncertainty can give us.
 
-In real-life scenarios, when making decisions we almost never have all the necessary information and therefore we have to deal with uncertainty. So it's important to be able to take into account how certain we are of the information we have. It may be the case that the value that maximizes (or minimize) certain problem comes with a lot of uncertainty so would be more appropriate to choose other with a better optimization-uncertainty trade off.
+In real-life scenarios, when making decisions we almost never have all the necessary information and therefore we have to deal with uncertainty. So it's important to be able to take into account how certain we are of the information we have. It may be the case that the value that maximizes (or minimizes) certain problem comes with a lot of uncertainty so it would be more appropriate to choose other with a better optimization-uncertainty trade off.
 
-Bayesian inference allows us to do this because of it approach of a statistical problem. From its point of view, the data obtained on an event is fixed. They are observations that have already happened and there is nothing stochastic about it. So the data is deterministic.
+Bayesian inference allows us to do this because of its approach of a statistical problem. From its point of view, the data obtained on an event is fixed. They are observations that have already happened and there is nothing stochastic about it. So the data is deterministic.
 
-On the contrary, the parameters of the models we propose to describe such data are stochastic, following a given probability distribution. In this way, the inference that is made is on the complete distributions of our parameters, which allows us, precisely, to include the uncertainty into our models.
-
-Before starting we want to thank [Chad Scherrer](https://github.com/cscherrer) since this chapter is inspired by his [article](https://cscherrer.github.io/post/max-profit/)"
+On the contrary, the parameters of the models we propose to describe such data are stochastic, following a given probability distribution. In this way, the inference that is made is on the complete distributions of our parameters, which allows us, precisely, to include the uncertainty into our models."
 
 # ╔═╡ b53fe140-1567-11eb-134b-39d6066eb06d
 md"## Optimal pricing
@@ -56,16 +54,16 @@ md"## Optimal pricing
 ---------------
 Pricing a product is not an easy task. Multiple factors intervene in a customer's decision to buy a product. Also, a price can be fixed for some unknown business' decision. Now suppose you have a new product you want to introduce in the local market and you need to set a price for it. Also, as a businessman, you want to have the maximum profit.
 
-If the kind of product you intend to produce were already in the market, you could use this information to have an initial guess. If the price is too high, you probably won't sell much. Conversely, if it’s too low, you probably sell more, but since the production process has an associate cost, you have to be careful and take it into account when you do the math.
+If the kind of product you intend to produce were already in the market, you could use this information to have an initial guess. If the price is too high, you probably won't sell much. Conversely, if it’s too low, you probably sell more, but since the production process has an associated cost, you have to be careful and take it into account when you do the math.
 
 ### Price vs Quantity model
 
-We are going to use a known equation to model the relationship between price of a product and the quantity demanded, the equation (1). The figure 1 shows its behavior for some value of *a* and *c*. This equation tell us that the higher the price, the less we sell, and  if we continue rising the price, eventually our product it's so expensive that nobody is interested."
+We are going to use a known equation to model the relationship between price of a product and the quantity demanded, the equation (1). The figure 1 shows its behavior for some value of *a* and *c*. This equation tells us that the higher the price, the less we sell, and  if we continue raising the price, eventually our product it's so expensive that nobody is interested."
 
 # ╔═╡ 821ba35e-1568-11eb-3a08-f988ebc1b1e3
 md"You can imagine this as when you buy a luxury bread at the bakery: 
 
-In the beginning, if the price of this bread is very low and you will surely buy many of them, even giving some away so that others can try them. If one day you wake up and see that the price of this tasty bread is now double, you will surely stop buying too much and just concentrate on having it for a nice breakfast. Now, if a couple of months later the bakery became famous thanks to its delicious bread and they decided to sell it five times more expensive than before, you would start looking for another bakery.
+In the beginning, if the price of this bread is very low, you will surely buy many of them, even giving some away so that others can try them. If one day you wake up and see that the price of this tasty bread is now double, you will surely stop buying too much and just concentrate on having it for a nice breakfast. Now, if a couple of months later the bakery became famous thanks to its delicious bread and they decided to sell it five times more expensive than before, you would start looking for another bakery.
 
 #### Power law distributions
 
@@ -224,11 +222,11 @@ Returning to the code. Julia allows us to easily define the variables that are p
 
 In addition, since the quantity of product sold is a discrete one and it comes from adding independent purchases, they are modeled as a poisson distribution.
 
-But why do we subtract the mean for the price values?  It´s a good practice to avoid a common problem: multicollinearity. With multicollinearity, the models tend to be more certain about the plausible values of our model, meanwhile models with more normalized data are more conservative and they are less prone to overfitting, an unwanted effect we need to avoid if we expect our model to work good with new. As a rule of thumb, it is always good to standardize our data. That is, subtract their average and divide each by its standard deviation.
+But why do we subtract the mean for the price values?  It's a good practice to avoid a common problem: multicollinearity. With multicollinearity, the models tend to be more certain about the plausible values of our model, meanwhile models with more normalized data are more conservative and they are less prone to overfitting, an unwanted effect we need to avoid if we expect our model to work good with new. As a rule of thumb, it is always good to standardize our data. That is, subtract their average and divide each by its standard deviation.
 
 #### Updating our beliefs
 
-In our problem, we said we have already recorded some points of the curve for our product. And to do it we simply run the pilot test, fixing a price and counting the amount of product we sold. We can infer employing this data the “demand curve”, then we can propose a profit function for the new product and finally find the price that maximizes our profit. In the figure 2 we plot the points recorded in the pilot test. At first sight they seem to follow the expected relationship but it is not a perfect curve, right? They have some kind of "noise". Well, after all we could say that the reality is noisy."""
+In our problem, we said we have already recorded some points of the curve for our product. And to do it we simply run the pilot test, fixing a price and counting the amount of product we sold. We can infer employing this data the “demand curve”, then we can propose a profit function for the new product and finally find the price that maximizes our profit. In figure 2 we plot the points recorded in the pilot test. At first sight they seem to follow the expected relationship but it is not a perfect curve, right? They have some kind of "noise". Well, after all we could say that the reality is noisy."""
 
 # ╔═╡ 785a8984-1570-11eb-3b51-131d970de8d3
 begin
@@ -266,7 +264,7 @@ end
 md"*Posterior distributions for the parameters log a and c.*"
 
 # ╔═╡ 02207a56-1574-11eb-0436-67fe6b08448d
-md"Let's stop for a moment and analyze this. We defined our model and asked turing to return the best possible estimate of our parameters, taking into account our initial beliefs and the information obtained from the pilot test, and what Turing returns was a distribution of possibilities for those parameters.
+md"Let's stop for a moment and analyze this. We defined our model and asked Turing to return the best possible estimate of our parameters, taking into account our initial beliefs and the information obtained from the pilot test, and what Turing returned was a distribution of possibilities for those parameters.
 
 But, our model is defined by a single value of a and c. So what do we do? One option would be to take the mean of our distributions."
 
@@ -300,7 +298,7 @@ end
 end
 
 # ╔═╡ 7cf67c6e-1574-11eb-3953-cd88073b6879
-md"Here we are creating an array of as many rows as price values we want to observe and with as many columns as samples we have of each of our log and c parameters, that is, as many columns as models we have at our disposal. Let´s plot them all and se what happen:"
+md"Here we are creating an array of as many rows as price values we want to observe and with as many columns as samples we have of each of our log and c parameters, that is, as many columns as models we have at our disposal. Let's plot them all and see what happen:"
 
 # ╔═╡ 855ae83e-1574-11eb-2b2a-5b6371a7f110
 begin
@@ -319,7 +317,7 @@ md"In this way we can visualize all the possible models that our Bayesian infere
 
 As a last check (even if we have already taken preventive measures), we want to make sure that our model parameters do not share information. That is, we want to check that there is no collinearity between them.
 
-To evaluate multicollinearity between the two parameters of our model, we plot the sampled values, one against the other. In the figure 4, we don't see a pattern, they seem to be decorrelated, therefore multicollinearity is not present in our model, so we are good to go and we can continue with the problem."
+To evaluate multicollinearity between the two parameters of our model, we plot the sampled values, one against the other. In figure 4, we don't see a pattern, they seem to be decorrelated, therefore multicollinearity is not present in our model, so we are good to go and we can continue with the problem."
 
 # ╔═╡ b758edd6-1574-11eb-2fe3-218ddec7fd26
 begin
@@ -340,7 +338,7 @@ Now that we have estimated our posterior distributions, we will try to answer th
 
 This is why we calculated the relationship between the price and the quantity of our product. As we said before, depending on that relation, it was going to be possible to define an optimal price point. Now we only have to add one more part to the equation: the production costs. 
 
-Having this, we will be able to set up our profit function that will tell us, for each price we choose, how much money we would expect to earn. So let´s define it:
+Having this, we will be able to set up our profit function that will tell us, for each price we choose, how much money we would expect to earn. So let's define it:
 
 As many of you know, the profit on the sale of a product is calculated as income minus costs.
 
@@ -410,7 +408,7 @@ Then, analyzing the graph:
 
 The red line plotted is the mean expected profit and its maximum is near $4840. The region between the orange lines is approximately one standard deviation far from the expected value or where the 65% of the lines, plotted from the sampled values of our parameters, fall.
 
-With this in mind and seeing that the profit curve is quite flat in the sector where the maximum is found, one could argue that it is preferable to choose a lower price since since the money lost would be minimal, but the volatility would go down considerably.
+With this in mind and seeing that the profit curve is quite flat in the sector where the maximum is found, one could argue that it is preferable to choose a lower price since the money lost would be minimal, but the volatility would go down considerably.
 
 In order to see this, it would be interesting to graph the standard deviation of the profit according to the price we choose:
 "
@@ -484,13 +482,13 @@ porcentual_std_diff = ( unfav_4000 - unfav) / unfav *100
 # ╔═╡ 32997ca8-1869-11eb-2bc6-11da0327e0b8
 md"""So, for every dollar we "lost" in average profitability, we gained more than double in the reduction of uncertainty.
 
-Regardless of each person decision, the important thing about the Bayesian framework is that it allows us to include uncertainty in our models and use it to our advantage to make more informed and intelligent decisions. 
+Regardless of each person's decision, the important thing about the Bayesian framework is that it allows us to include uncertainty in our models and use it to our advantage to make more informed and intelligent decisions. 
 
 Instead of wanting to forget and get rid of uncertainty, Bayesianism allows us to accept that this is an inherent feature of reality and to take advantage of it. Being able to narrow down how sure we are about the inferences we make gives us an invaluable advantage when making decisions.
 
 ### Summary
 
-In this chapter we have learned some basics concepts of economics such as the price elasticity of demand for a product, or the Pareto distribution of income and wealth. Then, we estimated the demand curve of a possible new product, performing a pilot test to see the relationship between price and quantity demanded. Thanks to Bayesian inference we were able to use the uncertainty we had to our advantage, quantifying the trade-off between expected return and the variability of it, making possible to perform a well informed decision.
+In this chapter we have learned some basic concepts of economics such as the price elasticity of demand for a product, or the Pareto distribution of income and wealth. Then, we estimated the demand curve of a possible new product, performing a pilot test to see the relationship between price and quantity demanded. Thanks to Bayesian inference we were able to use the uncertainty we had to our advantage, quantifying the trade-off between expected return and the variability of it, making possible to perform a well informed decision.
 """
 
 # ╔═╡ 03117e4c-5b65-11eb-2973-6f2eaf3d9199
