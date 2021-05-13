@@ -75,7 +75,7 @@ Surely many of you have the main idea: income is not distributed equally across 
 
 In general, a few people concentrate most of the income, and only a little of the income is distributed in the majority of the population. The distributions that describe this phenomenon are called 'power laws'. The best known is perhaps the Pareto distribution or 80-20 distribution. A distribution widely used in business management referring to the fact that, for example, 20% of the mix of products sold are those that generate 80% of the profits. 
 
-In economics this idea is presented with the Lorentz curve:"
+In economics this idea is presented with the Lorenz curve:"
 
 # ╔═╡ c8cbd94e-1569-11eb-27b2-513b849460eb
 begin
@@ -97,15 +97,15 @@ w = exp.(randn(100))
 
 f_vals, l_vals = lorenz(w)
 	
-plot(f_vals, label="Lorentz curve",l_vals, l=3,xlabel="Cumulative population", xaxis=0:0.1:1)
+plot(f_vals, label="Lorenz curve",l_vals, l=3,xlabel="Cumulative population", xaxis=0:0.1:1)
 plot!(f_vals, label="Perfect equality", f_vals, l=3, ylabel="Cumulative income",yaxis=0:0.1:1)
 end
 
 # ╔═╡ 0d3fe04c-1570-11eb-2fd7-c5a366cbc13f
-md"*Lorentz curve. A graphical representation of income inequality.*"
+md"*Lorenz curve. A graphical representation of income inequality.*"
 
 # ╔═╡ 1247d9d6-156a-11eb-35d2-d9264c933280
-md"In this graph, the x-axis represents the accumulated population and the y-axis the accumulated income. Going from left to right and as you move along the x-axis, more and more income is accumulated by fewer people. For example, the first 10% of the population barely accumulates 1% of income while the richest 10% on the right accumulates 40%. An ideal society with a perfectly distributed income would have a straight 45º Lorentz curve.
+md"In this graph, the x-axis represents the accumulated population and the y-axis the accumulated income. Going from left to right and as you move along the x-axis, more and more income is accumulated by fewer people. For example, the first 10% of the population barely accumulates 1% of income while the richest 10% on the right accumulates 40%. An ideal society with a perfectly distributed income would have a straight 45º Lorenz curve.
 
 With this in mind we can already generate an intuition that will help us answer the initial question: why use a decreasing exponential and not a negative-slope line?
 

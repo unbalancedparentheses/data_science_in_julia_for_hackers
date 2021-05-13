@@ -279,7 +279,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </ul></li>
   <li class="divider"></li>
   <li><a href="https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers" target="blank">Published with bookdown</a></li>
-    
+
 </ul>
 
       </nav>
@@ -311,7 +311,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-10"><a href="optimal-pricing.html#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> LaTeXStrings</span></code></pre></div>
 <div id="overview" class="section level2" number="9.1">
 <h2><span class="header-section-number">9.1</span> Overview</h2>
-<p>In a bayesian framework we can work intrinsically with the uncertainty of the data. It allows us to include it in our models. This is especially beneficial when we want to make a decision based on the results of a model. In this type of problem, if we optimize the expected value of the function we want to maximize, we obtain just a number, losing all the information and richness uncertainty can give us.</p>
+<p>In a Bayesian framework we can work intrinsically with the uncertainty of the data. It allows us to include it in our models. This is especially beneficial when we want to make a decision based on the results of a model. In this type of problem, if we optimize the expected value of the function we want to maximize, we obtain just a number, losing all the information and richness uncertainty can give us.</p>
 <p>In real-life scenarios, when making decisions we almost never have all the necessary information and therefore we have to deal with uncertainty. So it’s important to be able to take into account how certain we are of the information we have. It may be the case that the value that maximizes (or minimizes) certain problem comes with a lot of uncertainty so it would be more appropriate to choose other with a better optimization-uncertainty trade off.</p>
 <p>Bayesian inference allows us to do this because of its approach of a statistical problem. From its point of view, the data obtained on an event is fixed. They are observations that have already happened and there is nothing stochastic about it. So the data is deterministic.</p>
 <p>On the contrary, the parameters of the models we propose to describe such data are stochastic, following a given probability distribution. In this way, the inference that is made is on the complete distributions of our parameters, which allows us, precisely, to include the uncertainty into our models.</p>
@@ -345,7 +345,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>The answer to this question is not straightforward. To start building an intuition, we must think about how people’s income is distributed.</p>
 <p>Surely many of you have the main idea: income is not distributed equally across the population.</p>
 <p>In general, a few people concentrate most of the income, and only a little of the income is distributed in the majority of the population. The distributions that describe this phenomenon are called ‘power laws.’ The best known is perhaps the Pareto distribution or 80-20 distribution. A distribution widely used in business management referring to the fact that, for example, 20% of the mix of products sold are those that generate 80% of the profits.</p>
-<p>In economics this idea is presented with the Lorentz curve:</p>
+<p>In economics this idea is presented with the Lorenz curve:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb3-1"><a href="optimal-pricing.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
 <span id="cb3-2"><a href="optimal-pricing.html#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> lorenz(y)  </span>
 <span id="cb3-3"><a href="optimal-pricing.html#cb3-3" aria-hidden="true" tabindex="-1"></a>    n <span class="op">=</span> length(y)</span>
@@ -365,12 +365,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb3-17"><a href="optimal-pricing.html#cb3-17" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-18"><a href="optimal-pricing.html#cb3-18" aria-hidden="true" tabindex="-1"></a>f_vals<span class="op">,</span> l_vals <span class="op">=</span> lorenz(w)</span>
 <span id="cb3-19"><a href="optimal-pricing.html#cb3-19" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb3-20"><a href="optimal-pricing.html#cb3-20" aria-hidden="true" tabindex="-1"></a>plot(f_vals<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;Lorentz curve&quot;</span><span class="op">,</span>l_vals<span class="op">,</span> l<span class="op">=</span><span class="fl">3</span><span class="op">,</span>xlabel<span class="op">=</span><span class="st">&quot;Cumulative population&quot;</span><span class="op">,</span> xaxis<span class="op">=</span><span class="fl">0</span><span class="op">:</span><span class="fl">0.1</span><span class="op">:</span><span class="fl">1</span>)</span>
+<span id="cb3-20"><a href="optimal-pricing.html#cb3-20" aria-hidden="true" tabindex="-1"></a>plot(f_vals<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;Lorenz curve&quot;</span><span class="op">,</span>l_vals<span class="op">,</span> l<span class="op">=</span><span class="fl">3</span><span class="op">,</span>xlabel<span class="op">=</span><span class="st">&quot;Cumulative population&quot;</span><span class="op">,</span> xaxis<span class="op">=</span><span class="fl">0</span><span class="op">:</span><span class="fl">0.1</span><span class="op">:</span><span class="fl">1</span>)</span>
 <span id="cb3-21"><a href="optimal-pricing.html#cb3-21" aria-hidden="true" tabindex="-1"></a>plot<span class="op">!</span>(f_vals<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;Perfect equality&quot;</span><span class="op">,</span> f_vals<span class="op">,</span> l<span class="op">=</span><span class="fl">3</span><span class="op">,</span> ylabel<span class="op">=</span><span class="st">&quot;Cumulative income&quot;</span><span class="op">,</span>yaxis<span class="op">=</span><span class="fl">0</span><span class="op">:</span><span class="fl">0.1</span><span class="op">:</span><span class="fl">1</span>)</span>
 <span id="cb3-22"><a href="optimal-pricing.html#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_9_plot_2-J1.png" /><!-- --></p>
-<p><em>Lorentz curve. A graphical representation of income inequality.</em></p>
-<p>In this graph, the x-axis represents the accumulated population and the y-axis the accumulated income. Going from left to right and as you move along the x-axis, more and more income is accumulated by fewer people. For example, the first 10% of the population barely accumulates 1% of income while the richest 10% on the right accumulates 40%. An ideal society with a perfectly distributed income would have a straight 45º Lorentz curve.</p>
+<p><em>Lorenz curve. A graphical representation of income inequality.</em></p>
+<p>In this graph, the x-axis represents the accumulated population and the y-axis the accumulated income. Going from left to right and as you move along the x-axis, more and more income is accumulated by fewer people. For example, the first 10% of the population barely accumulates 1% of income while the richest 10% on the right accumulates 40%. An ideal society with a perfectly distributed income would have a straight 45º Lorenz curve.</p>
 <p>With this in mind we can already generate an intuition that will help us answer the initial question: why use a decreasing exponential and not a negative-slope line?</p>
 <p>Well, since a great majority of people have a small relative income and a minority has a large one, as we increase the price of the product, a large number of people with low income can no longer afford it. This process continues until only people with a high income are left and their consumption preferences are not greatly affected by the price increase.</p>
 <p>The exponential distribution is useful to describe this.</p>
@@ -412,8 +412,8 @@ Perhaps you are wondering the importance of being able to have clarity about the
 <p><span class="math inline">\(Sales = Quantity * Price\)</span></p>
 <p>So it is vitally important to analyze how much one variable varies when moving the other.</p>
 <p>It is evident that in the case of inelastic goods, it is always convenient to raise the price in terms of increasing the profit. On the other hand, when we work with a good that has some kind of elasticity, the increase generated by setting a higher price can be offset by an even greater drop in the amount sold. So we have to understand very well that behavior in order to define the optimal price level.</p>
-<div id="dealing-with-uncertainty" class="section level4" number="9.2.2.1">
-<h4><span class="header-section-number">9.2.2.1</span> Dealing with uncertainty</h4>
+<div id="dealing-with-uncertanty" class="section level4" number="9.2.2.1">
+<h4><span class="header-section-number">9.2.2.1</span> Dealing with uncertanty</h4>
 <p>Anyway, if our product is a new idea, the problem depicted above gets a lot more complicated if the product is brand new, an invention, and the approach it’s different. That’s the problem we are about to solve:</p>
 <p>Suppose you are about to release a completely new and disrupting product. Your product is so different that you don’t have others to compare with, at least in the local market, so you are not sure about what price to choose. You don’t want to lose money of course, so you want the maximum profit you could get. To test the waters, a common choice is to run a pilot test, offering your product at different prices and see how customers react. So you record how much you sell at what price, but how do we proceed?</p>
 <p>Now, given the model and the data available, we define it</p>
@@ -421,7 +421,7 @@ Perhaps you are wondering the importance of being able to have clarity about the
 <p><span class="math inline">\(Q = aP^{c}\)</span></p>
 <p>In order to do this, an intelligent strategy is to linearize the relationship in order to perform a simple linear regression. Simply taking the logarithm of both sides of the equation achieves the goal:</p>
 <p><span class="math inline">\(log(Q)=log(a) + clog(P)\)</span></p>
-<p>Now, the only thing left to do is to define the model in a bayesian framework for Julia, called Turing, which is used to do probabilistic programming.</p>
+<p>Now, the only thing left to do is to define the model in a Bayesian framework for Julia, called Turing, which is used to do probabilistic programming.</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb6-1"><a href="optimal-pricing.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
 <span id="cb6-2"><a href="optimal-pricing.html#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="pp">@model</span> <span class="kw">function</span> quantity(qval<span class="op">,</span>p0)</span>
 <span id="cb6-3"><a href="optimal-pricing.html#cb6-3" aria-hidden="true" tabindex="-1"></a>    loga <span class="op">~</span> Cauchy()</span>
@@ -449,7 +449,7 @@ Is doing this the best choice? Definitely not. Having the possibility to choose 
 <p>Another very important use of priors is to define the scale of the problem. In the example of height and weight it would be useful to say something like ‘It doesn’t make sense that for every additional kilogram of weight, a person will measure one meter more. At most a few centimeters.’ All this information can be communicated to our model through the priors we choose. Let’s leave it there for now.</p>
 <p>Returning to the code. Julia allows us to easily define the variables that are probability distributions using the ~ operator. Once we know <em>c</em> and <em>log a</em> for a given value of price, we can univocally determine the quantity, therefore the variables <span class="math inline">\(\log(\mu_0)\)</span> (and <span class="math inline">\(\mu_0\)</span>) are defined with the = operator, indicating a deterministic relation.</p>
 <p>In addition, since the quantity of product sold is a discrete one and it comes from adding independent purchases, they are modeled as a poisson distribution.</p>
-<p>But why do we subtract the mean for the price values? It's a good practice to avoid a common problem: multicollinearity. With multicollinearity, the models tend to be more certain about the plausible values of our model, meanwhile models with more normalized data are more conservative and they are less prone to overfitting, an unwanted effect we need to avoid if we expect our model to work good with new. As a rule of thumb, it is always good to standardize our data. That is, subtract their average and divide each by its standard deviation.</p>
+<p>But why do we subtract the mean for the price values? It’s a good practice to avoid a common problem: multicollinearity. With multicollinearity, the models tend to be more certain about the plausible values of our model, meanwhile models with more normalized data are more conservative and they are less prone to overfitting, an unwanted effect we need to avoid if we expect our model to work good with new. As a rule of thumb, it is always good to standardize our data. That is, subtract their average and divide each by its standard deviation.</p>
 </div>
 <div id="updating-our-beliefs" class="section level4" number="9.2.2.3">
 <h4><span class="header-section-number">9.2.2.3</span> Updating our beliefs</h4>
@@ -464,8 +464,8 @@ Is doing this the best choice? Definitely not. Having the possibility to choose 
 <span id="cb9-8"><a href="optimal-pricing.html#cb9-8" aria-hidden="true" tabindex="-1"></a>    ylabel<span class="op">!</span>(<span class="st">&quot;Quantity&quot;</span>)</span>
 <span id="cb9-9"><a href="optimal-pricing.html#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_9_plot_6-J1.png" /><!-- --></p>
-<p>As we said, in a bayesian framework our previous knowledge are the distributions we propose for each of the parameters and the relationship known between price and quantity.</p>
-<p>With this bayesian approach, our previous knowledge are the distributions we propose for each of the parameters and the relationship known between price and quantity. What we do now is to update our believes, incorporating in our model the data points we have recoded from our pilot test as show in the code bellow, instantiating our model with the points <em>Quantity</em> and <em>Price</em>. Our model now has computed what is called the <em>posterior distributions</em> for the parameters <em>log a</em> and <em>c</em>, our updated beliefs for the plausible values for this two parameters.</p>
+<p>As we said, in a Bayesian framework our previous knowledge are the distributions we propose for each of the parameters and the relationship known between price and quantity.</p>
+<p>With this Bayesian approach, our previous knowledge are the distributions we propose for each of the parameters and the relationship known between price and quantity. What we do now is to update our believes, incorporating in our model the data points we have recorded from our pilot test as show in the code bellow, instantiating our model with the points <em>Quantity</em> and <em>Price</em>. Our model now has computed what is called the <em>posterior distributions</em> for the parameters <em>log a</em> and <em>c</em>, our updated beliefs for the plausible values for this two parameters.</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb10-1"><a href="optimal-pricing.html#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
 <span id="cb10-2"><a href="optimal-pricing.html#cb10-2" aria-hidden="true" tabindex="-1"></a>    model <span class="op">=</span> quantity(Quantity<span class="op">,</span> Price)</span>
 <span id="cb10-3"><a href="optimal-pricing.html#cb10-3" aria-hidden="true" tabindex="-1"></a>    posterior <span class="op">=</span> sample(model<span class="op">,</span> NUTS()<span class="op">,</span><span class="fl">1000</span>)</span>
@@ -483,9 +483,9 @@ Is doing this the best choice? Definitely not. Having the possibility to choose 
 Let’s stop for a moment and analyze this. We defined our model and asked Turing to return the best possible estimate of our parameters, taking into account our initial beliefs and the information obtained from the pilot test, and what Turing returned was a distribution of possibilities for those parameters.</p>
 <p>But, our model is defined by a single value of a and c. So what do we do? One option would be to take the mean of our distributions.</p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb12-1"><a href="optimal-pricing.html#cb12-1" aria-hidden="true" tabindex="-1"></a>mean(post_loga[<span class="fl">1</span>])</span></code></pre></div>
-<pre><code>## 5.5460012328826735</code></pre>
+<pre><code>## 5.546444583138311</code></pre>
 <div class="sourceCode" id="cb14"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb14-1"><a href="optimal-pricing.html#cb14-1" aria-hidden="true" tabindex="-1"></a>mean(post_c[<span class="fl">1</span>])</span></code></pre></div>
-<pre><code>## -1.1838279679326476</code></pre>
+<pre><code>## -1.1808080259045772</code></pre>
 <p>So Log(a) would be 5.55 and c -1.18, and we should only have to replace those values in our model equation to get the answer to our problem:</p>
 <p>$ Log(Q)=5.55 - 1.18Log(P) $</p>
 <p>This would make sense? Not even close. By doing this we would be throwing away a lot of precious information that the Bayesian framework gives us: The uncertainty about our inference.</p>
@@ -501,7 +501,7 @@ Let’s stop for a moment and analyze this. We defined our model and asked Turin
 <span id="cb16-6"><a href="optimal-pricing.html#cb16-6" aria-hidden="true" tabindex="-1"></a>    q[<span class="op">:,</span>i] <span class="op">=</span> exp.(post_loga[<span class="fl">1</span>][i] .<span class="op">+</span> post_c[<span class="fl">1</span>][i] <span class="op">.*</span> (log.(p) .<span class="op">-</span> mean(log.(Price))))</span>
 <span id="cb16-7"><a href="optimal-pricing.html#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span>
 <span id="cb16-8"><a href="optimal-pricing.html#cb16-8" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
-<p>Here we are creating an array of as many rows as price values we want to observe and with as many columns as samples we have of each of our log and c parameters, that is, as many columns as models we have at our disposal. Let's plot them all and see what happen:</p>
+<p>Here we are creating an array of as many rows as price values we want to observe and with as many columns as samples we have of each of our log and c parameters, that is, as many columns as models we have at our disposal. Let’s plot them all and see what happen:</p>
 <div class="sourceCode" id="cb17"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb17-1"><a href="optimal-pricing.html#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
 <span id="cb17-2"><a href="optimal-pricing.html#cb17-2" aria-hidden="true" tabindex="-1"></a>    plot(p<span class="op">,</span>q[<span class="op">:,</span><span class="fl">1</span>]<span class="op">,</span> xlim<span class="op">=</span>(<span class="fl">1000</span><span class="op">,</span><span class="fl">6000</span>))</span>
 <span id="cb17-3"><a href="optimal-pricing.html#cb17-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> collect(<span class="fl">1</span><span class="op">:</span>length(post_c[<span class="fl">1</span>]))</span>
@@ -531,7 +531,7 @@ Let’s stop for a moment and analyze this. We defined our model and asked Turin
 <h2><span class="header-section-number">9.3</span> Maximizing profit</h2>
 <p>Now that we have estimated our posterior distributions, we will try to answer the following question: what is the price that will give us the maximum profit?</p>
 <p>This is why we calculated the relationship between the price and the quantity of our product. As we said before, depending on that relation, it was going to be possible to define an optimal price point. Now we only have to add one more part to the equation: the production costs.</p>
-<p>Having this, we will be able to set up our profit function that will tell us, for each price we choose, how much money we would expect to earn. So let's define it:</p>
+<p>Having this, we will be able to set up our profit function that will tell us, for each price we choose, how much money we would expect to earn. So let’s define it:</p>
 <p>As many of you know, the profit on the sale of a product is calculated as income minus costs.</p>
 <p><span class="math inline">\(Profit=Price * Quantity - Cost\)</span></p>
 <p>But also the cost can be divided between the one that doesn’t depend on the production and I always have, and the one that does.</p>
@@ -547,12 +547,12 @@ Let’s stop for a moment and analyze this. We defined our model and asked Turin
 <p>Now we can plot the profit for many sampled values from the posterior distributions of our model and find the maximum.</p>
 <div class="sourceCode" id="cb20"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb20-1"><a href="optimal-pricing.html#cb20-1" aria-hidden="true" tabindex="-1"></a>mxval<span class="op">,</span> mxindx <span class="op">=</span> findmax(mean(profit<span class="op">,</span> dims<span class="op">=</span><span class="fl">2</span>)<span class="op">;</span> dims<span class="op">=</span><span class="fl">1</span>)<span class="op">;</span></span></code></pre></div>
 <div class="sourceCode" id="cb21"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb21-1"><a href="optimal-pricing.html#cb21-1" aria-hidden="true" tabindex="-1"></a>mxval[<span class="fl">1</span>]</span></code></pre></div>
-<pre><code>## 579697.8940202671</code></pre>
+<pre><code>## 580629.7407600599</code></pre>
 <p>With the unfavorable (or favorable) case of:</p>
 <div class="sourceCode" id="cb23"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb23-1"><a href="optimal-pricing.html#cb23-1" aria-hidden="true" tabindex="-1"></a>unfav <span class="op">=</span> mxval[<span class="fl">1</span>] <span class="op">-</span> std(profit[mxindx[<span class="fl">1</span>][<span class="fl">1</span>]<span class="op">,</span> <span class="op">:</span> ])</span></code></pre></div>
-<pre><code>## 548417.8658175807</code></pre>
+<pre><code>## 551273.5077073544</code></pre>
 <div class="sourceCode" id="cb25"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb25-1"><a href="optimal-pricing.html#cb25-1" aria-hidden="true" tabindex="-1"></a>fav <span class="op">=</span> mxval[<span class="fl">1</span>] <span class="op">+</span> std(profit[mxindx[<span class="fl">1</span>][<span class="fl">1</span>]<span class="op">,</span> <span class="op">:</span> ])</span></code></pre></div>
-<pre><code>## 610977.9222229534</code></pre>
+<pre><code>## 609985.9738127654</code></pre>
 <div class="sourceCode" id="cb27"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb27-1"><a href="optimal-pricing.html#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
 <span id="cb27-2"><a href="optimal-pricing.html#cb27-2" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> latexstring(<span class="st">&quot;</span><span class="sc">\\</span><span class="st">mu_{Profit}&quot;</span>)</span>
 <span id="cb27-3"><a href="optimal-pricing.html#cb27-3" aria-hidden="true" tabindex="-1"></a>s2 <span class="op">=</span> latexstring(<span class="st">&quot;</span><span class="sc">\\</span><span class="st">mu_{Profit} </span><span class="sc">\\</span><span class="st">pm </span><span class="sc">\\</span><span class="st">sigma_{Profit}&quot;</span>)</span>
@@ -589,12 +589,12 @@ For example, let’s look at the case where an alternative price of $4000 is cho
 <div class="sourceCode" id="cb32"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb32-1"><a href="optimal-pricing.html#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co">#A faster way:</span></span>
 <span id="cb32-2"><a href="optimal-pricing.html#cb32-2" aria-hidden="true" tabindex="-1"></a>prof_4000 <span class="op">=</span> profit[findfirst(isequal(<span class="fl">4000</span>)<span class="op">,</span> p)<span class="op">,</span> <span class="op">:</span>]<span class="op">;</span></span></code></pre></div>
 <div class="sourceCode" id="cb33"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb33-1"><a href="optimal-pricing.html#cb33-1" aria-hidden="true" tabindex="-1"></a>mean_prof_4000 <span class="op">=</span> mean(profit_4000)</span></code></pre></div>
-<pre><code>## 578540.069393245</code></pre>
+<pre><code>## 579251.5221961857</code></pre>
 <p>With the unfavorable (or favorable) case of:</p>
 <div class="sourceCode" id="cb35"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb35-1"><a href="optimal-pricing.html#cb35-1" aria-hidden="true" tabindex="-1"></a>unfav_4000 <span class="op">=</span> mean(profit_4000) <span class="op">-</span> std(profit_4000)</span></code></pre></div>
-<pre><code>## 551381.9489297445</code></pre>
+<pre><code>## 554168.5339511412</code></pre>
 <div class="sourceCode" id="cb37"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb37-1"><a href="optimal-pricing.html#cb37-1" aria-hidden="true" tabindex="-1"></a>mean(profit_4000) <span class="op">+</span> std(profit_4000)</span></code></pre></div>
-<pre><code>## 605698.1898567455</code></pre>
+<pre><code>## 604334.5104412301</code></pre>
 <div class="sourceCode" id="cb39"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb39-1"><a href="optimal-pricing.html#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span>   </span>
 <span id="cb39-2"><a href="optimal-pricing.html#cb39-2" aria-hidden="true" tabindex="-1"></a>plot(p<span class="op">,</span>mean(profit<span class="op">,</span> dims<span class="op">=</span><span class="fl">2</span>) <span class="op">+</span> std(profit<span class="op">,</span> dims<span class="op">=</span><span class="fl">2</span>)<span class="op">,</span>  color <span class="op">=</span> <span class="st">&quot;orange&quot;</span><span class="op">,</span> lw<span class="op">=</span><span class="fl">2</span><span class="op">,</span> label <span class="op">=</span>s2)</span>
 <span id="cb39-3"><a href="optimal-pricing.html#cb39-3" aria-hidden="true" tabindex="-1"></a>plot<span class="op">!</span>(p<span class="op">,</span>mean(profit<span class="op">,</span> dims<span class="op">=</span><span class="fl">2</span>)<span class="op">,</span> color <span class="op">=</span> <span class="st">&quot;red&quot;</span><span class="op">,</span> lw<span class="op">=</span><span class="fl">4</span><span class="op">,</span> label<span class="op">=</span><span class="st">&quot;&quot;</span>)</span>
@@ -612,14 +612,14 @@ For example, let’s look at the case where an alternative price of $4000 is cho
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_9_plot_12-J1.png" /><!-- --></p>
 <p>Then, by choosing a price of $4000 the average profit goes from $582800 to $58120. That is, a percentage variation of:</p>
 <div class="sourceCode" id="cb40"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb40-1"><a href="optimal-pricing.html#cb40-1" aria-hidden="true" tabindex="-1"></a>porcentual_profit_diff <span class="op">=</span> ((mean(profit_4000) <span class="op">-</span> mxval[<span class="fl">1</span>]) <span class="op">/</span> mxval[<span class="fl">1</span>]) <span class="op">*</span> <span class="fl">100</span></span></code></pre></div>
-<pre><code>## -0.19972896899665932</code></pre>
+<pre><code>## -0.23736616764930557</code></pre>
 <p>While the most unfavorable case goes from $549705 to $553298.5. That is, a percentage variation of:</p>
 <div class="sourceCode" id="cb42"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb42-1"><a href="optimal-pricing.html#cb42-1" aria-hidden="true" tabindex="-1"></a>porcentual_std_diff <span class="op">=</span> ( unfav_4000 <span class="op">-</span> unfav) <span class="op">/</span> unfav <span class="op">*</span><span class="fl">100</span></span></code></pre></div>
-<pre><code>## 0.5404789480636205</code></pre>
+<pre><code>## 0.52515243401169</code></pre>
 <div class="sourceCode" id="cb44"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb44-1"><a href="optimal-pricing.html#cb44-1" aria-hidden="true" tabindex="-1"></a> porcentual_std_diff <span class="op">/</span> porcentual_profit_diff</span></code></pre></div>
-<pre><code>## -2.7060618736416777</code></pre>
+<pre><code>## -2.212414849228099</code></pre>
 <p>So, for every dollar we “lost” in average profitability, we gained more than double in the reduction of uncertainty.</p>
-<p>Regardless of each person's decision, the important thing about the Bayesian framework is that it allows us to include uncertainty in our models and use it to our advantage to make more informed and intelligent decisions.</p>
+<p>Regardless of each person’s decision, the important thing about the Bayesian framework is that it allows us to include uncertainty in our models and use it to our advantage to make more informed and intelligent decisions.</p>
 <p>Instead of wanting to forget and get rid of uncertainty, Bayesianism allows us to accept that this is an inherent feature of reality and to take advantage of it. Being able to narrow down how sure we are about the inferences we make gives us an invaluable advantage when making decisions.</p>
 </div>
 <div id="summary-7" class="section level2" number="9.4">
