@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.21
+# v0.15.1
 
 using Markdown
 using InteractiveUtils
@@ -192,21 +192,21 @@ But enough talk, let's get our hands dirty.
 # ╔═╡ 1c60486a-5c2d-11eb-385e-417e8c4b7ddb
 md"""### References
 
-- Antifragile: Things That Gain from Disorder, ch 15 - Nassim Nicholas Taleb
-- Infinite Powers: How Calculus Reveals the Secrets of the Universe - Steven Strogatz
-- Lost in Math: How Beauty Leads Physics Astray - Sabine Hossenfelder
+- [Antifragile: Things That Gain from Disorder, ch 15 - Nassim Nicholas Taleb]()
+- [Infinite Powers: How Calculus Reveals the Secrets of the Universe - Steven Strogatz]()
+- [Lost in Math: How Beauty Leads Physics Astray - Sabine Hossenfelde]()
 - [The Joy of X](https://www.amazon.com/Joy-Guided-Tour-Math-Infinity/dp/0544105850)
 - [Kolmogorov - Mathematics: It's contents, method and meaning](https://www.amazon.com/Mathematics-Content-Methods-Meaning-Volumes/dp/0486409163)
 - [Freeman Dyson - Where Do the Laws of Nature Come From?](https://youtu.be/wxRpa-PqUfw)
 - [Roger Penrose - Is Mathematics Invented or Discovered?](https://youtu.be/ujvS2K06dg4)
 - [How to tell science from pseudoscience](https://youtu.be/o9ylQC5bPpU)
 - [Sabine Hossenfelder - Why the ‘Unreasonable Effectiveness’ of Mathematics?](https://youtu.be/QUWbe5KGaQY)
--  http://www.paulgraham.com/hp.html
-- https://en.wikipedia.org/wiki/Apophatic_theology
-- https://en.wikipedia.org/wiki/Falsifiability
-- https://norvig.com/fact-check.html
-- https://www.wired.com/2008/06/pb-theory/
-- https://fs.blog/2016/01/karl-popper-on-science-pseudoscience/
+- [http://www.paulgraham.com/hp.html]()
+- [https://en.wikipedia.org/wiki/Apophatic_theology]()
+- [https://en.wikipedia.org/wiki/Falsifiability]()
+- [https://norvig.com/fact-check.html]()
+- [https://www.wired.com/2008/06/pb-theory/]()
+- [https://fs.blog/2016/01/karl-popper-on-science-pseudoscience/]()
 
 
 """
