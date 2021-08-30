@@ -182,7 +182,7 @@ Physics, Economy and Sports are just some of the topics discussed in these chapt
 This is an essential skill, just as math and a scientific mindset.
 In this book, the programming tool we are going to use is Julia, a language engineered from its roots for scientific applications, in particular, Data Science.
 
-In this book we will try to take you, the reader, through a journey that is more similar to the real way in which knowledge is built: an iterative, hands-on process of problem-solving that gradually builds intuitions about how things work and why, that we can later formalize.
+We will try to take you, the reader, through a journey that is more similar to the real way in which knowledge is built: an iterative, hands-on process of problem-solving that gradually builds intuitions about how things work and why, that we can later formalize.
 
 But enough talk, let's get our hands dirty.
 
