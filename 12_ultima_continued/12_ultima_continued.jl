@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.20
+# v0.12.21
 
 using Markdown
 using InteractiveUtils
@@ -400,7 +400,7 @@ md"""### References
 
 * [Universal Differential Equations for Scientific Machine Learning Paper](https://arxiv.org/abs/2001.04385)
 
-* [Universal Differential Equations - Chris Rackauchas](https://github.com/ChrisRackauckas/universal_differential_equations)
+* [Universal Differential Equations - Christopher Rackauckas](https://github.com/ChrisRackauckas/universal_differential_equations)
 """
 
 # ╔═╡ Cell order:

@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 10 Image classification | Data Science in Julia for Hackers</title>
+  <meta name="description" content="Chapter 10 Image classification | Data Science in Julia for Hackers" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 10 Image classification | Data Science in Julia for Hackers" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Chapter 10 Image classification | Data Science in Julia for Hackers" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 10 Image classification | Data Science in Julia for Hackers" />
+  
+  <meta name="twitter:description" content="Chapter 10 Image classification | Data Science in Julia for Hackers" />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="optimal-pricing.html"/>
+<link rel="next" href="ultima-online.html"/>
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+  <li><a href="./">Data Science in Julia for Hackers</a></li>
+
+  <li class="divider"></li>
+  <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a>
+  <ul>
+  <li class="chapter" data-level="" data-path="index.html"><a href="index.html#prologue"><i class="fa fa-check"></i>Prologue</a></li>
+  </ul></li>
+  <li class="part"><span><b>I Data Science and Julia</b></span></li>
+  <li class="chapter" data-level="1" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html"><i class="fa fa-check"></i><b>1</b> Science technology and epistemology</a>
+  <ul>
+  <li class="chapter" data-level="1.1" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#the-difference-between-science-and-technology"><i class="fa fa-check"></i><b>1.1</b> The difference between Science and Technology</a></li>
+  <li class="chapter" data-level="1.2" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#what-is-technology"><i class="fa fa-check"></i><b>1.2</b> What is technology?</a></li>
+  <li class="chapter" data-level="1.3" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#references"><i class="fa fa-check"></i><b>1.3</b> References</a></li>
+  </ul></li>
+  <li class="chapter" data-level="2" data-path="meeting-julia.html"><a href="meeting-julia.html"><i class="fa fa-check"></i><b>2</b> Meeting Julia</a>
+  <ul>
+  <li class="chapter" data-level="2.1" data-path="meeting-julia.html"><a href="meeting-julia.html#why-julia"><i class="fa fa-check"></i><b>2.1</b> Why Julia</a></li>
+  <li class="chapter" data-level="2.2" data-path="meeting-julia.html"><a href="meeting-julia.html#julia-presentation"><i class="fa fa-check"></i><b>2.2</b> Julia presentation</a></li>
+  <li class="chapter" data-level="2.3" data-path="meeting-julia.html"><a href="meeting-julia.html#installation"><i class="fa fa-check"></i><b>2.3</b> Installation</a></li>
+  <li class="chapter" data-level="2.4" data-path="meeting-julia.html"><a href="meeting-julia.html#first-steps-into-the-julia-world"><i class="fa fa-check"></i><b>2.4</b> First steps into the Julia world</a></li>
+  <li class="chapter" data-level="2.5" data-path="meeting-julia.html"><a href="meeting-julia.html#julias-ecosystem-basic-plotting-and-manipulation-of-dataframes"><i class="fa fa-check"></i><b>2.5</b> Julia’s Ecosystem: Basic plotting and manipulation of DataFrames</a>
+  <ul>
+  <li class="chapter" data-level="2.5.1" data-path="meeting-julia.html"><a href="meeting-julia.html#plotting-with-plots.jl"><i class="fa fa-check"></i><b>2.5.1</b> Plotting with Plots.jl</a></li>
+  <li class="chapter" data-level="2.5.2" data-path="meeting-julia.html"><a href="meeting-julia.html#introducing-dataframes.jl"><i class="fa fa-check"></i><b>2.5.2</b> Introducing DataFrames.jl</a></li>
+  </ul></li>
+  <li class="chapter" data-level="2.6" data-path="meeting-julia.html"><a href="meeting-julia.html#summary"><i class="fa fa-check"></i><b>2.6</b> Summary</a></li>
+  <li class="chapter" data-level="2.7" data-path="meeting-julia.html"><a href="meeting-julia.html#references-1"><i class="fa fa-check"></i><b>2.7</b> References</a></li>
+  </ul></li>
+  <li class="part"><span><b>II Bayesian Statistics</b></span></li>
+  <li class="chapter" data-level="3" data-path="probability-introduction.html"><a href="probability-introduction.html"><i class="fa fa-check"></i><b>3</b> Probability introduction</a>
+  <ul>
+  <li class="chapter" data-level="3.1" data-path="probability-introduction.html"><a href="probability-introduction.html#introduction-to-probability"><i class="fa fa-check"></i><b>3.1</b> Introduction to Probability</a></li>
+  <li class="chapter" data-level="3.2" data-path="probability-introduction.html"><a href="probability-introduction.html#events-sample-spaces-and-sample-points"><i class="fa fa-check"></i><b>3.2</b> Events, sample spaces and sample points</a>
+  <ul>
+  <li class="chapter" data-level="3.2.1" data-path="probability-introduction.html"><a href="probability-introduction.html#relation-among-events"><i class="fa fa-check"></i><b>3.2.1</b> Relation among events</a></li>
+  </ul></li>
+  <li class="chapter" data-level="3.3" data-path="probability-introduction.html"><a href="probability-introduction.html#probability"><i class="fa fa-check"></i><b>3.3</b> Probability</a></li>
+  <li class="chapter" data-level="3.4" data-path="probability-introduction.html"><a href="probability-introduction.html#conditional-probability"><i class="fa fa-check"></i><b>3.4</b> Conditional probability</a></li>
+  <li class="chapter" data-level="3.5" data-path="probability-introduction.html"><a href="probability-introduction.html#joint-probability"><i class="fa fa-check"></i><b>3.5</b> Joint probability</a></li>
+  <li class="chapter" data-level="3.6" data-path="probability-introduction.html"><a href="probability-introduction.html#bayes-theorem"><i class="fa fa-check"></i><b>3.6</b> Bayes theorem</a></li>
+  <li class="chapter" data-level="3.7" data-path="probability-introduction.html"><a href="probability-introduction.html#probability-distributions"><i class="fa fa-check"></i><b>3.7</b> Probability distributions</a>
+  <ul>
+  <li class="chapter" data-level="3.7.1" data-path="probability-introduction.html"><a href="probability-introduction.html#discrete-case"><i class="fa fa-check"></i><b>3.7.1</b> Discrete Case</a></li>
+  <li class="chapter" data-level="3.7.2" data-path="probability-introduction.html"><a href="probability-introduction.html#continuous-cases"><i class="fa fa-check"></i><b>3.7.2</b> Continuous cases</a></li>
+  <li class="chapter" data-level="3.7.3" data-path="probability-introduction.html"><a href="probability-introduction.html#histograms"><i class="fa fa-check"></i><b>3.7.3</b> Histograms</a></li>
+  </ul></li>
+  <li class="chapter" data-level="3.8" data-path="probability-introduction.html"><a href="probability-introduction.html#example-bayesian-bandits"><i class="fa fa-check"></i><b>3.8</b> Example: Bayesian Bandits</a></li>
+  <li class="chapter" data-level="3.9" data-path="probability-introduction.html"><a href="probability-introduction.html#summary-1"><i class="fa fa-check"></i><b>3.9</b> Summary</a></li>
+  <li class="chapter" data-level="3.10" data-path="probability-introduction.html"><a href="probability-introduction.html#references-2"><i class="fa fa-check"></i><b>3.10</b> References</a></li>
+  </ul></li>
+  <li class="chapter" data-level="4" data-path="spam-filter.html"><a href="spam-filter.html"><i class="fa fa-check"></i><b>4</b> Spam filter</a>
+  <ul>
+  <li class="chapter" data-level="4.1" data-path="spam-filter.html"><a href="spam-filter.html#naive-bayes-spam-or-ham"><i class="fa fa-check"></i><b>4.1</b> Naive Bayes: Spam or Ham?</a></li>
+  <li class="chapter" data-level="4.2" data-path="spam-filter.html"><a href="spam-filter.html#summary-2"><i class="fa fa-check"></i><b>4.2</b> Summary</a></li>
+  <li class="chapter" data-level="4.3" data-path="spam-filter.html"><a href="spam-filter.html#references-3"><i class="fa fa-check"></i><b>4.3</b> References</a></li>
+  </ul></li>
+  <li class="chapter" data-level="5" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html"><i class="fa fa-check"></i><b>5</b> Probabilistic programming</a>
+  <ul>
+  <li class="chapter" data-level="5.1" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#coin-flipping-example"><i class="fa fa-check"></i><b>5.1</b> Coin flipping example</a></li>
+  <li class="chapter" data-level="5.2" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#summary-3"><i class="fa fa-check"></i><b>5.2</b> Summary</a></li>
+  <li class="chapter" data-level="5.3" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#references-4"><i class="fa fa-check"></i><b>5.3</b> References</a></li>
+  </ul></li>
+  <li class="chapter" data-level="6" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html"><i class="fa fa-check"></i><b>6</b> Escaping from Mars</a>
+  <ul>
+  <li class="chapter" data-level="6.1" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#calculating-the-constant-g-of-mars"><i class="fa fa-check"></i><b>6.1</b> Calculating the constant g of Mars</a></li>
+  <li class="chapter" data-level="6.2" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#optimizing-the-throwing-angle"><i class="fa fa-check"></i><b>6.2</b> Optimizing the throwing angle</a>
+  <ul>
+  <li class="chapter" data-level="6.2.1" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#calculating-the-escape-velocity"><i class="fa fa-check"></i><b>6.2.1</b> Calculating the escape velocity</a></li>
+  </ul></li>
+  <li class="chapter" data-level="6.3" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#summary-4"><i class="fa fa-check"></i><b>6.3</b> Summary</a></li>
+  </ul></li>
+  <li class="chapter" data-level="7" data-path="football-simulation.html"><a href="football-simulation.html"><i class="fa fa-check"></i><b>7</b> Football simulation</a>
+  <ul>
+  <li class="chapter" data-level="7.1" data-path="football-simulation.html"><a href="football-simulation.html#creating-our-conjectures"><i class="fa fa-check"></i><b>7.1</b> Creating our conjectures</a>
+  <ul>
+  <li class="chapter" data-level="7.1.1" data-path="football-simulation.html"><a href="football-simulation.html#bayesian-hierarchical-models"><i class="fa fa-check"></i><b>7.1.1</b> Bayesian hierarchical models</a></li>
+  </ul></li>
+  <li class="chapter" data-level="7.2" data-path="football-simulation.html"><a href="football-simulation.html#simulate-possible-realities"><i class="fa fa-check"></i><b>7.2</b> Simulate possible realities</a></li>
+  <li class="chapter" data-level="7.3" data-path="football-simulation.html"><a href="football-simulation.html#summary-5"><i class="fa fa-check"></i><b>7.3</b> Summary</a></li>
+  <li class="chapter" data-level="7.4" data-path="football-simulation.html"><a href="football-simulation.html#references-5"><i class="fa fa-check"></i><b>7.4</b> References</a></li>
+  </ul></li>
+  <li class="chapter" data-level="8" data-path="basketball-shots.html"><a href="basketball-shots.html"><i class="fa fa-check"></i><b>8</b> Basketball shots</a>
+  <ul>
+  <li class="chapter" data-level="8.1" data-path="basketball-shots.html"><a href="basketball-shots.html#modeling-the-probability-of-scoring"><i class="fa fa-check"></i><b>8.1</b> Modeling the probability of scoring</a></li>
+  <li class="chapter" data-level="8.2" data-path="basketball-shots.html"><a href="basketball-shots.html#prior-predictive-checks-part-i"><i class="fa fa-check"></i><b>8.2</b> Prior Predictive Checks: Part I</a></li>
+  <li class="chapter" data-level="8.3" data-path="basketball-shots.html"><a href="basketball-shots.html#new-model-and-prior-predictive-checks-part-ii"><i class="fa fa-check"></i><b>8.3</b> New model and prior predictive checks: Part II</a>
+  <ul>
+  <li class="chapter" data-level="8.3.1" data-path="basketball-shots.html"><a href="basketball-shots.html#defining-the-new-model-and-computing-posteriors"><i class="fa fa-check"></i><b>8.3.1</b> Defining the new model and computing posteriors</a></li>
+  </ul></li>
+  <li class="chapter" data-level="8.4" data-path="basketball-shots.html"><a href="basketball-shots.html#does-the-period-affect-the-probability-of-scoring"><i class="fa fa-check"></i><b>8.4</b> Does the Period affect the probability of scoring?</a></li>
+  <li class="chapter" data-level="8.5" data-path="basketball-shots.html"><a href="basketball-shots.html#summary-6"><i class="fa fa-check"></i><b>8.5</b> Summary</a></li>
+  </ul></li>
+  <li class="chapter" data-level="9" data-path="optimal-pricing.html"><a href="optimal-pricing.html"><i class="fa fa-check"></i><b>9</b> Optimal pricing</a>
+  <ul>
+  <li class="chapter" data-level="9.1" data-path="optimal-pricing.html"><a href="optimal-pricing.html#overview"><i class="fa fa-check"></i><b>9.1</b> Overview</a></li>
+  <li class="chapter" data-level="9.2" data-path="optimal-pricing.html"><a href="optimal-pricing.html#optimal-pricing-1"><i class="fa fa-check"></i><b>9.2</b> Optimal pricing</a>
+  <ul>
+  <li class="chapter" data-level="9.2.1" data-path="optimal-pricing.html"><a href="optimal-pricing.html#price-vs-quantity-model"><i class="fa fa-check"></i><b>9.2.1</b> Price vs Quantity model</a></li>
+  <li class="chapter" data-level="9.2.2" data-path="optimal-pricing.html"><a href="optimal-pricing.html#price-elasticity-of-demand"><i class="fa fa-check"></i><b>9.2.2</b> Price elasticity of demand</a></li>
+  </ul></li>
+  <li class="chapter" data-level="9.3" data-path="optimal-pricing.html"><a href="optimal-pricing.html#maximizing-profit"><i class="fa fa-check"></i><b>9.3</b> Maximizing profit</a></li>
+  <li class="chapter" data-level="9.4" data-path="optimal-pricing.html"><a href="optimal-pricing.html#summary-7"><i class="fa fa-check"></i><b>9.4</b> Summary</a></li>
+  <li class="chapter" data-level="9.5" data-path="optimal-pricing.html"><a href="optimal-pricing.html#references-6"><i class="fa fa-check"></i><b>9.5</b> References</a></li>
+  </ul></li>
+  <li class="part"><span><b>III Deep Learning</b></span></li>
+  <li class="chapter" data-level="10" data-path="image-classification.html"><a href="image-classification.html"><i class="fa fa-check"></i><b>10</b> Image classification</a>
+  <ul>
+  <li class="chapter" data-level="10.1" data-path="image-classification.html"><a href="image-classification.html#bee-population-control-what-would-happen-if-bees-go-extinct"><i class="fa fa-check"></i><b>10.1</b> Bee population control: What would happen if bees go extinct?</a></li>
+  <li class="chapter" data-level="10.2" data-path="image-classification.html"><a href="image-classification.html#machine-learning-overview"><i class="fa fa-check"></i><b>10.2</b> Machine Learning Overview</a></li>
+  <li class="chapter" data-level="10.3" data-path="image-classification.html"><a href="image-classification.html#neural-networks-and-convolutional-neural-networks"><i class="fa fa-check"></i><b>10.3</b> Neural networks and convolutional neural networks</a></li>
+  <li class="chapter" data-level="10.4" data-path="image-classification.html"><a href="image-classification.html#summary-8"><i class="fa fa-check"></i><b>10.4</b> Summary</a></li>
+  <li class="chapter" data-level="10.5" data-path="image-classification.html"><a href="image-classification.html#references-7"><i class="fa fa-check"></i><b>10.5</b> References</a></li>
+  </ul></li>
+  <li class="part"><span><b>IV Scientific Machine Learning</b></span></li>
+  <li class="chapter" data-level="11" data-path="ultima-online.html"><a href="ultima-online.html"><i class="fa fa-check"></i><b>11</b> Ultima online</a>
+  <ul>
+  <li class="chapter" data-level="11.1" data-path="ultima-online.html"><a href="ultima-online.html#the-ultima-online-catastrophe"><i class="fa fa-check"></i><b>11.1</b> The Ultima Online Catastrophe</a>
+  <ul>
+  <li class="chapter" data-level="11.1.1" data-path="ultima-online.html"><a href="ultima-online.html#the-lotka-volterra-model-for-population-dynamics"><i class="fa fa-check"></i><b>11.1.1</b> The Lotka-Volterra model for population dynamics</a></li>
+  </ul></li>
+  <li class="chapter" data-level="11.2" data-path="ultima-online.html"><a href="ultima-online.html#summary-9"><i class="fa fa-check"></i><b>11.2</b> Summary</a></li>
+  <li class="chapter" data-level="11.3" data-path="ultima-online.html"><a href="ultima-online.html#references-8"><i class="fa fa-check"></i><b>11.3</b> References</a></li>
+  </ul></li>
+  <li class="chapter" data-level="12" data-path="ultima-continued.html"><a href="ultima-continued.html"><i class="fa fa-check"></i><b>12</b> Ultima continued</a>
+  <ul>
+  <li class="chapter" data-level="12.1" data-path="ultima-continued.html"><a href="ultima-continued.html#the-language-of-science"><i class="fa fa-check"></i><b>12.1</b> The language of science</a></li>
+  <li class="chapter" data-level="12.2" data-path="ultima-continued.html"><a href="ultima-continued.html#scientific-machine-learning-for-model-discovery"><i class="fa fa-check"></i><b>12.2</b> Scientific Machine Learning for model discovery</a>
+  <ul>
+  <li class="chapter" data-level="12.2.1" data-path="ultima-continued.html"><a href="ultima-continued.html#looking-for-the-catastrophe-culprit"><i class="fa fa-check"></i><b>12.2.1</b> Looking for the catastrophe culprit</a></li>
+  <li class="chapter" data-level="12.2.2" data-path="ultima-continued.html"><a href="ultima-continued.html#the-infamous-day-begins."><i class="fa fa-check"></i><b>12.2.2</b> The infamous day begins.</a></li>
+  </ul></li>
+  <li class="chapter" data-level="12.3" data-path="ultima-continued.html"><a href="ultima-continued.html#summary-10"><i class="fa fa-check"></i><b>12.3</b> Summary</a></li>
+  <li class="chapter" data-level="12.4" data-path="ultima-continued.html"><a href="ultima-continued.html#references-9"><i class="fa fa-check"></i><b>12.4</b> References</a></li>
+  </ul></li>
+  <li class="part"><span><b>V Time Series and Forecasting</b></span></li>
+  <li class="chapter" data-level="13" data-path="time-series.html"><a href="time-series.html"><i class="fa fa-check"></i><b>13</b> Time series</a>
+  <ul>
+  <li class="chapter" data-level="13.1" data-path="time-series.html"><a href="time-series.html#predicting-the-future"><i class="fa fa-check"></i><b>13.1</b> Predicting the future</a></li>
+  <li class="chapter" data-level="13.2" data-path="time-series.html"><a href="time-series.html#exponential-smoothing"><i class="fa fa-check"></i><b>13.2</b> Exponential Smoothing</a>
+  <ul>
+  <li class="chapter" data-level="13.2.1" data-path="time-series.html"><a href="time-series.html#weighted-average-and-component-form"><i class="fa fa-check"></i><b>13.2.1</b> Weighted average and Component form</a></li>
+  <li class="chapter" data-level="13.2.2" data-path="time-series.html"><a href="time-series.html#optimization-or-fitting-process"><i class="fa fa-check"></i><b>13.2.2</b> Optimization (or Fitting) Process</a></li>
+  <li class="chapter" data-level="13.2.3" data-path="time-series.html"><a href="time-series.html#trend-methods"><i class="fa fa-check"></i><b>13.2.3</b> Trend Methods</a></li>
+  <li class="chapter" data-level="13.2.4" data-path="time-series.html"><a href="time-series.html#seasonality-methods"><i class="fa fa-check"></i><b>13.2.4</b> Seasonality Methods</a></li>
+  </ul></li>
+  <li class="chapter" data-level="13.3" data-path="time-series.html"><a href="time-series.html#summary-11"><i class="fa fa-check"></i><b>13.3</b> Summary</a></li>
+  <li class="chapter" data-level="13.4" data-path="time-series.html"><a href="time-series.html#references-10"><i class="fa fa-check"></i><b>13.4</b> References</a></li>
+  </ul></li>
+  <li class="divider"></li>
+  <li><a href="https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers" target="blank">Published with bookdown</a></li>
+        
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Data Science in Julia for Hackers</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="image-classification" class="section level1" number="10">
+<h1><span class="header-section-number">Chapter 10</span> Image classification</h1>
+<div id="bee-population-control-what-would-happen-if-bees-go-extinct" class="section level2" number="10.1">
+<h2><span class="header-section-number">10.1</span> Bee population control: What would happen if bees go extinct?</h2>
+<p>You may or may not like bees. Either if you are afraid of them stinging you, or if you are addicted to the golden and sweet substance they produce, there is something we must agree on: their crucial role in maintaining the balance in the natural ecosystem, and in particular, they are vital for our human interests also. Bees are one of the biggest contributors to pollination of plants, hence their existence is so important to all lifeforms, and also to our economy.
+In fact, almost 70% of the production of fruits, vegetables and seeds depend directly on this pollination process to happen.</p>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_10_plot_1-J1.png" /><!-- --></p>
+<p>Unfortunately, the bee population has been declining over the past years, not only for the case of wild bees but for commercial honey bees also.
+Some of the reasons that scientists are considering are the appearance of species of mites, viruses and parasites that have been infecting some colonies, as well as the usage of insecticides over crops that affect the bees nervous system when they are in the process of pollinating and drinking nectar, among others.
+Being so important, a lot of effort is being done to control and monitor the bee population. In this chapter, we will build a simple computer vision model using convolutional neural networks, a standard deep learning technique used nowadays that has become one of the best for working with images.
+This model will help us in a classification between bees and wasps.
+A group of ecology researchers has settled up a system of cameras in some strategic areas to help with the monitoring of different animals, and our job will be to implement an algorithm that can automatically classify between bees and wasps.</p>
+</div>
+<div id="machine-learning-overview" class="section level2" number="10.2">
+<h2><span class="header-section-number">10.2</span> Machine Learning Overview</h2>
+<p>Let’s dive in to understand a little about this neural network thing first. It may sound a little bit intimidating at first, but the clue is to take it easy.
+To put things in context, neural networks are part of the machine learning set of models, which at the same time are included in what is called artificial intelligence. This name references programs that are made to solve problems or tasks that are easy for people to perform but hard to describe in a formal way, something that is an obligation for any computational task.
+The approach to this type of problems is to let computers learn from experience, so the need for a formal specification of the problem is avoided. This is where the name machine Learning takes its roots. The model parameters –which can scale up to a size of millions– are learned –fitted– from the data instead of hardcoding them.
+This is why the data gathering, munging and cleaning processes are so important.
+Not only from an efficiency and accuracy perspective, but most importantly from an ethical one. It is essential for everybody who is implementing or training a model to consider how it will be used.</p>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_10_plot_2%20-J1.png" /><!-- --></p>
+</div>
+<div id="neural-networks-and-convolutional-neural-networks" class="section level2" number="10.3">
+<h2><span class="header-section-number">10.3</span> Neural networks and convolutional neural networks</h2>
+<p>In the big set of models classified as artificial intelligence, one of the most basic steps when facing a problem is the task of feature engineering or feature extraction from the data. Features can be defined as properties that are relevant to our model and that summarize the data in some way.
+For example, if we are working with sound data and we want to make a pitch classifier, we could extract features from the raw data as averages of spectral power in different frequency ranges.
+A similar approach can be thought when working with images, taking the averages of different colors may be relevant for certain classification problems.
+For a lot of tasks, knowing the features that should be extracted beforehand may be a cumbersome problem. In fact, machine learning may be used to learn what features are the most relevant for a particular situation also.
+This is what is called representation learning.
+Representations learned from the data have usually a better performance than the human-designed ones. However, learning representations is a difficulty on its own. And here is where deep learning appears in play. Deep learning models are characterized by learning representations that are expressed in terms of other representations.
+In this way, high-level representations –the harder ones to learn for computers and the most intuitive por humans– are built from simpler ones, and they are organized in layers accordingly. The word deep in deep learning makes reference to this layered structure of these models.
+These layers are constituted by neurons that are activated in a non-linear fashion by the activation of neurons at the previous layer.
+What do we mean by non-linear? It literally means there is not a linear relationship between the input of the neuron and its output. Consider the sigmoid function:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb1-1"><a href="image-classification.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb1-2"><a href="image-classification.html#cb1-2" aria-hidden="true" tabindex="-1"></a>    gr()</span>
+<span id="cb1-3"><a href="image-classification.html#cb1-3" aria-hidden="true" tabindex="-1"></a>    plot(<span class="op">-</span><span class="fl">10</span><span class="op">:</span><span class="fl">0.5</span><span class="op">:</span><span class="fl">10</span><span class="op">,</span> sigmoid.(<span class="op">-</span><span class="fl">10</span><span class="op">:</span><span class="fl">0.5</span><span class="op">:</span><span class="fl">10</span>)<span class="op">,</span> label<span class="op">=</span><span class="ex">false</span><span class="op">,</span> title<span class="op">=</span><span class="st">&quot;sigmoid function&quot;</span><span class="op">,</span> lw<span class="op">=</span><span class="fl">2</span><span class="op">,</span> size<span class="op">=</span>(<span class="fl">400</span><span class="op">,</span> <span class="fl">300</span>)<span class="op">,</span> color<span class="op">=</span><span class="st">&quot;Green&quot;</span>)</span>
+<span id="cb1-4"><a href="image-classification.html#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_10_plot_3-J1.png" /><!-- --></p>
+<p>The reason why non-linear functions are used here is that they allow rich and complex representations to emerge, in contrast to linear functions.
+The architecture of the connection between these neurons will depend on the neural Network model we want to implement. Just to name a few, there exist:
+* Fully connected or dense layers
+* Convolutional layers
+* Recurrent layers
+Each one of these has a special area of application. We will be focusing on convolutional neural networks here, composed of convolutional layers. But first, lets build a little intuition about how a trained neural network works and how it was trained.
+A typical representation of how a neural network operates looks something like this:</p>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_10_plot_4%20-J1.png" /><!-- --></p>
+<p>Given some input data (in this case, pixel data) in the input layer, each neuron of the next layer is activated in some way and then this activation is fed to the next layer in the hidden layer, and so on until the output layer is reached, and depending the activation of each of these neurons in the last layer, the algorithm classifies the image between dog, bird or cat. Each of these layers is composed of neurons that are activated by increasingly more complex abstractions or features of the image. For example, the neurons of the first hidden layers may be activated with very basic geometrical shapes, boundaries, or color gradients on the image. The neurons in the next layer may use a combination of the activation of these first neurons and hence be activated by higher-level representations built from the simpler ones, like an eye, an ear or a peak. Going on with this process, the last layer of neurons activate for very high-level abstractions, like a dog, a bird and a cat, all this because the network was trained for this task. But what on earth does this training process look like? We are now going to dive deeper in understanding this.</p>
+<p>Essentially, we can think of a neural network as a machine that receives some input and spits out some output. This machine has a lot of knobs –speaking mathematically, parameters– that determine how it performs. The number of knobs and how they relate to one another will depend on the internal architecture of the network, but the actual value to what they are set will depend on the training process it has been subject to.
+When we first instantiate our model –or machine–, we expect it to be untrained unless we do something called <em>transfer learning</em>, that is, instantiate an already pre-trained model so that we save some time in doing the learning step. With an untrained model, what we would get is randomly set knobs and we would like to find the right setting for the machine to work as we intend it to.
+But because there are so many of these knobs and their interactions are so complex, this task is far from trivial. What can we do?
+The way to handle this in Machine Learning is, in the first place, by defining a loss (or cost) function. Loss functions are a concept that is ubiquitous in this field. These are functions that impose a measure of the model performance. We feed our model with some input which we know its corresponding output. We register the output of the model and we calculate the loss function. Depending on the chosen loss function, the penalization to the model performance will be different.
+The next step will be to adjust the knobs so our model will perform better. This is where the loss function will help. If you have some basic understanding of Calculus, you will know about derivatives of a function. When we take the derivative of some function and we evaluate it in a point of its domain, that value represents the rate of change of our original function in that point. In multidimensional Calculus, that is, Calculus applied on functions with a lot of variables –as it is our case–, we can calculate the Gradient of that function, which gives us the direction with the highest rate of change. That is, if we move in variable space along that direction giving a tiny step, the value of the function will grow the most. By the same token, if we move on the opposite side to the gradient, the function will decrease the most.
+Returning to the particular case of the loss function, if we move in the direction opposite to the gradient, the loss will decrease the most and, conversely, the model will perform slightly better.
+What we refer as moving in the opposite direction to the gradient here is exactly the recipe of how to tweak our model parameters (knobs) to increase the performance. This process takes the name of <em>Gradient Descent</em>, and it is the fundamental tool for training our machine. Applying it in an iterative manner, hopefully will lead the model to a minimum of the loss function and its performance will be close to perfect.</p>
+<p>As for almost every recipe, there are some limitations and considerations about it. This is not a golden rule. Due to the complexity of the models and the high-dimensionality that characterize some neural network models, such global minima may be difficult to achieve or very computationally expensive, among other complications. To tackle some of these, various optimizers had been implemented to update the parameters of the model in the most efficient way.</p>
+<p>Now that we have a general idea of what deep learning and neural networks are, let’s start building our bee vs. wasp classification apparatus and try to help in their population monitoring. We will be using Flux, a Machine Learning framework written entirely in Julia, and that interacts with many other packages on the ecosystem. First, we will import some necessary packages</p>
+<p>The dataset we will be working with is available to us, once again, thanks to <a href="https://www.kaggle.com/">Kaggle</a>. It consists of 3184 images of bees and 4945 of wasps. These are RGB images, meaning that they contain the information of colour. Also, they come in a variety of different sizes.
+Digital images are composed of pixels, which are the minimum piece of information in them. In a colored image, each pixel has three channels: R for Red, G for Green and B for Blue. As their names imply, these channels give the information of the value of red, green and blue colors in that pixel. For the human vision, a combination of these channels is sufficient to perceive any color in our visual spectrum.</p>
+<p>Gray scale images, on the other hand, have only one channel per pixel, that is associated with the amount of light coded in that pixel. Naturally, working with gray scale images is easier from a computational perspective. For our problem, we want to stay as simple as possible, so we are going to transform all images to gray scale. As we are dealing with a simple classification problem, the color information probably won’t contribute too much, so we can save some training time using gray scale images.
+We would also resize all images to a common size, another simplification we are adopting to our problem, making them smaller, but not too small so we don’t lose a lot of information that could be valuable for the network.</p>
+<p>The functions defined below will help us with this pre-process and then we load our gray scale images. We will use a resolution of 90x90 for our processed images.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb2-1"><a href="image-classification.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> resize_and_grayify(directory<span class="op">,</span> im_name<span class="op">,</span> width<span class="op">::</span><span class="dt">Int64</span><span class="op">,</span> height<span class="op">::</span><span class="dt">Int64</span>)</span>
+<span id="cb2-2"><a href="image-classification.html#cb2-2" aria-hidden="true" tabindex="-1"></a>    resized_gray_img <span class="op">=</span> Gray.(load(directory <span class="op">*</span> <span class="st">&quot;/&quot;</span> <span class="op">*</span> im_name)) <span class="op">|&gt;</span> (x <span class="op">-&gt;</span> imresize(x<span class="op">,</span> width<span class="op">,</span> height))</span>
+<span id="cb2-3"><a href="image-classification.html#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">try</span></span>
+<span id="cb2-4"><a href="image-classification.html#cb2-4" aria-hidden="true" tabindex="-1"></a>        save(<span class="st">&quot;preprocessed_&quot;</span> <span class="op">*</span> directory <span class="op">*</span> <span class="st">&quot;/&quot;</span> <span class="op">*</span> im_name<span class="op">,</span> resized_gray_img)</span>
+<span id="cb2-5"><a href="image-classification.html#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">catch</span> <span class="cn">e</span></span>
+<span id="cb2-6"><a href="image-classification.html#cb2-6" aria-hidden="true" tabindex="-1"></a>        <span class="kw">if</span> isa(<span class="cn">e</span><span class="op">,</span> <span class="dt">SystemError</span>)</span>
+<span id="cb2-7"><a href="image-classification.html#cb2-7" aria-hidden="true" tabindex="-1"></a>            mkdir(<span class="st">&quot;preprocessed_&quot;</span> <span class="op">*</span> directory)</span>
+<span id="cb2-8"><a href="image-classification.html#cb2-8" aria-hidden="true" tabindex="-1"></a>            save(<span class="st">&quot;preprocessed_&quot;</span> <span class="op">*</span> directory <span class="op">*</span> <span class="st">&quot;/&quot;</span> <span class="op">*</span> im_name<span class="op">,</span> resized_gray_img)</span>
+<span id="cb2-9"><a href="image-classification.html#cb2-9" aria-hidden="true" tabindex="-1"></a>        <span class="kw">end</span></span>
+<span id="cb2-10"><a href="image-classification.html#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
+<span id="cb2-11"><a href="image-classification.html#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<pre><code>## resize_and_grayify (generic function with 1 method)</code></pre>
+<div class="sourceCode" id="cb4"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb4-1"><a href="image-classification.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> process_images(directory<span class="op">,</span> width<span class="op">::</span><span class="dt">Int64</span><span class="op">,</span> height<span class="op">::</span><span class="dt">Int64</span>)</span>
+<span id="cb4-2"><a href="image-classification.html#cb4-2" aria-hidden="true" tabindex="-1"></a>    files_list <span class="op">=</span> readdir(directory)</span>
+<span id="cb4-3"><a href="image-classification.html#cb4-3" aria-hidden="true" tabindex="-1"></a>    map(x <span class="op">-&gt;</span> resize_and_grayify(directory<span class="op">,</span> x<span class="op">,</span> width<span class="op">,</span> height)<span class="op">,</span>                               files_list)</span>
+<span id="cb4-4"><a href="image-classification.html#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<pre><code>## process_images (generic function with 1 method)</code></pre>
+<div class="sourceCode" id="cb6"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb6-1"><a href="image-classification.html#cb6-1" aria-hidden="true" tabindex="-1"></a>n_resolution <span class="op">=</span> <span class="fl">90</span></span></code></pre></div>
+<pre><code>## 90</code></pre>
+<div class="sourceCode" id="cb8"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb8-1"><a href="image-classification.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb8-2"><a href="image-classification.html#cb8-2" aria-hidden="true" tabindex="-1"></a>    process_images(<span class="st">&quot;10_bees_vs_wasps/data/bee1&quot;</span><span class="op">,</span> n_resolution<span class="op">,</span> n_resolution)</span>
+<span id="cb8-3"><a href="image-classification.html#cb8-3" aria-hidden="true" tabindex="-1"></a>    process_images(<span class="st">&quot;10_bees_vs_wasps/data/bee2&quot;</span><span class="op">,</span> n_resolution<span class="op">,</span> n_resolution)</span>
+<span id="cb8-4"><a href="image-classification.html#cb8-4" aria-hidden="true" tabindex="-1"></a>    process_images(<span class="st">&quot;10_bees_vs_wasps/data/wasp1&quot;</span><span class="op">,</span> n_resolution<span class="op">,</span> n_resolution)</span>
+<span id="cb8-5"><a href="image-classification.html#cb8-5" aria-hidden="true" tabindex="-1"></a>    process_images(<span class="st">&quot;10_bees_vs_wasps/data/wasp2&quot;</span><span class="op">,</span> n_resolution<span class="op">,</span> n_resolution)<span class="op">;</span></span>
+<span id="cb8-6"><a href="image-classification.html#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb9-1"><a href="image-classification.html#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb9-2"><a href="image-classification.html#cb9-2" aria-hidden="true" tabindex="-1"></a>    bee1_dir <span class="op">=</span> readdir(<span class="st">&quot;preprocessed_10_bees_vs_wasps/data/bee1&quot;</span>)</span>
+<span id="cb9-3"><a href="image-classification.html#cb9-3" aria-hidden="true" tabindex="-1"></a>    bee2_dir <span class="op">=</span> readdir(<span class="st">&quot;preprocessed_10_bees_vs_wasps/data/bee2&quot;</span>)</span>
+<span id="cb9-4"><a href="image-classification.html#cb9-4" aria-hidden="true" tabindex="-1"></a>    wasp1_dir <span class="op">=</span> readdir(<span class="st">&quot;preprocessed_10_bees_vs_wasps/data/wasp1&quot;</span>)</span>
+<span id="cb9-5"><a href="image-classification.html#cb9-5" aria-hidden="true" tabindex="-1"></a>    wasp2_dir <span class="op">=</span> readdir(<span class="st">&quot;preprocessed_10_bees_vs_wasps/data/wasp2&quot;</span>)<span class="op">;</span></span>
+<span id="cb9-6"><a href="image-classification.html#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span><span class="op">;</span></span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb10-1"><a href="image-classification.html#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb10-2"><a href="image-classification.html#cb10-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># we load the pre-proccessed images</span></span>
+<span id="cb10-3"><a href="image-classification.html#cb10-3" aria-hidden="true" tabindex="-1"></a>    bees1 <span class="op">=</span> load.(<span class="st">&quot;preprocessed_10_bees_vs_wasps/data/bee1/&quot;</span> <span class="op">.*</span> bee1_dir)</span>
+<span id="cb10-4"><a href="image-classification.html#cb10-4" aria-hidden="true" tabindex="-1"></a>    bees2 <span class="op">=</span> load.(<span class="st">&quot;preprocessed_10_bees_vs_wasps/data/bee2/&quot;</span> <span class="op">.*</span> bee2_dir)</span>
+<span id="cb10-5"><a href="image-classification.html#cb10-5" aria-hidden="true" tabindex="-1"></a>    wasp1 <span class="op">=</span> load.(<span class="st">&quot;preprocessed_10_bees_vs_wasps/data/wasp1/&quot;</span> <span class="op">.*</span> wasp1_dir)</span>
+<span id="cb10-6"><a href="image-classification.html#cb10-6" aria-hidden="true" tabindex="-1"></a>    wasp2 <span class="op">=</span> load.(<span class="st">&quot;preprocessed_10_bees_vs_wasps/data/wasp2/&quot;</span> <span class="op">.*</span> wasp2_dir)<span class="op">;</span></span>
+<span id="cb10-7"><a href="image-classification.html#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span><span class="op">;</span></span></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb11-1"><a href="image-classification.html#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># we concatenate all bees and wasp images</span></span>
+<span id="cb11-2"><a href="image-classification.html#cb11-2" aria-hidden="true" tabindex="-1"></a>bees <span class="op">=</span> vcat(bees1<span class="op">,</span> bees2)<span class="op">;</span></span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb12-1"><a href="image-classification.html#cb12-1" aria-hidden="true" tabindex="-1"></a>wasps <span class="op">=</span> vcat(wasp1<span class="op">,</span> wasp2)<span class="op">;</span></span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb13-1"><a href="image-classification.html#cb13-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> vcat(bees<span class="op">,</span> wasps)<span class="op">;</span></span></code></pre></div>
+<p>At this point, our data is ready and loaded, but we have a little work to do before we start building our network. We will first label our images with a 0 for bees and a 1 for wasps, and then, as we already did in the email spam filter chapter, we will split our data and labels in a training and a test set. Again, this is the standard procedure to ensure our model is giving meaningful results.</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb14-1"><a href="image-classification.html#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb14-2"><a href="image-classification.html#cb14-2" aria-hidden="true" tabindex="-1"></a>    labels <span class="op">=</span> vcat([<span class="fl">0</span> <span class="kw">for</span> _ <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>length(bees)]<span class="op">,</span> [<span class="fl">1</span> <span class="kw">for</span> _ <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>length(wasps)])</span>
+<span id="cb14-3"><a href="image-classification.html#cb14-3" aria-hidden="true" tabindex="-1"></a>    (x_train<span class="op">,</span> y_train)<span class="op">,</span> (x_test<span class="op">,</span> y_test) <span class="op">=</span> splitobs(shuffleobs((data<span class="op">,</span> labels))<span class="op">,</span> at <span class="op">=</span> <span class="fl">0.7</span>)</span>
+<span id="cb14-4"><a href="image-classification.html#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span><span class="op">;</span></span></code></pre></div>
+<p>Neural networks can be trained more efficiently when data is past forward in small groups or batches of data, instead of individually. This is also a standard procedure when working with neural networks. The function below groups the data into minibatches for a later training of the network. We then create the minibatches, specifying a <code>batchsize</code> of 128.</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb15-1"><a href="image-classification.html#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># this function creates minibatches of the data. Each minibatch is a tuple of (data, labels).</span></span>
+<span id="cb15-2"><a href="image-classification.html#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> make_minibatch(X<span class="op">,</span> Y<span class="op">,</span> idxs)</span>
+<span id="cb15-3"><a href="image-classification.html#cb15-3" aria-hidden="true" tabindex="-1"></a>    X_batch <span class="op">=</span> <span class="dt">Array</span>{<span class="dt">Float32</span>}(<span class="cn">undef</span><span class="op">,</span> size(X[<span class="fl">1</span>])<span class="op">...,</span> <span class="fl">1</span><span class="op">,</span> length(idxs))</span>
+<span id="cb15-4"><a href="image-classification.html#cb15-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>length(idxs)</span>
+<span id="cb15-5"><a href="image-classification.html#cb15-5" aria-hidden="true" tabindex="-1"></a>        X_batch[<span class="op">:,</span> <span class="op">:,</span> <span class="op">:,</span> i] <span class="op">=</span> <span class="dt">Float32</span>.(X[idxs[i]])</span>
+<span id="cb15-6"><a href="image-classification.html#cb15-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
+<span id="cb15-7"><a href="image-classification.html#cb15-7" aria-hidden="true" tabindex="-1"></a>    Y_batch <span class="op">=</span> onehotbatch(Y[idxs]<span class="op">,</span> <span class="fl">0</span><span class="op">:</span><span class="fl">1</span>)</span>
+<span id="cb15-8"><a href="image-classification.html#cb15-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">return</span> (X_batch<span class="op">,</span> Y_batch)</span>
+<span id="cb15-9"><a href="image-classification.html#cb15-9" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<pre><code>## make_minibatch (generic function with 1 method)</code></pre>
+<div class="sourceCode" id="cb17"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb17-1"><a href="image-classification.html#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb17-2"><a href="image-classification.html#cb17-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># here we define the train and test sets.</span></span>
+<span id="cb17-3"><a href="image-classification.html#cb17-3" aria-hidden="true" tabindex="-1"></a>    batchsize <span class="op">=</span> <span class="fl">128</span></span>
+<span id="cb17-4"><a href="image-classification.html#cb17-4" aria-hidden="true" tabindex="-1"></a>    mb_idxs <span class="op">=</span> partition(<span class="fl">1</span><span class="op">:</span>length(x_train)<span class="op">,</span> batchsize)</span>
+<span id="cb17-5"><a href="image-classification.html#cb17-5" aria-hidden="true" tabindex="-1"></a>    train_set <span class="op">=</span> [make_minibatch(x_train<span class="op">,</span> y_train<span class="op">,</span> i) <span class="kw">for</span> i <span class="kw">in</span> mb_idxs]</span>
+<span id="cb17-6"><a href="image-classification.html#cb17-6" aria-hidden="true" tabindex="-1"></a>    test_set <span class="op">=</span> make_minibatch(x_test<span class="op">,</span> y_test<span class="op">,</span> <span class="fl">1</span><span class="op">:</span>length(x_test))<span class="op">;</span></span>
+<span id="cb17-7"><a href="image-classification.html#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span><span class="op">;</span></span></code></pre></div>
+<p>Finally now we are ready to define our convolutional neural network model. But first, let’s talk a little more about the details of these networks. What makes them special? What does it mean to be <em>convolutional</em>?</p>
+<p>Convolutional neural network or <em>CNNs</em>, are a special kind of neural networks, which have shown a great performance for computer vision tasks and, in general, working with images. When we talk about these kind of networks, usually we mean they have one or more convolutional layers in their architecture, but generally that is not the only thing they are composed of. You can think about a convolutional layer as one consisting of a certain number of mini-images. These mini-images are called <em>filters</em> and they play the role of the neurons we talked earlier. Indeed, filters are what make this layer convolutional. They pass through the entire image and they compute how much they are activated at every location of it. What do we mean by being activated? The places of the image where the filter and the image are most similar, will be the places with the highest activation, while the places where are less similar will be the ones with the lowest activation. Summing up, a filter is a sliding little image with some pattern in it, and as it slides across the original image, we obtain a new, filtered image, which basically accounts for how much the pattern in the filter matches each part of the original image. This process is made with every filter, so we get a stack of new images. How many? Well, as many filters we started up with.
+Very often in CNNs, the output of the convolutional layer is fed to a <em>Pooling</em> layer. A pooling layer consists of, again, a sliding window, that moves across its input image and makes some operation with the pixels that lie in that window. In our case, we are going to apply a MaxPool layer, meaning that as the window slides, we will keep the highest value inside the window and discard the others. In this way, we shrink our original information into a more concise structure. Remember that the input of this layer will be the filtered images, so this shrinkage will help to make the prediction of the network a little bit more independent of the exact location of the extracted feature. If we want our network to classify an image as a bee, it shouldn’t matter if the bee is at the top right of the image or at the bottom left.</p>
+<p>In a typical CNN, we will have some iterations of these convolutional and pooling layers, giving depth to our network. How many of these layers should we have? This question has not a correct answer. It is highly dependent on our problem and the task we want to solve. In our case, we will use three of these building blocks composed of a convolutional layer and a pooling layer. Given that our problem is relatively simple in terms of what a neural network can do, this should be enough.
+In the last layers of our network, we flatten the stack of images we created passing through the convolutional-pooling layer structures and we feed this into a fully connected layer, meaning that every neuron of the input is connected in some way with a neuron of the output. In our case, we will set the output neurons to a number of 2, because we want the network to classify between two classes, bees and wasps.
+The last layer, applies a softmax function to the outputs so these can be interpreted as probabilities of the image corresponding to a bee or a wasp.</p>
+<p>There is one last detail you may be wondering about. We talked about filters being like little images with some pattern, and these patterns are somewhat the building blocks necessary to accurately distinguish between the different classes our problem is composed of. It is far from trivial to determine how these filters would have to look like, but here is where the representation learning ability of neural networks we have talked about comes to play. In the training process, the best set of filters are learned. It is very interesting to visualize how these filters look like once the training is complete.
+Neural networks can get much more complicated than what we have discussed, but this example helps to introduce the general idea.</p>
+<p>Below we show how the CNN we have discussed is implemented in Julia using the Flux package.</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb18-1"><a href="image-classification.html#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># here we define our convolutional neural network model.</span></span>
+<span id="cb18-2"><a href="image-classification.html#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="co"># la última capa densa tiene que tener un input que depende de la resolución de las imágenes. </span></span>
+<span id="cb18-3"><a href="image-classification.html#cb18-3" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> Chain(</span>
+<span id="cb18-4"><a href="image-classification.html#cb18-4" aria-hidden="true" tabindex="-1"></a>        Conv((<span class="fl">3</span><span class="op">,</span> <span class="fl">3</span>)<span class="op">,</span> <span class="fl">1</span><span class="op">=&gt;</span><span class="fl">32</span><span class="op">,</span> pad<span class="op">=</span>(<span class="fl">1</span><span class="op">,</span><span class="fl">1</span>)<span class="op">,</span> relu)<span class="op">,</span></span>
+<span id="cb18-5"><a href="image-classification.html#cb18-5" aria-hidden="true" tabindex="-1"></a>        MaxPool((<span class="fl">2</span><span class="op">,</span><span class="fl">2</span>))<span class="op">,</span></span>
+<span id="cb18-6"><a href="image-classification.html#cb18-6" aria-hidden="true" tabindex="-1"></a>        Conv((<span class="fl">3</span><span class="op">,</span> <span class="fl">3</span>)<span class="op">,</span> <span class="fl">32</span><span class="op">=&gt;</span><span class="fl">64</span><span class="op">,</span> pad<span class="op">=</span>(<span class="fl">1</span><span class="op">,</span><span class="fl">1</span>)<span class="op">,</span> relu)<span class="op">,</span></span>
+<span id="cb18-7"><a href="image-classification.html#cb18-7" aria-hidden="true" tabindex="-1"></a>        MaxPool((<span class="fl">2</span><span class="op">,</span><span class="fl">2</span>))<span class="op">,</span></span>
+<span id="cb18-8"><a href="image-classification.html#cb18-8" aria-hidden="true" tabindex="-1"></a>        Conv((<span class="fl">3</span><span class="op">,</span> <span class="fl">3</span>)<span class="op">,</span> <span class="fl">64</span><span class="op">=&gt;</span><span class="fl">128</span><span class="op">,</span> pad<span class="op">=</span>(<span class="fl">1</span><span class="op">,</span><span class="fl">1</span>)<span class="op">,</span> relu)<span class="op">,</span></span>
+<span id="cb18-9"><a href="image-classification.html#cb18-9" aria-hidden="true" tabindex="-1"></a>        MaxPool((<span class="fl">2</span><span class="op">,</span><span class="fl">2</span>))<span class="op">,</span></span>
+<span id="cb18-10"><a href="image-classification.html#cb18-10" aria-hidden="true" tabindex="-1"></a>        flatten<span class="op">,</span></span>
+<span id="cb18-11"><a href="image-classification.html#cb18-11" aria-hidden="true" tabindex="-1"></a>        Dense(<span class="fl">15488</span><span class="op">,</span> <span class="fl">2</span>)<span class="op">,</span></span>
+<span id="cb18-12"><a href="image-classification.html#cb18-12" aria-hidden="true" tabindex="-1"></a>        softmax)</span></code></pre></div>
+<p>All the layers are stacked up with the <em>Chain</em> function. Let’s see in some more detail what the information in each layer means:</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb19-1"><a href="image-classification.html#cb19-1" aria-hidden="true" tabindex="-1"></a>Conv((<span class="fl">3</span><span class="op">,</span> <span class="fl">3</span>)<span class="op">,</span> <span class="fl">1</span><span class="op">=&gt;</span><span class="fl">32</span><span class="op">,</span> pad<span class="op">=</span>(<span class="fl">1</span><span class="op">,</span><span class="fl">1</span>)<span class="op">,</span> relu)</span></code></pre></div>
+<p>First, <span class="math inline">\((3,3)\)</span> makes reference to the size of the filters that are applied in the convolutional layer, in this case, of width and height 3. Then we have the <span class="math inline">\(1=&gt;32\)</span> section. This stands for the number of channels in each pixel we start and end with. We start with a single channel (we have transformed our images to grayscale) and we end with 32. This means we will be applying 32 filters in this particular layer.
+The <span class="math inline">\(pad=(1,1)\)</span> argument stands for the padding done to the input image of the layer. A border is padded to these so that the output image of the layer does not shrink in the convolutional process and we loose information at the corners.
+Finally, the <em>relu</em> argument specifies what is the activation function of the filters.</p>
+<p>Then we have our next layer,</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb20-1"><a href="image-classification.html#cb20-1" aria-hidden="true" tabindex="-1"></a>Maxpool((<span class="fl">2</span><span class="op">,</span><span class="fl">2</span>))</span></code></pre></div>
+<p>Again, <span class="math inline">\((2,2)\)</span> is the size of the sliding window that is responsible for the pooling in this layer.
+After repeating this convolutional-pooling layers, we first apply the <em>flatten</em> function, that, as the name implies, flattens the stack of filtered images we accumulated as we walked through the network so we can feed this flattened array to a dense layer,</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb21-1"><a href="image-classification.html#cb21-1" aria-hidden="true" tabindex="-1"></a>Dense(<span class="fl">15488</span><span class="op">,</span> <span class="fl">2</span>)</span></code></pre></div>
+<p>As discussed, this is a fully connected layer, with its arguments being input and output sizes, respectively. Finally, the <em>softmax</em> function converts our output to probabilities.</p>
+<p>In the next code block we define some functions we will be using in the training process of our network,
+* The loss function, which will be used to know how far from the true labels are the predictions of our model, and, taking the gradient, to adjust the parameters to improve predictions.
+* The accuracy function, that will help us to measure how good our model is performing.
+* The optimizer that the gradient descent algorithm will be using.
+* A callback function. The training of a neural network can take some time, so a callback function is usually defined to be called and monitoring how the training is progressing.</p>
+<p>We also use the Flux function <span class="math inline">\(params()\)</span>, for referencing and updating our model’s parameters when training.</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb22-1"><a href="image-classification.html#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb22-2"><a href="image-classification.html#cb22-2" aria-hidden="true" tabindex="-1"></a>    train_loss <span class="op">=</span> <span class="dt">Float64</span>[]</span>
+<span id="cb22-3"><a href="image-classification.html#cb22-3" aria-hidden="true" tabindex="-1"></a>    test_loss <span class="op">=</span> <span class="dt">Float64</span>[]</span>
+<span id="cb22-4"><a href="image-classification.html#cb22-4" aria-hidden="true" tabindex="-1"></a>    acc <span class="op">=</span> <span class="dt">Float64</span>[]</span>
+<span id="cb22-5"><a href="image-classification.html#cb22-5" aria-hidden="true" tabindex="-1"></a>    ps <span class="op">=</span> Flux.params(model)</span>
+<span id="cb22-6"><a href="image-classification.html#cb22-6" aria-hidden="true" tabindex="-1"></a>    opt <span class="op">=</span> ADAM()</span>
+<span id="cb22-7"><a href="image-classification.html#cb22-7" aria-hidden="true" tabindex="-1"></a>    L(x<span class="op">,</span> y) <span class="op">=</span> Flux.crossentropy(model(x)<span class="op">,</span> y)</span>
+<span id="cb22-8"><a href="image-classification.html#cb22-8" aria-hidden="true" tabindex="-1"></a>    L((x<span class="op">,</span>y)) <span class="op">=</span> Flux.crossentropy(model(x)<span class="op">,</span> y)</span>
+<span id="cb22-9"><a href="image-classification.html#cb22-9" aria-hidden="true" tabindex="-1"></a>    accuracy(x<span class="op">,</span> y<span class="op">,</span> f) <span class="op">=</span> mean(Flux.onecold(f(x)) .<span class="op">==</span> Flux.onecold(y))</span>
+<span id="cb22-10"><a href="image-classification.html#cb22-10" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb22-11"><a href="image-classification.html#cb22-11" aria-hidden="true" tabindex="-1"></a>    <span class="kw">function</span> update_loss<span class="op">!</span>()</span>
+<span id="cb22-12"><a href="image-classification.html#cb22-12" aria-hidden="true" tabindex="-1"></a>        push<span class="op">!</span>(train_loss<span class="op">,</span> mean(L.(train_set)))</span>
+<span id="cb22-13"><a href="image-classification.html#cb22-13" aria-hidden="true" tabindex="-1"></a>        push<span class="op">!</span>(test_loss<span class="op">,</span> mean(L(test_set)))</span>
+<span id="cb22-14"><a href="image-classification.html#cb22-14" aria-hidden="true" tabindex="-1"></a>        push<span class="op">!</span>(acc<span class="op">,</span> accuracy(test_set<span class="op">...,</span> model))</span>
+<span id="cb22-15"><a href="image-classification.html#cb22-15" aria-hidden="true" tabindex="-1"></a>        <span class="pp">@printf</span>(<span class="st">&quot;train loss = %.2f, test loss = %.2f, accuracy = %.2f</span><span class="sc">\n</span><span class="st">&quot;</span><span class="op">,</span> train_loss[<span class="kw">end</span>]<span class="op">,</span> test_loss[<span class="kw">end</span>]<span class="op">,</span> acc[<span class="kw">end</span>])</span>
+<span id="cb22-16"><a href="image-classification.html#cb22-16" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
+<span id="cb22-17"><a href="image-classification.html#cb22-17" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<pre><code>## update_loss! (generic function with 1 method)</code></pre>
+<p>With all this work done, we are in position to finally start training our neural network! For this purpose we use the <span class="math inline">\(train!()\)</span> function. We must specify as arguments the loss function, the parameters of our model, the training data, the optimizer we are going to use and finally the callback function. Let’s train for 10 epochs and see how our network is performing.</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb24-1"><a href="image-classification.html#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># here we train our model for n_epochs times.</span></span>
+<span id="cb24-2"><a href="image-classification.html#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="pp">@epochs</span> <span class="fl">10</span> Flux.train<span class="op">!</span>(L<span class="op">,</span> ps<span class="op">,</span> train_set<span class="op">,</span> opt<span class="op">;</span></span>
+<span id="cb24-3"><a href="image-classification.html#cb24-3" aria-hidden="true" tabindex="-1"></a>               cb <span class="op">=</span> Flux.throttle(update_loss<span class="op">!,</span> <span class="fl">8</span>))</span></code></pre></div>
+<p>That was some hard training! Finally it is over. Let’s plot how the model performed over the process.</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb25-1"><a href="image-classification.html#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb25-2"><a href="image-classification.html#cb25-2" aria-hidden="true" tabindex="-1"></a>    plot(train_loss<span class="op">,</span> xlabel<span class="op">=</span><span class="st">&quot;Iterations&quot;</span><span class="op">,</span> title<span class="op">=</span><span class="st">&quot;Model Training&quot;</span><span class="op">,</span> label<span class="op">=</span><span class="st">&quot;Train loss&quot;</span><span class="op">,</span> lw<span class="op">=</span><span class="fl">2</span><span class="op">,</span> alpha<span class="op">=</span><span class="fl">0.9</span>)</span>
+<span id="cb25-3"><a href="image-classification.html#cb25-3" aria-hidden="true" tabindex="-1"></a>    plot<span class="op">!</span>(test_loss<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;Test loss&quot;</span><span class="op">,</span> lw<span class="op">=</span><span class="fl">2</span><span class="op">,</span> alpha<span class="op">=</span><span class="fl">0.9</span>)</span>
+<span id="cb25-4"><a href="image-classification.html#cb25-4" aria-hidden="true" tabindex="-1"></a>    plot<span class="op">!</span>(acc<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;Accuracy&quot;</span><span class="op">,</span> lw<span class="op">=</span><span class="fl">2</span><span class="op">,</span> alpha<span class="op">=</span><span class="fl">0.9</span>)</span>
+<span id="cb25-5"><a href="image-classification.html#cb25-5" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_10_plot_5-J1.png" /><!-- --></p>
+<p>We see how the network reached an accuracy of 80%.
+It is a pretty good result considering all the simplifications we have done along the journey.
+At this point we should make a decision: do we want to improve this result?
+If so, then there are a lot of paths we could take.
+For example, we can train our network for some epochs more with a slower learning rate, or we can add some layers to the network and train again.
+Let’s take the first approach and train the network for 5 epochs more with a shorter learning rate.
+For this, we have to instantiate the optimizer again, specifying the learning rate we want as an argument</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb26-1"><a href="image-classification.html#cb26-1" aria-hidden="true" tabindex="-1"></a>opt_2 <span class="op">=</span> ADAM(<span class="fl">0.0005</span>)</span></code></pre></div>
+<pre><code>## ADAM(0.0005, (0.9, 0.999), IdDict{Any,Any}())</code></pre>
+<div class="sourceCode" id="cb28"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb28-1"><a href="image-classification.html#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="pp">@epochs</span> <span class="fl">5</span> Flux.train<span class="op">!</span>(L<span class="op">,</span> ps<span class="op">,</span> train_set<span class="op">,</span> opt_2<span class="op">;</span></span>
+<span id="cb28-2"><a href="image-classification.html#cb28-2" aria-hidden="true" tabindex="-1"></a>               cb <span class="op">=</span> Flux.throttle(update_loss<span class="op">!,</span> <span class="fl">8</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb29"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb29-1"><a href="image-classification.html#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
+<span id="cb29-2"><a href="image-classification.html#cb29-2" aria-hidden="true" tabindex="-1"></a>    plot(train_loss<span class="op">,</span> xlabel<span class="op">=</span><span class="st">&quot;Iterations&quot;</span><span class="op">,</span> title<span class="op">=</span><span class="st">&quot;Model Training&quot;</span><span class="op">,</span> label<span class="op">=</span><span class="st">&quot;Train loss&quot;</span><span class="op">,</span> lw<span class="op">=</span><span class="fl">2</span><span class="op">,</span> alpha<span class="op">=</span><span class="fl">0.9</span><span class="op">,</span> legend <span class="op">=</span> <span class="op">:</span>right)</span>
+<span id="cb29-3"><a href="image-classification.html#cb29-3" aria-hidden="true" tabindex="-1"></a>    plot<span class="op">!</span>(test_loss<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;Test loss&quot;</span><span class="op">,</span> lw<span class="op">=</span><span class="fl">2</span><span class="op">,</span> alpha<span class="op">=</span><span class="fl">0.9</span>)</span>
+<span id="cb29-4"><a href="image-classification.html#cb29-4" aria-hidden="true" tabindex="-1"></a>    plot<span class="op">!</span>(acc<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;Accuracy&quot;</span><span class="op">,</span> lw<span class="op">=</span><span class="fl">2</span><span class="op">,</span> alpha<span class="op">=</span><span class="fl">0.9</span>)</span>
+<span id="cb29-5"><a href="image-classification.html#cb29-5" aria-hidden="true" tabindex="-1"></a>    vline<span class="op">!</span>([<span class="fl">82</span>]<span class="op">,</span> lw<span class="op">=</span><span class="fl">2</span><span class="op">,</span> label<span class="op">=</span><span class="ex">false</span>)</span>
+<span id="cb29-6"><a href="image-classification.html#cb29-6" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_10_plot_6-J1.png" /><!-- --></p>
+<p>We see that the accuracy got a little better now, reaching a maximum of <span class="math inline">\(85\%\)</span>. For now this will be enough, but there are many things we can do to improve the performance of the model. Hopefully this chapter had given some starting point for you to dig deeper into these topic if it is of your interest!</p>
+</div>
+<div id="summary-8" class="section level2" number="10.4">
+<h2><span class="header-section-number">10.4</span> Summary</h2>
+<p>In this chapter, we implemented a convolutional neural network that discriminated between pictures of bees and wasps.</p>
+<p>We learned that there are many types of loss functions to measure the model accuracy and that each one penalizes the wrong classifications in different ways.
+Then we explained the training process, in which we feed the untrained model with pictures which we already know their classification, calculate the loss function and then adjust the model parameters so that the loss function is optimized</p>
+<p>We saw that convolutional neural networks are a particular kind of neural networks where layers act as filters, and that they have a great performance when working with images.
+Thus, we decided to create a simple convolutional neural network to classify our pictures of bees and wasps.
+We pre-processed our data, converting all images to gray scale and changing their resolution to keep the convolutional neural networks as simple as possible.
+To train the neural networks in an efficient way we divided the data in small batches which we fed to the model one by one.
+Then we plotted the accuracy and loss function of our model to see how well it performed.
+Finally, we tried to improve our model, so we decreased the learning rate and trained it again, obtaining better accuracy.</p>
+</div>
+<div id="references-7" class="section level2" number="10.5">
+<h2><span class="header-section-number">10.5</span> References</h2>
+<ul>
+<li><a href="http://www.fao.org/3/a-a0849e.pdf">Honey bee diseases and pests: a practical guide</a></li>
+<li><a href="https://www.youtube.com/watch?v=JilYBVrFiLA">What will happen if Bees die?</a></li>
+<li><a href="https://www.deeplearningbook.org/">Deep Learning adaptive computation and Machine Learning</a></li>
+<li><a href="https://www.amazon.com/Deep-Learning-Coders-fastai-PyTorch/dp/1492045527">Deep Learning for Coders</a></li>
+<li><a href="https://www.youtube.com/watch?v=FmpDIaiMIeA">How Convolutional Neural Networks work</a></li>
+</ul>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="optimal-pricing.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="ultima-online.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["data_science_in_julia_for_hackers.pdf", "data_science_in_julia_for_hackers.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

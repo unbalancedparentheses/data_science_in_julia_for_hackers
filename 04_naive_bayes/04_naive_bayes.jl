@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.18
+# v0.12.21
 
 using Markdown
 using InteractiveUtils
@@ -14,8 +14,15 @@ begin
 	using MLDataUtils
 	using Plots
 	using Images
-	using WordCloud
 end
+
+# ╔═╡ 60e6973a-8b6e-11eb-2b72-d168283b6031
+md"### To do list
+ 
+We are currently working on:
+ 
+* Explain how to measure the model performance when the categories are not balanced [#85](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues/85).
+"
 
 # ╔═╡ 0de04b90-2835-11eb-1369-01c64bc38c42
 md"
@@ -27,7 +34,7 @@ md"
 We all hate spam emails. How can Bayes help us with this? What we will be introducing in this chapter is a simple yet effective way of using Bayesian probability to make a spam filter of emails based on their content. 
 
 There are many possible origins of the 'Spam' word. Some people suggest Spam is a satirized way to refer to 'fake meat'. Hence, in the context of emails, this would just mean 'fake emails'. It makes sense, but the real story is another one.
-The origin of this term can be tracked to the 1970s, where the British surreal comedy troupe Monty Python gave life to it in a sketch of their *Monty Python's Flying Circus* series. In the sketch, a customer wants to make an order in a restaurant, but all the restaurant's items have *spam* in them. As the waitress describes the food, she repeats thw word spam, and as this happens, a group of Vikings sitting on another table nearby start singing '*Spam, spam, spam, spam, spam, spam, spam, spam, lovely spam! Wonderful spam!* until they are told to shut up. 
+The origin of this term can be tracked to the 1970s, where the British surreal comedy troupe Monty Python gave life to it in a sketch of their *Monty Python's Flying Circus* series. In the sketch, a customer wants to make an order in a restaurant, but all the restaurant's items have *spam* in them. As the waitress describes the food, she repeats the word spam, and as this happens, a group of Vikings sitting on another table nearby start singing '*Spam, spam, spam, spam, spam, spam, spam, spam, lovely spam! Wonderful spam!* until they are told to shut up. 
 "
 
 # ╔═╡ 78c91c38-4eae-11eb-3569-07af96eb6881
@@ -92,7 +99,7 @@ begin
 	prepare!(all_words_text, strip_articles)
 	prepare!(all_words_text, strip_pronouns)
 	vocabulary = filter(x -> x != "", split(TextAnalysis.text(all_words_text)))
-	clean_words_df = raw_df[vocabulary]
+	clean_words_df = raw_df[!, vocabulary]
 	# the columns of this matrix will be each mail now
 	data_matrix = Matrix(clean_words_df)'
 end;
@@ -113,15 +120,15 @@ end;
 
 # ╔═╡ e1d7f3f2-2854-11eb-08a9-4b3085e3cdd4
 md" 
-Now that we have our data clean and splitted for training and testing, let's return to the details of the calculations. The probability of a particular word, given that we have a spam email, can be calculated like so,
+Now that we have our data clean and split for training and testing, let's return to the details of the calculations. The probability of a particular word, given that we have a spam email, can be calculated like so,
 
 $P(word_i|spam) = \frac{N_{word_i|spam} + \alpha}{N_{spam} + \alpha N_{vocabulary}}$
 $P(word_i|ham) = \frac{N_{word_i|ham} + \alpha}{N_{ham} + \alpha N_{vocabulary}}$
 
-With this formulas in mind, we now know exactly what we have to calculate from our data. We are going to need the numbers $N_{word_i|spam}$ and $N_{word_i|ham}$ for each word, that is, the number of times that a given word $w_i$ is used in the spam and ham categories, respectively. Then $N_{spam}$ and $N_{ham}$ are the total number of times that words are used in the spam and ham categories (considering all the repetitions of the same words too), and finally, $N_{vocabulary}$ is the total number of unique words in the dataset. $α$ is just a smoothing parameter, so that probability of words that, for example, are not in the spam categoriy don't give 0 probability.
+With these formulas in mind, we now know exactly what we have to calculate from our data. We are going to need the numbers $N_{word_i|spam}$ and $N_{word_i|ham}$ for each word, that is, the number of times that a given word $w_i$ is used in the spam and ham categories, respectively. Then $N_{spam}$ and $N_{ham}$ are the total number of times that words are used in the spam and ham categories (considering all the repetitions of the same words too), and finally, $N_{vocabulary}$ is the total number of unique words in the dataset. $α$ is just a smoothing parameter, so that the probability of words that, for example, are not in the spam category don't give 0 probability.
 
-As all this information will be particular for our dataset, so a clever way to aggregate all this is tu use a Julia *struct*, and we can define the attributes of the struct that we will be using over and over for the prediction. Below we can see the implementation. The relevant attributes of the struct will be *words_count_ham* and *words_count_spam*, two dictionaries containing the frequency of appearance of each word in the ham and spam datasets, *N_ham* and *N_spam* the total number of words appearing in each category, and finally *vocabulary*, an array with all the unique words in our dataset.
-The line *BayesSpamFilter() = new()* is just the constructor of this struct. When we instantiate the filter, all the attributes will be undefined and we will have to define some functions to fill this variables with values relevant to our particular problem.  
+As all this information will be particular for our dataset, so a clever way to aggregate all this is to use a Julia *struct*, and we can define the attributes of the struct that we will be using over and over for the prediction. Below we can see the implementation. The relevant attributes of the struct will be `words_count_ham` and `words_count_spam`, two dictionaries containing the frequency of appearance of each word in the ham and spam datasets, *N_ham* and *N_spam* the total number of words appearing in each category, and finally *vocabulary*, an array with all the unique words in our dataset.
+The line *BayesSpamFilter() = new()* is just the constructor of this struct. When we instantiate the filter, all the attributes will be undefined and we will have to define some functions to fill these variables with values relevant to our particular problem.  
 "
 
 # ╔═╡ 018f2c24-28e1-11eb-1de2-53ad33f4fd61
@@ -136,7 +143,7 @@ end
 
 # ╔═╡ 4a067d1e-28e5-11eb-3a2a-232cedcb83b6
 md"
-Now we are going to proceed to define some functions that will be important for our filter implementation. The function *word_data* below will help for counting the occurrencies of each word in ham and spam categories.
+Now we are going to proceed to define some functions that will be important for our filter implementation. The function *word_data* below will help for counting the occurrences of each word in ham and spam categories.
 "
 
 # ╔═╡ f409ac78-284f-11eb-349a-d3314219032c
@@ -152,7 +159,7 @@ end
 
 # ╔═╡ 33b3fcbc-29ce-11eb-2925-6df6bae3b7bf
 md"
-Next, we will define the *fit!* function for our spam filter struct. We are using the *bang*(!) convention for the functions that modify in-place their arguments, in this case, the spam filter struc itself. This will be the function that will fit our model to the data, a typical procedure in Data Science and Machine Learning areas. This fit function will use mainly the *words_count* function defined before to fill all the undefined parameters in the filter's struct.
+Next, we will define the *fit!* function for our spam filter struct. We are using the *bang*(!) convention for the functions that modify in-place their arguments, in this case, the spam filter struct itself. This will be the function that will fit our model to the data, a typical procedure in the areas of Data Science and Machine Learning. This fit function will use mainly the *words_count* function defined before to fill all the undefined parameters in the filter's struct.
 "
 
 # ╔═╡ 167917b4-2850-11eb-1c4f-896fcbe79966
@@ -179,7 +186,7 @@ end
 
 # ╔═╡ 3b5cd01c-29d8-11eb-2260-a3f029106a08
 md"
-We are now almost ready to make some predictions and test our model. The function below is just the implementation of the formula TAL that we have already talked about. It will be used internally by the next function defined, *spam_predict*, which will recieve a new email –the one we would want to classify as spam or ham–, our fitted model, and two parameters, α which we have already discussed in the formula for $P(word_i|spam)$ and $P(word_i|ham)$, and *tol*. We saw that the calculation for $P(email|spam)$ and $P(email|ham)$ required the multiplication of each $P(word_i|spam)$ and $P(word_i|ham)$ term. When mails are too large, i.e., they have a lot of words, this multiplication may lead to very small probabilities, up to the point that the computer interprets those probabilities as zero. This can't happen, as we need values of $P(email|spam)$ and $P(email|ham)$ that are largar than zero so we can multiply them by $P(spam)$ and $P(ham)$ respectively and compare these values to make a prediction. The parameter *tol* is the maximum tolerance for the number of unique words in an email. If this number is greater than the parameter *tol*, only the most frequent words will be considered and the rest will be neglected. How many of these most frequent words? the first '*tol*' most frequent words!
+We are now almost ready to make some predictions and test our model. The function below is just the implementation of the formula TAL that we have already talked about. It will be used internally by the next function defined, *spam_predict*, which will recieve a new email –the one we would want to classify as spam or ham–, our fitted model, and two parameters, α which we have already discussed in the formula for $P(word_i|spam)$ and $P(word_i|ham)$, and *tol*. We saw that the calculation for $P(email|spam)$ and $P(email|ham)$ required the multiplication of each $P(word_i|spam)$ and $P(word_i|ham)$ term. When mails are too large, i.e., they have a lot of words, this multiplication may lead to very small probabilities, up to the point that the computer interprets those probabilities as zero. This can't happen, as we need values of $P(email|spam)$ and $P(email|ham)$ that are largar than zero so we can multiply them by $P(spam)$ and $P(ham)$ respectively and compare these values to make a prediction. The parameter *tol* is the maximum tolerance for the number of unique words in an email. If this number is greater than the parameter *tol*, only the most frequent words will be considered and the rest will be neglected. How many of these most frequent words? The first '*tol*' most frequent words!
 "
 
 # ╔═╡ 327eca7e-2850-11eb-22a0-3b25c80c3a10
@@ -228,7 +235,7 @@ end
 
 # ╔═╡ 89ee9bea-29e0-11eb-37a6-b16988b0a187
 md"
-Finally we arrived to the point of actually testing our model. This is what the function below is all about. We feed it with our model fitted with the training data, and the test data we had splitted at the beginning, as well as with the labels of the classification of this data. This function makes a prediction for each email in our test data, using the values of our model and then checks if the prediction was right. We count all the correct predictions and then we divide this number by the total amount of mails, giving us an accurracy measurement.
+Finally we arrived to the point of actually testing our model. This is what the function below is all about. We feed it with our model fitted with the training data, and the test data we split at the beginning, as well as with the labels of the classification of this data. This function makes a prediction for each email in our test data, using the values of our model and then checks if the prediction was right. We count all the correct predictions and then we divide this number by the total amount of mails, giving us an accuracy measurement.
 "
 
 # ╔═╡ 4e470cba-2850-11eb-3563-cd9ead36f468
@@ -256,52 +263,55 @@ end
 
 # ╔═╡ 71cc0158-29e3-11eb-0206-8d29109f858f
 md"
-As you can see below, the model (at least under this simple metric) is performing very well! An accurray of almost 0.95 is quite astonishing for a model so *naive* and simple, but it works!
+As you can see below, the model (at least under this simple metric) is performing very well! An accuracy of almost 0.95 is quite astonishing for a model so *naive* and simple, but it works!
 "
 
 # ╔═╡ aa9f7ea4-2850-11eb-33e2-ade40fd0a360
 spam_filter_accurracy(x_test, y_test, spam_filter, 1)
 
-# ╔═╡ 55955e22-28fc-11eb-0153-83f34561665b
-# to create the emails corpus based on the frequencies of each word
-
-function create_spam_and_ham_corpus(model::BayesSpamFilter, df)
-	
-	n_spam_mails = sum(df.Prediction)
-	n_ham_mails = size(df)[1] - n_spam_mails
-	
-	ham_corpus = Array{String}(undef, n_ham_mails)
-	spam_corpus = Array{String}(undef, n_spam_mails)
-	
-	for i in 1:n_spam_mails
-		spam_corpus[i] = string([repeat(string(word, " "), 												model.words_count_spam[word]) for word in vocabulary])
-	end
-	
-	for i in 1:n_ham_mails
-		ham_corpus[i] = string([repeat(string(word, " "), 
-					model.words_count_ham[word]) for word in vocabulary])
-	end
-	return ham_corpus, spam_corpus
-end	
-
-# ╔═╡ e8ea2bd0-2903-11eb-176f-a527049a3968
-# ham_corpus, spam_corpus = create_spam_and_ham_corpus(spam_filter, raw_df)
-
-# ╔═╡ 7fb08fa2-29b9-11eb-39d5-f74320ac9609
+# ╔═╡ 3ce2070a-7156-11eb-1204-3d1850c7abee
 md"
-#### To do:
-* WordClouds
-* Confusion matrix
+### Summary
+In this chapter, we have used a naive-bayes approach to build a simple email spam filter. 
+First, the dataset and the theoretical framework were introduced. Using Bayes' theorem and the data available, we assigned a probability of belonging to a spam or ham email to each word of the email dataset. The probability of a new email being classified as spam is therefore the product of the probabilities of each of its constituent words.
+Later, the data was pre-processed and a struct was defined for the spam filter object. Functions were then implemented to fit the spam filter object to the data.
+Finally, a metric for evaluating the accuracy of the model was implemented, giving a result of approximately $0.95$.
 "
 
-# ╔═╡ 23fc8684-29d2-11eb-235c-29e2fad3bd5d
-corpus = "la la la le li li holaaa hola holu"
+# ╔═╡ 96834844-6d45-11eb-39a5-737dd8e43cb1
+md" ### References
+* [What is Spam Filtering?](https://www.mailchannels.com/what-is-spam-filtering/)
+* [Artificial Intelligence in Python: A Comprehensive Guide to Building Intelligent Apps for Python Beginners and Developers](https://www.amazon.com/Artificial-Intelligence-Python-Comprehensive-Intelligent-ebook/dp/B01IRD0LBY)
+* [Data Algorithms: Recipes for scaling up with Hadoop and Spark](https://www.amazon.com/Data-Algorithms-Recipes-Scaling-Hadoop/dp/1491906189)
+* [Doing Data Science: Straight talk from the frontline](https://www.oreilly.com/library/view/doing-data-science/9781449363871/)
+* [How the word 'Spam' came to mean 'Junk Message'](http://www.todayifoundout.com/index.php/2010/09/how-the-word-spam-came-to-mean-junk-message/)
+* [Monty Python Sketch - YouTube](https://www.youtube.com/watch?v=zLih-WQwBSc)
+"
+
+# ╔═╡ 603fcd02-8b6f-11eb-3290-d3f1b70dadfe
+md" ### Give us feedback
+ 
+ 
+This book is currently in a beta version. We are looking forward to getting feedback and criticism:
+  * Submit a GitHub issue **[here](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues)**.
+  * Mail us to **martina.cantaro@lambdaclass.com**
+ 
+Thank you!
+"
+
+
+# ╔═╡ 5f7efaa8-8b6f-11eb-2d26-65988dde9ea5
+md"
+[Next chapter](https://datasciencejuliahackers.com/05_prob_prog_intro.jl.html)
+"
+
 
 # ╔═╡ Cell order:
+# ╟─60e6973a-8b6e-11eb-2b72-d168283b6031
 # ╟─0de04b90-2835-11eb-1369-01c64bc38c42
 # ╠═b519d90e-2834-11eb-1c48-0307b18584de
 # ╟─03a60d0e-2835-11eb-239c-c3b43694607c
-# ╟─78c91c38-4eae-11eb-3569-07af96eb6881
+# ╠═78c91c38-4eae-11eb-3569-07af96eb6881
 # ╟─6fbd7c76-4eae-11eb-124f-fbbda19ba636
 # ╟─6ce18f50-4eaf-11eb-0189-ede5b110341c
 # ╟─c898651a-4eac-11eb-26ac-ddb1885afc13
@@ -326,7 +336,7 @@ corpus = "la la la le li li holaaa hola holu"
 # ╠═4e470cba-2850-11eb-3563-cd9ead36f468
 # ╟─71cc0158-29e3-11eb-0206-8d29109f858f
 # ╠═aa9f7ea4-2850-11eb-33e2-ade40fd0a360
-# ╠═55955e22-28fc-11eb-0153-83f34561665b
-# ╠═e8ea2bd0-2903-11eb-176f-a527049a3968
-# ╠═7fb08fa2-29b9-11eb-39d5-f74320ac9609
-# ╠═23fc8684-29d2-11eb-235c-29e2fad3bd5d
+# ╟─3ce2070a-7156-11eb-1204-3d1850c7abee
+# ╟─96834844-6d45-11eb-39a5-737dd8e43cb1
+# ╟─603fcd02-8b6f-11eb-3290-d3f1b70dadfe
+# ╟─5f7efaa8-8b6f-11eb-2d26-65988dde9ea5
