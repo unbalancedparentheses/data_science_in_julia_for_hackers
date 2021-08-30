@@ -158,7 +158,7 @@ end;
 md"
 So now we plot below the posterior distribution of *p* after our model updated, seeing just the first outcome, a 0 value or a tail. 
 
-How this single outcome affected our beliefs about *p*?
+How this single outcome affected our beliefs about *p*? 
 
 We can see in the plot below, showing the posterior or updated distribution of *p*, that the values of *p* near to 0 have more probability than before, recalling that all values had the same probability, which makes sense if all our model has seen is a failure, so it lowers the probability for values of *p* that suggest high rates of success.
 "
