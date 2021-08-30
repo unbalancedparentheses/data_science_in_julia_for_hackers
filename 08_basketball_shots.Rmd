@@ -49,9 +49,9 @@ But how do we interpret the data?
 
 Below we show a sketch of a basketball court, its dimensions and how to interpret the data in the table.
 
-```{julia chap_8_plot_1}
+```{julia chap_8_plot_1, echo=FALSE}
 begin
-	plot(load("./08_basketball_shots/images/basket_court.png"))
+	plot(load("./08_basketball_shots/images/basket_court.png") ,axis=nothing,border=:none)
 end
 ```
 
@@ -107,7 +107,7 @@ We see that more shot are made as we get near the hoop, as expected.
 
 It is important to notice that we are not showing the probability of scoring, we are just showing the distribution of shot scored, not how likely is it to score.
 
-### Modeling the probability of scoring
+## Modeling the probability of scoring
 
 The first model we are going to propose is a Bernoulli model.
 
@@ -134,6 +134,7 @@ We are going to model the probability of shoot as a function of some variables, 
  So, the model we are going to propose is: 
 
 $p\sim logistic(a+ b*distance[i] + c*angle[i])$
+
 $outcome[i]\sim Bernoulli(p)$
 
 *But what values and prior distributions are we going to propose to the parameters a, b and c?*
@@ -144,7 +145,9 @@ Let's see:
 Suppose we say that our prior distributions for $a$, $b$ and $c$ are going to be 3 gaussian distributions with mean 0 and variance 1. Lets sample and see what are the possible posterior distributions for our probability of scoring $p$:
 
 $a\sim N(0,1)$
+
 $b\sim N(0,1)$
+
 $c\sim N(0,1)$
 
 ```{julia}
@@ -179,7 +182,9 @@ We see that some of the predicted behaviours for $p$ don't make sense. For examp
 So our model now have as priors distributions:
 
 $a\sim Normal(0,1)$
+
 $b\sim LogNormal(1,0.25)$
+
 $c\sim Normal(0,1)$
 
 and sampling values from those prior distributions, we obtain the plot shown below for the predicted values of $p$.
@@ -264,6 +269,7 @@ end;
 ```
 
 Now plotting the probability of scoring using the posterior distributions of $a$, $b$ and $c$ for an angle of 45°, we obtain:
+
 ```{julia}
 begin
 p_constant_angle = []

@@ -25,6 +25,7 @@ In order to give an explanation and gain a deeper understanding of the things we
 For example, it is obvious to everyone that if we push a glass it will move in the same direction as we did. We also know that if we keep pushing it and it goes beyond the limits of the table, it will fall to the floor. But one thing is to have the intuition of what's going to happen, and another is to have an understanding of the laws that govern that movement. In this case, they are the Newton´s Law´s of motion:
 
 $ \vec{F}^{\} = m*\vec{a}^{\}$
+
 In this way, and with only one formula, it is possible to gain an understanding that is generalizable to many aspects of reality. 
 
 #### Observable variables vs Latent variables
@@ -113,7 +114,6 @@ Now we can use the flexibility of Bayesianism to indicate what the "goal rate" o
 
 As expected, this rate has to be particular to each match the team plays and take into account the opponent. We can therefore propose that the scoring rate of each team (in each particular match) depends on the "attacking power" of the team on the one hand, and the "defensive power" of the opponent on the other:
 
-
 $θ_{team1} \sim att_{team1} + def_{team2}$
 
 In this way we could be capturing, from the results of each game, the attack and defence strengths of each team. 
@@ -121,6 +121,7 @@ In this way we could be capturing, from the results of each game, the attack and
 Another latent variable that we could obtain, given the data, is if there is an effect that increases (or decreases) the goal rate related to whether the team is local or not. This would also help - in case there is indeed an effect - in not the attack and defence parameters be disrupted by having to "contain" that information.
 
 $θ_{home} \sim home + att_{home} + def_{away}$
+
 $θ_{away} \sim att_{away} + def_{home}$
 
 This leaves one attack and one defense parameter for each team, and a global league parameter that indicates the effect of being local on the scoring rate.
@@ -136,21 +137,27 @@ The first thing to do, as we already know, is to assign the prior distributions 
 Now, when choosing the parameters we are not going to stop and assign fixed numbers, but we will continue to deepen the model and add another layer of distributions:
 
 $att_{t} \sim Normal(μ_{att}, σ_{att})$
+
 $def_{t} \sim Normal(μ_{def}, σ_{def})$
+
 Where the t sub-index is indicating us that there are a couple of these parameters for each team.
 
 Then, as a last step to have our model defined, we have to assign the priority distributions that follow the parameters of each normal distribution. We have to define our hyper priors.
 
 $μ_{att}, μ_{def} \sim Normal(0, 0.1)$
+
 $σ_{att}, σ_{def} \sim Exponential(1)$
 
 We must not forget the parameter that represents the advantage of being local
+
 $home \sim Normal(0,1)$.
 
 Now that our model is fully define, let's add one last restriction to the characteristics of the teams to make it easier to compare them: subtract the average of all the attack and defence powers from each one. In this way we will have the features centred on zero, with negative values for the teams that have less attacking power than the average and positive values for those that have more. As we already said, the opposite analysis applies to the defence, negative values are the ones that will indicate that a team has a strong defence as they will be "subtracting" from the scoring rate of the opponent. This is equivalent to introducing the restriction:
 
 $\sum att_{t} = 0$
+
 $\sum def_{t} = 0$
+
 Let's translate all this into Turing code:
 
 ```{julia}
@@ -259,6 +266,7 @@ So, to include in the model the parameter home was a good idea. indeed being loc
 Beyond the fact that it is interesting to be able to quantify how much the location influences the scoring rate of the teams, including it in the analysis allow us to have better estimates of the defense and attack parameters of the teams. This is true because if it had not been included, this positive effect would have manifested itself in the only parameters it would have found, the attack and defense parameters, deforming the real measure of these.
 
 So, being confident that we are on the right track, let´s find the attack and defence parameters of each team.
+
 ```{julia}
 begin
 	teams_att = []
@@ -374,6 +382,7 @@ end
 ```
 
 To read this graph we have to remember that the defense effect is better the more negative it is, since it is representing the scoring rate that takes away from the opponent team. As we already said:
+
 $θ_{team1} \sim att_{team1} + def_{team2}$.
 
 As the $def_{team2}$ is adding up in the equation, if it take negative values, it is going to start substracting the scoring rate of the oponent.
@@ -652,7 +661,7 @@ Anyway, we just learned that modeling is not a easy task. But the way to get bet
 In this chapter we have learned about bayesian hierarchical models and how to use simulations to count different possible outcomes. First, we talked about latent variables and how important they are for gaining more abstraction in our models. After explaning the pro's of the hierarchical models, we proceed on building a model to get a deeper understanding of the Premier League. After inferring its parameters, we have used visualizations to understand the influence of attack and defense power in the league. Finally, we ran a simulation in order to calculate the probabilities of each possible outcome of a match between Liverpool and Manchester City.
 
 
-## Bibliography 
+## References 
 
 - [Paper of Gianluca Baio and Marta A. Blangiardo](https://discovery.ucl.ac.uk/id/eprint/16040/1/16040.pdf)
 - [Post of Daniel Weitzenfeld](http://danielweitzenfeld.github.io/passtheroc/blog/2014/10/28/bayes-premier-league/)

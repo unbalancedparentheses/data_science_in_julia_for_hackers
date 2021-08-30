@@ -36,10 +36,13 @@ end
 As we just said: Notice that the variables they are asking us to work with are values that are evolving over time, so they take the name of **Time Series**. This kind of variables are the ones we are going to deal with in this chapter and have the particularity that, as they evolve in time, the values they take are related to the previous ones. So can you think of something to solve the problem of predicting the next value the series is going to have? 
 
 Many ideas must be coming to your mind.  Surely some of them thought of taking as a forecast value the average of all the previous ones and some others have thought of taking directly the last value of the series, justifying that the very old values do not affect the next ones. That is to say:
+
 $y_{T+1|T}^- =\frac{1}{T} * \sum_{t=1}^{T}y_t$
+
 Where T is the number of periods for which we have data. Or:
 
 $y_{T+1|T}^- = y_T$
+
 Where we would always take the last value in the series to predict the next.
 
 If we observe this carefully, we might realize that these are two extreme cases of the same methodology: assigning "weights" to the previous values to predict the next one. Basically this is the way we have to indicate how much we are interested in the old observations and how much in the new ones. 
@@ -47,6 +50,7 @@ If we observe this carefully, we might realize that these are two extreme cases 
 In the case of simple averaging, we would be saying that we care exactly the same about all the observations, since from the first to the last they are all multiplied by the same weights:
 
 $y_{T+1|T}^- =\frac{1}{T} * y_1 + \frac{1}{T} * y_2  + ... + \frac{1}{T} * y_T$
+
 $\sum_{t=1}^{T}\frac{1}{T} = 1$
 
 The second equation is only telling us that the sum of all the weights is equal to 1. 
@@ -183,6 +187,7 @@ function SES_weight(α, l0, time_serie)
 	return pred
 end
 ```
+
 Let's read the above algorithm together to make sure we understand that you are applying the formula explained above.
 
 The function SES_weight receives three parameters: The alpha to make the calculation, the value of the first lo prediction, and the time series in question. 
@@ -215,6 +220,7 @@ begin
 	plot(p1, p2, p3)	
 end
 ```
+
 This is a very cool graphic to look at. It illustrates very clearly how small alphas look mostly like an average of the time series values and, as it starts to get closer to 1, it looks more like taking the last value in the series as a future prediction. As we said at the beginning of the chapter, this method allows us to find intermediate points between the two extremes.
 
 It's very nice to see how the graphs change as the alpha does... but how do we find the best alpha and l0 so that the fit is the best?
@@ -258,6 +264,7 @@ function SES_weight_loss(α, l0, time_serie)
 	return loss
 end
 ```
+
 As you can see in the code we take the sum of errors squared as an error function. This algorithm is very similar to the previous one (with which we obtained each predicted point) only that now instead of saving the value, we compute its residual with the real data and we add it to the variable "loss".
 
 As a result we have a function that has as a parameter a time series, alpha and lo; and returns a number that is telling us the general error. Obviously that is the number we want to minimize.
@@ -296,6 +303,7 @@ begin
 	res = optimize(SES_loss_,lower, upper, initial_x)
 end
 ```
+
 To use this function more efficiently it is necessary to define a range for the parameters in which the algorithm will perform the search and also a starting point (obviously within that range).
 
 Also, one trick to keep in mind is that this package accepts "univariate" functions, that is, the function you enter only has to have one parameter to optimize. This is not entirely true since, although only one parameter has to be passed, it can be a vector, so that several parameters can be optimized. This is why we define a wrapper function `SES\_loss\_` that facilitates the calculation. 
@@ -305,6 +313,7 @@ With everything ready, let's look for the values of alpha and lo that minimize o
 ```{julia} 
 optim = Optim.minimizer(res)
 ```
+
 And this is how we came to fit our model, obtaining the best parameters to try to predict the next sales of our beloved peanut chocolate
 
 ```{julia} 
@@ -400,7 +409,6 @@ On the other hand, the beta value will be telling us how much we are going to le
 In this way, small beta values indicate that the slope is unlikely to change over time, and high values allow the slope to change freely (the value of the "current" slope $l_t - l_{t-1}$ becomes preponderant in the estimation).
 
 With this method, then, forecasts stop being flat to become trended. With this idea in mind, let's translate the math into code again:
-
 
 ```{julia HLT ,cache = TRUE} 
 function HLT_loss(time_serie, α, β, l0, b0)
@@ -675,6 +683,7 @@ function HW_Seasonal(time_serie, α, β, γ, l0, b0, s0, m)
 	return pred
 end
 ```
+
 What this code does is, given the optimal values of each parameter, it makes the prediction of the next point (h = 1) and stores them in the "pred" array. Staying a while analyzing how the algorithm is working is an excellent way to ensure full understanding of the method :)
 
 To obtain these parameters it is necessary to write the loss function as we have been doing in the previous ones. As a challenge for the reader, we propose to write this loss function using this one as a basis. To help you, you can look at the intimate relationship between the functions that are storing the predictions and the loss functions already written in the previous methods. 
@@ -699,6 +708,7 @@ First of all it is remarkable how, for the first time, the parameter $α$ is tak
 It is also interesting to note how for the initial values of the seasonality not only one value is needed, but also 4. As a general case, as much as m, the frequency of the seasonality, will be needed. This can be seen as we now need to have a whole "year 0" to make the estimates for the first year of the time series.
 
 Now, let's see the function in action:
+
 ```{julia , results = FALSE} 
 season_fitted = HW_Seasonal(australia_tourist, 0.262198, 2.45705e-15, 0.454665, 32.4906, 0.701097, [9.20323, -9.18886, -2.13981, 1.35917], 4)
 ```

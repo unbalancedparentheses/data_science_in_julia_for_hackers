@@ -121,7 +121,7 @@ end;
 
 # ╔═╡ e1d7f3f2-2854-11eb-08a9-4b3085e3cdd4
 md" 
-Now that we have our data clean and splitted for training and testing, let's return to the details of the calculations. The probability of a particular word, given that we have a spam email, can be calculated like so,
+Now that we have our data clean and split for training and testing, let's return to the details of the calculations. The probability of a particular word, given that we have a spam email, can be calculated like so,
 
 $P(word_i|spam) = \frac{N_{word_i|spam} + \alpha}{N_{spam} + \alpha N_{vocabulary}}$
 $P(word_i|ham) = \frac{N_{word_i|ham} + \alpha}{N_{ham} + \alpha N_{vocabulary}}$
@@ -129,6 +129,7 @@ $P(word_i|ham) = \frac{N_{word_i|ham} + \alpha}{N_{ham} + \alpha N_{vocabulary}}
 With these formulas in mind, we now know exactly what we have to calculate from our data. We are going to need the numbers $N_{word_i|spam}$ and $N_{word_i|ham}$ for each word, that is, the number of times that a given word $w_i$ is used in the spam and ham categories, respectively. Then $N_{spam}$ and $N_{ham}$ are the total number of times that words are used in the spam and ham categories (considering all the repetitions of the same words too), and finally, $N_{vocabulary}$ is the total number of unique words in the dataset. $α$ is just a smoothing parameter, so that probability of words that, for example, are not in the spam category don't give 0 probability.
 
 As all this information will be particular for our dataset, so a clever way to aggregate all this is to use a Julia *struct*, and we can define the attributes of the struct that we will be using over and over for the prediction. Below we can see the implementation. The relevant attributes of the struct will be *words_count_ham* and *words_count_spam*, two dictionaries containing the frequency of appearance of each word in the ham and spam datasets, *N_ham* and *N_spam* the total number of words appearing in each category, and finally *vocabulary*, an array with all the unique words in our dataset.
+
 The line *BayesSpamFilter() = new()* is just the constructor of this struct. When we instantiate the filter, all the attributes will be undefined and we will have to define some functions to fill these variables with values relevant to our particular problem.  
 "
 
@@ -160,7 +161,7 @@ end
 
 # ╔═╡ 33b3fcbc-29ce-11eb-2925-6df6bae3b7bf
 md"
-Next, we will define the *fit!* function for our spam filter struct. We are using the *bang*(!) convention for the functions that modify in-place their arguments, in this case, the spam filter struc itself. This will be the function that will fit our model to the data, a typical procedure in Data Science and Machine Learning areas. This fit function will use mainly the *words_count* function defined before to fill all the undefined parameters in the filter's struct.
+Next, we will define the *fit!* function for our spam filter struct. We are using the *bang*(!) convention for the functions that modify in-place their arguments, in this case, the spam filter struct itself. This will be the function that will fit our model to the data, a typical procedure in the areas of Data Science and Machine Learning. This fit function will use mainly the *words_count* function defined before to fill all the undefined parameters in the filter's struct.
 "
 
 # ╔═╡ 167917b4-2850-11eb-1c4f-896fcbe79966
@@ -341,7 +342,7 @@ spam_accuracy = confusion_matrix[2,"Spam_mail"]/(confusion_matrix[1,"Spam_mail"]
 md"
 ### Summary
 In this chapter, we have used a naive-bayes approach to build a simple email spam filter. 
-First, the dataset and the theoretical framework were introduced. Using Bayes' theorem and the data available, we assigned probability of belonging to a spam or ham email to each word of the email dataset. The probability of a new email being classified as spam is therefore the product of the probabilities of each of its constituent words.
+First, the dataset and the theoretical framework were introduced. Using Bayes' theorem and the data available, we assigned a probability of belonging to a spam or ham email to each word of the email dataset. The probability of a new email being classified as spam is therefore the product of the probabilities of each of its constituent words.
 Later, the data was pre-processed and a struct was defined for the spam filter object. Functions were then implemented to fit the spam filter object to the data.
 Finally, we evaluated our model performance calculating the accuracy and making a confusion matrix.
 "
