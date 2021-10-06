@@ -9,6 +9,11 @@ written in the Julia language.
 
 Thanks to Martina Cantaro, Camilo Plata, Manuel Puebla, Lucas Raúl Fernandez Piana, Osvaldo Martin, Iñaki Garay and Mariana Vinyolas.
 
+How to cite this book:
+
+Carrone, F., Nicolini, M., & Obst Demaestri, H. (2021). Data Science in Julia for Hackers. Retrieved October 6, 2021, from https://datasciencejuliahackers.com/
+
+
 ## Table of contents
 
 ### Part I: Data Science and Julia
