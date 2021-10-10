@@ -1,4 +1,4 @@
-# Data Science in Julia for Hackers
+# DataScienceInJuliaForHackers.jl or Data Science in Julia for Hackers
 
 How to cite this book (note you need to replace the _**highlighted**_ text with the date in which you retrieved the information):
 
