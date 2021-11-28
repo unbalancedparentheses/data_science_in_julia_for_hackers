@@ -282,8 +282,8 @@ B = “I pick a red ball”
 P(A|B) is interpreted as the probability of picking a red and a green ball knowing that I already picked one red ball.
 
 
-$A = \{(R,G),(R,B),(R,W)\} => P(A) = \frac{3}{6}$
-$B = \{(R,G)\} => P(B) => \frac{3}{6}$
+$A = \{(R,G)\} => P(B) => \frac{1}{6}$
+$B = \{(R,G),(R,B),(R,W)\} => P(B) = \frac{3}{6}$
 $A \cap B = \{(R,G)\} => P(A \cap B) = \frac{1}{6}$
 
 
