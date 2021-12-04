@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.21
+# v0.14.2
 
 using Markdown
 using InteractiveUtils
@@ -295,33 +295,13 @@ begin
 
 # Create a Basis
 @variables u[1:2]
-# Lots of polynomials
-polys = Operation[1]
-
-for i ∈ 1:5
-    push!(polys, u[1]^i)
-    push!(polys, u[2]^i)
-    for j ∈ i:5
-        if i != j
-            push!(polys, (u[1]^i)*(u[2]^j))
-            push!(polys, u[2]^i*u[1]^i)
-        end
-    end
-end
+# Polynomial and sin based
 	
-end
-
-# ╔═╡ d58d6d84-544e-11eb-17b8-91723456fc15
-begin
-# And some other stuff
-h = [cos.(u)...; sin.(u)...; polys...]
-basis = Basis(h, u)
+b_ = [polynomial_basis(u, 5); sin.(u)]
 	
-h
-end
-
-# ╔═╡ 5a6dcdc8-5451-11eb-2a2f-cbc4f35844c0
-basis
+basis = Basis(b_, u)
+	
+end;
 
 # ╔═╡ 23be1198-5451-11eb-07b7-e76b21ff565a
 md"So, as you can see above, we just created a **Function Space** of 29 dimensions. That space include *every* possible [linear combination](https://en.wikipedia.org/wiki/Linear_combination#:~:text=From%20Wikipedia%2C%20the%20free%20encyclopedia,a%20and%20b%20are%20constants) of each dimension. And we are going to ask to SINDy to give us the simplest function that shows the same Input-Output behaviour the Neural Network just learned.
@@ -382,7 +362,7 @@ unknown_eq = ODEFunction(unknown_sys)
 # Just the equations
 b = Basis((u, p, t)->unknown_eq(u, [1.; 1.], t), u)
 
-# Retune for better parameters -> we could also use DiffEqFlux or other parameter estimation tools here.
+# Retune for better parameters
 Ψf = SINDy(Xₙ[:, 2:end], L̂[:, 2:end], b, STRRidge(0.01), maxiter = 100, convergence_error = 1e-18)
 end
 
@@ -432,8 +412,6 @@ md"""### References
 # ╠═03e26dea-5449-11eb-38dc-957ea73db154
 # ╟─58a1294c-544c-11eb-27ca-8512bc3d5461
 # ╠═b38b9410-544e-11eb-220b-5746f897b5f4
-# ╠═d58d6d84-544e-11eb-17b8-91723456fc15
-# ╠═5a6dcdc8-5451-11eb-2a2f-cbc4f35844c0
 # ╟─23be1198-5451-11eb-07b7-e76b21ff565a
 # ╠═9de34578-5452-11eb-14cb-d5d1cdb91e63
 # ╠═6fc293fa-5453-11eb-0965-e917ffac7340
