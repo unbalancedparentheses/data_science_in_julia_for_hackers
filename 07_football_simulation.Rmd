@@ -15,17 +15,17 @@ using LinearAlgebra
 ```
 
 ## Creating our conjectures
-If there is one thing we can all agree on, it is that the reality in which we live is complex. The explanation for the things we usually see, and 
-have naturalized in our daily lives, is usually quite complex and requires abstraction from what "is simply seen".
+If there is one thing we can all agree on, it is that the reality in which we live is complex. The explanation for the things we usually see and 
+seem natural in our daily lives, is usually quite complex and requires abstraction from what "is simply seen".
 
-In order to give an explanation and gain a deeper understanding of the things we see, we tend to generate models that seek to explain them in a 
+In order to give an explanation and gain a deeper understanding of the things around us, we tend to generate models that seek to explain them in a 
 simple and generalized way. In this way we can reduce the noise of our observations to general rules that "govern" them.
 
 For example, it is obvious to everyone that if we push a glass it will move in the same direction as we did. We also know that if we keep pushing 
 it and it goes beyond the limits of the table, it will fall to the floor. But one thing is to have the intuition of what's going to happen, and 
 another is to have an understanding of the laws that govern that movement. In this case, they are the Newton´s Law´s of motion:
 
-$\vec{F}^{\} = m*\vec{a}^{\}$
+$\overrightarrow{F} = m \overrightarrow{a}$
 
 In this way, and with only one formula, it is possible to gain an understanding that is generalizable to many aspects of reality. 
 
@@ -64,6 +64,15 @@ that allows them to analyze the strengths and weaknesses of English Premier Leag
 predict possible outcomes and thus be able to price the bets. 
 
 The problem is that, as they have never worked in this sector before, they only have the results of the league matches. So what can we do? 
+First of all, let's import the packages we will be using through the chapter.
+
+```{julia, results = FALSE}
+using JSON
+using DataFrames
+using StatsPlots
+using Turing
+using LinearAlgebra
+```
 
 We have the data stored in a specific format called JSON, so the first thing to do is to parse and visualize it
 
@@ -221,7 +230,7 @@ Let's translate all this into Turing code:
 end
 ```
 
-As you can see, the turing code is very clear and direct. In the first block we define our hyperpriors for the distributions of the 
+As you can see, the Turing code is very clear and direct. In the first block we define our hyperpriors for the distributions of the 
 characteristics of the equipment.
 
 In the second one, we define the priors distributions that will encapsulate the information about the attack and defense powers of the teams. 
@@ -271,7 +280,10 @@ post_home = collect(get(posterior, :home)[1])
 As a first measure to analyze, it is interesting to see and quantify (if any) the effect that being local has on the score rate:
 
 ```{julia chap_7_plot_1}
-histogram(post_home, legend=false, title="Posterior distribution of home parameter")
+histogram(post_home, legend=false, normalized=true);
+xlabel!("Home parameter");
+ylabel!("Probability density");
+title!("Posterior distribution of home parameter")
 ```
 
 ```{julia}
@@ -310,7 +322,10 @@ teams[1]
 ```
 
 ```{julia chap_7_plot_2}
-histogram(teams_att[1], legend=false, title="Posterior distribution of Burnley´s attack power")
+histogram(teams_att[1], legend=false, normalized=true);
+xlabel!("Attack power");
+ylabel!("Probability density");
+title!("Posterior distribution of Burnley's attack power")
 ```
 
 ```{julia}
@@ -324,7 +339,11 @@ teams[11]
 ```
 
 ```{julia chap_7_plot_3}
-histogram(teams_att[11], legend=false, title="Posterior distribution of Manchester City´s attack power")
+histogram(teams_att[11], legend=false, normalized=true, xticks=false);
+xlabel!("Attack power");
+ylabel!("Probability density");
+title!("Posterior distribution of Manchester City's attack power")
+
 ```
 
 ```{julia}
@@ -452,21 +471,25 @@ liv_def_post = collect(get(posterior, :def)[:def])[4][:,1]
 ```
 
 ```{julia chap_7_plot_7}
-ha1 = histogram(mci_att_post, title="Manchester City attack", legend=false);
-ha2 = histogram(liv_att_post, title="Liverpool attack", legend=false);
-plot(ha1, ha2, layout=(1,2))
+ha1 = histogram(mci_att_post, title="Manchester City attack", legend=false, normalized=true);
+ha2 = histogram(liv_att_post, title="Liverpool attack", legend=false, normalized=true);
+plot(ha1, ha2, layout=(1,2));
+xlabel!("Attack power");
+ylabel!("Probability density")
 ```
 
 ```{julia chap_7_plot_8}
-hd1 = histogram(mci_def_post, title="Manchester City defense", legend=false);
-hd2 = histogram(liv_def_post, title="Liverpool defense", legend=false);
-plot(hd1, hd2, layout=(1,2))
+hd1 = histogram(mci_def_post, title="Manchester City defense", legend=false, normalized=true);
+hd2 = histogram(liv_def_post, title="Liverpool defense", legend=false, normalized=true);
+plot(hd1, hd2, layout=(1,2));
+xlabel!("Defense power");
+ylabel!("Probability density")
 ```
 
 So it seems that the Manchester City have a little advantage over Liverpool. And this is reasonable. The Manchester City was the champion of 
 the Premier League that year while the Liverpool came only fourth. But let stop talking, and start to simulate outcomes! 
 
-```{julia}
+```{julia, result = FALSE}
 # This function simulates matches given the attack, defense and home parameters.
 # The first pair of parameters alwas correspond to the home team.
 function simulate_matches_(att₁, def₁, att₂, def₂, home, n_matches, home_team = 1)
@@ -484,13 +507,11 @@ function simulate_matches_(att₁, def₁, att₂, def₂, home, n_matches, home
     scores₁ = rand(LogPoisson(logθ₁), n_matches)
     scores₂ = rand(LogPoisson(logθ₂), n_matches)
     
-    results = [(s₁, s₂) for (s₁, s₂) in zip(scores₁, scores₂)]
-    
-    return results
+    [(s₁, s₂) for (s₁, s₂) in zip(scores₁, scores₂)]
 end
 ```
 
-```{julia}
+```{julia, result = FALSE}
 function simulate_matches(team1_att_post, team1_def_post, team2_att_post, team2_def_post, home_post, n_matches)
     
     team1_as_home_results = Tuple{Int64,Int64}[]
@@ -563,16 +584,13 @@ in this case, is going to divide all positions by 3,000,000.
 So, lets see it in action!
 
 ```{julia}
-mci_as_home_simulations, 
-liv_as_home_simulations = simulate_matches(mci_att_post, mci_def_post, 
-										   liv_att_post, liv_def_post,                                                            post_home, 1000)
+mci_as_home_simulations, liv_as_home_simulations = simulate_matches(mci_att_post, mci_def_post, liv_att_post, liv_def_post, post_home, 1000)
 ```
 
 Looking those matrices could be not as enlightening as we wanted to. A good way to fix this is graphing them with a heatmap.
 
 ```{julia}
-function match_heatmaps(matrix_t1_as_home, matrix_t2_as_home,
-                        team1_name="Team 1", team2_name="Team 2")    
+function match_heatmaps(matrix_t1_as_home, matrix_t2_as_home, team1_name="Team 1", team2_name="Team 2")    
     gr()   
 
     x_t1_home = string.(0:10)
@@ -591,7 +609,7 @@ function match_heatmaps(matrix_t1_as_home, matrix_t2_as_home,
                            xlabel="$team2_name score", ylabel="$team1_name score",
                            title="$team2_name as home")
     
-    plot(heat_t1_home, heat_t2_home, layout=(1,2), size=(900, 300))
+    plot(heat_t1_home, heat_t2_home, layout=(1,2), size=(600, 250))
     current()   
 end
 ```
