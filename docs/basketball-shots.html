@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 8 Basketball shots | Data Science in Julia for Hackers</title>
   <meta name="description" content="Chapter 8 Basketball shots | Data Science in Julia for Hackers" />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 8 Basketball shots | Data Science in Julia for Hackers" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="Chapter 8 Basketball shots | Data Science in Julia for Hackers" />
   
@@ -31,8 +30,8 @@
   
 <link rel="prev" href="football-simulation.html"/>
 <link rel="next" href="optimal-pricing.html"/>
-<script src="libs/header-attrs-2.7/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -48,7 +47,9 @@
 
 
 
-
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
@@ -89,7 +90,7 @@ code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -102,7 +103,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -115,6 +116,7 @@ code span.va { color: #19177c; } /* Variable */
 code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
+
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -129,156 +131,151 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-  <li><a href="./">Data Science in Julia for Hackers</a></li>
+<li><a href="./">Data Science in Julia for Hackers</a></li>
 
-  <li class="divider"></li>
-  <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a>
-  <ul>
-  <li class="chapter" data-level="" data-path="index.html"><a href="index.html#prologue"><i class="fa fa-check"></i>Prologue</a></li>
-  </ul></li>
-  <li class="part"><span><b>I Data Science and Julia</b></span></li>
-  <li class="chapter" data-level="1" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html"><i class="fa fa-check"></i><b>1</b> Science technology and epistemology</a>
-  <ul>
-  <li class="chapter" data-level="1.1" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#the-difference-between-science-and-technology"><i class="fa fa-check"></i><b>1.1</b> The difference between Science and Technology</a></li>
-  <li class="chapter" data-level="1.2" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#what-is-technology"><i class="fa fa-check"></i><b>1.2</b> What is technology?</a></li>
-  <li class="chapter" data-level="1.3" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#references"><i class="fa fa-check"></i><b>1.3</b> References</a></li>
-  </ul></li>
-  <li class="chapter" data-level="2" data-path="meeting-julia.html"><a href="meeting-julia.html"><i class="fa fa-check"></i><b>2</b> Meeting Julia</a>
-  <ul>
-  <li class="chapter" data-level="2.1" data-path="meeting-julia.html"><a href="meeting-julia.html#why-julia"><i class="fa fa-check"></i><b>2.1</b> Why Julia</a></li>
-  <li class="chapter" data-level="2.2" data-path="meeting-julia.html"><a href="meeting-julia.html#julia-presentation"><i class="fa fa-check"></i><b>2.2</b> Julia presentation</a></li>
-  <li class="chapter" data-level="2.3" data-path="meeting-julia.html"><a href="meeting-julia.html#installation"><i class="fa fa-check"></i><b>2.3</b> Installation</a></li>
-  <li class="chapter" data-level="2.4" data-path="meeting-julia.html"><a href="meeting-julia.html#first-steps-into-the-julia-world"><i class="fa fa-check"></i><b>2.4</b> First steps into the Julia world</a></li>
-  <li class="chapter" data-level="2.5" data-path="meeting-julia.html"><a href="meeting-julia.html#julias-ecosystem-basic-plotting-and-manipulation-of-dataframes"><i class="fa fa-check"></i><b>2.5</b> Julia’s Ecosystem: Basic plotting and manipulation of DataFrames</a>
-  <ul>
-  <li class="chapter" data-level="2.5.1" data-path="meeting-julia.html"><a href="meeting-julia.html#plotting-with-plots.jl"><i class="fa fa-check"></i><b>2.5.1</b> Plotting with Plots.jl</a></li>
-  <li class="chapter" data-level="2.5.2" data-path="meeting-julia.html"><a href="meeting-julia.html#introducing-dataframes.jl"><i class="fa fa-check"></i><b>2.5.2</b> Introducing DataFrames.jl</a></li>
-  </ul></li>
-  <li class="chapter" data-level="2.6" data-path="meeting-julia.html"><a href="meeting-julia.html#summary"><i class="fa fa-check"></i><b>2.6</b> Summary</a></li>
-  <li class="chapter" data-level="2.7" data-path="meeting-julia.html"><a href="meeting-julia.html#references-1"><i class="fa fa-check"></i><b>2.7</b> References</a></li>
-  </ul></li>
-  <li class="part"><span><b>II Bayesian Statistics</b></span></li>
-  <li class="chapter" data-level="3" data-path="probability-introduction.html"><a href="probability-introduction.html"><i class="fa fa-check"></i><b>3</b> Probability introduction</a>
-  <ul>
-  <li class="chapter" data-level="3.1" data-path="probability-introduction.html"><a href="probability-introduction.html#introduction-to-probability"><i class="fa fa-check"></i><b>3.1</b> Introduction to Probability</a></li>
-  <li class="chapter" data-level="3.2" data-path="probability-introduction.html"><a href="probability-introduction.html#events-sample-spaces-and-sample-points"><i class="fa fa-check"></i><b>3.2</b> Events, sample spaces and sample points</a>
-  <ul>
-  <li class="chapter" data-level="3.2.1" data-path="probability-introduction.html"><a href="probability-introduction.html#relation-among-events"><i class="fa fa-check"></i><b>3.2.1</b> Relation among events</a></li>
-  </ul></li>
-  <li class="chapter" data-level="3.3" data-path="probability-introduction.html"><a href="probability-introduction.html#probability"><i class="fa fa-check"></i><b>3.3</b> Probability</a></li>
-  <li class="chapter" data-level="3.4" data-path="probability-introduction.html"><a href="probability-introduction.html#conditional-probability"><i class="fa fa-check"></i><b>3.4</b> Conditional probability</a></li>
-  <li class="chapter" data-level="3.5" data-path="probability-introduction.html"><a href="probability-introduction.html#joint-probability"><i class="fa fa-check"></i><b>3.5</b> Joint probability</a></li>
-  <li class="chapter" data-level="3.6" data-path="probability-introduction.html"><a href="probability-introduction.html#bayes-theorem"><i class="fa fa-check"></i><b>3.6</b> Bayes theorem</a></li>
-  <li class="chapter" data-level="3.7" data-path="probability-introduction.html"><a href="probability-introduction.html#probability-distributions"><i class="fa fa-check"></i><b>3.7</b> Probability distributions</a>
-  <ul>
-  <li class="chapter" data-level="3.7.1" data-path="probability-introduction.html"><a href="probability-introduction.html#discrete-case"><i class="fa fa-check"></i><b>3.7.1</b> Discrete Case</a></li>
-  <li class="chapter" data-level="3.7.2" data-path="probability-introduction.html"><a href="probability-introduction.html#continuous-cases"><i class="fa fa-check"></i><b>3.7.2</b> Continuous cases</a></li>
-  <li class="chapter" data-level="3.7.3" data-path="probability-introduction.html"><a href="probability-introduction.html#histograms"><i class="fa fa-check"></i><b>3.7.3</b> Histograms</a></li>
-  </ul></li>
-  <li class="chapter" data-level="3.8" data-path="probability-introduction.html"><a href="probability-introduction.html#example-bayesian-bandits"><i class="fa fa-check"></i><b>3.8</b> Example: Bayesian Bandits</a></li>
-  <li class="chapter" data-level="3.9" data-path="probability-introduction.html"><a href="probability-introduction.html#summary-1"><i class="fa fa-check"></i><b>3.9</b> Summary</a></li>
-  <li class="chapter" data-level="3.10" data-path="probability-introduction.html"><a href="probability-introduction.html#references-2"><i class="fa fa-check"></i><b>3.10</b> References</a></li>
-  </ul></li>
-  <li class="chapter" data-level="4" data-path="spam-filter.html"><a href="spam-filter.html"><i class="fa fa-check"></i><b>4</b> Spam filter</a>
-  <ul>
-  <li class="chapter" data-level="4.1" data-path="spam-filter.html"><a href="spam-filter.html#naive-bayes-spam-or-ham"><i class="fa fa-check"></i><b>4.1</b> Naive Bayes: Spam or Ham?</a></li>
-  <li class="chapter" data-level="4.2" data-path="spam-filter.html"><a href="spam-filter.html#summary-2"><i class="fa fa-check"></i><b>4.2</b> Summary</a></li>
-  <li class="chapter" data-level="4.3" data-path="spam-filter.html"><a href="spam-filter.html#references-3"><i class="fa fa-check"></i><b>4.3</b> References</a></li>
-  </ul></li>
-  <li class="chapter" data-level="5" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html"><i class="fa fa-check"></i><b>5</b> Probabilistic programming</a>
-  <ul>
-  <li class="chapter" data-level="5.1" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#coin-flipping-example"><i class="fa fa-check"></i><b>5.1</b> Coin flipping example</a></li>
-  <li class="chapter" data-level="5.2" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#summary-3"><i class="fa fa-check"></i><b>5.2</b> Summary</a></li>
-  <li class="chapter" data-level="5.3" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#references-4"><i class="fa fa-check"></i><b>5.3</b> References</a></li>
-  </ul></li>
-  <li class="chapter" data-level="6" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html"><i class="fa fa-check"></i><b>6</b> Escaping from Mars</a>
-  <ul>
-  <li class="chapter" data-level="6.1" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#calculating-the-constant-g-of-mars"><i class="fa fa-check"></i><b>6.1</b> Calculating the constant g of Mars</a></li>
-  <li class="chapter" data-level="6.2" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#optimizing-the-throwing-angle"><i class="fa fa-check"></i><b>6.2</b> Optimizing the throwing angle</a>
-  <ul>
-  <li class="chapter" data-level="6.2.1" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#calculating-the-escape-velocity"><i class="fa fa-check"></i><b>6.2.1</b> Calculating the escape velocity</a></li>
-  </ul></li>
-  <li class="chapter" data-level="6.3" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#summary-4"><i class="fa fa-check"></i><b>6.3</b> Summary</a></li>
-  </ul></li>
-  <li class="chapter" data-level="7" data-path="football-simulation.html"><a href="football-simulation.html"><i class="fa fa-check"></i><b>7</b> Football simulation</a>
-  <ul>
-  <li class="chapter" data-level="7.1" data-path="football-simulation.html"><a href="football-simulation.html#creating-our-conjectures"><i class="fa fa-check"></i><b>7.1</b> Creating our conjectures</a>
-  <ul>
-  <li class="chapter" data-level="7.1.1" data-path="football-simulation.html"><a href="football-simulation.html#bayesian-hierarchical-models"><i class="fa fa-check"></i><b>7.1.1</b> Bayesian hierarchical models</a></li>
-  </ul></li>
-  <li class="chapter" data-level="7.2" data-path="football-simulation.html"><a href="football-simulation.html#simulate-possible-realities"><i class="fa fa-check"></i><b>7.2</b> Simulate possible realities</a></li>
-  <li class="chapter" data-level="7.3" data-path="football-simulation.html"><a href="football-simulation.html#summary-5"><i class="fa fa-check"></i><b>7.3</b> Summary</a></li>
-  <li class="chapter" data-level="7.4" data-path="football-simulation.html"><a href="football-simulation.html#references-5"><i class="fa fa-check"></i><b>7.4</b> References</a></li>
-  </ul></li>
-  <li class="chapter" data-level="8" data-path="basketball-shots.html"><a href="basketball-shots.html"><i class="fa fa-check"></i><b>8</b> Basketball shots</a>
-  <ul>
-  <li class="chapter" data-level="8.1" data-path="basketball-shots.html"><a href="basketball-shots.html#modeling-the-probability-of-scoring"><i class="fa fa-check"></i><b>8.1</b> Modeling the probability of scoring</a></li>
-  <li class="chapter" data-level="8.2" data-path="basketball-shots.html"><a href="basketball-shots.html#prior-predictive-checks-part-i"><i class="fa fa-check"></i><b>8.2</b> Prior Predictive Checks: Part I</a></li>
-  <li class="chapter" data-level="8.3" data-path="basketball-shots.html"><a href="basketball-shots.html#new-model-and-prior-predictive-checks-part-ii"><i class="fa fa-check"></i><b>8.3</b> New model and prior predictive checks: Part II</a>
-  <ul>
-  <li class="chapter" data-level="8.3.1" data-path="basketball-shots.html"><a href="basketball-shots.html#defining-the-new-model-and-computing-posteriors"><i class="fa fa-check"></i><b>8.3.1</b> Defining the new model and computing posteriors</a></li>
-  </ul></li>
-  <li class="chapter" data-level="8.4" data-path="basketball-shots.html"><a href="basketball-shots.html#does-the-period-affect-the-probability-of-scoring"><i class="fa fa-check"></i><b>8.4</b> Does the Period affect the probability of scoring?</a></li>
-  <li class="chapter" data-level="8.5" data-path="basketball-shots.html"><a href="basketball-shots.html#summary-6"><i class="fa fa-check"></i><b>8.5</b> Summary</a></li>
-  </ul></li>
-  <li class="chapter" data-level="9" data-path="optimal-pricing.html"><a href="optimal-pricing.html"><i class="fa fa-check"></i><b>9</b> Optimal pricing</a>
-  <ul>
-  <li class="chapter" data-level="9.1" data-path="optimal-pricing.html"><a href="optimal-pricing.html#overview"><i class="fa fa-check"></i><b>9.1</b> Overview</a></li>
-  <li class="chapter" data-level="9.2" data-path="optimal-pricing.html"><a href="optimal-pricing.html#optimal-pricing-1"><i class="fa fa-check"></i><b>9.2</b> Optimal pricing</a>
-  <ul>
-  <li class="chapter" data-level="9.2.1" data-path="optimal-pricing.html"><a href="optimal-pricing.html#price-vs-quantity-model"><i class="fa fa-check"></i><b>9.2.1</b> Price vs Quantity model</a></li>
-  <li class="chapter" data-level="9.2.2" data-path="optimal-pricing.html"><a href="optimal-pricing.html#price-elasticity-of-demand"><i class="fa fa-check"></i><b>9.2.2</b> Price elasticity of demand</a></li>
-  </ul></li>
-  <li class="chapter" data-level="9.3" data-path="optimal-pricing.html"><a href="optimal-pricing.html#maximizing-profit"><i class="fa fa-check"></i><b>9.3</b> Maximizing profit</a></li>
-  <li class="chapter" data-level="9.4" data-path="optimal-pricing.html"><a href="optimal-pricing.html#summary-7"><i class="fa fa-check"></i><b>9.4</b> Summary</a></li>
-  <li class="chapter" data-level="9.5" data-path="optimal-pricing.html"><a href="optimal-pricing.html#references-6"><i class="fa fa-check"></i><b>9.5</b> References</a></li>
-  </ul></li>
-  <li class="part"><span><b>III Deep Learning</b></span></li>
-  <li class="chapter" data-level="10" data-path="image-classification.html"><a href="image-classification.html"><i class="fa fa-check"></i><b>10</b> Image classification</a>
-  <ul>
-  <li class="chapter" data-level="10.1" data-path="image-classification.html"><a href="image-classification.html#bee-population-control-what-would-happen-if-bees-go-extinct"><i class="fa fa-check"></i><b>10.1</b> Bee population control: What would happen if bees go extinct?</a></li>
-  <li class="chapter" data-level="10.2" data-path="image-classification.html"><a href="image-classification.html#machine-learning-overview"><i class="fa fa-check"></i><b>10.2</b> Machine Learning Overview</a></li>
-  <li class="chapter" data-level="10.3" data-path="image-classification.html"><a href="image-classification.html#neural-networks-and-convolutional-neural-networks"><i class="fa fa-check"></i><b>10.3</b> Neural networks and convolutional neural networks</a></li>
-  <li class="chapter" data-level="10.4" data-path="image-classification.html"><a href="image-classification.html#summary-8"><i class="fa fa-check"></i><b>10.4</b> Summary</a></li>
-  <li class="chapter" data-level="10.5" data-path="image-classification.html"><a href="image-classification.html#references-7"><i class="fa fa-check"></i><b>10.5</b> References</a></li>
-  </ul></li>
-  <li class="part"><span><b>IV Scientific Machine Learning</b></span></li>
-  <li class="chapter" data-level="11" data-path="ultima-online.html"><a href="ultima-online.html"><i class="fa fa-check"></i><b>11</b> Ultima online</a>
-  <ul>
-  <li class="chapter" data-level="11.1" data-path="ultima-online.html"><a href="ultima-online.html#the-ultima-online-catastrophe"><i class="fa fa-check"></i><b>11.1</b> The Ultima Online Catastrophe</a>
-  <ul>
-  <li class="chapter" data-level="11.1.1" data-path="ultima-online.html"><a href="ultima-online.html#the-lotka-volterra-model-for-population-dynamics"><i class="fa fa-check"></i><b>11.1.1</b> The Lotka-Volterra model for population dynamics</a></li>
-  </ul></li>
-  <li class="chapter" data-level="11.2" data-path="ultima-online.html"><a href="ultima-online.html#summary-9"><i class="fa fa-check"></i><b>11.2</b> Summary</a></li>
-  <li class="chapter" data-level="11.3" data-path="ultima-online.html"><a href="ultima-online.html#references-8"><i class="fa fa-check"></i><b>11.3</b> References</a></li>
-  </ul></li>
-  <li class="chapter" data-level="12" data-path="ultima-continued.html"><a href="ultima-continued.html"><i class="fa fa-check"></i><b>12</b> Ultima continued</a>
-  <ul>
-  <li class="chapter" data-level="12.1" data-path="ultima-continued.html"><a href="ultima-continued.html#the-language-of-science"><i class="fa fa-check"></i><b>12.1</b> The language of science</a></li>
-  <li class="chapter" data-level="12.2" data-path="ultima-continued.html"><a href="ultima-continued.html#scientific-machine-learning-for-model-discovery"><i class="fa fa-check"></i><b>12.2</b> Scientific Machine Learning for model discovery</a>
-  <ul>
-  <li class="chapter" data-level="12.2.1" data-path="ultima-continued.html"><a href="ultima-continued.html#looking-for-the-catastrophe-culprit"><i class="fa fa-check"></i><b>12.2.1</b> Looking for the catastrophe culprit</a></li>
-  <li class="chapter" data-level="12.2.2" data-path="ultima-continued.html"><a href="ultima-continued.html#the-infamous-day-begins."><i class="fa fa-check"></i><b>12.2.2</b> The infamous day begins.</a></li>
-  </ul></li>
-  <li class="chapter" data-level="12.3" data-path="ultima-continued.html"><a href="ultima-continued.html#summary-10"><i class="fa fa-check"></i><b>12.3</b> Summary</a></li>
-  <li class="chapter" data-level="12.4" data-path="ultima-continued.html"><a href="ultima-continued.html#references-9"><i class="fa fa-check"></i><b>12.4</b> References</a></li>
-  </ul></li>
-  <li class="part"><span><b>V Time Series and Forecasting</b></span></li>
-  <li class="chapter" data-level="13" data-path="time-series.html"><a href="time-series.html"><i class="fa fa-check"></i><b>13</b> Time series</a>
-  <ul>
-  <li class="chapter" data-level="13.1" data-path="time-series.html"><a href="time-series.html#predicting-the-future"><i class="fa fa-check"></i><b>13.1</b> Predicting the future</a></li>
-  <li class="chapter" data-level="13.2" data-path="time-series.html"><a href="time-series.html#exponential-smoothing"><i class="fa fa-check"></i><b>13.2</b> Exponential Smoothing</a>
-  <ul>
-  <li class="chapter" data-level="13.2.1" data-path="time-series.html"><a href="time-series.html#weighted-average-and-component-form"><i class="fa fa-check"></i><b>13.2.1</b> Weighted average and Component form</a></li>
-  <li class="chapter" data-level="13.2.2" data-path="time-series.html"><a href="time-series.html#optimization-or-fitting-process"><i class="fa fa-check"></i><b>13.2.2</b> Optimization (or Fitting) Process</a></li>
-  <li class="chapter" data-level="13.2.3" data-path="time-series.html"><a href="time-series.html#trend-methods"><i class="fa fa-check"></i><b>13.2.3</b> Trend Methods</a></li>
-  <li class="chapter" data-level="13.2.4" data-path="time-series.html"><a href="time-series.html#seasonality-methods"><i class="fa fa-check"></i><b>13.2.4</b> Seasonality Methods</a></li>
-  </ul></li>
-  <li class="chapter" data-level="13.3" data-path="time-series.html"><a href="time-series.html#summary-11"><i class="fa fa-check"></i><b>13.3</b> Summary</a></li>
-  <li class="chapter" data-level="13.4" data-path="time-series.html"><a href="time-series.html#references-10"><i class="fa fa-check"></i><b>13.4</b> References</a></li>
-  </ul></li>
-  <li class="divider"></li>
-  <li><a href="https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers" target="blank">Published with bookdown</a></li>
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#prologue"><i class="fa fa-check"></i>Prologue</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html"><i class="fa fa-check"></i><b>1</b> Science technology and epistemology</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#the-difference-between-science-and-technology"><i class="fa fa-check"></i><b>1.1</b> The difference between Science and Technology</a></li>
+<li class="chapter" data-level="1.2" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#what-is-technology"><i class="fa fa-check"></i><b>1.2</b> What is technology?</a></li>
+<li class="chapter" data-level="1.3" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#references"><i class="fa fa-check"></i><b>1.3</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="meeting-julia.html"><a href="meeting-julia.html"><i class="fa fa-check"></i><b>2</b> Meeting Julia</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="meeting-julia.html"><a href="meeting-julia.html#why-julia"><i class="fa fa-check"></i><b>2.1</b> Why Julia</a></li>
+<li class="chapter" data-level="2.2" data-path="meeting-julia.html"><a href="meeting-julia.html#julia-presentation"><i class="fa fa-check"></i><b>2.2</b> Julia presentation</a></li>
+<li class="chapter" data-level="2.3" data-path="meeting-julia.html"><a href="meeting-julia.html#installation"><i class="fa fa-check"></i><b>2.3</b> Installation</a></li>
+<li class="chapter" data-level="2.4" data-path="meeting-julia.html"><a href="meeting-julia.html#first-steps-into-the-julia-world"><i class="fa fa-check"></i><b>2.4</b> First steps into the Julia world</a></li>
+<li class="chapter" data-level="2.5" data-path="meeting-julia.html"><a href="meeting-julia.html#julias-ecosystem-basic-plotting-and-manipulation-of-dataframes"><i class="fa fa-check"></i><b>2.5</b> Julia’s Ecosystem: Basic plotting and manipulation of DataFrames</a>
+<ul>
+<li class="chapter" data-level="2.5.1" data-path="meeting-julia.html"><a href="meeting-julia.html#plotting-with-plots.jl"><i class="fa fa-check"></i><b>2.5.1</b> Plotting with Plots.jl</a></li>
+<li class="chapter" data-level="2.5.2" data-path="meeting-julia.html"><a href="meeting-julia.html#introducing-dataframes.jl"><i class="fa fa-check"></i><b>2.5.2</b> Introducing DataFrames.jl</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="meeting-julia.html"><a href="meeting-julia.html#summary"><i class="fa fa-check"></i><b>2.6</b> Summary</a></li>
+<li class="chapter" data-level="2.7" data-path="meeting-julia.html"><a href="meeting-julia.html#references-1"><i class="fa fa-check"></i><b>2.7</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="probability-introduction.html"><a href="probability-introduction.html"><i class="fa fa-check"></i><b>3</b> Probability introduction</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="probability-introduction.html"><a href="probability-introduction.html#introduction-to-probability"><i class="fa fa-check"></i><b>3.1</b> Introduction to Probability</a></li>
+<li class="chapter" data-level="3.2" data-path="probability-introduction.html"><a href="probability-introduction.html#events-sample-spaces-and-sample-points"><i class="fa fa-check"></i><b>3.2</b> Events, sample spaces and sample points</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="probability-introduction.html"><a href="probability-introduction.html#relation-among-events"><i class="fa fa-check"></i><b>3.2.1</b> Relation among events</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="probability-introduction.html"><a href="probability-introduction.html#probability"><i class="fa fa-check"></i><b>3.3</b> Probability</a></li>
+<li class="chapter" data-level="3.4" data-path="probability-introduction.html"><a href="probability-introduction.html#conditional-probability"><i class="fa fa-check"></i><b>3.4</b> Conditional probability</a></li>
+<li class="chapter" data-level="3.5" data-path="probability-introduction.html"><a href="probability-introduction.html#joint-probability"><i class="fa fa-check"></i><b>3.5</b> Joint probability</a></li>
+<li class="chapter" data-level="3.6" data-path="probability-introduction.html"><a href="probability-introduction.html#bayes-theorem"><i class="fa fa-check"></i><b>3.6</b> Bayes theorem</a></li>
+<li class="chapter" data-level="3.7" data-path="probability-introduction.html"><a href="probability-introduction.html#probability-distributions"><i class="fa fa-check"></i><b>3.7</b> Probability distributions</a>
+<ul>
+<li class="chapter" data-level="3.7.1" data-path="probability-introduction.html"><a href="probability-introduction.html#discrete-case"><i class="fa fa-check"></i><b>3.7.1</b> Discrete Case</a></li>
+<li class="chapter" data-level="3.7.2" data-path="probability-introduction.html"><a href="probability-introduction.html#continuous-cases"><i class="fa fa-check"></i><b>3.7.2</b> Continuous cases</a></li>
+<li class="chapter" data-level="3.7.3" data-path="probability-introduction.html"><a href="probability-introduction.html#histograms"><i class="fa fa-check"></i><b>3.7.3</b> Histograms</a></li>
+</ul></li>
+<li class="chapter" data-level="3.8" data-path="probability-introduction.html"><a href="probability-introduction.html#example-bayesian-bandits"><i class="fa fa-check"></i><b>3.8</b> Example: Bayesian Bandits</a></li>
+<li class="chapter" data-level="3.9" data-path="probability-introduction.html"><a href="probability-introduction.html#summary-1"><i class="fa fa-check"></i><b>3.9</b> Summary</a></li>
+<li class="chapter" data-level="3.10" data-path="probability-introduction.html"><a href="probability-introduction.html#references-2"><i class="fa fa-check"></i><b>3.10</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="spam-filter.html"><a href="spam-filter.html"><i class="fa fa-check"></i><b>4</b> Spam filter</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="spam-filter.html"><a href="spam-filter.html#naive-bayes-spam-or-ham"><i class="fa fa-check"></i><b>4.1</b> Naive Bayes: Spam or Ham?</a></li>
+<li class="chapter" data-level="4.2" data-path="spam-filter.html"><a href="spam-filter.html#summary-2"><i class="fa fa-check"></i><b>4.2</b> Summary</a></li>
+<li class="chapter" data-level="4.3" data-path="spam-filter.html"><a href="spam-filter.html#references-3"><i class="fa fa-check"></i><b>4.3</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html"><i class="fa fa-check"></i><b>5</b> Probabilistic programming</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#coin-flipping-example"><i class="fa fa-check"></i><b>5.1</b> Coin flipping example</a></li>
+<li class="chapter" data-level="5.2" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#summary-3"><i class="fa fa-check"></i><b>5.2</b> Summary</a></li>
+<li class="chapter" data-level="5.3" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#references-4"><i class="fa fa-check"></i><b>5.3</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html"><i class="fa fa-check"></i><b>6</b> Escaping from Mars</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#calculating-the-constant-g-of-mars"><i class="fa fa-check"></i><b>6.1</b> Calculating the constant g of Mars</a></li>
+<li class="chapter" data-level="6.2" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#optimizing-the-throwing-angle"><i class="fa fa-check"></i><b>6.2</b> Optimizing the throwing angle</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#calculating-the-escape-velocity"><i class="fa fa-check"></i><b>6.2.1</b> Calculating the escape velocity</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#summary-4"><i class="fa fa-check"></i><b>6.3</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="football-simulation.html"><a href="football-simulation.html"><i class="fa fa-check"></i><b>7</b> Football simulation</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="football-simulation.html"><a href="football-simulation.html#creating-our-conjectures"><i class="fa fa-check"></i><b>7.1</b> Creating our conjectures</a>
+<ul>
+<li class="chapter" data-level="7.1.1" data-path="football-simulation.html"><a href="football-simulation.html#bayesian-hierarchical-models"><i class="fa fa-check"></i><b>7.1.1</b> Bayesian hierarchical models</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="football-simulation.html"><a href="football-simulation.html#simulate-possible-realities"><i class="fa fa-check"></i><b>7.2</b> Simulate possible realities</a></li>
+<li class="chapter" data-level="7.3" data-path="football-simulation.html"><a href="football-simulation.html#summary-5"><i class="fa fa-check"></i><b>7.3</b> Summary</a></li>
+<li class="chapter" data-level="7.4" data-path="football-simulation.html"><a href="football-simulation.html#references-5"><i class="fa fa-check"></i><b>7.4</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="basketball-shots.html"><a href="basketball-shots.html"><i class="fa fa-check"></i><b>8</b> Basketball shots</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="basketball-shots.html"><a href="basketball-shots.html#modeling-the-probability-of-scoring"><i class="fa fa-check"></i><b>8.1</b> Modeling the probability of scoring</a></li>
+<li class="chapter" data-level="8.2" data-path="basketball-shots.html"><a href="basketball-shots.html#prior-predictive-checks-part-i"><i class="fa fa-check"></i><b>8.2</b> Prior Predictive Checks: Part I</a></li>
+<li class="chapter" data-level="8.3" data-path="basketball-shots.html"><a href="basketball-shots.html#new-model-and-prior-predictive-checks-part-ii"><i class="fa fa-check"></i><b>8.3</b> New model and prior predictive checks: Part II</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="basketball-shots.html"><a href="basketball-shots.html#defining-the-new-model-and-computing-posteriors"><i class="fa fa-check"></i><b>8.3.1</b> Defining the new model and computing posteriors</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="basketball-shots.html"><a href="basketball-shots.html#does-the-period-affect-the-probability-of-scoring"><i class="fa fa-check"></i><b>8.4</b> Does the Period affect the probability of scoring?</a></li>
+<li class="chapter" data-level="8.5" data-path="basketball-shots.html"><a href="basketball-shots.html#summary-6"><i class="fa fa-check"></i><b>8.5</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="optimal-pricing.html"><a href="optimal-pricing.html"><i class="fa fa-check"></i><b>9</b> Optimal pricing</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="optimal-pricing.html"><a href="optimal-pricing.html#overview"><i class="fa fa-check"></i><b>9.1</b> Overview</a></li>
+<li class="chapter" data-level="9.2" data-path="optimal-pricing.html"><a href="optimal-pricing.html#optimal-pricing-1"><i class="fa fa-check"></i><b>9.2</b> Optimal pricing</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="optimal-pricing.html"><a href="optimal-pricing.html#price-vs-quantity-model"><i class="fa fa-check"></i><b>9.2.1</b> Price vs Quantity model</a></li>
+<li class="chapter" data-level="9.2.2" data-path="optimal-pricing.html"><a href="optimal-pricing.html#price-elasticity-of-demand"><i class="fa fa-check"></i><b>9.2.2</b> Price elasticity of demand</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="optimal-pricing.html"><a href="optimal-pricing.html#maximizing-profit"><i class="fa fa-check"></i><b>9.3</b> Maximizing profit</a></li>
+<li class="chapter" data-level="9.4" data-path="optimal-pricing.html"><a href="optimal-pricing.html#summary-7"><i class="fa fa-check"></i><b>9.4</b> Summary</a></li>
+<li class="chapter" data-level="9.5" data-path="optimal-pricing.html"><a href="optimal-pricing.html#references-6"><i class="fa fa-check"></i><b>9.5</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="image-classification.html"><a href="image-classification.html"><i class="fa fa-check"></i><b>10</b> Image classification</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="image-classification.html"><a href="image-classification.html#bee-population-control-what-would-happen-if-bees-go-extinct"><i class="fa fa-check"></i><b>10.1</b> Bee population control: What would happen if bees go extinct?</a></li>
+<li class="chapter" data-level="10.2" data-path="image-classification.html"><a href="image-classification.html#machine-learning-overview"><i class="fa fa-check"></i><b>10.2</b> Machine Learning Overview</a></li>
+<li class="chapter" data-level="10.3" data-path="image-classification.html"><a href="image-classification.html#neural-networks-and-convolutional-neural-networks"><i class="fa fa-check"></i><b>10.3</b> Neural networks and convolutional neural networks</a></li>
+<li class="chapter" data-level="10.4" data-path="image-classification.html"><a href="image-classification.html#summary-8"><i class="fa fa-check"></i><b>10.4</b> Summary</a></li>
+<li class="chapter" data-level="10.5" data-path="image-classification.html"><a href="image-classification.html#references-7"><i class="fa fa-check"></i><b>10.5</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="ultima-online.html"><a href="ultima-online.html"><i class="fa fa-check"></i><b>11</b> Ultima online</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="ultima-online.html"><a href="ultima-online.html#the-ultima-online-catastrophe"><i class="fa fa-check"></i><b>11.1</b> The Ultima Online Catastrophe</a>
+<ul>
+<li class="chapter" data-level="11.1.1" data-path="ultima-online.html"><a href="ultima-online.html#the-lotka-volterra-model-for-population-dynamics"><i class="fa fa-check"></i><b>11.1.1</b> The Lotka-Volterra model for population dynamics</a></li>
+</ul></li>
+<li class="chapter" data-level="11.2" data-path="ultima-online.html"><a href="ultima-online.html#summary-9"><i class="fa fa-check"></i><b>11.2</b> Summary</a></li>
+<li class="chapter" data-level="11.3" data-path="ultima-online.html"><a href="ultima-online.html#references-8"><i class="fa fa-check"></i><b>11.3</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="ultima-continued.html"><a href="ultima-continued.html"><i class="fa fa-check"></i><b>12</b> Ultima continued</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="ultima-continued.html"><a href="ultima-continued.html#the-language-of-science"><i class="fa fa-check"></i><b>12.1</b> The language of science</a></li>
+<li class="chapter" data-level="12.2" data-path="ultima-continued.html"><a href="ultima-continued.html#scientific-machine-learning-for-model-discovery"><i class="fa fa-check"></i><b>12.2</b> Scientific Machine Learning for model discovery</a>
+<ul>
+<li class="chapter" data-level="12.2.1" data-path="ultima-continued.html"><a href="ultima-continued.html#looking-for-the-catastrophe-culprit"><i class="fa fa-check"></i><b>12.2.1</b> Looking for the catastrophe culprit</a></li>
+<li class="chapter" data-level="12.2.2" data-path="ultima-continued.html"><a href="ultima-continued.html#the-infamous-day-begins."><i class="fa fa-check"></i><b>12.2.2</b> The infamous day begins.</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="ultima-continued.html"><a href="ultima-continued.html#summary-10"><i class="fa fa-check"></i><b>12.3</b> Summary</a></li>
+<li class="chapter" data-level="12.4" data-path="ultima-continued.html"><a href="ultima-continued.html#references-9"><i class="fa fa-check"></i><b>12.4</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="time-series.html"><a href="time-series.html"><i class="fa fa-check"></i><b>13</b> Time series</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="time-series.html"><a href="time-series.html#predicting-the-future"><i class="fa fa-check"></i><b>13.1</b> Predicting the future</a></li>
+<li class="chapter" data-level="13.2" data-path="time-series.html"><a href="time-series.html#exponential-smoothing"><i class="fa fa-check"></i><b>13.2</b> Exponential Smoothing</a>
+<ul>
+<li class="chapter" data-level="13.2.1" data-path="time-series.html"><a href="time-series.html#weighted-average-and-component-form"><i class="fa fa-check"></i><b>13.2.1</b> Weighted average and Component form</a></li>
+<li class="chapter" data-level="13.2.2" data-path="time-series.html"><a href="time-series.html#optimization-or-fitting-process"><i class="fa fa-check"></i><b>13.2.2</b> Optimization (or Fitting) Process</a></li>
+<li class="chapter" data-level="13.2.3" data-path="time-series.html"><a href="time-series.html#trend-methods"><i class="fa fa-check"></i><b>13.2.3</b> Trend Methods</a></li>
+<li class="chapter" data-level="13.2.4" data-path="time-series.html"><a href="time-series.html#seasonality-methods"><i class="fa fa-check"></i><b>13.2.4</b> Seasonality Methods</a></li>
+</ul></li>
+<li class="chapter" data-level="13.3" data-path="time-series.html"><a href="time-series.html#summary-11"><i class="fa fa-check"></i><b>13.3</b> Summary</a></li>
+<li class="chapter" data-level="13.4" data-path="time-series.html"><a href="time-series.html#references-10"><i class="fa fa-check"></i><b>13.4</b> References</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers" target="blank">Published with bookdown</a></li>
 
 </ul>
 
@@ -297,38 +294,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="basketball-shots" class="section level1" number="8">
-<h1><span class="header-section-number">Chapter 8</span> Basketball shots</h1>
-<div class="sourceCode" id="cb1"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb1-1"><a href="basketball-shots.html#cb1-1" aria-hidden="true" tabindex="-1"></a>cd(<span class="st">&quot;./08_basketball_shots/&quot;</span>) </span>
-<span id="cb1-2"><a href="basketball-shots.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">import</span> Pkg</span>
-<span id="cb1-3"><a href="basketball-shots.html#cb1-3" aria-hidden="true" tabindex="-1"></a>Pkg.activate(<span class="st">&quot;.&quot;</span>)</span>
-<span id="cb1-4"><a href="basketball-shots.html#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="basketball-shots.html#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> Markdown</span>
-<span id="cb1-6"><a href="basketball-shots.html#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> InteractiveUtils</span>
-<span id="cb1-7"><a href="basketball-shots.html#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> Plots</span>
-<span id="cb1-8"><a href="basketball-shots.html#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> <span class="bu">Random</span></span>
-<span id="cb1-9"><a href="basketball-shots.html#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> CSV</span>
-<span id="cb1-10"><a href="basketball-shots.html#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> DataFrames</span>
-<span id="cb1-11"><a href="basketball-shots.html#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> StatsPlots</span>
-<span id="cb1-12"><a href="basketball-shots.html#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> Images</span>
-<span id="cb1-13"><a href="basketball-shots.html#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> StatsBase</span>
-<span id="cb1-14"><a href="basketball-shots.html#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> Turing</span>
-<span id="cb1-15"><a href="basketball-shots.html#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> StatsFuns</span></code></pre></div>
-<p>When playing basketball we can ask ourself: how likely is it to score given a position in the court? To answer this question we are going to use data from NBA games from the season 2006 - 2007. We will consider all types of shots.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb2-1"><a href="basketball-shots.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb2-2"><a href="basketball-shots.html#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="basketball-shots.html#cb2-3" aria-hidden="true" tabindex="-1"></a>    season_2007 <span class="op">=</span> CSV.<span class="cn">read</span>(<span class="st">&quot;./08_basketball_shots/data/seasons/shots_season_2006_2007.csv&quot;</span><span class="op">,</span> DataFrame)</span>
-<span id="cb2-4"><a href="basketball-shots.html#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-5"><a href="basketball-shots.html#cb2-5" aria-hidden="true" tabindex="-1"></a>    shots <span class="op">=</span> season_2007</span>
-<span id="cb2-6"><a href="basketball-shots.html#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-7"><a href="basketball-shots.html#cb2-7" aria-hidden="true" tabindex="-1"></a>    shots[<span class="op">!,</span> <span class="op">:</span>distance] <span class="op">=</span> sqrt.( shots.x <span class="op">.^</span> <span class="fl">2</span> <span class="op">+</span>  shots.y <span class="op">.^</span> <span class="fl">2</span>)</span>
-<span id="cb2-8"><a href="basketball-shots.html#cb2-8" aria-hidden="true" tabindex="-1"></a>    shots[<span class="op">!,</span> <span class="op">:</span>angle] <span class="op">=</span> atan.( shots.y <span class="op">./</span> shots.x )</span>
-<span id="cb2-9"><a href="basketball-shots.html#cb2-9" aria-hidden="true" tabindex="-1"></a>    filter<span class="op">!</span>(x<span class="op">-&gt;</span> x.distance<span class="op">&gt;</span><span class="fl">1</span><span class="op">,</span> shots)</span>
-<span id="cb2-10"><a href="basketball-shots.html#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span><span class="op">;</span></span></code></pre></div>
-<div class="sourceCode" id="cb3"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb3-1"><a href="basketball-shots.html#cb3-1" aria-hidden="true" tabindex="-1"></a>first(shots)</span></code></pre></div>
+<div id="basketball-shots" class="section level1 hasAnchor" number="8">
+<h1><span class="header-section-number">Chapter 8</span> Basketball shots<a href="basketball-shots.html#basketball-shots" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>When playing basketball we can ask ourself: how likely is it to score given a position in the court? To answer this question we are going to use
+data from NBA games from the season 2006 - 2007. We will consider all types of shots.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb1-1"><a href="basketball-shots.html#cb1-1" aria-hidden="true" tabindex="-1"></a>shots <span class="op">=</span> CSV.<span class="fu">read</span>(<span class="st">&quot;./08_basketball_shots/data/seasons/shots_season_2006_2007.csv&quot;</span>, DataFrame)</span>
+<span id="cb1-2"><a href="basketball-shots.html#cb1-2" aria-hidden="true" tabindex="-1"></a>shots[!, <span class="op">:</span>distance] <span class="op">=</span> <span class="fu">sqrt</span>.( shots.x <span class="op">.^</span> <span class="fl">2</span> <span class="op">+</span> shots.y <span class="op">.^</span> <span class="fl">2</span>)</span>
+<span id="cb1-3"><a href="basketball-shots.html#cb1-3" aria-hidden="true" tabindex="-1"></a>shots[!, <span class="op">:</span>angle] <span class="op">=</span> <span class="fu">atan</span>.( shots.y <span class="op">./</span> shots.x )</span>
+<span id="cb1-4"><a href="basketball-shots.html#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">filter!</span>(x <span class="op">-&gt;</span> x.distance <span class="op">&gt;</span> <span class="fl">1</span>, shots)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb2-1"><a href="basketball-shots.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">first</span>(shots)</span></code></pre></div>
 <pre><code>## DataFrameRow
 ##  Row │ result  x      y        period  time      distance  angle
-##      │ Int64   Int64  Float64  Int64   Time…     Float64   Float64
+##      │ Int64   Int64  Float64  Int64   Time      Float64   Float64
 ## ─────┼───────────────────────────────────────────────────────────────
 ##    1 │      0    -14    16.75       1  11:42:00   21.8303  -0.874592</code></pre>
 <p>But how do we interpret the data?</p>
@@ -338,49 +315,44 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 Also, we compute the angle with respect to the <span class="math inline">\(x\)</span> axis, showed as θ in the sketch.
 In the data we have the period, which can take values from 1 to 4, meaning the period in which the shot was made.</p>
 <p>We now plot where the shots where made:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb5-1"><a href="basketball-shots.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb5-2"><a href="basketball-shots.html#cb5-2" aria-hidden="true" tabindex="-1"></a>    histogram2d(shots.y[<span class="fl">1</span><span class="op">:</span><span class="fl">10000</span>]<span class="op">,</span> shots.x[<span class="fl">1</span><span class="op">:</span><span class="fl">10000</span>]<span class="op">,</span> bins<span class="op">=</span>(<span class="fl">50</span><span class="op">,</span><span class="fl">30</span>))</span>
-<span id="cb5-3"><a href="basketball-shots.html#cb5-3" aria-hidden="true" tabindex="-1"></a>    ylabel<span class="op">!</span>(<span class="st">&quot;y axis&quot;</span>)</span>
-<span id="cb5-4"><a href="basketball-shots.html#cb5-4" aria-hidden="true" tabindex="-1"></a>    xlabel<span class="op">!</span>(<span class="st">&quot;x axis&quot;</span>)</span>
-<span id="cb5-5"><a href="basketball-shots.html#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb4-1"><a href="basketball-shots.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">histogram2d</span>(shots.y[<span class="fl">1</span><span class="op">:</span><span class="fl">10000</span>], shots.x[<span class="fl">1</span><span class="op">:</span><span class="fl">10000</span>], bins<span class="op">=</span>(<span class="fl">50</span>,<span class="fl">30</span>));</span>
+<span id="cb4-2"><a href="basketball-shots.html#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">xlabel!</span>(<span class="st">&quot;x axis&quot;</span>);</span>
+<span id="cb4-3"><a href="basketball-shots.html#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ylabel!</span>(<span class="st">&quot;y axis&quot;</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_8_plot_2-J1.png" /><!-- --></p>
-<p>We see that the shots are very uniformly distributed near the hoop, except for distances very near to the hoop, to see this better, we plot the histograms for each axis, <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>.
+<p>We see that the shots are very uniformly distributed near the hoop, except for distances very near to the hoop, to see this better, we plot
+the histograms for each axis, <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>.
 But we are interested in the shots that were scored, so we filter now the shots made and plot the histogram of each axis.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb6-1"><a href="basketball-shots.html#cb6-1" aria-hidden="true" tabindex="-1"></a>shots_made <span class="op">=</span> filter(x<span class="op">-&gt;</span>x.result<span class="op">==</span><span class="fl">1</span><span class="op">,</span> shots)<span class="op">;</span></span></code></pre></div>
-<div class="sourceCode" id="cb7"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb7-1"><a href="basketball-shots.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb7-2"><a href="basketball-shots.html#cb7-2" aria-hidden="true" tabindex="-1"></a>    histogram(shots_made.y[<span class="fl">1</span><span class="op">:</span><span class="fl">10000</span>]<span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span><span class="op">,</span> nbins<span class="op">=</span><span class="fl">40</span>)</span>
-<span id="cb7-3"><a href="basketball-shots.html#cb7-3" aria-hidden="true" tabindex="-1"></a>    xlabel<span class="op">!</span>(<span class="st">&quot;x axis&quot;</span>)</span>
-<span id="cb7-4"><a href="basketball-shots.html#cb7-4" aria-hidden="true" tabindex="-1"></a>    ylabel<span class="op">!</span>(<span class="st">&quot;Counts&quot;</span>)</span>
-<span id="cb7-5"><a href="basketball-shots.html#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb5-1"><a href="basketball-shots.html#cb5-1" aria-hidden="true" tabindex="-1"></a>shots_made <span class="op">=</span> <span class="fu">filter</span>(x<span class="op">-&gt;</span>x.result<span class="op">==</span><span class="fl">1</span>, shots)</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb6-1"><a href="basketball-shots.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">histogram</span>(shots_made.y[<span class="fl">1</span><span class="op">:</span><span class="fl">10000</span>], legend<span class="op">=</span><span class="cn">false</span>, nbins<span class="op">=</span><span class="fl">40</span>);</span>
+<span id="cb6-2"><a href="basketball-shots.html#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">xlabel!</span>(<span class="st">&quot;x axis&quot;</span>);</span>
+<span id="cb6-3"><a href="basketball-shots.html#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ylabel!</span>(<span class="st">&quot;Counts&quot;</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_8_plot_3-J1.png" /><!-- --></p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb8-1"><a href="basketball-shots.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb8-2"><a href="basketball-shots.html#cb8-2" aria-hidden="true" tabindex="-1"></a>    histogram(shots_made.x[<span class="fl">1</span><span class="op">:</span><span class="fl">10000</span>]<span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span><span class="op">,</span> nbins<span class="op">=</span><span class="fl">45</span>)</span>
-<span id="cb8-3"><a href="basketball-shots.html#cb8-3" aria-hidden="true" tabindex="-1"></a>    xlabel<span class="op">!</span>(<span class="st">&quot;y axis&quot;</span>)</span>
-<span id="cb8-4"><a href="basketball-shots.html#cb8-4" aria-hidden="true" tabindex="-1"></a>    ylabel<span class="op">!</span>(<span class="st">&quot;Counts&quot;</span>)</span>
-<span id="cb8-5"><a href="basketball-shots.html#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb7-1"><a href="basketball-shots.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">histogram</span>(shots_made.x[<span class="fl">1</span><span class="op">:</span><span class="fl">10000</span>], legend<span class="op">=</span><span class="cn">false</span>, nbins<span class="op">=</span><span class="fl">45</span>);</span>
+<span id="cb7-2"><a href="basketball-shots.html#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">xlabel!</span>(<span class="st">&quot;y axis&quot;</span>);</span>
+<span id="cb7-3"><a href="basketball-shots.html#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ylabel!</span>(<span class="st">&quot;Counts&quot;</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_8_plot_4-J1.png" /><!-- --></p>
 <p>If we plot a 3d plot of the count we obtain the plot wireplot shown below.</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb9-1"><a href="basketball-shots.html#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb9-2"><a href="basketball-shots.html#cb9-2" aria-hidden="true" tabindex="-1"></a>    h <span class="op">=</span> fit(Histogram<span class="op">,</span> (shots_made.y<span class="op">,</span> shots_made.x)<span class="op">,</span> nbins<span class="op">=</span><span class="fl">40</span>)</span>
-<span id="cb9-3"><a href="basketball-shots.html#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">#plot(h) # same as histogram2d</span></span>
-<span id="cb9-4"><a href="basketball-shots.html#cb9-4" aria-hidden="true" tabindex="-1"></a>    wireframe(midpoints(h.edges[<span class="fl">2</span>])<span class="op">,</span> midpoints(h.edges[<span class="fl">1</span>])<span class="op">,</span> h.weights<span class="op">,</span> zlabel<span class="op">=</span><span class="st">&quot;counts&quot;</span><span class="op">,</span> xlabel<span class="op">=</span><span class="st">&quot;y&quot;</span><span class="op">,</span> ylabel<span class="op">=</span><span class="st">&quot;x&quot;</span><span class="op">,</span> camera<span class="op">=</span>(<span class="fl">40</span><span class="op">,</span><span class="fl">40</span>))</span>
-<span id="cb9-5"><a href="basketball-shots.html#cb9-5" aria-hidden="true" tabindex="-1"></a>title<span class="op">!</span>(<span class="st">&quot;Histogram of shots scored&quot;</span>)</span>
-<span id="cb9-6"><a href="basketball-shots.html#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb8-1"><a href="basketball-shots.html#cb8-1" aria-hidden="true" tabindex="-1"></a>h <span class="op">=</span> <span class="fu">fit</span>(Histogram, (shots_made.y, shots_made.x), nbins<span class="op">=</span><span class="fl">40</span>);</span>
+<span id="cb8-2"><a href="basketball-shots.html#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wireframe</span>(<span class="fu">midpoints</span>(h.edges[<span class="fl">2</span>]), <span class="fu">midpoints</span>(h.edges[<span class="fl">1</span>]), h.weights, zlabel<span class="op">=</span><span class="st">&quot;counts&quot;</span>, xlabel<span class="op">=</span><span class="st">&quot;y&quot;</span>, ylabel<span class="op">=</span><span class="st">&quot;x&quot;</span>, camera<span class="op">=</span>(<span class="fl">40</span>,<span class="fl">40</span>));</span>
+<span id="cb8-3"><a href="basketball-shots.html#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">xlabel!</span>(<span class="st">&quot;x&quot;</span>);</span>
+<span id="cb8-4"><a href="basketball-shots.html#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ylabel!</span>(<span class="st">&quot;y&quot;</span>);</span>
+<span id="cb8-5"><a href="basketball-shots.html#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="fu">title!</span>(<span class="st">&quot;Histogram of shots scored&quot;</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_8_plot_5-J1.png" /><!-- --></p>
 <p>We see that more shot are made as we get near the hoop, as expected.</p>
-<p>It is important to notice that we are not showing the probability of scoring, we are just showing the distribution of shot scored, not how likely is it to score.</p>
-<div id="modeling-the-probability-of-scoring" class="section level2" number="8.1">
-<h2><span class="header-section-number">8.1</span> Modeling the probability of scoring</h2>
+<p>It is important to notice that we are not showing the probability of scoring, we are just showing the distribution of shot scored, not how likely
+is it to score.</p>
+<div id="modeling-the-probability-of-scoring" class="section level2 hasAnchor" number="8.1">
+<h2><span class="header-section-number">8.1</span> Modeling the probability of scoring<a href="basketball-shots.html#modeling-the-probability-of-scoring" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The first model we are going to propose is a Bernoulli model.</p>
 <p><em>Why a Bernoulli Distribution?</em></p>
-<p>A Bernoulli Distribution results from an experiment in which we have 2 possible outcomes, one that we usually called a success and another called a fail. In our case our success is scoring the shot and the other possible event is failing it.</p>
-<p>The only parameter needed in a bernoulli distribution is the probability <span class="math inline">\(p\)</span> of having a success. We are going to model this parameter as a logistic function:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb10-1"><a href="basketball-shots.html#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb10-2"><a href="basketball-shots.html#cb10-2" aria-hidden="true" tabindex="-1"></a>plot(logistic<span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span>)</span>
-<span id="cb10-3"><a href="basketball-shots.html#cb10-3" aria-hidden="true" tabindex="-1"></a>ylabel<span class="op">!</span>(<span class="st">&quot;Probability&quot;</span>)</span>
-<span id="cb10-4"><a href="basketball-shots.html#cb10-4" aria-hidden="true" tabindex="-1"></a>xlabel<span class="op">!</span>(<span class="st">&quot;x&quot;</span>)</span>
-<span id="cb10-5"><a href="basketball-shots.html#cb10-5" aria-hidden="true" tabindex="-1"></a>title<span class="op">!</span>(<span class="st">&quot;Logistic function (x)&quot;</span>)</span>
-<span id="cb10-6"><a href="basketball-shots.html#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p>A Bernoulli Distribution results from an experiment in which we have 2 possible outcomes, one that we usually called a success and another called
+a fail. In our case our success is scoring the shot and the other possible event is failing it.</p>
+<p>The only parameter needed in a bernoulli distribution is the probability <span class="math inline">\(p\)</span> of having a success. We are going to model this parameter as a
+logistic function:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb9-1"><a href="basketball-shots.html#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(logistic, legend<span class="op">=</span><span class="cn">false</span>);</span>
+<span id="cb9-2"><a href="basketball-shots.html#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">xlabel!</span>(<span class="st">&quot;x&quot;</span>);</span>
+<span id="cb9-3"><a href="basketball-shots.html#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ylabel!</span>(<span class="st">&quot;Probability&quot;</span>);</span>
+<span id="cb9-4"><a href="basketball-shots.html#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="fu">title!</span>(<span class="st">&quot;Logistic function (x)&quot;</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_8_plot_6-J1.png" /><!-- --></p>
 <p><em>Why a logistic function?</em></p>
 <p>We are going to model the probability of shoot as a function of some variables, for example the distance to the hoop, and we want that our probability of scoring increases as we are getting closer to it. Also out probability needs to be between 0 an 1, so a nice function to map our values is the logistic function.</p>
@@ -390,34 +362,30 @@ But we are interested in the shots that were scored, so we filter now the shots 
 <p><em>But what values and prior distributions are we going to propose to the parameters a, b and c?</em></p>
 <p>Let’s see:</p>
 </div>
-<div id="prior-predictive-checks-part-i" class="section level2" number="8.2">
-<h2><span class="header-section-number">8.2</span> Prior Predictive Checks: Part I</h2>
+<div id="prior-predictive-checks-part-i" class="section level2 hasAnchor" number="8.2">
+<h2><span class="header-section-number">8.2</span> Prior Predictive Checks: Part I<a href="basketball-shots.html#prior-predictive-checks-part-i" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Suppose we say that our prior distributions for <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> and <span class="math inline">\(c\)</span> are going to be 3 gaussian distributions with mean 0 and variance 1. Lets sample and see what are the possible posterior distributions for our probability of scoring <span class="math inline">\(p\)</span>:</p>
 <p><span class="math inline">\(a\sim N(0,1)\)</span></p>
 <p><span class="math inline">\(b\sim N(0,1)\)</span></p>
 <p><span class="math inline">\(c\sim N(0,1)\)</span></p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb11-1"><a href="basketball-shots.html#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb11-2"><a href="basketball-shots.html#cb11-2" aria-hidden="true" tabindex="-1"></a>possible_distances <span class="op">=</span> <span class="fl">0</span><span class="op">:</span><span class="fl">0.01</span><span class="op">:</span><span class="fl">1</span></span>
-<span id="cb11-3"><a href="basketball-shots.html#cb11-3" aria-hidden="true" tabindex="-1"></a>possible_angles <span class="op">=</span> <span class="fl">0</span><span class="op">:</span><span class="fl">0.01</span><span class="op">:</span>π<span class="op">/</span><span class="fl">2</span></span>
-<span id="cb11-4"><a href="basketball-shots.html#cb11-4" aria-hidden="true" tabindex="-1"></a>angle <span class="op">=</span> π<span class="op">/</span><span class="fl">2</span></span>
-<span id="cb11-5"><a href="basketball-shots.html#cb11-5" aria-hidden="true" tabindex="-1"></a>n_samples <span class="op">=</span> <span class="fl">100</span></span>
-<span id="cb11-6"><a href="basketball-shots.html#cb11-6" aria-hidden="true" tabindex="-1"></a>a_prior_sampling <span class="op">=</span> rand(Normal(<span class="fl">0</span><span class="op">,</span><span class="fl">1</span>)<span class="op">,</span> n_samples)</span>
-<span id="cb11-7"><a href="basketball-shots.html#cb11-7" aria-hidden="true" tabindex="-1"></a>b_prior_sampling <span class="op">=</span> rand(Normal(<span class="fl">0</span><span class="op">,</span><span class="fl">1</span>)<span class="op">,</span> n_samples)</span>
-<span id="cb11-8"><a href="basketball-shots.html#cb11-8" aria-hidden="true" tabindex="-1"></a>predicted_p <span class="op">=</span> []</span>
-<span id="cb11-9"><a href="basketball-shots.html#cb11-9" aria-hidden="true" tabindex="-1"></a><span class="kw">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>n_samples</span>
-<span id="cb11-10"><a href="basketball-shots.html#cb11-10" aria-hidden="true" tabindex="-1"></a>        push<span class="op">!</span>(predicted_p<span class="op">,</span> logistic.(a_prior_sampling[i] .<span class="op">+</span> b_prior_sampling[i]<span class="op">.*</span>possible_distances))</span>
-<span id="cb11-11"><a href="basketball-shots.html#cb11-11" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span>
-<span id="cb11-12"><a href="basketball-shots.html#cb11-12" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span></code></pre></div>
-<div class="sourceCode" id="cb12"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb12-1"><a href="basketball-shots.html#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb12-2"><a href="basketball-shots.html#cb12-2" aria-hidden="true" tabindex="-1"></a>    plot(possible_distances<span class="op">,</span> predicted_p[<span class="fl">1</span>]<span class="op">,</span> legend <span class="op">=</span> <span class="ex">false</span><span class="op">,</span> color<span class="op">=</span><span class="st">&quot;blue&quot;</span>)</span>
-<span id="cb12-3"><a href="basketball-shots.html#cb12-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> <span class="fl">2</span><span class="op">:</span>n_samples</span>
-<span id="cb12-4"><a href="basketball-shots.html#cb12-4" aria-hidden="true" tabindex="-1"></a>        plot<span class="op">!</span>(possible_distances<span class="op">,</span> predicted_p[i]<span class="op">,</span> color<span class="op">=:</span>blue)</span>
-<span id="cb12-5"><a href="basketball-shots.html#cb12-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
-<span id="cb12-6"><a href="basketball-shots.html#cb12-6" aria-hidden="true" tabindex="-1"></a>    xlabel<span class="op">!</span>(<span class="st">&quot;Normalized distance&quot;</span>)</span>
-<span id="cb12-7"><a href="basketball-shots.html#cb12-7" aria-hidden="true" tabindex="-1"></a>    ylabel<span class="op">!</span>(<span class="st">&quot;Predicted probability&quot;</span>)</span>
-<span id="cb12-8"><a href="basketball-shots.html#cb12-8" aria-hidden="true" tabindex="-1"></a>    title<span class="op">!</span>(<span class="st">&quot;Prior predictive values for p&quot;</span>)</span>
-<span id="cb12-9"><a href="basketball-shots.html#cb12-9" aria-hidden="true" tabindex="-1"></a>    current()</span>
-<span id="cb12-10"><a href="basketball-shots.html#cb12-10" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb10-1"><a href="basketball-shots.html#cb10-1" aria-hidden="true" tabindex="-1"></a>possible_distances <span class="op">=</span> <span class="fl">0</span><span class="op">:</span><span class="fl">0.01</span><span class="op">:</span><span class="fl">1</span></span>
+<span id="cb10-2"><a href="basketball-shots.html#cb10-2" aria-hidden="true" tabindex="-1"></a>possible_angles <span class="op">=</span> <span class="fl">0</span><span class="op">:</span><span class="fl">0.01</span><span class="op">:</span><span class="cn">π</span><span class="op">/</span><span class="fl">2</span></span>
+<span id="cb10-3"><a href="basketball-shots.html#cb10-3" aria-hidden="true" tabindex="-1"></a>n_samples <span class="op">=</span> <span class="fl">100</span></span>
+<span id="cb10-4"><a href="basketball-shots.html#cb10-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-5"><a href="basketball-shots.html#cb10-5" aria-hidden="true" tabindex="-1"></a>a_prior_sampling <span class="op">=</span> <span class="fu">rand</span>(<span class="fu">Normal</span>(<span class="fl">0</span>,<span class="fl">1</span>), n_samples)</span>
+<span id="cb10-6"><a href="basketball-shots.html#cb10-6" aria-hidden="true" tabindex="-1"></a>b_prior_sampling <span class="op">=</span> <span class="fu">rand</span>(<span class="fu">Normal</span>(<span class="fl">0</span>,<span class="fl">1</span>), n_samples)</span>
+<span id="cb10-7"><a href="basketball-shots.html#cb10-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-8"><a href="basketball-shots.html#cb10-8" aria-hidden="true" tabindex="-1"></a>predicted_p <span class="op">=</span> []</span>
+<span id="cb10-9"><a href="basketball-shots.html#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>n_samples</span>
+<span id="cb10-10"><a href="basketball-shots.html#cb10-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">push!</span>(predicted_p, <span class="fu">logistic</span>.(a_prior_sampling[i] <span class="op">.+</span> b_prior_sampling[i] <span class="op">.*</span> possible_distances))</span>
+<span id="cb10-11"><a href="basketball-shots.html#cb10-11" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb11-1"><a href="basketball-shots.html#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(possible_distances, predicted_p[<span class="fl">1</span>], legend <span class="op">=</span> <span class="cn">false</span>, color<span class="op">=</span><span class="st">&quot;blue&quot;</span>);</span>
+<span id="cb11-2"><a href="basketball-shots.html#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="fl">2</span><span class="op">:</span>n_samples</span>
+<span id="cb11-3"><a href="basketball-shots.html#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">plot!</span>(possible_distances, predicted_p[i], color<span class="op">=:</span>blue);</span>
+<span id="cb11-4"><a href="basketball-shots.html#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
+<span id="cb11-5"><a href="basketball-shots.html#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="fu">xlabel!</span>(<span class="st">&quot;Normalized distance&quot;</span>);</span>
+<span id="cb11-6"><a href="basketball-shots.html#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ylabel!</span>(<span class="st">&quot;Predicted probability&quot;</span>);</span>
+<span id="cb11-7"><a href="basketball-shots.html#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="fu">title!</span>(<span class="st">&quot;Prior predictive values for p&quot;</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_8_plot_7-J1.png" /><!-- --></p>
 <p>We see that some of the predicted behaviours for <span class="math inline">\(p\)</span> don’t make sense. For example, if <span class="math inline">\(b\)</span> takes positive values, we are saying that as we increase our distance from the hoop, the probability of scoring also increase. So we propose instead the parameter <span class="math inline">\(b\)</span> to be the negative values of a LogNormal distribution. The predicted values for <span class="math inline">\(p\)</span> are shown below.
 So our model now have as priors distributions:</p>
@@ -425,249 +393,202 @@ So our model now have as priors distributions:</p>
 <p><span class="math inline">\(b\sim LogNormal(1,0.25)\)</span></p>
 <p><span class="math inline">\(c\sim Normal(0,1)\)</span></p>
 <p>and sampling values from those prior distributions, we obtain the plot shown below for the predicted values of <span class="math inline">\(p\)</span>.</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb13-1"><a href="basketball-shots.html#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb13-2"><a href="basketball-shots.html#cb13-2" aria-hidden="true" tabindex="-1"></a>b_prior_sampling_negative <span class="op">=</span> rand(LogNormal(<span class="fl">1</span><span class="op">,</span><span class="fl">0.25</span>)<span class="op">,</span> n_samples)</span>
-<span id="cb13-3"><a href="basketball-shots.html#cb13-3" aria-hidden="true" tabindex="-1"></a>predicted_p_inproved <span class="op">=</span> []</span>
-<span id="cb13-4"><a href="basketball-shots.html#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="kw">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>n_samples</span>
-<span id="cb13-5"><a href="basketball-shots.html#cb13-5" aria-hidden="true" tabindex="-1"></a>        push<span class="op">!</span>(predicted_p_inproved<span class="op">,</span> logistic.(a_prior_sampling[i] .<span class="op">-</span> b_prior_sampling_negative[i]<span class="op">.*</span>possible_distances))</span>
-<span id="cb13-6"><a href="basketball-shots.html#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span>
-<span id="cb13-7"><a href="basketball-shots.html#cb13-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span></code></pre></div>
-<div class="sourceCode" id="cb14"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb14-1"><a href="basketball-shots.html#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb14-2"><a href="basketball-shots.html#cb14-2" aria-hidden="true" tabindex="-1"></a>    plot(possible_distances<span class="op">,</span> predicted_p_inproved[<span class="fl">1</span>]<span class="op">,</span> legend <span class="op">=</span> <span class="ex">false</span><span class="op">,</span> color<span class="op">=:</span>blue)</span>
-<span id="cb14-3"><a href="basketball-shots.html#cb14-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> <span class="fl">2</span><span class="op">:</span>n_samples</span>
-<span id="cb14-4"><a href="basketball-shots.html#cb14-4" aria-hidden="true" tabindex="-1"></a>        plot<span class="op">!</span>(possible_distances<span class="op">,</span> predicted_p_inproved[i]<span class="op">,</span> color<span class="op">=:</span>blue)</span>
-<span id="cb14-5"><a href="basketball-shots.html#cb14-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
-<span id="cb14-6"><a href="basketball-shots.html#cb14-6" aria-hidden="true" tabindex="-1"></a>    xlabel<span class="op">!</span>(<span class="st">&quot;Normalized distance&quot;</span>)</span>
-<span id="cb14-7"><a href="basketball-shots.html#cb14-7" aria-hidden="true" tabindex="-1"></a>    ylabel<span class="op">!</span>(<span class="st">&quot;Predicted probability&quot;</span>)</span>
-<span id="cb14-8"><a href="basketball-shots.html#cb14-8" aria-hidden="true" tabindex="-1"></a>    title<span class="op">!</span>(<span class="st">&quot;Prior predictive values for p with negative LogNormal prior&quot;</span>)</span>
-<span id="cb14-9"><a href="basketball-shots.html#cb14-9" aria-hidden="true" tabindex="-1"></a>    current()</span>
-<span id="cb14-10"><a href="basketball-shots.html#cb14-10" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb12-1"><a href="basketball-shots.html#cb12-1" aria-hidden="true" tabindex="-1"></a>b_prior_sampling_negative <span class="op">=</span> <span class="fu">rand</span>(<span class="fu">LogNormal</span>(<span class="fl">1</span>,<span class="fl">0.25</span>), n_samples)</span>
+<span id="cb12-2"><a href="basketball-shots.html#cb12-2" aria-hidden="true" tabindex="-1"></a>predicted_p_inproved <span class="op">=</span> []</span>
+<span id="cb12-3"><a href="basketball-shots.html#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>n_samples</span>
+<span id="cb12-4"><a href="basketball-shots.html#cb12-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">push!</span>(predicted_p_inproved, <span class="fu">logistic</span>.(a_prior_sampling[i] <span class="op">.-</span> b_prior_sampling_negative[i]<span class="op">.*</span>possible_distances))</span>
+<span id="cb12-5"><a href="basketball-shots.html#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb13-1"><a href="basketball-shots.html#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(possible_distances, predicted_p_inproved[<span class="fl">1</span>], legend <span class="op">=</span> <span class="cn">false</span>, color<span class="op">=:</span>blue);</span>
+<span id="cb13-2"><a href="basketball-shots.html#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="fl">2</span><span class="op">:</span>n_samples</span>
+<span id="cb13-3"><a href="basketball-shots.html#cb13-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">plot!</span>(possible_distances, predicted_p_inproved[i], color<span class="op">=:</span>blue);</span>
+<span id="cb13-4"><a href="basketball-shots.html#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
+<span id="cb13-5"><a href="basketball-shots.html#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="fu">xlabel!</span>(<span class="st">&quot;Normalized distance&quot;</span>);</span>
+<span id="cb13-6"><a href="basketball-shots.html#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ylabel!</span>(<span class="st">&quot;Predicted probability&quot;</span>);</span>
+<span id="cb13-7"><a href="basketball-shots.html#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="fu">title!</span>(<span class="st">&quot;Prior predictive values for p with negative LogNormal prior&quot;</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_8_plot_9-J1.png" /><!-- --></p>
 <p>Now that we have the expected behaviour for <span class="math inline">\(p\)</span>, we define our model and calculate the posterior distributions with our data points.
 ### Defining our model and computing posteriors
 Now we define our model to sample from it:</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb15-1"><a href="basketball-shots.html#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="pp">@model</span> logistic_regression(distances<span class="op">,</span> angles<span class="op">,</span> result<span class="op">,</span>n) <span class="op">=</span> <span class="kw">begin</span></span>
-<span id="cb15-2"><a href="basketball-shots.html#cb15-2" aria-hidden="true" tabindex="-1"></a>  N <span class="op">=</span> length(distances)</span>
-<span id="cb15-3"><a href="basketball-shots.html#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Set priors.</span></span>
-<span id="cb15-4"><a href="basketball-shots.html#cb15-4" aria-hidden="true" tabindex="-1"></a>    a <span class="op">~</span> Normal(<span class="fl">0</span><span class="op">,</span><span class="fl">1</span>) </span>
-<span id="cb15-5"><a href="basketball-shots.html#cb15-5" aria-hidden="true" tabindex="-1"></a>    b <span class="op">~</span> LogNormal(<span class="fl">1</span><span class="op">,</span><span class="fl">0.25</span>)</span>
-<span id="cb15-6"><a href="basketball-shots.html#cb15-6" aria-hidden="true" tabindex="-1"></a>    c <span class="op">~</span> Normal(<span class="fl">0</span><span class="op">,</span><span class="fl">1</span>)</span>
-<span id="cb15-7"><a href="basketball-shots.html#cb15-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>n</span>
-<span id="cb15-8"><a href="basketball-shots.html#cb15-8" aria-hidden="true" tabindex="-1"></a>        p <span class="op">=</span> logistic( a <span class="op">-</span>  b<span class="op">*</span>distances[i] <span class="op">+</span> c<span class="op">*</span>angles[i])</span>
-<span id="cb15-9"><a href="basketball-shots.html#cb15-9" aria-hidden="true" tabindex="-1"></a>        result[i] <span class="op">~</span> Bernoulli(p)</span>
-<span id="cb15-10"><a href="basketball-shots.html#cb15-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
-<span id="cb15-11"><a href="basketball-shots.html#cb15-11" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
-<pre><code>## logistic_regression (generic function with 1 method)</code></pre>
-<div class="sourceCode" id="cb17"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb17-1"><a href="basketball-shots.html#cb17-1" aria-hidden="true" tabindex="-1"></a>n<span class="op">=</span><span class="fl">1000</span><span class="op">;</span></span></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb14-1"><a href="basketball-shots.html#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="pp">@model</span> <span class="fu">logistic_regression</span>(distances, angles, result,n) <span class="op">=</span> <span class="cf">begin</span></span>
+<span id="cb14-2"><a href="basketball-shots.html#cb14-2" aria-hidden="true" tabindex="-1"></a>  N <span class="op">=</span> <span class="fu">length</span>(distances)</span>
+<span id="cb14-3"><a href="basketball-shots.html#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Set priors.</span></span>
+<span id="cb14-4"><a href="basketball-shots.html#cb14-4" aria-hidden="true" tabindex="-1"></a>    a <span class="op">~</span> <span class="fu">Normal</span>(<span class="fl">0</span>,<span class="fl">1</span>) </span>
+<span id="cb14-5"><a href="basketball-shots.html#cb14-5" aria-hidden="true" tabindex="-1"></a>    b <span class="op">~</span> <span class="fu">LogNormal</span>(<span class="fl">1</span>,<span class="fl">0.25</span>)</span>
+<span id="cb14-6"><a href="basketball-shots.html#cb14-6" aria-hidden="true" tabindex="-1"></a>    c <span class="op">~</span> <span class="fu">Normal</span>(<span class="fl">0</span>,<span class="fl">1</span>)</span>
+<span id="cb14-7"><a href="basketball-shots.html#cb14-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-8"><a href="basketball-shots.html#cb14-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>n</span>
+<span id="cb14-9"><a href="basketball-shots.html#cb14-9" aria-hidden="true" tabindex="-1"></a>        p <span class="op">=</span> <span class="fu">logistic</span>(a <span class="op">-</span> b<span class="op">*</span>distances[i] <span class="op">+</span> c<span class="op">*</span>angles[i])</span>
+<span id="cb14-10"><a href="basketball-shots.html#cb14-10" aria-hidden="true" tabindex="-1"></a>        result[i] <span class="op">~</span> <span class="fu">Bernoulli</span>(p)</span>
+<span id="cb14-11"><a href="basketball-shots.html#cb14-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">end</span></span>
+<span id="cb14-12"><a href="basketball-shots.html#cb14-12" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb15-1"><a href="basketball-shots.html#cb15-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="fl">1000</span></span></code></pre></div>
 <p>The output of the sampling tell us also some information about sampled values for our parameters, like the mean, the standard deviation and some other computations.</p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb18-1"><a href="basketball-shots.html#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Sample using HMC.</span></span>
-<span id="cb18-2"><a href="basketball-shots.html#cb18-2" aria-hidden="true" tabindex="-1"></a>chain <span class="op">=</span> mapreduce(c <span class="op">-&gt;</span> sample(logistic_regression(shots.distance[<span class="fl">1</span><span class="op">:</span>n] <span class="op">./</span> maximum(shots.distance[<span class="fl">1</span><span class="op">:</span>n] )<span class="op">,</span> shots.angle[<span class="fl">1</span><span class="op">:</span>n]<span class="op">,</span> shots.result[<span class="fl">1</span><span class="op">:</span>n]<span class="op">,</span> n)<span class="op">,</span> NUTS()<span class="op">,</span> <span class="fl">1500</span>)<span class="op">,</span></span>
-<span id="cb18-3"><a href="basketball-shots.html#cb18-3" aria-hidden="true" tabindex="-1"></a>    chainscat<span class="op">,</span></span>
-<span id="cb18-4"><a href="basketball-shots.html#cb18-4" aria-hidden="true" tabindex="-1"></a>    <span class="fl">1</span><span class="op">:</span><span class="fl">3</span></span>
-<span id="cb18-5"><a href="basketball-shots.html#cb18-5" aria-hidden="true" tabindex="-1"></a>)<span class="op">;</span></span></code></pre></div>
-<div id="traceplot" class="section level4" number="8.2.0.1">
-<h4><span class="header-section-number">8.2.0.1</span> Traceplot</h4>
+<div class="sourceCode" id="cb16"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb16-1"><a href="basketball-shots.html#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Sample using HMC.</span></span>
+<span id="cb16-2"><a href="basketball-shots.html#cb16-2" aria-hidden="true" tabindex="-1"></a>chain <span class="op">=</span> <span class="fu">mapreduce</span>(c <span class="op">-&gt;</span> <span class="fu">sample</span>(<span class="fu">logistic_regression</span>(shots.distance[<span class="fl">1</span><span class="op">:</span>n] <span class="op">./</span> <span class="fu">maximum</span>(shots.distance[<span class="fl">1</span><span class="op">:</span>n] ), shots.angle[<span class="fl">1</span><span class="op">:</span>n], shots.result[<span class="fl">1</span><span class="op">:</span>n], n), <span class="fu">NUTS</span>(), <span class="fl">1500</span>), chainscat, <span class="fl">1</span><span class="op">:</span><span class="fl">3</span>);</span></code></pre></div>
+<div id="traceplot" class="section level4 hasAnchor" number="8.2.0.1">
+<h4><span class="header-section-number">8.2.0.1</span> Traceplot<a href="basketball-shots.html#traceplot" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>In the plot below we show a traceplot of the sampling.</p>
 <p><em>What is a traceplot?</em></p>
 <p>When we run a model and calculate the posterior, we obtain sampled values from the posterior distributions. We can tell our sampler how many sampled values we want. A traceplot is just showing them in sequential order. We also can plot the distribution of those values, and this is what is showed next to each traceplot.</p>
-<div class="sourceCode" id="cb19"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb19-1"><a href="basketball-shots.html#cb19-1" aria-hidden="true" tabindex="-1"></a>plot(chain<span class="op">,</span> dpi<span class="op">=</span><span class="fl">60</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb17-1"><a href="basketball-shots.html#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(chain, dpi<span class="op">=</span><span class="fl">60</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_8_plot_10-J1.png" /><!-- --></p>
-<div class="sourceCode" id="cb20"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb20-1"><a href="basketball-shots.html#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb20-2"><a href="basketball-shots.html#cb20-2" aria-hidden="true" tabindex="-1"></a>    a_mean <span class="op">=</span> mean(chain[<span class="op">:</span>a])</span>
-<span id="cb20-3"><a href="basketball-shots.html#cb20-3" aria-hidden="true" tabindex="-1"></a>    b_mean <span class="op">=</span> mean(chain[<span class="op">:</span>b])</span>
-<span id="cb20-4"><a href="basketball-shots.html#cb20-4" aria-hidden="true" tabindex="-1"></a>    c_mean <span class="op">=</span> mean(chain[<span class="op">:</span>c])</span>
-<span id="cb20-5"><a href="basketball-shots.html#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span><span class="op">;</span></span></code></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb18-1"><a href="basketball-shots.html#cb18-1" aria-hidden="true" tabindex="-1"></a>a_mean <span class="op">=</span> <span class="fu">mean</span>(chain[<span class="op">:</span>a])</span>
+<span id="cb18-2"><a href="basketball-shots.html#cb18-2" aria-hidden="true" tabindex="-1"></a>b_mean <span class="op">=</span> <span class="fu">mean</span>(chain[<span class="op">:</span>b])</span>
+<span id="cb18-3"><a href="basketball-shots.html#cb18-3" aria-hidden="true" tabindex="-1"></a>c_mean <span class="op">=</span> <span class="fu">mean</span>(chain[<span class="op">:</span>c])</span></code></pre></div>
 <p>Now plotting the probability of scoring using the posterior distributions of <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> and <span class="math inline">\(c\)</span> for an angle of 45°, we obtain:</p>
-<div class="sourceCode" id="cb21"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb21-1"><a href="basketball-shots.html#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb21-2"><a href="basketball-shots.html#cb21-2" aria-hidden="true" tabindex="-1"></a>p_constant_angle <span class="op">=</span> []</span>
-<span id="cb21-3"><a href="basketball-shots.html#cb21-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>length(chain[<span class="op">:</span>a])</span>
-<span id="cb21-4"><a href="basketball-shots.html#cb21-4" aria-hidden="true" tabindex="-1"></a>        push<span class="op">!</span>(p_constant_angle<span class="op">,</span> logistic.(chain[<span class="op">:</span>a][i] .<span class="op">-</span> chain[<span class="op">:</span>b][i]<span class="op">.*</span>possible_distances .<span class="op">+</span> chain[<span class="op">:</span>c][i]<span class="op">.*</span>π<span class="op">/</span><span class="fl">4</span>))<span class="op">;</span></span>
-<span id="cb21-5"><a href="basketball-shots.html#cb21-5" aria-hidden="true" tabindex="-1"></a>        <span class="kw">end</span></span>
-<span id="cb21-6"><a href="basketball-shots.html#cb21-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span></code></pre></div>
-<div class="sourceCode" id="cb22"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb22-1"><a href="basketball-shots.html#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb22-2"><a href="basketball-shots.html#cb22-2" aria-hidden="true" tabindex="-1"></a>plot(possible_distances<span class="op">,</span>p_constant_angle[<span class="fl">1</span>]<span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span><span class="op">,</span> alpha<span class="op">=</span><span class="fl">0.1</span><span class="op">,</span> color<span class="op">=:</span>blue)</span>
-<span id="cb22-3"><a href="basketball-shots.html#cb22-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> <span class="fl">2</span><span class="op">:</span><span class="fl">1000</span></span>
-<span id="cb22-4"><a href="basketball-shots.html#cb22-4" aria-hidden="true" tabindex="-1"></a>        plot<span class="op">!</span>(possible_distances<span class="op">,</span>p_constant_angle[i]<span class="op">,</span> alpha<span class="op">=</span><span class="fl">0.1</span><span class="op">,</span> color<span class="op">=:</span>blue)</span>
-<span id="cb22-5"><a href="basketball-shots.html#cb22-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
-<span id="cb22-6"><a href="basketball-shots.html#cb22-6" aria-hidden="true" tabindex="-1"></a>    xlabel<span class="op">!</span>(<span class="st">&quot;Normalized distance&quot;</span>)</span>
-<span id="cb22-7"><a href="basketball-shots.html#cb22-7" aria-hidden="true" tabindex="-1"></a>    ylabel<span class="op">!</span>(<span class="st">&quot;Probability&quot;</span>)</span>
-<span id="cb22-8"><a href="basketball-shots.html#cb22-8" aria-hidden="true" tabindex="-1"></a>    title<span class="op">!</span>(<span class="st">&quot;Scoring probability vs Normalized distance (angle=45°)&quot;</span>)</span>
-<span id="cb22-9"><a href="basketball-shots.html#cb22-9" aria-hidden="true" tabindex="-1"></a>    current()</span>
-<span id="cb22-10"><a href="basketball-shots.html#cb22-10" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb19-1"><a href="basketball-shots.html#cb19-1" aria-hidden="true" tabindex="-1"></a>p_constant_angle <span class="op">=</span> []</span>
+<span id="cb19-2"><a href="basketball-shots.html#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fu">length</span>(chain[<span class="op">:</span>a])</span>
+<span id="cb19-3"><a href="basketball-shots.html#cb19-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">push!</span>(p_constant_angle, <span class="fu">logistic</span>.(chain[<span class="op">:</span>a][i] <span class="op">.-</span> chain[<span class="op">:</span>b][i]<span class="op">.*</span>possible_distances <span class="op">.+</span> chain[<span class="op">:</span>c][i]<span class="op">.*</span><span class="cn">π</span><span class="op">/</span><span class="fl">4</span>));</span>
+<span id="cb19-4"><a href="basketball-shots.html#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb20-1"><a href="basketball-shots.html#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(possible_distances,p_constant_angle[<span class="fl">1</span>], legend<span class="op">=</span><span class="cn">false</span>, alpha<span class="op">=</span><span class="fl">0.1</span>, color<span class="op">=:</span>blue);</span>
+<span id="cb20-2"><a href="basketball-shots.html#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="fl">2</span><span class="op">:</span><span class="fl">1000</span></span>
+<span id="cb20-3"><a href="basketball-shots.html#cb20-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">plot!</span>(possible_distances,p_constant_angle[i], alpha<span class="op">=</span><span class="fl">0.1</span>, color<span class="op">=:</span>blue);</span>
+<span id="cb20-4"><a href="basketball-shots.html#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
+<span id="cb20-5"><a href="basketball-shots.html#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="fu">xlabel!</span>(<span class="st">&quot;Normalized distance&quot;</span>);</span>
+<span id="cb20-6"><a href="basketball-shots.html#cb20-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ylabel!</span>(<span class="st">&quot;Probability&quot;</span>);</span>
+<span id="cb20-7"><a href="basketball-shots.html#cb20-7" aria-hidden="true" tabindex="-1"></a><span class="fu">title!</span>(<span class="st">&quot;Scoring probability vs Normalized distance (angle=45°)&quot;</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_8_plot_11-J1.png" /><!-- --></p>
 <p>The plot shows that the probability of scoring is higher as our distance to the hoop decrease, which makes sense, since the difficulty of scoring increase.</p>
 <p>We plot now how the probability varies with the angle for a given distance. Here we plot for a mid distance, corresponding to 0.5 in a normalized distance.</p>
-<div class="sourceCode" id="cb23"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb23-1"><a href="basketball-shots.html#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb23-2"><a href="basketball-shots.html#cb23-2" aria-hidden="true" tabindex="-1"></a>p_constant_distance <span class="op">=</span> []</span>
-<span id="cb23-3"><a href="basketball-shots.html#cb23-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>length(chain[<span class="op">:</span>a])</span>
-<span id="cb23-4"><a href="basketball-shots.html#cb23-4" aria-hidden="true" tabindex="-1"></a>        push<span class="op">!</span>(p_constant_distance<span class="op">,</span> logistic.(chain[<span class="op">:</span>a][i] .<span class="op">-</span> chain[<span class="op">:</span>b][i]<span class="op">.*</span><span class="fl">0.5</span> .<span class="op">+</span> chain[<span class="op">:</span>c][i]<span class="op">.*</span>possible_angles))<span class="op">;</span></span>
-<span id="cb23-5"><a href="basketball-shots.html#cb23-5" aria-hidden="true" tabindex="-1"></a>        <span class="kw">end</span></span>
-<span id="cb23-6"><a href="basketball-shots.html#cb23-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span></code></pre></div>
-<div class="sourceCode" id="cb24"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb24-1"><a href="basketball-shots.html#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb24-2"><a href="basketball-shots.html#cb24-2" aria-hidden="true" tabindex="-1"></a>plot(rad2deg.(possible_angles)<span class="op">,</span>p_constant_distance[<span class="fl">1</span>]<span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span><span class="op">,</span> alpha<span class="op">=</span><span class="fl">0.1</span><span class="op">,</span> color<span class="op">=:</span>blue)</span>
-<span id="cb24-3"><a href="basketball-shots.html#cb24-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> <span class="fl">2</span><span class="op">:</span><span class="fl">1000</span></span>
-<span id="cb24-4"><a href="basketball-shots.html#cb24-4" aria-hidden="true" tabindex="-1"></a>        plot<span class="op">!</span>(rad2deg.(possible_angles)<span class="op">,</span>p_constant_distance[i]<span class="op">,</span> alpha<span class="op">=</span><span class="fl">0.1</span><span class="op">,</span> color<span class="op">=:</span>blue)</span>
-<span id="cb24-5"><a href="basketball-shots.html#cb24-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
-<span id="cb24-6"><a href="basketball-shots.html#cb24-6" aria-hidden="true" tabindex="-1"></a>    xlabel<span class="op">!</span>(<span class="st">&quot;Angle [deg]&quot;</span>)</span>
-<span id="cb24-7"><a href="basketball-shots.html#cb24-7" aria-hidden="true" tabindex="-1"></a>    ylabel<span class="op">!</span>(<span class="st">&quot;Probability&quot;</span>)</span>
-<span id="cb24-8"><a href="basketball-shots.html#cb24-8" aria-hidden="true" tabindex="-1"></a>    title<span class="op">!</span>(<span class="st">&quot;Scoring probability vs Angle (mid distance)&quot;</span>)</span>
-<span id="cb24-9"><a href="basketball-shots.html#cb24-9" aria-hidden="true" tabindex="-1"></a>    current()</span>
-<span id="cb24-10"><a href="basketball-shots.html#cb24-10" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb21-1"><a href="basketball-shots.html#cb21-1" aria-hidden="true" tabindex="-1"></a>p_constant_distance <span class="op">=</span> []</span>
+<span id="cb21-2"><a href="basketball-shots.html#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fu">length</span>(chain[<span class="op">:</span>a])</span>
+<span id="cb21-3"><a href="basketball-shots.html#cb21-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">push!</span>(p_constant_distance, <span class="fu">logistic</span>.(chain[<span class="op">:</span>a][i] <span class="op">.-</span> chain[<span class="op">:</span>b][i]<span class="op">.*</span><span class="fl">0.5</span> <span class="op">.+</span> chain[<span class="op">:</span>c][i]<span class="op">.*</span>possible_angles));</span>
+<span id="cb21-4"><a href="basketball-shots.html#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb22-1"><a href="basketball-shots.html#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">rad2deg</span>.(possible_angles),p_constant_distance[<span class="fl">1</span>], legend<span class="op">=</span><span class="cn">false</span>, alpha<span class="op">=</span><span class="fl">0.1</span>, color<span class="op">=:</span>blue);</span>
+<span id="cb22-2"><a href="basketball-shots.html#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="fl">2</span><span class="op">:</span><span class="fl">1000</span></span>
+<span id="cb22-3"><a href="basketball-shots.html#cb22-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">plot!</span>(<span class="fu">rad2deg</span>.(possible_angles),p_constant_distance[i], alpha<span class="op">=</span><span class="fl">0.1</span>, color<span class="op">=:</span>blue);</span>
+<span id="cb22-4"><a href="basketball-shots.html#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
+<span id="cb22-5"><a href="basketball-shots.html#cb22-5" aria-hidden="true" tabindex="-1"></a><span class="fu">xlabel!</span>(<span class="st">&quot;Angle [deg]&quot;</span>);</span>
+<span id="cb22-6"><a href="basketball-shots.html#cb22-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ylabel!</span>(<span class="st">&quot;Probability&quot;</span>);</span>
+<span id="cb22-7"><a href="basketball-shots.html#cb22-7" aria-hidden="true" tabindex="-1"></a><span class="fu">title!</span>(<span class="st">&quot;Scoring probability vs Angle (mid distance)&quot;</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_8_plot_13-J1.png" /><!-- --></p>
 <p>We see that the model predict an almost constant probability for the angle.</p>
 </div>
 </div>
-<div id="new-model-and-prior-predictive-checks-part-ii" class="section level2" number="8.3">
-<h2><span class="header-section-number">8.3</span> New model and prior predictive checks: Part II</h2>
+<div id="new-model-and-prior-predictive-checks-part-ii" class="section level2 hasAnchor" number="8.3">
+<h2><span class="header-section-number">8.3</span> New model and prior predictive checks: Part II<a href="basketball-shots.html#new-model-and-prior-predictive-checks-part-ii" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Now we propose another model with the form:</p>
 <p><span class="math inline">\(p\sim logistic(a+ b^{distance[i]} + c*angle[i])\)</span></p>
 <p>*But for what values of b the model makes sense?</p>
 <p>We show below the plot for 4 function with 4 possible values of <span class="math inline">\(b\)</span>, having in mind that the values of <span class="math inline">\(x\)</span>, the normalized distance, goes from 0 to 1.</p>
-<div class="sourceCode" id="cb25"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb25-1"><a href="basketball-shots.html#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb25-2"><a href="basketball-shots.html#cb25-2" aria-hidden="true" tabindex="-1"></a>    f1(x) <span class="op">=</span> <span class="fl">0.3</span><span class="op">^</span>x</span>
-<span id="cb25-3"><a href="basketball-shots.html#cb25-3" aria-hidden="true" tabindex="-1"></a>    f2(x) <span class="op">=</span> <span class="fl">1.5</span><span class="op">^</span>x</span>
-<span id="cb25-4"><a href="basketball-shots.html#cb25-4" aria-hidden="true" tabindex="-1"></a>    f3(x) <span class="op">=</span> <span class="op">-</span><span class="fl">0.3</span><span class="op">^</span>x</span>
-<span id="cb25-5"><a href="basketball-shots.html#cb25-5" aria-hidden="true" tabindex="-1"></a>    f4(x) <span class="op">=</span> <span class="op">-</span><span class="fl">1.5</span><span class="op">^</span>x</span>
-<span id="cb25-6"><a href="basketball-shots.html#cb25-6" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span><span class="op">;</span></span></code></pre></div>
-<div class="sourceCode" id="cb26"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb26-1"><a href="basketball-shots.html#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb26-2"><a href="basketball-shots.html#cb26-2" aria-hidden="true" tabindex="-1"></a>    plot(<span class="fl">0</span><span class="op">:</span><span class="fl">0.01</span><span class="op">:</span><span class="fl">1</span><span class="op">,</span> f1<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;f1: b&lt;1 &amp; b&gt;0&quot;</span><span class="op">,</span> xlim<span class="op">=</span>(<span class="fl">0</span><span class="op">,</span><span class="fl">1</span>)<span class="op">,</span> ylim<span class="op">=</span>(<span class="op">-</span><span class="fl">2</span><span class="op">,</span><span class="fl">2</span>)<span class="op">,</span> lw<span class="op">=</span><span class="fl">3</span>)</span>
-<span id="cb26-3"><a href="basketball-shots.html#cb26-3" aria-hidden="true" tabindex="-1"></a>    plot<span class="op">!</span>(<span class="fl">0</span><span class="op">:</span><span class="fl">0.01</span><span class="op">:</span><span class="fl">1</span><span class="op">,</span> f2<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;f2: b&gt;1&quot;</span><span class="op">,</span> lw<span class="op">=</span><span class="fl">3</span>)</span>
-<span id="cb26-4"><a href="basketball-shots.html#cb26-4" aria-hidden="true" tabindex="-1"></a>    plot<span class="op">!</span>(<span class="fl">0</span><span class="op">:</span><span class="fl">0.01</span><span class="op">:</span><span class="fl">1</span><span class="op">,</span> f3<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;f3: b&lt;0 &amp; b&gt;-1&quot;</span><span class="op">,</span> lw<span class="op">=</span><span class="fl">3</span>)</span>
-<span id="cb26-5"><a href="basketball-shots.html#cb26-5" aria-hidden="true" tabindex="-1"></a>    plot<span class="op">!</span>(<span class="fl">0</span><span class="op">:</span><span class="fl">0.01</span><span class="op">:</span><span class="fl">1</span><span class="op">,</span> f4<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;f3: b&lt;-1&quot;</span><span class="op">,</span> lw<span class="op">=</span><span class="fl">3</span>)</span>
-<span id="cb26-6"><a href="basketball-shots.html#cb26-6" aria-hidden="true" tabindex="-1"></a>    xlabel<span class="op">!</span>(<span class="st">&quot;Normalized distance&quot;</span>)</span>
-<span id="cb26-7"><a href="basketball-shots.html#cb26-7" aria-hidden="true" tabindex="-1"></a>    title<span class="op">!</span>(<span class="st">&quot;Prior Predictive influence of distance&quot;</span>)</span>
-<span id="cb26-8"><a href="basketball-shots.html#cb26-8" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb23-1"><a href="basketball-shots.html#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">f1</span>(x) <span class="op">=</span> <span class="fl">0.3</span><span class="op">^</span>x</span>
+<span id="cb23-2"><a href="basketball-shots.html#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="fu">f2</span>(x) <span class="op">=</span> <span class="fl">1.5</span><span class="op">^</span>x</span>
+<span id="cb23-3"><a href="basketball-shots.html#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="fu">f3</span>(x) <span class="op">=</span> <span class="op">-</span><span class="fl">0.3</span><span class="op">^</span>x</span>
+<span id="cb23-4"><a href="basketball-shots.html#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="fu">f4</span>(x) <span class="op">=</span> <span class="op">-</span><span class="fl">1.5</span><span class="op">^</span>x</span></code></pre></div>
+<div class="sourceCode" id="cb24"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb24-1"><a href="basketball-shots.html#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fl">0</span><span class="op">:</span><span class="fl">0.01</span><span class="op">:</span><span class="fl">1</span>, f1, label<span class="op">=</span><span class="st">&quot;f1: b &lt; 1 &amp; b &gt; 0&quot;</span>, xlim<span class="op">=</span>(<span class="fl">0</span>,<span class="fl">1</span>), ylim<span class="op">=</span>(<span class="op">-</span><span class="fl">2</span>,<span class="fl">2</span>), lw<span class="op">=</span><span class="fl">3</span>);</span>
+<span id="cb24-2"><a href="basketball-shots.html#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot!</span>(<span class="fl">0</span><span class="op">:</span><span class="fl">0.01</span><span class="op">:</span><span class="fl">1</span>, f2, label<span class="op">=</span><span class="st">&quot;f2: b&gt;1&quot;</span>, lw<span class="op">=</span><span class="fl">3</span>);</span>
+<span id="cb24-3"><a href="basketball-shots.html#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot!</span>(<span class="fl">0</span><span class="op">:</span><span class="fl">0.01</span><span class="op">:</span><span class="fl">1</span>, f3, label<span class="op">=</span><span class="st">&quot;f3: b&lt;0 &amp; b&gt;-1&quot;</span>, lw<span class="op">=</span><span class="fl">3</span>);</span>
+<span id="cb24-4"><a href="basketball-shots.html#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot!</span>(<span class="fl">0</span><span class="op">:</span><span class="fl">0.01</span><span class="op">:</span><span class="fl">1</span>, f4, label<span class="op">=</span><span class="st">&quot;f3: b&lt;-1&quot;</span>, lw<span class="op">=</span><span class="fl">3</span>);</span>
+<span id="cb24-5"><a href="basketball-shots.html#cb24-5" aria-hidden="true" tabindex="-1"></a><span class="fu">xlabel!</span>(<span class="st">&quot;Normalized distance&quot;</span>);</span>
+<span id="cb24-6"><a href="basketball-shots.html#cb24-6" aria-hidden="true" tabindex="-1"></a><span class="fu">title!</span>(<span class="st">&quot;Prior Predictive influence of distance&quot;</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_8_plot_14-J1.png" /><!-- --></p>
 <p>Analysing the possible values for <span class="math inline">\(b\)</span>, the one that makes sense is the value proposed in f1, since we want an increasing influence of the distance in the values of <span class="math inline">\(p\)</span> as the distance decreases, since the logistic function has higher values for higher values of x.
 So now that we know the values the our parameter <span class="math inline">\(b\)</span> can take, we propose for it a beta distribution with parameters α=2 and β=5, showed in the plot below.</p>
-<div class="sourceCode" id="cb27"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb27-1"><a href="basketball-shots.html#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb27-2"><a href="basketball-shots.html#cb27-2" aria-hidden="true" tabindex="-1"></a>plot(Beta(<span class="fl">2</span><span class="op">,</span><span class="fl">5</span>)<span class="op">,</span> xlim<span class="op">=</span>(<span class="op">-</span><span class="fl">0.1</span><span class="op">,</span><span class="fl">1</span>)<span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span>)</span>
-<span id="cb27-3"><a href="basketball-shots.html#cb27-3" aria-hidden="true" tabindex="-1"></a>title<span class="op">!</span>(<span class="st">&quot;Prior distribution for b&quot;</span>)</span>
-<span id="cb27-4"><a href="basketball-shots.html#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb25"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb25-1"><a href="basketball-shots.html#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">Beta</span>(<span class="fl">2</span>,<span class="fl">5</span>), xlim<span class="op">=</span>(<span class="op">-</span><span class="fl">0.1</span>,<span class="fl">1</span>), legend<span class="op">=</span><span class="cn">false</span>);</span>
+<span id="cb25-2"><a href="basketball-shots.html#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title!</span>(<span class="st">&quot;Prior distribution for b&quot;</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_8_plot_15-J1.png" /><!-- --></p>
-<div id="defining-the-new-model-and-computing-posteriors" class="section level3" number="8.3.1">
-<h3><span class="header-section-number">8.3.1</span> Defining the new model and computing posteriors</h3>
+<div id="defining-the-new-model-and-computing-posteriors" class="section level3 hasAnchor" number="8.3.1">
+<h3><span class="header-section-number">8.3.1</span> Defining the new model and computing posteriors<a href="basketball-shots.html#defining-the-new-model-and-computing-posteriors" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>We define then our model and calculate the posterior as before.</p>
-<div class="sourceCode" id="cb28"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb28-1"><a href="basketball-shots.html#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="pp">@model</span> logistic_regression_exp(distances<span class="op">,</span> angles<span class="op">,</span> result<span class="op">,</span> n) <span class="op">=</span> <span class="kw">begin</span></span>
-<span id="cb28-2"><a href="basketball-shots.html#cb28-2" aria-hidden="true" tabindex="-1"></a>  N <span class="op">=</span> length(distances)</span>
-<span id="cb28-3"><a href="basketball-shots.html#cb28-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Set priors.</span></span>
-<span id="cb28-4"><a href="basketball-shots.html#cb28-4" aria-hidden="true" tabindex="-1"></a>    a <span class="op">~</span> Normal(<span class="fl">0</span><span class="op">,</span><span class="fl">1</span>) </span>
-<span id="cb28-5"><a href="basketball-shots.html#cb28-5" aria-hidden="true" tabindex="-1"></a>    b <span class="op">~</span> Beta(<span class="fl">2</span><span class="op">,</span><span class="fl">5</span>)</span>
-<span id="cb28-6"><a href="basketball-shots.html#cb28-6" aria-hidden="true" tabindex="-1"></a>    c <span class="op">~</span> Normal(<span class="fl">0</span><span class="op">,</span><span class="fl">1</span>)</span>
-<span id="cb28-7"><a href="basketball-shots.html#cb28-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>n</span>
-<span id="cb28-8"><a href="basketball-shots.html#cb28-8" aria-hidden="true" tabindex="-1"></a>        p <span class="op">=</span> logistic( a <span class="op">+</span>  b <span class="op">.^</span> distances[i] <span class="op">+</span> c<span class="op">*</span>angles[i])</span>
-<span id="cb28-9"><a href="basketball-shots.html#cb28-9" aria-hidden="true" tabindex="-1"></a>        result[i] <span class="op">~</span> Bernoulli(p)</span>
-<span id="cb28-10"><a href="basketball-shots.html#cb28-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
-<span id="cb28-11"><a href="basketball-shots.html#cb28-11" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
-<pre><code>## logistic_regression_exp (generic function with 1 method)</code></pre>
-<div class="sourceCode" id="cb30"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb30-1"><a href="basketball-shots.html#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Sample using HMC.</span></span>
-<span id="cb30-2"><a href="basketball-shots.html#cb30-2" aria-hidden="true" tabindex="-1"></a>chain_exp <span class="op">=</span> mapreduce(c <span class="op">-&gt;</span> sample(logistic_regression_exp(shots.distance[<span class="fl">1</span><span class="op">:</span>n] <span class="op">./</span> maximum(shots.distance[<span class="fl">1</span><span class="op">:</span>n] )<span class="op">,</span> shots.angle[<span class="fl">1</span><span class="op">:</span>n]<span class="op">,</span> shots.result[<span class="fl">1</span><span class="op">:</span>n]<span class="op">,</span> n)<span class="op">,</span> HMC(<span class="fl">0.05</span><span class="op">,</span> <span class="fl">10</span>)<span class="op">,</span> <span class="fl">1500</span>)<span class="op">,</span></span>
-<span id="cb30-3"><a href="basketball-shots.html#cb30-3" aria-hidden="true" tabindex="-1"></a>    chainscat<span class="op">,</span></span>
-<span id="cb30-4"><a href="basketball-shots.html#cb30-4" aria-hidden="true" tabindex="-1"></a>    <span class="fl">1</span><span class="op">:</span><span class="fl">3</span></span>
-<span id="cb30-5"><a href="basketball-shots.html#cb30-5" aria-hidden="true" tabindex="-1"></a>)<span class="op">;</span></span></code></pre></div>
+<div class="sourceCode" id="cb26"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb26-1"><a href="basketball-shots.html#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="pp">@model</span> <span class="fu">logistic_regression_exp</span>(distances, angles, result, n) <span class="op">=</span> <span class="cf">begin</span></span>
+<span id="cb26-2"><a href="basketball-shots.html#cb26-2" aria-hidden="true" tabindex="-1"></a>  N <span class="op">=</span> <span class="fu">length</span>(distances)</span>
+<span id="cb26-3"><a href="basketball-shots.html#cb26-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Set priors.</span></span>
+<span id="cb26-4"><a href="basketball-shots.html#cb26-4" aria-hidden="true" tabindex="-1"></a>    a <span class="op">~</span> <span class="fu">Normal</span>(<span class="fl">0</span>,<span class="fl">1</span>) </span>
+<span id="cb26-5"><a href="basketball-shots.html#cb26-5" aria-hidden="true" tabindex="-1"></a>    b <span class="op">~</span> <span class="fu">Beta</span>(<span class="fl">2</span>,<span class="fl">5</span>)</span>
+<span id="cb26-6"><a href="basketball-shots.html#cb26-6" aria-hidden="true" tabindex="-1"></a>    c <span class="op">~</span> <span class="fu">Normal</span>(<span class="fl">0</span>,<span class="fl">1</span>)</span>
+<span id="cb26-7"><a href="basketball-shots.html#cb26-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>n</span>
+<span id="cb26-8"><a href="basketball-shots.html#cb26-8" aria-hidden="true" tabindex="-1"></a>        p <span class="op">=</span> <span class="fu">logistic</span>( a <span class="op">+</span>  b <span class="op">.^</span> distances[i] <span class="op">+</span> c<span class="op">*</span>angles[i])</span>
+<span id="cb26-9"><a href="basketball-shots.html#cb26-9" aria-hidden="true" tabindex="-1"></a>        result[i] <span class="op">~</span> <span class="fu">Bernoulli</span>(p)</span>
+<span id="cb26-10"><a href="basketball-shots.html#cb26-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">end</span></span>
+<span id="cb26-11"><a href="basketball-shots.html#cb26-11" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
+<pre><code>## logistic_regression_exp (generic function with 2 methods)</code></pre>
+<div class="sourceCode" id="cb28"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb28-1"><a href="basketball-shots.html#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Sample using HMC.</span></span>
+<span id="cb28-2"><a href="basketball-shots.html#cb28-2" aria-hidden="true" tabindex="-1"></a>chain_exp <span class="op">=</span> <span class="fu">mapreduce</span>(c <span class="op">-&gt;</span> <span class="fu">sample</span>(<span class="fu">logistic_regression_exp</span>(shots.distance[<span class="fl">1</span><span class="op">:</span>n] <span class="op">./</span> <span class="fu">maximum</span>(shots.distance[<span class="fl">1</span><span class="op">:</span>n] ), shots.angle[<span class="fl">1</span><span class="op">:</span>n], shots.result[<span class="fl">1</span><span class="op">:</span>n], n), <span class="fu">HMC</span>(<span class="fl">0.05</span>, <span class="fl">10</span>), <span class="fl">1500</span>), chainscat, <span class="fl">1</span><span class="op">:</span><span class="fl">3</span>)</span></code></pre></div>
 <p>Plotting the traceplot we see again that the variable angle has little importance since the parameter <span class="math inline">\(c\)</span>, that can be related to the importance of the angle variable for the probability of scoring, is centered at 0.</p>
-<div class="sourceCode" id="cb31"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb31-1"><a href="basketball-shots.html#cb31-1" aria-hidden="true" tabindex="-1"></a>plot(chain_exp<span class="op">,</span> dpi<span class="op">=</span><span class="fl">55</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb29"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb29-1"><a href="basketball-shots.html#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(chain_exp, dpi<span class="op">=</span><span class="fl">55</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_8_plot_16-J1.png" /><!-- --></p>
-<div class="sourceCode" id="cb32"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb32-1"><a href="basketball-shots.html#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb32-2"><a href="basketball-shots.html#cb32-2" aria-hidden="true" tabindex="-1"></a>p_exp_constant_angle <span class="op">=</span> []</span>
-<span id="cb32-3"><a href="basketball-shots.html#cb32-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>length(chain_exp[<span class="op">:</span>a])</span>
-<span id="cb32-4"><a href="basketball-shots.html#cb32-4" aria-hidden="true" tabindex="-1"></a>        push<span class="op">!</span>(p_exp_constant_angle<span class="op">,</span> logistic.(chain_exp[<span class="op">:</span>a][i] .<span class="op">+</span> chain_exp[<span class="op">:</span>b][i]<span class="op">.^</span>possible_distances .<span class="op">+</span> chain_exp[<span class="op">:</span>c][i]<span class="op">.*</span>π<span class="op">/</span><span class="fl">4</span>))<span class="op">;</span></span>
-<span id="cb32-5"><a href="basketball-shots.html#cb32-5" aria-hidden="true" tabindex="-1"></a>        <span class="kw">end</span></span>
-<span id="cb32-6"><a href="basketball-shots.html#cb32-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb30"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb30-1"><a href="basketball-shots.html#cb30-1" aria-hidden="true" tabindex="-1"></a>p_exp_constant_angle <span class="op">=</span> []</span>
+<span id="cb30-2"><a href="basketball-shots.html#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fu">length</span>(chain_exp[<span class="op">:</span>a])</span>
+<span id="cb30-3"><a href="basketball-shots.html#cb30-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">push!</span>(p_exp_constant_angle, <span class="fu">logistic</span>.(chain_exp[<span class="op">:</span>a][i] <span class="op">.+</span> chain_exp[<span class="op">:</span>b][i]<span class="op">.^</span>possible_distances <span class="op">.+</span> chain_exp[<span class="op">:</span>c][i]<span class="op">.*</span><span class="cn">π</span><span class="op">/</span><span class="fl">4</span>))</span>
+<span id="cb30-4"><a href="basketball-shots.html#cb30-4" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
 <p>Employing the posteriors distributions computed, we plot the probability of scoring as function of the normalized distance and obtain the plot shown below.</p>
-<div class="sourceCode" id="cb33"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb33-1"><a href="basketball-shots.html#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb33-2"><a href="basketball-shots.html#cb33-2" aria-hidden="true" tabindex="-1"></a>plot(possible_distances<span class="op">,</span>p_exp_constant_angle[<span class="fl">1</span>]<span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span><span class="op">,</span> alpha<span class="op">=</span><span class="fl">0.1</span><span class="op">,</span> color<span class="op">=:</span>blue)</span>
-<span id="cb33-3"><a href="basketball-shots.html#cb33-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> <span class="fl">2</span><span class="op">:</span><span class="fl">1000</span></span>
-<span id="cb33-4"><a href="basketball-shots.html#cb33-4" aria-hidden="true" tabindex="-1"></a>        plot<span class="op">!</span>(possible_distances<span class="op">,</span>p_exp_constant_angle[i]<span class="op">,</span> alpha<span class="op">=</span><span class="fl">0.1</span><span class="op">,</span> color<span class="op">=:</span>blue)</span>
-<span id="cb33-5"><a href="basketball-shots.html#cb33-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
-<span id="cb33-6"><a href="basketball-shots.html#cb33-6" aria-hidden="true" tabindex="-1"></a>    xlabel<span class="op">!</span>(<span class="st">&quot;Normalized distance&quot;</span>)</span>
-<span id="cb33-7"><a href="basketball-shots.html#cb33-7" aria-hidden="true" tabindex="-1"></a>    ylabel<span class="op">!</span>(<span class="st">&quot;Probability&quot;</span>)</span>
-<span id="cb33-8"><a href="basketball-shots.html#cb33-8" aria-hidden="true" tabindex="-1"></a>    title<span class="op">!</span>(<span class="st">&quot;Scoring probability vs Normalized distance (angle=45°)&quot;</span>)</span>
-<span id="cb33-9"><a href="basketball-shots.html#cb33-9" aria-hidden="true" tabindex="-1"></a>    current()</span>
-<span id="cb33-10"><a href="basketball-shots.html#cb33-10" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb31"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb31-1"><a href="basketball-shots.html#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(possible_distances,p_exp_constant_angle[<span class="fl">1</span>], legend<span class="op">=</span><span class="cn">false</span>, alpha<span class="op">=</span><span class="fl">0.1</span>, color<span class="op">=:</span>blue);</span>
+<span id="cb31-2"><a href="basketball-shots.html#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="fl">2</span><span class="op">:</span><span class="fl">1000</span></span>
+<span id="cb31-3"><a href="basketball-shots.html#cb31-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">plot!</span>(possible_distances,p_exp_constant_angle[i], alpha<span class="op">=</span><span class="fl">0.1</span>, color<span class="op">=:</span>blue);</span>
+<span id="cb31-4"><a href="basketball-shots.html#cb31-4" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
+<span id="cb31-5"><a href="basketball-shots.html#cb31-5" aria-hidden="true" tabindex="-1"></a><span class="fu">xlabel!</span>(<span class="st">&quot;Normalized distance&quot;</span>);</span>
+<span id="cb31-6"><a href="basketball-shots.html#cb31-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ylabel!</span>(<span class="st">&quot;Probability&quot;</span>);</span>
+<span id="cb31-7"><a href="basketball-shots.html#cb31-7" aria-hidden="true" tabindex="-1"></a><span class="fu">title!</span>(<span class="st">&quot;Scoring probability vs Normalized distance (angle=45°)&quot;</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_8_plot_17-J1.png" /><!-- --></p>
 <p>Given that we have 2 variables, we can plot the mean probability of scoring as function of the two and obtain a surface plot. We show this below.</p>
-<div class="sourceCode" id="cb34"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb34-1"><a href="basketball-shots.html#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span> </span>
-<span id="cb34-2"><a href="basketball-shots.html#cb34-2" aria-hidden="true" tabindex="-1"></a>    angle_ <span class="op">=</span> collect(range(<span class="fl">0</span><span class="op">,</span> stop<span class="op">=</span>π<span class="op">/</span><span class="fl">2</span><span class="op">,</span> length<span class="op">=</span><span class="fl">100</span>))</span>
-<span id="cb34-3"><a href="basketball-shots.html#cb34-3" aria-hidden="true" tabindex="-1"></a>    dist_ <span class="op">=</span> collect(range(<span class="fl">0</span><span class="op">,</span> stop<span class="op">=</span><span class="fl">1</span><span class="op">,</span> length<span class="op">=</span><span class="fl">100</span>))</span>
-<span id="cb34-4"><a href="basketball-shots.html#cb34-4" aria-hidden="true" tabindex="-1"></a>    it <span class="op">=</span> <span class="bu">Iterators</span>.product(angle_<span class="op">,</span> dist_)</span>
-<span id="cb34-5"><a href="basketball-shots.html#cb34-5" aria-hidden="true" tabindex="-1"></a>    matrix <span class="op">=</span> collect.(it)</span>
-<span id="cb34-6"><a href="basketball-shots.html#cb34-6" aria-hidden="true" tabindex="-1"></a>    values <span class="op">=</span> reshape(matrix<span class="op">,</span> (<span class="fl">10000</span><span class="op">,</span> <span class="fl">1</span>))</span>
-<span id="cb34-7"><a href="basketball-shots.html#cb34-7" aria-hidden="true" tabindex="-1"></a>    angle_grid <span class="op">=</span> getindex.(values<span class="op">,</span>[<span class="fl">1</span>])<span class="op">;</span></span>
-<span id="cb34-8"><a href="basketball-shots.html#cb34-8" aria-hidden="true" tabindex="-1"></a>    dist_grid <span class="op">=</span> getindex.(values<span class="op">,</span>[<span class="fl">2</span>])<span class="op">;</span></span>
-<span id="cb34-9"><a href="basketball-shots.html#cb34-9" aria-hidden="true" tabindex="-1"></a>    z <span class="op">=</span> logistic.(mean(chain_exp[<span class="op">:</span>a]) .<span class="op">+</span> mean(chain_exp[<span class="op">:</span>b])<span class="op">.^</span>dist_grid .<span class="op">+</span> mean(chain_exp[<span class="op">:</span>c])<span class="op">.*</span>angle_grid)<span class="op">;</span></span>
-<span id="cb34-10"><a href="basketball-shots.html#cb34-10" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span><span class="op">;</span></span></code></pre></div>
-<div class="sourceCode" id="cb35"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb35-1"><a href="basketball-shots.html#cb35-1" aria-hidden="true" tabindex="-1"></a>plot(load(<span class="st">&quot;./08_basketball_shots/images/img1.png&quot;</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb32"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb32-1"><a href="basketball-shots.html#cb32-1" aria-hidden="true" tabindex="-1"></a>angle_ <span class="op">=</span> <span class="fu">collect</span>(<span class="fu">range</span>(<span class="fl">0</span>, stop<span class="op">=</span><span class="cn">π</span><span class="op">/</span><span class="fl">2</span>, length<span class="op">=</span><span class="fl">100</span>))</span>
+<span id="cb32-2"><a href="basketball-shots.html#cb32-2" aria-hidden="true" tabindex="-1"></a>dist_ <span class="op">=</span> <span class="fu">collect</span>(<span class="fu">range</span>(<span class="fl">0</span>, stop<span class="op">=</span><span class="fl">1</span>, length<span class="op">=</span><span class="fl">100</span>))</span>
+<span id="cb32-3"><a href="basketball-shots.html#cb32-3" aria-hidden="true" tabindex="-1"></a>it <span class="op">=</span> <span class="bu">Iterators</span>.<span class="fu">product</span>(angle_, dist_)</span>
+<span id="cb32-4"><a href="basketball-shots.html#cb32-4" aria-hidden="true" tabindex="-1"></a>matrix <span class="op">=</span> <span class="fu">collect</span>.(it)</span>
+<span id="cb32-5"><a href="basketball-shots.html#cb32-5" aria-hidden="true" tabindex="-1"></a>values <span class="op">=</span> <span class="fu">reshape</span>(matrix, (<span class="fl">10000</span>, <span class="fl">1</span>))</span>
+<span id="cb32-6"><a href="basketball-shots.html#cb32-6" aria-hidden="true" tabindex="-1"></a>angle_grid <span class="op">=</span> <span class="fu">getindex</span>.(values,[<span class="fl">1</span>])</span>
+<span id="cb32-7"><a href="basketball-shots.html#cb32-7" aria-hidden="true" tabindex="-1"></a>dist_grid <span class="op">=</span> <span class="fu">getindex</span>.(values,[<span class="fl">2</span>])</span>
+<span id="cb32-8"><a href="basketball-shots.html#cb32-8" aria-hidden="true" tabindex="-1"></a>z <span class="op">=</span> <span class="fu">logistic</span>.(<span class="fu">mean</span>(chain_exp[<span class="op">:</span>a]) <span class="op">.+</span> <span class="fu">mean</span>(chain_exp[<span class="op">:</span>b])<span class="op">.^</span>dist_grid <span class="op">.+</span> <span class="fu">mean</span>(chain_exp[<span class="op">:</span>c])<span class="op">.*</span>angle_grid)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_8_plot_18-J1.png" /><!-- --></p>
 <p>The plot show the behaviour expected, an increasing probability of scoring as we get near the hoop. We also see that there is almost no variation of the probability with the angle.</p>
 </div>
 </div>
-<div id="does-the-period-affect-the-probability-of-scoring" class="section level2" number="8.4">
-<h2><span class="header-section-number">8.4</span> Does the Period affect the probability of scoring?</h2>
+<div id="does-the-period-affect-the-probability-of-scoring" class="section level2 hasAnchor" number="8.4">
+<h2><span class="header-section-number">8.4</span> Does the Period affect the probability of scoring?<a href="basketball-shots.html#does-the-period-affect-the-probability-of-scoring" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Now we will try to answer this question. We propose then a model, and calculate the posterior for its parameters with data of one of each of the four possible periods. We define the same model for all four periods. Also, we don’t take into account now the angle variable, since we have seen before that this variable is of little importance.</p>
 <p>We filter then our data by its period and proceed to estimate our posterior distributions.</p>
-<div class="sourceCode" id="cb36"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb36-1"><a href="basketball-shots.html#cb36-1" aria-hidden="true" tabindex="-1"></a>shots_period1<span class="op">=</span> filter(x<span class="op">-&gt;</span>x.period<span class="op">==</span><span class="fl">1</span><span class="op">,</span> shots)<span class="op">;</span></span></code></pre></div>
-<div class="sourceCode" id="cb37"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb37-1"><a href="basketball-shots.html#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="pp">@model</span> logistic_regression_period(distances<span class="op">,</span> result<span class="op">,</span>n) <span class="op">=</span> <span class="kw">begin</span></span>
-<span id="cb37-2"><a href="basketball-shots.html#cb37-2" aria-hidden="true" tabindex="-1"></a>  N <span class="op">=</span> length(distances)</span>
-<span id="cb37-3"><a href="basketball-shots.html#cb37-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Set priors.</span></span>
-<span id="cb37-4"><a href="basketball-shots.html#cb37-4" aria-hidden="true" tabindex="-1"></a>    a <span class="op">~</span> Normal(<span class="fl">0</span><span class="op">,</span><span class="fl">1</span>) </span>
-<span id="cb37-5"><a href="basketball-shots.html#cb37-5" aria-hidden="true" tabindex="-1"></a>    b <span class="op">~</span> Beta(<span class="fl">2</span><span class="op">,</span><span class="fl">5</span>)</span>
-<span id="cb37-6"><a href="basketball-shots.html#cb37-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>n</span>
-<span id="cb37-7"><a href="basketball-shots.html#cb37-7" aria-hidden="true" tabindex="-1"></a>        p <span class="op">=</span> logistic( a <span class="op">+</span>  b <span class="op">.^</span> distances[i])</span>
-<span id="cb37-8"><a href="basketball-shots.html#cb37-8" aria-hidden="true" tabindex="-1"></a>        result[i] <span class="op">~</span> Bernoulli(p)</span>
-<span id="cb37-9"><a href="basketball-shots.html#cb37-9" aria-hidden="true" tabindex="-1"></a>            <span class="kw">end</span></span>
-<span id="cb37-10"><a href="basketball-shots.html#cb37-10" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
-<pre><code>## logistic_regression_period (generic function with 1 method)</code></pre>
-<div class="sourceCode" id="cb39"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb39-1"><a href="basketball-shots.html#cb39-1" aria-hidden="true" tabindex="-1"></a>n_ <span class="op">=</span> <span class="fl">500</span> </span>
-<span id="cb39-2"><a href="basketball-shots.html#cb39-2" aria-hidden="true" tabindex="-1"></a><span class="op">;</span></span></code></pre></div>
+<div class="sourceCode" id="cb33"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb33-1"><a href="basketball-shots.html#cb33-1" aria-hidden="true" tabindex="-1"></a>shots_period1<span class="op">=</span> <span class="fu">filter</span>(x <span class="op">-&gt;</span> x.period <span class="op">==</span> <span class="fl">1</span>, shots)</span></code></pre></div>
+<div class="sourceCode" id="cb34"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb34-1"><a href="basketball-shots.html#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="pp">@model</span> <span class="fu">logistic_regression_period</span>(distances, result,n) <span class="op">=</span> <span class="cf">begin</span></span>
+<span id="cb34-2"><a href="basketball-shots.html#cb34-2" aria-hidden="true" tabindex="-1"></a>  N <span class="op">=</span> <span class="fu">length</span>(distances)</span>
+<span id="cb34-3"><a href="basketball-shots.html#cb34-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Set priors.</span></span>
+<span id="cb34-4"><a href="basketball-shots.html#cb34-4" aria-hidden="true" tabindex="-1"></a>    a <span class="op">~</span> <span class="fu">Normal</span>(<span class="fl">0</span>,<span class="fl">1</span>) </span>
+<span id="cb34-5"><a href="basketball-shots.html#cb34-5" aria-hidden="true" tabindex="-1"></a>    b <span class="op">~</span> <span class="fu">Beta</span>(<span class="fl">2</span>,<span class="fl">5</span>)</span>
+<span id="cb34-6"><a href="basketball-shots.html#cb34-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>n</span>
+<span id="cb34-7"><a href="basketball-shots.html#cb34-7" aria-hidden="true" tabindex="-1"></a>        p <span class="op">=</span> <span class="fu">logistic</span>( a <span class="op">+</span>  b <span class="op">.^</span> distances[i])</span>
+<span id="cb34-8"><a href="basketball-shots.html#cb34-8" aria-hidden="true" tabindex="-1"></a>        result[i] <span class="op">~</span> <span class="fu">Bernoulli</span>(p)</span>
+<span id="cb34-9"><a href="basketball-shots.html#cb34-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">end</span></span>
+<span id="cb34-10"><a href="basketball-shots.html#cb34-10" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb35"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb35-1"><a href="basketball-shots.html#cb35-1" aria-hidden="true" tabindex="-1"></a>n_ <span class="op">=</span> <span class="fl">500</span> </span></code></pre></div>
+<div class="sourceCode" id="cb36"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb36-1"><a href="basketball-shots.html#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Sample using HMC.</span></span>
+<span id="cb36-2"><a href="basketball-shots.html#cb36-2" aria-hidden="true" tabindex="-1"></a>chain_period1 <span class="op">=</span> <span class="fu">mapreduce</span>(c <span class="op">-&gt;</span> <span class="fu">sample</span>(<span class="fu">logistic_regression_period</span>(shots_period1.distance[<span class="fl">1</span><span class="op">:</span>n_] <span class="op">./</span> <span class="fu">maximum</span>(shots_period1.distance[<span class="fl">1</span><span class="op">:</span>n_] ),shots_period1.result[<span class="fl">1</span><span class="op">:</span>n_], n_), <span class="fu">HMC</span>(<span class="fl">0.05</span>, <span class="fl">10</span>), <span class="fl">1500</span>), chainscat, <span class="fl">1</span><span class="op">:</span><span class="fl">3</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb37"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb37-1"><a href="basketball-shots.html#cb37-1" aria-hidden="true" tabindex="-1"></a>shots_period2 <span class="op">=</span> <span class="fu">filter</span>(x <span class="op">-&gt;</span> x.period <span class="op">==</span> <span class="fl">2</span>, shots)</span></code></pre></div>
+<div class="sourceCode" id="cb38"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb38-1"><a href="basketball-shots.html#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Sample using HMC.</span></span>
+<span id="cb38-2"><a href="basketball-shots.html#cb38-2" aria-hidden="true" tabindex="-1"></a>chain_period2 <span class="op">=</span> <span class="fu">mapreduce</span>(c <span class="op">-&gt;</span> <span class="fu">sample</span>(<span class="fu">logistic_regression_period</span>(shots_period2.distance[<span class="fl">1</span><span class="op">:</span>n_] <span class="op">./</span> <span class="fu">maximum</span>(shots_period2.distance[<span class="fl">1</span><span class="op">:</span>n_] ), shots_period2.result[<span class="fl">1</span><span class="op">:</span>n_], n_), <span class="fu">HMC</span>(<span class="fl">0.05</span>, <span class="fl">10</span>), <span class="fl">1500</span>),</span>
+<span id="cb38-3"><a href="basketball-shots.html#cb38-3" aria-hidden="true" tabindex="-1"></a>    chainscat,</span>
+<span id="cb38-4"><a href="basketball-shots.html#cb38-4" aria-hidden="true" tabindex="-1"></a>    <span class="fl">1</span><span class="op">:</span><span class="fl">3</span></span>
+<span id="cb38-5"><a href="basketball-shots.html#cb38-5" aria-hidden="true" tabindex="-1"></a>);</span></code></pre></div>
+<div class="sourceCode" id="cb39"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb39-1"><a href="basketball-shots.html#cb39-1" aria-hidden="true" tabindex="-1"></a>shots_period3<span class="op">=</span> <span class="fu">filter</span>(x<span class="op">-&gt;</span>x.period<span class="op">==</span><span class="fl">3</span>, shots);</span></code></pre></div>
 <div class="sourceCode" id="cb40"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb40-1"><a href="basketball-shots.html#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Sample using HMC.</span></span>
-<span id="cb40-2"><a href="basketball-shots.html#cb40-2" aria-hidden="true" tabindex="-1"></a>chain_period1 <span class="op">=</span> mapreduce(c <span class="op">-&gt;</span> sample(logistic_regression_period(shots_period1.distance[<span class="fl">1</span><span class="op">:</span>n_] <span class="op">./</span> maximum(shots_period1.distance[<span class="fl">1</span><span class="op">:</span>n_] )<span class="op">,</span>shots_period1.result[<span class="fl">1</span><span class="op">:</span>n_]<span class="op">,</span> n_)<span class="op">,</span> HMC(<span class="fl">0.05</span><span class="op">,</span> <span class="fl">10</span>)<span class="op">,</span> <span class="fl">1500</span>)<span class="op">,</span></span>
-<span id="cb40-3"><a href="basketball-shots.html#cb40-3" aria-hidden="true" tabindex="-1"></a>    chainscat<span class="op">,</span></span>
+<span id="cb40-2"><a href="basketball-shots.html#cb40-2" aria-hidden="true" tabindex="-1"></a>chain_period3 <span class="op">=</span> <span class="fu">mapreduce</span>(c <span class="op">-&gt;</span> <span class="fu">sample</span>(<span class="fu">logistic_regression_period</span>(shots_period3.distance[<span class="fl">1</span><span class="op">:</span>n_] <span class="op">./</span> <span class="fu">maximum</span>(shots_period3.distance[<span class="fl">1</span><span class="op">:</span>n_] ), shots_period3.result[<span class="fl">1</span><span class="op">:</span>n_], n_), <span class="fu">HMC</span>(<span class="fl">0.05</span>, <span class="fl">10</span>), <span class="fl">1500</span>),</span>
+<span id="cb40-3"><a href="basketball-shots.html#cb40-3" aria-hidden="true" tabindex="-1"></a>    chainscat,</span>
 <span id="cb40-4"><a href="basketball-shots.html#cb40-4" aria-hidden="true" tabindex="-1"></a>    <span class="fl">1</span><span class="op">:</span><span class="fl">3</span></span>
-<span id="cb40-5"><a href="basketball-shots.html#cb40-5" aria-hidden="true" tabindex="-1"></a>)<span class="op">;</span></span></code></pre></div>
-<div class="sourceCode" id="cb41"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb41-1"><a href="basketball-shots.html#cb41-1" aria-hidden="true" tabindex="-1"></a>shots_period2<span class="op">=</span> filter(x<span class="op">-&gt;</span>x.period<span class="op">==</span><span class="fl">2</span><span class="op">,</span> shots)<span class="op">;</span></span></code></pre></div>
+<span id="cb40-5"><a href="basketball-shots.html#cb40-5" aria-hidden="true" tabindex="-1"></a>);</span></code></pre></div>
+<div class="sourceCode" id="cb41"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb41-1"><a href="basketball-shots.html#cb41-1" aria-hidden="true" tabindex="-1"></a>shots_period4 <span class="op">=</span> <span class="fu">filter</span>(x<span class="op">-&gt;</span>x.period<span class="op">==</span><span class="fl">4</span>, shots);</span></code></pre></div>
 <div class="sourceCode" id="cb42"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb42-1"><a href="basketball-shots.html#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Sample using HMC.</span></span>
-<span id="cb42-2"><a href="basketball-shots.html#cb42-2" aria-hidden="true" tabindex="-1"></a>chain_period2 <span class="op">=</span> mapreduce(c <span class="op">-&gt;</span> sample(logistic_regression_period(shots_period2.distance[<span class="fl">1</span><span class="op">:</span>n_] <span class="op">./</span> maximum(shots_period2.distance[<span class="fl">1</span><span class="op">:</span>n_] )<span class="op">,</span> shots_period2.result[<span class="fl">1</span><span class="op">:</span>n_]<span class="op">,</span> n_)<span class="op">,</span> HMC(<span class="fl">0.05</span><span class="op">,</span> <span class="fl">10</span>)<span class="op">,</span> <span class="fl">1500</span>)<span class="op">,</span></span>
-<span id="cb42-3"><a href="basketball-shots.html#cb42-3" aria-hidden="true" tabindex="-1"></a>    chainscat<span class="op">,</span></span>
+<span id="cb42-2"><a href="basketball-shots.html#cb42-2" aria-hidden="true" tabindex="-1"></a>chain_period4 <span class="op">=</span> <span class="fu">mapreduce</span>(c <span class="op">-&gt;</span> <span class="fu">sample</span>(<span class="fu">logistic_regression_period</span>(shots_period4.distance[<span class="fl">1</span><span class="op">:</span>n_] <span class="op">./</span> <span class="fu">maximum</span>(shots_period4.distance[<span class="fl">1</span><span class="op">:</span>n_]), shots_period4.result[<span class="fl">1</span><span class="op">:</span>n_], n_), <span class="fu">HMC</span>(<span class="fl">0.05</span>, <span class="fl">10</span>), <span class="fl">1500</span>),</span>
+<span id="cb42-3"><a href="basketball-shots.html#cb42-3" aria-hidden="true" tabindex="-1"></a>    chainscat,</span>
 <span id="cb42-4"><a href="basketball-shots.html#cb42-4" aria-hidden="true" tabindex="-1"></a>    <span class="fl">1</span><span class="op">:</span><span class="fl">3</span></span>
-<span id="cb42-5"><a href="basketball-shots.html#cb42-5" aria-hidden="true" tabindex="-1"></a>)<span class="op">;</span></span></code></pre></div>
-<div class="sourceCode" id="cb43"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb43-1"><a href="basketball-shots.html#cb43-1" aria-hidden="true" tabindex="-1"></a>shots_period3<span class="op">=</span> filter(x<span class="op">-&gt;</span>x.period<span class="op">==</span><span class="fl">3</span><span class="op">,</span> shots)<span class="op">;</span></span></code></pre></div>
-<div class="sourceCode" id="cb44"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb44-1"><a href="basketball-shots.html#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Sample using HMC.</span></span>
-<span id="cb44-2"><a href="basketball-shots.html#cb44-2" aria-hidden="true" tabindex="-1"></a>chain_period3 <span class="op">=</span> mapreduce(c <span class="op">-&gt;</span> sample(logistic_regression_period(shots_period3.distance[<span class="fl">1</span><span class="op">:</span>n_] <span class="op">./</span> maximum(shots_period3.distance[<span class="fl">1</span><span class="op">:</span>n_] )<span class="op">,</span> shots_period3.result[<span class="fl">1</span><span class="op">:</span>n_]<span class="op">,</span> n_)<span class="op">,</span> HMC(<span class="fl">0.05</span><span class="op">,</span> <span class="fl">10</span>)<span class="op">,</span> <span class="fl">1500</span>)<span class="op">,</span></span>
-<span id="cb44-3"><a href="basketball-shots.html#cb44-3" aria-hidden="true" tabindex="-1"></a>    chainscat<span class="op">,</span></span>
-<span id="cb44-4"><a href="basketball-shots.html#cb44-4" aria-hidden="true" tabindex="-1"></a>    <span class="fl">1</span><span class="op">:</span><span class="fl">3</span></span>
-<span id="cb44-5"><a href="basketball-shots.html#cb44-5" aria-hidden="true" tabindex="-1"></a>)<span class="op">;</span></span></code></pre></div>
-<div class="sourceCode" id="cb45"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb45-1"><a href="basketball-shots.html#cb45-1" aria-hidden="true" tabindex="-1"></a>shots_period4 <span class="op">=</span> filter(x<span class="op">-&gt;</span>x.period<span class="op">==</span><span class="fl">4</span><span class="op">,</span> shots)<span class="op">;</span></span></code></pre></div>
-<div class="sourceCode" id="cb46"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb46-1"><a href="basketball-shots.html#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Sample using HMC.</span></span>
-<span id="cb46-2"><a href="basketball-shots.html#cb46-2" aria-hidden="true" tabindex="-1"></a>chain_period4 <span class="op">=</span> mapreduce(c <span class="op">-&gt;</span> sample(logistic_regression_period(shots_period4.distance[<span class="fl">1</span><span class="op">:</span>n_] <span class="op">./</span> maximum(shots_period4.distance[<span class="fl">1</span><span class="op">:</span>n_])<span class="op">,</span> shots_period4.result[<span class="fl">1</span><span class="op">:</span>n_]<span class="op">,</span> n_)<span class="op">,</span> HMC(<span class="fl">0.05</span><span class="op">,</span> <span class="fl">10</span>)<span class="op">,</span> <span class="fl">1500</span>)<span class="op">,</span></span>
-<span id="cb46-3"><a href="basketball-shots.html#cb46-3" aria-hidden="true" tabindex="-1"></a>    chainscat<span class="op">,</span></span>
-<span id="cb46-4"><a href="basketball-shots.html#cb46-4" aria-hidden="true" tabindex="-1"></a>    <span class="fl">1</span><span class="op">:</span><span class="fl">3</span></span>
-<span id="cb46-5"><a href="basketball-shots.html#cb46-5" aria-hidden="true" tabindex="-1"></a>)<span class="op">;</span></span></code></pre></div>
-<div class="sourceCode" id="cb47"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb47-1"><a href="basketball-shots.html#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb47-2"><a href="basketball-shots.html#cb47-2" aria-hidden="true" tabindex="-1"></a>p_period1 <span class="op">=</span> logistic.(mean(chain_period1[<span class="op">:</span>a]) .<span class="op">+</span> mean(chain_period1[<span class="op">:</span>b])<span class="op">.^</span>possible_distances )</span>
-<span id="cb47-3"><a href="basketball-shots.html#cb47-3" aria-hidden="true" tabindex="-1"></a>p_period1_std <span class="op">=</span> logistic.((mean(chain_period1[<span class="op">:</span>a]).<span class="op">+</span>std(chain_period1[<span class="op">:</span>a])) .<span class="op">+</span> (mean(chain_period1[<span class="op">:</span>b]).<span class="op">+</span>std(chain_period1[<span class="op">:</span>a]))<span class="op">.^</span>possible_distances)</span>
-<span id="cb47-4"><a href="basketball-shots.html#cb47-4" aria-hidden="true" tabindex="-1"></a>p_period2 <span class="op">=</span> logistic.(mean(chain_period2[<span class="op">:</span>a]) .<span class="op">+</span> mean(chain_period2[<span class="op">:</span>b])<span class="op">.^</span>possible_distances )</span>
-<span id="cb47-5"><a href="basketball-shots.html#cb47-5" aria-hidden="true" tabindex="-1"></a>p_period2_std <span class="op">=</span> logistic.((mean(chain_period2[<span class="op">:</span>a]).<span class="op">+</span>std(chain_period2[<span class="op">:</span>a])) .<span class="op">+</span> (mean(chain_period2[<span class="op">:</span>b]).<span class="op">+</span>std(chain_period2[<span class="op">:</span>a]))<span class="op">.^</span>possible_distances)</span>
-<span id="cb47-6"><a href="basketball-shots.html#cb47-6" aria-hidden="true" tabindex="-1"></a>p_period3 <span class="op">=</span> logistic.(mean(chain_period3[<span class="op">:</span>a]) .<span class="op">+</span> mean(chain_period3[<span class="op">:</span>b])<span class="op">.^</span>possible_distances)</span>
-<span id="cb47-7"><a href="basketball-shots.html#cb47-7" aria-hidden="true" tabindex="-1"></a>p_period3_std <span class="op">=</span> logistic.((mean(chain_period3[<span class="op">:</span>a]).<span class="op">+</span>std(chain_period3[<span class="op">:</span>a])) .<span class="op">+</span> (mean(chain_period3[<span class="op">:</span>b]).<span class="op">+</span>std(chain_period3[<span class="op">:</span>a]))<span class="op">.^</span>possible_distances)</span>
-<span id="cb47-8"><a href="basketball-shots.html#cb47-8" aria-hidden="true" tabindex="-1"></a>p_period4 <span class="op">=</span> logistic.(mean(chain_period4[<span class="op">:</span>a]) .<span class="op">+</span> mean(chain_period4[<span class="op">:</span>b])<span class="op">.^</span>possible_distances )</span>
-<span id="cb47-9"><a href="basketball-shots.html#cb47-9" aria-hidden="true" tabindex="-1"></a>p_period4_std <span class="op">=</span> logistic.((mean(chain_period4[<span class="op">:</span>a]).<span class="op">+</span>std(chain_period4[<span class="op">:</span>a])) .<span class="op">+</span> (mean(chain_period4[<span class="op">:</span>b]).<span class="op">+</span>std(chain_period4[<span class="op">:</span>a]))<span class="op">.^</span>possible_distances )</span>
-<span id="cb47-10"><a href="basketball-shots.html#cb47-10" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span><span class="op">;</span></span></code></pre></div>
+<span id="cb42-5"><a href="basketball-shots.html#cb42-5" aria-hidden="true" tabindex="-1"></a>);</span></code></pre></div>
+<div class="sourceCode" id="cb43"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb43-1"><a href="basketball-shots.html#cb43-1" aria-hidden="true" tabindex="-1"></a>p_period1 <span class="op">=</span> <span class="fu">logistic</span>.(<span class="fu">mean</span>(chain_period1[<span class="op">:</span>a]) <span class="op">.+</span> <span class="fu">mean</span>(chain_period1[<span class="op">:</span>b])<span class="op">.^</span>possible_distances )</span>
+<span id="cb43-2"><a href="basketball-shots.html#cb43-2" aria-hidden="true" tabindex="-1"></a>p_period1_std <span class="op">=</span> <span class="fu">logistic</span>.((<span class="fu">mean</span>(chain_period1[<span class="op">:</span>a])<span class="op">.+</span><span class="fu">std</span>(chain_period1[<span class="op">:</span>a])) <span class="op">.+</span> (<span class="fu">mean</span>(chain_period1[<span class="op">:</span>b])<span class="op">.+</span><span class="fu">std</span>(chain_period1[<span class="op">:</span>a]))<span class="op">.^</span>possible_distances)</span>
+<span id="cb43-3"><a href="basketball-shots.html#cb43-3" aria-hidden="true" tabindex="-1"></a>p_period2 <span class="op">=</span> <span class="fu">logistic</span>.(<span class="fu">mean</span>(chain_period2[<span class="op">:</span>a]) <span class="op">.+</span> <span class="fu">mean</span>(chain_period2[<span class="op">:</span>b])<span class="op">.^</span>possible_distances )</span>
+<span id="cb43-4"><a href="basketball-shots.html#cb43-4" aria-hidden="true" tabindex="-1"></a>p_period2_std <span class="op">=</span> <span class="fu">logistic</span>.((<span class="fu">mean</span>(chain_period2[<span class="op">:</span>a])<span class="op">.+</span><span class="fu">std</span>(chain_period2[<span class="op">:</span>a])) <span class="op">.+</span> (<span class="fu">mean</span>(chain_period2[<span class="op">:</span>b])<span class="op">.+</span><span class="fu">std</span>(chain_period2[<span class="op">:</span>a]))<span class="op">.^</span>possible_distances)</span>
+<span id="cb43-5"><a href="basketball-shots.html#cb43-5" aria-hidden="true" tabindex="-1"></a>p_period3 <span class="op">=</span> <span class="fu">logistic</span>.(<span class="fu">mean</span>(chain_period3[<span class="op">:</span>a]) <span class="op">.+</span> <span class="fu">mean</span>(chain_period3[<span class="op">:</span>b])<span class="op">.^</span>possible_distances)</span>
+<span id="cb43-6"><a href="basketball-shots.html#cb43-6" aria-hidden="true" tabindex="-1"></a>p_period3_std <span class="op">=</span> <span class="fu">logistic</span>.((<span class="fu">mean</span>(chain_period3[<span class="op">:</span>a])<span class="op">.+</span><span class="fu">std</span>(chain_period3[<span class="op">:</span>a])) <span class="op">.+</span> (<span class="fu">mean</span>(chain_period3[<span class="op">:</span>b])<span class="op">.+</span><span class="fu">std</span>(chain_period3[<span class="op">:</span>a]))<span class="op">.^</span>possible_distances)</span>
+<span id="cb43-7"><a href="basketball-shots.html#cb43-7" aria-hidden="true" tabindex="-1"></a>p_period4 <span class="op">=</span> <span class="fu">logistic</span>.(<span class="fu">mean</span>(chain_period4[<span class="op">:</span>a]) <span class="op">.+</span> <span class="fu">mean</span>(chain_period4[<span class="op">:</span>b])<span class="op">.^</span>possible_distances )</span>
+<span id="cb43-8"><a href="basketball-shots.html#cb43-8" aria-hidden="true" tabindex="-1"></a>p_period4_std <span class="op">=</span> <span class="fu">logistic</span>.((<span class="fu">mean</span>(chain_period4[<span class="op">:</span>a])<span class="op">.+</span><span class="fu">std</span>(chain_period4[<span class="op">:</span>a])) <span class="op">.+</span> (<span class="fu">mean</span>(chain_period4[<span class="op">:</span>b])<span class="op">.+</span><span class="fu">std</span>(chain_period4[<span class="op">:</span>a]))<span class="op">.^</span>possible_distances )</span></code></pre></div>
 <p>We plot now for each period the probability of scoring for each period, each mean and one standard deviation from it.</p>
-<div class="sourceCode" id="cb48"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb48-1"><a href="basketball-shots.html#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb48-2"><a href="basketball-shots.html#cb48-2" aria-hidden="true" tabindex="-1"></a>    plot(possible_distances<span class="op">,</span> p_period4<span class="op">,</span>ribbon<span class="op">=</span>p_period4_std.<span class="op">-</span>p_period4<span class="op">,</span>  color<span class="op">=:</span>magenta<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;period4&quot;</span><span class="op">,</span> fillalpha<span class="op">=</span><span class="fl">.3</span><span class="op">,</span> ylim<span class="op">=</span>(<span class="fl">0</span><span class="op">,</span><span class="fl">0.6</span>))</span>
-<span id="cb48-3"><a href="basketball-shots.html#cb48-3" aria-hidden="true" tabindex="-1"></a>    plot<span class="op">!</span>(possible_distances<span class="op">,</span> p_period2<span class="op">,</span> color<span class="op">=:</span>green<span class="op">,</span> ribbon<span class="op">=</span>p_period2_std.<span class="op">-</span>p_period2<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;period2&quot;</span><span class="op">,</span> fillalpha<span class="op">=</span><span class="fl">.3</span>)</span>
-<span id="cb48-4"><a href="basketball-shots.html#cb48-4" aria-hidden="true" tabindex="-1"></a>    plot<span class="op">!</span>(possible_distances<span class="op">,</span> p_period3<span class="op">,</span> color<span class="op">=:</span>orange<span class="op">,</span> ribbon<span class="op">=</span>p_period3_std.<span class="op">-</span>p_period3<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;period3&quot;</span><span class="op">,</span>fillalpha<span class="op">=</span><span class="fl">.3</span>)</span>
-<span id="cb48-5"><a href="basketball-shots.html#cb48-5" aria-hidden="true" tabindex="-1"></a>        plot<span class="op">!</span>(possible_distances<span class="op">,</span> p_period1<span class="op">,</span>ribbon<span class="op">=</span>p_period1_std.<span class="op">-</span>p_period1<span class="op">,</span> color<span class="op">=:</span>blue<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;period1&quot;</span><span class="op">,</span> fillalpha<span class="op">=</span><span class="fl">.3</span>)</span>
-<span id="cb48-6"><a href="basketball-shots.html#cb48-6" aria-hidden="true" tabindex="-1"></a>    xlabel<span class="op">!</span>(<span class="st">&quot;Normalized distance&quot;</span>)</span>
-<span id="cb48-7"><a href="basketball-shots.html#cb48-7" aria-hidden="true" tabindex="-1"></a>    ylabel<span class="op">!</span>(<span class="st">&quot;Scoring probability&quot;</span>)</span>
-<span id="cb48-8"><a href="basketball-shots.html#cb48-8" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb48-9"><a href="basketball-shots.html#cb48-9" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb44"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb44-1"><a href="basketball-shots.html#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(possible_distances, p_period4,ribbon<span class="op">=</span>p_period4_std<span class="op">.-</span>p_period4,  color<span class="op">=:</span>magenta, label<span class="op">=</span><span class="st">&quot;period4&quot;</span>, fillalpha<span class="op">=</span><span class="fl">.3</span>, ylim<span class="op">=</span>(<span class="fl">0</span>,<span class="fl">0.6</span>));</span>
+<span id="cb44-2"><a href="basketball-shots.html#cb44-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot!</span>(possible_distances, p_period2, color<span class="op">=:</span>green, ribbon<span class="op">=</span>p_period2_std<span class="op">.-</span>p_period2, label<span class="op">=</span><span class="st">&quot;period2&quot;</span>, fillalpha<span class="op">=</span><span class="fl">.3</span>);</span>
+<span id="cb44-3"><a href="basketball-shots.html#cb44-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot!</span>(possible_distances, p_period3, color<span class="op">=:</span>orange, ribbon<span class="op">=</span>p_period3_std<span class="op">.-</span>p_period3, label<span class="op">=</span><span class="st">&quot;period3&quot;</span>,fillalpha<span class="op">=</span><span class="fl">.3</span>);</span>
+<span id="cb44-4"><a href="basketball-shots.html#cb44-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot!</span>(possible_distances, p_period1,ribbon<span class="op">=</span>p_period1_std<span class="op">.-</span>p_period1, color<span class="op">=:</span>blue, label<span class="op">=</span><span class="st">&quot;period1&quot;</span>, fillalpha<span class="op">=</span><span class="fl">.3</span>);</span>
+<span id="cb44-5"><a href="basketball-shots.html#cb44-5" aria-hidden="true" tabindex="-1"></a><span class="fu">xlabel!</span>(<span class="st">&quot;Normalized distance&quot;</span>);</span>
+<span id="cb44-6"><a href="basketball-shots.html#cb44-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ylabel!</span>(<span class="st">&quot;Scoring probability&quot;</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_8_plot_19-J1.png" /><!-- --></p>
 <p>Finally, we see that for the periods 1 and 4, the first and the last periods, the probabity of scoring is slightly higher than the other two periods, meaning that players are somewhat better scoring in those periods.</p>
 </div>
-<div id="summary-6" class="section level2" number="8.5">
-<h2><span class="header-section-number">8.5</span> Summary</h2>
+<div id="summary-6" class="section level2 hasAnchor" number="8.5">
+<h2><span class="header-section-number">8.5</span> Summary<a href="basketball-shots.html#summary-6" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>In this chapter, we used the NBA shooting data of the season 2006-2007 to analyze how the scoring probability is affected by some variables, such as the distance from the hoop and the angle of shooting.</p>
 <p>First, we inspected the data by plotting a heatplot of all the shots made and making histograms of the ones that scored.
 As our goal was to study the probability of scoring, which is a Bernoulli trial situation, we decided to use a Bernoulli model.
@@ -691,7 +612,6 @@ To gain a better understanding of the sampling process, we made a traceplot that
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -710,6 +630,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -730,6 +651,10 @@ gitbook.start({
 "text": null
 },
 "download": ["data_science_in_julia_for_hackers.pdf", "data_science_in_julia_for_hackers.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }
@@ -743,7 +668,7 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
         src = src.replace(/^https?:/, '');
