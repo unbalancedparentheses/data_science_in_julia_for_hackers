@@ -1,6 +1,5 @@
 # Basketball shots
 
-
 ```{julia chap_8_libraries, cache = TRUE, results = FALSE, echo = FALSE}
 cd("./08_basketball_shots/") 
 import Pkg
@@ -23,33 +22,46 @@ using StatsFuns
 Random.seed!(1234)
 ```
 
- When playing basketball we can ask ourself: how likely is it to score given a position in the court? To answer this question we are going to use 
- data from NBA games from the season 2006 - 2007. We will consider all types of shots. 
-
-```{julia, results = FALSE}
-shots = CSV.read("./08_basketball_shots/data/seasons/shots_season_2006_2007.csv", DataFrame)
-shots[!, :distance] = sqrt.( shots.x .^ 2 + shots.y .^ 2)
-shots[!, :angle] = atan.( shots.y ./ shots.x )
-filter!(x -> x.distance > 1, shots)
-```
+When playing basketball we can ask ourselves: how likely is it to score given a position in the court? To answer this question we are going to use 
+data from NBA games from the 2006 - 2007 season. Lets load the data into our Julia session and inspect the column names:
 
 ```{julia}
-first(shots)
+shots = CSV.read("./08_basketball_shots/data/seasons/shots_season_2006_2007.csv", DataFrame);
+names(shots)
 ```
 
-But how do we interpret the data?
+The columns of our dataset are the following:
 
-Below we show a sketch of a basketball court, its dimensions and how to interpret the data in the table.
+- result: Stores a 1 if the shot was successful and a 0 otherwise.
+
+- x: The x-component of the position of the player when the shot was made.
+
+- y: The y-component of the position of the player when the shot was made.
+
+- period: Indicates in which of the four periods of a basketball game the shot was done.
+
+- time: The exact time the shot was made.
+
+Below we show a sketch of a basketball court, its dimensions and how to interpret the data in the table. It would be useful to change
+the shot coordinates from cartesian (x and y coordinates) to polar. In this way, we can think about the problem considering the distance
+and the angle from the hoop.
 
 ```{julia chap_8_plot_1, echo=FALSE}
 plot(load("./08_basketball_shots/images/basket_court.png"), axis=nothing, border=:none)
 ```
 
+
+```{julia, results = FALSE}
+shots[!, :distance] = sqrt.( shots.x .^ 2 + shots.y .^ 2)
+shots[!, :angle] = atan.( shots.y ./ shots.x )
+filter!(x -> x.distance > 1, shots)
+```
+
 So, the $x$ and $y$ axis have their origin at the hoop, and we compute the distance from this point to where the shot was made.
 Also, we compute the angle with respect to the $x$ axis, showed as θ in the sketch. 
-In the data we have the period, which can take values from 1 to 4, meaning the period in which the shot was made.
 
-We now plot where the shots where made:
+Lets now plot where the shots were made with a two-dimensional histogram. As more shots are made in a certain region of the field, that region
+is shown with a brighter color.
 
 ```{julia chap_8_plot_2}
 histogram2d(shots.y[1:10000], shots.x[1:10000], bins=(50,30));
@@ -57,12 +69,12 @@ xlabel!("x axis");
 ylabel!("y axis")
 ```
 
-We see that the shots are very uniformly distributed near the hoop, except for distances very near to the hoop, to see this better, we plot 
+We see that the shots are very uniformly distributed around the hoop, except for distances very near to the hoop. To see this better, we plot 
 the histograms for each axis, $x$ and $y$. 
-But we are interested in the shots that were scored, so we filter now the shots made and plot the histogram of each axis.
+As we are interested in the shots that were scored, we filter the shots made and plot the histogram of each axis.
 
 ```{julia , results = FALSE}
-shots_made = filter(x->x.result==1, shots)
+shots_made = filter(x -> x.result == 1, shots)
 ```
 
 ```{julia chap_8_plot_3}
@@ -77,7 +89,7 @@ xlabel!("y axis");
 ylabel!("Counts")
 ```
 
-If we plot a 3d plot of the count we obtain the plot wireplot shown below.
+We can also summarize all this information with a wireplot, as shown below
 
 ```{julia chap_8_plot_5}
 h = fit(Histogram, (shots_made.y, shots_made.x), nbins=40);
@@ -86,24 +98,20 @@ xlabel!("x");
 ylabel!("y");
 title!("Histogram of shots scored")
 ```
+More shots are made as we get near the hoop, as expected.
 
-We see that more shot are made as we get near the hoop, as expected.
-
-It is important to notice that we are not showing the probability of scoring, we are just showing the distribution of shot scored, not how likely 
+It is worth noting that we are not showing the probability of scoring, we are just showing the distribution of shot scored, not how likely 
 is it to score.
 
-## Modeling the probability of scoring
+## Modelling the scoring probability 
 
 The first model we are going to propose is a Bernoulli model.
 
-*Why a Bernoulli Distribution?*
-
-A Bernoulli Distribution results from an experiment in which we have 2 possible outcomes, one that we usually called a success and another called 
-a fail. In our case our success is scoring the shot and the other possible event is failing it.
+A Bernoulli distribution results from an experiment in which we have two possible outcomes, one that is usually called a success and another called 
+a failure. In our case our success is scoring the shot and the other possible event is failing it.
 
 The only parameter needed in a bernoulli distribution is the probability $p$ of having a success. We are going to model this parameter as a 
 logistic function:
-
 
 ```{julia chap_8_plot_6}
 plot(logistic, legend=false);
@@ -112,25 +120,22 @@ ylabel!("Probability");
 title!("Logistic function (x)")
 ```
 
-*Why a logistic function?*
+The reason to choose a logistic function is that we are going to model the probability of shootiing as a function of some variables, for 
+example the distance to the hoop, and we want that our scoring probability increases as we get closer to it. Also out probability needs to be 
+between 0 an 1, so a nice function to map our values is the logistic function.
 
-We are going to model the probability of shoot as a function of some variables, for example the distance to the hoop, and we want that our 
-probability of scoring increases as we are getting closer to it. Also out probability needs to be between 0 an 1, so a nice function to map our 
-values is the logistic function.
+The probabilistic model we are going to propose is 
 
- So, the model we are going to propose is: 
-
-$p\sim logistic(a+ b*distance[i] + c*angle[i])$
+$p\sim logistic(a + b*distance[i] + c*angle[i])$
 
 $outcome[i]\sim Bernoulli(p)$
 
-*But what values and prior distributions are we going to propose to the parameters a, b and c?*
-
-Let's see:
+As you can see, this is a very general model, since we haven't yet specified anything about $a$, $b$ and $c$. Our approach will be to propose
+prior distributions for each one of them and check if our proposals make sense.
 
 ## Prior Predictive Checks: Part I
-Suppose we say that our prior distributions for $a$, $b$ and $c$ are going to be 3 gaussian distributions with mean 0 and variance 1. Lets sample 
-and see what are the possible posterior distributions for our probability of scoring $p$:
+Lets start by proposing Normal prior distributions for $a$, $b$ and $c$, i.e., Gaussian distributions with mean 0 and variance 1. Lets sample 
+and see what are the possible predictions for $p$:
 
 $a\sim N(0,1)$
 
@@ -143,9 +148,11 @@ possible_distances = 0:0.01:1
 possible_angles = 0:0.01:π/2
 n_samples = 100
 
+# we sample possible values from a and b
 a_prior_sampling = rand(Normal(0,1), n_samples)
 b_prior_sampling = rand(Normal(0,1), n_samples)
 
+# with the sampled values of a and b, we make predictions about how p would look
 predicted_p = []
 for i in 1:n_samples
 	push!(predicted_p, logistic.(a_prior_sampling[i] .+ b_prior_sampling[i] .* possible_distances))
@@ -162,10 +169,12 @@ ylabel!("Predicted probability");
 title!("Prior predictive values for p")
 ```
 
-We see that some of the predicted behaviours for $p$ don't make sense. For example, if $b$ takes positive values, we are saying that as we 
-increase our distance from the hoop, the probability of scoring also increase. So we propose instead the parameter $b$ to be the negative values 
-of a LogNormal distribution. The predicted values for $p$ are shown below.
-So our model now have as priors distributions:
+Each one of these plots is the result of the logistic with one combination of $a$ and $b$ as parameters. 
+We see that some of the predicted values of $p$ don't make sense. For example, if $b$ takes positive values, we are saying that as we 
+increase our distance from the hoop, the probability of scoring also increases. As we want $b$ to be a negative number, we should propose a
+distribution which we can sample from and be sure their values have always the same sign. One example of this is the LogNormal distribution,
+which will give us always positive numbers. Multiplying these values by $-1$ gives us the certainty that we will have a negative number.
+We update our model as follows:
 
 $a\sim Normal(0,1)$
 
@@ -173,7 +182,7 @@ $b\sim LogNormal(1,0.25)$
 
 $c\sim Normal(0,1)$
 
-and sampling values from those prior distributions, we obtain the plot shown below for the predicted values of $p$.
+Repeating the sampling process with the updated model, we get the following predictions for $p$:
 
 ```{julia chap_8_plot_8, results = FALSE}
 b_prior_sampling_negative = rand(LogNormal(1,0.25), n_samples)
@@ -193,14 +202,18 @@ ylabel!("Predicted probability");
 title!("Prior predictive values for p with negative LogNormal prior")
 ```
 
+Now the behavior we can see from the predicted $p$ curves is the expected. As the shooting distance increases, the probability of scoring decreases.
+We have set some boundaries in the form of a different prior probability distribution. This process is what is called prior-predictive checks.
+Esentially, it is an iterative process where we check if our initial proposals make sense.
 Now that we have the expected behaviour for $p$, we define our model and calculate the posterior distributions with our data points.
-### Defining our model and computing posteriors
-Now we define our model to sample from it:
+
+### Defining our model in Turing and computing posteriors
+Now we define our model in the Turing framework in order to sample from it:
 
 ```{julia, results = FALSE}
 @model logistic_regression(distances, angles, result,n) = begin
   N = length(distances)
-  # Set priors.
+  	# Set priors.
 	a ~ Normal(0,1) 
 	b ~ LogNormal(1,0.25)
 	c ~ Normal(0,1)
@@ -210,42 +223,37 @@ Now we define our model to sample from it:
         result[i] ~ Bernoulli(p)
 	end
 end
-
 ```
 
 ```{julia, results = FALSE}
 n = 1000
 ```
 
-The output of the sampling  tell us also some information about sampled values for our parameters, like the mean, the standard deviation and some 
+The output of the sampling tells us also some information about sampled values for our parameters, like the mean, the standard deviation and some 
 other computations.
 
-```{julia, cache = TRUE, results = FALSE}
+```{julia, results = FALSE}
 # Sample using HMC.
 chain = mapreduce(c -> sample(logistic_regression(shots.distance[1:n] ./ maximum(shots.distance[1:n] ), shots.angle[1:n], shots.result[1:n], n), NUTS(), 1500), chainscat, 1:3);
 ```
 
 #### Traceplot
-
 In the plot below we show a traceplot of the sampling. 
-
-*What is a traceplot?* 
-
 When we run a model and calculate the posterior, we obtain sampled values from the posterior distributions. We can tell our sampler how many 
-sampled values we want. A traceplot is just showing them in sequential order. We also can plot the distribution of those values, and this is 
+sampled values we want. A traceplot just shows them in sequential order. We also can plot the distribution of those values, and this is 
 what is showed next to each traceplot.
 
 ```{julia chap_8_plot_10}
 plot(chain, dpi=60)
 ```
 
-```{julia,results = FALSE}
+```{julia, results = FALSE}
 a_mean = mean(chain[:a])
 b_mean = mean(chain[:b])
 c_mean = mean(chain[:c])
 ```
 
-Now plotting the probability of scoring using the posterior distributions of $a$, $b$ and $c$ for an angle of 45°, we obtain:
+Now plotting the scoring probability using the posterior distributions of $a$, $b$ and $c$ for an angle of 45°, we get:
 
 ```{julia, results = FALSE}
 p_constant_angle = []
@@ -287,7 +295,8 @@ ylabel!("Probability");
 title!("Scoring probability vs Angle (mid distance)")
 ```
 
-We see that the model predict an almost constant probability for the angle. 
+We see that the model predicts almost constant probability as we vary the angle. This makes sense, considering that the angle doesn't seem too
+relevant when shooting; the distance from the hoop is the relevant variable.
 
 ## New model and prior predictive checks: Part II
 
@@ -327,7 +336,6 @@ title!("Prior distribution for b")
 ```
 
 ### Defining the new model and computing posteriors
-
 We define then our model and calculate the posterior as before.
 
 ```{julia}
@@ -338,13 +346,13 @@ We define then our model and calculate the posterior as before.
 	b ~ Beta(2,5)
 	c ~ Normal(0,1)
  	for i in 1:n
-		p = logistic( a +  b .^ distances[i] + c*angles[i])
+		p = logistic(a +  b .^ distances[i] + c*angles[i])
         result[i] ~ Bernoulli(p)
 	end
 end
 ```
 
-```{julia chap_8_sample_1, cache = TRUE, results = FALSE}
+```{julia chap_8_sample_1, results = FALSE}
 # Sample using HMC.
 chain_exp = mapreduce(c -> sample(logistic_regression_exp(shots.distance[1:n] ./ maximum(shots.distance[1:n] ), shots.angle[1:n], shots.result[1:n], n), HMC(0.05, 10), 1500), chainscat, 1:3)
 ```
@@ -425,7 +433,7 @@ end
 n_ = 500 
 ```
 
-```{julia sample_period_1, cache = TRUE, results = FALSE}
+```{julia sample_period_1, results = FALSE}
 # Sample using HMC.
 chain_period1 = mapreduce(c -> sample(logistic_regression_period(shots_period1.distance[1:n_] ./ maximum(shots_period1.distance[1:n_] ),shots_period1.result[1:n_], n_), HMC(0.05, 10), 1500), chainscat, 1:3)
 ```
@@ -434,7 +442,7 @@ chain_period1 = mapreduce(c -> sample(logistic_regression_period(shots_period1.d
 shots_period2 = filter(x -> x.period == 2, shots)
 ```
 
-```{julia sample_period_2, cache = TRUE , results = FALSE}
+```{julia sample_period_2, results = FALSE}
 # Sample using HMC.
 chain_period2 = mapreduce(c -> sample(logistic_regression_period(shots_period2.distance[1:n_] ./ maximum(shots_period2.distance[1:n_] ), shots_period2.result[1:n_], n_), HMC(0.05, 10), 1500),
     chainscat,
@@ -446,7 +454,7 @@ chain_period2 = mapreduce(c -> sample(logistic_regression_period(shots_period2.d
 shots_period3= filter(x->x.period==3, shots);
 ```
 
-```{julia sample_period_3, cache = TRUE, results = FALSE}
+```{julia sample_period_3, results = FALSE}
 # Sample using HMC.
 chain_period3 = mapreduce(c -> sample(logistic_regression_period(shots_period3.distance[1:n_] ./ maximum(shots_period3.distance[1:n_] ), shots_period3.result[1:n_], n_), HMC(0.05, 10), 1500),
     chainscat,
@@ -458,7 +466,7 @@ chain_period3 = mapreduce(c -> sample(logistic_regression_period(shots_period3.d
 shots_period4 = filter(x->x.period==4, shots);
 ```
 
-```{julia sample_period_4, cache = TRUE, results = FALSE}
+```{julia sample_period_4, results = FALSE}
 # Sample using HMC.
 chain_period4 = mapreduce(c -> sample(logistic_regression_period(shots_period4.distance[1:n_] ./ maximum(shots_period4.distance[1:n_]), shots_period4.result[1:n_], n_), HMC(0.05, 10), 1500),
     chainscat,

@@ -212,8 +212,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="8" data-path="basketball-shots.html"><a href="basketball-shots.html"><i class="fa fa-check"></i><b>8</b> Basketball shots</a>
 <ul>
-<li class="chapter" data-level="8.1" data-path="basketball-shots.html"><a href="basketball-shots.html#modeling-the-probability-of-scoring"><i class="fa fa-check"></i><b>8.1</b> Modeling the probability of scoring</a></li>
-<li class="chapter" data-level="8.2" data-path="basketball-shots.html"><a href="basketball-shots.html#prior-predictive-checks-part-i"><i class="fa fa-check"></i><b>8.2</b> Prior Predictive Checks: Part I</a></li>
+<li class="chapter" data-level="8.1" data-path="basketball-shots.html"><a href="basketball-shots.html#modelling-the-scoring-probability"><i class="fa fa-check"></i><b>8.1</b> Modelling the scoring probability</a></li>
+<li class="chapter" data-level="8.2" data-path="basketball-shots.html"><a href="basketball-shots.html#prior-predictive-checks-part-i"><i class="fa fa-check"></i><b>8.2</b> Prior Predictive Checks: Part I</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="basketball-shots.html"><a href="basketball-shots.html#defining-our-model-in-turing-and-computing-posteriors"><i class="fa fa-check"></i><b>8.2.1</b> Defining our model in Turing and computing posteriors</a></li>
+</ul></li>
 <li class="chapter" data-level="8.3" data-path="basketball-shots.html"><a href="basketball-shots.html#new-model-and-prior-predictive-checks-part-ii"><i class="fa fa-check"></i><b>8.3</b> New model and prior predictive checks: Part II</a>
 <ul>
 <li class="chapter" data-level="8.3.1" data-path="basketball-shots.html"><a href="basketball-shots.html#defining-the-new-model-and-computing-posteriors"><i class="fa fa-check"></i><b>8.3.1</b> Defining the new model and computing posteriors</a></li>
@@ -296,33 +299,43 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="basketball-shots" class="section level1 hasAnchor" number="8">
 <h1><span class="header-section-number">Chapter 8</span> Basketball shots<a href="basketball-shots.html#basketball-shots" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>When playing basketball we can ask ourself: how likely is it to score given a position in the court? To answer this question we are going to use
-data from NBA games from the season 2006 - 2007. We will consider all types of shots.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb1-1"><a href="basketball-shots.html#cb1-1" aria-hidden="true" tabindex="-1"></a>shots <span class="op">=</span> CSV.<span class="fu">read</span>(<span class="st">&quot;./08_basketball_shots/data/seasons/shots_season_2006_2007.csv&quot;</span>, DataFrame)</span>
-<span id="cb1-2"><a href="basketball-shots.html#cb1-2" aria-hidden="true" tabindex="-1"></a>shots[!, <span class="op">:</span>distance] <span class="op">=</span> <span class="fu">sqrt</span>.( shots.x <span class="op">.^</span> <span class="fl">2</span> <span class="op">+</span> shots.y <span class="op">.^</span> <span class="fl">2</span>)</span>
-<span id="cb1-3"><a href="basketball-shots.html#cb1-3" aria-hidden="true" tabindex="-1"></a>shots[!, <span class="op">:</span>angle] <span class="op">=</span> <span class="fu">atan</span>.( shots.y <span class="op">./</span> shots.x )</span>
-<span id="cb1-4"><a href="basketball-shots.html#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">filter!</span>(x <span class="op">-&gt;</span> x.distance <span class="op">&gt;</span> <span class="fl">1</span>, shots)</span></code></pre></div>
-<div class="sourceCode" id="cb2"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb2-1"><a href="basketball-shots.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">first</span>(shots)</span></code></pre></div>
-<pre><code>## DataFrameRow
-##  Row │ result  x      y        period  time      distance  angle
-##      │ Int64   Int64  Float64  Int64   Time      Float64   Float64
-## ─────┼───────────────────────────────────────────────────────────────
-##    1 │      0    -14    16.75       1  11:42:00   21.8303  -0.874592</code></pre>
-<p>But how do we interpret the data?</p>
-<p>Below we show a sketch of a basketball court, its dimensions and how to interpret the data in the table.</p>
+<p>When playing basketball we can ask ourselves: how likely is it to score given a position in the court? To answer this question we are going to use
+data from NBA games from the 2006 - 2007 season. Lets load the data into our Julia session and inspect the column names:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb1-1"><a href="basketball-shots.html#cb1-1" aria-hidden="true" tabindex="-1"></a>shots <span class="op">=</span> CSV.<span class="fu">read</span>(<span class="st">&quot;./08_basketball_shots/data/seasons/shots_season_2006_2007.csv&quot;</span>, DataFrame);</span>
+<span id="cb1-2"><a href="basketball-shots.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(shots)</span></code></pre></div>
+<pre><code>## 5-element Vector{String}:
+##  &quot;result&quot;
+##  &quot;x&quot;
+##  &quot;y&quot;
+##  &quot;period&quot;
+##  &quot;time&quot;</code></pre>
+<p>The columns of our dataset are the following:</p>
+<ul>
+<li><p>result: Stores a 1 if the shot was successful and a 0 otherwise.</p></li>
+<li><p>x: The x-component of the position of the player when the shot was made.</p></li>
+<li><p>y: The y-component of the position of the player when the shot was made.</p></li>
+<li><p>period: Indicates in which of the four periods of a basketball game the shot was done.</p></li>
+<li><p>time: The exact time the shot was made.</p></li>
+</ul>
+<p>Below we show a sketch of a basketball court, its dimensions and how to interpret the data in the table. It would be useful to change
+the shot coordinates from cartesian (x and y coordinates) to polar. In this way, we can think about the problem considering the distance
+and the angle from the hoop.</p>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_8_plot_1-J1.png" /><!-- --></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb3-1"><a href="basketball-shots.html#cb3-1" aria-hidden="true" tabindex="-1"></a>shots[!, <span class="op">:</span>distance] <span class="op">=</span> <span class="fu">sqrt</span>.( shots.x <span class="op">.^</span> <span class="fl">2</span> <span class="op">+</span> shots.y <span class="op">.^</span> <span class="fl">2</span>)</span>
+<span id="cb3-2"><a href="basketball-shots.html#cb3-2" aria-hidden="true" tabindex="-1"></a>shots[!, <span class="op">:</span>angle] <span class="op">=</span> <span class="fu">atan</span>.( shots.y <span class="op">./</span> shots.x )</span>
+<span id="cb3-3"><a href="basketball-shots.html#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">filter!</span>(x <span class="op">-&gt;</span> x.distance <span class="op">&gt;</span> <span class="fl">1</span>, shots)</span></code></pre></div>
 <p>So, the <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> axis have their origin at the hoop, and we compute the distance from this point to where the shot was made.
-Also, we compute the angle with respect to the <span class="math inline">\(x\)</span> axis, showed as θ in the sketch.
-In the data we have the period, which can take values from 1 to 4, meaning the period in which the shot was made.</p>
-<p>We now plot where the shots where made:</p>
+Also, we compute the angle with respect to the <span class="math inline">\(x\)</span> axis, showed as θ in the sketch.</p>
+<p>Lets now plot where the shots were made with a two-dimensional histogram. As more shots are made in a certain region of the field, that region
+is shown with a brighter color.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb4-1"><a href="basketball-shots.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">histogram2d</span>(shots.y[<span class="fl">1</span><span class="op">:</span><span class="fl">10000</span>], shots.x[<span class="fl">1</span><span class="op">:</span><span class="fl">10000</span>], bins<span class="op">=</span>(<span class="fl">50</span>,<span class="fl">30</span>));</span>
 <span id="cb4-2"><a href="basketball-shots.html#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">xlabel!</span>(<span class="st">&quot;x axis&quot;</span>);</span>
 <span id="cb4-3"><a href="basketball-shots.html#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ylabel!</span>(<span class="st">&quot;y axis&quot;</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_8_plot_2-J1.png" /><!-- --></p>
-<p>We see that the shots are very uniformly distributed near the hoop, except for distances very near to the hoop, to see this better, we plot
+<p>We see that the shots are very uniformly distributed around the hoop, except for distances very near to the hoop. To see this better, we plot
 the histograms for each axis, <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>.
-But we are interested in the shots that were scored, so we filter now the shots made and plot the histogram of each axis.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb5-1"><a href="basketball-shots.html#cb5-1" aria-hidden="true" tabindex="-1"></a>shots_made <span class="op">=</span> <span class="fu">filter</span>(x<span class="op">-&gt;</span>x.result<span class="op">==</span><span class="fl">1</span>, shots)</span></code></pre></div>
+As we are interested in the shots that were scored, we filter the shots made and plot the histogram of each axis.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb5-1"><a href="basketball-shots.html#cb5-1" aria-hidden="true" tabindex="-1"></a>shots_made <span class="op">=</span> <span class="fu">filter</span>(x <span class="op">-&gt;</span> x.result <span class="op">==</span> <span class="fl">1</span>, shots)</span></code></pre></div>
 <div class="sourceCode" id="cb6"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb6-1"><a href="basketball-shots.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">histogram</span>(shots_made.y[<span class="fl">1</span><span class="op">:</span><span class="fl">10000</span>], legend<span class="op">=</span><span class="cn">false</span>, nbins<span class="op">=</span><span class="fl">40</span>);</span>
 <span id="cb6-2"><a href="basketball-shots.html#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">xlabel!</span>(<span class="st">&quot;x axis&quot;</span>);</span>
 <span id="cb6-3"><a href="basketball-shots.html#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ylabel!</span>(<span class="st">&quot;Counts&quot;</span>)</span></code></pre></div>
@@ -331,22 +344,21 @@ But we are interested in the shots that were scored, so we filter now the shots 
 <span id="cb7-2"><a href="basketball-shots.html#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">xlabel!</span>(<span class="st">&quot;y axis&quot;</span>);</span>
 <span id="cb7-3"><a href="basketball-shots.html#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ylabel!</span>(<span class="st">&quot;Counts&quot;</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_8_plot_4-J1.png" /><!-- --></p>
-<p>If we plot a 3d plot of the count we obtain the plot wireplot shown below.</p>
+<p>We can also summarize all this information with a wireplot, as shown below</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb8-1"><a href="basketball-shots.html#cb8-1" aria-hidden="true" tabindex="-1"></a>h <span class="op">=</span> <span class="fu">fit</span>(Histogram, (shots_made.y, shots_made.x), nbins<span class="op">=</span><span class="fl">40</span>);</span>
 <span id="cb8-2"><a href="basketball-shots.html#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wireframe</span>(<span class="fu">midpoints</span>(h.edges[<span class="fl">2</span>]), <span class="fu">midpoints</span>(h.edges[<span class="fl">1</span>]), h.weights, zlabel<span class="op">=</span><span class="st">&quot;counts&quot;</span>, xlabel<span class="op">=</span><span class="st">&quot;y&quot;</span>, ylabel<span class="op">=</span><span class="st">&quot;x&quot;</span>, camera<span class="op">=</span>(<span class="fl">40</span>,<span class="fl">40</span>));</span>
 <span id="cb8-3"><a href="basketball-shots.html#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">xlabel!</span>(<span class="st">&quot;x&quot;</span>);</span>
 <span id="cb8-4"><a href="basketball-shots.html#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ylabel!</span>(<span class="st">&quot;y&quot;</span>);</span>
 <span id="cb8-5"><a href="basketball-shots.html#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="fu">title!</span>(<span class="st">&quot;Histogram of shots scored&quot;</span>)</span></code></pre></div>
-<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_8_plot_5-J1.png" /><!-- --></p>
-<p>We see that more shot are made as we get near the hoop, as expected.</p>
-<p>It is important to notice that we are not showing the probability of scoring, we are just showing the distribution of shot scored, not how likely
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_8_plot_5-J1.png" /><!-- -->
+More shots are made as we get near the hoop, as expected.</p>
+<p>It is worth noting that we are not showing the probability of scoring, we are just showing the distribution of shot scored, not how likely
 is it to score.</p>
-<div id="modeling-the-probability-of-scoring" class="section level2 hasAnchor" number="8.1">
-<h2><span class="header-section-number">8.1</span> Modeling the probability of scoring<a href="basketball-shots.html#modeling-the-probability-of-scoring" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="modelling-the-scoring-probability" class="section level2 hasAnchor" number="8.1">
+<h2><span class="header-section-number">8.1</span> Modelling the scoring probability<a href="basketball-shots.html#modelling-the-scoring-probability" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The first model we are going to propose is a Bernoulli model.</p>
-<p><em>Why a Bernoulli Distribution?</em></p>
-<p>A Bernoulli Distribution results from an experiment in which we have 2 possible outcomes, one that we usually called a success and another called
-a fail. In our case our success is scoring the shot and the other possible event is failing it.</p>
+<p>A Bernoulli distribution results from an experiment in which we have two possible outcomes, one that is usually called a success and another called
+a failure. In our case our success is scoring the shot and the other possible event is failing it.</p>
 <p>The only parameter needed in a bernoulli distribution is the probability <span class="math inline">\(p\)</span> of having a success. We are going to model this parameter as a
 logistic function:</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb9-1"><a href="basketball-shots.html#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(logistic, legend<span class="op">=</span><span class="cn">false</span>);</span>
@@ -354,20 +366,19 @@ logistic function:</p>
 <span id="cb9-3"><a href="basketball-shots.html#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ylabel!</span>(<span class="st">&quot;Probability&quot;</span>);</span>
 <span id="cb9-4"><a href="basketball-shots.html#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="fu">title!</span>(<span class="st">&quot;Logistic function (x)&quot;</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_8_plot_6-J1.png" /><!-- --></p>
-<p><em>Why a logistic function?</em></p>
-<p>We are going to model the probability of shoot as a function of some variables, for example the distance to the hoop, and we want that our
-probability of scoring increases as we are getting closer to it. Also out probability needs to be between 0 an 1, so a nice function to map our
-values is the logistic function.</p>
-<p>So, the model we are going to propose is:</p>
-<p><span class="math inline">\(p\sim logistic(a+ b*distance[i] + c*angle[i])\)</span></p>
+<p>The reason to choose a logistic function is that we are going to model the probability of shootiing as a function of some variables, for
+example the distance to the hoop, and we want that our scoring probability increases as we get closer to it. Also out probability needs to be
+between 0 an 1, so a nice function to map our values is the logistic function.</p>
+<p>The probabilistic model we are going to propose is</p>
+<p><span class="math inline">\(p\sim logistic(a + b*distance[i] + c*angle[i])\)</span></p>
 <p><span class="math inline">\(outcome[i]\sim Bernoulli(p)\)</span></p>
-<p><em>But what values and prior distributions are we going to propose to the parameters a, b and c?</em></p>
-<p>Let’s see:</p>
+<p>As you can see, this is a very general model, since we haven’t yet specified anything about <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> and <span class="math inline">\(c\)</span>. Our approach will be to propose
+prior distributions for each one of them and check if our proposals make sense.</p>
 </div>
 <div id="prior-predictive-checks-part-i" class="section level2 hasAnchor" number="8.2">
 <h2><span class="header-section-number">8.2</span> Prior Predictive Checks: Part I<a href="basketball-shots.html#prior-predictive-checks-part-i" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Suppose we say that our prior distributions for <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> and <span class="math inline">\(c\)</span> are going to be 3 gaussian distributions with mean 0 and variance 1. Lets sample
-and see what are the possible posterior distributions for our probability of scoring <span class="math inline">\(p\)</span>:</p>
+<p>Lets start by proposing Normal prior distributions for <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> and <span class="math inline">\(c\)</span>, i.e., Gaussian distributions with mean 0 and variance 1. Lets sample
+and see what are the possible predictions for <span class="math inline">\(p\)</span>:</p>
 <p><span class="math inline">\(a\sim N(0,1)\)</span></p>
 <p><span class="math inline">\(b\sim N(0,1)\)</span></p>
 <p><span class="math inline">\(c\sim N(0,1)\)</span></p>
@@ -375,13 +386,15 @@ and see what are the possible posterior distributions for our probability of sco
 <span id="cb10-2"><a href="basketball-shots.html#cb10-2" aria-hidden="true" tabindex="-1"></a>possible_angles <span class="op">=</span> <span class="fl">0</span><span class="op">:</span><span class="fl">0.01</span><span class="op">:</span><span class="cn">π</span><span class="op">/</span><span class="fl">2</span></span>
 <span id="cb10-3"><a href="basketball-shots.html#cb10-3" aria-hidden="true" tabindex="-1"></a>n_samples <span class="op">=</span> <span class="fl">100</span></span>
 <span id="cb10-4"><a href="basketball-shots.html#cb10-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-5"><a href="basketball-shots.html#cb10-5" aria-hidden="true" tabindex="-1"></a>a_prior_sampling <span class="op">=</span> <span class="fu">rand</span>(<span class="fu">Normal</span>(<span class="fl">0</span>,<span class="fl">1</span>), n_samples)</span>
-<span id="cb10-6"><a href="basketball-shots.html#cb10-6" aria-hidden="true" tabindex="-1"></a>b_prior_sampling <span class="op">=</span> <span class="fu">rand</span>(<span class="fu">Normal</span>(<span class="fl">0</span>,<span class="fl">1</span>), n_samples)</span>
-<span id="cb10-7"><a href="basketball-shots.html#cb10-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-8"><a href="basketball-shots.html#cb10-8" aria-hidden="true" tabindex="-1"></a>predicted_p <span class="op">=</span> []</span>
-<span id="cb10-9"><a href="basketball-shots.html#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>n_samples</span>
-<span id="cb10-10"><a href="basketball-shots.html#cb10-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">push!</span>(predicted_p, <span class="fu">logistic</span>.(a_prior_sampling[i] <span class="op">.+</span> b_prior_sampling[i] <span class="op">.*</span> possible_distances))</span>
-<span id="cb10-11"><a href="basketball-shots.html#cb10-11" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
+<span id="cb10-5"><a href="basketball-shots.html#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="co"># we sample possible values from a and b</span></span>
+<span id="cb10-6"><a href="basketball-shots.html#cb10-6" aria-hidden="true" tabindex="-1"></a>a_prior_sampling <span class="op">=</span> <span class="fu">rand</span>(<span class="fu">Normal</span>(<span class="fl">0</span>,<span class="fl">1</span>), n_samples)</span>
+<span id="cb10-7"><a href="basketball-shots.html#cb10-7" aria-hidden="true" tabindex="-1"></a>b_prior_sampling <span class="op">=</span> <span class="fu">rand</span>(<span class="fu">Normal</span>(<span class="fl">0</span>,<span class="fl">1</span>), n_samples)</span>
+<span id="cb10-8"><a href="basketball-shots.html#cb10-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-9"><a href="basketball-shots.html#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="co"># with the sampled values of a and b, we make predictions about how p would look</span></span>
+<span id="cb10-10"><a href="basketball-shots.html#cb10-10" aria-hidden="true" tabindex="-1"></a>predicted_p <span class="op">=</span> []</span>
+<span id="cb10-11"><a href="basketball-shots.html#cb10-11" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>n_samples</span>
+<span id="cb10-12"><a href="basketball-shots.html#cb10-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">push!</span>(predicted_p, <span class="fu">logistic</span>.(a_prior_sampling[i] <span class="op">.+</span> b_prior_sampling[i] <span class="op">.*</span> possible_distances))</span>
+<span id="cb10-13"><a href="basketball-shots.html#cb10-13" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
 <div class="sourceCode" id="cb11"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb11-1"><a href="basketball-shots.html#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(possible_distances, predicted_p[<span class="fl">1</span>], legend <span class="op">=</span> <span class="cn">false</span>, color<span class="op">=</span><span class="st">&quot;blue&quot;</span>);</span>
 <span id="cb11-2"><a href="basketball-shots.html#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="fl">2</span><span class="op">:</span>n_samples</span>
 <span id="cb11-3"><a href="basketball-shots.html#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">plot!</span>(possible_distances, predicted_p[i], color<span class="op">=:</span>blue);</span>
@@ -390,14 +403,16 @@ and see what are the possible posterior distributions for our probability of sco
 <span id="cb11-6"><a href="basketball-shots.html#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ylabel!</span>(<span class="st">&quot;Predicted probability&quot;</span>);</span>
 <span id="cb11-7"><a href="basketball-shots.html#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="fu">title!</span>(<span class="st">&quot;Prior predictive values for p&quot;</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_8_plot_7-J1.png" /><!-- --></p>
-<p>We see that some of the predicted behaviours for <span class="math inline">\(p\)</span> don’t make sense. For example, if <span class="math inline">\(b\)</span> takes positive values, we are saying that as we
-increase our distance from the hoop, the probability of scoring also increase. So we propose instead the parameter <span class="math inline">\(b\)</span> to be the negative values
-of a LogNormal distribution. The predicted values for <span class="math inline">\(p\)</span> are shown below.
-So our model now have as priors distributions:</p>
+<p>Each one of these plots is the result of the logistic with one combination of <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> as parameters.
+We see that some of the predicted values of <span class="math inline">\(p\)</span> don’t make sense. For example, if <span class="math inline">\(b\)</span> takes positive values, we are saying that as we
+increase our distance from the hoop, the probability of scoring also increases. As we want <span class="math inline">\(b\)</span> to be a negative number, we should propose a
+distribution which we can sample from and be sure their values have always the same sign. One example of this is the LogNormal distribution,
+which will give us always positive numbers. Multiplying these values by <span class="math inline">\(-1\)</span> gives us the certainty that we will have a negative number.
+We update our model as follows:</p>
 <p><span class="math inline">\(a\sim Normal(0,1)\)</span></p>
 <p><span class="math inline">\(b\sim LogNormal(1,0.25)\)</span></p>
 <p><span class="math inline">\(c\sim Normal(0,1)\)</span></p>
-<p>and sampling values from those prior distributions, we obtain the plot shown below for the predicted values of <span class="math inline">\(p\)</span>.</p>
+<p>Repeating the sampling process with the updated model, we get the following predictions for <span class="math inline">\(p\)</span>:</p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb12-1"><a href="basketball-shots.html#cb12-1" aria-hidden="true" tabindex="-1"></a>b_prior_sampling_negative <span class="op">=</span> <span class="fu">rand</span>(<span class="fu">LogNormal</span>(<span class="fl">1</span>,<span class="fl">0.25</span>), n_samples)</span>
 <span id="cb12-2"><a href="basketball-shots.html#cb12-2" aria-hidden="true" tabindex="-1"></a>predicted_p_inproved <span class="op">=</span> []</span>
 <span id="cb12-3"><a href="basketball-shots.html#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>n_samples</span>
@@ -411,12 +426,16 @@ So our model now have as priors distributions:</p>
 <span id="cb13-6"><a href="basketball-shots.html#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ylabel!</span>(<span class="st">&quot;Predicted probability&quot;</span>);</span>
 <span id="cb13-7"><a href="basketball-shots.html#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="fu">title!</span>(<span class="st">&quot;Prior predictive values for p with negative LogNormal prior&quot;</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_8_plot_9-J1.png" /><!-- --></p>
-<p>Now that we have the expected behaviour for <span class="math inline">\(p\)</span>, we define our model and calculate the posterior distributions with our data points.
-### Defining our model and computing posteriors
-Now we define our model to sample from it:</p>
+<p>Now the behavior we can see from the predicted <span class="math inline">\(p\)</span> curves is the expected. As the shooting distance increases, the probability of scoring decreases.
+We have set some boundaries in the form of a different prior probability distribution. This process is what is called prior-predictive checks.
+Esentially, it is an iterative process where we check if our initial proposals make sense.
+Now that we have the expected behaviour for <span class="math inline">\(p\)</span>, we define our model and calculate the posterior distributions with our data points.</p>
+<div id="defining-our-model-in-turing-and-computing-posteriors" class="section level3 hasAnchor" number="8.2.1">
+<h3><span class="header-section-number">8.2.1</span> Defining our model in Turing and computing posteriors<a href="basketball-shots.html#defining-our-model-in-turing-and-computing-posteriors" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Now we define our model in the Turing framework in order to sample from it:</p>
 <div class="sourceCode" id="cb14"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb14-1"><a href="basketball-shots.html#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="pp">@model</span> <span class="fu">logistic_regression</span>(distances, angles, result,n) <span class="op">=</span> <span class="cf">begin</span></span>
 <span id="cb14-2"><a href="basketball-shots.html#cb14-2" aria-hidden="true" tabindex="-1"></a>  N <span class="op">=</span> <span class="fu">length</span>(distances)</span>
-<span id="cb14-3"><a href="basketball-shots.html#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Set priors.</span></span>
+<span id="cb14-3"><a href="basketball-shots.html#cb14-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Set priors.</span></span>
 <span id="cb14-4"><a href="basketball-shots.html#cb14-4" aria-hidden="true" tabindex="-1"></a>    a <span class="op">~</span> <span class="fu">Normal</span>(<span class="fl">0</span>,<span class="fl">1</span>) </span>
 <span id="cb14-5"><a href="basketball-shots.html#cb14-5" aria-hidden="true" tabindex="-1"></a>    b <span class="op">~</span> <span class="fu">LogNormal</span>(<span class="fl">1</span>,<span class="fl">0.25</span>)</span>
 <span id="cb14-6"><a href="basketball-shots.html#cb14-6" aria-hidden="true" tabindex="-1"></a>    c <span class="op">~</span> <span class="fu">Normal</span>(<span class="fl">0</span>,<span class="fl">1</span>)</span>
@@ -427,23 +446,22 @@ Now we define our model to sample from it:</p>
 <span id="cb14-11"><a href="basketball-shots.html#cb14-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">end</span></span>
 <span id="cb14-12"><a href="basketball-shots.html#cb14-12" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
 <div class="sourceCode" id="cb15"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb15-1"><a href="basketball-shots.html#cb15-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="fl">1000</span></span></code></pre></div>
-<p>The output of the sampling tell us also some information about sampled values for our parameters, like the mean, the standard deviation and some
+<p>The output of the sampling tells us also some information about sampled values for our parameters, like the mean, the standard deviation and some
 other computations.</p>
 <div class="sourceCode" id="cb16"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb16-1"><a href="basketball-shots.html#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Sample using HMC.</span></span>
 <span id="cb16-2"><a href="basketball-shots.html#cb16-2" aria-hidden="true" tabindex="-1"></a>chain <span class="op">=</span> <span class="fu">mapreduce</span>(c <span class="op">-&gt;</span> <span class="fu">sample</span>(<span class="fu">logistic_regression</span>(shots.distance[<span class="fl">1</span><span class="op">:</span>n] <span class="op">./</span> <span class="fu">maximum</span>(shots.distance[<span class="fl">1</span><span class="op">:</span>n] ), shots.angle[<span class="fl">1</span><span class="op">:</span>n], shots.result[<span class="fl">1</span><span class="op">:</span>n], n), <span class="fu">NUTS</span>(), <span class="fl">1500</span>), chainscat, <span class="fl">1</span><span class="op">:</span><span class="fl">3</span>);</span></code></pre></div>
-<div id="traceplot" class="section level4 hasAnchor" number="8.2.0.1">
-<h4><span class="header-section-number">8.2.0.1</span> Traceplot<a href="basketball-shots.html#traceplot" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>In the plot below we show a traceplot of the sampling.</p>
-<p><em>What is a traceplot?</em></p>
-<p>When we run a model and calculate the posterior, we obtain sampled values from the posterior distributions. We can tell our sampler how many
-sampled values we want. A traceplot is just showing them in sequential order. We also can plot the distribution of those values, and this is
+<div id="traceplot" class="section level4 hasAnchor" number="8.2.1.1">
+<h4><span class="header-section-number">8.2.1.1</span> Traceplot<a href="basketball-shots.html#traceplot" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>In the plot below we show a traceplot of the sampling.
+When we run a model and calculate the posterior, we obtain sampled values from the posterior distributions. We can tell our sampler how many
+sampled values we want. A traceplot just shows them in sequential order. We also can plot the distribution of those values, and this is
 what is showed next to each traceplot.</p>
 <div class="sourceCode" id="cb17"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb17-1"><a href="basketball-shots.html#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(chain, dpi<span class="op">=</span><span class="fl">60</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_8_plot_10-J1.png" /><!-- --></p>
 <div class="sourceCode" id="cb18"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb18-1"><a href="basketball-shots.html#cb18-1" aria-hidden="true" tabindex="-1"></a>a_mean <span class="op">=</span> <span class="fu">mean</span>(chain[<span class="op">:</span>a])</span>
 <span id="cb18-2"><a href="basketball-shots.html#cb18-2" aria-hidden="true" tabindex="-1"></a>b_mean <span class="op">=</span> <span class="fu">mean</span>(chain[<span class="op">:</span>b])</span>
 <span id="cb18-3"><a href="basketball-shots.html#cb18-3" aria-hidden="true" tabindex="-1"></a>c_mean <span class="op">=</span> <span class="fu">mean</span>(chain[<span class="op">:</span>c])</span></code></pre></div>
-<p>Now plotting the probability of scoring using the posterior distributions of <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> and <span class="math inline">\(c\)</span> for an angle of 45°, we obtain:</p>
+<p>Now plotting the scoring probability using the posterior distributions of <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> and <span class="math inline">\(c\)</span> for an angle of 45°, we get:</p>
 <div class="sourceCode" id="cb19"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb19-1"><a href="basketball-shots.html#cb19-1" aria-hidden="true" tabindex="-1"></a>p_constant_angle <span class="op">=</span> []</span>
 <span id="cb19-2"><a href="basketball-shots.html#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fu">length</span>(chain[<span class="op">:</span>a])</span>
 <span id="cb19-3"><a href="basketball-shots.html#cb19-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">push!</span>(p_constant_angle, <span class="fu">logistic</span>.(chain[<span class="op">:</span>a][i] <span class="op">.-</span> chain[<span class="op">:</span>b][i]<span class="op">.*</span>possible_distances <span class="op">.+</span> chain[<span class="op">:</span>c][i]<span class="op">.*</span><span class="cn">π</span><span class="op">/</span><span class="fl">4</span>));</span>
@@ -472,7 +490,9 @@ normalized distance.</p>
 <span id="cb22-6"><a href="basketball-shots.html#cb22-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ylabel!</span>(<span class="st">&quot;Probability&quot;</span>);</span>
 <span id="cb22-7"><a href="basketball-shots.html#cb22-7" aria-hidden="true" tabindex="-1"></a><span class="fu">title!</span>(<span class="st">&quot;Scoring probability vs Angle (mid distance)&quot;</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_8_plot_13-J1.png" /><!-- --></p>
-<p>We see that the model predict an almost constant probability for the angle.</p>
+<p>We see that the model predicts almost constant probability as we vary the angle. This makes sense, considering that the angle doesn’t seem too
+relevant when shooting; the distance from the hoop is the relevant variable.</p>
+</div>
 </div>
 </div>
 <div id="new-model-and-prior-predictive-checks-part-ii" class="section level2 hasAnchor" number="8.3">
@@ -510,7 +530,7 @@ the plot below.</p>
 <span id="cb26-5"><a href="basketball-shots.html#cb26-5" aria-hidden="true" tabindex="-1"></a>    b <span class="op">~</span> <span class="fu">Beta</span>(<span class="fl">2</span>,<span class="fl">5</span>)</span>
 <span id="cb26-6"><a href="basketball-shots.html#cb26-6" aria-hidden="true" tabindex="-1"></a>    c <span class="op">~</span> <span class="fu">Normal</span>(<span class="fl">0</span>,<span class="fl">1</span>)</span>
 <span id="cb26-7"><a href="basketball-shots.html#cb26-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>n</span>
-<span id="cb26-8"><a href="basketball-shots.html#cb26-8" aria-hidden="true" tabindex="-1"></a>        p <span class="op">=</span> <span class="fu">logistic</span>( a <span class="op">+</span>  b <span class="op">.^</span> distances[i] <span class="op">+</span> c<span class="op">*</span>angles[i])</span>
+<span id="cb26-8"><a href="basketball-shots.html#cb26-8" aria-hidden="true" tabindex="-1"></a>        p <span class="op">=</span> <span class="fu">logistic</span>(a <span class="op">+</span>  b <span class="op">.^</span> distances[i] <span class="op">+</span> c<span class="op">*</span>angles[i])</span>
 <span id="cb26-9"><a href="basketball-shots.html#cb26-9" aria-hidden="true" tabindex="-1"></a>        result[i] <span class="op">~</span> <span class="fu">Bernoulli</span>(p)</span>
 <span id="cb26-10"><a href="basketball-shots.html#cb26-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">end</span></span>
 <span id="cb26-11"><a href="basketball-shots.html#cb26-11" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
