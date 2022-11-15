@@ -19,7 +19,7 @@ using StatsFuns
 ```
 
 ```{julia, results = FALSE, echo=FALSE}
-Random.seed!(1234)
+Random.seed!(0)
 ```
 
 When playing basketball we can ask ourselves: how likely is it to score given a position in the court? To answer this question we are going to use 
@@ -199,7 +199,7 @@ for i in 2:n_samples
 end
 xlabel!("Normalized distance");
 ylabel!("Predicted probability");
-title!("Prior predictive values for p with negative LogNormal prior")
+title!("Prior predictive values with negative LogNormal prior")
 ```
 
 Now the behavior we can see from the predicted $p$ curves is the expected. As the shooting distance increases, the probability of scoring decreases.
@@ -272,11 +272,14 @@ ylabel!("Probability");
 title!("Scoring probability vs Normalized distance (angle=45°)")
 ```
 
-The plot shows that the probability of scoring is higher as our distance to the hoop decrease, which makes sense, since the difficulty of 
-scoring increase.
+We clearly see how our initial beliefs got adjusted with the data. Although initially the decreasing scoring probability with increasing distance
+behavior was correct, there was a lot of uncertainty about the expected value. What this last plot shows is how the possible values of `p` narrowed
+as we updated our beliefs with data. 
 
-We plot now how the probability varies with the angle for a given distance. Here we plot for a mid distance, corresponding to 0.5 in a 
-normalized distance.
+We already plotted how the scoring probability changes with respect to the distance from the hoop, but what about the angle? In principle, we
+could think that this should not be too relevant, since there is no special advantage on changing the angle from where we make our shot, but let's 
+see what does our model say when showing some real data to it. Just to keep the distance constant and only take into account the angle change, we
+plot for a miiddle distance, i.e., $0.5$ in a normalized distance.
 
 ```{julia chap_8_plot_12, results = FALSE}
 p_constant_distance = []
@@ -286,28 +289,32 @@ end
 ```
 
 ```{julia chap_8_plot_13}
-plot(rad2deg.(possible_angles),p_constant_distance[1], legend=false, alpha=0.1, color=:blue);
+plot(rad2deg.(possible_angles), p_constant_distance[1], legend=false, alpha=0.1, color=:blue);
 for i in 2:1000
-	plot!(rad2deg.(possible_angles),p_constant_distance[i], alpha=0.1, color=:blue);
+	plot!(rad2deg.(possible_angles), p_constant_distance[i], alpha=0.1, color=:blue);
 end
 xlabel!("Angle [deg]");
 ylabel!("Probability");
 title!("Scoring probability vs Angle (mid distance)")
 ```
 
-We see that the model predicts almost constant probability as we vary the angle. This makes sense, considering that the angle doesn't seem too
-relevant when shooting; the distance from the hoop is the relevant variable.
+We see that the model predicts almost constant average probability as we vary the angle. 
+This is consistent with what we already suspected, although we see there is more uncertainty about the scoring probability as we move from
+0° to 90°. In conclusion, the angle doesn't seem too important when shooting; the distance from the hoop is the relevant variable.
 
 ## New model and prior predictive checks: Part II
+<Why was this model chosen?>
 
 Now we propose another model with the form: 
 
-$p\sim logistic(a+ b^{distance[i]} + c*angle[i])$
+$p\sim logistic(a + b^{distance[i]} + c*angle[i])$
 
 *But for what values of b the model makes sense?
+Here we basically changed the dependence of the model with distance. We now have the parameter $b$ to the power of the distance from the hoop.
+We should ask ourselves, like we did with the other proposed models: Would every possible value of $b$ make sense? Let's dig into this question.
 
-We show below the plot for 4 function with 4 possible values of $b$, having in mind that the values of $x$, the normalized distance, goes 
-from 0 to 1. 
+Below we plot four function with four different possible values of $b$, having in mind that the values of $x$, the normalized distance, goes 
+from 0 to 1. These functions are
 
 ```{julia,results = FALSE}
 f1(x) = 0.3^x
@@ -315,6 +322,7 @@ f2(x) = 1.5^x
 f3(x) = -0.3^x
 f4(x) = -1.5^x
 ```
+and their plots are
 
 ```{julia chap_8_plot_14}
 plot(0:0.01:1, f1, label="f1: b < 1 & b > 0", xlim=(0,1), ylim=(-2,2), lw=3);
@@ -325,13 +333,16 @@ xlabel!("Normalized distance");
 title!("Prior Predictive influence of distance")
 ```
 
-Analysing the possible values for $b$, the one that makes sense is the value proposed in f1, since we want an increasing influence of the 
-distance in the values of $p$ as the distance decreases, since the logistic function has higher values for higher values of x.
-So now that we know the values the our parameter $b$ can take, we propose for it a beta distribution with parameters α=2 and β=5, showed in 
-the plot below.
+As we can see, the qualitative behavior of these functions is different for each of the chosen values for $b$. The only one of these values that
+is consistent with our common sense, is the one proposed for $f_1$, as we want it to be a decreasing function for the distance variable. In other
+words, we want $b$ to be in the range from 0 to 1, and to be positive.
+Now that we have limited the range of values that $b$ can take, we should propose a probability distribution that satisfies the constraints the
+parameter should have. For this, we propose a Beta distribution with parameters $α=2$ and $β=2$.
+We chose these distribution since it is only defined in the interval we are interesed on, and the value of the parameters so that the distribution
+is symmetrical, i.e., not biased towards the start or the end of the range from 0 to 1.
 
 ```{julia chap_8_plot_15}
-plot(Beta(2,5), xlim=(-0.1,1), legend=false);
+plot(Beta(2,2), xlim=(-0.1,1), legend=false);
 title!("Prior distribution for b")
 ```
 
@@ -343,7 +354,7 @@ We define then our model and calculate the posterior as before.
   N = length(distances)
   # Set priors.
 	a ~ Normal(0,1) 
-	b ~ Beta(2,5)
+	b ~ Beta(2,2)
 	c ~ Normal(0,1)
  	for i in 1:n
 		p = logistic(a +  b .^ distances[i] + c*angles[i])
@@ -384,7 +395,7 @@ ylabel!("Probability");
 title!("Scoring probability vs Normalized distance (angle=45°)")
 ```
 
-Given that we have 2 variables, we can plot the mean probability of scoring as function of the two and obtain a surface plot. We show this below.
+Given that we have 2 variables, we can plot the mean probability of scoring as function of the two and obtain a surface plot, too:
 
 ```{julia,results = FALSE}
 angle_ = collect(range(0, stop=π/2, length=100))
@@ -401,19 +412,20 @@ z = logistic.(mean(chain_exp[:a]) .+ mean(chain_exp[:b]).^dist_grid .+ mean(chai
 plot(load("./08_basketball_shots/images/img1.png"))
 ```
 
-The plot show the behaviour expected, an increasing probability of scoring as we get near the hoop. We also see that there is almost no variation 
+The plot shows the expected behavior, an increasing probability of scoring as we get near the hoop. We also see that there is almost no variation 
 of the probability with the angle.
 
-## Does the Period affect the probability of scoring?
+## Does the Period affect the scoring probability?
 
-Now we will try to answer this question. We propose then a model, and calculate the posterior for its parameters with data of one of each of the 
-four possible periods. We define the same model for all four periods. Also, we don't take into account now the angle variable, since we have seen 
-before that this variable is of little importance.
+We have been using the scoring data across all periods, but what about how the scoring probability changes across periods?
+We will propose a model and calculate the posterior for its parameters with scoring data of each of the four possible periods. The exact 
+same model for all four periods will be used. The angle variable will be discarded from the model, as we have already saw that is of little
+importance.
 
-We filter then our data by its period and proceed to estimate our posterior distributions.
+We filter our data by period and proceed to estimate our posterior distributions.
 
 ```{julia ,results = FALSE}
-shots_period1= filter(x -> x.period == 1, shots)
+shots_period1 = filter(x -> x.period == 1, shots)
 ```
 
 ```{julia, results = FALSE}
@@ -423,7 +435,7 @@ shots_period1= filter(x -> x.period == 1, shots)
 	a ~ Normal(0,1) 
 	b ~ Beta(2,5)
  	for i in 1:n
-		p = logistic( a +  b .^ distances[i])
+		p = logistic(a +  b .^ distances[i])
         result[i] ~ Bernoulli(p)
 	end
 end
@@ -435,7 +447,7 @@ n_ = 500
 
 ```{julia sample_period_1, results = FALSE}
 # Sample using HMC.
-chain_period1 = mapreduce(c -> sample(logistic_regression_period(shots_period1.distance[1:n_] ./ maximum(shots_period1.distance[1:n_] ),shots_period1.result[1:n_], n_), HMC(0.05, 10), 1500), chainscat, 1:3)
+chain_period1 = mapreduce(c -> sample(logistic_regression_period(shots_period1.distance[1:n_] ./ maximum(shots_period1.distance[1:n_] ), shots_period1.result[1:n_], n_), HMC(0.05, 10), 1500), chainscat, 1:3)
 ```
 
 ```{julia, results = FALSE}
@@ -476,13 +488,13 @@ chain_period4 = mapreduce(c -> sample(logistic_regression_period(shots_period4.d
 
 ```{julia,results = FALSE}
 p_period1 = logistic.(mean(chain_period1[:a]) .+ mean(chain_period1[:b]).^possible_distances )
-p_period1_std = logistic.((mean(chain_period1[:a]).+std(chain_period1[:a])) .+ (mean(chain_period1[:b]).+std(chain_period1[:a])).^possible_distances)
+p_period1_std = logistic.((mean(chain_period1[:a]) .+ std(chain_period1[:a])) .+ (mean(chain_period1[:b]) .+ std(chain_period1[:a])).^possible_distances)
 p_period2 = logistic.(mean(chain_period2[:a]) .+ mean(chain_period2[:b]).^possible_distances )
-p_period2_std = logistic.((mean(chain_period2[:a]).+std(chain_period2[:a])) .+ (mean(chain_period2[:b]).+std(chain_period2[:a])).^possible_distances)
+p_period2_std = logistic.((mean(chain_period2[:a]) .+ std(chain_period2[:a])) .+ (mean(chain_period2[:b]) .+ std(chain_period2[:a])).^possible_distances)
 p_period3 = logistic.(mean(chain_period3[:a]) .+ mean(chain_period3[:b]).^possible_distances)
-p_period3_std = logistic.((mean(chain_period3[:a]).+std(chain_period3[:a])) .+ (mean(chain_period3[:b]).+std(chain_period3[:a])).^possible_distances)
+p_period3_std = logistic.((mean(chain_period3[:a]) .+ std(chain_period3[:a])) .+ (mean(chain_period3[:b]) .+ std(chain_period3[:a])).^possible_distances)
 p_period4 = logistic.(mean(chain_period4[:a]) .+ mean(chain_period4[:b]).^possible_distances )
-p_period4_std = logistic.((mean(chain_period4[:a]).+std(chain_period4[:a])) .+ (mean(chain_period4[:b]).+std(chain_period4[:a])).^possible_distances )
+p_period4_std = logistic.((mean(chain_period4[:a]) .+ std(chain_period4[:a])) .+ (mean(chain_period4[:b]) .+ std(chain_period4[:a])).^possible_distances)
 ```
 
 We plot now for each period the probability of scoring for each period, each mean and one standard deviation from it.
@@ -496,28 +508,29 @@ xlabel!("Normalized distance");
 ylabel!("Scoring probability")
 ```
 
-Finally, we see that for the periods 1 and 4, the first and the last periods, the probabity of scoring is slightly higher than the other two 
-periods, meaning that players are somewhat better scoring in those periods.
+Comparing the means of each period, we see that for the periods 1 and 4, the first and the last periods, the scoring probability is slightly 
+higher than the other two periods. There are a bunch of possible explanations for these results. Clearly in the first period, players are most
+effective due to being with the most energy. In period 4, new players have substituted the old ones, and also have a lot of energy, while in periods
+2 and 3, there is a tendency for more tired players that have not been substituted. These hypothesis should be tested to know if they are correct,
+but it is a starting point for more data analysis.
 
 ## Summary
 In this chapter, we used the NBA shooting data of the season 2006-2007 to analyze how the scoring probability is affected by some variables, 
-such as the distance from the hoop and the angle of shooting.
+such as the distance from the hoop and the shooting angle.
 
 First, we inspected the data by plotting a heatplot of all the shots made and making histograms of the ones that scored.
-As our goal was to study the probability of scoring, which is a Bernoulli trial situation, we decided to use a Bernoulli model.
+As our goal was to study the scoring probability, which is a Bernoulli trial situation, we decided to use a Bernoulli model.
 Since the only parameter needed in a Bernoulli distribution is the probability $p$ of having a success, we modeled $p$ as a logistic function: 
 $p\sim logistic(a+ b*distance[i] + c*angle[i])$
 
-We set the prior probability of the parameters $a$ and $c$ to a normal distribution and $b$ to a log-normal one. 
-Thus, we constructed our logistic regression model and sampled it using the Markov Monte Carlo algorithm.
+We set the prior probability of the parameters $a$ and $c$ to a Normal distribution and $b$ to a LogNormal one. 
+Thus, we constructed our logistic regression model and sampled it using the Markov Monte Carlo algorithm (MCMC).
 To gain a better understanding of the sampling process, we made a traceplot that shows the sampled values in a sequential order.
 
-Later, we decided to try with a more complex logistic regression model, similar to the first one but this time modifying the distance parameter: 
+Later, we decided to try with a more complex logistic regression model, similar to the first one but this time modifying the distance dependency: 
 $p\sim logistic(a+ b^{distance[i]} + c*angle[i])$ 
-
 
 We set the prior distribution of $b$ to a beta distribution and constructed the second logistic regression model, sampled it and plotted the 
 results.
 
-Finally, we analyzed the results to see if the period of the game affects the probability of scoring.
-
+Finally, we analyzed the results to see if the period of the game affects the scoring probability.

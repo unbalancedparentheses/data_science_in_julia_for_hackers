@@ -221,7 +221,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="8.3.1" data-path="basketball-shots.html"><a href="basketball-shots.html#defining-the-new-model-and-computing-posteriors"><i class="fa fa-check"></i><b>8.3.1</b> Defining the new model and computing posteriors</a></li>
 </ul></li>
-<li class="chapter" data-level="8.4" data-path="basketball-shots.html"><a href="basketball-shots.html#does-the-period-affect-the-probability-of-scoring"><i class="fa fa-check"></i><b>8.4</b> Does the Period affect the probability of scoring?</a></li>
+<li class="chapter" data-level="8.4" data-path="basketball-shots.html"><a href="basketball-shots.html#does-the-period-affect-the-scoring-probability"><i class="fa fa-check"></i><b>8.4</b> Does the Period affect the scoring probability?</a></li>
 <li class="chapter" data-level="8.5" data-path="basketball-shots.html"><a href="basketball-shots.html#summary-6"><i class="fa fa-check"></i><b>8.5</b> Summary</a></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="optimal-pricing.html"><a href="optimal-pricing.html"><i class="fa fa-check"></i><b>9</b> Optimal pricing</a>
@@ -424,7 +424,7 @@ We update our model as follows:</p>
 <span id="cb13-4"><a href="basketball-shots.html#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
 <span id="cb13-5"><a href="basketball-shots.html#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="fu">xlabel!</span>(<span class="st">&quot;Normalized distance&quot;</span>);</span>
 <span id="cb13-6"><a href="basketball-shots.html#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ylabel!</span>(<span class="st">&quot;Predicted probability&quot;</span>);</span>
-<span id="cb13-7"><a href="basketball-shots.html#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="fu">title!</span>(<span class="st">&quot;Prior predictive values for p with negative LogNormal prior&quot;</span>)</span></code></pre></div>
+<span id="cb13-7"><a href="basketball-shots.html#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="fu">title!</span>(<span class="st">&quot;Prior predictive values with negative LogNormal prior&quot;</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_8_plot_9-J1.png" /><!-- --></p>
 <p>Now the behavior we can see from the predicted <span class="math inline">\(p\)</span> curves is the expected. As the shooting distance increases, the probability of scoring decreases.
 We have set some boundaries in the form of a different prior probability distribution. This process is what is called prior-predictive checks.
@@ -474,38 +474,46 @@ what is showed next to each traceplot.</p>
 <span id="cb20-6"><a href="basketball-shots.html#cb20-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ylabel!</span>(<span class="st">&quot;Probability&quot;</span>);</span>
 <span id="cb20-7"><a href="basketball-shots.html#cb20-7" aria-hidden="true" tabindex="-1"></a><span class="fu">title!</span>(<span class="st">&quot;Scoring probability vs Normalized distance (angle=45°)&quot;</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_8_plot_11-J1.png" /><!-- --></p>
-<p>The plot shows that the probability of scoring is higher as our distance to the hoop decrease, which makes sense, since the difficulty of
-scoring increase.</p>
-<p>We plot now how the probability varies with the angle for a given distance. Here we plot for a mid distance, corresponding to 0.5 in a
-normalized distance.</p>
+<p>We clearly see how our initial beliefs got adjusted with the data. Although initially the decreasing scoring probability with increasing distance
+behavior was correct, there was a lot of uncertainty about the expected value. What this last plot shows is how the possible values of <code>p</code> narrowed
+as we updated our beliefs with data.</p>
+<p>We already plotted how the scoring probability changes with respect to the distance from the hoop, but what about the angle? In principle, we
+could think that this should not be too relevant, since there is no special advantage on changing the angle from where we make our shot, but let’s
+see what does our model say when showing some real data to it. Just to keep the distance constant and only take into account the angle change, we
+plot for a miiddle distance, i.e., <span class="math inline">\(0.5\)</span> in a normalized distance.</p>
 <div class="sourceCode" id="cb21"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb21-1"><a href="basketball-shots.html#cb21-1" aria-hidden="true" tabindex="-1"></a>p_constant_distance <span class="op">=</span> []</span>
 <span id="cb21-2"><a href="basketball-shots.html#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fu">length</span>(chain[<span class="op">:</span>a])</span>
 <span id="cb21-3"><a href="basketball-shots.html#cb21-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">push!</span>(p_constant_distance, <span class="fu">logistic</span>.(chain[<span class="op">:</span>a][i] <span class="op">.-</span> chain[<span class="op">:</span>b][i]<span class="op">.*</span><span class="fl">0.5</span> <span class="op">.+</span> chain[<span class="op">:</span>c][i]<span class="op">.*</span>possible_angles));</span>
 <span id="cb21-4"><a href="basketball-shots.html#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
-<div class="sourceCode" id="cb22"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb22-1"><a href="basketball-shots.html#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">rad2deg</span>.(possible_angles),p_constant_distance[<span class="fl">1</span>], legend<span class="op">=</span><span class="cn">false</span>, alpha<span class="op">=</span><span class="fl">0.1</span>, color<span class="op">=:</span>blue);</span>
+<div class="sourceCode" id="cb22"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb22-1"><a href="basketball-shots.html#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">rad2deg</span>.(possible_angles), p_constant_distance[<span class="fl">1</span>], legend<span class="op">=</span><span class="cn">false</span>, alpha<span class="op">=</span><span class="fl">0.1</span>, color<span class="op">=:</span>blue);</span>
 <span id="cb22-2"><a href="basketball-shots.html#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="fl">2</span><span class="op">:</span><span class="fl">1000</span></span>
-<span id="cb22-3"><a href="basketball-shots.html#cb22-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">plot!</span>(<span class="fu">rad2deg</span>.(possible_angles),p_constant_distance[i], alpha<span class="op">=</span><span class="fl">0.1</span>, color<span class="op">=:</span>blue);</span>
+<span id="cb22-3"><a href="basketball-shots.html#cb22-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">plot!</span>(<span class="fu">rad2deg</span>.(possible_angles), p_constant_distance[i], alpha<span class="op">=</span><span class="fl">0.1</span>, color<span class="op">=:</span>blue);</span>
 <span id="cb22-4"><a href="basketball-shots.html#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
 <span id="cb22-5"><a href="basketball-shots.html#cb22-5" aria-hidden="true" tabindex="-1"></a><span class="fu">xlabel!</span>(<span class="st">&quot;Angle [deg]&quot;</span>);</span>
 <span id="cb22-6"><a href="basketball-shots.html#cb22-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ylabel!</span>(<span class="st">&quot;Probability&quot;</span>);</span>
 <span id="cb22-7"><a href="basketball-shots.html#cb22-7" aria-hidden="true" tabindex="-1"></a><span class="fu">title!</span>(<span class="st">&quot;Scoring probability vs Angle (mid distance)&quot;</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_8_plot_13-J1.png" /><!-- --></p>
-<p>We see that the model predicts almost constant probability as we vary the angle. This makes sense, considering that the angle doesn’t seem too
-relevant when shooting; the distance from the hoop is the relevant variable.</p>
+<p>We see that the model predicts almost constant average probability as we vary the angle.
+This is consistent with what we already suspected, although we see there is more uncertainty about the scoring probability as we move from
+0° to 90°. In conclusion, the angle doesn’t seem too important when shooting; the distance from the hoop is the relevant variable.</p>
 </div>
 </div>
 </div>
 <div id="new-model-and-prior-predictive-checks-part-ii" class="section level2 hasAnchor" number="8.3">
 <h2><span class="header-section-number">8.3</span> New model and prior predictive checks: Part II<a href="basketball-shots.html#new-model-and-prior-predictive-checks-part-ii" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>&lt;Why was this model chosen?&gt;</p>
 <p>Now we propose another model with the form:</p>
-<p><span class="math inline">\(p\sim logistic(a+ b^{distance[i]} + c*angle[i])\)</span></p>
-<p>*But for what values of b the model makes sense?</p>
-<p>We show below the plot for 4 function with 4 possible values of <span class="math inline">\(b\)</span>, having in mind that the values of <span class="math inline">\(x\)</span>, the normalized distance, goes
-from 0 to 1.</p>
+<p><span class="math inline">\(p\sim logistic(a + b^{distance[i]} + c*angle[i])\)</span></p>
+<p>*But for what values of b the model makes sense?
+Here we basically changed the dependence of the model with distance. We now have the parameter <span class="math inline">\(b\)</span> to the power of the distance from the hoop.
+We should ask ourselves, like we did with the other proposed models: Would every possible value of <span class="math inline">\(b\)</span> make sense? Let’s dig into this question.</p>
+<p>Below we plot four function with four different possible values of <span class="math inline">\(b\)</span>, having in mind that the values of <span class="math inline">\(x\)</span>, the normalized distance, goes
+from 0 to 1. These functions are</p>
 <div class="sourceCode" id="cb23"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb23-1"><a href="basketball-shots.html#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">f1</span>(x) <span class="op">=</span> <span class="fl">0.3</span><span class="op">^</span>x</span>
 <span id="cb23-2"><a href="basketball-shots.html#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="fu">f2</span>(x) <span class="op">=</span> <span class="fl">1.5</span><span class="op">^</span>x</span>
 <span id="cb23-3"><a href="basketball-shots.html#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="fu">f3</span>(x) <span class="op">=</span> <span class="op">-</span><span class="fl">0.3</span><span class="op">^</span>x</span>
 <span id="cb23-4"><a href="basketball-shots.html#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="fu">f4</span>(x) <span class="op">=</span> <span class="op">-</span><span class="fl">1.5</span><span class="op">^</span>x</span></code></pre></div>
+<p>and their plots are</p>
 <div class="sourceCode" id="cb24"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb24-1"><a href="basketball-shots.html#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fl">0</span><span class="op">:</span><span class="fl">0.01</span><span class="op">:</span><span class="fl">1</span>, f1, label<span class="op">=</span><span class="st">&quot;f1: b &lt; 1 &amp; b &gt; 0&quot;</span>, xlim<span class="op">=</span>(<span class="fl">0</span>,<span class="fl">1</span>), ylim<span class="op">=</span>(<span class="op">-</span><span class="fl">2</span>,<span class="fl">2</span>), lw<span class="op">=</span><span class="fl">3</span>);</span>
 <span id="cb24-2"><a href="basketball-shots.html#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot!</span>(<span class="fl">0</span><span class="op">:</span><span class="fl">0.01</span><span class="op">:</span><span class="fl">1</span>, f2, label<span class="op">=</span><span class="st">&quot;f2: b&gt;1&quot;</span>, lw<span class="op">=</span><span class="fl">3</span>);</span>
 <span id="cb24-3"><a href="basketball-shots.html#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot!</span>(<span class="fl">0</span><span class="op">:</span><span class="fl">0.01</span><span class="op">:</span><span class="fl">1</span>, f3, label<span class="op">=</span><span class="st">&quot;f3: b&lt;0 &amp; b&gt;-1&quot;</span>, lw<span class="op">=</span><span class="fl">3</span>);</span>
@@ -513,11 +521,14 @@ from 0 to 1.</p>
 <span id="cb24-5"><a href="basketball-shots.html#cb24-5" aria-hidden="true" tabindex="-1"></a><span class="fu">xlabel!</span>(<span class="st">&quot;Normalized distance&quot;</span>);</span>
 <span id="cb24-6"><a href="basketball-shots.html#cb24-6" aria-hidden="true" tabindex="-1"></a><span class="fu">title!</span>(<span class="st">&quot;Prior Predictive influence of distance&quot;</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_8_plot_14-J1.png" /><!-- --></p>
-<p>Analysing the possible values for <span class="math inline">\(b\)</span>, the one that makes sense is the value proposed in f1, since we want an increasing influence of the
-distance in the values of <span class="math inline">\(p\)</span> as the distance decreases, since the logistic function has higher values for higher values of x.
-So now that we know the values the our parameter <span class="math inline">\(b\)</span> can take, we propose for it a beta distribution with parameters α=2 and β=5, showed in
-the plot below.</p>
-<div class="sourceCode" id="cb25"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb25-1"><a href="basketball-shots.html#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">Beta</span>(<span class="fl">2</span>,<span class="fl">5</span>), xlim<span class="op">=</span>(<span class="op">-</span><span class="fl">0.1</span>,<span class="fl">1</span>), legend<span class="op">=</span><span class="cn">false</span>);</span>
+<p>As we can see, the qualitative behavior of these functions is different for each of the chosen values for <span class="math inline">\(b\)</span>. The only one of these values that
+is consistent with our common sense, is the one proposed for <span class="math inline">\(f_1\)</span>, as we want it to be a decreasing function for the distance variable. In other
+words, we want <span class="math inline">\(b\)</span> to be in the range from 0 to 1, and to be positive.
+Now that we have limited the range of values that <span class="math inline">\(b\)</span> can take, we should propose a probability distribution that satisfies the constraints the
+parameter should have. For this, we propose a Beta distribution with parameters <span class="math inline">\(α=2\)</span> and <span class="math inline">\(β=2\)</span>.
+We chose these distribution since it is only defined in the interval we are interesed on, and the value of the parameters so that the distribution
+is symmetrical, i.e., not biased towards the start or the end of the range from 0 to 1.</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb25-1"><a href="basketball-shots.html#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">Beta</span>(<span class="fl">2</span>,<span class="fl">2</span>), xlim<span class="op">=</span>(<span class="op">-</span><span class="fl">0.1</span>,<span class="fl">1</span>), legend<span class="op">=</span><span class="cn">false</span>);</span>
 <span id="cb25-2"><a href="basketball-shots.html#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title!</span>(<span class="st">&quot;Prior distribution for b&quot;</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_8_plot_15-J1.png" /><!-- --></p>
 <div id="defining-the-new-model-and-computing-posteriors" class="section level3 hasAnchor" number="8.3.1">
@@ -527,7 +538,7 @@ the plot below.</p>
 <span id="cb26-2"><a href="basketball-shots.html#cb26-2" aria-hidden="true" tabindex="-1"></a>  N <span class="op">=</span> <span class="fu">length</span>(distances)</span>
 <span id="cb26-3"><a href="basketball-shots.html#cb26-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Set priors.</span></span>
 <span id="cb26-4"><a href="basketball-shots.html#cb26-4" aria-hidden="true" tabindex="-1"></a>    a <span class="op">~</span> <span class="fu">Normal</span>(<span class="fl">0</span>,<span class="fl">1</span>) </span>
-<span id="cb26-5"><a href="basketball-shots.html#cb26-5" aria-hidden="true" tabindex="-1"></a>    b <span class="op">~</span> <span class="fu">Beta</span>(<span class="fl">2</span>,<span class="fl">5</span>)</span>
+<span id="cb26-5"><a href="basketball-shots.html#cb26-5" aria-hidden="true" tabindex="-1"></a>    b <span class="op">~</span> <span class="fu">Beta</span>(<span class="fl">2</span>,<span class="fl">2</span>)</span>
 <span id="cb26-6"><a href="basketball-shots.html#cb26-6" aria-hidden="true" tabindex="-1"></a>    c <span class="op">~</span> <span class="fu">Normal</span>(<span class="fl">0</span>,<span class="fl">1</span>)</span>
 <span id="cb26-7"><a href="basketball-shots.html#cb26-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>n</span>
 <span id="cb26-8"><a href="basketball-shots.html#cb26-8" aria-hidden="true" tabindex="-1"></a>        p <span class="op">=</span> <span class="fu">logistic</span>(a <span class="op">+</span>  b <span class="op">.^</span> distances[i] <span class="op">+</span> c<span class="op">*</span>angles[i])</span>
@@ -555,7 +566,7 @@ shown below.</p>
 <span id="cb31-6"><a href="basketball-shots.html#cb31-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ylabel!</span>(<span class="st">&quot;Probability&quot;</span>);</span>
 <span id="cb31-7"><a href="basketball-shots.html#cb31-7" aria-hidden="true" tabindex="-1"></a><span class="fu">title!</span>(<span class="st">&quot;Scoring probability vs Normalized distance (angle=45°)&quot;</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_8_plot_17-J1.png" /><!-- --></p>
-<p>Given that we have 2 variables, we can plot the mean probability of scoring as function of the two and obtain a surface plot. We show this below.</p>
+<p>Given that we have 2 variables, we can plot the mean probability of scoring as function of the two and obtain a surface plot, too:</p>
 <div class="sourceCode" id="cb32"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb32-1"><a href="basketball-shots.html#cb32-1" aria-hidden="true" tabindex="-1"></a>angle_ <span class="op">=</span> <span class="fu">collect</span>(<span class="fu">range</span>(<span class="fl">0</span>, stop<span class="op">=</span><span class="cn">π</span><span class="op">/</span><span class="fl">2</span>, length<span class="op">=</span><span class="fl">100</span>))</span>
 <span id="cb32-2"><a href="basketball-shots.html#cb32-2" aria-hidden="true" tabindex="-1"></a>dist_ <span class="op">=</span> <span class="fu">collect</span>(<span class="fu">range</span>(<span class="fl">0</span>, stop<span class="op">=</span><span class="fl">1</span>, length<span class="op">=</span><span class="fl">100</span>))</span>
 <span id="cb32-3"><a href="basketball-shots.html#cb32-3" aria-hidden="true" tabindex="-1"></a>it <span class="op">=</span> <span class="bu">Iterators</span>.<span class="fu">product</span>(angle_, dist_)</span>
@@ -565,30 +576,31 @@ shown below.</p>
 <span id="cb32-7"><a href="basketball-shots.html#cb32-7" aria-hidden="true" tabindex="-1"></a>dist_grid <span class="op">=</span> <span class="fu">getindex</span>.(values,[<span class="fl">2</span>])</span>
 <span id="cb32-8"><a href="basketball-shots.html#cb32-8" aria-hidden="true" tabindex="-1"></a>z <span class="op">=</span> <span class="fu">logistic</span>.(<span class="fu">mean</span>(chain_exp[<span class="op">:</span>a]) <span class="op">.+</span> <span class="fu">mean</span>(chain_exp[<span class="op">:</span>b])<span class="op">.^</span>dist_grid <span class="op">.+</span> <span class="fu">mean</span>(chain_exp[<span class="op">:</span>c])<span class="op">.*</span>angle_grid)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_8_plot_18-J1.png" /><!-- --></p>
-<p>The plot show the behaviour expected, an increasing probability of scoring as we get near the hoop. We also see that there is almost no variation
+<p>The plot shows the expected behavior, an increasing probability of scoring as we get near the hoop. We also see that there is almost no variation
 of the probability with the angle.</p>
 </div>
 </div>
-<div id="does-the-period-affect-the-probability-of-scoring" class="section level2 hasAnchor" number="8.4">
-<h2><span class="header-section-number">8.4</span> Does the Period affect the probability of scoring?<a href="basketball-shots.html#does-the-period-affect-the-probability-of-scoring" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Now we will try to answer this question. We propose then a model, and calculate the posterior for its parameters with data of one of each of the
-four possible periods. We define the same model for all four periods. Also, we don’t take into account now the angle variable, since we have seen
-before that this variable is of little importance.</p>
-<p>We filter then our data by its period and proceed to estimate our posterior distributions.</p>
-<div class="sourceCode" id="cb33"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb33-1"><a href="basketball-shots.html#cb33-1" aria-hidden="true" tabindex="-1"></a>shots_period1<span class="op">=</span> <span class="fu">filter</span>(x <span class="op">-&gt;</span> x.period <span class="op">==</span> <span class="fl">1</span>, shots)</span></code></pre></div>
+<div id="does-the-period-affect-the-scoring-probability" class="section level2 hasAnchor" number="8.4">
+<h2><span class="header-section-number">8.4</span> Does the Period affect the scoring probability?<a href="basketball-shots.html#does-the-period-affect-the-scoring-probability" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>We have been using the scoring data across all periods, but what about how the scoring probability changes across periods?
+We will propose a model and calculate the posterior for its parameters with scoring data of each of the four possible periods. The exact
+same model for all four periods will be used. The angle variable will be discarded from the model, as we have already saw that is of little
+importance.</p>
+<p>We filter our data by period and proceed to estimate our posterior distributions.</p>
+<div class="sourceCode" id="cb33"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb33-1"><a href="basketball-shots.html#cb33-1" aria-hidden="true" tabindex="-1"></a>shots_period1 <span class="op">=</span> <span class="fu">filter</span>(x <span class="op">-&gt;</span> x.period <span class="op">==</span> <span class="fl">1</span>, shots)</span></code></pre></div>
 <div class="sourceCode" id="cb34"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb34-1"><a href="basketball-shots.html#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="pp">@model</span> <span class="fu">logistic_regression_period</span>(distances, result,n) <span class="op">=</span> <span class="cf">begin</span></span>
 <span id="cb34-2"><a href="basketball-shots.html#cb34-2" aria-hidden="true" tabindex="-1"></a>  N <span class="op">=</span> <span class="fu">length</span>(distances)</span>
 <span id="cb34-3"><a href="basketball-shots.html#cb34-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Set priors.</span></span>
 <span id="cb34-4"><a href="basketball-shots.html#cb34-4" aria-hidden="true" tabindex="-1"></a>    a <span class="op">~</span> <span class="fu">Normal</span>(<span class="fl">0</span>,<span class="fl">1</span>) </span>
 <span id="cb34-5"><a href="basketball-shots.html#cb34-5" aria-hidden="true" tabindex="-1"></a>    b <span class="op">~</span> <span class="fu">Beta</span>(<span class="fl">2</span>,<span class="fl">5</span>)</span>
 <span id="cb34-6"><a href="basketball-shots.html#cb34-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>n</span>
-<span id="cb34-7"><a href="basketball-shots.html#cb34-7" aria-hidden="true" tabindex="-1"></a>        p <span class="op">=</span> <span class="fu">logistic</span>( a <span class="op">+</span>  b <span class="op">.^</span> distances[i])</span>
+<span id="cb34-7"><a href="basketball-shots.html#cb34-7" aria-hidden="true" tabindex="-1"></a>        p <span class="op">=</span> <span class="fu">logistic</span>(a <span class="op">+</span>  b <span class="op">.^</span> distances[i])</span>
 <span id="cb34-8"><a href="basketball-shots.html#cb34-8" aria-hidden="true" tabindex="-1"></a>        result[i] <span class="op">~</span> <span class="fu">Bernoulli</span>(p)</span>
 <span id="cb34-9"><a href="basketball-shots.html#cb34-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">end</span></span>
 <span id="cb34-10"><a href="basketball-shots.html#cb34-10" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
 <div class="sourceCode" id="cb35"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb35-1"><a href="basketball-shots.html#cb35-1" aria-hidden="true" tabindex="-1"></a>n_ <span class="op">=</span> <span class="fl">500</span> </span></code></pre></div>
 <div class="sourceCode" id="cb36"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb36-1"><a href="basketball-shots.html#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Sample using HMC.</span></span>
-<span id="cb36-2"><a href="basketball-shots.html#cb36-2" aria-hidden="true" tabindex="-1"></a>chain_period1 <span class="op">=</span> <span class="fu">mapreduce</span>(c <span class="op">-&gt;</span> <span class="fu">sample</span>(<span class="fu">logistic_regression_period</span>(shots_period1.distance[<span class="fl">1</span><span class="op">:</span>n_] <span class="op">./</span> <span class="fu">maximum</span>(shots_period1.distance[<span class="fl">1</span><span class="op">:</span>n_] ),shots_period1.result[<span class="fl">1</span><span class="op">:</span>n_], n_), <span class="fu">HMC</span>(<span class="fl">0.05</span>, <span class="fl">10</span>), <span class="fl">1500</span>), chainscat, <span class="fl">1</span><span class="op">:</span><span class="fl">3</span>)</span></code></pre></div>
+<span id="cb36-2"><a href="basketball-shots.html#cb36-2" aria-hidden="true" tabindex="-1"></a>chain_period1 <span class="op">=</span> <span class="fu">mapreduce</span>(c <span class="op">-&gt;</span> <span class="fu">sample</span>(<span class="fu">logistic_regression_period</span>(shots_period1.distance[<span class="fl">1</span><span class="op">:</span>n_] <span class="op">./</span> <span class="fu">maximum</span>(shots_period1.distance[<span class="fl">1</span><span class="op">:</span>n_] ), shots_period1.result[<span class="fl">1</span><span class="op">:</span>n_], n_), <span class="fu">HMC</span>(<span class="fl">0.05</span>, <span class="fl">10</span>), <span class="fl">1500</span>), chainscat, <span class="fl">1</span><span class="op">:</span><span class="fl">3</span>)</span></code></pre></div>
 <div class="sourceCode" id="cb37"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb37-1"><a href="basketball-shots.html#cb37-1" aria-hidden="true" tabindex="-1"></a>shots_period2 <span class="op">=</span> <span class="fu">filter</span>(x <span class="op">-&gt;</span> x.period <span class="op">==</span> <span class="fl">2</span>, shots)</span></code></pre></div>
 <div class="sourceCode" id="cb38"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb38-1"><a href="basketball-shots.html#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Sample using HMC.</span></span>
 <span id="cb38-2"><a href="basketball-shots.html#cb38-2" aria-hidden="true" tabindex="-1"></a>chain_period2 <span class="op">=</span> <span class="fu">mapreduce</span>(c <span class="op">-&gt;</span> <span class="fu">sample</span>(<span class="fu">logistic_regression_period</span>(shots_period2.distance[<span class="fl">1</span><span class="op">:</span>n_] <span class="op">./</span> <span class="fu">maximum</span>(shots_period2.distance[<span class="fl">1</span><span class="op">:</span>n_] ), shots_period2.result[<span class="fl">1</span><span class="op">:</span>n_], n_), <span class="fu">HMC</span>(<span class="fl">0.05</span>, <span class="fl">10</span>), <span class="fl">1500</span>),</span>
@@ -608,13 +620,13 @@ before that this variable is of little importance.</p>
 <span id="cb42-4"><a href="basketball-shots.html#cb42-4" aria-hidden="true" tabindex="-1"></a>    <span class="fl">1</span><span class="op">:</span><span class="fl">3</span></span>
 <span id="cb42-5"><a href="basketball-shots.html#cb42-5" aria-hidden="true" tabindex="-1"></a>);</span></code></pre></div>
 <div class="sourceCode" id="cb43"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb43-1"><a href="basketball-shots.html#cb43-1" aria-hidden="true" tabindex="-1"></a>p_period1 <span class="op">=</span> <span class="fu">logistic</span>.(<span class="fu">mean</span>(chain_period1[<span class="op">:</span>a]) <span class="op">.+</span> <span class="fu">mean</span>(chain_period1[<span class="op">:</span>b])<span class="op">.^</span>possible_distances )</span>
-<span id="cb43-2"><a href="basketball-shots.html#cb43-2" aria-hidden="true" tabindex="-1"></a>p_period1_std <span class="op">=</span> <span class="fu">logistic</span>.((<span class="fu">mean</span>(chain_period1[<span class="op">:</span>a])<span class="op">.+</span><span class="fu">std</span>(chain_period1[<span class="op">:</span>a])) <span class="op">.+</span> (<span class="fu">mean</span>(chain_period1[<span class="op">:</span>b])<span class="op">.+</span><span class="fu">std</span>(chain_period1[<span class="op">:</span>a]))<span class="op">.^</span>possible_distances)</span>
+<span id="cb43-2"><a href="basketball-shots.html#cb43-2" aria-hidden="true" tabindex="-1"></a>p_period1_std <span class="op">=</span> <span class="fu">logistic</span>.((<span class="fu">mean</span>(chain_period1[<span class="op">:</span>a]) <span class="op">.+</span> <span class="fu">std</span>(chain_period1[<span class="op">:</span>a])) <span class="op">.+</span> (<span class="fu">mean</span>(chain_period1[<span class="op">:</span>b]) <span class="op">.+</span> <span class="fu">std</span>(chain_period1[<span class="op">:</span>a]))<span class="op">.^</span>possible_distances)</span>
 <span id="cb43-3"><a href="basketball-shots.html#cb43-3" aria-hidden="true" tabindex="-1"></a>p_period2 <span class="op">=</span> <span class="fu">logistic</span>.(<span class="fu">mean</span>(chain_period2[<span class="op">:</span>a]) <span class="op">.+</span> <span class="fu">mean</span>(chain_period2[<span class="op">:</span>b])<span class="op">.^</span>possible_distances )</span>
-<span id="cb43-4"><a href="basketball-shots.html#cb43-4" aria-hidden="true" tabindex="-1"></a>p_period2_std <span class="op">=</span> <span class="fu">logistic</span>.((<span class="fu">mean</span>(chain_period2[<span class="op">:</span>a])<span class="op">.+</span><span class="fu">std</span>(chain_period2[<span class="op">:</span>a])) <span class="op">.+</span> (<span class="fu">mean</span>(chain_period2[<span class="op">:</span>b])<span class="op">.+</span><span class="fu">std</span>(chain_period2[<span class="op">:</span>a]))<span class="op">.^</span>possible_distances)</span>
+<span id="cb43-4"><a href="basketball-shots.html#cb43-4" aria-hidden="true" tabindex="-1"></a>p_period2_std <span class="op">=</span> <span class="fu">logistic</span>.((<span class="fu">mean</span>(chain_period2[<span class="op">:</span>a]) <span class="op">.+</span> <span class="fu">std</span>(chain_period2[<span class="op">:</span>a])) <span class="op">.+</span> (<span class="fu">mean</span>(chain_period2[<span class="op">:</span>b]) <span class="op">.+</span> <span class="fu">std</span>(chain_period2[<span class="op">:</span>a]))<span class="op">.^</span>possible_distances)</span>
 <span id="cb43-5"><a href="basketball-shots.html#cb43-5" aria-hidden="true" tabindex="-1"></a>p_period3 <span class="op">=</span> <span class="fu">logistic</span>.(<span class="fu">mean</span>(chain_period3[<span class="op">:</span>a]) <span class="op">.+</span> <span class="fu">mean</span>(chain_period3[<span class="op">:</span>b])<span class="op">.^</span>possible_distances)</span>
-<span id="cb43-6"><a href="basketball-shots.html#cb43-6" aria-hidden="true" tabindex="-1"></a>p_period3_std <span class="op">=</span> <span class="fu">logistic</span>.((<span class="fu">mean</span>(chain_period3[<span class="op">:</span>a])<span class="op">.+</span><span class="fu">std</span>(chain_period3[<span class="op">:</span>a])) <span class="op">.+</span> (<span class="fu">mean</span>(chain_period3[<span class="op">:</span>b])<span class="op">.+</span><span class="fu">std</span>(chain_period3[<span class="op">:</span>a]))<span class="op">.^</span>possible_distances)</span>
+<span id="cb43-6"><a href="basketball-shots.html#cb43-6" aria-hidden="true" tabindex="-1"></a>p_period3_std <span class="op">=</span> <span class="fu">logistic</span>.((<span class="fu">mean</span>(chain_period3[<span class="op">:</span>a]) <span class="op">.+</span> <span class="fu">std</span>(chain_period3[<span class="op">:</span>a])) <span class="op">.+</span> (<span class="fu">mean</span>(chain_period3[<span class="op">:</span>b]) <span class="op">.+</span> <span class="fu">std</span>(chain_period3[<span class="op">:</span>a]))<span class="op">.^</span>possible_distances)</span>
 <span id="cb43-7"><a href="basketball-shots.html#cb43-7" aria-hidden="true" tabindex="-1"></a>p_period4 <span class="op">=</span> <span class="fu">logistic</span>.(<span class="fu">mean</span>(chain_period4[<span class="op">:</span>a]) <span class="op">.+</span> <span class="fu">mean</span>(chain_period4[<span class="op">:</span>b])<span class="op">.^</span>possible_distances )</span>
-<span id="cb43-8"><a href="basketball-shots.html#cb43-8" aria-hidden="true" tabindex="-1"></a>p_period4_std <span class="op">=</span> <span class="fu">logistic</span>.((<span class="fu">mean</span>(chain_period4[<span class="op">:</span>a])<span class="op">.+</span><span class="fu">std</span>(chain_period4[<span class="op">:</span>a])) <span class="op">.+</span> (<span class="fu">mean</span>(chain_period4[<span class="op">:</span>b])<span class="op">.+</span><span class="fu">std</span>(chain_period4[<span class="op">:</span>a]))<span class="op">.^</span>possible_distances )</span></code></pre></div>
+<span id="cb43-8"><a href="basketball-shots.html#cb43-8" aria-hidden="true" tabindex="-1"></a>p_period4_std <span class="op">=</span> <span class="fu">logistic</span>.((<span class="fu">mean</span>(chain_period4[<span class="op">:</span>a]) <span class="op">.+</span> <span class="fu">std</span>(chain_period4[<span class="op">:</span>a])) <span class="op">.+</span> (<span class="fu">mean</span>(chain_period4[<span class="op">:</span>b]) <span class="op">.+</span> <span class="fu">std</span>(chain_period4[<span class="op">:</span>a]))<span class="op">.^</span>possible_distances)</span></code></pre></div>
 <p>We plot now for each period the probability of scoring for each period, each mean and one standard deviation from it.</p>
 <div class="sourceCode" id="cb44"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb44-1"><a href="basketball-shots.html#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(possible_distances, p_period4,ribbon<span class="op">=</span>p_period4_std<span class="op">.-</span>p_period4,  color<span class="op">=:</span>magenta, label<span class="op">=</span><span class="st">&quot;period4&quot;</span>, fillalpha<span class="op">=</span><span class="fl">.3</span>, ylim<span class="op">=</span>(<span class="fl">0</span>,<span class="fl">0.6</span>));</span>
 <span id="cb44-2"><a href="basketball-shots.html#cb44-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot!</span>(possible_distances, p_period2, color<span class="op">=:</span>green, ribbon<span class="op">=</span>p_period2_std<span class="op">.-</span>p_period2, label<span class="op">=</span><span class="st">&quot;period2&quot;</span>, fillalpha<span class="op">=</span><span class="fl">.3</span>);</span>
@@ -623,25 +635,28 @@ before that this variable is of little importance.</p>
 <span id="cb44-5"><a href="basketball-shots.html#cb44-5" aria-hidden="true" tabindex="-1"></a><span class="fu">xlabel!</span>(<span class="st">&quot;Normalized distance&quot;</span>);</span>
 <span id="cb44-6"><a href="basketball-shots.html#cb44-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ylabel!</span>(<span class="st">&quot;Scoring probability&quot;</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_8_plot_19-J1.png" /><!-- --></p>
-<p>Finally, we see that for the periods 1 and 4, the first and the last periods, the probabity of scoring is slightly higher than the other two
-periods, meaning that players are somewhat better scoring in those periods.</p>
+<p>Comparing the means of each period, we see that for the periods 1 and 4, the first and the last periods, the scoring probability is slightly
+higher than the other two periods. There are a bunch of possible explanations for these results. Clearly in the first period, players are most
+effective due to being with the most energy. In period 4, new players have substituted the old ones, and also have a lot of energy, while in periods
+2 and 3, there is a tendency for more tired players that have not been substituted. These hypothesis should be tested to know if they are correct,
+but it is a starting point for more data analysis.</p>
 </div>
 <div id="summary-6" class="section level2 hasAnchor" number="8.5">
 <h2><span class="header-section-number">8.5</span> Summary<a href="basketball-shots.html#summary-6" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>In this chapter, we used the NBA shooting data of the season 2006-2007 to analyze how the scoring probability is affected by some variables,
-such as the distance from the hoop and the angle of shooting.</p>
+such as the distance from the hoop and the shooting angle.</p>
 <p>First, we inspected the data by plotting a heatplot of all the shots made and making histograms of the ones that scored.
-As our goal was to study the probability of scoring, which is a Bernoulli trial situation, we decided to use a Bernoulli model.
+As our goal was to study the scoring probability, which is a Bernoulli trial situation, we decided to use a Bernoulli model.
 Since the only parameter needed in a Bernoulli distribution is the probability <span class="math inline">\(p\)</span> of having a success, we modeled <span class="math inline">\(p\)</span> as a logistic function:
 <span class="math inline">\(p\sim logistic(a+ b*distance[i] + c*angle[i])\)</span></p>
-<p>We set the prior probability of the parameters <span class="math inline">\(a\)</span> and <span class="math inline">\(c\)</span> to a normal distribution and <span class="math inline">\(b\)</span> to a log-normal one.
-Thus, we constructed our logistic regression model and sampled it using the Markov Monte Carlo algorithm.
+<p>We set the prior probability of the parameters <span class="math inline">\(a\)</span> and <span class="math inline">\(c\)</span> to a Normal distribution and <span class="math inline">\(b\)</span> to a LogNormal one.
+Thus, we constructed our logistic regression model and sampled it using the Markov Monte Carlo algorithm (MCMC).
 To gain a better understanding of the sampling process, we made a traceplot that shows the sampled values in a sequential order.</p>
-<p>Later, we decided to try with a more complex logistic regression model, similar to the first one but this time modifying the distance parameter:
+<p>Later, we decided to try with a more complex logistic regression model, similar to the first one but this time modifying the distance dependency:
 <span class="math inline">\(p\sim logistic(a+ b^{distance[i]} + c*angle[i])\)</span></p>
 <p>We set the prior distribution of <span class="math inline">\(b\)</span> to a beta distribution and constructed the second logistic regression model, sampled it and plotted the
 results.</p>
-<p>Finally, we analyzed the results to see if the period of the game affects the probability of scoring.</p>
+<p>Finally, we analyzed the results to see if the period of the game affects the scoring probability.</p>
 
 </div>
 </div>
