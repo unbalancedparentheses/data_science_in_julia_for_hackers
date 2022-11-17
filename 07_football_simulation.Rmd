@@ -391,7 +391,7 @@ annotate!([(x, y + 0.238, text(team, 8, :center, :black)) for (x, y, team) in zi
 ylabel!("Mean team attack")
 ```
 
-Although there is a high correlation between the attacking power of each team and its position on the table after the league ends, it is clear that this is not enough to explain the results. For example, Manchester City was the league's sub-champion, but only appeared in fifth place.
+Although there is a high correlation between the attacking power of each team and its position on the table after the league ends, it is clear that this is not enough to explain the results. For example, Manchester City was the league's runner-up, but only appeared in fifth place.
 
 Let's explore what happens to the defence power: 
 
