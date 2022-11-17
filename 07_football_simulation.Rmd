@@ -196,7 +196,7 @@ Let's translate all this into Turing code:
 @model function football_matches(home_teams, away_teams, score_home, score_away, teams)
 	# Hyper priors
 	σatt ~ Exponential(1)
-	σdeff ~ Exponential(1)
+	σdef ~ Exponential(1)
 	μatt ~ Normal(0, 0.1)
 	μdef ~ Normal(0, 0.1)
 	
@@ -204,7 +204,7 @@ Let's translate all this into Turing code:
 		
 	# Team-specific effects	
 	att ~ filldist(Normal(μatt, σatt), length(teams))
-	def ~ filldist(Normal(μatt, σdeff), length(teams))
+	def ~ filldist(Normal(μdef, σdef), length(teams))
 	
 	dict = Dict{String, Int64}()
 	for (i, team) in enumerate(teams)
@@ -248,7 +248,7 @@ So let´s run it and see if all of this effort was worth it:
 model = football_matches(matches_df[:,1], matches_df[:,2], matches_df[:,3], matches_df[:,4], teams)
 ```
 
-```{julia, football_sample, cache = TRUE, results = FALSE}
+```{julia, football_sample, cache = FALSE, results = FALSE}
 posterior = sample(model, NUTS(), 3000)
 ```
 

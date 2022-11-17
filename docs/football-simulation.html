@@ -462,7 +462,7 @@ subtract the average of all the attack and defence powers from each one. In this
 <div class="sourceCode" id="cb9"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb9-1"><a href="football-simulation.html#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="pp">@model</span> <span class="kw">function</span> <span class="fu">football_matches</span>(home_teams, away_teams, score_home, score_away, teams)</span>
 <span id="cb9-2"><a href="football-simulation.html#cb9-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Hyper priors</span></span>
 <span id="cb9-3"><a href="football-simulation.html#cb9-3" aria-hidden="true" tabindex="-1"></a>    σatt <span class="op">~</span> <span class="fu">Exponential</span>(<span class="fl">1</span>)</span>
-<span id="cb9-4"><a href="football-simulation.html#cb9-4" aria-hidden="true" tabindex="-1"></a>    σdeff <span class="op">~</span> <span class="fu">Exponential</span>(<span class="fl">1</span>)</span>
+<span id="cb9-4"><a href="football-simulation.html#cb9-4" aria-hidden="true" tabindex="-1"></a>    σdef <span class="op">~</span> <span class="fu">Exponential</span>(<span class="fl">1</span>)</span>
 <span id="cb9-5"><a href="football-simulation.html#cb9-5" aria-hidden="true" tabindex="-1"></a>    μatt <span class="op">~</span> <span class="fu">Normal</span>(<span class="fl">0</span>, <span class="fl">0.1</span>)</span>
 <span id="cb9-6"><a href="football-simulation.html#cb9-6" aria-hidden="true" tabindex="-1"></a>    μdef <span class="op">~</span> <span class="fu">Normal</span>(<span class="fl">0</span>, <span class="fl">0.1</span>)</span>
 <span id="cb9-7"><a href="football-simulation.html#cb9-7" aria-hidden="true" tabindex="-1"></a>    </span>
@@ -470,7 +470,7 @@ subtract the average of all the attack and defence powers from each one. In this
 <span id="cb9-9"><a href="football-simulation.html#cb9-9" aria-hidden="true" tabindex="-1"></a>        </span>
 <span id="cb9-10"><a href="football-simulation.html#cb9-10" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Team-specific effects </span></span>
 <span id="cb9-11"><a href="football-simulation.html#cb9-11" aria-hidden="true" tabindex="-1"></a>    att <span class="op">~</span> <span class="fu">filldist</span>(<span class="fu">Normal</span>(μatt, σatt), <span class="fu">length</span>(teams))</span>
-<span id="cb9-12"><a href="football-simulation.html#cb9-12" aria-hidden="true" tabindex="-1"></a>    def <span class="op">~</span> <span class="fu">filldist</span>(<span class="fu">Normal</span>(μatt, σdeff), <span class="fu">length</span>(teams))</span>
+<span id="cb9-12"><a href="football-simulation.html#cb9-12" aria-hidden="true" tabindex="-1"></a>    def <span class="op">~</span> <span class="fu">filldist</span>(<span class="fu">Normal</span>(μdef, σdef), <span class="fu">length</span>(teams))</span>
 <span id="cb9-13"><a href="football-simulation.html#cb9-13" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb9-14"><a href="football-simulation.html#cb9-14" aria-hidden="true" tabindex="-1"></a>    dict <span class="op">=</span> <span class="fu">Dict</span><span class="dt">{String, Int64}</span>()</span>
 <span id="cb9-15"><a href="football-simulation.html#cb9-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> (i, team) <span class="kw">in</span> <span class="fu">enumerate</span>(teams)</span>
@@ -494,7 +494,7 @@ subtract the average of all the attack and defence powers from each one. In this
 <span id="cb9-33"><a href="football-simulation.html#cb9-33" aria-hidden="true" tabindex="-1"></a>        score_away[i] <span class="op">~</span> <span class="fu">LogPoisson</span>(log_θ_away[i])</span>
 <span id="cb9-34"><a href="football-simulation.html#cb9-34" aria-hidden="true" tabindex="-1"></a>    <span class="cf">end</span></span>
 <span id="cb9-35"><a href="football-simulation.html#cb9-35" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
-<p>As you can see, the turing code is very clear and direct. In the first block we define our hyperpriors for the distributions of the
+<p>As you can see, the Turing code is very clear and direct. In the first block we define our hyperpriors for the distributions of the
 characteristics of the equipment.</p>
 <p>In the second one, we define the priors distributions that will encapsulate the information about the attack and defense powers of the teams.
 With the <em>filldist</em> function we are telling Turing that we need as many of these parameters as there are teams in the league <em>length(teams)</em></p>
@@ -531,7 +531,7 @@ performed in the 2017/2018 Premier League.</p>
 <span id="cb14-4"><a href="football-simulation.html#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="fu">title!</span>(<span class="st">&quot;Posterior distribution of home parameter&quot;</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_7_plot_1-J1.png" /><!-- --></p>
 <div class="sourceCode" id="cb15"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb15-1"><a href="football-simulation.html#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(post_home)</span></code></pre></div>
-<pre><code>## 0.3371169008958107</code></pre>
+<pre><code>## 0.3387993880195551</code></pre>
 <p>So, to include in the model the parameter home was a good idea. indeed being local provides a very big advantage.</p>
 <p>Beyond the fact that it is interesting to be able to quantify how much the location influences the scoring rate of the teams, including it in
 the analysis allow us to have better estimates of the defense and attack parameters of the teams. This is true because if it had not been
@@ -548,26 +548,26 @@ deforming the real measure of these.</p>
 entire array.</p>
 <div class="sourceCode" id="cb18"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb18-1"><a href="football-simulation.html#cb18-1" aria-hidden="true" tabindex="-1"></a>teams_att</span></code></pre></div>
 <pre><code>## 20-element Vector{Any}:
-##  [-0.3969143283211489; -0.08460906811180033; … ; -0.4169215021017948; -0.1270425286239777;;]
-##  [-0.09917852958146217; -0.05082968777507396; … ; -0.017747657133871705; 0.07875819677734033;;]
-##  [-0.15091430497077216; -0.653760473186353; … ; -0.46026177013623404; -0.4784957762207069;;]
-##  [0.4535462781798289; 0.6403612020670159; … ; 0.4657342876309753; 0.3789386421380528;;]
-##  [0.27291173989090567; 0.40875795640878826; … ; 0.22819227815414495; 0.3647640313790336;;]
-##  [-0.16365468392187144; -0.14799166188500407; … ; -0.32076826811036213; -0.33551806842140663;;]
-##  [0.06098709008167405; -0.4695627831825239; … ; -0.12580671317418124; -0.055922663509319556;;]
-##  [-0.2844531722417455; -0.4705460832513177; … ; -0.32758323997293465; -0.3038001613088295;;]
-##  [0.49038867322748547; 0.23771206823781588; … ; 0.47181979338862806; 0.466652531159456;;]
-##  [-0.12711397070599184; 0.1450137718026582; … ; 0.11718058272685705; 0.1301990627975195;;]
-##  [0.74504256489495; 0.6707996012100144; … ; 0.4490885599682984; 0.6315918368624422;;]
-##  [0.3430722979209613; -0.06433166715125384; … ; 0.3573388308523431; 0.10831348915046943;;]
-##  [0.1911619585504367; 0.3466077234050029; … ; 0.07546636511696696; 0.2435052877109778;;]
-##  [0.29907799632580123; 0.4793039175753324; … ; -0.04345417626577312; 0.2851757108570739;;]
-##  [-0.25282355317386684; 0.1514739320572421; … ; 0.1295747434989584; -0.004441335630617063;;]
-##  [0.013982176397631885; -0.2278382162567963; … ; -0.042547470345612716; 0.04767776086231719;;]
-##  [-0.1870849476653736; 0.03652147101758588; … ; -0.18310360682128815; -0.054371560298548116;;]
-##  [-0.2571425519048038; -0.41475717531620354; … ; -0.18277115099094818; -0.3080170839450941;;]
-##  [-0.12442419078530578; -0.28579937484107226; … ; -0.40756237997237305; -0.8468914970830774;;]
-##  [-0.13045014763282242; -0.36045220935983435; … ; -0.2591202557177773; -0.2982963496788134;;]</code></pre>
+##  [-0.7793292779144027; -0.719767515864691; … ; -0.048951430861039216; -0.17934841508668142;;]
+##  [-0.2971511274122689; -0.08815820781214584; … ; -0.1584392861097645; -0.06653503053179821;;]
+##  [-0.8026745763773377; -0.7129466613418263; … ; -0.365382971686457; -0.5946032650621564;;]
+##  [0.3412520679342644; 0.4445819549204084; … ; 0.517316773112437; 0.6183366505318804;;]
+##  [0.17109717264705404; 0.41009904907647526; … ; 0.48376924500313623; 0.30286063109967515;;]
+##  [-0.14216531628668216; -0.35767773532469793; … ; 0.11731057206250822; -0.3185111413451413;;]
+##  [-0.5081933325424391; -0.5460843813611378; … ; 0.039828252330114; -0.170739102369511;;]
+##  [-0.6189456220060096; -0.5551898343848495; … ; -0.22174329930436093; -0.1510539204431025;;]
+##  [0.22734901061661011; 0.3620777806576383; … ; 0.43150525600756406; 0.4395625468407053;;]
+##  [-0.07743071556956452; -0.13303305187604275; … ; 0.1653934996255213; 0.12599520635143785;;]
+##  [0.6850354751356; 0.657011326520724; … ; 0.8332470577645241; 0.7072177180453905;;]
+##  [0.11073153492639115; -0.13206418983568255; … ; 0.10464845512498648; 0.44745143434289925;;]
+##  [-0.07738133343211227; 0.0321475939779678; … ; 0.4790226135844605; 0.17012305256546634;;]
+##  [0.19833252142329863; 0.21079401746675164; … ; 0.4954009679989974; 0.31502583150055585;;]
+##  [-0.29110031532175623; -0.19701526121240442; … ; 0.01957473781731085; -0.12406560598798032;;]
+##  [-0.3062013556975731; -0.16054748711429023; … ; 0.12335459902171869; -0.08993117333996316;;]
+##  [-0.33241362199696883; -0.15889112275774006; … ; -0.11424477889423534; 0.11782581914832518;;]
+##  [-0.580443703969774; -0.6258137256035375; … ; -0.25078264650853116; -0.010903355137482966;;]
+##  [-0.49711122672391683; -0.6389045670312493; … ; -0.011010630436153745; 0.08781761406628286;;]
+##  [-0.5991439624822221; -0.46938464297945903; … ; -0.05008327886304573; -0.3313564480151995;;]</code></pre>
 <p>For example, if we would like to see the posterior distribution of the attack parameter for Burnley:</p>
 <div class="sourceCode" id="cb20"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb20-1"><a href="football-simulation.html#cb20-1" aria-hidden="true" tabindex="-1"></a>teams[<span class="fl">1</span>]</span></code></pre></div>
 <pre><code>## &quot;Burnley&quot;</code></pre>
@@ -577,7 +577,7 @@ entire array.</p>
 <span id="cb22-4"><a href="football-simulation.html#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="fu">title!</span>(<span class="st">&quot;Posterior distribution of Burnley&#39;s attack power&quot;</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_7_plot_2-J1.png" /><!-- --></p>
 <div class="sourceCode" id="cb23"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb23-1"><a href="football-simulation.html#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(teams_att[<span class="fl">1</span>])</span></code></pre></div>
-<pre><code>## -0.26154747610066187</code></pre>
+<pre><code>## -0.24813029632889114</code></pre>
 <p>Comparing it to the attacking power of Manchester City, champion of the Premier league:</p>
 <div class="sourceCode" id="cb25"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb25-1"><a href="football-simulation.html#cb25-1" aria-hidden="true" tabindex="-1"></a>teams[<span class="fl">11</span>]</span></code></pre></div>
 <pre><code>## &quot;Manchester City&quot;</code></pre>
@@ -587,7 +587,7 @@ entire array.</p>
 <span id="cb27-4"><a href="football-simulation.html#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="fu">title!</span>(<span class="st">&quot;Posterior distribution of Manchester City&#39;s attack power&quot;</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_7_plot_3-J1.png" /><!-- --></p>
 <div class="sourceCode" id="cb28"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb28-1"><a href="football-simulation.html#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(teams_att[<span class="fl">11</span>])</span></code></pre></div>
-<pre><code>## 0.7415779640195597</code></pre>
+<pre><code>## 0.7458393680208553</code></pre>
 <p>When comparing the league champion against a mid-table team, we can clearly see the superiority in attack. For now, it seems that the inference
 comes in handy.</p>
 <p>Let’s try now to have an overview of the attacking powers of each team. To do this, just take the average of each and plot it next to the
@@ -613,12 +613,12 @@ standard deviation</p>
 ##  &quot;Swa&quot;
 ##  &quot;Wba&quot;
 ##  &quot;Bha&quot;
-##  &quot;Bur&quot;
 ##  &quot;Stk&quot;
+##  &quot;Bur&quot;
 ##  &quot;Sou&quot;
 ##  &quot;New&quot;
-##  &quot;Eve&quot;
 ##  &quot;Wat&quot;
+##  &quot;Eve&quot;
 ##  &quot;Cry&quot;
 ##  &quot;Bou&quot;
 ##  &quot;Whu&quot;
@@ -808,29 +808,29 @@ the Premier League that year while the Liverpool came only fourth. But let stop 
 <p>Well, the first one is the simplest. It just simulates matches with a specific set of attack, defense and location parameters. So we have
 the parameters that define the Poisson´s rate parameters “<span class="math inline">\(θ\)</span>” fixed (here we have to remember that every match is a sample from the two <span class="math inline">\(LogPoisson\)</span> distributions, each one modelating each teams score in a given match). And it simulates as many matches as the <span class="math inline">\(n_{matches}\)</span> parameter indicates in order to get a broad sampling of the two poisson distributions, that is, to have a good sampling of possible match results with those fixed parameters. That way we can obtain, given those parameters, which are the most likely results to occur. Lets take the parameter´s approximate mean (you can check them in the histograms of above) as an example to see what happen :</p>
 <div class="sourceCode" id="cb50"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb50-1"><a href="football-simulation.html#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(mci_att_post)</span></code></pre></div>
-<pre><code>## 0.7415779640195597</code></pre>
+<pre><code>## 0.7458393680208553</code></pre>
 <div class="sourceCode" id="cb52"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb52-1"><a href="football-simulation.html#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="fu">simulate_matches_</span>(<span class="fl">0.75</span>, <span class="op">-</span><span class="fl">0.35</span>, <span class="fl">0.55</span>, <span class="op">-</span><span class="fl">0.2</span>, <span class="fl">0.33</span>, <span class="fl">1000</span>, <span class="fl">2</span>)</span></code></pre></div>
 <pre><code>## 1000-element Vector{Tuple{Int64, Int64}}:
-##  (0, 2)
-##  (2, 3)
-##  (2, 4)
-##  (0, 1)
-##  (0, 1)
 ##  (1, 2)
-##  (2, 3)
-##  (4, 3)
-##  (1, 1)
+##  (2, 0)
+##  (3, 5)
+##  (1, 3)
+##  (2, 2)
 ##  (3, 1)
-##  ⋮
-##  (4, 2)
-##  (3, 1)
-##  (1, 1)
-##  (2, 4)
-##  (0, 3)
+##  (3, 4)
+##  (0, 6)
 ##  (1, 0)
-##  (3, 2)
-##  (4, 5)
-##  (1, 0)</code></pre>
+##  (1, 4)
+##  ⋮
+##  (3, 1)
+##  (1, 2)
+##  (0, 0)
+##  (3, 1)
+##  (1, 1)
+##  (0, 1)
+##  (0, 2)
+##  (1, 2)
+##  (2, 2)</code></pre>
 <p>As you can see, we just generated 1000 simulated matches with an specific set of fix parameters. The “2” is just indicating that the liverpool
 (second team) is local. But as good bayesians that we are, we don´t want to use only the parameters mean, we want to use the hole distribution.
 And that´s what the second function is doing: It takes each parameter distribution as input and generate 1000 simulations for each posterior
@@ -844,7 +844,7 @@ the simulation. Does it makes sense?</p>
 in this case, is going to divide all positions by 3,000,000.</p>
 <p>So, lets see it in action!</p>
 <div class="sourceCode" id="cb54"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb54-1"><a href="football-simulation.html#cb54-1" aria-hidden="true" tabindex="-1"></a>mci_as_home_simulations, liv_as_home_simulations <span class="op">=</span> <span class="fu">simulate_matches</span>(mci_att_post, mci_def_post, liv_att_post, liv_def_post, post_home, <span class="fl">1000</span>)</span></code></pre></div>
-<pre><code>## ([0.031761000000000005 0.03267866666666667 … 0.0 0.0; 0.06620066666666667 0.07072966666666668 … 3.3333333333333335e-7 0.0; … ; 0.0 0.0 … 0.0 0.0; 0.0 0.0 … 0.0 0.0], [0.03839033333333334 0.05491366666666667 … 3.3333333333333335e-7 0.0; 0.05865766666666667 0.08751666666666667 … 3.3333333333333335e-7 0.0; … ; 1.0000000000000002e-6 1.6666666666666667e-6 … 0.0 0.0; 3.3333333333333335e-7 3.3333333333333335e-7 … 0.0 0.0])</code></pre>
+<pre><code>## ([0.029232666666666667 0.031182 … 0.0 0.0; 0.06397133333333334 0.07060133333333334 … 0.0 0.0; … ; 3.3333333333333335e-7 0.0 … 0.0 0.0; 3.3333333333333335e-7 3.3333333333333335e-7 … 0.0 0.0], [0.035700333333333334 0.05327566666666667 … 3.3333333333333335e-7 0.0; 0.057098 0.08784700000000001 … 3.3333333333333335e-7 0.0; … ; 0.0 0.0 … 0.0 0.0; 3.3333333333333335e-7 0.0 … 0.0 0.0])</code></pre>
 <p>Looking those matrices could be not as enlightening as we wanted to. A good way to fix this is graphing them with a heatmap.</p>
 <div class="sourceCode" id="cb56"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb56-1"><a href="football-simulation.html#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">match_heatmaps</span>(matrix_t1_as_home, matrix_t2_as_home, team1_name<span class="op">=</span><span class="st">&quot;Team 1&quot;</span>, team2_name<span class="op">=</span><span class="st">&quot;Team 2&quot;</span>)    </span>
 <span id="cb56-2"><a href="football-simulation.html#cb56-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">gr</span>()   </span>
@@ -893,26 +893,26 @@ in this case, is going to divide all positions by 3,000,000.</p>
 <span id="cb59-19"><a href="football-simulation.html#cb59-19" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
 <pre><code>## win_and_lose_probability (generic function with 1 method)</code></pre>
 <div class="sourceCode" id="cb61"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb61-1"><a href="football-simulation.html#cb61-1" aria-hidden="true" tabindex="-1"></a><span class="fu">win_and_lose_probability</span>(liv_as_home_simulations)</span></code></pre></div>
-<pre><code>## (0.4077013333333333, 0.37130399999999975, 0.2209946666666667)</code></pre>
+<pre><code>## (0.409695, 0.37085399999999985, 0.219451)</code></pre>
 <div class="sourceCode" id="cb63"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb63-1"><a href="football-simulation.html#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="fu">win_and_lose_probability</span>(mci_as_home_simulations)</span></code></pre></div>
-<pre><code>## (0.6517250000000009, 0.17085233333333336, 0.17742266666666667)</code></pre>
+<pre><code>## (0.6554833333333339, 0.16917566666666664, 0.17534100000000002)</code></pre>
 <p>So the probability of winning for the Manchester City were 0.41 (or 41%) in the first match of the quarters final, with Liverpool as home, 0.37
 for the Liverpool and 0.22 probability of a draw. In the second, with Manchester City as home, the chances were 0.65, 0.17 and 0.18 respectively.</p>
 <p>We also can ask for the probability of a specific score:</p>
 <div class="sourceCode" id="cb65"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb65-1"><a href="football-simulation.html#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="fu">get_score_probability</span>(score1<span class="op">::</span><span class="dt">Int64</span>, score2<span class="op">::</span><span class="dt">Int64</span>, simulation) <span class="op">=</span> simulation[score1<span class="op">+</span><span class="fl">1</span>, score2<span class="op">+</span><span class="fl">1</span>]</span></code></pre></div>
 <pre><code>## get_score_probability (generic function with 1 method)</code></pre>
 <div class="sourceCode" id="cb67"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb67-1"><a href="football-simulation.html#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="fu">get_score_probability</span>(<span class="fl">1</span>, <span class="fl">1</span>, liv_as_home_simulations)</span></code></pre></div>
-<pre><code>## 0.08751666666666667</code></pre>
+<pre><code>## 0.08784700000000001</code></pre>
 <div class="sourceCode" id="cb69"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb69-1"><a href="football-simulation.html#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="fu">get_score_probability</span>(<span class="fl">2</span>, <span class="fl">1</span>, mci_as_home_simulations)</span></code></pre></div>
-<pre><code>## 0.08207500000000001</code></pre>
+<pre><code>## 0.083959</code></pre>
 <p>So the most possible outcomes accumulates around 8-9% of probability</p>
 <p>What really happened wasn’t expected. The Liverpool won 3-0 being home in the first round of the quarters final. And then Liverpool
 won 2-1 in Manchester´s estadium! It was really unexpected. The Manchester was the favorite by far, the probability was on his side,
 and still could not beat Liverpool.</p>
 <div class="sourceCode" id="cb71"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb71-1"><a href="football-simulation.html#cb71-1" aria-hidden="true" tabindex="-1"></a><span class="fu">get_score_probability</span>(<span class="fl">0</span>, <span class="fl">3</span>, liv_as_home_simulations)</span></code></pre></div>
-<pre><code>## 0.023357000000000003</code></pre>
+<pre><code>## 0.023810666666666667</code></pre>
 <div class="sourceCode" id="cb73"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb73-1"><a href="football-simulation.html#cb73-1" aria-hidden="true" tabindex="-1"></a><span class="fu">get_score_probability</span>(<span class="fl">1</span>, <span class="fl">2</span>, mci_as_home_simulations)</span></code></pre></div>
-<pre><code>## 0.04106966666666667</code></pre>
+<pre><code>## 0.04142866666666667</code></pre>
 <p>Still, the model assigns some probability to those results. Here is the information, then, you have to decide what to do with it.</p>
 <p>As data scientist that we are, our labor is to came up with possible solutions to a problem, try it, have fun, and learn from it in order to
 be able to came up with better solutions. It is a very good practice to constructively criticize the models that we develop. So, can you think
