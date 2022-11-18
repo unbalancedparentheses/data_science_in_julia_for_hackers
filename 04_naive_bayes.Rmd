@@ -91,7 +91,7 @@ begin
 end;
 ```
 
-First, we would like to filter some words that are very common in the english language, such as articles and pronouns, and that will most likely add noise rather than information to our classification algorithm. For this we will use two Julia packages that are specially designed for working with texts of any type. These are *Languages.jl* and *TextAnalysis.jl*. 
+First, we would like to filter some words that are very common in the English language, such as articles and pronouns, which will most likely add noise rather than information to our classification algorithm. For this we will use two Julia packages that are specially designed for working with texts of any type. These are *Languages.jl* and *TextAnalysis.jl*. 
 A good practice when dealing with models that learn from data like the one we are going to implement, is to divide our data in two: a training set and a testing set. We need to measure how good our model is performing, so we will train it with some data, and test it with some other data the model has never seen. This way we may be sure that the model is not tricking us. In Julia, the package *MLDataUtils* has some nice functionalities for data manipulations like this. We will use the functions *splitobs* to split our dataset in a train set and a test set and *shuffleobs* to randomize the order of our data in the split.
 It is important also to pass a *labels* array to our split function so that it knows how to properly split our dataset.
 
@@ -103,7 +103,7 @@ begin
 end;
 ```
  
-Now that we have our data clean and splitted for training and testing, let's return to the details of the calculations. The probability of a particular word, given that we have a spam email, can be calculated like so,
+Now that we have our data clean and split for training and testing, let's return to the details of the calculations. The probability of a particular word, given that we have a spam email, can be calculated like so,
 
 $P(word_i|spam) = \frac{N_{word_i|spam} + \alpha}{N_{spam} + \alpha N_{vocabulary}}$
 
@@ -271,12 +271,12 @@ This classification problems where there is an unequal distribution of classes i
 ```
 
 So a good way to see how our model is performing is to construct a confusion matrix.
-A Confusion matrix is an N x N matrix, where N is the number of target classes. 
+A confusion matrix is an N x N matrix, where N is the number of target classes. 
 The matrix compares the actual target values with those predicted by the our model. 
 Lets construct one for our model:
 
 ```{julia}
-function splam_filter_confusion_matrix(y_test,predictions)
+function spam_filter_confusion_matrix(y_test,predictions)
 	
 	#We create the matrix and calculated their values
 	confusion_matrix= [0 0 ; 0 0]
@@ -304,10 +304,10 @@ end
 ```
 
 ```{julia}
-confusion_matrix = splam_filter_confusion_matrix(y_test[:],predictions)
+confusion_matrix = spam_filter_confusion_matrix(y_test[:],predictions)
 ```
 
-So now we can calculate the accuracy of the model segmented by category.
+Now we can calculate the accuracy of the model segmented by category.
 
 ```{julia}
 ham_accuracy = confusion_matrix[1,"Ham_mail"]/(confusion_matrix[1,"Ham_mail"] + confusion_matrix[2,"Ham_mail"])
