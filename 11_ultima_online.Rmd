@@ -1,6 +1,6 @@
 # Ultima online
 
-```{julia chapter_11_libraries, cache = TRUE , results = FALSE, echo=FALSE}
+```{julia chapter_11_libraries, cache = FALSE, results = FALSE, echo=FALSE}
 cd("./11_ultima_online/") 
 import Pkg
 Pkg.activate(".")
@@ -23,7 +23,7 @@ using MCMCChains
 [Richard Garriott](https://en.wikipedia.org/wiki/Richard_Garriott) between 1995 and 1997, when it was realesed.
 
 The game consisted of a medieval fantasy world in which each player could build their own character. What was interesting and disruptive was 
-that all players interacted with each other, and what one did had repercussions on the general map. So, the game was "live" in the sense that 
+that all players interacted with each other, and what one did had repercussions on the general map. So, the game was "alive" in the sense that 
 if two people were fighting in one area and another one came in, the latter could see that fight. Also, the warriors had to hunt and look for 
 resources to get points and improve their skills and again, if a treasure was discovered, or an animal was hunted, it would no longer be available 
 for the rest.
@@ -32,25 +32,30 @@ During the development process of the game, Garriott and his team realized that,
 moment when they would not be able to create content at the same speed as the players were consuming it. So they decided to automate the process.
 
 After a lot of work, one of the ideas they came up with was to generate a "Virtual Ecosystem". This was a really incredible idea in which a whole 
-ecosystem in harmony was simulated inside the game. For example, if an area started to grow grass, the herbivorous animals would come and start eating it. If many animals arrived, they would surely end up eating all the food and would have to go look for other places, it could even happen that some of them were not lucky and died on the way, starving.  In the same way, the carnivorous animals (that is, the predators of the herbivores) would strive to hunt as many animals as they could, but if in doing so they killed a significant number of them, food would become scarce causing them to die as well. In this way, as in "real" nature, a beautiful balance was generated.
+ecosystem in harmony was simulated inside the game. For example, if an area started to grow grass, the herbivorous animals would come and start 
+eating it. If many animals arrived, they would surely end up eating all the food and would have to go look for other places, it could even happen 
+that some of them were not lucky and died on the way, starving.  In the same way, the carnivorous animals (that is, the predators of the 
+herbivores) would strive to hunt as many animals as they could, but if in doing so they killed a significant number of them, food would become 
+scarce causing them to die as well. In this way, as in "real" nature, a beautiful balance was generated.
 
 But how this was even possible?
 
 ### The Lotka-Volterra model for population dynamics
 
-To begin to understand how this complex ecosystem was created, it makes sense to go to the roots and study a dynamic system in which the interaction between a prey and a predatory population is modeled.
+To begin to understand how this complex ecosystem was created, it makes sense to go to the roots and study a dynamical system in which the 
+interaction between a prey and a predatory population is modeled.
 
-The idea is the same as we mentioned above. In this case, we will have a "prey" population that will have such a reproduction rate that:
+The idea is the same as we mentioned above. In this case, we will have a "prey" population that will have a reproduction rate such that:
 
-$Prey Population_{t+1} \sim Prey Population_{t} * BirthRate$
+$PreyPopulation_{t+1} \sim PreyPopulation_{t} * BirthRate$
 
 And a mortality rate that will be also affected by the prey population
 
 $Prey Population_{t+1} \sim PreyPopulation_{t}* MortalityRate$
 
-So, calling PreyPopulation as $Prey$, Birthrate as $b_{prey}$ and Mortality rate as $m_{prey}$ for simplicity, we can write this as:
+So, representing prey population as $prey$, birthrate as $b_{prey}$ and mortality rate as $m_{prey}$ for simplicity, we can write this as:
 
-$\frac{dPrey}{dt} = Prey*(b_{prey} - m_{prey})$
+$\frac{dprey}{dt} = prey*(b_{prey} - m_{prey})$
 
 The population at time $t$ multiplies at both rates because if the population is zero there can be no births or deaths. This leads us to the 
 simplest ecological model, in which per capita growth is the difference between the birth rate and the mortality rate. 
@@ -60,57 +65,97 @@ simplest ecological model, in which per capita growth is the difference between 
 Before anyone freaks out, lets talk a little bit about that strange notation.
 
 As we said above, the prey´s population will grow proportionally to the birth rate and the actual population. And we also said that the 
-population will shrink proportional to the mortality rate and its actual population. Can you realize that we are describing change? 
+population will shrink proportional to the mortality rate and its actual population. Do you realize that we are describing change? 
 
-So that is exactly what the equation is saying! You can read that horrendous $d$ as change! So, the entire term $\frac{dPrey}{dt}=$ is just 
-saying "The change of the pupulation over time (that´s why the $dt$ term is deviding there) is equal to..." and that´s it! 
+This is exactly what the equation is saying. You can read that horrendous $d$ as change! So, the entire term $\frac{dPrey}{dt}=$ is just 
+saying "the change of the pupulation over time (that´s why the $dt$ term is deviding there) is equal to..." and that's it! 
 
-This can be a difficult concept to understand because we are very used to work with absolute values. But sometimes (In fact, very often) it is 
+These equations, in contrast to the usual equations we are used to, have a function as the unkown value we have to solve for. Having a differential 
+equation of the form
+
+$\frac{du}{dt} = f(u, t)$
+
+reads: "give me the function $u(t)$ whos derivative for each $u$ and $t$ is $f(u, t)$. There is no silver bullet for solving these type of 
+equations. In some cases, you can solve them analytically using different methods depending on the particular equation, which gives you an
+expression for the solution function. But more often, numerical methods are used to obtain an approximation of the function in some range, 
+with the help of computers. We will focus on introducing how to solve systems of ordinary differential equations, the simplest type of differential 
+equations, using the awesome tools from the [SciML](https://sciml.ai/) Julia ecosystem.
+
+Differential equations can be a difficult concept to understand because we are very used to work with absolute values. But sometimes (in fact, very often) it is 
 much more easier to describe change over absolute values. And this is one of this cases. But, for now, lets leave this up to here, we will take 
 it up again in the next chapter. 
 
-#### Returning to LotkaVolterra
+#### Returning to Lotka-Volterra
 
-But the model we are looking for have to explain the interaction between the two species. To do so, we must include the Pradator Population in 
-order to modify the mortality rate of the Prey, leaving us with:
+The model we are looking for has to explain the interaction between the two species. To do so, we must include the pradator population in 
+order to modify the mortality rate of the prey, leaving us with:
 
-$\frac{dPrey}{dt} = Prey*(b_{prey} - m_{prey}*Pred)$
+$\frac{dprey}{dt} = prey*(b_{prey} - m_{prey}*pred)$
 
-In a similar way we can think the interaction on the side of the predator, were the mortality rate would be constant and the birth rate will 
-depend upon the Prey population:
+In a similar way we can think the interaction on the side of the predator, where the mortality rate would be constant and the birth rate will 
+depend upon the prey population:
 
-$\frac{dPred}{dt} = Pred*(b_{pred}*Prey - m_{pred})$
+$\frac{dpred}{dt} = pred*(b_{pred}*prey - m_{pred})$
 
 In this way we obtain the Lotka-Volterra model in which the population dynamics is determined by a system of coupled ordinal differential 
-equations (ODEs). This is a very powerful model which tells us that two hunter-prey populations in equilibrium will oscillate without finding a 
-stable value. In order to see it, we will have to use some [SciML](https://sciml.ai/) libraries
+equations (from now on, ODEs). This is a simplified but powerful model which tells us how a hunter-prey system will oscillate without finding 
+stable values for their populations.
 
 #### SciML to simulate population dynamics
-
-```{julia}
-#Let´s define our Lotka-Volterra model
-function lotka_volterra(du,u,p,t)
-  prey, pred  = u
-  birth_prey, mort_prey, birth_pred, mort_pred = p
-  du[1] = dprey = (birth_prey - mort_prey * pred)*prey
-  du[2] = dpred = (birth_pred * prey - mort_pred)*pred
-end
-```
+We will use the `DifferentialEquations.jl` package to define and solve our ODE problem. First, we should define a function that encompasses the
+information of our Lotka-Volterra model in the way required by the package:
 
 ```{julia, results = FALSE}
-#And make explicit our example parameters, initial value and define our problem
+function lotka_volterra!(du, u, p, t)
+  # Unpack the values so that they have clearer meaning
+  prey, pred  = u
+  birth_prey, mort_prey, birth_pred, mort_pred = p
+
+  # Define the ODE
+  du[1] = (birth_prey - mort_prey * pred) * prey
+  du[2] = (birth_pred * prey - mort_pred) * pred
+end
+```
+The defined function should have four arguments: 
+* $du$ represents the derivatives of the state variables (in our case, dprey and dpred).
+* $u$ represents the state variables themselves (prey, pred).
+* $p$ represents the parameters of the model (birth and mortality rates).
+* $t$ represents time. 
+
+To fully define our ODE problem, me should wrap our model, the initial values of the populations (initial conditions), the parameter values and
+the time span of the solution (in what range of time we want our solution to be calculated) into a `ODEProblem` struct from the 
+`DifferentialEquations.jl` package.
+
+```{julia, results = FALSE}
+# Model parameters
 p = [1.1, 0.5, 0.1, 0.2]
-u0 = [1,1]
-prob = ODEProblem(lotka_volterra,u0,(0.0,40.0),p)
+
+# Initial conditions
+u0 = [1, 1]
+
+# Timespan of the solution
+tspan = (0.0, 40.0)
+
+prob = ODEProblem(lotka_volterra!, u0, tspan, p)
 ```
 
+With all these, we are now ready for calculating a solution for our problem! This is done with the `solve` function:
+
 ```{julia , results = FALSE}
-sol = solve(prob,Tsit5())
+sol = solve(prob)
 ```
+
+We now have two functions that represent the populations of preys and predators with respect to time, between 0 and 40. We have not specified any
+unit for time here, but you can think of it in years if you want. Let's plot the two solutions and see what we got
 
 ```{julia chap_11_plot_1}
 plot(sol)
 ```
+
+In this beautiful plot we can clearly see how both species interact: when there are very few members of the prey population, the predators can't
+reproduce because there is no food for them, but as the prey population grows, so does the predator population. When there are too many predators,
+the prey population starts to decrease and finally when there are too little of these, the predator population also shrinks since there is not
+enough food for the entire population. This cycle repeats over and over.
 
 #### Obtaining the model from the data
 
@@ -126,7 +171,7 @@ data = CSV.read("./11_ultima_online/ultima_online_data.csv", DataFrame)
 ultima_online = Array(data)'
 ```
 
-Probably seeing this data in a table is not being very enlightening, let's plot it and see if it makes sense with what we have been discussing:
+Observing this data in a table is probably not being very enlightening. Let's plot it and see if it makes sense with what we have been discussing:
 
 ```{julia chap_11_plot_2}
 time = collect(0:2:30);
@@ -153,17 +198,17 @@ u_init = [1, 1]
 ```{julia, results = FALSE}
 @model function fitlv(data)
     σ ~ InverseGamma(2, 3)
-    birth_prey ~ truncated(Normal(1,0.5),0,2)
-    mort_prey ~ truncated(Normal(1,0.5),0,2)
-    birth_pred ~ truncated(Normal(1,0.5),0,2)
-    mort_pred ~ truncated(Normal(1,0.5),0,2)
+    birth_prey ~ truncated(Normal(1, 0.5), 0, 2)
+    mort_prey ~ truncated(Normal(1, 0.5), 0, 2)
+    birth_pred ~ truncated(Normal(1, 0.5), 0, 2)
+    mort_pred ~ truncated(Normal(1, 0.5), 0, 2)
 
     k = [birth_prey, mort_prey, birth_pred, mort_pred]
-    prob = ODEProblem(lotka_volterra,u_init,(0.0,30),k)
-    predicted = solve(prob,Tsit5(),saveat=2)
+    prob = ODEProblem(lotka_volterra, u_init, (0.0, 30), k)
+    predicted = solve(prob, saveat=2)
 
     for i = 1:length(predicted)
-        data[:,i] ~ MvNormal(predicted[i], σ)
+        data[:, i] ~ MvNormal(predicted[i], σ)
     end
 end
 ```
@@ -172,7 +217,7 @@ end
 model = fitlv(ultima_online)
 ```
 
-```{julia chapt_9_sample, cache = TRUE ,results = FALSE}
+```{julia chapt_9_sample, cache = FALSE, results = FALSE}
 posterior = sample(model, NUTS(0.6), 10000); 
 ```
 
@@ -181,45 +226,45 @@ plot(posterior)
 ```
 
 So, our model is pretty sure that the parameters used by Garriott for the birth and death rate were around 0.8 and 0.4 for the prey population. 
-For the prey the values were around 0.2 and 0.4. As you can see the markov chains of the sampling process are really healthy, so we can be confident that the answers we obtain are correct.
+For the prey the values were around 0.2 and 0.4. The chains of the sampling process are really healthy, so we can be 
+confident that the answers we obtain are correct. Take a moment to think about this.
 
 Let's stop for a second to appreciate the really complex calculation that we have just done. Until now we always made Bayesian inference in 
 linear models that anyway required us to use complex mechanisms to be able to sample the distributions a posteriori of our parameters. 
 
-The powerful SciML engine allows us to make Bayesian inferences but from dynamic systems of differential equations! That is, now we can get into 
+The powerful SciML engine allows us to make Bayesian inferences but from dynamical systems of differential equations! That is, now we can get into 
 an even higher level of complexity for our models, keeping the advantage of being able to have a quantification of the uncertainty we are 
 working with, among other advantages that the Bayesian framework gives us.
 
 #### Visualizing the results
 
-As always, it is very interesting to be able to observe the uncertainty that Bayesianism provides us within our model. Let´s go for it!
+As always, it is very interesting to be able to observe the uncertainty that Bayesianism provides us within our model.
 
 First we should make a smaller sampling of the distributions of each parameter so that the number of models we plot does not become a 
 problem when visualizing:
 
 ```{julia, results = FALSE}
-birth_prey_ = sample(collect(get(posterior, :birth_prey)[1]), 100)
-mort_prey_ = sample(collect(get(posterior, :mort_prey)[1]), 100)
-birth_pred_ = sample(collect(get(posterior, :birth_pred)[1]), 100)
-mort_pred_ = sample(collect(get(posterior, :mort_pred)[1]), 100)
+birth_prey = sample(collect(get(posterior, :birth_prey)[1]), 100)
+mort_prey = sample(collect(get(posterior, :mort_prey)[1]), 100)
+birth_pred = sample(collect(get(posterior, :birth_pred)[1]), 100)
+mort_pred = sample(collect(get(posterior, :mort_pred)[1]), 100)
 ```
 
-And now let's solve the system of differential equations for each of the combinations of parameters that we form, saving them in solutions so 
-that later we can use this array in the plotting. You can scroll left and see the solution to the 101 models we propouse (Notice that we add one 
-final model using the mean of each parameter)
+And now let's solve the system of differential equations for each of the combinations of parameters that we got, saving them in solutions so 
+that we can use this array in the plotting later. One additional solution was added using the mean of each parameter. 
 
-```{julia , results = FALSE}
+```{julia, results = FALSE}
 solutions = []
-for i in 1:length(birth_prey_)
-	p = [birth_prey_[i], mort_prey_[i], birth_pred_[i], mort_pred_[i]]
-	problem = ODEProblem(lotka_volterra,u0,(0.0,30.0),p)
-	push!(solutions, solve(problem,Tsit5(), saveat = 0.1))
+for i in 1:length(birth_prey)
+	p = [birth_prey[i], mort_prey[i], birth_pred[i], mort_pred[i]]
+	problem = ODEProblem(lotka_volterra, u0, (0.0, 30.0), p)
+	push!(solutions, solve(problem, saveat = 0.1))
 end
 	
-p_mean = [mean(birth_prey_), mean(mort_prey_), mean(birth_pred_), mean(mort_pred_)]
+p_mean = [mean(birth_prey), mean(mort_prey), mean(birth_pred), mean(mort_pred)]
 
-problem1 = ODEProblem(lotka_volterra,u0,(0.0,30.0),p_mean)
-push!(solutions, solve(problem1, Tsit5(), saveat = 0.1))
+problem1 = ODEProblem(lotka_volterra!, u0, (0.0, 30.0), p_mean)
+push!(solutions, solve(problem1, saveat = 0.1))
 ```
 
 The last step is simply to plot each of the models we generate. I also added the data points with which we infer all the model, to be able to 
@@ -255,8 +300,8 @@ balance again.
 This would be the equivalent of adding a player-induced mortality rate in the prey and predators of our Lotka-volterra model:
 
 ```{julia, results = FALSE}
-function lotka_volterra_players(du,u,p,t)
-  #Lotka-Volterra function with players that hunt
+function lotka_volterra_players!(du, u, p, t)
+  # Lotka-Volterra function with players that hunt
   prey, pred  = u
   birth_prey, mort_prey, birth_pred, mort_pred, players_prey, players_pred = p
 
@@ -289,12 +334,12 @@ the "natural" deaths that were already occurring.
 ```{julia, results = FALSE}
 p1 = [0.8, 0.4, 0.2, 0.4, 0.4, 0.4] 
 # These last two 0.4 are the ones we are going to attribute to the players 
-u0_ = [1,1]
-prob_players = ODEProblem(lotka_volterra_players,u0_,(0.0,30.0),p1)
+u0 = [1,1]
+prob_players = ODEProblem(lotka_volterra_players!, u0, (0.0,30.0), p1)
 ```
 
 ```{julia, results = FALSE}
-sol_players = solve(prob_players,Tsit5());
+sol_players = solve(prob_players);
 ```
 
 ```{julia chap_11_plot_6}
@@ -309,10 +354,10 @@ The creators of the game even assumed that the players would hunt mostly carnivo
 resources (and because they would also have to defend themselves from the fierce attacks of the carnivores). The balance would be maintained 
 anyway:
 
-```{julia,results = FALSE}
+```{julia, results = FALSE}
 p2 = [0.8, 0.4, 0.2, 0.4, 0.4, 0.6] 
 # 0.6 player-induced mortality rate for carnivores  
-prob_players_ = ODEProblem(lotka_volterra_players,u0_,(0.0,30.0),p2)
+prob_players_ = ODEProblem(lotka_volterra_players!, u0, (0.0, 30.0), p2)
 ```
 
 ```{julia, results = FALSE}
@@ -338,7 +383,7 @@ Without herbivores, there was no food for carnivores...
 
 ```{julia, results = FALSE}
 crazy_killer_players = [0.8, 0.4, 0.2, 0.4, 1, 0.8] 
-prob_crazy_players = ODEProblem(lotka_volterra_players,u0_, (0.0,30.0), crazy_killer_players)
+prob_crazy_players = ODEProblem(lotka_volterra_players!, u0, (0.0,30.0), crazy_killer_players)
 ```
 
 ```{julia, results = FALSE}
