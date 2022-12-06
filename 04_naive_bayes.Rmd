@@ -40,7 +40,19 @@ sketch, where spam was itself something unwanted, popping all over the menu and 
 plot(imresize(load("./04_naive_bayes/imgs/I-don-t-like-spam.jpg"), (300, 500)), axis=nothing)
 ```
 
-Now that we have made some historical overview of the topic, we can start designing our spam filter.
+Now that we have made some historical overview of the topic, we can start designing our spam filter. Let's import the packages we will be using
+along the chapter.
+
+```{julia, results = FALSE}
+using CSV
+using DataFrames
+using Distributions
+using TextAnalysis
+using Languages
+using MLDataUtils
+using Plots
+```
+
 One of the most important things for the filter to work properly will be to feed it with some good training data. What do we mean by this? In 
 this context, we mean to have a large enough corpus of emails pre-classified as spam or ham (that's the way no-spam emails are called!), that the 
 emails are collected from an heterogeneous group of people (spam and ham emails will be not be the same from a software developer, a social 
@@ -141,9 +153,11 @@ data_matrix = Matrix(clean_words_df)'
 First, we would like to filter some words that are very common in the English language, such as articles and pronouns, which will most likely 
 add noise rather than information to our classification algorithm. For this we will use two Julia packages that are specially designed for 
 working with texts of any type. These are *Languages.jl* and *TextAnalysis.jl*. 
-A good practice when dealing with models that learn from data like the one we are going to implement, is to divide our data in two: a training 
+A good practice when dealing with models that learn from data like the one we are going to implement, is to divide our data into two: a training 
 set and a testing set. We need to measure how good our model is performing, so we will train it with some data, and test it with some other 
-data the model has never seen. This way we may be sure that the model is not tricking us. In Julia, the package *MLDataUtils* has some nice functionalities for data manipulations like this. We will use the functions *splitobs* to split our dataset in a train set and a test set and *shuffleobs* to randomize the order of our data in the split.
+data the model has never seen. This way we may be sure that the model is not tricking us. In Julia, the package *MLDataUtils* has some nice 
+functionalities for data manipulations like this. We will use the functions *splitobs* to split our dataset in a train set and a test set and 
+*shuffleobs* to randomize the order of our data in the split.
 It is important also to pass a *labels* array to our split function so that it knows how to properly split our dataset.
 
 ```{julia, results = FALSE}
@@ -155,11 +169,11 @@ labels = raw_df.Prediction
 Now that we have our data clean and split for training and testing, let's return to the details of the calculations. 
 The probability of finding a particular word in an email, given that we have a spam email, can be calculated like so,
 
-$P(word_i|spam) = \frac{N_{word_i|spam} + \alpha}{N_{spam} + \alpha N_{vocabulary}}$
+$P(word_i|spam) = \frac{N_{word_i|spam} + \alpha}{N_{spam} + \alpha N_{vocabulary}}$ (1)
 
 and analogously, for ham emails,
 
-$P(word_i|ham) = \frac{N_{word_i|ham} + \alpha}{N_{ham} + \alpha N_{vocabulary}}$
+$P(word_i|ham) = \frac{N_{word_i|ham} + \alpha}{N_{ham} + \alpha N_{vocabulary}}$ (2)
 
 With these formulas in mind, we now know exactly what we have to calculate from our data. We are going to need the numbers $N_{word_i|spam}$ and 
 $N_{word_i|ham}$ for each word, that is, the number of times that a given word $w_i$ is used in the spam and ham categories, respectively. Then 
@@ -248,8 +262,8 @@ spam_filter = BayesSpamFilter()
 fit!(spam_filter, x_train, y_train, vocabulary)
 ```
 
-We are now almost ready to make some predictions and test our model. The function below is just the implementation of the formula TAL that we 
-have already talked about. It will be used internally by the next function defined, `spam_predict`, which will receive a new email –the one we 
+We are now almost ready to make some predictions and test our model. The function below is just the implementation of the formulas (1) and (2) that 
+we have already talked about. It will be used internally by the next function defined, `spam_predict`, which will receive a new email –the one we 
 would want to classify as spam or ham–, our fitted model, and two parameters, α which we have already discussed in the formula for $P(word_i|spam)$
 and $P(word_i|ham)$, and *tol*. We saw that the calculation for $P(email|spam)$ and $P(email|ham)$ required the multiplication of each 
 $P(word_i|spam)$ and $P(word_i|ham)$ term. When mails are too large, i.e., they have a lot of words, this multiplication may lead to very 
