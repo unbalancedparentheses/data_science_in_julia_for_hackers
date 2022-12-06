@@ -2,23 +2,21 @@
 
 ## Naive Bayes: Spam or Ham?
 
-```{julia chap_4_libraries, cache = TRUE, results = FALSE}
+```{julia chap_4_libraries, cache = FALSE, results = FALSE, echo = FALSE}
 cd("./04_naive_bayes/") 
 import Pkg
 Pkg.activate(".")
 
-begin
-  using Markdown
-  using InteractiveUtils
-	using CSV
-	using DataFrames
-	using Distributions
-	using TextAnalysis
-	using Languages
-	using MLDataUtils
-	using Plots
-	using Images
-end
+using Markdown
+using InteractiveUtils
+using CSV
+using DataFrames
+using Distributions
+using TextAnalysis
+using Languages
+using MLDataUtils
+using Plots
+using Images
 ```
 
 We all hate spam emails. How can Bayes help us with this? What we will be introducing in this chapter is a simple yet effective way of using 
@@ -130,8 +128,8 @@ prepare!(document, strip_articles)
 prepare!(document, strip_pronouns)
 
 # Create another DataFrame with the filtered words.
-clean_words = split(TextAnalysis.text(document))
-clean_words_df = raw_df[!, clean_words]
+vocabulary = split(TextAnalysis.text(document))
+clean_words_df = raw_df[!, vocabulary]
 
 # Transform the DataFrame into a Matrix and transpose it to have each 
 # mail as a column. 
@@ -146,7 +144,7 @@ set and a testing set. We need to measure how good our model is performing, so w
 data the model has never seen. This way we may be sure that the model is not tricking us. In Julia, the package *MLDataUtils* has some nice functionalities for data manipulations like this. We will use the functions *splitobs* to split our dataset in a train set and a test set and *shuffleobs* to randomize the order of our data in the split.
 It is important also to pass a *labels* array to our split function so that it knows how to properly split our dataset.
 
-```{julia,results = FALSE}
+```{julia, results = FALSE}
 # splitting of the data in a train and test set
 labels = raw_df.Prediction
 (x_train, y_train), (x_test, y_test) = splitobs(shuffleobs((data_matrix, labels)), at = 0.7)
@@ -164,8 +162,31 @@ $P(word_i|ham) = \frac{N_{word_i|ham} + \alpha}{N_{ham} + \alpha N_{vocabulary}}
 With these formulas in mind, we now know exactly what we have to calculate from our data. We are going to need the numbers $N_{word_i|spam}$ and 
 $N_{word_i|ham}$ for each word, that is, the number of times that a given word $w_i$ is used in the spam and ham categories, respectively. Then 
 $N_{spam}$ and $N_{ham}$ are the total number of times that words are used in the spam and ham categories (considering all the repetitions of the 
-same words too), and finally, $N_{vocabulary}$ is the total number of unique words in the dataset. $α$ is just a smoothing parameter, so that 
-probability of finding a word that is not in our dataset, doesn't go down to 0.
+same words too), and finally, $N_{vocabulary}$ is the total number of unique words in the dataset. 
+You might be surprised to read the `$α$` value in the equations. This is what is called a  *smoothing parameter*. To understand why is it needed,
+let's think for a moment what would happen when we receive an email having a word that is not present neither in the spam words training set nor
+in the ham words trainig set. As we have seen, to calculate the probability of the email being a spam email, we should use 
+
+$P(email|spam) = \prod_{i=1}^{n}P(word_i|spam) = P(word_0|spam)P(word_1|spam)...P(word_np|spam)$
+
+where $P(word_np|spam)$ stands for the probability of the word that is not present in our dataset. What probability should be assigned to this
+word? One way to handle this could be to simply ignore that term in the multiplication. In other words, assigning $P(word_np|spam) = 1$.
+Without thinking about it too much, we can conclude that this doesn't make any sense, since that would mean that the probability to find that word
+in a spam (or ham, too) email would be equal to 1.
+A more logically consistent approach would be to assign 0 probability to that word. But there is a problem: with $P(word_np|spam) = 0$ we can 
+quickly see that
+
+$P(word_0|spam)P(word_1|spam)...P(word_np|spam) = 0$
+
+This is the motivation for introducing the smoothing parameter $\alpha$ into our equation. In a real-word scenario, we should expect that words not
+present in our training set will appear, and altough it makes sense that they don't have a high probability, it can't be 0. When such a word
+appears, the probability assigned for it will be simply
+
+$P(word_np|spam) = \frac{N_{word_np|spam} + \alpha}{N_{spam} + \alpha N_{vocabulary}} = \frac{0 + \alpha}{N_{spam} + \alpha N_{vocabulary}} = \frac{\alpha}{N_{spam} + \alpha N_{vocabulary}}$
+
+In summary, $α$ is just a smoothing parameter, so that probability of finding a word that is not in our dataset, doesn't go down to 0.
+
+We still have to discuss what value should it be assigned.
 
 As all this information will be particular for our dataset, so a clever way to aggregate all this is to use a Julia *struct*, and we can define 
 the attributes of the struct that we will be using over and over for the prediction. Below we can see the implementation. The relevant attributes 
@@ -175,7 +196,7 @@ unique words in our dataset.
 The line *BayesSpamFilter() = new()* is just the constructor of this struct. When we instantiate the filter, all the attributes will be undefined 
 and we will have to define some functions to fill these variables with values relevant to our particular problem.  
 
-```{julia}
+```{julia, results = FALSE}
 mutable struct BayesSpamFilter
     words_count_ham::Dict{String, Int64}
     words_count_spam::Dict{String, Int64}
@@ -189,7 +210,7 @@ end
 Now we are going to proceed to define some functions that will be important for our filter implementation. The function *word_count* below will 
 help for counting the occurrences of each word in ham and spam categories.
 
-```{julia}
+```{julia, results = FALSE}
 function words_count(word_data, vocabulary, labels, spam=0)
     # word_data is a matrix where each column is an email and each row is a word
     count_dict = Dict{String, Int64}()
@@ -206,7 +227,7 @@ in-place their arguments, in this case, the spam filter struc itself. This will 
 procedure in Data Science and Machine Learning areas. This fit function will use mainly the *words_count* function defined before to fill all 
 the undefined parameters in the filter's struct.
 
-```{julia}
+```{julia, results = FALSE}
 function fit!(model::BayesSpamFilter, x_train, y_train, voc)
     model.vocabulary = voc
     model.words_count_ham = words_count(x_train, model.vocabulary, y_train, 0)
@@ -277,7 +298,7 @@ with the training data, and the test data we had splitted at the beginning, as w
 This function makes a prediction for each email in our test data, using the values of our model and then checks if the prediction was right. 
 We count all the correct predictions and then we divide this number by the total amount of mails, giving us an accuracy measurement.
 
-```{julia}
+```{julia, results = FALSE}
 # This function classifies each mail into Ham(0) or Spam(1)
 function get_predictions(x_test, y_test, model::BayesSpamFilter, α, tol=200)
     N = length(y_test)
