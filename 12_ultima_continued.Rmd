@@ -26,50 +26,72 @@ using Flux
 
 Let's think a little. What do you think is the process by which scientific discoveries are made? 
 
-First, you have some situation or event of interest from which you want to discover the rules that govern it. Second, you carefully design the experiments to get as much unbiased data as you can. Third, you analyze that data to gain some knowledge and, hopefully, you can begin to write some equations that condense the underlying process. Finally, you keep doing experiments to confirm that the equations you have invented are correct. You are doing science, my friend!
+First, you have some situation or event of interest from which you want to discover the rules that govern it. Second, you carefully design the 
+experiments to get as much unbiased data as you can. Third, you analyze that data to gain some knowledge and, hopefully, you can begin to write 
+some equations that condense the underlying process. Finally, you keep doing experiments to confirm that the equations you have invented are correct. 
+You are doing science, my friend!
 
-Throughout the book, we were learning a wide variety of statistical methods that sought to be as general as possible, but that required us to define the model to be used. The equations, then, were already defined and the algorithm only had to find the best parameters (or distribution of them) to fit that model to the data. 
+Throughout the book, we were learning a wide variety of statistical methods that sought to be as general as possible, but that required us to 
+define the model to be used. The equations, then, were already defined and the algorithm only had to find the best parameters (or distribution 
+of them) to fit that model to the data. 
 
-But what if I tell you that now we can start "talking" with the computer. That we can ask the computer to learn the model itself with the data. Not the parameters. But the equations that govern the process generating the data we give to the computer. 
-Even more, that now we can "share" some incomplete knowledge that we have of some process and ask the computer to learn, with minimum data, the part of the knowledge that we lack. 
+But what if I tell you that now we can start "talking" with the computer. That we can ask the computer to learn the model itself with the data. 
+Not the parameters. But the equations that govern the process generating the data we give to the computer. 
+Even more, that now we can "share" some incomplete knowledge that we have of some process and ask the computer to learn, with minimum data, the 
+part of the knowledge that we lack. 
 What? Is that even possible?.   
 
 ## The language of science
 
-In order to start understanding if that fairytale is possible, first we need to understand the ways we have to "encoding" the dynamics of those processes.
-As [Steven Strogatz](http://www.stevenstrogatz.com/) said "Since Newton, mankind has come to realize that the laws of physics are always expressed in the language of differential equations". 
+In order to start understanding if that fairytale is possible, first we need to understand the ways we have to "encoding" the dynamics of 
+those processes.
+As [Steven Strogatz](http://www.stevenstrogatz.com/) said "Since Newton, mankind has come to realize that the laws of physics are always 
+expressed in the language of differential equations". 
 And we can argue that it is a language that not only belongs to physics, but to all science and, in general, to the world in which we live. 
 
 But before any of you run off in fear, let's demystify this subject a little. 
 What is a differential equation and why are they useful?
 
-Well the first thing to denote is that differential equations emerge whenever it's easier to describe change than absolute values. As we saw in the Ultima Online Catastrophe, it is much easier to describe and define why populations grow or shrink, rather than explain why they have the particular absolute values in a particular point in time. Come on! It's much more easy to comprehend that if there are lots of predators, the prey's population will shrink than understand why there are, for example, 223,543 prays and 112,764 predators the 6 of may. Does this make sense?
+Well the first thing to denote is that differential equations emerge whenever it's easier to describe change than absolute values. As we saw 
+in the Ultima Online Catastrophe, it is much easier to describe and define why populations grow or shrink, rather than explain why they have 
+the particular absolute values in a particular point in time. Come on! It's much more easy to comprehend that if there are lots of predators, 
+the prey's population will shrink than understand why there are, for example, 223,543 prays and 112,764 predators the 6 of may. Does this make 
+sense?
 
 $\frac{dPrey}{dt} = Prey*(b_{prey} - m_{prey}*Pred)$
 
 $\frac{dPred}{dt} = Pred*(b_{pred}*Prey - m_{pred})$
 
-Remember that d can be read as change and the hole expression "$\frac{dPrey}{dt} =$" is just saying "The change of prey's population over time is equal to ..." and the other part, as we already saw in the last chapter, is answering "hey! that change is proportional to the prey's population (because they reproduce) and to the interaction with the Predator population, that contributes to the prey's mortality rate". Isn't that beautiful? 
+Remember that d can be read as change and the hole expression "$\frac{dPrey}{dt} =$" is just saying "The change of prey's population over time 
+is equal to ..." and the other part, as we already saw in the last chapter, is answering "hey! that change is proportional to the prey's 
+population (because they reproduce) and to the interaction with the Predator population, that contributes to the prey's mortality rate". 
+Isn't that beautiful? 
 
-Now, try to think a way to put the absolute values of each population over time into equations. Have any clue? No? As we said, change is much easier to describe.
+Now, try to think a way to put the absolute values of each population over time into equations. Have any clue? No? As we said, change is much 
+easier to describe.
 
 Or you can take a much more familiar example: In Newtonian Mechanics motion is described in terms of Force.
 
 $F = m*a$
 
-But Force determines acceleration, which itself is a statement about change. We are so familiar with that equation that we tend to forget that it is a differential equation (and as Steven mentions, is the mother of all differential equations).
+But Force determines acceleration, which itself is a statement about change. We are so familiar with that equation that we tend to forget that 
+it is a differential equation (and as Steven mentions, is the mother of all differential equations).
 
 $F = m*\frac{dVelocity}{dt}$
 
 $F = m*\frac{d^2Position}{dt^2}$
 
-This transformation is just showing something that everyone already knows: Acceleration is the change of Velocity over time, and Velocity is the change of position over time. And that implies that Acceleration is the second derivative (change) on position over time.
+This transformation is just showing something that everyone already knows: Acceleration is the change of Velocity over time, and Velocity is the 
+change of position over time. And that implies that Acceleration is the second derivative (change) on position over time.
 
-We just learned that the language of differential equations is fundamental for doing science. So, if we want the computer to learn equations that explain scientific events, it must know how to deal with this type of equations. And this is easily solved by the Scientific Machine Learning ([SciML](https://sciml.ai/)) ecosystem.
+We just learned that the language of differential equations is fundamental for doing science. So, if we want the computer to learn equations that 
+explain scientific events, it must know how to deal with this type of equations. And this is easily solved by the Scientific Machine 
+Learning ([SciML](https://sciml.ai/)) ecosystem.
 
 ## Scientific Machine Learning for model discovery
 
-But dealing with differential equations is not the main thing that SciML has to offer us. Instead it gives us the way to do science in cooperation with  artificial intelligence. 
+But dealing with differential equations is not the main thing that SciML has to offer us. Instead it gives us the way to do science in 
+cooperation with  artificial intelligence. 
 What? To be able to comprehend this, let's rewiew how "classic" machine learning works.
 
 It turns out that a neural network is literally a function. 
@@ -79,10 +101,14 @@ $f(x) = y <=> ANN(x) = y$
 
 So, artificial neural networks are functions. 
 But they are special functions, as they can change the connections that made the specific function they represent. 
-They do this in a process called training where they adjust its connections (parameters) in order to correctly predict. So, with only one neural network, we can "represent" lots of functions. What's more, there is this Universal Approximation Theorem that says that a neural network that is deep and wide enough (that is, has enough parameters) can approximate any function. You only need to feed it with enough data, so it can learn the optimal set of weights for its parameters.
+They do this in a process called training where they adjust its connections (parameters) in order to correctly predict. So, with only one 
+neural network, we can "represent" lots of functions. What's more, there is this Universal Approximation Theorem that says that a neural network 
+that is deep and wide enough (that is, has enough parameters) can approximate any function. You only need to feed it with enough data, so it can 
+learn the optimal set of weights for its parameters.
 
 This is why neural networks come hand in hand with big data: you need a lot of data in order to let the neural network learn the correct weights.
-But there is a problem: Big data costs billions, or may not even be available! (if you don't believe me, ask the Large Hadron Collider scientists to run 1 million experiments to train a NN, I'm sure they'll be happy to help you :P)
+But there is a problem: Big data costs billions, or may not even be available! (if you don't believe me, ask the Large Hadron Collider scientists 
+to run 1 million experiments to train a NN, I'm sure they'll be happy to help you :P)
 
 Can you imagine a way to drastically reduce the data needed to train the NN in a significant way?
 Well, how about incorporating scientific knowledge into machine learning?
@@ -91,11 +117,13 @@ The equations work like a proxy of thousands of experiments, people investigatin
 
 So if we create a way to inform all of that precious data, so it can focus on learning a specific part of the equation (some part that we don't know), it could do it with a minimum quantity of data! Lucky us, [Christopher Rackauckas](https://github.com/ChrisRackauckas) and his team already found a way.
 
-The concept we are talking about is called "Universal Differential Equations". Let's use them to recover some missing equation components from the Virtual Catastrophe from the last chapter!
+The concept we are talking about is called "Universal Differential Equations". Let's use them to recover some missing equation components from 
+the Virtual Catastrophe from the last chapter!
 
 ### Looking for the catastrophe culprit
 
-So let's imagine again (yes, we imagine lots of things in this book) that we are [Richard Garriott](https://en.wikipedia.org/wiki/Richard_Garriott) a day before the release of his game. He was tuning the last details of his virtual ecosystem. The model is simple but powerful, and ready to go:
+So let's imagine again (yes, we imagine lots of things in this book) that we are [Richard Garriott](https://en.wikipedia.org/wiki/Richard_Garriott) 
+a day before the release of his game. He was tuning the last details of his virtual ecosystem. The model is simple but powerful, and ready to go:
 
 $\frac{dPrey}{dt} = Prey*(b_{prey} - m_{prey}*Pred) = Prey*(1.3 - 0.9*Pred)$
 
@@ -115,7 +143,7 @@ He smiles and happily goes to sleep, thinking that tomorrow is the big day.
 
 Let's see how were the system equilibrium that he decided. 
 
-```{julia,results = FALSE} 
+```{julia, results = FALSE} 
 # The Lotka-Volterra model Garriott define for Ultima Online
 function lotka_volterra!(du,u,p,t)
   prey, pred  = u
@@ -145,9 +173,13 @@ So the system seems in complete equilibrium.
 
 And finally we arrive at the day when the madness begins.
 
-Garriott wakes up early, doesn't have any breakfast and goes to meet his team. Everything is ready. The countdown starts: 3, 2, 1... And the game is online, running.
+Garriott wakes up early, doesn't have any breakfast and goes to meet his team. Everything is ready. The countdown starts: 3, 2, 1... And the 
+game is online, running.
 
-After the champagne, hugs and a little celebration Garriott returns to work and starts to analyze the metrics to see if everything is alright, and it does. He relax a little bit until something calls his attention: The curves of carnivorous and herbivorous animals are a little different than they should be. There are still too few points (only four hours from the release) to be alarmed, but he decides to do a deeper analysis. Luckily, a few days ago, he had read a paper on the Universal ODEs, so he thinks they can help him in this case.
+After the champagne, hugs and a little celebration Garriott returns to work and starts to analyze the metrics to see if everything is alright, 
+and it does. He relax a little bit until something calls his attention: The curves of carnivorous and herbivorous animals are a little different 
+than they should be. There are still too few points (only four hours from the release) to be alarmed, but he decides to do a deeper analysis. 
+Luckily, a few days ago, he had read a paper on the Universal ODEs, so he thinks they can help him in this case.
 
 ```{julia} 
 function lotka_volterra_players!(du,u,p,t)
@@ -184,10 +216,12 @@ scatter(expected_solution, alpha = 0.25, title="The data Garriott was expecting 
 plot!(expected_solution, alpha = 0.5)
 ```
 
-As you can see, the animals were taking more time to recover. The period of the cycle was longer than it should be: A clear sign that something was killing them.
+As you can see, the animals were taking more time to recover. The period of the cycle was longer than it should be: A clear sign that 
+something was killing them.
 But he wanted to be sure. The Universal ODEs were key to do so.
 
-So, he start thinking "I know that the model has to be running cause I can see it in the code! So maybe, something external is producing this divergence. Something that I don't know. But something that a neural network could find out" Let's see 
+So, he start thinking "I know that the model has to be running cause I can see it in the code! So maybe, something external is 
+producing this divergence. Something that I don't know. But something that a neural network could find out" Let's see 
 
 ```{julia, results = FALSE} 
 X = Array(solution)	
@@ -210,15 +244,18 @@ end
 
 So let's stop for a minute to analyze the code that Garriott just proposed.
 
-In the first two lines, he just defines the neural network, that is going to learn the missing components of the two equations (one for the dynamics of the Pray and other for the dynamics of the Predator) and fill the variable p with its untrained parameters.
+In the first two lines, he just defines the neural network, that is going to learn the missing components of the two equations (one for the 
+dynamics of the Pray and other for the dynamics of the Predator) and fill the variable p with its untrained parameters.
 
-Then, he is defining the Universal Differential Equation. Where he is specifying the parts of the model that he knows, and adding a neural network to learn other things that might be happening (and we know that indeed were happening). In other words, he is proposing:
+Then, he is defining the Universal Differential Equation. Where he is specifying the parts of the model that he knows, and adding a neural 
+network to learn other things that might be happening (and we know that indeed were happening). In other words, he is proposing:
 
 $\frac{dPrey}{dt} = Prey*(1.3 - 0.9*Pred) + ANN_1(prey, pred)$
 
 $\frac{dPred}{dt} = Pred*(0.8*Prey - 1.8) + ANN_2(prey, pred)$
 
-So, as we already know, he is just adding a function. Which one? We already know that those are $Prey*players_{prey}$ and $Pred*players_{pred}$ (and $players_{pred}=players_{prey}=0.4$), but Garriott doesn't, and is exactly what the neural network is going to learn for him.
+So, as we already know, he is just adding a function. Which one? We already know that those are $Prey*players_{prey}$ and $Pred*players_{pred}$ 
+(and $players_{pred}=players_{prey}=0.4$), but Garriott doesn't, and is exactly what the neural network is going to learn for him.
 
 
 ```{julia, results = FALSE} 
@@ -246,8 +283,8 @@ function loss(θ)
 end
 ```
 
-```julia 
-const losses = []
+```{julia, results = FALSE} 
+losses = []
 
 #just adding a callback to supervise the network's learning
 callback(θ,l,pred) = begin
@@ -261,18 +298,47 @@ end
 
 And lets train the NN!!
 
-```julia
+```{julia, results = FALSE}
 # First train with ADAM for better convergence
 res1 = DiffEqFlux.sciml_train(loss, p, ADAM(0.01), cb=callback, maxiters = 200);
 ```
 
-```julia
+```{julia, results = FALSE}
 # Train with BFGS
 res2 = DiffEqFlux.sciml_train(loss, res1.minimizer, BFGS(initial_stepnorm=0.01), cb=callback, maxiters = 10000);
 ```
 
 ```{julia , echo=FALSE, results = FALSE}
-losses = [172.33684, 102.69243, 13.61018, 14.430028, 19.035341, 22.56865, 24.894522, 26.27856, 26.972097, 27.17484, 27.03956, 26.68035, 26.180466, 25.598997, 24.976612, 24.340496, 23.707813, 23.088964, 22.489344, 21.911352, 21.355219, 20.819923, 20.303791, 19.80478, 19.320768, 18.849659, 18.389532, 17.938673, 17.49557, 17.058918,16.627693,16.201014,15.778184,15.358708,14.942204,14.528456,14.117334,13.70881,13.302943,12.899874,12.499822,12.103056,11.709889,11.320709,10.935967,10.556125,10.181734,9.813368,9.451674,9.097343,8.75114,8.413868,8.0864105,7.769715,7.46477,7.172643,6.8944254,6.6312423,6.3842444,6.1545267,5.9431067,5.750875,5.578488,5.426282,5.294143,5.1814284,5.086789,5.00812,4.9425187,4.8863277,4.835296,4.7849417,4.7309203,4.6695595,4.598327,4.516134,4.4234967,4.3222895,4.215438,4.106255,3.9980428,3.8935506,3.7947443,3.7027128,3.6176586,3.5390987,3.4660542,3.3972347,3.3312743,3.2668595,3.2028718,3.1384625,3.0730891,3.0065336,2.9389231,2.8706114,2.8021908,2.7343805,2.6678948,2.6034133,2.541465,2.4823136,2.4259853,2.3722346,2.3206458,2.2706785,2.2217994,2.1736329,2.1260066,2.078957,2.0327306,1.9876761,1.9441699,1.9024745,1.862713,1.8248719,1.788761,1.7541286,1.7207055,1.6882302,1.6565403,1.6255704,1.5953555,1.5659858,1.5375829,1.5102801,1.4841021,1.4590434,1.4350412,1.4119726,1.3896663,1.3680294,1.346986,1.326533,1.3066791,1.2874639,1.2689232,1.2510544,1.2338048,1.2171329,1.2009351,1.1851573,1.1697431,1.1546761,1.1399639,1.1256151,1.1116369,1.0980396,1.0847913,1.0718594,1.0592058,1.0467851,1.0346026,1.0226427,1.0108844,0.99935657,0.98804814,0.9769546,0.9660289,0.9552891,0.94471127,0.9342475,0.9239342,0.9137707,0.903738,0.89385474,0.8840927,0.87445563,0.864927,0.85552436,0.84620875,0.83699226,0.8278817,0.81887627,0.80996704,0.8011534,0.7924202,0.78378206,0.775234,0.7667545,0.7583705,0.75006306,0.74184287,0.7336968,0.72564167,0.7176433,0.7097326,0.70188886,0.69414324,0.68643886,0.6788329,0.67128646,0.6638142,0.65641224,0.6490873,0.64183414,0.6346398,0.627521,0.6204671,0.61348546,0.61348546,0.606563,0.59474516,0.48659563,0.37755048,0.2363557,0.076327,0.06944373,0.015928706,0.012502467,0.010256187,0.009395375,0.008621496,0.00833931,0.007679441,0.007202269,0.0070108054,0.006754094,0.00465888,0.0038528861,0.0030358692,0.002169377,0.0014574197,0.0012009469,0.0011051066,0.0009772268,0.0008493898,0.0008138251,0.0007980355,0.0007936575,0.0007849014,0.0007752521,0.0007656107,0.0007592438,0.00075245526,0.00073667703,0.00072425447,0.0007080659,0.0006668405,0.0006488064,0.00062666106,0.00059931783,0.0005724454,0.00053518306,0.00049747457,0.00044125266,0.00041517935,0.00039495662,0.00038017714,0.00037381373,0.0003722161,0.0003720392,0.00037176593,0.0003695779,0.00035174604,0.00030903614,0.00028655116,0.00027669422,0.00027324728,0.00027260394,0.00027198764,0.00027192835,0.00026963794,0.0002523601,0.00024321073,0.00023475701,0.00021897264,0.00021204558,0.00020357061,0.00019796623,0.00019145885,0.00018016605,0.00017678336,0.00017198181,0.00016831153,0.00016600425,0.00016149413,0.0001602888,0.00015936246,0.00015890975,0.00015862043,0.00015781415,0.00015721242,0.00015634792,0.00015565661,0.00015517013,0.00015494408,0.00015472225,0.00015388637,0.00015328063,0.00015276122,0.00015190587,0.00015132526,0.00015054186,0.0001488235,0.00014777806,0.00014597674,0.00014370806,0.000143003,0.00014064222,0.00013944674,0.00013833171,0.0001369693,0.00013556,0.000133981,0.00013067335,0.00012855136,0.00012389536,0.00012257845,0.00012112519,0.00012096544,0.000120731514,0.00012068752,0.00012057313,0.000120329736,0.00012028748,0.000120270575,0.000120270575,0.000120138175,0.0001198075,0.00011957327,0.00011796154,0.00011755999,0.000116953226,0.0001166978,0.00011612427,0.000114041606,0.00011161972,0.00011058597,0.0001100007,0.000109748886,0.00010920267,0.0001086105,0.00010839817,0.00010829788,0.00010822007,0.00010820184,0.00010804852,0.00010797497,0.000107735155,0.00010697935,0.00010610954,0.00010570472,0.000105143416,0.00010508706,0.00010480686,0.0001039995,0.00010396763,0.00010396763,0.00010396763]
+losses = [172.33684, 102.69243, 13.61018, 14.430028, 19.035341, 22.56865, 24.894522, 26.27856, 26.972097, 27.17484, 27.03956, 26.68035, 
+26.180466, 25.598997, 24.976612, 24.340496, 23.707813, 23.088964, 22.489344, 21.911352, 21.355219, 20.819923, 20.303791, 19.80478, 19.320768, 
+18.849659, 18.389532, 17.938673, 17.49557, 17.058918,16.627693,16.201014,15.778184,15.358708,14.942204,14.528456,14.117334,13.70881,13.302943,
+12.899874,12.499822,12.103056,11.709889,11.320709,10.935967,10.556125,10.181734,9.813368,9.451674,9.097343,8.75114,8.413868,8.0864105,
+7.769715,7.46477,7.172643,6.8944254,6.6312423,6.3842444,6.1545267,5.9431067,5.750875,5.578488,5.426282,5.294143,5.1814284,5.086789,5.00812,
+4.9425187,4.8863277,4.835296,4.7849417,4.7309203,4.6695595,4.598327,4.516134,4.4234967,4.3222895,4.215438,4.106255,3.9980428,3.8935506,
+3.7947443,3.7027128,3.6176586,3.5390987,3.4660542,3.3972347,3.3312743,3.2668595,3.2028718,3.1384625,3.0730891,3.0065336,2.9389231,2.8706114,
+2.8021908,2.7343805,2.6678948,2.6034133,2.541465,2.4823136,2.4259853,2.3722346,2.3206458,2.2706785,2.2217994,2.1736329,2.1260066,2.078957,
+2.0327306,1.9876761,1.9441699,1.9024745,1.862713,1.8248719,1.788761,1.7541286,1.7207055,1.6882302,1.6565403,1.6255704,1.5953555,1.5659858,
+1.5375829,1.5102801,1.4841021,1.4590434,1.4350412,1.4119726,1.3896663,1.3680294,1.346986,1.326533,1.3066791,1.2874639,1.2689232,1.2510544,
+1.2338048,1.2171329,1.2009351,1.1851573,1.1697431,1.1546761,1.1399639,1.1256151,1.1116369,1.0980396,1.0847913,1.0718594,1.0592058,1.0467851,
+1.0346026,1.0226427,1.0108844,0.99935657,0.98804814,0.9769546,0.9660289,0.9552891,0.94471127,0.9342475,0.9239342,0.9137707,0.903738,0.89385474,
+0.8840927,0.87445563,0.864927,0.85552436,0.84620875,0.83699226,0.8278817,0.81887627,0.80996704,0.8011534,0.7924202,0.78378206,0.775234,0.7667545,
+0.7583705,0.75006306,0.74184287,0.7336968,0.72564167,0.7176433,0.7097326,0.70188886,0.69414324,0.68643886,0.6788329,0.67128646,0.6638142,
+0.65641224,0.6490873,0.64183414,0.6346398,0.627521,0.6204671,0.61348546,0.61348546,0.606563,0.59474516,0.48659563,0.37755048,0.2363557,
+0.076327,0.06944373,0.015928706,0.012502467,0.010256187,0.009395375,0.008621496,0.00833931,0.007679441,0.007202269,0.0070108054,0.006754094,
+0.00465888,0.0038528861,0.0030358692,0.002169377,0.0014574197,0.0012009469,0.0011051066,0.0009772268,0.0008493898,0.0008138251,0.0007980355,
+0.0007936575,0.0007849014,0.0007752521,0.0007656107,0.0007592438,0.00075245526,0.00073667703,0.00072425447,0.0007080659,0.0006668405,
+0.0006488064,0.00062666106,0.00059931783,0.0005724454,0.00053518306,0.00049747457,0.00044125266,0.00041517935,0.00039495662,0.00038017714,
+0.00037381373,0.0003722161,0.0003720392,0.00037176593,0.0003695779,0.00035174604,0.00030903614,0.00028655116,0.00027669422,0.00027324728,
+0.00027260394,0.00027198764,0.00027192835,0.00026963794,0.0002523601,0.00024321073,0.00023475701,0.00021897264,0.00021204558,0.00020357061,
+0.00019796623,0.00019145885,0.00018016605,0.00017678336,0.00017198181,0.00016831153,0.00016600425,0.00016149413,0.0001602888,0.00015936246,
+0.00015890975,0.00015862043,0.00015781415,0.00015721242,0.00015634792,0.00015565661,0.00015517013,0.00015494408,0.00015472225,0.00015388637,
+0.00015328063,0.00015276122,0.00015190587,0.00015132526,0.00015054186,0.0001488235,0.00014777806,0.00014597674,0.00014370806,0.000143003,
+0.00014064222,0.00013944674,0.00013833171,0.0001369693,0.00013556,0.000133981,0.00013067335,0.00012855136,0.00012389536,0.00012257845,
+0.00012112519,0.00012096544,0.000120731514,0.00012068752,0.00012057313,0.000120329736,0.00012028748,0.000120270575,0.000120270575,
+0.000120138175,0.0001198075,0.00011957327,0.00011796154,0.00011755999,0.000116953226,0.0001166978,0.00011612427,0.000114041606,0.00011161972,
+0.00011058597,0.0001100007,0.000109748886,0.00010920267,0.0001086105,0.00010839817,0.00010829788,0.00010822007,0.00010820184,0.00010804852,
+0.00010797497,0.000107735155,0.00010697935,0.00010610954,0.00010570472,0.000105143416,0.00010508706,0.00010480686,0.0001039995,0.00010396763,
+0.00010396763,0.00010396763]
 ```
 
 ```{julia chap_12_plot_05} 
@@ -280,8 +346,7 @@ losses = [172.33684, 102.69243, 13.61018, 14.430028, 19.035341, 22.56865, 24.894
 plot(losses, yaxis = :log, xaxis = :log, xlabel = "Iterations", ylabel = "Loss")
 ```
 
-```julia
-begin
+```{julia, results = FALSE}
 # Neural network guess
 L̂ = L(Xₙ,res2.minimizer)
 # Plot the data and the approximation
@@ -393,8 +458,7 @@ We do this in order to gain interpretability of what may be happening and, in a 
 We do this by creating a [function space](https://en.wikipedia.org/wiki/Function_space) in order to the NN learn which function (or linear combination of those) is the best one to describe that Input-Output relation.
  The loss function to do so is designed in a way that the result will be the least complex one, that is, the answer will be the simplest function that behaves like the NN.
 
-```julia
-begin
+```{julia, results = FALSE}
 ## Let's continue with the Sparse Identification 
 
 # Create a Basis
@@ -411,8 +475,6 @@ for i ∈ 1:5
             push!(polys, u[2]^i*u[1]^i)
         end
     end
-end
-	
 end
 ```
 
@@ -438,8 +500,7 @@ And we are going to ask SINDy to give us the simplest function that shows the sa
 
 Without saying more, let's do it!
 
-```julia
-begin
+```{julia, results = FALSE}
 # Create an optimizer for the SINDy problem
 opt = SR3()
 # Create the thresholds which should be used in the search process
@@ -448,7 +509,6 @@ opt = SR3()
 g(x) = x[1] < 1 ? Inf : norm(x, 2)
 	
 Ψ = SINDy(Xₙ[:, 2:end], L̂[:, 2:end], basis, λ,  opt, g = g, maxiter = 10000, normalize = true, denoise = true)
-end
 ```
 
 ```julia 
@@ -489,14 +549,13 @@ Lets ask for the parameters then:
 parameters(Ψ)
 ```
 
-```{julia , echo=FALSE,}
+```{julia, echo=FALSE,}
 "-0.36237425,  -0.40059045"
 ```
 
 So, the parameters are a bit off. But now that we have the equations restored, we can run another SINDy to gain much more accuracy:
 
 ```julia 
-begin
 unknown_sys = ODESystem(Ψ)
 unknown_eq = ODEFunction(unknown_sys)
 
@@ -505,14 +564,13 @@ b = Basis((u, p, t)->unknown_eq(u, [1.; 1.], t), u)
 
 # Retune for better parameters (we already know the equations)
 Ψf = SINDy(Xₙ[:, 2:end], L̂[:, 2:end], b, STRRidge(0.01), maxiter = 100, convergence_error = 1e-18)
-end
 ```
 
 ```julia 
 parameters(Ψf)
 ```
 
-```{julia , echo=FALSE,}
+```{julia, echo=FALSE,}
 "-0.39629772, -0.40179992"
 ```
 
@@ -522,14 +580,11 @@ After seeing that, Garriott took a big deep breath. He immediately understood wh
 He called his team and started planning the strategy to face this, not knowing that it already was a lost cause...  
 
 ## Summary
-
 In this chapter, we continued to deepen our understanding of systems of differential equations and their complex behavior.
 We went a step further, introducing the concept of universal differential equations which allow us, given a very small amount of data, to estimate some unknown term of the system.
 This opens a very big door, connecting machine learning and science, which can greatly enhance the production of knowledge.
 
 ## References
+- [Universal Differential Equations for Scientific Machine Learning Paper](https://arxiv.org/abs/2001.04385)
 
--   [Universal Differential Equations for Scientific Machine Learning Paper](https://arxiv.org/abs/2001.04385)
-
--   [Universal Differential Equations - Chris Rackauchas](https://github.com/ChrisRackauckas/universal_differential_equations)
-
+- [Universal Differential Equations - Chris Rackauchas](https://github.com/ChrisRackauckas/universal_differential_equations)
