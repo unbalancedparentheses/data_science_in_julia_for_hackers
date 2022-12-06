@@ -255,14 +255,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="12" data-path="ultima-continued.html"><a href="ultima-continued.html"><i class="fa fa-check"></i><b>12</b> Ultima continued</a>
 <ul>
-<li class="chapter" data-level="12.1" data-path="ultima-continued.html"><a href="ultima-continued.html#the-language-of-science"><i class="fa fa-check"></i><b>12.1</b> The language of science</a></li>
-<li class="chapter" data-level="12.2" data-path="ultima-continued.html"><a href="ultima-continued.html#scientific-machine-learning-for-model-discovery"><i class="fa fa-check"></i><b>12.2</b> Scientific Machine Learning for model discovery</a>
+<li class="chapter" data-level="12.1" data-path="ultima-continued.html"><a href="ultima-continued.html#letting-the-computer-do-science"><i class="fa fa-check"></i><b>12.1</b> Letting the computer do science</a></li>
+<li class="chapter" data-level="12.2" data-path="ultima-continued.html"><a href="ultima-continued.html#the-language-of-science"><i class="fa fa-check"></i><b>12.2</b> The language of science</a></li>
+<li class="chapter" data-level="12.3" data-path="ultima-continued.html"><a href="ultima-continued.html#scientific-machine-learning-for-model-discovery"><i class="fa fa-check"></i><b>12.3</b> Scientific Machine Learning for model discovery</a>
 <ul>
-<li class="chapter" data-level="12.2.1" data-path="ultima-continued.html"><a href="ultima-continued.html#looking-for-the-catastrophe-culprit"><i class="fa fa-check"></i><b>12.2.1</b> Looking for the catastrophe culprit</a></li>
-<li class="chapter" data-level="12.2.2" data-path="ultima-continued.html"><a href="ultima-continued.html#the-infamous-day-begins."><i class="fa fa-check"></i><b>12.2.2</b> The infamous day begins.</a></li>
+<li class="chapter" data-level="12.3.1" data-path="ultima-continued.html"><a href="ultima-continued.html#looking-for-the-catastrophe-culprit"><i class="fa fa-check"></i><b>12.3.1</b> Looking for the catastrophe culprit</a></li>
+<li class="chapter" data-level="12.3.2" data-path="ultima-continued.html"><a href="ultima-continued.html#the-infamous-day-begins."><i class="fa fa-check"></i><b>12.3.2</b> The infamous day begins.</a></li>
 </ul></li>
-<li class="chapter" data-level="12.3" data-path="ultima-continued.html"><a href="ultima-continued.html#summary-10"><i class="fa fa-check"></i><b>12.3</b> Summary</a></li>
-<li class="chapter" data-level="12.4" data-path="ultima-continued.html"><a href="ultima-continued.html#references-9"><i class="fa fa-check"></i><b>12.4</b> References</a></li>
+<li class="chapter" data-level="12.4" data-path="ultima-continued.html"><a href="ultima-continued.html#summary-10"><i class="fa fa-check"></i><b>12.4</b> Summary</a></li>
+<li class="chapter" data-level="12.5" data-path="ultima-continued.html"><a href="ultima-continued.html#references-9"><i class="fa fa-check"></i><b>12.5</b> References</a></li>
 </ul></li>
 <li class="chapter" data-level="13" data-path="time-series.html"><a href="time-series.html"><i class="fa fa-check"></i><b>13</b> Time series</a>
 <ul>
@@ -317,15 +318,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-16"><a href="ultima-continued.html#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="im">using</span> <span class="bu">Optim</span></span>
 <span id="cb1-17"><a href="ultima-continued.html#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="im">using</span> <span class="bu">DiffEqFlux</span></span>
 <span id="cb1-18"><a href="ultima-continued.html#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="im">using</span> <span class="bu">Flux</span></span></code></pre></div>
-<p>##Letting the computer do science</p>
+<div id="letting-the-computer-do-science" class="section level2 hasAnchor" number="12.1">
+<h2><span class="header-section-number">12.1</span> Letting the computer do science<a href="ultima-continued.html#letting-the-computer-do-science" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Let’s think a little. What do you think is the process by which scientific discoveries are made?</p>
 <p>First, you have some situation or event of interest from which you want to discover the rules that govern it. Second, you carefully design the experiments to get as much unbiased data as you can. Third, you analyze that data to gain some knowledge and, hopefully, you can begin to write some equations that condense the underlying process. Finally, you keep doing experiments to confirm that the equations you have invented are correct. You are doing science, my friend!</p>
 <p>Throughout the book, we were learning a wide variety of statistical methods that sought to be as general as possible, but that required us to define the model to be used. The equations, then, were already defined and the algorithm only had to find the best parameters (or distribution of them) to fit that model to the data.</p>
 <p>But what if I tell you that now we can start “talking” with the computer. That we can ask the computer to learn the model itself with the data. Not the parameters. But the equations that govern the process generating the data we give to the computer.
 Even more, that now we can “share” some incomplete knowledge that we have of some process and ask the computer to learn, with minimum data, the part of the knowledge that we lack.
 What? Is that even possible?.</p>
-<div id="the-language-of-science" class="section level2 hasAnchor" number="12.1">
-<h2><span class="header-section-number">12.1</span> The language of science<a href="ultima-continued.html#the-language-of-science" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="the-language-of-science" class="section level2 hasAnchor" number="12.2">
+<h2><span class="header-section-number">12.2</span> The language of science<a href="ultima-continued.html#the-language-of-science" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>In order to start understanding if that fairytale is possible, first we need to understand the ways we have to “encoding” the dynamics of those processes.
 As <a href="http://www.stevenstrogatz.com/">Steven Strogatz</a> said “Since Newton, mankind has come to realize that the laws of physics are always expressed in the language of differential equations”.
 And we can argue that it is a language that not only belongs to physics, but to all science and, in general, to the world in which we live.</p>
@@ -344,8 +347,8 @@ What is a differential equation and why are they useful?</p>
 <p>This transformation is just showing something that everyone already knows: Acceleration is the change of Velocity over time, and Velocity is the change of position over time. And that implies that Acceleration is the second derivative (change) on position over time.</p>
 <p>We just learned that the language of differential equations is fundamental for doing science. So, if we want the computer to learn equations that explain scientific events, it must know how to deal with this type of equations. And this is easily solved by the Scientific Machine Learning (<a href="https://sciml.ai/">SciML</a>) ecosystem.</p>
 </div>
-<div id="scientific-machine-learning-for-model-discovery" class="section level2 hasAnchor" number="12.2">
-<h2><span class="header-section-number">12.2</span> Scientific Machine Learning for model discovery<a href="ultima-continued.html#scientific-machine-learning-for-model-discovery" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="scientific-machine-learning-for-model-discovery" class="section level2 hasAnchor" number="12.3">
+<h2><span class="header-section-number">12.3</span> Scientific Machine Learning for model discovery<a href="ultima-continued.html#scientific-machine-learning-for-model-discovery" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>But dealing with differential equations is not the main thing that SciML has to offer us. Instead it gives us the way to do science in cooperation with artificial intelligence.
 What? To be able to comprehend this, let’s rewiew how “classic” machine learning works.</p>
 <p>It turns out that a neural network is literally a function.
@@ -362,8 +365,8 @@ If we think it for a moment, we can realize that a scientific model is worth a t
 The equations work like a proxy of thousands of experiments, people investigating, years of research. in other words: tons of data.</p>
 <p>So if we create a way to inform all of that precious data, so it can focus on learning a specific part of the equation (some part that we don’t know), it could do it with a minimum quantity of data! Lucky us, <a href="https://github.com/ChrisRackauckas">Christopher Rackauckas</a> and his team already found a way.</p>
 <p>The concept we are talking about is called “Universal Differential Equations”. Let’s use them to recover some missing equation components from the Virtual Catastrophe from the last chapter!</p>
-<div id="looking-for-the-catastrophe-culprit" class="section level3 hasAnchor" number="12.2.1">
-<h3><span class="header-section-number">12.2.1</span> Looking for the catastrophe culprit<a href="ultima-continued.html#looking-for-the-catastrophe-culprit" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="looking-for-the-catastrophe-culprit" class="section level3 hasAnchor" number="12.3.1">
+<h3><span class="header-section-number">12.3.1</span> Looking for the catastrophe culprit<a href="ultima-continued.html#looking-for-the-catastrophe-culprit" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>So let’s imagine again (yes, we imagine lots of things in this book) that we are <a href="https://en.wikipedia.org/wiki/Richard_Garriott">Richard Garriott</a> a day before the release of his game. He was tuning the last details of his virtual ecosystem. The model is simple but powerful, and ready to go:</p>
 <p><span class="math inline">\(\frac{dPrey}{dt} = Prey*(b_{prey} - m_{prey}*Pred) = Prey*(1.3 - 0.9*Pred)\)</span></p>
 <p><span class="math inline">\(\frac{dPred}{dt} = Pred*(b_{pred}*Prey - m_{pred}) = Pred*(0.8*Prey - 1.8)\)</span></p>
@@ -374,198 +377,167 @@ The equations work like a proxy of thousands of experiments, people investigatin
 <p><span class="math inline">\(m_{pred} = 1.8\)</span></p>
 <p>He smiles and happily goes to sleep, thinking that tomorrow is the big day.</p>
 <p>Let’s see how were the system equilibrium that he decided.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb2-1"><a href="ultima-continued.html#cb2-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-2"><a href="ultima-continued.html#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="cf">begin</span></span>
-<span id="cb2-3"><a href="ultima-continued.html#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">#The Lotka-Volterra model Garriott define for Ultima Online</span></span>
-<span id="cb2-4"><a href="ultima-continued.html#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-5"><a href="ultima-continued.html#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">lotka_volterra</span>(du,u,p,t)</span>
-<span id="cb2-6"><a href="ultima-continued.html#cb2-6" aria-hidden="true" tabindex="-1"></a>  prey, pred  <span class="op">=</span> u</span>
-<span id="cb2-7"><a href="ultima-continued.html#cb2-7" aria-hidden="true" tabindex="-1"></a>  birth_prey, mort_prey, birth_pred, mort_pred <span class="op">=</span> p</span>
-<span id="cb2-8"><a href="ultima-continued.html#cb2-8" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb2-9"><a href="ultima-continued.html#cb2-9" aria-hidden="true" tabindex="-1"></a>  du[<span class="fl">1</span>] <span class="op">=</span> dprey <span class="op">=</span> (birth_prey <span class="op">-</span> mort_prey <span class="op">*</span> pred)<span class="op">*</span>prey</span>
-<span id="cb2-10"><a href="ultima-continued.html#cb2-10" aria-hidden="true" tabindex="-1"></a>  du[<span class="fl">2</span>] <span class="op">=</span> dpred <span class="op">=</span> (birth_pred <span class="op">*</span> prey <span class="op">-</span> mort_pred)<span class="op">*</span>pred</span>
-<span id="cb2-11"><a href="ultima-continued.html#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
-<span id="cb2-12"><a href="ultima-continued.html#cb2-12" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb2-13"><a href="ultima-continued.html#cb2-13" aria-hidden="true" tabindex="-1"></a>p0 <span class="op">=</span> <span class="dt">Float32</span>[<span class="fl">1.3</span>, <span class="fl">0.9</span>, <span class="fl">0.8</span>, <span class="fl">1.8</span>]</span>
-<span id="cb2-14"><a href="ultima-continued.html#cb2-14" aria-hidden="true" tabindex="-1"></a>u0 <span class="op">=</span> <span class="dt">Float32</span>[<span class="fl">0.44249296</span>,<span class="fl">4.6280594</span>]</span>
-<span id="cb2-15"><a href="ultima-continued.html#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-16"><a href="ultima-continued.html#cb2-16" aria-hidden="true" tabindex="-1"></a>prob_ <span class="op">=</span> <span class="fu">ODEProblem</span>(lotka_volterra,u0,(<span class="fl">0.0</span>,<span class="fl">40.0</span>),p0)</span>
-<span id="cb2-17"><a href="ultima-continued.html#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-18"><a href="ultima-continued.html#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span>;</span></code></pre></div>
-<div class="sourceCode" id="cb3"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb3-1"><a href="ultima-continued.html#cb3-1" aria-hidden="true" tabindex="-1"></a>sol <span class="op">=</span> <span class="fu">solve</span>(prob_,<span class="fu">Tsit5</span>());</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb2-1"><a href="ultima-continued.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The Lotka-Volterra model Garriott define for Ultima Online</span></span>
+<span id="cb2-2"><a href="ultima-continued.html#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">lotka_volterra!</span>(du,u,p,t)</span>
+<span id="cb2-3"><a href="ultima-continued.html#cb2-3" aria-hidden="true" tabindex="-1"></a>  prey, pred  <span class="op">=</span> u</span>
+<span id="cb2-4"><a href="ultima-continued.html#cb2-4" aria-hidden="true" tabindex="-1"></a>  birth_prey, mort_prey, birth_pred, mort_pred <span class="op">=</span> p</span>
+<span id="cb2-5"><a href="ultima-continued.html#cb2-5" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-6"><a href="ultima-continued.html#cb2-6" aria-hidden="true" tabindex="-1"></a>  du[<span class="fl">1</span>] <span class="op">=</span> dprey <span class="op">=</span> (birth_prey <span class="op">-</span> mort_prey <span class="op">*</span> pred)<span class="op">*</span>prey</span>
+<span id="cb2-7"><a href="ultima-continued.html#cb2-7" aria-hidden="true" tabindex="-1"></a>  du[<span class="fl">2</span>] <span class="op">=</span> dpred <span class="op">=</span> (birth_pred <span class="op">*</span> prey <span class="op">-</span> mort_pred)<span class="op">*</span>pred</span>
+<span id="cb2-8"><a href="ultima-continued.html#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span>
+<span id="cb2-9"><a href="ultima-continued.html#cb2-9" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-10"><a href="ultima-continued.html#cb2-10" aria-hidden="true" tabindex="-1"></a>p0 <span class="op">=</span> <span class="dt">Float32</span>[<span class="fl">1.3</span>, <span class="fl">0.9</span>, <span class="fl">0.8</span>, <span class="fl">1.8</span>]</span>
+<span id="cb2-11"><a href="ultima-continued.html#cb2-11" aria-hidden="true" tabindex="-1"></a>u0 <span class="op">=</span> <span class="dt">Float32</span>[<span class="fl">0.44249296</span>, <span class="fl">4.6280594</span>]</span>
+<span id="cb2-12"><a href="ultima-continued.html#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="ultima-continued.html#cb2-13" aria-hidden="true" tabindex="-1"></a>prob <span class="op">=</span> <span class="fu">ODEProblem</span>(lotka_volterra!, u0, (<span class="fl">0.0</span>, <span class="fl">40.0</span>), p0)</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb3-1"><a href="ultima-continued.html#cb3-1" aria-hidden="true" tabindex="-1"></a>sol <span class="op">=</span> <span class="fu">solve</span>(prob);</span></code></pre></div>
 <div class="sourceCode" id="cb4"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb4-1"><a href="ultima-continued.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(sol)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_12_plot_01-J1.png" /><!-- --></p>
 <p>So the system seems in complete equilibrium.</p>
 </div>
-<div id="the-infamous-day-begins." class="section level3 hasAnchor" number="12.2.2">
-<h3><span class="header-section-number">12.2.2</span> The infamous day begins.<a href="ultima-continued.html#the-infamous-day-begins." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="the-infamous-day-begins." class="section level3 hasAnchor" number="12.3.2">
+<h3><span class="header-section-number">12.3.2</span> The infamous day begins.<a href="ultima-continued.html#the-infamous-day-begins." class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>And finally we arrive at the day when the madness begins.</p>
 <p>Garriott wakes up early, doesn’t have any breakfast and goes to meet his team. Everything is ready. The countdown starts: 3, 2, 1… And the game is online, running.</p>
 <p>After the champagne, hugs and a little celebration Garriott returns to work and starts to analyze the metrics to see if everything is alright, and it does. He relax a little bit until something calls his attention: The curves of carnivorous and herbivorous animals are a little different than they should be. There are still too few points (only four hours from the release) to be alarmed, but he decides to do a deeper analysis. Luckily, a few days ago, he had read a paper on the Universal ODEs, so he thinks they can help him in this case.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb5-1"><a href="ultima-continued.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">lotka_volterra_players</span>(du,u,p,t)</span>
-<span id="cb5-2"><a href="ultima-continued.html#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">#Lotka-Volterra function with players that hunt</span></span>
-<span id="cb5-3"><a href="ultima-continued.html#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">#Of course, Garriott doesn&#39;t know about this new players part of the equation. </span></span>
-<span id="cb5-4"><a href="ultima-continued.html#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="co">#He only saw some differences in the real curve vs the one he expected.</span></span>
+<div class="sourceCode" id="cb5"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb5-1"><a href="ultima-continued.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">lotka_volterra_players!</span>(du,u,p,t)</span>
+<span id="cb5-2"><a href="ultima-continued.html#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Lotka-Volterra function with players that hunt</span></span>
+<span id="cb5-3"><a href="ultima-continued.html#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Of course, Garriott doesn&#39;t know about this new players part of the equation. </span></span>
+<span id="cb5-4"><a href="ultima-continued.html#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="co"># He only saw some differences in the real curve vs the one he expected.</span></span>
 <span id="cb5-5"><a href="ultima-continued.html#cb5-5" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb5-6"><a href="ultima-continued.html#cb5-6" aria-hidden="true" tabindex="-1"></a>    birth_prey, mort_prey, birth_pred, mort_pred, players_prey, players_pred <span class="op">=</span> p</span>
 <span id="cb5-7"><a href="ultima-continued.html#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-8"><a href="ultima-continued.html#cb5-8" aria-hidden="true" tabindex="-1"></a>    du[<span class="fl">1</span>]  <span class="op">=</span> (birth_prey <span class="op">-</span> mort_prey <span class="op">*</span> u[<span class="fl">2</span>] <span class="op">-</span> players_prey)<span class="op">*</span>u[<span class="fl">1</span>]</span>
 <span id="cb5-9"><a href="ultima-continued.html#cb5-9" aria-hidden="true" tabindex="-1"></a>    du[<span class="fl">2</span>]  <span class="op">=</span> (birth_pred <span class="op">*</span> u[<span class="fl">1</span>] <span class="op">-</span> mort_pred <span class="op">-</span> players_pred)<span class="op">*</span>u[<span class="fl">2</span>]</span>
 <span id="cb5-10"><a href="ultima-continued.html#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
-<pre><code>## lotka_volterra_players (generic function with 1 method)</code></pre>
-<div class="sourceCode" id="cb7"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb7-1"><a href="ultima-continued.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="cf">begin</span></span>
-<span id="cb7-2"><a href="ultima-continued.html#cb7-2" aria-hidden="true" tabindex="-1"></a>tspan <span class="op">=</span> (<span class="fl">0.0f0</span>,<span class="fl">4.0f0</span>)</span>
-<span id="cb7-3"><a href="ultima-continued.html#cb7-3" aria-hidden="true" tabindex="-1"></a>p_ <span class="op">=</span> <span class="dt">Float32</span>[<span class="fl">1.3</span>, <span class="fl">0.9</span>, <span class="fl">0.8</span>, <span class="fl">1.8</span>, <span class="fl">0.4</span>, <span class="fl">0.4</span>]</span>
-<span id="cb7-4"><a href="ultima-continued.html#cb7-4" aria-hidden="true" tabindex="-1"></a>prob <span class="op">=</span> <span class="fu">ODEProblem</span>(lotka_volterra_players, u0,tspan, p_)</span>
-<span id="cb7-5"><a href="ultima-continued.html#cb7-5" aria-hidden="true" tabindex="-1"></a>solution <span class="op">=</span> <span class="fu">solve</span>(prob, <span class="fu">Vern7</span>(), abstol<span class="op">=</span><span class="fl">1e-12</span>, reltol<span class="op">=</span><span class="fl">1e-12</span>, saveat <span class="op">=</span> <span class="fl">0.1</span>)</span>
-<span id="cb7-6"><a href="ultima-continued.html#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span>;</span></code></pre></div>
-<div class="sourceCode" id="cb8"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb8-1"><a href="ultima-continued.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="cf">begin</span></span>
-<span id="cb8-2"><a href="ultima-continued.html#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">scatter</span>(solution, alpha <span class="op">=</span> <span class="fl">0.25</span>, title<span class="op">=</span><span class="st">&quot;The data Garriott was seeing&quot;</span>)</span>
-<span id="cb8-3"><a href="ultima-continued.html#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot!</span>(solution, alpha <span class="op">=</span> <span class="fl">0.5</span>)</span>
-<span id="cb8-4"><a href="ultima-continued.html#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
+<pre><code>## lotka_volterra_players! (generic function with 1 method)</code></pre>
+<div class="sourceCode" id="cb7"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb7-1"><a href="ultima-continued.html#cb7-1" aria-hidden="true" tabindex="-1"></a>tspan <span class="op">=</span> (<span class="fl">0.0f0</span>,<span class="fl">4.0f0</span>)</span>
+<span id="cb7-2"><a href="ultima-continued.html#cb7-2" aria-hidden="true" tabindex="-1"></a>p_ <span class="op">=</span> <span class="dt">Float32</span>[<span class="fl">1.3</span>, <span class="fl">0.9</span>, <span class="fl">0.8</span>, <span class="fl">1.8</span>, <span class="fl">0.4</span>, <span class="fl">0.4</span>]</span>
+<span id="cb7-3"><a href="ultima-continued.html#cb7-3" aria-hidden="true" tabindex="-1"></a>prob <span class="op">=</span> <span class="fu">ODEProblem</span>(lotka_volterra_players!, u0,tspan, p_)</span>
+<span id="cb7-4"><a href="ultima-continued.html#cb7-4" aria-hidden="true" tabindex="-1"></a>solution <span class="op">=</span> <span class="fu">solve</span>(prob, <span class="fu">Vern7</span>(), abstol<span class="op">=</span><span class="fl">1e-12</span>, reltol<span class="op">=</span><span class="fl">1e-12</span>, saveat <span class="op">=</span> <span class="fl">0.1</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb8-1"><a href="ultima-continued.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">scatter</span>(solution, alpha <span class="op">=</span> <span class="fl">0.25</span>, title<span class="op">=</span><span class="st">&quot;The data Garriott was seeing&quot;</span>);</span>
+<span id="cb8-2"><a href="ultima-continued.html#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot!</span>(solution, alpha <span class="op">=</span> <span class="fl">0.5</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_12_plot_02-J1.png" /><!-- --></p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb9-1"><a href="ultima-continued.html#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="cf">begin</span></span>
-<span id="cb9-2"><a href="ultima-continued.html#cb9-2" aria-hidden="true" tabindex="-1"></a>expected_prob <span class="op">=</span> <span class="fu">ODEProblem</span>(lotka_volterra, u0,tspan, p0)</span>
-<span id="cb9-3"><a href="ultima-continued.html#cb9-3" aria-hidden="true" tabindex="-1"></a>expected_solution <span class="op">=</span> <span class="fu">solve</span>(expected_prob, <span class="fu">Vern7</span>(), abstol<span class="op">=</span><span class="fl">1e-12</span>, reltol<span class="op">=</span><span class="fl">1e-12</span>, saveat <span class="op">=</span> <span class="fl">0.1</span>)</span>
-<span id="cb9-4"><a href="ultima-continued.html#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span>;</span></code></pre></div>
-<div class="sourceCode" id="cb10"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb10-1"><a href="ultima-continued.html#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="cf">begin</span></span>
-<span id="cb10-2"><a href="ultima-continued.html#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">scatter</span>(expected_solution, alpha <span class="op">=</span> <span class="fl">0.25</span>, title<span class="op">=</span><span class="st">&quot;The data Garriott was expecting to see&quot;</span>)</span>
-<span id="cb10-3"><a href="ultima-continued.html#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot!</span>(expected_solution, alpha <span class="op">=</span> <span class="fl">0.5</span>)</span>
-<span id="cb10-4"><a href="ultima-continued.html#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb9-1"><a href="ultima-continued.html#cb9-1" aria-hidden="true" tabindex="-1"></a>expected_prob <span class="op">=</span> <span class="fu">ODEProblem</span>(lotka_volterra, u0,tspan, p0)</span>
+<span id="cb9-2"><a href="ultima-continued.html#cb9-2" aria-hidden="true" tabindex="-1"></a>expected_solution <span class="op">=</span> <span class="fu">solve</span>(expected_prob, <span class="fu">Vern7</span>(), abstol<span class="op">=</span><span class="fl">1e-12</span>, reltol<span class="op">=</span><span class="fl">1e-12</span>, saveat <span class="op">=</span> <span class="fl">0.1</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb10-1"><a href="ultima-continued.html#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">scatter</span>(expected_solution, alpha <span class="op">=</span> <span class="fl">0.25</span>, title<span class="op">=</span><span class="st">&quot;The data Garriott was expecting to see&quot;</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_12_plot_03-J1.png" /><!-- --></p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb11-1"><a href="ultima-continued.html#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot!</span>(expected_solution, alpha <span class="op">=</span> <span class="fl">0.5</span>)</span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_12_plot_03-J2.png" /><!-- --></p>
 <p>As you can see, the animals were taking more time to recover. The period of the cycle was longer than it should be: A clear sign that something was killing them.
 But he wanted to be sure. The Universal ODEs were key to do so.</p>
 <p>So, he start thinking “I know that the model has to be running cause I can see it in the code! So maybe, something external is producing this divergence. Something that I don’t know. But something that a neural network could find out” Let’s see</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb11-1"><a href="ultima-continued.html#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="cf">begin</span></span>
-<span id="cb11-2"><a href="ultima-continued.html#cb11-2" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> <span class="fu">Array</span>(solution) </span>
-<span id="cb11-3"><a href="ultima-continued.html#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co">#And let&#39;s add some noise to make it more difficult. Why? Because its fun!  </span></span>
-<span id="cb11-4"><a href="ultima-continued.html#cb11-4" aria-hidden="true" tabindex="-1"></a>Xₙ <span class="op">=</span> X <span class="op">+</span> <span class="fu">Float32</span>(<span class="fl">1e-3</span>)<span class="fu">*randn</span>(<span class="fu">eltype</span>(X), <span class="fu">size</span>(X))</span>
-<span id="cb11-5"><a href="ultima-continued.html#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
-<pre><code>## 2×41 Matrix{Float32}:
-##  0.44288  0.330383  0.264195  0.22248  …  1.67858    1.83582     2.01125
-##  4.62888  3.82879   3.14771   2.57326     0.0061032  0.00526385  0.00454013</code></pre>
-<div class="sourceCode" id="cb13"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb13-1"><a href="ultima-continued.html#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="cf">begin</span></span>
-<span id="cb13-2"><a href="ultima-continued.html#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the neural network </span></span>
-<span id="cb13-3"><a href="ultima-continued.html#cb13-3" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> <span class="fu">FastChain</span>(<span class="fu">FastDense</span>(<span class="fl">2</span>, <span class="fl">32</span>, tanh),<span class="fu">FastDense</span>(<span class="fl">32</span>, <span class="fl">32</span>, tanh), <span class="fu">FastDense</span>(<span class="fl">32</span>, <span class="fl">2</span>))</span>
-<span id="cb13-4"><a href="ultima-continued.html#cb13-4" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> <span class="fu">initial_params</span>(L)</span>
-<span id="cb13-5"><a href="ultima-continued.html#cb13-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-6"><a href="ultima-continued.html#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">dudt_</span>(u, p,t)</span>
-<span id="cb13-7"><a href="ultima-continued.html#cb13-7" aria-hidden="true" tabindex="-1"></a>    prey, pred <span class="op">=</span> u</span>
-<span id="cb13-8"><a href="ultima-continued.html#cb13-8" aria-hidden="true" tabindex="-1"></a>    z <span class="op">=</span> <span class="fu">L</span>(u,p)</span>
-<span id="cb13-9"><a href="ultima-continued.html#cb13-9" aria-hidden="true" tabindex="-1"></a>    [p_[<span class="fl">1</span>]<span class="op">*</span>prey <span class="op">-</span> p_[<span class="fl">2</span>]<span class="op">*</span>prey<span class="op">*</span>pred <span class="op">+</span> z[<span class="fl">1</span>],</span>
-<span id="cb13-10"><a href="ultima-continued.html#cb13-10" aria-hidden="true" tabindex="-1"></a>    <span class="op">-</span>p_[<span class="fl">4</span>]<span class="op">*</span>pred <span class="op">+</span> p_[<span class="fl">3</span>]<span class="op">*</span>prey<span class="op">*</span>pred <span class="op">+</span> z[<span class="fl">2</span>]]</span>
-<span id="cb13-11"><a href="ultima-continued.html#cb13-11" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
-<span id="cb13-12"><a href="ultima-continued.html#cb13-12" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
-<pre><code>## dudt_ (generic function with 1 method)</code></pre>
+<div class="sourceCode" id="cb12"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb12-1"><a href="ultima-continued.html#cb12-1" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> <span class="fu">Array</span>(solution) </span>
+<span id="cb12-2"><a href="ultima-continued.html#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="co"># And let&#39;s add some noise to make it more difficult. Why? Because its fun! </span></span>
+<span id="cb12-3"><a href="ultima-continued.html#cb12-3" aria-hidden="true" tabindex="-1"></a>Xₙ <span class="op">=</span> X <span class="op">+</span> <span class="fu">Float32</span>(<span class="fl">1e-3</span>)<span class="fu">*randn</span>(<span class="fu">eltype</span>(X), <span class="fu">size</span>(X))</span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb13-1"><a href="ultima-continued.html#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the neural network </span></span>
+<span id="cb13-2"><a href="ultima-continued.html#cb13-2" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> <span class="fu">FastChain</span>(<span class="fu">FastDense</span>(<span class="fl">2</span>, <span class="fl">32</span>, tanh), <span class="fu">FastDense</span>(<span class="fl">32</span>, <span class="fl">32</span>, tanh), <span class="fu">FastDense</span>(<span class="fl">32</span>, <span class="fl">2</span>))</span>
+<span id="cb13-3"><a href="ultima-continued.html#cb13-3" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> <span class="fu">initial_params</span>(L)</span>
+<span id="cb13-4"><a href="ultima-continued.html#cb13-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-5"><a href="ultima-continued.html#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">dudt_</span>(u, p,t)</span>
+<span id="cb13-6"><a href="ultima-continued.html#cb13-6" aria-hidden="true" tabindex="-1"></a>    prey, pred <span class="op">=</span> u</span>
+<span id="cb13-7"><a href="ultima-continued.html#cb13-7" aria-hidden="true" tabindex="-1"></a>    z <span class="op">=</span> <span class="fu">L</span>(u,p)</span>
+<span id="cb13-8"><a href="ultima-continued.html#cb13-8" aria-hidden="true" tabindex="-1"></a>    [p_[<span class="fl">1</span>]<span class="op">*</span>prey <span class="op">-</span> p_[<span class="fl">2</span>]<span class="op">*</span>prey<span class="op">*</span>pred <span class="op">+</span> z[<span class="fl">1</span>],</span>
+<span id="cb13-9"><a href="ultima-continued.html#cb13-9" aria-hidden="true" tabindex="-1"></a>    <span class="op">-</span>p_[<span class="fl">4</span>]<span class="op">*</span>pred <span class="op">+</span> p_[<span class="fl">3</span>]<span class="op">*</span>prey<span class="op">*</span>pred <span class="op">+</span> z[<span class="fl">2</span>]]</span>
+<span id="cb13-10"><a href="ultima-continued.html#cb13-10" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
 <p>So let’s stop for a minute to analyze the code that Garriott just proposed.</p>
 <p>In the first two lines, he just defines the neural network, that is going to learn the missing components of the two equations (one for the dynamics of the Pray and other for the dynamics of the Predator) and fill the variable p with its untrained parameters.</p>
 <p>Then, he is defining the Universal Differential Equation. Where he is specifying the parts of the model that he knows, and adding a neural network to learn other things that might be happening (and we know that indeed were happening). In other words, he is proposing:</p>
 <p><span class="math inline">\(\frac{dPrey}{dt} = Prey*(1.3 - 0.9*Pred) + ANN_1(prey, pred)\)</span></p>
 <p><span class="math inline">\(\frac{dPred}{dt} = Pred*(0.8*Prey - 1.8) + ANN_2(prey, pred)\)</span></p>
 <p>So, as we already know, he is just adding a function. Which one? We already know that those are <span class="math inline">\(Prey*players_{prey}\)</span> and <span class="math inline">\(Pred*players_{pred}\)</span> (and <span class="math inline">\(players_{pred}=players_{prey}=0.4\)</span>), but Garriott doesn’t, and is exactly what the neural network is going to learn for him.</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb15-1"><a href="ultima-continued.html#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="cf">begin</span></span>
-<span id="cb15-2"><a href="ultima-continued.html#cb15-2" aria-hidden="true" tabindex="-1"></a>    prob_nn <span class="op">=</span> <span class="fu">ODEProblem</span>(dudt_,u0, tspan, p)</span>
-<span id="cb15-3"><a href="ultima-continued.html#cb15-3" aria-hidden="true" tabindex="-1"></a>    sol_nn <span class="op">=</span> <span class="fu">solve</span>(prob_nn, <span class="fu">Tsit5</span>(), u0 <span class="op">=</span> u0, p <span class="op">=</span> p, saveat <span class="op">=</span> solution.t)</span>
-<span id="cb15-4"><a href="ultima-continued.html#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span>;</span></code></pre></div>
-<div class="sourceCode" id="cb16"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb16-1"><a href="ultima-continued.html#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="cf">begin</span></span>
-<span id="cb16-2"><a href="ultima-continued.html#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(solution)</span>
-<span id="cb16-3"><a href="ultima-continued.html#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot!</span>(sol_nn, title<span class="op">=</span><span class="st">&quot;The untrained NN is far from the real curve&quot;</span>)</span>
-<span id="cb16-4"><a href="ultima-continued.html#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb14-1"><a href="ultima-continued.html#cb14-1" aria-hidden="true" tabindex="-1"></a>prob_nn <span class="op">=</span> <span class="fu">ODEProblem</span>(dudt_, u0, tspan, p)</span>
+<span id="cb14-2"><a href="ultima-continued.html#cb14-2" aria-hidden="true" tabindex="-1"></a>sol_nn <span class="op">=</span> <span class="fu">solve</span>(prob_nn, <span class="fu">Tsit5</span>(), u0 <span class="op">=</span> u0, p <span class="op">=</span> p, saveat <span class="op">=</span> solution.t)</span></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb15-1"><a href="ultima-continued.html#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(solution);</span>
+<span id="cb15-2"><a href="ultima-continued.html#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot!</span>(sol_nn, title<span class="op">=</span><span class="st">&quot;The untrained NN is far from the real curve&quot;</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_12_plot_04-J1.png" /><!-- --></p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb17-1"><a href="ultima-continued.html#cb17-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-2"><a href="ultima-continued.html#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">predict</span>(θ)</span>
-<span id="cb17-3"><a href="ultima-continued.html#cb17-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">Array</span>(<span class="fu">solve</span>(prob_nn, <span class="fu">Vern7</span>(), u0 <span class="op">=</span> u0, p<span class="op">=</span>θ, saveat <span class="op">=</span> solution.t,</span>
-<span id="cb17-4"><a href="ultima-continued.html#cb17-4" aria-hidden="true" tabindex="-1"></a>                         abstol<span class="op">=</span><span class="fl">1e-6</span>, reltol<span class="op">=</span><span class="fl">1e-6</span>,</span>
-<span id="cb17-5"><a href="ultima-continued.html#cb17-5" aria-hidden="true" tabindex="-1"></a>                         sensealg <span class="op">=</span> <span class="fu">InterpolatingAdjoint</span>(autojacvec<span class="op">=</span><span class="fu">ReverseDiffVJP</span>())))</span>
-<span id="cb17-6"><a href="ultima-continued.html#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
-<pre><code>## predict (generic function with 1 method)</code></pre>
-<div class="sourceCode" id="cb19"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb19-1"><a href="ultima-continued.html#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">loss</span>(θ)</span>
-<span id="cb19-2"><a href="ultima-continued.html#cb19-2" aria-hidden="true" tabindex="-1"></a>    pred <span class="op">=</span> <span class="fu">predict</span>(θ)</span>
-<span id="cb19-3"><a href="ultima-continued.html#cb19-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">sum</span>(abs2, Xₙ <span class="op">.-</span> pred), pred </span>
-<span id="cb19-4"><a href="ultima-continued.html#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
-<pre><code>## loss (generic function with 1 method)</code></pre>
-<div class="sourceCode" id="cb21"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb21-1"><a href="ultima-continued.html#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="cf">begin</span></span>
-<span id="cb21-2"><a href="ultima-continued.html#cb21-2" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb21-3"><a href="ultima-continued.html#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> losses <span class="op">=</span> []</span>
-<span id="cb21-4"><a href="ultima-continued.html#cb21-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-5"><a href="ultima-continued.html#cb21-5" aria-hidden="true" tabindex="-1"></a><span class="co">#just adding a callback to supervise the network&#39;s learning</span></span>
-<span id="cb21-6"><a href="ultima-continued.html#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="fu">callback</span>(θ,l,pred) <span class="op">=</span> <span class="cf">begin</span></span>
-<span id="cb21-7"><a href="ultima-continued.html#cb21-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">push!</span>(losses, l)</span>
-<span id="cb21-8"><a href="ultima-continued.html#cb21-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="fu">length</span>(losses)<span class="op">%</span><span class="fl">50</span><span class="op">==</span><span class="fl">0</span></span>
-<span id="cb21-9"><a href="ultima-continued.html#cb21-9" aria-hidden="true" tabindex="-1"></a>        <span class="fu">println</span>(<span class="st">&quot;Current loss after </span><span class="sc">$</span>(<span class="fu">length</span>(losses))<span class="st"> iterations: </span><span class="sc">$</span>(losses[<span class="kw">end</span>])<span class="st">&quot;</span>)</span>
-<span id="cb21-10"><a href="ultima-continued.html#cb21-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">end</span></span>
-<span id="cb21-11"><a href="ultima-continued.html#cb21-11" aria-hidden="true" tabindex="-1"></a>    <span class="cn">false</span></span>
-<span id="cb21-12"><a href="ultima-continued.html#cb21-12" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
-<span id="cb21-13"><a href="ultima-continued.html#cb21-13" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb21-14"><a href="ultima-continued.html#cb21-14" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb16-1"><a href="ultima-continued.html#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">predict</span>(θ)</span>
+<span id="cb16-2"><a href="ultima-continued.html#cb16-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">Array</span>(<span class="fu">solve</span>(prob_nn, <span class="fu">Vern7</span>(), u0 <span class="op">=</span> u0, p<span class="op">=</span>θ, saveat <span class="op">=</span> solution.t,</span>
+<span id="cb16-3"><a href="ultima-continued.html#cb16-3" aria-hidden="true" tabindex="-1"></a>                         abstol<span class="op">=</span><span class="fl">1e-6</span>, reltol<span class="op">=</span><span class="fl">1e-6</span>,</span>
+<span id="cb16-4"><a href="ultima-continued.html#cb16-4" aria-hidden="true" tabindex="-1"></a>                         sensealg <span class="op">=</span> <span class="fu">InterpolatingAdjoint</span>(autojacvec<span class="op">=</span><span class="fu">ReverseDiffVJP</span>())))</span>
+<span id="cb16-5"><a href="ultima-continued.html#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb17-1"><a href="ultima-continued.html#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">loss</span>(θ)</span>
+<span id="cb17-2"><a href="ultima-continued.html#cb17-2" aria-hidden="true" tabindex="-1"></a>    pred <span class="op">=</span> <span class="fu">predict</span>(θ)</span>
+<span id="cb17-3"><a href="ultima-continued.html#cb17-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">sum</span>(abs2, Xₙ <span class="op">.-</span> pred), pred </span>
+<span id="cb17-4"><a href="ultima-continued.html#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb18-1"><a href="ultima-continued.html#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> losses <span class="op">=</span> []</span>
+<span id="cb18-2"><a href="ultima-continued.html#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-3"><a href="ultima-continued.html#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="co">#just adding a callback to supervise the network&#39;s learning</span></span>
+<span id="cb18-4"><a href="ultima-continued.html#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="fu">callback</span>(θ,l,pred) <span class="op">=</span> <span class="cf">begin</span></span>
+<span id="cb18-5"><a href="ultima-continued.html#cb18-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">push!</span>(losses, l)</span>
+<span id="cb18-6"><a href="ultima-continued.html#cb18-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="fu">length</span>(losses)<span class="op">%</span><span class="fl">50</span><span class="op">==</span><span class="fl">0</span></span>
+<span id="cb18-7"><a href="ultima-continued.html#cb18-7" aria-hidden="true" tabindex="-1"></a>        <span class="fu">println</span>(<span class="st">&quot;Current loss after </span><span class="sc">$</span>(<span class="fu">length</span>(losses))<span class="st"> iterations: </span><span class="sc">$</span>(losses[<span class="kw">end</span>])<span class="st">&quot;</span>)</span>
+<span id="cb18-8"><a href="ultima-continued.html#cb18-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">end</span></span>
+<span id="cb18-9"><a href="ultima-continued.html#cb18-9" aria-hidden="true" tabindex="-1"></a>    <span class="cn">false</span></span>
+<span id="cb18-10"><a href="ultima-continued.html#cb18-10" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
 <p>And lets train the NN!!</p>
-<div class="sourceCode" id="cb22"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb22-1"><a href="ultima-continued.html#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># First train with ADAM for better convergence</span></span>
-<span id="cb22-2"><a href="ultima-continued.html#cb22-2" aria-hidden="true" tabindex="-1"></a>res1 <span class="op">=</span> DiffEqFlux.<span class="fu">sciml_train</span>(loss, p, <span class="fu">ADAM</span>(<span class="fl">0.01</span>), cb<span class="op">=</span>callback, maxiters <span class="op">=</span> <span class="fl">200</span>);</span></code></pre></div>
-<div class="sourceCode" id="cb23"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb23-1"><a href="ultima-continued.html#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Train with BFGS</span></span>
-<span id="cb23-2"><a href="ultima-continued.html#cb23-2" aria-hidden="true" tabindex="-1"></a>res2 <span class="op">=</span> DiffEqFlux.<span class="fu">sciml_train</span>(loss, res1.minimizer, <span class="fu">BFGS</span>(initial_stepnorm<span class="op">=</span><span class="fl">0.01</span>), cb<span class="op">=</span>callback, maxiters <span class="op">=</span> <span class="fl">10000</span>);</span></code></pre></div>
-<div class="sourceCode" id="cb24"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb24-1"><a href="ultima-continued.html#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the losses</span></span>
-<span id="cb24-2"><a href="ultima-continued.html#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(losses, yaxis <span class="op">=</span> <span class="op">:</span>log, xaxis <span class="op">=</span> <span class="op">:</span>log, xlabel <span class="op">=</span> <span class="st">&quot;Iterations&quot;</span>, ylabel <span class="op">=</span> <span class="st">&quot;Loss&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb19-1"><a href="ultima-continued.html#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># First train with ADAM for better convergence</span></span>
+<span id="cb19-2"><a href="ultima-continued.html#cb19-2" aria-hidden="true" tabindex="-1"></a>res1 <span class="op">=</span> DiffEqFlux.<span class="fu">sciml_train</span>(loss, p, <span class="fu">ADAM</span>(<span class="fl">0.01</span>), cb<span class="op">=</span>callback, maxiters <span class="op">=</span> <span class="fl">200</span>);</span></code></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb20-1"><a href="ultima-continued.html#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Train with BFGS</span></span>
+<span id="cb20-2"><a href="ultima-continued.html#cb20-2" aria-hidden="true" tabindex="-1"></a>res2 <span class="op">=</span> DiffEqFlux.<span class="fu">sciml_train</span>(loss, res1.minimizer, <span class="fu">BFGS</span>(initial_stepnorm<span class="op">=</span><span class="fl">0.01</span>), cb<span class="op">=</span>callback, maxiters <span class="op">=</span> <span class="fl">10000</span>);</span></code></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb21-1"><a href="ultima-continued.html#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the losses</span></span>
+<span id="cb21-2"><a href="ultima-continued.html#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(losses, yaxis <span class="op">=</span> <span class="op">:</span>log, xaxis <span class="op">=</span> <span class="op">:</span>log, xlabel <span class="op">=</span> <span class="st">&quot;Iterations&quot;</span>, ylabel <span class="op">=</span> <span class="st">&quot;Loss&quot;</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_12_plot_05-J1.png" /><!-- --></p>
-<div class="sourceCode" id="cb25"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb25-1"><a href="ultima-continued.html#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="cf">begin</span></span>
-<span id="cb25-2"><a href="ultima-continued.html#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Neural network guess</span></span>
-<span id="cb25-3"><a href="ultima-continued.html#cb25-3" aria-hidden="true" tabindex="-1"></a>L̂ <span class="op">=</span> <span class="fu">L</span>(Xₙ,res2.minimizer)</span>
-<span id="cb25-4"><a href="ultima-continued.html#cb25-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the data and the approximation</span></span>
-<span id="cb25-5"><a href="ultima-continued.html#cb25-5" aria-hidden="true" tabindex="-1"></a>NNsolution <span class="op">=</span> <span class="fu">predict</span>(res2.minimizer)</span></code></pre></div>
-<div class="sourceCode" id="cb26"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb26-1"><a href="ultima-continued.html#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot Trained on noisy data vs real solution</span></span>
-<span id="cb26-2"><a href="ultima-continued.html#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="cf">begin</span></span>
-<span id="cb26-3"><a href="ultima-continued.html#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(solution.t, NNsolution)</span>
-<span id="cb26-4"><a href="ultima-continued.html#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot!</span>(solution.t, X, title<span class="op">=</span><span class="st">&quot;The trained NN have fitted well&quot;</span>)</span>
-<span id="cb26-5"><a href="ultima-continued.html#cb26-5" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb22-1"><a href="ultima-continued.html#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="cf">begin</span></span>
+<span id="cb22-2"><a href="ultima-continued.html#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Neural network guess</span></span>
+<span id="cb22-3"><a href="ultima-continued.html#cb22-3" aria-hidden="true" tabindex="-1"></a>L̂ <span class="op">=</span> <span class="fu">L</span>(Xₙ,res2.minimizer)</span>
+<span id="cb22-4"><a href="ultima-continued.html#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the data and the approximation</span></span>
+<span id="cb22-5"><a href="ultima-continued.html#cb22-5" aria-hidden="true" tabindex="-1"></a>NNsolution <span class="op">=</span> <span class="fu">predict</span>(res2.minimizer)</span></code></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb23-1"><a href="ultima-continued.html#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot Trained on noisy data vs real solution</span></span>
+<span id="cb23-2"><a href="ultima-continued.html#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="cf">begin</span></span>
+<span id="cb23-3"><a href="ultima-continued.html#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(solution.t, NNsolution)</span>
+<span id="cb23-4"><a href="ultima-continued.html#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot!</span>(solution.t, X, title<span class="op">=</span><span class="st">&quot;The trained NN have fitted well&quot;</span>)</span>
+<span id="cb23-5"><a href="ultima-continued.html#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_12_plot_06-J1.png" /><!-- --></p>
 <p>Nice! Now that we have our neural network already learned the Input-Output relation in order for the entire system to behave as the data Garriott were seeing in that Infamous morning, we need to transform that Input-Output behaviour into some function.
 We do this in order to gain interpretability of what may be happening and, in a scientific frame, learn the underlying model.
 We do this by creating a <a href="https://en.wikipedia.org/wiki/Function_space">function space</a> in order to the NN learn which function (or linear combination of those) is the best one to describe that Input-Output relation.
 The loss function to do so is designed in a way that the result will be the least complex one, that is, the answer will be the simplest function that behaves like the NN.</p>
-<div class="sourceCode" id="cb27"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb27-1"><a href="ultima-continued.html#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="cf">begin</span></span>
-<span id="cb27-2"><a href="ultima-continued.html#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="co">## Let&#39;s continue with the Sparse Identification </span></span>
-<span id="cb27-3"><a href="ultima-continued.html#cb27-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-4"><a href="ultima-continued.html#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a Basis</span></span>
-<span id="cb27-5"><a href="ultima-continued.html#cb27-5" aria-hidden="true" tabindex="-1"></a><span class="pp">@variables</span> u[<span class="fl">1</span><span class="op">:</span><span class="fl">2</span>]</span>
-<span id="cb27-6"><a href="ultima-continued.html#cb27-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Add many polynomial to the Basis</span></span>
-<span id="cb27-7"><a href="ultima-continued.html#cb27-7" aria-hidden="true" tabindex="-1"></a>polys <span class="op">=</span> Operation[<span class="fl">1</span>]</span>
-<span id="cb27-8"><a href="ultima-continued.html#cb27-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-9"><a href="ultima-continued.html#cb27-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="op">∈</span> <span class="fl">1</span><span class="op">:</span><span class="fl">5</span></span>
-<span id="cb27-10"><a href="ultima-continued.html#cb27-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">push!</span>(polys, u[<span class="fl">1</span>]<span class="op">^</span>i)</span>
-<span id="cb27-11"><a href="ultima-continued.html#cb27-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">push!</span>(polys, u[<span class="fl">2</span>]<span class="op">^</span>i)</span>
-<span id="cb27-12"><a href="ultima-continued.html#cb27-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> j <span class="op">∈</span> i<span class="op">:</span><span class="fl">5</span></span>
-<span id="cb27-13"><a href="ultima-continued.html#cb27-13" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> i <span class="op">!=</span> j</span>
-<span id="cb27-14"><a href="ultima-continued.html#cb27-14" aria-hidden="true" tabindex="-1"></a>            <span class="fu">push!</span>(polys, (u[<span class="fl">1</span>]<span class="op">^</span>i)<span class="fu">*</span>(u[<span class="fl">2</span>]<span class="op">^</span>j))</span>
-<span id="cb27-15"><a href="ultima-continued.html#cb27-15" aria-hidden="true" tabindex="-1"></a>            <span class="fu">push!</span>(polys, u[<span class="fl">2</span>]<span class="op">^</span>i<span class="op">*</span>u[<span class="fl">1</span>]<span class="op">^</span>i)</span>
-<span id="cb27-16"><a href="ultima-continued.html#cb27-16" aria-hidden="true" tabindex="-1"></a>        <span class="cf">end</span></span>
-<span id="cb27-17"><a href="ultima-continued.html#cb27-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">end</span></span>
-<span id="cb27-18"><a href="ultima-continued.html#cb27-18" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
-<span id="cb27-19"><a href="ultima-continued.html#cb27-19" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb27-20"><a href="ultima-continued.html#cb27-20" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
-<div class="sourceCode" id="cb28"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb28-1"><a href="ultima-continued.html#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="cf">begin</span></span>
-<span id="cb28-2"><a href="ultima-continued.html#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="co"># And some sinusoidal functions</span></span>
-<span id="cb28-3"><a href="ultima-continued.html#cb28-3" aria-hidden="true" tabindex="-1"></a>h <span class="op">=</span> [<span class="fu">cos</span>.(u)<span class="op">...</span>; <span class="fu">sin</span>.(u)<span class="op">...</span>; polys<span class="op">...</span>]</span>
-<span id="cb28-4"><a href="ultima-continued.html#cb28-4" aria-hidden="true" tabindex="-1"></a>basis <span class="op">=</span> <span class="fu">Basis</span>(h, u)</span>
-<span id="cb28-5"><a href="ultima-continued.html#cb28-5" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb28-6"><a href="ultima-continued.html#cb28-6" aria-hidden="true" tabindex="-1"></a>h</span>
-<span id="cb28-7"><a href="ultima-continued.html#cb28-7" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span>;</span></code></pre></div>
-<div class="sourceCode" id="cb29"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb29-1"><a href="ultima-continued.html#cb29-1" aria-hidden="true" tabindex="-1"></a>basis</span></code></pre></div>
+<div class="sourceCode" id="cb24"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb24-1"><a href="ultima-continued.html#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="cf">begin</span></span>
+<span id="cb24-2"><a href="ultima-continued.html#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="co">## Let&#39;s continue with the Sparse Identification </span></span>
+<span id="cb24-3"><a href="ultima-continued.html#cb24-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-4"><a href="ultima-continued.html#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a Basis</span></span>
+<span id="cb24-5"><a href="ultima-continued.html#cb24-5" aria-hidden="true" tabindex="-1"></a><span class="pp">@variables</span> u[<span class="fl">1</span><span class="op">:</span><span class="fl">2</span>]</span>
+<span id="cb24-6"><a href="ultima-continued.html#cb24-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Add many polynomial to the Basis</span></span>
+<span id="cb24-7"><a href="ultima-continued.html#cb24-7" aria-hidden="true" tabindex="-1"></a>polys <span class="op">=</span> Operation[<span class="fl">1</span>]</span>
+<span id="cb24-8"><a href="ultima-continued.html#cb24-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-9"><a href="ultima-continued.html#cb24-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="op">∈</span> <span class="fl">1</span><span class="op">:</span><span class="fl">5</span></span>
+<span id="cb24-10"><a href="ultima-continued.html#cb24-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">push!</span>(polys, u[<span class="fl">1</span>]<span class="op">^</span>i)</span>
+<span id="cb24-11"><a href="ultima-continued.html#cb24-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">push!</span>(polys, u[<span class="fl">2</span>]<span class="op">^</span>i)</span>
+<span id="cb24-12"><a href="ultima-continued.html#cb24-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> j <span class="op">∈</span> i<span class="op">:</span><span class="fl">5</span></span>
+<span id="cb24-13"><a href="ultima-continued.html#cb24-13" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> i <span class="op">!=</span> j</span>
+<span id="cb24-14"><a href="ultima-continued.html#cb24-14" aria-hidden="true" tabindex="-1"></a>            <span class="fu">push!</span>(polys, (u[<span class="fl">1</span>]<span class="op">^</span>i)<span class="fu">*</span>(u[<span class="fl">2</span>]<span class="op">^</span>j))</span>
+<span id="cb24-15"><a href="ultima-continued.html#cb24-15" aria-hidden="true" tabindex="-1"></a>            <span class="fu">push!</span>(polys, u[<span class="fl">2</span>]<span class="op">^</span>i<span class="op">*</span>u[<span class="fl">1</span>]<span class="op">^</span>i)</span>
+<span id="cb24-16"><a href="ultima-continued.html#cb24-16" aria-hidden="true" tabindex="-1"></a>        <span class="cf">end</span></span>
+<span id="cb24-17"><a href="ultima-continued.html#cb24-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">end</span></span>
+<span id="cb24-18"><a href="ultima-continued.html#cb24-18" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
+<span id="cb24-19"><a href="ultima-continued.html#cb24-19" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb24-20"><a href="ultima-continued.html#cb24-20" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb25"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb25-1"><a href="ultima-continued.html#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="cf">begin</span></span>
+<span id="cb25-2"><a href="ultima-continued.html#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="co"># And some sinusoidal functions</span></span>
+<span id="cb25-3"><a href="ultima-continued.html#cb25-3" aria-hidden="true" tabindex="-1"></a>h <span class="op">=</span> [<span class="fu">cos</span>.(u)<span class="op">...</span>; <span class="fu">sin</span>.(u)<span class="op">...</span>; polys<span class="op">...</span>]</span>
+<span id="cb25-4"><a href="ultima-continued.html#cb25-4" aria-hidden="true" tabindex="-1"></a>basis <span class="op">=</span> <span class="fu">Basis</span>(h, u)</span>
+<span id="cb25-5"><a href="ultima-continued.html#cb25-5" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb25-6"><a href="ultima-continued.html#cb25-6" aria-hidden="true" tabindex="-1"></a>h</span>
+<span id="cb25-7"><a href="ultima-continued.html#cb25-7" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span>;</span></code></pre></div>
+<div class="sourceCode" id="cb26"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb26-1"><a href="ultima-continued.html#cb26-1" aria-hidden="true" tabindex="-1"></a>basis</span></code></pre></div>
 <pre><code>## &quot;29 dimensional basis in [u₁,u₂]&quot;</code></pre>
 <p>So, as you can see above, we just created a function space of 29 dimensions. That space includes every possible <a href="https://en.wikipedia.org/wiki/Linear_combination#:~:text=From%20Wikipedia%2C%20the%20free%20encyclopedia,a%20and%20b%20are%20constants">linear combination</a> of each dimension.
 And we are going to ask SINDy to give us the simplest function that shows the same Input-Output behaviour the neural network just learned.</p>
 <p>Without saying more, let’s do it!</p>
-<div class="sourceCode" id="cb31"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb31-1"><a href="ultima-continued.html#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="cf">begin</span></span>
-<span id="cb31-2"><a href="ultima-continued.html#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Create an optimizer for the SINDy problem</span></span>
-<span id="cb31-3"><a href="ultima-continued.html#cb31-3" aria-hidden="true" tabindex="-1"></a>opt <span class="op">=</span> <span class="fu">SR3</span>()</span>
-<span id="cb31-4"><a href="ultima-continued.html#cb31-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the thresholds which should be used in the search process</span></span>
-<span id="cb31-5"><a href="ultima-continued.html#cb31-5" aria-hidden="true" tabindex="-1"></a>λ <span class="op">=</span> <span class="fu">exp10</span>.(<span class="op">-</span><span class="fl">7</span><span class="op">:</span><span class="fl">0.1</span><span class="op">:</span><span class="fl">3</span>)</span>
-<span id="cb31-6"><a href="ultima-continued.html#cb31-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Target function to choose the results from.</span></span>
-<span id="cb31-7"><a href="ultima-continued.html#cb31-7" aria-hidden="true" tabindex="-1"></a><span class="fu">g</span>(x) <span class="op">=</span> x[<span class="fl">1</span>] <span class="op">&lt;</span> <span class="fl">1</span> ? <span class="cn">Inf</span> <span class="op">:</span> <span class="fu">norm</span>(x, <span class="fl">2</span>)</span>
-<span id="cb31-8"><a href="ultima-continued.html#cb31-8" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb31-9"><a href="ultima-continued.html#cb31-9" aria-hidden="true" tabindex="-1"></a>Ψ <span class="op">=</span> <span class="fu">SINDy</span>(Xₙ[<span class="op">:</span>, <span class="fl">2</span><span class="op">:</span><span class="kw">end</span>], L̂[<span class="op">:</span>, <span class="fl">2</span><span class="op">:</span><span class="kw">end</span>], basis, λ,  opt, g <span class="op">=</span> g, maxiter <span class="op">=</span> <span class="fl">10000</span>, normalize <span class="op">=</span> <span class="cn">true</span>, denoise <span class="op">=</span> <span class="cn">true</span>)</span>
-<span id="cb31-10"><a href="ultima-continued.html#cb31-10" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
-<div class="sourceCode" id="cb32"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb32-1"><a href="ultima-continued.html#cb32-1" aria-hidden="true" tabindex="-1"></a>Ψ.equations[<span class="fl">1</span>]</span></code></pre></div>
+<div class="sourceCode" id="cb28"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb28-1"><a href="ultima-continued.html#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="cf">begin</span></span>
+<span id="cb28-2"><a href="ultima-continued.html#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Create an optimizer for the SINDy problem</span></span>
+<span id="cb28-3"><a href="ultima-continued.html#cb28-3" aria-hidden="true" tabindex="-1"></a>opt <span class="op">=</span> <span class="fu">SR3</span>()</span>
+<span id="cb28-4"><a href="ultima-continued.html#cb28-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the thresholds which should be used in the search process</span></span>
+<span id="cb28-5"><a href="ultima-continued.html#cb28-5" aria-hidden="true" tabindex="-1"></a>λ <span class="op">=</span> <span class="fu">exp10</span>.(<span class="op">-</span><span class="fl">7</span><span class="op">:</span><span class="fl">0.1</span><span class="op">:</span><span class="fl">3</span>)</span>
+<span id="cb28-6"><a href="ultima-continued.html#cb28-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Target function to choose the results from.</span></span>
+<span id="cb28-7"><a href="ultima-continued.html#cb28-7" aria-hidden="true" tabindex="-1"></a><span class="fu">g</span>(x) <span class="op">=</span> x[<span class="fl">1</span>] <span class="op">&lt;</span> <span class="fl">1</span> ? <span class="cn">Inf</span> <span class="op">:</span> <span class="fu">norm</span>(x, <span class="fl">2</span>)</span>
+<span id="cb28-8"><a href="ultima-continued.html#cb28-8" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb28-9"><a href="ultima-continued.html#cb28-9" aria-hidden="true" tabindex="-1"></a>Ψ <span class="op">=</span> <span class="fu">SINDy</span>(Xₙ[<span class="op">:</span>, <span class="fl">2</span><span class="op">:</span><span class="kw">end</span>], L̂[<span class="op">:</span>, <span class="fl">2</span><span class="op">:</span><span class="kw">end</span>], basis, λ,  opt, g <span class="op">=</span> g, maxiter <span class="op">=</span> <span class="fl">10000</span>, normalize <span class="op">=</span> <span class="cn">true</span>, denoise <span class="op">=</span> <span class="cn">true</span>)</span>
+<span id="cb28-10"><a href="ultima-continued.html#cb28-10" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb29"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb29-1"><a href="ultima-continued.html#cb29-1" aria-hidden="true" tabindex="-1"></a>Ψ.equations[<span class="fl">1</span>]</span></code></pre></div>
 <pre><code>## &quot;p₁ * u₁&quot;</code></pre>
-<div class="sourceCode" id="cb34"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb34-1"><a href="ultima-continued.html#cb34-1" aria-hidden="true" tabindex="-1"></a>Ψ.equations[<span class="fl">2</span>]</span></code></pre></div>
+<div class="sourceCode" id="cb31"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb31-1"><a href="ultima-continued.html#cb31-1" aria-hidden="true" tabindex="-1"></a>Ψ.equations[<span class="fl">2</span>]</span></code></pre></div>
 <pre><code>## &quot;p₂ * u₂&quot;</code></pre>
 <p>OMG! The equations were perfectly restored! You can read this as:</p>
 <p><span class="math inline">\(ANN_1(prey, pred) = p_1*u_1 = p_1*Prey\)</span></p>
@@ -577,20 +549,20 @@ And we are going to ask SINDy to give us the simplest function that shows the sa
 <p><span class="math inline">\(\frac{dPred}{dt} = Pred*(0.8*Prey - 1.8 - players_{pred})\)</span></p>
 <p>And that we also define that <span class="math inline">\(players_{prey} = players_{pred} = 0.4\)</span>, the recover parameter from de NN should <span class="math inline">\(-0.4\)</span>. Does it make sense?</p>
 <p>Lets ask for the parameters then:</p>
-<div class="sourceCode" id="cb36"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb36-1"><a href="ultima-continued.html#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">parameters</span>(Ψ)</span></code></pre></div>
+<div class="sourceCode" id="cb33"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb33-1"><a href="ultima-continued.html#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">parameters</span>(Ψ)</span></code></pre></div>
 <pre><code>## &quot;-0.36237425,  -0.40059045&quot;</code></pre>
 <p>So, the parameters are a bit off. But now that we have the equations restored, we can run another SINDy to gain much more accuracy:</p>
-<div class="sourceCode" id="cb38"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb38-1"><a href="ultima-continued.html#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="cf">begin</span></span>
-<span id="cb38-2"><a href="ultima-continued.html#cb38-2" aria-hidden="true" tabindex="-1"></a>unknown_sys <span class="op">=</span> <span class="fu">ODESystem</span>(Ψ)</span>
-<span id="cb38-3"><a href="ultima-continued.html#cb38-3" aria-hidden="true" tabindex="-1"></a>unknown_eq <span class="op">=</span> <span class="fu">ODEFunction</span>(unknown_sys)</span>
-<span id="cb38-4"><a href="ultima-continued.html#cb38-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-5"><a href="ultima-continued.html#cb38-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Just the equations</span></span>
-<span id="cb38-6"><a href="ultima-continued.html#cb38-6" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> <span class="fu">Basis</span>((u, p, t)<span class="fu">-&gt;unknown_eq</span>(u, [<span class="fl">1</span>.; <span class="fl">1</span>.], t), u)</span>
-<span id="cb38-7"><a href="ultima-continued.html#cb38-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-8"><a href="ultima-continued.html#cb38-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Retune for better parameters (we already know the equations)</span></span>
-<span id="cb38-9"><a href="ultima-continued.html#cb38-9" aria-hidden="true" tabindex="-1"></a>Ψf <span class="op">=</span> <span class="fu">SINDy</span>(Xₙ[<span class="op">:</span>, <span class="fl">2</span><span class="op">:</span><span class="kw">end</span>], L̂[<span class="op">:</span>, <span class="fl">2</span><span class="op">:</span><span class="kw">end</span>], b, <span class="fu">STRRidge</span>(<span class="fl">0.01</span>), maxiter <span class="op">=</span> <span class="fl">100</span>, convergence_error <span class="op">=</span> <span class="fl">1e-18</span>)</span>
-<span id="cb38-10"><a href="ultima-continued.html#cb38-10" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
-<div class="sourceCode" id="cb39"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb39-1"><a href="ultima-continued.html#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="fu">parameters</span>(Ψf)</span></code></pre></div>
+<div class="sourceCode" id="cb35"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb35-1"><a href="ultima-continued.html#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="cf">begin</span></span>
+<span id="cb35-2"><a href="ultima-continued.html#cb35-2" aria-hidden="true" tabindex="-1"></a>unknown_sys <span class="op">=</span> <span class="fu">ODESystem</span>(Ψ)</span>
+<span id="cb35-3"><a href="ultima-continued.html#cb35-3" aria-hidden="true" tabindex="-1"></a>unknown_eq <span class="op">=</span> <span class="fu">ODEFunction</span>(unknown_sys)</span>
+<span id="cb35-4"><a href="ultima-continued.html#cb35-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-5"><a href="ultima-continued.html#cb35-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Just the equations</span></span>
+<span id="cb35-6"><a href="ultima-continued.html#cb35-6" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> <span class="fu">Basis</span>((u, p, t)<span class="fu">-&gt;unknown_eq</span>(u, [<span class="fl">1</span>.; <span class="fl">1</span>.], t), u)</span>
+<span id="cb35-7"><a href="ultima-continued.html#cb35-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-8"><a href="ultima-continued.html#cb35-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Retune for better parameters (we already know the equations)</span></span>
+<span id="cb35-9"><a href="ultima-continued.html#cb35-9" aria-hidden="true" tabindex="-1"></a>Ψf <span class="op">=</span> <span class="fu">SINDy</span>(Xₙ[<span class="op">:</span>, <span class="fl">2</span><span class="op">:</span><span class="kw">end</span>], L̂[<span class="op">:</span>, <span class="fl">2</span><span class="op">:</span><span class="kw">end</span>], b, <span class="fu">STRRidge</span>(<span class="fl">0.01</span>), maxiter <span class="op">=</span> <span class="fl">100</span>, convergence_error <span class="op">=</span> <span class="fl">1e-18</span>)</span>
+<span id="cb35-10"><a href="ultima-continued.html#cb35-10" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb36"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb36-1"><a href="ultima-continued.html#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">parameters</span>(Ψf)</span></code></pre></div>
 <pre><code>## &quot;-0.39629772, -0.40179992&quot;</code></pre>
 <p>So we recover the equations and its parameters with an outstanding accuracy.
 And that is even more incredible if we remember that we did this with a minimum of data.
@@ -598,14 +570,14 @@ After seeing that, Garriott took a big deep breath. He immediately understood wh
 He called his team and started planning the strategy to face this, not knowing that it already was a lost cause…</p>
 </div>
 </div>
-<div id="summary-10" class="section level2 hasAnchor" number="12.3">
-<h2><span class="header-section-number">12.3</span> Summary<a href="ultima-continued.html#summary-10" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="summary-10" class="section level2 hasAnchor" number="12.4">
+<h2><span class="header-section-number">12.4</span> Summary<a href="ultima-continued.html#summary-10" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>In this chapter, we continued to deepen our understanding of systems of differential equations and their complex behavior.
 We went a step further, introducing the concept of universal differential equations which allow us, given a very small amount of data, to estimate some unknown term of the system.
 This opens a very big door, connecting machine learning and science, which can greatly enhance the production of knowledge.</p>
 </div>
-<div id="references-9" class="section level2 hasAnchor" number="12.4">
-<h2><span class="header-section-number">12.4</span> References<a href="ultima-continued.html#references-9" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="references-9" class="section level2 hasAnchor" number="12.5">
+<h2><span class="header-section-number">12.5</span> References<a href="ultima-continued.html#references-9" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
 <li><p><a href="https://arxiv.org/abs/2001.04385">Universal Differential Equations for Scientific Machine Learning Paper</a></p></li>
 <li><p><a href="https://github.com/ChrisRackauckas/universal_differential_equations">Universal Differential Equations - Chris Rackauchas</a></p></li>
