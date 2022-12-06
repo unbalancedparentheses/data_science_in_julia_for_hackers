@@ -424,8 +424,24 @@ The probability of finding a particular word in an email, given that we have a s
 <p>With these formulas in mind, we now know exactly what we have to calculate from our data. We are going to need the numbers <span class="math inline">\(N_{word_i|spam}\)</span> and
 <span class="math inline">\(N_{word_i|ham}\)</span> for each word, that is, the number of times that a given word <span class="math inline">\(w_i\)</span> is used in the spam and ham categories, respectively. Then
 <span class="math inline">\(N_{spam}\)</span> and <span class="math inline">\(N_{ham}\)</span> are the total number of times that words are used in the spam and ham categories (considering all the repetitions of the
-same words too), and finally, <span class="math inline">\(N_{vocabulary}\)</span> is the total number of unique words in the dataset. <span class="math inline">\(α\)</span> is just a smoothing parameter, so that
-probability of finding a word that is not in our dataset, doesn’t go down to 0.</p>
+same words too), and finally, <span class="math inline">\(N_{vocabulary}\)</span> is the total number of unique words in the dataset.
+You might be surprised to read the <code>$α$</code> value in the equations. This is what is called a <em>smoothing parameter</em>. To understand why is it needed,
+let’s think for a moment what would happen when we receive an email having a word that is not present neither in the spam words training set nor
+in the ham words trainig set. As we have seen, to calculate the probability of the email being a spam email, we should use</p>
+<p><span class="math inline">\(P(email|spam) = \prod_{i=1}^{n}P(word_i|spam) = P(word_0|spam)P(word_1|spam)...P(word_np|spam)\)</span></p>
+<p>where <span class="math inline">\(P(word_np|spam)\)</span> stands for the probability of the word that is not present in our dataset. What probability should be assigned to this
+word? One way to handle this could be to simply ignore that term in the multiplication. In other words, assigning <span class="math inline">\(P(word_np|spam) = 1\)</span>.
+Without thinking about it too much, we can conclude that this doesn’t make any sense, since that would mean that the probability to find that word
+in a spam (or ham, too) email would be equal to 1.
+A more logically consistent approach would be to assign 0 probability to that word. But there is a problem: with <span class="math inline">\(P(word_np|spam) = 0\)</span> we can
+quickly see that</p>
+<p><span class="math inline">\(P(word_0|spam)P(word_1|spam)...P(word_np|spam) = 0\)</span></p>
+<p>This is the motivation for introducing the smoothing parameter <span class="math inline">\(\alpha\)</span> into our equation. In a real-word scenario, we should expect that words not
+present in our training set will appear, and altough it makes sense that they don’t have a high probability, it can’t be 0. When such a word
+appears, the probability assigned for it will be simply</p>
+<p><span class="math inline">\(P(word_np|spam) = \frac{N_{word_np|spam} + \alpha}{N_{spam} + \alpha N_{vocabulary}} = \frac{0 + \alpha}{N_{spam} + \alpha N_{vocabulary}} = \frac{\alpha}{N_{spam} + \alpha N_{vocabulary}}\)</span></p>
+<p>In summary, <span class="math inline">\(α\)</span> is just a smoothing parameter, so that probability of finding a word that is not in our dataset, doesn’t go down to 0.</p>
+<p>We still have to discuss what value should it be assigned.</p>
 <p>As all this information will be particular for our dataset, so a clever way to aggregate all this is to use a Julia <em>struct</em>, and we can define
 the attributes of the struct that we will be using over and over for the prediction. Below we can see the implementation. The relevant attributes
 of the struct will be <em>words_count_ham</em> and <em>words_count_spam</em>, two dictionaries containing the frequency of appearance of each word in the ham
@@ -468,7 +484,7 @@ the undefined parameters in the filter’s struct.</p>
 is working in our test data.</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb8-1"><a href="spam-filter.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># here we instantiate the Bayes filter and then we fit it to our data</span></span>
 <span id="cb8-2"><a href="spam-filter.html#cb8-2" aria-hidden="true" tabindex="-1"></a>spam_filter <span class="op">=</span> <span class="fu">BayesSpamFilter</span>()</span></code></pre></div>
-<pre><code>## BayesSpamFilter(#undef, #undef, -84, 11676323240, #undef)</code></pre>
+<pre><code>## BayesSpamFilter(#undef, #undef, 11696749008, 42, #undef)</code></pre>
 <div class="sourceCode" id="cb10"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb10-1"><a href="spam-filter.html#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">fit!</span>(spam_filter, x_train, y_train, vocabulary)</span></code></pre></div>
 <p>We are now almost ready to make some predictions and test our model. The function below is just the implementation of the formula TAL that we
 have already talked about. It will be used internally by the next function defined, <code>spam_predict</code>, which will receive a new email –the one we
@@ -529,10 +545,10 @@ We count all the correct predictions and then we divide this number by the total
 <p>Here we can see how our model classifies the first 5 mails, 0 for ham and 1 for spam.</p>
 <div class="sourceCode" id="cb15"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb15-1"><a href="spam-filter.html#cb15-1" aria-hidden="true" tabindex="-1"></a>predictions[<span class="fl">1</span><span class="op">:</span><span class="fl">5</span>]</span></code></pre></div>
 <pre><code>## 5-element Vector{Int64}:
+##  1
 ##  0
 ##  0
-##  0
-##  0
+##  1
 ##  0</code></pre>
 <div class="sourceCode" id="cb17"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb17-1"><a href="spam-filter.html#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">spam_filter_accuracy</span>(predictions, actual)</span>
 <span id="cb17-2"><a href="spam-filter.html#cb17-2" aria-hidden="true" tabindex="-1"></a>    N <span class="op">=</span> <span class="fu">length</span>(predictions)</span>
@@ -543,12 +559,12 @@ We count all the correct predictions and then we divide this number by the total
 <p>As you can see below, the model (at least under this simple metric) is performing very well! An accuracy of about 0.95 is quite astonishing for
 a model so <em>naive</em> and simple, but it works!</p>
 <div class="sourceCode" id="cb18"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb18-1"><a href="spam-filter.html#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">spam_filter_accuracy</span>(predictions, y_test)</span></code></pre></div>
-<pre><code>## 0.9529639175257731</code></pre>
+<pre><code>## 0.946520618556701</code></pre>
 <p>But we have to take into account one more thing.
 Our model classifies mails into spam or ham and the amount of ham mails is considerably higher than the spam ones.
 Let’s see the percentages</p>
 <div class="sourceCode" id="cb20"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb20-1"><a href="spam-filter.html#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(x_train)<span class="op">/</span><span class="fu">length</span>(x_train)</span></code></pre></div>
-<pre><code>## 0.35563563768048656</code></pre>
+<pre><code>## 0.35739310088676357</code></pre>
 <p>So we know that only the $(round(sum(x_train)/length(x_train),digits=2))% of the mails in the train section are spam.
 This classification problems where there is an unequal distribution of classes in the dataset are called Imbalanced.</p>
 <p>So a good way to see how our model is performing is to construct a confusion matrix.
@@ -574,9 +590,9 @@ Lets construct one for our model:</p>
 <div class="sourceCode" id="cb23"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb23-1"><a href="spam-filter.html#cb23-1" aria-hidden="true" tabindex="-1"></a>confusion_matrix <span class="op">=</span> <span class="fu">spam_filter_confusion_matrix</span>(y_test[<span class="op">:</span>], predictions)</span></code></pre></div>
 <p>Now we can calculate the accuracy of the model segmented by category.</p>
 <div class="sourceCode" id="cb24"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb24-1"><a href="spam-filter.html#cb24-1" aria-hidden="true" tabindex="-1"></a>ham_accuracy <span class="op">=</span> confusion_matrix[<span class="fl">1</span>, <span class="op">:</span>ham_mail] <span class="op">/</span> (confusion_matrix[<span class="fl">1</span>, <span class="op">:</span>ham_mail] <span class="op">+</span> confusion_matrix[<span class="fl">2</span>, <span class="op">:</span>ham_mail])</span></code></pre></div>
-<pre><code>## 0.9637023593466425</code></pre>
+<pre><code>## 0.9632286995515695</code></pre>
 <div class="sourceCode" id="cb26"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb26-1"><a href="spam-filter.html#cb26-1" aria-hidden="true" tabindex="-1"></a>spam_accuracy <span class="op">=</span> confusion_matrix[<span class="fl">2</span>, <span class="op">:</span>spam_mail] <span class="op">/</span> (confusion_matrix[<span class="fl">1</span>, <span class="op">:</span>spam_mail] <span class="op">+</span> confusion_matrix[<span class="fl">2</span>, <span class="op">:</span>spam_mail])</span></code></pre></div>
-<pre><code>## 0.9266666666666666</code></pre>
+<pre><code>## 0.9038901601830663</code></pre>
 </div>
 <div id="summary-2" class="section level2 hasAnchor" number="4.2">
 <h2><span class="header-section-number">4.2</span> Summary<a href="spam-filter.html#summary-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
