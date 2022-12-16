@@ -6,7 +6,6 @@
 cd("./04_naive_bayes/") 
 import Pkg
 Pkg.activate(".")
-
 using Markdown
 using InteractiveUtils
 using CSV
@@ -127,7 +126,6 @@ Let's start building a solution for our problem and the details will be discusse
 
 ```{julia, results = FALSE}
 # Preprocessing of the data
-
 # Get the list of all words present in all mails.
 # We strip the first and last columns which are the email id and classification 
 all_words = names(raw_df)[2:end-1]
@@ -136,15 +134,12 @@ all_words = names(raw_df)[2:end-1]
 # pronouns from the text
 all_words_text = join(all_words, " ")
 document = StringDocument(all_words_text)
-
 # Remove articles and pronouns
 prepare!(document, strip_articles)
 prepare!(document, strip_pronouns)
-
 # Create another DataFrame with the filtered words.
 vocabulary = split(TextAnalysis.text(document))
 clean_words_df = raw_df[!, vocabulary]
-
 # Transform the DataFrame into a Matrix and transpose it to have each 
 # mail as a column. 
 data_matrix = Matrix(clean_words_df)'
@@ -288,7 +283,6 @@ function spam_predict(email, model::BayesSpamFilter, α, tol=100)
     n_vocabulary = length(model.vocabulary)
     ham_prior = model.N_ham / (model.N_ham + model.N_spam)
     spam_prior = model.N_spam / (model.N_ham + model.N_spam)
-
     if length(email_words) > tol
         word_freq = values(ngrams_email)
         sort_idx = sortperm(collect(word_freq), rev=true)
@@ -305,7 +299,6 @@ function spam_predict(email, model::BayesSpamFilter, α, tol=100)
     end
     return ham_prior*email_ham_probability, spam_prior*email_spam_probability
 end
-
 ```
 
 Finally we arrived to the point of actually testing our model. This is what the function below is all about. We feed it with our model fitted 
@@ -324,7 +317,6 @@ function get_predictions(x_test, y_test, model::BayesSpamFilter, α, tol=200)
         pred = argmax([pham, pspam]) - 1
         predictions[i] = pred
     end
-
   predictions
 end
 ```
@@ -398,7 +390,6 @@ Now we can calculate the accuracy of the model segmented by category.
 
 ```{julia}
 ham_accuracy = confusion_matrix[1, :ham_mail] / (confusion_matrix[1, :ham_mail] + confusion_matrix[2, :ham_mail])
-
 ```
 
 ```{julia}
