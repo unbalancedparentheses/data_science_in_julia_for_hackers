@@ -74,7 +74,7 @@
 
     
 
-  <meta name="request-id" content="E531:0BDA:13DCA5:186EC7:639C8CB7" data-turbo-transient="true" /><meta name="html-safe-nonce" content="356725c20a7954c8cb68d49533f3cfdd8c4270ccf4b1ba38e11cdb8d910ab3ae" data-turbo-transient="true" /><meta name="visitor-payload" content="eyJyZWZlcnJlciI6Imh0dHBzOi8vZ2l0aHViLmNvbS91bmJhbGFuY2VkcGFyZW50aGVzZXMvZGF0YV9zY2llbmNlX2luX2p1bGlhX2Zvcl9oYWNrZXJzL3RyZWUvbWFpbi8wNF9uYWl2ZV9iYXllcyIsInJlcXVlc3RfaWQiOiJFNTMxOjBCREE6MTNEQ0E1OjE4NkVDNzo2MzlDOENCNyIsInZpc2l0b3JfaWQiOiIzMjE2MzIyNzM0MTQzMDAyODk4IiwicmVnaW9uX2VkZ2UiOiJicmF6aWxzb3V0aCIsInJlZ2lvbl9yZW5kZXIiOiJpYWQifQ==" data-turbo-transient="true" /><meta name="visitor-hmac" content="266e43ec14bcc54beec28950417f9df67d691d64ff69ac7e8b64aeeb8de341c1" data-turbo-transient="true" />
+  <meta name="request-id" content="E5FF:1CCD:8A248E:A9C499:639C9A5E" data-turbo-transient="true" /><meta name="html-safe-nonce" content="356725c20a7954c8cb68d49533f3cfdd8c4270ccf4b1ba38e11cdb8d910ab3ae" data-turbo-transient="true" /><meta name="visitor-payload" content="eyJyZWZlcnJlciI6Imh0dHBzOi8vZ2l0aHViLmNvbS91bmJhbGFuY2VkcGFyZW50aGVzZXMvZGF0YV9zY2llbmNlX2luX2p1bGlhX2Zvcl9oYWNrZXJzL3RyZWUvbWFpbi8wNF9uYWl2ZV9iYXllcyIsInJlcXVlc3RfaWQiOiJFNUZGOjFDQ0Q6OEEyNDhFOkE5QzQ5OTo2MzlDOUE1RSIsInZpc2l0b3JfaWQiOiIzMjE2MzIyNzM0MTQzMDAyODk4IiwicmVnaW9uX2VkZ2UiOiJicmF6aWxzb3V0aCIsInJlZ2lvbl9yZW5kZXIiOiJpYWQifQ==" data-turbo-transient="true" /><meta name="visitor-hmac" content="6a8d85d9d4458bc3b32a4959225fa95d8acfdfb3f33b41c8eda612f42a8850a2" data-turbo-transient="true" />
 
 
     <meta name="hovercard-subject-tag" content="repository:306355472" data-turbo-transient>
@@ -117,7 +117,7 @@
       <meta property="og:image" content="https://opengraph.githubassets.com/2d11e22e7a250da3ecb38e44f5d439c5253aa69fb8ae8bbff49f118583c2987c/unbalancedparentheses/data_science_in_julia_for_hackers" /><meta property="og:image:alt" content="Data Science in Julia With Hackers. Contribute to unbalancedparentheses/data_science_in_julia_for_hackers development by creating an account on GitHub." /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="600" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="data_science_in_julia_for_hackers/Manifest.toml at main · unbalancedparentheses/data_science_in_julia_for_hackers" /><meta property="og:url" content="https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers" /><meta property="og:description" content="Data Science in Julia With Hackers. Contribute to unbalancedparentheses/data_science_in_julia_for_hackers development by creating an account on GitHub." />
       
     <link rel="assets" href="https://github.githubassets.com/">
-      <link rel="shared-web-socket" href="wss://alive.github.com/_sockets/u/6120897/ws?session=eyJ2IjoiVjMiLCJ1Ijo2MTIwODk3LCJzIjo5ODk3MjQ2ODAsImMiOjE2NDM2MzY1MzYsInQiOjE2NzEyMDQwMzV9--ef91f76099ea5456b96fe06c456c9fae61aa17cf8bd1f2fc6d5000979644d08e" data-refresh-url="/_alive" data-session-id="110ca75c5a523321c12873d6ae3c82db31eb5d94da65de6e08938055025b895a">
+      <link rel="shared-web-socket" href="wss://alive.github.com/_sockets/u/6120897/ws?session=eyJ2IjoiVjMiLCJ1Ijo2MTIwODk3LCJzIjo5ODk3MjQ2ODAsImMiOjI4MzY5NzE4NjMsInQiOjE2NzEyMDc1MjR9--4b13f51840b4fcc0ea4da94e05ac4a9711edeaf74dc966d3742ee3b76e2f10a2" data-refresh-url="/_alive" data-session-id="110ca75c5a523321c12873d6ae3c82db31eb5d94da65de6e08938055025b895a">
       <link rel="shared-web-socket-src" href="/assets-cdn/worker/socket-worker-b87581f5816c.js">
 
 
@@ -240,7 +240,7 @@
           spellcheck="false"
           autocomplete="off"
         >
-        <input type="hidden" value="taa2jIerInREeEJc6rGGPDBS1-9u-2aBj7dJk--kU7dfwRDTdBFlVnAIXqeZ4FgegzGJfLB8VjyaEQOaZvj_Qw" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" />
+        <input type="hidden" value="DvKvCVoxc5azghOkN_9KIeaehS7LaEZLlKs-ZKFNee7klQlWqYs0tIfyD19ErpQDVf3bvRXvdvaBDXRtKBHVGg" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" />
         <input type="hidden" class="js-site-search-type-field" name="type" >
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" aria-hidden="true" class="mr-1 header-search-key-slash"><path fill="none" stroke="#979A9C" opacity=".4" d="M3.5.5h12c1.7 0 3 1.3 3 3v13c0 1.7-1.3 3-3 3h-12c-1.7 0-3-1.3-3-3v-13c0-1.7 1.3-3 3-3z"></path><path fill="#979A9C" d="M11.8 6L8 15.1h-.9L10.8 6h1z"></path></svg>
 
@@ -447,7 +447,7 @@
       <img class="avatar avatar-user" loading="lazy" decoding="async" src="https://avatars.githubusercontent.com/u/6120897?s=40&amp;v=4" width="20" height="20" alt="@martinacantaro" />
       martinacantaro
 </a>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-turbo="false" action="/logout" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="fwQroDFkZzwdtlaQp7wwEofuG_qQyy_1j7i5krRFw0ZLjfVC4HWXWllLoBnSnNV7onnyRVcKGoh4iPoovfP-Og" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-turbo="false" action="/logout" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="zkiD758OunbNHLKEAXMnnyf3Kvq_DFYE_EGysarzMj36wV0NTh9KEInhRA10U8L2AmDDRXjNY3kLcfELo0UPQQ" />
       <button
         type="submit"
         class="Header-link mr-0 mr-md-3 py-2 py-md-3 border-top border-md-top-0 border-white-fade d-md-none btn-link d-block width-full text-left"
@@ -482,7 +482,7 @@
     <div class="Header-item mr-0 mr-md-3 flex-order-1 flex-md-order-none">
         
 
-<notification-indicator data-channel="eyJjIjoibm90aWZpY2F0aW9uLWNoYW5nZWQ6NjEyMDg5NyIsInQiOjE2NzEyMDQwMzV9--e8fc85dbafe04883b12e4f60594395971e13d3ccdc13ecafaed1110bbd6c7518" data-indicator-mode="global" data-tooltip-global="You have unread notifications" data-tooltip-unavailable="Notifications are unavailable at the moment." data-tooltip-none="You have no unread notifications" data-view-component="true" class="js-socket-channel">
+<notification-indicator data-channel="eyJjIjoibm90aWZpY2F0aW9uLWNoYW5nZWQ6NjEyMDg5NyIsInQiOjE2NzEyMDc1MjR9--e3025495b5128259a895be91705d521440cbe71613d32ea7f1760bd806c6f48f" data-indicator-mode="global" data-tooltip-global="You have unread notifications" data-tooltip-unavailable="Notifications are unavailable at the moment." data-tooltip-none="You have no unread notifications" data-view-component="true" class="js-socket-channel">
   <a id="AppHeader-notifications-button" href="/notifications"
     class="Header-link notification-indicator position-relative tooltipped tooltipped-sw"
 
@@ -1658,7 +1658,7 @@
             </header>
 
             <div class="SelectMenu-list">
-              <form data-target="notifications-list-subscription-form.form" data-action="submit:notifications-list-subscription-form#submitForm" data-turbo="false" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="ghUQnuMXmbNSuOrveG6lOT-Sk5TRbBq7_Y53xdIZFVQNYTqoifNlTBp2PsI-KoX6jAUaDAMJ542BTDTZg6sWjg" autocomplete="off" />
+              <form data-target="notifications-list-subscription-form.form" data-action="submit:notifications-list-subscription-form#submitForm" data-turbo="false" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="nqUk6E5V-RxtZvKxJDP_dVrWIqjgLFwCJ9tKjK74klwR0Q7eJLEF4yWoJpxid9-26UGrMDJJoTRbGQmQ_0qRhg" autocomplete="off" />
 
                 <input type="hidden" name="repository_id" value="306355472">
 
@@ -1786,7 +1786,7 @@
           hidden
         >
           <div class="SelectMenu-modal notifications-component-dialog-modal overflow-visible">
-            <form data-target="notifications-list-subscription-form.customform" data-action="submit:notifications-list-subscription-form#submitCustomForm" data-turbo="false" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="ml_O92yv78hsHo9qEhW6JMxwc2_45Y81NnW6Esr-dLcVK-TBBksTNyTQW0dUUZrnf-f69yqAcgNKt_kOm0x3bQ" autocomplete="off" />
+            <form data-target="notifications-list-subscription-form.customform" data-action="submit:notifications-list-subscription-form#submitCustomForm" data-turbo="false" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="nLAtWhXquEfKbX9HDhxxvBn5uO9Y5FyHNIqEU3elOPQTxAdsfw5EuIKjq2pIWFF_qm4xd4qBobFISMdPJhc7Lg" autocomplete="off" />
 
               <input type="hidden" name="repository_id" value="306355472">
 
@@ -1955,13 +1955,13 @@
       
 >
     <div class="SelectMenu-modal">
-        <button class="SelectMenu-closeButton position-absolute right-0 m-2" type="button" aria-label="Close menu" data-toggle-for="details-67d1c7">
+        <button class="SelectMenu-closeButton position-absolute right-0 m-2" type="button" aria-label="Close menu" data-toggle-for="details-d6e492">
           <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x">
     <path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path>
 </svg>
         </button>
       <div
-        id="filter-menu-67d1c7"
+        id="filter-menu-d6e492"
         class="d-flex flex-column flex-1 overflow-hidden"
 >
         <div
@@ -2003,8 +2003,8 @@
 
   <div data-view-component="true" class="js-toggler-container js-social-container starring-container on d-flex">
     <div data-view-component="true" class="starred BtnGroup flex-1">
-      <form class="js-social-form BtnGroup-parent flex-auto js-deferred-toggler-target" data-turbo="false" action="/unbalancedparentheses/data_science_in_julia_for_hackers/unstar" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="9ojyHK6te8JHZ_NZq3wVKQNU-R-iWxUbb7is0CT5Coc3QJol0V0iMx3spl0wx3E0uGXlZo-HIX8mWGuc-9nyzA" autocomplete="off" />
-          <input type="hidden" value="powK9DbjEUQ-dimr9ZiiSgoe-uK8PTItAeDn76IH0b5nRGLNSRNItWT9fK9uI8ZXsS_mm5HhBklIACCjfScp9Q" data-csrf="true" class="js-confirm-csrf-token" />
+      <form class="js-social-form BtnGroup-parent flex-auto js-deferred-toggler-target" data-turbo="false" action="/unbalancedparentheses/data_science_in_julia_for_hackers/unstar" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="FxEQAkDgq52KMpyk8rDm1e6T-3pOyhuzbOgjhtFy5UPW2Xg7PxDybNC5yaBpC4LIVaLnA2MWL9clCOTKDlIdCA" autocomplete="off" />
+          <input type="hidden" value="gJjl29z045G10uTKDosEIBQ8aaOoE72_l3iYR87TM6JBUI3iowS6YO9Zsc6VMGA9rw112oXPidvemF8LEfPL6Q" data-csrf="true" class="js-confirm-csrf-token" />
         <input type="hidden" name="context" value="repository">
           <button data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;UNSTAR_BUTTON&quot;,&quot;repository_id&quot;:306355472,&quot;originating_url&quot;:&quot;https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/blob/main/04_naive_bayes/Manifest.toml&quot;,&quot;user_id&quot;:6120897}}" data-hydro-click-hmac="73d560dc6f493232d8fdf5a6408eda0faf4c89c261914bed1a0537328b71cb9a" data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar" aria-label="Unstar this repository (99)" type="submit" data-view-component="true" class="rounded-left-2 btn-sm btn BtnGroup-item">    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star-fill starred-button-icon d-inline-block mr-2">
     <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"></path>
@@ -2024,13 +2024,13 @@
       
 >
     <div class="SelectMenu-modal">
-        <button class="SelectMenu-closeButton position-absolute right-0 m-2" type="button" aria-label="Close menu" data-toggle-for="details-0e4258">
+        <button class="SelectMenu-closeButton position-absolute right-0 m-2" type="button" aria-label="Close menu" data-toggle-for="details-e81dcd">
           <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x">
     <path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path>
 </svg>
         </button>
       <div
-        id="filter-menu-0e4258"
+        id="filter-menu-e81dcd"
         class="d-flex flex-column flex-1 overflow-hidden"
 >
         <div
@@ -2051,7 +2051,7 @@
 </details>
 </div>
     <div data-view-component="true" class="unstarred BtnGroup flex-1">
-      <form class="js-social-form BtnGroup-parent flex-auto" data-turbo="false" action="/unbalancedparentheses/data_science_in_julia_for_hackers/star" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="JpptABUe1EYoZMYjrt8iK0ohcvpA_651J1g7RtPzs0n-SuFVyPGZoQg8Q9fYv26arWbNy1arGYnlocbHwUX4rw" autocomplete="off" />
+      <form class="js-social-form BtnGroup-parent flex-auto" data-turbo="false" action="/unbalancedparentheses/data_science_in_julia_for_hackers/star" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="RH2fGYvLPlx_GcraXc7d0nyF1qXSICej0Uv5B2ZS17mcrRNMViRzu19BTy4rrpFjm8JplMR0kF8TsgSGdOScXw" autocomplete="off" />
         <input type="hidden" name="context" value="repository">
           <button data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;STAR_BUTTON&quot;,&quot;repository_id&quot;:306355472,&quot;originating_url&quot;:&quot;https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/blob/main/04_naive_bayes/Manifest.toml&quot;,&quot;user_id&quot;:6120897}}" data-hydro-click-hmac="27d5c13228e28a5e3c8889815d79ee98f71a702ab10bb9948e122a47af1193d6" data-ga-click="Repository, click star button, action:blob#show; text:Star" aria-label="Star this repository (99)" type="submit" data-view-component="true" class="js-toggler-target rounded-left-2 btn-sm btn BtnGroup-item">    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star d-inline-block mr-2">
     <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"></path>
@@ -2071,13 +2071,13 @@
       
 >
     <div class="SelectMenu-modal">
-        <button class="SelectMenu-closeButton position-absolute right-0 m-2" type="button" aria-label="Close menu" data-toggle-for="details-0e4258">
+        <button class="SelectMenu-closeButton position-absolute right-0 m-2" type="button" aria-label="Close menu" data-toggle-for="details-e81dcd">
           <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x">
     <path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path>
 </svg>
         </button>
       <div
-        id="filter-menu-0e4258"
+        id="filter-menu-e81dcd"
         class="d-flex flex-column flex-1 overflow-hidden"
 >
         <div
@@ -2340,7 +2340,7 @@
     <create-repo-from-selector
       check-tag-name-exists-path="/unbalancedparentheses/data_science_in_julia_for_hackers/branches/check_tag_name_exists"
     >
-      <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-turbo="false" action="/unbalancedparentheses/data_science_in_julia_for_hackers/branches" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="tjfd2HuM28c2azhqYMdQRedCK0PhtqHWLynBo4i0XaD--zK7NwAgdLNGTSrX9KudJ4dL9-dU3_McZPI0Db1kWg" />
+      <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-turbo="false" action="/unbalancedparentheses/data_science_in_julia_for_hackers/branches" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="1QfhJLT9240UMYd015U-DgzVkXk6G2Fh3MeK3hN5jLCdyw5H-HEgPpEc8jRgpsXWzBDxzTz5H0TvirlJlnC1Sg" />
         <input data-target="create-repo-from-selector.refName" type="hidden" name="name" value="{{ refName }}">
         <input type="hidden" name="branch"  value="main">
         <input type="hidden" name="path_binary" value="MDRfbmFpdmVfYmF5ZXMvTWFuaWZlc3QudG9tbA==">
@@ -2358,7 +2358,7 @@
           <div>
             <span class="text-bold">Create branch: {{ refName }}</span>
             <span class="color-fg-muted">from ‘main’</span>
-            <input type="hidden" value="AcDkhdTWXffFfSYfEbcMUcyy2R-NaI2XPe3Va_t--2NR5cF4b_Qp4nzj304QM2QlN5-kh4o6xVnfzWFWLAAZDA" data-csrf="true" data-target="create-repo-from-selector.checkTagNameExistsPathCsrf" />
+            <input type="hidden" value="y6HyCSIQKw4Fw3iXh4NVc_LR87xLHmQOm4EgSd4BsrqbhNf0mTJfG7xdgcaGBz0HCfyOJExMLMB5oZR0CX9Q1Q" data-csrf="true" data-target="create-repo-from-selector.checkTagNameExistsPathCsrf" />
           </div>
         </button>
 </form>    </create-repo-from-selector>
@@ -2591,7 +2591,7 @@
     <div class="d-flex">
         
 <div class="ml-1" data-test-selector="edit-dropdown-menu-component">
-  <form class="BtnGroup-parent js-update-url-with-hash " data-turbo="false" action="/unbalancedparentheses/data_science_in_julia_for_hackers/edit/main/04_naive_bayes/Manifest.toml" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="xFjiFHFGZH0nCEXLYr3vjuEkVCjhqu77MmHaYXv43BaRFQtcyOSi6m0g51UgwVPGjPFHk14IgwNJ9BztbQN0Ag" autocomplete="off" />
+  <form class="BtnGroup-parent js-update-url-with-hash " data-turbo="false" action="/unbalancedparentheses/data_science_in_julia_for_hackers/edit/main/04_naive_bayes/Manifest.toml" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="wXvMwDSwpVH_jIThl7XmJCwcWVlvT1EN3Us7n1I6eOyUNiWIjRJjxrWkJn_VyVpsQclK4tDtPPWm3v0TRMHQ-A" autocomplete="off" />
       <button title="Edit this file" data-hotkey="e" data-disable-with="" data-test-selector="edit-icon-button" type="submit" data-view-component="true" class="btn-sm BtnGroup-item btn">    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-pencil">
     <path fill-rule="evenodd" d="M11.013 1.427a1.75 1.75 0 012.474 0l1.086 1.086a1.75 1.75 0 010 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 01-.927-.928l.929-3.25a1.75 1.75 0 01.445-.758l8.61-8.61zm1.414 1.06a.25.25 0 00-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 000-.354l-1.086-1.086zM11.189 6.25L9.75 4.81l-6.286 6.287a.25.25 0 00-.064.108l-.558 1.953 1.953-.558a.249.249 0 00.108-.064l6.286-6.286z"></path>
 </svg>
@@ -2601,7 +2601,7 @@
 </summary>    <div class="SelectMenu right-0">
       <div class="SelectMenu-modal width-full">
         <div class="SelectMenu-list SelectMenu-list--borderless py-2">
-          <form class="SelectMenu-item js-update-url-with-hash " data-turbo="false" action="/unbalancedparentheses/data_science_in_julia_for_hackers/edit/main/04_naive_bayes/Manifest.toml" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="J9U9ltWKGt2xKU53ocrdAZaRiSO4a7MkNxHQ3m7mUwVymNTebCjcSvsB7OnjtmFJ-0SamAfJ3txMhBZSeB37EQ" autocomplete="off" />
+          <form class="SelectMenu-item js-update-url-with-hash " data-turbo="false" action="/unbalancedparentheses/data_science_in_julia_for_hackers/edit/main/04_naive_bayes/Manifest.toml" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="XnRuXISxF_dTnqopScKuMTfinWNimQrMcwBIBoq8beoLOYcUPRPRYBm2CLcLvhJ5WjeO2N07ZzQIlY6KnEfF_g" autocomplete="off" />
               <button title="Edit this file" data-test-selector="edit-text-button" type="submit" data-view-component="true" class="btn-invisible btn width-full d-flex flex-justify-between color-fg-default text-normal p-0">    <div class="mr-5">Edit this file</div>
               <div class="color-fg-muted">E</div>
 </button></form>
@@ -2623,7 +2623,7 @@
   </div>
 
 
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" data-turbo="false" action="/unbalancedparentheses/data_science_in_julia_for_hackers/delete/main/04_naive_bayes/Manifest.toml" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="1PORr6jedcb6joB5Vi4GYSUTKLxKiLvfdWHCz_9_z8Hy4OnAN56vzapVijQ5xsycYqEu0MV-cixrgtkqoOG3Hw" />
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" data-turbo="false" action="/unbalancedparentheses/data_science_in_julia_for_hackers/delete/main/04_naive_bayes/Manifest.toml" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="TjuaGQPgVdVGaBBiTlw2sOk_DUlfywxjSoi7xLRq0StoKOJ2nKCP3hazGi8htPxNro0LJdA9xZBUa6Ah6_Sp9Q" />
             <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
               aria-label="Delete this file" data-disable-with>
               <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-trash">
