@@ -129,6 +129,7 @@ Let's start building a solution for our problem and the details will be discusse
 # Get the list of all words present in all mails.
 # We strip the first and last columns which are the email id and classification 
 all_words = names(raw_df)[2:end-1]
+
 # Create a StringDocument, a struct with methods to remove articles and
 # pronouns from the text
 all_words_text = join(all_words, " ")
@@ -290,6 +291,7 @@ function spam_predict(email, model::BayesSpamFilter, α, tol=100)
     
     email_ham_probability = BigFloat(1)
     email_spam_probability = BigFloat(1)
+
     for word in intersect(email_words, model.vocabulary)
         word_ham_prob, word_spam_prob = word_spam_probability(word, model.words_count_ham, model.words_count_spam, model.N_ham, model.N_spam, n_vocabulary, α)
         email_ham_probability *= word_ham_prob
