@@ -301,7 +301,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">Chapter 11</span> Ultima online</h1>
 <div id="the-ultima-online-catastrophe" class="section level2" number="11.1">
 <h2><span class="header-section-number">11.1</span> The Ultima Online Catastrophe</h2>
-<p><a href="https://uo.com/">Ultima online</a> is a fantasy massively multiplayer online role-playing game (MMORPG) created by <a href="https://en.wikipedia.org/wiki/Richard_Garriott">Richard Garriott</a> between 1995 and 1997, when it was realesed.</p>
+<p><a href="https://uo.com/">Ultima online</a> is a fantasy massively multiplayer online role-playing game (MMORPG) created by <a href="https://en.wikipedia.org/wiki/Richard_Garriott">Richard Garriott</a> between 1995 and 1997, when it was released.</p>
 <p>The game consisted of a medieval fantasy world in which each player could build their own character. What was interesting and disruptive was that all players interacted with each other, and what one did had repercussions on the general map. So, the game was “live” in the sense that if two people were fighting in one area and another one came in, the latter could see that fight. Also, the warriors had to hunt and look for resources to get points and improve their skills and again, if a treasure was discovered, or an animal was hunted, it would no longer be available for the rest.</p>
 <p>During the development process of the game, Garriott and his team realized that, due to the massiveness of the game, there was going to be a moment when they would not be able to create content at the same speed as the players were consuming it. So they decided to automate the process.</p>
 <p>After a lot of work, one of the ideas they came up with was to generate a “Virtual Ecosystem.” This was a really incredible idea in which a whole ecosystem in harmony was simulated inside the game. For example, if an area started to grow grass, the herbivorous animals would come and start eating it. If many animals arrived, they would surely end up eating all the food and would have to go look for other places, it could even happen that some of them were not lucky and died on the way, starving. In the same way, the carnivorous animals (that is, the predators of the herbivores) would strive to hunt as many animals as they could, but if in doing so they killed a significant number of them, food would become scarce causing them to die as well. In this way, as in “real” nature, a beautiful balance was generated.</p>
@@ -318,14 +318,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>The population at time <span class="math inline">\(t\)</span> multiplies at both rates because if the population is zero there can be no births or deaths. This leads us to the simplest ecological model, in which per capita growth is the difference between the birth rate and the mortality rate.</p>
 <div id="parentheses-on-differential-equations" class="section level4" number="11.1.1.1">
 <h4><span class="header-section-number">11.1.1.1</span> Parentheses on differential equations</h4>
-<p>Before anyone freaks out, lets talk a little bit about that strange notation.</p>
-<p>As we said above, the prey´s population will grow proportionally to the birth rate and the actual population. And we also said that the population will shrink proportional to the mortality rate and its actual population. Can you realize that we are describing change?</p>
-<p>So that is exactly what the equation is saying! You can read that horrendous <span class="math inline">\(d\)</span> as change! So, the entire term <span class="math inline">\(\frac{dPrey}{dt}=\)</span> is just saying “The change of the pupulation over time (that´s why the <span class="math inline">\(dt\)</span> term is deviding there) is equal to…” and that´s it!</p>
-<p>This can be a difficult concept to understand because we are very used to work with absolute values. But sometimes (In fact, very often) it is much more easier to describe change over absolute values. And this is one of this cases. But, for now, lets leave this up to here, we will take it up again in the next chapter.</p>
+<p>Before anyone freaks out, let's talk a little bit about that strange notation.</p>
+<p>As we said above, the prey's population will grow proportionally to the birth rate and the actual population. And we also said that the population will shrink proportional to the mortality rate and its actual population. Can you realize that we are describing change?</p>
+<p>So that is exactly what the equation is saying! You can read that horrendous <span class="math inline">\(d\)</span> as change! So, the entire term <span class="math inline">\(\frac{dPrey}{dt}=\)</span> is just saying “The change of the population over time (that's why the <span class="math inline">\(dt\)</span> term is dividing there) is equal to…” and that's it!</p>
+<p>This can be a difficult concept to understand because we are very used to work with absolute values. But sometimes (In fact, very often) it is much easier to describe change over absolute values. And this is one of these cases. But, for now, let's leave this up to here, we will take it up again in the next chapter.</p>
 </div>
 <div id="returning-to-lotkavolterra" class="section level4" number="11.1.1.2">
 <h4><span class="header-section-number">11.1.1.2</span> Returning to LotkaVolterra</h4>
-<p>But the model we are looking for have to explain the interaction between the two species. To do so, we must include the Pradator Population in order to modify the mortality rate of the Prey, leaving us with:</p>
+<p>But the model we are looking for has to explain the interaction between the two species. To do so, we must include the Predator Population in order to modify the mortality rate of the Prey, leaving us with:</p>
 <p><span class="math inline">\(\frac{dPrey}{dt} = Prey*(b_{prey} - m_{prey}*Pred)\)</span></p>
 <p>In a similar way we can think the interaction on the side of the predator, were the mortality rate would be constant and the birth rate will depend upon the Prey population:</p>
 <p><span class="math inline">\(\frac{dPred}{dt} = Pred*(b_{pred}*Prey - m_{pred})\)</span></p>
@@ -333,7 +333,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="sciml-to-simulate-population-dynamics" class="section level4" number="11.1.1.3">
 <h4><span class="header-section-number">11.1.1.3</span> SciML to simulate population dynamics</h4>
-<div class="sourceCode" id="cb1"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb1-1"><a href="ultima-online.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Let´s define our Lotka-Volterra model</span></span>
+<div class="sourceCode" id="cb1"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb1-1"><a href="ultima-online.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Let's define our Lotka-Volterra model</span></span>
 <span id="cb1-2"><a href="ultima-online.html#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="ultima-online.html#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> lotka_volterra(du<span class="op">,</span>u<span class="op">,</span>p<span class="op">,</span>t)</span>
 <span id="cb1-4"><a href="ultima-online.html#cb1-4" aria-hidden="true" tabindex="-1"></a>  prey<span class="op">,</span> pred  <span class="op">=</span> u</span>
@@ -354,7 +354,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="obtaining-the-model-from-the-data" class="section level4" number="11.1.1.4">
 <h4><span class="header-section-number">11.1.1.4</span> Obtaining the model from the data</h4>
-<p>Back to the terrible case of Ultima Online. Suppose we had data on the population of predators and prey that were in harmony during the game at a given time. If we wanted to venture out and analyze what parameters Garriot and his team used to model their great ecosystem, would it be possible? Of course it is, we just need to add a little Bayesianism.</p>
+<p>Back to the terrible case of Ultima Online. Suppose we had data on the population of predators and prey that were in harmony during the game at a given time. If we wanted to venture out and analyze what parameters Garriott and his team used to model their great ecosystem, would it be possible? Of course it is, we just need to add a little Bayesianism.</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb6-1"><a href="ultima-online.html#cb6-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> CSV.<span class="cn">read</span>(<span class="st">&quot;./11_ultima_online/ultima_online_data.csv&quot;</span><span class="op">,</span> DataFrame)</span></code></pre></div>
 <pre><code>## 16×2 DataFrame
 ##  Row │ Column1   Column2
@@ -424,7 +424,7 @@ This task that seems impossible a priori, is easily achievable with the SciML en
 </div>
 <div id="visualizing-the-results" class="section level4" number="11.1.1.5">
 <h4><span class="header-section-number">11.1.1.5</span> Visualizing the results</h4>
-<p>As always, it is very interesting to be able to observe the uncertainty that Bayesianism provides us within our model. Let´s go for it!</p>
+<p>As always, it is very interesting to be able to observe the uncertainty that Bayesianism provides us within our model. Let's go for it!</p>
 <p>First we should make a smaller sampling of the distributions of each parameter so that the number of models we plot does not become a problem when visualizing:</p>
 <div class="sourceCode" id="cb18"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb18-1"><a href="ultima-online.html#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
 <span id="cb18-2"><a href="ultima-online.html#cb18-2" aria-hidden="true" tabindex="-1"></a>    birth_prey_ <span class="op">=</span> sample(collect(get(posterior<span class="op">,</span> <span class="op">:</span>birth_prey)[<span class="fl">1</span>])<span class="op">,</span> <span class="fl">100</span>)</span>
@@ -432,7 +432,7 @@ This task that seems impossible a priori, is easily achievable with the SciML en
 <span id="cb18-4"><a href="ultima-online.html#cb18-4" aria-hidden="true" tabindex="-1"></a>    birth_pred_ <span class="op">=</span> sample(collect(get(posterior<span class="op">,</span> <span class="op">:</span>birth_pred)[<span class="fl">1</span>])<span class="op">,</span> <span class="fl">100</span>)</span>
 <span id="cb18-5"><a href="ultima-online.html#cb18-5" aria-hidden="true" tabindex="-1"></a>    mort_pred_ <span class="op">=</span> sample(collect(get(posterior<span class="op">,</span> <span class="op">:</span>mort_pred)[<span class="fl">1</span>])<span class="op">,</span> <span class="fl">100</span>)</span>
 <span id="cb18-6"><a href="ultima-online.html#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span><span class="op">;</span></span></code></pre></div>
-<p>And now let’s solve the system of differential equations for each of the combinations of parameters that we form, saving them in solutions so that later we can use this array in the plotting. You can scroll left and see the solution to the 101 models we propouse (Notice that we add one final model using the mean of each parameter)</p>
+<p>And now let’s solve the system of differential equations for each of the combinations of parameters that we form, saving them in solutions so that later we can use this array in the plotting. You can scroll left and see the solution to the 101 models we propose (Notice that we add one final model using the mean of each parameter)</p>
 <div class="sourceCode" id="cb19"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb19-1"><a href="ultima-online.html#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
 <span id="cb19-2"><a href="ultima-online.html#cb19-2" aria-hidden="true" tabindex="-1"></a>    solutions <span class="op">=</span> []</span>
 <span id="cb19-3"><a href="ultima-online.html#cb19-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>length(birth_prey_)</span>
@@ -518,9 +518,9 @@ This task that seems impossible a priori, is easily achievable with the SciML en
 <div class="sourceCode" id="cb39"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb39-1"><a href="ultima-online.html#cb39-1" aria-hidden="true" tabindex="-1"></a>plot(sol_crazy_players<span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_11_plot_8-J1.png" /><!-- --></p>
 <p>This sad story ends with the whole beautiful virtual ecosystem, planned for 3 years, destroyed in seconds. The animals of the medieval world that Garriott and his team had imagined had to be eliminated… In case you want to know more about this, you can listen to the story from the mouth of the protagonist himself <a href="https://www.youtube.com/watch?v=KFNxJVTJleE&amp;ab_channel=ArsTechnica">here</a></p>
-<p>But like every difficult moment, this one also left great lessons. From that moment on, the games started to been tested with real people during the whole development process. The idea that you could predict the behavior of millions of players was finished, and they started to test instead.</p>
+<p>But like every difficult moment, this one also left great lessons. From that moment on, the games started to be tested with real people during the whole development process. The idea that you could predict the behavior of millions of players was finished, and they started to test instead.</p>
 <p>This was the beginning of a very Bayesian way of thinking, in which we start with a priori hypotheses that are tested with reality to modify the old beliefs, and gain a deeper understanding of what is really happening.</p>
-<p>It makes sense, doesn’t it? After all, getting comfortable with our beliefs never is a very good option, and going out into the world to learn new things seem like a more interesting one.</p>
+<p>It makes sense, doesn’t it? After all, getting comfortable with our beliefs is never a very good option, and going out into the world to learn new things seems like a more interesting one.</p>
 </div>
 </div>
 </div>
@@ -533,7 +533,7 @@ This task that seems impossible a priori, is easily achievable with the SciML en
 <ul>
 <li><a href="https://sciml.ai/">SciML</a></li>
 <li><a href="https://turing.ml/dev/tutorials/10-bayesiandiffeq/">Turing Bayesian Differential Equation</a></li>
-<li><a href="https://www.youtube.com/watch?v=KFNxJVTJleE&amp;ab_channel=ArsTechnica">Garriot telling the Story</a></li>
+<li><a href="https://www.youtube.com/watch?v=KFNxJVTJleE&amp;ab_channel=ArsTechnica">Garriott telling the Story</a></li>
 </ul>
 
 </div>

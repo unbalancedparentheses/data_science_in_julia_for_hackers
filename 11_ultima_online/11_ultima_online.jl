@@ -24,7 +24,7 @@ We are currently working on:
 # ╔═╡ 74cc60be-2821-11eb-3ad7-e581052437bd
 md"""# The Ultima Online Catastrophe
 
-[Ultima online](https://uo.com/) is a fantasy massively multiplayer online role-playing game (MMORPG) created by [Richard Garriott](https://en.wikipedia.org/wiki/Richard_Garriott) between 1995 and 1997, when it was realesed.
+[Ultima online](https://uo.com/) is a fantasy massively multiplayer online role-playing game (MMORPG) created by [Richard Garriott](https://en.wikipedia.org/wiki/Richard_Garriott) between 1995 and 1997, when it was released.
 
 The game consisted of a medieval fantasy world in which each player could build their own character. What was interesting and disruptive was that all players interacted with each other, and what one did had repercussions on the general map. So, the game was "live" in the sense that if two people were fighting in one area and another one came in, the latter could see that fight. Also, the warriors had to hunt and look for resources to get points and improve their skills and again, if a treasure was discovered, or an animal was hunted, it would no longer be available for the rest.
 
@@ -62,17 +62,17 @@ md"""The population at time *t* multiplies at both rates because if the populati
 
 #### Parentheses on differential equations
 
-Before anyone freaks out, lets talk a little bit about that strange notation.
+Before anyone freaks out, let's talk a little bit about that strange notation.
 
-As we said above, the prey´s population will **grow** proportionally to the birth rate and the actual population. And we also said that the population will **shrink** proportional to the mortality rate and its actual population. Can you realize that we are describing **change**? 
+As we said above, the prey's population will **grow** proportionally to the birth rate and the actual population. And we also said that the population will **shrink** proportional to the mortality rate and its actual population. Can you realize that we are describing **change**? 
 
-So that is exactly what the equation is saying! You can read that horrendous $d$ as change! So, the entire term $\frac{dPrey}{dt}=$ is just saying "The change of the pupulation over time (that´s why the $dt$ term is deviding there) is equal to..." and that´s it! 
+So that is exactly what the equation is saying! You can read that horrendous $d$ as change! So, the entire term $\frac{dPrey}{dt}=$ is just saying "The change of the population over time (that's why the $dt$ term is dividing there) is equal to..." and that's it!
 
-This can be a difficult concept to understand because we are very used to work with **absolute** values. But sometimes (In fact, very often) it is much more easier to describe change over absolute values. And this is one of this cases. But, for now, lets leave this up to here, we will take it up again in the next chapter. 
+This can be a difficult concept to understand because we are very used to work with **absolute** values. But sometimes (In fact, very often) it is much easier to describe change over absolute values. And this is one of these cases. But, for now, let's leave this up to here, we will take it up again in the next chapter. 
 
 #### Returning to LotkaVolterra
 
-But the model we are looking for have to explain the *interaction* between the two species. To do so, we must include the Pradator Population in order to modify the mortality rate of the Prey, leaving us with:
+But the model we are looking for has to explain the *interaction* between the two species. To do so, we must include the Predator Population in order to modify the mortality rate of the Prey, leaving us with:
 """
 
 # ╔═╡ e0f34b58-2845-11eb-0480-9d200fc79403
@@ -91,7 +91,7 @@ md"In this way we obtain the Lotka-Volterra model in which the population dynami
 md"#### SciML to simulate population dynamics"
 
 # ╔═╡ 5da9eb00-2848-11eb-0dfa-17ca0490bd44
-#Let´s define our Lotka-Volterra model
+#Let's define our Lotka-Volterra model
 
 function lotka_volterra(du,u,p,t)
   prey, pred  = u
@@ -117,7 +117,7 @@ plot(sol)
 # ╔═╡ 4aff3714-284b-11eb-2047-814ca175e07b
 md"""#### Obtaining the model from the data
 
-Back to the terrible case of Ultima Online. Suppose we had data on the population of predators and prey that were in harmony during the game at a given time. If we wanted to venture out and analyze what parameters Garriot and his team used to model their great ecosystem, would it be possible? Of course it is, we just need to add a little Bayesianism.
+Back to the terrible case of Ultima Online. Suppose we had data on the population of predators and prey that were in harmony during the game at a given time. If we wanted to venture out and analyze what parameters Garriott and his team used to model their great ecosystem, would it be possible? Of course it is, we just need to add a little Bayesianism.
 """
 
 # ╔═╡ e3da565c-2851-11eb-0fa7-a3cd80bb9d63
@@ -189,7 +189,7 @@ The powerful SciML engine allows us to make Bayesian inferences but from dynamic
 
 #### Visualizing the results
 
-As always, it is very interesting to be able to observe the uncertainty that Bayesianism provides us *within* our model. Let´s go for it!
+As always, it is very interesting to be able to observe the uncertainty that Bayesianism provides us *within* our model. Let's go for it!
 
 First we should make a smaller sampling of the distributions of each parameter so that the number of models we plot does not become a problem when visualizing:
 "
@@ -203,7 +203,7 @@ begin
 end;
 
 # ╔═╡ dee1f67c-291a-11eb-11ba-7d6b7129b15c
-md"And now let's solve the system of differential equations for each of the combinations of parameters that we form, saving them in *solutions* so that later we can use this array in the plotting. You can scroll left and see the solution to the 101 models we propouse (Notice that we add one final model using the mean of each parameter)"
+md"And now let's solve the system of differential equations for each of the combinations of parameters that we form, saving them in *solutions* so that later we can use this array in the plotting. You can scroll left and see the solution to the 101 models we propose (Notice that we add one final model using the mean of each parameter)"
 
 # ╔═╡ 3794d5aa-291b-11eb-1e16-31c59b6d37a2
 begin
@@ -336,11 +336,11 @@ plot(sol_crazy_players, legend=false)
 # ╔═╡ 0e53ba34-29d5-11eb-3540-bbc2a0127cf5
 md"This sad story ends with the whole beautiful virtual ecosystem, planned for 3 years, destroyed in seconds. The animals of the medieval world that Garriott and his team had imagined had to be eliminated... In case you want to know more about this, you can listen to the story from the mouth of the protagonist himself [here](https://www.youtube.com/watch?v=KFNxJVTJleE&ab_channel=ArsTechnica)
 
-But like every difficult moment, this one also left great lessons. From that moment on, the games started to been tested with real people during the whole development process. The idea that you could predict the behavior of millions of players was finished, and they started to test instead. 
+But like every difficult moment, this one also left great lessons. From that moment on, the games started to be tested with real people during the whole development process. The idea that you could predict the behavior of millions of players was finished, and they started to test instead. 
 
 This was the beginning of a very Bayesian way of thinking, in which we start with a priori hypotheses that are tested with reality to modify the old beliefs, and gain a deeper understanding of what is really happening. 
 
-It makes sense, doesn't it? After all, getting comfortable with our beliefs never is a very good option, and going out into the world to learn new things seem like a more interesting one.
+It makes sense, doesn't it? After all, getting comfortable with our beliefs is never a very good option, and going out into the world to learn new things seems like a more interesting one.
 
 ### Summary
 
@@ -352,7 +352,7 @@ md"### References
 
 - [SciML](https://sciml.ai/)
 - [Turing Bayesian Differential Equation](https://turing.ml/dev/tutorials/10-bayesiandiffeq/)
-- [Garriot telling the Story](https://www.youtube.com/watch?v=KFNxJVTJleE&ab_channel=ArsTechnica)"
+- [Garriott telling the Story](https://www.youtube.com/watch?v=KFNxJVTJleE&ab_channel=ArsTechnica)"
 
 # ╔═╡ e00277e6-8b5f-11eb-2626-3d60478516a7
 md" ### Give us feedback
