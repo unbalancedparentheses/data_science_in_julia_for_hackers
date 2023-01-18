@@ -1,7 +1,7 @@
 # Ultima continued
 
 
-```{julia chap_12_libraries, cache = FALSE, results = FALSE}
+```{julia chap_12_libraries, cache=FALSE, results = FALSE}
 
 cd("./12_ultima_continued/") 
 import Pkg
@@ -16,6 +16,7 @@ gr()
 using OrdinaryDiffEq
 using ModelingToolkit
 using DataDrivenDiffEq
+using DataDrivenSparse
 using LinearAlgebra
 using Optim
 using DiffEqFlux
@@ -302,6 +303,7 @@ And lets train the NN!!
 
 ```{julia, results = FALSE}
 # First train with ADAM for better convergence
+println(length(p))
 res1 = DiffEqFlux.sciml_train(loss, p, ADAM(0.01), cb=callback, maxiters = 200);
 ```
 
@@ -363,7 +365,7 @@ NNsolution = [0.44249296	4.6280594
 0.19889638	2.1002903
 0.18338664	1.7109625
 0.17455529	1.3929098
-0.17053206	1.1337895
+0.17053206	1.133789
 0.17017265	0.9229294
 0.17276397	0.7514495
 0.17785929	0.6120287
@@ -444,7 +446,6 @@ X =[0.44249296	4.6280594
 1.6795474	0.005239129
 1.836886	0.004839054
 2.0090306	0.0045287833]
-
 ```
 
 
@@ -467,35 +468,42 @@ function that behaves like the NN.
 ```{julia, results = FALSE}
 ## Let's continue with the Sparse Identification 
 
+ddprob = ContinuousDataDrivenProblem(Xₙ, solution.t, L̂)
+
 # Create a Basis
 @variables u[1:2]
 # Add many polynomial to the Basis
-polys = Operation[]
 
-for i ∈ 1:5
-    push!(polys, u[1]^i)
-    push!(polys, u[2]^i)
-    for j ∈ i:5
-        if i != j
-            push!(polys, (u[1]^i)*(u[2]^j))
-            push!(polys, u[2]^i*u[1]^i)
-        end
-    end
-end
+
+b = [cos.(u); sin.(u); polynomial_basis(u, 5)]
+basis = Basis(b, u)
+
+# polys = Operation[]
+
+# for i ∈ 1:5
+#    push!(polys, u[1]^i)
+#    push!(polys, u[2]^i)
+#    for j ∈ i:5
+#        if i != j
+#            push!(polys, (u[1]^i)*(u[2]^j))
+#            push!(polys, u[2]^i*u[1]^i)
+#        end
+#    end
+# end
 ```
 
 ```julia 
 begin
 # And some sinusoidal functions
-h = [cos.(u)...; sin.(u)...; polys...]
-basis = Basis(h, u)
+# h = [cos.(u)...; sin.(u)...; polys...]
+# basis = Basis(h, u)
 	
-h
+#h
 end;
 ```
 
 ```julia 
-basis
+#basis
 ```
 ```{julia , echo=FALSE,}
 "29 dimensional basis in [u₁,u₂]"
@@ -511,15 +519,18 @@ Without saying more, let's do it!
 ```{julia, results = FALSE}
 # Create an optimizer for the SINDy problem
 opt = SR3()
+# opt = STLSQ(exp10.(-7:0.1:3))
+# opt = SR3(exp10.(-7:0.1:3))
 # Create the thresholds which should be used in the search process
-λ = exp10.(-7:0.1:3)
+# λ = exp10.(-7:0.1:3
 # Target function to choose the results from.
-g(x) = x[1] < 1 ? Inf : norm(x, 2)
+# g(x) = x[1] < 1 ? Inf : norm(x, 2)
+Ψ = solve(ddprob, basis, opt; options = DataDrivenCommonOptions())
 	
-Ψ = SINDy(Xₙ[:, 2:end], L̂[:, 2:end], basis, λ,  opt, g = g, maxiter = 10000, normalize = true, denoise = true)
+# Ψ = SINDy(Xₙ[:, 2:end], L̂[:, 2:end], basis, λ,  opt, g = g, maxiter = 10000, normalize = true, denoise = true)
 ```
 
-```julia 
+```{julia, results = TRUE}
 Ψ.equations[1]
 ```
 
@@ -527,7 +538,7 @@ g(x) = x[1] < 1 ? Inf : norm(x, 2)
 "p₁ * u₁"
 ```
 
-```julia 
+```{julia, results = TRUE}
 Ψ.equations[2]
 ```
 ```{julia , echo=FALSE,}
@@ -553,11 +564,11 @@ And that we also define that $players_{prey} = players_{pred} = 0.4$, the recove
 
 Lets ask for the parameters then:
 
-```julia 
+```{julia, results = TRUE}
 parameters(Ψ)
 ```
 
-```{julia, echo=FALSE,}
+```{julia, echo=FALSE, results = FALSE}
 "-0.36237425,  -0.40059045"
 ```
 
