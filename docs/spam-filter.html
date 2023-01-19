@@ -29,7 +29,7 @@
   
   
 <link rel="prev" href="probability-introduction.html"/>
-<link rel="next" href="probabilistic-programming.html"/>
+<link rel="next" href="evaluating-the-accuracy.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -147,16 +147,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2" data-path="meeting-julia.html"><a href="meeting-julia.html"><i class="fa fa-check"></i><b>2</b> Meeting Julia</a>
 <ul>
 <li class="chapter" data-level="2.1" data-path="meeting-julia.html"><a href="meeting-julia.html#why-julia"><i class="fa fa-check"></i><b>2.1</b> Why Julia</a></li>
-<li class="chapter" data-level="2.2" data-path="meeting-julia.html"><a href="meeting-julia.html#julia-presentation"><i class="fa fa-check"></i><b>2.2</b> Julia presentation</a></li>
+<li class="chapter" data-level="2.2" data-path="meeting-julia.html"><a href="meeting-julia.html#julia-introduction"><i class="fa fa-check"></i><b>2.2</b> Julia introduction</a></li>
 <li class="chapter" data-level="2.3" data-path="meeting-julia.html"><a href="meeting-julia.html#installation"><i class="fa fa-check"></i><b>2.3</b> Installation</a></li>
 <li class="chapter" data-level="2.4" data-path="meeting-julia.html"><a href="meeting-julia.html#first-steps-into-the-julia-world"><i class="fa fa-check"></i><b>2.4</b> First steps into the Julia world</a></li>
-<li class="chapter" data-level="2.5" data-path="meeting-julia.html"><a href="meeting-julia.html#julias-ecosystem-basic-plotting-and-manipulation-of-dataframes"><i class="fa fa-check"></i><b>2.5</b> Julia’s Ecosystem: Basic plotting and manipulation of DataFrames</a>
+<li class="chapter" data-level="2.5" data-path="meeting-julia.html"><a href="meeting-julia.html#data-collections"><i class="fa fa-check"></i><b>2.5</b> Data collections</a></li>
+<li class="chapter" data-level="2.6" data-path="meeting-julia.html"><a href="meeting-julia.html#julias-ecosystem-basic-plotting-and-manipulation-of-dataframes"><i class="fa fa-check"></i><b>2.6</b> Julia’s Ecosystem: Basic plotting and manipulation of DataFrames</a>
 <ul>
-<li class="chapter" data-level="2.5.1" data-path="meeting-julia.html"><a href="meeting-julia.html#plotting-with-plots.jl"><i class="fa fa-check"></i><b>2.5.1</b> Plotting with Plots.jl</a></li>
-<li class="chapter" data-level="2.5.2" data-path="meeting-julia.html"><a href="meeting-julia.html#introducing-dataframes.jl"><i class="fa fa-check"></i><b>2.5.2</b> Introducing DataFrames.jl</a></li>
+<li class="chapter" data-level="2.6.1" data-path="meeting-julia.html"><a href="meeting-julia.html#plotting-with-plots.jl"><i class="fa fa-check"></i><b>2.6.1</b> Plotting with Plots.jl</a></li>
+<li class="chapter" data-level="2.6.2" data-path="meeting-julia.html"><a href="meeting-julia.html#introducing-dataframes.jl"><i class="fa fa-check"></i><b>2.6.2</b> Introducing DataFrames.jl</a></li>
 </ul></li>
-<li class="chapter" data-level="2.6" data-path="meeting-julia.html"><a href="meeting-julia.html#summary"><i class="fa fa-check"></i><b>2.6</b> Summary</a></li>
-<li class="chapter" data-level="2.7" data-path="meeting-julia.html"><a href="meeting-julia.html#references-1"><i class="fa fa-check"></i><b>2.7</b> References</a></li>
+<li class="chapter" data-level="2.7" data-path="meeting-julia.html"><a href="meeting-julia.html#summary"><i class="fa fa-check"></i><b>2.7</b> Summary</a></li>
+<li class="chapter" data-level="2.8" data-path="meeting-julia.html"><a href="meeting-julia.html#references-1"><i class="fa fa-check"></i><b>2.8</b> References</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="probability-introduction.html"><a href="probability-introduction.html"><i class="fa fa-check"></i><b>3</b> Probability introduction</a>
 <ul>
@@ -182,101 +183,107 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4" data-path="spam-filter.html"><a href="spam-filter.html"><i class="fa fa-check"></i><b>4</b> Spam filter</a>
 <ul>
 <li class="chapter" data-level="4.1" data-path="spam-filter.html"><a href="spam-filter.html#naive-bayes-spam-or-ham"><i class="fa fa-check"></i><b>4.1</b> Naive Bayes: Spam or Ham?</a></li>
-<li class="chapter" data-level="4.2" data-path="spam-filter.html"><a href="spam-filter.html#and-now-for-something-completely-different-building-a-spam-filter-using-naive-bayes"><i class="fa fa-check"></i><b>4.2</b> And now for something completely different! Building a spam filter using naive Bayes</a></li>
-<li class="chapter" data-level="4.3" data-path="spam-filter.html"><a href="spam-filter.html#summary-2"><i class="fa fa-check"></i><b>4.3</b> Summary</a></li>
-<li class="chapter" data-level="4.4" data-path="spam-filter.html"><a href="spam-filter.html#references-3"><i class="fa fa-check"></i><b>4.4</b> References</a></li>
+<li class="chapter" data-level="4.2" data-path="spam-filter.html"><a href="spam-filter.html#the-training-data"><i class="fa fa-check"></i><b>4.2</b> The Training Data</a></li>
+<li class="chapter" data-level="4.3" data-path="spam-filter.html"><a href="spam-filter.html#preprocessing-the-data"><i class="fa fa-check"></i><b>4.3</b> Preprocessing the Data</a></li>
+<li class="chapter" data-level="4.4" data-path="spam-filter.html"><a href="spam-filter.html#the-naive-bayes-approach"><i class="fa fa-check"></i><b>4.4</b> The Naive Bayes Approach</a></li>
+<li class="chapter" data-level="4.5" data-path="spam-filter.html"><a href="spam-filter.html#training-the-model"><i class="fa fa-check"></i><b>4.5</b> Training the Model</a></li>
+<li class="chapter" data-level="4.6" data-path="spam-filter.html"><a href="spam-filter.html#making-predictions"><i class="fa fa-check"></i><b>4.6</b> Making Predictions</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html"><i class="fa fa-check"></i><b>5</b> Probabilistic programming</a>
+<li class="chapter" data-level="5" data-path="evaluating-the-accuracy.html"><a href="evaluating-the-accuracy.html"><i class="fa fa-check"></i><b>5</b> Evaluating the Accuracy</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#coin-flipping-example"><i class="fa fa-check"></i><b>5.1</b> Coin flipping example</a></li>
-<li class="chapter" data-level="5.2" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#summary-3"><i class="fa fa-check"></i><b>5.2</b> Summary</a></li>
-<li class="chapter" data-level="5.3" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#references-4"><i class="fa fa-check"></i><b>5.3</b> References</a></li>
+<li class="chapter" data-level="5.1" data-path="evaluating-the-accuracy.html"><a href="evaluating-the-accuracy.html#summary-2"><i class="fa fa-check"></i><b>5.1</b> Summary</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html"><i class="fa fa-check"></i><b>6</b> Escaping from Mars</a>
+<li class="chapter" data-level="6" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html"><i class="fa fa-check"></i><b>6</b> Probabilistic programming</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#calculating-the-constant-g-of-mars"><i class="fa fa-check"></i><b>6.1</b> Calculating the constant g of Mars</a></li>
-<li class="chapter" data-level="6.2" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#optimizing-the-throwing-angle"><i class="fa fa-check"></i><b>6.2</b> Optimizing the throwing angle</a>
-<ul>
-<li class="chapter" data-level="6.2.1" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#calculating-the-escape-velocity"><i class="fa fa-check"></i><b>6.2.1</b> Calculating the escape velocity</a></li>
+<li class="chapter" data-level="6.1" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#coin-flipping-example"><i class="fa fa-check"></i><b>6.1</b> Coin flipping example</a></li>
+<li class="chapter" data-level="6.2" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#summary-3"><i class="fa fa-check"></i><b>6.2</b> Summary</a></li>
+<li class="chapter" data-level="6.3" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#references-3"><i class="fa fa-check"></i><b>6.3</b> References</a></li>
 </ul></li>
-<li class="chapter" data-level="6.3" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#summary-4"><i class="fa fa-check"></i><b>6.3</b> Summary</a></li>
-</ul></li>
-<li class="chapter" data-level="7" data-path="football-simulation.html"><a href="football-simulation.html"><i class="fa fa-check"></i><b>7</b> Football simulation</a>
+<li class="chapter" data-level="7" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html"><i class="fa fa-check"></i><b>7</b> Escaping from Mars</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="football-simulation.html"><a href="football-simulation.html#creating-our-conjectures"><i class="fa fa-check"></i><b>7.1</b> Creating our conjectures</a>
+<li class="chapter" data-level="7.1" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#calculating-the-constant-g-of-mars"><i class="fa fa-check"></i><b>7.1</b> Calculating the constant g of Mars</a></li>
+<li class="chapter" data-level="7.2" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#optimizing-the-throwing-angle"><i class="fa fa-check"></i><b>7.2</b> Optimizing the throwing angle</a>
 <ul>
-<li class="chapter" data-level="7.1.1" data-path="football-simulation.html"><a href="football-simulation.html#bayesian-hierarchical-models"><i class="fa fa-check"></i><b>7.1.1</b> Bayesian hierarchical models</a></li>
+<li class="chapter" data-level="7.2.1" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#calculating-the-escape-velocity"><i class="fa fa-check"></i><b>7.2.1</b> Calculating the escape velocity</a></li>
 </ul></li>
-<li class="chapter" data-level="7.2" data-path="football-simulation.html"><a href="football-simulation.html#simulate-possible-realities"><i class="fa fa-check"></i><b>7.2</b> Simulate possible realities</a></li>
-<li class="chapter" data-level="7.3" data-path="football-simulation.html"><a href="football-simulation.html#summary-5"><i class="fa fa-check"></i><b>7.3</b> Summary</a></li>
-<li class="chapter" data-level="7.4" data-path="football-simulation.html"><a href="football-simulation.html#references-5"><i class="fa fa-check"></i><b>7.4</b> References</a></li>
+<li class="chapter" data-level="7.3" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#summary-4"><i class="fa fa-check"></i><b>7.3</b> Summary</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="basketball-shots.html"><a href="basketball-shots.html"><i class="fa fa-check"></i><b>8</b> Basketball shots</a>
+<li class="chapter" data-level="8" data-path="football-simulation.html"><a href="football-simulation.html"><i class="fa fa-check"></i><b>8</b> Football simulation</a>
 <ul>
-<li class="chapter" data-level="8.1" data-path="basketball-shots.html"><a href="basketball-shots.html#modeling-the-probability-of-scoring"><i class="fa fa-check"></i><b>8.1</b> Modeling the probability of scoring</a></li>
-<li class="chapter" data-level="8.2" data-path="basketball-shots.html"><a href="basketball-shots.html#prior-predictive-checks-part-i"><i class="fa fa-check"></i><b>8.2</b> Prior Predictive Checks: Part I</a>
+<li class="chapter" data-level="8.1" data-path="football-simulation.html"><a href="football-simulation.html#creating-our-conjectures"><i class="fa fa-check"></i><b>8.1</b> Creating our conjectures</a>
 <ul>
-<li class="chapter" data-level="8.2.1" data-path="basketball-shots.html"><a href="basketball-shots.html#defining-our-model-and-computing-posteriors"><i class="fa fa-check"></i><b>8.2.1</b> Defining our model and computing posteriors</a></li>
+<li class="chapter" data-level="8.1.1" data-path="football-simulation.html"><a href="football-simulation.html#bayesian-hierarchical-models"><i class="fa fa-check"></i><b>8.1.1</b> Bayesian hierarchical models</a></li>
 </ul></li>
-<li class="chapter" data-level="8.3" data-path="basketball-shots.html"><a href="basketball-shots.html#new-model-and-prior-predictive-checks-part-ii"><i class="fa fa-check"></i><b>8.3</b> New model and prior predictive checks: Part II</a>
+<li class="chapter" data-level="8.2" data-path="football-simulation.html"><a href="football-simulation.html#simulate-possible-realities"><i class="fa fa-check"></i><b>8.2</b> Simulate possible realities</a></li>
+<li class="chapter" data-level="8.3" data-path="football-simulation.html"><a href="football-simulation.html#summary-5"><i class="fa fa-check"></i><b>8.3</b> Summary</a></li>
+<li class="chapter" data-level="8.4" data-path="football-simulation.html"><a href="football-simulation.html#references-4"><i class="fa fa-check"></i><b>8.4</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="basketball-shots.html"><a href="basketball-shots.html"><i class="fa fa-check"></i><b>9</b> Basketball shots</a>
 <ul>
-<li class="chapter" data-level="8.3.1" data-path="basketball-shots.html"><a href="basketball-shots.html#defining-the-new-model-and-computing-posteriors"><i class="fa fa-check"></i><b>8.3.1</b> Defining the new model and computing posteriors</a></li>
-</ul></li>
-<li class="chapter" data-level="8.4" data-path="basketball-shots.html"><a href="basketball-shots.html#does-the-period-affect-the-probability-of-scoring"><i class="fa fa-check"></i><b>8.4</b> Does the Period affect the probability of scoring?</a></li>
-<li class="chapter" data-level="8.5" data-path="basketball-shots.html"><a href="basketball-shots.html#summary-6"><i class="fa fa-check"></i><b>8.5</b> Summary</a></li>
-</ul></li>
-<li class="chapter" data-level="9" data-path="optimal-pricing.html"><a href="optimal-pricing.html"><i class="fa fa-check"></i><b>9</b> Optimal pricing</a>
+<li class="chapter" data-level="9.1" data-path="basketball-shots.html"><a href="basketball-shots.html#modeling-the-probability-of-scoring"><i class="fa fa-check"></i><b>9.1</b> Modeling the probability of scoring</a></li>
+<li class="chapter" data-level="9.2" data-path="basketball-shots.html"><a href="basketball-shots.html#prior-predictive-checks-part-i"><i class="fa fa-check"></i><b>9.2</b> Prior Predictive Checks: Part I</a>
 <ul>
-<li class="chapter" data-level="9.1" data-path="optimal-pricing.html"><a href="optimal-pricing.html#overview"><i class="fa fa-check"></i><b>9.1</b> Overview</a></li>
-<li class="chapter" data-level="9.2" data-path="optimal-pricing.html"><a href="optimal-pricing.html#optimal-pricing-1"><i class="fa fa-check"></i><b>9.2</b> Optimal pricing</a>
-<ul>
-<li class="chapter" data-level="9.2.1" data-path="optimal-pricing.html"><a href="optimal-pricing.html#price-vs-quantity-model"><i class="fa fa-check"></i><b>9.2.1</b> Price vs Quantity model</a></li>
-<li class="chapter" data-level="9.2.2" data-path="optimal-pricing.html"><a href="optimal-pricing.html#price-elasticity-of-demand"><i class="fa fa-check"></i><b>9.2.2</b> Price elasticity of demand</a></li>
+<li class="chapter" data-level="9.2.1" data-path="basketball-shots.html"><a href="basketball-shots.html#defining-our-model-and-computing-posteriors"><i class="fa fa-check"></i><b>9.2.1</b> Defining our model and computing posteriors</a></li>
 </ul></li>
-<li class="chapter" data-level="9.3" data-path="optimal-pricing.html"><a href="optimal-pricing.html#maximizing-profit"><i class="fa fa-check"></i><b>9.3</b> Maximizing profit</a></li>
-<li class="chapter" data-level="9.4" data-path="optimal-pricing.html"><a href="optimal-pricing.html#summary-7"><i class="fa fa-check"></i><b>9.4</b> Summary</a></li>
-<li class="chapter" data-level="9.5" data-path="optimal-pricing.html"><a href="optimal-pricing.html#references-6"><i class="fa fa-check"></i><b>9.5</b> References</a></li>
-</ul></li>
-<li class="chapter" data-level="10" data-path="image-classification.html"><a href="image-classification.html"><i class="fa fa-check"></i><b>10</b> Image classification</a>
+<li class="chapter" data-level="9.3" data-path="basketball-shots.html"><a href="basketball-shots.html#new-model-and-prior-predictive-checks-part-ii"><i class="fa fa-check"></i><b>9.3</b> New model and prior predictive checks: Part II</a>
 <ul>
-<li class="chapter" data-level="10.1" data-path="image-classification.html"><a href="image-classification.html#bee-population-control-what-would-happen-if-bees-go-extinct"><i class="fa fa-check"></i><b>10.1</b> Bee population control: What would happen if bees go extinct?</a></li>
-<li class="chapter" data-level="10.2" data-path="image-classification.html"><a href="image-classification.html#machine-learning-overview"><i class="fa fa-check"></i><b>10.2</b> Machine Learning Overview</a></li>
-<li class="chapter" data-level="10.3" data-path="image-classification.html"><a href="image-classification.html#neural-networks-and-convolutional-neural-networks"><i class="fa fa-check"></i><b>10.3</b> Neural networks and convolutional neural networks</a></li>
-<li class="chapter" data-level="10.4" data-path="image-classification.html"><a href="image-classification.html#summary-8"><i class="fa fa-check"></i><b>10.4</b> Summary</a></li>
-<li class="chapter" data-level="10.5" data-path="image-classification.html"><a href="image-classification.html#references-7"><i class="fa fa-check"></i><b>10.5</b> References</a></li>
+<li class="chapter" data-level="9.3.1" data-path="basketball-shots.html"><a href="basketball-shots.html#defining-the-new-model-and-computing-posteriors"><i class="fa fa-check"></i><b>9.3.1</b> Defining the new model and computing posteriors</a></li>
 </ul></li>
-<li class="chapter" data-level="11" data-path="ultima-online.html"><a href="ultima-online.html"><i class="fa fa-check"></i><b>11</b> Ultima online</a>
-<ul>
-<li class="chapter" data-level="11.1" data-path="ultima-online.html"><a href="ultima-online.html#the-ultima-online-catastrophe"><i class="fa fa-check"></i><b>11.1</b> The Ultima Online Catastrophe</a>
-<ul>
-<li class="chapter" data-level="11.1.1" data-path="ultima-online.html"><a href="ultima-online.html#the-lotka-volterra-model-for-population-dynamics"><i class="fa fa-check"></i><b>11.1.1</b> The Lotka-Volterra model for population dynamics</a></li>
+<li class="chapter" data-level="9.4" data-path="basketball-shots.html"><a href="basketball-shots.html#does-the-period-affect-the-probability-of-scoring"><i class="fa fa-check"></i><b>9.4</b> Does the Period affect the probability of scoring?</a></li>
+<li class="chapter" data-level="9.5" data-path="basketball-shots.html"><a href="basketball-shots.html#summary-6"><i class="fa fa-check"></i><b>9.5</b> Summary</a></li>
 </ul></li>
-<li class="chapter" data-level="11.2" data-path="ultima-online.html"><a href="ultima-online.html#summary-9"><i class="fa fa-check"></i><b>11.2</b> Summary</a></li>
-<li class="chapter" data-level="11.3" data-path="ultima-online.html"><a href="ultima-online.html#references-8"><i class="fa fa-check"></i><b>11.3</b> References</a></li>
-</ul></li>
-<li class="chapter" data-level="12" data-path="ultima-continued.html"><a href="ultima-continued.html"><i class="fa fa-check"></i><b>12</b> Ultima continued</a>
+<li class="chapter" data-level="10" data-path="optimal-pricing.html"><a href="optimal-pricing.html"><i class="fa fa-check"></i><b>10</b> Optimal pricing</a>
 <ul>
-<li class="chapter" data-level="12.1" data-path="ultima-continued.html"><a href="ultima-continued.html#the-language-of-science"><i class="fa fa-check"></i><b>12.1</b> The language of science</a></li>
-<li class="chapter" data-level="12.2" data-path="ultima-continued.html"><a href="ultima-continued.html#scientific-machine-learning-for-model-discovery"><i class="fa fa-check"></i><b>12.2</b> Scientific Machine Learning for model discovery</a>
+<li class="chapter" data-level="10.1" data-path="optimal-pricing.html"><a href="optimal-pricing.html#overview"><i class="fa fa-check"></i><b>10.1</b> Overview</a></li>
+<li class="chapter" data-level="10.2" data-path="optimal-pricing.html"><a href="optimal-pricing.html#optimal-pricing-1"><i class="fa fa-check"></i><b>10.2</b> Optimal pricing</a>
 <ul>
-<li class="chapter" data-level="12.2.1" data-path="ultima-continued.html"><a href="ultima-continued.html#looking-for-the-catastrophe-culprit"><i class="fa fa-check"></i><b>12.2.1</b> Looking for the catastrophe culprit</a></li>
-<li class="chapter" data-level="12.2.2" data-path="ultima-continued.html"><a href="ultima-continued.html#the-infamous-day-begins."><i class="fa fa-check"></i><b>12.2.2</b> The infamous day begins.</a></li>
+<li class="chapter" data-level="10.2.1" data-path="optimal-pricing.html"><a href="optimal-pricing.html#price-vs-quantity-model"><i class="fa fa-check"></i><b>10.2.1</b> Price vs Quantity model</a></li>
+<li class="chapter" data-level="10.2.2" data-path="optimal-pricing.html"><a href="optimal-pricing.html#price-elasticity-of-demand"><i class="fa fa-check"></i><b>10.2.2</b> Price elasticity of demand</a></li>
 </ul></li>
-<li class="chapter" data-level="12.3" data-path="ultima-continued.html"><a href="ultima-continued.html#summary-10"><i class="fa fa-check"></i><b>12.3</b> Summary</a></li>
-<li class="chapter" data-level="12.4" data-path="ultima-continued.html"><a href="ultima-continued.html#references-9"><i class="fa fa-check"></i><b>12.4</b> References</a></li>
+<li class="chapter" data-level="10.3" data-path="optimal-pricing.html"><a href="optimal-pricing.html#maximizing-profit"><i class="fa fa-check"></i><b>10.3</b> Maximizing profit</a></li>
+<li class="chapter" data-level="10.4" data-path="optimal-pricing.html"><a href="optimal-pricing.html#summary-7"><i class="fa fa-check"></i><b>10.4</b> Summary</a></li>
+<li class="chapter" data-level="10.5" data-path="optimal-pricing.html"><a href="optimal-pricing.html#references-5"><i class="fa fa-check"></i><b>10.5</b> References</a></li>
 </ul></li>
-<li class="chapter" data-level="13" data-path="time-series.html"><a href="time-series.html"><i class="fa fa-check"></i><b>13</b> Time series</a>
+<li class="chapter" data-level="11" data-path="image-classification.html"><a href="image-classification.html"><i class="fa fa-check"></i><b>11</b> Image classification</a>
 <ul>
-<li class="chapter" data-level="13.1" data-path="time-series.html"><a href="time-series.html#predicting-the-future"><i class="fa fa-check"></i><b>13.1</b> Predicting the future</a></li>
-<li class="chapter" data-level="13.2" data-path="time-series.html"><a href="time-series.html#exponential-smoothing"><i class="fa fa-check"></i><b>13.2</b> Exponential Smoothing</a>
-<ul>
-<li class="chapter" data-level="13.2.1" data-path="time-series.html"><a href="time-series.html#weighted-average-and-component-form"><i class="fa fa-check"></i><b>13.2.1</b> Weighted average and Component form</a></li>
-<li class="chapter" data-level="13.2.2" data-path="time-series.html"><a href="time-series.html#optimization-or-fitting-process"><i class="fa fa-check"></i><b>13.2.2</b> Optimization (or Fitting) Process</a></li>
-<li class="chapter" data-level="13.2.3" data-path="time-series.html"><a href="time-series.html#trend-methods"><i class="fa fa-check"></i><b>13.2.3</b> Trend Methods</a></li>
-<li class="chapter" data-level="13.2.4" data-path="time-series.html"><a href="time-series.html#seasonality-methods"><i class="fa fa-check"></i><b>13.2.4</b> Seasonality Methods</a></li>
+<li class="chapter" data-level="11.1" data-path="image-classification.html"><a href="image-classification.html#bee-population-control-what-would-happen-if-bees-go-extinct"><i class="fa fa-check"></i><b>11.1</b> Bee population control: What would happen if bees go extinct?</a></li>
+<li class="chapter" data-level="11.2" data-path="image-classification.html"><a href="image-classification.html#machine-learning-overview"><i class="fa fa-check"></i><b>11.2</b> Machine Learning Overview</a></li>
+<li class="chapter" data-level="11.3" data-path="image-classification.html"><a href="image-classification.html#neural-networks-and-convolutional-neural-networks"><i class="fa fa-check"></i><b>11.3</b> Neural networks and convolutional neural networks</a></li>
+<li class="chapter" data-level="11.4" data-path="image-classification.html"><a href="image-classification.html#summary-8"><i class="fa fa-check"></i><b>11.4</b> Summary</a></li>
+<li class="chapter" data-level="11.5" data-path="image-classification.html"><a href="image-classification.html#references-6"><i class="fa fa-check"></i><b>11.5</b> References</a></li>
 </ul></li>
-<li class="chapter" data-level="13.3" data-path="time-series.html"><a href="time-series.html#summary-11"><i class="fa fa-check"></i><b>13.3</b> Summary</a></li>
-<li class="chapter" data-level="13.4" data-path="time-series.html"><a href="time-series.html#references-10"><i class="fa fa-check"></i><b>13.4</b> References</a></li>
+<li class="chapter" data-level="12" data-path="ultima-online.html"><a href="ultima-online.html"><i class="fa fa-check"></i><b>12</b> Ultima online</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="ultima-online.html"><a href="ultima-online.html#the-ultima-online-catastrophe"><i class="fa fa-check"></i><b>12.1</b> The Ultima Online Catastrophe</a>
+<ul>
+<li class="chapter" data-level="12.1.1" data-path="ultima-online.html"><a href="ultima-online.html#the-lotka-volterra-model-for-population-dynamics"><i class="fa fa-check"></i><b>12.1.1</b> The Lotka-Volterra model for population dynamics</a></li>
+</ul></li>
+<li class="chapter" data-level="12.2" data-path="ultima-online.html"><a href="ultima-online.html#summary-9"><i class="fa fa-check"></i><b>12.2</b> Summary</a></li>
+<li class="chapter" data-level="12.3" data-path="ultima-online.html"><a href="ultima-online.html#references-7"><i class="fa fa-check"></i><b>12.3</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="ultima-continued.html"><a href="ultima-continued.html"><i class="fa fa-check"></i><b>13</b> Ultima continued</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="ultima-continued.html"><a href="ultima-continued.html#the-language-of-science"><i class="fa fa-check"></i><b>13.1</b> The language of science</a></li>
+<li class="chapter" data-level="13.2" data-path="ultima-continued.html"><a href="ultima-continued.html#scientific-machine-learning-for-model-discovery"><i class="fa fa-check"></i><b>13.2</b> Scientific Machine Learning for model discovery</a>
+<ul>
+<li class="chapter" data-level="13.2.1" data-path="ultima-continued.html"><a href="ultima-continued.html#looking-for-the-catastrophe-culprit"><i class="fa fa-check"></i><b>13.2.1</b> Looking for the catastrophe culprit</a></li>
+<li class="chapter" data-level="13.2.2" data-path="ultima-continued.html"><a href="ultima-continued.html#the-infamous-day-begins."><i class="fa fa-check"></i><b>13.2.2</b> The infamous day begins.</a></li>
+</ul></li>
+<li class="chapter" data-level="13.3" data-path="ultima-continued.html"><a href="ultima-continued.html#summary-10"><i class="fa fa-check"></i><b>13.3</b> Summary</a></li>
+<li class="chapter" data-level="13.4" data-path="ultima-continued.html"><a href="ultima-continued.html#references-8"><i class="fa fa-check"></i><b>13.4</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="time-series.html"><a href="time-series.html"><i class="fa fa-check"></i><b>14</b> Time series</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="time-series.html"><a href="time-series.html#predicting-the-future"><i class="fa fa-check"></i><b>14.1</b> Predicting the future</a></li>
+<li class="chapter" data-level="14.2" data-path="time-series.html"><a href="time-series.html#exponential-smoothing"><i class="fa fa-check"></i><b>14.2</b> Exponential Smoothing</a>
+<ul>
+<li class="chapter" data-level="14.2.1" data-path="time-series.html"><a href="time-series.html#weighted-average-and-component-form"><i class="fa fa-check"></i><b>14.2.1</b> Weighted average and Component form</a></li>
+<li class="chapter" data-level="14.2.2" data-path="time-series.html"><a href="time-series.html#optimization-or-fitting-process"><i class="fa fa-check"></i><b>14.2.2</b> Optimization (or Fitting) Process</a></li>
+<li class="chapter" data-level="14.2.3" data-path="time-series.html"><a href="time-series.html#trend-methods"><i class="fa fa-check"></i><b>14.2.3</b> Trend Methods</a></li>
+<li class="chapter" data-level="14.2.4" data-path="time-series.html"><a href="time-series.html#seasonality-methods"><i class="fa fa-check"></i><b>14.2.4</b> Seasonality Methods</a></li>
+</ul></li>
+<li class="chapter" data-level="14.3" data-path="time-series.html"><a href="time-series.html#summary-11"><i class="fa fa-check"></i><b>14.3</b> Summary</a></li>
+<li class="chapter" data-level="14.4" data-path="time-series.html"><a href="time-series.html#references-9"><i class="fa fa-check"></i><b>14.4</b> References</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers" target="blank">Published with bookdown</a></li>
@@ -302,37 +309,50 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">Chapter 4</span> Spam filter<a href="spam-filter.html#spam-filter" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="naive-bayes-spam-or-ham" class="section level2 hasAnchor" number="4.1">
 <h2><span class="header-section-number">4.1</span> Naive Bayes: Spam or Ham?<a href="spam-filter.html#naive-bayes-spam-or-ham" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb1-1"><a href="spam-filter.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cd</span>(<span class="st">&quot;./04_naive_bayes/&quot;</span>) </span>
-<span id="cb1-2"><a href="spam-filter.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> <span class="bu">Pkg</span></span>
-<span id="cb1-3"><a href="spam-filter.html#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="bu">Pkg</span>.<span class="fu">activate</span>(<span class="st">&quot;.&quot;</span>)</span>
-<span id="cb1-4"><a href="spam-filter.html#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="spam-filter.html#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="cf">begin</span></span>
-<span id="cb1-6"><a href="spam-filter.html#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="im">using</span> <span class="bu">Markdown</span></span>
-<span id="cb1-7"><a href="spam-filter.html#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="im">using</span> <span class="bu">InteractiveUtils</span></span>
-<span id="cb1-8"><a href="spam-filter.html#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="im">using</span> <span class="bu">CSV</span></span>
-<span id="cb1-9"><a href="spam-filter.html#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="im">using</span> <span class="bu">DataFrames</span></span>
-<span id="cb1-10"><a href="spam-filter.html#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="im">using</span> <span class="bu">Distributions</span></span>
-<span id="cb1-11"><a href="spam-filter.html#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="im">using</span> <span class="bu">TextAnalysis</span></span>
-<span id="cb1-12"><a href="spam-filter.html#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="im">using</span> <span class="bu">Languages</span></span>
-<span id="cb1-13"><a href="spam-filter.html#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="im">using</span> <span class="bu">MLDataUtils</span></span>
-<span id="cb1-14"><a href="spam-filter.html#cb1-14" aria-hidden="true" tabindex="-1"></a>    <span class="im">using</span> <span class="bu">Plots</span></span>
-<span id="cb1-15"><a href="spam-filter.html#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="im">using</span> <span class="bu">Images</span></span>
-<span id="cb1-16"><a href="spam-filter.html#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
-<p>Nobody likes spam emails. How can Bayes help us with this? In this chapter, we will introduce a simple yet effective way of using Bayesian probability to create a spam filter for emails based on their content.</p>
-<p>The term <em>spam</em> has its origins in the 1970s, in a sketch from the British comedy troupe Monty Python (who also inspired the name of the Python programming language). In this sketch from the <em>Monty Python’s Flying Circus</em> series, a customer wants to order food at a restaurant, and as the waitress begins to loudly recite the menu, the word <em>spam</em> starts to appear with increasing frequency, to the point of absurdity, until all meaning is lost and the waitress is just shouting <em>spam, spam, spam</em>… which is how our email inbox often feels like.</p>
-<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_4_plot_1-J1.png" /><!-- --></p>
+<p>Nobody likes spam emails. How can Bayes help? In this chapter, we’ll
+introduce a simple yet effective way of using Bayesian probability to
+create a spam filter. The filter will examine emails and classify them
+as either spam or ham (the word for non-spam emails) based on their
+content.</p>
+<p>The term spam has its origins in the 1970s, in a sketch from the British
+comedy troupe Monty Python (who also inspired the name of the Python
+programming language). In this sketch from the series <em>Monty Python’s
+Flying Circus</em>, a customer wants to order food at a restaurant, but as
+the waitress begins to loudly recite the menu, the word <em>spam</em> starts to
+appear with increasing frequency, to the point of absurdity. Eventually
+all meaning is lost, and the waitress is just shouting <em>spam, spam,
+spam</em> . . . which is often what an email inbox feels like.</p>
 </div>
-<div id="and-now-for-something-completely-different-building-a-spam-filter-using-naive-bayes" class="section level2 hasAnchor" number="4.2">
-<h2><span class="header-section-number">4.2</span> And now for something completely different! Building a spam filter using naive Bayes<a href="spam-filter.html#and-now-for-something-completely-different-building-a-spam-filter-using-naive-bayes" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>We want to design a spam filter for users of an email service. This filter will receive an email and classify it as spam or <em>ham</em> (that’s the word for no-spam emails!). For the Bayesian filter to work correctly, we need to feed it with some good training data. How does good training data look like? In this context, it means having a large enough corpus of emails that have been pre-classified as spam or ham, where the emails are collected from a sufficiently heterogeneous group of people (after all, spam is a somewhat subjective category based on what’s irrelevant to you– this will differ between users), and that the proportion of spam vs. ham in our data is somewhat representative of the real proportion of mails we receive.</p>
-<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_4_plot_2%20-J1.png" /><!-- --></p>
-<p>Fortunately, there are a lot of very good datasets available online. We will be using the “Email Spam Classification Dataset CSV” from <a href="https://www.kaggle.com/balaka18/email-spam-classification-dataset-csv">Kaggle</a>, a website where data science enthusiasts and practitioners publish datasets, participate in competitions and share their knowledge.</p>
-<p>The dataset’s description included in the website will help us make sense of its contents:</p>
+<div id="the-training-data" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> The Training Data<a href="spam-filter.html#the-training-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>For the Bayesian spam filter to work correctly, we need to feed it some
+good training data. In this context, that means having a large enough
+corpus of emails that have been pre-classified as spam or ham. The
+emails should be collected from a sufficiently heterogeneous group of
+people. After all, spam is a somewhat subjective category: one person’s
+spam may be another person’s ham. The proportion of spam vs. ham in our
+data should also be somewhat representative of the real proportion of
+emails we receive.</p>
+<p>Fortunately, there are a lot of very good datasets available online.
+We’ll use the “Email Spam Classification Dataset CSV” from
+<a href="https://www.kaggle.com/balaka18/email-spam-classification-dataset-csv">Kaggle</a>
+a website where data science enthusiasts and practitioners publish
+datasets, participate in competitions, and share their knowledge. The
+dataset’s description included online helps us make sense of its
+contents:</p>
 <blockquote>
-<p>“The csv file contains 5172 rows, one row for each email. There are 3002 columns. The first column indicates Email name. The name has been set with numbers and not recipients’ name to protect privacy. The last column has the labels for prediction: for spam, for not spam. The remaining 3000 columns are the 3000 most common words in all the emails, after excluding the non-alphabetical characters/words. For each row, the count of each word(column) in that email(row) is stored in the respective cells. Thus, information regarding all 5172 emails are stored in a compact dataframe rather than as separate text files.”</p>
+<p>The .csv file contains 5,172 rows, one row for each email. There are
+3,002 columns. The first column indicates Email name. The name has
+been set with numbers and not recipients’ name to protect privacy. The
+last column has the labels for prediction: for spam,
+for not spam. The remaining 3,000 columns are the 3,000
+most common words in all the emails, after excluding the
+non-alphabetical characters/words. For each row, the count of each
+word(column) in that email(row) is stored in the respective cells.</p>
 </blockquote>
-<p>Let’s give it a look:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb2-1"><a href="spam-filter.html#cb2-1" aria-hidden="true" tabindex="-1"></a>raw_df <span class="op">=</span> CSV.<span class="fu">File</span>(<span class="st">&quot;./04_naive_bayes/data/emails.csv&quot;</span>) <span class="op">|&gt;</span> DataFrame</span></code></pre></div>
+<p>Let’s take a look at the data. The following code snippet outputs a view
+of the first and last rows of the dataset.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb1-1"><a href="spam-filter.html#cb1-1" aria-hidden="true" tabindex="-1"></a>raw_df <span class="op">=</span> CSV.<span class="fu">File</span>(<span class="st">&quot;./04_naive_bayes/data/emails.csv&quot;</span>) <span class="op">|&gt;</span> DataFrame </span></code></pre></div>
 <pre><code>## 5172×3002 DataFrame
 ##   Row │ Email No.   the    to     ect    and    for    of     a      you    ho ⋯
 ##       │ String15    Int64  Int64  Int64  Int64  Int64  Int64  Int64  Int64  In ⋯
@@ -354,226 +374,279 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##  5171 │ Email 5171      2      7      1      0      2      1     28      2
 ##  5172 │ Email 5172     22     24      5      1      6      5    148      8
 ##                                               2993 columns and 5157 rows omitted</code></pre>
-<p>As we mentioned, what we are facing here is a <em>classification</em> problem, and we will code from scratch and use a <em>supervised learning</em> algorithm to find a solution with the help of Bayes’ theorem. In particular, we will be using <em>naive Bayes</em>. What we are going to do is to treat each email just as a collection of words, with no regard for the order in which they appear on the email. This means that semantic considerations like the particular relationship between words and their context will not be taken into account here. Our strategy will be to estimate a probability of an incoming email of being ham or spam and make a decision based on that. Our general approach can be summarized as:</p>
+<p>As you can see, the output informs the amount of rows and columns and
+the type of each column and allows us to see a sample of the data.</p>
+</div>
+<div id="preprocessing-the-data" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Preprocessing the Data<a href="spam-filter.html#preprocessing-the-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Before we use the data to train our filter, we need to preprocess it a
+little bit. First, we should filter out very common words, such as
+articles and pronouns, which will most likely add noise rather than
+information to our classification algorithm.</p>
+<pre><code>    all_words = names(raw_df)[2:end-1];
+    all_words_text = StringDocument(join(all_words, &quot; &quot;))
+    prepare!(all_words_text, strip_articles)
+    prepare!(all_words_text, strip_pronouns)
+    vocabulary = filter(x -&gt; x != &quot;&quot;, split(TextAnalysis.text(all_words_text)))
+    clean_words_df = raw_df[!, vocabulary]
+    # the columns of this matrix will be each email now
+    data_matrix = Matrix(clean_words_df)&#39;
+end</code></pre>
+<p>To filter out common words, we use two Julia packages specially designed
+for working with texts of any type: Languages.jl and TextAnalysis.jl.</p>
+<p>Next, we need to divide the data in two: a training set and a testing
+set. This is standard practice when working with models that learn from
+data, like the one we’re going to implement. We train the model with the
+training set, then evaluate the model’s accuracy by having it make
+predictions on the testing set. In Julia, the package MLDataUtils.jl has
+some nice functionalities for data manipulations like this.</p>
+<pre><code>begin
+    labels = raw_df.Prediction
+    (x_train, y_train), (x_test, y_test) = splitobs(shuffleobs((data_matrix, labels)), at = 0.7)
+end</code></pre>
+<p>The function <code>splitobs</code> splits our dataset into a training set and a
+testing set, and <code>shuffleobs</code> randomizes the order of the data in the
+split. We pass a <code>labels</code> array to our split function so it knows how to
+properly split the dataset. Now we can turn our attention to building
+the spam filter.</p>
+</div>
+<div id="the-naive-bayes-approach" class="section level2 hasAnchor" number="4.4">
+<h2><span class="header-section-number">4.4</span> The Naive Bayes Approach<a href="spam-filter.html#the-naive-bayes-approach" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>As we mentioned, what we are facing here is a <em>classification</em> problem,
+and we will code from scratch and use a <em>supervised learning</em> algorithm
+to find a solution with the help of Bayes’ theorem. We’re going to use a
+<em>naive Bayes</em> classifier to create our spam filter. We’re going to use a
+classifier to create our spam filter. This method is
+going to treat each email just as a collection of words, with no regard
+for the order in which they appear. This means we won’t take into
+account semantic considerations like the particular relationship between
+words and their context.</p>
+<p>Our strategy will be to estimate a probability of an incoming email
+being ham or spam and make a decision based on that. Our general
+approach can be summarized as:</p>
 <p><span class="math inline">\(P(spam|email) \propto P(email|spam)P(spam)\)</span></p>
 <p><span class="math inline">\(P(ham|email) \propto P(email|ham)P(ham)\)</span></p>
-<p>Notice we use the <span class="math inline">\(\propto\)</span> sign instead of the <span class="math inline">\(=\)</span> sign because the denominator from Bayes’ theorem is missing. In this case, we won’t need to calculate it as it is the same for both probabilities and all we are going to care about is a comparison of these two probabilities.</p>
-<p>So what do <span class="math inline">\(P(email|spam)\)</span> and <span class="math inline">\(P(email|ham)\)</span> mean and how do we calculate them? To answer this question, we need to remember that we are interpreting each email just as a collection of words, with no regard for their order within the text. In this naive approach, the semantics are not taken into account. In this scope, the conditional probability <span class="math inline">\(P(email|spam)\)</span> just means the probability that a given email can be generated with the collection of words that appear in the spam category of our data. If this still sounds a bit confusing, let’s make a quick example. Imagine for a moment that our training set of emails consists just of these three emails, all labeled as spam:</p>
+<p>Notice we use the <span class="math inline">\(\propto\)</span> sign, meaning <em>proportional to</em>, instead of
+the = sign because the denominator from Bayes’s theorem is missing. In
+this case, we won’t need to calculate it, as it’s the same for both
+probabilities and all we’re going to care about is a comparison of these
+two probabilities.</p>
+<p>In this naive approach, where semantics aren’t taken into account and
+each email is just a collection of words, the conditional probability
+<span class="math inline">\(P(email|spam)\)</span> means the probability that a given email can be
+generated with the collection of words that appear in the spam category
+of our data. Let’s take a quick example. Imagine for a moment that our
+training set of emails consists just of these three emails, all labeled
+as spam:</p>
 <ul>
-<li><p>‘Are you interested in buying my product?’</p></li>
-<li><p>‘Congratulations! you’ve won $1000!’</p></li>
-<li><p>‘Check out this product!’</p></li>
+<li>Email 1: ‘Are you interested in buying my product?’</li>
+<li>Email 2: ‘Congratulations! You’ve won $1000!’</li>
+<li>Email 3: ‘Check out this product!’</li>
 </ul>
-<p>And also imagine we receive a new, unclassified email and we want to discover <span class="math inline">\(P(email|spam)\)</span>. This new email looks like this:</p>
+<p>Also imagine we receive a new, unclassified email and we want to
+discover <span class="math inline">\(P(email|spam)\)</span>. The new email looks like this:</p>
 <ul>
-<li>‘Apply and win all these products!’</li>
+<li>New email: ‘Apply and win all these products!’</li>
 </ul>
-<p>As we already said, <span class="math inline">\(P(email|spam)\)</span> stands for the probability of the new email being generated by the words we encountered in our training spam email set. Notice that our data contains both ‘win’ and its past tense ‘won’. We want to treat these as the same, since it’s the same verb. “Product” and “products” are also variants of the same substantive. To detect, we would use a standard technique in linguistics called <em>Lemmatisation</em>.</p>
-<p>Both “win” and “product” So we will expect <span class="math inline">\(P(email|spam)\)</span> to be relatively high in this simple example, as it contains words that are present in the our spam training data.</p>
-<p>As we already said, <span class="math inline">\(P(email|spam)\)</span> stands for the plausibility of the new email being generated by the words we encountered in our training spam email set. We can see that words like ‘win’ –which in our training set appears in the form of ‘won’, but there is a standard technique in linguistics named <em>Lemmatization</em>, which groups together inflected forms of a word, letting us consider ‘win’ and ‘won’ as the same word– and ‘product’ appear rather commonly in our training data. So we will expect <span class="math inline">\(P(email|spam)\)</span> to be relatively high in this fake and simple example, as it contains words that are repeated among our spam emails data.</p>
-<p>Let’s make all this discussion a bit more explicitly mathematical. The simplest way to write this in a mathematical way is to take each word in our target email and calculate the probability of it appearing in spam emails and ham emails based on our training set. Then, we do this for each word in the email and finally multiply them.</p>
+<p>The new email contains the words <em>win</em> and <em>product</em>, which are rather
+common in our example’s training data. We would therefore expect
+<span class="math inline">\(P(email|spam)\)</span>, the probability of the new email being generated by the
+words encountered in the training spam email set, to be relatively high.</p>
+<p>(The word \emph{win} appears in the form \emph{won} in the training
+set, but that’s OK. The standard linguistic technique of
+\emph{lemmatization} groups together any related forms of a word and
+treats them as the same word.)</p>
+<p>Mathematically, the way to calculate <span class="math inline">\(P(email|spam)\)</span> is to take each
+word in our target email, calculate the probability of it appearing in
+spam emails based on our training set, and multiply those probabilties
+together.</p>
 <p><span class="math inline">\(P(email|spam) = \prod_{i=1}^{n}P(word_i|spam)\)</span></p>
+<p>We use a similar calculation to determine <span class="math inline">\(P(email|ham)\)</span>, the
+probability of the new email being generated by the words encountered in
+the training ham email set:</p>
 <p><span class="math inline">\(P(email|ham) = \prod_{i=1}^{n}P(word_i|ham)\)</span></p>
-<p>The multiplication of each of the probabilities associated to particular words here stems from the assumption that all the words in the email are statistically independent. We have to stress that this is not necessarily true, and most likely false. Words in a language are never independent from one another, but this simple assumption seems to be enough for the level of complexity our problem requires.</p>
-<p>Let’s start building a solution for our problem and we’ll discuss the details later.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb4-1"><a href="spam-filter.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># preprocessing of the data</span></span>
-<span id="cb4-2"><a href="spam-filter.html#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="cf">begin</span></span>
-<span id="cb4-3"><a href="spam-filter.html#cb4-3" aria-hidden="true" tabindex="-1"></a>    all_words <span class="op">=</span> <span class="fu">names</span>(raw_df)[<span class="fl">2</span><span class="op">:</span><span class="kw">end</span><span class="op">-</span><span class="fl">1</span>];</span>
-<span id="cb4-4"><a href="spam-filter.html#cb4-4" aria-hidden="true" tabindex="-1"></a>    all_words_text <span class="op">=</span> <span class="fu">StringDocument</span>(<span class="fu">join</span>(all_words, <span class="st">&quot; &quot;</span>))</span>
-<span id="cb4-5"><a href="spam-filter.html#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">prepare!</span>(all_words_text, strip_articles)</span>
-<span id="cb4-6"><a href="spam-filter.html#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">prepare!</span>(all_words_text, strip_pronouns)</span>
-<span id="cb4-7"><a href="spam-filter.html#cb4-7" aria-hidden="true" tabindex="-1"></a>    vocabulary <span class="op">=</span> <span class="fu">filter</span>(x <span class="op">-&gt;</span> x <span class="op">!=</span> <span class="st">&quot;&quot;</span>, <span class="fu">split</span>(TextAnalysis.<span class="fu">text</span>(all_words_text)))</span>
-<span id="cb4-8"><a href="spam-filter.html#cb4-8" aria-hidden="true" tabindex="-1"></a>    clean_words_df <span class="op">=</span> raw_df[!, vocabulary]</span>
-<span id="cb4-9"><a href="spam-filter.html#cb4-9" aria-hidden="true" tabindex="-1"></a>    <span class="co"># the columns of this matrix will be each mail now</span></span>
-<span id="cb4-10"><a href="spam-filter.html#cb4-10" aria-hidden="true" tabindex="-1"></a>    data_matrix <span class="op">=</span> <span class="fu">Matrix</span>(clean_words_df)<span class="ch">&#39;</span></span>
-<span id="cb4-11"><a href="spam-filter.html#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span>;</span></code></pre></div>
-<p>First, we would like to filter out some words that are very common in the English language, such as articles and pronouns, which will most likely add noise rather than information to our classification algorithm. For this we will use two Julia packages that are specially designed for working with texts of any type. These are <code>Languages.jl</code> and <code>TextAnalysis.jl</code>. A standard practice when dealing with models that learn from data, like the one we are going to implement, is to divide our data in two: a training set and a testing set. We need to measure how well our model is performing, so we will train it with some data, and test by having it make predictions on another set of data the model has never seen, then measuring how accurate this predictions were. In Julia, the package MLDataUtils has some nice functionalities for data manipulations like this. We will use the functions <code>splitobs</code> to split our dataset in a train set and a test set and <code>shuffleobs</code> to randomize the order of our data in the split. It is important also to pass a labels array to our split function so that it knows how to properly split our dataset.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb5-1"><a href="spam-filter.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="cf">begin</span></span>
-<span id="cb5-2"><a href="spam-filter.html#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># splitting of the data in a train and test set</span></span>
-<span id="cb5-3"><a href="spam-filter.html#cb5-3" aria-hidden="true" tabindex="-1"></a>    labels <span class="op">=</span> raw_df.Prediction</span>
-<span id="cb5-4"><a href="spam-filter.html#cb5-4" aria-hidden="true" tabindex="-1"></a>    (x_train, y_train), (x_test, y_test) <span class="op">=</span> <span class="fu">splitobs</span>(<span class="fu">shuffleobs</span>((data_matrix, labels)), at <span class="op">=</span> <span class="fl">0.7</span>)</span>
-<span id="cb5-5"><a href="spam-filter.html#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span>;</span></code></pre></div>
-<p>Now that we have our data clean and split for training and testing, let’s return to the details of the calculations. The probability of a given word being in a given category can be calculated like so:</p>
-<p><span class="math inline">\(P(word_i|spam) = \frac{N_{word_i|spam} + \alpha}{N_{spam} + \alpha N_{vocabulary}}\)</span></p>
-<p><span class="math inline">\(P(word_i|ham) = \frac{N_{word_i|ham} + \alpha}{N_{ham} + \alpha N_{vocabulary}}\)</span></p>
-<p>With these formulas in mind, we now know exactly what we have to calculate from our data. We are going to need the numbers <span class="math inline">\(N_{word_i|spam}\)</span> and <span class="math inline">\(N_{word_i|ham}\)</span> for each word, that is, the number of times that a given word <span class="math inline">\(w_i\)</span> is used in the spam and ham categories, respectively. Then <span class="math inline">\(N_{spam}\)</span> and <span class="math inline">\(N_{ham}\)</span> are the total number of times that words are used in the spam and ham categories (considering all the word repetitions too), and finally, <span class="math inline">\(N_{vocabulary}\)</span> is the total number of unique words in the dataset.</p>
-<p><span class="math inline">\(α\)</span> is a smoothing parameter, it’s purpose is to prevent probability of a given word of being in a given category from going down to zero. That is, if a given word hasn’t appeared in the spam category in our training dataset, we don’t want to assign it zero probability of appearing in new spam emails.</p>
-<p>As all of this information will be specific to our dataset, a clever way to aggregate it is to use a Julia <code>struct</code>, and we can define the attributes of the <code>struct</code> that we will be using over and over for the prediction. Below we can see the implementation. The relevant attributes of the <code>struct</code> will be <code>words_count_ham</code> and <code>words_count_spam</code>, two dictionaries containing the frequency of appearance of each word in the ham and spam datasets, <code>N_ham</code> and <code>N_spam</code> the total number of words appearing in each category, and finally <code>vocabulary</code>, an array of all the unique words in our dataset.</p>
-<p>The line <code>BayesSpamFilter() = new()</code> is the constructor of this struct. When we instantiate the filter, all the attributes will be undefined and we will have to define some functions to fill these variables with values that are relevant to our particular problem.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb6-1"><a href="spam-filter.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">mutable struct</span> BayesSpamFilter</span>
-<span id="cb6-2"><a href="spam-filter.html#cb6-2" aria-hidden="true" tabindex="-1"></a>    words_count_ham<span class="op">::</span><span class="dt">Dict{String, Int64}</span></span>
-<span id="cb6-3"><a href="spam-filter.html#cb6-3" aria-hidden="true" tabindex="-1"></a>    words_count_spam<span class="op">::</span><span class="dt">Dict{String, Int64}</span></span>
-<span id="cb6-4"><a href="spam-filter.html#cb6-4" aria-hidden="true" tabindex="-1"></a>    N_ham<span class="op">::</span><span class="dt">Int64</span></span>
-<span id="cb6-5"><a href="spam-filter.html#cb6-5" aria-hidden="true" tabindex="-1"></a>    N_spam<span class="op">::</span><span class="dt">Int64</span></span>
-<span id="cb6-6"><a href="spam-filter.html#cb6-6" aria-hidden="true" tabindex="-1"></a>    vocabulary<span class="op">::</span><span class="dt">Array{String}</span></span>
-<span id="cb6-7"><a href="spam-filter.html#cb6-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">BayesSpamFilter</span>() <span class="op">=</span> <span class="fu">new</span>()</span>
-<span id="cb6-8"><a href="spam-filter.html#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
-<p>Now we are going to proceed to define some functions that will be important for our filter implementation. The function <code>word_count</code> below will allow us to count the occurrences of each word in the ham and spam categories.</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb7-1"><a href="spam-filter.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">words_count</span>(word_data, vocabulary, labels, spam<span class="op">=</span><span class="fl">0</span>)</span>
-<span id="cb7-2"><a href="spam-filter.html#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># word_data is a matrix where each column is an email and each row is a word</span></span>
-<span id="cb7-3"><a href="spam-filter.html#cb7-3" aria-hidden="true" tabindex="-1"></a>    count_dict <span class="op">=</span> <span class="fu">Dict</span><span class="dt">{String, Int64}</span>()</span>
-<span id="cb7-4"><a href="spam-filter.html#cb7-4" aria-hidden="true" tabindex="-1"></a>    n_emails <span class="op">=</span> <span class="fu">size</span>(word_data)[<span class="fl">2</span>]</span>
-<span id="cb7-5"><a href="spam-filter.html#cb7-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> (i, word) <span class="kw">in</span> <span class="fu">enumerate</span>(vocabulary)</span>
-<span id="cb7-6"><a href="spam-filter.html#cb7-6" aria-hidden="true" tabindex="-1"></a>        count_dict[word] <span class="op">=</span> <span class="fu">sum</span>([word_data[i,j] for j <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>n_emails if labels[j]<span class="op">==</span>spam])</span>
-<span id="cb7-7"><a href="spam-filter.html#cb7-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">end</span></span>
-<span id="cb7-8"><a href="spam-filter.html#cb7-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> count_dict</span>
-<span id="cb7-9"><a href="spam-filter.html#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
-<pre><code>## words_count (generic function with 2 methods)</code></pre>
-<p>Next, we will define the <code>fit!</code> function for our spam filter struct. We are using the <em>bang</em> (<code>!</code>) convention for functions that modify in-place their arguments, in this case, the spam filter struct itself. This will be the function that will fit our model to the data, a typical procedure in Data Science and Machine Learning areas. This fit function will use mainly the <em>words_count</em> function defined before to fill all the undefined parameters in the filter’s struct.</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb9-1"><a href="spam-filter.html#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">fit!</span>(model<span class="op">::</span><span class="dt">BayesSpamFilter</span>, x_train, y_train, voc)</span>
-<span id="cb9-2"><a href="spam-filter.html#cb9-2" aria-hidden="true" tabindex="-1"></a>    model.vocabulary <span class="op">=</span> voc</span>
-<span id="cb9-3"><a href="spam-filter.html#cb9-3" aria-hidden="true" tabindex="-1"></a>    model.words_count_ham <span class="op">=</span> <span class="fu">words_count</span>(x_train, model.vocabulary, y_train, <span class="fl">0</span>)</span>
-<span id="cb9-4"><a href="spam-filter.html#cb9-4" aria-hidden="true" tabindex="-1"></a>    model.words_count_spam <span class="op">=</span> <span class="fu">words_count</span>(x_train, model.vocabulary, y_train, <span class="fl">1</span>)</span>
-<span id="cb9-5"><a href="spam-filter.html#cb9-5" aria-hidden="true" tabindex="-1"></a>    model.N_ham <span class="op">=</span> <span class="fu">sum</span>(<span class="fu">values</span>(model.words_count_ham))</span>
-<span id="cb9-6"><a href="spam-filter.html#cb9-6" aria-hidden="true" tabindex="-1"></a>    model.N_spam <span class="op">=</span> <span class="fu">sum</span>(<span class="fu">values</span>(model.words_count_spam))</span>
-<span id="cb9-7"><a href="spam-filter.html#cb9-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span></span>
-<span id="cb9-8"><a href="spam-filter.html#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
-<pre><code>## fit! (generic function with 1 method)</code></pre>
-<p>Now it is time to instantiate our spam filter and fit the model to the training data. After this is done, we will measure how well the model is working by making it do predictions on our test data.</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb11-1"><a href="spam-filter.html#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="cf">begin</span></span>
-<span id="cb11-2"><a href="spam-filter.html#cb11-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># here we instantiate the Bayes filter and then we fit it to our data</span></span>
-<span id="cb11-3"><a href="spam-filter.html#cb11-3" aria-hidden="true" tabindex="-1"></a>    spam_filter <span class="op">=</span> <span class="fu">BayesSpamFilter</span>()</span>
-<span id="cb11-4"><a href="spam-filter.html#cb11-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">fit!</span>(spam_filter, x_train, y_train, vocabulary)</span>
-<span id="cb11-5"><a href="spam-filter.html#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
-<p>We are now almost ready to have our model make some predictions and assess its performance. The function below is just the implementation of the <code>TAL</code> formula that we discussed earlier. It will be used internally by the next function we defined, <code>spam_predict</code>, which will receive a new email –the one we would want to classify as spam or ham–, our fitted model, and two parameters, <span class="math inline">\(α\)</span> which we have already discussed in the formula for <span class="math inline">\(P(word_i|spam)\)</span> and <span class="math inline">\(P(word_i|ham)\)</span>, and <code>tol</code>. We saw that the calculation for <span class="math inline">\(P(email|spam)\)</span> and <span class="math inline">\(P(email|ham)\)</span> required the multiplication of each <span class="math inline">\(P(word_i|spam)\)</span> and <span class="math inline">\(P(word_i|ham)\)</span> term. When emails consist of a large number of words, this multiplication may lead to very small probabilities, up to the point that the computer interprets those probabilities as zero. This is not desirable, as we need values of <span class="math inline">\(P(email|spam)\)</span> and <span class="math inline">\(P(email|ham)\)</span> that are larger than zero in order to multiply them by <span class="math inline">\(P(spam)\)</span> and <span class="math inline">\(P(ham)\)</span> respectively and compare these values to make a prediction. The parameter <code>tol</code> is the maximum tolerance for the number of unique words in an email. If this number is greater than the parameter <code>tol</code>, only the most frequent words will be considered and the rest will be neglected. How many of these most frequent words? the first ‘tol’ most frequent words!</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb12-1"><a href="spam-filter.html#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">word_spam_probability</span>(word, words_count_ham, words_count_spam, N_ham,</span>
-<span id="cb12-2"><a href="spam-filter.html#cb12-2" aria-hidden="true" tabindex="-1"></a>        N_spam, n_vocabulary, α)</span>
-<span id="cb12-3"><a href="spam-filter.html#cb12-3" aria-hidden="true" tabindex="-1"></a>    ham_prob <span class="op">=</span> (words_count_ham[word] <span class="op">+</span> α)<span class="op">/</span>(N_ham <span class="op">+</span> <span class="fu">α*</span>(n_vocabulary))</span>
-<span id="cb12-4"><a href="spam-filter.html#cb12-4" aria-hidden="true" tabindex="-1"></a>    spam_prob <span class="op">=</span> (words_count_spam[word] <span class="op">+</span> α)<span class="op">/</span>(N_spam <span class="op">+</span> <span class="fu">α*</span>(n_vocabulary))</span>
-<span id="cb12-5"><a href="spam-filter.html#cb12-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> ham_prob, spam_prob</span>
-<span id="cb12-6"><a href="spam-filter.html#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
-<pre><code>## word_spam_probability (generic function with 1 method)</code></pre>
-<div class="sourceCode" id="cb14"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb14-1"><a href="spam-filter.html#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">spam_predict</span>(email, model<span class="op">::</span><span class="dt">BayesSpamFilter</span>, α, tol<span class="op">=</span><span class="fl">100</span>)</span>
-<span id="cb14-2"><a href="spam-filter.html#cb14-2" aria-hidden="true" tabindex="-1"></a>    ngrams_email <span class="op">=</span> <span class="fu">ngrams</span>(<span class="fu">StringDocument</span>(email))</span>
-<span id="cb14-3"><a href="spam-filter.html#cb14-3" aria-hidden="true" tabindex="-1"></a>    email_words <span class="op">=</span> <span class="fu">keys</span>(ngrams_email)</span>
-<span id="cb14-4"><a href="spam-filter.html#cb14-4" aria-hidden="true" tabindex="-1"></a>    n_vocabulary <span class="op">=</span> <span class="fu">length</span>(model.vocabulary)</span>
-<span id="cb14-5"><a href="spam-filter.html#cb14-5" aria-hidden="true" tabindex="-1"></a>    ham_prior <span class="op">=</span> model.N_ham<span class="op">/</span>(model.N_ham <span class="op">+</span> model.N_spam)</span>
-<span id="cb14-6"><a href="spam-filter.html#cb14-6" aria-hidden="true" tabindex="-1"></a>    spam_prior <span class="op">=</span> model.N_spam<span class="op">/</span>(model.N_ham <span class="op">+</span> model.N_spam)</span>
-<span id="cb14-7"><a href="spam-filter.html#cb14-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="fu">length</span>(email_words) <span class="op">&gt;</span> tol</span>
-<span id="cb14-8"><a href="spam-filter.html#cb14-8" aria-hidden="true" tabindex="-1"></a>        word_freq <span class="op">=</span> <span class="fu">values</span>(ngrams_email)</span>
-<span id="cb14-9"><a href="spam-filter.html#cb14-9" aria-hidden="true" tabindex="-1"></a>        sort_idx <span class="op">=</span> <span class="fu">sortperm</span>(<span class="fu">collect</span>(word_freq), rev<span class="op">=</span><span class="cn">true</span>)</span>
-<span id="cb14-10"><a href="spam-filter.html#cb14-10" aria-hidden="true" tabindex="-1"></a>        email_words <span class="op">=</span> <span class="fu">collect</span>(email_words)[sort_idx][<span class="fl">1</span><span class="op">:</span>tol]</span>
-<span id="cb14-11"><a href="spam-filter.html#cb14-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">end</span></span>
-<span id="cb14-12"><a href="spam-filter.html#cb14-12" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb14-13"><a href="spam-filter.html#cb14-13" aria-hidden="true" tabindex="-1"></a>    email_ham_probability <span class="op">=</span> <span class="fu">BigFloat</span>(<span class="fl">1</span>)</span>
-<span id="cb14-14"><a href="spam-filter.html#cb14-14" aria-hidden="true" tabindex="-1"></a>    email_spam_probability <span class="op">=</span> <span class="fu">BigFloat</span>(<span class="fl">1</span>)</span>
-<span id="cb14-15"><a href="spam-filter.html#cb14-15" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb14-16"><a href="spam-filter.html#cb14-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-17"><a href="spam-filter.html#cb14-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> word <span class="kw">in</span> <span class="fu">intersect</span>(email_words, model.vocabulary)</span>
-<span id="cb14-18"><a href="spam-filter.html#cb14-18" aria-hidden="true" tabindex="-1"></a>        word_ham_prob, word_spam_prob <span class="op">=</span> <span class="fu">word_spam_probability</span>(word, model.words_count_ham, model.words_count_spam, model.N_ham, model.N_spam, n_vocabulary, α)</span>
-<span id="cb14-19"><a href="spam-filter.html#cb14-19" aria-hidden="true" tabindex="-1"></a>        email_ham_probability <span class="op">*=</span> word_ham_prob</span>
-<span id="cb14-20"><a href="spam-filter.html#cb14-20" aria-hidden="true" tabindex="-1"></a>        email_spam_probability <span class="op">*=</span> word_spam_prob</span>
-<span id="cb14-21"><a href="spam-filter.html#cb14-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">end</span></span>
-<span id="cb14-22"><a href="spam-filter.html#cb14-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> ham_prior<span class="op">*</span>email_ham_probability, spam_prior<span class="op">*</span>email_spam_probability</span>
-<span id="cb14-23"><a href="spam-filter.html#cb14-23" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
-<pre><code>## spam_predict (generic function with 2 methods)</code></pre>
-<div class="sourceCode" id="cb16"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb16-1"><a href="spam-filter.html#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="cf">begin</span></span>
-<span id="cb16-2"><a href="spam-filter.html#cb16-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># this cell is just for testing</span></span>
-<span id="cb16-3"><a href="spam-filter.html#cb16-3" aria-hidden="true" tabindex="-1"></a>    mail_num <span class="op">=</span> <span class="fl">56</span></span>
-<span id="cb16-4"><a href="spam-filter.html#cb16-4" aria-hidden="true" tabindex="-1"></a>    email <span class="op">=</span> <span class="fu">string</span>([<span class="fu">repeat</span>(<span class="fu">string</span>(word, <span class="st">&quot; &quot;</span>), n) for (word, n) <span class="kw">in</span> <span class="fu">zip</span>(vocabulary, x_test[<span class="op">:</span>,mail_num])]<span class="op">...</span>);</span>
-<span id="cb16-5"><a href="spam-filter.html#cb16-5" aria-hidden="true" tabindex="-1"></a>    <span class="co">#nospam_prob, spam_prob = spam_predict(email, train_nospam, train_spam, N_nospam, N_spam, vocabulary, 1)</span></span>
-<span id="cb16-6"><a href="spam-filter.html#cb16-6" aria-hidden="true" tabindex="-1"></a>    ham_prob, spam_prob <span class="op">=</span> <span class="fu">spam_predict</span>(email, spam_filter, <span class="fl">1</span>)</span>
-<span id="cb16-7"><a href="spam-filter.html#cb16-7" aria-hidden="true" tabindex="-1"></a>    <span class="pp">@show</span> ham_prob</span>
-<span id="cb16-8"><a href="spam-filter.html#cb16-8" aria-hidden="true" tabindex="-1"></a>    <span class="pp">@show</span> spam_prob</span>
-<span id="cb16-9"><a href="spam-filter.html#cb16-9" aria-hidden="true" tabindex="-1"></a>    y_test[mail_num]</span>
-<span id="cb16-10"><a href="spam-filter.html#cb16-10" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
-<pre><code>## ham_prob = 6.361550953358787909203341670966958730461774757798157080686469222208156146819189e-229
-## spam_prob = 1.363020575746375814900703051352618078608553502628819918241956564869511405753612e-219</code></pre>
-<pre><code>## 1</code></pre>
-<p>Finally, we arrived to the point of actually testing our model. This is what the function below is all about. We feed it with our model fitted with the training data, and the test data we had split at the beginning, as well as with the labels of the classification of this data. This function makes a prediction for each email in our test data, using the values of our model and then checks if the prediction was right. We count all the correct predictions and then we divide this number by the total amount of mails, giving us an accuracy measurement.</p>
-<div class="sourceCode" id="cb19"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb19-1"><a href="spam-filter.html#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co">#This function classify each mail into Ham(0) or Spam(1)</span></span>
-<span id="cb19-2"><a href="spam-filter.html#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">get_predictions</span>(x_test, y_test, model<span class="op">::</span><span class="dt">BayesSpamFilter</span>, α, tol<span class="op">=</span><span class="fl">200</span>)</span>
-<span id="cb19-3"><a href="spam-filter.html#cb19-3" aria-hidden="true" tabindex="-1"></a> N <span class="op">=</span> <span class="fu">length</span>(y_test)</span>
-<span id="cb19-4"><a href="spam-filter.html#cb19-4" aria-hidden="true" tabindex="-1"></a>  predictions <span class="op">=</span> <span class="fu">Array</span><span class="dt">{Int64, 1}</span>(<span class="cn">undef</span>,N)</span>
-<span id="cb19-5"><a href="spam-filter.html#cb19-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>N</span>
-<span id="cb19-6"><a href="spam-filter.html#cb19-6" aria-hidden="true" tabindex="-1"></a>    email <span class="op">=</span> <span class="fu">string</span>([<span class="fu">repeat</span>(<span class="fu">string</span>(word, <span class="st">&quot; &quot;</span>),N) for (word,N) <span class="kw">in</span> <span class="fu">zip</span>(model.vocabulary, x_test[<span class="op">:</span>, i])]<span class="op">...</span>)</span>
-<span id="cb19-7"><a href="spam-filter.html#cb19-7" aria-hidden="true" tabindex="-1"></a>    pham, pspam <span class="op">=</span> <span class="fu">spam_predict</span>(email, model, α, tol)</span>
-<span id="cb19-8"><a href="spam-filter.html#cb19-8" aria-hidden="true" tabindex="-1"></a>    pred <span class="op">=</span> <span class="fu">argmax</span>([pham, pspam]) <span class="op">-</span> <span class="fl">1</span></span>
-<span id="cb19-9"><a href="spam-filter.html#cb19-9" aria-hidden="true" tabindex="-1"></a>    predictions[i] <span class="op">=</span> pred</span>
-<span id="cb19-10"><a href="spam-filter.html#cb19-10" aria-hidden="true" tabindex="-1"></a>  <span class="cf">end</span></span>
-<span id="cb19-11"><a href="spam-filter.html#cb19-11" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> predictions</span>
-<span id="cb19-12"><a href="spam-filter.html#cb19-12" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
-<pre><code>## get_predictions (generic function with 2 methods)</code></pre>
-<div class="sourceCode" id="cb21"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb21-1"><a href="spam-filter.html#cb21-1" aria-hidden="true" tabindex="-1"></a>predictions <span class="op">=</span> <span class="fu">get_predictions</span>(x_test, y_test, spam_filter, <span class="fl">1</span>)</span></code></pre></div>
-<p>Here we can see how our model classified the first five emails, outputting <code>0</code> if the email was classified as ham and <code>1</code> for spam.</p>
-<div class="sourceCode" id="cb22"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb22-1"><a href="spam-filter.html#cb22-1" aria-hidden="true" tabindex="-1"></a>predictions[<span class="fl">1</span><span class="op">:</span><span class="fl">5</span>]</span></code></pre></div>
-<pre><code>## 5-element Vector{Int64}:
-##  0
-##  0
-##  0
-##  0
-##  0</code></pre>
-<div class="sourceCode" id="cb24"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb24-1"><a href="spam-filter.html#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">spam_filter_accuracy</span>(predictions, actual)</span>
-<span id="cb24-2"><a href="spam-filter.html#cb24-2" aria-hidden="true" tabindex="-1"></a> N <span class="op">=</span> <span class="fu">length</span>(predictions)</span>
-<span id="cb24-3"><a href="spam-filter.html#cb24-3" aria-hidden="true" tabindex="-1"></a>  correct <span class="op">=</span> <span class="fu">sum</span>(predictions <span class="op">.==</span> actual)</span>
-<span id="cb24-4"><a href="spam-filter.html#cb24-4" aria-hidden="true" tabindex="-1"></a>  accuracy <span class="op">=</span> correct <span class="op">/</span>N</span>
-<span id="cb24-5"><a href="spam-filter.html#cb24-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> accuracy</span>
-<span id="cb24-6"><a href="spam-filter.html#cb24-6" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
-<pre><code>## spam_filter_accuracy (generic function with 1 method)</code></pre>
-<p>As you can see below, the model is performing very well, at least under this simple metric! An accuracy of about 0.95 is quite astonishing for a model so naive and simple, but it works!</p>
-<div class="sourceCode" id="cb26"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb26-1"><a href="spam-filter.html#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">spam_filter_accuracy</span>(predictions, y_test)</span></code></pre></div>
-<pre><code>## 0.9542525773195877</code></pre>
-<p>But we have to take into account one more thing. Our model classifies emails into spam or ham, and the amount of ham emails is considerably higher than the spam ones. Let’s see the percentages:</p>
-<div class="sourceCode" id="cb28"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb28-1"><a href="spam-filter.html#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(x_train)<span class="op">/</span><span class="fu">length</span>(x_train)</span></code></pre></div>
-<pre><code>## 0.362561585960351</code></pre>
-<p>So we know that only the 0.36% of the emails in the training set are spam.
-These type of classification problems where there is an unequal distribution
-of classes in the dataset are called imbalanced.</p>
-<p>So a good way to see how our model is performing is to construct a <em>confusion matrix</em>. A confusion matrix is an <span class="math inline">\(N x N\)</span> matrix, where <span class="math inline">\(N\)</span> is the number of target classes. The matrix compares the actual target values with those predicted by the our model. Let’s construct one for our model:</p>
-<div class="sourceCode" id="cb30"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb30-1"><a href="spam-filter.html#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">splam_filter_confusion_matrix</span>(y_test,predictions)</span>
-<span id="cb30-2"><a href="spam-filter.html#cb30-2" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb30-3"><a href="spam-filter.html#cb30-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">#We create the matrix and calculated their values</span></span>
-<span id="cb30-4"><a href="spam-filter.html#cb30-4" aria-hidden="true" tabindex="-1"></a>    confusion_matrix<span class="op">=</span> [<span class="fl">0</span> <span class="fl">0</span> ; <span class="fl">0</span> <span class="fl">0</span>]</span>
-<span id="cb30-5"><a href="spam-filter.html#cb30-5" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb30-6"><a href="spam-filter.html#cb30-6" aria-hidden="true" tabindex="-1"></a>    confusion_matrix[<span class="fl">1</span>,<span class="fl">1</span>] <span class="op">=</span> <span class="fu">sum</span>(<span class="fu">isequal</span>(y_test[i],<span class="fl">0</span>) <span class="op">&amp;</span> <span class="fu">isequal</span>(predictions[i],<span class="fl">0</span>) <span class="cf">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fu">length</span>(y_test))</span>
-<span id="cb30-7"><a href="spam-filter.html#cb30-7" aria-hidden="true" tabindex="-1"></a>    confusion_matrix[<span class="fl">1</span>,<span class="fl">2</span>] <span class="op">=</span> <span class="fu">sum</span>(<span class="fu">isequal</span>(y_test[i],<span class="fl">1</span>) <span class="op">&amp;</span> <span class="fu">isequal</span>(predictions[i],<span class="fl">0</span>) <span class="cf">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fu">length</span>(y_test))</span>
-<span id="cb30-8"><a href="spam-filter.html#cb30-8" aria-hidden="true" tabindex="-1"></a>    confusion_matrix[<span class="fl">2</span>,<span class="fl">1</span>] <span class="op">=</span> <span class="fu">sum</span>(<span class="fu">isequal</span>(y_test[i],<span class="fl">0</span>) <span class="op">&amp;</span> <span class="fu">isequal</span>(predictions[i],<span class="fl">1</span>) <span class="cf">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fu">length</span>(y_test))</span>
-<span id="cb30-9"><a href="spam-filter.html#cb30-9" aria-hidden="true" tabindex="-1"></a>    confusion_matrix[<span class="fl">2</span>,<span class="fl">2</span>] <span class="op">=</span> <span class="fu">sum</span>(<span class="fu">isequal</span>(y_test[i],<span class="fl">1</span>) <span class="op">&amp;</span> <span class="fu">isequal</span>(predictions[i],<span class="fl">1</span>) <span class="cf">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fu">length</span>(y_test))</span>
-<span id="cb30-10"><a href="spam-filter.html#cb30-10" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb30-11"><a href="spam-filter.html#cb30-11" aria-hidden="true" tabindex="-1"></a>    <span class="co">#Now we convert the confusion matrix into a DataFrame </span></span>
-<span id="cb30-12"><a href="spam-filter.html#cb30-12" aria-hidden="true" tabindex="-1"></a>    confusion_df <span class="op">=</span> <span class="fu">DataFrame</span>(Prediction <span class="op">=</span> <span class="dt">String</span>[],</span>
-<span id="cb30-13"><a href="spam-filter.html#cb30-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb30-14"><a href="spam-filter.html#cb30-14" aria-hidden="true" tabindex="-1"></a>                Ham_mail <span class="op">=</span> <span class="dt">Int64</span>[],</span>
-<span id="cb30-15"><a href="spam-filter.html#cb30-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb30-16"><a href="spam-filter.html#cb30-16" aria-hidden="true" tabindex="-1"></a>                Spam_mail <span class="op">=</span> <span class="dt">Int64</span>[])</span>
-<span id="cb30-17"><a href="spam-filter.html#cb30-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb30-18"><a href="spam-filter.html#cb30-18" aria-hidden="true" tabindex="-1"></a>    confusion_df <span class="op">=</span> <span class="fu">vcat</span>(confusion_df,<span class="fu">DataFrame</span>(Prediction <span class="op">=</span> <span class="st">&quot;Model predicted Ham&quot;</span>, Ham_mail <span class="op">=</span> confusion_matrix[<span class="fl">1</span>,<span class="fl">1</span>] , Spam_mail <span class="op">=</span> confusion_matrix[<span class="fl">1</span>,<span class="fl">2</span>]))</span>
-<span id="cb30-19"><a href="spam-filter.html#cb30-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb30-20"><a href="spam-filter.html#cb30-20" aria-hidden="true" tabindex="-1"></a>    confusion_df <span class="op">=</span> <span class="fu">vcat</span>(confusion_df ,<span class="fu">DataFrame</span>(Prediction <span class="op">=</span> <span class="st">&quot;Model predicted Spam&quot;</span>, Ham_mail <span class="op">=</span> confusion_matrix[<span class="fl">2</span>,<span class="fl">1</span>] , Spam_mail <span class="op">=</span> confusion_matrix[<span class="fl">2</span>,<span class="fl">2</span>]))</span>
-<span id="cb30-21"><a href="spam-filter.html#cb30-21" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb30-22"><a href="spam-filter.html#cb30-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> confusion_df</span>
-<span id="cb30-23"><a href="spam-filter.html#cb30-23" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb30-24"><a href="spam-filter.html#cb30-24" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb30-25"><a href="spam-filter.html#cb30-25" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
-<pre><code>## splam_filter_confusion_matrix (generic function with 1 method)</code></pre>
-<div class="sourceCode" id="cb32"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb32-1"><a href="spam-filter.html#cb32-1" aria-hidden="true" tabindex="-1"></a>confusion_matrix <span class="op">=</span> <span class="fu">splam_filter_confusion_matrix</span>(y_test[<span class="op">:</span>],predictions)</span></code></pre></div>
-<pre><code>## 2×3 DataFrame
-##  Row │ Prediction            Ham_mail  Spam_mail
-##      │ String                Int64     Int64
-## ─────┼───────────────────────────────────────────
-##    1 │ Model predicted Ham       1050         36
-##    2 │ Model predicted Spam        35        431</code></pre>
-<p>Now we can calculate the accuracy of the model segmented by category.</p>
-<div class="sourceCode" id="cb34"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb34-1"><a href="spam-filter.html#cb34-1" aria-hidden="true" tabindex="-1"></a>ham_accuracy <span class="op">=</span> confusion_matrix[<span class="fl">1</span>,<span class="st">&quot;Ham_mail&quot;</span>]<span class="op">/</span>(confusion_matrix[<span class="fl">1</span>,<span class="st">&quot;Ham_mail&quot;</span>] <span class="op">+</span> confusion_matrix[<span class="fl">2</span>,<span class="st">&quot;Ham_mail&quot;</span>])</span></code></pre></div>
-<pre><code>## 0.967741935483871</code></pre>
-<div class="sourceCode" id="cb36"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb36-1"><a href="spam-filter.html#cb36-1" aria-hidden="true" tabindex="-1"></a>spam_accuracy <span class="op">=</span> confusion_matrix[<span class="fl">2</span>,<span class="st">&quot;Spam_mail&quot;</span>]<span class="op">/</span>(confusion_matrix[<span class="fl">1</span>,<span class="st">&quot;Spam_mail&quot;</span>] <span class="op">+</span> confusion_matrix[<span class="fl">2</span>,<span class="st">&quot;Spam_mail&quot;</span>])</span></code></pre></div>
-<pre><code>## 0.9229122055674518</code></pre>
+<p>The multiplication of each of the probabilities associated with a
+particular word here stems from the naive assumption that all the words
+in the email are statistically independent. In reality, this assumption
+isn’t necessarily true. In fact, it’s most likely false. Words in a
+language are never independent from one another, but this simple
+assumption seems to be enough for the level of complexity our problem
+requires.</p>
+<p>The probability of a given word <span class="math inline">\(word_i\)</span> being in a given category is
+calculated like so:</p>
+<p><span class="math display">\[P(word_i|spam) = \frac{N_{word_i|spam} + \alpha}{N_{spam} + \alpha N_{vocabulary}}\]</span>
+<span class="math display">\[P(word_i|ham) = \frac{N_{word_i|ham} + \alpha}{N_{ham} + \alpha N_{vocabulary}}\]</span></p>
+<p>These formulas tell us exactly what we have to calculate from our data.
+We need the numbers <span class="math inline">\(N_{word_i|spam}\)</span> and <span class="math inline">\(N_{word_i|ham}\)</span> for each
+word, meaning the number of times that <span class="math inline">\(word_i\)</span> is used in the spam and
+ham categories, respectively. <span class="math inline">\(N_{spam}\)</span> and <span class="math inline">\(N_{ham}\)</span> are the total
+number of words used in the spam and ham categories (including all word
+repetitions), and <span class="math inline">\(N_{vocabulary}\)</span> is the total number of unique words
+in the dataset. The variable <span class="math inline">\(\alpha\)</span> is a smoothing parameter that
+prevents the probability of a given word being in a given category from
+going down to zero. If a given word hasn’t appeared in the spam category
+in our training dataset, for example, we don’t want to assign it zero
+probability of appearing in new spam emails.</p>
+<p>As all of this information will be specific to our dataset, a clever way
+to aggregate it is to use a Julia <em>struct</em>, with attributes for the
+pieces of data we’ll need to access over and over during the prediction
+process. Here’s the implementation:</p>
+<pre><code>mutable struct BayesSpamFilter
+    words_count_ham::Dict{String, Int64}
+    words_count_spam::Dict{String, Int64}
+    N_ham::Int64
+    N_spam::Int64
+    vocabulary::Array{String}
+    BayesSpamFilter() = new()
+end</code></pre>
+<p>The relevant attributes of the struct are <code>words_count_ham</code> and
+<code>words_count_spam</code>, two dictionaries containing the frequency of
+appearance of each word in the ham and spam datasets; <code>N_ham</code> and
+<code>N_spam</code>, the total number of words appearing in each category; and
+<code>vocabulary</code>, an array of all the unique words in the dataset.</p>
+<p>The line <code>BayesSpamFilter() = new()</code> is the constructor of this struct.
+Because the constructor is empty, all the attributes will be undefined
+when we instantiate the filter. We’ll have to define some functions to
+fill these variables with values that are relevant to our particular
+problem. First, here’s a function <code>word_count</code> that counts the
+occurrences of each word in the ham and spam categories.</p>
+<pre><code>function words_count(word_data, vocabulary, labels, spam=0)
+    # word_data is a matrix where each column is an email and each row is a word
+    count_dict = Dict{String, Int64}()
+    n_emails = size(word_data)[2]
+    for (i, word) in enumerate(vocabulary)
+        count_dict[word] = sum([word_data[i,j] for j in 1:n_emails if labels[j]==spam])
+    end
+    return count_dict
+end</code></pre>
+<p>Next, we’ll define a <code>fit!</code> function for our spam filter struct. Notice
+we’re using the bang (<code>!</code>) convention here to indicate a function that
+modifies its arguments in-place (in this case, the spam filter struct
+itself). This function <em>fits</em> our model to the data, a typical procedure
+in data science and machine learning areas.</p>
+<pre><code>function fit!(model::BayesSpamFilter, x_train, y_train, voc)
+    model.vocabulary = voc
+    model.words_count_ham = words_count(x_train, model.vocabulary, y_train, 0)
+    model.words_count_spam = words_count(x_train, model.vocabulary, y_train, 1)
+    model.N_ham = sum(values(model.words_count_ham))
+    model.N_spam = sum(values(model.words_count_spam))
+    return
+end</code></pre>
+<p>This function fills in all the undefined parameters in our struct. We
+mainly use the <code>words_count</code> function we defined earlier. Notice that
+we’re only fitting the model to the training portion of the data, since
+we’re reserving the testing portion to evaluate the model’s accuracy.</p>
 </div>
-<div id="summary-2" class="section level2 hasAnchor" number="4.3">
-<h2><span class="header-section-number">4.3</span> Summary<a href="spam-filter.html#summary-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>In this chapter, we have used a naive-Bayes approach to build a simple email spam filter. First, the dataset and the theoretical framework were introduced. Using Bayes’ theorem on the data available, we assigned a probability of belonging to a spam or ham email to each word of the email dataset. The probability of a new email being classified as spam is therefore the product of the probabilities of each of its constituent words. Later, the data was pre-processed and a <code>struct</code> was defined for the spam filter object. We created functions to fit the spam filter object to the data. Finally, we evaluated our model’s performance by calculating the accuracy and making a confusion matrix.</p>
+<div id="training-the-model" class="section level2 hasAnchor" number="4.5">
+<h2><span class="header-section-number">4.5</span> Training the Model<a href="spam-filter.html#training-the-model" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Now it’s time to instantiate our spam filter and fit the model to the
+training data. With the struct and helper functions we’ve defined, the
+process is quite straightforward.</p>
+<pre><code>begin
+    # here we instantiate the Bayes filter and then we fit it to our data
+    spam_filter = BayesSpamFilter()
+    fit!(spam_filter, x_train, y_train, vocabulary)
+end</code></pre>
+<p>We create an instance of our <code>BayesSpamFilter</code> struct and pass it to our
+<code>fit!</code> function along with the data. Notice that we’re only passing in
+the training portion of the dataset, since we want to reserve the
+testing portion to evaluate the model’s accuracy later.</p>
 </div>
-<div id="references-3" class="section level2 hasAnchor" number="4.4">
-<h2><span class="header-section-number">4.4</span> References<a href="spam-filter.html#references-3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<ul>
-<li><a href="https://www.mailchannels.com/what-is-spam-filtering/">What is Spam Filtering?</a></li>
-<li><a href="https://www.amazon.com/Artificial-Intelligence-Python-Comprehensive-Intelligent-ebook/dp/B01IRD0LBY">Artificial Intelligence in Python: A Comprehensive Guide to Building Intelligent Apps for Python Beginners and Developers</a></li>
-<li><a href="https://www.amazon.com/Data-Algorithms-Recipes-Scaling-Hadoop/dp/1491906189">Data Algorithms: Recipes for scaling up with Hadoop and Spark</a></li>
-<li><a href="https://www.oreilly.com/library/view/doing-data-science/9781449363871/">Doing Data Science: Straight talk from the frontline</a></li>
-<li><a href="http://www.todayifoundout.com/index.php/2010/09/how-the-word-spam-came-to-mean-junk-message/">How the word ‘Spam’ came to mean ‘Junk Message’</a></li>
-<li><a href="https://www.youtube.com/watch?v=zLih-WQwBSc">Monty Python Sketch - YouTube</a></li>
-</ul>
+<div id="making-predictions" class="section level2 hasAnchor" number="4.6">
+<h2><span class="header-section-number">4.6</span> Making Predictions<a href="spam-filter.html#making-predictions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Now that we have our model, we can use it to make some spam vs. ham
+predictions and assess its performance. We’ll define a few more
+functions to help with this process. First, we need a function
+implementing the TAL formula that we discussed earlier.</p>
+<pre><code>function word_spam_probability(word, words_count_ham, words_count_spam, N_ham,
+        N_spam, n_vocabulary, α
+    ham_prob = (words_count_ham[word] + α)/(N_ham + α*(n_vocabulary))
+    spam_prob = (words_count_spam[word] + α)/(N_spam + α*(n_vocabulary))
+    return ham_prob, spam_prob
+end</code></pre>
+<p>This function calculates <span class="math inline">\(P(word_i|spam)\)</span> and <span class="math inline">\(P(word_i|ham)\)</span> for a
+given word. We’ll call it for each word of an incoming email within
+another function, <code>spam_predict</code>, to calculate the probability of that
+email being spam or ham.</p>
+<pre><code>function spam_predict(email, model::BayesSpamFilter, α, tol=100)
+    ngrams_email = ngrams(StringDocument(email))
+    email_words = keys(ngrams_email)
+    n_vocabulary = length(model.vocabulary)
+    ham_prior = model.N_ham/(model.N_ham + model.N_spam)
+    spam_prior = model.N_spam/(model.N_ham + model.N_spam)
+    if length(email_words) &gt; tol
+        word_freq = values(ngrams_email)
+        sort_idx = sortperm(collect(word_freq), rev=true)
+        email_words = collect(email_words)[sort_idx][1:tol]
+    end
+    
+    email_ham_probability = BigFloat(1)
+    email_spam_probability = BigFloat(1)
+    
 
+    for word in intersect(email_words, model.vocabulary)
+        word_ham_prob, word_spam_prob = word_spam_probability(word, model.words_count_ham, 
+               model.words_count_spam, model.N_ham, model.N_spam, n_vocabulary, α
+        email_ham_probability *= word_ham_prob
+        email_spam_probability *= word_spam_prob
+    end
+    return ham_prior*email_ham_probability, spam_prior*email_spam_probability
+end</code></pre>
+<p>This function takes as input a new email that we want to classify as
+spam or ham, our fitted model, an <span class="math inline">\(α\)</span> value (which we’ve already
+discussed), and a tolerance value <code>tol</code>. The latter sets the maximum
+number of unique words in an email that we’ll look at. We saw that the
+calculations for <span class="math inline">\(P(email|spam)\)</span> and <span class="math inline">\(P(email|ham)\)</span> require the
+multiplication of each <span class="math inline">\(P(word_i|spam)\)</span> and <span class="math inline">\(P(word_i|ham)\)</span> term. When
+emails consist of a large number of words, this multiplication may lead
+to very small probabilities, up to the point that the computer
+interprets those probabilities as zero. This isn’t desirable; we need
+values of <span class="math inline">\(P(email|spam)\)</span> and <span class="math inline">\(P(email|ham)\)</span> that are larger than zero
+in order to multiply them by <span class="math inline">\(P(spam)\)</span> and <span class="math inline">\(P(ham)\)</span>, respectively, and
+compare these values to make a prediction. To avoid probabilities of
+zero, we’ll only consider up to the <code>tol</code> most frequently used words in
+the email.</p>
+<pre><code>begin
+    # this cell is just for testing
+    mail_num = 56
+    email = string([repeat(string(word, &quot; &quot;), n) for (word, n) in 
+        zip(vocabulary, x_test[:,mail_num])]...);
+    #nospam_prob, spam_prob = spam_predict(email, train_nospam, train_spam, 
+        N_nospam, N_spam, vocabulary, 1)
+    ham_prob, spam_prob = spam_predict(email, spam_filter, 1)
+    @show ham_prob
+    @show spam_prob
+    y_test[mail_num]
+end</code></pre>
+<p>Finally, we arrive to the point of actually testing our model. We create
+another function to manage the process. This function classifies each
+email into Ham (represented by the number 0) or Spam (represented by the
+number 1)</p>
+<pre><code>function get_predictions(x_test, y_test, model::BayesSpamFilter, α, tol=200)
+ N = length(y_test)
+  predictions = Array{Int64, 1}(undef,N)
+  for i in 1:N
+    email = string([repeat(string(word, &quot; &quot;),N) for (word,N) in 
+            zip(model.vocabulary, x_test[:, i])]...)
+    pham, pspam = spam_predict(email, model, α, tol)
+    pred = argmax([pham, pspam]) - 1
+    predictions[i] = pred
+  end
+  return predictions
+end</code></pre>
+<p>This function takes in the testing portion of the data and our trained
+model. We call our <code>spam_predict</code> function for each email in the testing
+data and use the maximum (<code>argmax</code>) of the two returned probability
+values to predict (<code>pred</code>) if the email is spam or ham. We return the
+predictions as an array of values, which will contain zeros for ham
+emails, and ones for spam emails. Here we call the function to make
+predictions about the test data:</p>
+<pre><code>predictions = get_predictions(x_test, y_test, spam_filter, 1)</code></pre>
+<p>Let’s take a look at the predicted classifications of just the first
+five emails in the test data.</p>
+<pre><code>predictions[1:5]</code></pre>
+<p>Of the first five emails, one (the third) was classified as spam, and
+the rest were classified as ham.</p>
 </div>
 </div>
             </section>
@@ -582,7 +655,7 @@ of classes in the dataset are called imbalanced.</p>
         </div>
       </div>
 <a href="probability-introduction.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="probabilistic-programming.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="evaluating-the-accuracy.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
