@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 5 Evaluating the Accuracy | Data Science in Julia for Hackers</title>
   <meta name="description" content="Chapter 5 Evaluating the Accuracy | Data Science in Julia for Hackers" />
-  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.31 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 5 Evaluating the Accuracy | Data Science in Julia for Hackers" />
   <meta property="og:type" content="book" />
@@ -192,6 +192,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5" data-path="evaluating-the-accuracy.html"><a href="evaluating-the-accuracy.html"><i class="fa fa-check"></i><b>5</b> Evaluating the Accuracy</a>
 <ul>
 <li class="chapter" data-level="5.1" data-path="evaluating-the-accuracy.html"><a href="evaluating-the-accuracy.html#summary-2"><i class="fa fa-check"></i><b>5.1</b> Summary</a></li>
+<li class="chapter" data-level="5.2" data-path="evaluating-the-accuracy.html"><a href="evaluating-the-accuracy.html#appendix---a-little-more-about-alpha"><i class="fa fa-check"></i><b>5.2</b> Appendix - A little more about alpha</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html"><i class="fa fa-check"></i><b>6</b> Probabilistic programming</a>
 <ul>
@@ -310,17 +311,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Looking at the predictions themselves is pretty meaningless; what we
 really want to know is the model’s accuracy. We’ll define another
 function to calculate this.</p>
-<pre><code>function spam_filter_accuracy(predictions, actual)
- N = length(predictions)
-  correct = sum(predictions .== actual)
-  accuracy = correct /N
-  return accuracy
-end</code></pre>
+<div class="sourceCode" id="cb17"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb17-1"><a href="evaluating-the-accuracy.html#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">spam_filter_accuracy</span>(predictions, actual)</span>
+<span id="cb17-2"><a href="evaluating-the-accuracy.html#cb17-2" aria-hidden="true" tabindex="-1"></a>    N <span class="op">=</span> <span class="fu">length</span>(predictions)</span>
+<span id="cb17-3"><a href="evaluating-the-accuracy.html#cb17-3" aria-hidden="true" tabindex="-1"></a>    correct <span class="op">=</span> <span class="fu">sum</span>(predictions <span class="op">.==</span> actual)</span>
+<span id="cb17-4"><a href="evaluating-the-accuracy.html#cb17-4" aria-hidden="true" tabindex="-1"></a>    accuracy <span class="op">=</span> correct <span class="op">/</span> N</span>
+<span id="cb17-5"><a href="evaluating-the-accuracy.html#cb17-5" aria-hidden="true" tabindex="-1"></a>    accuracy</span>
+<span id="cb17-6"><a href="evaluating-the-accuracy.html#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
 <p>This function compares the predicted classifications with the actual
 classifications of the test data, counts the number of correct
 predictions, and divides this number by the total number of test emails,
 giving us an accuracy measurement. Here we call the function:</p>
-<pre><code>spam_filter_accuracy(predictions, y_test)</code></pre>
+<div class="sourceCode" id="cb18"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb18-1"><a href="evaluating-the-accuracy.html#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">spam_filter_accuracy</span>(predictions, y_test)</span></code></pre></div>
+<pre><code>## 0.946520618556701</code></pre>
 <p>The output indicates our model is about 95 percent accurate. It appears
 our model is performing very well! Such a high accuracy rate is quite
 astonishing for a model so naive and simple. In fact, it may be a little
@@ -328,8 +330,9 @@ too good to be true, because we have to take into account one more
 thing. Our model classifies emails into spam or ham, but the amount of
 ham emails in our data set is considerably higher than the spam ones.
 Let’s see the percentages:</p>
-<pre><code>sum(x_train)/length(x_train)</code></pre>
-<p>This tells us that only 36 percent of the emails in the training set are
+<div class="sourceCode" id="cb20"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb20-1"><a href="evaluating-the-accuracy.html#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(x_train)<span class="op">/</span><span class="fu">length</span>(x_train)</span></code></pre></div>
+<pre><code>## 0.3600111425785784</code></pre>
+<p>This tells us that only 36% of the emails in the training set are
 spam. This type of classification problem, where there’s an unequal
 distribution of classes in the dataset, is called <em>imbalanced</em>. With
 unbalanced data, a better way to see how the model is performing is to
@@ -338,45 +341,35 @@ number of target classes (in our case, 2, for spam and ham). The matrix
 compares the actual values for each class with those predicted by the
 model. Here’s a function that builds a confusion matrix for our spam
 filter:</p>
-<pre><code>function spam_filter_confusion_matrix(y_test,predictions)
-    
-    confusion_matrix = [0 0 ; 0 0]
-    
-    confusion_matrix[1,1] = sum(isequal(y_test[i],0) &amp; isequal(predictions[i],0) for i in
-              1:length(y_test))
-    confusion_matrix[1,2] = sum(isequal(y_test[i],1) &amp; isequal(predictions[i],0) for i in 
-                1:length(y_test))
-    confusion_matrix[2,1] = sum(isequal(y_test[i],0) &amp; isequal(predictions[i],1) for i in
-                1:length(y_test))
-    confusion_matrix[2,2] = sum(isequal(y_test[i],1) &amp; isequal(predictions[i],1) for i in 
-                1:length(y_test))
-    
-    #Now we convert the confusion matrix into a DataFrame 
-    confusion_df = DataFrame(Prediction = String[],
-                Ham_mail = Int64[],
-                Spam_mail = Int64[])
-
-    confusion_df = vcat(confusion_df,DataFrame(Prediction = &quot;Model predicted Ham&quot;, Ham_mail = 
-                 confusion_matrix[1,1] , Spam_mail = confusion_matrix[1,2]))
-
-    confusion_df = vcat(confusion_df ,DataFrame(Prediction = &quot;Model predicted Spam&quot;, Ham_mail = 
-                  confusion_matrix[2,1] , Spam_mail = confusion_matrix[2,2]))
-    
-    return confusion_df
-    
-end</code></pre>
+<div class="sourceCode" id="cb22"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb22-1"><a href="evaluating-the-accuracy.html#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">spam_filter_confusion_matrix</span>(y_test, predictions)</span>
+<span id="cb22-2"><a href="evaluating-the-accuracy.html#cb22-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 2x2 matrix is instantiated with zeros</span></span>
+<span id="cb22-3"><a href="evaluating-the-accuracy.html#cb22-3" aria-hidden="true" tabindex="-1"></a>    confusion_matrix <span class="op">=</span> <span class="fu">zeros</span>((<span class="fl">2</span>, <span class="fl">2</span>))</span>
+<span id="cb22-4"><a href="evaluating-the-accuracy.html#cb22-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-5"><a href="evaluating-the-accuracy.html#cb22-5" aria-hidden="true" tabindex="-1"></a>    confusion_matrix[<span class="fl">1</span>, <span class="fl">1</span>] <span class="op">=</span> <span class="fu">sum</span>(<span class="fu">isequal</span>(y_test[i], <span class="fl">0</span>) <span class="op">&amp;</span> <span class="fu">isequal</span>(predictions[i], <span class="fl">0</span>) <span class="cf">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fu">length</span>(y_test))</span>
+<span id="cb22-6"><a href="evaluating-the-accuracy.html#cb22-6" aria-hidden="true" tabindex="-1"></a>    confusion_matrix[<span class="fl">1</span>, <span class="fl">2</span>] <span class="op">=</span> <span class="fu">sum</span>(<span class="fu">isequal</span>(y_test[i], <span class="fl">1</span>) <span class="op">&amp;</span> <span class="fu">isequal</span>(predictions[i], <span class="fl">0</span>) <span class="cf">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fu">length</span>(y_test))</span>
+<span id="cb22-7"><a href="evaluating-the-accuracy.html#cb22-7" aria-hidden="true" tabindex="-1"></a>    confusion_matrix[<span class="fl">2</span>, <span class="fl">1</span>] <span class="op">=</span> <span class="fu">sum</span>(<span class="fu">isequal</span>(y_test[i], <span class="fl">0</span>) <span class="op">&amp;</span> <span class="fu">isequal</span>(predictions[i], <span class="fl">1</span>) <span class="cf">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fu">length</span>(y_test))</span>
+<span id="cb22-8"><a href="evaluating-the-accuracy.html#cb22-8" aria-hidden="true" tabindex="-1"></a>    confusion_matrix[<span class="fl">2</span>, <span class="fl">2</span>] <span class="op">=</span> <span class="fu">sum</span>(<span class="fu">isequal</span>(y_test[i], <span class="fl">1</span>) <span class="op">&amp;</span> <span class="fu">isequal</span>(predictions[i], <span class="fl">1</span>) <span class="cf">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fu">length</span>(y_test))</span>
+<span id="cb22-9"><a href="evaluating-the-accuracy.html#cb22-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-10"><a href="evaluating-the-accuracy.html#cb22-10" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Now we convert the confusion matrix into a DataFrame </span></span>
+<span id="cb22-11"><a href="evaluating-the-accuracy.html#cb22-11" aria-hidden="true" tabindex="-1"></a>    confusion_df <span class="op">=</span> <span class="fu">DataFrame</span>(prediction<span class="op">=</span><span class="dt">String</span>[], ham_mail<span class="op">=</span><span class="dt">Int64</span>[], spam_mail<span class="op">=</span><span class="dt">Int64</span>[])</span>
+<span id="cb22-12"><a href="evaluating-the-accuracy.html#cb22-12" aria-hidden="true" tabindex="-1"></a>    confusion_df <span class="op">=</span> <span class="fu">vcat</span>(confusion_df, <span class="fu">DataFrame</span>(prediction<span class="op">=</span><span class="st">&quot;Model predicted Ham&quot;</span>, ham_mail<span class="op">=</span>confusion_matrix[<span class="fl">1</span>, <span class="fl">1</span>], spam_mail<span class="op">=</span>confusion_matrix[<span class="fl">1</span>, <span class="fl">2</span>]))</span>
+<span id="cb22-13"><a href="evaluating-the-accuracy.html#cb22-13" aria-hidden="true" tabindex="-1"></a>    confusion_df <span class="op">=</span> <span class="fu">vcat</span>(confusion_df, <span class="fu">DataFrame</span>(prediction<span class="op">=</span><span class="st">&quot;Model predicted Spam&quot;</span>, ham_mail<span class="op">=</span>confusion_matrix[<span class="fl">2</span>, <span class="fl">1</span>], spam_mail<span class="op">=</span>confusion_matrix[<span class="fl">2</span>, <span class="fl">2</span>]))</span>
+<span id="cb22-14"><a href="evaluating-the-accuracy.html#cb22-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-15"><a href="evaluating-the-accuracy.html#cb22-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> confusion_df</span>
+<span id="cb22-16"><a href="evaluating-the-accuracy.html#cb22-16" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
 <p>Now let’s call our function to build the confusion matrix for our model.</p>
-<p><code>confusion_matrix = spam_filter_confusion_matrix(y_test[:],predictions)</code></p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb23-1"><a href="evaluating-the-accuracy.html#cb23-1" aria-hidden="true" tabindex="-1"></a>confusion_matrix <span class="op">=</span> <span class="fu">spam_filter_confusion_matrix</span>(y_test[<span class="op">:</span>], predictions)</span></code></pre></div>
 <p>Row 1 of the confusion matrix shows us all the times our model
 classified emails to be ham; 1,056 of those classifications were correct
-and 36 were incorrect. Similarly, the <code>Spam_mail</code> column shows us the
+and 36 were incorrect. Similarly, the <code>spam_mail</code> column shows us the
 classifications for all the spam emails; 36 were misidentified as ham,
 and 427 were correctly identified as spam.</p>
 <p>Now that we have the confusion matrix, we can calculate the accuracy of
 the model segmented by category.</p>
-<pre><code>ham_accuracy = confusion_matrix[1,&quot;Ham_mail&quot;]/(confusion_matrix[1,&quot;Ham_mail&quot;] + confusion_matrix[2,&quot;Ham_mail&quot;])
-
-spam_accuracy = confusion_matrix[2,&quot;Spam_mail&quot;]/(confusion_matrix[1,&quot;Spam_mail&quot;] + confusion_matrix[2,&quot;Spam_mail&quot;])</code></pre>
+<div class="sourceCode" id="cb24"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb24-1"><a href="evaluating-the-accuracy.html#cb24-1" aria-hidden="true" tabindex="-1"></a>ham_accuracy <span class="op">=</span> confusion_matrix[<span class="fl">1</span>, <span class="op">:</span>ham_mail] <span class="op">/</span> (confusion_matrix[<span class="fl">1</span>, <span class="op">:</span>ham_mail] <span class="op">+</span> confusion_matrix[<span class="fl">2</span>, <span class="op">:</span>ham_mail])</span></code></pre></div>
+<pre><code>## 0.9615384615384616</code></pre>
+<div class="sourceCode" id="cb26"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb26-1"><a href="evaluating-the-accuracy.html#cb26-1" aria-hidden="true" tabindex="-1"></a>spam_accuracy <span class="op">=</span> confusion_matrix[<span class="fl">2</span>, <span class="op">:</span>spam_mail] <span class="op">/</span> (confusion_matrix[<span class="fl">1</span>, <span class="op">:</span>spam_mail] <span class="op">+</span> confusion_matrix[<span class="fl">2</span>, <span class="op">:</span>spam_mail])</span></code></pre></div>
+<pre><code>## 0.9108695652173913</code></pre>
 <div id="summary-2" class="section level2 hasAnchor" number="5.1">
 <h2><span class="header-section-number">5.1</span> Summary<a href="evaluating-the-accuracy.html#summary-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>In this chapter, we’ve used a naive Bayes approach to build a simple
@@ -392,6 +385,31 @@ defined a Julia <code>struct</code> for the spam filter object and created
 functions to fit the spam filter object to the data. Finally, we made
 predictions on new data and evaluated our model’s performance by
 calculating the accuracy and making a confusion matrix.</p>
+</div>
+<div id="appendix---a-little-more-about-alpha" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> Appendix - A little more about alpha<a href="evaluating-the-accuracy.html#appendix---a-little-more-about-alpha" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>As we have seen, to calculate the probability of the email being a spam
+email, we should use</p>
+<p><span class="math inline">\(P(email|spam)=∏ni=1P(wordi|spam)=P(word0|spam)P(word1|spam)...P(wordnp|spam)\)</span></p>
+<p>where P(wordnp|spam) stands for the probability of the word that is not presen
+t in our dataset. What probability should be assigned to this word? One way to
+handle this could be to simply ignore that term in the multiplication. In other
+words, assigning P(wordnp|spam)=1. Without thinking about it too much, we can
+conclude that this doesn’t make any sense, since that would mean that the probability
+to find that word in a spam (or ham, too) email would be equal to 1. A more
+logically consistent approach would be to assign 0 probability to that word.
+But there is a problem: with P(wordnp|spam)=0</p>
+<p>we can quickly see that</p>
+<p><span class="math inline">\(P(word0|spam)P(word1|spam)...P(wordnp|spam)=0\)</span></p>
+<p>This is the motivation for introducing the smoothing parameter α</p>
+<p>into our equation. In a real-word scenario, we should expect that words not present
+in our training set will appear, and altough it makes sense that they don’t have a
+high probability, it can’t be 0. When such a word appears, the probability assigned
+for it will be simply</p>
+<p><span class="math inline">\(P(wordnp|spam)=Nwordnp|spam+αNspam+αNvocabulary=0+αNspam+αNvocabulary=αNspam+αNvocabulary\)</span></p>
+<p>In summary, α is just a smoothing parameter, so that the probability of
+finding a word that is not in our dataset, doesn’t go down to 0. Since we
+want to keep the probability for these words low enough, it makes sense to use α=1</p>
 
 </div>
 </div>
