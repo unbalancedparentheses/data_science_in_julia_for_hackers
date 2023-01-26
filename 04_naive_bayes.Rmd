@@ -25,10 +25,28 @@ Random.seed!(0)
 ```
 
 Nobody likes spam emails. How can Bayes help? In this chapter, we'll
-introduce a simple yet effective way of using Bayesian probability to
-create a spam filter. The filter will examine emails and classify them
-as either spam or ham (the word for non-spam emails) based on their
-content.
+keep expanding our data science knowledge with a practical example. 
+A simple yet effective way of using Bayesian probability to
+create a spam filter from scratch will be introduced. The filter will 
+examine emails and classify them as either spam or ham (the word for non-spam emails) 
+based on their content. 
+What we will be implementing here is a *supervised learning model*, 
+in other words, a classification model that has been trained on previously 
+classified data. Think of it like a machine to which you can give some input,
+like an email, and will give you some label to that input, like spam or ham. 
+This machine has a lot of tiny knobs, and based on their particular 
+configuration it will output some label for each input. 
+Supervised learning involves iteratively finding the right configuration 
+of these knobs by letting the machine make a guess with some pre-classified
+data, checking if the guess matches the true label, and if not, tune the
+knobs in some controlled way.
+The way our machine will make predictions is based on the underlying 
+mathematical model. For a spam filter, a *naive Bayes* approach has
+proven to be effective, and you would have the opportunity to verify that
+yourself at the end of the chapter. In a naive Bayes model, Bayes' theorem
+is the main tool for classifing, and it is *naive* because we make
+very loose assumptions about the data we are analyzing. This will be
+clearer once we dive into the implementation.
 
 The term spam has its origins in the 1970s, in a sketch from the British
 comedy troupe Monty Python (who also inspired the name of the Python
