@@ -21,7 +21,7 @@ using MLDataUtils
 using Plots
 using Random
 
-Random.seed!(0)
+Random.seed!(123)
 ```
 
 Nobody likes spam emails. How can Bayes help? In this chapter, we'll
@@ -104,7 +104,7 @@ information to our classification algorithm.
 
 ```{julia, results = FALSE}
 # Get the list of all words present in all mails.
-# We strip the first and last columns which are the email id and classification 
+# We strip the first and last columns which are the email id and label 
 all_words = names(raw_df)[2:end-1]
 
 # Create a StringDocument, a struct with methods to remove articles and
@@ -125,8 +125,26 @@ clean_words_df = raw_df[!, vocabulary]
 data_matrix = Matrix(clean_words_df)'
 ```
 
-To filter out common words, we use two Julia packages specially designed
-for working with texts of any type: Languages.jl and TextAnalysis.jl.
+In the first line, we create a variable *all_words* to store a list of all of 
+the words present in the emails. As our dataset has a column for each word, we do this 
+by storing the names of every column with the *names* function, except for the first 
+and last column, which are for email id and label, respectively.
+
+Let's move on to the second and third lines of the code. We would like to filter out 
+some words that are very common in the English language, such as articles and pronouns,
+which will most likely add noise rather than information to our classification algorithm. 
+For this we will use two Julia packages that are specially designed for working with 
+texts of any type. These are Languages.jl and TextAnalysis.jl. In the third line, we 
+create a StringDocument, which is a struct provided by TextAnalysis.jl and 
+we use its built-in methods to remove articles and pronouns from the list of words 
+we created before. This is done calling the *prepare* function two times, with two
+different flags: *strip_articles* and *strip_pronouns*.
+What follows is just code to recover our original DataFrame with only the relevant columns,
+i.e., the words that were not filtered. A *clean_words_df* DataFrame is created selecting
+those columns only.
+Finally, we turn our DataFrame into a matrix with its rows and columns transposed. 
+This is just the convention used by the packages we are working with to make our
+analysis; each column is one data realization. 
 
 Next, we need to divide the data in two: a training set and a testing
 set. This is standard practice when working with models that learn from
@@ -267,6 +285,9 @@ fill these variables with values that are relevant to our particular
 problem. First, here's a function `word_count` that counts the
 occurrences of each word in the ham and spam categories.
 
+Now we are going to define some functions that will be important for 
+our filter implementation.
+
 ```{julia, results = FALSE}
 function words_count(word_data, vocabulary, labels, spam=0)
     count_dict = Dict{String,Int64}()
@@ -277,6 +298,10 @@ function words_count(word_data, vocabulary, labels, spam=0)
     return count_dict
 end
 ```
+
+The function *word_count* counts the occurrences of each word in the ham and spam categories. 
+One of its parameters is *word_data*, which we defined before and is a matrix where each 
+column is an email and each row is a word.
 
 Next, we'll define a `fit!` function for our spam filter struct. Notice
 we're using the bang (`!`) convention here to indicate a function that
@@ -295,10 +320,12 @@ function fit!(model::BayesSpamFilter, x_train, y_train, voc)
 end
 ```
 
-This function fills in all the undefined parameters in our struct. We
-mainly use the `words_count` function we defined earlier. Notice that
-we're only fitting the model to the training portion of the data, since
-we're reserving the testing portion to evaluate the model's accuracy.
+What we mean by fitting the model to the data is mainly filling all 
+the undefined parameters in our struct with values represented by the
+training data. To this end, the `words_count` function we defined 
+earlier is used. Notice that we're only fitting the model
+to the training portion of the data, since we're reserving the testing
+portion to evaluate the model's accuracy.
 
 ## Training the Model
 
@@ -451,10 +478,13 @@ ham emails in our data set is considerably higher than the spam ones.
 Let's see the percentages:
 
 ```{julia, results = TRUE}
-sum(x_train)/length(x_train)
+sum(raw_df[!, :Prediction])/length(raw_df[!, :Prediction])
 ```
-This tells us that only 36% of the emails in the training set are
-spam. This type of classification problem, where there's an unequal
+
+This tells us that only 30 percent of the emails in the training set are
+spam: we first sum over the `Prediction` column of the dataset remembering
+it only consists of 0s and 1s, and then we divide by the total amount of mails.
+This type of classification problem, where there's an unequal
 distribution of classes in the dataset, is called *imbalanced*. With
 unbalanced data, a better way to see how the model is performing is to
 construct a *confusion matrix*, an $N \times N$ matrix, where $N$ is the
@@ -504,6 +534,13 @@ ham_accuracy = confusion_matrix[1, :ham_mail] / (confusion_matrix[1, :ham_mail] 
 ```{julia, results = TRUE}
 spam_accuracy = confusion_matrix[2, :spam_mail] / (confusion_matrix[1, :spam_mail] + confusion_matrix[2, :spam_mail])
 ```
+
+With this values now we have more fine-grained measure of the accuracy of our model.
+Now we know that it is not the same for our filter to make a prediction over a spam
+or a ham email. As a consequence of the inbalance in our data, ham emails will be
+classified as such more accurately than spam emails. Still, with both percentages
+above 90, are some pretty good values for a model so simple and naive. Models like 
+these can be used like a baseline for creating more complex ones on top of them.
 
 ## Summary
 
