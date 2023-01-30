@@ -25,37 +25,29 @@ Random.seed!(123)
 ```
 
 Nobody likes spam emails. How can Bayes help? In this chapter, we'll
-keep expanding our data science knowledge with a practical example. 
-A simple yet effective way of using Bayesian probability to
-create a spam filter from scratch will be introduced. The filter will 
-examine emails and classify them as either spam or ham (the word for non-spam emails) 
-based on their content. 
-What we will be implementing here is a *supervised learning model*, 
-in other words, a classification model that has been trained on previously 
-classified data. Think of it like a machine to which you can give some input,
-like an email, and will give you some label to that input, like spam or ham. 
-This machine has a lot of tiny knobs, and based on their particular 
-configuration it will output some label for each input. 
-Supervised learning involves iteratively finding the right configuration 
-of these knobs by letting the machine make a guess with some pre-classified
-data, checking if the guess matches the true label, and if not, tune the
-knobs in some controlled way.
-The way our machine will make predictions is based on the underlying 
-mathematical model. For a spam filter, a *naive Bayes* approach has
-proven to be effective, and you would have the opportunity to verify that
-yourself at the end of the chapter. In a naive Bayes model, Bayes' theorem
-is the main tool for classifing, and it is *naive* because we make
-very loose assumptions about the data we are analyzing. This will be
-clearer once we dive into the implementation.
+keep expanding our data science knowledge with a practical example. A
+simple yet effective way of using Bayesian probability to create a spam
+filter from scratch will be introduced. The filter will examine emails
+and classify them as either spam or ham (the word for non-spam emails)
+based on their content.
 
-The term spam has its origins in the 1970s, in a sketch from the British
-comedy troupe Monty Python (who also inspired the name of the Python
-programming language). In this sketch from the series *Monty Python's
-Flying Circus*, a customer wants to order food at a restaurant, but as
-the waitress begins to loudly recite the menu, the word *spam* starts to
-appear with increasing frequency, to the point of absurdity. Eventually
-all meaning is lost, and the waitress is just shouting *spam, spam,
-spam* . . . which is often what an email inbox feels like.
+What we will be implementing here is a *supervised learning model*, in
+other words, a classification model that has been trained on previously
+classified data. Think of it like a machine to which you can give some
+input, like an email, and will give you some label to that input, like
+spam or ham. This machine has a lot of tiny knobs, and based on their
+particular configuration it will output some label for each input.
+Supervised learning involves iteratively finding the right configuration
+of these knobs by letting the machine make a guess with some
+pre-classified data, checking if the guess matches the true label, and
+if not, tune the knobs in some controlled way. The way our machine will
+make predictions is based on the underlying mathematical model. For a
+spam filter, a *naive Bayes* approach has proven to be effective, and
+you will have the opportunity to verify that yourself at the end of the
+chapter. In a naive Bayes model, Bayes' theorem is the main tool for
+classifying, and it is *naive* because we make very loose assumptions
+about the data we are analyzing. This will be clearer once we dive into
+the implementation.
 
 ## The Training Data
 
@@ -70,7 +62,7 @@ emails we receive.
 
 Fortunately, there are a lot of very good datasets available online.
 We'll use the "Email Spam Classification Dataset CSV" from
-[Kaggle](https://www.kaggle.com/balaka18/email-spam-classification-dataset-csv)
+[Kaggle](https://www.kaggle.com/balaka18/email-spam-classification-dataset-csv),
 a website where data science enthusiasts and practitioners publish
 datasets, participate in competitions, and share their knowledge. The
 dataset's description included online helps us make sense of its
@@ -103,55 +95,51 @@ articles and pronouns, which will most likely add noise rather than
 information to our classification algorithm.
 
 ```{julia, results = FALSE}
-# Get the list of all words present in all mails.
-# We strip the first and last columns which are the email id and label 
 all_words = names(raw_df)[2:end-1]
 
-# Create a StringDocument, a struct with methods to remove articles and
-# pronouns from the text
 all_words_text = join(all_words, " ")
 document = StringDocument(all_words_text)
 
-# Remove articles and pronouns
 prepare!(document, strip_articles)
 prepare!(document, strip_pronouns)
 
-# Create another DataFrame with the filtered words.
 vocabulary = split(TextAnalysis.text(document))
 clean_words_df = raw_df[!, vocabulary]
 
-# Transform the DataFrame into a Matrix and transpose it to have each 
-# mail as a column. 
 data_matrix = Matrix(clean_words_df)'
 ```
 
-In the first line, we create a variable *all_words* to store a list of all of 
-the words present in the emails. As our dataset has a column for each word, we do this 
-by storing the names of every column with the *names* function, except for the first 
-and last column, which are for email id and label, respectively.
+In the first line, we create a variable *all_words* to store a list of
+all the words present in the emails. As our dataset has a column for
+each word, we do this by storing the names of every column with the
+`names` function, except for the first and last column, which are for
+email id and for the spam or ham label, respectively.
 
-Let's move on to the second and third lines of the code. We would like to filter out 
-some words that are very common in the English language, such as articles and pronouns,
-which will most likely add noise rather than information to our classification algorithm. 
-For this we will use two Julia packages that are specially designed for working with 
-texts of any type. These are Languages.jl and TextAnalysis.jl. In the third line, we 
-create a StringDocument, which is a struct provided by TextAnalysis.jl and 
-we use its built-in methods to remove articles and pronouns from the list of words 
-we created before. This is done calling the *prepare* function two times, with two
-different flags: *strip_articles* and *strip_pronouns*.
-What follows is just code to recover our original DataFrame with only the relevant columns,
-i.e., the words that were not filtered. A *clean_words_df* DataFrame is created selecting
-those columns only.
-Finally, we turn our DataFrame into a matrix with its rows and columns transposed. 
-This is just the convention used by the packages we are working with to make our
-analysis; each column is one data realization. 
+Let's move on to the second and third lines of the code. We would like
+to filter out some words that are very common in the English language,
+such as articles and pronouns, which will most likely add noise rather
+than information to our classification algorithm. For this we will use
+two Julia packages that are specially designed for working with texts of
+any type. These are Languages.jl and TextAnalysis.jl. In the third line,
+we create a StringDocument, which is a struct provided by
+TextAnalysis.jl and we use its built-in methods to remove articles and
+pronouns from the list of words we created before. This is done by
+calling the *prepare* function two times, with two different flags:
+`strip_articles` and `strip_pronouns`. What follows is just code to
+recover our original DataFrame with only the relevant columns, i.e., the
+words that were not filtered. A `clean_words_df` DataFrame is created
+selecting those columns only. Finally, we turn our DataFrame into a
+matrix with its rows and columns transposed. This is just the convention
+used by the packages we are working with to make our analysis; each
+column is one data realization.
 
 Next, we need to divide the data in two: a training set and a testing
 set. This is standard practice when working with models that learn from
-data, like the one we're going to implement. We train the model with the
-training set, then evaluate the model's accuracy by having it make
-predictions on the testing set. In Julia, the package MLDataUtils.jl has
-some nice functionalities for data manipulations like this.
+data, like the one we're going to implement. We're going to train the
+model on the training set, and then evaluate the model's accuracy by
+having it make predictions on the testing set. In Julia, the package
+MLDataUtils.jl has some nice functionalities for data manipulations like
+this.
 
 ```{julia, results = FALSE}
 labels = raw_df.Prediction
@@ -285,8 +273,8 @@ fill these variables with values that are relevant to our particular
 problem. First, here's a function `word_count` that counts the
 occurrences of each word in the ham and spam categories.
 
-Now we are going to define some functions that will be important for 
-our filter implementation.
+Now we are going to define some functions that will be important for our
+filter implementation.
 
 ```{julia, results = FALSE}
 function words_count(word_data, vocabulary, labels, spam=0)
@@ -299,9 +287,10 @@ function words_count(word_data, vocabulary, labels, spam=0)
 end
 ```
 
-The function *word_count* counts the occurrences of each word in the ham and spam categories. 
-One of its parameters is *word_data*, which we defined before and is a matrix where each 
-column is an email and each row is a word.
+The function *word_count* counts the occurrences of each word in the ham
+and spam categories. One of its parameters is *word_data*, which we
+defined before and is a matrix where each column is an email and each
+row is a word.
 
 Next, we'll define a `fit!` function for our spam filter struct. Notice
 we're using the bang (`!`) convention here to indicate a function that
@@ -320,12 +309,12 @@ function fit!(model::BayesSpamFilter, x_train, y_train, voc)
 end
 ```
 
-What we mean by fitting the model to the data is mainly filling all 
-the undefined parameters in our struct with values represented by the
-training data. To this end, the `words_count` function we defined 
-earlier is used. Notice that we're only fitting the model
-to the training portion of the data, since we're reserving the testing
-portion to evaluate the model's accuracy.
+What we mean by fitting the model to the data is mainly filling all the
+undefined parameters in our struct with values informed by the training
+data. To do this, we use the `words_count` function we defined earlier.
+Notice that we're only fitting the model to the training portion of the
+data, since we're reserving the testing portion to evaluate the model's
+accuracy.
 
 ## Training the Model
 
@@ -388,6 +377,7 @@ function spam_predict(email, model::BayesSpamFilter, α, tol=100)
     return ham_prior * email_ham_probability, spam_prior * email_spam_probability
 end
 ```
+
 This function takes as input a new email that we want to classify as
 spam or ham, our fitted model, an $α$ value (which we've already
 discussed), and a tolerance value `tol`. The latter sets the maximum
@@ -481,17 +471,16 @@ Let's see the percentages:
 sum(raw_df[!, :Prediction])/length(raw_df[!, :Prediction])
 ```
 
-This tells us that only 30 percent of the emails in the training set are
-spam: we first sum over the `Prediction` column of the dataset remembering
-it only consists of 0s and 1s, and then we divide by the total amount of mails.
-This type of classification problem, where there's an unequal
-distribution of classes in the dataset, is called *imbalanced*. With
-unbalanced data, a better way to see how the model is performing is to
-construct a *confusion matrix*, an $N \times N$ matrix, where $N$ is the
-number of target classes (in our case, 2, for spam and ham). The matrix
-compares the actual values for each class with those predicted by the
-model. Here's a function that builds a confusion matrix for our spam
-filter:
+To calculate the proportion of spam to ham emails, we sum over the
+`Prediction` column of the dataset remembering it only consists of 0s
+and 1s, and then we divide by the total amount of emails.This type of
+classification problem, where there's an unequal distribution of classes
+in the dataset, is called *imbalanced*. With unbalanced data, a better
+way to see how the model is performing is to construct a *confusion
+matrix*, an $N \times N$ matrix, where $N$ is the number of target
+classes (in our case, 2, for spam and ham). The matrix compares the
+actual values for each class with those predicted by the model. Here's a
+function that builds a confusion matrix for our spam filter:
 
 ```{julia, results = FALSE}
 function spam_filter_confusion_matrix(y_test, predictions)
@@ -535,12 +524,14 @@ ham_accuracy = confusion_matrix[1, :ham_mail] / (confusion_matrix[1, :ham_mail] 
 spam_accuracy = confusion_matrix[2, :spam_mail] / (confusion_matrix[1, :spam_mail] + confusion_matrix[2, :spam_mail])
 ```
 
-With this values now we have more fine-grained measure of the accuracy of our model.
-Now we know that it is not the same for our filter to make a prediction over a spam
-or a ham email. As a consequence of the inbalance in our data, ham emails will be
-classified as such more accurately than spam emails. Still, with both percentages
-above 90, are some pretty good values for a model so simple and naive. Models like 
-these can be used like a baseline for creating more complex ones on top of them.
+With these values now we have a more fine-grained measure of the
+accuracy of our model. Now we know that our spam filter doesn't have the
+same degree of accuracy for spam and for ham emails. As a consequence of
+the imbalance in our data, ham emails will be classified as such more
+accurately than spam emails. Still, with both percentages above 90, the
+accuracy is pretty good for a model so simple and naive. Models like
+these can be used like a baseline for creating more complex ones on top
+of them.
 
 ## Summary
 
@@ -560,19 +551,20 @@ calculating the accuracy and making a confusion matrix.
 
 ## Appendix - A little more about alpha
 
-As we have seen, to calculate the probability of the email being a spam 
+As we have seen, to calculate the probability of the email being a spam
 email, we should use
 
 $P(email|spam)=∏ni=1P(wordi|spam)=P(word0|spam)P(word1|spam)...P(wordnp|spam)$
 
-where P(wordnp|spam) stands for the probability of the word that is not presen
-t in our dataset. What probability should be assigned to this word? One way to 
-handle this could be to simply ignore that term in the multiplication. In other 
-words, assigning P(wordnp|spam)=1. Without thinking about it too much, we can 
-conclude that this doesn’t make any sense, since that would mean that the probability 
-to find that word in a spam (or ham, too) email would be equal to 1. A more 
-logically consistent approach would be to assign 0 probability to that word. 
-But there is a problem: with P(wordnp|spam)=0
+where P(wordnp\|spam) stands for the probability of the word that is not
+presen t in our dataset. What probability should be assigned to this
+word? One way to handle this could be to simply ignore that term in the
+multiplication. In other words, assigning P(wordnp\|spam)=1. Without
+thinking about it too much, we can conclude that this doesn't make any
+sense, since that would mean that the probability to find that word in a
+spam (or ham, too) email would be equal to 1. A more logically
+consistent approach would be to assign 0 probability to that word. But
+there is a problem: with $P(wordnp\|spam)=0$
 
 we can quickly see that
 
@@ -580,13 +572,14 @@ $P(word0|spam)P(word1|spam)...P(wordnp|spam)=0$
 
 This is the motivation for introducing the smoothing parameter α
 
-into our equation. In a real-word scenario, we should expect that words not present 
-in our training set will appear, and altough it makes sense that they don’t have a 
-high probability, it can’t be 0. When such a word appears, the probability assigned 
-for it will be simply
+into our equation. In a real-word scenario, we should expect that words
+not present in our training set will appear, and altough it makes sense
+that they don't have a high probability, it can't be 0. When such a word
+appears, the probability assigned for it will be simply
 
 $P(wordnp|spam)=Nwordnp|spam+αNspam+αNvocabulary=0+αNspam+αNvocabulary=αNspam+αNvocabulary$
 
-In summary, α is just a smoothing parameter, so that the probability of 
-finding a word that is not in our dataset, doesn’t go down to 0. Since we 
-want to keep the probability for these words low enough, it makes sense to use α=1
+In summary, α is just a smoothing parameter, so that the probability of
+finding a word that is not in our dataset, doesn't go down to 0. Since
+we want to keep the probability for these words low enough, it makes
+sense to use α=1
