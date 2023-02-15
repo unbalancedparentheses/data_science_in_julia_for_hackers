@@ -320,7 +320,7 @@ For the events R and L:
 $P(R\text{ and }L) = P(R)P(L|R)$
 
 Let's analyze the nature of these events a little bit, are they related? 
-Technically, we can think everything in our planet is interconnected with everything else, but in practice, it is fair to assume these two events are pretty independent from one another.
+If we think about it long enough, we can find anything in the world is interconnected with anything else, but in practice, it is fair to assume these two events are pretty independent from one another.
 In a more formal way, what this is telling us is that knowing the probability of one of the events does not give us information about the probability of the other event. 
 That is the definition of independence in this context. 
 
@@ -398,7 +398,7 @@ To really get a grasp of the meaning behind the Baseyian interpretation of proba
 $P(H|D) = \frac{P(D|H)P(H)}{P(D)}$
 
 Put into words, what this means is 'the probability of my hypothesis or *belief*, given the data observed, is equal to the probability that the data would be obtained if the belief were to be true, multiplied by the probability of the hypothesis being true before seeing the data, divided by the probability of obtaining that data'. 
-This may sound a bit confusing at first, but if you look closely for some time and think about each term, you will find it makes perfect sense.
+This may sound a bit confusing at first, so let's look a little closer at each term:
 
 * P(H): This is called **Prior probability**. As its name states, it represents the probability of a particular belief or hypothesis of being true *before* we have any new data to contrast this belief.
 
