@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 5 Probabilistic programming | Data Science in Julia for Hackers</title>
   <meta name="description" content="Chapter 5 Probabilistic programming | Data Science in Julia for Hackers" />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 5 Probabilistic programming | Data Science in Julia for Hackers" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="Chapter 5 Probabilistic programming | Data Science in Julia for Hackers" />
   
@@ -21,10 +20,8 @@
   <meta name="twitter:description" content="Chapter 5 Probabilistic programming | Data Science in Julia for Hackers" />
   
 
-<meta name="author" content="Lambdaclass" />
 
 
-<meta name="date" content="2021-04-28" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,8 +30,8 @@
   
 <link rel="prev" href="spam-filter.html"/>
 <link rel="next" href="escaping-from-mars.html"/>
-<script src="libs/header-attrs-2.7/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -50,7 +47,9 @@
 
 
 
-
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
@@ -91,7 +90,7 @@ code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -104,7 +103,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -117,6 +116,7 @@ code span.va { color: #19177c; } /* Variable */
 code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
+
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -131,157 +131,155 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-  <li><a href="./">Data Science in Julia for Hackers</a></li>
+<li><a href="./">Data Science in Julia for Hackers</a></li>
 
-  <li class="divider"></li>
-  <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a>
-  <ul>
-  <li class="chapter" data-level="" data-path="index.html"><a href="index.html#prologue"><i class="fa fa-check"></i>Prologue</a></li>
-  </ul></li>
-  <li class="part"><span><b>I Data Science and Julia</b></span></li>
-  <li class="chapter" data-level="1" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html"><i class="fa fa-check"></i><b>1</b> Science technology and epistemology</a>
-  <ul>
-  <li class="chapter" data-level="1.1" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#the-difference-between-science-and-technology"><i class="fa fa-check"></i><b>1.1</b> The difference between Science and Technology</a></li>
-  <li class="chapter" data-level="1.2" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#what-is-technology"><i class="fa fa-check"></i><b>1.2</b> What is technology?</a></li>
-  <li class="chapter" data-level="1.3" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#references"><i class="fa fa-check"></i><b>1.3</b> References</a></li>
-  </ul></li>
-  <li class="chapter" data-level="2" data-path="meeting-julia.html"><a href="meeting-julia.html"><i class="fa fa-check"></i><b>2</b> Meeting Julia</a>
-  <ul>
-  <li class="chapter" data-level="2.1" data-path="meeting-julia.html"><a href="meeting-julia.html#why-julia"><i class="fa fa-check"></i><b>2.1</b> Why Julia</a></li>
-  <li class="chapter" data-level="2.2" data-path="meeting-julia.html"><a href="meeting-julia.html#julia-presentation"><i class="fa fa-check"></i><b>2.2</b> Julia presentation</a></li>
-  <li class="chapter" data-level="2.3" data-path="meeting-julia.html"><a href="meeting-julia.html#installation"><i class="fa fa-check"></i><b>2.3</b> Installation</a></li>
-  <li class="chapter" data-level="2.4" data-path="meeting-julia.html"><a href="meeting-julia.html#first-steps-into-the-julia-world"><i class="fa fa-check"></i><b>2.4</b> First steps into the Julia world</a></li>
-  <li class="chapter" data-level="2.5" data-path="meeting-julia.html"><a href="meeting-julia.html#julias-ecosystem-basic-plotting-and-manipulation-of-dataframes"><i class="fa fa-check"></i><b>2.5</b> Julia’s Ecosystem: Basic plotting and manipulation of DataFrames</a>
-  <ul>
-  <li class="chapter" data-level="2.5.1" data-path="meeting-julia.html"><a href="meeting-julia.html#plotting-with-plots.jl"><i class="fa fa-check"></i><b>2.5.1</b> Plotting with Plots.jl</a></li>
-  <li class="chapter" data-level="2.5.2" data-path="meeting-julia.html"><a href="meeting-julia.html#introducing-dataframes.jl"><i class="fa fa-check"></i><b>2.5.2</b> Introducing DataFrames.jl</a></li>
-  </ul></li>
-  <li class="chapter" data-level="2.6" data-path="meeting-julia.html"><a href="meeting-julia.html#summary"><i class="fa fa-check"></i><b>2.6</b> Summary</a></li>
-  <li class="chapter" data-level="2.7" data-path="meeting-julia.html"><a href="meeting-julia.html#references-1"><i class="fa fa-check"></i><b>2.7</b> References</a></li>
-  </ul></li>
-  <li class="part"><span><b>II Bayesian Statistics</b></span></li>
-  <li class="chapter" data-level="3" data-path="probability-introduction.html"><a href="probability-introduction.html"><i class="fa fa-check"></i><b>3</b> Probability introduction</a>
-  <ul>
-  <li class="chapter" data-level="3.1" data-path="probability-introduction.html"><a href="probability-introduction.html#introduction-to-probability"><i class="fa fa-check"></i><b>3.1</b> Introduction to Probability</a></li>
-  <li class="chapter" data-level="3.2" data-path="probability-introduction.html"><a href="probability-introduction.html#events-sample-spaces-and-sample-points"><i class="fa fa-check"></i><b>3.2</b> Events, sample spaces and sample points</a>
-  <ul>
-  <li class="chapter" data-level="3.2.1" data-path="probability-introduction.html"><a href="probability-introduction.html#relation-among-events"><i class="fa fa-check"></i><b>3.2.1</b> Relation among events</a></li>
-  </ul></li>
-  <li class="chapter" data-level="3.3" data-path="probability-introduction.html"><a href="probability-introduction.html#probability"><i class="fa fa-check"></i><b>3.3</b> Probability</a></li>
-  <li class="chapter" data-level="3.4" data-path="probability-introduction.html"><a href="probability-introduction.html#conditional-probability"><i class="fa fa-check"></i><b>3.4</b> Conditional probability</a></li>
-  <li class="chapter" data-level="3.5" data-path="probability-introduction.html"><a href="probability-introduction.html#joint-probability"><i class="fa fa-check"></i><b>3.5</b> Joint probability</a></li>
-  <li class="chapter" data-level="3.6" data-path="probability-introduction.html"><a href="probability-introduction.html#bayes-theorem"><i class="fa fa-check"></i><b>3.6</b> Bayes theorem</a></li>
-  <li class="chapter" data-level="3.7" data-path="probability-introduction.html"><a href="probability-introduction.html#probability-distributions"><i class="fa fa-check"></i><b>3.7</b> Probability distributions</a>
-  <ul>
-  <li class="chapter" data-level="3.7.1" data-path="probability-introduction.html"><a href="probability-introduction.html#discrete-case"><i class="fa fa-check"></i><b>3.7.1</b> Discrete Case</a></li>
-  <li class="chapter" data-level="3.7.2" data-path="probability-introduction.html"><a href="probability-introduction.html#continuous-cases"><i class="fa fa-check"></i><b>3.7.2</b> Continuous cases</a></li>
-  <li class="chapter" data-level="3.7.3" data-path="probability-introduction.html"><a href="probability-introduction.html#histograms"><i class="fa fa-check"></i><b>3.7.3</b> Histograms</a></li>
-  </ul></li>
-  <li class="chapter" data-level="3.8" data-path="probability-introduction.html"><a href="probability-introduction.html#example-bayesian-bandits"><i class="fa fa-check"></i><b>3.8</b> Example: Bayesian Bandits</a></li>
-  <li class="chapter" data-level="3.9" data-path="probability-introduction.html"><a href="probability-introduction.html#summary-1"><i class="fa fa-check"></i><b>3.9</b> Summary</a></li>
-  <li class="chapter" data-level="3.10" data-path="probability-introduction.html"><a href="probability-introduction.html#references-2"><i class="fa fa-check"></i><b>3.10</b> References</a></li>
-  </ul></li>
-  <li class="chapter" data-level="4" data-path="spam-filter.html"><a href="spam-filter.html"><i class="fa fa-check"></i><b>4</b> Spam filter</a>
-  <ul>
-  <li class="chapter" data-level="4.1" data-path="spam-filter.html"><a href="spam-filter.html#naive-bayes-spam-or-ham"><i class="fa fa-check"></i><b>4.1</b> Naive Bayes: Spam or Ham?</a></li>
-  <li class="chapter" data-level="4.2" data-path="spam-filter.html"><a href="spam-filter.html#summary-2"><i class="fa fa-check"></i><b>4.2</b> Summary</a></li>
-  <li class="chapter" data-level="4.3" data-path="spam-filter.html"><a href="spam-filter.html#references-3"><i class="fa fa-check"></i><b>4.3</b> References</a></li>
-  </ul></li>
-  <li class="chapter" data-level="5" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html"><i class="fa fa-check"></i><b>5</b> Probabilistic programming</a>
-  <ul>
-  <li class="chapter" data-level="5.1" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#coin-flipping-example"><i class="fa fa-check"></i><b>5.1</b> Coin flipping example</a></li>
-  <li class="chapter" data-level="5.2" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#summary-3"><i class="fa fa-check"></i><b>5.2</b> Summary</a></li>
-  <li class="chapter" data-level="5.3" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#references-4"><i class="fa fa-check"></i><b>5.3</b> References</a></li>
-  </ul></li>
-  <li class="chapter" data-level="6" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html"><i class="fa fa-check"></i><b>6</b> Escaping from Mars</a>
-  <ul>
-  <li class="chapter" data-level="6.1" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#calculating-the-constant-g-of-mars"><i class="fa fa-check"></i><b>6.1</b> Calculating the constant g of Mars</a></li>
-  <li class="chapter" data-level="6.2" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#optimizing-the-throwing-angle"><i class="fa fa-check"></i><b>6.2</b> Optimizing the throwing angle</a>
-  <ul>
-  <li class="chapter" data-level="6.2.1" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#calculating-the-escape-velocity"><i class="fa fa-check"></i><b>6.2.1</b> Calculating the escape velocity</a></li>
-  </ul></li>
-  <li class="chapter" data-level="6.3" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#summary-4"><i class="fa fa-check"></i><b>6.3</b> Summary</a></li>
-  </ul></li>
-  <li class="chapter" data-level="7" data-path="football-simulation.html"><a href="football-simulation.html"><i class="fa fa-check"></i><b>7</b> Football simulation</a>
-  <ul>
-  <li class="chapter" data-level="7.1" data-path="football-simulation.html"><a href="football-simulation.html#creating-our-conjectures"><i class="fa fa-check"></i><b>7.1</b> Creating our conjectures</a>
-  <ul>
-  <li class="chapter" data-level="7.1.1" data-path="football-simulation.html"><a href="football-simulation.html#bayesian-hierarchical-models"><i class="fa fa-check"></i><b>7.1.1</b> Bayesian hierarchical models</a></li>
-  </ul></li>
-  <li class="chapter" data-level="7.2" data-path="football-simulation.html"><a href="football-simulation.html#simulate-possible-realities"><i class="fa fa-check"></i><b>7.2</b> Simulate possible realities</a></li>
-  <li class="chapter" data-level="7.3" data-path="football-simulation.html"><a href="football-simulation.html#summary-5"><i class="fa fa-check"></i><b>7.3</b> Summary</a></li>
-  <li class="chapter" data-level="7.4" data-path="football-simulation.html"><a href="football-simulation.html#references-5"><i class="fa fa-check"></i><b>7.4</b> References</a></li>
-  </ul></li>
-  <li class="chapter" data-level="8" data-path="basketball-shots.html"><a href="basketball-shots.html"><i class="fa fa-check"></i><b>8</b> Basketball shots</a>
-  <ul>
-  <li class="chapter" data-level="8.1" data-path="basketball-shots.html"><a href="basketball-shots.html#modeling-the-probability-of-scoring"><i class="fa fa-check"></i><b>8.1</b> Modeling the probability of scoring</a></li>
-  <li class="chapter" data-level="8.2" data-path="basketball-shots.html"><a href="basketball-shots.html#prior-predictive-checks-part-i"><i class="fa fa-check"></i><b>8.2</b> Prior Predictive Checks: Part I</a></li>
-  <li class="chapter" data-level="8.3" data-path="basketball-shots.html"><a href="basketball-shots.html#new-model-and-prior-predictive-checks-part-ii"><i class="fa fa-check"></i><b>8.3</b> New model and prior predictive checks: Part II</a>
-  <ul>
-  <li class="chapter" data-level="8.3.1" data-path="basketball-shots.html"><a href="basketball-shots.html#defining-the-new-model-and-computing-posteriors"><i class="fa fa-check"></i><b>8.3.1</b> Defining the new model and computing posteriors</a></li>
-  </ul></li>
-  <li class="chapter" data-level="8.4" data-path="basketball-shots.html"><a href="basketball-shots.html#does-the-period-affect-the-probability-of-scoring"><i class="fa fa-check"></i><b>8.4</b> Does the Period affect the probability of scoring?</a></li>
-  <li class="chapter" data-level="8.5" data-path="basketball-shots.html"><a href="basketball-shots.html#summary-6"><i class="fa fa-check"></i><b>8.5</b> Summary</a></li>
-  </ul></li>
-  <li class="chapter" data-level="9" data-path="optimal-pricing.html"><a href="optimal-pricing.html"><i class="fa fa-check"></i><b>9</b> Optimal pricing</a>
-  <ul>
-  <li class="chapter" data-level="9.1" data-path="optimal-pricing.html"><a href="optimal-pricing.html#overview"><i class="fa fa-check"></i><b>9.1</b> Overview</a></li>
-  <li class="chapter" data-level="9.2" data-path="optimal-pricing.html"><a href="optimal-pricing.html#optimal-pricing-1"><i class="fa fa-check"></i><b>9.2</b> Optimal pricing</a>
-  <ul>
-  <li class="chapter" data-level="9.2.1" data-path="optimal-pricing.html"><a href="optimal-pricing.html#price-vs-quantity-model"><i class="fa fa-check"></i><b>9.2.1</b> Price vs Quantity model</a></li>
-  <li class="chapter" data-level="9.2.2" data-path="optimal-pricing.html"><a href="optimal-pricing.html#price-elasticity-of-demand"><i class="fa fa-check"></i><b>9.2.2</b> Price elasticity of demand</a></li>
-  </ul></li>
-  <li class="chapter" data-level="9.3" data-path="optimal-pricing.html"><a href="optimal-pricing.html#maximizing-profit"><i class="fa fa-check"></i><b>9.3</b> Maximizing profit</a></li>
-  <li class="chapter" data-level="9.4" data-path="optimal-pricing.html"><a href="optimal-pricing.html#summary-7"><i class="fa fa-check"></i><b>9.4</b> Summary</a></li>
-  <li class="chapter" data-level="9.5" data-path="optimal-pricing.html"><a href="optimal-pricing.html#references-6"><i class="fa fa-check"></i><b>9.5</b> References</a></li>
-  </ul></li>
-  <li class="part"><span><b>III Deep Learning</b></span></li>
-  <li class="chapter" data-level="10" data-path="image-classification.html"><a href="image-classification.html"><i class="fa fa-check"></i><b>10</b> Image classification</a>
-  <ul>
-  <li class="chapter" data-level="10.1" data-path="image-classification.html"><a href="image-classification.html#bee-population-control-what-would-happen-if-bees-go-extinct"><i class="fa fa-check"></i><b>10.1</b> Bee population control: What would happen if bees go extinct?</a></li>
-  <li class="chapter" data-level="10.2" data-path="image-classification.html"><a href="image-classification.html#machine-learning-overview"><i class="fa fa-check"></i><b>10.2</b> Machine Learning Overview</a></li>
-  <li class="chapter" data-level="10.3" data-path="image-classification.html"><a href="image-classification.html#neural-networks-and-convolutional-neural-networks"><i class="fa fa-check"></i><b>10.3</b> Neural networks and convolutional neural networks</a></li>
-  <li class="chapter" data-level="10.4" data-path="image-classification.html"><a href="image-classification.html#summary-8"><i class="fa fa-check"></i><b>10.4</b> Summary</a></li>
-  <li class="chapter" data-level="10.5" data-path="image-classification.html"><a href="image-classification.html#references-7"><i class="fa fa-check"></i><b>10.5</b> References</a></li>
-  </ul></li>
-  <li class="part"><span><b>IV Scientific Machine Learning</b></span></li>
-  <li class="chapter" data-level="11" data-path="ultima-online.html"><a href="ultima-online.html"><i class="fa fa-check"></i><b>11</b> Ultima online</a>
-  <ul>
-  <li class="chapter" data-level="11.1" data-path="ultima-online.html"><a href="ultima-online.html#the-ultima-online-catastrophe"><i class="fa fa-check"></i><b>11.1</b> The Ultima Online Catastrophe</a>
-  <ul>
-  <li class="chapter" data-level="11.1.1" data-path="ultima-online.html"><a href="ultima-online.html#the-lotka-volterra-model-for-population-dynamics"><i class="fa fa-check"></i><b>11.1.1</b> The Lotka-Volterra model for population dynamics</a></li>
-  </ul></li>
-  <li class="chapter" data-level="11.2" data-path="ultima-online.html"><a href="ultima-online.html#summary-9"><i class="fa fa-check"></i><b>11.2</b> Summary</a></li>
-  <li class="chapter" data-level="11.3" data-path="ultima-online.html"><a href="ultima-online.html#references-8"><i class="fa fa-check"></i><b>11.3</b> References</a></li>
-  </ul></li>
-  <li class="chapter" data-level="12" data-path="ultima-continued.html"><a href="ultima-continued.html"><i class="fa fa-check"></i><b>12</b> Ultima continued</a>
-  <ul>
-  <li class="chapter" data-level="12.1" data-path="ultima-continued.html"><a href="ultima-continued.html#the-language-of-science"><i class="fa fa-check"></i><b>12.1</b> The language of science</a></li>
-  <li class="chapter" data-level="12.2" data-path="ultima-continued.html"><a href="ultima-continued.html#scientific-machine-learning-for-model-discovery"><i class="fa fa-check"></i><b>12.2</b> Scientific Machine Learning for model discovery</a>
-  <ul>
-  <li class="chapter" data-level="12.2.1" data-path="ultima-continued.html"><a href="ultima-continued.html#looking-for-the-catastrophe-culprit"><i class="fa fa-check"></i><b>12.2.1</b> Looking for the catastrophe culprit</a></li>
-  <li class="chapter" data-level="12.2.2" data-path="ultima-continued.html"><a href="ultima-continued.html#the-infamous-day-begins."><i class="fa fa-check"></i><b>12.2.2</b> The infamous day begins.</a></li>
-  </ul></li>
-  <li class="chapter" data-level="12.3" data-path="ultima-continued.html"><a href="ultima-continued.html#summary-10"><i class="fa fa-check"></i><b>12.3</b> Summary</a></li>
-  <li class="chapter" data-level="12.4" data-path="ultima-continued.html"><a href="ultima-continued.html#references-9"><i class="fa fa-check"></i><b>12.4</b> References</a></li>
-  </ul></li>
-  <li class="part"><span><b>V Time Series and Forecasting</b></span></li>
-  <li class="chapter" data-level="13" data-path="time-series.html"><a href="time-series.html"><i class="fa fa-check"></i><b>13</b> Time series</a>
-  <ul>
-  <li class="chapter" data-level="13.1" data-path="time-series.html"><a href="time-series.html#predicting-the-future"><i class="fa fa-check"></i><b>13.1</b> Predicting the future</a></li>
-  <li class="chapter" data-level="13.2" data-path="time-series.html"><a href="time-series.html#exponential-smoothing"><i class="fa fa-check"></i><b>13.2</b> Exponential Smoothing</a>
-  <ul>
-  <li class="chapter" data-level="13.2.1" data-path="time-series.html"><a href="time-series.html#weighted-average-and-component-form"><i class="fa fa-check"></i><b>13.2.1</b> Weighted average and Component form</a></li>
-  <li class="chapter" data-level="13.2.2" data-path="time-series.html"><a href="time-series.html#optimization-or-fitting-process"><i class="fa fa-check"></i><b>13.2.2</b> Optimization (or Fitting) Process</a></li>
-  <li class="chapter" data-level="13.2.3" data-path="time-series.html"><a href="time-series.html#trend-methods"><i class="fa fa-check"></i><b>13.2.3</b> Trend Methods</a></li>
-  <li class="chapter" data-level="13.2.4" data-path="time-series.html"><a href="time-series.html#seasonality-methods"><i class="fa fa-check"></i><b>13.2.4</b> Seasonality Methods</a></li>
-  </ul></li>
-  <li class="chapter" data-level="13.3" data-path="time-series.html"><a href="time-series.html#summary-11"><i class="fa fa-check"></i><b>13.3</b> Summary</a></li>
-  <li class="chapter" data-level="13.4" data-path="time-series.html"><a href="time-series.html#references-10"><i class="fa fa-check"></i><b>13.4</b> References</a></li>
-  </ul></li>
-  <li class="divider"></li>
-  <li><a href="https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers" target="blank">Published with bookdown</a></li>
-      
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#prologue"><i class="fa fa-check"></i>Prologue</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html"><i class="fa fa-check"></i><b>1</b> Science technology and epistemology</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#the-difference-between-science-and-technology"><i class="fa fa-check"></i><b>1.1</b> The difference between Science and Technology</a></li>
+<li class="chapter" data-level="1.2" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#what-is-technology"><i class="fa fa-check"></i><b>1.2</b> What is technology?</a></li>
+<li class="chapter" data-level="1.3" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#references"><i class="fa fa-check"></i><b>1.3</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="meeting-julia.html"><a href="meeting-julia.html"><i class="fa fa-check"></i><b>2</b> Meeting Julia</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="meeting-julia.html"><a href="meeting-julia.html#why-julia"><i class="fa fa-check"></i><b>2.1</b> Why Julia</a></li>
+<li class="chapter" data-level="2.2" data-path="meeting-julia.html"><a href="meeting-julia.html#julia-presentation"><i class="fa fa-check"></i><b>2.2</b> Julia presentation</a></li>
+<li class="chapter" data-level="2.3" data-path="meeting-julia.html"><a href="meeting-julia.html#installation"><i class="fa fa-check"></i><b>2.3</b> Installation</a></li>
+<li class="chapter" data-level="2.4" data-path="meeting-julia.html"><a href="meeting-julia.html#first-steps-into-the-julia-world"><i class="fa fa-check"></i><b>2.4</b> First steps into the Julia world</a></li>
+<li class="chapter" data-level="2.5" data-path="meeting-julia.html"><a href="meeting-julia.html#julias-ecosystem-basic-plotting-and-manipulation-of-dataframes"><i class="fa fa-check"></i><b>2.5</b> Julia’s Ecosystem: Basic plotting and manipulation of DataFrames</a>
+<ul>
+<li class="chapter" data-level="2.5.1" data-path="meeting-julia.html"><a href="meeting-julia.html#plotting-with-plots.jl"><i class="fa fa-check"></i><b>2.5.1</b> Plotting with Plots.jl</a></li>
+<li class="chapter" data-level="2.5.2" data-path="meeting-julia.html"><a href="meeting-julia.html#introducing-dataframes.jl"><i class="fa fa-check"></i><b>2.5.2</b> Introducing DataFrames.jl</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="meeting-julia.html"><a href="meeting-julia.html#summary"><i class="fa fa-check"></i><b>2.6</b> Summary</a></li>
+<li class="chapter" data-level="2.7" data-path="meeting-julia.html"><a href="meeting-julia.html#references-1"><i class="fa fa-check"></i><b>2.7</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="probability-introduction.html"><a href="probability-introduction.html"><i class="fa fa-check"></i><b>3</b> Probability introduction</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="probability-introduction.html"><a href="probability-introduction.html#introduction-to-probability"><i class="fa fa-check"></i><b>3.1</b> Introduction to Probability</a></li>
+<li class="chapter" data-level="3.2" data-path="probability-introduction.html"><a href="probability-introduction.html#events-sample-spaces-and-sample-points"><i class="fa fa-check"></i><b>3.2</b> Events, sample spaces and sample points</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="probability-introduction.html"><a href="probability-introduction.html#relation-among-events"><i class="fa fa-check"></i><b>3.2.1</b> Relation among events</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="probability-introduction.html"><a href="probability-introduction.html#probability"><i class="fa fa-check"></i><b>3.3</b> Probability</a></li>
+<li class="chapter" data-level="3.4" data-path="probability-introduction.html"><a href="probability-introduction.html#conditional-probability"><i class="fa fa-check"></i><b>3.4</b> Conditional probability</a></li>
+<li class="chapter" data-level="3.5" data-path="probability-introduction.html"><a href="probability-introduction.html#joint-probability"><i class="fa fa-check"></i><b>3.5</b> Joint probability</a></li>
+<li class="chapter" data-level="3.6" data-path="probability-introduction.html"><a href="probability-introduction.html#bayes-theorem"><i class="fa fa-check"></i><b>3.6</b> Bayes theorem</a></li>
+<li class="chapter" data-level="3.7" data-path="probability-introduction.html"><a href="probability-introduction.html#probability-distributions"><i class="fa fa-check"></i><b>3.7</b> Probability distributions</a>
+<ul>
+<li class="chapter" data-level="3.7.1" data-path="probability-introduction.html"><a href="probability-introduction.html#discrete-case"><i class="fa fa-check"></i><b>3.7.1</b> Discrete Case</a></li>
+<li class="chapter" data-level="3.7.2" data-path="probability-introduction.html"><a href="probability-introduction.html#continuous-cases"><i class="fa fa-check"></i><b>3.7.2</b> Continuous cases</a></li>
+<li class="chapter" data-level="3.7.3" data-path="probability-introduction.html"><a href="probability-introduction.html#histograms"><i class="fa fa-check"></i><b>3.7.3</b> Histograms</a></li>
+</ul></li>
+<li class="chapter" data-level="3.8" data-path="probability-introduction.html"><a href="probability-introduction.html#example-bayesian-bandits"><i class="fa fa-check"></i><b>3.8</b> Example: Bayesian Bandits</a></li>
+<li class="chapter" data-level="3.9" data-path="probability-introduction.html"><a href="probability-introduction.html#summary-1"><i class="fa fa-check"></i><b>3.9</b> Summary</a></li>
+<li class="chapter" data-level="3.10" data-path="probability-introduction.html"><a href="probability-introduction.html#references-2"><i class="fa fa-check"></i><b>3.10</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="spam-filter.html"><a href="spam-filter.html"><i class="fa fa-check"></i><b>4</b> Spam filter</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="spam-filter.html"><a href="spam-filter.html#naive-bayes-spam-or-ham"><i class="fa fa-check"></i><b>4.1</b> Naive Bayes: Spam or Ham?</a></li>
+<li class="chapter" data-level="4.2" data-path="spam-filter.html"><a href="spam-filter.html#summary-2"><i class="fa fa-check"></i><b>4.2</b> Summary</a></li>
+<li class="chapter" data-level="4.3" data-path="spam-filter.html"><a href="spam-filter.html#references-3"><i class="fa fa-check"></i><b>4.3</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html"><i class="fa fa-check"></i><b>5</b> Probabilistic programming</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#coin-flipping-example"><i class="fa fa-check"></i><b>5.1</b> Coin flipping example</a></li>
+<li class="chapter" data-level="5.2" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#summary-3"><i class="fa fa-check"></i><b>5.2</b> Summary</a></li>
+<li class="chapter" data-level="5.3" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#references-4"><i class="fa fa-check"></i><b>5.3</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html"><i class="fa fa-check"></i><b>6</b> Escaping from Mars</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#calculating-the-constant-g-of-mars"><i class="fa fa-check"></i><b>6.1</b> Calculating the constant g of Mars</a></li>
+<li class="chapter" data-level="6.2" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#optimizing-the-throwing-angle"><i class="fa fa-check"></i><b>6.2</b> Optimizing the throwing angle</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#calculating-the-escape-velocity"><i class="fa fa-check"></i><b>6.2.1</b> Calculating the escape velocity</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#summary-4"><i class="fa fa-check"></i><b>6.3</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="football-simulation.html"><a href="football-simulation.html"><i class="fa fa-check"></i><b>7</b> Football simulation</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="football-simulation.html"><a href="football-simulation.html#creating-our-conjectures"><i class="fa fa-check"></i><b>7.1</b> Creating our conjectures</a>
+<ul>
+<li class="chapter" data-level="7.1.1" data-path="football-simulation.html"><a href="football-simulation.html#bayesian-hierarchical-models"><i class="fa fa-check"></i><b>7.1.1</b> Bayesian hierarchical models</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="football-simulation.html"><a href="football-simulation.html#simulate-possible-realities"><i class="fa fa-check"></i><b>7.2</b> Simulate possible realities</a></li>
+<li class="chapter" data-level="7.3" data-path="football-simulation.html"><a href="football-simulation.html#summary-5"><i class="fa fa-check"></i><b>7.3</b> Summary</a></li>
+<li class="chapter" data-level="7.4" data-path="football-simulation.html"><a href="football-simulation.html#references-5"><i class="fa fa-check"></i><b>7.4</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="basketball-shots.html"><a href="basketball-shots.html"><i class="fa fa-check"></i><b>8</b> Basketball shots</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="basketball-shots.html"><a href="basketball-shots.html#modeling-the-probability-of-scoring"><i class="fa fa-check"></i><b>8.1</b> Modeling the probability of scoring</a></li>
+<li class="chapter" data-level="8.2" data-path="basketball-shots.html"><a href="basketball-shots.html#prior-predictive-checks-part-i"><i class="fa fa-check"></i><b>8.2</b> Prior Predictive Checks: Part I</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="basketball-shots.html"><a href="basketball-shots.html#defining-our-model-and-computing-posteriors"><i class="fa fa-check"></i><b>8.2.1</b> Defining our model and computing posteriors</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="basketball-shots.html"><a href="basketball-shots.html#new-model-and-prior-predictive-checks-part-ii"><i class="fa fa-check"></i><b>8.3</b> New model and prior predictive checks: Part II</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="basketball-shots.html"><a href="basketball-shots.html#defining-the-new-model-and-computing-posteriors"><i class="fa fa-check"></i><b>8.3.1</b> Defining the new model and computing posteriors</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="basketball-shots.html"><a href="basketball-shots.html#does-the-period-affect-the-probability-of-scoring"><i class="fa fa-check"></i><b>8.4</b> Does the Period affect the probability of scoring?</a></li>
+<li class="chapter" data-level="8.5" data-path="basketball-shots.html"><a href="basketball-shots.html#summary-6"><i class="fa fa-check"></i><b>8.5</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="optimal-pricing.html"><a href="optimal-pricing.html"><i class="fa fa-check"></i><b>9</b> Optimal pricing</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="optimal-pricing.html"><a href="optimal-pricing.html#overview"><i class="fa fa-check"></i><b>9.1</b> Overview</a></li>
+<li class="chapter" data-level="9.2" data-path="optimal-pricing.html"><a href="optimal-pricing.html#optimal-pricing-1"><i class="fa fa-check"></i><b>9.2</b> Optimal pricing</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="optimal-pricing.html"><a href="optimal-pricing.html#price-vs-quantity-model"><i class="fa fa-check"></i><b>9.2.1</b> Price vs Quantity model</a></li>
+<li class="chapter" data-level="9.2.2" data-path="optimal-pricing.html"><a href="optimal-pricing.html#price-elasticity-of-demand"><i class="fa fa-check"></i><b>9.2.2</b> Price elasticity of demand</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="optimal-pricing.html"><a href="optimal-pricing.html#maximizing-profit"><i class="fa fa-check"></i><b>9.3</b> Maximizing profit</a></li>
+<li class="chapter" data-level="9.4" data-path="optimal-pricing.html"><a href="optimal-pricing.html#summary-7"><i class="fa fa-check"></i><b>9.4</b> Summary</a></li>
+<li class="chapter" data-level="9.5" data-path="optimal-pricing.html"><a href="optimal-pricing.html#references-6"><i class="fa fa-check"></i><b>9.5</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="image-classification.html"><a href="image-classification.html"><i class="fa fa-check"></i><b>10</b> Image classification</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="image-classification.html"><a href="image-classification.html#bee-population-control-what-would-happen-if-bees-go-extinct"><i class="fa fa-check"></i><b>10.1</b> Bee population control: What would happen if bees go extinct?</a></li>
+<li class="chapter" data-level="10.2" data-path="image-classification.html"><a href="image-classification.html#machine-learning-overview"><i class="fa fa-check"></i><b>10.2</b> Machine Learning Overview</a></li>
+<li class="chapter" data-level="10.3" data-path="image-classification.html"><a href="image-classification.html#neural-networks-and-convolutional-neural-networks"><i class="fa fa-check"></i><b>10.3</b> Neural networks and convolutional neural networks</a></li>
+<li class="chapter" data-level="10.4" data-path="image-classification.html"><a href="image-classification.html#summary-8"><i class="fa fa-check"></i><b>10.4</b> Summary</a></li>
+<li class="chapter" data-level="10.5" data-path="image-classification.html"><a href="image-classification.html#references-7"><i class="fa fa-check"></i><b>10.5</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="ultima-online.html"><a href="ultima-online.html"><i class="fa fa-check"></i><b>11</b> Ultima online</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="ultima-online.html"><a href="ultima-online.html#the-ultima-online-catastrophe"><i class="fa fa-check"></i><b>11.1</b> The Ultima Online Catastrophe</a>
+<ul>
+<li class="chapter" data-level="11.1.1" data-path="ultima-online.html"><a href="ultima-online.html#the-lotka-volterra-model-for-population-dynamics"><i class="fa fa-check"></i><b>11.1.1</b> The Lotka-Volterra model for population dynamics</a></li>
+</ul></li>
+<li class="chapter" data-level="11.2" data-path="ultima-online.html"><a href="ultima-online.html#summary-9"><i class="fa fa-check"></i><b>11.2</b> Summary</a></li>
+<li class="chapter" data-level="11.3" data-path="ultima-online.html"><a href="ultima-online.html#references-8"><i class="fa fa-check"></i><b>11.3</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="ultima-continued.html"><a href="ultima-continued.html"><i class="fa fa-check"></i><b>12</b> Ultima continued</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="ultima-continued.html"><a href="ultima-continued.html#the-language-of-science"><i class="fa fa-check"></i><b>12.1</b> The language of science</a></li>
+<li class="chapter" data-level="12.2" data-path="ultima-continued.html"><a href="ultima-continued.html#scientific-machine-learning-for-model-discovery"><i class="fa fa-check"></i><b>12.2</b> Scientific Machine Learning for model discovery</a>
+<ul>
+<li class="chapter" data-level="12.2.1" data-path="ultima-continued.html"><a href="ultima-continued.html#looking-for-the-catastrophe-culprit"><i class="fa fa-check"></i><b>12.2.1</b> Looking for the catastrophe culprit</a></li>
+<li class="chapter" data-level="12.2.2" data-path="ultima-continued.html"><a href="ultima-continued.html#the-infamous-day-begins."><i class="fa fa-check"></i><b>12.2.2</b> The infamous day begins.</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="ultima-continued.html"><a href="ultima-continued.html#summary-10"><i class="fa fa-check"></i><b>12.3</b> Summary</a></li>
+<li class="chapter" data-level="12.4" data-path="ultima-continued.html"><a href="ultima-continued.html#references-9"><i class="fa fa-check"></i><b>12.4</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="time-series.html"><a href="time-series.html"><i class="fa fa-check"></i><b>13</b> Time series</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="time-series.html"><a href="time-series.html#predicting-the-future"><i class="fa fa-check"></i><b>13.1</b> Predicting the future</a></li>
+<li class="chapter" data-level="13.2" data-path="time-series.html"><a href="time-series.html#exponential-smoothing"><i class="fa fa-check"></i><b>13.2</b> Exponential Smoothing</a>
+<ul>
+<li class="chapter" data-level="13.2.1" data-path="time-series.html"><a href="time-series.html#weighted-average-and-component-form"><i class="fa fa-check"></i><b>13.2.1</b> Weighted average and Component form</a></li>
+<li class="chapter" data-level="13.2.2" data-path="time-series.html"><a href="time-series.html#optimization-or-fitting-process"><i class="fa fa-check"></i><b>13.2.2</b> Optimization (or Fitting) Process</a></li>
+<li class="chapter" data-level="13.2.3" data-path="time-series.html"><a href="time-series.html#trend-methods"><i class="fa fa-check"></i><b>13.2.3</b> Trend Methods</a></li>
+<li class="chapter" data-level="13.2.4" data-path="time-series.html"><a href="time-series.html#seasonality-methods"><i class="fa fa-check"></i><b>13.2.4</b> Seasonality Methods</a></li>
+</ul></li>
+<li class="chapter" data-level="13.3" data-path="time-series.html"><a href="time-series.html#summary-11"><i class="fa fa-check"></i><b>13.3</b> Summary</a></li>
+<li class="chapter" data-level="13.4" data-path="time-series.html"><a href="time-series.html#references-10"><i class="fa fa-check"></i><b>13.4</b> References</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers" target="blank">Published with bookdown</a></li>
+
 </ul>
 
       </nav>
@@ -299,20 +297,24 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="probabilistic-programming" class="section level1" number="5">
-<h1><span class="header-section-number">Chapter 5</span> Probabilistic programming</h1>
+<div id="probabilistic-programming" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">Chapter 5</span> Probabilistic programming<a href="probabilistic-programming.html#probabilistic-programming" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>In the previous chapters we introduced some of the basic mathematical tools we are going to make use of throughout the book. We talked about histograms, probability, probability distributions and the Bayesian way of thinking.</p>
 <p>We will start this chapter by discussing the fundamentals of another useful tool, that is, probabilistic programming, and more specifically, how to apply it using probabilistic programming languages or PPLs.
 These are systems, usually embedded inside a programming language, that are designed for building and reasoning about Bayesian models. They offer scientists an easy way to define probability models and solving them automatically.</p>
-<p>In Julia, there are a few PPLs being developed, and we will be using two of them, Turing.jl and Soss.jl. We will be focusing on some examples to explain the general approach when using this tools.</p>
-<div id="coin-flipping-example" class="section level2" number="5.1">
-<h2><span class="header-section-number">5.1</span> Coin flipping example</h2>
+<p>In Julia, there are a few PPLs being developed, and we will be using one of them, Turing.jl. We will be focusing on some examples to explain the general approach when using this tools.</p>
+<div id="coin-flipping-example" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> Coin flipping example<a href="probabilistic-programming.html#coin-flipping-example" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Let’s revisit the old example of flipping a coin, but from a Bayesian perspective, as a way to lay down some ideas.</p>
 <p>So the problem goes like this:
 Suppose we flip a coin N times, and we ask ourselves some questions like:
 - Is getting heads as likely as getting tails?
 - Is our coin biased, preferring one output over the other?</p>
-<p>To answer these questions we are going to build a simple model, with the help of Julia libraries that add PPL capabilities.</p>
+<p>To answer these questions we are going to build a simple model, with the help of Julia libraries that add PPL capabilities.
+First, lets import the libraries we will need</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb1-1"><a href="probabilistic-programming.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">using</span> <span class="bu">Distributions</span></span>
+<span id="cb1-2"><a href="probabilistic-programming.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">using</span> <span class="bu">StatsPlots</span></span>
+<span id="cb1-3"><a href="probabilistic-programming.html#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">using</span> <span class="bu">Turing</span></span></code></pre></div>
 <p>Let’s start thinking in a Bayesian way. The first thing we should ask ourselves is: Do we have any prior information about the problem? Since the plausibility of getting heads is formally a probability (let’s call it <span class="math inline">\(p\)</span>), we know it must lay between 0 and 1.
 Do we know anything more?
 Let’s skip that question for the moment and suppose we don’t know anything more about <span class="math inline">\(p\)</span>. This total uncertainty is also some kind of information we can incorporate in our model.
@@ -324,140 +326,95 @@ This complete uncertainty also constitutes information we can incorporate into o
 How so?
 Because we can assign equal probability to each value of <span class="math inline">\(p\)</span> while assigning 0 probability to the remaining values.
 This just means we don’t know anything and that every outcome is equally likely. Translating this into a probability distribution, it means that we are going to use a uniform prior distribution for <span class="math inline">\(p\)</span>, and the function domain will be all numbers between 0 and 1.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb1-1"><a href="probabilistic-programming.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb1-2"><a href="probabilistic-programming.html#cb1-2" aria-hidden="true" tabindex="-1"></a>    p_prior_values <span class="op">=</span> rand(Uniform(<span class="fl">0</span><span class="op">,</span> <span class="fl">1</span>)<span class="op">,</span> <span class="fl">10000</span>)</span>
-<span id="cb1-3"><a href="probabilistic-programming.html#cb1-3" aria-hidden="true" tabindex="-1"></a>    plot(p_prior_values<span class="op">,</span> seriestype <span class="op">=</span> <span class="op">:</span>histogram<span class="op">,</span> normalized<span class="op">=</span><span class="ex">true</span><span class="op">,</span> bins<span class="op">=</span><span class="fl">10</span><span class="op">,</span>                  legend<span class="op">=</span><span class="ex">false</span><span class="op">,</span> size<span class="op">=</span>(<span class="fl">400</span><span class="op">,</span> <span class="fl">250</span>)<span class="op">,</span> alpha<span class="op">=</span><span class="fl">0.6</span><span class="op">,</span> color<span class="op">=</span><span class="st">&quot;red&quot;</span>)</span>
-<span id="cb1-4"><a href="probabilistic-programming.html#cb1-4" aria-hidden="true" tabindex="-1"></a>    ylabel<span class="op">!</span>(<span class="st">&quot;Probability&quot;</span>)</span>
-<span id="cb1-5"><a href="probabilistic-programming.html#cb1-5" aria-hidden="true" tabindex="-1"></a>    xlabel<span class="op">!</span>(<span class="st">&quot;p&quot;</span>)</span>
-<span id="cb1-6"><a href="probabilistic-programming.html#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb2-1"><a href="probabilistic-programming.html#cb2-1" aria-hidden="true" tabindex="-1"></a>p_prior_values <span class="op">=</span> <span class="fu">rand</span>(<span class="fu">Uniform</span>(<span class="fl">0</span>, <span class="fl">1</span>), <span class="fl">10000</span>);</span>
+<span id="cb2-2"><a href="probabilistic-programming.html#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">histogram</span>(p_prior_values, normalized<span class="op">=</span><span class="cn">true</span>, bins<span class="op">=</span><span class="fl">10</span>, xlabel<span class="op">=</span><span class="st">&quot;Probability&quot;</span>, ylabel<span class="op">=</span><span class="st">&quot;p&quot;</span>, legend<span class="op">=</span><span class="cn">false</span>, alpha<span class="op">=</span><span class="fl">0.6</span>, color<span class="op">=</span><span class="st">&quot;red&quot;</span>, size<span class="op">=</span>(<span class="fl">600</span>, <span class="fl">350</span>))</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_05_plot_1-J1.png" /><!-- --></p>
 <p>So how do we model the outcomes of flipping a coin?</p>
 <p>Well, if we search for some similar type of experiment, we find that all processes in which we have two possible outcomes –heads or tails in our case–, and some probability <span class="math inline">\(p\)</span> of success –probability of heads–, these are called Bernoulli trials. The experiment of performing a number <span class="math inline">\(N\)</span> of Bernoulli trials, gives us the so called binomial distribution. For a fixed value of <span class="math inline">\(N\)</span> and <span class="math inline">\(p\)</span>, the Bernoulli distribution gives us the probability of obtaining different number of heads (and tails too, if we know the total number of trials and the number of times we got heads, we know that the remaining number of times we got tails). Here, <span class="math inline">\(N\)</span> and <span class="math inline">\(p\)</span> are the parameters of our distribution.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb2-1"><a href="probabilistic-programming.html#cb2-1" aria-hidden="true" tabindex="-1"></a>N <span class="op">=</span> <span class="fl">90</span></span>
-<span id="cb2-2"><a href="probabilistic-programming.html#cb2-2" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> <span class="fl">0.3</span></span></code></pre></div>
-<div class="sourceCode" id="cb3"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb3-1"><a href="probabilistic-programming.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb3-2"><a href="probabilistic-programming.html#cb3-2" aria-hidden="true" tabindex="-1"></a>    bar(Binomial(N<span class="op">,</span>p)<span class="op">,</span> xlim<span class="op">=</span>(<span class="fl">0</span><span class="op">,</span> <span class="fl">90</span>)<span class="op">,</span> label<span class="op">=</span><span class="ex">false</span><span class="op">,</span> xlabel<span class="op">=</span><span class="st">&quot;Succeses&quot;</span><span class="op">,</span> ylabel<span class="op">=</span><span class="st">&quot;Probability&quot;</span><span class="op">,</span> title<span class="op">=</span><span class="st">&quot;Binomial distribution&quot;</span><span class="op">,</span> color<span class="op">=</span><span class="st">&quot;green&quot;</span><span class="op">,</span> alpha<span class="op">=</span><span class="fl">0.8</span><span class="op">,</span> size<span class="op">=</span>(<span class="fl">500</span><span class="op">,</span> <span class="fl">350</span>)) </span>
-<span id="cb3-3"><a href="probabilistic-programming.html#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb3-1"><a href="probabilistic-programming.html#cb3-1" aria-hidden="true" tabindex="-1"></a>N <span class="op">=</span> <span class="fl">90</span></span>
+<span id="cb3-2"><a href="probabilistic-programming.html#cb3-2" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> <span class="fl">0.3</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb4-1"><a href="probabilistic-programming.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">bar</span>(<span class="fu">Binomial</span>(N,p), xlim<span class="op">=</span>(<span class="fl">0</span>, <span class="fl">90</span>), label<span class="op">=</span><span class="cn">false</span>, xlabel<span class="op">=</span><span class="st">&quot;Succeses&quot;</span>, ylabel<span class="op">=</span><span class="st">&quot;Probability&quot;</span>, title<span class="op">=</span><span class="st">&quot;Binomial distribution&quot;</span>, color<span class="op">=</span><span class="st">&quot;green&quot;</span>, alpha<span class="op">=</span><span class="fl">0.8</span>, size<span class="op">=</span>(<span class="fl">600</span>, <span class="fl">350</span>)) </span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_05_plot_2-J1.png" /><!-- --></p>
 <p>So, as we said, we are going to assume that our data (the count number of heads) is generated by a binomial distribution. Here, <span class="math inline">\(N\)</span> will be something we know. We control how we are going to make our experiment, and because of this, we fix this parameter. The question now is: what happens with <span class="math inline">\(p\)</span>? Well, this is actually what we want to estimate! The only thing we know until now is that it is some value from 0 to 1, and every value in that range is equally likely to apply.</p>
 <p>When we perform our experiment, the outcomes will be registered and in conjunction with the Bernoulli distribution we proposed as a generator of our data, we will get our Likelihood function. This function just tells us, given some chosen value of <span class="math inline">\(p\)</span>, how likely it is that our data is generated by the Bernoulli distribution with that value of <span class="math inline">\(p\)</span>. How do we choose <span class="math inline">\(p\)</span>? Well, actually we don’t. You just let randomness make it’s choice. But there exist multiple types of randomness, and this is where our prior distribution makes its play. We let her make the decision, depending on it’s particular randomness flavor. Computing the value of this likelihood function for a big number of <span class="math inline">\(p\)</span> samples taken from our prior distribution, gives us the posterior distribution of <span class="math inline">\(p\)</span> given our data. This is called sampling, and it is a very important concept in Bayesian statistics and probabilistic programming, as it is one of the fundamental tools that makes all the magic under the hood. It is the method that actually lets us update our beliefs. The general family of algorithms that follow the steps we have mentioned are named Markov chain Monte Carlo (MCMC) algorithms. The computing complexity of these algorithms can get very high as the complexity of the model increases, so there is a lot of research being done to find intelligent ways of sampling to compute posterior distributions in a more efficient manner.</p>
 <p>The model coinflip is shown below. It is implemented using the Turing.jl library, which will be handling all the details about the relationship between the variables of our model, our data and the sampling and computing. To define a model we use the macro <code>@model</code> previous to a function definition as we have already done. The argument that this function will recieve is the data from our experiment. Inside this function, we must write the explicit relationship of all the variables involved in a logical way.
 Stochastic variables –variables that are obtained randomly, following a probability distribution–, are defined with a ‘~’ symbol, while deterministic variables –variables that are defined deterministically by other variables–, are defined with a ‘=’ symbol.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb4-1"><a href="probabilistic-programming.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb4-2"><a href="probabilistic-programming.html#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="pp">@model</span> coinflip(y) <span class="op">=</span> <span class="kw">begin</span></span>
-<span id="cb4-3"><a href="probabilistic-programming.html#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="probabilistic-programming.html#cb4-4" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Our prior belief about the probability of heads in a coin.</span></span>
-<span id="cb4-5"><a href="probabilistic-programming.html#cb4-5" aria-hidden="true" tabindex="-1"></a>        p <span class="op">~</span> Uniform(<span class="fl">0</span><span class="op">,</span> <span class="fl">1</span>)</span>
-<span id="cb4-6"><a href="probabilistic-programming.html#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-7"><a href="probabilistic-programming.html#cb4-7" aria-hidden="true" tabindex="-1"></a>        <span class="co"># The number of observations.</span></span>
-<span id="cb4-8"><a href="probabilistic-programming.html#cb4-8" aria-hidden="true" tabindex="-1"></a>        N <span class="op">=</span> length(y)</span>
-<span id="cb4-9"><a href="probabilistic-programming.html#cb4-9" aria-hidden="true" tabindex="-1"></a>        <span class="kw">for</span> n <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>N</span>
-<span id="cb4-10"><a href="probabilistic-programming.html#cb4-10" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Heads or tails of a coin are drawn from a Bernoulli distribution.</span></span>
-<span id="cb4-11"><a href="probabilistic-programming.html#cb4-11" aria-hidden="true" tabindex="-1"></a>            y[n] <span class="op">~</span> Bernoulli(p)</span>
-<span id="cb4-12"><a href="probabilistic-programming.html#cb4-12" aria-hidden="true" tabindex="-1"></a>        <span class="kw">end</span></span>
-<span id="cb4-13"><a href="probabilistic-programming.html#cb4-13" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span><span class="op">;</span></span>
-<span id="cb4-14"><a href="probabilistic-programming.html#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb5-1"><a href="probabilistic-programming.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="pp">@model</span> <span class="fu">coinflip</span>(y) <span class="op">=</span> <span class="cf">begin</span></span>
+<span id="cb5-2"><a href="probabilistic-programming.html#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Our prior belief about the probability of heads in a coin.</span></span>
+<span id="cb5-3"><a href="probabilistic-programming.html#cb5-3" aria-hidden="true" tabindex="-1"></a>    p <span class="op">~</span> <span class="fu">Uniform</span>(<span class="fl">0</span>, <span class="fl">1</span>)</span>
+<span id="cb5-4"><a href="probabilistic-programming.html#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="probabilistic-programming.html#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># The number of observations.</span></span>
+<span id="cb5-6"><a href="probabilistic-programming.html#cb5-6" aria-hidden="true" tabindex="-1"></a>    N <span class="op">=</span> <span class="fu">length</span>(y)</span>
+<span id="cb5-7"><a href="probabilistic-programming.html#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> n <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>N</span>
+<span id="cb5-8"><a href="probabilistic-programming.html#cb5-8" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Heads or tails of a coin are drawn from a Bernoulli distribution.</span></span>
+<span id="cb5-9"><a href="probabilistic-programming.html#cb5-9" aria-hidden="true" tabindex="-1"></a>        y[n] <span class="op">~</span> <span class="fu">Bernoulli</span>(p)</span>
+<span id="cb5-10"><a href="probabilistic-programming.html#cb5-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">end</span></span>
+<span id="cb5-11"><a href="probabilistic-programming.html#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
 <p>coinflip receives the N outcomes of our flips, an array of length N with 0 or 1 values, 0 values indicating tails and 1 indicating heads.
 The idea is that with each new value of outcome, the model will be updating its beliefs about the parameter <span class="math inline">\(p\)</span> and this is what the for loop is doing: we are saying that each outcome comes from a Bernoulli distribution with a parameter <span class="math inline">\(p\)</span>, a success probability, shared for all the outcomes.</p>
 <p>Suppose we have run the experiment 10 times and had the outcomes:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb5-1"><a href="probabilistic-programming.html#cb5-1" aria-hidden="true" tabindex="-1"></a>outcome <span class="op">=</span> [<span class="fl">0</span><span class="op">,</span> <span class="fl">1</span><span class="op">,</span> <span class="fl">1</span><span class="op">,</span> <span class="fl">0</span><span class="op">,</span> <span class="fl">1</span><span class="op">,</span> <span class="fl">0</span><span class="op">,</span> <span class="fl">0</span><span class="op">,</span> <span class="fl">1</span><span class="op">,</span> <span class="fl">1</span><span class="op">,</span> <span class="fl">1</span>]</span></code></pre></div>
-<pre><code>## 10-element Array{Int64,1}:
-##  0
-##  1
-##  1
-##  0
-##  1
-##  0
-##  0
-##  1
-##  1
-##  1</code></pre>
+<div class="sourceCode" id="cb6"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb6-1"><a href="probabilistic-programming.html#cb6-1" aria-hidden="true" tabindex="-1"></a>outcome <span class="op">=</span> [<span class="fl">0</span>, <span class="fl">1</span>, <span class="fl">1</span>, <span class="fl">0</span>, <span class="fl">1</span>, <span class="fl">0</span>, <span class="fl">0</span>, <span class="fl">1</span>, <span class="fl">1</span>, <span class="fl">1</span>]</span></code></pre></div>
 <p>So, we got 6 heads and 4 tails.</p>
 <p>Now, we are going to see now how the model, for our unknown parameter <span class="math inline">\(p\)</span>, is updated. We will start by giving only just one input value to the model, adding one input at a time. Finally, we will give the model all outcomes values as input.</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb7-1"><a href="probabilistic-programming.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb7-2"><a href="probabilistic-programming.html#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Settings of the Hamiltonian Monte Carlo (HMC) sampler.</span></span>
-<span id="cb7-3"><a href="probabilistic-programming.html#cb7-3" aria-hidden="true" tabindex="-1"></a>    iterations <span class="op">=</span> <span class="fl">1000</span></span>
-<span id="cb7-4"><a href="probabilistic-programming.html#cb7-4" aria-hidden="true" tabindex="-1"></a>    ϵ <span class="op">=</span> <span class="fl">0.05</span></span>
-<span id="cb7-5"><a href="probabilistic-programming.html#cb7-5" aria-hidden="true" tabindex="-1"></a>    τ <span class="op">=</span> <span class="fl">10</span></span>
-<span id="cb7-6"><a href="probabilistic-programming.html#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-7"><a href="probabilistic-programming.html#cb7-7" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Start sampling.</span></span>
-<span id="cb7-8"><a href="probabilistic-programming.html#cb7-8" aria-hidden="true" tabindex="-1"></a>    chain <span class="op">=</span> sample(coinflip(outcome[<span class="fl">1</span>])<span class="op">,</span> HMC(ϵ<span class="op">,</span> τ)<span class="op">,</span> iterations<span class="op">,</span> progress<span class="op">=</span><span class="ex">false</span>)<span class="op">;</span></span>
-<span id="cb7-9"><a href="probabilistic-programming.html#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span><span class="op">;</span></span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb7-1"><a href="probabilistic-programming.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Settings of the Hamiltonian Monte Carlo (HMC) sampler.</span></span>
+<span id="cb7-2"><a href="probabilistic-programming.html#cb7-2" aria-hidden="true" tabindex="-1"></a>iterations <span class="op">=</span> <span class="fl">1000</span></span>
+<span id="cb7-3"><a href="probabilistic-programming.html#cb7-3" aria-hidden="true" tabindex="-1"></a>ϵ <span class="op">=</span> <span class="fl">0.05</span></span>
+<span id="cb7-4"><a href="probabilistic-programming.html#cb7-4" aria-hidden="true" tabindex="-1"></a>τ <span class="op">=</span> <span class="fl">10</span></span>
+<span id="cb7-5"><a href="probabilistic-programming.html#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-6"><a href="probabilistic-programming.html#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Start sampling.</span></span>
+<span id="cb7-7"><a href="probabilistic-programming.html#cb7-7" aria-hidden="true" tabindex="-1"></a>chain <span class="op">=</span> <span class="fu">sample</span>(<span class="fu">coinflip</span>(outcome[<span class="fl">1</span>]), <span class="fu">HMC</span>(ϵ, τ), iterations, progress<span class="op">=</span><span class="cn">false</span>)</span></code></pre></div>
 <p>So now we plot below the posterior distribution of <span class="math inline">\(p\)</span> after our model updated, seeing just the first outcome, a 0 value or a tail.</p>
 <p>How this single outcome affected our beliefs about <span class="math inline">\(p\)</span>?</p>
 <p>We can see in the plot below, showing the posterior or updated distribution of <span class="math inline">\(p\)</span>, that the values of <span class="math inline">\(p\)</span> near to 0 have more probability than before, recalling that all values had the same probability, which makes sense if all our model has seen is a failure, so it lowers the probability for values of <span class="math inline">\(p\)</span> that suggest high rates of success.</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb8-1"><a href="probabilistic-programming.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb8-2"><a href="probabilistic-programming.html#cb8-2" aria-hidden="true" tabindex="-1"></a>    p_summary <span class="op">=</span> chain[<span class="op">:</span>p]</span>
-<span id="cb8-3"><a href="probabilistic-programming.html#cb8-3" aria-hidden="true" tabindex="-1"></a>    plot(p_summary<span class="op">,</span> seriestype <span class="op">=</span> <span class="op">:</span>histogram<span class="op">,</span> normed<span class="op">=</span><span class="ex">true</span><span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span><span class="op">,</span> size<span class="op">=</span>(<span class="fl">500</span><span class="op">,</span> <span class="fl">250</span>)<span class="op">,</span> color<span class="op">=</span><span class="st">&quot;purple&quot;</span><span class="op">,</span> alpha<span class="op">=</span><span class="fl">0.7</span>)</span>
-<span id="cb8-4"><a href="probabilistic-programming.html#cb8-4" aria-hidden="true" tabindex="-1"></a>    title<span class="op">!</span>(<span class="st">&quot;Posterior distribution of p after getting tails&quot;</span>)</span>
-<span id="cb8-5"><a href="probabilistic-programming.html#cb8-5" aria-hidden="true" tabindex="-1"></a>    ylabel<span class="op">!</span>(<span class="st">&quot;Probability&quot;</span>)</span>
-<span id="cb8-6"><a href="probabilistic-programming.html#cb8-6" aria-hidden="true" tabindex="-1"></a>    xlabel<span class="op">!</span>(<span class="st">&quot;p&quot;</span>)</span>
-<span id="cb8-7"><a href="probabilistic-programming.html#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb8-1"><a href="probabilistic-programming.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">histogram</span>(chain[<span class="op">:</span>p], legend<span class="op">=</span><span class="cn">false</span>, xlabel<span class="op">=</span><span class="st">&quot;p&quot;</span>, ylabel<span class="op">=</span><span class="st">&quot;Probability&quot;</span>, title<span class="op">=</span><span class="st">&quot;Posterior distribution of p after getting tails&quot;</span>, size<span class="op">=</span>(<span class="fl">600</span>, <span class="fl">350</span>), alpha<span class="op">=</span><span class="fl">0.7</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_05_plot_3-J1.png" /><!-- --></p>
 <p>Let’s continue now including the remaining outcomes and see how the model is updated. We have plotted below the posterior probability of <span class="math inline">\(p\)</span> adding outcomes to our model updating its beliefs.</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb9-1"><a href="probabilistic-programming.html#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb9-2"><a href="probabilistic-programming.html#cb9-2" aria-hidden="true" tabindex="-1"></a>    samples <span class="op">=</span> []</span>
-<span id="cb9-3"><a href="probabilistic-programming.html#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> <span class="fl">2</span><span class="op">:</span><span class="fl">10</span>   </span>
-<span id="cb9-4"><a href="probabilistic-programming.html#cb9-4" aria-hidden="true" tabindex="-1"></a>        <span class="kw">global</span> chain_</span>
-<span id="cb9-5"><a href="probabilistic-programming.html#cb9-5" aria-hidden="true" tabindex="-1"></a>        chain_ <span class="op">=</span> sample(coinflip(outcome[<span class="fl">1</span><span class="op">:</span>i])<span class="op">,</span> HMC(ϵ<span class="op">,</span> τ)<span class="op">,</span> iterations<span class="op">,</span> progress<span class="op">=</span><span class="ex">false</span>)</span>
-<span id="cb9-6"><a href="probabilistic-programming.html#cb9-6" aria-hidden="true" tabindex="-1"></a>        push<span class="op">!</span>(samples<span class="op">,</span> chain_[<span class="op">:</span>p])</span>
-<span id="cb9-7"><a href="probabilistic-programming.html#cb9-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
-<span id="cb9-8"><a href="probabilistic-programming.html#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span><span class="op">;</span></span></code></pre></div>
-<div class="sourceCode" id="cb10"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb10-1"><a href="probabilistic-programming.html#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb10-2"><a href="probabilistic-programming.html#cb10-2" aria-hidden="true" tabindex="-1"></a>    plots <span class="op">=</span> histogram.(samples<span class="op">,</span> normalized<span class="op">=</span><span class="ex">true</span><span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span><span class="op">,</span> bins<span class="op">=</span><span class="fl">10</span>)<span class="op">;</span></span>
-<span id="cb10-3"><a href="probabilistic-programming.html#cb10-3" aria-hidden="true" tabindex="-1"></a>    p_ <span class="op">=</span> plot(plots[<span class="fl">1</span>]<span class="op">,</span> plots[<span class="fl">2</span>]<span class="op">,</span> plots[<span class="fl">3</span>]<span class="op">,</span> plots[<span class="fl">4</span>]<span class="op">,</span> plots[<span class="fl">5</span>]<span class="op">,</span> plots[<span class="fl">6</span>]<span class="op">,</span> plots[<span class="fl">7</span>]<span class="op">,</span>plots[<span class="fl">8</span>]<span class="op">,</span> plots[<span class="fl">9</span>]<span class="op">,</span> layout <span class="op">=</span> <span class="fl">9</span> <span class="op">,</span> title <span class="op">=</span> [<span class="st">&quot;$i outcomes&quot;</span> <span class="kw">for</span> j <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fl">1</span><span class="op">,</span> i <span class="kw">in</span> <span class="fl">2</span><span class="op">:</span><span class="fl">10</span>]<span class="op">,</span> titleloc <span class="op">=</span> <span class="op">:</span>right<span class="op">,</span> titlefont <span class="op">=</span> font(<span class="fl">8</span>))</span>
-<span id="cb10-4"><a href="probabilistic-programming.html#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb9-1"><a href="probabilistic-programming.html#cb9-1" aria-hidden="true" tabindex="-1"></a>samples <span class="op">=</span> []</span>
+<span id="cb9-2"><a href="probabilistic-programming.html#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="fl">2</span><span class="op">:</span><span class="fl">10</span>   </span>
+<span id="cb9-3"><a href="probabilistic-programming.html#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">global</span> chain_</span>
+<span id="cb9-4"><a href="probabilistic-programming.html#cb9-4" aria-hidden="true" tabindex="-1"></a>    chain_ <span class="op">=</span> <span class="fu">sample</span>(<span class="fu">coinflip</span>(outcome[<span class="fl">1</span><span class="op">:</span>i]), <span class="fu">HMC</span>(ϵ, τ), iterations, progress<span class="op">=</span><span class="cn">false</span>)</span>
+<span id="cb9-5"><a href="probabilistic-programming.html#cb9-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">push!</span>(samples, chain_[<span class="op">:</span>p])</span>
+<span id="cb9-6"><a href="probabilistic-programming.html#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb10-1"><a href="probabilistic-programming.html#cb10-1" aria-hidden="true" tabindex="-1"></a>plots <span class="op">=</span> [<span class="fu">histogram</span>(samples[i], normalized<span class="op">=</span><span class="cn">true</span>, legend<span class="op">=</span><span class="cn">false</span>, bins<span class="op">=</span><span class="fl">10</span>, title<span class="op">=</span><span class="st">&quot;</span><span class="sc">$</span>(i<span class="op">+</span><span class="fl">1</span>)<span class="st"> outcomes&quot;</span>, titlefont <span class="op">=</span> <span class="fu">font</span>(<span class="fl">8</span>)) for i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fl">9</span>];</span>
+<span id="cb10-2"><a href="probabilistic-programming.html#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(plots<span class="op">...</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_05_plot_4-J1.png" /><!-- --></p>
 <p>We see that with each new value the model believes more and more that the value of <span class="math inline">\(p\)</span> is far from 0 or 1, because if it was the case we would have only heads or tails. The model prefers values of <span class="math inline">\(p\)</span> in between, being the values near 0.5 more plausible with each update.
 What if we wanted to include more previous knowledge about the success rate <span class="math inline">\(p\)</span>?</p>
 <p>Let’s say we know that the value of <span class="math inline">\(p\)</span> is near 0.5 but we are not so sure about the exact value, and we want the model to find the plausibility for the values of <span class="math inline">\(p\)</span>. Then including this knowledge, our prior distribution for <span class="math inline">\(p\)</span> will have higher probability for values near 0.5, and low probability for values near 0 or 1.
 Searching again in our repertoire of distributions, one that fulfills our wishes is a beta distribution with parameters α=2 and β=2. It is plotted below.</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb11-1"><a href="probabilistic-programming.html#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb11-2"><a href="probabilistic-programming.html#cb11-2" aria-hidden="true" tabindex="-1"></a>    plot(Beta(<span class="fl">2</span><span class="op">,</span><span class="fl">2</span>)<span class="op">,</span> fill<span class="op">=</span>(<span class="fl">0</span><span class="op">,</span> <span class="fl">.5</span><span class="op">,:</span>dodgerblue)<span class="op">,</span> ylim<span class="op">=</span>(<span class="fl">0</span><span class="op">,</span><span class="fl">2</span>)<span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span><span class="op">,</span> size<span class="op">=</span>(<span class="fl">450</span><span class="op">,</span> <span class="fl">300</span>))</span>
-<span id="cb11-3"><a href="probabilistic-programming.html#cb11-3" aria-hidden="true" tabindex="-1"></a>    xlabel<span class="op">!</span>(<span class="st">&quot;p&quot;</span>)</span>
-<span id="cb11-4"><a href="probabilistic-programming.html#cb11-4" aria-hidden="true" tabindex="-1"></a>    ylabel<span class="op">!</span>(<span class="st">&quot;Probability&quot;</span>)</span>
-<span id="cb11-5"><a href="probabilistic-programming.html#cb11-5" aria-hidden="true" tabindex="-1"></a>    title<span class="op">!</span>(<span class="st">&quot;Prior distribution for p&quot;</span>)</span>
-<span id="cb11-6"><a href="probabilistic-programming.html#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb11-1"><a href="probabilistic-programming.html#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">Beta</span>(<span class="fl">2</span>,<span class="fl">2</span>), legend<span class="op">=</span><span class="cn">false</span>, xlabel<span class="op">=</span><span class="st">&quot;p&quot;</span>, ylabel<span class="op">=</span><span class="st">&quot;Probability&quot;</span>, title<span class="op">=</span><span class="st">&quot;Prior distribution for p&quot;</span>, fill<span class="op">=</span>(<span class="fl">0</span>, <span class="fl">.5</span>,<span class="op">:</span>dodgerblue), ylim<span class="op">=</span>(<span class="fl">0</span>,<span class="fl">2</span>), size<span class="op">=</span>(<span class="fl">600</span>, <span class="fl">350</span>))</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_05_plot_5-J1.png" /><!-- --></p>
 <p>Now we define again our model just changing the distribution for <span class="math inline">\(p\)</span>, as shown:</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb12-1"><a href="probabilistic-programming.html#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb12-2"><a href="probabilistic-programming.html#cb12-2" aria-hidden="true" tabindex="-1"></a>    <span class="pp">@model</span> coinflip_beta_prior(y) <span class="op">=</span> <span class="kw">begin</span></span>
-<span id="cb12-3"><a href="probabilistic-programming.html#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-4"><a href="probabilistic-programming.html#cb12-4" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Our prior belief about the probability of heads in a coin.</span></span>
-<span id="cb12-5"><a href="probabilistic-programming.html#cb12-5" aria-hidden="true" tabindex="-1"></a>        p <span class="op">~</span> Beta(<span class="fl">2</span><span class="op">,</span> <span class="fl">2</span>)</span>
-<span id="cb12-6"><a href="probabilistic-programming.html#cb12-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-7"><a href="probabilistic-programming.html#cb12-7" aria-hidden="true" tabindex="-1"></a>        <span class="co"># The number of observations.</span></span>
-<span id="cb12-8"><a href="probabilistic-programming.html#cb12-8" aria-hidden="true" tabindex="-1"></a>        N <span class="op">=</span> length(y)</span>
-<span id="cb12-9"><a href="probabilistic-programming.html#cb12-9" aria-hidden="true" tabindex="-1"></a>        <span class="kw">for</span> n <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>N</span>
-<span id="cb12-10"><a href="probabilistic-programming.html#cb12-10" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Heads or tails of a coin are drawn from a Bernoulli distribution.</span></span>
-<span id="cb12-11"><a href="probabilistic-programming.html#cb12-11" aria-hidden="true" tabindex="-1"></a>            y[n] <span class="op">~</span> Bernoulli(p)</span>
-<span id="cb12-12"><a href="probabilistic-programming.html#cb12-12" aria-hidden="true" tabindex="-1"></a>        <span class="kw">end</span></span>
-<span id="cb12-13"><a href="probabilistic-programming.html#cb12-13" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span><span class="op">;</span></span>
-<span id="cb12-14"><a href="probabilistic-programming.html#cb12-14" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb12-1"><a href="probabilistic-programming.html#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="pp">@model</span> <span class="fu">coinflip_beta_prior</span>(y) <span class="op">=</span> <span class="cf">begin</span></span>
+<span id="cb12-2"><a href="probabilistic-programming.html#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="probabilistic-programming.html#cb12-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Our prior belief about the probability of heads in a coin.</span></span>
+<span id="cb12-4"><a href="probabilistic-programming.html#cb12-4" aria-hidden="true" tabindex="-1"></a>    p <span class="op">~</span> <span class="fu">Beta</span>(<span class="fl">2</span>, <span class="fl">2</span>)</span>
+<span id="cb12-5"><a href="probabilistic-programming.html#cb12-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-6"><a href="probabilistic-programming.html#cb12-6" aria-hidden="true" tabindex="-1"></a>    <span class="co"># The number of observations.</span></span>
+<span id="cb12-7"><a href="probabilistic-programming.html#cb12-7" aria-hidden="true" tabindex="-1"></a>    N <span class="op">=</span> <span class="fu">length</span>(y)</span>
+<span id="cb12-8"><a href="probabilistic-programming.html#cb12-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> n <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>N</span>
+<span id="cb12-9"><a href="probabilistic-programming.html#cb12-9" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Heads or tails of a coin are drawn from a Bernoulli distribution.</span></span>
+<span id="cb12-10"><a href="probabilistic-programming.html#cb12-10" aria-hidden="true" tabindex="-1"></a>        y[n] <span class="op">~</span> <span class="fu">Bernoulli</span>(p)</span>
+<span id="cb12-11"><a href="probabilistic-programming.html#cb12-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">end</span></span>
+<span id="cb12-12"><a href="probabilistic-programming.html#cb12-12" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
 <p>Running the new model and plotting the posterior distributions, again adding one observation at a time, we see that with less examples we have a better approximation of <span class="math inline">\(p\)</span>.</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb13-1"><a href="probabilistic-programming.html#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb13-2"><a href="probabilistic-programming.html#cb13-2" aria-hidden="true" tabindex="-1"></a>    samples_beta_prior <span class="op">=</span> []</span>
-<span id="cb13-3"><a href="probabilistic-programming.html#cb13-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> <span class="fl">2</span><span class="op">:</span><span class="fl">10</span>   </span>
-<span id="cb13-4"><a href="probabilistic-programming.html#cb13-4" aria-hidden="true" tabindex="-1"></a>        <span class="kw">global</span> chain__</span>
-<span id="cb13-5"><a href="probabilistic-programming.html#cb13-5" aria-hidden="true" tabindex="-1"></a>        chain__ <span class="op">=</span> sample(coinflip_beta_prior(outcome[<span class="fl">1</span><span class="op">:</span>i])<span class="op">,</span> HMC(ϵ<span class="op">,</span> τ)<span class="op">,</span> iterations<span class="op">,</span> progress<span class="op">=</span><span class="ex">false</span>)</span>
-<span id="cb13-6"><a href="probabilistic-programming.html#cb13-6" aria-hidden="true" tabindex="-1"></a>        push<span class="op">!</span>(samples_beta_prior<span class="op">,</span> chain__[<span class="op">:</span>p])</span>
-<span id="cb13-7"><a href="probabilistic-programming.html#cb13-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
-<span id="cb13-8"><a href="probabilistic-programming.html#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span><span class="op">;</span></span></code></pre></div>
-<div class="sourceCode" id="cb14"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb14-1"><a href="probabilistic-programming.html#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb14-2"><a href="probabilistic-programming.html#cb14-2" aria-hidden="true" tabindex="-1"></a>    plots_ <span class="op">=</span> histogram.(samples_beta_prior<span class="op">,</span> normalized<span class="op">=</span><span class="ex">true</span><span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span><span class="op">,</span> bins<span class="op">=</span><span class="fl">10</span><span class="op">,</span> color<span class="op">=</span><span class="st">&quot;red&quot;</span><span class="op">,</span> alpha<span class="op">=</span><span class="fl">0.6</span>)<span class="op">;</span></span>
-<span id="cb14-3"><a href="probabilistic-programming.html#cb14-3" aria-hidden="true" tabindex="-1"></a>    p__ <span class="op">=</span> plot(plots_[<span class="fl">1</span>]<span class="op">,</span> plots_[<span class="fl">2</span>]<span class="op">,</span> plots_[<span class="fl">3</span>]<span class="op">,</span> plots_[<span class="fl">4</span>]<span class="op">,</span> plots_[<span class="fl">5</span>]<span class="op">,</span> plots_[<span class="fl">6</span>]<span class="op">,</span> plots_[<span class="fl">7</span>]<span class="op">,</span> plots_[<span class="fl">8</span>]<span class="op">,</span> plots_[<span class="fl">9</span>]<span class="op">,</span> layout <span class="op">=</span> <span class="fl">9</span><span class="op">,</span> title <span class="op">=</span> [<span class="st">&quot;$i outcomes&quot;</span> <span class="kw">for</span> j <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fl">1</span><span class="op">,</span> i <span class="kw">in</span> <span class="fl">2</span><span class="op">:</span><span class="fl">10</span>]<span class="op">,</span> titleloc <span class="op">=</span> <span class="op">:</span>right<span class="op">,</span> titlefont <span class="op">=</span> font(<span class="fl">8</span>))</span>
-<span id="cb14-4"><a href="probabilistic-programming.html#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
-<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_05_plot_6-J1.png" /><!-- --></p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb13-1"><a href="probabilistic-programming.html#cb13-1" aria-hidden="true" tabindex="-1"></a>samples_beta_prior <span class="op">=</span> []</span>
+<span id="cb13-2"><a href="probabilistic-programming.html#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="fl">2</span><span class="op">:</span><span class="fl">10</span>   </span>
+<span id="cb13-3"><a href="probabilistic-programming.html#cb13-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">global</span> chain__</span>
+<span id="cb13-4"><a href="probabilistic-programming.html#cb13-4" aria-hidden="true" tabindex="-1"></a>    chain__ <span class="op">=</span> <span class="fu">sample</span>(<span class="fu">coinflip_beta_prior</span>(outcome[<span class="fl">1</span><span class="op">:</span>i]), <span class="fu">HMC</span>(ϵ, τ), iterations, progress<span class="op">=</span><span class="cn">false</span>)</span>
+<span id="cb13-5"><a href="probabilistic-programming.html#cb13-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">push!</span>(samples_beta_prior, chain__[<span class="op">:</span>p])</span>
+<span id="cb13-6"><a href="probabilistic-programming.html#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb14-1"><a href="probabilistic-programming.html#cb14-1" aria-hidden="true" tabindex="-1"></a>plots <span class="op">=</span> [<span class="fu">histogram</span>(samples_beta_prior[i], normalized<span class="op">=</span><span class="cn">true</span>, legend<span class="op">=</span><span class="cn">false</span>, bins<span class="op">=</span><span class="fl">10</span>, title<span class="op">=</span><span class="st">&quot;</span><span class="sc">$</span>(i<span class="op">+</span><span class="fl">1</span>)<span class="st"> outcomes&quot;</span>, titlefont <span class="op">=</span> <span class="fu">font</span>(<span class="fl">10</span>), color<span class="op">=</span><span class="st">&quot;red&quot;</span>, alpha<span class="op">=</span><span class="fl">0.6</span>) for i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fl">9</span>];</span></code></pre></div>
 <p>To illustrate the affirmation made before, we can compare for example the posterior distributions obtained only with the first 4 outcomes for both models, the one with a uniform prior and the other with the beta prior. The plots are shown below. We see that some values near 0 and 1 have still high probability for the model with a uniform prior for p, while in the model with a beta prior the values near 0.5 have higher probability. That’s because if we tell the model from the beginning that <span class="math inline">\(p\)</span> near 0 and 1 have less probability, it catches up faster that probabilities near 0.5 are higher.</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb15-1"><a href="probabilistic-programming.html#cb15-1" aria-hidden="true" tabindex="-1"></a>plot(plots[<span class="fl">3</span>]<span class="op">,</span> plots_[<span class="fl">3</span>]<span class="op">,</span> title <span class="op">=</span> [<span class="st">&quot;Posterior for uniform prior and 4 outcomes&quot;</span> <span class="st">&quot;Posterior for beta prior and 4 outcomes&quot;</span>]<span class="op">,</span> titleloc <span class="op">=</span> <span class="op">:</span>center<span class="op">,</span> titlefont <span class="op">=</span> font(<span class="fl">8</span>)<span class="op">,</span> layout<span class="op">=</span><span class="fl">2</span><span class="op">,</span> size<span class="op">=</span>(<span class="fl">450</span><span class="op">,</span> <span class="fl">300</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb15-1"><a href="probabilistic-programming.html#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(plots[<span class="fl">3</span>], plots_[<span class="fl">3</span>], title <span class="op">=</span> [<span class="st">&quot;Posterior for uniform prior and 4 outcomes&quot;</span> <span class="st">&quot;Posterior for beta prior and 4 outcomes&quot;</span>], titleloc <span class="op">=</span> <span class="op">:</span>center, titlefont <span class="op">=</span> <span class="fu">font</span>(<span class="fl">8</span>), layout<span class="op">=</span><span class="fl">2</span>, size<span class="op">=</span>(<span class="fl">450</span>, <span class="fl">300</span>))</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_05_plot_7-J1.png" /><!-- --></p>
 <p>So in this case, incorporating our beliefs in the prior distribution we saw the model reached faster the more plausible values for <span class="math inline">\(p\)</span>, needing less outcomes to reach a very similar posterior distribution.
 When we used a uniform prior, we were conservative, meaning that we said we didn’t know anything about <span class="math inline">\(p\)</span> so we assign equal probability for all values.
 Sometimes this kind of distribution (uniform distributions), called a non-informative prior, can be too conservative, being in some cases not helpful at all.
 They even can slow the convergence of the model to the more plausible values for our posterior, as shown.</p>
 </div>
-<div id="summary-3" class="section level2" number="5.2">
-<h2><span class="header-section-number">5.2</span> Summary</h2>
+<div id="summary-3" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> Summary<a href="probabilistic-programming.html#summary-3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>In this chapter, we gave an introduction to probabilistic programming languages and explored the classic coin flipping example in a Bayesian way.</p>
 <p>First, we saw that in this kind of Bernoulli trial scenario, where the experiment has two possible outcomes 0 or 1, it is a good idea to set our likelihood to a binomial distribution.
 We also learned what sampling is and saw why we use it to update our beliefs.
@@ -465,14 +422,14 @@ Then we used the Julia library Turing.jl to create a probabilistic model, settin
 We sampled our model with the Markov chain Monte Carlo algorithm and saw how the posterior probability was updated every time we input a new coin flip result.</p>
 <p>Finally, we created a new model with the prior probability set to a normal distribution centered on <span class="math inline">\(p\)</span> = 0.5 which gave us more accurate results.</p>
 </div>
-<div id="references-4" class="section level2" number="5.3">
-<h2><span class="header-section-number">5.3</span> References</h2>
+<div id="references-4" class="section level2 hasAnchor" number="5.3">
+<h2><span class="header-section-number">5.3</span> References<a href="probabilistic-programming.html#references-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
 <li><a href="https://turing.ml/dev/">Turing.jl website</a></li>
 <li><a href="https://notamonadtutorial.com/soss-probabilistic-programming-with-julia-6acc5add5549">Not a monad tutorial article about Soss.jl</a></li>
 </ul>
-</div>
 
+</div>
 </div>
             </section>
 
@@ -484,7 +441,6 @@ We sampled our model with the Markov chain Monte Carlo algorithm and saw how the
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -503,6 +459,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -523,6 +480,10 @@ gitbook.start({
 "text": null
 },
 "download": ["data_science_in_julia_for_hackers.pdf", "data_science_in_julia_for_hackers.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }
@@ -536,7 +497,7 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
         src = src.replace(/^https?:/, '');
