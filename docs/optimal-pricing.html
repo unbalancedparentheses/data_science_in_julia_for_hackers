@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 9 Optimal pricing | Data Science in Julia for Hackers</title>
   <meta name="description" content="Chapter 9 Optimal pricing | Data Science in Julia for Hackers" />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 9 Optimal pricing | Data Science in Julia for Hackers" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="Chapter 9 Optimal pricing | Data Science in Julia for Hackers" />
   
@@ -31,8 +30,8 @@
   
 <link rel="prev" href="basketball-shots.html"/>
 <link rel="next" href="image-classification.html"/>
-<script src="libs/header-attrs-2.7/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -48,7 +47,9 @@
 
 
 
-
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
@@ -89,7 +90,7 @@ code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -102,7 +103,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -115,6 +116,7 @@ code span.va { color: #19177c; } /* Variable */
 code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
+
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -129,157 +131,155 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-  <li><a href="./">Data Science in Julia for Hackers</a></li>
+<li><a href="./">Data Science in Julia for Hackers</a></li>
 
-  <li class="divider"></li>
-  <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a>
-  <ul>
-  <li class="chapter" data-level="" data-path="index.html"><a href="index.html#prologue"><i class="fa fa-check"></i>Prologue</a></li>
-  </ul></li>
-  <li class="part"><span><b>I Data Science and Julia</b></span></li>
-  <li class="chapter" data-level="1" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html"><i class="fa fa-check"></i><b>1</b> Science technology and epistemology</a>
-  <ul>
-  <li class="chapter" data-level="1.1" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#the-difference-between-science-and-technology"><i class="fa fa-check"></i><b>1.1</b> The difference between Science and Technology</a></li>
-  <li class="chapter" data-level="1.2" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#what-is-technology"><i class="fa fa-check"></i><b>1.2</b> What is technology?</a></li>
-  <li class="chapter" data-level="1.3" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#references"><i class="fa fa-check"></i><b>1.3</b> References</a></li>
-  </ul></li>
-  <li class="chapter" data-level="2" data-path="meeting-julia.html"><a href="meeting-julia.html"><i class="fa fa-check"></i><b>2</b> Meeting Julia</a>
-  <ul>
-  <li class="chapter" data-level="2.1" data-path="meeting-julia.html"><a href="meeting-julia.html#why-julia"><i class="fa fa-check"></i><b>2.1</b> Why Julia</a></li>
-  <li class="chapter" data-level="2.2" data-path="meeting-julia.html"><a href="meeting-julia.html#julia-presentation"><i class="fa fa-check"></i><b>2.2</b> Julia presentation</a></li>
-  <li class="chapter" data-level="2.3" data-path="meeting-julia.html"><a href="meeting-julia.html#installation"><i class="fa fa-check"></i><b>2.3</b> Installation</a></li>
-  <li class="chapter" data-level="2.4" data-path="meeting-julia.html"><a href="meeting-julia.html#first-steps-into-the-julia-world"><i class="fa fa-check"></i><b>2.4</b> First steps into the Julia world</a></li>
-  <li class="chapter" data-level="2.5" data-path="meeting-julia.html"><a href="meeting-julia.html#julias-ecosystem-basic-plotting-and-manipulation-of-dataframes"><i class="fa fa-check"></i><b>2.5</b> Julia’s Ecosystem: Basic plotting and manipulation of DataFrames</a>
-  <ul>
-  <li class="chapter" data-level="2.5.1" data-path="meeting-julia.html"><a href="meeting-julia.html#plotting-with-plots.jl"><i class="fa fa-check"></i><b>2.5.1</b> Plotting with Plots.jl</a></li>
-  <li class="chapter" data-level="2.5.2" data-path="meeting-julia.html"><a href="meeting-julia.html#introducing-dataframes.jl"><i class="fa fa-check"></i><b>2.5.2</b> Introducing DataFrames.jl</a></li>
-  </ul></li>
-  <li class="chapter" data-level="2.6" data-path="meeting-julia.html"><a href="meeting-julia.html#summary"><i class="fa fa-check"></i><b>2.6</b> Summary</a></li>
-  <li class="chapter" data-level="2.7" data-path="meeting-julia.html"><a href="meeting-julia.html#references-1"><i class="fa fa-check"></i><b>2.7</b> References</a></li>
-  </ul></li>
-  <li class="part"><span><b>II Bayesian Statistics</b></span></li>
-  <li class="chapter" data-level="3" data-path="probability-introduction.html"><a href="probability-introduction.html"><i class="fa fa-check"></i><b>3</b> Probability introduction</a>
-  <ul>
-  <li class="chapter" data-level="3.1" data-path="probability-introduction.html"><a href="probability-introduction.html#introduction-to-probability"><i class="fa fa-check"></i><b>3.1</b> Introduction to Probability</a></li>
-  <li class="chapter" data-level="3.2" data-path="probability-introduction.html"><a href="probability-introduction.html#events-sample-spaces-and-sample-points"><i class="fa fa-check"></i><b>3.2</b> Events, sample spaces and sample points</a>
-  <ul>
-  <li class="chapter" data-level="3.2.1" data-path="probability-introduction.html"><a href="probability-introduction.html#relation-among-events"><i class="fa fa-check"></i><b>3.2.1</b> Relation among events</a></li>
-  </ul></li>
-  <li class="chapter" data-level="3.3" data-path="probability-introduction.html"><a href="probability-introduction.html#probability"><i class="fa fa-check"></i><b>3.3</b> Probability</a></li>
-  <li class="chapter" data-level="3.4" data-path="probability-introduction.html"><a href="probability-introduction.html#conditional-probability"><i class="fa fa-check"></i><b>3.4</b> Conditional probability</a></li>
-  <li class="chapter" data-level="3.5" data-path="probability-introduction.html"><a href="probability-introduction.html#joint-probability"><i class="fa fa-check"></i><b>3.5</b> Joint probability</a></li>
-  <li class="chapter" data-level="3.6" data-path="probability-introduction.html"><a href="probability-introduction.html#bayes-theorem"><i class="fa fa-check"></i><b>3.6</b> Bayes theorem</a></li>
-  <li class="chapter" data-level="3.7" data-path="probability-introduction.html"><a href="probability-introduction.html#probability-distributions"><i class="fa fa-check"></i><b>3.7</b> Probability distributions</a>
-  <ul>
-  <li class="chapter" data-level="3.7.1" data-path="probability-introduction.html"><a href="probability-introduction.html#discrete-case"><i class="fa fa-check"></i><b>3.7.1</b> Discrete Case</a></li>
-  <li class="chapter" data-level="3.7.2" data-path="probability-introduction.html"><a href="probability-introduction.html#continuous-cases"><i class="fa fa-check"></i><b>3.7.2</b> Continuous cases</a></li>
-  <li class="chapter" data-level="3.7.3" data-path="probability-introduction.html"><a href="probability-introduction.html#histograms"><i class="fa fa-check"></i><b>3.7.3</b> Histograms</a></li>
-  </ul></li>
-  <li class="chapter" data-level="3.8" data-path="probability-introduction.html"><a href="probability-introduction.html#example-bayesian-bandits"><i class="fa fa-check"></i><b>3.8</b> Example: Bayesian Bandits</a></li>
-  <li class="chapter" data-level="3.9" data-path="probability-introduction.html"><a href="probability-introduction.html#summary-1"><i class="fa fa-check"></i><b>3.9</b> Summary</a></li>
-  <li class="chapter" data-level="3.10" data-path="probability-introduction.html"><a href="probability-introduction.html#references-2"><i class="fa fa-check"></i><b>3.10</b> References</a></li>
-  </ul></li>
-  <li class="chapter" data-level="4" data-path="spam-filter.html"><a href="spam-filter.html"><i class="fa fa-check"></i><b>4</b> Spam filter</a>
-  <ul>
-  <li class="chapter" data-level="4.1" data-path="spam-filter.html"><a href="spam-filter.html#naive-bayes-spam-or-ham"><i class="fa fa-check"></i><b>4.1</b> Naive Bayes: Spam or Ham?</a></li>
-  <li class="chapter" data-level="4.2" data-path="spam-filter.html"><a href="spam-filter.html#summary-2"><i class="fa fa-check"></i><b>4.2</b> Summary</a></li>
-  <li class="chapter" data-level="4.3" data-path="spam-filter.html"><a href="spam-filter.html#references-3"><i class="fa fa-check"></i><b>4.3</b> References</a></li>
-  </ul></li>
-  <li class="chapter" data-level="5" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html"><i class="fa fa-check"></i><b>5</b> Probabilistic programming</a>
-  <ul>
-  <li class="chapter" data-level="5.1" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#coin-flipping-example"><i class="fa fa-check"></i><b>5.1</b> Coin flipping example</a></li>
-  <li class="chapter" data-level="5.2" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#summary-3"><i class="fa fa-check"></i><b>5.2</b> Summary</a></li>
-  <li class="chapter" data-level="5.3" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#references-4"><i class="fa fa-check"></i><b>5.3</b> References</a></li>
-  </ul></li>
-  <li class="chapter" data-level="6" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html"><i class="fa fa-check"></i><b>6</b> Escaping from Mars</a>
-  <ul>
-  <li class="chapter" data-level="6.1" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#calculating-the-constant-g-of-mars"><i class="fa fa-check"></i><b>6.1</b> Calculating the constant g of Mars</a></li>
-  <li class="chapter" data-level="6.2" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#optimizing-the-throwing-angle"><i class="fa fa-check"></i><b>6.2</b> Optimizing the throwing angle</a>
-  <ul>
-  <li class="chapter" data-level="6.2.1" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#calculating-the-escape-velocity"><i class="fa fa-check"></i><b>6.2.1</b> Calculating the escape velocity</a></li>
-  </ul></li>
-  <li class="chapter" data-level="6.3" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#summary-4"><i class="fa fa-check"></i><b>6.3</b> Summary</a></li>
-  </ul></li>
-  <li class="chapter" data-level="7" data-path="football-simulation.html"><a href="football-simulation.html"><i class="fa fa-check"></i><b>7</b> Football simulation</a>
-  <ul>
-  <li class="chapter" data-level="7.1" data-path="football-simulation.html"><a href="football-simulation.html#creating-our-conjectures"><i class="fa fa-check"></i><b>7.1</b> Creating our conjectures</a>
-  <ul>
-  <li class="chapter" data-level="7.1.1" data-path="football-simulation.html"><a href="football-simulation.html#bayesian-hierarchical-models"><i class="fa fa-check"></i><b>7.1.1</b> Bayesian hierarchical models</a></li>
-  </ul></li>
-  <li class="chapter" data-level="7.2" data-path="football-simulation.html"><a href="football-simulation.html#simulate-possible-realities"><i class="fa fa-check"></i><b>7.2</b> Simulate possible realities</a></li>
-  <li class="chapter" data-level="7.3" data-path="football-simulation.html"><a href="football-simulation.html#summary-5"><i class="fa fa-check"></i><b>7.3</b> Summary</a></li>
-  <li class="chapter" data-level="7.4" data-path="football-simulation.html"><a href="football-simulation.html#references-5"><i class="fa fa-check"></i><b>7.4</b> References</a></li>
-  </ul></li>
-  <li class="chapter" data-level="8" data-path="basketball-shots.html"><a href="basketball-shots.html"><i class="fa fa-check"></i><b>8</b> Basketball shots</a>
-  <ul>
-  <li class="chapter" data-level="8.1" data-path="basketball-shots.html"><a href="basketball-shots.html#modeling-the-probability-of-scoring"><i class="fa fa-check"></i><b>8.1</b> Modeling the probability of scoring</a></li>
-  <li class="chapter" data-level="8.2" data-path="basketball-shots.html"><a href="basketball-shots.html#prior-predictive-checks-part-i"><i class="fa fa-check"></i><b>8.2</b> Prior Predictive Checks: Part I</a></li>
-  <li class="chapter" data-level="8.3" data-path="basketball-shots.html"><a href="basketball-shots.html#new-model-and-prior-predictive-checks-part-ii"><i class="fa fa-check"></i><b>8.3</b> New model and prior predictive checks: Part II</a>
-  <ul>
-  <li class="chapter" data-level="8.3.1" data-path="basketball-shots.html"><a href="basketball-shots.html#defining-the-new-model-and-computing-posteriors"><i class="fa fa-check"></i><b>8.3.1</b> Defining the new model and computing posteriors</a></li>
-  </ul></li>
-  <li class="chapter" data-level="8.4" data-path="basketball-shots.html"><a href="basketball-shots.html#does-the-period-affect-the-probability-of-scoring"><i class="fa fa-check"></i><b>8.4</b> Does the Period affect the probability of scoring?</a></li>
-  <li class="chapter" data-level="8.5" data-path="basketball-shots.html"><a href="basketball-shots.html#summary-6"><i class="fa fa-check"></i><b>8.5</b> Summary</a></li>
-  </ul></li>
-  <li class="chapter" data-level="9" data-path="optimal-pricing.html"><a href="optimal-pricing.html"><i class="fa fa-check"></i><b>9</b> Optimal pricing</a>
-  <ul>
-  <li class="chapter" data-level="9.1" data-path="optimal-pricing.html"><a href="optimal-pricing.html#overview"><i class="fa fa-check"></i><b>9.1</b> Overview</a></li>
-  <li class="chapter" data-level="9.2" data-path="optimal-pricing.html"><a href="optimal-pricing.html#optimal-pricing-1"><i class="fa fa-check"></i><b>9.2</b> Optimal pricing</a>
-  <ul>
-  <li class="chapter" data-level="9.2.1" data-path="optimal-pricing.html"><a href="optimal-pricing.html#price-vs-quantity-model"><i class="fa fa-check"></i><b>9.2.1</b> Price vs Quantity model</a></li>
-  <li class="chapter" data-level="9.2.2" data-path="optimal-pricing.html"><a href="optimal-pricing.html#price-elasticity-of-demand"><i class="fa fa-check"></i><b>9.2.2</b> Price elasticity of demand</a></li>
-  </ul></li>
-  <li class="chapter" data-level="9.3" data-path="optimal-pricing.html"><a href="optimal-pricing.html#maximizing-profit"><i class="fa fa-check"></i><b>9.3</b> Maximizing profit</a></li>
-  <li class="chapter" data-level="9.4" data-path="optimal-pricing.html"><a href="optimal-pricing.html#summary-7"><i class="fa fa-check"></i><b>9.4</b> Summary</a></li>
-  <li class="chapter" data-level="9.5" data-path="optimal-pricing.html"><a href="optimal-pricing.html#references-6"><i class="fa fa-check"></i><b>9.5</b> References</a></li>
-  </ul></li>
-  <li class="part"><span><b>III Deep Learning</b></span></li>
-  <li class="chapter" data-level="10" data-path="image-classification.html"><a href="image-classification.html"><i class="fa fa-check"></i><b>10</b> Image classification</a>
-  <ul>
-  <li class="chapter" data-level="10.1" data-path="image-classification.html"><a href="image-classification.html#bee-population-control-what-would-happen-if-bees-go-extinct"><i class="fa fa-check"></i><b>10.1</b> Bee population control: What would happen if bees go extinct?</a></li>
-  <li class="chapter" data-level="10.2" data-path="image-classification.html"><a href="image-classification.html#machine-learning-overview"><i class="fa fa-check"></i><b>10.2</b> Machine Learning Overview</a></li>
-  <li class="chapter" data-level="10.3" data-path="image-classification.html"><a href="image-classification.html#neural-networks-and-convolutional-neural-networks"><i class="fa fa-check"></i><b>10.3</b> Neural networks and convolutional neural networks</a></li>
-  <li class="chapter" data-level="10.4" data-path="image-classification.html"><a href="image-classification.html#summary-8"><i class="fa fa-check"></i><b>10.4</b> Summary</a></li>
-  <li class="chapter" data-level="10.5" data-path="image-classification.html"><a href="image-classification.html#references-7"><i class="fa fa-check"></i><b>10.5</b> References</a></li>
-  </ul></li>
-  <li class="part"><span><b>IV Scientific Machine Learning</b></span></li>
-  <li class="chapter" data-level="11" data-path="ultima-online.html"><a href="ultima-online.html"><i class="fa fa-check"></i><b>11</b> Ultima online</a>
-  <ul>
-  <li class="chapter" data-level="11.1" data-path="ultima-online.html"><a href="ultima-online.html#the-ultima-online-catastrophe"><i class="fa fa-check"></i><b>11.1</b> The Ultima Online Catastrophe</a>
-  <ul>
-  <li class="chapter" data-level="11.1.1" data-path="ultima-online.html"><a href="ultima-online.html#the-lotka-volterra-model-for-population-dynamics"><i class="fa fa-check"></i><b>11.1.1</b> The Lotka-Volterra model for population dynamics</a></li>
-  </ul></li>
-  <li class="chapter" data-level="11.2" data-path="ultima-online.html"><a href="ultima-online.html#summary-9"><i class="fa fa-check"></i><b>11.2</b> Summary</a></li>
-  <li class="chapter" data-level="11.3" data-path="ultima-online.html"><a href="ultima-online.html#references-8"><i class="fa fa-check"></i><b>11.3</b> References</a></li>
-  </ul></li>
-  <li class="chapter" data-level="12" data-path="ultima-continued.html"><a href="ultima-continued.html"><i class="fa fa-check"></i><b>12</b> Ultima continued</a>
-  <ul>
-  <li class="chapter" data-level="12.1" data-path="ultima-continued.html"><a href="ultima-continued.html#the-language-of-science"><i class="fa fa-check"></i><b>12.1</b> The language of science</a></li>
-  <li class="chapter" data-level="12.2" data-path="ultima-continued.html"><a href="ultima-continued.html#scientific-machine-learning-for-model-discovery"><i class="fa fa-check"></i><b>12.2</b> Scientific Machine Learning for model discovery</a>
-  <ul>
-  <li class="chapter" data-level="12.2.1" data-path="ultima-continued.html"><a href="ultima-continued.html#looking-for-the-catastrophe-culprit"><i class="fa fa-check"></i><b>12.2.1</b> Looking for the catastrophe culprit</a></li>
-  <li class="chapter" data-level="12.2.2" data-path="ultima-continued.html"><a href="ultima-continued.html#the-infamous-day-begins."><i class="fa fa-check"></i><b>12.2.2</b> The infamous day begins.</a></li>
-  </ul></li>
-  <li class="chapter" data-level="12.3" data-path="ultima-continued.html"><a href="ultima-continued.html#summary-10"><i class="fa fa-check"></i><b>12.3</b> Summary</a></li>
-  <li class="chapter" data-level="12.4" data-path="ultima-continued.html"><a href="ultima-continued.html#references-9"><i class="fa fa-check"></i><b>12.4</b> References</a></li>
-  </ul></li>
-  <li class="part"><span><b>V Time Series and Forecasting</b></span></li>
-  <li class="chapter" data-level="13" data-path="time-series.html"><a href="time-series.html"><i class="fa fa-check"></i><b>13</b> Time series</a>
-  <ul>
-  <li class="chapter" data-level="13.1" data-path="time-series.html"><a href="time-series.html#predicting-the-future"><i class="fa fa-check"></i><b>13.1</b> Predicting the future</a></li>
-  <li class="chapter" data-level="13.2" data-path="time-series.html"><a href="time-series.html#exponential-smoothing"><i class="fa fa-check"></i><b>13.2</b> Exponential Smoothing</a>
-  <ul>
-  <li class="chapter" data-level="13.2.1" data-path="time-series.html"><a href="time-series.html#weighted-average-and-component-form"><i class="fa fa-check"></i><b>13.2.1</b> Weighted average and Component form</a></li>
-  <li class="chapter" data-level="13.2.2" data-path="time-series.html"><a href="time-series.html#optimization-or-fitting-process"><i class="fa fa-check"></i><b>13.2.2</b> Optimization (or Fitting) Process</a></li>
-  <li class="chapter" data-level="13.2.3" data-path="time-series.html"><a href="time-series.html#trend-methods"><i class="fa fa-check"></i><b>13.2.3</b> Trend Methods</a></li>
-  <li class="chapter" data-level="13.2.4" data-path="time-series.html"><a href="time-series.html#seasonality-methods"><i class="fa fa-check"></i><b>13.2.4</b> Seasonality Methods</a></li>
-  </ul></li>
-  <li class="chapter" data-level="13.3" data-path="time-series.html"><a href="time-series.html#summary-11"><i class="fa fa-check"></i><b>13.3</b> Summary</a></li>
-  <li class="chapter" data-level="13.4" data-path="time-series.html"><a href="time-series.html#references-10"><i class="fa fa-check"></i><b>13.4</b> References</a></li>
-  </ul></li>
-  <li class="divider"></li>
-  <li><a href="https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers" target="blank">Published with bookdown</a></li>
-    
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#prologue"><i class="fa fa-check"></i>Prologue</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html"><i class="fa fa-check"></i><b>1</b> Science technology and epistemology</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#the-difference-between-science-and-technology"><i class="fa fa-check"></i><b>1.1</b> The difference between Science and Technology</a></li>
+<li class="chapter" data-level="1.2" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#what-is-technology"><i class="fa fa-check"></i><b>1.2</b> What is technology?</a></li>
+<li class="chapter" data-level="1.3" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#references"><i class="fa fa-check"></i><b>1.3</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="meeting-julia.html"><a href="meeting-julia.html"><i class="fa fa-check"></i><b>2</b> Meeting Julia</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="meeting-julia.html"><a href="meeting-julia.html#why-julia"><i class="fa fa-check"></i><b>2.1</b> Why Julia</a></li>
+<li class="chapter" data-level="2.2" data-path="meeting-julia.html"><a href="meeting-julia.html#julia-presentation"><i class="fa fa-check"></i><b>2.2</b> Julia presentation</a></li>
+<li class="chapter" data-level="2.3" data-path="meeting-julia.html"><a href="meeting-julia.html#installation"><i class="fa fa-check"></i><b>2.3</b> Installation</a></li>
+<li class="chapter" data-level="2.4" data-path="meeting-julia.html"><a href="meeting-julia.html#first-steps-into-the-julia-world"><i class="fa fa-check"></i><b>2.4</b> First steps into the Julia world</a></li>
+<li class="chapter" data-level="2.5" data-path="meeting-julia.html"><a href="meeting-julia.html#julias-ecosystem-basic-plotting-and-manipulation-of-dataframes"><i class="fa fa-check"></i><b>2.5</b> Julia’s Ecosystem: Basic plotting and manipulation of DataFrames</a>
+<ul>
+<li class="chapter" data-level="2.5.1" data-path="meeting-julia.html"><a href="meeting-julia.html#plotting-with-plots.jl"><i class="fa fa-check"></i><b>2.5.1</b> Plotting with Plots.jl</a></li>
+<li class="chapter" data-level="2.5.2" data-path="meeting-julia.html"><a href="meeting-julia.html#introducing-dataframes.jl"><i class="fa fa-check"></i><b>2.5.2</b> Introducing DataFrames.jl</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="meeting-julia.html"><a href="meeting-julia.html#summary"><i class="fa fa-check"></i><b>2.6</b> Summary</a></li>
+<li class="chapter" data-level="2.7" data-path="meeting-julia.html"><a href="meeting-julia.html#references-1"><i class="fa fa-check"></i><b>2.7</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="probability-introduction.html"><a href="probability-introduction.html"><i class="fa fa-check"></i><b>3</b> Probability introduction</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="probability-introduction.html"><a href="probability-introduction.html#introduction-to-probability"><i class="fa fa-check"></i><b>3.1</b> Introduction to Probability</a></li>
+<li class="chapter" data-level="3.2" data-path="probability-introduction.html"><a href="probability-introduction.html#events-sample-spaces-and-sample-points"><i class="fa fa-check"></i><b>3.2</b> Events, sample spaces and sample points</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="probability-introduction.html"><a href="probability-introduction.html#relation-among-events"><i class="fa fa-check"></i><b>3.2.1</b> Relation among events</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="probability-introduction.html"><a href="probability-introduction.html#probability"><i class="fa fa-check"></i><b>3.3</b> Probability</a></li>
+<li class="chapter" data-level="3.4" data-path="probability-introduction.html"><a href="probability-introduction.html#conditional-probability"><i class="fa fa-check"></i><b>3.4</b> Conditional probability</a></li>
+<li class="chapter" data-level="3.5" data-path="probability-introduction.html"><a href="probability-introduction.html#joint-probability"><i class="fa fa-check"></i><b>3.5</b> Joint probability</a></li>
+<li class="chapter" data-level="3.6" data-path="probability-introduction.html"><a href="probability-introduction.html#bayes-theorem"><i class="fa fa-check"></i><b>3.6</b> Bayes theorem</a></li>
+<li class="chapter" data-level="3.7" data-path="probability-introduction.html"><a href="probability-introduction.html#probability-distributions"><i class="fa fa-check"></i><b>3.7</b> Probability distributions</a>
+<ul>
+<li class="chapter" data-level="3.7.1" data-path="probability-introduction.html"><a href="probability-introduction.html#discrete-case"><i class="fa fa-check"></i><b>3.7.1</b> Discrete Case</a></li>
+<li class="chapter" data-level="3.7.2" data-path="probability-introduction.html"><a href="probability-introduction.html#continuous-cases"><i class="fa fa-check"></i><b>3.7.2</b> Continuous cases</a></li>
+<li class="chapter" data-level="3.7.3" data-path="probability-introduction.html"><a href="probability-introduction.html#histograms"><i class="fa fa-check"></i><b>3.7.3</b> Histograms</a></li>
+</ul></li>
+<li class="chapter" data-level="3.8" data-path="probability-introduction.html"><a href="probability-introduction.html#example-bayesian-bandits"><i class="fa fa-check"></i><b>3.8</b> Example: Bayesian Bandits</a></li>
+<li class="chapter" data-level="3.9" data-path="probability-introduction.html"><a href="probability-introduction.html#summary-1"><i class="fa fa-check"></i><b>3.9</b> Summary</a></li>
+<li class="chapter" data-level="3.10" data-path="probability-introduction.html"><a href="probability-introduction.html#references-2"><i class="fa fa-check"></i><b>3.10</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="spam-filter.html"><a href="spam-filter.html"><i class="fa fa-check"></i><b>4</b> Spam filter</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="spam-filter.html"><a href="spam-filter.html#naive-bayes-spam-or-ham"><i class="fa fa-check"></i><b>4.1</b> Naive Bayes: Spam or Ham?</a></li>
+<li class="chapter" data-level="4.2" data-path="spam-filter.html"><a href="spam-filter.html#summary-2"><i class="fa fa-check"></i><b>4.2</b> Summary</a></li>
+<li class="chapter" data-level="4.3" data-path="spam-filter.html"><a href="spam-filter.html#references-3"><i class="fa fa-check"></i><b>4.3</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html"><i class="fa fa-check"></i><b>5</b> Probabilistic programming</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#coin-flipping-example"><i class="fa fa-check"></i><b>5.1</b> Coin flipping example</a></li>
+<li class="chapter" data-level="5.2" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#summary-3"><i class="fa fa-check"></i><b>5.2</b> Summary</a></li>
+<li class="chapter" data-level="5.3" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#references-4"><i class="fa fa-check"></i><b>5.3</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html"><i class="fa fa-check"></i><b>6</b> Escaping from Mars</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#calculating-the-constant-g-of-mars"><i class="fa fa-check"></i><b>6.1</b> Calculating the constant g of Mars</a></li>
+<li class="chapter" data-level="6.2" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#optimizing-the-throwing-angle"><i class="fa fa-check"></i><b>6.2</b> Optimizing the throwing angle</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#calculating-the-escape-velocity"><i class="fa fa-check"></i><b>6.2.1</b> Calculating the escape velocity</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#summary-4"><i class="fa fa-check"></i><b>6.3</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="football-simulation.html"><a href="football-simulation.html"><i class="fa fa-check"></i><b>7</b> Football simulation</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="football-simulation.html"><a href="football-simulation.html#creating-our-conjectures"><i class="fa fa-check"></i><b>7.1</b> Creating our conjectures</a>
+<ul>
+<li class="chapter" data-level="7.1.1" data-path="football-simulation.html"><a href="football-simulation.html#bayesian-hierarchical-models"><i class="fa fa-check"></i><b>7.1.1</b> Bayesian hierarchical models</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="football-simulation.html"><a href="football-simulation.html#simulate-possible-realities"><i class="fa fa-check"></i><b>7.2</b> Simulate possible realities</a></li>
+<li class="chapter" data-level="7.3" data-path="football-simulation.html"><a href="football-simulation.html#summary-5"><i class="fa fa-check"></i><b>7.3</b> Summary</a></li>
+<li class="chapter" data-level="7.4" data-path="football-simulation.html"><a href="football-simulation.html#references-5"><i class="fa fa-check"></i><b>7.4</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="basketball-shots.html"><a href="basketball-shots.html"><i class="fa fa-check"></i><b>8</b> Basketball shots</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="basketball-shots.html"><a href="basketball-shots.html#modeling-the-probability-of-scoring"><i class="fa fa-check"></i><b>8.1</b> Modeling the probability of scoring</a></li>
+<li class="chapter" data-level="8.2" data-path="basketball-shots.html"><a href="basketball-shots.html#prior-predictive-checks-part-i"><i class="fa fa-check"></i><b>8.2</b> Prior Predictive Checks: Part I</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="basketball-shots.html"><a href="basketball-shots.html#defining-our-model-and-computing-posteriors"><i class="fa fa-check"></i><b>8.2.1</b> Defining our model and computing posteriors</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="basketball-shots.html"><a href="basketball-shots.html#new-model-and-prior-predictive-checks-part-ii"><i class="fa fa-check"></i><b>8.3</b> New model and prior predictive checks: Part II</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="basketball-shots.html"><a href="basketball-shots.html#defining-the-new-model-and-computing-posteriors"><i class="fa fa-check"></i><b>8.3.1</b> Defining the new model and computing posteriors</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="basketball-shots.html"><a href="basketball-shots.html#does-the-period-affect-the-probability-of-scoring"><i class="fa fa-check"></i><b>8.4</b> Does the Period affect the probability of scoring?</a></li>
+<li class="chapter" data-level="8.5" data-path="basketball-shots.html"><a href="basketball-shots.html#summary-6"><i class="fa fa-check"></i><b>8.5</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="optimal-pricing.html"><a href="optimal-pricing.html"><i class="fa fa-check"></i><b>9</b> Optimal pricing</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="optimal-pricing.html"><a href="optimal-pricing.html#overview"><i class="fa fa-check"></i><b>9.1</b> Overview</a></li>
+<li class="chapter" data-level="9.2" data-path="optimal-pricing.html"><a href="optimal-pricing.html#optimal-pricing-1"><i class="fa fa-check"></i><b>9.2</b> Optimal pricing</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="optimal-pricing.html"><a href="optimal-pricing.html#price-vs-quantity-model"><i class="fa fa-check"></i><b>9.2.1</b> Price vs Quantity model</a></li>
+<li class="chapter" data-level="9.2.2" data-path="optimal-pricing.html"><a href="optimal-pricing.html#price-elasticity-of-demand"><i class="fa fa-check"></i><b>9.2.2</b> Price elasticity of demand</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="optimal-pricing.html"><a href="optimal-pricing.html#maximizing-profit"><i class="fa fa-check"></i><b>9.3</b> Maximizing profit</a></li>
+<li class="chapter" data-level="9.4" data-path="optimal-pricing.html"><a href="optimal-pricing.html#summary-7"><i class="fa fa-check"></i><b>9.4</b> Summary</a></li>
+<li class="chapter" data-level="9.5" data-path="optimal-pricing.html"><a href="optimal-pricing.html#references-6"><i class="fa fa-check"></i><b>9.5</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="image-classification.html"><a href="image-classification.html"><i class="fa fa-check"></i><b>10</b> Image classification</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="image-classification.html"><a href="image-classification.html#bee-population-control-what-would-happen-if-bees-go-extinct"><i class="fa fa-check"></i><b>10.1</b> Bee population control: What would happen if bees go extinct?</a></li>
+<li class="chapter" data-level="10.2" data-path="image-classification.html"><a href="image-classification.html#machine-learning-overview"><i class="fa fa-check"></i><b>10.2</b> Machine Learning Overview</a></li>
+<li class="chapter" data-level="10.3" data-path="image-classification.html"><a href="image-classification.html#neural-networks-and-convolutional-neural-networks"><i class="fa fa-check"></i><b>10.3</b> Neural networks and convolutional neural networks</a></li>
+<li class="chapter" data-level="10.4" data-path="image-classification.html"><a href="image-classification.html#summary-8"><i class="fa fa-check"></i><b>10.4</b> Summary</a></li>
+<li class="chapter" data-level="10.5" data-path="image-classification.html"><a href="image-classification.html#references-7"><i class="fa fa-check"></i><b>10.5</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="ultima-online.html"><a href="ultima-online.html"><i class="fa fa-check"></i><b>11</b> Ultima online</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="ultima-online.html"><a href="ultima-online.html#the-ultima-online-catastrophe"><i class="fa fa-check"></i><b>11.1</b> The Ultima Online Catastrophe</a>
+<ul>
+<li class="chapter" data-level="11.1.1" data-path="ultima-online.html"><a href="ultima-online.html#the-lotka-volterra-model-for-population-dynamics"><i class="fa fa-check"></i><b>11.1.1</b> The Lotka-Volterra model for population dynamics</a></li>
+</ul></li>
+<li class="chapter" data-level="11.2" data-path="ultima-online.html"><a href="ultima-online.html#summary-9"><i class="fa fa-check"></i><b>11.2</b> Summary</a></li>
+<li class="chapter" data-level="11.3" data-path="ultima-online.html"><a href="ultima-online.html#references-8"><i class="fa fa-check"></i><b>11.3</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="ultima-continued.html"><a href="ultima-continued.html"><i class="fa fa-check"></i><b>12</b> Ultima continued</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="ultima-continued.html"><a href="ultima-continued.html#the-language-of-science"><i class="fa fa-check"></i><b>12.1</b> The language of science</a></li>
+<li class="chapter" data-level="12.2" data-path="ultima-continued.html"><a href="ultima-continued.html#scientific-machine-learning-for-model-discovery"><i class="fa fa-check"></i><b>12.2</b> Scientific Machine Learning for model discovery</a>
+<ul>
+<li class="chapter" data-level="12.2.1" data-path="ultima-continued.html"><a href="ultima-continued.html#looking-for-the-catastrophe-culprit"><i class="fa fa-check"></i><b>12.2.1</b> Looking for the catastrophe culprit</a></li>
+<li class="chapter" data-level="12.2.2" data-path="ultima-continued.html"><a href="ultima-continued.html#the-infamous-day-begins."><i class="fa fa-check"></i><b>12.2.2</b> The infamous day begins.</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="ultima-continued.html"><a href="ultima-continued.html#summary-10"><i class="fa fa-check"></i><b>12.3</b> Summary</a></li>
+<li class="chapter" data-level="12.4" data-path="ultima-continued.html"><a href="ultima-continued.html#references-9"><i class="fa fa-check"></i><b>12.4</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="time-series.html"><a href="time-series.html"><i class="fa fa-check"></i><b>13</b> Time series</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="time-series.html"><a href="time-series.html#predicting-the-future"><i class="fa fa-check"></i><b>13.1</b> Predicting the future</a></li>
+<li class="chapter" data-level="13.2" data-path="time-series.html"><a href="time-series.html#exponential-smoothing"><i class="fa fa-check"></i><b>13.2</b> Exponential Smoothing</a>
+<ul>
+<li class="chapter" data-level="13.2.1" data-path="time-series.html"><a href="time-series.html#weighted-average-and-component-form"><i class="fa fa-check"></i><b>13.2.1</b> Weighted average and Component form</a></li>
+<li class="chapter" data-level="13.2.2" data-path="time-series.html"><a href="time-series.html#optimization-or-fitting-process"><i class="fa fa-check"></i><b>13.2.2</b> Optimization (or Fitting) Process</a></li>
+<li class="chapter" data-level="13.2.3" data-path="time-series.html"><a href="time-series.html#trend-methods"><i class="fa fa-check"></i><b>13.2.3</b> Trend Methods</a></li>
+<li class="chapter" data-level="13.2.4" data-path="time-series.html"><a href="time-series.html#seasonality-methods"><i class="fa fa-check"></i><b>13.2.4</b> Seasonality Methods</a></li>
+</ul></li>
+<li class="chapter" data-level="13.3" data-path="time-series.html"><a href="time-series.html#summary-11"><i class="fa fa-check"></i><b>13.3</b> Summary</a></li>
+<li class="chapter" data-level="13.4" data-path="time-series.html"><a href="time-series.html#references-10"><i class="fa fa-check"></i><b>13.4</b> References</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers" target="blank">Published with bookdown</a></li>
+
 </ul>
 
       </nav>
@@ -297,337 +297,383 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="optimal-pricing" class="section level1" number="9">
-<h1><span class="header-section-number">Chapter 9</span> Optimal pricing</h1>
-<div class="sourceCode" id="cb1"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb1-1"><a href="optimal-pricing.html#cb1-1" aria-hidden="true" tabindex="-1"></a>cd(<span class="st">&quot;./09_optimal_pricing/&quot;</span>) </span>
-<span id="cb1-2"><a href="optimal-pricing.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">import</span> Pkg</span>
-<span id="cb1-3"><a href="optimal-pricing.html#cb1-3" aria-hidden="true" tabindex="-1"></a>Pkg.activate(<span class="st">&quot;.&quot;</span>)</span>
-<span id="cb1-4"><a href="optimal-pricing.html#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="optimal-pricing.html#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> Markdown</span>
-<span id="cb1-6"><a href="optimal-pricing.html#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> InteractiveUtils</span>
-<span id="cb1-7"><a href="optimal-pricing.html#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> Plots</span>
-<span id="cb1-8"><a href="optimal-pricing.html#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> Turing</span>
-<span id="cb1-9"><a href="optimal-pricing.html#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> StatsPlots</span>
-<span id="cb1-10"><a href="optimal-pricing.html#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> LaTeXStrings</span></code></pre></div>
-<div id="overview" class="section level2" number="9.1">
-<h2><span class="header-section-number">9.1</span> Overview</h2>
-<p>In a bayesian framework we can work intrinsically with the uncertainty of the data. It allows us to include it in our models. This is especially beneficial when we want to take a decision based on the results of a model. In this type of problem, if we optimize the expected value of the function we want to maximize, we obtain just a number, losing all the information and richness uncertainty can give us.</p>
-<p>In real-life scenarios, when making decisions we almost never have all the necessary information and therefore we have to deal with uncertainty. So it’s important to be able to take into account how certain we are of the information we have. It may be the case that the value that maximizes (or minimize) certain problem comes with a lot of uncertainty so would be more appropriate to choose other with a better optimization-uncertainty trade off.</p>
-<p>Bayesian inference allows us to do this because of it approach of a statistical problem. From its point of view, the data obtained on an event is fixed. They are observations that have already happened and there is nothing stochastic about it. So the data is deterministic.</p>
-<p>On the contrary, the parameters of the models we propose to describe such data are stochastic, following a given probability distribution. In this way, the inference that is made is on the complete distributions of our parameters, which allows us, precisely, to include the uncertainty into our models.</p>
-<p>Before starting we want to thank <a href="https://github.com/cscherrer">Chad Scherrer</a> since this chapter is inspired by his <a href="https://cscherrer.github.io/post/max-profit/">article</a>"</p>
+<div id="optimal-pricing" class="section level1 hasAnchor" number="9">
+<h1><span class="header-section-number">Chapter 9</span> Optimal pricing<a href="optimal-pricing.html#optimal-pricing" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="overview" class="section level2 hasAnchor" number="9.1">
+<h2><span class="header-section-number">9.1</span> Overview<a href="optimal-pricing.html#overview" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In a bayesian framework we can work intrinsically with the uncertainty of the data. It allows us to include it in our models. This is especially
+beneficial when we want to take a decision based on the results of a model. In this type of problem, if we optimize the expected value of the
+function we want to maximize, we obtain just a number, losing all the information and richness uncertainty can give us.</p>
+<p>In real-life scenarios, when making decisions we almost never have all the necessary information and therefore we have to deal with uncertainty.
+So it’s important to be able to take into account how certain we are of the information we have. It may be the case that the value that maximizes
+(or minimize) certain problem comes with a lot of uncertainty so it would be more appropriate to choose other with a better optimization-uncertainty
+trade off.</p>
+<p>Bayesian inference allows us to do this because of it approach of a statistical problem. From its point of view, the data obtained on an event is
+fixed. They are observations that have already happened and there is nothing stochastic about it. So the data is deterministic.
+On the contrary, the parameters of the models we propose to describe such data are stochastic, following a given probability distribution. In this
+way, the inference that is made is on the complete distributions of our parameters, which allows us, precisely, to include the uncertainty into
+our models.</p>
+<p>Before starting we want to thank <a href="https://github.com/cscherrer">Chad Scherrer</a> since this chapter is inspired by his
+<a href="https://cscherrer.github.io/post/max-profit/">article</a></p>
 </div>
-<div id="optimal-pricing-1" class="section level2" number="9.2">
-<h2><span class="header-section-number">9.2</span> Optimal pricing</h2>
+<div id="optimal-pricing-1" class="section level2 hasAnchor" number="9.2">
+<h2><span class="header-section-number">9.2</span> Optimal pricing<a href="optimal-pricing.html#optimal-pricing-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <hr />
-<p>Pricing a product is not an easy task. Multiple factors intervene in a customer’s decision to buy a product. Also, a price can be fixed for some unknown business’ decision. Now suppose you have a new product you want to introduce in the local market and you need to set a price for it. Also, as a businessman, you want to have the maximum profit.</p>
-<p>If the kind of product you intend to produce were already in the market, you could use this information to have an initial guess. If the price is too high, you probably won’t sell much. Conversely, if it’s too low, you probably sell more, but since the production process has an associate cost, you have to be careful and take it into account when you do the math.</p>
-<div id="price-vs-quantity-model" class="section level3" number="9.2.1">
-<h3><span class="header-section-number">9.2.1</span> Price vs Quantity model</h3>
-<p>We are going to use a known equation to model the relationship between price of a product and the quantity demanded, the equation (1). The figure 1 shows its behavior for some value of <em>a</em> and <em>c</em>. This equation tell us that the higher the price, the less we sell, and if we continue rising the price, eventually our product it’s so expensive that nobody is interested.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb2-1"><a href="optimal-pricing.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb2-2"><a href="optimal-pricing.html#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="optimal-pricing.html#cb2-3" aria-hidden="true" tabindex="-1"></a>a_ <span class="op">=</span> <span class="fl">5000</span></span>
-<span id="cb2-4"><a href="optimal-pricing.html#cb2-4" aria-hidden="true" tabindex="-1"></a>c_ <span class="op">=</span> <span class="op">-</span><span class="fl">0.5</span></span>
-<span id="cb2-5"><a href="optimal-pricing.html#cb2-5" aria-hidden="true" tabindex="-1"></a>P_ <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">100</span></span>
-<span id="cb2-6"><a href="optimal-pricing.html#cb2-6" aria-hidden="true" tabindex="-1"></a>Q_ <span class="op">=</span> a_<span class="op">.*</span>(P_<span class="op">.^</span>c_)</span>
-<span id="cb2-7"><a href="optimal-pricing.html#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-8"><a href="optimal-pricing.html#cb2-8" aria-hidden="true" tabindex="-1"></a>plot(P_<span class="op">,</span> Q_<span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span><span class="op">,</span> title<span class="op">=</span><span class="st">&quot;Quantity vs Price model&quot;</span>)<span class="co">#: $Q=aP^c$&quot;)</span></span>
-<span id="cb2-9"><a href="optimal-pricing.html#cb2-9" aria-hidden="true" tabindex="-1"></a>xlabel<span class="op">!</span>(<span class="st">&quot;Price&quot;</span>)</span>
-<span id="cb2-10"><a href="optimal-pricing.html#cb2-10" aria-hidden="true" tabindex="-1"></a>ylabel<span class="op">!</span>(<span class="st">&quot;Quantity&quot;</span>)</span>
-<span id="cb2-11"><a href="optimal-pricing.html#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
-<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_9_plot_1-J1.png" /><!-- --></p>
-<p>You can imagine this as when you buy a luxury bread at the bakery:</p>
-<p>In the beginning, if the price of this bread is very low and you will surely buy many of them, even giving some away so that others can try them. If one day you wake up and see that the price of this tasty bread is now double, you will surely stop buying too much and just concentrate on having it for a nice breakfast. Now, if a couple of months later the bakery became famous thanks to its delicious bread and they decided to sell it five times more expensive than before, you would start looking for another bakery.</p>
-<div id="power-law-distributions" class="section level4" number="9.2.1.1">
-<h4><span class="header-section-number">9.2.1.1</span> Power law distributions</h4>
-<p>Okay, so we agree that our model has to express that as the price goes up the quantity tends to go down. However, one could ask why use a decreasing exponential function and not another one, for example a linear relationship with a negative slope.</p>
-<p>The answer to this question is not straightforward. To start building an intuition, we must think about how people’s income is distributed.</p>
-<p>Surely many of you have the main idea: income is not distributed equally across the population.</p>
-<p>In general, a few people concentrate most of the income, and only a little of the income is distributed in the majority of the population. The distributions that describe this phenomenon are called ‘power laws.’ The best known is perhaps the Pareto distribution or 80-20 distribution. A distribution widely used in business management referring to the fact that, for example, 20% of the mix of products sold are those that generate 80% of the profits.</p>
-<p>In economics this idea is presented with the Lorentz curve:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb3-1"><a href="optimal-pricing.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb3-2"><a href="optimal-pricing.html#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> lorenz(y)  </span>
-<span id="cb3-3"><a href="optimal-pricing.html#cb3-3" aria-hidden="true" tabindex="-1"></a>    n <span class="op">=</span> length(y)</span>
-<span id="cb3-4"><a href="optimal-pricing.html#cb3-4" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> sort(y)</span>
-<span id="cb3-5"><a href="optimal-pricing.html#cb3-5" aria-hidden="true" tabindex="-1"></a>    s <span class="op">=</span> zeros(n <span class="op">+</span> <span class="fl">1</span>)</span>
-<span id="cb3-6"><a href="optimal-pricing.html#cb3-6" aria-hidden="true" tabindex="-1"></a>    s[<span class="fl">2</span><span class="op">:</span><span class="kw">end</span>] <span class="op">=</span> cumsum(y)</span>
-<span id="cb3-7"><a href="optimal-pricing.html#cb3-7" aria-hidden="true" tabindex="-1"></a>    cum_people <span class="op">=</span> zeros(n <span class="op">+</span> <span class="fl">1</span>)</span>
-<span id="cb3-8"><a href="optimal-pricing.html#cb3-8" aria-hidden="true" tabindex="-1"></a>    cum_income <span class="op">=</span> zeros(n <span class="op">+</span> <span class="fl">1</span>)</span>
-<span id="cb3-9"><a href="optimal-pricing.html#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> collect(<span class="fl">1</span><span class="op">:</span> (n ))</span>
-<span id="cb3-10"><a href="optimal-pricing.html#cb3-10" aria-hidden="true" tabindex="-1"></a>        cum_people[i] <span class="op">=</span> i <span class="op">/</span> n</span>
-<span id="cb3-11"><a href="optimal-pricing.html#cb3-11" aria-hidden="true" tabindex="-1"></a>        cum_income[i] <span class="op">=</span> s[i] <span class="op">/</span> s[n]</span>
-<span id="cb3-12"><a href="optimal-pricing.html#cb3-12" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
-<span id="cb3-13"><a href="optimal-pricing.html#cb3-13" aria-hidden="true" tabindex="-1"></a>    <span class="kw">return</span> cum_people<span class="op">,</span> cum_income</span>
-<span id="cb3-14"><a href="optimal-pricing.html#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span>
-<span id="cb3-15"><a href="optimal-pricing.html#cb3-15" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb3-16"><a href="optimal-pricing.html#cb3-16" aria-hidden="true" tabindex="-1"></a>w <span class="op">=</span> exp.(randn(<span class="fl">100</span>))</span>
-<span id="cb3-17"><a href="optimal-pricing.html#cb3-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-18"><a href="optimal-pricing.html#cb3-18" aria-hidden="true" tabindex="-1"></a>f_vals<span class="op">,</span> l_vals <span class="op">=</span> lorenz(w)</span>
-<span id="cb3-19"><a href="optimal-pricing.html#cb3-19" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb3-20"><a href="optimal-pricing.html#cb3-20" aria-hidden="true" tabindex="-1"></a>plot(f_vals<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;Lorentz curve&quot;</span><span class="op">,</span>l_vals<span class="op">,</span> l<span class="op">=</span><span class="fl">3</span><span class="op">,</span>xlabel<span class="op">=</span><span class="st">&quot;Cumulative population&quot;</span><span class="op">,</span> xaxis<span class="op">=</span><span class="fl">0</span><span class="op">:</span><span class="fl">0.1</span><span class="op">:</span><span class="fl">1</span>)</span>
-<span id="cb3-21"><a href="optimal-pricing.html#cb3-21" aria-hidden="true" tabindex="-1"></a>plot<span class="op">!</span>(f_vals<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;Perfect equality&quot;</span><span class="op">,</span> f_vals<span class="op">,</span> l<span class="op">=</span><span class="fl">3</span><span class="op">,</span> ylabel<span class="op">=</span><span class="st">&quot;Cumulative income&quot;</span><span class="op">,</span>yaxis<span class="op">=</span><span class="fl">0</span><span class="op">:</span><span class="fl">0.1</span><span class="op">:</span><span class="fl">1</span>)</span>
-<span id="cb3-22"><a href="optimal-pricing.html#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
-<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_9_plot_2-J1.png" /><!-- --></p>
-<p><em>Lorentz curve. A graphical representation of income inequality.</em></p>
-<p>In this graph, the x-axis represents the accumulated population and the y-axis the accumulated income. Going from left to right and as you move along the x-axis, more and more income is accumulated by fewer people. For example, the first 10% of the population barely accumulates 1% of income while the richest 10% on the right accumulates 40%. An ideal society with a perfectly distributed income would have a straight 45º Lorentz curve.</p>
-<p>With this in mind we can already generate an intuition that will help us answer the initial question: why use a decreasing exponential and not a negative-slope line?</p>
-<p>Well, since a great majority of people have a small relative income and a minority has a large one, as we increase the price of the product, a large number of people with low income can no longer afford it. This process continues until only people with a high income are left and their consumption preferences are not greatly affected by the price increase.</p>
+<p>Pricing a product is not an easy task. Multiple factors intervene in a customer’s decision to buy a product. Also, a price can be fixed for
+some unknown business’ decision. Now suppose you have a new product you want to introduce in the local market and you need to set a price for
+it. Also, as a businessman, you want to have the maximum profit.</p>
+<p>If the kind of product you intend to produce were already in the market, you could use this information to have an initial guess. If the price
+is too high, you probably won’t sell much. Conversely, if it’s too low, you probably sell more, but since the production process has an associated
+cost, you have to be careful and take it into account when you do the math.</p>
+<p>Let’s import the packages we will be using through the chapter</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb1-1"><a href="optimal-pricing.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">using</span> <span class="bu">Plots</span></span>
+<span id="cb1-2"><a href="optimal-pricing.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">using</span> <span class="bu">Turing</span></span>
+<span id="cb1-3"><a href="optimal-pricing.html#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">using</span> <span class="bu">StatsPlots</span></span>
+<span id="cb1-4"><a href="optimal-pricing.html#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">using</span> <span class="bu">LaTeXStrings</span></span></code></pre></div>
+<div id="price-vs-quantity-model" class="section level3 hasAnchor" number="9.2.1">
+<h3><span class="header-section-number">9.2.1</span> Price vs Quantity model<a href="optimal-pricing.html#price-vs-quantity-model" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>We are going to use a known equation to model the relationship between price of a product and the quantity demanded, the equation</p>
+<p><span class="math inline">\(Q = aP^{c}\)</span></p>
+<p>Figure 1 shows its behavior for some value of <em>a</em> and <em>c</em>. This equation tells us that the higher the price, the less we sell, and if we
+continue rising the price, eventually our product it’s so expensive that nobody is interested.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb2-1"><a href="optimal-pricing.html#cb2-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="fl">5000</span></span>
+<span id="cb2-2"><a href="optimal-pricing.html#cb2-2" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> <span class="op">-</span><span class="fl">0.5</span></span>
+<span id="cb2-3"><a href="optimal-pricing.html#cb2-3" aria-hidden="true" tabindex="-1"></a>P <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">100</span></span>
+<span id="cb2-4"><a href="optimal-pricing.html#cb2-4" aria-hidden="true" tabindex="-1"></a>Q <span class="op">=</span> a<span class="op">.*</span>(P<span class="op">.^</span>c)</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb3-1"><a href="optimal-pricing.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(P, Q, legend<span class="op">=</span><span class="cn">false</span>, title<span class="op">=</span><span class="st">&quot;quantity vs price model&quot;</span>)<span class="co">#: $Q=aP^c$&quot;);</span></span>
+<span id="cb3-2"><a href="optimal-pricing.html#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">xlabel!</span>(<span class="st">&quot;price&quot;</span>);</span>
+<span id="cb3-3"><a href="optimal-pricing.html#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ylabel!</span>(<span class="st">&quot;quantity&quot;</span>)</span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chaP9_plot_1-J1.png" /><!-- --></p>
+<p>You can imagine this as when you buy a luxury bread at the bakery:
+In the beginning, if the price of this bread is very low and you will surely buy many of them, even giving some away so that others can try
+them. If one day you wake up and see that the price of this tasty bread is now double, you will surely stop buying too much and just concentrate
+on having it for a nice breakfast. Now, if a couple of months later the bakery became famous thanks to its delicious bread and they decided to
+sell it five times more expensive than before, you would start looking for another bakery.</p>
+<div id="power-law-distributions" class="section level4 hasAnchor" number="9.2.1.1">
+<h4><span class="header-section-number">9.2.1.1</span> Power law distributions<a href="optimal-pricing.html#power-law-distributions" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Okay, so we agree that our model has to express that as the price goes up the quantity tends to go down. However, one could ask why use a
+decreasing exponential function and not another one, for example a linear relationship with a negative slope.
+The answer to this question is not straightforward. To start building an intuition, we must think about how people’s income is distributed.
+Surely many of you have the main idea: income is not distributed equally across the population.
+In general, a few people concentrate most of the income, and only a little of the income is distributed in the majority of the population. The
+distributions that describe this phenomenon are called ‘power laws’. The best known is perhaps the Pareto distribution or 80-20 distribution.
+A distribution widely used in business management referring to the fact that, for example, 20% of the mix of products sold are those that generate
+80% of the profits.</p>
+<p>In economics this idea is presented with the Lorenz curve:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb4-1"><a href="optimal-pricing.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">lorenz</span>(y)  </span>
+<span id="cb4-2"><a href="optimal-pricing.html#cb4-2" aria-hidden="true" tabindex="-1"></a>    n <span class="op">=</span> <span class="fu">length</span>(y)</span>
+<span id="cb4-3"><a href="optimal-pricing.html#cb4-3" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> <span class="fu">sort</span>(y)</span>
+<span id="cb4-4"><a href="optimal-pricing.html#cb4-4" aria-hidden="true" tabindex="-1"></a>    s <span class="op">=</span> <span class="fu">zeros</span>(n <span class="op">+</span> <span class="fl">1</span>)</span>
+<span id="cb4-5"><a href="optimal-pricing.html#cb4-5" aria-hidden="true" tabindex="-1"></a>    s[<span class="fl">2</span><span class="op">:</span><span class="kw">end</span>] <span class="op">=</span> <span class="fu">cumsum</span>(y)</span>
+<span id="cb4-6"><a href="optimal-pricing.html#cb4-6" aria-hidden="true" tabindex="-1"></a>    cum_people <span class="op">=</span> <span class="fu">zeros</span>(n <span class="op">+</span> <span class="fl">1</span>)</span>
+<span id="cb4-7"><a href="optimal-pricing.html#cb4-7" aria-hidden="true" tabindex="-1"></a>    cum_income <span class="op">=</span> <span class="fu">zeros</span>(n <span class="op">+</span> <span class="fl">1</span>)</span>
+<span id="cb4-8"><a href="optimal-pricing.html#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="fu">collect</span>(<span class="fl">1</span><span class="op">:</span>n)</span>
+<span id="cb4-9"><a href="optimal-pricing.html#cb4-9" aria-hidden="true" tabindex="-1"></a>        cum_people[i] <span class="op">=</span> i <span class="op">/</span> n</span>
+<span id="cb4-10"><a href="optimal-pricing.html#cb4-10" aria-hidden="true" tabindex="-1"></a>        cum_income[i] <span class="op">=</span> s[i] <span class="op">/</span> s[n]</span>
+<span id="cb4-11"><a href="optimal-pricing.html#cb4-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">end</span></span>
+<span id="cb4-12"><a href="optimal-pricing.html#cb4-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> cum_people, cum_income</span>
+<span id="cb4-13"><a href="optimal-pricing.html#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb5-1"><a href="optimal-pricing.html#cb5-1" aria-hidden="true" tabindex="-1"></a>w <span class="op">=</span> <span class="fu">exp</span>.(<span class="fu">randn</span>(<span class="fl">100</span>));</span>
+<span id="cb5-2"><a href="optimal-pricing.html#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="optimal-pricing.html#cb5-3" aria-hidden="true" tabindex="-1"></a>f_vals, l_vals <span class="op">=</span> <span class="fu">lorenz</span>(w);</span>
+<span id="cb5-4"><a href="optimal-pricing.html#cb5-4" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb5-5"><a href="optimal-pricing.html#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(f_vals, label<span class="op">=</span><span class="st">&quot;Lorenz curve&quot;</span>,l_vals, l<span class="op">=</span><span class="fl">3</span>,xlabel<span class="op">=</span><span class="st">&quot;Cumulative population&quot;</span>, xaxis<span class="op">=</span><span class="fl">0</span><span class="op">:</span><span class="fl">0.1</span><span class="op">:</span><span class="fl">1</span>);</span>
+<span id="cb5-6"><a href="optimal-pricing.html#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="fu">plot!</span>(f_vals, label<span class="op">=</span><span class="st">&quot;Perfect equality&quot;</span>, f_vals, l<span class="op">=</span><span class="fl">3</span>, ylabel<span class="op">=</span><span class="st">&quot;Cumulative income&quot;</span>, yaxis<span class="op">=</span><span class="fl">0</span><span class="op">:</span><span class="fl">0.1</span><span class="op">:</span><span class="fl">1</span>)</span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chaP9_plot_2-J1.png" /><!-- --></p>
+<p><em>Lorenz curve. A graphical representation of income inequality.</em></p>
+<p>In this graph, the x-axis represents the accumulated population and the y-axis the accumulated income. Going from left to right and as you move
+along the x-axis, more and more income is accumulated by fewer people. For example, the first 10% of the population barely accumulates 1% of
+income while the richest 10% on the right accumulates 40%. An ideal society with a perfectly distributed income would have a straight 45º Lorenz
+curve.</p>
+<p>With this in mind we can already generate an intuition that will help us answer the initial question: why use a decreasing exponential and not a
+negative-slope line?
+Since a great majority of people have a small relative income and a minority has a large one, as we increase the price of the product, a
+large number of people with low income can no longer afford it. This process continues until only people with a high income are left and their
+consumption preferences are not greatly affected by the price increase.</p>
 <p>The exponential distribution is useful to describe this.</p>
 </div>
 </div>
-<div id="price-elasticity-of-demand" class="section level3" number="9.2.2">
-<h3><span class="header-section-number">9.2.2</span> Price elasticity of demand</h3>
-<p>A very important factor to consider is the price elasticity of demand of the product in question. What does this mean? It relates how much the quantity demanded by customers of a product changes when its price is changed by one unit.</p>
+<div id="price-elasticity-of-demand" class="section level3 hasAnchor" number="9.2.2">
+<h3><span class="header-section-number">9.2.2</span> Price elasticity of demand<a href="optimal-pricing.html#price-elasticity-of-demand" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A very important factor to consider is the price elasticity of demand of the product in question. What does this mean? It relates how much the
+quantity demanded by customers of a product changes when its price is changed by one unit.</p>
 <p>Mathematically, price elasticity is defined as:</p>
 <p><span class="math inline">\(e_{(p)}=\frac{dQ/Q}{dP/P}\)</span></p>
 <p>For example, the price elasticity of demand of a medicine for a terminal illness is not the same as that of chocolate with peanuts.</p>
-<p>While some might argue that chocolate is vital for their life, the difference between these two products is that users of the medicine cannot afford not to consume it. No matter how much the price increases, the nature of their need forces them to buy it anyway. It is said then that the medicine is inelastic, that is, it is not sensitive to price.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb4-1"><a href="optimal-pricing.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb4-2"><a href="optimal-pricing.html#cb4-2" aria-hidden="true" tabindex="-1"></a>    a__ <span class="op">=</span> <span class="fl">500</span></span>
-<span id="cb4-3"><a href="optimal-pricing.html#cb4-3" aria-hidden="true" tabindex="-1"></a>    c__ <span class="op">=</span> <span class="op">-</span><span class="fl">0.05</span></span>
-<span id="cb4-4"><a href="optimal-pricing.html#cb4-4" aria-hidden="true" tabindex="-1"></a>    P__ <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">100</span></span>
-<span id="cb4-5"><a href="optimal-pricing.html#cb4-5" aria-hidden="true" tabindex="-1"></a>    Q__ <span class="op">=</span> a__.<span class="op">+</span> c__<span class="op">.*</span>P__</span>
-<span id="cb4-6"><a href="optimal-pricing.html#cb4-6" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb4-7"><a href="optimal-pricing.html#cb4-7" aria-hidden="true" tabindex="-1"></a>    plot(P__<span class="op">,</span> Q__<span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span><span class="op">,</span> ylims <span class="op">=</span> (<span class="fl">400</span><span class="op">,</span><span class="fl">550</span>))</span>
-<span id="cb4-8"><a href="optimal-pricing.html#cb4-8" aria-hidden="true" tabindex="-1"></a>    xlabel<span class="op">!</span>(<span class="st">&quot;Price&quot;</span>)</span>
-<span id="cb4-9"><a href="optimal-pricing.html#cb4-9" aria-hidden="true" tabindex="-1"></a>    ylabel<span class="op">!</span>(<span class="st">&quot;Quantity&quot;</span>)</span>
-<span id="cb4-10"><a href="optimal-pricing.html#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
-<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_9_plot_3-J1.png" /><!-- --></p>
+<p>While some might argue that chocolate is vital for their life, the difference between these two products is that users of the medicine cannot
+afford not to consume it. No matter how much the price increases, the nature of their need forces them to buy it anyway. It is said then that
+the medicine is inelastic, that is, it is not sensitive to price.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb6-1"><a href="optimal-pricing.html#cb6-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="fl">500</span></span>
+<span id="cb6-2"><a href="optimal-pricing.html#cb6-2" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> <span class="op">-</span><span class="fl">0.05</span></span>
+<span id="cb6-3"><a href="optimal-pricing.html#cb6-3" aria-hidden="true" tabindex="-1"></a>P <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">100</span></span>
+<span id="cb6-4"><a href="optimal-pricing.html#cb6-4" aria-hidden="true" tabindex="-1"></a>Q <span class="op">=</span> a <span class="op">.+</span> c<span class="op">.*</span>P</span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb7-1"><a href="optimal-pricing.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(P, Q, legend<span class="op">=</span><span class="cn">false</span>, ylims <span class="op">=</span> (<span class="fl">400</span>,<span class="fl">550</span>));</span>
+<span id="cb7-2"><a href="optimal-pricing.html#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">xlabel!</span>(<span class="st">&quot;price&quot;</span>);</span>
+<span id="cb7-3"><a href="optimal-pricing.html#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ylabel!</span>(<span class="st">&quot;quantity&quot;</span>)</span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chaP9_plot_3-J1.png" /><!-- --></p>
 <p><em>Inelastic demand of an important medicine. As it is vital for life the price hardly affects the quantity demanded</em>
-On the contrary, if we see that the price of chocolates goes up a lot, we will probably stop consuming it, since it is not vital for our health. Well, that’s relative.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb5-1"><a href="optimal-pricing.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb5-2"><a href="optimal-pricing.html#cb5-2" aria-hidden="true" tabindex="-1"></a>    a___ <span class="op">=</span> <span class="fl">500</span></span>
-<span id="cb5-3"><a href="optimal-pricing.html#cb5-3" aria-hidden="true" tabindex="-1"></a>    c___ <span class="op">=</span> <span class="op">-</span><span class="fl">0.9</span></span>
-<span id="cb5-4"><a href="optimal-pricing.html#cb5-4" aria-hidden="true" tabindex="-1"></a>    P___ <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">100</span></span>
-<span id="cb5-5"><a href="optimal-pricing.html#cb5-5" aria-hidden="true" tabindex="-1"></a>    Q___ <span class="op">=</span> a___<span class="op">.*</span>(P___<span class="op">.^</span>c___)</span>
-<span id="cb5-6"><a href="optimal-pricing.html#cb5-6" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb5-7"><a href="optimal-pricing.html#cb5-7" aria-hidden="true" tabindex="-1"></a>    plot(P___<span class="op">,</span> Q___<span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span>)</span>
-<span id="cb5-8"><a href="optimal-pricing.html#cb5-8" aria-hidden="true" tabindex="-1"></a>    xlabel<span class="op">!</span>(<span class="st">&quot;Price&quot;</span>)</span>
-<span id="cb5-9"><a href="optimal-pricing.html#cb5-9" aria-hidden="true" tabindex="-1"></a>    ylabel<span class="op">!</span>(<span class="st">&quot;Quantity&quot;</span>)</span>
-<span id="cb5-10"><a href="optimal-pricing.html#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
-<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_9_plot_4-J1.png" /><!-- --></p>
+On the contrary, if we see that the price of chocolates goes up a lot, we will probably stop consuming it, since it is not vital for our health.
+Well, that’s relative.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb8-1"><a href="optimal-pricing.html#cb8-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="fl">500</span></span>
+<span id="cb8-2"><a href="optimal-pricing.html#cb8-2" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> <span class="op">-</span><span class="fl">0.9</span></span>
+<span id="cb8-3"><a href="optimal-pricing.html#cb8-3" aria-hidden="true" tabindex="-1"></a>P <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">100</span></span>
+<span id="cb8-4"><a href="optimal-pricing.html#cb8-4" aria-hidden="true" tabindex="-1"></a>Q <span class="op">=</span> a<span class="op">.*</span>(P<span class="op">.^</span>c)</span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb9-1"><a href="optimal-pricing.html#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(P, Q, legend<span class="op">=</span><span class="cn">false</span>);</span>
+<span id="cb9-2"><a href="optimal-pricing.html#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">xlabel!</span>(<span class="st">&quot;price&quot;</span>);</span>
+<span id="cb9-3"><a href="optimal-pricing.html#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ylabel!</span>(<span class="st">&quot;quantity&quot;</span>)</span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chaP9_plot_4-J1.png" /><!-- --></p>
 <p><em>Possible demand curve for non chocolate lovers. As the price goes up the quantity goes down a lot.</em>
-Perhaps you are wondering the importance of being able to have clarity about the elasticity of a product. To explain it, let’s remember how the sales (in money) we get when trading a product are calculated:</p>
-<p><span class="math inline">\(Sales = Quantity * Price\)</span></p>
+Perhaps you are wondering the importance of being able to have clarity about the elasticity of a product. To explain it, let’s remember how the
+sales (in money) we get when trading a product are calculated:</p>
+<p><span class="math inline">\(sales = quantity * price\)</span></p>
 <p>So it is vitally important to analyze how much one variable varies when moving the other.</p>
-<p>It is evident that in the case of inelastic goods, it is always convenient to raise the price in terms of increasing the profit. On the other hand, when we work with a good that has some kind of elasticity, the increase generated by setting a higher price can be offset by an even greater drop in the amount sold. So we have to understand very well that behavior in order to define the optimal price level.</p>
-<div id="dealing-with-uncertanty" class="section level4" number="9.2.2.1">
-<h4><span class="header-section-number">9.2.2.1</span> Dealing with uncertanty</h4>
-<p>Anyway, if our product is a new idea, the problem depicted above gets a lot more complicated if the product is brand new, an invention, and the approach it’s different. That’s the problem we are about to solve:</p>
-<p>Suppose you are about to release a completely new and disrupting product. Your product is so different that you don’t have others to compare with, at least in the local market, so you are not sure about what price to choose. You don’t want to lose money of course, so you want the maximum profit you could get. To test the waters, a common choice is to run a pilot test, offering your product at different prices and see how customers react. So you record how much you sell at what price, but how do we proceed?</p>
-<p>Now, given the model and the data available, we define it</p>
-<p>So, given our exponential model to describe the relationship between the price of a good and the quantity demanded, We want to estimate its parameters:</p>
+<p>It is evident that in the case of inelastic goods, it is always convenient to raise the price in terms of increasing the profit. On the other
+hand, when we work with a good that has some kind of elasticity, the increase generated by setting a higher price can be offset by an even
+greater drop in the amount sold. So we have to understand very well that behavior in order to define the optimal price level.</p>
+<div id="dealing-with-uncertanty" class="section level4 hasAnchor" number="9.2.2.1">
+<h4><span class="header-section-number">9.2.2.1</span> Dealing with uncertanty<a href="optimal-pricing.html#dealing-with-uncertanty" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Anyway, if our product is a new idea, the problem depicted above gets a lot more complicated if the product is brand new, an invention, and the
+approach it’s different. That’s the problem we are about to solve:</p>
+<p>Suppose you are about to release a completely new and disrupting product. Your product is so different that you don’t have others to compare with,
+at least in the local market, so you are not sure about what price to choose. You don’t want to lose money of course, so you want the maximum
+profit you could get. To test the waters, a common choice is to run a pilot test, offering your product at different prices and see how customers
+react. So you record how much you sell at what price, but how do we proceed?</p>
+<p>Now, given the model and the data available, we define it
+So, given our exponential model to describe the relationship between the price of a good and the quantity demanded, we want to estimate its
+parameters:</p>
 <p><span class="math inline">\(Q = aP^{c}\)</span></p>
-<p>In order to do this, an intelligent strategy is to linearize the relationship in order to perform a simple linear regression. Simply taking the logarithm of both sides of the equation achieves the goal:</p>
-<p><span class="math inline">\(log(Q)=log(a) + clog(P)\)</span></p>
-<p>Now, the only thing left to do is to define the model in a bayesian framework for Julia, called Turing, which is used to do probabilistic programming.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb6-1"><a href="optimal-pricing.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb6-2"><a href="optimal-pricing.html#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="pp">@model</span> <span class="kw">function</span> quantity(qval<span class="op">,</span>p0)</span>
-<span id="cb6-3"><a href="optimal-pricing.html#cb6-3" aria-hidden="true" tabindex="-1"></a>    loga <span class="op">~</span> Cauchy()</span>
-<span id="cb6-4"><a href="optimal-pricing.html#cb6-4" aria-hidden="true" tabindex="-1"></a>    c <span class="op">~</span> Cauchy()</span>
-<span id="cb6-5"><a href="optimal-pricing.html#cb6-5" aria-hidden="true" tabindex="-1"></a>    logμ<span class="fl">0</span>_ <span class="op">=</span> loga .<span class="op">+</span> c<span class="op">*</span>(log.(p0) .<span class="op">-</span> mean(log.(p0)))</span>
-<span id="cb6-6"><a href="optimal-pricing.html#cb6-6" aria-hidden="true" tabindex="-1"></a>    μ<span class="fl">0</span>_ <span class="op">=</span> exp.(logμ<span class="fl">0</span>_)</span>
-<span id="cb6-7"><a href="optimal-pricing.html#cb6-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> eachindex(µ<span class="fl">0</span>_)</span>
-<span id="cb6-8"><a href="optimal-pricing.html#cb6-8" aria-hidden="true" tabindex="-1"></a>        qval[i] <span class="op">~</span> Poisson(μ<span class="fl">0</span>_[i])</span>
-<span id="cb6-9"><a href="optimal-pricing.html#cb6-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
-<span id="cb6-10"><a href="optimal-pricing.html#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span>
-<span id="cb6-11"><a href="optimal-pricing.html#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
-<pre><code>## quantity (generic function with 1 method)</code></pre>
+<p>In order to do this, an intelligent strategy is to linearize the relationship in order to perform a simple linear regression. Simply taking
+the logarithm of both sides of the equation achieves the goal:</p>
+<p><span class="math inline">\(\log(Q) = \log(a) + c\log(P)\)</span></p>
+<p>Now, the only thing left to do is to define the model in a bayesian framework for Julia, called Turing, which is used to do probabilistic
+programming.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb10-1"><a href="optimal-pricing.html#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="pp">@model</span> <span class="kw">function</span> <span class="fu">quantity</span>(qval, p0)</span>
+<span id="cb10-2"><a href="optimal-pricing.html#cb10-2" aria-hidden="true" tabindex="-1"></a>    log_a <span class="op">~</span> <span class="fu">Cauchy</span>()</span>
+<span id="cb10-3"><a href="optimal-pricing.html#cb10-3" aria-hidden="true" tabindex="-1"></a>    c <span class="op">~</span> <span class="fu">Cauchy</span>()</span>
+<span id="cb10-4"><a href="optimal-pricing.html#cb10-4" aria-hidden="true" tabindex="-1"></a>    log_μ<span class="fl">0</span> <span class="op">=</span> log_a <span class="op">.+</span> <span class="fu">c*</span>(<span class="fu">log</span>.(p0) <span class="op">.-</span> <span class="fu">mean</span>(<span class="fu">log</span>.(p0)))</span>
+<span id="cb10-5"><a href="optimal-pricing.html#cb10-5" aria-hidden="true" tabindex="-1"></a>    μ<span class="fl">0</span> <span class="op">=</span> <span class="fu">exp</span>.(log_μ<span class="fl">0</span>)</span>
+<span id="cb10-6"><a href="optimal-pricing.html#cb10-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="fu">eachindex</span>(µ<span class="fl">0</span>)</span>
+<span id="cb10-7"><a href="optimal-pricing.html#cb10-7" aria-hidden="true" tabindex="-1"></a>        qval[i] <span class="op">~</span> <span class="fu">Poisson</span>(μ<span class="fl">0</span>[i])</span>
+<span id="cb10-8"><a href="optimal-pricing.html#cb10-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">end</span></span>
+<span id="cb10-9"><a href="optimal-pricing.html#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
 <p>How do we interpret this model?</p>
 </div>
-<div id="priors-our-previous-knowledge" class="section level4" number="9.2.2.2">
-<h4><span class="header-section-number">9.2.2.2</span> Priors: our previous knowledge</h4>
-<p>Remember that Bayesian models always ask us to choose previous distributions for their parameters. In this particular example we propose that <em>log a</em> and <em>c</em> follow a Cauchy distribution. <em>Why did we do this?</em> Basically they are very flat distributions that are going to leave a lot of freedom for the model to learn from the data what the value of the parameters are.</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb8-1"><a href="optimal-pricing.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb8-2"><a href="optimal-pricing.html#cb8-2" aria-hidden="true" tabindex="-1"></a>plot(<span class="op">-</span><span class="fl">10</span><span class="op">:</span><span class="fl">0.01</span><span class="op">:</span><span class="fl">10</span><span class="op">,</span>Cauchy()<span class="op">,</span> xlim<span class="op">=</span>(<span class="op">-</span><span class="fl">10</span><span class="op">,</span><span class="fl">10</span>)<span class="op">,</span>label<span class="op">=</span><span class="st">&quot;Cauchy(0,1)&quot;</span>)</span>
-<span id="cb8-3"><a href="optimal-pricing.html#cb8-3" aria-hidden="true" tabindex="-1"></a>plot<span class="op">!</span>(Normal()<span class="op">,</span> xlim<span class="op">=</span>(<span class="op">-</span><span class="fl">10</span><span class="op">,</span><span class="fl">10</span>)<span class="op">,</span> label<span class="op">=</span><span class="st">&quot;Normal(0,1)&quot;</span>)</span>
-<span id="cb8-4"><a href="optimal-pricing.html#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
-<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_9_plot_5-J1.png" /><!-- --></p>
+<div id="priors-our-previous-knowledge" class="section level4 hasAnchor" number="9.2.2.2">
+<h4><span class="header-section-number">9.2.2.2</span> Priors: our previous knowledge<a href="optimal-pricing.html#priors-our-previous-knowledge" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Remember that Bayesian models always ask us to choose previous distributions for their parameters. In this particular example we propose
+that <em>log a</em> and <em>c</em> follow a Cauchy distribution. <em>Why did we do this?</em> Basically they are very flat distributions that are going to leave a
+lot of freedom for the model to learn from the data what the value of the parameters are.</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb11-1"><a href="optimal-pricing.html#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="op">-</span><span class="fl">10</span><span class="op">:</span><span class="fl">0.01</span><span class="op">:</span><span class="fl">10</span>, <span class="fu">Cauchy</span>(), xlim<span class="op">=</span>(<span class="op">-</span><span class="fl">10</span>, <span class="fl">10</span>), label<span class="op">=</span><span class="st">&quot;Cauchy(0, 1)&quot;</span>);</span>
+<span id="cb11-2"><a href="optimal-pricing.html#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot!</span>(<span class="fu">Normal</span>(), xlim<span class="op">=</span>(<span class="op">-</span><span class="fl">10</span>,<span class="fl">10</span>), label<span class="op">=</span><span class="st">&quot;Normal(0,1)&quot;</span>);</span>
+<span id="cb11-3"><a href="optimal-pricing.html#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="fu">xlabel!</span>(<span class="st">&quot;x&quot;</span>);</span>
+<span id="cb11-4"><a href="optimal-pricing.html#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ylabel!</span>(<span class="st">&quot;Probability density&quot;</span>)</span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chaP9_plot_5-J1.png" /><!-- --></p>
 <p><em>Normal and Cauchy distributions. The Cauchy distribution is said to be fat tailed as it allows for extreme values</em>
-Is doing this the best choice? Definitely not. Having the possibility to choose the previous distributions allows us to introduce previous knowledge to our problem. For example, if you were doing a linear regression to find the relationship between people’s weight and their height, you could already “tell” the model that it would not make sense for the relationship to be negative, that is, it does not seem right to affirm that as a person weighs more, he or she would be shorter.</p>
-<p>Another very important use of priors is to define the scale of the problem. In the example of height and weight it would be useful to say something like ‘It doesn’t make sense that for every additional kilogram of weight, a person will measure one meter more. At most a few centimeters.’ All this information can be communicated to our model through the priors we choose. Let’s leave it there for now.</p>
-<p>Returning to the code. Julia allows us to easily define the variables that are probability distributions using the ~ operator. Once we know <em>c</em> and <em>log a</em> for a given value of price, we can univocally determine the quantity, therefore the variables <span class="math inline">\(\log(\mu_0)\)</span> (and <span class="math inline">\(\mu_0\)</span>) are defined with the = operator, indicating a deterministic relation.</p>
-<p>In addition, since the quantity of product sold is a discrete one and it comes from adding independent purchases, they are modeled as a poisson distribution.</p>
-<p>But why do we subtract the mean for the price values? It´s a good practice to avoid a common problem: multicollinearity. With multicollinearity, the models tend to be more certain about the plausible values of our model, meanwhile models with more normalized data are more conservative and they are less prone to overfitting, an unwanted effect we need to avoid if we expect our model to work good with new. As a rule of thumb, it is always good to standardize our data. That is, subtract their average and divide each by its standard deviation.</p>
+Is doing this the best choice? Definitely not. Having the possibility to choose the previous distributions allows us to introduce previous
+knowledge to our problem. For example, if you were doing a linear regression to find the relationship between people’s weight and their height,
+you could already “tell” the model that it would not make sense for the relationship to be negative, that is, it does not seem right to affirm
+that as a person weighs more, he or she would be shorter.</p>
+<p>Another very important use of priors is to define the scale of the problem. In the example of height and weight it would be useful to say
+something like ‘It doesn’t make sense that for every additional kilogram of weight, a person will measure one meter more. At most a few
+centimeters’. All this information can be communicated to our model through the priors we choose. Let’s leave it there for now.</p>
+<p>Returning to the code. Julia allows us to easily define the variables that are probability distributions using the ~ operator. Once we know
+<em>c</em> and <em>log a</em> for a given value of price, we can univocally determine the quantity, therefore the variables <span class="math inline">\(\log(\mu_0)\)</span> (and <span class="math inline">\(\mu_0\)</span>) are
+defined with the = operator, indicating a deterministic relation.</p>
+<p>In addition, since the quantity of product sold is a discrete one and it comes from adding independent purchases, they are modeled as a poisson
+distribution.</p>
+<p>But why do we subtract the mean for the price values? It´s a good practice to avoid a common problem: multicollinearity. With multicollinearity,
+the models tend to be more certain about the plausible values of our model, meanwhile models with more normalized data are more conservative and
+they are less prone to overfitting, an unwanted effect we need to avoid if we expect our model to work good with new. As a rule of thumb, it is
+always good to standardize our data. That is, subtract their average and divide each by its standard deviation.</p>
 </div>
-<div id="updating-our-beliefs" class="section level4" number="9.2.2.3">
-<h4><span class="header-section-number">9.2.2.3</span> Updating our beliefs</h4>
-<p>In our problem, we said we have already recorded some points of the curve for our product. And to do it we simply run the pilot test, fixing a price and counting the amount of product we sold. We can infer employing this data the “demand curve,” then we can propose a profit function for the new product and finally find the price that maximizes our profit. In the figure 2 we plot the points recorded in the pilot test. At first sight they seem to follow the expected relationship but it is not a perfect curve, right? They have some kind of “noise.” Well, after all we could say that the reality is noisy.</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb9-1"><a href="optimal-pricing.html#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb9-2"><a href="optimal-pricing.html#cb9-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">#Our points from the pilot test</span></span>
-<span id="cb9-3"><a href="optimal-pricing.html#cb9-3" aria-hidden="true" tabindex="-1"></a>    Price <span class="op">=</span> [<span class="fl">1500</span><span class="op">,</span> <span class="fl">2500</span><span class="op">,</span> <span class="fl">4000</span><span class="op">,</span> <span class="fl">5000</span>] </span>
-<span id="cb9-4"><a href="optimal-pricing.html#cb9-4" aria-hidden="true" tabindex="-1"></a>    Quantity <span class="op">=</span> [<span class="fl">590</span><span class="op">,</span> <span class="fl">259</span><span class="op">,</span> <span class="fl">231</span><span class="op">,</span> <span class="fl">117</span>]</span>
-<span id="cb9-5"><a href="optimal-pricing.html#cb9-5" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb9-6"><a href="optimal-pricing.html#cb9-6" aria-hidden="true" tabindex="-1"></a>    scatter(Price<span class="op">,</span> Quantity<span class="op">,</span> markersize<span class="op">=</span><span class="fl">6</span><span class="op">,</span> color<span class="op">=</span><span class="st">&quot;orange&quot;</span><span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span><span class="op">,</span> xlim<span class="op">=</span>(<span class="fl">1000</span><span class="op">,</span><span class="fl">6000</span>)<span class="op">,</span> ylim<span class="op">=</span>(<span class="fl">0</span><span class="op">,</span><span class="fl">1100</span>))</span>
-<span id="cb9-7"><a href="optimal-pricing.html#cb9-7" aria-hidden="true" tabindex="-1"></a>    xlabel<span class="op">!</span>(<span class="st">&quot;Price&quot;</span>)</span>
-<span id="cb9-8"><a href="optimal-pricing.html#cb9-8" aria-hidden="true" tabindex="-1"></a>    ylabel<span class="op">!</span>(<span class="st">&quot;Quantity&quot;</span>)</span>
-<span id="cb9-9"><a href="optimal-pricing.html#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
-<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_9_plot_6-J1.png" /><!-- --></p>
-<p>As we said, in a bayesian framework our previous knowledge are the distributions we propose for each of the parameters and the relationship known between price and quantity.</p>
-<p>With this bayesian approach, our previous knowledge are the distributions we propose for each of the parameters and the relationship known between price and quantity. What we do now is to update our believes, incorporating in our model the data points we have recoded from our pilot test as show in the code bellow, instantiating our model with the points <em>Quantity</em> and <em>Price</em>. Our model now has computed what is called the <em>posterior distributions</em> for the parameters <em>log a</em> and <em>c</em>, our updated beliefs for the plausible values for this two parameters.</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb10-1"><a href="optimal-pricing.html#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb10-2"><a href="optimal-pricing.html#cb10-2" aria-hidden="true" tabindex="-1"></a>    model <span class="op">=</span> quantity(Quantity<span class="op">,</span> Price)</span>
-<span id="cb10-3"><a href="optimal-pricing.html#cb10-3" aria-hidden="true" tabindex="-1"></a>    posterior <span class="op">=</span> sample(model<span class="op">,</span> NUTS()<span class="op">,</span><span class="fl">1000</span>)</span>
-<span id="cb10-4"><a href="optimal-pricing.html#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span><span class="op">;</span></span></code></pre></div>
-<div class="sourceCode" id="cb11"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb11-1"><a href="optimal-pricing.html#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb11-2"><a href="optimal-pricing.html#cb11-2" aria-hidden="true" tabindex="-1"></a>    post_loga <span class="op">=</span> collect(get(posterior<span class="op">,</span> <span class="op">:</span>loga))</span>
-<span id="cb11-3"><a href="optimal-pricing.html#cb11-3" aria-hidden="true" tabindex="-1"></a>    post_c <span class="op">=</span> collect(get(posterior<span class="op">,</span> <span class="op">:</span>c))</span>
-<span id="cb11-4"><a href="optimal-pricing.html#cb11-4" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb11-5"><a href="optimal-pricing.html#cb11-5" aria-hidden="true" tabindex="-1"></a>    hist_loga <span class="op">=</span> histogram(post_loga<span class="op">,</span> normed<span class="op">=</span><span class="ex">true</span><span class="op">,</span> bins<span class="op">=</span><span class="fl">20</span><span class="op">,</span> label <span class="op">=</span> <span class="ex">false</span><span class="op">,</span> xlabel<span class="op">=</span><span class="st">&quot;log a&quot;</span>)</span>
-<span id="cb11-6"><a href="optimal-pricing.html#cb11-6" aria-hidden="true" tabindex="-1"></a>    hist_c <span class="op">=</span> histogram(post_c<span class="op">,</span> normed<span class="op">=</span><span class="ex">true</span><span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span><span class="op">,</span> bins<span class="op">=</span><span class="fl">20</span><span class="op">,</span> xlabel<span class="op">=</span><span class="st">&quot;c&quot;</span>)</span>
-<span id="cb11-7"><a href="optimal-pricing.html#cb11-7" aria-hidden="true" tabindex="-1"></a>    plot(hist_loga<span class="op">,</span> hist_c<span class="op">,</span> layout<span class="op">=</span>(<span class="fl">1</span><span class="op">,</span><span class="fl">2</span>))</span>
-<span id="cb11-8"><a href="optimal-pricing.html#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
-<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_9_plot_7-J1.png" /><!-- --></p>
+<div id="updating-our-beliefs" class="section level4 hasAnchor" number="9.2.2.3">
+<h4><span class="header-section-number">9.2.2.3</span> Updating our beliefs<a href="optimal-pricing.html#updating-our-beliefs" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>In our problem, we said we have already recorded some points of the curve for our product. And to do it we simply run the pilot test, fixing a
+price and counting the amount of product we sold. We can infer employing this data the “demand curve”, then we can propose a profit function for
+the new product and finally find the price that maximizes our profit. In the figure 2 we plot the points recorded in the pilot test. At first
+sight they seem to follow the expected relationship but it is not a perfect curve, right? They have some kind of “noise”. Well, after all we
+could say that the reality is noisy.</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb12-1"><a href="optimal-pricing.html#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Our points from the pilot test</span></span>
+<span id="cb12-2"><a href="optimal-pricing.html#cb12-2" aria-hidden="true" tabindex="-1"></a>price <span class="op">=</span> [<span class="fl">1500</span>, <span class="fl">2500</span>, <span class="fl">4000</span>, <span class="fl">5000</span>] </span>
+<span id="cb12-3"><a href="optimal-pricing.html#cb12-3" aria-hidden="true" tabindex="-1"></a>quant <span class="op">=</span> [<span class="fl">590</span>, <span class="fl">259</span>, <span class="fl">231</span>, <span class="fl">117</span>]</span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb13-1"><a href="optimal-pricing.html#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">scatter</span>(price, quant, markersize<span class="op">=</span><span class="fl">6</span>, color<span class="op">=</span><span class="st">&quot;orange&quot;</span>, legend<span class="op">=</span><span class="cn">false</span>, xlim<span class="op">=</span>(<span class="fl">1000</span>,<span class="fl">6000</span>), ylim<span class="op">=</span>(<span class="fl">0</span>,<span class="fl">1100</span>));</span>
+<span id="cb13-2"><a href="optimal-pricing.html#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">xlabel!</span>(<span class="st">&quot;price&quot;</span>);</span>
+<span id="cb13-3"><a href="optimal-pricing.html#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ylabel!</span>(<span class="st">&quot;quantity&quot;</span>)</span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chaP9_plot_6-J1.png" /><!-- --></p>
+<p>As we said, in a bayesian framework our previous knowledge are the distributions we propose for each of the parameters and the relationship
+known between price and quantity.</p>
+<p>With this bayesian approach, our previous knowledge are the distributions we propose for each of the parameters and the relationship known
+between price and quantity. What we do now is to update our believes, incorporating in our model the data points we have recoded from our pilot
+test as show in the code bellow, instantiating our model with the points <em>quantity</em> and <em>price</em>. Our model now has computed what is called the
+<em>posterior distributions</em> for the parameters <em>log a</em> and <em>c</em>, our updated beliefs for the plausible values for this two parameters.</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb14-1"><a href="optimal-pricing.html#cb14-1" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> <span class="fu">quantity</span>(quant, price)</span>
+<span id="cb14-2"><a href="optimal-pricing.html#cb14-2" aria-hidden="true" tabindex="-1"></a>posterior <span class="op">=</span> <span class="fu">sample</span>(model, <span class="fu">NUTS</span>(), <span class="fl">1000</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb15-1"><a href="optimal-pricing.html#cb15-1" aria-hidden="true" tabindex="-1"></a>post_loga <span class="op">=</span> <span class="fu">collect</span>(<span class="fu">get</span>(posterior, <span class="op">:</span>log_a))</span>
+<span id="cb15-2"><a href="optimal-pricing.html#cb15-2" aria-hidden="true" tabindex="-1"></a>post_c <span class="op">=</span> <span class="fu">collect</span>(<span class="fu">get</span>(posterior, <span class="op">:</span>c))</span></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb16-1"><a href="optimal-pricing.html#cb16-1" aria-hidden="true" tabindex="-1"></a>hist_loga <span class="op">=</span> <span class="fu">histogram</span>(post_loga, normed<span class="op">=</span><span class="cn">true</span>, bins<span class="op">=</span><span class="fl">20</span>, label <span class="op">=</span> <span class="cn">false</span>, xlabel<span class="op">=</span><span class="st">&quot;log a&quot;</span>);</span>
+<span id="cb16-2"><a href="optimal-pricing.html#cb16-2" aria-hidden="true" tabindex="-1"></a>hist_c <span class="op">=</span> <span class="fu">histogram</span>(post_c, normed<span class="op">=</span><span class="cn">true</span>, legend<span class="op">=</span><span class="cn">false</span>, bins<span class="op">=</span><span class="fl">20</span>, xlabel<span class="op">=</span><span class="st">&quot;c&quot;</span>);</span>
+<span id="cb16-3"><a href="optimal-pricing.html#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(hist_loga, hist_c, layout<span class="op">=</span>(<span class="fl">1</span>,<span class="fl">2</span>))</span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chaP9_plot_7-J1.png" /><!-- --></p>
 <p><em>Posterior distributions for the parameters log a and c.</em>
-Let’s stop for a moment and analyze this. We defined our model and asked turing to return the best possible estimate of our parameters, taking into account our initial beliefs and the information obtained from the pilot test, and what Turing returns was a distribution of possibilities for those parameters.</p>
+Let’s stop for a moment and analyze this. We defined our model and asked turing to return the best possible estimate of our parameters, taking
+into account our initial beliefs and the information obtained from the pilot test, and what Turing returns was a distribution of possibilities
+for those parameters.</p>
 <p>But, our model is defined by a single value of a and c. So what do we do? One option would be to take the mean of our distributions.</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb12-1"><a href="optimal-pricing.html#cb12-1" aria-hidden="true" tabindex="-1"></a>mean(post_loga[<span class="fl">1</span>])</span></code></pre></div>
-<pre><code>## 5.5460012328826735</code></pre>
-<div class="sourceCode" id="cb14"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb14-1"><a href="optimal-pricing.html#cb14-1" aria-hidden="true" tabindex="-1"></a>mean(post_c[<span class="fl">1</span>])</span></code></pre></div>
-<pre><code>## -1.1838279679326476</code></pre>
-<p>So Log(a) would be 5.55 and c -1.18, and we should only have to replace those values in our model equation to get the answer to our problem:</p>
-<p>$ Log(Q)=5.55 - 1.18Log(P) $</p>
-<p>This would make sense? Not even close. By doing this we would be throwing away a lot of precious information that the Bayesian framework gives us: The uncertainty about our inference.</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb17-1"><a href="optimal-pricing.html#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(post_loga[<span class="fl">1</span>])</span></code></pre></div>
+<pre><code>## 5.546905134831591</code></pre>
+<div class="sourceCode" id="cb19"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb19-1"><a href="optimal-pricing.html#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(post_c[<span class="fl">1</span>])</span></code></pre></div>
+<pre><code>## -1.1772082045306818</code></pre>
+<p>So <span class="math inline">\(\log(a)\)</span> would be 5.55 and c -1.18, and we should only have to replace those values in our model equation to get the answer to our problem:</p>
+<p><span class="math inline">\(\log(Q)=5.55 - 1.18\log(P)\)</span></p>
+<p>This would make sense? Not even close. By doing this we would be throwing away a lot of precious information that the Bayesian framework gives
+us: The uncertainty about our inference.</p>
 </div>
-<div id="making-uncertainty-our-ally" class="section level4" number="9.2.2.4">
-<h4><span class="header-section-number">9.2.2.4</span> Making uncertainty our ally</h4>
-<p>Instead of getting rid of the uncertainty of our measurements, we have to use them to our advantage. This way instead of keeping only one model, we will use all possible models that can be built having the distributions of their parameters. That is, to sample our parameter distributions and build different models with each combination of them. Let’s see it:</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb16-1"><a href="optimal-pricing.html#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb16-2"><a href="optimal-pricing.html#cb16-2" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> range(<span class="fl">1000</span><span class="op">,</span><span class="fl">9000</span><span class="op">,</span>step <span class="op">=</span> <span class="fl">10</span>)<span class="op">;</span></span>
-<span id="cb16-3"><a href="optimal-pricing.html#cb16-3" aria-hidden="true" tabindex="-1"></a>q <span class="op">=</span> zeros(length(p)<span class="op">,</span>length(post_c[<span class="fl">1</span>]))</span>
-<span id="cb16-4"><a href="optimal-pricing.html#cb16-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-5"><a href="optimal-pricing.html#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="kw">for</span> i <span class="kw">in</span> collect(<span class="fl">1</span><span class="op">:</span>length(post_c[<span class="fl">1</span>]))</span>
-<span id="cb16-6"><a href="optimal-pricing.html#cb16-6" aria-hidden="true" tabindex="-1"></a>    q[<span class="op">:,</span>i] <span class="op">=</span> exp.(post_loga[<span class="fl">1</span>][i] .<span class="op">+</span> post_c[<span class="fl">1</span>][i] <span class="op">.*</span> (log.(p) .<span class="op">-</span> mean(log.(Price))))</span>
-<span id="cb16-7"><a href="optimal-pricing.html#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span>
-<span id="cb16-8"><a href="optimal-pricing.html#cb16-8" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
-<p>Here we are creating an array of as many rows as price values we want to observe and with as many columns as samples we have of each of our log and c parameters, that is, as many columns as models we have at our disposal. Let´s plot them all and se what happen:</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb17-1"><a href="optimal-pricing.html#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb17-2"><a href="optimal-pricing.html#cb17-2" aria-hidden="true" tabindex="-1"></a>    plot(p<span class="op">,</span>q[<span class="op">:,</span><span class="fl">1</span>]<span class="op">,</span> xlim<span class="op">=</span>(<span class="fl">1000</span><span class="op">,</span><span class="fl">6000</span>))</span>
-<span id="cb17-3"><a href="optimal-pricing.html#cb17-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">for</span> i <span class="kw">in</span> collect(<span class="fl">1</span><span class="op">:</span>length(post_c[<span class="fl">1</span>]))</span>
-<span id="cb17-4"><a href="optimal-pricing.html#cb17-4" aria-hidden="true" tabindex="-1"></a>        plot<span class="op">!</span>(p<span class="op">,</span>q[<span class="op">:,</span>i]<span class="op">,</span> color<span class="op">=</span><span class="st">&quot;blue&quot;</span><span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span><span class="op">,</span> alpha <span class="op">=</span> <span class="fl">0.1</span>)</span>
-<span id="cb17-5"><a href="optimal-pricing.html#cb17-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">end</span></span>
-<span id="cb17-6"><a href="optimal-pricing.html#cb17-6" aria-hidden="true" tabindex="-1"></a>    plot<span class="op">!</span>(p<span class="op">,</span> mean(q<span class="op">,</span> dims<span class="op">=</span><span class="fl">2</span>)<span class="op">,</span> color<span class="op">=</span><span class="st">&quot;red&quot;</span><span class="op">,</span> lw<span class="op">=</span><span class="fl">2</span>)</span>
-<span id="cb17-7"><a href="optimal-pricing.html#cb17-7" aria-hidden="true" tabindex="-1"></a>    scatter<span class="op">!</span>(Price<span class="op">,</span> Quantity<span class="op">,</span> color<span class="op">=</span><span class="st">&quot;orange&quot;</span><span class="op">,</span> markersize<span class="op">=</span><span class="fl">5</span>)</span>
-<span id="cb17-8"><a href="optimal-pricing.html#cb17-8" aria-hidden="true" tabindex="-1"></a>    ylabel<span class="op">!</span>(<span class="st">&quot;Quantity&quot;</span>)</span>
-<span id="cb17-9"><a href="optimal-pricing.html#cb17-9" aria-hidden="true" tabindex="-1"></a>    xlabel<span class="op">!</span>(<span class="st">&quot;Price&quot;</span>)</span>
-<span id="cb17-10"><a href="optimal-pricing.html#cb17-10" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
-<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_9_plot_8-J1.png" /><!-- --></p>
-<p>In this way we can visualize all the possible models that our Bayesian inference gives us. Since values of <em>log a</em> and <em>c</em> with higher probability will be sampled more often, the density of lines give us a sense of plausibility, and therefore we can evaluate the certainty (or uncertainty) of our model for a given value of price. We also highlight in red the average quantity obtained taking into account all the different models.</p>
-<p>As a last check (even if we have already taken preventive measures), we want to make sure that our model parameters do not share information. That is, we want to check that there is no collinearity between them.</p>
-<p>To evaluate multicollinearity between the two parameters of our model, we plot the sampled values, one against the other. In the figure 4, we don’t see a pattern, they seem to be decorrelated, therefore multicollinearity is not present in our model, so we are good to go and we can continue with the problem.</p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb18-1"><a href="optimal-pricing.html#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb18-2"><a href="optimal-pricing.html#cb18-2" aria-hidden="true" tabindex="-1"></a>scatter(post_loga<span class="op">,</span> post_c<span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span>)</span>
-<span id="cb18-3"><a href="optimal-pricing.html#cb18-3" aria-hidden="true" tabindex="-1"></a>xlabel<span class="op">!</span>(<span class="st">&quot;log a&quot;</span>)</span>
-<span id="cb18-4"><a href="optimal-pricing.html#cb18-4" aria-hidden="true" tabindex="-1"></a>ylabel<span class="op">!</span>(<span class="st">&quot;c&quot;</span>)</span>
-<span id="cb18-5"><a href="optimal-pricing.html#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
-<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_9_plot_9-J1.png" /><!-- --></p>
+<div id="making-uncertainty-our-ally" class="section level4 hasAnchor" number="9.2.2.4">
+<h4><span class="header-section-number">9.2.2.4</span> Making uncertainty our ally<a href="optimal-pricing.html#making-uncertainty-our-ally" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Instead of getting rid of the uncertainty of our measurements, we have to use them to our advantage. This way instead of keeping only one model,
+we will use all possible models that can be built having the distributions of their parameters. That is, to sample our parameter distributions
+and build different models with each combination of them. Let’s see it:</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb21-1"><a href="optimal-pricing.html#cb21-1" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> <span class="fu">range</span>(<span class="fl">1000</span>, <span class="fl">9000</span>, step <span class="op">=</span> <span class="fl">10</span>);</span>
+<span id="cb21-2"><a href="optimal-pricing.html#cb21-2" aria-hidden="true" tabindex="-1"></a>q <span class="op">=</span> <span class="fu">zeros</span>(<span class="fu">length</span>(p), <span class="fu">length</span>(post_c[<span class="fl">1</span>]))</span></code></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb22-1"><a href="optimal-pricing.html#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="fu">collect</span>(<span class="fl">1</span><span class="op">:</span><span class="fu">length</span>(post_c[<span class="fl">1</span>]))</span>
+<span id="cb22-2"><a href="optimal-pricing.html#cb22-2" aria-hidden="true" tabindex="-1"></a>    q[<span class="op">:</span>,i] <span class="op">=</span> <span class="fu">exp</span>.(post_loga[<span class="fl">1</span>][i] <span class="op">.+</span> post_c[<span class="fl">1</span>][i] <span class="op">.*</span> (<span class="fu">log</span>.(p) <span class="op">.-</span> <span class="fu">mean</span>(<span class="fu">log</span>.(price))))</span>
+<span id="cb22-3"><a href="optimal-pricing.html#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
+<p>Here we are creating an array of as many rows as price values we want to observe and with as many columns as samples we have of each of our log
+and c parameters, that is, as many columns as models we have at our disposal. Let´s plot them all and se what happen:</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb23-1"><a href="optimal-pricing.html#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(p,q[<span class="op">:</span>,<span class="fl">1</span>], xlim<span class="op">=</span>(<span class="fl">1000</span>,<span class="fl">6000</span>));</span>
+<span id="cb23-2"><a href="optimal-pricing.html#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="fu">collect</span>(<span class="fl">1</span><span class="op">:</span><span class="fu">length</span>(post_c[<span class="fl">1</span>]))</span>
+<span id="cb23-3"><a href="optimal-pricing.html#cb23-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">plot!</span>(p,q[<span class="op">:</span>,i], color<span class="op">=</span><span class="st">&quot;blue&quot;</span>, legend<span class="op">=</span><span class="cn">false</span>, alpha <span class="op">=</span> <span class="fl">0.1</span>)</span>
+<span id="cb23-4"><a href="optimal-pricing.html#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
+<span id="cb23-5"><a href="optimal-pricing.html#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot!</span>(p, <span class="fu">mean</span>(q, dims<span class="op">=</span><span class="fl">2</span>), color<span class="op">=</span><span class="st">&quot;red&quot;</span>, lw<span class="op">=</span><span class="fl">2</span>);</span>
+<span id="cb23-6"><a href="optimal-pricing.html#cb23-6" aria-hidden="true" tabindex="-1"></a><span class="fu">scatter!</span>(price, quant, color<span class="op">=</span><span class="st">&quot;orange&quot;</span>, markersize<span class="op">=</span><span class="fl">5</span>);</span>
+<span id="cb23-7"><a href="optimal-pricing.html#cb23-7" aria-hidden="true" tabindex="-1"></a><span class="fu">ylabel!</span>(<span class="st">&quot;quantity&quot;</span>);</span>
+<span id="cb23-8"><a href="optimal-pricing.html#cb23-8" aria-hidden="true" tabindex="-1"></a><span class="fu">xlabel!</span>(<span class="st">&quot;price&quot;</span>)</span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chaP9_plot_8-J1.png" /><!-- --></p>
+<p>In this way we can visualize all the possible models that our Bayesian inference gives us. Since values of <em>log a</em> and <em>c</em> with higher probability
+will be sampled more often, the density of lines give us a sense of plausibility, and therefore we can evaluate the certainty (or uncertainty) of
+our model for a given value of price. We also highlight in red the average quantity obtained taking into account all the different models.</p>
+<p>As a last check (even if we have already taken preventive measures), we want to make sure that our model parameters do not share information. That
+is, we want to check that there is no collinearity between them.</p>
+<p>To evaluate multicollinearity between the two parameters of our model, we plot the sampled values, one against the other. In the figure 4, we
+don’t see a pattern, they seem to be decorrelated, therefore multicollinearity is not present in our model, so we are good to go and we can
+continue with the problem.</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb24-1"><a href="optimal-pricing.html#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">scatter</span>(post_loga, post_c, legend<span class="op">=</span><span class="cn">false</span>);</span>
+<span id="cb24-2"><a href="optimal-pricing.html#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="fu">xlabel!</span>(<span class="st">&quot;log a&quot;</span>);</span>
+<span id="cb24-3"><a href="optimal-pricing.html#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ylabel!</span>(<span class="st">&quot;c&quot;</span>)</span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chaP9_plot_9-J1.png" /><!-- --></p>
 <p><em>Parameters c vs log a for sampled values from the posterior distributions.</em></p>
 <p>As you can see, the point cloud is well dispersed so multicollinearity is not going to be a problem for us.</p>
 </div>
 </div>
 </div>
-<div id="maximizing-profit" class="section level2" number="9.3">
-<h2><span class="header-section-number">9.3</span> Maximizing profit</h2>
-<p>Now that we have estimated our posterior distributions, we will try to answer the following question: what is the price that will give us the maximum profit?</p>
-<p>This is why we calculated the relationship between the price and the quantity of our product. As we said before, depending on that relation, it was going to be possible to define an optimal price point. Now we only have to add one more part to the equation: the production costs.</p>
-<p>Having this, we will be able to set up our profit function that will tell us, for each price we choose, how much money we would expect to earn. So let´s define it:</p>
+<div id="maximizing-profit" class="section level2 hasAnchor" number="9.3">
+<h2><span class="header-section-number">9.3</span> Maximizing profit<a href="optimal-pricing.html#maximizing-profit" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Now that we have estimated our posterior distributions, we will try to answer the following question: what is the price that will give us the
+maximum profit?</p>
+<p>This is why we calculated the relationship between the price and the quantity of our product. As we said before, depending on that relation, it
+was going to be possible to define an optimal price point. Now we only have to add one more part to the equation: the production costs.</p>
+<p>Having this, we will be able to set up our profit function that will tell us, for each price we choose, how much money we would expect to earn.
+So let´s define it:</p>
 <p>As many of you know, the profit on the sale of a product is calculated as income minus costs.</p>
-<p><span class="math inline">\(Profit=Price * Quantity - Cost\)</span></p>
+<p><span class="math inline">\(profit=price * quantity - cost\)</span></p>
 <p>But also the cost can be divided between the one that doesn’t depend on the production and I always have, and the one that does.</p>
-<p>For example, the costs of renting the warehouse, the salaries of the administrative workers or the insurance will not vary if 3000 or 5000 units are produced. This is why they are called <strong>fixed costs</strong>. On the other hand, the costs of raw materials, packaging or distribution; if they depend on the quantity produced, so they are included in <strong>variable costs</strong>.</p>
-<p><span class="math inline">\(Profit=Price * Quantity - (VariableCost * Quantity + Fixed Cost)\)</span></p>
-<div class="sourceCode" id="cb19"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb19-1"><a href="optimal-pricing.html#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb19-2"><a href="optimal-pricing.html#cb19-2" aria-hidden="true" tabindex="-1"></a>fixed_cost <span class="op">=</span> <span class="fl">10000</span></span>
-<span id="cb19-3"><a href="optimal-pricing.html#cb19-3" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="fl">700</span></span>
-<span id="cb19-4"><a href="optimal-pricing.html#cb19-4" aria-hidden="true" tabindex="-1"></a>var_cost <span class="op">=</span> k <span class="op">.*</span> q</span>
-<span id="cb19-5"><a href="optimal-pricing.html#cb19-5" aria-hidden="true" tabindex="-1"></a>total_cost <span class="op">=</span> var_cost .<span class="op">+</span> fixed_cost</span>
-<span id="cb19-6"><a href="optimal-pricing.html#cb19-6" aria-hidden="true" tabindex="-1"></a>profit <span class="op">=</span> p <span class="op">.*</span> q .<span class="op">-</span> total_cost</span>
-<span id="cb19-7"><a href="optimal-pricing.html#cb19-7" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span><span class="op">;</span></span></code></pre></div>
+<p>For example, the costs of renting the warehouse, the salaries of the administrative workers or the insurance will not vary if 3000 or 5000 units
+are produced. This is why they are called <strong>fixed costs</strong>. On the other hand, the costs of raw materials, packaging or distribution; if they
+depend on the quantity produced, so they are included in <strong>variable costs</strong>.</p>
+<p><span class="math inline">\(profit = price * quantity - (variable cost * quantity + fixed cost)\)</span></p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb25-1"><a href="optimal-pricing.html#cb25-1" aria-hidden="true" tabindex="-1"></a>fixed_cost <span class="op">=</span> <span class="fl">10000</span></span>
+<span id="cb25-2"><a href="optimal-pricing.html#cb25-2" aria-hidden="true" tabindex="-1"></a>k <span class="op">=</span> <span class="fl">700</span></span>
+<span id="cb25-3"><a href="optimal-pricing.html#cb25-3" aria-hidden="true" tabindex="-1"></a>var_cost <span class="op">=</span> k <span class="op">.*</span> q</span>
+<span id="cb25-4"><a href="optimal-pricing.html#cb25-4" aria-hidden="true" tabindex="-1"></a>total_cost <span class="op">=</span> var_cost <span class="op">.+</span> fixed_cost</span>
+<span id="cb25-5"><a href="optimal-pricing.html#cb25-5" aria-hidden="true" tabindex="-1"></a>profit <span class="op">=</span> p <span class="op">.*</span> q <span class="op">.-</span> total_cost</span></code></pre></div>
 <p>Now we can plot the profit for many sampled values from the posterior distributions of our model and find the maximum.</p>
-<div class="sourceCode" id="cb20"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb20-1"><a href="optimal-pricing.html#cb20-1" aria-hidden="true" tabindex="-1"></a>mxval<span class="op">,</span> mxindx <span class="op">=</span> findmax(mean(profit<span class="op">,</span> dims<span class="op">=</span><span class="fl">2</span>)<span class="op">;</span> dims<span class="op">=</span><span class="fl">1</span>)<span class="op">;</span></span></code></pre></div>
-<div class="sourceCode" id="cb21"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb21-1"><a href="optimal-pricing.html#cb21-1" aria-hidden="true" tabindex="-1"></a>mxval[<span class="fl">1</span>]</span></code></pre></div>
-<pre><code>## 579697.8940202671</code></pre>
+<div class="sourceCode" id="cb26"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb26-1"><a href="optimal-pricing.html#cb26-1" aria-hidden="true" tabindex="-1"></a>max_val, max_idx <span class="op">=</span> <span class="fu">findmax</span>(<span class="fu">mean</span>(profit, dims<span class="op">=</span><span class="fl">2</span>); dims<span class="op">=</span><span class="fl">1</span>);</span></code></pre></div>
+<div class="sourceCode" id="cb27"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb27-1"><a href="optimal-pricing.html#cb27-1" aria-hidden="true" tabindex="-1"></a>max_val[<span class="fl">1</span>]</span></code></pre></div>
+<pre><code>## 581902.150575046</code></pre>
 <p>With the unfavorable (or favorable) case of:</p>
-<div class="sourceCode" id="cb23"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb23-1"><a href="optimal-pricing.html#cb23-1" aria-hidden="true" tabindex="-1"></a>unfav <span class="op">=</span> mxval[<span class="fl">1</span>] <span class="op">-</span> std(profit[mxindx[<span class="fl">1</span>][<span class="fl">1</span>]<span class="op">,</span> <span class="op">:</span> ])</span></code></pre></div>
-<pre><code>## 548417.8658175807</code></pre>
-<div class="sourceCode" id="cb25"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb25-1"><a href="optimal-pricing.html#cb25-1" aria-hidden="true" tabindex="-1"></a>fav <span class="op">=</span> mxval[<span class="fl">1</span>] <span class="op">+</span> std(profit[mxindx[<span class="fl">1</span>][<span class="fl">1</span>]<span class="op">,</span> <span class="op">:</span> ])</span></code></pre></div>
-<pre><code>## 610977.9222229534</code></pre>
-<div class="sourceCode" id="cb27"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb27-1"><a href="optimal-pricing.html#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span></span>
-<span id="cb27-2"><a href="optimal-pricing.html#cb27-2" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> latexstring(<span class="st">&quot;</span><span class="sc">\\</span><span class="st">mu_{Profit}&quot;</span>)</span>
-<span id="cb27-3"><a href="optimal-pricing.html#cb27-3" aria-hidden="true" tabindex="-1"></a>s2 <span class="op">=</span> latexstring(<span class="st">&quot;</span><span class="sc">\\</span><span class="st">mu_{Profit} </span><span class="sc">\\</span><span class="st">pm </span><span class="sc">\\</span><span class="st">sigma_{Profit}&quot;</span>)</span>
-<span id="cb27-4"><a href="optimal-pricing.html#cb27-4" aria-hidden="true" tabindex="-1"></a>s3 <span class="op">=</span> latexstring(<span class="st">&quot;ArgMax(</span><span class="sc">\\</span><span class="st">mu_{Profit})&quot;</span>)</span>
-<span id="cb27-5"><a href="optimal-pricing.html#cb27-5" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb27-6"><a href="optimal-pricing.html#cb27-6" aria-hidden="true" tabindex="-1"></a>plot(p<span class="op">,</span>mean(profit<span class="op">,</span> dims<span class="op">=</span><span class="fl">2</span>) <span class="op">+</span> std(profit<span class="op">,</span> dims<span class="op">=</span><span class="fl">2</span>)<span class="op">,</span>  color <span class="op">=</span> <span class="st">&quot;orange&quot;</span><span class="op">,</span> lw<span class="op">=</span><span class="fl">2</span><span class="op">,</span> label <span class="op">=</span>s2)</span>
-<span id="cb27-7"><a href="optimal-pricing.html#cb27-7" aria-hidden="true" tabindex="-1"></a>plot<span class="op">!</span>(p<span class="op">,</span>mean(profit<span class="op">,</span> dims<span class="op">=</span><span class="fl">2</span>)<span class="op">,</span> color <span class="op">=</span> <span class="st">&quot;red&quot;</span><span class="op">,</span> lw<span class="op">=</span><span class="fl">4</span><span class="op">,</span> label<span class="op">=</span><span class="st">&quot;&quot;</span>)</span>
-<span id="cb27-8"><a href="optimal-pricing.html#cb27-8" aria-hidden="true" tabindex="-1"></a><span class="kw">for</span> i <span class="kw">in</span> collect(<span class="fl">1</span><span class="op">:</span>length(post_c[<span class="fl">1</span>]))</span>
-<span id="cb27-9"><a href="optimal-pricing.html#cb27-9" aria-hidden="true" tabindex="-1"></a>            plot<span class="op">!</span>(p<span class="op">,</span>profit[<span class="op">:,</span>i]<span class="op">,</span> color<span class="op">=</span><span class="st">&quot;blue&quot;</span><span class="op">,</span> label<span class="op">=</span><span class="ex">false</span><span class="op">,</span> alpha <span class="op">=</span> <span class="fl">0.1</span>)</span>
-<span id="cb27-10"><a href="optimal-pricing.html#cb27-10" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span>
-<span id="cb27-11"><a href="optimal-pricing.html#cb27-11" aria-hidden="true" tabindex="-1"></a>plot<span class="op">!</span>(p<span class="op">,</span>mean(profit<span class="op">,</span> dims<span class="op">=</span><span class="fl">2</span>)<span class="op">,</span> color <span class="op">=</span> <span class="st">&quot;red&quot;</span><span class="op">,</span> lw<span class="op">=</span><span class="fl">4</span><span class="op">,</span> label<span class="op">=</span>s)</span>
-<span id="cb27-12"><a href="optimal-pricing.html#cb27-12" aria-hidden="true" tabindex="-1"></a>plot<span class="op">!</span>(p<span class="op">,</span>mean(profit<span class="op">,</span> dims<span class="op">=</span><span class="fl">2</span>) <span class="op">-</span> std(profit<span class="op">,</span> dims<span class="op">=</span><span class="fl">2</span>)<span class="op">,</span>  color <span class="op">=</span> <span class="st">&quot;orange&quot;</span><span class="op">,</span> lw<span class="op">=</span><span class="fl">2</span><span class="op">,</span> label<span class="op">=</span><span class="st">&quot;&quot;</span>)</span>
-<span id="cb27-13"><a href="optimal-pricing.html#cb27-13" aria-hidden="true" tabindex="-1"></a>vline<span class="op">!</span>(p[mxindx]<span class="op">,</span> p[mxindx]<span class="op">,</span> line <span class="op">=</span> (<span class="op">:</span>black<span class="op">,</span> <span class="fl">3</span>)<span class="op">,</span> label<span class="op">=</span>s3)</span>
-<span id="cb27-14"><a href="optimal-pricing.html#cb27-14" aria-hidden="true" tabindex="-1"></a>xlabel<span class="op">!</span>(<span class="st">&quot;Price&quot;</span>)</span>
-<span id="cb27-15"><a href="optimal-pricing.html#cb27-15" aria-hidden="true" tabindex="-1"></a>ylabel<span class="op">!</span>(<span class="st">&quot;Profit&quot;</span>)</span>
-<span id="cb27-16"><a href="optimal-pricing.html#cb27-16" aria-hidden="true" tabindex="-1"></a>plot<span class="op">!</span>(legend<span class="op">=</span><span class="ex">true</span>)</span>
-<span id="cb27-17"><a href="optimal-pricing.html#cb27-17" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
-<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_9_plot_10-J1.png" /><!-- --></p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb29-1"><a href="optimal-pricing.html#cb29-1" aria-hidden="true" tabindex="-1"></a>unfav <span class="op">=</span> max_val[<span class="fl">1</span>] <span class="op">-</span> <span class="fu">std</span>(profit[max_idx[<span class="fl">1</span>][<span class="fl">1</span>], <span class="op">:</span>])</span></code></pre></div>
+<pre><code>## 551634.8297664977</code></pre>
+<div class="sourceCode" id="cb31"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb31-1"><a href="optimal-pricing.html#cb31-1" aria-hidden="true" tabindex="-1"></a>fav <span class="op">=</span> max_val[<span class="fl">1</span>] <span class="op">+</span> <span class="fu">std</span>(profit[max_idx[<span class="fl">1</span>][<span class="fl">1</span>], <span class="op">:</span>])</span></code></pre></div>
+<pre><code>## 612169.4713835942</code></pre>
+<div class="sourceCode" id="cb33"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb33-1"><a href="optimal-pricing.html#cb33-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="fu">latexstring</span>(<span class="st">&quot;</span><span class="sc">\\</span><span class="st">mu_{profit}&quot;</span>)</span>
+<span id="cb33-2"><a href="optimal-pricing.html#cb33-2" aria-hidden="true" tabindex="-1"></a>s2 <span class="op">=</span> <span class="fu">latexstring</span>(<span class="st">&quot;</span><span class="sc">\\</span><span class="st">mu_{profit} </span><span class="sc">\\</span><span class="st">pm </span><span class="sc">\\</span><span class="st">sigma{profit}&quot;</span>)</span>
+<span id="cb33-3"><a href="optimal-pricing.html#cb33-3" aria-hidden="true" tabindex="-1"></a>s3 <span class="op">=</span> <span class="fu">latexstring</span>(<span class="st">&quot;ArgMax(</span><span class="sc">\\</span><span class="st">mu_{profit})&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb34"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb34-1"><a href="optimal-pricing.html#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(p, <span class="fu">mean</span>(profit, dims<span class="op">=</span><span class="fl">2</span>) <span class="op">+</span> <span class="fu">std</span>(profit, dims<span class="op">=</span><span class="fl">2</span>),  color <span class="op">=</span> <span class="st">&quot;orange&quot;</span>, lw<span class="op">=</span><span class="fl">2</span>, label <span class="op">=</span>s2);</span>
+<span id="cb34-2"><a href="optimal-pricing.html#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot!</span>(p, <span class="fu">mean</span>(profit, dims<span class="op">=</span><span class="fl">2</span>), color <span class="op">=</span> <span class="st">&quot;red&quot;</span>, lw<span class="op">=</span><span class="fl">4</span>, label<span class="op">=</span><span class="st">&quot;&quot;</span>);</span>
+<span id="cb34-3"><a href="optimal-pricing.html#cb34-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="fu">collect</span>(<span class="fl">1</span><span class="op">:</span><span class="fu">length</span>(post_c[<span class="fl">1</span>]))</span>
+<span id="cb34-4"><a href="optimal-pricing.html#cb34-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">plot!</span>(p, profit[<span class="op">:</span>,i], color<span class="op">=</span><span class="st">&quot;blue&quot;</span>, label<span class="op">=</span><span class="cn">false</span>, alpha <span class="op">=</span> <span class="fl">0.1</span>);</span>
+<span id="cb34-5"><a href="optimal-pricing.html#cb34-5" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
+<span id="cb34-6"><a href="optimal-pricing.html#cb34-6" aria-hidden="true" tabindex="-1"></a><span class="fu">plot!</span>(p, <span class="fu">mean</span>(profit, dims<span class="op">=</span><span class="fl">2</span>), color <span class="op">=</span> <span class="st">&quot;red&quot;</span>, lw<span class="op">=</span><span class="fl">4</span>, label<span class="op">=</span>s);</span>
+<span id="cb34-7"><a href="optimal-pricing.html#cb34-7" aria-hidden="true" tabindex="-1"></a><span class="fu">plot!</span>(p, <span class="fu">mean</span>(profit, dims<span class="op">=</span><span class="fl">2</span>) <span class="op">-</span> <span class="fu">std</span>(profit, dims<span class="op">=</span><span class="fl">2</span>),  color <span class="op">=</span> <span class="st">&quot;orange&quot;</span>, lw<span class="op">=</span><span class="fl">2</span>, label<span class="op">=</span><span class="st">&quot;&quot;</span>);</span>
+<span id="cb34-8"><a href="optimal-pricing.html#cb34-8" aria-hidden="true" tabindex="-1"></a><span class="fu">vline!</span>(p[max_idx], p[max_idx], line <span class="op">=</span> (<span class="op">:</span>black, <span class="fl">3</span>), label<span class="op">=</span>s3);</span>
+<span id="cb34-9"><a href="optimal-pricing.html#cb34-9" aria-hidden="true" tabindex="-1"></a><span class="fu">xlabel!</span>(<span class="st">&quot;price&quot;</span>);</span>
+<span id="cb34-10"><a href="optimal-pricing.html#cb34-10" aria-hidden="true" tabindex="-1"></a><span class="fu">ylabel!</span>(<span class="st">&quot;profit&quot;</span>);</span>
+<span id="cb34-11"><a href="optimal-pricing.html#cb34-11" aria-hidden="true" tabindex="-1"></a><span class="fu">plot!</span>(legend<span class="op">=</span><span class="cn">true</span>)</span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chaP9_plot_10-J1.png" /><!-- --></p>
 <p><em>Profit for sampled values, highlighting the mean, a deviation from the mean and the maximum mean profit.</em>
-In this way, not only do we have the information about the average profit (marked in red), but we also have a notion of the uncertainty that the model handles. As you can see in the graph and remembering that the highest price value we had in the pilot test was $5000, the uncertainty increases a lot for higher values, reflecting the lack of data.</p>
+In this way, not only do we have the information about the average profit (marked in red), but we also have a notion of the uncertainty that
+the model handles. As you can see in the graph and remembering that the highest price value we had in the pilot test was $5000, the
+uncertainty increases a lot for higher values, reflecting the lack of data.</p>
 <p>Then, analyzing the graph:</p>
-<p>The red line plotted is the mean expected profit and its maximum is near $4840. The region between the orange lines is approximately one standard deviation far from the expected value or where the 65% of the lines, plotted from the sampled values of our parameters, fall.</p>
-<p>With this in mind and seeing that the profit curve is quite flat in the sector where the maximum is found, one could argue that it is preferable to choose a lower price since since the money lost would be minimal, but the volatility would go down considerably.</p>
+<p>The red line plotted is the mean expected profit and its maximum is near $4840. The region between the orange lines is approximately one
+standard deviation far from the expected value or where the 65% of the lines, plotted from the sampled values of our parameters, fall.</p>
+<p>With this in mind and seeing that the profit curve is quite flat in the sector where the maximum is found, one could argue that it is
+preferable to choose a lower price since since the money lost would be minimal, but the volatility would go down considerably.</p>
 <p>In order to see this, it would be interesting to graph the standard deviation of the profit according to the price we choose:</p>
-<div class="sourceCode" id="cb28"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb28-1"><a href="optimal-pricing.html#cb28-1" aria-hidden="true" tabindex="-1"></a>std_p <span class="op">=</span> [std(profit[i<span class="op">,</span> <span class="op">:</span> ]) <span class="kw">for</span> i <span class="kw">in</span> collect(<span class="fl">1</span><span class="op">:</span>length(p))]<span class="op">;</span></span></code></pre></div>
-<div class="sourceCode" id="cb29"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb29-1"><a href="optimal-pricing.html#cb29-1" aria-hidden="true" tabindex="-1"></a>plot(p<span class="op">,</span>std_p<span class="op">,</span> legend<span class="op">=</span><span class="ex">false</span><span class="op">,</span> xlabel <span class="op">=</span> <span class="st">&quot;Price&quot;</span><span class="op">,</span> ylabel<span class="op">=</span> <span class="st">&quot;Std deviation of profit&quot;</span><span class="op">,</span> lw<span class="op">=</span><span class="fl">2</span>)</span></code></pre></div>
-<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_9_plot_11-J1.png" /><!-- --></p>
-<p>Looking at both graphs we can see that, while the average profit is flattened, the standard deviation of it always goes up, corroborating that lowering the price can be a good strategy
+<div class="sourceCode" id="cb35"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb35-1"><a href="optimal-pricing.html#cb35-1" aria-hidden="true" tabindex="-1"></a>std_p <span class="op">=</span> [<span class="fu">std</span>(profit[i, <span class="op">:</span>]) for i <span class="kw">in</span> <span class="fu">collect</span>(<span class="fl">1</span><span class="op">:</span><span class="fu">length</span>(p))]</span></code></pre></div>
+<div class="sourceCode" id="cb36"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb36-1"><a href="optimal-pricing.html#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(p, std_p, legend<span class="op">=</span><span class="cn">false</span>, xlabel <span class="op">=</span> <span class="st">&quot;Price&quot;</span>, ylabel<span class="op">=</span> <span class="st">&quot;Std deviation of profit&quot;</span>, lw<span class="op">=</span><span class="fl">2</span>)</span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chaP9_plot_11-J1.png" /><!-- --></p>
+<p>Looking at both graphs we can see that, while the average profit is flattened, the standard deviation of it always goes up, corroborating that
+lowering the price can be a good strategy
 For example, let’s look at the case where an alternative price of $4000 is chosen:</p>
-<div class="sourceCode" id="cb30"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb30-1"><a href="optimal-pricing.html#cb30-1" aria-hidden="true" tabindex="-1"></a>quantity_at_4000 <span class="op">=</span> q[findfirst(isequal(<span class="fl">4000</span>)<span class="op">,</span> p)<span class="op">,</span> <span class="op">:</span> ]</span>
-<span id="cb30-2"><a href="optimal-pricing.html#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="op">;</span></span></code></pre></div>
-<div class="sourceCode" id="cb31"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb31-1"><a href="optimal-pricing.html#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Sales minus costs for every model at price of $4000</span></span>
-<span id="cb31-2"><a href="optimal-pricing.html#cb31-2" aria-hidden="true" tabindex="-1"></a>profit_4000 <span class="op">=</span> <span class="fl">4000</span> <span class="op">.*</span> quantity_at_4000 .<span class="op">-</span> (<span class="fl">10000</span> .<span class="op">+</span> quantity_at_4000 <span class="op">.*</span> <span class="fl">700</span>)<span class="op">;</span></span></code></pre></div>
-<div class="sourceCode" id="cb32"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb32-1"><a href="optimal-pricing.html#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co">#A faster way:</span></span>
-<span id="cb32-2"><a href="optimal-pricing.html#cb32-2" aria-hidden="true" tabindex="-1"></a>prof_4000 <span class="op">=</span> profit[findfirst(isequal(<span class="fl">4000</span>)<span class="op">,</span> p)<span class="op">,</span> <span class="op">:</span>]<span class="op">;</span></span></code></pre></div>
-<div class="sourceCode" id="cb33"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb33-1"><a href="optimal-pricing.html#cb33-1" aria-hidden="true" tabindex="-1"></a>mean_prof_4000 <span class="op">=</span> mean(profit_4000)</span></code></pre></div>
-<pre><code>## 578540.069393245</code></pre>
+<div class="sourceCode" id="cb37"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb37-1"><a href="optimal-pricing.html#cb37-1" aria-hidden="true" tabindex="-1"></a>quantity_at_4000 <span class="op">=</span> q[<span class="fu">findfirst</span>(<span class="fu">isequal</span>(<span class="fl">4000</span>), p), <span class="op">:</span>]</span></code></pre></div>
+<div class="sourceCode" id="cb38"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb38-1"><a href="optimal-pricing.html#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Sales minus costs for every model at price of $4000</span></span>
+<span id="cb38-2"><a href="optimal-pricing.html#cb38-2" aria-hidden="true" tabindex="-1"></a>profit_4000 <span class="op">=</span> <span class="fl">4000</span> <span class="op">.*</span> quantity_at_4000 <span class="op">.-</span> (<span class="fl">10000</span> <span class="op">.+</span> quantity_at_4000 <span class="op">.*</span> <span class="fl">700</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb39"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb39-1"><a href="optimal-pricing.html#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co">#A faster way:</span></span>
+<span id="cb39-2"><a href="optimal-pricing.html#cb39-2" aria-hidden="true" tabindex="-1"></a>prof_4000 <span class="op">=</span> profit[<span class="fu">findfirst</span>(<span class="fu">isequal</span>(<span class="fl">4000</span>), p), <span class="op">:</span>]</span></code></pre></div>
+<div class="sourceCode" id="cb40"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb40-1"><a href="optimal-pricing.html#cb40-1" aria-hidden="true" tabindex="-1"></a>mean_prof_4000 <span class="op">=</span> <span class="fu">mean</span>(profit_4000)</span></code></pre></div>
+<pre><code>## 580200.7024001909</code></pre>
 <p>With the unfavorable (or favorable) case of:</p>
-<div class="sourceCode" id="cb35"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb35-1"><a href="optimal-pricing.html#cb35-1" aria-hidden="true" tabindex="-1"></a>unfav_4000 <span class="op">=</span> mean(profit_4000) <span class="op">-</span> std(profit_4000)</span></code></pre></div>
-<pre><code>## 551381.9489297445</code></pre>
-<div class="sourceCode" id="cb37"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb37-1"><a href="optimal-pricing.html#cb37-1" aria-hidden="true" tabindex="-1"></a>mean(profit_4000) <span class="op">+</span> std(profit_4000)</span></code></pre></div>
-<pre><code>## 605698.1898567455</code></pre>
-<div class="sourceCode" id="cb39"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb39-1"><a href="optimal-pricing.html#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="kw">begin</span>   </span>
-<span id="cb39-2"><a href="optimal-pricing.html#cb39-2" aria-hidden="true" tabindex="-1"></a>plot(p<span class="op">,</span>mean(profit<span class="op">,</span> dims<span class="op">=</span><span class="fl">2</span>) <span class="op">+</span> std(profit<span class="op">,</span> dims<span class="op">=</span><span class="fl">2</span>)<span class="op">,</span>  color <span class="op">=</span> <span class="st">&quot;orange&quot;</span><span class="op">,</span> lw<span class="op">=</span><span class="fl">2</span><span class="op">,</span> label <span class="op">=</span>s2)</span>
-<span id="cb39-3"><a href="optimal-pricing.html#cb39-3" aria-hidden="true" tabindex="-1"></a>plot<span class="op">!</span>(p<span class="op">,</span>mean(profit<span class="op">,</span> dims<span class="op">=</span><span class="fl">2</span>)<span class="op">,</span> color <span class="op">=</span> <span class="st">&quot;red&quot;</span><span class="op">,</span> lw<span class="op">=</span><span class="fl">4</span><span class="op">,</span> label<span class="op">=</span><span class="st">&quot;&quot;</span>)</span>
-<span id="cb39-4"><a href="optimal-pricing.html#cb39-4" aria-hidden="true" tabindex="-1"></a><span class="kw">for</span> i <span class="kw">in</span> collect(<span class="fl">1</span><span class="op">:</span>length(post_c[<span class="fl">1</span>]))</span>
-<span id="cb39-5"><a href="optimal-pricing.html#cb39-5" aria-hidden="true" tabindex="-1"></a>            plot<span class="op">!</span>(p<span class="op">,</span>profit[<span class="op">:,</span>i]<span class="op">,</span> color<span class="op">=</span><span class="st">&quot;blue&quot;</span><span class="op">,</span> label<span class="op">=</span><span class="ex">false</span><span class="op">,</span> alpha <span class="op">=</span> <span class="fl">0.1</span>)</span>
-<span id="cb39-6"><a href="optimal-pricing.html#cb39-6" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span>
-<span id="cb39-7"><a href="optimal-pricing.html#cb39-7" aria-hidden="true" tabindex="-1"></a>plot<span class="op">!</span>(p<span class="op">,</span>mean(profit<span class="op">,</span> dims<span class="op">=</span><span class="fl">2</span>)<span class="op">,</span> color <span class="op">=</span> <span class="st">&quot;red&quot;</span><span class="op">,</span> lw<span class="op">=</span><span class="fl">4</span><span class="op">,</span> label<span class="op">=</span>s)</span>
-<span id="cb39-8"><a href="optimal-pricing.html#cb39-8" aria-hidden="true" tabindex="-1"></a>plot<span class="op">!</span>(p<span class="op">,</span>mean(profit<span class="op">,</span> dims<span class="op">=</span><span class="fl">2</span>) <span class="op">-</span> std(profit<span class="op">,</span> dims<span class="op">=</span><span class="fl">2</span>)<span class="op">,</span>  color <span class="op">=</span> <span class="st">&quot;orange&quot;</span><span class="op">,</span> lw<span class="op">=</span><span class="fl">2</span><span class="op">,</span> label<span class="op">=</span><span class="st">&quot;&quot;</span>)</span>
-<span id="cb39-9"><a href="optimal-pricing.html#cb39-9" aria-hidden="true" tabindex="-1"></a>vline<span class="op">!</span>([<span class="fl">4000</span>]<span class="op">,</span> [<span class="fl">4000</span>]<span class="op">,</span> line <span class="op">=</span> (<span class="op">:</span>purple<span class="op">,</span> <span class="fl">3</span>)<span class="op">,</span> label<span class="op">=</span><span class="ex">false</span>)</span>
-<span id="cb39-10"><a href="optimal-pricing.html#cb39-10" aria-hidden="true" tabindex="-1"></a>vline<span class="op">!</span>(p[mxindx]<span class="op">,</span> p[mxindx]<span class="op">,</span> line <span class="op">=</span> (<span class="op">:</span>black<span class="op">,</span> <span class="fl">3</span>)<span class="op">,</span> label<span class="op">=</span>s3)</span>
-<span id="cb39-11"><a href="optimal-pricing.html#cb39-11" aria-hidden="true" tabindex="-1"></a>xlabel<span class="op">!</span>(<span class="st">&quot;Price&quot;</span>)</span>
-<span id="cb39-12"><a href="optimal-pricing.html#cb39-12" aria-hidden="true" tabindex="-1"></a>ylabel<span class="op">!</span>(<span class="st">&quot;Profit&quot;</span>)</span>
-<span id="cb39-13"><a href="optimal-pricing.html#cb39-13" aria-hidden="true" tabindex="-1"></a>plot<span class="op">!</span>(legend<span class="op">=</span><span class="ex">true</span>)</span>
-<span id="cb39-14"><a href="optimal-pricing.html#cb39-14" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
-<p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_9_plot_12-J1.png" /><!-- --></p>
+<div class="sourceCode" id="cb42"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb42-1"><a href="optimal-pricing.html#cb42-1" aria-hidden="true" tabindex="-1"></a>unfav_4000 <span class="op">=</span> <span class="fu">mean</span>(profit_4000) <span class="op">-</span> <span class="fu">std</span>(profit_4000)</span></code></pre></div>
+<div class="sourceCode" id="cb43"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb43-1"><a href="optimal-pricing.html#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(profit_4000) <span class="op">+</span> <span class="fu">std</span>(profit_4000)</span></code></pre></div>
+<pre><code>## 605916.6825987133</code></pre>
+<div class="sourceCode" id="cb45"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb45-1"><a href="optimal-pricing.html#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(p, <span class="fu">mean</span>(profit, dims<span class="op">=</span><span class="fl">2</span>) <span class="op">+</span> <span class="fu">std</span>(profit, dims<span class="op">=</span><span class="fl">2</span>), color <span class="op">=</span> <span class="st">&quot;orange&quot;</span>, lw<span class="op">=</span><span class="fl">2</span>, label<span class="op">=</span>s2);</span>
+<span id="cb45-2"><a href="optimal-pricing.html#cb45-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot!</span>(p,<span class="fu">mean</span>(profit, dims<span class="op">=</span><span class="fl">2</span>), color <span class="op">=</span> <span class="st">&quot;red&quot;</span>, lw<span class="op">=</span><span class="fl">4</span>, label<span class="op">=</span><span class="st">&quot;&quot;</span>);</span>
+<span id="cb45-3"><a href="optimal-pricing.html#cb45-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="fu">collect</span>(<span class="fl">1</span><span class="op">:</span><span class="fu">length</span>(post_c[<span class="fl">1</span>]))</span>
+<span id="cb45-4"><a href="optimal-pricing.html#cb45-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">plot!</span>(p,profit[<span class="op">:</span>,i], color<span class="op">=</span><span class="st">&quot;blue&quot;</span>, label<span class="op">=</span><span class="cn">false</span>, alpha <span class="op">=</span> <span class="fl">0.1</span>);</span>
+<span id="cb45-5"><a href="optimal-pricing.html#cb45-5" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
+<span id="cb45-6"><a href="optimal-pricing.html#cb45-6" aria-hidden="true" tabindex="-1"></a><span class="fu">plot!</span>(p,<span class="fu">mean</span>(profit, dims<span class="op">=</span><span class="fl">2</span>), color <span class="op">=</span> <span class="st">&quot;red&quot;</span>, lw<span class="op">=</span><span class="fl">4</span>, label<span class="op">=</span>s);</span>
+<span id="cb45-7"><a href="optimal-pricing.html#cb45-7" aria-hidden="true" tabindex="-1"></a><span class="fu">plot!</span>(p,<span class="fu">mean</span>(profit, dims<span class="op">=</span><span class="fl">2</span>) <span class="op">-</span> <span class="fu">std</span>(profit, dims<span class="op">=</span><span class="fl">2</span>),  color <span class="op">=</span> <span class="st">&quot;orange&quot;</span>, lw<span class="op">=</span><span class="fl">2</span>, label<span class="op">=</span><span class="st">&quot;&quot;</span>);</span>
+<span id="cb45-8"><a href="optimal-pricing.html#cb45-8" aria-hidden="true" tabindex="-1"></a><span class="fu">vline!</span>([<span class="fl">4000</span>], [<span class="fl">4000</span>], line <span class="op">=</span> (<span class="op">:</span>purple, <span class="fl">3</span>), label<span class="op">=</span><span class="cn">false</span>);</span>
+<span id="cb45-9"><a href="optimal-pricing.html#cb45-9" aria-hidden="true" tabindex="-1"></a><span class="fu">vline!</span>(p[mxindx], p[mxindx], line <span class="op">=</span> (<span class="op">:</span>black, <span class="fl">3</span>), label<span class="op">=</span>s3);</span>
+<span id="cb45-10"><a href="optimal-pricing.html#cb45-10" aria-hidden="true" tabindex="-1"></a><span class="fu">xlabel!</span>(<span class="st">&quot;price&quot;</span>);</span>
+<span id="cb45-11"><a href="optimal-pricing.html#cb45-11" aria-hidden="true" tabindex="-1"></a><span class="fu">ylabel!</span>(<span class="st">&quot;profit&quot;</span>);</span>
+<span id="cb45-12"><a href="optimal-pricing.html#cb45-12" aria-hidden="true" tabindex="-1"></a><span class="fu">plot!</span>(legend<span class="op">=</span><span class="cn">true</span>)</span></code></pre></div>
+<p><img src="data_science_in_julia_for_hackers_files/figure-html/chaP9_plot_12-J1.png" /><!-- --></p>
 <p>Then, by choosing a price of $4000 the average profit goes from $582800 to $58120. That is, a percentage variation of:</p>
-<div class="sourceCode" id="cb40"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb40-1"><a href="optimal-pricing.html#cb40-1" aria-hidden="true" tabindex="-1"></a>porcentual_profit_diff <span class="op">=</span> ((mean(profit_4000) <span class="op">-</span> mxval[<span class="fl">1</span>]) <span class="op">/</span> mxval[<span class="fl">1</span>]) <span class="op">*</span> <span class="fl">100</span></span></code></pre></div>
-<pre><code>## -0.19972896899665932</code></pre>
+<div class="sourceCode" id="cb46"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb46-1"><a href="optimal-pricing.html#cb46-1" aria-hidden="true" tabindex="-1"></a>porcentual_profit_diff <span class="op">=</span> ((<span class="fu">mean</span>(profit_4000) <span class="op">-</span> max_val[<span class="fl">1</span>]) <span class="op">/</span> max_val[<span class="fl">1</span>]) <span class="op">*</span> <span class="fl">100</span></span></code></pre></div>
+<pre><code>## -0.2923942063409954</code></pre>
 <p>While the most unfavorable case goes from $549705 to $553298.5. That is, a percentage variation of:</p>
-<div class="sourceCode" id="cb42"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb42-1"><a href="optimal-pricing.html#cb42-1" aria-hidden="true" tabindex="-1"></a>porcentual_std_diff <span class="op">=</span> ( unfav_4000 <span class="op">-</span> unfav) <span class="op">/</span> unfav <span class="op">*</span><span class="fl">100</span></span></code></pre></div>
-<pre><code>## 0.5404789480636205</code></pre>
-<div class="sourceCode" id="cb44"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb44-1"><a href="optimal-pricing.html#cb44-1" aria-hidden="true" tabindex="-1"></a> porcentual_std_diff <span class="op">/</span> porcentual_profit_diff</span></code></pre></div>
-<pre><code>## -2.7060618736416777</code></pre>
+<div class="sourceCode" id="cb48"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb48-1"><a href="optimal-pricing.html#cb48-1" aria-hidden="true" tabindex="-1"></a>porcentual_std_diff <span class="op">=</span> ( unfav_4000 <span class="op">-</span> unfav) <span class="op">/</span> unfav <span class="op">*</span><span class="fl">100</span></span></code></pre></div>
+<pre><code>## 0.5166266307689537</code></pre>
+<div class="sourceCode" id="cb50"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb50-1"><a href="optimal-pricing.html#cb50-1" aria-hidden="true" tabindex="-1"></a> porcentual_std_diff <span class="op">/</span> porcentual_profit_diff</span></code></pre></div>
+<pre><code>## -1.7668839517512682</code></pre>
 <p>So, for every dollar we “lost” in average profitability, we gained more than double in the reduction of uncertainty.</p>
-<p>Regardless of each person decision, the important thing about the Bayesian framework is that it allows us to include uncertainty in our models and use it to our advantage to make more informed and intelligent decisions.</p>
-<p>Instead of wanting to forget and get rid of uncertainty, Bayesianism allows us to accept that this is an inherent feature of reality and to take advantage of it. Being able to narrow down how sure we are about the inferences we make gives us an invaluable advantage when making decisions.</p>
+<p>Regardless of each person decision, the important thing about the Bayesian framework is that it allows us to include uncertainty in our
+models and use it to our advantage to make more informed and intelligent decisions.</p>
+<p>Instead of wanting to forget and get rid of uncertainty, Bayesianism allows us to accept that this is an inherent feature of reality and
+to take advantage of it. Being able to narrow down how sure we are about the inferences we make gives us an invaluable advantage when
+making decisions.</p>
 </div>
-<div id="summary-7" class="section level2" number="9.4">
-<h2><span class="header-section-number">9.4</span> Summary</h2>
-<p>In this chapter we have learned some basics concepts of economics such as the price elasticity of demand for a product, or the Pareto distribution of income and wealth. Then, we estimated the demand curve of a possible new product, performing a pilot test to see the relationship between price and quantity demanded. Thanks to Bayesian inference we were able to use the uncertainty we had to our advantage, quantifying the trade-off between expected return and the variability of it, making possible to perform a well informed decision.</p>
+<div id="summary-7" class="section level2 hasAnchor" number="9.4">
+<h2><span class="header-section-number">9.4</span> Summary<a href="optimal-pricing.html#summary-7" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In this chapter we have learned some basics concepts of economics such as the price elasticity of demand for a product, or the Pareto
+distribution of income and wealth. Then, we estimated the demand curve of a possible new product, performing a pilot test to see the
+relationship between price and quantity demanded. Thanks to Bayesian inference we were able to use the uncertainty we had to our advantage,
+quantifying the trade-off between expected return and the variability of it, making possible to perform a well informed decision.</p>
 </div>
-<div id="references-6" class="section level2" number="9.5">
-<h2><span class="header-section-number">9.5</span> References</h2>
+<div id="references-6" class="section level2 hasAnchor" number="9.5">
+<h2><span class="header-section-number">9.5</span> References<a href="optimal-pricing.html#references-6" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
 <li><a href="https://cscherrer.github.io/post/max-profit/">Chad Scherrer Bayesian Optimal Pricing Post</a></li>
 </ul>
@@ -644,7 +690,6 @@ For example, let’s look at the case where an alternative price of $4000 is cho
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -663,6 +708,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -683,6 +729,10 @@ gitbook.start({
 "text": null
 },
 "download": ["data_science_in_julia_for_hackers.pdf", "data_science_in_julia_for_hackers.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }
@@ -696,7 +746,7 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
         src = src.replace(/^https?:/, '');
