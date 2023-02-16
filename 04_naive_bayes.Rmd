@@ -314,7 +314,7 @@ modifies its arguments in-place (in this case, the spam filter struct
 itself). This function *fits* our model to the data, a typical procedure
 in data science and machine learning areas.
 
-```{julia, results = TRUE}
+```{julia, results = FALSE}
 function fit!(model::BayesSpamFilter, x_train, y_train, voc)
     model.vocabulary = voc
     model.words_count_ham = words_count(x_train, model.vocabulary, y_train, 0)
