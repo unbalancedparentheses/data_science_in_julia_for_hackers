@@ -355,7 +355,7 @@ predictions and assess its performance. We'll define a few more
 functions to help with this process. First, we need a function
 implementing formulas $(1.1)$ and $(1.2)$. 
 
-```{julia, results = TRUE}
+```{julia, results = FALSE}
 function word_spam_probability(word, words_count_ham, words_count_spam, N_ham, N_spam, n_vocabulary, α)
     ham_prob = (words_count_ham[word] + α) / (N_ham + α * (n_vocabulary))
     spam_prob = (words_count_spam[word] + α) / (N_spam + α * (n_vocabulary))
