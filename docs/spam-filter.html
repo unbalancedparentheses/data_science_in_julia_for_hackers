@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 4 Spam filter | Data Science in Julia for Hackers</title>
   <meta name="description" content="Chapter 4 Spam filter | Data Science in Julia for Hackers" />
-  <meta name="generator" content="bookdown 0.31 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 4 Spam filter | Data Science in Julia for Hackers" />
   <meta property="og:type" content="book" />
@@ -309,36 +309,28 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="naive-bayes-spam-or-ham" class="section level2 hasAnchor" number="4.1">
 <h2><span class="header-section-number">4.1</span> Naive Bayes: Spam or Ham?<a href="spam-filter.html#naive-bayes-spam-or-ham" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Nobody likes spam emails. How can Bayes help? In this chapter, we’ll
-keep expanding our data science knowledge with a practical example.
-A simple yet effective way of using Bayesian probability to
-create a spam filter from scratch will be introduced. The filter will
-examine emails and classify them as either spam or ham (the word for non-spam emails)
-based on their content.
-What we will be implementing here is a <em>supervised learning model</em>,
-in other words, a classification model that has been trained on previously
-classified data. Think of it like a machine to which you can give some input,
-like an email, and will give you some label to that input, like spam or ham.
-This machine has a lot of tiny knobs, and based on their particular
-configuration it will output some label for each input.
+keep expanding our data science knowledge with a practical example. A
+simple yet effective way of using Bayesian probability to create a spam
+filter from scratch will be introduced. The filter will examine emails
+and classify them as either spam or ham (the word for non-spam emails)
+based on their content.</p>
+<p>What we will be implementing here is a <em>supervised learning model</em>, in
+other words, a classification model that has been trained on previously
+classified data. Think of it like a machine to which you can give some
+input, like an email, and will give you some label to that input, like
+spam or ham. This machine has a lot of tiny knobs, and based on their
+particular configuration it will output some label for each input.
 Supervised learning involves iteratively finding the right configuration
-of these knobs by letting the machine make a guess with some pre-classified
-data, checking if the guess matches the true label, and if not, tune the
-knobs in some controlled way.
-The way our machine will make predictions is based on the underlying
-mathematical model. For a spam filter, a <em>naive Bayes</em> approach has
-proven to be effective, and you would have the opportunity to verify that
-yourself at the end of the chapter. In a naive Bayes model, Bayes’ theorem
-is the main tool for classifing, and it is <em>naive</em> because we make
-very loose assumptions about the data we are analyzing. This will be
-clearer once we dive into the implementation.</p>
-<p>The term spam has its origins in the 1970s, in a sketch from the British
-comedy troupe Monty Python (who also inspired the name of the Python
-programming language). In this sketch from the series <em>Monty Python’s
-Flying Circus</em>, a customer wants to order food at a restaurant, but as
-the waitress begins to loudly recite the menu, the word <em>spam</em> starts to
-appear with increasing frequency, to the point of absurdity. Eventually
-all meaning is lost, and the waitress is just shouting <em>spam, spam,
-spam</em> . . . which is often what an email inbox feels like.</p>
+of these knobs by letting the machine make a guess with some
+pre-classified data, checking if the guess matches the true label, and
+if not, tune the knobs in some controlled way. The way our machine will
+make predictions is based on the underlying mathematical model. For a
+spam filter, a <em>naive Bayes</em> approach has proven to be effective, and
+you will have the opportunity to verify that yourself at the end of the
+chapter. In a naive Bayes model, Bayes’ theorem is the main tool for
+classifying, and it is <em>naive</em> because we make very loose assumptions
+about the data we are analyzing. This will be clearer once we dive into
+the implementation.</p>
 </div>
 <div id="the-training-data" class="section level2 hasAnchor" number="4.2">
 <h2><span class="header-section-number">4.2</span> The Training Data<a href="spam-filter.html#the-training-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -352,7 +344,7 @@ data should also be somewhat representative of the real proportion of
 emails we receive.</p>
 <p>Fortunately, there are a lot of very good datasets available online.
 We’ll use the “Email Spam Classification Dataset CSV” from
-<a href="https://www.kaggle.com/balaka18/email-spam-classification-dataset-csv">Kaggle</a>
+<a href="https://www.kaggle.com/balaka18/email-spam-classification-dataset-csv">Kaggle</a>,
 a website where data science enthusiasts and practitioners publish
 datasets, participate in competitions, and share their knowledge. The
 dataset’s description included online helps us make sense of its
@@ -400,51 +392,47 @@ the type of each column and allows us to see a sample of the data.</p>
 little bit. First, we should filter out very common words, such as
 articles and pronouns, which will most likely add noise rather than
 information to our classification algorithm.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb3-1"><a href="spam-filter.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get the list of all words present in all mails.</span></span>
-<span id="cb3-2"><a href="spam-filter.html#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># We strip the first and last columns which are the email id and label </span></span>
-<span id="cb3-3"><a href="spam-filter.html#cb3-3" aria-hidden="true" tabindex="-1"></a>all_words <span class="op">=</span> <span class="fu">names</span>(raw_df)[<span class="fl">2</span><span class="op">:</span><span class="kw">end</span><span class="op">-</span><span class="fl">1</span>]</span>
-<span id="cb3-4"><a href="spam-filter.html#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-5"><a href="spam-filter.html#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a StringDocument, a struct with methods to remove articles and</span></span>
-<span id="cb3-6"><a href="spam-filter.html#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co"># pronouns from the text</span></span>
-<span id="cb3-7"><a href="spam-filter.html#cb3-7" aria-hidden="true" tabindex="-1"></a>all_words_text <span class="op">=</span> <span class="fu">join</span>(all_words, <span class="st">&quot; &quot;</span>)</span>
-<span id="cb3-8"><a href="spam-filter.html#cb3-8" aria-hidden="true" tabindex="-1"></a>document <span class="op">=</span> <span class="fu">StringDocument</span>(all_words_text)</span>
-<span id="cb3-9"><a href="spam-filter.html#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-10"><a href="spam-filter.html#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove articles and pronouns</span></span>
-<span id="cb3-11"><a href="spam-filter.html#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="fu">prepare!</span>(document, strip_articles)</span>
-<span id="cb3-12"><a href="spam-filter.html#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="fu">prepare!</span>(document, strip_pronouns)</span>
-<span id="cb3-13"><a href="spam-filter.html#cb3-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-14"><a href="spam-filter.html#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Create another DataFrame with the filtered words.</span></span>
-<span id="cb3-15"><a href="spam-filter.html#cb3-15" aria-hidden="true" tabindex="-1"></a>vocabulary <span class="op">=</span> <span class="fu">split</span>(TextAnalysis.<span class="fu">text</span>(document))</span>
-<span id="cb3-16"><a href="spam-filter.html#cb3-16" aria-hidden="true" tabindex="-1"></a>clean_words_df <span class="op">=</span> raw_df[!, vocabulary]</span>
-<span id="cb3-17"><a href="spam-filter.html#cb3-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-18"><a href="spam-filter.html#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Transform the DataFrame into a Matrix and transpose it to have each </span></span>
-<span id="cb3-19"><a href="spam-filter.html#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="co"># mail as a column. </span></span>
-<span id="cb3-20"><a href="spam-filter.html#cb3-20" aria-hidden="true" tabindex="-1"></a>data_matrix <span class="op">=</span> <span class="fu">Matrix</span>(clean_words_df)<span class="ch">&#39;</span></span></code></pre></div>
-<p>In the first line, we create a variable <em>all_words</em> to store a list of all of
-the words present in the emails. As our dataset has a column for each word, we do this
-by storing the names of every column with the <em>names</em> function, except for the first
-and last column, which are for email id and label, respectively.</p>
-<p>Let’s move on to the second and third lines of the code. We would like to filter out
-some words that are very common in the English language, such as articles and pronouns,
-which will most likely add noise rather than information to our classification algorithm.
-For this we will use two Julia packages that are specially designed for working with
-texts of any type. These are Languages.jl and TextAnalysis.jl. In the third line, we
-create a StringDocument, which is a struct provided by TextAnalysis.jl and
-we use its built-in methods to remove articles and pronouns from the list of words
-we created before. This is done calling the <em>prepare</em> function two times, with two
-different flags: <em>strip_articles</em> and <em>strip_pronouns</em>.
-What follows is just code to recover our original DataFrame with only the relevant columns,
-i.e., the words that were not filtered. A <em>clean_words_df</em> DataFrame is created selecting
-those columns only.
-Finally, we turn our DataFrame into a matrix with its rows and columns transposed.
-This is just the convention used by the packages we are working with to make our
-analysis; each column is one data realization.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb3-1"><a href="spam-filter.html#cb3-1" aria-hidden="true" tabindex="-1"></a>all_words <span class="op">=</span> <span class="fu">names</span>(raw_df)[<span class="fl">2</span><span class="op">:</span><span class="kw">end</span><span class="op">-</span><span class="fl">1</span>]</span>
+<span id="cb3-2"><a href="spam-filter.html#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="spam-filter.html#cb3-3" aria-hidden="true" tabindex="-1"></a>all_words_text <span class="op">=</span> <span class="fu">join</span>(all_words, <span class="st">&quot; &quot;</span>)</span>
+<span id="cb3-4"><a href="spam-filter.html#cb3-4" aria-hidden="true" tabindex="-1"></a>document <span class="op">=</span> <span class="fu">StringDocument</span>(all_words_text)</span>
+<span id="cb3-5"><a href="spam-filter.html#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="spam-filter.html#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">prepare!</span>(document, strip_articles)</span>
+<span id="cb3-7"><a href="spam-filter.html#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="fu">prepare!</span>(document, strip_pronouns)</span>
+<span id="cb3-8"><a href="spam-filter.html#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="spam-filter.html#cb3-9" aria-hidden="true" tabindex="-1"></a>vocabulary <span class="op">=</span> <span class="fu">split</span>(TextAnalysis.<span class="fu">text</span>(document))</span>
+<span id="cb3-10"><a href="spam-filter.html#cb3-10" aria-hidden="true" tabindex="-1"></a>clean_words_df <span class="op">=</span> raw_df[!, vocabulary]</span>
+<span id="cb3-11"><a href="spam-filter.html#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-12"><a href="spam-filter.html#cb3-12" aria-hidden="true" tabindex="-1"></a>data_matrix <span class="op">=</span> <span class="fu">Matrix</span>(clean_words_df)<span class="ch">&#39;</span></span></code></pre></div>
+<p>In the first line, we create a variable <em>all_words</em> to store a list of
+all the words present in the emails. As our dataset has a column for
+each word, we do this by storing the names of every column with the
+<code>names</code> function, except for the first and last column, which are for
+email id and for the spam or ham label, respectively.</p>
+<p>Let’s move on to the second and third lines of the code. We would like
+to filter out some words that are very common in the English language,
+such as articles and pronouns, which will most likely add noise rather
+than information to our classification algorithm. For this we will use
+two Julia packages that are specially designed for working with texts of
+any type. These are Languages.jl and TextAnalysis.jl. In the third line,
+we create a StringDocument, which is a struct provided by
+TextAnalysis.jl and we use its built-in methods to remove articles and
+pronouns from the list of words we created before. This is done by
+calling the <em>prepare</em> function two times, with two different flags:
+<code>strip_articles</code> and <code>strip_pronouns</code>. What follows is just code to
+recover our original DataFrame with only the relevant columns, i.e., the
+words that were not filtered. A <code>clean_words_df</code> DataFrame is created
+selecting those columns only. Finally, we turn our DataFrame into a
+matrix with its rows and columns transposed. This is just the convention
+used by the packages we are working with to make our analysis; each
+column is one data realization.</p>
 <p>Next, we need to divide the data in two: a training set and a testing
 set. This is standard practice when working with models that learn from
-data, like the one we’re going to implement. We train the model with the
-training set, then evaluate the model’s accuracy by having it make
-predictions on the testing set. In Julia, the package MLDataUtils.jl has
-some nice functionalities for data manipulations like this.</p>
+data, like the one we’re going to implement. We’re going to train the
+model on the training set, and then evaluate the model’s accuracy by
+having it make predictions on the testing set. In Julia, the package
+MLDataUtils.jl has some nice functionalities for data manipulations like
+this.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb4-1"><a href="spam-filter.html#cb4-1" aria-hidden="true" tabindex="-1"></a>labels <span class="op">=</span> raw_df.Prediction</span>
 <span id="cb4-2"><a href="spam-filter.html#cb4-2" aria-hidden="true" tabindex="-1"></a>(x_train, y_train), (x_test, y_test) <span class="op">=</span> <span class="fu">splitobs</span>(<span class="fu">shuffleobs</span>((data_matrix, labels)), at <span class="op">=</span> <span class="fl">0.7</span>)</span></code></pre></div>
 <p>The function <code>splitobs</code> splits our dataset into a training set and a
@@ -553,8 +541,8 @@ when we instantiate the filter. We’ll have to define some functions to
 fill these variables with values that are relevant to our particular
 problem. First, here’s a function <code>word_count</code> that counts the
 occurrences of each word in the ham and spam categories.</p>
-<p>Now we are going to define some functions that will be important for
-our filter implementation.</p>
+<p>Now we are going to define some functions that will be important for our
+filter implementation.</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb6-1"><a href="spam-filter.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">words_count</span>(word_data, vocabulary, labels, spam<span class="op">=</span><span class="fl">0</span>)</span>
 <span id="cb6-2"><a href="spam-filter.html#cb6-2" aria-hidden="true" tabindex="-1"></a>    count_dict <span class="op">=</span> <span class="fu">Dict</span><span class="dt">{String,Int64}</span>()</span>
 <span id="cb6-3"><a href="spam-filter.html#cb6-3" aria-hidden="true" tabindex="-1"></a>    n_emails <span class="op">=</span> <span class="fu">size</span>(word_data)[<span class="fl">2</span>]</span>
@@ -563,9 +551,10 @@ our filter implementation.</p>
 <span id="cb6-6"><a href="spam-filter.html#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">end</span></span>
 <span id="cb6-7"><a href="spam-filter.html#cb6-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> count_dict</span>
 <span id="cb6-8"><a href="spam-filter.html#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
-<p>The function <em>word_count</em> counts the occurrences of each word in the ham and spam categories.
-One of its parameters is <em>word_data</em>, which we defined before and is a matrix where each
-column is an email and each row is a word.</p>
+<p>The function <em>word_count</em> counts the occurrences of each word in the ham
+and spam categories. One of its parameters is <em>word_data</em>, which we
+defined before and is a matrix where each column is an email and each
+row is a word.</p>
 <p>Next, we’ll define a <code>fit!</code> function for our spam filter struct. Notice
 we’re using the bang (<code>!</code>) convention here to indicate a function that
 modifies its arguments in-place (in this case, the spam filter struct
@@ -580,12 +569,12 @@ in data science and machine learning areas.</p>
 <span id="cb7-7"><a href="spam-filter.html#cb7-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span></span>
 <span id="cb7-8"><a href="spam-filter.html#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
 <pre><code>## fit! (generic function with 1 method)</code></pre>
-<p>What we mean by fitting the model to the data is mainly filling all
-the undefined parameters in our struct with values represented by the
-training data. To this end, the <code>words_count</code> function we defined
-earlier is used. Notice that we’re only fitting the model
-to the training portion of the data, since we’re reserving the testing
-portion to evaluate the model’s accuracy.</p>
+<p>What we mean by fitting the model to the data is mainly filling all the
+undefined parameters in our struct with values informed by the training
+data. To do this, we use the <code>words_count</code> function we defined earlier.
+Notice that we’re only fitting the model to the training portion of the
+data, since we’re reserving the testing portion to evaluate the model’s
+accuracy.</p>
 </div>
 <div id="training-the-model" class="section level2 hasAnchor" number="4.5">
 <h2><span class="header-section-number">4.5</span> Training the Model<a href="spam-filter.html#training-the-model" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -681,10 +670,10 @@ five emails in the test data.</p>
 <div class="sourceCode" id="cb15"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb15-1"><a href="spam-filter.html#cb15-1" aria-hidden="true" tabindex="-1"></a>predictions[<span class="fl">1</span><span class="op">:</span><span class="fl">5</span>]</span></code></pre></div>
 <pre><code>## 5-element Vector{Int64}:
 ##  0
+##  0
 ##  1
 ##  0
-##  0
-##  0</code></pre>
+##  1</code></pre>
 <p>Of the first five emails, one (the third) was classified as spam, and
 the rest were classified as ham.</p>
 </div>
@@ -704,7 +693,7 @@ classifications of the test data, counts the number of correct
 predictions, and divides this number by the total number of test emails,
 giving us an accuracy measurement. Here we call the function:</p>
 <div class="sourceCode" id="cb18"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb18-1"><a href="spam-filter.html#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">spam_filter_accuracy</span>(predictions, y_test)</span></code></pre></div>
-<pre><code>## 0.9503865979381443</code></pre>
+<pre><code>## 0.9510309278350515</code></pre>
 <p>The output indicates our model is about 95 percent accurate. It appears
 our model is performing very well! Such a high accuracy rate is quite
 astonishing for a model so naive and simple. In fact, it may be a little
@@ -714,17 +703,16 @@ ham emails in our data set is considerably higher than the spam ones.
 Let’s see the percentages:</p>
 <div class="sourceCode" id="cb20"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb20-1"><a href="spam-filter.html#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(raw_df[!, <span class="op">:</span>Prediction])<span class="op">/</span><span class="fu">length</span>(raw_df[!, <span class="op">:</span>Prediction])</span></code></pre></div>
 <pre><code>## 0.2900232018561485</code></pre>
-<p>This tells us that only 30 percent of the emails in the training set are
-spam: we first sum over the <code>Prediction</code> column of the dataset remembering
-it only consists of 0s and 1s, and then we divide by the total amount of mails.
-This type of classification problem, where there’s an unequal
-distribution of classes in the dataset, is called <em>imbalanced</em>. With
-unbalanced data, a better way to see how the model is performing is to
-construct a <em>confusion matrix</em>, an <span class="math inline">\(N \times N\)</span> matrix, where <span class="math inline">\(N\)</span> is the
-number of target classes (in our case, 2, for spam and ham). The matrix
-compares the actual values for each class with those predicted by the
-model. Here’s a function that builds a confusion matrix for our spam
-filter:</p>
+<p>To calculate the proportion of spam to ham emails, we sum over the
+<code>Prediction</code> column of the dataset remembering it only consists of 0s
+and 1s, and then we divide by the total amount of emails.This type of
+classification problem, where there’s an unequal distribution of classes
+in the dataset, is called <em>imbalanced</em>. With unbalanced data, a better
+way to see how the model is performing is to construct a <em>confusion
+matrix</em>, an <span class="math inline">\(N \times N\)</span> matrix, where <span class="math inline">\(N\)</span> is the number of target
+classes (in our case, 2, for spam and ham). The matrix compares the
+actual values for each class with those predicted by the model. Here’s a
+function that builds a confusion matrix for our spam filter:</p>
 <div class="sourceCode" id="cb22"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb22-1"><a href="spam-filter.html#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">spam_filter_confusion_matrix</span>(y_test, predictions)</span>
 <span id="cb22-2"><a href="spam-filter.html#cb22-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 2x2 matrix is instantiated with zeros</span></span>
 <span id="cb22-3"><a href="spam-filter.html#cb22-3" aria-hidden="true" tabindex="-1"></a>    confusion_matrix <span class="op">=</span> <span class="fu">zeros</span>((<span class="fl">2</span>, <span class="fl">2</span>))</span>
@@ -747,8 +735,8 @@ filter:</p>
 ##  Row │ prediction            ham_mail  spam_mail
 ##      │ String                Float64   Float64
 ## ─────┼───────────────────────────────────────────
-##    1 │ Model predicted Ham     1078.0       37.0
-##    2 │ Model predicted Spam      40.0      397.0</code></pre>
+##    1 │ Model predicted Ham     1056.0       33.0
+##    2 │ Model predicted Spam      43.0      420.0</code></pre>
 <p>Row 1 of the confusion matrix shows us all the times our model
 classified emails to be ham; 1,056 of those classifications were correct
 and 36 were incorrect. Similarly, the <code>spam_mail</code> column shows us the
@@ -757,15 +745,17 @@ and 427 were correctly identified as spam.</p>
 <p>Now that we have the confusion matrix, we can calculate the accuracy of
 the model segmented by category.</p>
 <div class="sourceCode" id="cb25"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb25-1"><a href="spam-filter.html#cb25-1" aria-hidden="true" tabindex="-1"></a>ham_accuracy <span class="op">=</span> confusion_matrix[<span class="fl">1</span>, <span class="op">:</span>ham_mail] <span class="op">/</span> (confusion_matrix[<span class="fl">1</span>, <span class="op">:</span>ham_mail] <span class="op">+</span> confusion_matrix[<span class="fl">2</span>, <span class="op">:</span>ham_mail])</span></code></pre></div>
-<pre><code>## 0.964221824686941</code></pre>
+<pre><code>## 0.9608735213830755</code></pre>
 <div class="sourceCode" id="cb27"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb27-1"><a href="spam-filter.html#cb27-1" aria-hidden="true" tabindex="-1"></a>spam_accuracy <span class="op">=</span> confusion_matrix[<span class="fl">2</span>, <span class="op">:</span>spam_mail] <span class="op">/</span> (confusion_matrix[<span class="fl">1</span>, <span class="op">:</span>spam_mail] <span class="op">+</span> confusion_matrix[<span class="fl">2</span>, <span class="op">:</span>spam_mail])</span></code></pre></div>
-<pre><code>## 0.9147465437788018</code></pre>
-<p>With this values now we have more fine-grained measure of the accuracy of our model.
-Now we know that it is not the same for our filter to make a prediction over a spam
-or a ham email. As a consequence of the inbalance in our data, ham emails will be
-classified as such more accurately than spam emails. Still, with both percentages
-above 90, are some pretty good values for a model so simple and naive. Models like
-these can be used like a baseline for creating more complex ones on top of them.</p>
+<pre><code>## 0.9271523178807947</code></pre>
+<p>With these values now we have a more fine-grained measure of the
+accuracy of our model. Now we know that our spam filter doesn’t have the
+same degree of accuracy for spam and for ham emails. As a consequence of
+the imbalance in our data, ham emails will be classified as such more
+accurately than spam emails. Still, with both percentages above 90, the
+accuracy is pretty good for a model so simple and naive. Models like
+these can be used like a baseline for creating more complex ones on top
+of them.</p>
 </div>
 <div id="summary-2" class="section level2 hasAnchor" number="4.8">
 <h2><span class="header-section-number">4.8</span> Summary<a href="spam-filter.html#summary-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -788,25 +778,27 @@ calculating the accuracy and making a confusion matrix.</p>
 <p>As we have seen, to calculate the probability of the email being a spam
 email, we should use</p>
 <p><span class="math inline">\(P(email|spam)=∏ni=1P(wordi|spam)=P(word0|spam)P(word1|spam)...P(wordnp|spam)\)</span></p>
-<p>where P(wordnp|spam) stands for the probability of the word that is not presen
-t in our dataset. What probability should be assigned to this word? One way to
-handle this could be to simply ignore that term in the multiplication. In other
-words, assigning P(wordnp|spam)=1. Without thinking about it too much, we can
-conclude that this doesn’t make any sense, since that would mean that the probability
-to find that word in a spam (or ham, too) email would be equal to 1. A more
-logically consistent approach would be to assign 0 probability to that word.
-But there is a problem: with P(wordnp|spam)=0</p>
+<p>where P(wordnp|spam) stands for the probability of the word that is not
+presen t in our dataset. What probability should be assigned to this
+word? One way to handle this could be to simply ignore that term in the
+multiplication. In other words, assigning P(wordnp|spam)=1. Without
+thinking about it too much, we can conclude that this doesn’t make any
+sense, since that would mean that the probability to find that word in a
+spam (or ham, too) email would be equal to 1. A more logically
+consistent approach would be to assign 0 probability to that word. But
+there is a problem: with <span class="math inline">\(P(wordnp\|spam)=0\)</span></p>
 <p>we can quickly see that</p>
 <p><span class="math inline">\(P(word0|spam)P(word1|spam)...P(wordnp|spam)=0\)</span></p>
 <p>This is the motivation for introducing the smoothing parameter α</p>
-<p>into our equation. In a real-word scenario, we should expect that words not present
-in our training set will appear, and altough it makes sense that they don’t have a
-high probability, it can’t be 0. When such a word appears, the probability assigned
-for it will be simply</p>
+<p>into our equation. In a real-word scenario, we should expect that words
+not present in our training set will appear, and altough it makes sense
+that they don’t have a high probability, it can’t be 0. When such a word
+appears, the probability assigned for it will be simply</p>
 <p><span class="math inline">\(P(wordnp|spam)=Nwordnp|spam+αNspam+αNvocabulary=0+αNspam+αNvocabulary=αNspam+αNvocabulary\)</span></p>
 <p>In summary, α is just a smoothing parameter, so that the probability of
-finding a word that is not in our dataset, doesn’t go down to 0. Since we
-want to keep the probability for these words low enough, it makes sense to use α=1</p>
+finding a word that is not in our dataset, doesn’t go down to 0. Since
+we want to keep the probability for these words low enough, it makes
+sense to use α=1</p>
 
 </div>
 </div>
