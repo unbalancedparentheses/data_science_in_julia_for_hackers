@@ -379,8 +379,7 @@ constrain in a bit).</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb2-1"><a href="escaping-from-mars.html#cb2-1" aria-hidden="true" tabindex="-1"></a>Δx <span class="op">=</span> [<span class="fl">25.94</span>, <span class="fl">38.84</span>, <span class="fl">52.81</span>, <span class="fl">45.54</span>, <span class="fl">17.24</span>]</span>
 <span id="cb2-2"><a href="escaping-from-mars.html#cb2-2" aria-hidden="true" tabindex="-1"></a>Δt <span class="op">=</span> [<span class="fl">3.91</span>, <span class="fl">4.57</span>, <span class="fl">5.43</span>, <span class="fl">4.85</span>, <span class="fl">3.15</span>]</span></code></pre></div>
 <p><em>Now, how do we estimate the constant g from those points?</em></p>
-<p>Using the equations of the trajectory, when the stone hits the ground, <span class="math inline">\(y(t) = 0\)</span>, since we take the start of the <span class="math inline">\(y\)</span> coordinate in the ground
-(negleting the initial height with respect to the maximum height), so finding the other then the initial point that fulfill this equation, we find that:</p>
+<p>When the stone hits the ground, we have that <span class="math inline">\(y(t) = 0\)</span>. If we solve for <span class="math inline">\(t\)</span>, ignoring the trivial solution <span class="math inline">\(t = 0\)</span>, we find that</p>
 <p><span class="math inline">\(t_{f} = \frac{2*v_{0}*sin(θ)}{g}\)</span></p>
 <p>where <span class="math inline">\(t_{f}\)</span> is the time at which the stone hits the ground, the time we have measured.
 And replacing this time in the x(t) equation we find that:</p>

@@ -133,8 +133,7 @@ Suppose we did the experiment and we have measured then the 5 points, Δx and Δ
 
 *Now, how do we estimate the constant g from those points?*
 
-Using the equations of the trajectory, when the stone hits the ground, $y(t) = 0$, since we take the start of the $y$ coordinate in the ground 
-(negleting the initial height with respect to the maximum height), so finding the other then the initial point that fulfill this equation, we find that:
+When the stone hits the ground, we have that $y(t) = 0$. If we solve for $t$, ignoring the trivial solution $t = 0$, we find that
 
 $t_{f} = \frac{2*v_{0}*sin(θ)}{g}$
 
