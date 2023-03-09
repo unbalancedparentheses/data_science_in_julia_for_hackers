@@ -27,12 +27,12 @@ plot(im_0,axis=nothing,border=:none)
 #img_small = imresize(im_0, ratio=1/3)
 ```
 
-To simplify, we approximate the escape velocity as:
+Assuming that the planet is spherical and considering only the gravitational effect of Mars, the escape velocity can be described as
 
 $v_{escape}=\sqrt{2*g_{planet}*r_{planet}}$
 
-where $r$ is the radius of the planet and $g$ the constant of gravity at the surface. Suppose that we remember from school that the escape velocity 
-from Earth is $11\frac{km}{s}$ and that the radius of Mars if half of the earth's. 
+where $r$ is the radius of the planet and $g$ the gravity constant at the surface of Mars. Suppose that we remember from school that the 
+escape velocity from Earth is $11\frac{km}{s}$ and that the radius of Mars if half of the earth's. 
 
 We remember that the gravity of Earth at its surface is $9.8\frac{m}{s^2}$, so all we need to estimate the escape velocity of Mars is the gravity 
 of the planet at its surface. So we decide to make an experiment and gather some data. But what exactly do you need to measure? Let's see.
@@ -52,7 +52,7 @@ $\overrightarrow{F} = m * \overrightarrow{a}$
 
 *How can we derive the motion of the stones with that equation?*
 
-In the figure below we show a sketch of the problem: We have the 2 axis, $x$ and $y$, the $x$ normally is parallel to the ground and the $y$ axis 
+In the figure below we show a sketch of the problem: We have the 2 axis, $x$ and $y$, the $x$ axis is parallel to the ground and the $y$ axis 
 is perpendicular, pointing to the sky. We also draw the initial velocity $v_0$ of the proyectile, and the angle $\theta$ with respect to the ground. 
 Also it's important to notice that the gravity points in the opposite direction of the $y$ axis.
 
@@ -88,7 +88,7 @@ im_3 = load("./06_gravity/images/img90_.png");
 plot(im_3,axis=nothing,border=:none)
 ```
 
-So, in the example we ahve just explained, we have that the throwing angle is θ=90°, so sin(90°)=1, the trajectory in $y$ becomes:
+So, in the example we have just explained, we have that the throwing angle is θ=90°, so sin(90°)=1, the trajectory in $y$ becomes:
 
 $y(t) = v_0*t -\frac{g*t^2}{2}$
  And the velocity, which is the derivative of the above equation becomes: 
@@ -108,7 +108,7 @@ The experiment set up will go like this:
 - One person will be throwing stones with an angle.
 - The other person will be far, watching from some distance, measuring the time since the other throw the stone and it hits the ground. The other 
 measurement we will need is the distance Δx the stone travelled.
-- Also, for the first iteration of the experiment, suppose we only keep the measurements with and initial angle θ~45° (we will loosen this 
+- Also, for the first iteration of the experiment, suppose we only keep the measurements with an initial angle θ~45° (we will loosen this 
 constrain in a bit). 
 
 ```{julia chap_6_plot_4, echo=FALSE} 
@@ -127,8 +127,8 @@ using Turing
 Suppose we did the experiment and we have measured then the 5 points, Δx and Δt, shown below:
 
 ```{julia, results = FALSE} 
-Δx_measured = [25.94, 38.84, 52.81, 45.54, 17.24]
-t_measured = [3.91, 4.57, 5.43, 4.85, 3.15]
+Δx = [25.94, 38.84, 52.81, 45.54, 17.24]
+Δt = [3.91, 4.57, 5.43, 4.85, 3.15]
 ```
 
 *Now, how do we estimate the constant g from those points?*
@@ -215,7 +215,7 @@ iterations = 10000
 
 ```{julia,results = FALSE} 
 θ = 45
-chain_uniform = sample(gravity_uniform(t_measured, Δx_measured, θ), HMC(ϵ, τ), iterations, progress=false);
+chain_uniform = sample(gravity_uniform(Δt, Δx, θ), HMC(ϵ, τ), iterations, progress=false);
 ```
 
 Plotting the posterior distribution for p we that the values are mostly between 2 and 5, with the maximun near 3,8. Can we narrow the values we obtain?
@@ -254,7 +254,7 @@ end
 Now we sample values from the posterior distribution and plot and histogram with the values obtained:
 
 ```{julia,results = FALSE} 
-chain_normal = sample(gravity_normal(t_measured, Δx_measured, θ), HMC(ϵ, τ), iterations, progress=false)
+chain_normal = sample(gravity_normal(Δt, Δx, θ), HMC(ϵ, τ), iterations, progress=false)
 ```
 
 ```{julia chap_6_plot_9} 
@@ -293,7 +293,7 @@ end
 ```
 
 ```{julia,results = FALSE} 
-chain_lognormal = sample(gravity_lognormal(t_measured, Δx_measured, θ), HMC(ϵ, τ), iterations, progress=false)
+chain_lognormal = sample(gravity_lognormal(Δt, Δx, θ), HMC(ϵ, τ), iterations, progress=false)
 ```
 
 ```{julia chap_6_plot_11} 
@@ -362,7 +362,7 @@ end
 ```
 
 ```{julia, results = FALSE} 
-chain_uniform_angle = sample(gravity_angle_uniform(t_measured, Δx_measured, θ), HMC(ϵ, τ), iterations, progress=false)
+chain_uniform_angle = sample(gravity_angle_uniform(Δt, Δx, θ), HMC(ϵ, τ), iterations, progress=false)
 ```
 
 ```{julia chap_6_plot_14} 
