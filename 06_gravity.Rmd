@@ -41,7 +41,8 @@ We are going to calculate the constant $g_{mars}$ just throwing stones. We are g
 The topic we need to revisit is Proyectile Motion. 
 
 ## Proyectile Motion
-Gravity pulls us down to Earth, or in our case, to Mars. This means that we have an acceletation, since there is a force. Recalling the newton equation:
+Gravity pulls us down to Earth, or in our case, to Mars. This means that we have an acceletation, since there is a force. Recalling the 
+newton equation:
 
 $\overrightarrow{F} = m * \overrightarrow{a}$
 
@@ -81,7 +82,9 @@ can go. Then, the stone starts to go down.
 *How does the velocity evolve in this trajectory?*
 
 Since the begining, the velocity starts decreasing until it has the value of 0 at the highest point, where the stone stops for a moment, then it 
-changes its direction and start to increase again, pointing towards the ground. Ploting the evolution of the height of the stone, we obtain the plot shown below.  We see that, at the begining the stone starts to go up fast and then it slows down. We see that for each value of $y$ there are 2 values of $t$ that satisfies the equation, thats because the stone pass twice for each point, except for the highest value of $y$.
+changes its direction and start to increase again, pointing towards the ground. Ploting the evolution of the height of the stone, we obtain 
+the plot shown below.  We see that, at the begining the stone starts to go up fast and then it slows down. We see that for each value of $y$ 
+there are 2 values of $t$ that satisfies the equation, thats because the stone pass twice for each point, except for the highest value of $y$.
 
 ```{julia chap_6_plot_3, echo=FALSE} 
 im_3 = load("./06_gravity/images/img90_.png");
@@ -212,7 +215,8 @@ iterations = 10000
 chain_uniform = sample(gravity_uniform(Δt, Δx, θ), NUTS(), iterations, progress=false);
 ```
 
-Plotting the posterior distribution for p we that the values are mostly between 2 and 5, with the maximun near 3,8. Can we narrow the values we obtain?
+Plotting the posterior distribution for p we that the values are mostly between 2 and 5, with the maximun near 3,8. Can we narrow the values
+we obtain?
 
 ```{julia chap_6_plot_7} 
 histogram(chain_uniform[:g], xlim=[1,6], legend=false, normalized=true);
@@ -259,10 +263,11 @@ title!("Posterior distribution for g with Normal prior")
 ```
 
 We see that the plausible values for the gravity have a clear center in 3.7 and now the distribution is narrower, that's good, but we can do better.
+If we observe the prior distribution proposed for $g$, we see that some values are negative, which makes no sense because if that would the 
+case when you trow the stone, it would go up and up, escaping from the planet. 
 
-If we observe the prior distribution proposed for $g$, we see that some values are negative, which makes no sense because if that would the case when you trow the stone, it would go up and up, escaping from the planet. 
-
-We propose then a new model for not allowing the negative values to happen. The distribution we are interested in is a LogNormal distribution. In the plot below is the prior distribution for g, a LogNormal distribution with mean 1.5 and variance of 0.5.
+We propose then a new model for not allowing the negative values to happen. The distribution we are interested in is a LogNormal distribution. 
+In the plot below is the prior distribution for g, a LogNormal distribution with mean 1.5 and variance of 0.5.
 
 ```{julia chap_6_plot_10} 
 plot(LogNormal(1,0.5), xlim=(0,10), legend=false, fill=(0, .5,:lightblue));
@@ -298,15 +303,17 @@ title!("Posterior distribution for g with LogNormal prior")
 ```
 
 ## Optimizing the throwing angle
-Now that we have a good understanding of the equations and the overall problem, we are going to add some difficulties and we will loosen a constrain we have imposed: Suppose that the device employed to measure the angle has an error of 15°, no matter the angle. 
+Let us remove the angle constraint and add complexity to the problem. We will consider that the device measuring the angle has a
+15 degree error, no matter the angle.
 
-*We want to know what are the most convenient angle to do the experiment and to measure or if it doesn't matter.*
+Does a most convenient angle to do the experiment exist? Or it doesn’t matter?
+Is there an angle that is most convenient for making the experiment? Or doesn't it even matter?
 
 To do the analysis we need to see how the angle influence the computation of $g$, so solving the equation for $g$ we have:
 
 $g = \frac{2*tg(\theta)*\Delta x}{t^{2}_f}$
 
-We can plot then the tangent of θ, with and error of 15° and see what is its maximum and minimun value:
+We can plot then the tangent of θ, with a 15 degree error and see what their maximum and minimum values are:
 
 ```{julia, results = FALSE} 
 angles = 0:0.1:70
@@ -337,8 +344,10 @@ title!("Percentual error");
 vline!([angles[findfirst(x->x==minimum(perc_error), perc_error)]], lw=3, label="Minimum error")
 ```
 
-So, now we see that the lowest percentual error is obtained when we work in angles near 45°, so we are good to go and we can use the data we measured adding the error in the angle.
-We now define the new model, where we include an uncertainty in the angle. We propose an uniform prior for the angle centered at 45°, the angle we think the measurement was done.
+So, now we see that the lowest percentual error is obtained when we work in angles near 45°, so we are good to go and we can use the data we
+measured adding the error in the angle.
+We now define the new model, where we include an uncertainty in the angle. We propose an uniform prior for the angle centered at 45°, 
+the angle we think the measurement was done.
 
 ```{julia, results = FALSE} 
 @model gravity_angle_uniform(t_final, x_final, θ) = begin
@@ -404,7 +413,8 @@ Finally, we obtained the escape velocity scape from Mars.
 
 ## Summary
 In this chapter we had to find the escape velocity from Mars. 
-To solve this problem, we first needed to find the gravity of Mars, so we started with a physical description of the problem and concluded that by measuring the distance and time of a rock throw plus some Bayesian analysis we could infer the gravity of Mars.
+To solve this problem, we first needed to find the gravity of Mars, so we started with a physical description of the problem and concluded 
+that by measuring the distance and time of a rock throw plus some Bayesian analysis we could infer the gravity of Mars.
 
 Then we created a simple probabilistic model, with the prior probability set to a uniform distribution and the likelihood to a normal distribution.
 We sampled the model and obtained our first posterior probability.
