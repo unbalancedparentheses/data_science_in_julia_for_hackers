@@ -128,13 +128,13 @@ function spam_filter_confusion_matrix(y_test, predictions)
     # 2x2 matrix is instantiated with zeros
     confusion_matrix = zeros((2, 2))
 
-    confusion_matrix[1, 1] = sum(isequal(y_test[i], 0) & isequal(predictions[i], 0) for i in 1:length(y_test))
-    confusion_matrix[1, 2] = sum(isequal(y_test[i], 1) & isequal(predictions[i], 0) for i in 1:length(y_test))
-    confusion_matrix[2, 1] = sum(isequal(y_test[i], 0) & isequal(predictions[i], 1) for i in 1:length(y_test))
-    confusion_matrix[2, 2] = sum(isequal(y_test[i], 1) & isequal(predictions[i], 1) for i in 1:length(y_test))
+    confusion_matrix[1, 1] = sum(isequal(y_test[i], 0) & isequal(predictions[i], 0) for i in eachindex(y_test))
+    confusion_matrix[1, 2] = sum(isequal(y_test[i], 1) & isequal(predictions[i], 0) for i in eachindex(y_test))
+    confusion_matrix[2, 1] = sum(isequal(y_test[i], 0) & isequal(predictions[i], 1) for i in eachindex(y_test))
+    confusion_matrix[2, 2] = sum(isequal(y_test[i], 1) & isequal(predictions[i], 1) for i in eachindex(y_test))
 
     # Now we convert the confusion matrix into a DataFrame 
-    confusion_df = DataFrame(prediction=String[], ham_mail=Int64[], spam_mail=Int64[])
+    confusion_df = DataFrame(prediction=String[], ham_mail=Integer[], spam_mail=Integer[])
     confusion_df = vcat(confusion_df, DataFrame(prediction="Model predicted Ham", ham_mail=confusion_matrix[1, 1], spam_mail=confusion_matrix[1, 2]))
     confusion_df = vcat(confusion_df, DataFrame(prediction="Model predicted Spam", ham_mail=confusion_matrix[2, 1], spam_mail=confusion_matrix[2, 2]))
 
