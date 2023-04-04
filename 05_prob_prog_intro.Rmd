@@ -22,7 +22,7 @@ and reasoning about Bayesian models. They offer anyone interested in using an Ba
 easy way to define and solve them automatically. 
 
 In Julia, there are a few PPLs being developed, and we will be using one of them, Turing.jl. We will 
-be focusing on some examples to explain the general approach when using this tools.  
+be focusing on some examples to explain the general approach when using these tools.  
 
 ## Coin flipping example
 
@@ -64,13 +64,15 @@ plot(Uniform(0,1), normalized=true, bins=10, xlabel="x", ylabel="Probability den
 
 So how do we model the outcomes of flipping a coin?
 
-Well, if we search for some similar type of experiment, we find that all processes in which we have 
+## Modelling and performing probabilistic experiments
+
+If we search for some similar type of experiment, we find that all processes in which we have 
 two possible outcomes –heads or tails in our case–, and some probability $p$ of success –probability 
 of heads–, these are called Bernoulli trials. The experiment of performing a number $N$ of Bernoulli 
-trials, gives us the so called binomial distribution. For a fixed value of $N$ and $p$, the Bernoulli 
-distribution gives us the probability of obtaining different number of heads (and tails too, if we 
-know the total number of trials and the number of times we got heads, we know that the remaining 
-number of times we got tails). Here, $N$ and $p$ are the parameters of our distribution.
+trials, gives us the so called binomial distribution. For a fixed value of $N$ and $p$, the Bernoulli
+distribution gives us the probability of obtaining a different number of heads (and tails too, if we
+know the total number of trials and the number of times we got heads, we know the remaining number
+of times we got tails). Here, $N$ and $p$ are the parameters of our distribution.
 
 ```{julia chap_05_plot_2} 
 N = 90;
@@ -102,7 +104,7 @@ posterior distributions in a more efficient manner.
 The model coinflip is shown below. It is implemented using the Turing.jl library, which will be 
 handling all the details about the relationship between the variables of our model, our data and 
 the sampling and computing. To define a model we use the macro `@model` previous to a function 
-definition as we have already done. The argument that this function will recieve is the data from 
+definition as we have already done. The argument that this function will receive is the data from 
 our experiment. Inside this function, we must write the explicit relationship of all the variables 
 involved in a logical way.
 Stochastic variables –variables that are obtained randomly, following a probability distribution–, 
@@ -231,8 +233,8 @@ plots_beta = [histogram(samples_beta_prior[i], normalized=true, legend=false, bi
 
 To illustrate the affirmation made before, we can compare for example the posterior distributions 
 obtained only with the first 4 outcomes for both models, the one with a uniform prior and the other 
-with the beta prior. The plots are shown below. We see that some values near 0 and 1 have still 
-high probability for the model with a uniform prior for p, while in the model with a beta prior 
+with the beta prior. The plots are shown below. We see that some values near 0 and 1 still 
+have high probability for the model with a uniform prior for p, while in the model with a beta prior 
 the values near 0.5 have higher probability. That's because if we tell the model from the beginning 
 that $p$ near 0 and 1 have less probability, it catches up faster that probabilities near 0.5 are 
 higher.
