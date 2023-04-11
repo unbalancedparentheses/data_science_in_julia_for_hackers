@@ -98,10 +98,10 @@ actually a family of methods, most PPLs implement at least one of those. The imp
 aspect we need to know at this point is that these methods return samples from the posterior 
 distribution, and we get to answer our questions by operating over those samples.
 The computing complexity of these algorithms can get very high as the complexity of the model 
-increases, so there is a lot of research being done to find intelligent ways of sampling to compute 
-posterior distributions in a more efficient manner.
+increases, so there is a lot of research being done to find clever ways of sampling to compute 
+posterior distributions more efficiently.
 
-The model coinflip is shown below. It is implemented using the Turing.jl library, which will be 
+The *coinflip* model is shown below. It is implemented using the Turing.jl library, which will be 
 handling all the details about the relationship between the variables of our model, our data and 
 the sampling and computing. To define a model we use the macro `@model` previous to a function 
 definition as we have already done. The argument that this function will receive is the data from 
@@ -273,3 +273,43 @@ on $p$ = 0.5 which gave us more accurate results.
 
 * [Turing.jl website](https://turing.ml/dev/)
 * [Not a monad tutorial article about Soss.jl](https://notamonadtutorial.com/soss-probabilistic-programming-with-julia-6acc5add5549)
+* [Bayesian methods for Hackers - Chapter 3](https://nbviewer.org/github/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/blob/master/Chapter3_MCMC/Ch3_IntroMCMC_PyMC3.ipynb)
+* Statistical Rethinking
+
+## Appendix - MCMC
+
+Markov Chain Monte Carlo or MCMC, are a family of algorithms designed to sample from a 
+probability distribution. In the context of Bayesian statistics, we are particularly interested in
+sampling from the posterior distribution to estimate it.
+This methods are useful since assumptions or approximations about the shape of the posterior are not
+needed. This comes with a cost, though. As they rely on the generation of random samples, we usually 
+need to iterate over many steps to have a good enough estimation, and this translates to more time and
+computation needed.
+
+To understand a little better what MCMC is about, let's break the name down.
+
+**Monte Carlo**: Refers to methods that rely on a repeated generation of random numbers to solve a 
+numerical problem. In the probability domain, they are used to estimate the outcomes of an uncertain
+event.
+
+**Markov Chain**: In simple terms, it can be thought as a sequence or *chain* of possible events,
+where the probability of some particular event ocurring depends only on the outcome state of the 
+previous event.
+
+These two concepts are combined to generate a variety of methods which aim to estimate complicated 
+probability distributions by sampling from them it an intelligent way. 
+
+On a high level, these algorithms have two main *forces* that work simultaneously when sampling values
+from the posterior's parameter space:
+1. A force that for each sampled value, tries to find another one from the region nearby with high probability density
+– This way, we make sure we are not wasting samples exploring regions with very low probability.
+2. A force that for each value sampled, tries to counter force (1) - Thus enabling the algorithm to explore
+new regions of parameter space.
+
+With the right balance of the two, a good estimation of the posterior distribution can be obtained in
+reasonable time in contrast to a brute-force approach. 
+
+> It appears to be a quite general principle that, whenever there is a randomized way 
+> of doing something, then there is a nonrandomized way that delivers better performance
+> but requires more thought. 
+> —E. T. Jaynes
