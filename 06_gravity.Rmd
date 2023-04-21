@@ -15,6 +15,7 @@ Suppose you landed on Mars by mistake and you want to leave that rocky planet an
 piece of information: the escaping velocity from the planet. 
 
 What on Mars is the escape velocity?
+## Problem formulation and underlying premises
 
 We are going to use the same experiment that Newton thought when thinking about escaping from the gravity of Earth. Gravity pulls us down, 
 so if we shoot a cannonball, as in the sketch shown below, what will happen? For some velocities, the cannonball will return to Earth, but
@@ -99,17 +100,14 @@ Those two equations are the ones plotted in the previous sketch, a parabola and 
  2 directions, but with the same magnitude. So keep in mind that when you throw an object to the sky, when it returns to you, the velocity will 
  be the same with the one you threw it.
  
-## Calculating the constant g of Mars
-Now that we have understood the equations we will work with, we ask:
+## Experimentation: Calculating the gravity constant of Mars
 
-*how do we set the experiment and what do we need to measure?*
+Now that we have understood the equations we will work with, we ask
+With the equations presented, we are now able to set up an experiment. The steps involved will be as follows:
+- One person will throw stones with an angle.
+- Another person will be far, measuring the time it takes the stone to hit the ground as well as the distance $Δx$ the stoned travelled.
 
-The experiment set up will go like this:
-- One person will be throwing stones with an angle.
-- The other person will be far, watching from some distance, measuring the time since the other throw the stone and it hits the ground. The other 
-measurement we will need is the distance Δx the stone travelled.
-- Also, for the first iteration of the experiment, suppose we only keep the measurements with and initial angle θ~45° (we will loosen this 
-constrain in a bit). 
+For the first iteration of the experiment, we will keep the initial angle θ~45°. We will loosen this constraint a bit later.
 
 ```{julia chap_6_plot_4, echo=FALSE} 
 im = load("./06_gravity/images/sketch_2.png");
