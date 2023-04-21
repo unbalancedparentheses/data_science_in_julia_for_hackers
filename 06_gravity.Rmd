@@ -42,14 +42,12 @@ of the planet at its surface. So we decide to make an experiment and gather some
 We are going to calculate the constant $g_{mars}$ just throwing stones. We are going to explain a bit the equations regarding the experiment. 
 The topic we need to revisit is Proyectile Motion. 
 
-## Proyectile Motion
+## Proyectile equations of motion 
 Gravity pulls objects down to Earth, or in our case, to Mars. Recall Newton's second law:
 $\overrightarrow{F} = m * \overrightarrow{a}$
 
 where $m$ is the mass of the object, $\overrightarrow{F}$ is the force (what make things fall) and $\overrightarrow{a}$ is the acceleration. For the particular case of an object being attracted to a much more massive one, we call this acceleration the gravity $\overrightarrow{g}$.
 The arrow $\overrightarrow{}$ over the letter means that the quantity has a direction in space, in our case, gravity points to the center of the Earth or Mars.
-
-## Stone equations of motion derivation
 
 In the figure below we show a sketch of the problem: We have the two axis, $x$ and $y$, the $x$ axis is parallel to the ground and the $y$ axis is perpendicular, pointing to the sky. We also draw the initial velocity $v_0$ of the proyectile, and the angle $\theta$ with respect to the ground. 
 Also it's important to notice that the gravity points in the opposite direction of the $y$ axis.
@@ -66,12 +64,12 @@ $y(t) = v_0*t*sin(θ) -\frac{g*t^2}{2}$
 
 In other words, the for each time $t$, this equations give the $x$ and $y$ coordinates of a simple object.
 
-If we see the evolution of the projectile in the $x$ axis alone, it follows a straight line (until it hits the ground) and in the $y$ axis the motion follows a parabola.
+If we focus on the evolution of the projectile in the $x$ axis alone, it follows a straight line (until it hits the ground) and in the $y$ axis the motion follows a parabola.
 We can imagine what happens if we throw a stone to the sky: the stone goes up and then, at some point, it reaches it's highest position and starts going down. 
 
 *How does the velocity evolve in this trajectory?*
 
-Since the begining, the velocity starts decreasing until it has the value of 0 at the highest point, where the stone stops for a moment, then it 
+the velocity starts decreasing until it has the value of 0 at the highest point, where the stone stops for a moment, then it 
 changes its direction and start to increase again, pointing towards the ground. Ploting the evolution of the height of the stone, we obtain 
 the plot shown below.  We see that, at the begining the stone starts to go up fast and then it slows down. We see that for each value of $y$ 
 there are 2 values of $t$ that satisfies the equation, thats because the stone pass twice for each point, except for the highest value of $y$.
@@ -134,7 +132,7 @@ $Δx=t_{f}*v_{0}*cos(θ)$
 
 where Δx is the distance traveled by the stone.
 
- So, solving for $v_{0}$, the initial velocity, an unknown quantity, we have:
+So, solving for $v_{0}$, the initial velocity, an unknown quantity, we have:
 
 $v_{0}=\frac{Δx}{t_{f}cos(θ)}$
 
