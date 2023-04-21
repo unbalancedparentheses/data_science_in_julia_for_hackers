@@ -1,4 +1,4 @@
-# Escaping from Mars
+# Escaping from Mars - An example to estimate trajectories
 
 ```{julia chap_6_libraries, cache = FALSE, results = FALSE, echo=FALSE}
 cd("./06_gravity/")
@@ -15,6 +15,8 @@ Suppose you landed on Mars by mistake and you want to leave that rocky planet an
 piece of information: the escaping velocity from the planet. 
 
 What on Mars is the escape velocity?
+
+## Problem formulation and underlying premises
 
 We are going to use the same experiment that Newton thought when thinking about escaping from the gravity of Earth. Gravity pulls us down, 
 so if we shoot a cannonball, as in the sketch shown below, what will happen? For some velocities, the cannonball will return to Earth, but
@@ -40,21 +42,14 @@ of the planet at its surface. So we decide to make an experiment and gather some
 We are going to calculate the constant $g_{mars}$ just throwing stones. We are going to explain a bit the equations regarding the experiment. 
 The topic we need to revisit is Proyectile Motion. 
 
-## Proyectile Motion
-Gravity pulls us down to Earth, or in our case, to Mars. This means that we have an acceletation, since there is a force. Recalling the 
-newton equation:
-
+## Proyectile equations of motion 
+Gravity pulls objects down to Earth, or in our case, to Mars. Recall Newton's second law:
 $\overrightarrow{F} = m * \overrightarrow{a}$
 
-where $m$ is the mass of the object, $\overrightarrow{F}$ is the force(it's what make us fall) and $\overrightarrow{a}$ is the acceleration, in 
-our case is what we call gravity $\overrightarrow{g}$.
-The arrow $\overrightarrow{}$ over the letter means that the quantity has a direction in space, in our case, gravity is pointing to the center of 
-the Earth, or Mars.
+where $m$ is the mass of the object, $\overrightarrow{F}$ is the force (what make things fall) and $\overrightarrow{a}$ is the acceleration. For the particular case of an object being attracted to a much more massive one, we call this acceleration the gravity $\overrightarrow{g}$.
+The arrow $\overrightarrow{}$ over the letter means that the quantity has a direction in space, in our case, gravity points to the center of the Earth or Mars.
 
-*How can we derive the motion of the stones with that equation?*
-
-In the figure below we show a sketch of the problem: We have the 2 axis, $x$ and $y$, the $x$ axis is parallel to the ground and the $y$ axis 
-is perpendicular, pointing to the sky. We also draw the initial velocity $v_0$ of the proyectile, and the angle $\theta$ with respect to the ground. 
+In the figure below we show a sketch of the problem: We have the two axis, $x$ and $y$, the $x$ axis is parallel to the ground and the $y$ axis is perpendicular, pointing to the sky. We also draw the initial velocity $v_0$ of the proyectile, and the angle $\theta$ with respect to the ground. 
 Also it's important to notice that the gravity points in the opposite direction of the $y$ axis.
 
 ```{julia chap_6_plot_2, echo=FALSE} 
@@ -62,26 +57,19 @@ im_1 = load("./06_gravity/images/trajectory.png");
 plot(im_1, axis=nothing,border=:none)
 ```
 
-*But what is the trajectory of the projectile? and how do the coordinates x and y evolve with time?*
-
-If we remember from school, the equations of $x$ and $y$ over time is: 
+The equations of motion for an object with acceleration only in the $y$ axis are given by:
 
 $x(t) = v_0*t*cos(θ)$
-
 $y(t) = v_0*t*sin(θ) -\frac{g*t^2}{2}$
-where $t$ is the time at which we want to know the coordinates.
 
-*What do these equations tell us?* 
+In other words, the for each time $t$, this equations give the $x$ and $y$ coordinates of a simple object.
 
-If we see the evolution of the projectile in the $x$ axis only, it follows a straight line (until it hits the ground) and in the $y$ axis the 
-movement follows a parabola, but how do we interpret that? 
-
-We can imagine what happens if we trow a stone to the sky: the stone starts to go up and then, at some point, it reaches the highest position it 
-can go. Then, the stone starts to go down. 
+If we focus on the evolution of the projectile in the $x$ axis alone, it follows a straight line (until it hits the ground) and in the $y$ axis the motion follows a parabola.
+We can imagine what happens if we throw a stone to the sky: the stone goes up and then, at some point, it reaches it's highest position and starts going down. 
 
 *How does the velocity evolve in this trajectory?*
 
-Since the begining, the velocity starts decreasing until it has the value of 0 at the highest point, where the stone stops for a moment, then it 
+the velocity starts decreasing until it has the value of 0 at the highest point, where the stone stops for a moment, then it 
 changes its direction and start to increase again, pointing towards the ground. Ploting the evolution of the height of the stone, we obtain 
 the plot shown below.  We see that, at the begining the stone starts to go up fast and then it slows down. We see that for each value of $y$ 
 there are 2 values of $t$ that satisfies the equation, thats because the stone pass twice for each point, except for the highest value of $y$.
@@ -102,17 +90,14 @@ Those two equations are the ones plotted in the previous sketch, a parabola and 
  2 directions, but with the same magnitude. So keep in mind that when you throw an object to the sky, when it returns to you, the velocity will 
  be the same with the one you threw it.
  
-## Calculating the constant g of Mars
-Now that we have understood the equations we will work with, we ask:
+## Experimentation: Calculating the gravity constant of Mars
 
-*how do we set the experiment and what do we need to measure?*
+With the equations presented, we are now able to set up an experiment. The steps involved will be as follows:
+- One person will throw stones with an angle.
+- Another person will be far, measuring the time it takes the stone to hit the ground as well as 
+the distance $Δx$ the stoned travelled.
 
-The experiment set up will go like this:
-- One person will be throwing stones with an angle.
-- The other person will be far, watching from some distance, measuring the time since the other throw the stone and it hits the ground. The other 
-measurement we will need is the distance Δx the stone travelled.
-- Also, for the first iteration of the experiment, suppose we only keep the measurements with an initial angle θ~45° (we will loosen this 
-constrain in a bit). 
+For the first iteration of the experiment, we will keep the initial angle θ~45°. We will loosen this constraint later.
 
 ```{julia chap_6_plot_4, echo=FALSE} 
 im = load("./06_gravity/images/sketch_2.png");
@@ -147,7 +132,7 @@ $Δx=t_{f}*v_{0}*cos(θ)$
 
 where Δx is the distance traveled by the stone.
 
- So, solving for $v_{0}$, the initial velocity, an unknown quantity, we have:
+So, solving for $v_{0}$, the initial velocity, an unknown quantity, we have:
 
 $v_{0}=\frac{Δx}{t_{f}cos(θ)}$
 
