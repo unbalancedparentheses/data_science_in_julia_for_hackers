@@ -1,5 +1,18 @@
 # DataScienceInJuliaForHackers.jl or Data Science in Julia for Hackers
 
+## NOTE/DISCLAIMER
+
+This is a fork of the original repository/book/website. I've added it to update a few things that have kept me from working on the examples within the book. 
+
+## License?
+
+The book itself has no license (despite [a longstanding issue](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/issues/72)). Therefore, I must assume an "all rights reserved" license would be enforced. Therefore:
+
+* Contents from the initial commit to commit [a01a0c2](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/commit/a01a0c283b8476d7fc42eca1f2232d7c744a6f07) should be assumed to be under an "all rights reserved" license, unless otherwise stated.
+* Contents after the above mentioned commit will be licensed under the rules outlined by the contents of LICENSE.md. 
+
+## The original README
+
 How to cite this book (note you need to replace the _**highlighted**_ text with the date in which you retrieved the information):
 
 Carrone, F., Nicolini, M., & Obst Demaestri, H. (2021). Data Science in Julia for Hackers. Retrieved _**October 6, 2021**_, from https://datasciencejuliahackers.com/
