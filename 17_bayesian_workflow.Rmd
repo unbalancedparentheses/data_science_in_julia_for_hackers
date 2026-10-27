@@ -1,21 +1,21 @@
 # A complete Bayesian workflow {#bayesian-workflow}
 
-Our football model has produced a posterior. The sampler ran, the parameters look plausible, and we can simulate the next match. Are we finished?
+Let's imagine that our football client is back. We show them the posterior, explain the parameters, and simulate the next match. Then they ask a rather inconvenient question: 'If the model works so well, why does our team fail to score much more often than it predicts?' Perhaps finishing the computation was only the beginning of the investigation.
 
-We still need to ask whether we computed the intended posterior, whether the model can reproduce important features of the data, and whether its predictions help on observations we did not use to fit it. These are different questions. A sampler can accurately explore a model that gives poor predictions.
+There are several things we could look at. Did the sampler calculate the posterior we intended? Does our model's story allow the kind of matches we actually see? And how does it do when we ask about matches it hasn't seen yet? We will work through these questions one at a time. Getting a very precise answer from a model won't help much if its story is missing something important.
 
-We return to football with a deliberately small model: the number of goals scored by one team per match. Keeping the mathematics simple gives us an exact answer against which we can test our computation. The matches here are synthetic; no conclusions about an actual team should be drawn from them.
+To see what is going on, let's leave the whole league aside for a moment and follow one team. We will invent its matches and start with a small model for the number of goals it scores. This gives us an advantage we rarely have with a complicated model: an exact answer we can compare with the sampler's results.
 
 ## Start with a question and a simulator
 
-Suppose we want to predict how often our team will fail to score. An initial model gives every match the same scoring rate:
+Our client cares about scoreless matches, so let's make that our first question. A simple starting point is to give the team one scoring rate, \(\lambda\), shared by all its matches:
 
 \[
 Y_i\mid\lambda\sim\operatorname{Poisson}(\lambda),\qquad
 \lambda\sim\operatorname{Gamma}(a,b).
 \]
 
-Here \(a\) is the shape and \(b\) is the **rate**, so the prior mean is \(a/b\). Distributions.jl's `Gamma` constructor instead takes shape and **scale**. We therefore write `Gamma(a, 1 / b)`. Mixing up these parameterizations changes the model while leaving the program perfectly runnable.
+Here \(a\) is the shape and \(b\) is the **rate**, so the prior mean is \(a/b\). There is a small detail to watch when we translate this into Julia: Distributions.jl's `Gamma` constructor uses shape and **scale**. We must therefore write `Gamma(a, 1 / b)`. If we forget the reciprocal, Julia will happily run a different model from the one we wrote on paper.
 
 ```{julia}
 import Pkg
@@ -29,11 +29,11 @@ a, b = 2.0, 1.0
 prior = Gamma(a, 1 / b)
 ```
 
-The generator labels opponents as easier or harder and gives those groups different true scoring rates. Our first model ignores that label. In a real investigation, the mechanism would be unknown; here it lets us see a model fail for an understandable reason.
+In our invented league, the team scores at different rates against easier and harder opponents. We have recorded those labels, but our first model will ignore them. This might sound like asking for trouble. It is! We want to see how that missing piece of the story shows up in the predictions.
 
 ## Check the prior before fitting
 
-A prior is easier to discuss through observable consequences than through parameters alone. Draw a rate, then generate an entire replicated season with that rate. Repeat. We draw one rate per season because this model assumes one shared parameter across its matches.
+What does our Gamma prior say about football? Staring at its parameters may not tell us much. Let's draw a rate and use it to simulate a whole season, then repeat the experiment. We draw one rate for each season, rather than a new one for each match, because our model says the matches share a scoring rate.
 
 ```{julia}
 prior_seasons = replicate_goals(prior, length(training.goals); seed=1705)
@@ -41,11 +41,11 @@ prior_zero_check = predictive_check(training.goals, prior_seasons)
 prior_zero_check
 ```
 
-The output compares the observed fraction of scoreless matches with a central 90% interval of simulated fractions. Before seeing outcomes, we should also ask whether simulated season totals or extreme scores are plausible for the intended competition. A prior predictive check is a way to translate assumptions into football language. If we use the observed data to revise a prior, we should document that choice rather than describe the prior as independent of those data.
+Now we can speak the client's language: how many matches end without a goal, and what range of seasons are we imagining? The output compares the observed fraction with a central 90% interval from the simulated seasons. Before looking at the outcomes, we could also examine season totals and unusually large scores. These *prior predictive checks* let us see what our assumptions mean on the pitch. If looking at the observed season prompts us to revise the prior, we should keep track of that decision; those data have then helped shape it.
 
 ## An exact posterior as a reference
 
-Multiplying the Poisson likelihood by the Gamma prior gives
+Let's now bring the observed goals into the calculation. The Poisson and Gamma distributions fit together rather conveniently: multiplying the likelihood by the prior gives another Gamma distribution,
 
 \[
 \lambda\mid y\sim\operatorname{Gamma}
@@ -57,20 +57,20 @@ posterior = goal_posterior(training.goals; shape=a, rate=b)
 (mean=mean(posterior), interval=quantile.(Ref(posterior), [0.05, 0.95]))
 ```
 
-This model needs no Markov chain Monte Carlo: we can calculate summaries and draw independent posterior samples directly. That makes it a useful testing ground before moving to a hierarchical model where the posterior is not available in closed form.
+We can get this posterior's mean and intervals directly, and even draw independent samples from it. No Markov chain Monte Carlo is needed! We will use a sampler anyway in a moment, because having the exact answer nearby will help us understand what the sampler is doing before returning to a hierarchical model.
 
-A unit test checks the algebra on a tiny example. With goals `[0, 1, 2]`, shape 2 and rate 1, the posterior has shape 5 and rate 4, hence mean 5/4 and variance 5/16. A test like this catches a rate/scale error without relying on a large numerical experiment.
+It is useful to check the calculation on a tiny season first. Suppose the goals were `[0, 1, 2]` and the prior had shape 2 and rate 1. The posterior then has shape 5 and rate 4, giving mean 5/4 and variance 5/16. We can work that out by hand and ask Julia for the same answer. This little check is enough to catch the rate/scale mix-up we worried about earlier.
 
 ## Check the computation separately
 
-For learning purposes, the shared implementation also contains a small random-walk Metropolis sampler. It samples \(\eta=\log\lambda\) so rates remain positive. Its log target, up to a constant, is
+Let's see if a sampler can recover that answer. We will use a small random-walk Metropolis implementation and let it move around in \(\eta=\log\lambda\). Working with the logarithm means that converting back always gives a positive scoring rate. In these coordinates, the log density we want to sample is, up to a constant,
 
 \[
 \log p(\eta\mid y)=
 \left(a+\sum_i y_i\right)\eta-(b+n)e^\eta.
 \]
 
-The coefficient of \(\eta\) includes the change-of-variables Jacobian. Omitting it would target the wrong distribution. A symmetric normal proposal in log-rate space permits the usual log-density difference in the acceptance calculation. This sampler is an explanatory implementation, not a replacement for a tested probabilistic-programming library for complex models.
+Changing coordinates also changes the density. The coefficient of \(\eta\) above includes the change-of-variables Jacobian; leaving it out would make our sampler explore the wrong distribution. We propose a normal step in log-rate space. Because that proposal is symmetric, the acceptance calculation uses the difference between the proposed and current log densities. This small implementation lets us examine the mechanism. For the larger models in the book, we will still want the tested samplers supplied by our probabilistic-programming tools.
 
 ```{julia}
 fit = metropolis_rates(training.goals; step=0.25, draws=4000, warmup=1000)
@@ -79,11 +79,11 @@ diagnostics = chain_diagnostics(fit.samples)
  sampled_mean=mean(fit.samples), exact_mean=mean(posterior))
 ```
 
-The array has dimensions **draws × chains**, with four chains starting at distinct rates. Warmup is discarded. `chain_diagnostics` reports rank-normalized split \(\widehat R\), bulk and tail effective sample sizes, and Monte Carlo standard error for the posterior mean using MCMCDiagnosticTools.jl.
+We have sent four chains off from different starting rates. After discarding warmup, their draws are stored in an array with dimensions **draws × chains**. Do they end up exploring the same region? The `chain_diagnostics` function uses MCMCDiagnosticTools.jl to give us rank-normalized split \(\widehat R\), bulk and tail effective sample sizes, and Monte Carlo standard error for the posterior mean.
 
-\(\widehat R\) compares behavior across and within chains; values appreciably above one suggest they are not exploring the same distribution. Effective sample size describes the information in correlated draws for a particular estimate. Monte Carlo error measures computation uncertainty, which is different from posterior uncertainty about the team. The package documentation recommends \(\widehat R<1.01\) and at least 100 effective draws per chain for an estimand as useful diagnostic targets. These are warning criteria, not proofs that inference is correct.
+Let's unpack those numbers. \(\widehat R\) compares behavior across and within chains; values appreciably above one suggest that the chains are not exploring the same distribution. Consecutive draws can also resemble each other, so collecting 4,000 of them need not give us as much information as 4,000 independent draws. That is what effective sample size helps us assess. Monte Carlo error tells us how uncertain the calculation is, separately from our uncertainty about the team's scoring rate. The package documentation recommends \(\widehat R<1.01\) and at least 100 effective draws per chain for an estimand as useful targets. Think of these as warning lights: passing them gives us a reason to continue checking, rather than a proof that everything is correct.
 
-Now deliberately make the proposal too small:
+What happens if we make our random walk take very tiny steps? Let's deliberately give it a bad setting:
 
 ```{julia}
 stuck_fit = metropolis_rates(training.goals; step=0.00001,
@@ -91,13 +91,13 @@ stuck_fit = metropolis_rates(training.goals; step=0.00001,
 chain_diagnostics(stuck_fit.samples)
 ```
 
-The chains barely move away from their different starts. Acceptance can be extremely high while mixing is terrible. Inspecting traces is useful here: four apparently stable lines at different levels are not convergence. The Pluto notebook includes a compact trace display and a proposal-scale control.
+The chains barely leave their starting points. They may accept almost every proposal and still explore terribly! Plotting their traces helps us see the problem: four nearly flat lines at different levels mean that the chains disagree, not that they have all settled down. You can move the proposal-scale control in the Pluto notebook and watch these traces change.
 
-When returning to the Turing model in the earlier football chapter, apply the same reasoning to every important parameter and predictive quantity. With Hamiltonian Monte Carlo, also investigate divergences and other sampler-specific warnings. More iterations can reduce Monte Carlo error; they do not repair an incorrect target density or make a misspecified model describe reality.
+When we return to the Turing model from the football chapter, we can ask the same questions about its important parameters and predictions. Hamiltonian Monte Carlo has additional warning signs, including divergences, that we should investigate too. Running longer can help reduce Monte Carlo error. But if we wrote down the wrong density, or left something important out of our model, the sampler will keep working on that same problem for longer.
 
 ## Can the fitted model reproduce scoreless matches?
 
-A posterior predictive check draws a plausible rate from the posterior, simulates a replicated season, and compares a chosen statistic with the observations. We chose scoreless matches because they matter to our initial question.
+Now let's return to the client's complaint. Suppose the posterior calculation is working: can this model produce enough scoreless matches? We can draw a rate from the posterior and simulate another season, just as we did with the prior. Repeating this gives us a *posterior predictive check* focused on the question that started our investigation.
 
 ```{julia}
 pooled_replicates = replicate_goals(posterior, length(training.goals))
@@ -105,15 +105,15 @@ pooled_check = predictive_check(training.goals, pooled_replicates)
 pooled_check
 ```
 
-The returned `upper_fraction` is the proportion of replicated statistics at least as large as the observed one. It is a descriptive posterior predictive tail area, not a classical p-value or the probability that the model is true. Reusing the data to fit and check the model changes its interpretation.
+Look at `upper_fraction`: it tells us how often a replicated season has a scoreless fraction at least as large as the observed one. This is a posterior predictive tail area. Since the observations helped fit the model before we used them for this comparison, we should not read it as a classical p-value, or as the probability that the model is true. It describes how surprising this feature looks among the seasons our fitted model generates.
 
-We should inspect more than one aspect: zeros, total goals, the largest score, and variation between matches. The pooled Poisson model links its conditional mean and variance. Opponent heterogeneity can create more zeros and large scores than a common-rate model expects, even when the average goal count is well estimated.
+Why might the average score look reasonable while scoreless matches look wrong? The pooled Poisson model ties its conditional mean and variance together. A schedule with some very easy opponents and some very hard ones can produce both more zeros and more large scores than that single rate allows. Let's also look at total goals, the largest score, and variation from match to match, so we don't judge the whole season by one statistic.
 
-An interval covering the observation does not certify a model, and one discrepancy does not identify a unique remedy. It tells us where to investigate the scientific assumptions.
+A discrepancy gives us a place to start asking questions. It doesn't yet tell us which assumption to change, just as a good result for one statistic doesn't settle every question about the model.
 
 ## Revise an assumption, then check again
 
-Our synthetic schedule includes an opponent-strength label measured before the match. Let the two groups have separate scoring rates with the same prior family. The shared function fits each group using its own goals and simulates each replicated season with the original schedule.
+Remember the opponent labels we put aside at the beginning? They were known before each match, and they give us a concrete idea to try. Let's allow a separate scoring rate against each group, using the same prior family for both. We fit the groups using their own goals, then simulate seasons with the original mix of opponents.
 
 ```{julia}
 group_replicates = grouped_replicates(training)
@@ -121,18 +121,18 @@ group_check = predictive_check(training.goals, group_replicates)
 (pooled=pooled_check, by_opponent=group_check)
 ```
 
-For the specified seeds and pinned environment, 41.25% of the observed matches have zero goals. The central 90% replicated intervals are:
+In our simulated records, the team fails to score in 41.25% of its matches. Using the seeds and package versions supplied with the chapter, the two models give these central 90% intervals for replicated seasons:
 
 | Model | Replicated fraction of scoreless matches |
 |:--|:--|
 | Shared rate | 6.25%–21.25% |
 | Separate opponent-group rates | 31.25%–46.25% |
 
-These simulation summaries make the discrepancy visible. The revision brings this statistic into a plausible range; it does not establish that every relevant feature is captured.
+That is a visible improvement for the feature our client asked about. The grouped model can now produce seasons with a similar fraction of scoreless matches. We still have other features to examine, but we have found a useful connection between an assumption and its consequences.
 
-This revision addresses a specific omitted source of variation. It is not the full hierarchical team model of the earlier chapter: independent group estimates do not partially pool, and a binary opponent label discards substantial information. With many teams and sparse matches, a hierarchical model may be more appropriate. Adding parameters also cannot compensate for a label that would be unavailable at prediction time.
+Our two groups are a simple repair, with separate estimates and no partial pooling between them. The earlier hierarchical football model can do more: when there are many teams and few matches for some of them, sharing information can be valuable. We have also compressed all opponent strength into two labels. A richer model might improve on that, provided the information it uses is available when we need to predict the next match.
 
-We can examine prior sensitivity by changing prior strength while preserving the prior mean:
+There is another knob we should try before moving on: how strongly did our prior pull the result? Let's change its strength while keeping its mean fixed:
 
 ```{julia}
 sensitivity = [
@@ -144,11 +144,11 @@ sensitivity = [
 sensitivity
 ```
 
-Here the rate parameter acts like an exposure contribution in the conjugate update, which motivates the `prior_matches` label. The same prior can matter much more for a small group than for the whole season. Compare predictive quantities and intervals as well as the posterior mean. Agreement among several reasonable priors is useful evidence of robustness to those choices, not to every possible modeling assumption.
+In the conjugate update, the rate parameter contributes exposure alongside the number of matches, which is why we called it `prior_matches`. The same prior can have much more influence on a small group than on a whole season. Try the comparison on fewer matches, and look at predictive intervals as well as the posterior mean. If several reasonable priors lead to similar answers, we have learned something useful about sensitivity to those choices; we still need our other model checks.
 
 ## Save a future set for evaluation
 
-Model checking and revision used only the training season. We now generate a separate synthetic season and compare the predictive log scores of the two fixed models.
+So far we have used one season to fit, inspect, and revise our models. How will they fare on matches they haven't seen? Let's generate a separate season and compare the two models as they stand now:
 
 ```{julia}
 future = football_data(seed=1710, matches_per_group=20)
@@ -156,16 +156,16 @@ future = football_data(seed=1710, matches_per_group=20)
  by_opponent=log_predictive_score(training, future; grouped=true))
 ```
 
-The Gamma–Poisson predictive distribution for one match is negative binomial. The implementation evaluates that distribution exactly and sums the **marginal one-match** log probabilities with the training posterior held fixed. This is a pointwise scoring rule for prediction; it is not the joint probability of the whole future season, whose outcomes are dependent after integrating over a shared uncertain rate. Larger scores are better on these observations.
+Integrating the Poisson distribution over our Gamma posterior gives a negative binomial prediction for one match. We use it to calculate the log probability assigned to each new result, keeping the training posterior fixed, and add those scores. Larger is better here. Notice that we are adding **marginal one-match** log probabilities. The joint probability of a whole season is a different calculation: after integrating over a shared uncertain rate, its match outcomes are dependent.
 
-We deliberately keep the test season out of fitting and prior selection. If we repeatedly revise a model after inspecting these scores, this season has become validation data; a new untouched test set is needed for a final assessment. The example's generator favors the grouped model. That demonstration is not evidence that opponent grouping always improves real football predictions.
+We saved this season until after fitting and choosing priors. If its scores send us back to revise the model again, that is a reasonable next step, but we have then turned this season into validation data. We would need another untouched set for a final assessment. Our invented league was designed to make opponent groups matter. To find out whether that improvement carries over to real football, we would have to repeat the investigation with real matches.
 
 ## Summary and exercises
 
-The workflow separates model assumptions, computation checks, predictive checks, revision, and evaluation. The exact Gamma posterior gives a reference for the sampler, while the synthetic opponent groups expose a limitation of an otherwise correctly computed model.
+We began with a client's complaint about scoreless matches and followed it back through the calculation to the model's assumptions. The exact Gamma posterior let us check the sampler. Simulated seasons then showed us something the correctly computed posterior couldn't fix: our single scoring rate was hiding differences between opponents. Changing that part of the story gave us a new model to check and evaluate.
 
 Try three variations. First, give both opponent groups the same true rate and investigate whether grouping still helps out of sample. Second, shorten the training season and compare prior sensitivity in the small groups. Third, introduce an excess-zero mechanism that opponent labels cannot explain. State a proposed model revision before checking another test season.
 
-For a reproducible run, instantiate the environment in `17_bayesian_workflow`, run `test.jl`, and open `notebook.jl` in Pluto. The core functions used by the chapter and notebook are identical.
+You can explore these variations in `17_bayesian_workflow/notebook.jl`. After instantiating that chapter's environment, open the notebook in Pluto and try its controls. The chapter and notebook share the same core functions; `test.jl` checks them against the exact calculations we used along the way.
 
 Further reading: [Distributions.jl parameterizations](https://juliastats.org/Distributions.jl/stable/univariate/), [MCMCDiagnosticTools.jl](https://turinglang.org/MCMCDiagnosticTools.jl/stable/), and the [Stan User's Guide on predictive checks](https://mc-stan.org/docs/stan-users-guide/posterior-predictive-checks.html). For the broader iteration between modeling and checking, see Gelman et al., [Bayesian Workflow](https://arxiv.org/abs/2011.01808).

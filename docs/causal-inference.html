@@ -511,46 +511,46 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="causal-inference" class="section level1" number="16">
 <h1><span class="header-section-number">16</span> From prediction to intervention</h1>
-<p>A shop’s historical data contains a tempting result: on days when it charges more, it sells more. A good predictive model learns this pattern. Should the shop raise its prices tomorrow?</p>
-<p>The optimal-pricing chapter gives us a way to reason about a demand curve and uncertainty. Here we examine an assumption hiding underneath that curve: whether changing a price would produce the change in demand that our historical data suggests. Prediction and intervention ask different questions. The difference can change a decision’s sign.</p>
-<p>We will build a small world where we know the answer, hide part of that knowledge, and discover how an apparently sensible analysis goes wrong. The quantities, prices, and customer behavior below are synthetic. They are a laboratory for reasoning, not a recommendation for a real business.</p>
+<p>Let’s return to the shop from our pricing problem. The owner has been keeping records, and today they bring us an exciting discovery: whenever they charge more, they sell more! Perhaps we have found a rather pleasant way to increase sales. Should we tell them to raise the price tomorrow?</p>
+<p>Before changing the price tag, let’s think about what those records are telling us. In the optimal-pricing chapter we worked with a demand curve and the uncertainty around it. Now we have to ask where that curve comes from. Does it describe what happens when we change the price, or does it describe the kinds of days on which the owner chooses a different price? Those can lead us to opposite decisions.</p>
+<p>To untangle this, we are going to build our own little shop in Julia. We will invent its customers and prices, so we can peek behind the observations and see what is really happening. Then we will hide that knowledge and try to recover it from the data, just as we would have to do with a real shop.</p>
 <div id="a-price-is-also-a-decision" class="section level2" number="16.1">
 <h2><span class="header-section-number">16.1</span> A price is also a decision</h2>
-<p>Imagine a shop selling at either 10 or 14 monetary units. On busy days it expects to sell more, so its manager usually chooses the higher price. On quiet days the manager usually chooses the lower price. Demand therefore affects both the chosen price and the quantity sold.</p>
-<p>A causal diagram for this story has three arrows:</p>
+<p>Our shop sells a product at either 10 or 14 monetary units. Its manager knows something we haven’t yet put into the analysis: some days are much busier than others. When a busy day is expected, the manager usually chooses 14. On quiet days, the price is usually 10. So demand is doing two things at once: influencing the price and bringing customers through the door.</p>
+<p>We can sketch that story with three arrows. Each arrow represents an influence we are assuming:</p>
 <ul>
 <li>Expected demand → price.</li>
 <li>Expected demand → quantity sold.</li>
 <li>Price → quantity sold.</li>
 </ul>
-<p>The path through expected demand creates <strong>confounding</strong>. Observing a high price tells us something about the kind of day the manager anticipated. Setting a high price ourselves does not, by itself, make tomorrow a busy day.</p>
-<p>Let <span class="math inline">\(Y_i(0)\)</span> be the number of units day <span class="math inline">\(i\)</span> would sell at the lower price and <span class="math inline">\(Y_i(1)\)</span> the number it would sell at the higher price. These are <em>potential outcomes</em>. We seek the average effect</p>
+<p>Now the trap begins to appear. A high price is also a clue that the manager expected a busy day. This mixing of influences is called <strong>confounding</strong>. Changing the price tag ourselves won’t make a queue of customers appear outside the shop!</p>
+<p>Let’s write down the comparison we actually want. Call the quantity day <span class="math inline">\(i\)</span> would sell at the lower price <span class="math inline">\(Y_i(0)\)</span>, and the quantity it would sell at the higher price <span class="math inline">\(Y_i(1)\)</span>. These two possibilities are called <em>potential outcomes</em>. If we could compare them for every day, their average difference would be</p>
 <p><span class="math display">\[
 \tau = E[Y(1)-Y(0)].
 \]</span></p>
-<p>The problem is that a real day reveals only one outcome. We cannot replay the same day, with the same customers, at another price. Our simulator can reveal both, which makes it useful for checking our reasoning.</p>
+<p>There is a small inconvenience: we only get to live each day once. We cannot rewind Tuesday, keep all its customers, and try another price. Our Julia shop lets us do exactly that, so let’s use it to establish the answer before looking at the historical records.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">include</span>(<span class="fu">joinpath</span>(<span class="fu">pwd</span>(), <span class="st">&quot;16_causal_inference&quot;</span>, <span class="st">&quot;core.jl&quot;</span>))</span>
 <span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="im">using</span> <span class="bu">.CausalPricing</span></span>
 <span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="im">using</span> <span class="bu">Statistics</span></span>
 <span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a></span>
 <span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a>population <span class="op">=</span> <span class="fu">pricing_population</span>(<span class="fl">4000</span>; seed<span class="op">=</span><span class="fl">1601</span>)</span>
 <span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a><span class="fu">mean</span>(population.quantity_high <span class="op">-</span> population.quantity_low)</span></code></pre></div>
-<p>The simulator sets the lower-price quantity to a baseline of 80 on quiet days or 200 on busy days, plus random noise. Raising the price reduces quantity by 20 in either context. Consequently the average causal effect on quantity is exactly −20 in this simulated population. The helper implementation is in <code>16_causal_inference/core.jl</code>; all the examples in this chapter and the accompanying notebook use that same code.</p>
+<p>At the lower price, our shop sells around 80 units on quiet days and 200 on busy days, with some random noise. Raising the price reduces quantity by 20 in either case. We therefore know the answer: the average causal effect is exactly −20. Keep that number in mind; we are about to get an answer pointing in the other direction.</p>
 </div>
 <div id="a-convincing-wrong-answer" class="section level2" number="16.2">
 <h2><span class="header-section-number">16.2</span> A convincing wrong answer</h2>
-<p>Let us reproduce the manager’s policy: the higher price is selected with probability 0.85 on busy days and 0.15 on quiet days. We observe only the resulting price and quantity.</p>
+<p>Let’s put the manager in charge again. They choose the higher price with probability 0.85 on busy days and 0.15 on quiet days. We record the resulting price and quantity, leaving the outcome at the other price hidden.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a>historical <span class="op">=</span> <span class="fu">observe_prices</span>(population; seed<span class="op">=</span><span class="fl">1602</span>,</span>
 <span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a>    high_given_busy<span class="op">=</span><span class="fl">0.85</span>, high_given_quiet<span class="op">=</span><span class="fl">0.15</span>)</span>
 <span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a>naive <span class="op">=</span> <span class="fu">difference_in_means</span>(historical.quantity, historical.high)</span>
 <span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a>naive</span></code></pre></div>
-<p>The naive estimate subtracts average quantity on low-price days from average quantity on high-price days. Its interval describes sampling variability under an independent-groups approximation; it does not correct confounding. Collecting more of the same historical data can make us increasingly confident about the wrong causal answer.</p>
-<p>We should expect a positive association in this setup: high-price observations disproportionately come from busy days. That association is useful for predicting quantity under the historical policy. It is not an estimate of what would happen if we changed that policy.</p>
-<p>This is also a warning about feature importance. Even a highly predictive price feature does not tell us the effect of manipulating price. Predictive accuracy, cross-validation, and a large sample cannot supply a missing causal assumption.</p>
+<p>Our first attempt is simple: subtract the average quantity on low-price days from the average on high-price days. The function also gives us an approximate interval based on variation in the two groups. That interval accounts for sampling variability under an independent-groups approximation, but it has no way to untangle the manager’s choices. Collecting more days under the same policy could make this interval narrower while leaving our causal answer wrong.</p>
+<p>So why do expensive days look so successful? Most of them are busy days! The association can help us predict sales while the manager keeps following the same policy. But we asked what would happen if we changed the policy, and that is the part this comparison has missed.</p>
+<p>We could give these records to a much more elaborate predictive model and find that price is a very useful feature. That would not solve our problem either. Cross-validation could confirm that it predicts well, while the connection between demand and the manager’s decision remains untouched.</p>
 </div>
 <div id="compare-like-with-like" class="section level2" number="16.3">
 <h2><span class="header-section-number">16.3</span> Compare like with like</h2>
-<p>In this simulated world, demand context is observed before price is assigned, and it is the only common cause of price and quantity. We can compare the two prices separately within busy and quiet days, then average those comparisons using the population’s context proportions:</p>
+<p>Fortunately, we also recorded whether the manager expected a busy or a quiet day, before setting the price. In the world we built, this is the only common cause of price and quantity. Why don’t we compare busy days with other busy days, and quiet days with other quiet days? After making those two comparisons, we can average them in proportion to how often each kind of day occurs:</p>
 <p><span class="math display">\[
 \widehat\tau = \sum_{d\in\{\mathrm{quiet},\mathrm{busy}\}}
 \widehat P(D=d)
@@ -558,23 +558,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 \]</span></p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a>adjusted <span class="op">=</span> <span class="fu">adjusted_difference</span>(historical)</span>
 <span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a>(naive<span class="op">=</span>naive.estimate, adjusted<span class="op">=</span>adjusted, known_effect<span class="op">=-</span><span class="fl">20.0</span>)</span></code></pre></div>
-<p>This adjustment has three substantive requirements:</p>
+<p>That gets us much closer to −20. Before celebrating, let’s look at what made the trick work. There are three assumptions hiding inside this comparison:</p>
 <ol style="list-style-type: decimal">
-<li><strong>Conditional exchangeability:</strong> within a demand context, the assigned price carries no further information about the potential outcomes. This is true by construction here. It is an assumption in an observational study, and an unrecorded event or manager’s private forecast could violate it.</li>
-<li><strong>Positivity:</strong> both prices can occur in each context we want to study. If the manager always charges 14 on busy days, we have no comparable busy days priced at 10. A regression can still print an answer, but that answer relies on extrapolation.</li>
-<li><strong>Consistency and no relevant interference:</strong> the recorded outcome corresponds to the stated intervention, and one unit’s price assignment does not change another unit’s outcome in a way the design ignores. Customers moving purchases between days would complicate our example.</li>
+<li><strong>Conditional exchangeability.</strong> Once we know whether a day is busy or quiet, the chosen price gives us no further information about its potential outcomes. We built our shop this way. With real records, an unrecorded festival or the manager’s private forecast could spoil that assumption.</li>
+<li><strong>Positivity.</strong> We need both prices to occur in each kind of day. If the manager always charges 14 on busy days, where would we find a comparable busy day priced at 10? A regression may still produce a number, but it would have to extrapolate.</li>
+<li><strong>Consistency and no relevant interference.</strong> The recorded outcome must correspond to the price intervention we described, and assignments must not affect other days in a way our design ignores. Imagine customers seeing today’s high price and deciding to buy tomorrow instead. We would then need a story about several days together.</li>
 </ol>
-<p>The choice of adjustment variables follows the causal story. A variable measured after the price change, such as purchases completed, cannot automatically be treated as a confounder. Adjusting for a mediator can remove part of the effect we wanted to estimate; adjusting for a collider can introduce bias.</p>
-<p>For this chapter we report the standardized point estimate only. A useful extension is a bootstrap that resamples independent days and recomputes both the context weights and the within-context estimates. Reusing the naive interval for the adjusted estimate would be incorrect.</p>
+<p>Does this mean we should adjust for every column in the spreadsheet? That can get us into more trouble. Purchases completed after the price change are part of what we are trying to explain, rather than a pre-existing reason for the manager’s choice. Adjusting for an intermediate step, or <em>mediator</em>, can remove part of the effect we wanted to measure. Adjusting for a common consequence, or <em>collider</em>, can introduce a new bias. The arrows in our story help us decide which comparisons make sense.</p>
+<p>Our adjusted calculation currently gives a point estimate. To put uncertainty around it, try bootstrapping independent days and recomputing both the context proportions and the two within-context comparisons each time. The interval from our first, unadjusted calculation cannot simply be carried over to this new estimate.</p>
 </div>
 <div id="design-an-experiment" class="section level2" number="16.4">
 <h2><span class="header-section-number">16.4</span> Design an experiment</h2>
-<p>If the shop can randomize prices, it can break the connection between expected demand and assignment. Here each day receives either price with probability one half, independently of demand. We randomize the assignment, not the outcomes.</p>
+<p>Suppose the manager agrees to let us choose prices for a while. We could toss a fair coin each day: one outcome gives price 10, the other gives price 14. The coin doesn’t know whether the day will be busy. This breaks the connection that caused our original problem, while leaving customers free to respond to the chosen price.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a>trial <span class="op">=</span> <span class="fu">observe_prices</span>(population; seed<span class="op">=</span><span class="fl">1603</span>,</span>
 <span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a>    high_given_busy<span class="op">=</span><span class="fl">0.5</span>, high_given_quiet<span class="op">=</span><span class="fl">0.5</span>)</span>
 <span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a>trial_effect <span class="op">=</span> <span class="fu">difference_in_means</span>(trial.quantity, trial.high)</span>
 <span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a>trial_effect</span></code></pre></div>
-<p>With the specified seeds and Julia 1.10.10, the run gives the following rounded estimates. They describe this simulated sample, not universal performance guarantees.</p>
+<p>Now let’s put our attempts side by side. Running the examples with the given seeds in Julia 1.10.10 gives these rounded results:</p>
 <table>
 <thead>
 <tr>
@@ -601,25 +601,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </tr>
 </tbody>
 </table>
-<p>Randomization makes the unadjusted difference in means an appropriate estimator for this experiment. Finite samples can still have imbalanced demand, so the estimate need not equal −20. The displayed interval is the estimate plus or minus 1.96 estimated standard errors, using the two groups’ sample variances. It is a large-sample approximation, not a guarantee that this particular interval contains the effect.</p>
-<p>Before running a real experiment, specify the unit of assignment, the outcome, the duration, the analysis, and how you will handle missing observations. If randomization is by store, the analysis must respect store-level dependence. If customers ignore their assigned offer, the effect of assignment and the effect of actually receiving a price are different estimands. Repeatedly checking results and stopping at the first favorable interval also changes its interpretation.</p>
-<p>A randomized study answers a question about its participants, prices, and period. Applying it to another market requires an argument about what transfers. Randomization does not make the future identical to the past.</p>
+<p>The simple difference in means is now estimating the effect we wanted. It is not exactly −20 because a finite sequence of coin tosses can still leave one group with more busy days than the other. The interval adds and subtracts 1.96 estimated standard errors, calculated from the two groups’ sample variances. This is a large-sample approximation: randomization helps us reason about uncertainty, but it doesn’t guarantee that every interval will contain the true effect.</p>
+<p>Of course, running the experiment means making more decisions than tossing a coin. Are we assigning prices to days, customers, or whole stores? What will we measure, for how long, and what will we do with missing records? Decide these things before the results arrive. If whole stores receive a price, observations within a store are related and the analysis must account for that. If customers ignore an assigned offer, the effect of receiving the offer and the effect of actually paying that price become different questions. Even the stopping rule matters: peeking every morning and stopping at the first favorable interval changes how that interval should be interpreted.</p>
+<p>And remember which shop we studied. Customers in another market, or the same customers next year, may respond differently. We still need to think about what carries over when we take an experimental result somewhere new.</p>
 </div>
 <div id="the-outcome-must-match-the-decision" class="section level2" number="16.5">
 <h2><span class="header-section-number">16.5</span> The outcome must match the decision</h2>
-<p>A quantity decrease is not automatically a bad business result. With unit cost 4, profit before fixed costs is</p>
+<p>At this point the owner might object: ‘You have told me how many units I lose, but what happens to my profit?’ A fair question. If each unit costs 4 to produce, profit before fixed costs is</p>
 <p><span class="math display">\[
 \mathrm{profit}=(\mathrm{price}-4)\times\mathrm{quantity}.
 \]</span></p>
-<p>We can estimate the effect on profit using the same randomized assignments and observed outcomes:</p>
+<p>We already have the randomized prices and the quantities sold. Let’s use them to make the comparison the owner cares about:</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a>profit_effect <span class="op">=</span> <span class="fu">difference_in_means</span>(trial.profit, trial.high)</span>
 <span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a>profit_effect</span></code></pre></div>
-<p>The quantity and profit effects can have different signs. This is why we decide what to measure before examining the results. Short-term profit also leaves out customer retention, fairness considerations, and operational constraints. A policy is not justified by one favorable number.</p>
-<p>In the simulated world we can check the profit estimand directly:</p>
+<p>Selling fewer units can still bring in more money when the margin on each unit increases. This is why choosing the outcome is part of designing the experiment. We should also ask what happens after the experiment ends: will customers keep returning, can the shop meet demand, and who bears the cost of a price change? Short-term profit answers one part of the owner’s question.</p>
+<p>Since we built this shop ourselves, we can peek at both possible profits for each day and check the answer directly:</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a>oracle_profit_effect <span class="op">=</span> <span class="fu">mean</span>(</span>
 <span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a>    (<span class="fl">14</span> <span class="op">-</span> <span class="fl">4</span>) <span class="op">.*</span> population.quantity_high <span class="op">-</span></span>
 <span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a>    (<span class="fl">10</span> <span class="op">-</span> <span class="fl">4</span>) <span class="op">.*</span> population.quantity_low)</span></code></pre></div>
-<p>This oracle is available only because we invented both potential outcomes. In real data, that missing counterfactual is precisely what the design and assumptions must address.</p>
+<p>Our simulator gets to play oracle because it knows both potential outcomes. Back at a real shop, we only get one of them. Everything we have done with adjustment and randomization was a way of dealing with that missing alternative.</p>
 </div>
 <div id="experiment-with-the-assumptions" class="section level2" number="16.6">
 <h2><span class="header-section-number">16.6</span> Experiment with the assumptions</h2>
@@ -629,7 +629,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="summary" class="section level2" number="16.7">
 <h2><span class="header-section-number">16.7</span> Summary</h2>
-<p>We used historical data to obtain a misleading price–quantity association, recovered a causal effect under explicit adjustment assumptions, and estimated it through randomization. The lesson is to specify the intervention and target population before selecting an estimator. A more accurate forecast alone cannot tell us what our intervention will do.</p>
+<p>We started with records suggesting that higher prices bring more sales. Once we looked at how the manager chose those prices, the surprise disappeared: busy days were hiding the price effect. Comparing similar days helped under our stated assumptions, and randomizing prices gave us another way to estimate the effect. Before choosing a model for our next decision, let’s ask the same questions: what exactly are we changing, for whom, and what makes the comparison fair?</p>
+<p>The chapter and its Pluto notebook share the functions in <code>16_causal_inference/core.jl</code>, so you can change the simulated shop in one place and explore the consequences in both.</p>
 <p>Further reading: Hernán and Robins, <a href="https://miguelhernan.org/whatifbook">Causal Inference: What If</a>, provides a detailed treatment of potential outcomes, exchangeability, positivity, and study design. The <a href="https://mc-stan.org/docs/stan-users-guide/poststratification.html">Stan User’s Guide on poststratification</a> discusses related ideas for averaging estimates over a target population.</p>
 </div>
 </div>
