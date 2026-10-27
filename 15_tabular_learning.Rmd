@@ -1,0 +1,160 @@
+# Learning from messy tabular data {#tabular-learning}
+
+## When will my delivery arrive?
+
+A neighborhood delivery service asks us to estimate how long an order will take. Its records look pleasantly ordinary: one row per delivery, a distance, a weather category, and a duration in minutes. There are no images, no differential equations, and no millions of parameters. Surely this will be easy.
+
+Then we discover missing distances. Someone has encoded weather as numbers, making a storm appear to be exactly three times a clear day. A colleague has helpfully added the driver's final arrival timestamp to the features. The model looks wonderful in a notebook and is useless before a delivery happens.
+
+This chapter develops a complete, small tabular experiment. We will prepare data, fit a linear model directly, compare regularized models and trees through MLJ, and evaluate one frozen choice. The useful skill is not memorizing an estimator's constructor. It is keeping every learned step inside the boundary of the data it is allowed to see.
+
+## Start with the prediction time
+
+Our prediction is made when an order is placed. Distance and the weather information available at that moment are eligible inputs. The eventual arrival time is the target and cannot also be a feature. A retrospectively measured journey duration, a final driver status, or a weather observation collected after arrival can leak the answer even if its column has an innocent name.
+
+We create independent synthetic deliveries with a known mechanism. Duration increases with distance, weather adds delay, and long journeys have an extra nonlinear penalty. Random noise represents factors we did not observe. We then hide 15 percent of distances independently of the outcome. That last assumption is convenient for this exercise; a real system whose GPS fails mostly during storms would have a different missing-data problem.
+
+The pure Julia parts require only standard libraries. Execute their code from the repository root.
+
+```{julia}
+include("15_tabular_learning/core.jl")
+import .TabularLearning
+using Statistics
+
+deliveries = TabularLearning.delivery_data()
+delivery_rows = TabularLearning.split_rows(length(deliveries.minutes))
+```
+
+There are 1,800 deliveries by default. The target is measured in minutes, so a prediction error of five means five minutes, not five percent. We again reserve 60 percent for training, 20 percent for validation, and 20 percent for testing. Real repeated customers, drivers, or days may require grouped or chronological splits. Our random split is appropriate because independence is a property of this generator.
+
+## Fit the preparation, not just the predictor
+
+A median imputer contains a learned parameter: the median. A standardizer contains a learned scale. A categorical encoder contains a vocabulary. These belong to the fitted model just as much as regression coefficients do.
+
+```{julia}
+preparation = TabularLearning.fit_preprocessor(deliveries, delivery_rows.train)
+training_features = TabularLearning.transform(preparation, deliveries, delivery_rows.train)
+validation_features = TabularLearning.transform(preparation, deliveries, delivery_rows.validation)
+training_minutes = deliveries.minutes[delivery_rows.train]
+validation_minutes = deliveries.minutes[delivery_rows.validation]
+```
+
+Our preparation performs four operations:
+
+1. Learn the median observed distance from training rows and use it to fill missing values.
+2. Center distances by that median and divide by the standard deviation of the filled training distances.
+3. Add an indicator distinguishing a missing distance from a genuinely observed distance equal to the median.
+4. Encode weather using indicator columns, omitting one reference category.
+
+The implementation guards against an all-missing training distance column. With a constant distance column, it uses a scale of one rather than dividing by zero. These are small decisions, but they should be explicit.
+
+For the generated weather categories, the sorted vocabulary is `clear`, `rain`, `storm`. With an intercept in the regression, we need only two indicators: one for rain and one for storm. Clear weather is represented by two zeros. If we included all three indicators and an intercept, one column would be an exact linear combination of the others.
+
+Why not encode the weather as 1, 2, and 3? A linear model would then assume that moving from clear to rain has the same effect as moving from rain to storm. Categories do not automatically possess that numeric geometry. Trees do not require feature scaling, but using the same prepared features gives our comparison a simple, shared input contract.
+
+The encoder rejects a weather category that never appeared in training. Treating a new category as clear weather would silently make an unsupported assumption. A production service could instead define an explicit unknown category, pool rare categories, or route the case for review. Whichever policy we choose must exist during training and evaluation as well as deployment.
+
+## A baseline and a linear model we can inspect
+
+Before training anything complicated, predict the mean training duration for every delivery. This uses no knowledge of individual deliveries but gives us a concrete baseline.
+
+```{julia}
+mean_prediction = fill(mean(training_minutes), length(validation_minutes))
+baseline_validation_rmse = TabularLearning.rmse(validation_minutes, mean_prediction)
+```
+
+For a linear model, we add an intercept column to the feature matrix and choose coefficients minimizing squared residuals:
+
+$$\hat\beta = \mathop{\mathrm{argmin}}_\beta \|X\beta-y\|_2^2.$$
+
+The executable implementation uses Julia's least-squares operator, `X \ y`. We do not explicitly calculate the inverse of `X'X`: forming that inverse is unnecessary and can make numerical problems worse. This is still a small model we can understand, even though Julia delegates the numerical linear algebra to tested routines.
+
+```{julia}
+linear_coefficients = TabularLearning.fit_linear(training_features, training_minutes)
+linear_validation_prediction = TabularLearning.predict_linear(linear_coefficients, validation_features)
+linear_validation_report = (
+    rmse=TabularLearning.rmse(validation_minutes, linear_validation_prediction),
+    mae=TabularLearning.mae(validation_minutes, linear_validation_prediction),
+    baseline_rmse=baseline_validation_rmse,
+)
+linear_validation_report
+```
+
+Root mean squared error, or RMSE, is `sqrt(mean((prediction-target).^2))`. It gives large mistakes extra influence and remains in minutes. Mean absolute error, or MAE, is the mean absolute difference, also in minutes. Neither is automatically the company's business objective. If arriving later than promised is much worse than arriving early, an asymmetric loss or a predictive quantile may be more appropriate.
+
+The linear coefficients describe associations in this model. They do not tell us what would happen if we could intervene on the weather or shorten a particular route. We will return to that distinction in the causal chapter.
+
+## Regularization is a choice to validate
+
+A more flexible model can fit quirks of the training data. Ridge regression discourages large non-intercept coefficients by adding a penalty:
+
+$$\frac{1}{2}\|X\beta-y\|_2^2 + \frac{n\lambda}{2}\sum_{j>0}\beta_j^2.$$
+
+Here `n` is the number of training rows, `lambda` controls the penalty, and the intercept is excluded. We standardize numerical features because penalizing coefficient magnitudes otherwise depends strongly on the units in which a feature was measured. Changing kilometers into meters should not accidentally become our regularization strategy.
+
+Our from-scratch function implements ridge as an augmented least-squares system: append scaled identity rows for the penalized coefficients and append zeros to the response. With `lambda=0`, it returns ordinary least squares.
+
+```{julia}
+ridge_coefficients = TabularLearning.fit_linear(training_features, training_minutes; lambda=0.1)
+ridge_validation_rmse = TabularLearning.rmse(validation_minutes,
+                            TabularLearning.predict_linear(ridge_coefficients, validation_features))
+```
+
+We should not promise ridge will win on this dataset. There are few features and many observations, and the true duration mechanism is nonlinear. Regularization addresses unstable estimation and overfitting; it cannot create a missing nonlinear relationship by itself.
+
+## Compare alternatives through MLJ
+
+MLJ supplies a common interface for fitting models provided by different Julia packages. A model describes the algorithm and its settings. A *machine* binds that model to training data and holds its learned state. We can change the algorithm without writing a different evaluation procedure for each one.
+
+The chapter has its own pinned environment. Install it once from the repository root:
+
+```sh
+julia --project=15_tabular_learning -e 'using Pkg; Pkg.instantiate()'
+julia --project=15_tabular_learning 15_tabular_learning/mlj_comparison.jl
+```
+
+The comparison uses `RidgeRegressor` from MLJLinearModels and `DecisionTreeRegressor` through MLJDecisionTreeInterface. The complete executable script is `15_tabular_learning/mlj_comparison.jl`; the core operations look like this:
+
+```julia
+using MLJ
+Ridge = @load RidgeRegressor pkg=MLJLinearModels verbosity=0
+Tree = @load DecisionTreeRegressor pkg=DecisionTree verbosity=0
+
+train_table = MLJ.table(training_features)
+validation_table = MLJ.table(validation_features)
+mach = machine(Ridge(lambda=0.1), train_table, training_minutes)
+fit!(mach; verbosity=0)
+validation_prediction = predict(mach, validation_table)
+```
+
+A tree partitions feature space into regions and predicts a constant within each region. Increasing its depth allows more complicated boundaries but also more opportunities to fit noise. We compare ridge penalties `0.0`, `0.01`, `0.1`, and `1.0`, and tree depths 2, 4, and 6 with a minimum leaf size of 10. Those choices are declared before looking at the test results.
+
+Each candidate is fitted on training data and scored using validation RMSE. The script prints every validation score, selects the first minimum, and evaluates only that selected machine on the test set. It also reports the mean-prediction baseline on the test set. All transformations still use the original training preparation. We intentionally do not refit on training plus validation here, so the evaluated machine is exactly the one selected.
+
+```{julia, eval=FALSE}
+include("15_tabular_learning/mlj_comparison.jl")
+comparison = compare_models()
+comparison
+```
+
+This chunk is disabled during the legacy book render because it uses a separate MLJ environment; run the command above to execute it. Its output is a measurement you generate, not a hardcoded leaderboard. A tree may capture the long-distance penalty, but missing distance still hides information that no estimator can recover perfectly.
+
+If we replace the validation split with cross-validation, preparation must be fitted separately inside each training fold. Transforming the full dataset once before calling a cross-validation evaluator would leak held-out information. A pipeline can enforce this boundary, but merely using the word "pipeline" does not prove we have respected it.
+
+## Inspect failures before expanding the model
+
+A single RMSE can conceal a weak subgroup. After freezing the procedure, inspect residuals for observed versus missing distances, weather categories, and short versus long trips. Report subgroup sizes: the biggest-looking difference may come from the smallest group. Such analysis can generate hypotheses for the next model version, but further choices based on the test set require a new final assessment.
+
+Some failures require better data rather than a larger model. If a missing distance could mean either one kilometer or twelve, its imputed value cannot tell those cases apart. If weather categories change meaning, a sophisticated estimator inherits the inconsistency. If the customer needs a delivery interval rather than a point estimate, we must evaluate uncertainty coverage rather than pretending RMSE answers that question.
+
+## Exercises
+
+First, remove the missingness indicator and compare validation errors without examining the test set. Next, change the synthetic missing-data mechanism so that long trips are more likely to lose distance information. Does the same preparation remain appropriate? Finally, introduce an unseen weather category and make an explicit policy for it; test that training and prediction apply the policy consistently.
+
+The accompanying Pluto notebook exposes the ridge penalty and tree depth using sliders. Its displayed errors use validation data, so exploration does not repeatedly reveal the test set. Select a configuration before running the separate final comparison.
+
+## References
+
+- [MLJ: Loading Model Code](https://juliaai.github.io/MLJ.jl/stable/loading_model_code/)
+- [MLJLinearModels: Model API and objectives](https://juliaai.github.io/MLJLinearModels.jl/dev/api/)
+- [DecisionTree.jl: MLJ integration](https://github.com/JuliaAI/DecisionTree.jl)

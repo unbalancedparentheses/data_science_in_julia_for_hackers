@@ -10,10 +10,13 @@ CHAPTERS = ["index", "science-technology-and-epistemology", "meeting-julia",
             "probability-introduction", "spam-filter", "probabilistic-programming",
             "escaping-from-mars", "football-simulation", "basketball-shots",
             "optimal-pricing", "image-classification", "ultima-online",
-            "ultima-continued", "time-series"]
+            "ultima-continued", "time-series", "model-evaluation",
+            "tabular-learning", "causal-inference", "bayesian-workflow"]
 PARTS = {1: ["I Data Science and Julia"], 3: ["II Bayesian Statistics"],
          10: ["III Machine Learning", "IV Deep Learning"],
-         11: ["V Scientific Machine Learning"], 13: ["VI Time Series and Forecasting"]}
+         11: ["V Scientific Machine Learning"], 13: ["VI Time Series and Forecasting"],
+         14: ["VII Evaluating and Improving Models"],
+         16: ["VIII Causal Inference and Bayesian Workflow"]}
 
 
 def chapter_entries(name):

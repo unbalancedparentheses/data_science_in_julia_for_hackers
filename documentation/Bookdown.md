@@ -62,3 +62,24 @@ These checks cover classifier priors, repeated words, long emails, optional word
 limits, empty inputs, image output directories, navigation structure, local
 links, search coverage, and published algorithm/source consistency. They do not
 replace executing the full notebooks and inspecting rendered chapters.
+
+## Render the new chapters
+
+Chapters 14–17 have a lightweight publishing path that uses Pandoc (standalone
+or bundled with Quarto) to typeset the `.Rmd` prose and Julia code into the
+existing GitBook layout:
+
+```sh
+python3 scripts/render_new_chapters.py
+python3 scripts/update_navigation.py
+python3 scripts/update_search.py
+python3 scripts/render_new_chapters.py --check
+python3 -m unittest discover -s tests -p 'test_*.py'
+```
+
+Set `PANDOC` to a Pandoc executable or `QUARTO` to a Quarto executable when it is
+not on `PATH`. CI uses Quarto 1.10.19 so the bundled Pandoc version is fixed.
+The renderer does not execute Julia or invent output: the
+chapter-local Julia tests validate the computations separately. CI runs both
+the computation tests and the publishing checks. Generated pages are committed
+alongside their sources so GitHub Pages can serve them directly.

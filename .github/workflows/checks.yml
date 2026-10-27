@@ -19,12 +19,17 @@ jobs:
         with:
           version: '1.10'
       - uses: julia-actions/cache@v2
+      - uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: '1.10.19'
       - name: Install test dependencies
         run: julia --project=tests -e 'using Pkg; Pkg.instantiate()'
       - name: Julia regression tests
         run: julia --project=tests tests/runtests.jl
       - name: Site regression tests
         run: python3 -m unittest discover -s tests -p 'test_*.py'
+      - name: New chapter HTML is current
+        run: python3 scripts/render_new_chapters.py --check
       - name: Generated navigation and search are current
         run: |
           python3 scripts/update_navigation.py
@@ -32,3 +37,54 @@ jobs:
           git diff --exit-code -- docs
       - name: Whitespace checks
         run: git diff --check
+
+  new-chapters:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - chapter: 14_model_evaluation
+            test: runtests.jl
+          - chapter: 15_tabular_learning
+            test: runtests.jl
+          - chapter: 16_causal_inference
+            test: test.jl
+          - chapter: 17_bayesian_workflow
+            test: test.jl
+    steps:
+      - uses: actions/checkout@v4
+      - uses: julia-actions/setup-julia@v2
+        with:
+          version: '1.10'
+      - uses: julia-actions/cache@v2
+      - name: Instantiate chapter environment
+        shell: bash
+        run: |
+          if [ -f '${{ matrix.chapter }}/Project.toml' ]; then
+            julia --project='${{ matrix.chapter }}' -e 'using Pkg; Pkg.instantiate()'
+          fi
+      - name: Run chapter regression tests
+        run: julia --startup-file=no --project='${{ matrix.chapter }}' '${{ matrix.chapter }}/${{ matrix.test }}'
+      - name: Run MLJ integration tests
+        if: matrix.chapter == '15_tabular_learning'
+        run: julia --startup-file=no --project=15_tabular_learning 15_tabular_learning/integration_tests.jl
+
+  quarto-pilot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: julia-actions/setup-julia@v2
+        with:
+          version: '1.10'
+      - uses: julia-actions/cache@v2
+      - uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: '1.10.19'
+      - name: Render native Julia pilot
+        run: quarto render publishing/quarto
+      - uses: actions/upload-artifact@v4
+        with:
+          name: quarto-julia-pilot
+          path: publishing/quarto/_site/decision-costs.html
+          if-no-files-found: error

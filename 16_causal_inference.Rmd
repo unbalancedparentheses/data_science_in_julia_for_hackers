@@ -1,0 +1,147 @@
+# From prediction to intervention {#causal-inference}
+
+A shop's historical data contains a tempting result: on days when it charges more, it sells more. A good predictive model learns this pattern. Should the shop raise its prices tomorrow?
+
+The optimal-pricing chapter gives us a way to reason about a demand curve and uncertainty. Here we examine an assumption hiding underneath that curve: whether changing a price would produce the change in demand that our historical data suggests. Prediction and intervention ask different questions. The difference can change a decision's sign.
+
+We will build a small world where we know the answer, hide part of that knowledge, and discover how an apparently sensible analysis goes wrong. The quantities, prices, and customer behavior below are synthetic. They are a laboratory for reasoning, not a recommendation for a real business.
+
+## A price is also a decision
+
+Imagine a shop selling at either 10 or 14 monetary units. On busy days it expects to sell more, so its manager usually chooses the higher price. On quiet days the manager usually chooses the lower price. Demand therefore affects both the chosen price and the quantity sold.
+
+A causal diagram for this story has three arrows:
+
+- Expected demand → price.
+- Expected demand → quantity sold.
+- Price → quantity sold.
+
+The path through expected demand creates **confounding**. Observing a high price tells us something about the kind of day the manager anticipated. Setting a high price ourselves does not, by itself, make tomorrow a busy day.
+
+Let \(Y_i(0)\) be the number of units day \(i\) would sell at the lower price and \(Y_i(1)\) the number it would sell at the higher price. These are *potential outcomes*. We seek the average effect
+
+\[
+\tau = E[Y(1)-Y(0)].
+\]
+
+The problem is that a real day reveals only one outcome. We cannot replay the same day, with the same customers, at another price. Our simulator can reveal both, which makes it useful for checking our reasoning.
+
+```{julia}
+include(joinpath(pwd(), "16_causal_inference", "core.jl"))
+using .CausalPricing
+using Statistics
+
+population = pricing_population(4000; seed=1601)
+mean(population.quantity_high - population.quantity_low)
+```
+
+The simulator sets the lower-price quantity to a baseline of 80 on quiet days or 200 on busy days, plus random noise. Raising the price reduces quantity by 20 in either context. Consequently the average causal effect on quantity is exactly −20 in this simulated population. The helper implementation is in `16_causal_inference/core.jl`; all the examples in this chapter and the accompanying notebook use that same code.
+
+## A convincing wrong answer
+
+Let us reproduce the manager's policy: the higher price is selected with probability 0.85 on busy days and 0.15 on quiet days. We observe only the resulting price and quantity.
+
+```{julia}
+historical = observe_prices(population; seed=1602,
+    high_given_busy=0.85, high_given_quiet=0.15)
+naive = difference_in_means(historical.quantity, historical.high)
+naive
+```
+
+The naive estimate subtracts average quantity on low-price days from average quantity on high-price days. Its interval describes sampling variability under an independent-groups approximation; it does not correct confounding. Collecting more of the same historical data can make us increasingly confident about the wrong causal answer.
+
+We should expect a positive association in this setup: high-price observations disproportionately come from busy days. That association is useful for predicting quantity under the historical policy. It is not an estimate of what would happen if we changed that policy.
+
+This is also a warning about feature importance. Even a highly predictive price feature does not tell us the effect of manipulating price. Predictive accuracy, cross-validation, and a large sample cannot supply a missing causal assumption.
+
+## Compare like with like
+
+In this simulated world, demand context is observed before price is assigned, and it is the only common cause of price and quantity. We can compare the two prices separately within busy and quiet days, then average those comparisons using the population's context proportions:
+
+\[
+\widehat\tau = \sum_{d\in\{\mathrm{quiet},\mathrm{busy}\}}
+\widehat P(D=d)
+\left[\overline Y_{A=1,D=d}-\overline Y_{A=0,D=d}\right].
+\]
+
+```{julia}
+adjusted = adjusted_difference(historical)
+(naive=naive.estimate, adjusted=adjusted, known_effect=-20.0)
+```
+
+This adjustment has three substantive requirements:
+
+1. **Conditional exchangeability:** within a demand context, the assigned price carries no further information about the potential outcomes. This is true by construction here. It is an assumption in an observational study, and an unrecorded event or manager's private forecast could violate it.
+2. **Positivity:** both prices can occur in each context we want to study. If the manager always charges 14 on busy days, we have no comparable busy days priced at 10. A regression can still print an answer, but that answer relies on extrapolation.
+3. **Consistency and no relevant interference:** the recorded outcome corresponds to the stated intervention, and one unit's price assignment does not change another unit's outcome in a way the design ignores. Customers moving purchases between days would complicate our example.
+
+The choice of adjustment variables follows the causal story. A variable measured after the price change, such as purchases completed, cannot automatically be treated as a confounder. Adjusting for a mediator can remove part of the effect we wanted to estimate; adjusting for a collider can introduce bias.
+
+For this chapter we report the standardized point estimate only. A useful extension is a bootstrap that resamples independent days and recomputes both the context weights and the within-context estimates. Reusing the naive interval for the adjusted estimate would be incorrect.
+
+## Design an experiment
+
+If the shop can randomize prices, it can break the connection between expected demand and assignment. Here each day receives either price with probability one half, independently of demand. We randomize the assignment, not the outcomes.
+
+```{julia}
+trial = observe_prices(population; seed=1603,
+    high_given_busy=0.5, high_given_quiet=0.5)
+trial_effect = difference_in_means(trial.quantity, trial.high)
+trial_effect
+```
+
+With the specified seeds and Julia 1.10.10, the run gives the following rounded estimates. They describe this simulated sample, not universal performance guarantees.
+
+| Analysis | Estimated change in units sold |
+|:--|--:|
+| Historical, unadjusted | +64.51 |
+| Historical, adjusted for demand | −19.84 |
+| Randomized experiment | −20.62 |
+| Known synthetic effect | −20.00 |
+
+Randomization makes the unadjusted difference in means an appropriate estimator for this experiment. Finite samples can still have imbalanced demand, so the estimate need not equal −20. The displayed interval is the estimate plus or minus 1.96 estimated standard errors, using the two groups' sample variances. It is a large-sample approximation, not a guarantee that this particular interval contains the effect.
+
+Before running a real experiment, specify the unit of assignment, the outcome, the duration, the analysis, and how you will handle missing observations. If randomization is by store, the analysis must respect store-level dependence. If customers ignore their assigned offer, the effect of assignment and the effect of actually receiving a price are different estimands. Repeatedly checking results and stopping at the first favorable interval also changes its interpretation.
+
+A randomized study answers a question about its participants, prices, and period. Applying it to another market requires an argument about what transfers. Randomization does not make the future identical to the past.
+
+## The outcome must match the decision
+
+A quantity decrease is not automatically a bad business result. With unit cost 4, profit before fixed costs is
+
+\[
+\mathrm{profit}=(\mathrm{price}-4)\times\mathrm{quantity}.
+\]
+
+We can estimate the effect on profit using the same randomized assignments and observed outcomes:
+
+```{julia}
+profit_effect = difference_in_means(trial.profit, trial.high)
+profit_effect
+```
+
+The quantity and profit effects can have different signs. This is why we decide what to measure before examining the results. Short-term profit also leaves out customer retention, fairness considerations, and operational constraints. A policy is not justified by one favorable number.
+
+In the simulated world we can check the profit estimand directly:
+
+```{julia}
+oracle_profit_effect = mean(
+    (14 - 4) .* population.quantity_high -
+    (10 - 4) .* population.quantity_low)
+```
+
+This oracle is available only because we invented both potential outcomes. In real data, that missing counterfactual is precisely what the design and assumptions must address.
+
+## Experiment with the assumptions
+
+Open `16_causal_inference/notebook.jl` in Pluto. Its slider increases the manager's tendency to charge more on busy days. Compare the historical association, adjusted estimate, and randomized estimate as confounding grows. Near the ends of the slider, inspect how few observations remain in the less common price/context combinations.
+
+Then change the simulator. Introduce a hidden variable affecting both assignment and demand, but leave it out of adjustment. Alternatively, allow customers to postpone purchases after seeing a high price. Which assumption fails? What experimental unit or additional measurement could address that failure?
+
+A final exercise is to give busy and quiet days different causal effects. Standardize to the observed context mixture, then to a target population that is mostly quiet. The conditional effects can stay unchanged while the average policy effect changes.
+
+## Summary
+
+We used historical data to obtain a misleading price–quantity association, recovered a causal effect under explicit adjustment assumptions, and estimated it through randomization. The lesson is to specify the intervention and target population before selecting an estimator. A more accurate forecast alone cannot tell us what our intervention will do.
+
+Further reading: Hernán and Robins, [Causal Inference: What If](https://miguelhernan.org/whatifbook), provides a detailed treatment of potential outcomes, exchangeability, positivity, and study design. The [Stan User's Guide on poststratification](https://mc-stan.org/docs/stan-users-guide/poststratification.html) discusses related ideas for averaging estimates over a target population.

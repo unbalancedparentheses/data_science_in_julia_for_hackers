@@ -29,6 +29,26 @@ class Lists(HTMLParser):
             assert self.stack.pop() == tag, 'Mismatched list closing tag'
 
 
+class JuliaBlocks(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.active = False
+        self.blocks = []
+
+    def handle_starttag(self, tag, attrs):
+        if tag == 'code' and 'julia' in dict(attrs).get('class', '').split():
+            self.active = True
+            self.blocks.append('')
+
+    def handle_data(self, text):
+        if self.active:
+            self.blocks[-1] += text
+
+    def handle_endtag(self, tag):
+        if tag == 'code':
+            self.active = False
+
+
 class SiteTests(unittest.TestCase):
     def test_navigation_is_balanced_and_identical(self):
         summaries = []
@@ -73,6 +93,62 @@ class SiteTests(unittest.TestCase):
             self.assertNotRegex(text, r'^cd\(', source.name)
             for project in re.findall(r'Pkg.activate\("([^\"]+)"\)', text):
                 self.assertTrue((ROOT / project / 'Project.toml').is_file(), source.name)
+
+
+    def test_new_chapter_code_is_published_verbatim(self):
+        cases = [('14_model_evaluation', 'model-evaluation'),
+                 ('15_tabular_learning', 'tabular-learning'),
+                 ('16_causal_inference', 'causal-inference'),
+                 ('17_bayesian_workflow', 'bayesian-workflow')]
+        for source, page in cases:
+            blocks = re.findall(r'^```(?:\{julia[^\n]*\}|julia)[ \t]*\n(.*?)^```',
+                                (ROOT / (source + '.Rmd')).read_text(), re.S | re.M)
+            parser = JuliaBlocks()
+            parser.feed((ROOT / 'docs' / (page + '.html')).read_text())
+            self.assertTrue(blocks, source)
+            self.assertEqual([b.rstrip() for b in parser.blocks], [b.rstrip() for b in blocks], source)
+
+    def test_readme_chapter_links_exist(self):
+        links = re.findall(r'https://datasciencejuliahackers.com/([^\s)#]+\.html)',
+                           (ROOT / 'README.md').read_text())
+        self.assertGreaterEqual(len(links), 17)
+        for link in links:
+            self.assertTrue((ROOT / 'docs' / link).is_file(), link)
+        self.assertNotIn('datasciencejuliahackers.com:wq', (ROOT / 'README.md').read_text())
+
+    def test_new_chapter_sequence(self):
+        sequence = ['time-series', 'model-evaluation', 'tabular-learning',
+                    'causal-inference', 'bayesian-workflow']
+        for previous, following in zip(sequence, sequence[1:]):
+            before = (ROOT / 'docs' / (previous + '.html')).read_text()
+            after = (ROOT / 'docs' / (following + '.html')).read_text()
+            self.assertIn(f'<link rel="next" href="{following}.html"', before)
+            self.assertIn(f'<link rel="prev" href="{previous}.html"', after)
+            self.assertRegex(before, f'href="{following}.html" class="navigation navigation-next"')
+            self.assertRegex(after, f'href="{previous}.html" class="navigation navigation-prev"')
+
+
+    def test_download_menu_does_not_advertise_missing_artifacts(self):
+        for page in (ROOT / 'docs').glob('*.html'):
+            match = re.search(r'"download":\s*(null|\[[^\]]*\])', page.read_text())
+            self.assertIsNotNone(match, page.name)
+            downloads = json.loads(match[1]) or []
+            for filename in downloads:
+                self.assertTrue((ROOT / 'docs' / filename).is_file(), (page.name, filename))
+
+
+    def test_new_chapter_metadata_and_math(self):
+        cases = [(14, '14_model_evaluation', 'model-evaluation'),
+                 (15, '15_tabular_learning', 'tabular-learning'),
+                 (16, '16_causal_inference', 'causal-inference'),
+                 (17, '17_bayesian_workflow', 'bayesian-workflow')]
+        for number, source, page in cases:
+            markdown = (ROOT / (source + '.Rmd')).read_text()
+            rendered = (ROOT / 'docs' / (page + '.html')).read_text()
+            self.assertIn(f'<title>Chapter {number} ', rendered)
+            self.assertIn('<html lang="en" xml:lang="en">', rendered)
+            display_count = markdown.count('\\[') + markdown.count('$$') // 2
+            self.assertEqual(rendered.count('class="math display"'), display_count, page)
 
 
 if __name__ == '__main__':
