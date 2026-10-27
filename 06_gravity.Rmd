@@ -1,9 +1,8 @@
 # Escaping from Mars
 
 ```{julia chap_6_libraries, cache = FALSE, results = FALSE, echo=FALSE}
-cd("./06_gravity/")
 import Pkg
-Pkg.activate(".")
+Pkg.activate("./06_gravity")
 
 using Markdown
 using InteractiveUtils

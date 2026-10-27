@@ -1,0 +1,6 @@
+[deps]
+TextAnalysis = "a2db99b7-8b79-58f8-94bf-bbc811eef33d"
+
+[compat]
+TextAnalysis = "=0.7.3"
+julia = "1.10"

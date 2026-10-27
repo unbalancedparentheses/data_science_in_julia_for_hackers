@@ -1,0 +1,34 @@
+name: Book regression checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: julia-actions/setup-julia@v2
+        with:
+          version: '1.10'
+      - uses: julia-actions/cache@v2
+      - name: Install test dependencies
+        run: julia --project=tests -e 'using Pkg; Pkg.instantiate()'
+      - name: Julia regression tests
+        run: julia --project=tests tests/runtests.jl
+      - name: Site regression tests
+        run: python3 -m unittest discover -s tests -p 'test_*.py'
+      - name: Generated navigation and search are current
+        run: |
+          python3 scripts/update_navigation.py
+          python3 scripts/update_search.py
+          git diff --exit-code -- docs
+      - name: Whitespace checks
+        run: git diff --check

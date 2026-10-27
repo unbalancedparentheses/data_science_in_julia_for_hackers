@@ -9,9 +9,8 @@ editor_options:
 ## Naive Bayes: Spam or Ham?
 
 ```{julia chap_4_libraries, cache = FALSE, results = FALSE, echo = FALSE}
-cd("./04_naive_bayes/") 
 import Pkg
-Pkg.activate(".")
+Pkg.activate("./04_naive_bayes")
 using CSV
 using DataFrames
 using Distributions
@@ -255,6 +254,8 @@ mutable struct BayesSpamFilter
     words_count_spam::Dict{String, Int64}
     N_ham::Int64
     N_spam::Int64
+    n_ham_emails::Int64
+    n_spam_emails::Int64
     vocabulary::Array{String}
     BayesSpamFilter() = new()
 end
@@ -263,7 +264,8 @@ end
 The relevant attributes of the struct are `words_count_ham` and
 `words_count_spam`, two dictionaries containing the frequency of
 appearance of each word in the ham and spam datasets; `N_ham` and
-`N_spam`, the total number of words appearing in each category; and
+`N_spam`, the total number of words appearing in each category;
+`n_ham_emails` and `n_spam_emails`, the email counts used for class priors; and
 `vocabulary`, an array of all the unique words in the dataset.
 
 The line `BayesSpamFilter() = new()` is the constructor of this struct.
@@ -300,11 +302,14 @@ in data science and machine learning areas.
 
 ```{julia, results = TRUE}
 function fit!(model::BayesSpamFilter, x_train, y_train, voc)
+    isempty(y_train) && throw(ArgumentError("training data must not be empty"))
     model.vocabulary = voc
     model.words_count_ham = words_count(x_train, model.vocabulary, y_train, 0)
     model.words_count_spam = words_count(x_train, model.vocabulary, y_train, 1)
     model.N_ham = sum(values(model.words_count_ham))
     model.N_spam = sum(values(model.words_count_spam))
+    model.n_ham_emails = count(==(0), y_train)
+    model.n_spam_emails = count(==(1), y_train)
     return
 end
 ```
@@ -337,7 +342,7 @@ testing portion to evaluate the model's accuracy later.
 Now that we have our model, we can use it to make some spam vs. ham
 predictions and assess its performance. We'll define a few more
 functions to help with this process. First, we need a function
-implementing the TAL formula that we discussed earlier.
+implementing the smoothed word-probability formula that we discussed earlier.
 
 ```{julia, results = TRUE}
 function word_spam_probability(word, words_count_ham, words_count_spam, N_ham, N_spam, n_vocabulary, α)
@@ -353,45 +358,40 @@ another function, `spam_predict`, to calculate the probability of that
 email being spam or ham.
 
 ```{julia, results = FALSE}
-function spam_predict(email, model::BayesSpamFilter, α, tol=100)
+function spam_predict(email, model::BayesSpamFilter, α, tol=typemax(Int))
+    α > 0 || throw(ArgumentError("α must be positive"))
+    tol > 0 || throw(ArgumentError("tol must be positive"))
     ngrams_email = ngrams(StringDocument(email))
-    email_words = keys(ngrams_email)
+    # Ignore out-of-vocabulary words before applying an optional word limit.
+    email_words = sort!([w for w in keys(ngrams_email) if w in model.vocabulary],
+                       by=w -> (-ngrams_email[w], w))
+    resize!(email_words, min(length(email_words), tol))
     n_vocabulary = length(model.vocabulary)
-    ham_prior = model.N_ham / (model.N_ham + model.N_spam)
-    spam_prior = model.N_spam / (model.N_ham + model.N_spam)
+    n_emails = model.n_ham_emails + model.n_spam_emails
+    log_ham = log(model.n_ham_emails / n_emails)
+    log_spam = log(model.n_spam_emails / n_emails)
 
-    if length(email_words) > tol
-        word_freq = values(ngrams_email)
-        sort_idx = sortperm(collect(word_freq), rev=true)
-        email_words = collect(email_words)[sort_idx][1:tol]
-    end
-
-    email_ham_probability = BigFloat(1)
-    email_spam_probability = BigFloat(1)
-
-    for word in intersect(email_words, model.vocabulary)
+    for word in email_words
         word_ham_prob, word_spam_prob = word_spam_probability(word, model.words_count_ham, model.words_count_spam, model.N_ham, model.N_spam, n_vocabulary, α)
-        email_ham_probability *= word_ham_prob
-        email_spam_probability *= word_spam_prob
+        log_ham += ngrams_email[word] * log(word_ham_prob)
+        log_spam += ngrams_email[word] * log(word_spam_prob)
     end
-    return ham_prior * email_ham_probability, spam_prior * email_spam_probability
+    # Normalize after subtracting the largest log score to avoid underflow.
+    offset = max(log_ham, log_spam)
+    ham_score = exp(log_ham - offset)
+    spam_score = exp(log_spam - offset)
+    return ham_score / (ham_score + spam_score), spam_score / (ham_score + spam_score)
 end
 ```
 
-This function takes as input a new email that we want to classify as
-spam or ham, our fitted model, an $α$ value (which we've already
-discussed), and a tolerance value `tol`. The latter sets the maximum
-number of unique words in an email that we'll look at. We saw that the
-calculations for $P(email|spam)$ and $P(email|ham)$ require the
-multiplication of each $P(word_i|spam)$ and $P(word_i|ham)$ term. When
-emails consist of a large number of words, this multiplication may lead
-to very small probabilities, up to the point that the computer
-interprets those probabilities as zero. This isn't desirable; we need
-values of $P(email|spam)$ and $P(email|ham)$ that are larger than zero
-in order to multiply them by $P(spam)$ and $P(ham)$, respectively, and
-compare these values to make a prediction. To avoid probabilities of
-zero, we'll only consider up to the `tol` most frequently used words in
-the email.
+This function returns normalized ham and spam probabilities. Class priors
+come from the number of training emails in each class, not the number of
+words. Each word's log probability is weighted by its frequency in the
+incoming email. Adding log probabilities avoids underflow on long emails,
+so all known words are used by default. The optional `tol` argument can
+limit the number of distinct known words for experiments; it is not needed
+for numerical stability. Unknown words are ignored. With no known words,
+the prediction reduces to the class priors.
 
 Finally, we arrive to the point of actually testing our model. We create
 another function to manage the process. This function classifies each
@@ -399,7 +399,7 @@ email into Ham (represented by the number 0) or Spam (represented by the
 number 1)
 
 ```{julia, results = FALSE}
-function get_predictions(x_test, y_test, model::BayesSpamFilter, α, tol=200)
+function get_predictions(x_test, y_test, model::BayesSpamFilter, α, tol=typemax(Int))
     N = length(y_test)
     predictions = Array{Int64,1}(undef, N)
     for i in 1:N
@@ -432,8 +432,8 @@ five emails in the test data.
 predictions[1:5]
 ```
 
-Of the first five emails, one (the third) was classified as spam, and
-the rest were classified as ham.
+Each prediction is 0 for ham or 1 for spam. The values depend on the
+training split and the fitted model.
 
 ## Evaluating the Accuracy
 
@@ -459,12 +459,10 @@ giving us an accuracy measurement. Here we call the function:
 spam_filter_accuracy(predictions, y_test)
 ```
 
-The output indicates our model is about 95 percent accurate. It appears
-our model is performing very well! Such a high accuracy rate is quite
-astonishing for a model so naive and simple. In fact, it may be a little
-too good to be true, because we have to take into account one more
-thing. Our model classifies emails into spam or ham, but the amount of
-ham emails in our data set is considerably higher than the spam ones.
+Evaluate the corrected classifier on the held-out test set rather than
+reusing results from an earlier implementation. Overall accuracy alone
+can hide poor performance on the minority class, because the amount of
+ham emails in our dataset is considerably higher than the spam ones.
 Let's see the percentages:
 
 ```{julia, results = TRUE}
@@ -507,11 +505,9 @@ Now let's call our function to build the confusion matrix for our model.
 confusion_matrix = spam_filter_confusion_matrix(y_test[:], predictions)
 ```
 
-Row 1 of the confusion matrix shows us all the times our model
-classified emails to be ham; 1,056 of those classifications were correct
-and 36 were incorrect. Similarly, the `spam_mail` column shows us the
-classifications for all the spam emails; 36 were misidentified as ham,
-and 427 were correctly identified as spam.
+Row 1 shows emails predicted as ham, while row 2 shows emails predicted
+as spam. The columns contain the actual classes. The diagonal contains
+correct predictions; the off-diagonal entries are classification errors.
 
 Now that we have the confusion matrix, we can calculate the accuracy of
 the model segmented by category.
@@ -524,14 +520,9 @@ ham_accuracy = confusion_matrix[1, :ham_mail] / (confusion_matrix[1, :ham_mail] 
 spam_accuracy = confusion_matrix[2, :spam_mail] / (confusion_matrix[1, :spam_mail] + confusion_matrix[2, :spam_mail])
 ```
 
-With these values now we have a more fine-grained measure of the
-accuracy of our model. Now we know that our spam filter doesn't have the
-same degree of accuracy for spam and for ham emails. As a consequence of
-the imbalance in our data, ham emails will be classified as such more
-accurately than spam emails. Still, with both percentages above 90, the
-accuracy is pretty good for a model so simple and naive. Models like
-these can be used like a baseline for creating more complex ones on top
-of them.
+These values measure recall separately for ham and spam. Compare them
+alongside overall accuracy to understand performance on the imbalanced
+dataset; neither class is guaranteed to have the higher recall.
 
 ## Summary
 
@@ -542,8 +533,8 @@ of emails already classified as spam or ham and preprocessed the data.
 Then we considered the theoretical framework for our naive analysis.
 Using Bayes's theorem on the data available, we assigned a probability
 of belonging to a spam or ham email to each word of the email dataset.
-The probability of a new email being classified as spam is therefore the
-product of the probabilities of each of its constituent words. We
+The class posterior is proportional to its prior multiplied by the
+word likelihoods, with each word counted as many times as it occurs. We
 defined a Julia `struct` for the spam filter object and created
 functions to fit the spam filter object to the data. Finally, we made
 predictions on new data and evaluated our model's performance by

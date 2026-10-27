@@ -137,6 +137,8 @@ mutable struct BayesSpamFilter
     words_count_spam::Dict{String, Int64}
     N_ham::Int64
     N_spam::Int64
+    n_ham_emails::Int64
+    n_spam_emails::Int64
     vocabulary::Array{String}
     BayesSpamFilter() = new()
 end
@@ -164,11 +166,14 @@ Next, we will define the *fit!* function for our spam filter struct. We are usin
 
 # ╔═╡ 167917b4-2850-11eb-1c4f-896fcbe79966
 function fit!(model::BayesSpamFilter, x_train, y_train, voc)
+    isempty(y_train) && throw(ArgumentError("training data must not be empty"))
     model.vocabulary = voc
     model.words_count_ham = words_count(x_train, model.vocabulary, y_train, 0)
     model.words_count_spam = words_count(x_train, model.vocabulary, y_train, 1)
     model.N_ham = sum(values(model.words_count_ham))
     model.N_spam = sum(values(model.words_count_spam))
+    model.n_ham_emails = count(==(0), y_train)
+    model.n_spam_emails = count(==(1), y_train)
     return
 end
 
@@ -186,7 +191,7 @@ end
 
 # ╔═╡ 3b5cd01c-29d8-11eb-2260-a3f029106a08
 md"
-We are now almost ready to make some predictions and test our model. The function below is just the implementation of the formula TAL that we have already talked about. It will be used internally by the next function defined, *spam_predict*, which will recieve a new email –the one we would want to classify as spam or ham–, our fitted model, and two parameters, α which we have already discussed in the formula for $P(word_i|spam)$ and $P(word_i|ham)$, and *tol*. We saw that the calculation for $P(email|spam)$ and $P(email|ham)$ required the multiplication of each $P(word_i|spam)$ and $P(word_i|ham)$ term. When mails are too large, i.e., they have a lot of words, this multiplication may lead to very small probabilities, up to the point that the computer interprets those probabilities as zero. This can't happen, as we need values of $P(email|spam)$ and $P(email|ham)$ that are largar than zero so we can multiply them by $P(spam)$ and $P(ham)$ respectively and compare these values to make a prediction. The parameter *tol* is the maximum tolerance for the number of unique words in an email. If this number is greater than the parameter *tol*, only the most frequent words will be considered and the rest will be neglected. How many of these most frequent words? The first '*tol*' most frequent words!
+We can now make predictions. Class priors use the number of training emails in each class. The predictor adds word log probabilities weighted by the number of occurrences, then normalizes the two scores. This avoids underflow without discarding words. The optional `tol` limits distinct known words for experiments; by default all known words are used. Unknown words are ignored, and an email with no known words returns the class priors.
 "
 
 # ╔═╡ 327eca7e-2850-11eb-22a0-3b25c80c3a10
@@ -198,27 +203,29 @@ function word_spam_probability(word, words_count_ham, words_count_spam, N_ham,
 end
 
 # ╔═╡ 3fe86ada-2850-11eb-12db-cf51560e9f75
-function spam_predict(email, model::BayesSpamFilter, α, tol=100)
+function spam_predict(email, model::BayesSpamFilter, α, tol=typemax(Int))
+    α > 0 || throw(ArgumentError("α must be positive"))
+    tol > 0 || throw(ArgumentError("tol must be positive"))
     ngrams_email = ngrams(StringDocument(email))
-    email_words = keys(ngrams_email)
+    # Ignore out-of-vocabulary words before applying an optional word limit.
+    email_words = sort!([w for w in keys(ngrams_email) if w in model.vocabulary],
+                       by=w -> (-ngrams_email[w], w))
+    resize!(email_words, min(length(email_words), tol))
     n_vocabulary = length(model.vocabulary)
-    ham_prior = model.N_ham/(model.N_ham + model.N_spam)
-    spam_prior = model.N_spam/(model.N_ham + model.N_spam)
-    if length(email_words) > tol
-        word_freq = values(ngrams_email)
-        sort_idx = sortperm(collect(word_freq), rev=true)
-        email_words = collect(email_words)[sort_idx][1:tol]
-    end
-    
-    email_ham_probability = BigFloat(1)
-    email_spam_probability = BigFloat(1)
-    
-    for word in [wrd for wrd in email_words if wrd in vocabulary]
+    n_emails = model.n_ham_emails + model.n_spam_emails
+    log_ham = log(model.n_ham_emails / n_emails)
+    log_spam = log(model.n_spam_emails / n_emails)
+
+    for word in email_words
         word_ham_prob, word_spam_prob = word_spam_probability(word, model.words_count_ham, model.words_count_spam, model.N_ham, model.N_spam, n_vocabulary, α)
-        email_ham_probability *= word_ham_prob
-        email_spam_probability *= word_spam_prob
+        log_ham += ngrams_email[word] * log(word_ham_prob)
+        log_spam += ngrams_email[word] * log(word_spam_prob)
     end
-    return ham_prior*email_ham_probability, spam_prior*email_spam_probability
+    # Normalize after subtracting the largest log score to avoid underflow.
+    offset = max(log_ham, log_spam)
+    ham_score = exp(log_ham - offset)
+    spam_score = exp(log_spam - offset)
+    return ham_score / (ham_score + spam_score), spam_score / (ham_score + spam_score)
 end
 
 # ╔═╡ 4328faac-2850-11eb-3978-f9ccbf409a8a
@@ -239,7 +246,7 @@ Finally we arrived to the point of actually testing our model. This is what the 
 "
 
 # ╔═╡ 4e470cba-2850-11eb-3563-cd9ead36f468
-function spam_filter_accurracy(x_test, y_test, model::BayesSpamFilter, α, tol=200)
+function spam_filter_accurracy(x_test, y_test, model::BayesSpamFilter, α, tol=typemax(Int))
     N = length(y_test)
     predictions = Array{Int64,1}(undef, N)
     correct = 0
@@ -263,7 +270,7 @@ end
 
 # ╔═╡ 71cc0158-29e3-11eb-0206-8d29109f858f
 md"
-As you can see below, the model (at least under this simple metric) is performing very well! An accuracy of almost 0.95 is quite astonishing for a model so *naive* and simple, but it works!
+Evaluate accuracy on the held-out data below. Also inspect per-class recall or a confusion matrix: overall accuracy can hide poor performance on the minority class.
 "
 
 # ╔═╡ aa9f7ea4-2850-11eb-33e2-ade40fd0a360
@@ -273,9 +280,9 @@ spam_filter_accurracy(x_test, y_test, spam_filter, 1)
 md"
 ### Summary
 In this chapter, we have used a naive-bayes approach to build a simple email spam filter. 
-First, the dataset and the theoretical framework were introduced. Using Bayes' theorem and the data available, we assigned a probability of belonging to a spam or ham email to each word of the email dataset. The probability of a new email being classified as spam is therefore the product of the probabilities of each of its constituent words.
+First, the dataset and the theoretical framework were introduced. Using Bayes' theorem and the data available, we assigned a probability of belonging to a spam or ham email to each word of the email dataset. The class posterior is proportional to its prior multiplied by the word likelihoods, with each word counted as many times as it occurs.
 Later, the data was pre-processed and a struct was defined for the spam filter object. Functions were then implemented to fit the spam filter object to the data.
-Finally, a metric for evaluating the accuracy of the model was implemented, giving a result of approximately $0.95$.
+Finally, a metric for evaluating the accuracy of the model was implemented, which should be recomputed after changes to the model or training split.
 "
 
 # ╔═╡ 96834844-6d45-11eb-39a5-737dd8e43cb1

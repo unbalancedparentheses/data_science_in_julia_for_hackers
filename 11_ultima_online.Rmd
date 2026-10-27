@@ -1,9 +1,8 @@
 # Ultima online
 
 ```{julia chapter_11_libraries, cache = FALSE, results = FALSE, echo=FALSE}
-cd("./11_ultima_online/") 
 import Pkg
-Pkg.activate(".")
+Pkg.activate("./11_ultima_online")
 
 using Markdown
 using InteractiveUtils
