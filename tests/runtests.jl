@@ -40,6 +40,20 @@ end
     @test_throws ArgumentError mod.spam_predict("alpha", model, 0)
     @test_throws ArgumentError mod.spam_predict("alpha", model, 1, 0)
     @test_throws ArgumentError mod.fit!(model, zeros(Int, 2, 0), Int[], ["alpha", "beta"])
+    # Exercise the actual classification wrappers, not only posterior scores.
+    # Equal posteriors must choose ham consistently in the book and notebook.
+    # No known tokens plus equal email counts gives exactly equal priors.
+    tie_mail = zeros(Int, 2, 1)
+    spam_mail = reshape([1, 3], 2, 1)
+    if file == "04_naive_bayes/04_naive_bayes.jl"
+        Core.eval(mod, Meta.parse(definition(source, "function spam_filter_accurracy(")))
+        @test mod.spam_filter_accurracy(tie_mail, [0], model, 1) == 1.0
+        @test mod.spam_filter_accurracy(spam_mail, [1], model, 1) == 1.0
+    else
+        Core.eval(mod, Meta.parse(definition(source, "function get_predictions(")))
+        @test mod.get_predictions(tie_mail, [0], model, 1) == [0]
+        @test mod.get_predictions(spam_mail, [1], model, 1) == [1]
+    end
     # A model trained on one class still gives a finite posterior.
     mod.fit!(model, reshape([8, 2], 2, 1), [0], ["alpha", "beta"])
     @test mod.spam_predict("alpha", model, 1) == (1.0, 0.0)

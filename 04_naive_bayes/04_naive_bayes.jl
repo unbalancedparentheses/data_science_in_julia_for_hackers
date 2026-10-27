@@ -253,7 +253,8 @@ function spam_filter_accurracy(x_test, y_test, model::BayesSpamFilter, α, tol=t
     for i in 1:N
         email = string([repeat(string(word, " "), n) for (word, n) in zip(model.vocabulary, x_test[:,i])]...)
         p_ham, p_spam = spam_predict(email, model, α, tol)
-        if p_ham > p_spam
+        # Match the book's argmax rule: choose ham when probabilities tie.
+        if p_ham >= p_spam
             predictions[i] = 0
             if y_test[i] == 0
                 correct += 1

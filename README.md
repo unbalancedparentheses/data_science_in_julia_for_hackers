@@ -111,3 +111,8 @@ These are focused regression checks, not a full execution of every notebook.
 The CI workflow runs these checks as well. Do not carry old numerical results
 forward after changing an algorithm; rerun the example or remove the obsolete
 output.
+
+To check the interactive notebooks inside Pluto (including slider updates),
+follow [the Pluto runtime test instructions](tests/pluto/README.md). Running a
+notebook as an ordinary Julia script checks its default values but does not
+verify reactivity. CI runs both the algorithm checks and the native Pluto test.

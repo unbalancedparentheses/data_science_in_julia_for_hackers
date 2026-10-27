@@ -12,6 +12,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Keep a parent for a newly created branch's first push.
+          fetch-depth: 2
+          # These checks use synthetic data; avoid fetching the image corpus.
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /*
+            !/10_bees_vs_wasps/data/
+            !/docs/data_science_in_julia_for_hackers_files/
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -36,7 +45,18 @@ jobs:
           python3 scripts/update_search.py
           git diff --exit-code -- docs
       - name: Whitespace checks
-        run: git diff --check
+        env:
+          DIFF_BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
+        shell: bash
+        run: |
+          # Inspect committed changes; a clean checkout has no working-tree diff.
+          if [[ -z "$DIFF_BASE" || "$DIFF_BASE" =~ ^0+$ ]]; then
+            DIFF_BASE="$(git rev-parse HEAD^)"
+          fi
+          if ! git cat-file -e "$DIFF_BASE^{commit}" 2>/dev/null; then
+            git fetch --no-tags --depth=1 origin "$DIFF_BASE"
+          fi
+          git diff --check "$DIFF_BASE" HEAD
 
   new-chapters:
     runs-on: ubuntu-latest
@@ -54,6 +74,13 @@ jobs:
             test: test.jl
     steps:
       - uses: actions/checkout@v4
+        with:
+          # These checks use synthetic data; avoid fetching the image corpus.
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /*
+            !/10_bees_vs_wasps/data/
+            !/docs/data_science_in_julia_for_hackers_files/
       - uses: julia-actions/setup-julia@v2
         with:
           version: '1.10'
@@ -74,6 +101,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # These checks use synthetic data; avoid fetching the image corpus.
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /*
+            !/10_bees_vs_wasps/data/
+            !/docs/data_science_in_julia_for_hackers_files/
       - uses: julia-actions/setup-julia@v2
         with:
           version: '1.10'
@@ -88,3 +122,27 @@ jobs:
           name: quarto-julia-pilot
           path: publishing/quarto/_site/decision-costs.html
           if-no-files-found: error
+
+  pluto-notebooks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /*
+            !/10_bees_vs_wasps/data/
+            !/docs/data_science_in_julia_for_hackers_files/
+      - uses: julia-actions/setup-julia@v2
+        with:
+          version: '1.10'
+      - uses: julia-actions/cache@v2
+      - name: Instantiate notebook environments
+        shell: bash
+        run: |
+          for project in tests/pluto 14_model_evaluation 15_tabular_learning 16_causal_inference 17_bayesian_workflow; do
+            julia --project="$project" -e 'using Pkg; Pkg.instantiate()'
+          done
+      - name: Check native Pluto slider reactivity
+        run: julia --startup-file=no --project=tests/pluto tests/pluto/runtests.jl
