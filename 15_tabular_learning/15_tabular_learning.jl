@@ -18,6 +18,10 @@ begin
     using Random, Statistics
     include(joinpath(@__DIR__, "core.jl"))
     const TL = TabularLearning
+end
+
+# ╔═╡ 2acedac0-03f7-53b0-b947-99203dd9a3b7
+begin
     Ridge = @load RidgeRegressor pkg=MLJLinearModels verbosity=0
     Tree = @load DecisionTreeRegressor pkg=DecisionTree verbosity=0
 end
@@ -87,6 +91,7 @@ Trying enough settings can overfit validation data too. Record your search, free
 # ╔═╡ Cell order:
 # ╟─6cd71344-fe9d-5feb-8c99-2a56f6f560b1
 # ╠═93422f13-e60b-563a-9720-8dae353c078b
+# ╠═2acedac0-03f7-53b0-b947-99203dd9a3b7
 # ╠═33f74961-2bef-56cd-a4db-53754efb55f7
 # ╠═4c86a2fb-7b08-5802-a262-a9767722c9fc
 # ╟─f5c24be6-2656-5e6e-ad8a-b413e7b99cff
