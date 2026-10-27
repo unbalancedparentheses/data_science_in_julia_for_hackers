@@ -959,30 +959,15 @@ calculating the accuracy and making a confusion matrix.</p>
 </div>
 <div id="appendix---a-little-more-about-alpha" class="section level2 hasAnchor" number="4.9">
 <h2><span class="header-section-number">4.9</span> Appendix - A little more about alpha<a href="spam-filter.html#appendix---a-little-more-about-alpha" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>As we have seen, to calculate the probability of the email being a spam
-email, we should use</p>
-<p><span class="math inline">\(P(email|spam)=∏ni=1P(wordi|spam)=P(word0|spam)P(word1|spam)...P(wordnp|spam)\)</span></p>
-<p>where P(wordnp|spam) stands for the probability of the word that is not
-presen t in our dataset. What probability should be assigned to this
-word? One way to handle this could be to simply ignore that term in the
-multiplication. In other words, assigning P(wordnp|spam)=1. Without
-thinking about it too much, we can conclude that this doesn’t make any
-sense, since that would mean that the probability to find that word in a
-spam (or ham, too) email would be equal to 1. A more logically
-consistent approach would be to assign 0 probability to that word. But
-there is a problem: with <span class="math inline">\(P(wordnp\|spam)=0\)</span></p>
-<p>we can quickly see that</p>
-<p><span class="math inline">\(P(word0|spam)P(word1|spam)...P(wordnp|spam)=0\)</span></p>
-<p>This is the motivation for introducing the smoothing parameter α</p>
-<p>into our equation. In a real-word scenario, we should expect that words
-not present in our training set will appear, and altough it makes sense
-that they don’t have a high probability, it can’t be 0. When such a word
-appears, the probability assigned for it will be simply</p>
-<p><span class="math inline">\(P(wordnp|spam)=Nwordnp|spam+αNspam+αNvocabulary=0+αNspam+αNvocabulary=αNspam+αNvocabulary\)</span></p>
-<p>In summary, α is just a smoothing parameter, so that the probability of
-finding a word that is not in our dataset, doesn’t go down to 0. Since
-we want to keep the probability for these words low enough, it makes
-sense to use α=1</p>
+<p>Smoothing applies to words in a fixed vocabulary <span class="math inline">\(V\)</span>. A word can belong to that vocabulary and still have zero occurrences among the training emails of one class. Without smoothing, its estimated probability in that class would be zero, making the likelihood of any email containing it zero as well.</p>
+<p>For a class <span class="math inline">\(c\)</span>, we use</p>
+<p><span class="math display">\[P(w \mid c) = \frac{N_{w,c} + \alpha}{N_c + \alpha |V|}, \qquad w \in V,\]</span></p>
+<p>where <span class="math inline">\(N_{w,c}\)</span> counts occurrences of word <span class="math inline">\(w\)</span> in that class, and <span class="math inline">\(N_c\)</span> counts all word occurrences in that class. Adding <span class="math inline">\(\alpha &gt; 0\)</span> to every vocabulary word also adds <span class="math inline">\(\alpha |V|\)</span> to the denominator, so the word probabilities still sum to one. When <span class="math inline">\(N_{w,c}=0\)</span>, the probability is <span class="math inline">\(\alpha/(N_c+\alpha |V|)\)</span>, rather than zero.</p>
+<p>A word outside the vocabulary is a different case. This implementation ignores it because the feature representation contains only words in <span class="math inline">\(V\)</span>. Ignoring a feature does not assert that its probability is one: the classifier is making a prediction from the retained features. An alternative is to reserve an explicit unknown-word feature during training and estimate its probability. Adding a new vocabulary entry only at prediction time would change the model’s normalization and is not what our code does.</p>
+<p>For an email represented by counts <span class="math inline">\(x_w\)</span>, the class score is</p>
+<p><span class="math display">\[s_c = \log P(c) + \sum_{w \in V} x_w \log P(w \mid c).\]</span></p>
+<p>The predictor normalizes the exponentiated class scores to obtain ham and spam posteriors. The multinomial coefficient is the same for both classes and cancels in this normalization. Repeated words therefore contribute repeatedly, and an email with no known words returns the class priors.</p>
+<p>The choice <span class="math inline">\(\alpha=1\)</span> is commonly called Laplace smoothing. It is a convenient starting value, not a guarantee of optimal predictions or a universal rule for keeping probabilities small. Compare alternatives on validation data if you choose to tune it; reserve the test data for the final assessment.</p>
 
 </div>
 </div>

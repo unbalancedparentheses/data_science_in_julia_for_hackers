@@ -4,6 +4,15 @@
 using Markdown
 using InteractiveUtils
 
+# Script-only defaults. Pluto ignores this preamble and uses its native @bind.
+macro bind(def, element)
+    quote
+        local widget = $(esc(element))
+        global $(esc(def)) = Base.get(widget)
+        widget
+    end
+end
+
 # ╔═╡ 56006eca-486d-4e0e-8618-9f95f0bbb54b
 begin
     import Pkg
@@ -11,15 +20,6 @@ begin
     using PlutoUI, Random, Statistics, Distributions
     include(joinpath(@__DIR__, "core.jl"))
     using .FootballWorkflow
-end
-
-# ╔═╡ e4f06b1b-f0e4-4d44-89cf-d286f4e090cb
-macro bind(def, element)
-    quote
-        local widget = $(esc(element))
-        global $(esc(def)) = Base.get(widget)
-        widget
-    end
 end
 
 # ╔═╡ 30369c65-9a0b-4595-80f2-fb305e1dde91
@@ -103,7 +103,6 @@ held-out evaluation step before using these diagnostics to choose a model.
 
 # ╔═╡ Cell order:
 # ╠═56006eca-486d-4e0e-8618-9f95f0bbb54b
-# ╠═e4f06b1b-f0e4-4d44-89cf-d286f4e090cb
 # ╟─30369c65-9a0b-4595-80f2-fb305e1dde91
 # ╠═e0dbde0a-317b-4832-9010-daf890b50703
 # ╟─66bf5081-2dcc-4764-adb5-ab7422b7fc2b

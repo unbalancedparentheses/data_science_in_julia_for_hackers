@@ -4,6 +4,15 @@
 using Markdown
 using InteractiveUtils
 
+# Script-only defaults. Pluto ignores this preamble and uses its native @bind.
+macro bind(def, element)
+    quote
+        local widget = $(esc(element))
+        global $(esc(def)) = Base.get(widget)
+        widget
+    end
+end
+
 # ╔═╡ 206b1a6d-2118-5c4f-8f2a-a3ca15b5eb39
 md"""# What should a spam filter cost?
 
@@ -19,15 +28,6 @@ begin
     using PlutoUI
     include(joinpath(@__DIR__, "core.jl"))
     using .ModelEvaluation
-end
-
-# ╔═╡ 40852351-0063-5ea5-9433-988b689069dd
-macro bind(def, element)
-    quote
-        local widget = $(esc(element))
-        global $(esc(def)) = Base.get(widget)
-        widget
-    end
 end
 
 # ╔═╡ 45a3605e-afd1-5e9e-a161-6e8552664740
@@ -99,7 +99,6 @@ Try making blocked legitimate messages expensive. Then make spam rare. Does a hi
 # ╔═╡ Cell order:
 # ╟─206b1a6d-2118-5c4f-8f2a-a3ca15b5eb39
 # ╠═0ec25ed8-ee70-5ab7-b0d6-b9c0c6c7806f
-# ╠═40852351-0063-5ea5-9433-988b689069dd
 # ╠═45a3605e-afd1-5e9e-a161-6e8552664740
 # ╟─2bfc2707-f472-51ec-9327-1629d3ff3a93
 # ╠═83be9b8c-e3b3-56fc-8120-253c57e8dec4

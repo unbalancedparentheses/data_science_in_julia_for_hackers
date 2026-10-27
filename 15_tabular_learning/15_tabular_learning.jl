@@ -4,6 +4,15 @@
 using Markdown
 using InteractiveUtils
 
+# Script-only defaults. Pluto ignores this preamble and uses its native @bind.
+macro bind(def, element)
+    quote
+        local widget = $(esc(element))
+        global $(esc(def)) = Base.get(widget)
+        widget
+    end
+end
+
 # ╔═╡ 6cd71344-fe9d-5feb-8c99-2a56f6f560b1
 md"""# Predicting delivery times
 
@@ -24,15 +33,6 @@ end
 begin
     Ridge = @load RidgeRegressor pkg=MLJLinearModels verbosity=0
     Tree = @load DecisionTreeRegressor pkg=DecisionTree verbosity=0
-end
-
-# ╔═╡ 33f74961-2bef-56cd-a4db-53754efb55f7
-macro bind(def, element)
-    quote
-        local widget = $(esc(element))
-        global $(esc(def)) = Base.get(widget)
-        widget
-    end
 end
 
 # ╔═╡ 4c86a2fb-7b08-5802-a262-a9767722c9fc
@@ -92,7 +92,6 @@ Trying enough settings can overfit validation data too. Record your search, free
 # ╟─6cd71344-fe9d-5feb-8c99-2a56f6f560b1
 # ╠═93422f13-e60b-563a-9720-8dae353c078b
 # ╠═2acedac0-03f7-53b0-b947-99203dd9a3b7
-# ╠═33f74961-2bef-56cd-a4db-53754efb55f7
 # ╠═4c86a2fb-7b08-5802-a262-a9767722c9fc
 # ╟─f5c24be6-2656-5e6e-ad8a-b413e7b99cff
 # ╠═b1db3866-2611-5229-9d9d-ea2bd20f8e56

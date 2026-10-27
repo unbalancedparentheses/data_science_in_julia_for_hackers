@@ -4,6 +4,15 @@
 using Markdown
 using InteractiveUtils
 
+# Script-only defaults. Pluto ignores this preamble and uses its native @bind.
+macro bind(def, element)
+    quote
+        local widget = $(esc(element))
+        global $(esc(def)) = Base.get(widget)
+        widget
+    end
+end
+
 # ╔═╡ 371da9fa-0124-4396-8c1b-d87b679d8244
 begin
     import Pkg
@@ -11,15 +20,6 @@ begin
     using PlutoUI, Statistics
     include(joinpath(@__DIR__, "core.jl"))
     using .CausalPricing
-end
-
-# ╔═╡ 7d0f1354-e674-4934-97ea-2907cde61502
-macro bind(def, element)
-    quote
-        local widget = $(esc(element))
-        global $(esc(def)) = Base.get(widget)
-        widget
-    end
 end
 
 # ╔═╡ 06aa145b-0172-412a-bc3b-4a98a8426866
@@ -83,7 +83,6 @@ unrecorded forecast. A good predictive score cannot verify that assumption.
 
 # ╔═╡ Cell order:
 # ╠═371da9fa-0124-4396-8c1b-d87b679d8244
-# ╠═7d0f1354-e674-4934-97ea-2907cde61502
 # ╟─06aa145b-0172-412a-bc3b-4a98a8426866
 # ╠═43397969-f655-4f48-883d-d19ff827ba71
 # ╠═55289213-812b-4d5c-a813-9c17022fda54
