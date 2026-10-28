@@ -52,7 +52,9 @@ end
     c = PublishedChapter17
     @test c.prior_zero_check.observed == 0.4125
     @test c.prior_zero_check.interval == [0.0, 0.725]
-    @test round(c.prior_zero_check.replicated_mean; digits=4) == 0.2465
+    # The mean lies exactly at a decimal rounding midpoint; reduction order
+    # can move the last binary bit across it on ARM versus x86.
+    @test c.prior_zero_check.replicated_mean ≈ 0.24645 atol=1e-12
     @test round(mean(c.posterior); digits=4) == 2.0123
     @test round.(quantile.(Ref(c.posterior), [0.05, 0.95]); digits=4) == [1.7603, 2.2784]
     @test round(mean(c.sampler_fit.samples); digits=4) == 2.0142
