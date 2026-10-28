@@ -61,6 +61,25 @@ Thanks to Martina Cantaro, Camilo Plata, Manuel Puebla, Lucas Raúl Fernandez Pi
 
 ## Run the examples
 
+### Try the controls without Julia
+
+The built site embeds five experiments directly in the Mars, model-evaluation,
+tabular-learning, causal-inference, and Bayesian-workflow chapters. They run
+entirely in the browser on a static host such as GitHub Pages. No Pluto session,
+Julia installation, account, or backend is needed to move their controls.
+
+Preview this branch locally:
+
+```sh
+python3 -m http.server 8767 --directory docs
+```
+
+Open `http://localhost:8767/` and follow the chapter links, or visit
+`http://localhost:8767/interactive/mars/`. The delivery demo selects predictions
+from Julia/MLJ models fitted ahead of time; it does not train models in JavaScript.
+The other demos calculate their displayed models in the browser. Julia-generated
+fixtures and real-browser tests check the results and interactions.
+
 ### Your first experiment
 
 The newer examples are tested with Julia 1.10.10. From the repository root,

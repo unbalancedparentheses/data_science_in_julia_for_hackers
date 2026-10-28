@@ -1,5 +1,11 @@
 # Escaping from Mars
 
+<div class="browser-experiment">
+<p><strong>Try the mission here.</strong> Change the measurement uncertainty and speed budget directly in your browser; no Julia installation is needed. <a href="interactive/mars/index.html">Open the experiment on its own page</a> for more room. The Julia companion below remains available for editing the model.</p>
+<iframe data-interactive src="interactive/mars/index.html" title="Mars escape uncertainty and speed budget" loading="lazy" style="width:100%;height:950px;border:1px solid #dfe5ec;border-radius:8px;"></iframe>
+</div>
+<script src="interactive/embed.js" defer></script>
+
 ```{julia chap_6_libraries, cache = FALSE, results = FALSE, echo=FALSE}
 import Pkg
 Pkg.activate("./06_gravity")

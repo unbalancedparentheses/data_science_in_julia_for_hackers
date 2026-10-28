@@ -3,7 +3,7 @@
 include("core.jl")
 using .MarsMission
 
-output = joinpath(@__DIR__, "..", "..", "docs", "interactive", "mars", "julia-fixtures.json")
+output = isempty(ARGS) ? joinpath(@__DIR__, "..", "..", "docs", "interactive", "mars", "julia-fixtures.json") : only(ARGS)
 distances = [25.94, 38.84, 52.81, 45.54, 17.24]
 times = [3.91, 4.57, 5.43, 4.85, 3.15]
 rows = String[]

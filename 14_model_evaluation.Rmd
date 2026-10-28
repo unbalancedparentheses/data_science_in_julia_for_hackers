@@ -164,13 +164,13 @@ What if these results give us an idea for a better filter? Good! We can pursue i
 
 ## Change the population, not just the threshold
 
-Suppose the company starts receiving much less spam. Can we keep using the same threshold? Open `14_model_evaluation/14_model_evaluation.jl` in Pluto and let's try it. The notebook estimates error rates separately for spam and ham using validation messages, then calculates expected counts for 1,000 messages at a prevalence we choose. These counts can be fractional because we are calculating averages over possible mailboxes.
+Suppose the company starts receiving much less spam. Would the same threshold still be cheapest? Try the browser controls at the top of this chapter, or open `14_model_evaluation/14_model_evaluation.jl` in Pluto. Both use validation messages to estimate error rates separately for spam and ham, then calculate expected counts for 1,000 messages at a prevalence we choose. They choose the cheapest threshold again whenever a control changes. These counts can be fractional because we are calculating averages over possible mailboxes.
 
 For this experiment, we change the fraction of spam while keeping the distribution of scores within spam and within ham fixed. This assumption is called **label shift**. At a fixed threshold, recall and false-positive rate then stay the same, while precision and average cost change. If spammers also start writing different kinds of messages, the score distributions may change too, and this calculation will no longer describe the whole problem.
 
-Before touching either slider, make two predictions: if we hold a threshold fixed and make spam rarer, what happens to the proportion of blocked messages that are legitimate? If we instead raise the cost of blocking ham, which way should a sensible threshold move? Change one control at a time and explain a result that surprises you.
+Before touching a control, predict which rules will become more attractive when spam becomes rare. Then raise the cost of blocking ham: which way should a sensible threshold move? Change one control at a time and compare the selected threshold, expected cost, and blocked messages. Because the demo chooses again, its recall and false-positive rate can change too.
 
-Try making blocked ham very expensive. Then make spam rare. How much precision do we lose at the same false-positive rate? Does a threshold chosen for one mailbox still look sensible in another? Keep track of which assumptions you changed along with the numbers; they are what make the experiment interpretable.
+To isolate the effect of prevalence at a fixed threshold, use the changed-population exercise below. It holds one filter's recall and false-positive rate fixed instead of choosing a new rule. Predict what happens to precision before calculating it. Keeping that experiment separate from choosing a cheaper threshold helps us explain which change caused each result.
 
 ## Your turn: three ways to challenge the filter
 
