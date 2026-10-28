@@ -72,10 +72,13 @@ jobs:
 
   new-chapters:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     strategy:
       fail-fast: false
       matrix:
         include:
+          - chapter: 03_probability_intro
+            test: smoke_test.jl
           - chapter: 14_model_evaluation
             test: runtests.jl
           - chapter: 15_tabular_learning
