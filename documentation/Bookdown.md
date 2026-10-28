@@ -90,3 +90,18 @@ The renderer does not execute Julia or invent output: the
 chapter-local Julia tests validate the computations separately. CI runs both
 the computation tests and the publishing checks. Generated pages are committed
 alongside their sources so GitHub Pages can serve them directly.
+
+## Mars teaching revision
+
+The Mars chapter retains its historical Turing computations and figures while
+its teaching prose is refreshed with `python3 scripts/render_mars_teaching.py`.
+The renderer refuses changed or missing legacy computation inputs; see
+[preserved-output provenance](../publishing/mars/README.md) before changing them.
+Run `julia --startup-file=no 06_gravity/mission/runtests.jl` for the separate
+lightweight mission companion. Its grid posterior is newly tested; it is not a
+rerun of the historical Turing chains. Use `--check` on the renderer in CI.
+
+The original-chapter challenge guide is rendered separately with
+`python3 scripts/render_challenges.py`; it is a companion page, not a numbered
+chapter. Regenerate navigation first, then rerender companion pages and run
+their `--check` modes so their shared sidebar remains current.

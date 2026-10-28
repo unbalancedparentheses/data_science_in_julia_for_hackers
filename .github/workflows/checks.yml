@@ -35,10 +35,18 @@ jobs:
         run: julia --project=tests -e 'using Pkg; Pkg.instantiate()'
       - name: Julia regression tests
         run: julia --project=tests tests/runtests.jl
+      - name: Mars mission regression tests
+        run: julia --startup-file=no 06_gravity/mission/runtests.jl
       - name: Site regression tests
         run: python3 -m unittest discover -s tests -p 'test_*.py'
+      - name: Teaching excerpts match executable source
+        run: python3 teaching/check_source_excerpts.py
       - name: New chapter HTML is current
         run: python3 scripts/render_new_chapters.py --check
+      - name: Mars teaching HTML preserves historical outputs
+        run: python3 scripts/render_mars_teaching.py --check
+      - name: Challenge companion HTML is current
+        run: python3 scripts/render_challenges.py --check
       - name: Generated navigation and search are current
         run: |
           python3 scripts/update_navigation.py
@@ -93,6 +101,9 @@ jobs:
           fi
       - name: Run chapter regression tests
         run: julia --startup-file=no --project='${{ matrix.chapter }}' '${{ matrix.chapter }}/${{ matrix.test }}'
+      - name: Check printed exercise solutions
+        if: matrix.chapter == '17_bayesian_workflow'
+        run: julia --startup-file=no --project=17_bayesian_workflow teaching/check_exercises.jl
       - name: Run MLJ integration tests
         if: matrix.chapter == '15_tabular_learning'
         run: julia --startup-file=no --project=15_tabular_learning 15_tabular_learning/integration_tests.jl
