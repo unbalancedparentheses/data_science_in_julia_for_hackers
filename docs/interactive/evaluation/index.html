@@ -3,15 +3,16 @@
 <body><h1>What should a spam filter cost?</h1>
 <p class="question"><strong>Predict first:</strong> if blocking a customer's email becomes more expensive, should we block more messages or fewer?</p>
 <div class="controls">
-<label for="fp">Cost of blocking a legitimate email: <output id="fp-value">5</output><input id="fp" type="range" min="1" max="20" value="5" step="1"></label>
-<label for="fn">Cost of delivering spam: <output id="fn-value">1</output><input id="fn" type="range" min="1" max="10" value="1" step="1"></label>
-<label for="prevalence">Incoming messages that are spam: <output id="prevalence-value">7%</output><input id="prevalence" type="range" min="1" max="50" value="7" step="1"></label>
+<label class="control" for="fp"><span class="control-label"><span>Cost of blocking legitimate mail</span><output id="fp-value">5</output></span><input id="fp" type="range" min="1" max="20" value="5" step="1"></label>
+<label class="control" for="fn"><span class="control-label"><span>Cost of delivering spam</span><output id="fn-value">1</output></span><input id="fn" type="range" min="1" max="10" value="1" step="1"></label>
+<label class="control" for="prevalence"><span class="control-label"><span>Incoming messages that are spam</span><output id="prevalence-value">7%</output></span><input id="prevalence" type="range" min="1" max="50" value="7" step="1"></label>
 </div>
 <p data-demo-results id="summary" class="summary" aria-live="polite"></p>
-<svg id="chart" viewBox="0 0 720 240" role="img" aria-label="Expected cost per thousand messages at each candidate threshold"></svg>
-<table><caption>Expected outcomes per 1,000 messages at the selected threshold</caption><thead><tr><th scope="col">Action</th><th scope="col">Actual spam</th><th scope="col">Actual legitimate mail</th></tr></thead><tbody><tr><th scope="row">Block</th><td id="tp"></td><td id="fp-count"></td></tr><tr><th scope="row">Deliver</th><td id="fn-count"></td><td id="tn"></td></tr></tbody></table>
-<p id="metrics"></p>
-<p class="note">The model was fitted in Julia using training messages. These calculations use its validation error rates and leave the final test set untouched. Moving prevalence assumes the error rates within spam and legitimate mail stay fixed (label shift). Fractional counts are expectations. The first minimum on the threshold grid is selected when several thresholds tie.</p>
-<p class="note">Runs in your browser. No Julia server or installation needed. <a href="../../model-evaluation.html" target="_top">Read the chapter</a>.</p>
+<div class="legend"><span><i class="swatch" style="--color:#7757b3"></i>Candidate rules</span><span><i class="swatch" style="--color:#155d76"></i>Selected rule</span><span><i class="line-key"></i>Deliver everything</span></div>
+<svg id="chart" viewBox="0 0 720 280" role="img" aria-label="Expected cost per thousand messages versus threshold, with a logarithmic cost axis"></svg>
+<p id="axis-note" class="axis-note"></p>
+<details><summary>Inspect expected outcomes</summary><table><caption>Expected outcomes per 1,000 messages at the selected threshold</caption><thead><tr><th scope="col">Action</th><th scope="col">Actual spam</th><th scope="col">Actual legitimate mail</th></tr></thead><tbody><tr><th scope="row">Block</th><td id="tp"></td><td id="fp-count"></td></tr><tr><th scope="row">Deliver</th><td id="fn-count"></td><td id="tn"></td></tr></tbody></table><p id="metrics"></p></details>
+<details class="method"><summary>What stays fixed?</summary><p class="note">The model was fitted in Julia using training messages. These calculations use its validation error rates and leave the final test set untouched. Moving prevalence assumes the error rates within spam and legitimate mail stay fixed (label shift). Fractional counts are expectations. Each change selects the cheapest rule again; the first grid minimum wins ties.</p></details>
+<p class="note">Runs in your browser. No Julia installation needed. <a href="../../model-evaluation.html" target="_top">Read the chapter</a>.</p>
 <noscript>Enable JavaScript to use the controls. The chapter explains the same experiment without them.</noscript>
 <script type="module" src="app.js"></script></body></html>

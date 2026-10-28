@@ -102,6 +102,26 @@ for (const [slug, chapter] of demos) {
     const before = await results.innerHTML();
     await change(frame.locator('input[type="range"], select').first());
     await expect.poll(() => results.innerHTML()).not.toBe(before);
+    // Native details must remain keyboard-operable and resize the chapter
+    // iframe in both directions, rather than leaving an oversized empty panel.
+    for (const details of await frame.locator('details').all()) {
+      const summary = details.locator('summary').first();
+      const height = await element.evaluate(frame => frame.clientHeight);
+      await summary.focus();
+      await summary.press('Enter');
+      await expect(details).toHaveAttribute('open', '');
+      await expect.poll(() => element.evaluate(frame => frame.clientHeight)).toBeGreaterThan(height + 10);
+      await summary.press('Enter');
+      await expect(details).not.toHaveAttribute('open', '');
+      await expect.poll(async () => Math.abs(await element.evaluate(frame => frame.clientHeight) - height)).toBeLessThanOrEqual(3);
+    }
+    for (const label of await frame.locator('svg text').all()) {
+      const pixels = await label.evaluate(element => {
+        const transform = element.getScreenCTM();
+        return parseFloat(getComputedStyle(element).fontSize) * Math.hypot(transform.a, transform.b);
+      });
+      expect(pixels).toBeGreaterThanOrEqual(10);
+    }
     expect(errors).toEqual([]);
   });
 }

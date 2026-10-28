@@ -12,16 +12,24 @@
 <main>
   <p class="eyebrow">Escaping from Mars · an idealized experiment</p>
   <h1>One chance to leave Mars</h1>
-  <p>Five stone throws. An uncertain angle. One hypothetical speed budget. What would you measure more carefully before deciding?</p>
-  <aside class="prediction"><strong>Predict before touching the controls.</strong> If we knew the throwing angle exactly, would the escape-speed interval mostly move, or mostly narrow? Then compare that change with halving the range noise.</aside>
+  <p class="intro">Five stone throws. An uncertain angle. One hypothetical speed budget. What would you measure more carefully before deciding?</p>
+  <aside class="prediction"><strong>Predict first.</strong> Would knowing the angle exactly move the escape-speed interval, or narrow it? Compare that with halving the range noise.</aside>
   <noscript><p>This experiment needs JavaScript enabled. The <a href="../../escaping-from-mars.html">chapter</a> explains the calculations without it.</p></noscript>
+  <div class="experiment">
   <form id="controls">
-    <label for="angle">Shared angle uncertainty: 45° ± <output id="angle-value" for="angle">7.5°</output></label>
+    <h2>Change one measurement</h2>
+    <div class="control">
+    <label for="angle"><span>Shared angle uncertainty</span><span class="control-value">45° ± <output id="angle-value" for="angle">7.5°</output></span></label>
     <input id="angle" name="angle" type="range" min="0" max="15" step="0.5" value="7.5">
-    <label for="noise">Range-error standard deviation: <output id="noise-value" for="noise">3 m</output></label>
+    </div>
+    <div class="control">
+    <label for="noise"><span>Range-error standard deviation</span><output id="noise-value" for="noise">3 m</output></label>
     <input id="noise" name="noise" type="range" min="1" max="10" step="0.5" value="3">
-    <label for="budget">Hypothetical speed budget: <output id="budget-value" for="budget">5 km/s</output></label>
+    </div>
+    <div class="control">
+    <label for="budget"><span>Hypothetical speed budget</span><output id="budget-value" for="budget">5 km/s</output></label>
     <input id="budget" name="budget" type="range" min="3" max="7" step="0.05" value="5">
+    </div>
     <button type="reset">Reset experiment</button>
   </form>
   <section aria-label="Mission result" data-demo-results>
@@ -38,8 +46,9 @@
     </svg>
     <p class="legend">Blue band: middle 90% interval. Orange dashed line: hypothetical budget.</p>
     <p id="result" class="result" role="status" aria-live="polite" aria-atomic="true">Calculating the mission result…</p>
-    <p>This is a probability under our stone-throwing model, <strong>not a spacecraft success probability.</strong></p>
+    <p class="model-limit">This is a probability under our stone-throwing model, <strong>not a spacecraft success probability.</strong></p>
   </section>
+  </div>
   <details>
     <summary>What did we assume?</summary>
     <p>We use the chapter’s illustrative ranges [25.94, 38.84, 52.81, 45.54, 17.24] metres and times [3.91, 4.57, 5.43, 4.85, 3.15] seconds. Gravity has a uniform grid prior from 0.02 to 10 m/s² in steps of 0.02. We average over 61 equally weighted midpoint angle cells, or one cell when the angle is known.</p>
