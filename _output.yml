@@ -1,6 +1,8 @@
 bookdown::gitbook:
   css: style.css
   config:
+    search:
+      engine: lunr
     toc:
       before: |
         <li><a href="./">Data Science in Julia for Hackers</a></li>

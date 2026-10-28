@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Rebuild every sidebar from the headings in the published chapter pages."""
 import html
+import json
 from pathlib import Path
 import re
 
@@ -66,6 +67,14 @@ def main():
         source, count = re.subn(r'<ul class="summary">.*?</ul>(?=\s*</nav>)', lambda _: sidebar, path.read_text(), flags=re.S)
         if count != 1:
             raise ValueError(f"Expected one sidebar in {path}, got {count}")
+        # Older chapter shells lack the search config required by the shipped
+        # GitBook plugin. Without it, initialization throws before the UI is ready.
+        def configure_search(match):
+            config = json.loads('{' + match[2] + '}')
+            if 'search' in config:
+                return match[0]
+            return match[1] + '\n"search": {"engine": "lunr", "options": null},' + match[2] + match[3]
+        source = re.sub(r'(gitbook\.start\(\{)(.*?)(\}\);)', configure_search, source, flags=re.S)
         path.write_text(source)
 
 

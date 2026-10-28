@@ -80,6 +80,12 @@ class SiteTests(unittest.TestCase):
         with patch.dict(renderer.os.environ, {}, clear=True), patch.object(renderer.shutil, 'which', side_effect=lambda name: '/bin/pandoc' if name == 'pandoc' else None):
             self.assertEqual(renderer.pandoc_command(), ['pandoc'])
 
+    def test_gitbook_search_initialization_has_configuration(self):
+        for path in (ROOT / 'docs').glob('*.html'):
+            match = re.search(r'gitbook\.start\((\{.*?\})\);', path.read_text(), re.S)
+            self.assertIsNotNone(match, path.name)
+            self.assertIn(json.loads(match[1])['search']['engine'], ('lunr', 'fuse'), path.name)
+
     def test_all_local_links(self):
         subprocess.run(['python3', 'scripts/check_site.py'], cwd=ROOT, check=True)
 
