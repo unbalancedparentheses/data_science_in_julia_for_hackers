@@ -1,0 +1,280 @@
+# Learning from messy tabular data {#tabular-learning}
+
+<div class="browser-experiment">
+<p><strong>Try the experiment here.</strong> These controls run in your browser; no Julia installation is needed. <a href="interactive/tabular/index.html">Open the experiment on its own page</a> for more room. The Julia notebook remains available for editing the model.</p>
+<iframe data-interactive src="interactive/tabular/index.html" title="Delivery predictions" loading="lazy" style="width:100%;height:950px;border:1px solid #dfe5ec;border-radius:8px;"></iframe>
+</div>
+<script src="interactive/embed.js" defer></script>
+
+## When will my delivery arrive?
+
+Imagine that a neighborhood delivery service asks us for help. Every time someone places an order, the same question arrives: when will it get here? The company has kept a table with one row per delivery, a distance, a weather category, and a duration in minutes. No images, no differential equations, no millions of parameters. This should be a pleasant afternoon's work.
+
+Then we open the table. Some distances are missing. Someone has encoded the weather as numbers, making a storm look exactly three times as large as a clear day. A helpful colleague has even added the driver's final arrival timestamp. That last column makes our predictions look wonderful, provided we wait until the delivery is over to make them.
+
+Well, we have found our first problem before fitting a single model. Let's work through it step by step: prepare the data, build a linear predictor we can inspect, and then use MLJ to compare it with regularized models and trees. Along the way, we will keep asking what information each step is allowed to use.
+
+## Start with the prediction time
+
+At what moment does the customer need the answer? When the order is placed. So we can use the distance and the weather information available then. We cannot use the eventual arrival time to predict itself. The same problem can hide behind less obvious names: a final driver status, a completed journey's duration, or a weather measurement taken after arrival. All of them can leak information from the future.
+
+Let's make a small delivery company inside the computer. In our world, duration grows with distance, weather adds delays, and long journeys suffer an extra nonlinear penalty. Random noise stands in for things we did not observe. We will also hide 15 percent of distances independently of the outcome. That gives us a simple missing-data problem to start with. If the GPS mostly failed during storms, we would have to tell a different story about those missing entries.
+
+For this first part, Julia's standard libraries are enough. Run the code from the repository root:
+
+```{julia}
+include("15_tabular_learning/core.jl")
+import .TabularLearning
+using Statistics
+
+deliveries = TabularLearning.delivery_data()
+delivery_rows = TabularLearning.split_rows(length(deliveries.minutes))
+```
+
+Our company has 1,800 deliveries by default. The target is in minutes, so an error of five means five minutes, not five percent. As in the previous chapter, we put 60 percent of the rows in training, 20 percent in validation, and 20 percent in testing. Shuffling is reasonable here because we generated independent deliveries. With real records, recurring customers, drivers, or days could call for grouped or chronological splits instead.
+
+## Fit the preparation, not just the predictor
+
+What should we put in a missing distance? The median seems like a reasonable starting point. But which median? If we calculate it from the entire table, our test rows have already influenced the model before we fit a coefficient. The same applies to scaling distances and choosing the weather categories. These preparation steps learn from data too, so we must fit them using only the training rows.
+
+**Before running:** suppose a test delivery is 100 kilometers away, far outside the training distances. Should its presence change the median used to fill a missing training distance? Decide first; then follow which rows enter each operation below.
+
+```{julia}
+preparation = TabularLearning.fit_preprocessor(deliveries, delivery_rows.train)
+training_features = TabularLearning.transform(preparation, deliveries, delivery_rows.train)
+validation_features = TabularLearning.transform(preparation, deliveries, delivery_rows.validation)
+training_minutes = deliveries.minutes[delivery_rows.train]
+validation_minutes = deliveries.minutes[delivery_rows.validation]
+```
+
+Let's look at what this preparation actually does:
+
+1. Learn the median observed distance from training rows and use it to fill missing values.
+2. Center distances by that median and divide by the standard deviation of the filled training distances.
+3. Add an indicator distinguishing a missing distance from a genuinely observed distance equal to the median.
+4. Encode weather using indicator columns, omitting one reference category.
+
+The learned state is small enough to inspect. These lines inside `fit_preprocessor` compute the center and scale from the selected training rows:
+
+<!-- source-excerpt: 15_tabular_learning/core.jl -->
+```julia
+center = median(observed)
+filled = coalesce.(data.distance[rows], center)
+scale = std(filled; corrected=false)
+scale = scale > 0 ? scale : 1.0
+```
+
+`observed` contains the training distances that were recorded; `coalesce` replaces missing entries with the learned center. Now compare that with the corresponding lines in `transform`:
+
+<!-- source-excerpt: 15_tabular_learning/core.jl -->
+```julia
+filled = coalesce.(data.distance[rows], preprocessor.center)
+all(isfinite, filled) || throw(ArgumentError("distances must be finite"))
+numeric = (filled .- preprocessor.center) ./ preprocessor.scale
+absent = Float64.(ismissing.(data.distance[rows]))
+```
+
+There is no new `median` or `std` in this second step. We reuse the stored numbers whether `rows` selects training, validation, or test deliveries. This is the same boundary we drew around the spam filter: evaluation data may be transformed by a learned rule, but they must not teach that rule something new.
+
+Two awkward cases are worth settling now. If every training distance is missing, there is no median to learn, so the function stops and asks us to fix the data. If all distances are equal, dividing by their standard deviation would divide by zero. We use a scale of one in that case.
+
+Now, how do we put weather into a numerical matrix? Our sorted categories are `clear`, `rain`, and `storm`. We use two indicator columns: one for rain and one for storm. A clear day gets two zeros. Why only two columns? The regression will also have an intercept. If we added all three weather indicators, their sum would already give us that constant column, making one column an exact linear combination of the others.
+
+We could simply write 1, 2, and 3 for the weather, as our colleague did. But a linear model would then treat the step from clear to rain as having the same effect as the step from rain to storm. We have no reason to impose that relationship. Indicator columns let the model learn separate differences. Trees do not need feature scaling, but we will give them the same prepared features to keep the comparison easy to follow.
+
+What happens when the company expands into a snowy town? If `snow` never appeared in training, our encoder rejects it. Assigning two zeros would make snow look like clear weather, which is quite a strong guess! We could add an explicit unknown category, pool rare categories, or send unfamiliar cases for review. Whatever we choose, the same rule needs to be present when we train, evaluate, and use the model.
+
+## A baseline and a linear model we can inspect
+
+Before reaching for a clever model, let's try a very lazy one: predict the mean training duration for every delivery. It knows nothing about the particular trip, but it gives us something concrete to beat.
+
+```{julia}
+mean_prediction = fill(mean(training_minutes), length(validation_minutes))
+baseline_validation_rmse = TabularLearning.rmse(validation_minutes, mean_prediction)
+```
+
+Now we can let the prediction depend on the trip. In a linear model, we add an intercept column to the feature matrix and find the coefficients that minimize the squared residuals:
+
+$$\hat\beta = \mathop{\mathrm{argmin}}_\beta \|X\beta-y\|_2^2.$$
+
+Julia lets us solve this least-squares problem with `X \ y`. We do not need to calculate the inverse of `X'X`; explicitly forming that inverse adds work and can make numerical problems worse. Let's use the linear algebra routines for the calculation and keep our attention on what the fitted model is telling us.
+
+Inside `fit_linear`, the ordinary least-squares branch is only a few lines:
+
+<!-- source-excerpt: 15_tabular_learning/core.jl -->
+```julia
+design = hcat(ones(size(X, 1)), X)
+# Solve least squares directly; never explicitly invert X'X.
+if lambda == 0
+    return design \ y
+end
+```
+
+The first column of ones lets the model learn a baseline time even when the other features are zero. `design \ y` chooses coefficients to make predictions close to the training durations. Prediction then multiplies a new row, prepared in exactly the same way, by those coefficients. Before fitting, which would surprise you more: beating the constant baseline on training rows, or beating it on deliveries held out from fitting?
+
+```{julia}
+linear_coefficients = TabularLearning.fit_linear(training_features, training_minutes)
+linear_validation_prediction = TabularLearning.predict_linear(linear_coefficients, validation_features)
+linear_validation_report = (
+    rmse=TabularLearning.rmse(validation_minutes, linear_validation_prediction),
+    mae=TabularLearning.mae(validation_minutes, linear_validation_prediction),
+    baseline_rmse=baseline_validation_rmse,
+)
+linear_validation_report
+```
+
+On our fixed validation split, the mean-only baseline has RMSE **16.896 minutes**. The linear model brings that down to **7.062 minutes**, with MAE **5.264 minutes**. Knowing something about the trip clearly helps.
+
+How far are our predictions from the actual arrival times? Root mean squared error, or RMSE, computes `sqrt(mean((prediction-target).^2))`. Squaring gives large mistakes extra influence, and the square root brings us back to minutes. Mean absolute error, or MAE, averages the absolute differences and is also in minutes. The customer may care about something more specific, though. If arriving late is much worse than arriving early, we could use an asymmetric loss or predict a suitable quantile instead.
+
+We can inspect the coefficients to see which features are associated with longer deliveries in our model. That does not yet tell us what would happen if we changed a route or could somehow change the weather. Keep that question in mind; we will return to it in the causal chapter.
+
+## Regularization is a choice to validate
+
+Suppose a model starts using large coefficients to chase small quirks in the training data. Can we encourage it to be a little less enthusiastic? Ridge regression adds a penalty on the size of the non-intercept coefficients:
+
+$$\frac{1}{2}\|X\beta-y\|_2^2 + \frac{n\lambda}{2}\sum_{j>0}\beta_j^2.$$
+
+Here `n` is the number of training rows and `lambda` controls how much we penalize the coefficients. We leave the intercept alone. This also explains why scaling matters: a coefficient's size depends on whether we measure distance in kilometers or meters. We do not want a change of units to choose our regularization for us.
+
+We can solve this with the same least-squares machinery. Our function appends scaled identity rows for the penalized coefficients and zeros to the response. These extra rows supply the penalty. Set `lambda=0` and we are back to ordinary least squares. Let's try `lambda=0.1`:
+
+Here are the penalty rows from the shared implementation:
+
+<!-- source-excerpt: 15_tabular_learning/core.jl -->
+```julia
+penalty = Matrix{Float64}(I, size(design, 2), size(design, 2))
+penalty[1, 1] = 0.0 # do not penalize the intercept
+return vcat(design, sqrt(length(y) * lambda) .* penalty) \ vcat(y, zeros(size(design, 2)))
+```
+
+Each extra nonzero row asks one coefficient to stay near zero, with strength `sqrt(n*lambda)`. Squaring that residual gives the `n*lambda` term in our objective. Setting the intercept's penalty entry to zero leaves its baseline free to move. Predict what would happen to that baseline if we penalized it too, especially after adding a large constant to every delivery time.
+
+```{julia}
+ridge_coefficients = TabularLearning.fit_linear(training_features, training_minutes; lambda=0.1)
+ridge_validation_rmse = TabularLearning.rmse(validation_minutes,
+                            TabularLearning.predict_linear(ridge_coefficients, validation_features))
+```
+
+Did ridge improve the predictions? With `lambda=0.1`, validation RMSE rises to **8.070 minutes**, compared with **7.062** without the penalty. Here, shrinking the coefficients made predictions worse. This dataset has few features and many observations, and we built a nonlinear effect into long journeys. Regularization can help with unstable estimates and overfitting, but shrinking coefficients cannot create a nonlinear relationship that the model does not contain.
+
+## Compare alternatives through MLJ
+
+It would be tedious to rewrite our fitting and prediction code every time we wanted to try another algorithm. MLJ gives us a common interface to models from different Julia packages. A model describes the algorithm and its settings. A *machine* connects that model to training data and keeps the learned state. With that distinction, we can change the algorithm while keeping the evaluation procedure familiar.
+
+Let's load the packages for this part. From the repository root, install the chapter environment and run the comparison:
+
+```sh
+julia --project=15_tabular_learning -e 'using Pkg; Pkg.instantiate()'
+julia --project=15_tabular_learning 15_tabular_learning/mlj_comparison.jl
+```
+
+We will compare `RidgeRegressor` from MLJLinearModels with `DecisionTreeRegressor` through MLJDecisionTreeInterface. The full example lives in `15_tabular_learning/mlj_comparison.jl`. To see how the pieces fit together, here is the central sequence:
+
+```julia
+using MLJ
+Ridge = @load RidgeRegressor pkg=MLJLinearModels verbosity=0
+Tree = @load DecisionTreeRegressor pkg=DecisionTree verbosity=0
+
+train_table = MLJ.table(training_features)
+validation_table = MLJ.table(validation_features)
+mach = machine(Ridge(lambda=0.1), train_table, training_minutes)
+fit!(mach; verbosity=0)
+validation_prediction = predict(mach, validation_table)
+```
+
+A tree takes a different approach from our straight-line model. It divides the feature space into regions and predicts a constant inside each one. A deeper tree can make more complicated divisions, giving it both more flexibility and more opportunities to follow noise. Let's compare ridge penalties `0.0`, `0.01`, `0.1`, and `1.0` with tree depths 2, 4, and 6 and a minimum leaf size of 10. We choose this set before opening the test results.
+
+Each candidate learns from the training data, and we compare their validation RMSEs. The script prints those scores and takes the first minimum. Only then does it evaluate the chosen machine on the test set, alongside our mean-prediction baseline. The preparation still comes from the original training rows. We will not refit on training plus validation in this example; that way, the machine we finally evaluate is exactly the one we selected.
+
+```{julia, eval=FALSE}
+include("15_tabular_learning/mlj_comparison.jl")
+comparison = compare_models()
+comparison
+```
+
+Running that comparison in the chapter environment gives:
+
+| Candidate | Validation RMSE (minutes) |
+|:--|--:|
+| Ridge, lambda 0 | 7.062 |
+| Ridge, lambda 0.01 | 7.115 |
+| Ridge, lambda 0.1 | 8.070 |
+| Ridge, lambda 1 | 12.003 |
+| Tree, depth 2 | 10.340 |
+| Tree, depth 4 | 6.679 |
+| Tree, depth 6 | 5.945 |
+
+The depth-6 tree wins this comparison. Only now do we open the 360 test deliveries: its RMSE is **7.827 minutes** and its MAE is **4.387 minutes**, against **17.429 minutes** RMSE for the mean-only baseline. Notice that its test RMSE is higher than its validation RMSE. Choosing the best of several candidates on one sample does not make that sample a promise about the next one.
+
+The tree captures more of the extra delay on long journeys, but still has to work around missing distances. Changing the estimator cannot restore information we never gave it.
+
+What if we used cross-validation instead of a single validation split? We would have to fit the preparation again inside each training fold. Preparing the whole table once and only then splitting it would let held-out rows influence every fold. A pipeline can help us keep these steps together, as long as we place the fitting steps on the correct side of each split.
+
+## Inspect failures before expanding the model
+
+Suppose the overall RMSE looks good, but customers ordering during storms still complain. A single number can hide that. Once the procedure is fixed, let's inspect residuals for observed versus missing distances, different weather categories, and short versus long trips. Count the rows in each group too: the most dramatic-looking difference might come from a handful of deliveries. If this examination suggests a new modeling choice, we can explore it, but we will need a fresh final assessment for the next version.
+
+Sometimes the next improvement is waiting in the data collection rather than in another model. A missing distance could hide a one-kilometer trip or a twelve-kilometer trip; the imputed value cannot tell us which. Changing definitions of weather categories will confuse a sophisticated model just as effectively as a simple one. And if the customer asks for an arrival interval, we need to check how often that interval contains the actual arrival time. RMSE alone cannot answer that question.
+
+## Your turn: three ways to investigate a delivery model
+
+### Intuition: which distance belongs in the median?
+
+The training distances are `[2, 4, missing]`; the validation distances are `[missing, 100]`. What number should fill each missing value? If we change 100 to 1,000, which learned preparation values should change? Explain why fitting a separate median to the validation rows would be another mistake, even though it never modifies the training rows.
+
+*Hint:* a customer with a missing distance should receive the same transformation rule whether we are evaluating a saved model or using it in service.
+
+### Change the experiment: remove one clue
+
+Before running an experiment, predict whether the missingness indicator must improve validation RMSE. Remove only that column, refit the linear model using the same training rows, and compare on the same validation rows. Leave the test set closed. Then explain why an improvement in either direction is possible in a finite sample.
+
+*Hint:* `transform` places scaled distance first and the missingness indicator second. Keep the weather columns; otherwise you have changed two things at once.
+
+### Build it yourself: report the customers we disappoint
+
+Write a function taking actual durations, predicted durations, and a Boolean missing-distance flag. Return a row for each observed group with its number of deliveries, RMSE, and mean signed error `prediction - actual`. Test it on actual times `[10, 20, 30, 40]`, predictions `[12, 18, 35, 35]`, and flags `[false, false, true, true]`. Could a group have zero mean signed error and still receive poor predictions?
+
+*Hint:* compute each statistic inside its group; dividing a group's sum of errors by the size of the whole dataset would answer a different question.
+
+You can explore ridge penalty and tree depth with the Pluto sliders too. Before each change, record whether you expect fitting error, validation error, or both to fall. Use validation results to investigate that prediction, then choose a configuration before running the separate final comparison.
+
+## Worked solutions: follow the data through the program
+
+**The median.** The observed training distances are 2 and 4, giving a median of 3. Both missing values are filled with 3, using that same training rule. Changing a validation distance changes its transformed value but changes none of the learned preparation. Fitting a new median to validation would make a missing input mean one thing while learning coefficients and another thing while evaluating them. The tempting whole-table median also lets held-out records participate in learning. Neither mirrors how a frozen model handles the next customer's order.
+
+**The missingness clue.** The experiment can reuse our existing variables:
+
+```julia
+keep = [j for j in axes(training_features, 2) if j != 2]
+without_flag = TabularLearning.fit_linear(training_features[:, keep], training_minutes)
+without_flag_prediction = TabularLearning.predict_linear(
+    without_flag, validation_features[:, keep])
+TabularLearning.rmse(validation_minutes, without_flag_prediction)
+```
+
+On this fixed split, removing the indicator lowers validation RMSE from **7.062 to 6.961 minutes**. The extra clue did not help this time. It distinguishes an unknown distance from one actually observed near the median, but its fitted coefficient can also follow sampling noise. Our missing distances were chosen independently of the outcome; a GPS that fails mainly during storms would give us a different experiment. Removing weather columns as well would make the result impossible to attribute to missingness alone. Choosing whichever version wins on the test rows would spend our final evaluation on model selection.
+
+**The group report.** One implementation is:
+
+```julia
+function group_report(actual, predicted, missing_distance)
+    length(actual) == length(predicted) == length(missing_distance) ||
+        throw(DimensionMismatch("all inputs must describe the same deliveries"))
+    [(missing_distance=flag,
+      n=count(==(flag), missing_distance),
+      rmse=sqrt(mean((predicted[missing_distance .== flag] .-
+                      actual[missing_distance .== flag]).^2)),
+      bias=mean(predicted[missing_distance .== flag] .-
+                actual[missing_distance .== flag]))
+     for flag in sort(unique(missing_distance))]
+end
+```
+
+The observed-distance group has two rows, RMSE 2, and bias 0. The missing-distance group has two rows, RMSE 5, and bias 0. Positive and negative errors cancel in the signed average, so zero bias does not imply accurate delivery times. These tiny groups illustrate the calculation; they are too small to establish a dependable ranking of customer experiences. This is the delivery version of our spam-filter lesson: unpack a summary metric before deciding whom the model is helping.
+
+## References
+
+- [MLJ: Loading Model Code](https://juliaai.github.io/MLJ.jl/stable/loading_model_code/)
+- [MLJLinearModels: Model API and objectives](https://juliaai.github.io/MLJLinearModels.jl/dev/api/)
+- [DecisionTree.jl: MLJ integration](https://github.com/JuliaAI/DecisionTree.jl)

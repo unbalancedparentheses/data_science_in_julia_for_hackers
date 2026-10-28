@@ -1,0 +1,222 @@
+# From prediction to intervention {#causal-inference}
+
+<div class="browser-experiment">
+<p><strong>Try the experiment here.</strong> These controls run in your browser; no Julia installation is needed. <a href="interactive/causal/index.html">Open the experiment on its own page</a> for more room. The Julia notebook remains available for editing the model.</p>
+<iframe data-interactive src="interactive/causal/index.html" title="Prediction and intervention" loading="lazy" style="width:100%;height:950px;border:1px solid #dfe5ec;border-radius:8px;"></iframe>
+</div>
+<script src="interactive/embed.js" defer></script>
+
+Let's return to the pricing problem, this time with a shop that is already selling its product. The owner has been keeping records, and today they bring us an exciting discovery: whenever they charge more, they sell more! Perhaps we have found a rather pleasant way to increase sales. Should we tell them to raise the price tomorrow?
+
+Before changing the price tag, let's think about what those records are telling us. In the optimal-pricing chapter we worked with a demand curve and the uncertainty around it. Now we have to ask where that curve comes from. Does it describe what happens when we change the price, or does it describe the kinds of days on which the owner chooses a different price? Those can lead us to opposite decisions.
+
+To untangle this, we are going to build our own little shop in Julia. We will invent its customers and prices, so we can peek behind the observations and see what is really happening. Then we will hide that knowledge and try to recover it from the data, just as we would have to do with a real shop.
+
+## A price is also a decision
+
+Our shop sells a product at either 10 or 14 dollars. Its manager knows something we haven't yet put into the analysis: some days are much busier than others. When a busy day is expected, the manager usually chooses 14. On quiet days, the price is usually 10. So demand is doing two things at once: influencing the price and bringing customers through the door.
+
+We can sketch that story with three arrows. Each arrow represents an influence we are assuming:
+
+- Expected demand → price.
+- Expected demand → quantity sold.
+- Price → quantity sold.
+
+Now the trap begins to appear. A high price is also a clue that the manager expected a busy day. This mixing of influences is called **confounding**. Changing the price tag ourselves won't make a queue of customers appear outside the shop!
+
+Let's write down the comparison we actually want. Call the quantity day \(i\) would sell at the lower price \(Y_i(0)\), and the quantity it would sell at the higher price \(Y_i(1)\). These two possibilities are called *potential outcomes*. If we could compare them for every day, their average difference would be
+
+\[
+\tau = E[Y(1)-Y(0)].
+\]
+
+There is a small inconvenience: we only get to live each day once. We cannot rewind Tuesday, keep all its customers, and try another price. Our Julia shop lets us do exactly that, so let's use it to establish the answer before looking at the historical records.
+
+```{julia}
+include(joinpath(pwd(), "16_causal_inference", "core.jl"))
+using .CausalPricing
+using Statistics
+
+population = pricing_population(4000; seed=1601)
+mean(population.quantity_high - population.quantity_low)
+```
+
+At the lower price, our shop sells around 80 units on quiet days and 200 on busy days, with some random noise. Raising the price reduces quantity by 20 in either case. We therefore know the answer: the average causal effect is exactly −20. Keep that number in mind; we are about to get an answer pointing in the other direction.
+
+## A convincing wrong answer
+
+Before generating the historical records, put a sign on your prediction: will the difference in observed quantities be positive or negative? We know every day's causal effect is −20, but the manager is mixing different kinds of days into the two price groups. Draw that mixture before looking at Julia's answer.
+
+Let's put the manager in charge again. They choose the higher price with probability 0.85 on busy days and 0.15 on quiet days. We record the resulting price and quantity, leaving the outcome at the other price hidden.
+
+The important part of `observe_prices` is visible in these lines from `16_causal_inference/core.jl`:
+
+<!-- source-excerpt: 16_causal_inference/core.jl -->
+```julia
+probabilities = ifelse.(population.busy, high_given_busy, high_given_quiet)
+high = rand(MersenneTwister(seed), length(probabilities)) .< probabilities
+quantity = ifelse.(high, population.quantity_high, population.quantity_low)
+```
+
+The first line lets the manager's price policy depend on demand. The second tosses coins with those probabilities. The third reveals just the outcome at the chosen price. Notice that the price-selection rule doesn't change either potential outcome: we first built the world, then decided which parts of it the records would show us. A predictive train/test split like the one in the spam chapter cannot undo this selection rule.
+
+```{julia}
+historical = observe_prices(population; seed=1602,
+    high_given_busy=0.85, high_given_quiet=0.15)
+naive = difference_in_means(historical.quantity, historical.high)
+naive
+```
+
+Our first attempt is simple: subtract the average quantity on low-price days from the average on high-price days. The function also gives us an approximate interval based on variation in the two groups. That interval accounts for sampling variability under an independent-groups approximation, but it has no way to untangle the manager's choices. Collecting more days under the same policy could make this interval narrower while leaving our causal answer wrong.
+
+So why do expensive days look so successful? Most of them are busy days! The association can help us predict sales while the manager keeps following the same policy. But we asked what would happen if we changed the policy, and that is the part this comparison has missed.
+
+We could give these records to a much more elaborate predictive model and find that price is a very useful feature. That would not solve our problem either. Cross-validation could confirm that it predicts well, while the connection between demand and the manager's decision remains untouched.
+
+## Compare like with like
+
+Fortunately, we also recorded whether the manager expected a busy or a quiet day, before setting the price. In the world we built, this is the only common cause of price and quantity. Why don't we compare busy days with other busy days, and quiet days with other quiet days? After making those two comparisons, we can average them in proportion to how often each kind of day occurs:
+
+\[
+\widehat\tau = \sum_{d\in\{\mathrm{quiet},\mathrm{busy}\}}
+\widehat P(D=d)
+\left[\overline Y_{A=1,D=d}-\overline Y_{A=0,D=d}\right].
+\]
+
+Inside `adjusted_difference`, the calculation follows the equation one context at a time:
+
+<!-- source-excerpt: 16_causal_inference/core.jl -->
+```julia
+estimate = 0.0
+for context in (false, true)
+    rows = data.busy .== context
+    any(rows) || throw(ArgumentError("both demand contexts must be observed"))
+    estimate += mean(rows) * difference_in_means(outcome[rows], data.high[rows]).estimate
+end
+return estimate
+```
+
+`rows` selects quiet days first and busy days next. The within-context difference is multiplied by `mean(rows)`, the fraction of all days belonging to that context. Adding the contributions puts us back in the population whose average effect we asked for. It would be tempting to average the two differences without weights; that only targets this population when the contexts are equally common.
+
+```{julia}
+adjusted = adjusted_difference(historical)
+(naive=naive.estimate, adjusted=adjusted, known_effect=-20.0)
+```
+
+That gets us much closer to −20. Before celebrating, let's look at what made the trick work. There are three assumptions hiding inside this comparison:
+
+1. **Conditional exchangeability.** Once we know whether a day is busy or quiet, the chosen price gives us no further information about its potential outcomes. We built our shop this way. With real records, an unrecorded festival or the manager's private forecast could spoil that assumption.
+2. **Positivity.** We need both prices to occur in each kind of day. If the manager always charges 14 on busy days, where would we find a comparable busy day priced at 10? A regression may still produce a number, but it would have to extrapolate.
+3. **Consistency and no relevant interference.** The recorded outcome must correspond to the price intervention we described, and assignments must not affect other days in a way our design ignores. Imagine customers seeing today's high price and deciding to buy tomorrow instead. We would then need a story about several days together.
+
+Does this mean we should adjust for every column in the spreadsheet? That can get us into more trouble. Purchases completed after the price change are part of what we are trying to explain, rather than a pre-existing reason for the manager's choice. Adjusting for an intermediate step, or *mediator*, can remove part of the effect we wanted to measure. Adjusting for a common consequence, or *collider*, can introduce a new bias. The arrows in our story help us decide which comparisons make sense.
+
+Our adjusted calculation currently gives a point estimate. To put uncertainty around it, try bootstrapping independent days and recomputing both the context proportions and the two within-context comparisons each time. The interval from our first, unadjusted calculation cannot simply be carried over to this new estimate.
+
+## Design an experiment
+
+Suppose the manager agrees to let us choose prices for a while. We could toss a fair coin each day: one outcome gives price 10, the other gives price 14. The coin doesn't know whether the day will be busy. This breaks the connection that caused our original problem, while leaving customers free to respond to the chosen price.
+
+Predict what changes in our three-line price-assignment mechanism when both probabilities become 0.5. Does the quantity equation need to change? The experiment will be informative because the assignment changes, even though the customers' potential responses stay the same.
+
+```{julia}
+trial = observe_prices(population; seed=1603,
+    high_given_busy=0.5, high_given_quiet=0.5)
+trial_effect = difference_in_means(trial.quantity, trial.high)
+trial_effect
+```
+
+Now let's put our attempts side by side. Running the examples with the given seeds in Julia 1.10.10 gives these rounded results:
+
+| Analysis | Estimated change in units sold |
+|:--|--:|
+| Historical, unadjusted | +64.51 |
+| Historical, adjusted for demand | −19.84 |
+| Randomized experiment | −20.62 |
+| Known synthetic effect | −20.00 |
+
+Once prices are randomized, the simple difference in means estimates the effect we wanted. It is not exactly −20 because a finite sequence of coin tosses can still leave one group with more busy days than the other. The interval adds and subtracts 1.96 estimated standard errors, calculated from the two groups' sample variances. This is a large-sample approximation: randomization helps us reason about uncertainty, but it doesn't guarantee that every interval will contain the true effect.
+
+Of course, running the experiment means making more decisions than tossing a coin. Are we assigning prices to days, customers, or whole stores? What will we measure, for how long, and what will we do with missing records? Decide these things before the results arrive. If whole stores receive a price, observations within a store are related and the analysis must account for that. If customers ignore an assigned offer, the effect of receiving the offer and the effect of actually paying that price become different questions. Even the stopping rule matters: peeking every morning and stopping at the first favorable interval changes how that interval should be interpreted.
+
+And remember which shop we studied. Customers in another market, or the same customers next year, may respond differently. We still need to think about what carries over when we take an experimental result somewhere new.
+
+## The outcome must match the decision
+
+At this point the owner might object: 'You have told me how many units I lose, but what happens to my profit?' A fair question. If each unit costs 4 to produce, profit before fixed costs is
+
+\[
+\mathrm{profit}=(\mathrm{price}-4)\times\mathrm{quantity}.
+\]
+
+We already have the randomized prices and the quantities sold. Let's use them to make the comparison the owner cares about:
+
+Before calculating, consider a quiet day with 80 sales at price 10 and 60 sales at price 14. Work out the two margins after unit cost 4. Would fewer sales necessarily leave the owner worse off? This is where our causal question meets the decision objective from the pricing and spam-evaluation chapters.
+
+```{julia}
+profit_effect = difference_in_means(trial.profit, trial.high)
+profit_effect
+```
+
+Selling fewer units can still bring in more money when the margin on each unit increases. This is why choosing the outcome is part of designing the experiment. We should also ask what happens after the experiment ends: will customers keep returning, can the shop meet demand, and who bears the cost of a price change? Short-term profit answers one part of the owner's question.
+
+Since we built this shop ourselves, we can peek at both possible profits for each day and check the answer directly:
+
+```{julia}
+oracle_profit_effect = mean(
+    (14 - 4) .* population.quantity_high -
+    (10 - 4) .* population.quantity_low)
+```
+
+Our simulator gets to play oracle because it knows both potential outcomes. Back at a real shop, we only get one of them. Everything we have done with adjustment and randomization was a way of dealing with that missing alternative.
+
+## Experiment with the assumptions
+
+Open `16_causal_inference/notebook.jl` in Pluto. Its slider increases the manager's tendency to charge more on busy days. Compare the historical association, adjusted estimate, and randomized estimate as confounding grows. Near the ends of the slider, inspect how few observations remain in the less common price/context combinations.
+
+### Intuition: reconstruct the reversal without noise
+
+Suppose half the days are busy. Quiet days sell 80 units at the low price and 60 at the high price; busy days sell 200 and 180. The manager chooses the high price with probability 0.85 on busy days and 0.15 on quiet days. Calculate expected quantity in each observed price group. How can their difference disagree with the −20 effect on every day?
+
+*Hint:* first find the fraction of busy days among high-price observations. The symmetric probabilities and equal context proportions make this 0.85, but that shortcut would not hold for every population.
+
+### Change the experiment: make the manager more predictable
+
+Before moving the Pluto slider, predict the historical contrast at tendencies 0.5, 0.85, and 0.95. Keep the population and random seeds fixed; change only the assignment policy. Compare the adjusted and randomized estimates too, and inspect the counts in the rare price/context combinations. Why can adjustment become noisier even when its assumptions still hold?
+
+*Hint:* as the manager becomes more predictable, high-price quiet days and low-price busy days become scarce. The experiment with both assignment probabilities fixed at 0.5 remains the same experiment throughout.
+
+### Build it yourself: serve a different neighborhood
+
+Give quiet days a causal quantity effect of −10 and busy days an effect of −40. A new neighborhood has only 20 percent busy days. Write a function that estimates within-context effects from observed records and averages them for that target mixture. What effect should it recover with plentiful data? What would a simple 50/50 average be estimating instead?
+
+*Hint:* the target mixture supplies the weights, while the records supply the conditional effects. Assume those conditional effects transfer to the new neighborhood; changing weights cannot establish that assumption.
+
+## Worked solutions: keep the comparison attached to its question
+
+**The reversal.** Expected quantity at the high price is `0.85*180 + 0.15*60 = 162`. At the low price it is `0.15*200 + 0.85*80 = 98`. The historical contrast is therefore +64, despite both causal effects being −20. The groups contain different kinds of days. Subtracting their means as if they were comparable is the tempting wrong step; a narrower interval around +64 would not repair it.
+
+**The policy experiment.** With tendency `t`, equal numbers of busy and quiet days, and complementary price probabilities, the expected historical contrast is `120*(2t-1)-20`. It is −20, +64, and +88 at the three settings. Finite simulated samples fluctuate around these values. Conditional adjustment can still estimate −20, but the rare comparisons contain less information as `t` approaches one. At exactly one, positivity fails: there are no high-price quiet days or low-price busy days. Increasing the sample size cannot create an assignment the policy never makes.
+
+**The new neighborhood.** The target effect is `0.8*(-10) + 0.2*(-40) = -16`. A function can make its weighting choice explicit:
+
+```julia
+function target_effect(data; busy_weight=0.2)
+    0 <= busy_weight <= 1 || throw(ArgumentError("weight must be in [0,1]"))
+    quiet = .!data.busy
+    busy = data.busy
+    quiet_effect = difference_in_means(data.quantity[quiet], data.high[quiet]).estimate
+    busy_effect = difference_in_means(data.quantity[busy], data.high[busy]).estimate
+    return (1 - busy_weight) * quiet_effect + busy_weight * busy_effect
+end
+```
+
+The simulator can represent different effects without changing its assignment function: create `quantity_high` by subtracting 10 from quiet days' `quantity_low` and 40 from busy days' `quantity_low`, then pass those potential outcomes to `observe_prices`. The function above still needs both prices represented within each context. A 50/50 average would give −25, the effect for a different population. Averaging all observed high-price outcomes minus all observed low-price outcomes would additionally reintroduce the manager's confounding. Neither shortcut answers the new neighborhood's question.
+
+## Summary
+
+We started with records suggesting that higher prices bring more sales. Once we looked at how the manager chose those prices, the surprise disappeared: busy days were hiding the price effect. Comparing similar days helped under our stated assumptions, and randomizing prices gave us another way to estimate the effect. Before choosing a model for our next decision, let's ask the same questions: what exactly are we changing, for whom, and what makes the comparison fair?
+
+The chapter and its Pluto notebook share the functions in `16_causal_inference/core.jl`, so you can change the simulated shop in one place and explore the consequences in both.
+
+Further reading: Hernán and Robins, [Causal Inference: What If](https://miguelhernan.org/whatifbook), provides a detailed treatment of potential outcomes, exchangeability, positivity, and study design. The [Stan User's Guide on poststratification](https://mc-stan.org/docs/stan-users-guide/poststratification.html) discusses related ideas for averaging estimates over a target population.

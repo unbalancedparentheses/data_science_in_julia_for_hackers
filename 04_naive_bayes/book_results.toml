@@ -1,0 +1,15 @@
+accuracy = 0.9510309278350515
+all_ham_accuracy = 0.6971649484536082
+blocked_ham = 51
+dataset_sha256 = "3e5727ecfef339285d996d8841c7fa82d8c5d155c1ed925639d87197d09f9cf1"
+first_predictions = [0, 0, 1, 0, 1]
+ham_recall = 0.9528650646950092
+missed_spam = 25
+seed = 123
+spam_fraction = 0.2900232018561485
+spam_recall = 0.9468085106382979
+test_count = 1552
+training_count = 3620
+true_ham = 1031
+true_spam = 445
+vocabulary_count = 2975

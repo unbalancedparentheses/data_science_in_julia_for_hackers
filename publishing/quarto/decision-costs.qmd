@@ -1,0 +1,83 @@
+---
+title: "The cost of blocking a good email"
+subtitle: "A reproducible Julia publishing pilot"
+engine: julia
+---
+
+A classifier can have impressive accuracy and still make expensive mistakes.
+Blocking an invoice may cost more than letting an advertisement reach an inbox.
+This experiment uses the same simulation and evaluation functions as chapter 14.
+Changing the source code changes both the chapter's examples and this report.
+
+This is synthetic email data, not an estimate of the performance of a deployed
+spam filter. Each email has one of four pre-delivery signals and a binary label.
+We use separate training, validation, and test rows. We choose a decision rule on
+validation data and inspect its test performance once after that choice.
+
+## Fit the scores
+
+```{julia}
+include(joinpath(@__DIR__, "..", "..", "14_model_evaluation", "core.jl"))
+using .ModelEvaluation
+mail = synthetic_mail()
+rows = split_rows(length(mail.label))
+score = fit_score(mail.signal[rows.train], mail.label[rows.train])
+validation_probability = predict_score(score, mail.signal[rows.validation])
+```
+
+The scores estimate how often each signal is associated with spam. A score is
+not a decision: we still have to choose when to block an email. If probabilities
+are calibrated for the population in which the filter is used, and correct
+classifications have zero cost, the expected costs of the two actions are
+
+$$L(\mathrm{block}) = C_{FP}(1-p), \qquad L(\mathrm{allow}) = C_{FN}p.$$
+
+Blocking minimizes expected cost when $p \geq C_{FP}/(C_{FP}+C_{FN})$.
+This formula depends on calibration and the stated costs. It does not guarantee
+that the scores above are calibrated. Here we instead compare candidate
+thresholds by their observed validation cost.
+
+## Choose the operating point
+
+Set the cost of blocking legitimate mail to five units and missing spam to one.
+These are illustrative preferences, not universal business values.
+
+```{julia}
+false_positive_cost = 5.0
+false_negative_cost = 1.0
+choice = choose_threshold(mail.label[rows.validation], validation_probability;
+    false_positive_cost, false_negative_cost)
+choice
+```
+
+Only now do we score the held-out test set. The comparison with an always-allow
+baseline is especially useful when spam is uncommon. We report both accuracy
+and cost because they answer different questions.
+
+```{julia}
+test_probability = predict_score(score, mail.signal[rows.test])
+test_labels = mail.label[rows.test]
+selected = confusion(test_labels, test_probability; threshold=choice.threshold)
+baseline = confusion(test_labels, zeros(length(test_labels)); threshold=0.5)
+(; selected=(metrics=metrics(selected),
+             cost=mean_cost(selected; false_positive_cost, false_negative_cost)),
+   always_allow=(metrics=metrics(baseline),
+                 cost=mean_cost(baseline; false_positive_cost, false_negative_cost)))
+```
+
+A single held-out result is still uncertain. For a real system, collect more
+representative data, assess variability, and monitor whether the population or
+costs change. Do not repeatedly adjust the rule after inspecting this test set
+and continue calling it held out.
+
+## Explore without reusing the test set
+
+The chapter 14 Pluto notebook lets you vary mistake costs and deployment
+prevalence using validation data. Its prevalence experiment explicitly assumes
+that class-conditional error rates stay fixed. That assumption can fail if spam
+content changes; the slider is a thought experiment, not a deployment guarantee.
+
+This pilot tests Quarto's native Julia engine while the existing book remains
+in Bookdown. Render it from the repository root with
+`quarto render publishing/quarto`. Quarto executes the code and produces a
+standalone HTML report in `publishing/quarto/_site/decision-costs.html`.

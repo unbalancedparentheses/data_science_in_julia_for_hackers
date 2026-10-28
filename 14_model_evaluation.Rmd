@@ -1,0 +1,253 @@
+# How to know your model is wrong {#model-evaluation}
+
+<div class="browser-experiment">
+<p><strong>Try the experiment here.</strong> These controls run in your browser; no Julia installation is needed. <a href="interactive/evaluation/index.html">Open the experiment on its own page</a> for more room. The Julia notebook remains available for editing the model.</p>
+<iframe data-interactive src="interactive/evaluation/index.html" title="Spam-filter costs" loading="lazy" style="width:100%;height:950px;border:1px solid #dfe5ec;border-radius:8px;"></iframe>
+</div>
+<script src="interactive/embed.js" defer></script>
+
+## The filter that wins by doing nothing
+
+Imagine that we have finished the spam filter from Chapter 4 and a small company agrees to try it. We arrive with good news: our filter is 93 percent accurate! The administrator looks pleased, until someone asks how many unwanted emails it actually catches.
+
+Well, that is an inconvenient question. If only seven out of every hundred messages are spam, a program that sends everything to the inbox is already 93 percent accurate. Our impressive competitor could be a program that does absolutely nothing.
+
+And the mistakes are not equally annoying. Letting an advertisement through might cost someone a few seconds. Hiding a customer's purchase order could cost the company a sale. Before we celebrate that accuracy number, we have some work to do.
+
+Let's return to the spam problem and work out how to tell whether our filter is helping. We will make our own small collection of messages, so we can control how spam enters the mailbox and watch what happens when we change the rules. Later, we would have to repeat the evaluation with the mail the company actually receives.
+
+First, let's generate the messages. Run the following code from the repository root; for this experiment, Julia's standard libraries are enough.
+
+```{julia}
+include("14_model_evaluation/core.jl")
+using .ModelEvaluation
+mail = synthetic_mail()
+rows = split_rows(length(mail.label))
+```
+
+To keep our attention on evaluation, we will give each message an observed signal category from 1 to 4. Think of it as a rough summary of how suspicious its words look. We are taking that signal as given here, rather than training another text classifier. The categories occur with probabilities 0.70, 0.20, 0.08, and 0.02, and their true spam rates are 0.01, 0.08, 0.40, and 0.85. So the mailbox's expected spam fraction is `0.70*0.01 + 0.20*0.08 + 0.08*0.40 + 0.02*0.85`, or 7.2 percent. A particular batch will wander a little around that number because the labels are random.
+
+Of course, we know those rates because we invented the mailbox. Our learner does not get to peek! It estimates them from labeled training messages, adding one spam and one ham observation to each category. This is the smoothing idea we used before: a small group should not make us completely certain that its next message will be spam or ham.
+
+## Three datasets, three jobs
+
+Now, how do we give the filter a fair examination? We divide the messages into three groups: 60 percent for training, 20 percent for validation, and 20 percent for testing. The training messages let us estimate the model's parameters. The validation messages let us try different decision rules. We put the test messages aside until we have finished making those choices.
+
+**Before running:** imagine that the rarest signal category has three training messages, all spam. What probability would you assign to its next message: 1, 4/5, or something else? Write down your choice and what one new ham message should do to it.
+
+```{julia}
+score_model = fit_score(mail.signal[rows.train], mail.label[rows.train])
+validation_probability = predict_score(score_model, mail.signal[rows.validation])
+validation_label = mail.label[rows.validation]
+```
+
+Let's open `fit_score` instead of treating it as a box that prints probabilities. After checking the inputs, its calculation is just this line from `14_model_evaluation/core.jl`:
+
+<!-- source-excerpt: 14_model_evaluation/core.jl -->
+```julia
+return [(sum(label[signal .== k]) + 1) / (count(==(k), signal) + 2) for k in 1:4]
+```
+
+For category `k`, `signal .== k` selects its rows. The numerator counts spam and adds one; the denominator counts all messages and adds two. Our three-spam example therefore gives `4/5`. Adding a ham message changes it to `4/6`. The smoothing acts like one extra spam and one extra ham message, so its influence fades as real observations accumulate. Notice which labels the function receives: only `rows.train`. A smoothing formula cannot protect us if we hand it the test labels.
+
+It may be tempting to look at the test results, adjust the threshold a little, and try again. After a few rounds, the results might look wonderful. But what have we learned? We have learned how to adapt to those particular test messages. The word "test" on a variable cannot stop us from using its contents to train the model.
+
+Shuffling works for our invented mailbox because each message is an independent draw from the same mechanism. A real inbox is messier. One campaign might send nearly identical messages all week, and a random split could put copies in both training and testing. If we want to recognize new campaigns, we should keep whole campaigns together when splitting. If we want to know how the filter will behave next month, we should save a later period. The way we divide the data should follow the question we are asking.
+
+## Count the mistakes before compressing them
+
+Let's count what the filter gets right and wrong. We label spam as 1 and ham as 0, and a positive prediction means blocking a message. A true positive is spam we blocked; a false positive is ham we blocked by mistake. A true negative is ham we delivered, and a false negative is spam that slipped through. These four counts make up our **confusion matrix**.
+
+Here is the counting part of `confusion` in the shared implementation:
+
+<!-- source-excerpt: 14_model_evaluation/core.jl -->
+```julia
+predicted = probability .>= threshold
+return (tp=count(predicted .& (label .== 1)),
+        fp=count(predicted .& (label .== 0)),
+        tn=count(.!predicted .& (label .== 0)),
+        fn=count(.!predicted .& (label .== 1)))
+```
+
+A dot applies an operation to each message. Thus `.&` means both conditions must hold for that message, and `.!predicted` selects messages we deliver. Before compressing these counts into accuracy, try tracing one blocked ham message through the four expressions. It should contribute to exactly one count: `fp`.
+
+Before checking the output, predict the all-ham baseline's recall and precision. Do you expect zero for both? Keep your answer nearby when we look at the denominators.
+
+```{julia}
+validation_counts = confusion(validation_label, validation_probability; threshold=0.5)
+validation_metrics = metrics(validation_counts)
+baseline_counts = confusion(validation_label, zeros(length(validation_label)); threshold=0.5)
+baseline_metrics = metrics(baseline_counts)
+(validation_counts, validation_metrics, baseline_metrics)
+```
+
+Here is what our seeded mailbox gives us on the 1,200 validation messages:
+
+| Rule | Spam blocked | Ham blocked | Spam delivered | Ham delivered | Accuracy |
+|:--|--:|--:|--:|--:|--:|
+| Block at probability 0.5 | 14 | 4 | 67 | 1,115 | 94.08% |
+| Deliver everything | 0 | 0 | 81 | 1,119 | 93.25% |
+
+Our filter beats the lazy baseline on accuracy, but catches only 14 of the 81 spam messages. That is a much less impressive announcement than “94 percent accurate”! Let's unpack the numbers.
+
+From those counts, we can calculate four useful quantities:
+
+- **Accuracy:** the fraction of all messages classified correctly.
+- **Precision:** among messages blocked, the fraction that really are spam.
+- **Recall:** among actual spam messages, the fraction blocked.
+- **False-positive rate:** among actual ham messages, the fraction blocked.
+
+Notice that precision and false-positive rate ask different questions. Precision starts with the blocked messages; false-positive rate starts with the legitimate ones. Their denominators are different. A filter that blocks everything can have perfect recall, and our lazy filter can have high accuracy by delivering everything when spam is rare. Looking at the confusion matrix makes both tricks much harder to hide.
+
+What happens to our all-ham baseline? Its recall is zero whenever spam is present: it catches none of it. Its precision is a more curious case. Since it blocks no messages, there are no blocked messages among which to count the spam fraction. That ratio is undefined, so the function returns `missing`. A zero would mean something different.
+
+## Choose a threshold for the actual consequences
+
+Let's put a cost on the two mistakes. Suppose blocking a legitimate message costs five units, while delivering a spam message costs one. We can change these numbers to suit the company: missing a purchase order and seeing an advertisement need not bother everyone equally.
+
+If our confusion matrix contains $FP$ false positives and $FN$ false negatives among $N$ messages, the average observed cost is
+
+$$\frac{C_{FP}FP + C_{FN}FN}{N}.$$
+
+Now we can try a grid of thresholds and choose the one with the lowest cost on the validation messages. If several thresholds tie, we take the first minimum. Our test messages remain in their envelope while we make this choice.
+
+The selection itself is short. These lines from `choose_threshold` turn each proposed rule into a validation cost and choose its first minimum:
+
+<!-- source-excerpt: 14_model_evaluation/core.jl -->
+```julia
+losses = [mean_cost(confusion(label, probability; threshold=t);
+                   false_positive_cost, false_negative_cost) for t in thresholds]
+i = argmin(losses) # first minimizer: deterministic, no test-set tie breaking
+return (; threshold=thresholds[i], validation_cost=losses[i])
+```
+
+There is no special training magic in `argmin`: it picks the position of the smallest number. The protection comes from how we arranged the experiment, keeping test labels out of this calculation.
+
+```{julia}
+policy = choose_threshold(validation_label, validation_probability;
+                          false_positive_cost=5.0, false_negative_cost=1.0)
+policy
+```
+
+And we really are back at the beginning: the selected threshold is **0.85**, above every score our model assigns. It delivers everything. Blocking the most suspicious category catches 14 spam messages but hides four legitimate ones, costing `5*4 + 67 = 87` units. Delivering everything costs only 81 units, or **0.0675 per message**. The more accurate rule loses once we count the consequences!
+
+This is useful news for the administrator, even if it is disappointing news for our filter. With these costs and this validation sample, we have not found a blocking rule worth deploying. Perhaps a quarantine folder would give us a better option than blocking or delivering everything.
+
+Can we work out the threshold without trying a grid? Suppose `p` is a calibrated probability of spam for the population where we will use the filter. Blocking the message has expected cost `C_FP*(1-p)`, since we pay when it is actually ham. Delivering it has expected cost `C_FN*p`, since we pay when it is spam. Comparing the two, blocking costs no more than delivering when
+
+$$p \geq \frac{C_{FP}}{C_{FP}+C_{FN}}.$$
+
+With our example costs, the cutoff is `5/6`, about 0.833. Our model gives the most suspicious category a probability of 0.847, just above that cutoff. Yet only 14 of its 18 validation messages were spam, about 0.778. That small group explains why the validation search rejects blocking it: estimated probabilities and observed frequencies do not agree exactly. We also allowed only two actions in the calculation. Adding a quarantine folder, human review, or a limit on how many messages people can inspect would change the decision we need to solve.
+
+## Probabilities deserve their own evaluation
+
+So far, we have used probabilities to decide which messages to block. But are those probabilities any good? If we collect messages to which the model assigns a probability of 0.8, we would like roughly eight out of ten to be spam. This agreement between predicted probabilities and observed frequencies is called **calibration**.
+
+Let's group the predictions into intervals and compare each group's mean predicted probability with the fraction that really is spam. This gives us a reliability table. We will keep the number of messages in each group too; we will need it when interpreting the result.
+
+```{julia}
+validation_reliability = reliability(validation_label, validation_probability; bins=5)
+validation_brier = brier_score(validation_label, validation_probability)
+(validation_reliability, validation_brier)
+```
+
+The nonempty bins in our validation sample are:
+
+| Messages | Mean predicted spam probability | Observed spam fraction |
+|--:|--:|--:|
+| 1,089 | 0.0218 | 0.0266 |
+| 93 | 0.3913 | 0.4086 |
+| 18 | 0.8472 | 0.7778 |
+
+We can also summarize probability errors with the **Brier score**, the mean of `(predicted_probability - label)^2`. Smaller is better. Our validation score is **0.04362**. Unlike the confusion matrix, this score examines the probabilities before we turn them into decisions at a threshold. Even so, calibration is only part of the story: a model that gives every message the overall spam prevalence can be calibrated without telling one message from another.
+
+Suppose one interval contains only three messages. Would we trust its observed spam fraction as much as one based on hundreds? Probably not. The table omits empty intervals, and small groups leave considerable uncertainty. Dividing the same messages into more bins will not magically give us more information. We could use validation data to fit a calibration correction, but then we would need to evaluate that corrected model on untouched data. For now, we are just examining the probabilities we already have.
+
+## A single final evaluation
+
+We have a score model, costs, and a chosen threshold. Let's leave them fixed and finally open the envelope containing our test messages.
+
+```{julia}
+test_probability = predict_score(score_model, mail.signal[rows.test])
+test_label = mail.label[rows.test]
+test_counts = confusion(test_label, test_probability; threshold=policy.threshold)
+test_report = (counts=test_counts, metrics=metrics(test_counts),
+               cost=mean_cost(test_counts; false_positive_cost=5.0, false_negative_cost=1.0),
+               brier=brier_score(test_label, test_probability))
+test_report
+```
+
+Our 1,200 test messages contain 92 spam and 1,108 ham. The frozen rule delivers all of them: recall is **0**, precision is **undefined**, accuracy is **92.33 percent**, and cost is **0.07667 per message**. The underlying probability model has a Brier score of **0.04482**. We have measured a deliver-everything policy, not discovered that spam has stopped arriving.
+
+Now we can give the administrator a more useful report: which mistakes the filter made, what they cost, and how well its probabilities behaved. The size of the test set and its number of spam messages belong in that report too. A fresh batch from our generator will give somewhat different answers. To estimate uncertainty with resampling, we must preserve the data's independent units: if whole campaigns are independent, we should resample campaigns rather than individual messages.
+
+What if these results give us an idea for a better filter? Good! We can pursue it, but the test messages have now helped us make another modeling choice. The next version needs a new final examination, perhaps using mail from a later period.
+
+## Change the population, not just the threshold
+
+Suppose the company starts receiving much less spam. Would the same threshold still be cheapest? Try the browser controls at the top of this chapter, or open `14_model_evaluation/14_model_evaluation.jl` in Pluto. Both use validation messages to estimate error rates separately for spam and ham, then calculate expected counts for 1,000 messages at a prevalence we choose. They choose the cheapest threshold again whenever a control changes. These counts can be fractional because we are calculating averages over possible mailboxes.
+
+For this experiment, we change the fraction of spam while keeping the distribution of scores within spam and within ham fixed. This assumption is called **label shift**. At a fixed threshold, recall and false-positive rate then stay the same, while precision and average cost change. If spammers also start writing different kinds of messages, the score distributions may change too, and this calculation will no longer describe the whole problem.
+
+Before touching a control, predict which rules will become more attractive when spam becomes rare. Then raise the cost of blocking ham: which way should a sensible threshold move? Change one control at a time and compare the selected threshold, expected cost, and blocked messages. Because the demo chooses again, its recall and false-positive rate can change too.
+
+To isolate the effect of prevalence at a fixed threshold, use the changed-population exercise below. It holds one filter's recall and false-positive rate fixed instead of choosing a new rule. Predict what happens to precision before calculating it. Keeping that experiment separate from choosing a cheaper threshold helps us explain which change caused each result.
+
+## Your turn: three ways to challenge the filter
+
+### Intuition: the administrator's choice
+
+We evaluate a filter on 1,000 messages: it blocks 80 spam messages and 45 legitimate ones, delivers 20 spam messages, and correctly delivers 855 legitimate ones. Calculate accuracy, precision, recall, and cost when blocked ham costs 5 and delivered spam costs 1. Which policy would you choose under those costs: this filter or delivering everything? Give the administrator one sentence explaining why the more accurate policy need not be the cheaper one.
+
+*Hint:* start with the four counts. For the deliver-everything policy, the 100 spam messages are its only costly mistakes.
+
+### Change the experiment: a much quieter mailbox
+
+Keep that filter's recall and false-positive rate fixed, but lower spam prevalence from 10 percent to 1 percent. Before running `expected_confusion`, sketch the two groups: spam and ham. Predict whether precision rises or falls, then calculate expected counts for 1,000 messages. Why are some counts fractional? Does your calculation describe spammers learning to evade the filter?
+
+*Hint:* recall acts on the spam group; false-positive rate acts on the ham group. This is the label-shift experiment, so the within-class score behavior stays fixed.
+
+### Build it yourself: add a quarantine folder
+
+The administrator offers a third action: a person can review a quarantined message for a cost of 0.2 units. For this exercise, review always gets the label right, there is no delay cost, and review capacity is unlimited. Write a function returning `:deliver`, `:review`, or `:block` for a calibrated spam probability `p`, with the original mistake costs 5 and 1. First derive the three expected costs on paper; then compare the function at `p=0.01`, `0.5`, and `0.99`.
+
+*Hint:* review's cost is paid whether the message is spam or ham. You need to compare three costs, not add a new threshold by guessing.
+
+## Worked solutions: where the tempting answer goes wrong
+
+**Intuition.** Accuracy is `(80+855)/1000 = 0.935`, precision is `80/125 = 0.64`, recall is `80/100 = 0.8`, and cost is `(5*45+20)/1000 = 0.245` per message. Delivering everything is only 0.9 accurate but costs 0.1 per message. With these actions and costs, it wins. Choosing the first filter because 93.5 percent exceeds 90 percent silently substitutes accuracy for the administrator's objective.
+
+**Changed population.** The false-positive rate is `45/900 = 0.05`. At 1 percent prevalence, expected counts are 8 true positives, 2 false negatives, 49.5 false positives, and 940.5 true negatives. Precision becomes `8/(8+49.5)`, about 13.9 percent. These are averages over possible mailboxes, so half a message is allowed in the expectation. You can check with:
+
+```julia
+counts = (tp=80, fp=45, tn=855, fn=20)
+shifted = expected_confusion(counts; prevalence=0.01, n=1000)
+metrics(shifted)
+```
+
+The tempting mistake is to carry the old 64 percent precision into the new mailbox. Precision depends on prevalence. The calculation also cannot answer what happens if spammers change their writing and thus change the class-conditional error rates.
+
+**Quarantine.** The three costs are `p` for delivery, `0.2` for review, and `5*(1-p)` for blocking. A small implementation is:
+
+```julia
+function choose_action(p)
+    0 <= p <= 1 || throw(ArgumentError("p must be a probability"))
+    actions = (:deliver, :review, :block)
+    costs = (p, 0.2, 5 * (1 - p))
+    return actions[argmin(costs)]
+end
+```
+
+This returns delivery, review, and blocking for the three requested probabilities. With the displayed tie-breaking order, deliver through `p=0.2`, review between 0.2 and 0.96, and block above 0.96; at the boundaries the adjacent actions have equal expected cost. Quarantining everything pays 0.2 even for messages that could be handled more cheaply. Imperfect review, delays, or limited capacity would require a new comparison. We haven't fitted anything new here: we have changed the decision placed on top of a probability model.
+
+
+## What to carry into the next project
+
+We started with a filter boasting 93 percent accuracy and discovered that the number alone told us very little. Working through the mailbox gave us a better approach: begin with the decision, compare against a baseline, and split data according to the future situation we want to predict. Training fits the model and its transformations; validation helps us choose; testing gives the final estimate. The confusion matrix, probability checks, and costs each answer a different part of the company's question.
+
+The next chapter applies the same discipline to a more ordinary-looking problem: a table containing missing values, categories, and delivery times. Ordinary tables can hide extraordinary opportunities to fool ourselves.
+
+## References
+
+- [MLJ: Evaluating Model Performance](https://juliaai.github.io/MLJ.jl/stable/evaluating_model_performance/)
+- [MLJ: Common Workflows](https://juliaai.github.io/MLJ.jl/stable/common_mlj_workflows/)

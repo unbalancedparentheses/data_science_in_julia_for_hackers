@@ -39,10 +39,12 @@ labels = raw_df.Prediction
 (x_train, y_train), (x_test, y_test) = splitobs(shuffleobs((data_matrix, labels)), at=0.7)
 
 mutable struct BayesSpamFilter
-    words_count_ham::Dict{String,Int64}
-    words_count_spam::Dict{String,Int64}
+    words_count_ham::Dict{String, Int64}
+    words_count_spam::Dict{String, Int64}
     N_ham::Int64
     N_spam::Int64
+    n_ham_emails::Int64
+    n_spam_emails::Int64
     vocabulary::Array{String}
     BayesSpamFilter() = new()
 end
@@ -57,11 +59,14 @@ function words_count(word_data, vocabulary, labels, spam=0)
 end
 
 function fit!(model::BayesSpamFilter, x_train, y_train, voc)
+    isempty(y_train) && throw(ArgumentError("training data must not be empty"))
     model.vocabulary = voc
     model.words_count_ham = words_count(x_train, model.vocabulary, y_train, 0)
     model.words_count_spam = words_count(x_train, model.vocabulary, y_train, 1)
     model.N_ham = sum(values(model.words_count_ham))
     model.N_spam = sum(values(model.words_count_spam))
+    model.n_ham_emails = count(==(0), y_train)
+    model.n_spam_emails = count(==(1), y_train)
     return
 end
 
@@ -74,31 +79,32 @@ function word_spam_probability(word, words_count_ham, words_count_spam, N_ham, N
     return ham_prob, spam_prob
 end
 
-function spam_predict(email, model::BayesSpamFilter, α, tol=100)
+function spam_predict(email, model::BayesSpamFilter, α, tol=typemax(Int))
+    α > 0 || throw(ArgumentError("α must be positive"))
+    tol > 0 || throw(ArgumentError("tol must be positive"))
     ngrams_email = ngrams(StringDocument(email))
-    email_words = keys(ngrams_email)
+    # Ignore out-of-vocabulary words before applying an optional word limit.
+    email_words = sort!([w for w in keys(ngrams_email) if w in model.vocabulary],
+                       by=w -> (-ngrams_email[w], w))
+    resize!(email_words, min(length(email_words), tol))
     n_vocabulary = length(model.vocabulary)
-    ham_prior = model.N_ham / (model.N_ham + model.N_spam)
-    spam_prior = model.N_spam / (model.N_ham + model.N_spam)
+    n_emails = model.n_ham_emails + model.n_spam_emails
+    log_ham = log(model.n_ham_emails / n_emails)
+    log_spam = log(model.n_spam_emails / n_emails)
 
-    if length(email_words) > tol
-        word_freq = values(ngrams_email)
-        sort_idx = sortperm(collect(word_freq), rev=true)
-        email_words = collect(email_words)[sort_idx][1:tol]
-    end
-
-    email_ham_probability = BigFloat(1)
-    email_spam_probability = BigFloat(1)
-
-    for word in intersect(email_words, model.vocabulary)
+    for word in email_words
         word_ham_prob, word_spam_prob = word_spam_probability(word, model.words_count_ham, model.words_count_spam, model.N_ham, model.N_spam, n_vocabulary, α)
-        email_ham_probability *= word_ham_prob
-        email_spam_probability *= word_spam_prob
+        log_ham += ngrams_email[word] * log(word_ham_prob)
+        log_spam += ngrams_email[word] * log(word_spam_prob)
     end
-    return ham_prior * email_ham_probability, spam_prior * email_spam_probability
+    # Normalize after subtracting the largest log score to avoid underflow.
+    offset = max(log_ham, log_spam)
+    ham_score = exp(log_ham - offset)
+    spam_score = exp(log_spam - offset)
+    return ham_score / (ham_score + spam_score), spam_score / (ham_score + spam_score)
 end
 
-function get_predictions(x_test, y_test, model::BayesSpamFilter, α, tol=200)
+function get_predictions(x_test, y_test, model::BayesSpamFilter, α, tol=typemax(Int))
     N = length(y_test)
     predictions = Array{Int64,1}(undef, N)
     for i in 1:N
@@ -122,7 +128,7 @@ function spam_filter_accuracy(predictions, actual)
 end
 
 spam_filter_accuracy(predictions, y_test)
-sum(x_train) / length(x_train)
+sum(y_train) / length(y_train)
 
 function spam_filter_confusion_matrix(y_test, predictions)
     # 2x2 matrix is instantiated with zeros

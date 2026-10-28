@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 15 Learning from messy tabular data | Data Science in Julia for Hackers</title>
+  <meta name="description" content="Chapter 15 Learning from messy tabular data | Data Science in Julia for Hackers" />
+  <meta name="generator" content="Pandoc and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 15 Learning from messy tabular data | Data Science in Julia for Hackers" />
+  <meta property="og:type" content="book" />
+
+
+  <meta property="og:description" content="Chapter 15 Learning from messy tabular data | Data Science in Julia for Hackers" />
+
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 15 Learning from messy tabular data | Data Science in Julia for Hackers" />
+
+  <meta name="twitter:description" content="Chapter 15 Learning from messy tabular data | Data Science in Julia for Hackers" />
+
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="prev" href="model-evaluation.html"/>
+<link rel="next" href="causal-inference.html"/>
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Data Science in Julia for Hackers</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#introduction"><i class="fa fa-check"></i>Introduction</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#prologue"><i class="fa fa-check"></i>Prologue</a>
+</li>
+</ul></li>
+<li class="part"><span><b>I Data Science and Julia</b></span></li>
+<li class="chapter" data-level="1" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#science-technology-and-epistemology"><i class="fa fa-check"></i><b>1</b> Science technology and epistemology</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#the-difference-between-science-and-technology"><i class="fa fa-check"></i><b>1.1</b> The difference between Science and Technology</a>
+</li>
+<li class="chapter" data-level="1.2" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#what-is-technology"><i class="fa fa-check"></i><b>1.2</b> What is technology?</a>
+</li>
+<li class="chapter" data-level="1.3" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#references"><i class="fa fa-check"></i><b>1.3</b> References</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="meeting-julia.html"><a href="meeting-julia.html#meeting-julia"><i class="fa fa-check"></i><b>2</b> Meeting Julia</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="meeting-julia.html"><a href="meeting-julia.html#why-julia"><i class="fa fa-check"></i><b>2.1</b> Why Julia</a>
+</li>
+<li class="chapter" data-level="2.2" data-path="meeting-julia.html"><a href="meeting-julia.html#julia-presentation"><i class="fa fa-check"></i><b>2.2</b> Julia presentation</a>
+</li>
+<li class="chapter" data-level="2.3" data-path="meeting-julia.html"><a href="meeting-julia.html#installation"><i class="fa fa-check"></i><b>2.3</b> Installation</a>
+</li>
+<li class="chapter" data-level="2.4" data-path="meeting-julia.html"><a href="meeting-julia.html#first-steps-into-the-julia-world"><i class="fa fa-check"></i><b>2.4</b> First steps into the Julia world</a>
+</li>
+<li class="chapter" data-level="2.5" data-path="meeting-julia.html"><a href="meeting-julia.html#julias-ecosystem-basic-plotting-and-manipulation-of-dataframes"><i class="fa fa-check"></i><b>2.5</b> Julia’s Ecosystem: Basic plotting and manipulation of DataFrames</a>
+<ul>
+<li class="chapter" data-level="2.5.1" data-path="meeting-julia.html"><a href="meeting-julia.html#plotting-with-plots.jl"><i class="fa fa-check"></i><b>2.5.1</b> Plotting with Plots.jl</a>
+</li>
+<li class="chapter" data-level="2.5.2" data-path="meeting-julia.html"><a href="meeting-julia.html#introducing-dataframes.jl"><i class="fa fa-check"></i><b>2.5.2</b> Introducing DataFrames.jl</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="meeting-julia.html"><a href="meeting-julia.html#summary"><i class="fa fa-check"></i><b>2.6</b> Summary</a>
+</li>
+<li class="chapter" data-level="2.7" data-path="meeting-julia.html"><a href="meeting-julia.html#references-1"><i class="fa fa-check"></i><b>2.7</b> References</a>
+</li>
+</ul></li>
+<li class="part"><span><b>II Bayesian Statistics</b></span></li>
+<li class="chapter" data-level="3" data-path="probability-introduction.html"><a href="probability-introduction.html#probability-introduction"><i class="fa fa-check"></i><b>3</b> Probability introduction</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="probability-introduction.html"><a href="probability-introduction.html#introduction-to-probability"><i class="fa fa-check"></i><b>3.1</b> Introduction to Probability</a>
+</li>
+<li class="chapter" data-level="3.2" data-path="probability-introduction.html"><a href="probability-introduction.html#events-sample-spaces-and-sample-points"><i class="fa fa-check"></i><b>3.2</b> Events, sample spaces and sample points</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="probability-introduction.html"><a href="probability-introduction.html#relation-among-events"><i class="fa fa-check"></i><b>3.2.1</b> Relation among events</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="probability-introduction.html"><a href="probability-introduction.html#probability"><i class="fa fa-check"></i><b>3.3</b> Probability</a>
+</li>
+<li class="chapter" data-level="3.4" data-path="probability-introduction.html"><a href="probability-introduction.html#conditional-probability"><i class="fa fa-check"></i><b>3.4</b> Conditional probability</a>
+</li>
+<li class="chapter" data-level="3.5" data-path="probability-introduction.html"><a href="probability-introduction.html#joint-probability"><i class="fa fa-check"></i><b>3.5</b> Joint probability</a>
+</li>
+<li class="chapter" data-level="3.6" data-path="probability-introduction.html"><a href="probability-introduction.html#bayes-theorem"><i class="fa fa-check"></i><b>3.6</b> Bayes theorem</a>
+</li>
+<li class="chapter" data-level="3.7" data-path="probability-introduction.html"><a href="probability-introduction.html#probability-distributions"><i class="fa fa-check"></i><b>3.7</b> Probability distributions</a>
+<ul>
+<li class="chapter" data-level="3.7.1" data-path="probability-introduction.html"><a href="probability-introduction.html#discrete-case"><i class="fa fa-check"></i><b>3.7.1</b> Discrete Case</a>
+</li>
+<li class="chapter" data-level="3.7.2" data-path="probability-introduction.html"><a href="probability-introduction.html#continuous-cases"><i class="fa fa-check"></i><b>3.7.2</b> Continuous cases</a>
+</li>
+<li class="chapter" data-level="3.7.3" data-path="probability-introduction.html"><a href="probability-introduction.html#histograms"><i class="fa fa-check"></i><b>3.7.3</b> Histograms</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="3.8" data-path="probability-introduction.html"><a href="probability-introduction.html#example-bayesian-bandits"><i class="fa fa-check"></i><b>3.8</b> Example: Bayesian Bandits</a>
+</li>
+<li class="chapter" data-level="3.9" data-path="probability-introduction.html"><a href="probability-introduction.html#summary-1"><i class="fa fa-check"></i><b>3.9</b> Summary</a>
+</li>
+<li class="chapter" data-level="3.10" data-path="probability-introduction.html"><a href="probability-introduction.html#references-2"><i class="fa fa-check"></i><b>3.10</b> References</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="spam-filter.html"><a href="spam-filter.html#spam-filter"><i class="fa fa-check"></i><b>4</b> Spam filter</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="spam-filter.html"><a href="spam-filter.html#naive-bayes-spam-or-ham"><i class="fa fa-check"></i><b>4.1</b> Naive Bayes: Spam or Ham?</a>
+</li>
+<li class="chapter" data-level="4.2" data-path="spam-filter.html"><a href="spam-filter.html#the-training-data"><i class="fa fa-check"></i><b>4.2</b> The Training Data</a>
+</li>
+<li class="chapter" data-level="4.3" data-path="spam-filter.html"><a href="spam-filter.html#preprocessing-the-data"><i class="fa fa-check"></i><b>4.3</b> Preprocessing the Data</a>
+</li>
+<li class="chapter" data-level="4.4" data-path="spam-filter.html"><a href="spam-filter.html#the-naive-bayes-approach"><i class="fa fa-check"></i><b>4.4</b> The Naive Bayes Approach</a>
+</li>
+<li class="chapter" data-level="4.5" data-path="spam-filter.html"><a href="spam-filter.html#training-the-model"><i class="fa fa-check"></i><b>4.5</b> Training the Model</a>
+</li>
+<li class="chapter" data-level="4.6" data-path="spam-filter.html"><a href="spam-filter.html#making-predictions"><i class="fa fa-check"></i><b>4.6</b> Making Predictions</a>
+</li>
+<li class="chapter" data-level="4.7" data-path="spam-filter.html"><a href="spam-filter.html#evaluating-the-accuracy"><i class="fa fa-check"></i><b>4.7</b> Evaluating the Accuracy</a>
+</li>
+<li class="chapter" data-level="4.8" data-path="spam-filter.html"><a href="spam-filter.html#summary-2"><i class="fa fa-check"></i><b>4.8</b> Summary</a>
+</li>
+<li class="chapter" data-level="4.9" data-path="spam-filter.html"><a href="spam-filter.html#appendix---a-little-more-about-alpha"><i class="fa fa-check"></i><b>4.9</b> Appendix - A little more about alpha</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#probabilistic-programming"><i class="fa fa-check"></i><b>5</b> Probabilistic programming</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#coin-flipping-example"><i class="fa fa-check"></i><b>5.1</b> Coin flipping example</a>
+</li>
+<li class="chapter" data-level="5.2" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#summary-3"><i class="fa fa-check"></i><b>5.2</b> Summary</a>
+</li>
+<li class="chapter" data-level="5.3" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#references-4"><i class="fa fa-check"></i><b>5.3</b> References</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#escaping-from-mars"><i class="fa fa-check"></i><b>6</b> Escaping from Mars</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#proyectile-motion"><i class="fa fa-check"></i><b>6.1</b> Projectile Motion</a>
+</li>
+<li class="chapter" data-level="6.2" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#calculating-the-constant-g-of-mars"><i class="fa fa-check"></i><b>6.2</b> Calculating the constant g of Mars</a>
+</li>
+<li class="chapter" data-level="6.3" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#optimizing-the-throwing-angle"><i class="fa fa-check"></i><b>6.3</b> Optimizing the throwing angle</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#calculating-the-escape-velocity"><i class="fa fa-check"></i><b>6.3.1</b> Calculating the escape velocity</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#mars-mission-control"><i class="fa fa-check"></i><b>6.4</b> Your turn at mission control</a>
+</li>
+<li class="chapter" data-level="6.5" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#mars-exercises"><i class="fa fa-check"></i><b>6.5</b> Try, change, build</a>
+<ul>
+<li class="chapter" data-level="6.5.1" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#mars-error-exercise"><i class="fa fa-check"></i><b>6.5.1</b> Try: which error hurts most?</a>
+</li>
+<li class="chapter" data-level="6.5.2" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#mars-instrument-exercise"><i class="fa fa-check"></i><b>6.5.2</b> Change: buy a better instrument</a>
+</li>
+<li class="chapter" data-level="6.5.3" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#mars-build-exercise"><i class="fa fa-check"></i><b>6.5.3</b> Build: try to fool mission control</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#summary"><i class="fa fa-check"></i><b>6.6</b> Summary</a>
+</li>
+<li class="chapter" data-level="6.7" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#references"><i class="fa fa-check"></i><b>6.7</b> References</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="football-simulation.html"><a href="football-simulation.html#football-simulation"><i class="fa fa-check"></i><b>7</b> Football simulation</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="football-simulation.html"><a href="football-simulation.html#creating-our-conjectures"><i class="fa fa-check"></i><b>7.1</b> Creating our conjectures</a>
+<ul>
+<li class="chapter" data-level="7.1.0.1" data-path="football-simulation.html"><a href="football-simulation.html#observable-variables-vs-latent-variables"><i class="fa fa-check"></i><b>7.1.0.1</b> Observable variables vs Latent variables</a>
+</li>
+<li class="chapter" data-level="7.1.1" data-path="football-simulation.html"><a href="football-simulation.html#bayesian-hierarchical-models"><i class="fa fa-check"></i><b>7.1.1</b> Bayesian hierarchical models</a>
+<ul>
+<li class="chapter" data-level="7.1.1.1" data-path="football-simulation.html"><a href="football-simulation.html#football-analysis"><i class="fa fa-check"></i><b>7.1.1.1</b> Football analysis</a>
+</li>
+<li class="chapter" data-level="7.1.1.2" data-path="football-simulation.html"><a href="football-simulation.html#creating-our-stories"><i class="fa fa-check"></i><b>7.1.1.2</b> Creating our stories</a>
+</li>
+<li class="chapter" data-level="7.1.1.3" data-path="football-simulation.html"><a href="football-simulation.html#letting-the-information-flow"><i class="fa fa-check"></i><b>7.1.1.3</b> Letting the information flow</a>
+</li>
+<li class="chapter" data-level="7.1.1.4" data-path="football-simulation.html"><a href="football-simulation.html#analyzing-the-results"><i class="fa fa-check"></i><b>7.1.1.4</b> Analyzing the results</a>
+</li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="football-simulation.html"><a href="football-simulation.html#simulate-possible-realities"><i class="fa fa-check"></i><b>7.2</b> Simulate possible realities</a>
+</li>
+<li class="chapter" data-level="7.3" data-path="football-simulation.html"><a href="football-simulation.html#summary-5"><i class="fa fa-check"></i><b>7.3</b> Summary</a>
+</li>
+<li class="chapter" data-level="7.4" data-path="football-simulation.html"><a href="football-simulation.html#references-5"><i class="fa fa-check"></i><b>7.4</b> References</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="basketball-shots.html"><a href="basketball-shots.html#basketball-shots"><i class="fa fa-check"></i><b>8</b> Basketball shots</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="basketball-shots.html"><a href="basketball-shots.html#modelling-the-scoring-probability"><i class="fa fa-check"></i><b>8.1</b> Modelling the scoring probability</a>
+</li>
+<li class="chapter" data-level="8.2" data-path="basketball-shots.html"><a href="basketball-shots.html#prior-predictive-checks-part-i"><i class="fa fa-check"></i><b>8.2</b> Prior Predictive Checks: Part I</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="basketball-shots.html"><a href="basketball-shots.html#defining-our-model-in-turing-and-computing-posteriors"><i class="fa fa-check"></i><b>8.2.1</b> Defining our model in Turing and computing posteriors</a>
+<ul>
+<li class="chapter" data-level="8.2.1.1" data-path="basketball-shots.html"><a href="basketball-shots.html#traceplot"><i class="fa fa-check"></i><b>8.2.1.1</b> Traceplot</a>
+</li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="basketball-shots.html"><a href="basketball-shots.html#new-model-and-prior-predictive-checks-part-ii"><i class="fa fa-check"></i><b>8.3</b> New model and prior predictive checks: Part II</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="basketball-shots.html"><a href="basketball-shots.html#defining-the-new-model-and-computing-posteriors"><i class="fa fa-check"></i><b>8.3.1</b> Defining the new model and computing posteriors</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="basketball-shots.html"><a href="basketball-shots.html#does-the-period-affect-the-scoring-probability"><i class="fa fa-check"></i><b>8.4</b> Does the Period affect the scoring probability?</a>
+</li>
+<li class="chapter" data-level="8.5" data-path="basketball-shots.html"><a href="basketball-shots.html#summary-6"><i class="fa fa-check"></i><b>8.5</b> Summary</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="optimal-pricing.html"><a href="optimal-pricing.html#optimal-pricing"><i class="fa fa-check"></i><b>9</b> Optimal pricing</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="optimal-pricing.html"><a href="optimal-pricing.html#overview"><i class="fa fa-check"></i><b>9.1</b> Overview</a>
+</li>
+<li class="chapter" data-level="9.2" data-path="optimal-pricing.html"><a href="optimal-pricing.html#optimal-pricing-1"><i class="fa fa-check"></i><b>9.2</b> Optimal pricing</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="optimal-pricing.html"><a href="optimal-pricing.html#price-vs-quantity-model"><i class="fa fa-check"></i><b>9.2.1</b> Price vs Quantity model</a>
+<ul>
+<li class="chapter" data-level="9.2.1.1" data-path="optimal-pricing.html"><a href="optimal-pricing.html#power-law-distributions"><i class="fa fa-check"></i><b>9.2.1.1</b> Power law distributions</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="9.2.2" data-path="optimal-pricing.html"><a href="optimal-pricing.html#price-elasticity-of-demand"><i class="fa fa-check"></i><b>9.2.2</b> Price elasticity of demand</a>
+<ul>
+<li class="chapter" data-level="9.2.2.1" data-path="optimal-pricing.html"><a href="optimal-pricing.html#dealing-with-uncertanty"><i class="fa fa-check"></i><b>9.2.2.1</b> Dealing with uncertanty</a>
+</li>
+<li class="chapter" data-level="9.2.2.2" data-path="optimal-pricing.html"><a href="optimal-pricing.html#priors-our-previous-knowledge"><i class="fa fa-check"></i><b>9.2.2.2</b> Priors: our previous knowledge</a>
+</li>
+<li class="chapter" data-level="9.2.2.3" data-path="optimal-pricing.html"><a href="optimal-pricing.html#updating-our-beliefs"><i class="fa fa-check"></i><b>9.2.2.3</b> Updating our beliefs</a>
+</li>
+<li class="chapter" data-level="9.2.2.4" data-path="optimal-pricing.html"><a href="optimal-pricing.html#making-uncertainty-our-ally"><i class="fa fa-check"></i><b>9.2.2.4</b> Making uncertainty our ally</a>
+</li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="optimal-pricing.html"><a href="optimal-pricing.html#maximizing-profit"><i class="fa fa-check"></i><b>9.3</b> Maximizing profit</a>
+</li>
+<li class="chapter" data-level="9.4" data-path="optimal-pricing.html"><a href="optimal-pricing.html#summary-7"><i class="fa fa-check"></i><b>9.4</b> Summary</a>
+</li>
+<li class="chapter" data-level="9.5" data-path="optimal-pricing.html"><a href="optimal-pricing.html#references-6"><i class="fa fa-check"></i><b>9.5</b> References</a>
+</li>
+</ul></li>
+<li class="part"><span><b>III Deep Learning</b></span></li>
+<li class="chapter" data-level="10" data-path="image-classification.html"><a href="image-classification.html#image-classification"><i class="fa fa-check"></i><b>10</b> Image classification</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="image-classification.html"><a href="image-classification.html#bee-population-control-what-would-happen-if-bees-go-extinct"><i class="fa fa-check"></i><b>10.1</b> Bee population control: What would happen if bees go extinct?</a>
+</li>
+<li class="chapter" data-level="10.2" data-path="image-classification.html"><a href="image-classification.html#machine-learning-overview"><i class="fa fa-check"></i><b>10.2</b> Machine Learning Overview</a>
+</li>
+<li class="chapter" data-level="10.3" data-path="image-classification.html"><a href="image-classification.html#neural-networks-and-convolutional-neural-networks"><i class="fa fa-check"></i><b>10.3</b> Neural networks and convolutional neural networks</a>
+</li>
+<li class="chapter" data-level="10.4" data-path="image-classification.html"><a href="image-classification.html#summary-8"><i class="fa fa-check"></i><b>10.4</b> Summary</a>
+</li>
+<li class="chapter" data-level="10.5" data-path="image-classification.html"><a href="image-classification.html#references-7"><i class="fa fa-check"></i><b>10.5</b> References</a>
+</li>
+</ul></li>
+<li class="part"><span><b>IV Scientific Machine Learning</b></span></li>
+<li class="chapter" data-level="11" data-path="ultima-online.html"><a href="ultima-online.html#ultima-online"><i class="fa fa-check"></i><b>11</b> Ultima online</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="ultima-online.html"><a href="ultima-online.html#the-ultima-online-catastrophe"><i class="fa fa-check"></i><b>11.1</b> The Ultima Online Catastrophe</a>
+<ul>
+<li class="chapter" data-level="11.1.1" data-path="ultima-online.html"><a href="ultima-online.html#the-lotka-volterra-model-for-population-dynamics"><i class="fa fa-check"></i><b>11.1.1</b> The Lotka-Volterra model for population dynamics</a>
+<ul>
+<li class="chapter" data-level="11.1.1.1" data-path="ultima-online.html"><a href="ultima-online.html#parentheses-on-differential-equations"><i class="fa fa-check"></i><b>11.1.1.1</b> Parentheses on differential equations</a>
+</li>
+<li class="chapter" data-level="11.1.1.2" data-path="ultima-online.html"><a href="ultima-online.html#returning-to-lotka-volterra"><i class="fa fa-check"></i><b>11.1.1.2</b> Returning to Lotka-Volterra</a>
+</li>
+<li class="chapter" data-level="11.1.1.3" data-path="ultima-online.html"><a href="ultima-online.html#sciml-to-simulate-population-dynamics"><i class="fa fa-check"></i><b>11.1.1.3</b> SciML to simulate population dynamics</a>
+</li>
+<li class="chapter" data-level="11.1.1.4" data-path="ultima-online.html"><a href="ultima-online.html#obtaining-the-model-from-the-data"><i class="fa fa-check"></i><b>11.1.1.4</b> Obtaining the model from the data</a>
+</li>
+<li class="chapter" data-level="11.1.1.5" data-path="ultima-online.html"><a href="ultima-online.html#visualizing-the-results"><i class="fa fa-check"></i><b>11.1.1.5</b> Visualizing the results</a>
+</li>
+<li class="chapter" data-level="11.1.1.6" data-path="ultima-online.html"><a href="ultima-online.html#the-virtual-catastrophe"><i class="fa fa-check"></i><b>11.1.1.6</b> The virtual catastrophe</a>
+</li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11.2" data-path="ultima-online.html"><a href="ultima-online.html#summary-9"><i class="fa fa-check"></i><b>11.2</b> Summary</a>
+</li>
+<li class="chapter" data-level="11.3" data-path="ultima-online.html"><a href="ultima-online.html#references-8"><i class="fa fa-check"></i><b>11.3</b> References</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="ultima-continued.html"><a href="ultima-continued.html#ultima-continued"><i class="fa fa-check"></i><b>12</b> Ultima continued</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="ultima-continued.html"><a href="ultima-continued.html#the-language-of-science"><i class="fa fa-check"></i><b>12.1</b> The language of science</a>
+</li>
+<li class="chapter" data-level="12.2" data-path="ultima-continued.html"><a href="ultima-continued.html#scientific-machine-learning-for-model-discovery"><i class="fa fa-check"></i><b>12.2</b> Scientific Machine Learning for model discovery</a>
+<ul>
+<li class="chapter" data-level="12.2.1" data-path="ultima-continued.html"><a href="ultima-continued.html#looking-for-the-catastrophe-culprit"><i class="fa fa-check"></i><b>12.2.1</b> Looking for the catastrophe culprit</a>
+</li>
+<li class="chapter" data-level="12.2.2" data-path="ultima-continued.html"><a href="ultima-continued.html#the-infamous-day-begins."><i class="fa fa-check"></i><b>12.2.2</b> The infamous day begins.</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="ultima-continued.html"><a href="ultima-continued.html#summary-10"><i class="fa fa-check"></i><b>12.3</b> Summary</a>
+</li>
+<li class="chapter" data-level="12.4" data-path="ultima-continued.html"><a href="ultima-continued.html#references-9"><i class="fa fa-check"></i><b>12.4</b> References</a>
+</li>
+</ul></li>
+<li class="part"><span><b>V Time Series and Forecasting</b></span></li>
+<li class="chapter" data-level="13" data-path="time-series.html"><a href="time-series.html#time-series"><i class="fa fa-check"></i><b>13</b> Time series</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="time-series.html"><a href="time-series.html#predicting-the-future"><i class="fa fa-check"></i><b>13.1</b> Predicting the future</a>
+</li>
+<li class="chapter" data-level="13.2" data-path="time-series.html"><a href="time-series.html#exponential-smoothing"><i class="fa fa-check"></i><b>13.2</b> Exponential Smoothing</a>
+<ul>
+<li class="chapter" data-level="13.2.1" data-path="time-series.html"><a href="time-series.html#weighted-average-and-component-form"><i class="fa fa-check"></i><b>13.2.1</b> Weighted average and Component form</a>
+</li>
+<li class="chapter" data-level="13.2.2" data-path="time-series.html"><a href="time-series.html#optimization-or-fitting-process"><i class="fa fa-check"></i><b>13.2.2</b> Optimization (or Fitting) Process</a>
+<ul>
+<li class="chapter" data-level="13.2.2.1" data-path="time-series.html"><a href="time-series.html#loss-functions"><i class="fa fa-check"></i><b>13.2.2.1</b> Loss functions</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="13.2.3" data-path="time-series.html"><a href="time-series.html#trend-methods"><i class="fa fa-check"></i><b>13.2.3</b> Trend Methods</a>
+<ul>
+<li class="chapter" data-level="13.2.3.1" data-path="time-series.html"><a href="time-series.html#holts-linear-trend-method"><i class="fa fa-check"></i><b>13.2.3.1</b> Holt’s linear trend method</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="13.2.4" data-path="time-series.html"><a href="time-series.html#seasonality-methods"><i class="fa fa-check"></i><b>13.2.4</b> Seasonality Methods</a>
+<ul>
+<li class="chapter" data-level="13.2.4.1" data-path="time-series.html"><a href="time-series.html#holt-winters-seasonal-additive-method"><i class="fa fa-check"></i><b>13.2.4.1</b> Holt-Winters’ seasonal additive method</a>
+</li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="13.3" data-path="time-series.html"><a href="time-series.html#summary-11"><i class="fa fa-check"></i><b>13.3</b> Summary</a>
+</li>
+<li class="chapter" data-level="13.4" data-path="time-series.html"><a href="time-series.html#references-10"><i class="fa fa-check"></i><b>13.4</b> References</a>
+</li>
+</ul></li>
+<li class="part"><span><b>VI Evaluating and Improving Models</b></span></li>
+<li class="chapter" data-level="14" data-path="model-evaluation.html"><a href="model-evaluation.html#model-evaluation"><i class="fa fa-check"></i><b>14</b> How to know your model is wrong</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="model-evaluation.html"><a href="model-evaluation.html#the-filter-that-wins-by-doing-nothing"><i class="fa fa-check"></i><b>14.1</b> The filter that wins by doing nothing</a>
+</li>
+<li class="chapter" data-level="14.2" data-path="model-evaluation.html"><a href="model-evaluation.html#three-datasets-three-jobs"><i class="fa fa-check"></i><b>14.2</b> Three datasets, three jobs</a>
+</li>
+<li class="chapter" data-level="14.3" data-path="model-evaluation.html"><a href="model-evaluation.html#count-the-mistakes-before-compressing-them"><i class="fa fa-check"></i><b>14.3</b> Count the mistakes before compressing them</a>
+</li>
+<li class="chapter" data-level="14.4" data-path="model-evaluation.html"><a href="model-evaluation.html#choose-a-threshold-for-the-actual-consequences"><i class="fa fa-check"></i><b>14.4</b> Choose a threshold for the actual consequences</a>
+</li>
+<li class="chapter" data-level="14.5" data-path="model-evaluation.html"><a href="model-evaluation.html#probabilities-deserve-their-own-evaluation"><i class="fa fa-check"></i><b>14.5</b> Probabilities deserve their own evaluation</a>
+</li>
+<li class="chapter" data-level="14.6" data-path="model-evaluation.html"><a href="model-evaluation.html#a-single-final-evaluation"><i class="fa fa-check"></i><b>14.6</b> A single final evaluation</a>
+</li>
+<li class="chapter" data-level="14.7" data-path="model-evaluation.html"><a href="model-evaluation.html#change-the-population-not-just-the-threshold"><i class="fa fa-check"></i><b>14.7</b> Change the population, not just the threshold</a>
+</li>
+<li class="chapter" data-level="14.8" data-path="model-evaluation.html"><a href="model-evaluation.html#your-turn-three-ways-to-challenge-the-filter"><i class="fa fa-check"></i><b>14.8</b> Your turn: three ways to challenge the filter</a>
+<ul>
+<li class="chapter" data-level="14.8.1" data-path="model-evaluation.html"><a href="model-evaluation.html#intuition-the-administrators-choice"><i class="fa fa-check"></i><b>14.8.1</b> Intuition: the administrator’s choice</a>
+</li>
+<li class="chapter" data-level="14.8.2" data-path="model-evaluation.html"><a href="model-evaluation.html#change-the-experiment-a-much-quieter-mailbox"><i class="fa fa-check"></i><b>14.8.2</b> Change the experiment: a much quieter mailbox</a>
+</li>
+<li class="chapter" data-level="14.8.3" data-path="model-evaluation.html"><a href="model-evaluation.html#build-it-yourself-add-a-quarantine-folder"><i class="fa fa-check"></i><b>14.8.3</b> Build it yourself: add a quarantine folder</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="14.9" data-path="model-evaluation.html"><a href="model-evaluation.html#worked-solutions-where-the-tempting-answer-goes-wrong"><i class="fa fa-check"></i><b>14.9</b> Worked solutions: where the tempting answer goes wrong</a>
+</li>
+<li class="chapter" data-level="14.10" data-path="model-evaluation.html"><a href="model-evaluation.html#what-to-carry-into-the-next-project"><i class="fa fa-check"></i><b>14.10</b> What to carry into the next project</a>
+</li>
+<li class="chapter" data-level="14.11" data-path="model-evaluation.html"><a href="model-evaluation.html#references"><i class="fa fa-check"></i><b>14.11</b> References</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="tabular-learning.html"><a href="tabular-learning.html#tabular-learning"><i class="fa fa-check"></i><b>15</b> Learning from messy tabular data</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="tabular-learning.html"><a href="tabular-learning.html#when-will-my-delivery-arrive"><i class="fa fa-check"></i><b>15.1</b> When will my delivery arrive?</a>
+</li>
+<li class="chapter" data-level="15.2" data-path="tabular-learning.html"><a href="tabular-learning.html#start-with-the-prediction-time"><i class="fa fa-check"></i><b>15.2</b> Start with the prediction time</a>
+</li>
+<li class="chapter" data-level="15.3" data-path="tabular-learning.html"><a href="tabular-learning.html#fit-the-preparation-not-just-the-predictor"><i class="fa fa-check"></i><b>15.3</b> Fit the preparation, not just the predictor</a>
+</li>
+<li class="chapter" data-level="15.4" data-path="tabular-learning.html"><a href="tabular-learning.html#a-baseline-and-a-linear-model-we-can-inspect"><i class="fa fa-check"></i><b>15.4</b> A baseline and a linear model we can inspect</a>
+</li>
+<li class="chapter" data-level="15.5" data-path="tabular-learning.html"><a href="tabular-learning.html#regularization-is-a-choice-to-validate"><i class="fa fa-check"></i><b>15.5</b> Regularization is a choice to validate</a>
+</li>
+<li class="chapter" data-level="15.6" data-path="tabular-learning.html"><a href="tabular-learning.html#compare-alternatives-through-mlj"><i class="fa fa-check"></i><b>15.6</b> Compare alternatives through MLJ</a>
+</li>
+<li class="chapter" data-level="15.7" data-path="tabular-learning.html"><a href="tabular-learning.html#inspect-failures-before-expanding-the-model"><i class="fa fa-check"></i><b>15.7</b> Inspect failures before expanding the model</a>
+</li>
+<li class="chapter" data-level="15.8" data-path="tabular-learning.html"><a href="tabular-learning.html#your-turn-three-ways-to-investigate-a-delivery-model"><i class="fa fa-check"></i><b>15.8</b> Your turn: three ways to investigate a delivery model</a>
+<ul>
+<li class="chapter" data-level="15.8.1" data-path="tabular-learning.html"><a href="tabular-learning.html#intuition-which-distance-belongs-in-the-median"><i class="fa fa-check"></i><b>15.8.1</b> Intuition: which distance belongs in the median?</a>
+</li>
+<li class="chapter" data-level="15.8.2" data-path="tabular-learning.html"><a href="tabular-learning.html#change-the-experiment-remove-one-clue"><i class="fa fa-check"></i><b>15.8.2</b> Change the experiment: remove one clue</a>
+</li>
+<li class="chapter" data-level="15.8.3" data-path="tabular-learning.html"><a href="tabular-learning.html#build-it-yourself-report-the-customers-we-disappoint"><i class="fa fa-check"></i><b>15.8.3</b> Build it yourself: report the customers we disappoint</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="15.9" data-path="tabular-learning.html"><a href="tabular-learning.html#worked-solutions-follow-the-data-through-the-program"><i class="fa fa-check"></i><b>15.9</b> Worked solutions: follow the data through the program</a>
+</li>
+<li class="chapter" data-level="15.10" data-path="tabular-learning.html"><a href="tabular-learning.html#references"><i class="fa fa-check"></i><b>15.10</b> References</a>
+</li>
+</ul></li>
+<li class="part"><span><b>VII Causal Inference and Bayesian Workflow</b></span></li>
+<li class="chapter" data-level="16" data-path="causal-inference.html"><a href="causal-inference.html#causal-inference"><i class="fa fa-check"></i><b>16</b> From prediction to intervention</a>
+<ul>
+<li class="chapter" data-level="16.1" data-path="causal-inference.html"><a href="causal-inference.html#a-price-is-also-a-decision"><i class="fa fa-check"></i><b>16.1</b> A price is also a decision</a>
+</li>
+<li class="chapter" data-level="16.2" data-path="causal-inference.html"><a href="causal-inference.html#a-convincing-wrong-answer"><i class="fa fa-check"></i><b>16.2</b> A convincing wrong answer</a>
+</li>
+<li class="chapter" data-level="16.3" data-path="causal-inference.html"><a href="causal-inference.html#compare-like-with-like"><i class="fa fa-check"></i><b>16.3</b> Compare like with like</a>
+</li>
+<li class="chapter" data-level="16.4" data-path="causal-inference.html"><a href="causal-inference.html#design-an-experiment"><i class="fa fa-check"></i><b>16.4</b> Design an experiment</a>
+</li>
+<li class="chapter" data-level="16.5" data-path="causal-inference.html"><a href="causal-inference.html#the-outcome-must-match-the-decision"><i class="fa fa-check"></i><b>16.5</b> The outcome must match the decision</a>
+</li>
+<li class="chapter" data-level="16.6" data-path="causal-inference.html"><a href="causal-inference.html#experiment-with-the-assumptions"><i class="fa fa-check"></i><b>16.6</b> Experiment with the assumptions</a>
+<ul>
+<li class="chapter" data-level="16.6.1" data-path="causal-inference.html"><a href="causal-inference.html#intuition-reconstruct-the-reversal-without-noise"><i class="fa fa-check"></i><b>16.6.1</b> Intuition: reconstruct the reversal without noise</a>
+</li>
+<li class="chapter" data-level="16.6.2" data-path="causal-inference.html"><a href="causal-inference.html#change-the-experiment-make-the-manager-more-predictable"><i class="fa fa-check"></i><b>16.6.2</b> Change the experiment: make the manager more predictable</a>
+</li>
+<li class="chapter" data-level="16.6.3" data-path="causal-inference.html"><a href="causal-inference.html#build-it-yourself-serve-a-different-neighborhood"><i class="fa fa-check"></i><b>16.6.3</b> Build it yourself: serve a different neighborhood</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="16.7" data-path="causal-inference.html"><a href="causal-inference.html#worked-solutions-keep-the-comparison-attached-to-its-question"><i class="fa fa-check"></i><b>16.7</b> Worked solutions: keep the comparison attached to its question</a>
+</li>
+<li class="chapter" data-level="16.8" data-path="causal-inference.html"><a href="causal-inference.html#summary"><i class="fa fa-check"></i><b>16.8</b> Summary</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="bayesian-workflow.html"><a href="bayesian-workflow.html#bayesian-workflow"><i class="fa fa-check"></i><b>17</b> A complete Bayesian workflow</a>
+<ul>
+<li class="chapter" data-level="17.1" data-path="bayesian-workflow.html"><a href="bayesian-workflow.html#start-with-a-question-and-a-simulator"><i class="fa fa-check"></i><b>17.1</b> Start with a question and a simulator</a>
+</li>
+<li class="chapter" data-level="17.2" data-path="bayesian-workflow.html"><a href="bayesian-workflow.html#check-the-prior-before-fitting"><i class="fa fa-check"></i><b>17.2</b> Check the prior before fitting</a>
+</li>
+<li class="chapter" data-level="17.3" data-path="bayesian-workflow.html"><a href="bayesian-workflow.html#an-exact-posterior-as-a-reference"><i class="fa fa-check"></i><b>17.3</b> An exact posterior as a reference</a>
+</li>
+<li class="chapter" data-level="17.4" data-path="bayesian-workflow.html"><a href="bayesian-workflow.html#check-the-computation-separately"><i class="fa fa-check"></i><b>17.4</b> Check the computation separately</a>
+</li>
+<li class="chapter" data-level="17.5" data-path="bayesian-workflow.html"><a href="bayesian-workflow.html#can-the-fitted-model-reproduce-scoreless-matches"><i class="fa fa-check"></i><b>17.5</b> Can the fitted model reproduce scoreless matches?</a>
+</li>
+<li class="chapter" data-level="17.6" data-path="bayesian-workflow.html"><a href="bayesian-workflow.html#revise-an-assumption-then-check-again"><i class="fa fa-check"></i><b>17.6</b> Revise an assumption, then check again</a>
+</li>
+<li class="chapter" data-level="17.7" data-path="bayesian-workflow.html"><a href="bayesian-workflow.html#save-a-future-set-for-evaluation"><i class="fa fa-check"></i><b>17.7</b> Save a future set for evaluation</a>
+</li>
+<li class="chapter" data-level="17.8" data-path="bayesian-workflow.html"><a href="bayesian-workflow.html#summary-and-exercises"><i class="fa fa-check"></i><b>17.8</b> Summary and exercises</a>
+<ul>
+<li class="chapter" data-level="17.8.1" data-path="bayesian-workflow.html"><a href="bayesian-workflow.html#intuition-a-sampler-can-agree-with-itself-and-still-be-wrong"><i class="fa fa-check"></i><b>17.8.1</b> Intuition: a sampler can agree with itself and still be wrong</a>
+</li>
+<li class="chapter" data-level="17.8.2" data-path="bayesian-workflow.html"><a href="bayesian-workflow.html#change-the-experiment-acceptance-is-not-exploration"><i class="fa fa-check"></i><b>17.8.2</b> Change the experiment: acceptance is not exploration</a>
+</li>
+<li class="chapter" data-level="17.8.3" data-path="bayesian-workflow.html"><a href="bayesian-workflow.html#build-it-yourself-ask-about-the-spread-of-scores"><i class="fa fa-check"></i><b>17.8.3</b> Build it yourself: ask about the spread of scores</a>
+</li>
+<li class="chapter" data-level="17.8.4" data-path="bayesian-workflow.html"><a href="bayesian-workflow.html#worked-solutions-locate-the-failure-before-choosing-the-repair"><i class="fa fa-check"></i><b>17.8.4</b> Worked solutions: locate the failure before choosing the repair</a>
+</li>
+</ul></li>
+</ul></li>
+<li><a href="https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers" target="blank">Published with bookdown</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Data Science in Julia for Hackers</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="tabular-learning" class="section level1" number="15">
+<h1><span class="header-section-number">15</span> Learning from messy tabular data</h1>
+<div class="browser-experiment">
+<p>
+<strong>Try the experiment here.</strong> These controls run in your browser; no Julia installation is needed. <a href="interactive/tabular/index.html">Open the experiment on its own page</a> for more room. The Julia notebook remains available for editing the model.
+</p>
+<iframe data-interactive src="interactive/tabular/index.html" title="Delivery predictions" loading="lazy" style="width:100%;height:950px;border:1px solid #dfe5ec;border-radius:8px;">
+</iframe>
+</div>
+<script src="interactive/embed.js" defer></script>
+<div id="when-will-my-delivery-arrive" class="section level2" number="15.1">
+<h2><span class="header-section-number">15.1</span> When will my delivery arrive?</h2>
+<p>Imagine that a neighborhood delivery service asks us for help. Every time someone places an order, the same question arrives: when will it get here? The company has kept a table with one row per delivery, a distance, a weather category, and a duration in minutes. No images, no differential equations, no millions of parameters. This should be a pleasant afternoon’s work.</p>
+<p>Then we open the table. Some distances are missing. Someone has encoded the weather as numbers, making a storm look exactly three times as large as a clear day. A helpful colleague has even added the driver’s final arrival timestamp. That last column makes our predictions look wonderful, provided we wait until the delivery is over to make them.</p>
+<p>Well, we have found our first problem before fitting a single model. Let’s work through it step by step: prepare the data, build a linear predictor we can inspect, and then use MLJ to compare it with regularized models and trees. Along the way, we will keep asking what information each step is allowed to use.</p>
+</div>
+<div id="start-with-the-prediction-time" class="section level2" number="15.2">
+<h2><span class="header-section-number">15.2</span> Start with the prediction time</h2>
+<p>At what moment does the customer need the answer? When the order is placed. So we can use the distance and the weather information available then. We cannot use the eventual arrival time to predict itself. The same problem can hide behind less obvious names: a final driver status, a completed journey’s duration, or a weather measurement taken after arrival. All of them can leak information from the future.</p>
+<p>Let’s make a small delivery company inside the computer. In our world, duration grows with distance, weather adds delays, and long journeys suffer an extra nonlinear penalty. Random noise stands in for things we did not observe. We will also hide 15 percent of distances independently of the outcome. That gives us a simple missing-data problem to start with. If the GPS mostly failed during storms, we would have to tell a different story about those missing entries.</p>
+<p>For this first part, Julia’s standard libraries are enough. Run the code from the repository root:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">include</span>(<span class="st">&quot;15_tabular_learning/core.jl&quot;</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="im">import</span> <span class="bu">.TabularLearning</span></span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="im">using</span> <span class="bu">Statistics</span></span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a>deliveries <span class="op">=</span> TabularLearning.<span class="fu">delivery_data</span>()</span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a>delivery_rows <span class="op">=</span> TabularLearning.<span class="fu">split_rows</span>(<span class="fu">length</span>(deliveries.minutes))</span></code></pre></div>
+<p>Our company has 1,800 deliveries by default. The target is in minutes, so an error of five means five minutes, not five percent. As in the previous chapter, we put 60 percent of the rows in training, 20 percent in validation, and 20 percent in testing. Shuffling is reasonable here because we generated independent deliveries. With real records, recurring customers, drivers, or days could call for grouped or chronological splits instead.</p>
+</div>
+<div id="fit-the-preparation-not-just-the-predictor" class="section level2" number="15.3">
+<h2><span class="header-section-number">15.3</span> Fit the preparation, not just the predictor</h2>
+<p>What should we put in a missing distance? The median seems like a reasonable starting point. But which median? If we calculate it from the entire table, our test rows have already influenced the model before we fit a coefficient. The same applies to scaling distances and choosing the weather categories. These preparation steps learn from data too, so we must fit them using only the training rows.</p>
+<p><strong>Before running:</strong> suppose a test delivery is 100 kilometers away, far outside the training distances. Should its presence change the median used to fill a missing training distance? Decide first; then follow which rows enter each operation below.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a>preparation <span class="op">=</span> TabularLearning.<span class="fu">fit_preprocessor</span>(deliveries, delivery_rows.train)</span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a>training_features <span class="op">=</span> TabularLearning.<span class="fu">transform</span>(preparation, deliveries, delivery_rows.train)</span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a>validation_features <span class="op">=</span> TabularLearning.<span class="fu">transform</span>(preparation, deliveries, delivery_rows.validation)</span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a>training_minutes <span class="op">=</span> deliveries.minutes[delivery_rows.train]</span>
+<span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a>validation_minutes <span class="op">=</span> deliveries.minutes[delivery_rows.validation]</span></code></pre></div>
+<p>Let’s look at what this preparation actually does:</p>
+<ol style="list-style-type: decimal">
+<li>Learn the median observed distance from training rows and use it to fill missing values.</li>
+<li>Center distances by that median and divide by the standard deviation of the filled training distances.</li>
+<li>Add an indicator distinguishing a missing distance from a genuinely observed distance equal to the median.</li>
+<li>Encode weather using indicator columns, omitting one reference category.</li>
+</ol>
+<p>The learned state is small enough to inspect. These lines inside <code>fit_preprocessor</code> compute the center and scale from the selected training rows:</p>
+<!-- source-excerpt: 15_tabular_learning/core.jl -->
+<div class="sourceCode" id="cb3"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a>center <span class="op">=</span> <span class="fu">median</span>(observed)</span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a>filled <span class="op">=</span> <span class="fu">coalesce</span>.(data.distance[rows], center)</span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a>scale <span class="op">=</span> <span class="fu">std</span>(filled; corrected<span class="op">=</span><span class="cn">false</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a>scale <span class="op">=</span> scale <span class="op">&gt;</span> <span class="fl">0</span> ? scale <span class="op">:</span> <span class="fl">1.0</span></span></code></pre></div>
+<p><code>observed</code> contains the training distances that were recorded; <code>coalesce</code> replaces missing entries with the learned center. Now compare that with the corresponding lines in <code>transform</code>:</p>
+<!-- source-excerpt: 15_tabular_learning/core.jl -->
+<div class="sourceCode" id="cb4"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a>filled <span class="op">=</span> <span class="fu">coalesce</span>.(data.distance[rows], preprocessor.center)</span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a><span class="fu">all</span>(isfinite, filled) <span class="op">||</span> <span class="fu">throw</span>(<span class="fu">ArgumentError</span>(<span class="st">&quot;distances must be finite&quot;</span>))</span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a>numeric <span class="op">=</span> (filled <span class="op">.-</span> preprocessor.center) <span class="op">./</span> preprocessor.scale</span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a>absent <span class="op">=</span> <span class="fu">Float64</span>.(<span class="fu">ismissing</span>.(data.distance[rows]))</span></code></pre></div>
+<p>There is no new <code>median</code> or <code>std</code> in this second step. We reuse the stored numbers whether <code>rows</code> selects training, validation, or test deliveries. This is the same boundary we drew around the spam filter: evaluation data may be transformed by a learned rule, but they must not teach that rule something new.</p>
+<p>Two awkward cases are worth settling now. If every training distance is missing, there is no median to learn, so the function stops and asks us to fix the data. If all distances are equal, dividing by their standard deviation would divide by zero. We use a scale of one in that case.</p>
+<p>Now, how do we put weather into a numerical matrix? Our sorted categories are <code>clear</code>, <code>rain</code>, and <code>storm</code>. We use two indicator columns: one for rain and one for storm. A clear day gets two zeros. Why only two columns? The regression will also have an intercept. If we added all three weather indicators, their sum would already give us that constant column, making one column an exact linear combination of the others.</p>
+<p>We could simply write 1, 2, and 3 for the weather, as our colleague did. But a linear model would then treat the step from clear to rain as having the same effect as the step from rain to storm. We have no reason to impose that relationship. Indicator columns let the model learn separate differences. Trees do not need feature scaling, but we will give them the same prepared features to keep the comparison easy to follow.</p>
+<p>What happens when the company expands into a snowy town? If <code>snow</code> never appeared in training, our encoder rejects it. Assigning two zeros would make snow look like clear weather, which is quite a strong guess! We could add an explicit unknown category, pool rare categories, or send unfamiliar cases for review. Whatever we choose, the same rule needs to be present when we train, evaluate, and use the model.</p>
+</div>
+<div id="a-baseline-and-a-linear-model-we-can-inspect" class="section level2" number="15.4">
+<h2><span class="header-section-number">15.4</span> A baseline and a linear model we can inspect</h2>
+<p>Before reaching for a clever model, let’s try a very lazy one: predict the mean training duration for every delivery. It knows nothing about the particular trip, but it gives us something concrete to beat.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a>mean_prediction <span class="op">=</span> <span class="fu">fill</span>(<span class="fu">mean</span>(training_minutes), <span class="fu">length</span>(validation_minutes))</span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a>baseline_validation_rmse <span class="op">=</span> TabularLearning.<span class="fu">rmse</span>(validation_minutes, mean_prediction)</span></code></pre></div>
+<p>Now we can let the prediction depend on the trip. In a linear model, we add an intercept column to the feature matrix and find the coefficients that minimize the squared residuals:</p>
+<p><span class="math display">\[\hat\beta = \mathop{\mathrm{argmin}}_\beta \|X\beta-y\|_2^2.\]</span></p>
+<p>Julia lets us solve this least-squares problem with <code>X \ y</code>. We do not need to calculate the inverse of <code>X'X</code>; explicitly forming that inverse adds work and can make numerical problems worse. Let’s use the linear algebra routines for the calculation and keep our attention on what the fitted model is telling us.</p>
+<p>Inside <code>fit_linear</code>, the ordinary least-squares branch is only a few lines:</p>
+<!-- source-excerpt: 15_tabular_learning/core.jl -->
+<div class="sourceCode" id="cb6"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a>design <span class="op">=</span> <span class="fu">hcat</span>(<span class="fu">ones</span>(<span class="fu">size</span>(X, <span class="fl">1</span>)), X)</span>
+<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a><span class="co"># Solve least squares directly; never explicitly invert X&#39;X.</span></span>
+<span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a><span class="cf">if</span> lambda <span class="op">==</span> <span class="fl">0</span></span>
+<span id="cb6-4"><a href="#cb6-4" tabindex="-1"></a>    <span class="cf">return</span> design <span class="op">\</span> y</span>
+<span id="cb6-5"><a href="#cb6-5" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
+<p>The first column of ones lets the model learn a baseline time even when the other features are zero. <code>design \ y</code> chooses coefficients to make predictions close to the training durations. Prediction then multiplies a new row, prepared in exactly the same way, by those coefficients. Before fitting, which would surprise you more: beating the constant baseline on training rows, or beating it on deliveries held out from fitting?</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a>linear_coefficients <span class="op">=</span> TabularLearning.<span class="fu">fit_linear</span>(training_features, training_minutes)</span>
+<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a>linear_validation_prediction <span class="op">=</span> TabularLearning.<span class="fu">predict_linear</span>(linear_coefficients, validation_features)</span>
+<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a>linear_validation_report <span class="op">=</span> (</span>
+<span id="cb7-4"><a href="#cb7-4" tabindex="-1"></a>    rmse<span class="op">=</span>TabularLearning.<span class="fu">rmse</span>(validation_minutes, linear_validation_prediction),</span>
+<span id="cb7-5"><a href="#cb7-5" tabindex="-1"></a>    mae<span class="op">=</span>TabularLearning.<span class="fu">mae</span>(validation_minutes, linear_validation_prediction),</span>
+<span id="cb7-6"><a href="#cb7-6" tabindex="-1"></a>    baseline_rmse<span class="op">=</span>baseline_validation_rmse,</span>
+<span id="cb7-7"><a href="#cb7-7" tabindex="-1"></a>)</span>
+<span id="cb7-8"><a href="#cb7-8" tabindex="-1"></a>linear_validation_report</span></code></pre></div>
+<p>On our fixed validation split, the mean-only baseline has RMSE <strong>16.896 minutes</strong>. The linear model brings that down to <strong>7.062 minutes</strong>, with MAE <strong>5.264 minutes</strong>. Knowing something about the trip clearly helps.</p>
+<p>How far are our predictions from the actual arrival times? Root mean squared error, or RMSE, computes <code>sqrt(mean((prediction-target).^2))</code>. Squaring gives large mistakes extra influence, and the square root brings us back to minutes. Mean absolute error, or MAE, averages the absolute differences and is also in minutes. The customer may care about something more specific, though. If arriving late is much worse than arriving early, we could use an asymmetric loss or predict a suitable quantile instead.</p>
+<p>We can inspect the coefficients to see which features are associated with longer deliveries in our model. That does not yet tell us what would happen if we changed a route or could somehow change the weather. Keep that question in mind; we will return to it in the causal chapter.</p>
+</div>
+<div id="regularization-is-a-choice-to-validate" class="section level2" number="15.5">
+<h2><span class="header-section-number">15.5</span> Regularization is a choice to validate</h2>
+<p>Suppose a model starts using large coefficients to chase small quirks in the training data. Can we encourage it to be a little less enthusiastic? Ridge regression adds a penalty on the size of the non-intercept coefficients:</p>
+<p><span class="math display">\[\frac{1}{2}\|X\beta-y\|_2^2 + \frac{n\lambda}{2}\sum_{j&gt;0}\beta_j^2.\]</span></p>
+<p>Here <code>n</code> is the number of training rows and <code>lambda</code> controls how much we penalize the coefficients. We leave the intercept alone. This also explains why scaling matters: a coefficient’s size depends on whether we measure distance in kilometers or meters. We do not want a change of units to choose our regularization for us.</p>
+<p>We can solve this with the same least-squares machinery. Our function appends scaled identity rows for the penalized coefficients and zeros to the response. These extra rows supply the penalty. Set <code>lambda=0</code> and we are back to ordinary least squares. Let’s try <code>lambda=0.1</code>:</p>
+<p>Here are the penalty rows from the shared implementation:</p>
+<!-- source-excerpt: 15_tabular_learning/core.jl -->
+<div class="sourceCode" id="cb8"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a>penalty <span class="op">=</span> <span class="fu">Matrix</span><span class="dt">{Float64}</span>(I, <span class="fu">size</span>(design, <span class="fl">2</span>), <span class="fu">size</span>(design, <span class="fl">2</span>))</span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a>penalty[<span class="fl">1</span>, <span class="fl">1</span>] <span class="op">=</span> <span class="fl">0.0</span> <span class="co"># do not penalize the intercept</span></span>
+<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a><span class="cf">return</span> <span class="fu">vcat</span>(design, <span class="fu">sqrt</span>(<span class="fu">length</span>(y) <span class="op">*</span> lambda) <span class="op">.*</span> penalty) <span class="op">\</span> <span class="fu">vcat</span>(y, <span class="fu">zeros</span>(<span class="fu">size</span>(design, <span class="fl">2</span>)))</span></code></pre></div>
+<p>Each extra nonzero row asks one coefficient to stay near zero, with strength <code>sqrt(n*lambda)</code>. Squaring that residual gives the <code>n*lambda</code> term in our objective. Setting the intercept’s penalty entry to zero leaves its baseline free to move. Predict what would happen to that baseline if we penalized it too, especially after adding a large constant to every delivery time.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a>ridge_coefficients <span class="op">=</span> TabularLearning.<span class="fu">fit_linear</span>(training_features, training_minutes; lambda<span class="op">=</span><span class="fl">0.1</span>)</span>
+<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a>ridge_validation_rmse <span class="op">=</span> TabularLearning.<span class="fu">rmse</span>(validation_minutes,</span>
+<span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a>                            TabularLearning.<span class="fu">predict_linear</span>(ridge_coefficients, validation_features))</span></code></pre></div>
+<p>Did ridge improve the predictions? With <code>lambda=0.1</code>, validation RMSE rises to <strong>8.070 minutes</strong>, compared with <strong>7.062</strong> without the penalty. Here, shrinking the coefficients made predictions worse. This dataset has few features and many observations, and we built a nonlinear effect into long journeys. Regularization can help with unstable estimates and overfitting, but shrinking coefficients cannot create a nonlinear relationship that the model does not contain.</p>
+</div>
+<div id="compare-alternatives-through-mlj" class="section level2" number="15.6">
+<h2><span class="header-section-number">15.6</span> Compare alternatives through MLJ</h2>
+<p>It would be tedious to rewrite our fitting and prediction code every time we wanted to try another algorithm. MLJ gives us a common interface to models from different Julia packages. A model describes the algorithm and its settings. A <em>machine</em> connects that model to training data and keeps the learned state. With that distinction, we can change the algorithm while keeping the evaluation procedure familiar.</p>
+<p>Let’s load the packages for this part. From the repository root, install the chapter environment and run the comparison:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="ex">julia</span> <span class="at">--project</span><span class="op">=</span>15_tabular_learning <span class="at">-e</span> <span class="st">&#39;using Pkg; Pkg.instantiate()&#39;</span></span>
+<span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a><span class="ex">julia</span> <span class="at">--project</span><span class="op">=</span>15_tabular_learning 15_tabular_learning/mlj_comparison.jl</span></code></pre></div>
+<p>We will compare <code>RidgeRegressor</code> from MLJLinearModels with <code>DecisionTreeRegressor</code> through MLJDecisionTreeInterface. The full example lives in <code>15_tabular_learning/mlj_comparison.jl</code>. To see how the pieces fit together, here is the central sequence:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="im">using</span> <span class="bu">MLJ</span></span>
+<span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a>Ridge <span class="op">=</span> <span class="pp">@load</span> RidgeRegressor pkg<span class="op">=</span>MLJLinearModels verbosity<span class="op">=</span><span class="fl">0</span></span>
+<span id="cb11-3"><a href="#cb11-3" tabindex="-1"></a>Tree <span class="op">=</span> <span class="pp">@load</span> DecisionTreeRegressor pkg<span class="op">=</span>DecisionTree verbosity<span class="op">=</span><span class="fl">0</span></span>
+<span id="cb11-4"><a href="#cb11-4" tabindex="-1"></a></span>
+<span id="cb11-5"><a href="#cb11-5" tabindex="-1"></a>train_table <span class="op">=</span> MLJ.<span class="fu">table</span>(training_features)</span>
+<span id="cb11-6"><a href="#cb11-6" tabindex="-1"></a>validation_table <span class="op">=</span> MLJ.<span class="fu">table</span>(validation_features)</span>
+<span id="cb11-7"><a href="#cb11-7" tabindex="-1"></a>mach <span class="op">=</span> <span class="fu">machine</span>(<span class="fu">Ridge</span>(lambda<span class="op">=</span><span class="fl">0.1</span>), train_table, training_minutes)</span>
+<span id="cb11-8"><a href="#cb11-8" tabindex="-1"></a><span class="fu">fit!</span>(mach; verbosity<span class="op">=</span><span class="fl">0</span>)</span>
+<span id="cb11-9"><a href="#cb11-9" tabindex="-1"></a>validation_prediction <span class="op">=</span> <span class="fu">predict</span>(mach, validation_table)</span></code></pre></div>
+<p>A tree takes a different approach from our straight-line model. It divides the feature space into regions and predicts a constant inside each one. A deeper tree can make more complicated divisions, giving it both more flexibility and more opportunities to follow noise. Let’s compare ridge penalties <code>0.0</code>, <code>0.01</code>, <code>0.1</code>, and <code>1.0</code> with tree depths 2, 4, and 6 and a minimum leaf size of 10. We choose this set before opening the test results.</p>
+<p>Each candidate learns from the training data, and we compare their validation RMSEs. The script prints those scores and takes the first minimum. Only then does it evaluate the chosen machine on the test set, alongside our mean-prediction baseline. The preparation still comes from the original training rows. We will not refit on training plus validation in this example; that way, the machine we finally evaluate is exactly the one we selected.</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="fu">include</span>(<span class="st">&quot;15_tabular_learning/mlj_comparison.jl&quot;</span>)</span>
+<span id="cb12-2"><a href="#cb12-2" tabindex="-1"></a>comparison <span class="op">=</span> <span class="fu">compare_models</span>()</span>
+<span id="cb12-3"><a href="#cb12-3" tabindex="-1"></a>comparison</span></code></pre></div>
+<p>Running that comparison in the chapter environment gives:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Candidate</th>
+<th align="right">Validation RMSE (minutes)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Ridge, lambda 0</td>
+<td align="right">7.062</td>
+</tr>
+<tr>
+<td align="left">Ridge, lambda 0.01</td>
+<td align="right">7.115</td>
+</tr>
+<tr>
+<td align="left">Ridge, lambda 0.1</td>
+<td align="right">8.070</td>
+</tr>
+<tr>
+<td align="left">Ridge, lambda 1</td>
+<td align="right">12.003</td>
+</tr>
+<tr>
+<td align="left">Tree, depth 2</td>
+<td align="right">10.340</td>
+</tr>
+<tr>
+<td align="left">Tree, depth 4</td>
+<td align="right">6.679</td>
+</tr>
+<tr>
+<td align="left">Tree, depth 6</td>
+<td align="right">5.945</td>
+</tr>
+</tbody>
+</table>
+<p>The depth-6 tree wins this comparison. Only now do we open the 360 test deliveries: its RMSE is <strong>7.827 minutes</strong> and its MAE is <strong>4.387 minutes</strong>, against <strong>17.429 minutes</strong> RMSE for the mean-only baseline. Notice that its test RMSE is higher than its validation RMSE. Choosing the best of several candidates on one sample does not make that sample a promise about the next one.</p>
+<p>The tree captures more of the extra delay on long journeys, but still has to work around missing distances. Changing the estimator cannot restore information we never gave it.</p>
+<p>What if we used cross-validation instead of a single validation split? We would have to fit the preparation again inside each training fold. Preparing the whole table once and only then splitting it would let held-out rows influence every fold. A pipeline can help us keep these steps together, as long as we place the fitting steps on the correct side of each split.</p>
+</div>
+<div id="inspect-failures-before-expanding-the-model" class="section level2" number="15.7">
+<h2><span class="header-section-number">15.7</span> Inspect failures before expanding the model</h2>
+<p>Suppose the overall RMSE looks good, but customers ordering during storms still complain. A single number can hide that. Once the procedure is fixed, let’s inspect residuals for observed versus missing distances, different weather categories, and short versus long trips. Count the rows in each group too: the most dramatic-looking difference might come from a handful of deliveries. If this examination suggests a new modeling choice, we can explore it, but we will need a fresh final assessment for the next version.</p>
+<p>Sometimes the next improvement is waiting in the data collection rather than in another model. A missing distance could hide a one-kilometer trip or a twelve-kilometer trip; the imputed value cannot tell us which. Changing definitions of weather categories will confuse a sophisticated model just as effectively as a simple one. And if the customer asks for an arrival interval, we need to check how often that interval contains the actual arrival time. RMSE alone cannot answer that question.</p>
+</div>
+<div id="your-turn-three-ways-to-investigate-a-delivery-model" class="section level2" number="15.8">
+<h2><span class="header-section-number">15.8</span> Your turn: three ways to investigate a delivery model</h2>
+<div id="intuition-which-distance-belongs-in-the-median" class="section level3" number="15.8.1">
+<h3><span class="header-section-number">15.8.1</span> Intuition: which distance belongs in the median?</h3>
+<p>The training distances are <code>[2, 4, missing]</code>; the validation distances are <code>[missing, 100]</code>. What number should fill each missing value? If we change 100 to 1,000, which learned preparation values should change? Explain why fitting a separate median to the validation rows would be another mistake, even though it never modifies the training rows.</p>
+<p><em>Hint:</em> a customer with a missing distance should receive the same transformation rule whether we are evaluating a saved model or using it in service.</p>
+</div>
+<div id="change-the-experiment-remove-one-clue" class="section level3" number="15.8.2">
+<h3><span class="header-section-number">15.8.2</span> Change the experiment: remove one clue</h3>
+<p>Before running an experiment, predict whether the missingness indicator must improve validation RMSE. Remove only that column, refit the linear model using the same training rows, and compare on the same validation rows. Leave the test set closed. Then explain why an improvement in either direction is possible in a finite sample.</p>
+<p><em>Hint:</em> <code>transform</code> places scaled distance first and the missingness indicator second. Keep the weather columns; otherwise you have changed two things at once.</p>
+</div>
+<div id="build-it-yourself-report-the-customers-we-disappoint" class="section level3" number="15.8.3">
+<h3><span class="header-section-number">15.8.3</span> Build it yourself: report the customers we disappoint</h3>
+<p>Write a function taking actual durations, predicted durations, and a Boolean missing-distance flag. Return a row for each observed group with its number of deliveries, RMSE, and mean signed error <code>prediction - actual</code>. Test it on actual times <code>[10, 20, 30, 40]</code>, predictions <code>[12, 18, 35, 35]</code>, and flags <code>[false, false, true, true]</code>. Could a group have zero mean signed error and still receive poor predictions?</p>
+<p><em>Hint:</em> compute each statistic inside its group; dividing a group’s sum of errors by the size of the whole dataset would answer a different question.</p>
+<p>You can explore ridge penalty and tree depth with the Pluto sliders too. Before each change, record whether you expect fitting error, validation error, or both to fall. Use validation results to investigate that prediction, then choose a configuration before running the separate final comparison.</p>
+</div>
+</div>
+<div id="worked-solutions-follow-the-data-through-the-program" class="section level2" number="15.9">
+<h2><span class="header-section-number">15.9</span> Worked solutions: follow the data through the program</h2>
+<p><strong>The median.</strong> The observed training distances are 2 and 4, giving a median of 3. Both missing values are filled with 3, using that same training rule. Changing a validation distance changes its transformed value but changes none of the learned preparation. Fitting a new median to validation would make a missing input mean one thing while learning coefficients and another thing while evaluating them. The tempting whole-table median also lets held-out records participate in learning. Neither mirrors how a frozen model handles the next customer’s order.</p>
+<p><strong>The missingness clue.</strong> The experiment can reuse our existing variables:</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a>keep <span class="op">=</span> [j for j <span class="kw">in</span> <span class="fu">axes</span>(training_features, <span class="fl">2</span>) if j <span class="op">!=</span> <span class="fl">2</span>]</span>
+<span id="cb13-2"><a href="#cb13-2" tabindex="-1"></a>without_flag <span class="op">=</span> TabularLearning.<span class="fu">fit_linear</span>(training_features[<span class="op">:</span>, keep], training_minutes)</span>
+<span id="cb13-3"><a href="#cb13-3" tabindex="-1"></a>without_flag_prediction <span class="op">=</span> TabularLearning.<span class="fu">predict_linear</span>(</span>
+<span id="cb13-4"><a href="#cb13-4" tabindex="-1"></a>    without_flag, validation_features[<span class="op">:</span>, keep])</span>
+<span id="cb13-5"><a href="#cb13-5" tabindex="-1"></a>TabularLearning.<span class="fu">rmse</span>(validation_minutes, without_flag_prediction)</span></code></pre></div>
+<p>On this fixed split, removing the indicator lowers validation RMSE from <strong>7.062 to 6.961 minutes</strong>. The extra clue did not help this time. It distinguishes an unknown distance from one actually observed near the median, but its fitted coefficient can also follow sampling noise. Our missing distances were chosen independently of the outcome; a GPS that fails mainly during storms would give us a different experiment. Removing weather columns as well would make the result impossible to attribute to missingness alone. Choosing whichever version wins on the test rows would spend our final evaluation on model selection.</p>
+<p><strong>The group report.</strong> One implementation is:</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="kw">function</span> <span class="fu">group_report</span>(actual, predicted, missing_distance)</span>
+<span id="cb14-2"><a href="#cb14-2" tabindex="-1"></a>    <span class="fu">length</span>(actual) <span class="op">==</span> <span class="fu">length</span>(predicted) <span class="op">==</span> <span class="fu">length</span>(missing_distance) <span class="op">||</span></span>
+<span id="cb14-3"><a href="#cb14-3" tabindex="-1"></a>        <span class="fu">throw</span>(<span class="fu">DimensionMismatch</span>(<span class="st">&quot;all inputs must describe the same deliveries&quot;</span>))</span>
+<span id="cb14-4"><a href="#cb14-4" tabindex="-1"></a>    [(missing_distance<span class="op">=</span>flag,</span>
+<span id="cb14-5"><a href="#cb14-5" tabindex="-1"></a>      n<span class="op">=</span><span class="fu">count</span>(<span class="op">==</span>(flag), missing_distance),</span>
+<span id="cb14-6"><a href="#cb14-6" tabindex="-1"></a>      rmse<span class="op">=</span><span class="fu">sqrt</span>(<span class="fu">mean</span>((predicted[missing_distance <span class="op">.==</span> flag] <span class="op">.-</span></span>
+<span id="cb14-7"><a href="#cb14-7" tabindex="-1"></a>                      actual[missing_distance <span class="op">.==</span> flag])<span class="op">.^</span><span class="fl">2</span>)),</span>
+<span id="cb14-8"><a href="#cb14-8" tabindex="-1"></a>      bias<span class="op">=</span><span class="fu">mean</span>(predicted[missing_distance <span class="op">.==</span> flag] <span class="op">.-</span></span>
+<span id="cb14-9"><a href="#cb14-9" tabindex="-1"></a>                actual[missing_distance <span class="op">.==</span> flag]))</span>
+<span id="cb14-10"><a href="#cb14-10" tabindex="-1"></a>     for flag <span class="kw">in</span> <span class="fu">sort</span>(<span class="fu">unique</span>(missing_distance))]</span>
+<span id="cb14-11"><a href="#cb14-11" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p>The observed-distance group has two rows, RMSE 2, and bias 0. The missing-distance group has two rows, RMSE 5, and bias 0. Positive and negative errors cancel in the signed average, so zero bias does not imply accurate delivery times. These tiny groups illustrate the calculation; they are too small to establish a dependable ranking of customer experiences. This is the delivery version of our spam-filter lesson: unpack a summary metric before deciding whom the model is helping.</p>
+</div>
+<div id="references" class="section level2" number="15.10">
+<h2><span class="header-section-number">15.10</span> References</h2>
+<ul>
+<li><a href="https://juliaai.github.io/MLJ.jl/stable/loading_model_code/">MLJ: Loading Model Code</a></li>
+<li><a href="https://juliaai.github.io/MLJLinearModels.jl/dev/api/">MLJLinearModels: Model API and objectives</a></li>
+<li><a href="https://github.com/JuliaAI/DecisionTree.jl">DecisionTree.jl: MLJ integration</a></li>
+</ul>
+</div>
+</div>
+
+</section>
+
+          </div>
+        </div>
+      </div>
+<a href="model-evaluation.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="causal-inference.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"search": {"engine": "lunr", "options": null},
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

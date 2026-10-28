@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 16 From prediction to intervention | Data Science in Julia for Hackers</title>
+  <meta name="description" content="Chapter 16 From prediction to intervention | Data Science in Julia for Hackers" />
+  <meta name="generator" content="Pandoc and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 16 From prediction to intervention | Data Science in Julia for Hackers" />
+  <meta property="og:type" content="book" />
+
+
+  <meta property="og:description" content="Chapter 16 From prediction to intervention | Data Science in Julia for Hackers" />
+
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 16 From prediction to intervention | Data Science in Julia for Hackers" />
+
+  <meta name="twitter:description" content="Chapter 16 From prediction to intervention | Data Science in Julia for Hackers" />
+
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="prev" href="tabular-learning.html"/>
+<link rel="next" href="bayesian-workflow.html"/>
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Data Science in Julia for Hackers</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#introduction"><i class="fa fa-check"></i>Introduction</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#prologue"><i class="fa fa-check"></i>Prologue</a>
+</li>
+</ul></li>
+<li class="part"><span><b>I Data Science and Julia</b></span></li>
+<li class="chapter" data-level="1" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#science-technology-and-epistemology"><i class="fa fa-check"></i><b>1</b> Science technology and epistemology</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#the-difference-between-science-and-technology"><i class="fa fa-check"></i><b>1.1</b> The difference between Science and Technology</a>
+</li>
+<li class="chapter" data-level="1.2" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#what-is-technology"><i class="fa fa-check"></i><b>1.2</b> What is technology?</a>
+</li>
+<li class="chapter" data-level="1.3" data-path="science-technology-and-epistemology.html"><a href="science-technology-and-epistemology.html#references"><i class="fa fa-check"></i><b>1.3</b> References</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="meeting-julia.html"><a href="meeting-julia.html#meeting-julia"><i class="fa fa-check"></i><b>2</b> Meeting Julia</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="meeting-julia.html"><a href="meeting-julia.html#why-julia"><i class="fa fa-check"></i><b>2.1</b> Why Julia</a>
+</li>
+<li class="chapter" data-level="2.2" data-path="meeting-julia.html"><a href="meeting-julia.html#julia-presentation"><i class="fa fa-check"></i><b>2.2</b> Julia presentation</a>
+</li>
+<li class="chapter" data-level="2.3" data-path="meeting-julia.html"><a href="meeting-julia.html#installation"><i class="fa fa-check"></i><b>2.3</b> Installation</a>
+</li>
+<li class="chapter" data-level="2.4" data-path="meeting-julia.html"><a href="meeting-julia.html#first-steps-into-the-julia-world"><i class="fa fa-check"></i><b>2.4</b> First steps into the Julia world</a>
+</li>
+<li class="chapter" data-level="2.5" data-path="meeting-julia.html"><a href="meeting-julia.html#julias-ecosystem-basic-plotting-and-manipulation-of-dataframes"><i class="fa fa-check"></i><b>2.5</b> Julia’s Ecosystem: Basic plotting and manipulation of DataFrames</a>
+<ul>
+<li class="chapter" data-level="2.5.1" data-path="meeting-julia.html"><a href="meeting-julia.html#plotting-with-plots.jl"><i class="fa fa-check"></i><b>2.5.1</b> Plotting with Plots.jl</a>
+</li>
+<li class="chapter" data-level="2.5.2" data-path="meeting-julia.html"><a href="meeting-julia.html#introducing-dataframes.jl"><i class="fa fa-check"></i><b>2.5.2</b> Introducing DataFrames.jl</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="meeting-julia.html"><a href="meeting-julia.html#summary"><i class="fa fa-check"></i><b>2.6</b> Summary</a>
+</li>
+<li class="chapter" data-level="2.7" data-path="meeting-julia.html"><a href="meeting-julia.html#references-1"><i class="fa fa-check"></i><b>2.7</b> References</a>
+</li>
+</ul></li>
+<li class="part"><span><b>II Bayesian Statistics</b></span></li>
+<li class="chapter" data-level="3" data-path="probability-introduction.html"><a href="probability-introduction.html#probability-introduction"><i class="fa fa-check"></i><b>3</b> Probability introduction</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="probability-introduction.html"><a href="probability-introduction.html#introduction-to-probability"><i class="fa fa-check"></i><b>3.1</b> Introduction to Probability</a>
+</li>
+<li class="chapter" data-level="3.2" data-path="probability-introduction.html"><a href="probability-introduction.html#events-sample-spaces-and-sample-points"><i class="fa fa-check"></i><b>3.2</b> Events, sample spaces and sample points</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="probability-introduction.html"><a href="probability-introduction.html#relation-among-events"><i class="fa fa-check"></i><b>3.2.1</b> Relation among events</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="probability-introduction.html"><a href="probability-introduction.html#probability"><i class="fa fa-check"></i><b>3.3</b> Probability</a>
+</li>
+<li class="chapter" data-level="3.4" data-path="probability-introduction.html"><a href="probability-introduction.html#conditional-probability"><i class="fa fa-check"></i><b>3.4</b> Conditional probability</a>
+</li>
+<li class="chapter" data-level="3.5" data-path="probability-introduction.html"><a href="probability-introduction.html#joint-probability"><i class="fa fa-check"></i><b>3.5</b> Joint probability</a>
+</li>
+<li class="chapter" data-level="3.6" data-path="probability-introduction.html"><a href="probability-introduction.html#bayes-theorem"><i class="fa fa-check"></i><b>3.6</b> Bayes theorem</a>
+</li>
+<li class="chapter" data-level="3.7" data-path="probability-introduction.html"><a href="probability-introduction.html#probability-distributions"><i class="fa fa-check"></i><b>3.7</b> Probability distributions</a>
+<ul>
+<li class="chapter" data-level="3.7.1" data-path="probability-introduction.html"><a href="probability-introduction.html#discrete-case"><i class="fa fa-check"></i><b>3.7.1</b> Discrete Case</a>
+</li>
+<li class="chapter" data-level="3.7.2" data-path="probability-introduction.html"><a href="probability-introduction.html#continuous-cases"><i class="fa fa-check"></i><b>3.7.2</b> Continuous cases</a>
+</li>
+<li class="chapter" data-level="3.7.3" data-path="probability-introduction.html"><a href="probability-introduction.html#histograms"><i class="fa fa-check"></i><b>3.7.3</b> Histograms</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="3.8" data-path="probability-introduction.html"><a href="probability-introduction.html#example-bayesian-bandits"><i class="fa fa-check"></i><b>3.8</b> Example: Bayesian Bandits</a>
+</li>
+<li class="chapter" data-level="3.9" data-path="probability-introduction.html"><a href="probability-introduction.html#summary-1"><i class="fa fa-check"></i><b>3.9</b> Summary</a>
+</li>
+<li class="chapter" data-level="3.10" data-path="probability-introduction.html"><a href="probability-introduction.html#references-2"><i class="fa fa-check"></i><b>3.10</b> References</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="spam-filter.html"><a href="spam-filter.html#spam-filter"><i class="fa fa-check"></i><b>4</b> Spam filter</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="spam-filter.html"><a href="spam-filter.html#naive-bayes-spam-or-ham"><i class="fa fa-check"></i><b>4.1</b> Naive Bayes: Spam or Ham?</a>
+</li>
+<li class="chapter" data-level="4.2" data-path="spam-filter.html"><a href="spam-filter.html#the-training-data"><i class="fa fa-check"></i><b>4.2</b> The Training Data</a>
+</li>
+<li class="chapter" data-level="4.3" data-path="spam-filter.html"><a href="spam-filter.html#preprocessing-the-data"><i class="fa fa-check"></i><b>4.3</b> Preprocessing the Data</a>
+</li>
+<li class="chapter" data-level="4.4" data-path="spam-filter.html"><a href="spam-filter.html#the-naive-bayes-approach"><i class="fa fa-check"></i><b>4.4</b> The Naive Bayes Approach</a>
+</li>
+<li class="chapter" data-level="4.5" data-path="spam-filter.html"><a href="spam-filter.html#training-the-model"><i class="fa fa-check"></i><b>4.5</b> Training the Model</a>
+</li>
+<li class="chapter" data-level="4.6" data-path="spam-filter.html"><a href="spam-filter.html#making-predictions"><i class="fa fa-check"></i><b>4.6</b> Making Predictions</a>
+</li>
+<li class="chapter" data-level="4.7" data-path="spam-filter.html"><a href="spam-filter.html#evaluating-the-accuracy"><i class="fa fa-check"></i><b>4.7</b> Evaluating the Accuracy</a>
+</li>
+<li class="chapter" data-level="4.8" data-path="spam-filter.html"><a href="spam-filter.html#summary-2"><i class="fa fa-check"></i><b>4.8</b> Summary</a>
+</li>
+<li class="chapter" data-level="4.9" data-path="spam-filter.html"><a href="spam-filter.html#appendix---a-little-more-about-alpha"><i class="fa fa-check"></i><b>4.9</b> Appendix - A little more about alpha</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#probabilistic-programming"><i class="fa fa-check"></i><b>5</b> Probabilistic programming</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#coin-flipping-example"><i class="fa fa-check"></i><b>5.1</b> Coin flipping example</a>
+</li>
+<li class="chapter" data-level="5.2" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#summary-3"><i class="fa fa-check"></i><b>5.2</b> Summary</a>
+</li>
+<li class="chapter" data-level="5.3" data-path="probabilistic-programming.html"><a href="probabilistic-programming.html#references-4"><i class="fa fa-check"></i><b>5.3</b> References</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#escaping-from-mars"><i class="fa fa-check"></i><b>6</b> Escaping from Mars</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#proyectile-motion"><i class="fa fa-check"></i><b>6.1</b> Projectile Motion</a>
+</li>
+<li class="chapter" data-level="6.2" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#calculating-the-constant-g-of-mars"><i class="fa fa-check"></i><b>6.2</b> Calculating the constant g of Mars</a>
+</li>
+<li class="chapter" data-level="6.3" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#optimizing-the-throwing-angle"><i class="fa fa-check"></i><b>6.3</b> Optimizing the throwing angle</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#calculating-the-escape-velocity"><i class="fa fa-check"></i><b>6.3.1</b> Calculating the escape velocity</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#mars-mission-control"><i class="fa fa-check"></i><b>6.4</b> Your turn at mission control</a>
+</li>
+<li class="chapter" data-level="6.5" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#mars-exercises"><i class="fa fa-check"></i><b>6.5</b> Try, change, build</a>
+<ul>
+<li class="chapter" data-level="6.5.1" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#mars-error-exercise"><i class="fa fa-check"></i><b>6.5.1</b> Try: which error hurts most?</a>
+</li>
+<li class="chapter" data-level="6.5.2" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#mars-instrument-exercise"><i class="fa fa-check"></i><b>6.5.2</b> Change: buy a better instrument</a>
+</li>
+<li class="chapter" data-level="6.5.3" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#mars-build-exercise"><i class="fa fa-check"></i><b>6.5.3</b> Build: try to fool mission control</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#summary"><i class="fa fa-check"></i><b>6.6</b> Summary</a>
+</li>
+<li class="chapter" data-level="6.7" data-path="escaping-from-mars.html"><a href="escaping-from-mars.html#references"><i class="fa fa-check"></i><b>6.7</b> References</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="football-simulation.html"><a href="football-simulation.html#football-simulation"><i class="fa fa-check"></i><b>7</b> Football simulation</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="football-simulation.html"><a href="football-simulation.html#creating-our-conjectures"><i class="fa fa-check"></i><b>7.1</b> Creating our conjectures</a>
+<ul>
+<li class="chapter" data-level="7.1.0.1" data-path="football-simulation.html"><a href="football-simulation.html#observable-variables-vs-latent-variables"><i class="fa fa-check"></i><b>7.1.0.1</b> Observable variables vs Latent variables</a>
+</li>
+<li class="chapter" data-level="7.1.1" data-path="football-simulation.html"><a href="football-simulation.html#bayesian-hierarchical-models"><i class="fa fa-check"></i><b>7.1.1</b> Bayesian hierarchical models</a>
+<ul>
+<li class="chapter" data-level="7.1.1.1" data-path="football-simulation.html"><a href="football-simulation.html#football-analysis"><i class="fa fa-check"></i><b>7.1.1.1</b> Football analysis</a>
+</li>
+<li class="chapter" data-level="7.1.1.2" data-path="football-simulation.html"><a href="football-simulation.html#creating-our-stories"><i class="fa fa-check"></i><b>7.1.1.2</b> Creating our stories</a>
+</li>
+<li class="chapter" data-level="7.1.1.3" data-path="football-simulation.html"><a href="football-simulation.html#letting-the-information-flow"><i class="fa fa-check"></i><b>7.1.1.3</b> Letting the information flow</a>
+</li>
+<li class="chapter" data-level="7.1.1.4" data-path="football-simulation.html"><a href="football-simulation.html#analyzing-the-results"><i class="fa fa-check"></i><b>7.1.1.4</b> Analyzing the results</a>
+</li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="football-simulation.html"><a href="football-simulation.html#simulate-possible-realities"><i class="fa fa-check"></i><b>7.2</b> Simulate possible realities</a>
+</li>
+<li class="chapter" data-level="7.3" data-path="football-simulation.html"><a href="football-simulation.html#summary-5"><i class="fa fa-check"></i><b>7.3</b> Summary</a>
+</li>
+<li class="chapter" data-level="7.4" data-path="football-simulation.html"><a href="football-simulation.html#references-5"><i class="fa fa-check"></i><b>7.4</b> References</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="basketball-shots.html"><a href="basketball-shots.html#basketball-shots"><i class="fa fa-check"></i><b>8</b> Basketball shots</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="basketball-shots.html"><a href="basketball-shots.html#modelling-the-scoring-probability"><i class="fa fa-check"></i><b>8.1</b> Modelling the scoring probability</a>
+</li>
+<li class="chapter" data-level="8.2" data-path="basketball-shots.html"><a href="basketball-shots.html#prior-predictive-checks-part-i"><i class="fa fa-check"></i><b>8.2</b> Prior Predictive Checks: Part I</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="basketball-shots.html"><a href="basketball-shots.html#defining-our-model-in-turing-and-computing-posteriors"><i class="fa fa-check"></i><b>8.2.1</b> Defining our model in Turing and computing posteriors</a>
+<ul>
+<li class="chapter" data-level="8.2.1.1" data-path="basketball-shots.html"><a href="basketball-shots.html#traceplot"><i class="fa fa-check"></i><b>8.2.1.1</b> Traceplot</a>
+</li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="basketball-shots.html"><a href="basketball-shots.html#new-model-and-prior-predictive-checks-part-ii"><i class="fa fa-check"></i><b>8.3</b> New model and prior predictive checks: Part II</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="basketball-shots.html"><a href="basketball-shots.html#defining-the-new-model-and-computing-posteriors"><i class="fa fa-check"></i><b>8.3.1</b> Defining the new model and computing posteriors</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="basketball-shots.html"><a href="basketball-shots.html#does-the-period-affect-the-scoring-probability"><i class="fa fa-check"></i><b>8.4</b> Does the Period affect the scoring probability?</a>
+</li>
+<li class="chapter" data-level="8.5" data-path="basketball-shots.html"><a href="basketball-shots.html#summary-6"><i class="fa fa-check"></i><b>8.5</b> Summary</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="optimal-pricing.html"><a href="optimal-pricing.html#optimal-pricing"><i class="fa fa-check"></i><b>9</b> Optimal pricing</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="optimal-pricing.html"><a href="optimal-pricing.html#overview"><i class="fa fa-check"></i><b>9.1</b> Overview</a>
+</li>
+<li class="chapter" data-level="9.2" data-path="optimal-pricing.html"><a href="optimal-pricing.html#optimal-pricing-1"><i class="fa fa-check"></i><b>9.2</b> Optimal pricing</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="optimal-pricing.html"><a href="optimal-pricing.html#price-vs-quantity-model"><i class="fa fa-check"></i><b>9.2.1</b> Price vs Quantity model</a>
+<ul>
+<li class="chapter" data-level="9.2.1.1" data-path="optimal-pricing.html"><a href="optimal-pricing.html#power-law-distributions"><i class="fa fa-check"></i><b>9.2.1.1</b> Power law distributions</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="9.2.2" data-path="optimal-pricing.html"><a href="optimal-pricing.html#price-elasticity-of-demand"><i class="fa fa-check"></i><b>9.2.2</b> Price elasticity of demand</a>
+<ul>
+<li class="chapter" data-level="9.2.2.1" data-path="optimal-pricing.html"><a href="optimal-pricing.html#dealing-with-uncertanty"><i class="fa fa-check"></i><b>9.2.2.1</b> Dealing with uncertanty</a>
+</li>
+<li class="chapter" data-level="9.2.2.2" data-path="optimal-pricing.html"><a href="optimal-pricing.html#priors-our-previous-knowledge"><i class="fa fa-check"></i><b>9.2.2.2</b> Priors: our previous knowledge</a>
+</li>
+<li class="chapter" data-level="9.2.2.3" data-path="optimal-pricing.html"><a href="optimal-pricing.html#updating-our-beliefs"><i class="fa fa-check"></i><b>9.2.2.3</b> Updating our beliefs</a>
+</li>
+<li class="chapter" data-level="9.2.2.4" data-path="optimal-pricing.html"><a href="optimal-pricing.html#making-uncertainty-our-ally"><i class="fa fa-check"></i><b>9.2.2.4</b> Making uncertainty our ally</a>
+</li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="optimal-pricing.html"><a href="optimal-pricing.html#maximizing-profit"><i class="fa fa-check"></i><b>9.3</b> Maximizing profit</a>
+</li>
+<li class="chapter" data-level="9.4" data-path="optimal-pricing.html"><a href="optimal-pricing.html#summary-7"><i class="fa fa-check"></i><b>9.4</b> Summary</a>
+</li>
+<li class="chapter" data-level="9.5" data-path="optimal-pricing.html"><a href="optimal-pricing.html#references-6"><i class="fa fa-check"></i><b>9.5</b> References</a>
+</li>
+</ul></li>
+<li class="part"><span><b>III Deep Learning</b></span></li>
+<li class="chapter" data-level="10" data-path="image-classification.html"><a href="image-classification.html#image-classification"><i class="fa fa-check"></i><b>10</b> Image classification</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="image-classification.html"><a href="image-classification.html#bee-population-control-what-would-happen-if-bees-go-extinct"><i class="fa fa-check"></i><b>10.1</b> Bee population control: What would happen if bees go extinct?</a>
+</li>
+<li class="chapter" data-level="10.2" data-path="image-classification.html"><a href="image-classification.html#machine-learning-overview"><i class="fa fa-check"></i><b>10.2</b> Machine Learning Overview</a>
+</li>
+<li class="chapter" data-level="10.3" data-path="image-classification.html"><a href="image-classification.html#neural-networks-and-convolutional-neural-networks"><i class="fa fa-check"></i><b>10.3</b> Neural networks and convolutional neural networks</a>
+</li>
+<li class="chapter" data-level="10.4" data-path="image-classification.html"><a href="image-classification.html#summary-8"><i class="fa fa-check"></i><b>10.4</b> Summary</a>
+</li>
+<li class="chapter" data-level="10.5" data-path="image-classification.html"><a href="image-classification.html#references-7"><i class="fa fa-check"></i><b>10.5</b> References</a>
+</li>
+</ul></li>
+<li class="part"><span><b>IV Scientific Machine Learning</b></span></li>
+<li class="chapter" data-level="11" data-path="ultima-online.html"><a href="ultima-online.html#ultima-online"><i class="fa fa-check"></i><b>11</b> Ultima online</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="ultima-online.html"><a href="ultima-online.html#the-ultima-online-catastrophe"><i class="fa fa-check"></i><b>11.1</b> The Ultima Online Catastrophe</a>
+<ul>
+<li class="chapter" data-level="11.1.1" data-path="ultima-online.html"><a href="ultima-online.html#the-lotka-volterra-model-for-population-dynamics"><i class="fa fa-check"></i><b>11.1.1</b> The Lotka-Volterra model for population dynamics</a>
+<ul>
+<li class="chapter" data-level="11.1.1.1" data-path="ultima-online.html"><a href="ultima-online.html#parentheses-on-differential-equations"><i class="fa fa-check"></i><b>11.1.1.1</b> Parentheses on differential equations</a>
+</li>
+<li class="chapter" data-level="11.1.1.2" data-path="ultima-online.html"><a href="ultima-online.html#returning-to-lotka-volterra"><i class="fa fa-check"></i><b>11.1.1.2</b> Returning to Lotka-Volterra</a>
+</li>
+<li class="chapter" data-level="11.1.1.3" data-path="ultima-online.html"><a href="ultima-online.html#sciml-to-simulate-population-dynamics"><i class="fa fa-check"></i><b>11.1.1.3</b> SciML to simulate population dynamics</a>
+</li>
+<li class="chapter" data-level="11.1.1.4" data-path="ultima-online.html"><a href="ultima-online.html#obtaining-the-model-from-the-data"><i class="fa fa-check"></i><b>11.1.1.4</b> Obtaining the model from the data</a>
+</li>
+<li class="chapter" data-level="11.1.1.5" data-path="ultima-online.html"><a href="ultima-online.html#visualizing-the-results"><i class="fa fa-check"></i><b>11.1.1.5</b> Visualizing the results</a>
+</li>
+<li class="chapter" data-level="11.1.1.6" data-path="ultima-online.html"><a href="ultima-online.html#the-virtual-catastrophe"><i class="fa fa-check"></i><b>11.1.1.6</b> The virtual catastrophe</a>
+</li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11.2" data-path="ultima-online.html"><a href="ultima-online.html#summary-9"><i class="fa fa-check"></i><b>11.2</b> Summary</a>
+</li>
+<li class="chapter" data-level="11.3" data-path="ultima-online.html"><a href="ultima-online.html#references-8"><i class="fa fa-check"></i><b>11.3</b> References</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="ultima-continued.html"><a href="ultima-continued.html#ultima-continued"><i class="fa fa-check"></i><b>12</b> Ultima continued</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="ultima-continued.html"><a href="ultima-continued.html#the-language-of-science"><i class="fa fa-check"></i><b>12.1</b> The language of science</a>
+</li>
+<li class="chapter" data-level="12.2" data-path="ultima-continued.html"><a href="ultima-continued.html#scientific-machine-learning-for-model-discovery"><i class="fa fa-check"></i><b>12.2</b> Scientific Machine Learning for model discovery</a>
+<ul>
+<li class="chapter" data-level="12.2.1" data-path="ultima-continued.html"><a href="ultima-continued.html#looking-for-the-catastrophe-culprit"><i class="fa fa-check"></i><b>12.2.1</b> Looking for the catastrophe culprit</a>
+</li>
+<li class="chapter" data-level="12.2.2" data-path="ultima-continued.html"><a href="ultima-continued.html#the-infamous-day-begins."><i class="fa fa-check"></i><b>12.2.2</b> The infamous day begins.</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="ultima-continued.html"><a href="ultima-continued.html#summary-10"><i class="fa fa-check"></i><b>12.3</b> Summary</a>
+</li>
+<li class="chapter" data-level="12.4" data-path="ultima-continued.html"><a href="ultima-continued.html#references-9"><i class="fa fa-check"></i><b>12.4</b> References</a>
+</li>
+</ul></li>
+<li class="part"><span><b>V Time Series and Forecasting</b></span></li>
+<li class="chapter" data-level="13" data-path="time-series.html"><a href="time-series.html#time-series"><i class="fa fa-check"></i><b>13</b> Time series</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="time-series.html"><a href="time-series.html#predicting-the-future"><i class="fa fa-check"></i><b>13.1</b> Predicting the future</a>
+</li>
+<li class="chapter" data-level="13.2" data-path="time-series.html"><a href="time-series.html#exponential-smoothing"><i class="fa fa-check"></i><b>13.2</b> Exponential Smoothing</a>
+<ul>
+<li class="chapter" data-level="13.2.1" data-path="time-series.html"><a href="time-series.html#weighted-average-and-component-form"><i class="fa fa-check"></i><b>13.2.1</b> Weighted average and Component form</a>
+</li>
+<li class="chapter" data-level="13.2.2" data-path="time-series.html"><a href="time-series.html#optimization-or-fitting-process"><i class="fa fa-check"></i><b>13.2.2</b> Optimization (or Fitting) Process</a>
+<ul>
+<li class="chapter" data-level="13.2.2.1" data-path="time-series.html"><a href="time-series.html#loss-functions"><i class="fa fa-check"></i><b>13.2.2.1</b> Loss functions</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="13.2.3" data-path="time-series.html"><a href="time-series.html#trend-methods"><i class="fa fa-check"></i><b>13.2.3</b> Trend Methods</a>
+<ul>
+<li class="chapter" data-level="13.2.3.1" data-path="time-series.html"><a href="time-series.html#holts-linear-trend-method"><i class="fa fa-check"></i><b>13.2.3.1</b> Holt’s linear trend method</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="13.2.4" data-path="time-series.html"><a href="time-series.html#seasonality-methods"><i class="fa fa-check"></i><b>13.2.4</b> Seasonality Methods</a>
+<ul>
+<li class="chapter" data-level="13.2.4.1" data-path="time-series.html"><a href="time-series.html#holt-winters-seasonal-additive-method"><i class="fa fa-check"></i><b>13.2.4.1</b> Holt-Winters’ seasonal additive method</a>
+</li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="13.3" data-path="time-series.html"><a href="time-series.html#summary-11"><i class="fa fa-check"></i><b>13.3</b> Summary</a>
+</li>
+<li class="chapter" data-level="13.4" data-path="time-series.html"><a href="time-series.html#references-10"><i class="fa fa-check"></i><b>13.4</b> References</a>
+</li>
+</ul></li>
+<li class="part"><span><b>VI Evaluating and Improving Models</b></span></li>
+<li class="chapter" data-level="14" data-path="model-evaluation.html"><a href="model-evaluation.html#model-evaluation"><i class="fa fa-check"></i><b>14</b> How to know your model is wrong</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="model-evaluation.html"><a href="model-evaluation.html#the-filter-that-wins-by-doing-nothing"><i class="fa fa-check"></i><b>14.1</b> The filter that wins by doing nothing</a>
+</li>
+<li class="chapter" data-level="14.2" data-path="model-evaluation.html"><a href="model-evaluation.html#three-datasets-three-jobs"><i class="fa fa-check"></i><b>14.2</b> Three datasets, three jobs</a>
+</li>
+<li class="chapter" data-level="14.3" data-path="model-evaluation.html"><a href="model-evaluation.html#count-the-mistakes-before-compressing-them"><i class="fa fa-check"></i><b>14.3</b> Count the mistakes before compressing them</a>
+</li>
+<li class="chapter" data-level="14.4" data-path="model-evaluation.html"><a href="model-evaluation.html#choose-a-threshold-for-the-actual-consequences"><i class="fa fa-check"></i><b>14.4</b> Choose a threshold for the actual consequences</a>
+</li>
+<li class="chapter" data-level="14.5" data-path="model-evaluation.html"><a href="model-evaluation.html#probabilities-deserve-their-own-evaluation"><i class="fa fa-check"></i><b>14.5</b> Probabilities deserve their own evaluation</a>
+</li>
+<li class="chapter" data-level="14.6" data-path="model-evaluation.html"><a href="model-evaluation.html#a-single-final-evaluation"><i class="fa fa-check"></i><b>14.6</b> A single final evaluation</a>
+</li>
+<li class="chapter" data-level="14.7" data-path="model-evaluation.html"><a href="model-evaluation.html#change-the-population-not-just-the-threshold"><i class="fa fa-check"></i><b>14.7</b> Change the population, not just the threshold</a>
+</li>
+<li class="chapter" data-level="14.8" data-path="model-evaluation.html"><a href="model-evaluation.html#your-turn-three-ways-to-challenge-the-filter"><i class="fa fa-check"></i><b>14.8</b> Your turn: three ways to challenge the filter</a>
+<ul>
+<li class="chapter" data-level="14.8.1" data-path="model-evaluation.html"><a href="model-evaluation.html#intuition-the-administrators-choice"><i class="fa fa-check"></i><b>14.8.1</b> Intuition: the administrator’s choice</a>
+</li>
+<li class="chapter" data-level="14.8.2" data-path="model-evaluation.html"><a href="model-evaluation.html#change-the-experiment-a-much-quieter-mailbox"><i class="fa fa-check"></i><b>14.8.2</b> Change the experiment: a much quieter mailbox</a>
+</li>
+<li class="chapter" data-level="14.8.3" data-path="model-evaluation.html"><a href="model-evaluation.html#build-it-yourself-add-a-quarantine-folder"><i class="fa fa-check"></i><b>14.8.3</b> Build it yourself: add a quarantine folder</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="14.9" data-path="model-evaluation.html"><a href="model-evaluation.html#worked-solutions-where-the-tempting-answer-goes-wrong"><i class="fa fa-check"></i><b>14.9</b> Worked solutions: where the tempting answer goes wrong</a>
+</li>
+<li class="chapter" data-level="14.10" data-path="model-evaluation.html"><a href="model-evaluation.html#what-to-carry-into-the-next-project"><i class="fa fa-check"></i><b>14.10</b> What to carry into the next project</a>
+</li>
+<li class="chapter" data-level="14.11" data-path="model-evaluation.html"><a href="model-evaluation.html#references"><i class="fa fa-check"></i><b>14.11</b> References</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="tabular-learning.html"><a href="tabular-learning.html#tabular-learning"><i class="fa fa-check"></i><b>15</b> Learning from messy tabular data</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="tabular-learning.html"><a href="tabular-learning.html#when-will-my-delivery-arrive"><i class="fa fa-check"></i><b>15.1</b> When will my delivery arrive?</a>
+</li>
+<li class="chapter" data-level="15.2" data-path="tabular-learning.html"><a href="tabular-learning.html#start-with-the-prediction-time"><i class="fa fa-check"></i><b>15.2</b> Start with the prediction time</a>
+</li>
+<li class="chapter" data-level="15.3" data-path="tabular-learning.html"><a href="tabular-learning.html#fit-the-preparation-not-just-the-predictor"><i class="fa fa-check"></i><b>15.3</b> Fit the preparation, not just the predictor</a>
+</li>
+<li class="chapter" data-level="15.4" data-path="tabular-learning.html"><a href="tabular-learning.html#a-baseline-and-a-linear-model-we-can-inspect"><i class="fa fa-check"></i><b>15.4</b> A baseline and a linear model we can inspect</a>
+</li>
+<li class="chapter" data-level="15.5" data-path="tabular-learning.html"><a href="tabular-learning.html#regularization-is-a-choice-to-validate"><i class="fa fa-check"></i><b>15.5</b> Regularization is a choice to validate</a>
+</li>
+<li class="chapter" data-level="15.6" data-path="tabular-learning.html"><a href="tabular-learning.html#compare-alternatives-through-mlj"><i class="fa fa-check"></i><b>15.6</b> Compare alternatives through MLJ</a>
+</li>
+<li class="chapter" data-level="15.7" data-path="tabular-learning.html"><a href="tabular-learning.html#inspect-failures-before-expanding-the-model"><i class="fa fa-check"></i><b>15.7</b> Inspect failures before expanding the model</a>
+</li>
+<li class="chapter" data-level="15.8" data-path="tabular-learning.html"><a href="tabular-learning.html#your-turn-three-ways-to-investigate-a-delivery-model"><i class="fa fa-check"></i><b>15.8</b> Your turn: three ways to investigate a delivery model</a>
+<ul>
+<li class="chapter" data-level="15.8.1" data-path="tabular-learning.html"><a href="tabular-learning.html#intuition-which-distance-belongs-in-the-median"><i class="fa fa-check"></i><b>15.8.1</b> Intuition: which distance belongs in the median?</a>
+</li>
+<li class="chapter" data-level="15.8.2" data-path="tabular-learning.html"><a href="tabular-learning.html#change-the-experiment-remove-one-clue"><i class="fa fa-check"></i><b>15.8.2</b> Change the experiment: remove one clue</a>
+</li>
+<li class="chapter" data-level="15.8.3" data-path="tabular-learning.html"><a href="tabular-learning.html#build-it-yourself-report-the-customers-we-disappoint"><i class="fa fa-check"></i><b>15.8.3</b> Build it yourself: report the customers we disappoint</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="15.9" data-path="tabular-learning.html"><a href="tabular-learning.html#worked-solutions-follow-the-data-through-the-program"><i class="fa fa-check"></i><b>15.9</b> Worked solutions: follow the data through the program</a>
+</li>
+<li class="chapter" data-level="15.10" data-path="tabular-learning.html"><a href="tabular-learning.html#references"><i class="fa fa-check"></i><b>15.10</b> References</a>
+</li>
+</ul></li>
+<li class="part"><span><b>VII Causal Inference and Bayesian Workflow</b></span></li>
+<li class="chapter" data-level="16" data-path="causal-inference.html"><a href="causal-inference.html#causal-inference"><i class="fa fa-check"></i><b>16</b> From prediction to intervention</a>
+<ul>
+<li class="chapter" data-level="16.1" data-path="causal-inference.html"><a href="causal-inference.html#a-price-is-also-a-decision"><i class="fa fa-check"></i><b>16.1</b> A price is also a decision</a>
+</li>
+<li class="chapter" data-level="16.2" data-path="causal-inference.html"><a href="causal-inference.html#a-convincing-wrong-answer"><i class="fa fa-check"></i><b>16.2</b> A convincing wrong answer</a>
+</li>
+<li class="chapter" data-level="16.3" data-path="causal-inference.html"><a href="causal-inference.html#compare-like-with-like"><i class="fa fa-check"></i><b>16.3</b> Compare like with like</a>
+</li>
+<li class="chapter" data-level="16.4" data-path="causal-inference.html"><a href="causal-inference.html#design-an-experiment"><i class="fa fa-check"></i><b>16.4</b> Design an experiment</a>
+</li>
+<li class="chapter" data-level="16.5" data-path="causal-inference.html"><a href="causal-inference.html#the-outcome-must-match-the-decision"><i class="fa fa-check"></i><b>16.5</b> The outcome must match the decision</a>
+</li>
+<li class="chapter" data-level="16.6" data-path="causal-inference.html"><a href="causal-inference.html#experiment-with-the-assumptions"><i class="fa fa-check"></i><b>16.6</b> Experiment with the assumptions</a>
+<ul>
+<li class="chapter" data-level="16.6.1" data-path="causal-inference.html"><a href="causal-inference.html#intuition-reconstruct-the-reversal-without-noise"><i class="fa fa-check"></i><b>16.6.1</b> Intuition: reconstruct the reversal without noise</a>
+</li>
+<li class="chapter" data-level="16.6.2" data-path="causal-inference.html"><a href="causal-inference.html#change-the-experiment-make-the-manager-more-predictable"><i class="fa fa-check"></i><b>16.6.2</b> Change the experiment: make the manager more predictable</a>
+</li>
+<li class="chapter" data-level="16.6.3" data-path="causal-inference.html"><a href="causal-inference.html#build-it-yourself-serve-a-different-neighborhood"><i class="fa fa-check"></i><b>16.6.3</b> Build it yourself: serve a different neighborhood</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="16.7" data-path="causal-inference.html"><a href="causal-inference.html#worked-solutions-keep-the-comparison-attached-to-its-question"><i class="fa fa-check"></i><b>16.7</b> Worked solutions: keep the comparison attached to its question</a>
+</li>
+<li class="chapter" data-level="16.8" data-path="causal-inference.html"><a href="causal-inference.html#summary"><i class="fa fa-check"></i><b>16.8</b> Summary</a>
+</li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="bayesian-workflow.html"><a href="bayesian-workflow.html#bayesian-workflow"><i class="fa fa-check"></i><b>17</b> A complete Bayesian workflow</a>
+<ul>
+<li class="chapter" data-level="17.1" data-path="bayesian-workflow.html"><a href="bayesian-workflow.html#start-with-a-question-and-a-simulator"><i class="fa fa-check"></i><b>17.1</b> Start with a question and a simulator</a>
+</li>
+<li class="chapter" data-level="17.2" data-path="bayesian-workflow.html"><a href="bayesian-workflow.html#check-the-prior-before-fitting"><i class="fa fa-check"></i><b>17.2</b> Check the prior before fitting</a>
+</li>
+<li class="chapter" data-level="17.3" data-path="bayesian-workflow.html"><a href="bayesian-workflow.html#an-exact-posterior-as-a-reference"><i class="fa fa-check"></i><b>17.3</b> An exact posterior as a reference</a>
+</li>
+<li class="chapter" data-level="17.4" data-path="bayesian-workflow.html"><a href="bayesian-workflow.html#check-the-computation-separately"><i class="fa fa-check"></i><b>17.4</b> Check the computation separately</a>
+</li>
+<li class="chapter" data-level="17.5" data-path="bayesian-workflow.html"><a href="bayesian-workflow.html#can-the-fitted-model-reproduce-scoreless-matches"><i class="fa fa-check"></i><b>17.5</b> Can the fitted model reproduce scoreless matches?</a>
+</li>
+<li class="chapter" data-level="17.6" data-path="bayesian-workflow.html"><a href="bayesian-workflow.html#revise-an-assumption-then-check-again"><i class="fa fa-check"></i><b>17.6</b> Revise an assumption, then check again</a>
+</li>
+<li class="chapter" data-level="17.7" data-path="bayesian-workflow.html"><a href="bayesian-workflow.html#save-a-future-set-for-evaluation"><i class="fa fa-check"></i><b>17.7</b> Save a future set for evaluation</a>
+</li>
+<li class="chapter" data-level="17.8" data-path="bayesian-workflow.html"><a href="bayesian-workflow.html#summary-and-exercises"><i class="fa fa-check"></i><b>17.8</b> Summary and exercises</a>
+<ul>
+<li class="chapter" data-level="17.8.1" data-path="bayesian-workflow.html"><a href="bayesian-workflow.html#intuition-a-sampler-can-agree-with-itself-and-still-be-wrong"><i class="fa fa-check"></i><b>17.8.1</b> Intuition: a sampler can agree with itself and still be wrong</a>
+</li>
+<li class="chapter" data-level="17.8.2" data-path="bayesian-workflow.html"><a href="bayesian-workflow.html#change-the-experiment-acceptance-is-not-exploration"><i class="fa fa-check"></i><b>17.8.2</b> Change the experiment: acceptance is not exploration</a>
+</li>
+<li class="chapter" data-level="17.8.3" data-path="bayesian-workflow.html"><a href="bayesian-workflow.html#build-it-yourself-ask-about-the-spread-of-scores"><i class="fa fa-check"></i><b>17.8.3</b> Build it yourself: ask about the spread of scores</a>
+</li>
+<li class="chapter" data-level="17.8.4" data-path="bayesian-workflow.html"><a href="bayesian-workflow.html#worked-solutions-locate-the-failure-before-choosing-the-repair"><i class="fa fa-check"></i><b>17.8.4</b> Worked solutions: locate the failure before choosing the repair</a>
+</li>
+</ul></li>
+</ul></li>
+<li><a href="https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers" target="blank">Published with bookdown</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Data Science in Julia for Hackers</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="causal-inference" class="section level1" number="16">
+<h1><span class="header-section-number">16</span> From prediction to intervention</h1>
+<div class="browser-experiment">
+<p>
+<strong>Try the experiment here.</strong> These controls run in your browser; no Julia installation is needed. <a href="interactive/causal/index.html">Open the experiment on its own page</a> for more room. The Julia notebook remains available for editing the model.
+</p>
+<iframe data-interactive src="interactive/causal/index.html" title="Prediction and intervention" loading="lazy" style="width:100%;height:950px;border:1px solid #dfe5ec;border-radius:8px;">
+</iframe>
+</div>
+<script src="interactive/embed.js" defer></script>
+<p>Let’s return to the pricing problem, this time with a shop that is already selling its product. The owner has been keeping records, and today they bring us an exciting discovery: whenever they charge more, they sell more! Perhaps we have found a rather pleasant way to increase sales. Should we tell them to raise the price tomorrow?</p>
+<p>Before changing the price tag, let’s think about what those records are telling us. In the optimal-pricing chapter we worked with a demand curve and the uncertainty around it. Now we have to ask where that curve comes from. Does it describe what happens when we change the price, or does it describe the kinds of days on which the owner chooses a different price? Those can lead us to opposite decisions.</p>
+<p>To untangle this, we are going to build our own little shop in Julia. We will invent its customers and prices, so we can peek behind the observations and see what is really happening. Then we will hide that knowledge and try to recover it from the data, just as we would have to do with a real shop.</p>
+<div id="a-price-is-also-a-decision" class="section level2" number="16.1">
+<h2><span class="header-section-number">16.1</span> A price is also a decision</h2>
+<p>Our shop sells a product at either 10 or 14 dollars. Its manager knows something we haven’t yet put into the analysis: some days are much busier than others. When a busy day is expected, the manager usually chooses 14. On quiet days, the price is usually 10. So demand is doing two things at once: influencing the price and bringing customers through the door.</p>
+<p>We can sketch that story with three arrows. Each arrow represents an influence we are assuming:</p>
+<ul>
+<li>Expected demand → price.</li>
+<li>Expected demand → quantity sold.</li>
+<li>Price → quantity sold.</li>
+</ul>
+<p>Now the trap begins to appear. A high price is also a clue that the manager expected a busy day. This mixing of influences is called <strong>confounding</strong>. Changing the price tag ourselves won’t make a queue of customers appear outside the shop!</p>
+<p>Let’s write down the comparison we actually want. Call the quantity day <span class="math inline">\(i\)</span> would sell at the lower price <span class="math inline">\(Y_i(0)\)</span>, and the quantity it would sell at the higher price <span class="math inline">\(Y_i(1)\)</span>. These two possibilities are called <em>potential outcomes</em>. If we could compare them for every day, their average difference would be</p>
+<p><span class="math display">\[
+\tau = E[Y(1)-Y(0)].
+\]</span></p>
+<p>There is a small inconvenience: we only get to live each day once. We cannot rewind Tuesday, keep all its customers, and try another price. Our Julia shop lets us do exactly that, so let’s use it to establish the answer before looking at the historical records.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">include</span>(<span class="fu">joinpath</span>(<span class="fu">pwd</span>(), <span class="st">&quot;16_causal_inference&quot;</span>, <span class="st">&quot;core.jl&quot;</span>))</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="im">using</span> <span class="bu">.CausalPricing</span></span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="im">using</span> <span class="bu">Statistics</span></span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a>population <span class="op">=</span> <span class="fu">pricing_population</span>(<span class="fl">4000</span>; seed<span class="op">=</span><span class="fl">1601</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a><span class="fu">mean</span>(population.quantity_high <span class="op">-</span> population.quantity_low)</span></code></pre></div>
+<p>At the lower price, our shop sells around 80 units on quiet days and 200 on busy days, with some random noise. Raising the price reduces quantity by 20 in either case. We therefore know the answer: the average causal effect is exactly −20. Keep that number in mind; we are about to get an answer pointing in the other direction.</p>
+</div>
+<div id="a-convincing-wrong-answer" class="section level2" number="16.2">
+<h2><span class="header-section-number">16.2</span> A convincing wrong answer</h2>
+<p>Before generating the historical records, put a sign on your prediction: will the difference in observed quantities be positive or negative? We know every day’s causal effect is −20, but the manager is mixing different kinds of days into the two price groups. Draw that mixture before looking at Julia’s answer.</p>
+<p>Let’s put the manager in charge again. They choose the higher price with probability 0.85 on busy days and 0.15 on quiet days. We record the resulting price and quantity, leaving the outcome at the other price hidden.</p>
+<p>The important part of <code>observe_prices</code> is visible in these lines from <code>16_causal_inference/core.jl</code>:</p>
+<!-- source-excerpt: 16_causal_inference/core.jl -->
+<div class="sourceCode" id="cb2"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a>probabilities <span class="op">=</span> <span class="fu">ifelse</span>.(population.busy, high_given_busy, high_given_quiet)</span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a>high <span class="op">=</span> <span class="fu">rand</span>(<span class="fu">MersenneTwister</span>(seed), <span class="fu">length</span>(probabilities)) <span class="op">.&lt;</span> probabilities</span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a>quantity <span class="op">=</span> <span class="fu">ifelse</span>.(high, population.quantity_high, population.quantity_low)</span></code></pre></div>
+<p>The first line lets the manager’s price policy depend on demand. The second tosses coins with those probabilities. The third reveals just the outcome at the chosen price. Notice that the price-selection rule doesn’t change either potential outcome: we first built the world, then decided which parts of it the records would show us. A predictive train/test split like the one in the spam chapter cannot undo this selection rule.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a>historical <span class="op">=</span> <span class="fu">observe_prices</span>(population; seed<span class="op">=</span><span class="fl">1602</span>,</span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a>    high_given_busy<span class="op">=</span><span class="fl">0.85</span>, high_given_quiet<span class="op">=</span><span class="fl">0.15</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a>naive <span class="op">=</span> <span class="fu">difference_in_means</span>(historical.quantity, historical.high)</span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a>naive</span></code></pre></div>
+<p>Our first attempt is simple: subtract the average quantity on low-price days from the average on high-price days. The function also gives us an approximate interval based on variation in the two groups. That interval accounts for sampling variability under an independent-groups approximation, but it has no way to untangle the manager’s choices. Collecting more days under the same policy could make this interval narrower while leaving our causal answer wrong.</p>
+<p>So why do expensive days look so successful? Most of them are busy days! The association can help us predict sales while the manager keeps following the same policy. But we asked what would happen if we changed the policy, and that is the part this comparison has missed.</p>
+<p>We could give these records to a much more elaborate predictive model and find that price is a very useful feature. That would not solve our problem either. Cross-validation could confirm that it predicts well, while the connection between demand and the manager’s decision remains untouched.</p>
+</div>
+<div id="compare-like-with-like" class="section level2" number="16.3">
+<h2><span class="header-section-number">16.3</span> Compare like with like</h2>
+<p>Fortunately, we also recorded whether the manager expected a busy or a quiet day, before setting the price. In the world we built, this is the only common cause of price and quantity. Why don’t we compare busy days with other busy days, and quiet days with other quiet days? After making those two comparisons, we can average them in proportion to how often each kind of day occurs:</p>
+<p><span class="math display">\[
+\widehat\tau = \sum_{d\in\{\mathrm{quiet},\mathrm{busy}\}}
+\widehat P(D=d)
+\left[\overline Y_{A=1,D=d}-\overline Y_{A=0,D=d}\right].
+\]</span></p>
+<p>Inside <code>adjusted_difference</code>, the calculation follows the equation one context at a time:</p>
+<!-- source-excerpt: 16_causal_inference/core.jl -->
+<div class="sourceCode" id="cb4"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a>estimate <span class="op">=</span> <span class="fl">0.0</span></span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a><span class="cf">for</span> context <span class="kw">in</span> (<span class="cn">false</span>, <span class="cn">true</span>)</span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a>    rows <span class="op">=</span> data.busy <span class="op">.==</span> context</span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a>    <span class="fu">any</span>(rows) <span class="op">||</span> <span class="fu">throw</span>(<span class="fu">ArgumentError</span>(<span class="st">&quot;both demand contexts must be observed&quot;</span>))</span>
+<span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a>    estimate <span class="op">+=</span> <span class="fu">mean</span>(rows) <span class="op">*</span> <span class="fu">difference_in_means</span>(outcome[rows], data.high[rows]).estimate</span>
+<span id="cb4-6"><a href="#cb4-6" tabindex="-1"></a><span class="cf">end</span></span>
+<span id="cb4-7"><a href="#cb4-7" tabindex="-1"></a><span class="cf">return</span> estimate</span></code></pre></div>
+<p><code>rows</code> selects quiet days first and busy days next. The within-context difference is multiplied by <code>mean(rows)</code>, the fraction of all days belonging to that context. Adding the contributions puts us back in the population whose average effect we asked for. It would be tempting to average the two differences without weights; that only targets this population when the contexts are equally common.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a>adjusted <span class="op">=</span> <span class="fu">adjusted_difference</span>(historical)</span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a>(naive<span class="op">=</span>naive.estimate, adjusted<span class="op">=</span>adjusted, known_effect<span class="op">=-</span><span class="fl">20.0</span>)</span></code></pre></div>
+<p>That gets us much closer to −20. Before celebrating, let’s look at what made the trick work. There are three assumptions hiding inside this comparison:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Conditional exchangeability.</strong> Once we know whether a day is busy or quiet, the chosen price gives us no further information about its potential outcomes. We built our shop this way. With real records, an unrecorded festival or the manager’s private forecast could spoil that assumption.</li>
+<li><strong>Positivity.</strong> We need both prices to occur in each kind of day. If the manager always charges 14 on busy days, where would we find a comparable busy day priced at 10? A regression may still produce a number, but it would have to extrapolate.</li>
+<li><strong>Consistency and no relevant interference.</strong> The recorded outcome must correspond to the price intervention we described, and assignments must not affect other days in a way our design ignores. Imagine customers seeing today’s high price and deciding to buy tomorrow instead. We would then need a story about several days together.</li>
+</ol>
+<p>Does this mean we should adjust for every column in the spreadsheet? That can get us into more trouble. Purchases completed after the price change are part of what we are trying to explain, rather than a pre-existing reason for the manager’s choice. Adjusting for an intermediate step, or <em>mediator</em>, can remove part of the effect we wanted to measure. Adjusting for a common consequence, or <em>collider</em>, can introduce a new bias. The arrows in our story help us decide which comparisons make sense.</p>
+<p>Our adjusted calculation currently gives a point estimate. To put uncertainty around it, try bootstrapping independent days and recomputing both the context proportions and the two within-context comparisons each time. The interval from our first, unadjusted calculation cannot simply be carried over to this new estimate.</p>
+</div>
+<div id="design-an-experiment" class="section level2" number="16.4">
+<h2><span class="header-section-number">16.4</span> Design an experiment</h2>
+<p>Suppose the manager agrees to let us choose prices for a while. We could toss a fair coin each day: one outcome gives price 10, the other gives price 14. The coin doesn’t know whether the day will be busy. This breaks the connection that caused our original problem, while leaving customers free to respond to the chosen price.</p>
+<p>Predict what changes in our three-line price-assignment mechanism when both probabilities become 0.5. Does the quantity equation need to change? The experiment will be informative because the assignment changes, even though the customers’ potential responses stay the same.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a>trial <span class="op">=</span> <span class="fu">observe_prices</span>(population; seed<span class="op">=</span><span class="fl">1603</span>,</span>
+<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a>    high_given_busy<span class="op">=</span><span class="fl">0.5</span>, high_given_quiet<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a>trial_effect <span class="op">=</span> <span class="fu">difference_in_means</span>(trial.quantity, trial.high)</span>
+<span id="cb6-4"><a href="#cb6-4" tabindex="-1"></a>trial_effect</span></code></pre></div>
+<p>Now let’s put our attempts side by side. Running the examples with the given seeds in Julia 1.10.10 gives these rounded results:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Analysis</th>
+<th align="right">Estimated change in units sold</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Historical, unadjusted</td>
+<td align="right">+64.51</td>
+</tr>
+<tr>
+<td align="left">Historical, adjusted for demand</td>
+<td align="right">−19.84</td>
+</tr>
+<tr>
+<td align="left">Randomized experiment</td>
+<td align="right">−20.62</td>
+</tr>
+<tr>
+<td align="left">Known synthetic effect</td>
+<td align="right">−20.00</td>
+</tr>
+</tbody>
+</table>
+<p>Once prices are randomized, the simple difference in means estimates the effect we wanted. It is not exactly −20 because a finite sequence of coin tosses can still leave one group with more busy days than the other. The interval adds and subtracts 1.96 estimated standard errors, calculated from the two groups’ sample variances. This is a large-sample approximation: randomization helps us reason about uncertainty, but it doesn’t guarantee that every interval will contain the true effect.</p>
+<p>Of course, running the experiment means making more decisions than tossing a coin. Are we assigning prices to days, customers, or whole stores? What will we measure, for how long, and what will we do with missing records? Decide these things before the results arrive. If whole stores receive a price, observations within a store are related and the analysis must account for that. If customers ignore an assigned offer, the effect of receiving the offer and the effect of actually paying that price become different questions. Even the stopping rule matters: peeking every morning and stopping at the first favorable interval changes how that interval should be interpreted.</p>
+<p>And remember which shop we studied. Customers in another market, or the same customers next year, may respond differently. We still need to think about what carries over when we take an experimental result somewhere new.</p>
+</div>
+<div id="the-outcome-must-match-the-decision" class="section level2" number="16.5">
+<h2><span class="header-section-number">16.5</span> The outcome must match the decision</h2>
+<p>At this point the owner might object: ‘You have told me how many units I lose, but what happens to my profit?’ A fair question. If each unit costs 4 to produce, profit before fixed costs is</p>
+<p><span class="math display">\[
+\mathrm{profit}=(\mathrm{price}-4)\times\mathrm{quantity}.
+\]</span></p>
+<p>We already have the randomized prices and the quantities sold. Let’s use them to make the comparison the owner cares about:</p>
+<p>Before calculating, consider a quiet day with 80 sales at price 10 and 60 sales at price 14. Work out the two margins after unit cost 4. Would fewer sales necessarily leave the owner worse off? This is where our causal question meets the decision objective from the pricing and spam-evaluation chapters.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a>profit_effect <span class="op">=</span> <span class="fu">difference_in_means</span>(trial.profit, trial.high)</span>
+<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a>profit_effect</span></code></pre></div>
+<p>Selling fewer units can still bring in more money when the margin on each unit increases. This is why choosing the outcome is part of designing the experiment. We should also ask what happens after the experiment ends: will customers keep returning, can the shop meet demand, and who bears the cost of a price change? Short-term profit answers one part of the owner’s question.</p>
+<p>Since we built this shop ourselves, we can peek at both possible profits for each day and check the answer directly:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a>oracle_profit_effect <span class="op">=</span> <span class="fu">mean</span>(</span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a>    (<span class="fl">14</span> <span class="op">-</span> <span class="fl">4</span>) <span class="op">.*</span> population.quantity_high <span class="op">-</span></span>
+<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a>    (<span class="fl">10</span> <span class="op">-</span> <span class="fl">4</span>) <span class="op">.*</span> population.quantity_low)</span></code></pre></div>
+<p>Our simulator gets to play oracle because it knows both potential outcomes. Back at a real shop, we only get one of them. Everything we have done with adjustment and randomization was a way of dealing with that missing alternative.</p>
+</div>
+<div id="experiment-with-the-assumptions" class="section level2" number="16.6">
+<h2><span class="header-section-number">16.6</span> Experiment with the assumptions</h2>
+<p>Open <code>16_causal_inference/notebook.jl</code> in Pluto. Its slider increases the manager’s tendency to charge more on busy days. Compare the historical association, adjusted estimate, and randomized estimate as confounding grows. Near the ends of the slider, inspect how few observations remain in the less common price/context combinations.</p>
+<div id="intuition-reconstruct-the-reversal-without-noise" class="section level3" number="16.6.1">
+<h3><span class="header-section-number">16.6.1</span> Intuition: reconstruct the reversal without noise</h3>
+<p>Suppose half the days are busy. Quiet days sell 80 units at the low price and 60 at the high price; busy days sell 200 and 180. The manager chooses the high price with probability 0.85 on busy days and 0.15 on quiet days. Calculate expected quantity in each observed price group. How can their difference disagree with the −20 effect on every day?</p>
+<p><em>Hint:</em> first find the fraction of busy days among high-price observations. The symmetric probabilities and equal context proportions make this 0.85, but that shortcut would not hold for every population.</p>
+</div>
+<div id="change-the-experiment-make-the-manager-more-predictable" class="section level3" number="16.6.2">
+<h3><span class="header-section-number">16.6.2</span> Change the experiment: make the manager more predictable</h3>
+<p>Before moving the Pluto slider, predict the historical contrast at tendencies 0.5, 0.85, and 0.95. Keep the population and random seeds fixed; change only the assignment policy. Compare the adjusted and randomized estimates too, and inspect the counts in the rare price/context combinations. Why can adjustment become noisier even when its assumptions still hold?</p>
+<p><em>Hint:</em> as the manager becomes more predictable, high-price quiet days and low-price busy days become scarce. The experiment with both assignment probabilities fixed at 0.5 remains the same experiment throughout.</p>
+</div>
+<div id="build-it-yourself-serve-a-different-neighborhood" class="section level3" number="16.6.3">
+<h3><span class="header-section-number">16.6.3</span> Build it yourself: serve a different neighborhood</h3>
+<p>Give quiet days a causal quantity effect of −10 and busy days an effect of −40. A new neighborhood has only 20 percent busy days. Write a function that estimates within-context effects from observed records and averages them for that target mixture. What effect should it recover with plentiful data? What would a simple 50/50 average be estimating instead?</p>
+<p><em>Hint:</em> the target mixture supplies the weights, while the records supply the conditional effects. Assume those conditional effects transfer to the new neighborhood; changing weights cannot establish that assumption.</p>
+</div>
+</div>
+<div id="worked-solutions-keep-the-comparison-attached-to-its-question" class="section level2" number="16.7">
+<h2><span class="header-section-number">16.7</span> Worked solutions: keep the comparison attached to its question</h2>
+<p><strong>The reversal.</strong> Expected quantity at the high price is <code>0.85*180 + 0.15*60 = 162</code>. At the low price it is <code>0.15*200 + 0.85*80 = 98</code>. The historical contrast is therefore +64, despite both causal effects being −20. The groups contain different kinds of days. Subtracting their means as if they were comparable is the tempting wrong step; a narrower interval around +64 would not repair it.</p>
+<p><strong>The policy experiment.</strong> With tendency <code>t</code>, equal numbers of busy and quiet days, and complementary price probabilities, the expected historical contrast is <code>120*(2t-1)-20</code>. It is −20, +64, and +88 at the three settings. Finite simulated samples fluctuate around these values. Conditional adjustment can still estimate −20, but the rare comparisons contain less information as <code>t</code> approaches one. At exactly one, positivity fails: there are no high-price quiet days or low-price busy days. Increasing the sample size cannot create an assignment the policy never makes.</p>
+<p><strong>The new neighborhood.</strong> The target effect is <code>0.8*(-10) + 0.2*(-40) = -16</code>. A function can make its weighting choice explicit:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="kw">function</span> <span class="fu">target_effect</span>(data; busy_weight<span class="op">=</span><span class="fl">0.2</span>)</span>
+<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a>    <span class="fl">0</span> <span class="op">&lt;=</span> busy_weight <span class="op">&lt;=</span> <span class="fl">1</span> <span class="op">||</span> <span class="fu">throw</span>(<span class="fu">ArgumentError</span>(<span class="st">&quot;weight must be in [0,1]&quot;</span>))</span>
+<span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a>    quiet <span class="op">=</span> .!data.busy</span>
+<span id="cb9-4"><a href="#cb9-4" tabindex="-1"></a>    busy <span class="op">=</span> data.busy</span>
+<span id="cb9-5"><a href="#cb9-5" tabindex="-1"></a>    quiet_effect <span class="op">=</span> <span class="fu">difference_in_means</span>(data.quantity[quiet], data.high[quiet]).estimate</span>
+<span id="cb9-6"><a href="#cb9-6" tabindex="-1"></a>    busy_effect <span class="op">=</span> <span class="fu">difference_in_means</span>(data.quantity[busy], data.high[busy]).estimate</span>
+<span id="cb9-7"><a href="#cb9-7" tabindex="-1"></a>    <span class="cf">return</span> (<span class="fl">1</span> <span class="op">-</span> busy_weight) <span class="op">*</span> quiet_effect <span class="op">+</span> busy_weight <span class="op">*</span> busy_effect</span>
+<span id="cb9-8"><a href="#cb9-8" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<p>The simulator can represent different effects without changing its assignment function: create <code>quantity_high</code> by subtracting 10 from quiet days’ <code>quantity_low</code> and 40 from busy days’ <code>quantity_low</code>, then pass those potential outcomes to <code>observe_prices</code>. The function above still needs both prices represented within each context. A 50/50 average would give −25, the effect for a different population. Averaging all observed high-price outcomes minus all observed low-price outcomes would additionally reintroduce the manager’s confounding. Neither shortcut answers the new neighborhood’s question.</p>
+</div>
+<div id="summary" class="section level2" number="16.8">
+<h2><span class="header-section-number">16.8</span> Summary</h2>
+<p>We started with records suggesting that higher prices bring more sales. Once we looked at how the manager chose those prices, the surprise disappeared: busy days were hiding the price effect. Comparing similar days helped under our stated assumptions, and randomizing prices gave us another way to estimate the effect. Before choosing a model for our next decision, let’s ask the same questions: what exactly are we changing, for whom, and what makes the comparison fair?</p>
+<p>The chapter and its Pluto notebook share the functions in <code>16_causal_inference/core.jl</code>, so you can change the simulated shop in one place and explore the consequences in both.</p>
+<p>Further reading: Hernán and Robins, <a href="https://miguelhernan.org/whatifbook">Causal Inference: What If</a>, provides a detailed treatment of potential outcomes, exchangeability, positivity, and study design. The <a href="https://mc-stan.org/docs/stan-users-guide/poststratification.html">Stan User’s Guide on poststratification</a> discusses related ideas for averaging estimates over a target population.</p>
+</div>
+</div>
+
+</section>
+
+          </div>
+        </div>
+      </div>
+<a href="tabular-learning.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="bayesian-workflow.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"search": {"engine": "lunr", "options": null},
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

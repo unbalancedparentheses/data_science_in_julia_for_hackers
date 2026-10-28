@@ -1,39 +1,107 @@
-## Bookdown installation 
+## Bookdown installation
 
-To use Bookdown you first need to install:
-* [R](https://www.r-project.org/) programming language. 
-* The development environment [RStudio](https://www.rstudio.com/).
-* Add the R packages [Bookdown](https://github.com/rstudio/bookdown) and [JuliaCall]( https://github.com/Non-Contradiction/JuliaCall).
-    
-    NOTE: For the time being, JuliaCall is having an [issue](https://github.com/Non-Contradiction/JuliaCall/issues/164) with the Julia 1.6 version. So you will need to set Julia version v1.5.4 or older as the default one.
+Install R, RStudio, and the R packages `bookdown` and `JuliaCall`. Install Julia
+and instantiate the chapter environment before rendering, for example:
+
+```sh
+julia --project=04_naive_bayes -e 'using Pkg; Pkg.instantiate()'
+```
+
+The chapter `Project.toml` and `Manifest.toml` files record the dependencies used
+by the examples. The historical environments include older packages; the fast
+regression suite below is separate from a full book render.
 
 ## Workflow
 
-1. Make all the modifications to the chapter you are working on in the .Rmd file.
+1. Edit the chapter's `.Rmd` file and its corresponding Pluto `.jl` notebook.
+   Keep shared algorithms and explanations in sync.
+2. Run the chapter's code from the repository root. Bookdown setup cells activate
+   the chapter environment without changing directories, so all chapter data
+   paths remain relative to the repository root. Pluto notebooks use their own
+   chapter-relative paths.
+3. In RStudio, with the repository root as the working directory, render the
+   chapter:
 
-2. Once you finish making all the modifications, run all the code cells to make sure you don't get any error.
+   ```r
+   bookdown::preview_chapter("04_naive_bayes.Rmd")
+   ```
 
-3. Since Data science in Julia for hackers has chapters that involve a lot of computation we render each chapter separately.
+   Render each chapter in a fresh R/Julia session. Activating another Julia
+   environment does not unload packages already imported by a previous chapter;
+   the historical chapter environments can require different package versions.
+   A single-session full-book execution is not a supported publishing workflow.
+   Rendering individual chapters also avoids rerunning all the expensive examples.
+   Inspect the resulting page in `docs/`, including plots and code output.
+4. Regenerate the common navigation and search index from the published pages,
+   then check local links:
 
-    To render a chapter, we run the following method in the RStudio console:
+   ```sh
+   python3 scripts/update_navigation.py
+   python3 scripts/update_search.py
+   python3 scripts/check_site.py
+   ```
 
-    `bookdown::preview_chapter(“{Rmd_file}”)`
-    
-    Once the .html file is created you will see the console output:
+   Do not copy a sidebar from another chapter by hand: it may contain outdated
+   section anchors. When adding a chapter, update `CHAPTERS` and `PARTS` in
+   `scripts/update_navigation.py`; search uses that same chapter list.
+5. Commit the source and the updated generated pages together. If an algorithm
+   changes, rerun its outputs or remove obsolete numerical results rather than
+   presenting results from the old implementation.
 
-    `Output created: docs/{title}.html`
+## Fast regression checks
 
-4. If you open the .html file, you will notice that in the left-side index the sections dividers are missing. So you will need to add them manually: 
+The focused Julia tests require Julia 1.10 and the small `tests/` environment.
+They exercise the actual classifier definitions in the book, notebook, and
+standalone script. Image-helper tests exercise filesystem and error propagation
+with lightweight codec stubs; they do not train the convolutional network.
 
-    Open the .html file, copy the summary code from another chapter and replace it in the one you just created: 
+```sh
+julia --project=tests -e 'using Pkg; Pkg.instantiate()'
+julia --project=tests tests/runtests.jl
+python3 -m unittest discover -s tests -p 'test_*.py'
+git diff --check
+```
 
-    ```
-    <ul class="summary">
-    ...
-    </ul>
-    ```
+These checks cover classifier priors, repeated words, long emails, optional word
+limits, empty inputs, image output directories, navigation structure, local
+links, search coverage, and published algorithm/source consistency. They do not
+replace executing the full notebooks and inspecting rendered chapters.
 
-    Finally, you can open the .html file and see that the section dividers are now displayed in the left-side index of the book.
+## Render the new chapters
 
+Chapters 14–17 have a lightweight publishing path that uses Pandoc (standalone
+or bundled with Quarto) to typeset the `.Rmd` prose and Julia code into the
+existing GitBook layout:
 
+```sh
+python3 scripts/render_new_chapters.py
+python3 scripts/update_navigation.py
+python3 scripts/update_search.py
+python3 scripts/render_new_chapters.py --check
+python3 -m unittest discover -s tests -p 'test_*.py'
+```
 
+Set `PANDOC` to a Pandoc executable or `QUARTO` to a Quarto executable when it is
+not on `PATH`. An explicit `PANDOC` override takes precedence; otherwise the
+renderer prefers `QUARTO` or Quarto on `PATH` over a standalone Pandoc. Use
+Quarto 1.10.19 to match CI; a standalone Pandoc is a fallback and may produce
+different HTML.
+The renderer does not execute Julia or invent output: the
+chapter-local Julia tests validate the computations separately. CI runs both
+the computation tests and the publishing checks. Generated pages are committed
+alongside their sources so GitHub Pages can serve them directly.
+
+## Mars teaching revision
+
+The Mars chapter retains its historical Turing computations and figures while
+its teaching prose is refreshed with `python3 scripts/render_mars_teaching.py`.
+The renderer refuses changed or missing legacy computation inputs; see
+[preserved-output provenance](../publishing/mars/README.md) before changing them.
+Run `julia --startup-file=no 06_gravity/mission/runtests.jl` for the separate
+lightweight mission companion. Its grid posterior is newly tested; it is not a
+rerun of the historical Turing chains. Use `--check` on the renderer in CI.
+
+The original-chapter challenge guide is rendered separately with
+`python3 scripts/render_challenges.py`; it is a companion page, not a numbered
+chapter. Regenerate navigation first, then rerender companion pages and run
+their `--check` modes so their shared sidebar remains current.
