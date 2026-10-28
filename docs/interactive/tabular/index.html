@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>When will my delivery arrive?</title><link rel="stylesheet" href="../demo.css"></head>
+<body><h1>When will my delivery arrive?</h1>
+<p class="question"><strong>Predict first:</strong> must a deeper tree give better predictions for deliveries it has not seen? Change one setting at a time.</p>
+<div class="controls"><label for="penalty">Ridge penalty<select id="penalty"><option value="0">0</option><option value="0.01">0.01</option><option value="0.1" selected>0.1</option><option value="1">1</option><option value="10">10</option></select></label><label for="depth">Maximum tree depth: <output id="depth-value">4</output><input id="depth" type="range" min="2" max="8" value="4" step="1"></label></div>
+<div data-demo-results><p id="summary" class="summary" aria-live="polite"></p>
+<svg id="bars" viewBox="0 0 720 210" role="img" aria-label="Validation root mean squared errors for four models"></svg>
+<table><caption>Validation RMSE in minutes; lower is better</caption><thead><tr><th scope="col">Model</th><th scope="col">RMSE</th></tr></thead><tbody id="scores"></tbody></table>
+<h2>Predicted versus observed delivery times</h2><svg id="scatter" viewBox="0 0 720 350" role="img" aria-label="Tree and ridge predictions against observed minutes for all validation deliveries"></svg></div>
+<p class="note">The dotted diagonal represents a perfect prediction. Purple points show the selected tree; teal points show ridge. All 360 validation deliveries are shown, including those with missing distance measurements.</p>
+<p class="note">Julia and MLJ fitted these models ahead of time, using the chapter's seeds, training-only imputation and encoding, and exactly the notebook's model settings. The browser selects their saved predictions and recalculates validation errors. It does not train a new model. No test-set outcomes are exposed here.</p>
+<p class="note">Repeatedly trying settings can overfit validation data too. Freeze your procedure before its final test. <a href="../../tabular-learning.html" target="_top">Read the chapter</a> or run the Julia notebook to change the data and fit your own models.</p>
+<noscript>Enable JavaScript to compare models. The chapter contains the code and explanation.</noscript><script type="module" src="app.js"></script></body></html>
