@@ -559,8 +559,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="experiments-to-try-after-each-chapter" class="section level1">
 <h1>Experiments to try after each chapter</h1>
 <p>You have followed the example. Can you make a prediction before running the next one? These challenges revisit Chapters 1–5 and 7–13. Chapter 6 and Chapters 14–17 have their own exercises in the chapter. Each sequence starts with a question, changes one part of the experiment, and ends with something to build.</p>
-<p>Write down your prediction and its reason first. Keep the original experiment so you can compare it with your change. A useful answer contains a result, an explanation, and one circumstance in which that explanation would fail.</p>
-<p>The hints and worked reasoning below are deliberately separate from the tasks. For open projects, the solution describes what a convincing answer needs; there is no single required plot or model. Use each chapter’s environment for code experiments. You can work through the intuition questions without Julia.</p>
+<p>Write down your prediction and its reason first. Keep the original experiment so you can compare it with your change. What happened, and why? Try to imagine one change to the setup that would make your explanation stop working.</p>
+<p>The hints and worked reasoning below are deliberately separate from the tasks. For open projects, we work through one way to investigate the question; you may find another plot or model that teaches you more. Use each chapter’s environment for code experiments. You can work through the intuition questions without Julia.</p>
 <div id="chapter-1-models-and-explanations" class="section level2">
 <h2>Chapter 1 Models and explanations</h2>
 <p><strong>Predict.</strong> Two models predict tomorrow’s temperature equally well. Must they give the same explanation of how the weather works?</p>
@@ -621,7 +621,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><strong>Build.</strong> Choose an observable feature such as the fraction of scoreless matches or the number of unusually high scores. Compare the observed feature with replicated seasons. Then read Chapter 17 and explain what a simpler model makes easier to diagnose.</p>
 <div id="hint-and-worked-reasoning-5" class="section level3">
 <h3>Hint and worked reasoning</h3>
-<p>Even fixed parameters generate random scores, so the first experiment is not deterministic. What it omits is uncertainty about the parameters. Draw a joint parameter sample, simulate a season conditional on it, and repeat to include both sources of uncertainty. Do not promise every chosen statistic will have a wider interval: compare the distributions you actually obtain. A convincing model check picks a feature relevant to the question and looks for systematic disagreement; it does not assume every observed statistic must sit at the center of its predictive distribution.</p>
+<p>Even fixed parameters generate random scores, so the first experiment is not deterministic. What it omits is uncertainty about the parameters. Draw a joint parameter sample, simulate a season conditional on it, and repeat to include both sources of uncertainty. Compare the distributions you actually obtain: which features change, and which barely move? Pick a feature relevant to our question and look for systematic disagreement. A single season can land away from the center of its predictive distribution without contradicting the model.</p>
 </div>
 </div>
 <div id="chapter-8-where-should-we-shoot" class="section level2">
@@ -651,7 +651,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><strong>Build.</strong> Design an evaluation that keeps related photographs together: duplicates, photos of the same specimen, or images from the same source must not cross the relevant train/test boundary. Compare against a majority-class baseline and report mistakes by class.</p>
 <div id="hint-and-worked-reasoning-8" class="section level3">
 <h3>Hint and worked reasoning</h3>
-<p>Backgrounds can correlate with labels. A random file split may preserve those correlations or even separate near-duplicates, inflating apparent performance. A background-only model that predicts labels is evidence of a shortcut in the dataset. Poor performance after cropping alone is not proof of a shortcut: cropping also changes resolution and image composition. A strong answer documents the split unit and preprocessing, keeps the final test untouched, and explains which future population that test represents. Start by auditing the images; another expensive training run is not the first required step.</p>
+<p>Backgrounds can correlate with labels. A random file split may preserve those correlations or even separate near-duplicates, inflating apparent performance. A background-only model that predicts labels is evidence of a shortcut in the dataset. Poor performance after cropping alone is not proof of a shortcut: cropping also changes resolution and image composition. Start by looking at the images and tracing how they entered each split. Are we testing on genuinely new photographs, or another copy of a familiar scene? Keep the final test aside while investigating that question; inspecting a few images may teach us more than launching another expensive training run.</p>
 </div>
 </div>
 <div id="chapter-11-an-ecosystem-with-new-players" class="section level2">

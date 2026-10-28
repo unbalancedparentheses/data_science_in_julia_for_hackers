@@ -6,12 +6,12 @@ next one? These challenges revisit Chapters 1–5 and 7–13. Chapter 6 and Chap
 question, changes one part of the experiment, and ends with something to build.
 
 Write down your prediction and its reason first. Keep the original experiment
-so you can compare it with your change. A useful answer contains a result, an
-explanation, and one circumstance in which that explanation would fail.
+so you can compare it with your change. What happened, and why? Try to imagine
+one change to the setup that would make your explanation stop working.
 
 The hints and worked reasoning below are deliberately separate from the tasks.
-For open projects, the solution describes what a convincing answer needs;
-there is no single required plot or model. Use each chapter's environment for
+For open projects, we work through one way to investigate the question;
+you may find another plot or model that teaches you more. Use each chapter's environment for
 code experiments. You can work through the intuition questions without Julia.
 
 ## Chapter 1 Models and explanations
@@ -157,11 +157,11 @@ model makes easier to diagnose.
 Even fixed parameters generate random scores, so the first experiment is not
 deterministic. What it omits is uncertainty about the parameters. Draw a joint
 parameter sample, simulate a season conditional on it, and repeat to include
-both sources of uncertainty. Do not promise every chosen statistic will have
-a wider interval: compare the distributions you actually obtain. A convincing
-model check picks a feature relevant to the question and looks for systematic
-disagreement; it does not assume every observed statistic must sit at the
-center of its predictive distribution.
+both sources of uncertainty. Compare the distributions you actually obtain:
+which features change, and which barely move? Pick a feature relevant to our
+question and look for systematic disagreement. A single season can land
+away from the center of its predictive distribution without contradicting
+the model.
 
 ## Chapter 8 Where should we shoot
 
@@ -230,10 +230,11 @@ Backgrounds can correlate with labels. A random file split may preserve those
 correlations or even separate near-duplicates, inflating apparent performance.
 A background-only model that predicts labels is evidence of a shortcut in the
 dataset. Poor performance after cropping alone is not proof of a shortcut:
-cropping also changes resolution and image composition. A strong answer
-documents the split unit and preprocessing, keeps the final test untouched,
-and explains which future population that test represents. Start by auditing
-the images; another expensive training run is not the first required step.
+cropping also changes resolution and image composition. Start by looking at
+the images and tracing how they entered each split. Are we testing on genuinely
+new photographs, or another copy of a familiar scene? Keep the final test
+aside while investigating that question; inspecting a few images may teach
+us more than launching another expensive training run.
 
 ## Chapter 11 An ecosystem with new players
 

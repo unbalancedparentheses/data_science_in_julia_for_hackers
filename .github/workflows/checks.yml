@@ -42,6 +42,8 @@ jobs:
         run: julia --project=tests -e 'using Pkg; Pkg.instantiate()'
       - name: Julia regression tests
         run: julia --project=tests tests/runtests.jl
+      - name: Verify published spam-classifier results
+        run: julia --startup-file=no --project=tests 04_naive_bayes/evaluate_book.jl
       - name: Mars mission regression tests
         run: julia --startup-file=no 06_gravity/mission/runtests.jl
       - name: Mars browser oracle matches Julia
