@@ -124,9 +124,14 @@ Mars and Chapters 14–17 include their exercises in the chapter itself.
 
 ### Original chapter environments
 
-The original chapters use chapter-local `Project.toml` and `Manifest.toml`
-files. Instantiate the chapter environment before opening its Pluto notebook.
-For example, start Julia from the Chapter 4 directory:
+Several original chapters include historical chapter-local `Project.toml` and
+`Manifest.toml` files. These are not all verified on current Julia. The
+standard-library first experiment above, Chapters 14–17, and the
+[Mars mission companion](06_gravity/mission/README.md) are the maintained,
+tested starting points for this edition.
+
+Chapter 4 declares Pluto in its own environment (its manifest pins Pluto
+0.19.16). To try that historical setup, start from the repository root:
 
 ```sh
 cd 04_naive_bayes
@@ -134,9 +139,44 @@ julia --project=. -e 'using Pkg; Pkg.instantiate()'
 julia --project=. -e 'using Pluto; Pluto.run()'
 ```
 
-Open `04_naive_bayes.jl` in Pluto. The `.Rmd` book sources instead use paths
-relative to the repository root. See [the publishing guide](documentation/Bookdown.md)
-for rendering and verification instructions.
+Open `04_naive_bayes.jl` in Pluto. The original notebooks generally read assets
+relative to their chapter directory, whereas the `.Rmd` book sources use paths
+relative to the repository root. Also, the old notebooks do not explicitly
+activate their chapter environment or embed their own dependency manifests.
+Pluto's automatic notebook package management may therefore resolve a separate
+environment; launching Pluto from a chapter project does not by itself prove
+that its notebook uses those historical package versions. Full execution of
+all legacy notebooks has not been verified.
+
+Chapter 3 now has a separate environment with explicit package versions. Its
+resolution and installation were checked with Julia 1.10.10. From the repository
+root, you can install it and run the headless package/data smoke check:
+
+```sh
+julia --project=03_probability_intro -e 'using Pkg; Pkg.instantiate()'
+julia --project=03_probability_intro 03_probability_intro/smoke_test.jl
+```
+
+This check loads the rainfall table, resizes a bundled image, and renders a
+Poisson plot; it does not run the complete chapter or validate Pluto reactivity.
+The initial combined import/render attempt exceeded a three-minute local check
+budget, so completed smoke execution is still pending; installation alone is
+not a claim that the chapter runs end to end.
+
+Two concrete setup problems remain in the historical environments:
+
+- Chapter 2 imports `CSV` but does not declare it. A narrow addition of CSV
+  0.8.5 preserving every existing dependency failed because the locked
+  `FFMPEG_jll` 4.3.1 and `OpenSSL_jll` 1.1.1 requirements conflict under the
+  current registry. Repairing it requires a separately tested environment migration.
+- Chapter 12 imports `StatsPlots` but does not declare it. A narrow addition
+  preserving existing dependencies stopped at the historical, locally missing
+  `DataDrivenDiffEq` 0.4.0 git-tree checkout recorded in its manifest. This is
+  a setup blocker in our clean environment, not proof that the upstream commit
+  is gone. Its legacy scientific-model stack needs a separate compatibility check.
+
+These checks ran with Julia 1.10.10 and did not upgrade the historical manifests.
+For book rendering and verification, see [the publishing guide](documentation/Bookdown.md).
 
 Chapters 14–17 share their executable algorithms between the book examples,
 Pluto notebooks, and chapter-local tests. Their datasets are synthetic and
