@@ -7,13 +7,14 @@ const CASES = [
     ("15_tabular_learning/15_tabular_learning.jl", :tree_depth, 7, 8, :tree_error),
     ("16_causal_inference/notebook.jl", :tendency, 1, 0.5, :naive),
     ("17_bayesian_workflow/notebook.jl", :strength, 5, 30.0, :(mean(posterior))),
+    ("17_bayesian_workflow/notebook.jl", :proposal_scale, 1, 0.00001, :(copy(sampler_fit.acceptance))),
 ]
 
 # The raw values are browser-side Slider indices. PlutoUI transforms them into
 # the actual range values before Pluto reruns dependent cells.
 @testset "Pluto native bonds and reactive updates" begin
     for (relative_path, bond, browser_value, expected_value, dependent) in CASES
-        @testset "$relative_path" begin
+        @testset "$relative_path / $bond" begin
             path = joinpath(ROOT, relative_path)
             original = read(path)
             session = Pluto.ServerSession()
