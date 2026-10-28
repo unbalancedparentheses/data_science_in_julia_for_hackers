@@ -51,16 +51,16 @@ md"Metropolis proposal scale in log-rate space (a tiny step can accept often yet
 @bind proposal_scale Slider([0.00001, 0.01, 0.1, 0.25, 1.0, 3.0]; default=0.25, show_value=true)
 
 # ╔═╡ 06f062aa-66b2-40ce-897f-c40155fbfd51
-fit = metropolis_rates(training.goals; shape=2strength, rate=strength,
+sampler_fit = metropolis_rates(training.goals; shape=2strength, rate=strength,
     step=proposal_scale, draws=4000, warmup=1000)
 
 # ╔═╡ 6bfabed4-3219-42f4-8743-1c8dce7641cd
-(diagnostics=chain_diagnostics(fit.samples),
- acceptance=fit.acceptance, exact_mean=mean(posterior), sampled_mean=mean(fit.samples))
+(diagnostics=chain_diagnostics(sampler_fit.samples),
+ acceptance=sampler_fit.acceptance, exact_mean=mean(posterior), sampled_mean=mean(sampler_fit.samples))
 
 # ╔═╡ 6a67a39e-6147-4ae9-b296-e3c18d30719b
 let
-    values = fit.samples
+    values = sampler_fit.samples
     lower, upper = extrema(values)
     span = max(upper-lower, eps(Float64))
     colors = ["#1b9e77", "#d95f02", "#7570b3", "#e7298a"]

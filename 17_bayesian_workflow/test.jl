@@ -27,3 +27,23 @@ using .FootballWorkflow
     testing=(goals=[0], easy=[false])
     @test exp(log_predictive_score(training, testing)) ≈ (4/5)^5
 end
+
+# Earlier book chapters call StatsBase/Distributions.fit in the shared Julia
+# session. Resolve that imported binding before executing the published code.
+module PublishedChapter17
+using Distributions
+fit(Normal, [1.0, 2.0, 3.0])
+end
+@testset "Published chapter after an imported fit call" begin
+    source_path = joinpath(@__DIR__, "..", "17_bayesian_workflow.Rmd")
+    source = read(source_path, String)
+    blocks = collect(eachmatch(r"(?ms)^```\{julia[^\n]*\}\s*\n(.*?)^```", source))
+    @test !isempty(blocks)
+    cd(dirname(source_path)) do
+        for block in blocks
+            Base.include_string(PublishedChapter17, block.captures[1], source_path)
+        end
+    end
+    @test PublishedChapter17.fit === Distributions.fit
+    @test size(PublishedChapter17.sampler_fit.samples) == (4000, 4)
+end

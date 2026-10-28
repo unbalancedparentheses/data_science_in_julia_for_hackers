@@ -6,6 +6,7 @@ from pathlib import Path
 import re
 import subprocess
 import unittest
+from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -59,6 +60,25 @@ class SiteTests(unittest.TestCase):
             self.assertFalse(parser.stack, page.name)
             summaries.append(summary)
         self.assertEqual(len(set(summaries)), 1)
+
+    def test_each_sidebar_part_contains_a_chapter(self):
+        summary = re.search(r'<ul class="summary">.*?</ul>(?=\s*</nav>)',
+                            (ROOT / 'docs/index.html').read_text(), re.S)[0]
+        for section in re.split(r'<li class="part">', summary)[1:]:
+            self.assertIn('class="chapter"', section)
+
+    def test_renderer_prefers_quarto_over_system_pandoc(self):
+        spec = importlib.util.spec_from_file_location('renderer', ROOT / 'scripts/render_new_chapters.py')
+        renderer = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(renderer)
+        with patch.dict(renderer.os.environ, {}, clear=True), patch.object(renderer.shutil, 'which', return_value='/bin/found'):
+            self.assertEqual(renderer.pandoc_command(), ['quarto', 'pandoc'])
+        with patch.dict(renderer.os.environ, {'QUARTO': '/pinned/quarto'}, clear=True):
+            self.assertEqual(renderer.pandoc_command(), ['/pinned/quarto', 'pandoc'])
+        with patch.dict(renderer.os.environ, {'PANDOC': '/chosen/pandoc', 'QUARTO': '/pinned/quarto'}, clear=True):
+            self.assertEqual(renderer.pandoc_command(), ['/chosen/pandoc'])
+        with patch.dict(renderer.os.environ, {}, clear=True), patch.object(renderer.shutil, 'which', side_effect=lambda name: '/bin/pandoc' if name == 'pandoc' else None):
+            self.assertEqual(renderer.pandoc_command(), ['pandoc'])
 
     def test_all_local_links(self):
         subprocess.run(['python3', 'scripts/check_site.py'], cwd=ROOT, check=True)

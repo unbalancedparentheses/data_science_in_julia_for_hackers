@@ -26,7 +26,11 @@ regression suite below is separate from a full book render.
    bookdown::preview_chapter("04_naive_bayes.Rmd")
    ```
 
-   Rendering individual chapters avoids rerunning all the expensive examples.
+   Render each chapter in a fresh R/Julia session. Activating another Julia
+   environment does not unload packages already imported by a previous chapter;
+   the historical chapter environments can require different package versions.
+   A single-session full-book execution is not a supported publishing workflow.
+   Rendering individual chapters also avoids rerunning all the expensive examples.
    Inspect the resulting page in `docs/`, including plots and code output.
 4. Regenerate the common navigation and search index from the published pages,
    then check local links:
@@ -78,7 +82,10 @@ python3 -m unittest discover -s tests -p 'test_*.py'
 ```
 
 Set `PANDOC` to a Pandoc executable or `QUARTO` to a Quarto executable when it is
-not on `PATH`. CI uses Quarto 1.10.19 so the bundled Pandoc version is fixed.
+not on `PATH`. An explicit `PANDOC` override takes precedence; otherwise the
+renderer prefers `QUARTO` or Quarto on `PATH` over a standalone Pandoc. Use
+Quarto 1.10.19 to match CI; a standalone Pandoc is a fallback and may produce
+different HTML.
 The renderer does not execute Julia or invent output: the
 chapter-local Julia tests validate the computations separately. CI runs both
 the computation tests and the publishing checks. Generated pages are committed

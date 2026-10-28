@@ -323,8 +323,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="9.5" data-path="optimal-pricing.html"><a href="optimal-pricing.html#references-6"><i class="fa fa-check"></i><b>9.5</b> References</a>
 </li>
 </ul></li>
-<li class="part"><span><b>III Machine Learning</b></span></li>
-<li class="part"><span><b>IV Deep Learning</b></span></li>
+<li class="part"><span><b>III Deep Learning</b></span></li>
 <li class="chapter" data-level="10" data-path="image-classification.html"><a href="image-classification.html#image-classification"><i class="fa fa-check"></i><b>10</b> Image classification</a>
 <ul>
 <li class="chapter" data-level="10.1" data-path="image-classification.html"><a href="image-classification.html#bee-population-control-what-would-happen-if-bees-go-extinct"><i class="fa fa-check"></i><b>10.1</b> Bee population control: What would happen if bees go extinct?</a>
@@ -338,7 +337,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="10.5" data-path="image-classification.html"><a href="image-classification.html#references-7"><i class="fa fa-check"></i><b>10.5</b> References</a>
 </li>
 </ul></li>
-<li class="part"><span><b>V Scientific Machine Learning</b></span></li>
+<li class="part"><span><b>IV Scientific Machine Learning</b></span></li>
 <li class="chapter" data-level="11" data-path="ultima-online.html"><a href="ultima-online.html#ultima-online"><i class="fa fa-check"></i><b>11</b> Ultima online</a>
 <ul>
 <li class="chapter" data-level="11.1" data-path="ultima-online.html"><a href="ultima-online.html#the-ultima-online-catastrophe"><i class="fa fa-check"></i><b>11.1</b> The Ultima Online Catastrophe</a>
@@ -380,7 +379,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="12.4" data-path="ultima-continued.html"><a href="ultima-continued.html#references-9"><i class="fa fa-check"></i><b>12.4</b> References</a>
 </li>
 </ul></li>
-<li class="part"><span><b>VI Time Series and Forecasting</b></span></li>
+<li class="part"><span><b>V Time Series and Forecasting</b></span></li>
 <li class="chapter" data-level="13" data-path="time-series.html"><a href="time-series.html#time-series"><i class="fa fa-check"></i><b>13</b> Time series</a>
 <ul>
 <li class="chapter" data-level="13.1" data-path="time-series.html"><a href="time-series.html#predicting-the-future"><i class="fa fa-check"></i><b>13.1</b> Predicting the future</a>
@@ -410,7 +409,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="13.4" data-path="time-series.html"><a href="time-series.html#references-10"><i class="fa fa-check"></i><b>13.4</b> References</a>
 </li>
 </ul></li>
-<li class="part"><span><b>VII Evaluating and Improving Models</b></span></li>
+<li class="part"><span><b>VI Evaluating and Improving Models</b></span></li>
 <li class="chapter" data-level="14" data-path="model-evaluation.html"><a href="model-evaluation.html#model-evaluation"><i class="fa fa-check"></i><b>14</b> How to know your model is wrong</a>
 <ul>
 <li class="chapter" data-level="14.1" data-path="model-evaluation.html"><a href="model-evaluation.html#the-filter-that-wins-by-doing-nothing"><i class="fa fa-check"></i><b>14.1</b> The filter that wins by doing nothing</a>
@@ -453,7 +452,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="15.9" data-path="tabular-learning.html"><a href="tabular-learning.html#references"><i class="fa fa-check"></i><b>15.9</b> References</a>
 </li>
 </ul></li>
-<li class="part"><span><b>VIII Causal Inference and Bayesian Workflow</b></span></li>
+<li class="part"><span><b>VII Causal Inference and Bayesian Workflow</b></span></li>
 <li class="chapter" data-level="16" data-path="causal-inference.html"><a href="causal-inference.html#causal-inference"><i class="fa fa-check"></i><b>16</b> From prediction to intervention</a>
 <ul>
 <li class="chapter" data-level="16.1" data-path="causal-inference.html"><a href="causal-inference.html#a-price-is-also-a-decision"><i class="fa fa-check"></i><b>16.1</b> A price is also a decision</a>
@@ -560,10 +559,10 @@ Y_i\mid\lambda\sim\operatorname{Poisson}(\lambda),\qquad
 \left(a+\sum_i y_i\right)\eta-(b+n)e^\eta.
 \]</span></p>
 <p>Changing coordinates also changes the density. The coefficient of <span class="math inline">\(\eta\)</span> above includes the change-of-variables Jacobian; leaving it out would make our sampler explore the wrong distribution. We propose a normal step in log-rate space. Because that proposal is symmetric, the acceptance calculation uses the difference between the proposed and current log densities. This small implementation lets us examine the mechanism. For the larger models in the book, we will still want the tested samplers supplied by our probabilistic-programming tools.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a>fit <span class="op">=</span> <span class="fu">metropolis_rates</span>(training.goals; step<span class="op">=</span><span class="fl">0.25</span>, draws<span class="op">=</span><span class="fl">4000</span>, warmup<span class="op">=</span><span class="fl">1000</span>)</span>
-<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a>diagnostics <span class="op">=</span> <span class="fu">chain_diagnostics</span>(fit.samples)</span>
-<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a>(diagnostics<span class="op">=</span>diagnostics, acceptance<span class="op">=</span>fit.acceptance,</span>
-<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a> sampled_mean<span class="op">=</span><span class="fu">mean</span>(fit.samples), exact_mean<span class="op">=</span><span class="fu">mean</span>(posterior))</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a>sampler_fit <span class="op">=</span> <span class="fu">metropolis_rates</span>(training.goals; step<span class="op">=</span><span class="fl">0.25</span>, draws<span class="op">=</span><span class="fl">4000</span>, warmup<span class="op">=</span><span class="fl">1000</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a>diagnostics <span class="op">=</span> <span class="fu">chain_diagnostics</span>(sampler_fit.samples)</span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a>(diagnostics<span class="op">=</span>diagnostics, acceptance<span class="op">=</span>sampler_fit.acceptance,</span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a> sampled_mean<span class="op">=</span><span class="fu">mean</span>(sampler_fit.samples), exact_mean<span class="op">=</span><span class="fu">mean</span>(posterior))</span></code></pre></div>
 <p>We have sent four chains off from different starting rates. After discarding warmup, their draws are stored in an array with dimensions <strong>draws × chains</strong>. Do they end up exploring the same region? The <code>chain_diagnostics</code> function uses MCMCDiagnosticTools.jl to give us rank-normalized split <span class="math inline">\(\widehat R\)</span>, bulk and tail effective sample sizes, and Monte Carlo standard error for the posterior mean.</p>
 <p>Let’s unpack those numbers. <span class="math inline">\(\widehat R\)</span> compares behavior across and within chains; values appreciably above one suggest that the chains are not exploring the same distribution. Consecutive draws can also resemble each other, so collecting 4,000 of them need not give us as much information as 4,000 independent draws. That is what effective sample size helps us assess. Monte Carlo error tells us how uncertain the calculation is, separately from our uncertainty about the team’s scoring rate. The package documentation recommends <span class="math inline">\(\widehat R&lt;1.01\)</span> and at least 100 effective draws per chain for an estimand as useful targets. Think of these as warning lights: passing them gives us a reason to continue checking, rather than a proof that everything is correct.</p>
 <p>What happens if we make our random walk take very tiny steps? Let’s deliberately give it a bad setting:</p>

@@ -35,28 +35,25 @@ Thanks to Martina Cantaro, Camilo Plata, Manuel Puebla, Lucas Raúl Fernandez Pi
 
 * [Ninth chapter](https://datasciencejuliahackers.com/optimal-pricing.html): We solve a problem of optimal pricing optimization using a bayesian point of view.
 
-### Part III: Machine Learning
-* See Chapter 15 below for a worked tabular-learning example.
-
-### Part IV: Deep Learning
+### Part III: Deep Learning
 * [Tenth chapter](https://datasciencejuliahackers.com/image-classification.html): Overview of Machine Learning and implementation of a simple convolutional neural network that is able to discriminate between pictures of bees and wasps.
 
-### Part V: Scientific Machine Learning
+### Part IV: Scientific Machine Learning
 * [Eleventh chapter](https://datasciencejuliahackers.com/ultima-online.html): We explain the Ultima Online Catastrophe using differential equations to build a population dynamics model.
 
 * [Twelfth chapter](https://datasciencejuliahackers.com/ultima-continued.html): A continuation of the Ultima Online Catastrophe, introducing the Universal Differential Equations to recover missing parts of scientific models.
 
-### Part VI: Time Series and Forecasting
+### Part V: Time Series and Forecasting
 * [Thirteenth chapter](https://datasciencejuliahackers.com/time-series.html): We lay the foundations for time series analysis, focusing on the exponential smoothing method.
 
 
-### Part VII: Evaluating and Improving Models
+### Part VI: Evaluating and Improving Models
 
 * [Fourteenth chapter](https://datasciencejuliahackers.com/model-evaluation.html): How to know your model is wrong. We compare a spam-filter baseline, inspect calibration, choose a threshold on validation data, and reserve a final test set.
 
 * [Fifteenth chapter](https://datasciencejuliahackers.com/tabular-learning.html): Learning from messy tabular data. We build a delivery-time predictor with training-only preprocessing, a linear baseline, and an MLJ tree comparison.
 
-### Part VIII: Causal Inference and Bayesian Workflow
+### Part VII: Causal Inference and Bayesian Workflow
 
 * [Sixteenth chapter](https://datasciencejuliahackers.com/causal-inference.html): From prediction to intervention. We distinguish the association between price and demand from the effect of changing a price.
 

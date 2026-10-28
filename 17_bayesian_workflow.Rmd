@@ -73,10 +73,10 @@ Let's see if a sampler can recover that answer. We will use a small random-walk 
 Changing coordinates also changes the density. The coefficient of \(\eta\) above includes the change-of-variables Jacobian; leaving it out would make our sampler explore the wrong distribution. We propose a normal step in log-rate space. Because that proposal is symmetric, the acceptance calculation uses the difference between the proposed and current log densities. This small implementation lets us examine the mechanism. For the larger models in the book, we will still want the tested samplers supplied by our probabilistic-programming tools.
 
 ```{julia}
-fit = metropolis_rates(training.goals; step=0.25, draws=4000, warmup=1000)
-diagnostics = chain_diagnostics(fit.samples)
-(diagnostics=diagnostics, acceptance=fit.acceptance,
- sampled_mean=mean(fit.samples), exact_mean=mean(posterior))
+sampler_fit = metropolis_rates(training.goals; step=0.25, draws=4000, warmup=1000)
+diagnostics = chain_diagnostics(sampler_fit.samples)
+(diagnostics=diagnostics, acceptance=sampler_fit.acceptance,
+ sampled_mean=mean(sampler_fit.samples), exact_mean=mean(posterior))
 ```
 
 We have sent four chains off from different starting rates. After discarding warmup, their draws are stored in an array with dimensions **draws × chains**. Do they end up exploring the same region? The `chain_diagnostics` function uses MCMCDiagnosticTools.jl to give us rank-normalized split \(\widehat R\), bulk and tail effective sample sizes, and Monte Carlo standard error for the posterior mean.

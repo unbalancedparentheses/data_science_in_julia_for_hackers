@@ -25,9 +25,13 @@ CHAPTERS = [
 def pandoc_command():
     if os.environ.get('PANDOC'):
         return [os.environ['PANDOC']]
+    if os.environ.get('QUARTO'):
+        return [os.environ['QUARTO'], 'pandoc']
+    if shutil.which('quarto'):
+        return ['quarto', 'pandoc']
     if shutil.which('pandoc'):
         return ['pandoc']
-    return [os.environ.get('QUARTO', 'quarto'), 'pandoc']
+    raise FileNotFoundError('Install Quarto 1.10.19 or set PANDOC to a Pandoc executable')
 
 
 def page(template, content, number, title, previous, following):
