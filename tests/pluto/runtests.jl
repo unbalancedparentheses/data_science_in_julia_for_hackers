@@ -3,6 +3,9 @@ import Pluto
 
 const ROOT = normpath(joinpath(@__DIR__, "../.."))
 const CASES = [
+    ("06_gravity/mission/notebook.jl", :angle_control, 0.0, 0.0, :(copy(result.masses))),
+    ("06_gravity/mission/notebook.jl", :noise_control, 6.0, 6.0, :(copy(result.masses))),
+    ("06_gravity/mission/notebook.jl", :budget_control, 4.0, 4.0, :(decision.probability_within_budget)),
     ("14_model_evaluation/14_model_evaluation.jl", :false_positive_cost, 1, 1, :(copy(costs))),
     ("15_tabular_learning/15_tabular_learning.jl", :tree_depth, 7, 8, :tree_error),
     ("16_causal_inference/notebook.jl", :tendency, 1, 0.5, :naive),
@@ -10,8 +13,8 @@ const CASES = [
     ("17_bayesian_workflow/notebook.jl", :proposal_scale, 1, 0.00001, :(copy(sampler_fit.acceptance))),
 ]
 
-# The raw values are browser-side Slider indices. PlutoUI transforms them into
-# the actual range values before Pluto reruns dependent cells.
+# PlutoUI controls send browser-side Slider indices, transformed into range
+# values. The dependency-free Mars HTML controls send their numeric values directly.
 @testset "Pluto native bonds and reactive updates" begin
     for (relative_path, bond, browser_value, expected_value, dependent) in CASES
         @testset "$relative_path / $bond" begin

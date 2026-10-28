@@ -1,9 +1,9 @@
 # Reactive notebook regression tests
 
 These tests use Pluto 0.20.28's own notebook loader, isolated Julia workers,
-native bond registry, and reactive update API. They open all four new notebooks,
-check that no cells fail, send browser-side slider values to each notebook (including both the prior
-strength and proposal scale in Chapter 17),
+native bond registry, and reactive update API. They open the Mars mission companion and all four new chapter notebooks,
+check that no cells fail, send browser-side slider values to each notebook (all three Mars controls and
+both the prior strength and proposal scale in Chapter 17),
 and assert that the bound value and a dependent result both change. Notebook
 files must remain unchanged. No browser or public web server is required;
 Pluto's local worker processes require loopback socket access.

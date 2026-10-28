@@ -4,7 +4,8 @@ import re
 import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
-NOTEBOOKS = ["14_model_evaluation/14_model_evaluation.jl",
+NOTEBOOKS = ["06_gravity/mission/notebook.jl",
+             "14_model_evaluation/14_model_evaluation.jl",
              "15_tabular_learning/15_tabular_learning.jl",
              "16_causal_inference/notebook.jl",
              "17_bayesian_workflow/notebook.jl"]
