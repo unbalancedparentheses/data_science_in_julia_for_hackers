@@ -117,6 +117,11 @@ Start with Chapters 2–3 if Julia or probability is new to you. The return
 visits use smaller synthetic experiments to isolate an idea; they do not
 replace the earlier projects' real-data investigations.
 
+Use the [chapter challenge guide](documentation/Challenges.md) to practice
+with the earlier projects: predict an outcome, change an experiment, and build
+something of your own. Each sequence includes hints and worked reasoning.
+Mars and Chapters 14–17 include their exercises in the chapter itself.
+
 ### Original chapter environments
 
 The original chapters use chapter-local `Project.toml` and `Manifest.toml`
