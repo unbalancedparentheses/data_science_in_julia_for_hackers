@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Refresh corrected legacy algorithm blocks without inventing computed outputs."""
+"""Refresh legacy algorithms and typeset chapter 4 results verified by evaluate_book.jl."""
 import argparse
 import re
 import subprocess
 
 from render_new_chapters import ROOT, pandoc_command
+from spam_results import sync_spam_results
 
 CASES = [
     ('04_naive_bayes.Rmd', 'spam-filter.html', 'cb5', 'mutable struct BayesSpamFilter'),
@@ -34,13 +35,16 @@ def main():
         if count != 1:
             raise ValueError(f'Expected algorithm block {page}#{block}')
         pages[destination] = after
+    source_path = ROOT / '04_naive_bayes.Rmd'
+    page_path = ROOT / 'docs/spam-filter.html'
+    pages[source_path], pages[page_path] = sync_spam_results(source_path.read_text(), pages[page_path])
     changed = [path.name for path, content in pages.items() if content != path.read_text()]
     if args.check and changed:
         raise SystemExit('Stale corrected code blocks: ' + ', '.join(changed))
     if not args.check:
         for path, content in pages.items():
             path.write_text(content)
-    print(f'Rendered corrected legacy code; {len(changed)} pages changed.')
+    print(f'Rendered corrected legacy code and verified readouts; {len(changed)} files changed.')
 
 
 if __name__ == '__main__':
