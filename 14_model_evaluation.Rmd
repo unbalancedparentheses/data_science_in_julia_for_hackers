@@ -1,5 +1,11 @@
 # How to know your model is wrong {#model-evaluation}
 
+<div class="browser-experiment">
+<p><strong>Try the experiment here.</strong> These controls run in your browser; no Julia installation is needed. <a href="interactive/evaluation/index.html">Open the experiment on its own page</a> for more room. The Julia notebook remains available for editing the model.</p>
+<iframe data-interactive src="interactive/evaluation/index.html" title="Spam-filter costs" loading="lazy" style="width:100%;height:950px;border:1px solid #dfe5ec;border-radius:8px;"></iframe>
+</div>
+<script src="interactive/embed.js" defer></script>
+
 ## The filter that wins by doing nothing
 
 Imagine that we have finished the spam filter from Chapter 4 and a small company agrees to try it. We arrive with good news: our filter is 93 percent accurate! The administrator looks pleased, until someone asks how many unwanted emails it actually catches.

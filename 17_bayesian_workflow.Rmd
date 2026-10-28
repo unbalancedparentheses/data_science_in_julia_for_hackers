@@ -1,5 +1,11 @@
 # A complete Bayesian workflow {#bayesian-workflow}
 
+<div class="browser-experiment">
+<p><strong>Try the experiment here.</strong> These controls run in your browser; no Julia installation is needed. <a href="interactive/bayesian/index.html">Open the experiment on its own page</a> for more room. The Julia notebook remains available for editing the model.</p>
+<iframe data-interactive src="interactive/bayesian/index.html" title="Football predictions and prior strength" loading="lazy" style="width:100%;height:950px;border:1px solid #dfe5ec;border-radius:8px;"></iframe>
+</div>
+<script src="interactive/embed.js" defer></script>
+
 Let's imagine that our football client is back. We show them the posterior, explain the parameters, and simulate the next match. Then they ask a rather inconvenient question: 'If the model works so well, why does our team fail to score much more often than it predicts?' Perhaps finishing the computation was only the beginning of the investigation.
 
 There are several things we could look at. Did the sampler calculate the posterior we intended? Does our model's story allow the kind of matches we actually see? And how does it do when we ask about matches it hasn't seen yet? We will work through these questions one at a time. Getting a very precise answer from a model won't help much if its story is missing something important.

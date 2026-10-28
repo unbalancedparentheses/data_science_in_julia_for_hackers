@@ -1,5 +1,11 @@
 # Learning from messy tabular data {#tabular-learning}
 
+<div class="browser-experiment">
+<p><strong>Try the experiment here.</strong> These controls run in your browser; no Julia installation is needed. <a href="interactive/tabular/index.html">Open the experiment on its own page</a> for more room. The Julia notebook remains available for editing the model.</p>
+<iframe data-interactive src="interactive/tabular/index.html" title="Delivery predictions" loading="lazy" style="width:100%;height:950px;border:1px solid #dfe5ec;border-radius:8px;"></iframe>
+</div>
+<script src="interactive/embed.js" defer></script>
+
 ## When will my delivery arrive?
 
 Imagine that a neighborhood delivery service asks us for help. Every time someone places an order, the same question arrives: when will it get here? The company has kept a table with one row per delivery, a distance, a weather category, and a duration in minutes. No images, no differential equations, no millions of parameters. This should be a pleasant afternoon's work.
