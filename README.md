@@ -61,6 +61,64 @@ Thanks to Martina Cantaro, Camilo Plata, Manuel Puebla, Lucas Raúl Fernandez Pi
 
 ## Run the examples
 
+### Your first experiment
+
+The newer examples are tested with Julia 1.10.10. From the repository root,
+start `julia --startup-file=no` and paste this small experiment. It uses only
+Julia's standard libraries, so it needs no package or dataset downloads:
+
+```julia
+include("14_model_evaluation/core.jl")
+using .ModelEvaluation
+labels = [0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+delivered_everything = confusion(labels, zeros(10))
+metrics(delivered_everything)
+```
+
+Before running it, make a prediction: how accurate is a filter that never
+blocks a message? The result has accuracy `0.9`, recall `0.0`, and precision
+`missing`: it caught no spam and never made a positive prediction. Now change
+`zeros(10)` to `ones(10)`. Which mistakes disappeared, and which appeared?
+[Chapter 14](14_model_evaluation.Rmd) turns that question into a decision about
+the costs of blocking a customer's email.
+
+For sliders and editable experiments, launch the pinned Pluto environment:
+
+```sh
+julia --project=tests/pluto -e 'using Pkg; Pkg.instantiate()'
+julia --project=14_model_evaluation -e 'using Pkg; Pkg.instantiate()'
+julia --project=tests/pluto -e 'using Pluto; Pluto.run()'
+```
+
+Open `14_model_evaluation/14_model_evaluation.jl` from Pluto's start page. The
+first installation downloads packages and compiles them; subsequent launches
+reuse that work. The book's HTML pages show the reading material; running and
+editing a notebook happens in Pluto. To open another companion, instantiate
+its chapter environment in the same way first.
+
+If `julia` is not found, install Julia and make its executable available on
+your shell's path. If an `include` cannot find a file, check that `pwd()` is
+the repository root. For a missing package, rerun the matching chapter's
+`Pkg.instantiate()` command and let it finish before opening the notebook.
+
+### Choose a journey
+
+You can read the book in order, or follow a question through several projects:
+
+| Your question | Build it | Challenge it |
+|:--|:--|:--|
+| Can we catch spam without losing important mail? | Chapter 4: build a filter | Chapter 14: inspect mistakes, probabilities, and costs |
+| Can measurements get us home from Mars? | Chapter 6: estimate gravity and escape speed | Change the measurement uncertainty and ask how confident the decision is |
+| Can we predict football results? | Chapter 7: model teams and matches | Chapter 17: test a simpler goal model and discover what it misses |
+| What happens if we change a price? | Chapter 9: optimize under uncertainty | Chapter 16: distinguish a prediction from an intervention |
+| Can we predict delivery times from messy records? | Chapter 15: prepare data and compare models | Use Chapter 14's separation of training, validation, and final testing |
+
+Start with Chapters 2–3 if Julia or probability is new to you. The return
+visits use smaller synthetic experiments to isolate an idea; they do not
+replace the earlier projects' real-data investigations.
+
+### Original chapter environments
+
 The original chapters use chapter-local `Project.toml` and `Manifest.toml`
 files. Instantiate the chapter environment before opening its Pluto notebook.
 For example, start Julia from the Chapter 4 directory:
@@ -80,6 +138,17 @@ Pluto notebooks, and chapter-local tests. Their datasets are synthetic and
 seeded, so the examples do not require external data downloads. Each chapter
 explains the limits of those experiments. Start with its `.Rmd` file or notebook;
 install its Julia environment when a `Project.toml` is present.
+
+### Preview the website locally
+
+```sh
+python3 -m http.server 8767 --bind 127.0.0.1 --directory docs
+```
+
+Visit <http://localhost:8767>. Keep the terminal open while reading; stop the
+server with Ctrl-C. A full checkout includes the published plot images. If
+you use sparse checkout, include `docs/data_science_in_julia_for_hackers_files/`
+as well as the HTML files, or those plots will appear broken locally.
 
 ## Validate changes
 
