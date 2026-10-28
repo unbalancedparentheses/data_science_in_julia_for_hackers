@@ -16,7 +16,15 @@ end
 # ╔═╡ 6cd71344-fe9d-5feb-8c99-2a56f6f560b1
 md"""# Predicting delivery times
 
-Compare a linear model, ridge regression and a tree on synthetic deliveries with missing distances and categorical weather. The controls expose **validation** errors only. Choose the procedure before evaluating a final test set with `mlj_comparison.jl`.
+Our delivery company wants more reliable arrival estimates. Before changing
+a setting, predict whether a deeper tree must lower the **validation** RMSE.
+Then ask the same question about a stronger ridge penalty. Keep your prediction
+next to the results table; a failed prediction is a useful clue about what the
+model can learn from missing distances and weather categories.
+
+Change one control at a time and compare with the fixed baseline and linear
+model. These are validation results, so we can investigate them. Choose a
+procedure before using the separate final comparison in `mlj_comparison.jl`.
 """
 
 # ╔═╡ 93422f13-e60b-563a-9720-8dae353c078b

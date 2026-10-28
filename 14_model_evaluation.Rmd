@@ -27,11 +27,22 @@ Of course, we know those rates because we invented the mailbox. Our learner does
 
 Now, how do we give the filter a fair examination? We divide the messages into three groups: 60 percent for training, 20 percent for validation, and 20 percent for testing. The training messages let us estimate the model's parameters. The validation messages let us try different decision rules. We put the test messages aside until we have finished making those choices.
 
+**Before running:** imagine that the rarest signal category has three training messages, all spam. What probability would you assign to its next message: 1, 4/5, or something else? Write down your choice and what one new ham message should do to it.
+
 ```{julia}
 score_model = fit_score(mail.signal[rows.train], mail.label[rows.train])
 validation_probability = predict_score(score_model, mail.signal[rows.validation])
 validation_label = mail.label[rows.validation]
 ```
+
+Let's open `fit_score` instead of treating it as a box that prints probabilities. After checking the inputs, its calculation is just this line from `14_model_evaluation/core.jl`:
+
+<!-- source-excerpt: 14_model_evaluation/core.jl -->
+```julia
+return [(sum(label[signal .== k]) + 1) / (count(==(k), signal) + 2) for k in 1:4]
+```
+
+For category `k`, `signal .== k` selects its rows. The numerator counts spam and adds one; the denominator counts all messages and adds two. Our three-spam example therefore gives `4/5`. Adding a ham message changes it to `4/6`. The smoothing acts like one extra spam and one extra ham message, so its influence fades as real observations accumulate. Notice which labels the function receives: only `rows.train`. A smoothing formula cannot protect us if we hand it the test labels.
 
 It may be tempting to look at the test results, adjust the threshold a little, and try again. After a few rounds, the results might look wonderful. But what have we learned? We have learned how to adapt to those particular test messages. The word "test" on a variable cannot stop us from using its contents to train the model.
 
@@ -40,6 +51,21 @@ Shuffling works for our invented mailbox because each message is an independent 
 ## Count the mistakes before compressing them
 
 Let's count what the filter gets right and wrong. We label spam as 1 and ham as 0, and a positive prediction means blocking a message. A true positive is spam we blocked; a false positive is ham we blocked by mistake. A true negative is ham we delivered, and a false negative is spam that slipped through. These four counts make up our **confusion matrix**.
+
+Here is the counting part of `confusion` in the shared implementation:
+
+<!-- source-excerpt: 14_model_evaluation/core.jl -->
+```julia
+predicted = probability .>= threshold
+return (tp=count(predicted .& (label .== 1)),
+        fp=count(predicted .& (label .== 0)),
+        tn=count(.!predicted .& (label .== 0)),
+        fn=count(.!predicted .& (label .== 1)))
+```
+
+A dot applies an operation to each message. Thus `.&` means both conditions must hold for that message, and `.!predicted` selects messages we deliver. Before compressing these counts into accuracy, try tracing one blocked ham message through the four expressions. It should contribute to exactly one count: `fp`.
+
+Before checking the output, predict the all-ham baseline's recall and precision. Do you expect zero for both? Keep your answer nearby when we look at the denominators.
 
 ```{julia}
 validation_counts = confusion(validation_label, validation_probability; threshold=0.5)
@@ -69,6 +95,18 @@ If our confusion matrix contains $FP$ false positives and $FN$ false negatives a
 $$\frac{C_{FP}FP + C_{FN}FN}{N}.$$
 
 Now we can try a grid of thresholds and choose the one with the lowest cost on the validation messages. If several thresholds tie, we take the first minimum. Our test messages remain in their envelope while we make this choice.
+
+The selection itself is short. These lines from `choose_threshold` turn each proposed rule into a validation cost and choose its first minimum:
+
+<!-- source-excerpt: 14_model_evaluation/core.jl -->
+```julia
+losses = [mean_cost(confusion(label, probability; threshold=t);
+                   false_positive_cost, false_negative_cost) for t in thresholds]
+i = argmin(losses) # first minimizer: deterministic, no test-set tie breaking
+return (; threshold=thresholds[i], validation_cost=losses[i])
+```
+
+There is no special training magic in `argmin`: it picks the position of the smallest number. The protection comes from how we arranged the experiment, keeping test labels out of this calculation.
 
 ```{julia}
 policy = choose_threshold(validation_label, validation_probability;
@@ -124,7 +162,57 @@ Suppose the company starts receiving much less spam. Can we keep using the same 
 
 For this experiment, we change the fraction of spam while keeping the distribution of scores within spam and within ham fixed. This assumption is called **label shift**. At a fixed threshold, recall and false-positive rate then stay the same, while precision and average cost change. If spammers also start writing different kinds of messages, the score distributions may change too, and this calculation will no longer describe the whole problem.
 
+Before touching either slider, make two predictions: if we hold a threshold fixed and make spam rarer, what happens to the proportion of blocked messages that are legitimate? If we instead raise the cost of blocking ham, which way should a sensible threshold move? Change one control at a time and explain a result that surprises you.
+
 Try making blocked ham very expensive. Then make spam rare. How much precision do we lose at the same false-positive rate? Does a threshold chosen for one mailbox still look sensible in another? Keep track of which assumptions you changed along with the numbers; they are what make the experiment interpretable.
+
+## Your turn: three ways to challenge the filter
+
+### Intuition: the administrator's choice
+
+We evaluate a filter on 1,000 messages: it blocks 80 spam messages and 45 legitimate ones, delivers 20 spam messages, and correctly delivers 855 legitimate ones. Calculate accuracy, precision, recall, and cost when blocked ham costs 5 and delivered spam costs 1. Which policy would you choose under those costs: this filter or delivering everything? Give the administrator one sentence explaining why the more accurate policy need not be the cheaper one.
+
+*Hint:* start with the four counts. For the deliver-everything policy, the 100 spam messages are its only costly mistakes.
+
+### Change the experiment: a much quieter mailbox
+
+Keep that filter's recall and false-positive rate fixed, but lower spam prevalence from 10 percent to 1 percent. Before running `expected_confusion`, sketch the two groups: spam and ham. Predict whether precision rises or falls, then calculate expected counts for 1,000 messages. Why are some counts fractional? Does your calculation describe spammers learning to evade the filter?
+
+*Hint:* recall acts on the spam group; false-positive rate acts on the ham group. This is the label-shift experiment, so the within-class score behavior stays fixed.
+
+### Build it yourself: add a quarantine folder
+
+The administrator offers a third action: a person can review a quarantined message for a cost of 0.2 units. For this exercise, review always gets the label right, there is no delay cost, and review capacity is unlimited. Write a function returning `:deliver`, `:review`, or `:block` for a calibrated spam probability `p`, with the original mistake costs 5 and 1. First derive the three expected costs on paper; then compare the function at `p=0.01`, `0.5`, and `0.99`.
+
+*Hint:* review's cost is paid whether the message is spam or ham. You need to compare three costs, not add a new threshold by guessing.
+
+## Worked solutions: where the tempting answer goes wrong
+
+**Intuition.** Accuracy is `(80+855)/1000 = 0.935`, precision is `80/125 = 0.64`, recall is `80/100 = 0.8`, and cost is `(5*45+20)/1000 = 0.245` per message. Delivering everything is only 0.9 accurate but costs 0.1 per message. With these actions and costs, it wins. Choosing the first filter because 93.5 percent exceeds 90 percent silently substitutes accuracy for the administrator's objective.
+
+**Changed population.** The false-positive rate is `45/900 = 0.05`. At 1 percent prevalence, expected counts are 8 true positives, 2 false negatives, 49.5 false positives, and 940.5 true negatives. Precision becomes `8/(8+49.5)`, about 13.9 percent. These are averages over possible mailboxes, so half a message is allowed in the expectation. You can check with:
+
+```julia
+counts = (tp=80, fp=45, tn=855, fn=20)
+shifted = expected_confusion(counts; prevalence=0.01, n=1000)
+metrics(shifted)
+```
+
+The tempting mistake is to carry the old 64 percent precision into the new mailbox. Precision depends on prevalence. The calculation also cannot answer what happens if spammers change their writing and thus change the class-conditional error rates.
+
+**Quarantine.** The three costs are `p` for delivery, `0.2` for review, and `5*(1-p)` for blocking. A small implementation is:
+
+```julia
+function choose_action(p)
+    0 <= p <= 1 || throw(ArgumentError("p must be a probability"))
+    actions = (:deliver, :review, :block)
+    costs = (p, 0.2, 5 * (1 - p))
+    return actions[argmin(costs)]
+end
+```
+
+This returns delivery, review, and blocking for the three requested probabilities. With the displayed tie-breaking order, deliver through `p=0.2`, review between 0.2 and 0.96, and block above 0.96; at the boundaries the adjacent actions have equal expected cost. Quarantining everything pays 0.2 even for messages that could be handled more cheaply. Imperfect review, delays, or limited capacity would require a new comparison. We haven't fitted anything new here: we have changed the decision placed on top of a probability model.
+
 
 ## What to carry into the next project
 

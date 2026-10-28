@@ -36,7 +36,12 @@ synthetic. These are not estimates for an actual team.
 training = football_data()
 
 # ╔═╡ 66bf5081-2dcc-4764-adb5-ab7422b7fc2b
-md"Prior strength (the prior mean stays at two goals per match):"
+md"""Before increasing prior strength, predict whether the exact posterior mean
+will move toward two goals per match. If it barely moves, what might the
+training season already be telling us? Keep proposal scale fixed while you
+inspect this change.
+
+Prior strength (the prior mean stays at two goals per match):"""
 
 # ╔═╡ 875e71e8-09a9-4bdf-a3d4-a81e9ed7907a
 @bind strength Slider([0.5, 1.0, 5.0, 10.0, 30.0]; default=1.0, show_value=true)
@@ -45,7 +50,12 @@ md"Prior strength (the prior mean stays at two goals per match):"
 posterior = goal_posterior(training.goals; shape=2strength, rate=strength)
 
 # ╔═╡ b1e04c47-b814-4255-bc08-a1bb5f74f5f3
-md"Metropolis proposal scale in log-rate space (a tiny step can accept often yet mix badly):"
+md"""Now hold prior strength fixed. Before switching proposal scale from 0.25
+to 0.00001, predict the acceptance rate and whether all four traces will explore
+the same region. Compare the sampled mean with the exact mean as well as
+looking at the traces. Can a high acceptance rate coexist with a poor answer?
+
+Metropolis proposal scale in log-rate space:"""
 
 # ╔═╡ 883724a4-8e93-4119-934d-547e5fd69ca0
 @bind proposal_scale Slider([0.00001, 0.01, 0.1, 0.25, 1.0, 3.0]; default=0.25, show_value=true)

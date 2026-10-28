@@ -28,8 +28,14 @@ md"""
 
 This experiment accompanies **From prediction to intervention**. The synthetic
 population sells exactly 20 fewer units at the higher price on every day.
-Change the manager's tendency to set high prices on busy days. Random seeds
-stay fixed, so slider movements change the policy rather than redraw the world.
+Before moving the control from 0.85 to 0.5, predict the sign of the historical
+contrast and whether the randomized estimate should change at all. Then inspect
+the results table and the price/context counts together.
+
+Next try 0.95. Which comparisons have fewer observations, and why might their
+estimates become less stable? Random seeds stay fixed, so movements change the
+manager's policy rather than redraw the world. The customers' true effect
+remains −20 even when the observed association changes sign.
 """
 
 # ╔═╡ 43397969-f655-4f48-883d-d19ff827ba71

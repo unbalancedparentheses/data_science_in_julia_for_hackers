@@ -16,7 +16,15 @@ end
 # ╔═╡ 206b1a6d-2118-5c4f-8f2a-a3ca15b5eb39
 md"""# What should a spam filter cost?
 
-Move the controls to change the consequences of mistakes and the fraction of incoming messages that are spam. This is a synthetic decision experiment, not a fitted production spam filter.
+Before moving a control, predict which row of the result table will change.
+If blocking a purchase order becomes more expensive, should our chosen rule
+block more messages or fewer? If spam becomes rarer, what do you expect to
+happen to the legitimate messages among those blocked?
+
+Change one control, inspect the expected counts and cost, then explain any
+surprise before changing another. Counts can be fractional because they are
+averages over possible mailboxes. This experiment reweights validation results
+under label shift; it does not train a new text classifier for each setting.
 
 The score model is fitted on training data. Every displayed error-rate estimate comes from validation data. The final test set remains untouched.
 """
