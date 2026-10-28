@@ -2,7 +2,7 @@
 
 The new chapters revisit problems the reader already cares about. A spam filter can win an accuracy contest while making the wrong decisions. A delivery table can leak the answer before fitting begins. A price–sales association can point in the opposite direction from an intervention. A football sampler can compute the intended posterior accurately while its model misses scoreless matches.
 
-The teaching pattern is to make a prediction before running code, inspect the mechanism, change one assumption, and explain the result. The [whole-book challenge guide](../documentation/Challenges.md) extends this approach to the earlier chapters, including the Mars mission. Each chapter includes short excerpts from the source that actually runs, followed by three exercise levels with hints and worked solutions. The explanations discuss a tempting wrong approach as well as the answer. The exercises are invitations to investigate, not a graded certification of competence.
+The teaching pattern is to make a prediction before running code, inspect the mechanism, change one assumption, and explain the result. The [whole-book challenge guide](../documentation/Challenges.md) extends this approach to the other earlier chapters. The Mars mission has its own [exercises in Chapter 6](../06_gravity.Rmd#mars-exercises). Each chapter includes short excerpts from the source that actually runs, followed by three exercise levels with hints and worked solutions. The explanations discuss a tempting wrong approach as well as the answer. The exercises are invitations to investigate, not a graded certification of competence.
 
 ## Where each chapter fits
 

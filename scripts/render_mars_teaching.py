@@ -24,7 +24,8 @@ def render(source, template):
     placeholders = {}
 
     def preserve(match):
-        matches = [i for i in remaining if chunks[i]['code'] == match[2].strip()]
+        matches = [i for i in remaining if chunks[i]['code'] == match[2].strip()
+                   and chunks[i]['options'] == match[1].strip()]
         if matches:
             index = matches[0]
             remaining.remove(index)

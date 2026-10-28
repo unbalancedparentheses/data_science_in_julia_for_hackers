@@ -217,7 +217,7 @@ iterations = 10000
 chain_uniform = sample(gravity_uniform(Δt, Δx, θ), NUTS(), iterations, progress=false);
 ```
 
-The plotted posterior for $g$ puts much of its mass between 2 and 5, with its peak near 3.8. We have learned something, but our ship would prefer a more precise answer. Can a different prior help? And would a narrower answer necessarily be a better one?
+The plotted posterior for $g$ puts much of its mass between 2 and 5, with its peak near 3.7. We have learned something, but our ship would prefer a more precise answer. Can a different prior help? And would a narrower answer necessarily be a better one?
 
 ```{julia chap_6_plot_7} 
 histogram(chain_uniform[:g], xlim=[1,6], legend=false, normalized=true);

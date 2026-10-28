@@ -43,6 +43,8 @@ jobs:
         run: julia --startup-file=no 06_gravity/mission/runtests.jl
       - name: Site regression tests
         run: python3 -m unittest discover -s tests -p 'test_*.py'
+      - name: Corrected legacy code is current
+        run: python3 scripts/render_fixed_examples.py --check
       - name: Teaching excerpts match executable source
         run: python3 teaching/check_source_excerpts.py
       - name: New chapter HTML is current

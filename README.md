@@ -159,9 +159,9 @@ julia --project=03_probability_intro 03_probability_intro/smoke_test.jl
 
 This check loads the rainfall table, resizes a bundled image, and renders a
 Poisson plot; it does not run the complete chapter or validate Pluto reactivity.
-The initial combined import/render attempt exceeded a three-minute local check
-budget, so completed smoke execution is still pending; installation alone is
-not a claim that the chapter runs end to end.
+The five smoke assertions passed locally with Julia 1.10.10 after allowing
+initial package compilation to finish. This is a package/data/plot check, not
+a claim that the complete legacy chapter runs end to end.
 
 Two concrete setup problems remain in the historical environments:
 
