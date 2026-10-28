@@ -43,3 +43,18 @@ using .ModelEvaluation
     @test 0 <= brier_score(ytest, test_p) <= 1
     @test sum(values(confusion(ytest, test_p; threshold=policy.threshold))) == length(rows.test)
 end
+
+@testset "Published fixed-split results" begin
+    mail = synthetic_mail()
+    rows = split_rows(length(mail.label))
+    model = fit_score(mail.signal[rows.train], mail.label[rows.train])
+    pval = predict_score(model, mail.signal[rows.validation])
+    counts = confusion(mail.label[rows.validation], pval)
+    @test counts == (tp=14, fp=4, tn=1115, fn=67)
+    policy = choose_threshold(mail.label[rows.validation], pval)
+    @test policy.threshold == 0.85
+    @test policy.validation_cost == 81/1200
+    @test mean_cost(counts) == 87/1200
+    @test confusion(mail.label[rows.test], predict_score(model, mail.signal[rows.test]);
+                    threshold=policy.threshold) == (tp=0, fp=0, tn=1108, fn=92)
+end

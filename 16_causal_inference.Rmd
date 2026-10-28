@@ -6,7 +6,7 @@
 </div>
 <script src="interactive/embed.js" defer></script>
 
-Let's return to the shop from our pricing problem. The owner has been keeping records, and today they bring us an exciting discovery: whenever they charge more, they sell more! Perhaps we have found a rather pleasant way to increase sales. Should we tell them to raise the price tomorrow?
+Let's return to the pricing problem, this time with a shop that is already selling its product. The owner has been keeping records, and today they bring us an exciting discovery: whenever they charge more, they sell more! Perhaps we have found a rather pleasant way to increase sales. Should we tell them to raise the price tomorrow?
 
 Before changing the price tag, let's think about what those records are telling us. In the optimal-pricing chapter we worked with a demand curve and the uncertainty around it. Now we have to ask where that curve comes from. Does it describe what happens when we change the price, or does it describe the kinds of days on which the owner chooses a different price? Those can lead us to opposite decisions.
 
@@ -14,7 +14,7 @@ To untangle this, we are going to build our own little shop in Julia. We will in
 
 ## A price is also a decision
 
-Our shop sells a product at either 10 or 14 monetary units. Its manager knows something we haven't yet put into the analysis: some days are much busier than others. When a busy day is expected, the manager usually chooses 14. On quiet days, the price is usually 10. So demand is doing two things at once: influencing the price and bringing customers through the door.
+Our shop sells a product at either 10 or 14 dollars. Its manager knows something we haven't yet put into the analysis: some days are much busier than others. When a busy day is expected, the manager usually chooses 14. On quiet days, the price is usually 10. So demand is doing two things at once: influencing the price and bringing customers through the door.
 
 We can sketch that story with three arrows. Each arrow represents an influence we are assuming:
 

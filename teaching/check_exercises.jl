@@ -62,7 +62,7 @@ end
     keep = [j for j in axes(Xtrain, 2) if j != 2]
     coefficients = TabularLearning.fit_linear(Xtrain[:, keep], deliveries.minutes[rows.train])
     prediction = TabularLearning.predict_linear(coefficients, Xvalidation[:, keep])
-    @test isfinite(TabularLearning.rmse(deliveries.minutes[rows.validation], prediction))
+    @test round(TabularLearning.rmse(deliveries.minutes[rows.validation], prediction); digits=3) == 6.961
 end
 
 @testset "Causal exercise solutions" begin

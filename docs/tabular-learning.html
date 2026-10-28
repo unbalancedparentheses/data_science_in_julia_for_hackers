@@ -644,6 +644,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb7-6"><a href="#cb7-6" tabindex="-1"></a>    baseline_rmse<span class="op">=</span>baseline_validation_rmse,</span>
 <span id="cb7-7"><a href="#cb7-7" tabindex="-1"></a>)</span>
 <span id="cb7-8"><a href="#cb7-8" tabindex="-1"></a>linear_validation_report</span></code></pre></div>
+<p>On our fixed validation split, the mean-only baseline has RMSE <strong>16.896 minutes</strong>. The linear model brings that down to <strong>7.062 minutes</strong>, with MAE <strong>5.264 minutes</strong>. Knowing something about the trip clearly helps.</p>
 <p>How far are our predictions from the actual arrival times? Root mean squared error, or RMSE, computes <code>sqrt(mean((prediction-target).^2))</code>. Squaring gives large mistakes extra influence, and the square root brings us back to minutes. Mean absolute error, or MAE, averages the absolute differences and is also in minutes. The customer may care about something more specific, though. If arriving late is much worse than arriving early, we could use an asymmetric loss or predict a suitable quantile instead.</p>
 <p>We can inspect the coefficients to see which features are associated with longer deliveries in our model. That does not yet tell us what would happen if we changed a route or could somehow change the weather. Keep that question in mind; we will return to it in the causal chapter.</p>
 </div>
@@ -662,7 +663,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb9"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a>ridge_coefficients <span class="op">=</span> TabularLearning.<span class="fu">fit_linear</span>(training_features, training_minutes; lambda<span class="op">=</span><span class="fl">0.1</span>)</span>
 <span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a>ridge_validation_rmse <span class="op">=</span> TabularLearning.<span class="fu">rmse</span>(validation_minutes,</span>
 <span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a>                            TabularLearning.<span class="fu">predict_linear</span>(ridge_coefficients, validation_features))</span></code></pre></div>
-<p>Will ridge improve the predictions? We have to check. This dataset has few features and many observations, and we built a nonlinear effect into long journeys. Regularization can help with unstable estimates and overfitting, but shrinking coefficients cannot create a nonlinear relationship that the model does not contain.</p>
+<p>Did ridge improve the predictions? With <code>lambda=0.1</code>, validation RMSE rises to <strong>8.070 minutes</strong>, compared with <strong>7.062</strong> without the penalty. Here, shrinking the coefficients made predictions worse. This dataset has few features and many observations, and we built a nonlinear effect into long journeys. Regularization can help with unstable estimates and overfitting, but shrinking coefficients cannot create a nonlinear relationship that the model does not contain.</p>
 </div>
 <div id="compare-alternatives-through-mlj" class="section level2" number="15.6">
 <h2><span class="header-section-number">15.6</span> Compare alternatives through MLJ</h2>
@@ -685,7 +686,47 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb12"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="fu">include</span>(<span class="st">&quot;15_tabular_learning/mlj_comparison.jl&quot;</span>)</span>
 <span id="cb12-2"><a href="#cb12-2" tabindex="-1"></a>comparison <span class="op">=</span> <span class="fu">compare_models</span>()</span>
 <span id="cb12-3"><a href="#cb12-3" tabindex="-1"></a>comparison</span></code></pre></div>
-<p>Run the command above to see the comparison results. This chunk stays disabled during the legacy book render because it uses a separate MLJ environment. A tree has a chance to capture the extra penalty on long journeys, but it still has to work around those missing distances. Changing the estimator cannot restore information we never gave it.</p>
+<p>Running that comparison in the chapter environment gives:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Candidate</th>
+<th align="right">Validation RMSE (minutes)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Ridge, lambda 0</td>
+<td align="right">7.062</td>
+</tr>
+<tr>
+<td align="left">Ridge, lambda 0.01</td>
+<td align="right">7.115</td>
+</tr>
+<tr>
+<td align="left">Ridge, lambda 0.1</td>
+<td align="right">8.070</td>
+</tr>
+<tr>
+<td align="left">Ridge, lambda 1</td>
+<td align="right">12.003</td>
+</tr>
+<tr>
+<td align="left">Tree, depth 2</td>
+<td align="right">10.340</td>
+</tr>
+<tr>
+<td align="left">Tree, depth 4</td>
+<td align="right">6.679</td>
+</tr>
+<tr>
+<td align="left">Tree, depth 6</td>
+<td align="right">5.945</td>
+</tr>
+</tbody>
+</table>
+<p>The depth-6 tree wins this comparison. Only now do we open the 360 test deliveries: its RMSE is <strong>7.827 minutes</strong> and its MAE is <strong>4.387 minutes</strong>, against <strong>17.429 minutes</strong> RMSE for the mean-only baseline. Notice that its test RMSE is higher than its validation RMSE. Choosing the best of several candidates on one sample does not make that sample a promise about the next one.</p>
+<p>The tree captures more of the extra delay on long journeys, but still has to work around missing distances. Changing the estimator cannot restore information we never gave it.</p>
 <p>What if we used cross-validation instead of a single validation split? We would have to fit the preparation again inside each training fold. Preparing the whole table once and only then splitting it would let held-out rows influence every fold. A pipeline can help us keep these steps together, as long as we place the fitting steps on the correct side of each split.</p>
 </div>
 <div id="inspect-failures-before-expanding-the-model" class="section level2" number="15.7">
@@ -721,7 +762,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb13-3"><a href="#cb13-3" tabindex="-1"></a>without_flag_prediction <span class="op">=</span> TabularLearning.<span class="fu">predict_linear</span>(</span>
 <span id="cb13-4"><a href="#cb13-4" tabindex="-1"></a>    without_flag, validation_features[<span class="op">:</span>, keep])</span>
 <span id="cb13-5"><a href="#cb13-5" tabindex="-1"></a>TabularLearning.<span class="fu">rmse</span>(validation_minutes, without_flag_prediction)</span></code></pre></div>
-<p>The indicator distinguishes an unknown distance from a distance actually observed near the median. That can be useful, but an extra coefficient can also fit sampling noise. Its benefit is not guaranteed for every split or missingness mechanism. Removing weather columns as well would make the result impossible to attribute to missingness alone. Choosing whichever version wins on the test rows would spend our final evaluation on model selection.</p>
+<p>On this fixed split, removing the indicator lowers validation RMSE from <strong>7.062 to 6.961 minutes</strong>. The extra clue did not help this time. It distinguishes an unknown distance from one actually observed near the median, but its fitted coefficient can also follow sampling noise. Our missing distances were chosen independently of the outcome; a GPS that fails mainly during storms would give us a different experiment. Removing weather columns as well would make the result impossible to attribute to missingness alone. Choosing whichever version wins on the test rows would spend our final evaluation on model selection.</p>
 <p><strong>The group report.</strong> One implementation is:</p>
 <div class="sourceCode" id="cb14"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="kw">function</span> <span class="fu">group_report</span>(actual, predicted, missing_distance)</span>
 <span id="cb14-2"><a href="#cb14-2" tabindex="-1"></a>    <span class="fu">length</span>(actual) <span class="op">==</span> <span class="fu">length</span>(predicted) <span class="op">==</span> <span class="fu">length</span>(missing_distance) <span class="op">||</span></span>

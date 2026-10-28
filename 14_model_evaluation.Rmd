@@ -81,6 +81,15 @@ baseline_metrics = metrics(baseline_counts)
 (validation_counts, validation_metrics, baseline_metrics)
 ```
 
+Here is what our seeded mailbox gives us on the 1,200 validation messages:
+
+| Rule | Spam blocked | Ham blocked | Spam delivered | Ham delivered | Accuracy |
+|:--|--:|--:|--:|--:|--:|
+| Block at probability 0.5 | 14 | 4 | 67 | 1,115 | 94.08% |
+| Deliver everything | 0 | 0 | 81 | 1,119 | 93.25% |
+
+Our filter beats the lazy baseline on accuracy, but catches only 14 of the 81 spam messages. That is a much less impressive announcement than “94 percent accurate”! Let's unpack the numbers.
+
 From those counts, we can calculate four useful quantities:
 
 - **Accuracy:** the fraction of all messages classified correctly.
@@ -120,13 +129,15 @@ policy = choose_threshold(validation_label, validation_probability;
 policy
 ```
 
-We may find ourselves back at the beginning: the cheapest rule can be to deliver every message! With these costs and this finite validation sample, blocking mail might do more harm than good. That does not make our filter useful. It tells us to look again at the costs, the evidence, or the available actions. Perhaps the company would prefer a quarantine folder to a choice between blocking and delivering everything.
+And we really are back at the beginning: the selected threshold is **0.85**, above every score our model assigns. It delivers everything. Blocking the most suspicious category catches 14 spam messages but hides four legitimate ones, costing `5*4 + 67 = 87` units. Delivering everything costs only 81 units, or **0.0675 per message**. The more accurate rule loses once we count the consequences!
+
+This is useful news for the administrator, even if it is disappointing news for our filter. With these costs and this validation sample, we have not found a blocking rule worth deploying. Perhaps a quarantine folder would give us a better option than blocking or delivering everything.
 
 Can we work out the threshold without trying a grid? Suppose `p` is a calibrated probability of spam for the population where we will use the filter. Blocking the message has expected cost `C_FP*(1-p)`, since we pay when it is actually ham. Delivering it has expected cost `C_FN*p`, since we pay when it is spam. Comparing the two, blocking costs no more than delivering when
 
 $$p \geq \frac{C_{FP}}{C_{FP}+C_{FN}}.$$
 
-With our example costs, the cutoff is `5/6`. Our validation search need not land exactly there: we have a finite sample, estimated probabilities, and a grid of possible thresholds. We also allowed only two actions in the calculation. Adding a quarantine folder, human review, or a limit on how many messages people can inspect would change the decision we need to solve.
+With our example costs, the cutoff is `5/6`, about 0.833. Our model gives the most suspicious category a probability of 0.847, just above that cutoff. Yet only 14 of its 18 validation messages were spam, about 0.778. That small group explains why the validation search rejects blocking it: estimated probabilities and observed frequencies do not agree exactly. We also allowed only two actions in the calculation. Adding a quarantine folder, human review, or a limit on how many messages people can inspect would change the decision we need to solve.
 
 ## Probabilities deserve their own evaluation
 
@@ -140,7 +151,15 @@ validation_brier = brier_score(validation_label, validation_probability)
 (validation_reliability, validation_brier)
 ```
 
-We can also summarize probability errors with the **Brier score**, the mean of `(predicted_probability - label)^2`. Smaller is better. Unlike the confusion matrix, this score examines the probabilities before we turn them into decisions at a threshold. Even so, calibration is only part of the story: a model that gives every message the overall spam prevalence can be calibrated without telling one message from another.
+The nonempty bins in our validation sample are:
+
+| Messages | Mean predicted spam probability | Observed spam fraction |
+|--:|--:|--:|
+| 1,089 | 0.0218 | 0.0266 |
+| 93 | 0.3913 | 0.4086 |
+| 18 | 0.8472 | 0.7778 |
+
+The validation Brier score is **0.04362**. We can also summarize probability errors with the **Brier score**, the mean of `(predicted_probability - label)^2`. Smaller is better. Unlike the confusion matrix, this score examines the probabilities before we turn them into decisions at a threshold. Even so, calibration is only part of the story: a model that gives every message the overall spam prevalence can be calibrated without telling one message from another.
 
 Suppose one interval contains only three messages. Would we trust its observed spam fraction as much as one based on hundreds? Probably not. The table omits empty intervals, and small groups leave considerable uncertainty. Dividing the same messages into more bins will not magically give us more information. We could use validation data to fit a calibration correction, but then we would need to evaluate that corrected model on untouched data. For now, we are just examining the probabilities we already have.
 
@@ -157,6 +176,8 @@ test_report = (counts=test_counts, metrics=metrics(test_counts),
                brier=brier_score(test_label, test_probability))
 test_report
 ```
+
+Our 1,200 test messages contain 92 spam and 1,108 ham. The frozen rule delivers all of them: recall is **0**, precision is **undefined**, accuracy is **92.33 percent**, and cost is **0.07667 per message**. The underlying probability model has a Brier score of **0.04482**. We have measured a deliver-everything policy, not discovered that spam has stopped arriving.
 
 Now we can give the administrator a more useful report: which mistakes the filter made, what they cost, and how well its probabilities behaved. The size of the test set and its number of spam messages belong in that report too. A fresh batch from our generator will give somewhat different answers. To estimate uncertainty with resampling, we must preserve the data's independent units: if whole campaigns are independent, we should resample campaigns rather than individual messages.
 

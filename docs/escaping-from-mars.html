@@ -574,7 +574,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>You still have a stopwatch, a way to measure distances, and an unlimited supply of stones. Can that be enough?</p>
 <p>Our mission is to estimate the <strong>escape velocity</strong>: the initial speed that lets an object get arbitrarily far away without further propulsion. We will start with a guess, throw some stones, and turn those measurements into a distribution of plausible escape speeds. Then comes the uncomfortable question: what if the ship can reach a speed near the middle of that distribution?</p>
 <p>This is a physics-and-inference puzzle. We will ignore atmosphere, rotation, terrain, other celestial bodies, and powered flight. A real launch needs much more than this calculation; in our story, the ship’s limited fuel is represented by a hypothetical speed budget. We are deciding inside that simplified world.</p>
-<p><strong>Make a prediction before reading on.</strong> If Mars has half Earth’s radius and about half its surface gravity, would its escape speed be half Earth’s, one quarter, or about the same? Write down a guess. We will earn the answer with an equation.</p>
+<p><strong>Make a prediction before reading on.</strong> If Mars has half Earth’s radius and a bit over a third of its surface gravity, would its escape speed be closer to half Earth’s, one quarter, or about the same? Write down a guess. We will earn the answer with an equation.</p>
 <p>What on Mars is escape velocity?</p>
 <p>Imagine Newton’s cannonball. With a gentle shot, the ball falls nearby. With a faster shot, it travels farther; in the ideal spherical world, it can even orbit without hitting the surface. But an orbit still belongs to the planet. Escape needs enough energy to keep travelling outward forever, with speed tending to zero at the limiting escape energy. Gravity has not switched off: the ball keeps slowing down.</p>
 
@@ -659,7 +659,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb3-3"><a href="escaping-from-mars.html#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ylabel!</span>(<span class="st">&quot;Probability density&quot;</span>);</span>
 <span id="cb3-4"><a href="escaping-from-mars.html#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">title!</span>(<span class="st">&quot;Uniform prior distribution for g&quot;</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_6_plot_6-J1.png" /><!-- --></p>
-<p>Now we define the model in Turing and sample from the posterior distribution. Julia’s <code>Normal(μ, σ)</code> takes a <strong>standard deviation</strong>, not a variance. Here the range-error standard deviation is fixed at 10 metres. The <code>θ</code> argument in these first three historical models is unused: their formulas assume exactly <span class="math inline">\(45^\circ\)</span>. We will make angle uncertainty explicit later.</p>
+<p>Now we define the model in Turing and sample from the posterior distribution. Julia’s <code>Normal(μ, σ)</code> takes a <strong>standard deviation</strong>, not a variance. Here the range-error standard deviation is fixed at 10 metres. The <code>θ</code> argument in these first three models is unused: their formulas assume exactly <span class="math inline">\(45^\circ\)</span>. We will make angle uncertainty explicit later.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb4-1"><a href="escaping-from-mars.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="pp">@model</span> <span class="fu">gravity_uniform</span>(t_final, x_final, θ) <span class="op">=</span> <span class="cf">begin</span></span>
 <span id="cb4-2"><a href="escaping-from-mars.html#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># The number of observations.</span></span>
 <span id="cb4-3"><a href="escaping-from-mars.html#cb4-3" aria-hidden="true" tabindex="-1"></a>    N <span class="op">=</span> <span class="fu">length</span>(t_final)</span>
@@ -679,7 +679,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb6-3"><a href="escaping-from-mars.html#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ylabel!</span>(<span class="st">&quot;Probability density&quot;</span>);</span>
 <span id="cb6-4"><a href="escaping-from-mars.html#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fu">title!</span>(<span class="st">&quot;Posterior distribution for g with Uniform prior&quot;</span>)</span></code></pre></div>
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_6_plot_7-J1.png" /><!-- --></p>
-<p>As a second option, consider a Gaussian prior. The illustration below is <code>Normal(5,2)</code>: mean 5 and standard deviation 2. The historical fitted model immediately after it uses <code>Normal(6,2)</code> instead. Keep that difference in mind when reading the figures.</p>
+<p>As a second option, consider a Gaussian prior. The illustration below is <code>Normal(5,2)</code>: mean 5 and standard deviation 2. The fit below shifts the prior mean to 6, keeping the standard deviation at 2.</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb7-1"><a href="escaping-from-mars.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">Normal</span>(<span class="fl">5</span>,<span class="fl">2</span>), legend<span class="op">=</span><span class="cn">false</span>, fill<span class="op">=</span>(<span class="fl">0</span>, <span class="fl">.5</span>,<span class="op">:</span>lightblue));</span>
 <span id="cb7-2"><a href="escaping-from-mars.html#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">xlabel!</span>(<span class="st">&quot;g_mars&quot;</span>);</span>
 <span id="cb7-3"><a href="escaping-from-mars.html#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ylabel!</span>(<span class="st">&quot;Probability density&quot;</span>);</span>
@@ -735,7 +735,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Before looking at the curve, make a bet. Would you throw almost horizontally for a long range, almost vertically for a long flight, or somewhere in between? Here we isolate just the effect of angle error; timing and range errors could change the best overall design.</p>
 <p>To do the analysis we need to see how the angle influence the computation of <span class="math inline">\(g\)</span>, so solving the equation for <span class="math inline">\(g\)</span> we have:</p>
 <p><span class="math inline">\(g = \frac{2*\tan(\theta)*\Delta x}{t^{2}_f}\)</span></p>
-<p>The following historical plot shows the growth of the tangent. Its symmetric ribbon uses only the upper deviation, so it is a visual approximation, not an exact uncertainty interval. The next calculation uses both endpoints to measure the full relative width.</p>
+<p>The tangent grows rapidly as the throw becomes steeper. The ribbon below mirrors the upper deviation on both sides; use it to see the trend. To measure the full uncertainty width, we need both endpoints, which we calculate next.</p>
 <div class="sourceCode" id="cb15"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb15-1"><a href="escaping-from-mars.html#cb15-1" aria-hidden="true" tabindex="-1"></a>angles <span class="op">=</span> <span class="fl">0</span><span class="op">:</span><span class="fl">0.1</span><span class="op">:</span><span class="fl">70</span></span>
 <span id="cb15-2"><a href="escaping-from-mars.html#cb15-2" aria-hidden="true" tabindex="-1"></a>error <span class="op">=</span> <span class="fl">15</span><span class="op">/</span><span class="fl">2</span></span>
 <span id="cb15-3"><a href="escaping-from-mars.html#cb15-3" aria-hidden="true" tabindex="-1"></a>μ <span class="op">=</span> <span class="fu">tan</span>.(<span class="fu">deg2rad</span>.(angles))</span>
@@ -748,7 +748,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>But we don’t care about the absolute value of the error, we want the relative error, so plotting the percentual error we have:</p>
 <div class="sourceCode" id="cb17"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb17-1"><a href="escaping-from-mars.html#cb17-1" aria-hidden="true" tabindex="-1"></a>err <span class="op">=</span> <span class="fu">tan</span>.(<span class="fu">deg2rad</span>.(angles <span class="op">.+</span> error)) <span class="op">.-</span> <span class="fu">tan</span>.(<span class="fu">deg2rad</span>.(angles <span class="op">.-</span> error))</span>
 <span id="cb17-2"><a href="escaping-from-mars.html#cb17-2" aria-hidden="true" tabindex="-1"></a>perc_error <span class="op">=</span> err <span class="op">.*</span> <span class="fl">100</span> <span class="op">./</span> μ</span></code></pre></div>
-<p>Here <code>perc_error</code> is the full endpoint-to-endpoint width divided by <code>tan(θ)</code>, expressed as a percentage. It is not a standard deviation or a posterior interval. At zero degrees that relative quantity is undefined; the displayed curve starts at five degrees. The historical vertical-axis label below is imprecise: its denominator should be <code>tan(θ)</code>, not <code>θ</code>.</p>
+<p>Here <code>perc_error</code> is the full endpoint-to-endpoint width divided by <code>tan(θ)</code>, expressed as a percentage. It is not a standard deviation or a posterior interval. At zero degrees that relative quantity is undefined; the displayed curve starts at five degrees. Read the vertical axis as <span class="math inline">\(\Delta\tan(\theta)/\tan(\theta)\)</span> in percent; the abbreviated label below omits the tangent in the denominator.</p>
 <div class="sourceCode" id="cb18"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb18-1"><a href="escaping-from-mars.html#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(angles, perc_error, xlim<span class="op">=</span>(<span class="fl">5</span>,<span class="fl">70</span>), ylim<span class="op">=</span>(<span class="fl">0</span>,<span class="fl">200</span>), color<span class="op">=</span><span class="st">&quot;lightblue&quot;</span>, legend<span class="op">=</span><span class="cn">true</span>, lw<span class="op">=</span><span class="fl">3</span>, label<span class="op">=</span><span class="st">&quot;Percentual error&quot;</span>);</span>
 <span id="cb18-2"><a href="escaping-from-mars.html#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">xlabel!</span>(<span class="st">&quot;θ [deg]&quot;</span>);</span>
 <span id="cb18-3"><a href="escaping-from-mars.html#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ylabel!</span>(<span class="st">&quot;Δtan(θ)/θ&quot;</span>);</span>
@@ -757,7 +757,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><img src="data_science_in_julia_for_hackers_files/figure-html/chap_6_plot_13-J1.png" /><!-- --></p>
 <p>The relative width is smallest near <span class="math inline">\(45^\circ\)</span>. Why the middle? For a small angle error <span class="math inline">\(d\theta\)</span> measured in radians,</p>
 <p><span class="math display">\[\frac{dg}{g}\approx\frac{d\theta}{\sin\theta\cos\theta}=\frac{2d\theta}{\sin(2\theta)}.\]</span></p>
-<p>The denominator is largest at <span class="math inline">\(45^\circ\)</span>. Nearly horizontal and nearly vertical throws both magnify a small angle mistake. This is a statement about angle error alone, not a universal best experiment. We now define the new model, where we include an uncertainty in the angle. We propose an uniform prior for the angle centered at 45°, the angle we think the measurement was done. A single <code>angle</code> is shared by all five throws: this represents an uncertain common setup or calibration. Independent aiming errors would need one latent angle per throw. More throws do not automatically remove a shared calibration error. This model also changes the gravity prior and restores the range-error standard deviation to 10 metres, so its histogram is not a controlled comparison of angle uncertainty alone.</p>
+<p>The denominator is largest at <span class="math inline">\(45^\circ\)</span>. Nearly horizontal and nearly vertical throws both magnify a small angle mistake. This is a statement about angle error alone, not a universal best experiment. We now define the new model, where we include an uncertainty in the angle. We propose an uniform prior for the angle centered at 45°, the angle we think the measurement was done. A single <code>angle</code> is shared by all five throws: this represents an uncertain common setup or calibration. Independent aiming errors would need one latent angle per throw. The ranges identify only the ratio <span class="math inline">\(g/\tan(\theta)\)</span>: changing gravity and the shared angle together can leave every predicted range unchanged. More throws with this same setup cannot identify gravity and angle separately. We need an independent angle measurement to break that ambiguity. This model also changes the gravity prior and restores the range-error standard deviation to 10 metres, so its histogram is not a controlled comparison of angle uncertainty alone.</p>
 <div class="sourceCode" id="cb19"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb19-1"><a href="escaping-from-mars.html#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="pp">@model</span> <span class="fu">gravity_angle_uniform</span>(t_final, x_final, θ) <span class="op">=</span> <span class="cf">begin</span></span>
 <span id="cb19-2"><a href="escaping-from-mars.html#cb19-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># The number of observations.</span></span>
 <span id="cb19-3"><a href="escaping-from-mars.html#cb19-3" aria-hidden="true" tabindex="-1"></a>    error <span class="op">=</span> <span class="fl">15</span></span>
@@ -800,7 +800,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="mars-mission-control" class="section level2" number="6.4">
 <h2><span class="header-section-number">6.4</span> Your turn at mission control</h2>
-<p>The original Turing fits above let us explore several models. Now let’s isolate one experiment so we can change <strong>one thing at a time</strong>. The <a href="https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/blob/main/06_gravity/mission/notebook.jl">mission companion</a> uses a small grid calculation with no inference or plotting packages. Open it in Pluto, or run it as a Julia script for the default results. Its README explains both routes.</p>
+<p>The Turing fits above explore several models. Their existing figures are retained here; the new calculations below come from the mission companion. Now let’s isolate one experiment so we can change <strong>one thing at a time</strong>. The <a href="https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/blob/main/06_gravity/mission/notebook.jl">mission companion</a> uses a small grid calculation with no inference or plotting packages. Open it in Pluto, or run it as a Julia script for the default results. Its README explains both routes.</p>
 <p>We keep a uniform prior for <span class="math inline">\(g\)</span> between the grid boundaries near 0 and <span class="math inline">\(10\,m/s^2\)</span>, a uniform shared-angle prior, and independent Normal range errors with known standard deviation. Recorded times and the approximate radius ratio stay fixed. The answer is conditional on those choices. In particular, tightening the range-error slider asserts a more precise instrument; it does not improve the measurements you already took.</p>
 <p><strong>Predict first:</strong> what will happen to the escape-speed interval if the angle becomes known exactly? What if the range-error standard deviation doubles? Will either change necessarily move the middle of the interval much?</p>
 <p>The calculation inside the companion is short enough to inspect. For each gravity and angle pair, we predict every range and add its log likelihood:</p>
@@ -823,7 +823,40 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h3><span class="header-section-number">6.5.2</span> Change: buy a better instrument</h3>
 <p>You can improve either the angle measurement or the range measurement. In the companion, first set the angle half-width to zero while keeping the range noise fixed. Restore it, then halve the range noise. Which change reduces the 90% escape-speed interval more for these five throws? Write your prediction before moving the controls, then report both interval widths.</p>
 <p><em>Hint:</em> use the same data and gravity prior for both comparisons. Change only one control at a time.</p>
-<p><em>Solution:</em> compare the interval widths returned by the two experiments, rather than declaring one instrument universally best. The shared angle changes the common conversion from <span class="math inline">\(t^2\)</span> to range; independent range errors scatter points around it. With sufficiently precise ranges, the shared-angle uncertainty becomes the limiting factor. If your conclusion reverses at different noise settings, that is useful information about the experimental design.</p>
+<p><em>Solution:</em> for these five throws, buy the better angle instrument. Running the companion at its default grid gives:</p>
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr>
+<th align="left">Measurement assumption</th>
+<th align="right">Middle 90% escape-speed interval (km/s)</th>
+<th align="right">Width (km/s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Default: angle ±7.5°, range standard deviation 3 m</td>
+<td align="right">4.231–5.387</td>
+<td align="right">1.155</td>
+</tr>
+<tr>
+<td align="left">Angle known: half-width 0°, range standard deviation 3 m</td>
+<td align="right">4.608–4.882</td>
+<td align="right">0.273</td>
+</tr>
+<tr>
+<td align="left">Range noise halved: angle ±7.5°, standard deviation 1.5 m</td>
+<td align="right">4.231–5.375</td>
+<td align="right">1.144</td>
+</tr>
+</tbody>
+</table>
+<p>Knowing the angle reduces the interval width by about 76%; halving range noise reduces it by about 1%. Why such a lopsided result? Independent range errors scatter the points around a common slope. The shared angle changes how that slope translates into gravity. These ranges already constrain the slope quite well, so measuring them more precisely leaves almost all the angle ambiguity intact.</p>
+<p>The tempting answer is to buy the instrument that makes each range measurement twice as precise. That improves a measurement we already know fairly well. Here the bigger payoff comes from learning the missing conversion factor. Try much larger range noise to see when that priority changes. These intervals use the companion’s grid calculation, not a new Turing run.</p>
 </div>
 <div id="mars-build-exercise" class="section level3" number="6.5.3">
 <h3><span class="header-section-number">6.5.3</span> Build: try to fool mission control</h3>

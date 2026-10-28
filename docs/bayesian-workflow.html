@@ -602,6 +602,7 @@ Y_i\mid\lambda\sim\operatorname{Poisson}(\lambda),\qquad
 <span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a>    replicates[<span class="op">:</span>, d] <span class="op">=</span> <span class="fu">rand</span>(rng, <span class="fu">Poisson</span>(λ), n)</span>
 <span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a><span class="cf">end</span></span></code></pre></div>
 <p>Each column is a season. <code>λ</code> is drawn once for that column, and all <code>n</code> matches use it. There is still match-to-match Poisson randomness, but uncertainty about the team’s shared rate moves the whole season together. Drawing a separate <code>λ</code> for each row would introduce a different model with match-level rate variation. A simulation can look reasonable while answering the wrong modeling question.</p>
+<p>Our observed season has <strong>41.25 percent</strong> scoreless matches. Under this prior, the central 90 percent interval across simulated seasons runs from <strong>0 to 72.5 percent</strong>, with an average of <strong>24.65 percent</strong>. That is a very broad collection of possible seasons.</p>
 <p>Now we can speak the client’s language: how many matches end without a goal, and what range of seasons are we imagining? The output compares the observed fraction with a central 90% interval from the simulated seasons. Before looking at the outcomes, we could also examine season totals and unusually large scores. These <em>prior predictive checks</em> let us see what our assumptions mean on the pitch. If looking at the observed season prompts us to revise the prior, we should keep track of that decision; those data have then helped shape it.</p>
 </div>
 <div id="an-exact-posterior-as-a-reference" class="section level2" number="17.3">
@@ -613,6 +614,7 @@ Y_i\mid\lambda\sim\operatorname{Poisson}(\lambda),\qquad
 \]</span></p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a>posterior <span class="op">=</span> <span class="fu">goal_posterior</span>(training.goals; shape<span class="op">=</span>a, rate<span class="op">=</span>b)</span>
 <span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a>(mean<span class="op">=</span><span class="fu">mean</span>(posterior), interval<span class="op">=</span><span class="fu">quantile</span>.(<span class="fu">Ref</span>(posterior), [<span class="fl">0.05</span>, <span class="fl">0.95</span>]))</span></code></pre></div>
+<p>The exact posterior mean is <strong>2.0123 goals per match</strong>, with a central 90 percent interval of <strong>[1.7603, 2.2784]</strong> for the rate. This interval concerns the team’s rate, not the number of goals in a particular match.</p>
 <p>We can get this posterior’s mean and intervals directly, and even draw independent samples from it. No Markov chain Monte Carlo is needed!</p>
 <p>The posterior update itself is one line inside <code>goal_posterior</code>:</p>
 <!-- source-excerpt: 17_bayesian_workflow/core.jl -->
@@ -640,13 +642,53 @@ Y_i\mid\lambda\sim\operatorname{Poisson}(\lambda),\qquad
 <span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a>diagnostics <span class="op">=</span> <span class="fu">chain_diagnostics</span>(sampler_fit.samples)</span>
 <span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a>(diagnostics<span class="op">=</span>diagnostics, acceptance<span class="op">=</span>sampler_fit.acceptance,</span>
 <span id="cb7-4"><a href="#cb7-4" tabindex="-1"></a> sampled_mean<span class="op">=</span><span class="fu">mean</span>(sampler_fit.samples), exact_mean<span class="op">=</span><span class="fu">mean</span>(posterior))</span></code></pre></div>
+<p>Here is the seeded run’s report, rounded for reading:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Quantity</th>
+<th align="right">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Sampled posterior mean</td>
+<td align="right">2.0142</td>
+</tr>
+<tr>
+<td align="left">Exact posterior mean</td>
+<td align="right">2.0123</td>
+</tr>
+<tr>
+<td align="left">Rank-normalized Rhat</td>
+<td align="right">1.0009</td>
+</tr>
+<tr>
+<td align="left">Bulk effective sample size</td>
+<td align="right">3,394.8</td>
+</tr>
+<tr>
+<td align="left">Tail effective sample size</td>
+<td align="right">3,240.7</td>
+</tr>
+<tr>
+<td align="left">Monte Carlo standard error of the mean</td>
+<td align="right">0.0028</td>
+</tr>
+<tr>
+<td align="left">Acceptance across the four chains</td>
+<td align="right">34.47–36.07%</td>
+</tr>
+</tbody>
+</table>
+<p>The sampled mean is close to our exact answer, and its difference is smaller than one estimated Monte Carlo standard error. Now we have something concrete to compare with a bad sampler setting.</p>
 <p>We have sent four chains off from different starting rates. After discarding warmup, their draws are stored in an array with dimensions <strong>draws × chains</strong>. Do they end up exploring the same region? The <code>chain_diagnostics</code> function uses MCMCDiagnosticTools.jl to give us rank-normalized split <span class="math inline">\(\widehat R\)</span>, bulk and tail effective sample sizes, and Monte Carlo standard error for the posterior mean.</p>
-<p>Let’s unpack those numbers. <span class="math inline">\(\widehat R\)</span> compares behavior across and within chains; values appreciably above one suggest that the chains are not exploring the same distribution. Consecutive draws can also resemble each other, so collecting 4,000 of them need not give us as much information as 4,000 independent draws. That is what effective sample size helps us assess. Monte Carlo error tells us how uncertain the calculation is, separately from our uncertainty about the team’s scoring rate. The package documentation recommends <span class="math inline">\(\widehat R&lt;1.01\)</span> and at least 100 effective draws per chain for an estimand as useful targets. Think of these as warning lights: passing them gives us a reason to continue checking, rather than a proof that everything is correct.</p>
+<p>Let’s unpack those numbers. <span class="math inline">\(\widehat R\)</span> compares behavior across and within chains; values appreciably above one suggest that the chains are not exploring the same distribution. Consecutive draws can also resemble each other, so collecting 4,000 of them need not give us as much information as 4,000 independent draws. That is what effective sample size helps us assess. Monte Carlo error tells us how uncertain the calculation is, separately from our uncertainty about the team’s scoring rate. The <a href="https://mc-stan.org/learn-stan/diagnostics-warnings.html">Stan diagnostics guide</a> recommends <span class="math inline">\(\widehat R&lt;1.01\)</span> and bulk effective sample size greater than 100 times the number of chains: more than 400 for our four chains. Think of these as warning lights: passing them gives us a reason to continue checking, rather than a proof that everything is correct.</p>
 <p>What happens if we make our random walk take very tiny steps? Let’s deliberately give it a bad setting:</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a>stuck_fit <span class="op">=</span> <span class="fu">metropolis_rates</span>(training.goals; step<span class="op">=</span><span class="fl">0.00001</span>,</span>
 <span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a>    draws<span class="op">=</span><span class="fl">1000</span>, warmup<span class="op">=</span><span class="fl">0</span>)</span>
 <span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a><span class="fu">chain_diagnostics</span>(stuck_fit.samples)</span></code></pre></div>
-<p>The chains barely leave their starting points. They may accept almost every proposal and still explore terribly! Plotting their traces helps us see the problem: four nearly flat lines at different levels mean that the chains disagree, not that they have all settled down. You can move the proposal-scale control in the Pluto notebook and watch these traces change.</p>
+<p>This time Rhat rises to <strong>3.98</strong> and bulk effective sample size falls to <strong>8.43</strong>. The chains barely leave their starting points. They may accept almost every proposal and still explore terribly! Plotting their traces helps us see the problem: four nearly flat lines at different levels mean that the chains disagree, not that they have all settled down. You can move the proposal-scale control in the Pluto notebook and watch these traces change.</p>
 <p>When we return to the Turing model from the football chapter, we can ask the same questions about its important parameters and predictions. Hamiltonian Monte Carlo has additional warning signs, including divergences, that we should investigate too. Running longer can help reduce Monte Carlo error. But if we wrote down the wrong density, or left something important out of our model, the sampler will keep working on that same problem for longer.</p>
 </div>
 <div id="can-the-fitted-model-reproduce-scoreless-matches" class="section level2" number="17.5">
@@ -708,6 +750,7 @@ Y_i\mid\lambda\sim\operatorname{Poisson}(\lambda),\qquad
 <div class="sourceCode" id="cb13"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a>future <span class="op">=</span> <span class="fu">football_data</span>(seed<span class="op">=</span><span class="fl">1710</span>, matches_per_group<span class="op">=</span><span class="fl">20</span>)</span>
 <span id="cb13-2"><a href="#cb13-2" tabindex="-1"></a>(pooled<span class="op">=</span><span class="fu">log_predictive_score</span>(training, future),</span>
 <span id="cb13-3"><a href="#cb13-3" tabindex="-1"></a> by_opponent<span class="op">=</span><span class="fu">log_predictive_score</span>(training, future; grouped<span class="op">=</span><span class="cn">true</span>))</span></code></pre></div>
+<p>The held-out log scores are <strong>−102.58</strong> for the pooled model and <strong>−54.05</strong> for the model using opponent groups. The grouped model assigns more probability to these new match results, which supports the change we made after examining scoreless matches.</p>
 <p>Integrating the Poisson distribution over our Gamma posterior gives a negative binomial prediction for one match. We use it to calculate the log probability assigned to each new result, keeping the training posterior fixed, and add those scores. Larger is better here. Notice that we are adding <strong>marginal one-match</strong> log probabilities. The joint probability of a whole season is a different calculation: after integrating over a shared uncertain rate, its match outcomes are dependent.</p>
 <p>We saved this season until after fitting and choosing priors. If its scores send us back to revise the model again, that is a reasonable next step, but we have then turned this season into validation data. We would need another untouched set for a final assessment. Our invented league was designed to make opponent groups matter. To find out whether that improvement carries over to real football, we would have to repeat the investigation with real matches.</p>
 </div>

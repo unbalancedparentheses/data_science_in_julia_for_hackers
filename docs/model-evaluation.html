@@ -612,6 +612,46 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a>baseline_counts <span class="op">=</span> <span class="fu">confusion</span>(validation_label, <span class="fu">zeros</span>(<span class="fu">length</span>(validation_label)); threshold<span class="op">=</span><span class="fl">0.5</span>)</span>
 <span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a>baseline_metrics <span class="op">=</span> <span class="fu">metrics</span>(baseline_counts)</span>
 <span id="cb5-5"><a href="#cb5-5" tabindex="-1"></a>(validation_counts, validation_metrics, baseline_metrics)</span></code></pre></div>
+<p>Here is what our seeded mailbox gives us on the 1,200 validation messages:</p>
+<table style="width:100%;">
+<colgroup>
+<col width="16%" />
+<col width="16%" />
+<col width="16%" />
+<col width="16%" />
+<col width="16%" />
+<col width="16%" />
+</colgroup>
+<thead>
+<tr>
+<th align="left">Rule</th>
+<th align="right">Spam blocked</th>
+<th align="right">Ham blocked</th>
+<th align="right">Spam delivered</th>
+<th align="right">Ham delivered</th>
+<th align="right">Accuracy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Block at probability 0.5</td>
+<td align="right">14</td>
+<td align="right">4</td>
+<td align="right">67</td>
+<td align="right">1,115</td>
+<td align="right">94.08%</td>
+</tr>
+<tr>
+<td align="left">Deliver everything</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">81</td>
+<td align="right">1,119</td>
+<td align="right">93.25%</td>
+</tr>
+</tbody>
+</table>
+<p>Our filter beats the lazy baseline on accuracy, but catches only 14 of the 81 spam messages. That is a much less impressive announcement than “94 percent accurate”! Let’s unpack the numbers.</p>
 <p>From those counts, we can calculate four useful quantities:</p>
 <ul>
 <li><strong>Accuracy:</strong> the fraction of all messages classified correctly.</li>
@@ -638,10 +678,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb7"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a>policy <span class="op">=</span> <span class="fu">choose_threshold</span>(validation_label, validation_probability;</span>
 <span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a>                          false_positive_cost<span class="op">=</span><span class="fl">5.0</span>, false_negative_cost<span class="op">=</span><span class="fl">1.0</span>)</span>
 <span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a>policy</span></code></pre></div>
-<p>We may find ourselves back at the beginning: the cheapest rule can be to deliver every message! With these costs and this finite validation sample, blocking mail might do more harm than good. That does not make our filter useful. It tells us to look again at the costs, the evidence, or the available actions. Perhaps the company would prefer a quarantine folder to a choice between blocking and delivering everything.</p>
+<p>And we really are back at the beginning: the selected threshold is <strong>0.85</strong>, above every score our model assigns. It delivers everything. Blocking the most suspicious category catches 14 spam messages but hides four legitimate ones, costing <code>5*4 + 67 = 87</code> units. Delivering everything costs only 81 units, or <strong>0.0675 per message</strong>. The more accurate rule loses once we count the consequences!</p>
+<p>This is useful news for the administrator, even if it is disappointing news for our filter. With these costs and this validation sample, we have not found a blocking rule worth deploying. Perhaps a quarantine folder would give us a better option than blocking or delivering everything.</p>
 <p>Can we work out the threshold without trying a grid? Suppose <code>p</code> is a calibrated probability of spam for the population where we will use the filter. Blocking the message has expected cost <code>C_FP*(1-p)</code>, since we pay when it is actually ham. Delivering it has expected cost <code>C_FN*p</code>, since we pay when it is spam. Comparing the two, blocking costs no more than delivering when</p>
 <p><span class="math display">\[p \geq \frac{C_{FP}}{C_{FP}+C_{FN}}.\]</span></p>
-<p>With our example costs, the cutoff is <code>5/6</code>. Our validation search need not land exactly there: we have a finite sample, estimated probabilities, and a grid of possible thresholds. We also allowed only two actions in the calculation. Adding a quarantine folder, human review, or a limit on how many messages people can inspect would change the decision we need to solve.</p>
+<p>With our example costs, the cutoff is <code>5/6</code>, about 0.833. Our model gives the most suspicious category a probability of 0.847, just above that cutoff. Yet only 14 of its 18 validation messages were spam, about 0.778. That small group explains why the validation search rejects blocking it: estimated probabilities and observed frequencies do not agree exactly. We also allowed only two actions in the calculation. Adding a quarantine folder, human review, or a limit on how many messages people can inspect would change the decision we need to solve.</p>
 </div>
 <div id="probabilities-deserve-their-own-evaluation" class="section level2" number="14.5">
 <h2><span class="header-section-number">14.5</span> Probabilities deserve their own evaluation</h2>
@@ -650,7 +691,34 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb8"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a>validation_reliability <span class="op">=</span> <span class="fu">reliability</span>(validation_label, validation_probability; bins<span class="op">=</span><span class="fl">5</span>)</span>
 <span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a>validation_brier <span class="op">=</span> <span class="fu">brier_score</span>(validation_label, validation_probability)</span>
 <span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a>(validation_reliability, validation_brier)</span></code></pre></div>
-<p>We can also summarize probability errors with the <strong>Brier score</strong>, the mean of <code>(predicted_probability - label)^2</code>. Smaller is better. Unlike the confusion matrix, this score examines the probabilities before we turn them into decisions at a threshold. Even so, calibration is only part of the story: a model that gives every message the overall spam prevalence can be calibrated without telling one message from another.</p>
+<p>The nonempty bins in our validation sample are:</p>
+<table>
+<thead>
+<tr>
+<th align="right">Messages</th>
+<th align="right">Mean predicted spam probability</th>
+<th align="right">Observed spam fraction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">1,089</td>
+<td align="right">0.0218</td>
+<td align="right">0.0266</td>
+</tr>
+<tr>
+<td align="right">93</td>
+<td align="right">0.3913</td>
+<td align="right">0.4086</td>
+</tr>
+<tr>
+<td align="right">18</td>
+<td align="right">0.8472</td>
+<td align="right">0.7778</td>
+</tr>
+</tbody>
+</table>
+<p>The validation Brier score is <strong>0.04362</strong>. We can also summarize probability errors with the <strong>Brier score</strong>, the mean of <code>(predicted_probability - label)^2</code>. Smaller is better. Unlike the confusion matrix, this score examines the probabilities before we turn them into decisions at a threshold. Even so, calibration is only part of the story: a model that gives every message the overall spam prevalence can be calibrated without telling one message from another.</p>
 <p>Suppose one interval contains only three messages. Would we trust its observed spam fraction as much as one based on hundreds? Probably not. The table omits empty intervals, and small groups leave considerable uncertainty. Dividing the same messages into more bins will not magically give us more information. We could use validation data to fit a calibration correction, but then we would need to evaluate that corrected model on untouched data. For now, we are just examining the probabilities we already have.</p>
 </div>
 <div id="a-single-final-evaluation" class="section level2" number="14.6">
@@ -663,6 +731,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb9-5"><a href="#cb9-5" tabindex="-1"></a>               cost<span class="op">=</span><span class="fu">mean_cost</span>(test_counts; false_positive_cost<span class="op">=</span><span class="fl">5.0</span>, false_negative_cost<span class="op">=</span><span class="fl">1.0</span>),</span>
 <span id="cb9-6"><a href="#cb9-6" tabindex="-1"></a>               brier<span class="op">=</span><span class="fu">brier_score</span>(test_label, test_probability))</span>
 <span id="cb9-7"><a href="#cb9-7" tabindex="-1"></a>test_report</span></code></pre></div>
+<p>Our 1,200 test messages contain 92 spam and 1,108 ham. The frozen rule delivers all of them: recall is <strong>0</strong>, precision is <strong>undefined</strong>, accuracy is <strong>92.33 percent</strong>, and cost is <strong>0.07667 per message</strong>. The underlying probability model has a Brier score of <strong>0.04482</strong>. We have measured a deliver-everything policy, not discovered that spam has stopped arriving.</p>
 <p>Now we can give the administrator a more useful report: which mistakes the filter made, what they cost, and how well its probabilities behaved. The size of the test set and its number of spam messages belong in that report too. A fresh batch from our generator will give somewhat different answers. To estimate uncertainty with resampling, we must preserve the data’s independent units: if whole campaigns are independent, we should resample campaigns rather than individual messages.</p>
 <p>What if these results give us an idea for a better filter? Good! We can pursue it, but the test messages have now helped us make another modeling choice. The next version needs a new final examination, perhaps using mail from a later period.</p>
 </div>
