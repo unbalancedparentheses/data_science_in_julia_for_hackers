@@ -16,3 +16,5 @@ svg { display: block; width: 100%; height: auto; }
 .note { font-size: .9rem; color: #4e5c6c; }
 a { color: #245b99; }
 @media (max-width:480px) { body { padding: 12px; } th,td { padding: 6px; font-size: .9rem; } }
+
+@media (max-width:480px) { svg text { font-size:26px; } }

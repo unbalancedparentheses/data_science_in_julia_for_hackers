@@ -75,6 +75,13 @@ for (const [slug, chapter] of demos) {
       expect(box.width).toBeGreaterThan(200);
       expect(box.x + box.width).toBeLessThanOrEqual(391);
     }
+    for (const label of await page.locator('svg text').all()) {
+      const pixels = await label.evaluate(element => {
+        const transform = element.getScreenCTM();
+        return parseFloat(getComputedStyle(element).fontSize) * Math.hypot(transform.a, transform.b);
+      });
+      expect(pixels).toBeGreaterThanOrEqual(10);
+    }
     expect(errors).toEqual([]);
   });
 
@@ -88,6 +95,9 @@ for (const [slug, chapter] of demos) {
     await element.scrollIntoViewIfNeeded();
     const frame = page.frameLocator(selector);
     await ready(frame);
+    for (const link of await frame.locator('a').all()) {
+      await expect(link).toHaveAttribute('target', /^(?:_top|_blank)$/);
+    }
     const results = frame.locator('[data-demo-results]');
     const before = await results.innerHTML();
     await change(frame.locator('input[type="range"], select').first());

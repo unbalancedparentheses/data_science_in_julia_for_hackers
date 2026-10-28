@@ -25,6 +25,8 @@ def main():
         rendered = subprocess.check_output(pandoc_command() + ['--from=markdown', '--to=html4', '--wrap=none'],
             input='```julia\n' + code + '\n```\n', text=True, cwd=ROOT).strip()
         rendered = rendered.replace('cb1', block)
+        rendered = re.sub(r'<a href="#(cb\d+-\d+)"',
+                          lambda m: f'<a href="{page}#{m[1]}" aria-hidden="true"', rendered)
         destination = ROOT / 'docs' / page
         before = pages.get(destination, destination.read_text())
         after, count = re.subn(r'<div class="sourceCode" id="' + block + r'">.*?</div>',

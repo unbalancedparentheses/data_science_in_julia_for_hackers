@@ -777,16 +777,16 @@ probability of appearing in new spam emails.</p>
 to aggregate it is to use a Julia <em>struct</em>, with attributes for the
 pieces of data we’ll need to access over and over during the prediction
 process. Here’s the implementation:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="kw">mutable struct</span> BayesSpamFilter</span>
-<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a>    words_count_ham<span class="op">::</span><span class="dt">Dict{String, Int64}</span></span>
-<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a>    words_count_spam<span class="op">::</span><span class="dt">Dict{String, Int64}</span></span>
-<span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a>    N_ham<span class="op">::</span><span class="dt">Int64</span></span>
-<span id="cb5-5"><a href="#cb5-5" tabindex="-1"></a>    N_spam<span class="op">::</span><span class="dt">Int64</span></span>
-<span id="cb5-6"><a href="#cb5-6" tabindex="-1"></a>    n_ham_emails<span class="op">::</span><span class="dt">Int64</span></span>
-<span id="cb5-7"><a href="#cb5-7" tabindex="-1"></a>    n_spam_emails<span class="op">::</span><span class="dt">Int64</span></span>
-<span id="cb5-8"><a href="#cb5-8" tabindex="-1"></a>    vocabulary<span class="op">::</span><span class="dt">Array{String}</span></span>
-<span id="cb5-9"><a href="#cb5-9" tabindex="-1"></a>    <span class="fu">BayesSpamFilter</span>() <span class="op">=</span> <span class="fu">new</span>()</span>
-<span id="cb5-10"><a href="#cb5-10" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb5-1"><a href="spam-filter.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">mutable struct</span> BayesSpamFilter</span>
+<span id="cb5-2"><a href="spam-filter.html#cb5-2" aria-hidden="true" tabindex="-1"></a>    words_count_ham<span class="op">::</span><span class="dt">Dict{String, Int64}</span></span>
+<span id="cb5-3"><a href="spam-filter.html#cb5-3" aria-hidden="true" tabindex="-1"></a>    words_count_spam<span class="op">::</span><span class="dt">Dict{String, Int64}</span></span>
+<span id="cb5-4"><a href="spam-filter.html#cb5-4" aria-hidden="true" tabindex="-1"></a>    N_ham<span class="op">::</span><span class="dt">Int64</span></span>
+<span id="cb5-5"><a href="spam-filter.html#cb5-5" aria-hidden="true" tabindex="-1"></a>    N_spam<span class="op">::</span><span class="dt">Int64</span></span>
+<span id="cb5-6"><a href="spam-filter.html#cb5-6" aria-hidden="true" tabindex="-1"></a>    n_ham_emails<span class="op">::</span><span class="dt">Int64</span></span>
+<span id="cb5-7"><a href="spam-filter.html#cb5-7" aria-hidden="true" tabindex="-1"></a>    n_spam_emails<span class="op">::</span><span class="dt">Int64</span></span>
+<span id="cb5-8"><a href="spam-filter.html#cb5-8" aria-hidden="true" tabindex="-1"></a>    vocabulary<span class="op">::</span><span class="dt">Array{String}</span></span>
+<span id="cb5-9"><a href="spam-filter.html#cb5-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">BayesSpamFilter</span>() <span class="op">=</span> <span class="fu">new</span>()</span>
+<span id="cb5-10"><a href="spam-filter.html#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
 <p>The relevant attributes of the struct are <code>words_count_ham</code> and
 <code>words_count_spam</code>, two dictionaries containing the frequency of
 appearance of each word in the ham and spam datasets; <code>N_ham</code> and
@@ -818,17 +818,17 @@ we’re using the bang (<code>!</code>) convention here to indicate a function t
 modifies its arguments in-place (in this case, the spam filter struct
 itself). This function <em>fits</em> our model to the data, a typical procedure
 in data science and machine learning areas.</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="kw">function</span> <span class="fu">fit!</span>(model<span class="op">::</span><span class="dt">BayesSpamFilter</span>, x_train, y_train, voc)</span>
-<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a>    <span class="fu">isempty</span>(y_train) <span class="op">&amp;&amp;</span> <span class="fu">throw</span>(<span class="fu">ArgumentError</span>(<span class="st">&quot;training data must not be empty&quot;</span>))</span>
-<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a>    model.vocabulary <span class="op">=</span> voc</span>
-<span id="cb7-4"><a href="#cb7-4" tabindex="-1"></a>    model.words_count_ham <span class="op">=</span> <span class="fu">words_count</span>(x_train, model.vocabulary, y_train, <span class="fl">0</span>)</span>
-<span id="cb7-5"><a href="#cb7-5" tabindex="-1"></a>    model.words_count_spam <span class="op">=</span> <span class="fu">words_count</span>(x_train, model.vocabulary, y_train, <span class="fl">1</span>)</span>
-<span id="cb7-6"><a href="#cb7-6" tabindex="-1"></a>    model.N_ham <span class="op">=</span> <span class="fu">sum</span>(<span class="fu">values</span>(model.words_count_ham))</span>
-<span id="cb7-7"><a href="#cb7-7" tabindex="-1"></a>    model.N_spam <span class="op">=</span> <span class="fu">sum</span>(<span class="fu">values</span>(model.words_count_spam))</span>
-<span id="cb7-8"><a href="#cb7-8" tabindex="-1"></a>    model.n_ham_emails <span class="op">=</span> <span class="fu">count</span>(<span class="op">==</span>(<span class="fl">0</span>), y_train)</span>
-<span id="cb7-9"><a href="#cb7-9" tabindex="-1"></a>    model.n_spam_emails <span class="op">=</span> <span class="fu">count</span>(<span class="op">==</span>(<span class="fl">1</span>), y_train)</span>
-<span id="cb7-10"><a href="#cb7-10" tabindex="-1"></a>    <span class="cf">return</span></span>
-<span id="cb7-11"><a href="#cb7-11" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb7-1"><a href="spam-filter.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">fit!</span>(model<span class="op">::</span><span class="dt">BayesSpamFilter</span>, x_train, y_train, voc)</span>
+<span id="cb7-2"><a href="spam-filter.html#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">isempty</span>(y_train) <span class="op">&amp;&amp;</span> <span class="fu">throw</span>(<span class="fu">ArgumentError</span>(<span class="st">&quot;training data must not be empty&quot;</span>))</span>
+<span id="cb7-3"><a href="spam-filter.html#cb7-3" aria-hidden="true" tabindex="-1"></a>    model.vocabulary <span class="op">=</span> voc</span>
+<span id="cb7-4"><a href="spam-filter.html#cb7-4" aria-hidden="true" tabindex="-1"></a>    model.words_count_ham <span class="op">=</span> <span class="fu">words_count</span>(x_train, model.vocabulary, y_train, <span class="fl">0</span>)</span>
+<span id="cb7-5"><a href="spam-filter.html#cb7-5" aria-hidden="true" tabindex="-1"></a>    model.words_count_spam <span class="op">=</span> <span class="fu">words_count</span>(x_train, model.vocabulary, y_train, <span class="fl">1</span>)</span>
+<span id="cb7-6"><a href="spam-filter.html#cb7-6" aria-hidden="true" tabindex="-1"></a>    model.N_ham <span class="op">=</span> <span class="fu">sum</span>(<span class="fu">values</span>(model.words_count_ham))</span>
+<span id="cb7-7"><a href="spam-filter.html#cb7-7" aria-hidden="true" tabindex="-1"></a>    model.N_spam <span class="op">=</span> <span class="fu">sum</span>(<span class="fu">values</span>(model.words_count_spam))</span>
+<span id="cb7-8"><a href="spam-filter.html#cb7-8" aria-hidden="true" tabindex="-1"></a>    model.n_ham_emails <span class="op">=</span> <span class="fu">count</span>(<span class="op">==</span>(<span class="fl">0</span>), y_train)</span>
+<span id="cb7-9"><a href="spam-filter.html#cb7-9" aria-hidden="true" tabindex="-1"></a>    model.n_spam_emails <span class="op">=</span> <span class="fu">count</span>(<span class="op">==</span>(<span class="fl">1</span>), y_train)</span>
+<span id="cb7-10"><a href="spam-filter.html#cb7-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span></span>
+<span id="cb7-11"><a href="spam-filter.html#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
 <pre><code>## fit! (generic function with 1 method)</code></pre>
 <p>What we mean by fitting the model to the data is mainly filling all the
 undefined parameters in our struct with values informed by the training
@@ -865,30 +865,30 @@ implementing the smoothed word-probability formula that we discussed earlier.</p
 given word. We’ll call it for each word of an incoming email within
 another function, <code>spam_predict</code>, to calculate the probability of that
 email being spam or ham.</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="kw">function</span> <span class="fu">spam_predict</span>(email, model<span class="op">::</span><span class="dt">BayesSpamFilter</span>, α, tol<span class="op">=</span><span class="fu">typemax</span>(<span class="dt">Int</span>))</span>
-<span id="cb12-2"><a href="#cb12-2" tabindex="-1"></a>    α <span class="op">&gt;</span> <span class="fl">0</span> <span class="op">||</span> <span class="fu">throw</span>(<span class="fu">ArgumentError</span>(<span class="st">&quot;α must be positive&quot;</span>))</span>
-<span id="cb12-3"><a href="#cb12-3" tabindex="-1"></a>    tol <span class="op">&gt;</span> <span class="fl">0</span> <span class="op">||</span> <span class="fu">throw</span>(<span class="fu">ArgumentError</span>(<span class="st">&quot;tol must be positive&quot;</span>))</span>
-<span id="cb12-4"><a href="#cb12-4" tabindex="-1"></a>    ngrams_email <span class="op">=</span> <span class="fu">ngrams</span>(<span class="fu">StringDocument</span>(email))</span>
-<span id="cb12-5"><a href="#cb12-5" tabindex="-1"></a>    <span class="co"># Ignore out-of-vocabulary words before applying an optional word limit.</span></span>
-<span id="cb12-6"><a href="#cb12-6" tabindex="-1"></a>    email_words <span class="op">=</span> <span class="fu">sort!</span>([w for w <span class="kw">in</span> <span class="fu">keys</span>(ngrams_email) if w <span class="kw">in</span> model.vocabulary],</span>
-<span id="cb12-7"><a href="#cb12-7" tabindex="-1"></a>                       by<span class="op">=</span>w <span class="op">-&gt;</span> (<span class="op">-</span>ngrams_email[w], w))</span>
-<span id="cb12-8"><a href="#cb12-8" tabindex="-1"></a>    <span class="fu">resize!</span>(email_words, <span class="fu">min</span>(<span class="fu">length</span>(email_words), tol))</span>
-<span id="cb12-9"><a href="#cb12-9" tabindex="-1"></a>    n_vocabulary <span class="op">=</span> <span class="fu">length</span>(model.vocabulary)</span>
-<span id="cb12-10"><a href="#cb12-10" tabindex="-1"></a>    n_emails <span class="op">=</span> model.n_ham_emails <span class="op">+</span> model.n_spam_emails</span>
-<span id="cb12-11"><a href="#cb12-11" tabindex="-1"></a>    log_ham <span class="op">=</span> <span class="fu">log</span>(model.n_ham_emails <span class="op">/</span> n_emails)</span>
-<span id="cb12-12"><a href="#cb12-12" tabindex="-1"></a>    log_spam <span class="op">=</span> <span class="fu">log</span>(model.n_spam_emails <span class="op">/</span> n_emails)</span>
-<span id="cb12-13"><a href="#cb12-13" tabindex="-1"></a></span>
-<span id="cb12-14"><a href="#cb12-14" tabindex="-1"></a>    <span class="cf">for</span> word <span class="kw">in</span> email_words</span>
-<span id="cb12-15"><a href="#cb12-15" tabindex="-1"></a>        word_ham_prob, word_spam_prob <span class="op">=</span> <span class="fu">word_spam_probability</span>(word, model.words_count_ham, model.words_count_spam, model.N_ham, model.N_spam, n_vocabulary, α)</span>
-<span id="cb12-16"><a href="#cb12-16" tabindex="-1"></a>        log_ham <span class="op">+=</span> ngrams_email[word] <span class="op">*</span> <span class="fu">log</span>(word_ham_prob)</span>
-<span id="cb12-17"><a href="#cb12-17" tabindex="-1"></a>        log_spam <span class="op">+=</span> ngrams_email[word] <span class="op">*</span> <span class="fu">log</span>(word_spam_prob)</span>
-<span id="cb12-18"><a href="#cb12-18" tabindex="-1"></a>    <span class="cf">end</span></span>
-<span id="cb12-19"><a href="#cb12-19" tabindex="-1"></a>    <span class="co"># Normalize after subtracting the largest log score to avoid underflow.</span></span>
-<span id="cb12-20"><a href="#cb12-20" tabindex="-1"></a>    offset <span class="op">=</span> <span class="fu">max</span>(log_ham, log_spam)</span>
-<span id="cb12-21"><a href="#cb12-21" tabindex="-1"></a>    ham_score <span class="op">=</span> <span class="fu">exp</span>(log_ham <span class="op">-</span> offset)</span>
-<span id="cb12-22"><a href="#cb12-22" tabindex="-1"></a>    spam_score <span class="op">=</span> <span class="fu">exp</span>(log_spam <span class="op">-</span> offset)</span>
-<span id="cb12-23"><a href="#cb12-23" tabindex="-1"></a>    <span class="cf">return</span> ham_score <span class="op">/</span> (ham_score <span class="op">+</span> spam_score), spam_score <span class="op">/</span> (ham_score <span class="op">+</span> spam_score)</span>
-<span id="cb12-24"><a href="#cb12-24" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb12-1"><a href="spam-filter.html#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">spam_predict</span>(email, model<span class="op">::</span><span class="dt">BayesSpamFilter</span>, α, tol<span class="op">=</span><span class="fu">typemax</span>(<span class="dt">Int</span>))</span>
+<span id="cb12-2"><a href="spam-filter.html#cb12-2" aria-hidden="true" tabindex="-1"></a>    α <span class="op">&gt;</span> <span class="fl">0</span> <span class="op">||</span> <span class="fu">throw</span>(<span class="fu">ArgumentError</span>(<span class="st">&quot;α must be positive&quot;</span>))</span>
+<span id="cb12-3"><a href="spam-filter.html#cb12-3" aria-hidden="true" tabindex="-1"></a>    tol <span class="op">&gt;</span> <span class="fl">0</span> <span class="op">||</span> <span class="fu">throw</span>(<span class="fu">ArgumentError</span>(<span class="st">&quot;tol must be positive&quot;</span>))</span>
+<span id="cb12-4"><a href="spam-filter.html#cb12-4" aria-hidden="true" tabindex="-1"></a>    ngrams_email <span class="op">=</span> <span class="fu">ngrams</span>(<span class="fu">StringDocument</span>(email))</span>
+<span id="cb12-5"><a href="spam-filter.html#cb12-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Ignore out-of-vocabulary words before applying an optional word limit.</span></span>
+<span id="cb12-6"><a href="spam-filter.html#cb12-6" aria-hidden="true" tabindex="-1"></a>    email_words <span class="op">=</span> <span class="fu">sort!</span>([w for w <span class="kw">in</span> <span class="fu">keys</span>(ngrams_email) if w <span class="kw">in</span> model.vocabulary],</span>
+<span id="cb12-7"><a href="spam-filter.html#cb12-7" aria-hidden="true" tabindex="-1"></a>                       by<span class="op">=</span>w <span class="op">-&gt;</span> (<span class="op">-</span>ngrams_email[w], w))</span>
+<span id="cb12-8"><a href="spam-filter.html#cb12-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">resize!</span>(email_words, <span class="fu">min</span>(<span class="fu">length</span>(email_words), tol))</span>
+<span id="cb12-9"><a href="spam-filter.html#cb12-9" aria-hidden="true" tabindex="-1"></a>    n_vocabulary <span class="op">=</span> <span class="fu">length</span>(model.vocabulary)</span>
+<span id="cb12-10"><a href="spam-filter.html#cb12-10" aria-hidden="true" tabindex="-1"></a>    n_emails <span class="op">=</span> model.n_ham_emails <span class="op">+</span> model.n_spam_emails</span>
+<span id="cb12-11"><a href="spam-filter.html#cb12-11" aria-hidden="true" tabindex="-1"></a>    log_ham <span class="op">=</span> <span class="fu">log</span>(model.n_ham_emails <span class="op">/</span> n_emails)</span>
+<span id="cb12-12"><a href="spam-filter.html#cb12-12" aria-hidden="true" tabindex="-1"></a>    log_spam <span class="op">=</span> <span class="fu">log</span>(model.n_spam_emails <span class="op">/</span> n_emails)</span>
+<span id="cb12-13"><a href="spam-filter.html#cb12-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-14"><a href="spam-filter.html#cb12-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> word <span class="kw">in</span> email_words</span>
+<span id="cb12-15"><a href="spam-filter.html#cb12-15" aria-hidden="true" tabindex="-1"></a>        word_ham_prob, word_spam_prob <span class="op">=</span> <span class="fu">word_spam_probability</span>(word, model.words_count_ham, model.words_count_spam, model.N_ham, model.N_spam, n_vocabulary, α)</span>
+<span id="cb12-16"><a href="spam-filter.html#cb12-16" aria-hidden="true" tabindex="-1"></a>        log_ham <span class="op">+=</span> ngrams_email[word] <span class="op">*</span> <span class="fu">log</span>(word_ham_prob)</span>
+<span id="cb12-17"><a href="spam-filter.html#cb12-17" aria-hidden="true" tabindex="-1"></a>        log_spam <span class="op">+=</span> ngrams_email[word] <span class="op">*</span> <span class="fu">log</span>(word_spam_prob)</span>
+<span id="cb12-18"><a href="spam-filter.html#cb12-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">end</span></span>
+<span id="cb12-19"><a href="spam-filter.html#cb12-19" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Normalize after subtracting the largest log score to avoid underflow.</span></span>
+<span id="cb12-20"><a href="spam-filter.html#cb12-20" aria-hidden="true" tabindex="-1"></a>    offset <span class="op">=</span> <span class="fu">max</span>(log_ham, log_spam)</span>
+<span id="cb12-21"><a href="spam-filter.html#cb12-21" aria-hidden="true" tabindex="-1"></a>    ham_score <span class="op">=</span> <span class="fu">exp</span>(log_ham <span class="op">-</span> offset)</span>
+<span id="cb12-22"><a href="spam-filter.html#cb12-22" aria-hidden="true" tabindex="-1"></a>    spam_score <span class="op">=</span> <span class="fu">exp</span>(log_spam <span class="op">-</span> offset)</span>
+<span id="cb12-23"><a href="spam-filter.html#cb12-23" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> ham_score <span class="op">/</span> (ham_score <span class="op">+</span> spam_score), spam_score <span class="op">/</span> (ham_score <span class="op">+</span> spam_score)</span>
+<span id="cb12-24"><a href="spam-filter.html#cb12-24" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
 <p>This function returns normalized ham and spam probabilities. Class priors
 come from the number of training emails in each class, not the number of
 words. Each word&#x27;s log probability is weighted by its frequency in the
@@ -901,18 +901,18 @@ the prediction reduces to the class priors.</p>
 another function to manage the process. This function classifies each
 email into Ham (represented by the number 0) or Spam (represented by the
 number 1)</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="kw">function</span> <span class="fu">get_predictions</span>(x_test, y_test, model<span class="op">::</span><span class="dt">BayesSpamFilter</span>, α, tol<span class="op">=</span><span class="fu">typemax</span>(<span class="dt">Int</span>))</span>
-<span id="cb13-2"><a href="#cb13-2" tabindex="-1"></a>    N <span class="op">=</span> <span class="fu">length</span>(y_test)</span>
-<span id="cb13-3"><a href="#cb13-3" tabindex="-1"></a>    predictions <span class="op">=</span> <span class="fu">Array</span><span class="dt">{Int64,1}</span>(<span class="cn">undef</span>, N)</span>
-<span id="cb13-4"><a href="#cb13-4" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>N</span>
-<span id="cb13-5"><a href="#cb13-5" tabindex="-1"></a>        email <span class="op">=</span> <span class="fu">string</span>([<span class="fu">repeat</span>(<span class="fu">string</span>(word, <span class="st">&quot; &quot;</span>), N) for (word, N) <span class="kw">in</span> <span class="fu">zip</span>(model.vocabulary, x_test[<span class="op">:</span>, i])]<span class="op">...</span>)</span>
-<span id="cb13-6"><a href="#cb13-6" tabindex="-1"></a>        pham, pspam <span class="op">=</span> <span class="fu">spam_predict</span>(email, model, α, tol)</span>
-<span id="cb13-7"><a href="#cb13-7" tabindex="-1"></a>        pred <span class="op">=</span> <span class="fu">argmax</span>([pham, pspam]) <span class="op">-</span> <span class="fl">1</span></span>
-<span id="cb13-8"><a href="#cb13-8" tabindex="-1"></a>        predictions[i] <span class="op">=</span> pred</span>
-<span id="cb13-9"><a href="#cb13-9" tabindex="-1"></a>    <span class="cf">end</span></span>
-<span id="cb13-10"><a href="#cb13-10" tabindex="-1"></a></span>
-<span id="cb13-11"><a href="#cb13-11" tabindex="-1"></a>    predictions</span>
-<span id="cb13-12"><a href="#cb13-12" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb13-1"><a href="spam-filter.html#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">get_predictions</span>(x_test, y_test, model<span class="op">::</span><span class="dt">BayesSpamFilter</span>, α, tol<span class="op">=</span><span class="fu">typemax</span>(<span class="dt">Int</span>))</span>
+<span id="cb13-2"><a href="spam-filter.html#cb13-2" aria-hidden="true" tabindex="-1"></a>    N <span class="op">=</span> <span class="fu">length</span>(y_test)</span>
+<span id="cb13-3"><a href="spam-filter.html#cb13-3" aria-hidden="true" tabindex="-1"></a>    predictions <span class="op">=</span> <span class="fu">Array</span><span class="dt">{Int64,1}</span>(<span class="cn">undef</span>, N)</span>
+<span id="cb13-4"><a href="spam-filter.html#cb13-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span>N</span>
+<span id="cb13-5"><a href="spam-filter.html#cb13-5" aria-hidden="true" tabindex="-1"></a>        email <span class="op">=</span> <span class="fu">string</span>([<span class="fu">repeat</span>(<span class="fu">string</span>(word, <span class="st">&quot; &quot;</span>), N) for (word, N) <span class="kw">in</span> <span class="fu">zip</span>(model.vocabulary, x_test[<span class="op">:</span>, i])]<span class="op">...</span>)</span>
+<span id="cb13-6"><a href="spam-filter.html#cb13-6" aria-hidden="true" tabindex="-1"></a>        pham, pspam <span class="op">=</span> <span class="fu">spam_predict</span>(email, model, α, tol)</span>
+<span id="cb13-7"><a href="spam-filter.html#cb13-7" aria-hidden="true" tabindex="-1"></a>        pred <span class="op">=</span> <span class="fu">argmax</span>([pham, pspam]) <span class="op">-</span> <span class="fl">1</span></span>
+<span id="cb13-8"><a href="spam-filter.html#cb13-8" aria-hidden="true" tabindex="-1"></a>        predictions[i] <span class="op">=</span> pred</span>
+<span id="cb13-9"><a href="spam-filter.html#cb13-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">end</span></span>
+<span id="cb13-10"><a href="spam-filter.html#cb13-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-11"><a href="spam-filter.html#cb13-11" aria-hidden="true" tabindex="-1"></a>    predictions</span>
+<span id="cb13-12"><a href="spam-filter.html#cb13-12" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
 <p>This function takes in the testing portion of the data and our trained
 model. We call our <code>spam_predict</code> function for each email in the testing
 data and use the maximum (<code>argmax</code>) of the two returned probability
