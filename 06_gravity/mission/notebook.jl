@@ -79,6 +79,34 @@ probability**. We have not modelled the engine, atmosphere, radius uncertainty,
 or a biased stopwatch. The ship is a decision-making story, not a launch plan.
 """
 
+# ╔═╡ 164c4c3d-d434-4443-98ca-116e72fd9b13
+begin
+    # Plot a density in SPEED, not gravity: account for unequal transformed cells.
+    speeds = escape_speed.(result.gs)
+    edges = escape_speed.(vcat(result.gs[1] - (result.gs[2]-result.gs[1])/2,
+                               (result.gs[1:end-1] .+ result.gs[2:end])/2,
+                               result.gs[end] + (result.gs[end]-result.gs[end-1])/2))
+    density = result.masses ./ diff(edges)
+    plot_x(v) = 55 + 520v/8
+    plot_y(d) = 220 - 170d/maximum(density)
+    points = join(["$(plot_x(v)),$(plot_y(d))" for (v,d) in zip(speeds,density)], " ")
+    tick_labels = join(["<text x='$(plot_x(v))' y='243' text-anchor='middle'>$(v)</text>" for v in 0:2:8])
+    mission_plot = HTML("""
+    <svg viewBox="0 0 630 300" role="img" aria-labelledby="mars-chart-title mars-chart-desc" style="max-width:750px;width:100%;background:white;color:#18222c">
+      <title id="mars-chart-title">Posterior ideal escape speed and hypothetical speed budget</title>
+      <desc id="mars-chart-desc">The blue curve is the posterior density of escape speed in kilometres per second. The pale band is its middle 90 percent interval. A dashed orange line marks the speed budget. Values are also listed in the mission readout.</desc>
+      <text x="55" y="23" font-size="15">Posterior density (relative height)</text>
+      <rect x="$(plot_x(decision.interval[1]))" y="40" width="$(plot_x(decision.interval[3])-plot_x(decision.interval[1]))" height="180" fill="#dcebf8"/>
+      <polyline points="$(points)" fill="none" stroke="#16689b" stroke-width="2"/>
+      <line x1="$(plot_x(budget))" y1="40" x2="$(plot_x(budget))" y2="220" stroke="#b54d00" stroke-width="3" stroke-dasharray="6 4"/>
+      <line x1="55" y1="220" x2="575" y2="220" stroke="#18222c"/>
+      $(tick_labels)
+      <text x="315" y="270" text-anchor="middle">Ideal escape speed (km/s)</text>
+      <text x="55" y="292" font-size="12">Blue band: middle 90% interval. Orange dashed line: hypothetical budget.</text>
+    </svg>
+    """)
+end
+
 # ╔═╡ 164c4c3d-d434-4443-98ca-116e72fd9b12
 md"""
 ## Now change the experiment
@@ -111,4 +139,5 @@ investigate instead of trusting the clipped interval.
 # ╠═164c4c3d-d434-4443-98ca-116e72fd9b09
 # ╠═164c4c3d-d434-4443-98ca-116e72fd9b10
 # ╟─164c4c3d-d434-4443-98ca-116e72fd9b11
+# ╠═164c4c3d-d434-4443-98ca-116e72fd9b13
 # ╟─164c4c3d-d434-4443-98ca-116e72fd9b12

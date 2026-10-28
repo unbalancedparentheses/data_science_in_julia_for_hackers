@@ -11,6 +11,10 @@ julia --startup-file=no 06_gravity/mission/runtests.jl
 julia --startup-file=no 06_gravity/mission/notebook.jl
 ```
 
+The notebook includes a responsive SVG of the escape-speed posterior, its middle
+90% interval, and the hypothetical speed budget. Its density accounts for the
+unequal speed widths produced by transforming uniform gravity cells.
+
 The second command checks the notebook at default controls; a plain script does
 not display Markdown cells. To print its result:
 
