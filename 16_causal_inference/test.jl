@@ -14,3 +14,10 @@ using .CausalPricing
     @test_throws DimensionMismatch difference_in_means([1, 2], [true])
     @test difference_in_means([1., 1., 4., 4.], [false, false, true, true]).interval == (3., 3.)
 end
+
+@testset "Published pricing estimates" begin
+    result = pricing_demo()
+    @test round(result.naive.estimate; digits=2) == 64.51
+    @test round(result.adjusted; digits=2) == -19.84
+    @test round(result.randomized.estimate; digits=2) == -20.62
+end

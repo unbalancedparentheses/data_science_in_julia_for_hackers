@@ -486,7 +486,7 @@ than that baseline, but we still need to find out which mistakes it makes.
 
 To calculate the proportion of spam to ham emails, we sum over the
 `Prediction` column of the dataset remembering it only consists of 0s
-and 1s, and then we divide by the total amount of emails.This type of
+and 1s, and then we divide by the total amount of emails. This type of
 classification problem, where there's an unequal distribution of classes
 in the dataset, is called *imbalanced*. With unbalanced data, a better
 way to see how the model is performing is to construct a *confusion

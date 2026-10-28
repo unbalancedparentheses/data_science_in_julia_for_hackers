@@ -52,6 +52,10 @@ end
     counts = confusion(mail.label[rows.validation], pval)
     @test counts == (tp=14, fp=4, tn=1115, fn=67)
     policy = choose_threshold(mail.label[rows.validation], pval)
+    bins = reliability(mail.label[rows.validation], pval; bins=5)
+    @test getproperty.(bins, :n) == [1089, 93, 18]
+    @test round(brier_score(mail.label[rows.validation], pval); digits=5) == 0.04362
+    @test round(brier_score(mail.label[rows.test], predict_score(model, mail.signal[rows.test])); digits=5) == 0.04482
     @test policy.threshold == 0.85
     @test policy.validation_cost == 81/1200
     @test mean_cost(counts) == 87/1200

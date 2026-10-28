@@ -47,3 +47,24 @@ end
     @test PublishedChapter17.fit === Distributions.fit
     @test size(PublishedChapter17.sampler_fit.samples) == (4000, 4)
 end
+
+@testset "Published football readouts" begin
+    c = PublishedChapter17
+    @test c.prior_zero_check.observed == 0.4125
+    @test c.prior_zero_check.interval == [0.0, 0.725]
+    @test round(c.prior_zero_check.replicated_mean; digits=4) == 0.2465
+    @test round(mean(c.posterior); digits=4) == 2.0123
+    @test round.(quantile.(Ref(c.posterior), [0.05, 0.95]); digits=4) == [1.7603, 2.2784]
+    @test round(mean(c.sampler_fit.samples); digits=4) == 2.0142
+    @test round(c.diagnostics.rhat; digits=4) == 1.0009
+    @test round(c.diagnostics.bulk_ess; digits=1) == 3394.8
+    @test round(c.diagnostics.tail_ess; digits=1) == 3240.7
+    @test round(c.diagnostics.mean_mcse; digits=4) == 0.0028
+    stuck_diagnostics = chain_diagnostics(c.stuck_fit.samples)
+    @test round(stuck_diagnostics.rhat; digits=2) == 3.98
+    @test round(stuck_diagnostics.bulk_ess; digits=2) == 8.43
+    @test c.pooled_check.interval == [0.0625, 0.2125]
+    @test predictive_check(c.training.goals, grouped_replicates(c.training)).interval == [0.3125, 0.4625]
+    @test round(log_predictive_score(c.training, c.future); digits=2) == -102.58
+    @test round(log_predictive_score(c.training, c.future; grouped=true); digits=2) == -54.05
+end

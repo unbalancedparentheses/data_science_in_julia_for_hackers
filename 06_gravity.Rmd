@@ -423,11 +423,11 @@ We have a distribution of escape speeds, not a launch certificate. Each plausibl
 
 ## Your turn at mission control {#mars-mission-control}
 
-The Turing fits above explore several models. Their existing figures are retained here; the new calculations below come from the mission companion. Now let's isolate one experiment so we can change **one thing at a time**. The [mission companion](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/blob/main/06_gravity/mission/notebook.jl) uses a small grid calculation with no inference or plotting packages. Open it in Pluto, or run it as a Julia script for the default results. Its README explains both routes.
+The Turing fits above explore several models. To change **one thing at a time**, let's switch to a small grid calculation. The [mission companion](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/blob/main/06_gravity/mission/notebook.jl) uses a small grid calculation with no inference or plotting packages. Open it in Pluto, or run it as a Julia script for the default results. Its README explains both routes.
 
 We keep a uniform prior for $g$ between the grid boundaries near 0 and $10\,m/s^2$, a uniform shared-angle prior, and independent Normal range errors with known standard deviation. Recorded times and the approximate radius ratio stay fixed. The answer is conditional on those choices. In particular, tightening the range-error slider asserts a more precise instrument; it does not improve the measurements you already took.
 
-**Predict first:** what will happen to the escape-speed interval if the angle becomes known exactly? What if the range-error standard deviation doubles? Will either change necessarily move the middle of the interval much?
+**Predict first:** what will happen to the escape-speed interval if the angle becomes known exactly? What if the range-error standard deviation halves? Will either change necessarily move the middle of the interval much?
 
 The calculation inside the companion is short enough to inspect. For each gravity and angle pair, we predict every range and add its log likelihood:
 

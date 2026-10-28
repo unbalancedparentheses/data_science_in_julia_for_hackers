@@ -159,7 +159,7 @@ The nonempty bins in our validation sample are:
 | 93 | 0.3913 | 0.4086 |
 | 18 | 0.8472 | 0.7778 |
 
-The validation Brier score is **0.04362**. We can also summarize probability errors with the **Brier score**, the mean of `(predicted_probability - label)^2`. Smaller is better. Unlike the confusion matrix, this score examines the probabilities before we turn them into decisions at a threshold. Even so, calibration is only part of the story: a model that gives every message the overall spam prevalence can be calibrated without telling one message from another.
+We can also summarize probability errors with the **Brier score**, the mean of `(predicted_probability - label)^2`. Smaller is better. Our validation score is **0.04362**. Unlike the confusion matrix, this score examines the probabilities before we turn them into decisions at a threshold. Even so, calibration is only part of the story: a model that gives every message the overall spam prevalence can be calibrated without telling one message from another.
 
 Suppose one interval contains only three messages. Would we trust its observed spam fraction as much as one based on hundreds? Probably not. The table omits empty intervals, and small groups leave considerable uncertainty. Dividing the same messages into more bins will not magically give us more information. We could use validation data to fit a calibration correction, but then we would need to evaluate that corrected model on untouched data. For now, we are just examining the probabilities we already have.
 
