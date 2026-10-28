@@ -35,3 +35,20 @@ using .MarsMission
     fine = mission_summary(posterior(distances, times; gs=collect(0.01:0.01:10), angle_points=121))
     @test maximum(abs.(coarse.interval .- fine.interval)) < 0.03
 end
+
+@testset "Published instrument comparison" begin
+    distances = [25.94, 38.84, 52.81, 45.54, 17.24]
+    times = [3.91, 4.57, 5.43, 4.85, 3.15]
+    intervals = [mission_summary(posterior(distances, times; sigma, halfwidth)).interval
+                 for (sigma, halfwidth) in ((3.0, 7.5), (3.0, 0.0), (1.5, 7.5))]
+    # Assert the published rounded endpoints, not the unreported interior median.
+    @test [round.([v[1], v[3]]; digits=3) for v in intervals] ==
+          [[4.231, 5.387], [4.608, 4.882], [4.231, 5.375]]
+    widths = [v[3]-v[1] for v in intervals]
+    @test round.(widths; digits=3) == [1.155, 0.273, 1.144]
+    @test 0.75 < 1-widths[2]/widths[1] < 0.77
+    @test 0.009 < 1-widths[3]/widths[1] < 0.011
+    # Distinct angle/gravity pairs can predict exactly the same complete dataset.
+    @test (3.7 .* times.^2 ./ (2tand(45))) ≈
+          (3.7*tand(50)/tand(45) .* times.^2 ./ (2tand(50)))
+end

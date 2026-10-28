@@ -24,7 +24,7 @@ Our mission is to estimate the **escape velocity**: the initial speed that lets 
 
 This is a physics-and-inference puzzle. We will ignore atmosphere, rotation, terrain, other celestial bodies, and powered flight. A real launch needs much more than this calculation; in our story, the ship's limited fuel is represented by a hypothetical speed budget. We are deciding inside that simplified world.
 
-**Make a prediction before reading on.** If Mars has half Earth's radius and about half its surface gravity, would its escape speed be half Earth's, one quarter, or about the same? Write down a guess. We will earn the answer with an equation.
+**Make a prediction before reading on.** If Mars has half Earth's radius and a bit over a third of its surface gravity, would its escape speed be closer to half Earth's, one quarter, or about the same? Write down a guess. We will earn the answer with an equation.
 
 What on Mars is escape velocity?
 
@@ -202,7 +202,7 @@ ylabel!("Probability density");
 title!("Uniform prior distribution for g")
 ```
 
-Now we define the model in Turing and sample from the posterior distribution. Julia's `Normal(μ, σ)` takes a **standard deviation**, not a variance. Here the range-error standard deviation is fixed at 10 metres. The `θ` argument in these first three historical models is unused: their formulas assume exactly $45^\circ$. We will make angle uncertainty explicit later.
+Now we define the model in Turing and sample from the posterior distribution. Julia's `Normal(μ, σ)` takes a **standard deviation**, not a variance. Here the range-error standard deviation is fixed at 10 metres. The `θ` argument in these first three models is unused: their formulas assume exactly $45^\circ$. We will make angle uncertainty explicit later.
 
 ```{julia, results = FALSE} 
 @model gravity_uniform(t_final, x_final, θ) = begin
@@ -232,7 +232,7 @@ ylabel!("Probability density");
 title!("Posterior distribution for g with Uniform prior")
 ```
 
-As a second option, consider a Gaussian prior. The illustration below is `Normal(5,2)`: mean 5 and standard deviation 2. The historical fitted model immediately after it uses `Normal(6,2)` instead. Keep that difference in mind when reading the figures.
+As a second option, consider a Gaussian prior. The illustration below is `Normal(5,2)`: mean 5 and standard deviation 2. The fit below shifts the prior mean to 6, keeping the standard deviation at 2.
 
 ```{julia chap_6_plot_8} 
 plot(Normal(5,2), legend=false, fill=(0, .5,:lightblue));
@@ -318,7 +318,7 @@ To do the analysis we need to see how the angle influence the computation of $g$
 
 $g = \frac{2*\tan(\theta)*\Delta x}{t^{2}_f}$
 
-The following historical plot shows the growth of the tangent. Its symmetric ribbon uses only the upper deviation, so it is a visual approximation, not an exact uncertainty interval. The next calculation uses both endpoints to measure the full relative width.
+The tangent grows rapidly as the throw becomes steeper. The ribbon below mirrors the upper deviation on both sides; use it to see the trend. To measure the full uncertainty width, we need both endpoints, which we calculate next.
 
 ```{julia, results = FALSE} 
 angles = 0:0.1:70
@@ -341,7 +341,7 @@ err = tan.(deg2rad.(angles .+ error)) .- tan.(deg2rad.(angles .- error))
 perc_error = err .* 100 ./ μ
 ```
 
-Here `perc_error` is the full endpoint-to-endpoint width divided by `tan(θ)`, expressed as a percentage. It is not a standard deviation or a posterior interval. At zero degrees that relative quantity is undefined; the displayed curve starts at five degrees. The historical vertical-axis label below is imprecise: its denominator should be `tan(θ)`, not `θ`.
+Here `perc_error` is the full endpoint-to-endpoint width divided by `tan(θ)`, expressed as a percentage. It is not a standard deviation or a posterior interval. At zero degrees that relative quantity is undefined; the displayed curve starts at five degrees. Read the vertical axis as $\Delta\tan(\theta)/\tan(\theta)$ in percent; the abbreviated label below omits the tangent in the denominator.
 
 ```{julia chap_6_plot_13} 
 plot(angles, perc_error, xlim=(5,70), ylim=(0,200), color="lightblue", legend=true, lw=3, label="Percentual error");
@@ -357,7 +357,7 @@ $$\frac{dg}{g}\approx\frac{d\theta}{\sin\theta\cos\theta}=\frac{2d\theta}{\sin(2
 
 The denominator is largest at $45^\circ$. Nearly horizontal and nearly vertical throws both magnify a small angle mistake. This is a statement about angle error alone, not a universal best experiment.
 We now define the new model, where we include an uncertainty in the angle. We propose an uniform prior for the angle centered at 45°,
-the angle we think the measurement was done. A single `angle` is shared by all five throws: this represents an uncertain common setup or calibration. Independent aiming errors would need one latent angle per throw. More throws do not automatically remove a shared calibration error. This model also changes the gravity prior and restores the range-error standard deviation to 10 metres, so its histogram is not a controlled comparison of angle uncertainty alone.
+the angle we think the measurement was done. A single `angle` is shared by all five throws: this represents an uncertain common setup or calibration. Independent aiming errors would need one latent angle per throw. The ranges identify only the ratio $g/\tan(\theta)$: changing gravity and the shared angle together can leave every predicted range unchanged. More throws with this same setup cannot identify gravity and angle separately. We need an independent angle measurement to break that ambiguity. This model also changes the gravity prior and restores the range-error standard deviation to 10 metres, so its histogram is not a controlled comparison of angle uncertainty alone.
 
 ```{julia, results = FALSE} 
 @model gravity_angle_uniform(t_final, x_final, θ) = begin
@@ -423,7 +423,7 @@ We have a distribution of escape speeds, not a launch certificate. Each plausibl
 
 ## Your turn at mission control {#mars-mission-control}
 
-The original Turing fits above let us explore several models. Now let's isolate one experiment so we can change **one thing at a time**. The [mission companion](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/blob/main/06_gravity/mission/notebook.jl) uses a small grid calculation with no inference or plotting packages. Open it in Pluto, or run it as a Julia script for the default results. Its README explains both routes.
+The Turing fits above explore several models. Their existing figures are retained here; the new calculations below come from the mission companion. Now let's isolate one experiment so we can change **one thing at a time**. The [mission companion](https://github.com/unbalancedparentheses/data_science_in_julia_for_hackers/blob/main/06_gravity/mission/notebook.jl) uses a small grid calculation with no inference or plotting packages. Open it in Pluto, or run it as a Julia script for the default results. Its README explains both routes.
 
 We keep a uniform prior for $g$ between the grid boundaries near 0 and $10\,m/s^2$, a uniform shared-angle prior, and independent Normal range errors with known standard deviation. Recorded times and the approximate radius ratio stay fixed. The answer is conditional on those choices. In particular, tightening the range-error slider asserts a more precise instrument; it does not improve the measurements you already took.
 
@@ -462,7 +462,17 @@ You can improve either the angle measurement or the range measurement. In the co
 
 *Hint:* use the same data and gravity prior for both comparisons. Change only one control at a time.
 
-*Solution:* compare the interval widths returned by the two experiments, rather than declaring one instrument universally best. The shared angle changes the common conversion from $t^2$ to range; independent range errors scatter points around it. With sufficiently precise ranges, the shared-angle uncertainty becomes the limiting factor. If your conclusion reverses at different noise settings, that is useful information about the experimental design.
+*Solution:* for these five throws, buy the better angle instrument. Running the companion at its default grid gives:
+
+| Measurement assumption | Middle 90% escape-speed interval (km/s) | Width (km/s) |
+|:--|--:|--:|
+| Default: angle ±7.5°, range standard deviation 3 m | 4.231–5.387 | 1.155 |
+| Angle known: half-width 0°, range standard deviation 3 m | 4.608–4.882 | 0.273 |
+| Range noise halved: angle ±7.5°, standard deviation 1.5 m | 4.231–5.375 | 1.144 |
+
+Knowing the angle reduces the interval width by about 76%; halving range noise reduces it by about 1%. Why such a lopsided result? Independent range errors scatter the points around a common slope. The shared angle changes how that slope translates into gravity. These ranges already constrain the slope quite well, so measuring them more precisely leaves almost all the angle ambiguity intact.
+
+The tempting answer is to buy the instrument that makes each range measurement twice as precise. That improves a measurement we already know fairly well. Here the bigger payoff comes from learning the missing conversion factor. Try much larger range noise to see when that priority changes. These intervals use the companion's grid calculation, not a new Turing run.
 
 ### Build: try to fool mission control {#mars-build-exercise}
 
