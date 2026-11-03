@@ -150,7 +150,7 @@ x_test, y_test = data_matrix[:, test_rows], labels[test_rows]
 ```
 
 We use the same row indices for the word counts and their labels: shuffling
-those separately would pair messages with the wrong answers. The first 3,620
+those separately would pair messages with the wrong answers. The 3,620 randomly chosen
 messages train the model; the remaining 1,552 stay out of the fit. Now we can
 turn our attention to building the spam filter.
 
@@ -288,10 +288,8 @@ function words_count(word_data, vocabulary, labels, spam=0)
 end
 ```
 
-The function *word_count* counts the occurrences of each word in the ham
-and spam categories. One of its parameters is *word_data*, which we
-defined before and is a matrix where each column is an email and each
-row is a word.
+The `word_data` argument is the matrix we prepared earlier: each column
+is an email and each row is a word.
 
 Next, we'll define a `fit!` function for our spam filter struct. Notice
 we're using the bang (`!`) convention here to indicate a function that
