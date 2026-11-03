@@ -1,9 +1,8 @@
 # Probabilistic programming
 
 ```{julia chap_05_libraries, cache = TRUE, echo=FALSE}
-cd("./05_prob_prog_intro/") 
 import Pkg
-Pkg.activate(".")
+Pkg.activate("./05_prob_prog_intro")
 
 using Markdown
 using InteractiveUtils

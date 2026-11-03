@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mars mission control — Data Science in Julia for Hackers</title>
+<link rel="stylesheet" href="style.css">
+<script src="model.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body>
+<main>
+  <p class="eyebrow">Escaping from Mars · an idealized experiment</p>
+  <h1>One chance to leave Mars</h1>
+  <p class="intro">Five stone throws. An uncertain angle. One hypothetical speed budget. What would you measure more carefully before deciding?</p>
+  <aside class="prediction"><strong>Predict first.</strong> Would knowing the angle exactly move the escape-speed interval, or narrow it? Compare that with halving the range noise.</aside>
+  <noscript><p>This experiment needs JavaScript enabled. The <a href="../../escaping-from-mars.html">chapter</a> explains the calculations without it.</p></noscript>
+  <div class="experiment">
+  <form id="controls">
+    <h2>Change one measurement</h2>
+    <div class="control">
+    <label for="angle"><span>Shared angle uncertainty</span><span class="control-value">45° ± <output id="angle-value" for="angle">7.5°</output></span></label>
+    <input id="angle" name="angle" type="range" min="0" max="15" step="0.5" value="7.5">
+    </div>
+    <div class="control">
+    <label for="noise"><span>Range-error standard deviation</span><output id="noise-value" for="noise">3 m</output></label>
+    <input id="noise" name="noise" type="range" min="1" max="10" step="0.5" value="3">
+    </div>
+    <div class="control">
+    <label for="budget"><span>Hypothetical speed budget</span><output id="budget-value" for="budget">5 km/s</output></label>
+    <input id="budget" name="budget" type="range" min="3" max="7" step="0.05" value="5">
+    </div>
+    <button type="reset">Reset experiment</button>
+  </form>
+  <section aria-label="Mission result" data-demo-results>
+    <svg id="chart" viewBox="0 0 640 300" role="img" aria-labelledby="chart-title" aria-describedby="chart-description">
+      <title id="chart-title">Posterior escape speed and hypothetical speed budget</title>
+      <desc id="chart-description">Blue curve: posterior density. Pale blue band: middle 90 percent interval. Dashed orange line: speed budget. Exact results follow in text.</desc>
+      <text x="50" y="24" class="axis-label">Posterior density (relative height)</text>
+      <rect id="interval-band" y="45" height="175" fill="#dbeaf5"/>
+      <path id="density" fill="none" stroke="#16689b" stroke-width="2.5"/>
+      <line id="budget-line" y1="45" y2="220" stroke="#ab4300" stroke-width="3" stroke-dasharray="7 5"/>
+      <line x1="50" y1="220" x2="590" y2="220" stroke="currentColor"/>
+      <g id="ticks"></g>
+      <text x="320" y="273" text-anchor="middle" class="axis-label">Ideal escape speed (km/s)</text>
+    </svg>
+    <p class="legend">Blue band: middle 90% interval. Orange dashed line: hypothetical budget.</p>
+    <p id="result" class="result" role="status" aria-live="polite" aria-atomic="true">Calculating the mission result…</p>
+    <p class="model-limit">This is a probability under our stone-throwing model, <strong>not a spacecraft success probability.</strong></p>
+  </section>
+  </div>
+  <details>
+    <summary>What did we assume?</summary>
+    <p>We use the chapter’s illustrative ranges [25.94, 38.84, 52.81, 45.54, 17.24] metres and times [3.91, 4.57, 5.43, 4.85, 3.15] seconds. Gravity has a uniform grid prior from 0.02 to 10 m/s² in steps of 0.02. We average over 61 equally weighted midpoint angle cells, or one cell when the angle is known.</p>
+    <p>All throws share the same uncertain angle. Range errors are independent Normal errors with the chosen standard deviation. Times are exact, launch and landing heights match, and drag is absent. Reducing the noise slider asserts a more precise instrument; it does not improve measurements already taken.</p>
+    <p>Each grid point predicts range as g × time² / (2 tan(angle)). We normalize its likelihood after subtracting the largest log likelihood, then sum over angles. Escape speed is 11 √(g / 19.6) km/s, using the chapter’s approximate Earth/Mars radius ratio. The chart accounts for the unequal speed widths of the transformed gravity cells.</p>
+    <p>The result excludes propulsion failures, atmosphere, uncertain radius, and clock bias. More throws will not cure a shared calibration error. A lower speed budget changes the decision probability; it does not change what the stones tell us about gravity.</p>
+  </details>
+  <p class="next">Try setting the budget near the median. Why is the probability then close to one half? Restore the defaults and change only one measurement control at a time.</p>
+  <p><a href="../../escaping-from-mars.html#mars-mission-control" target="_top">Return to the chapter and worked exercises</a></p>
+</main>
+</body>
+</html>

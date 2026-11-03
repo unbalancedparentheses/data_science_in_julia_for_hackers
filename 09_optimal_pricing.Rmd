@@ -1,9 +1,8 @@
 # Optimal pricing
 
 ```{julia chapter_9_libraries, echo = FALSE, cache = FALSE, results = FALSE}
-cd("./09_optimal_pricing/") 
 import Pkg
-Pkg.activate(".")
+Pkg.activate("./09_optimal_pricing")
 
 using Markdown
 using Plots

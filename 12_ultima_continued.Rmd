@@ -3,9 +3,8 @@
 
 ```{julia chap_12_libraries, cache = TRUE, results = FALSE}
 
-cd("./12_ultima_continued/") 
 import Pkg
-Pkg.activate(".")
+Pkg.activate("./12_ultima_continued")
 Pkg.instantiate()
 
 using DifferentialEquations

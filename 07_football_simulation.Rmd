@@ -1,9 +1,8 @@
 # Football simulation
 
 ```{julia chap_7_libraries, cache = TRUE, results = FALSE, echo = FALSE}
-cd("./07_football_simulation/") 
 import Pkg
-Pkg.activate(".")
+Pkg.activate("./07_football_simulation")
 
 using Markdown
 using InteractiveUtils

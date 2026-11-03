@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>When will my delivery arrive?</title><link rel="stylesheet" href="../demo.css"></head>
+<body><h1>When will my delivery arrive?</h1>
+<p class="question"><strong>Predict first:</strong> must a deeper tree give better predictions for deliveries it has not seen? Change one setting at a time.</p>
+<div class="controls two"><label class="control" for="penalty"><span class="control-label"><span>Ridge penalty</span></span><select id="penalty"><option value="0">0</option><option value="0.01">0.01</option><option value="0.1" selected>0.1</option><option value="1">1</option><option value="10">10</option></select></label><label class="control" for="depth"><span class="control-label"><span>Maximum tree depth</span><output id="depth-value">4</output></span><input id="depth" type="range" min="2" max="8" value="4" step="1"></label></div>
+<div data-demo-results><p id="summary" class="summary" aria-live="polite"></p>
+<h2>Predicted versus observed delivery times</h2><div class="legend"><span><i class="swatch" style="--color:#197888"></i>Ridge</span><span><i class="swatch" style="--color:#7757b3"></i>Tree</span><span><i class="line-key"></i>Perfect prediction</span></div>
+<svg id="scatter" viewBox="0 0 720 400" role="img" aria-label="Tree and ridge predictions against observed minutes for all validation deliveries"></svg>
+<h2>Validation error · lower is better</h2><svg id="bars" viewBox="0 0 720 190" role="img" aria-label="Validation root mean squared errors in minutes for four models"></svg>
+<details><summary>Exact values</summary><table><caption>Validation RMSE in minutes</caption><thead><tr><th scope="col">Model</th><th scope="col">RMSE</th></tr></thead><tbody id="scores"></tbody></table></details></div>
+<details class="method"><summary>How these predictions were made</summary><p class="note">All 360 validation deliveries are shown, including missing distance measurements. Julia and MLJ fitted these models ahead of time, using the chapter's seeds, training-only imputation and encoding, and exactly the notebook's settings. The browser selects saved predictions and recalculates errors. It does not train a model or expose test-set outcomes.</p><p class="note">Repeatedly trying settings can overfit validation data. Freeze your procedure before its final test.</p></details>
+<p class="note"><a href="../../tabular-learning.html" target="_top">Read the chapter</a> or run the Julia notebook to change the data and fit your own models.</p>
+<noscript>Enable JavaScript to compare models. The chapter contains the code and explanation.</noscript><script type="module" src="app.js"></script></body></html>

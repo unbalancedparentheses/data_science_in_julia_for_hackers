@@ -7,15 +7,10 @@ using Images
 using ProgressMeter
 
 function resize_and_grayify(directory, im_name, width::Int64, height::Int64)
-    resized_gray_img = Gray.(load(directory * "/" * im_name)) |> (x -> imresize(x, width, height))
-    try
-        save("preprocessed_" * directory * "/" * im_name, resized_gray_img)
-    catch e
-        if isa(e, SystemError)
-            mkdir("preprocessed_" * directory)
-            save("preprocessed_" * directory * "/" * im_name, resized_gray_img)
-        end
-    end
+    resized_gray_img = Gray.(load(joinpath(directory, im_name))) |> (x -> imresize(x, width, height))
+    output_directory = "preprocessed_" * directory
+    mkpath(output_directory)
+    save(joinpath(output_directory, im_name), resized_gray_img)
 end
 
 function process_images(directory, width::Int64, height::Int64)

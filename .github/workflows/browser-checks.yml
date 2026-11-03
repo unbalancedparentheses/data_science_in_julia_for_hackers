@@ -1,0 +1,50 @@
+name: Static chapter browser checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+concurrency:
+  group: book-browser-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  browser-demos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /*
+            !/10_bees_vs_wasps/data/
+            !/docs/data_science_in_julia_for_hackers_files/
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: tests/browser/package-lock.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install pinned browser test runner
+        run: npm ci --prefix tests/browser --ignore-scripts
+      - name: Install Chromium and system libraries
+        working-directory: tests/browser
+        run: npx playwright install --with-deps chromium
+      - name: Check browser calculations against Julia fixtures
+        run: |
+          node scripts/browser/check_fixture.cjs --self-test
+          node docs/interactive/mars/model.test.cjs
+          node docs/interactive/evaluation/test.mjs
+          node docs/interactive/tabular/test.mjs
+          node docs/interactive/causal/test.js
+          node docs/interactive/bayesian/test.js
+      - name: Exercise static chapter controls in Chromium
+        run: npm test --prefix tests/browser
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: browser-test-failures
+          path: tests/browser/test-results/
+          if-no-files-found: ignore

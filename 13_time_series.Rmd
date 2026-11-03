@@ -1,9 +1,8 @@
 # Time series
 
 ```{julia chapter_13_libraries, cache = TRUE , results = FALSE, echo=FALSE}
-cd("./13_time_series/") 
 import Pkg
-Pkg.activate(".")
+Pkg.activate("./13_time_series")
 
 using Markdown
 using InteractiveUtils

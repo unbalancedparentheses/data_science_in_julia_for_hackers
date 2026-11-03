@@ -1,9 +1,8 @@
 # Basketball shots
 
 ```{julia chap_8_libraries, cache = TRUE, results = FALSE, echo = FALSE}
-cd("./08_basketball_shots/") 
 import Pkg
-Pkg.activate(".")
+Pkg.activate("./08_basketball_shots")
 
 using Markdown
 using InteractiveUtils

@@ -3,3 +3,8 @@
 .Rhistory
 .RData
 _bookdown_files
+**/__pycache__/
+
+# Local Quarto execution products
+publishing/quarto/_site/
+publishing/quarto/.quarto/
