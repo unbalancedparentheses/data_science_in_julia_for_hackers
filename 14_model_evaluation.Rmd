@@ -8,7 +8,7 @@
 
 ## The filter that wins by doing nothing
 
-Imagine that we have finished the spam filter from Chapter 4 and a small company agrees to try it. We arrive with good news: our filter is 93 percent accurate! The administrator looks pleased, until someone asks how many unwanted emails it actually catches.
+Imagine deploying a filter like the one from Chapter 4 at a new company, where only seven percent of incoming mail is spam. This is a different mailbox from our earlier dataset. We arrive with what sounds like good news: a filter is 93 percent accurate! The administrator looks pleased, until someone asks how many unwanted emails it actually catches.
 
 Well, that is an inconvenient question. If only seven out of every hundred messages are spam, a program that sends everything to the inbox is already 93 percent accurate. Our impressive competitor could be a program that does absolutely nothing.
 
@@ -129,15 +129,19 @@ policy = choose_threshold(validation_label, validation_probability;
 policy
 ```
 
-And we really are back at the beginning: the selected threshold is **0.85**, above every score our model assigns. It delivers everything. Blocking the most suspicious category catches 14 spam messages but hides four legitimate ones, costing `5*4 + 67 = 87` units. Delivering everything costs only 81 units, or **0.0675 per message**. The more accurate rule loses once we count the consequences!
+And we really are back at the beginning: the selected threshold is **0.85**, above every score our model assigns. It delivers everything. Blocking the most suspicious category catches 14 spam messages but hides four legitimate ones, costing `5*4 + 67 = 87` units. Delivering everything costs only 81 units, or **0.0675 per message**. On these validation messages, the more accurate rule loses once we count the consequences.
 
-This is useful news for the administrator, even if it is disappointing news for our filter. With these costs and this validation sample, we have not found a blocking rule worth deploying. Perhaps a quarantine folder would give us a better option than blocking or delivering everything.
+This is useful news for the administrator, even if it is disappointing news for our filter. With these costs and this validation sample, our selection procedure favors delivering everything. That is a decision based on limited evidence, not proof that blocking can never help. Perhaps a quarantine folder would give us a better option than blocking or delivering everything.
 
 Can we work out the threshold without trying a grid? Suppose `p` is a calibrated probability of spam for the population where we will use the filter. Blocking the message has expected cost `C_FP*(1-p)`, since we pay when it is actually ham. Delivering it has expected cost `C_FN*p`, since we pay when it is spam. Comparing the two, blocking costs no more than delivering when
 
 $$p \geq \frac{C_{FP}}{C_{FP}+C_{FN}}.$$
 
-With our example costs, the cutoff is `5/6`, about 0.833. Our model gives the most suspicious category a probability of 0.847, just above that cutoff. Yet only 14 of its 18 validation messages were spam, about 0.778. That small group explains why the validation search rejects blocking it: estimated probabilities and observed frequencies do not agree exactly. We also allowed only two actions in the calculation. Adding a quarantine folder, human review, or a limit on how many messages people can inspect would change the decision we need to solve.
+With our example costs, the cutoff is `5/6`, about 0.833. Our model gives the most suspicious category a probability of 0.847, just above that cutoff. Yet only 14 of its 18 validation messages were spam, about 0.778. That small group explains why the validation search rejects blocking it: estimated probabilities and observed frequencies do not agree exactly.
+
+Because we invented this mailbox, we can peek at the population probabilities for a moment. Delivering everything has expected cost **0.072 per message**. Blocking only category 4 removes its `0.02*0.85` spam cost but adds `5*0.02*0.15` for blocked ham, giving `0.072 - 0.017 + 0.015 = 0.070`. So blocking that category is actually slightly cheaper in the population: a difference of just **2 cost units per 1,000 messages**. Our validation sample selected the other rule after seeing only 18 messages in that category. The search can choose the wrong winner when the advantage is small. Before deploying, we would want more validation evidence or an uncertainty interval for the cost difference; the test set is not another chance to tune the threshold.
+
+We also allowed only two actions in the calculation. Adding a quarantine folder, human review, or a limit on how many messages people can inspect would change the decision we need to solve.
 
 ## Probabilities deserve their own evaluation
 
@@ -243,7 +247,7 @@ This returns delivery, review, and blocking for the three requested probabilitie
 
 ## What to carry into the next project
 
-We started with a filter boasting 93 percent accuracy and discovered that the number alone told us very little. Working through the mailbox gave us a better approach: begin with the decision, compare against a baseline, and split data according to the future situation we want to predict. Training fits the model and its transformations; validation helps us choose; testing gives the final estimate. The confusion matrix, probability checks, and costs each answer a different part of the company's question.
+We started with a filter boasting 93 percent accuracy and discovered that the number alone told us very little. Working through the mailbox gave us a better approach: begin with the decision, compare against a baseline, and split data according to the future situation we want to predict. Training fits the model and its transformations; validation helps us choose; testing gives the final estimate. The confusion matrix, probability checks, and costs each answer a different part of the company's question. Even after choosing the right cost measure, a small validation sample can pick the wrong policy: our invented mailbox let us see that uncertainty directly.
 
 The next chapter applies the same discipline to a more ordinary-looking problem: a table containing missing values, categories, and delivery times. Ordinary tables can hide extraordinary opportunities to fool ourselves.
 

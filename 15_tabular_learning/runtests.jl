@@ -39,4 +39,10 @@ using .TabularLearning
     prediction = predict_linear(fitted, transform(prep, data, rows.validation))
     @test rmse(yval, prediction) < rmse(yval, fill(mean(data.minutes[rows.train]), length(yval)))
     @test mae(yval, prediction) <= rmse(yval, prediction)
+    # Published readouts use this exact seeded split, including our own ridge fit.
+    @test round(rmse(yval, fill(mean(data.minutes[rows.train]), length(yval))); digits=3) == 16.896
+    @test round(mae(yval, prediction); digits=3) == 5.264
+    ridge_coefficients = fit_linear(X, data.minutes[rows.train]; lambda=0.1)
+    ridge_prediction = predict_linear(ridge_coefficients, transform(prep, data, rows.validation))
+    @test round(rmse(yval, ridge_prediction); digits=3) == 8.070
 end

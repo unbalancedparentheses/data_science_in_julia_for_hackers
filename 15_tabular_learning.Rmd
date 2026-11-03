@@ -135,7 +135,7 @@ Suppose a model starts using large coefficients to chase small quirks in the tra
 
 $$\frac{1}{2}\|X\beta-y\|_2^2 + \frac{n\lambda}{2}\sum_{j>0}\beta_j^2.$$
 
-Here `n` is the number of training rows and `lambda` controls how much we penalize the coefficients. We leave the intercept alone. This also explains why scaling matters: a coefficient's size depends on whether we measure distance in kilometers or meters. We do not want a change of units to choose our regularization for us.
+Here `n` is the number of training rows and `lambda` controls how much we penalize the coefficients. We leave the intercept alone. This also explains why scaling matters: a coefficient's size depends on whether we measure distance in kilometers or meters. Standardizing distance keeps a change from kilometers to meters from changing its penalty. We leave the missingness and weather indicators as 0/1, so their coefficients describe whole category changes rather than one-standard-deviation changes. That is a modeling choice; we have not made every feature's scale identical.
 
 We can solve this with the same least-squares machinery. Our function appends scaled identity rows for the penalized coefficients and zeros to the response. These extra rows supply the penalty. Set `lambda=0` and we are back to ordinary least squares. Let's try `lambda=0.1`:
 
@@ -156,7 +156,7 @@ ridge_validation_rmse = TabularLearning.rmse(validation_minutes,
                             TabularLearning.predict_linear(ridge_coefficients, validation_features))
 ```
 
-Did ridge improve the predictions? With `lambda=0.1`, validation RMSE rises to **8.070 minutes**, compared with **7.062** without the penalty. Here, shrinking the coefficients made predictions worse. This dataset has few features and many observations, and we built a nonlinear effect into long journeys. Regularization can help with unstable estimates and overfitting, but shrinking coefficients cannot create a nonlinear relationship that the model does not contain.
+Did ridge improve the predictions? With `lambda=0.1`, validation RMSE rises to **8.070 minutes**, compared with **7.062** without the penalty. Here, shrinking the coefficients made predictions worse. This dataset has few features and many observations. Shrinking coefficients introduces bias, and on this split it did not buy enough improvement elsewhere to compensate. Separately, we built a nonlinear effect into long journeys that limits both linear fits: a penalty cannot add a relationship that the model does not contain.
 
 ## Compare alternatives through MLJ
 

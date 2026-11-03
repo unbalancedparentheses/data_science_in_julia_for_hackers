@@ -44,7 +44,7 @@ The stone's mass cancels. Since surface gravity is $g=GM/r^2$, we get
 
 $$v_{escape}=\sqrt{2gr}.$$
 
-Check your guess: halving both $g$ and $r$ halves the speed. Doubling gravity alone multiplies the speed by $\sqrt{2}$, not by two.
+Check your guess: using 0.38 of Earth's gravity and half its radius gives $\sqrt{0.38\times0.5}\approx0.44$ of Earth's escape speed, a bit under half. As another check, halving both $g$ and $r$ halves the speed. Doubling gravity alone multiplies the speed by $\sqrt{2}$, not by two.
 
 Suppose we remember Earth's escape speed as about $11\,km/s$, its surface gravity as $9.8\,m/s^2$, and Mars's radius as roughly half Earth's. These are the rounded numbers we will use throughout the story. That leaves one missing ingredient: $g_{Mars}$.
 

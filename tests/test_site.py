@@ -51,6 +51,14 @@ class JuliaBlocks(HTMLParser):
 
 
 class SiteTests(unittest.TestCase):
+    def test_classifier_intro_preserves_labels_and_data_preview(self):
+        page = (ROOT / 'docs/spam-filter.html').read_text()
+        self.assertIn('<code>1</code> for spam', page)
+        self.assertIn('<code>0</code> for not spam', page)
+        self.assertIn('given the class', page)
+        self.assertIn('5172×3002 DataFrame', page)
+        self.assertIn('single pass', page)
+
     def test_navigation_is_balanced_and_identical(self):
         summaries = []
         for page in (ROOT / 'docs').glob('*.html'):

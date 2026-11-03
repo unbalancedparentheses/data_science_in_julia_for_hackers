@@ -58,6 +58,7 @@ end
     @test round(mean(c.posterior); digits=4) == 2.0123
     @test round.(quantile.(Ref(c.posterior), [0.05, 0.95]); digits=4) == [1.7603, 2.2784]
     @test round(mean(c.sampler_fit.samples); digits=4) == 2.0142
+    @test round.(100 .* collect(extrema(c.sampler_fit.acceptance)); digits=1) == [34.5, 36.1]
     @test round(c.diagnostics.rhat; digits=4) == 1.0009
     @test round(c.diagnostics.bulk_ess; digits=1) == 3394.8
     @test round(c.diagnostics.tail_ess; digits=1) == 3240.7

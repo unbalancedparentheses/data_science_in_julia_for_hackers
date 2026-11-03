@@ -62,3 +62,13 @@ end
     @test confusion(mail.label[rows.test], predict_score(model, mail.signal[rows.test]);
                     threshold=policy.threshold) == (tp=0, fp=0, tn=1108, fn=92)
 end
+
+@testset "Population versus finite-sample policy cost" begin
+    weights = [0.70, 0.20, 0.08, 0.02]
+    rates = [0.01, 0.08, 0.40, 0.85]
+    deliver_cost = sum(weights .* rates)
+    block_four_cost = sum(weights[1:3] .* rates[1:3]) + 5 * weights[4]*(1-rates[4])
+    @test deliver_cost ≈ 0.072
+    @test block_four_cost ≈ 0.070
+    @test 1000*(deliver_cost-block_four_cost) ≈ 2.0
+end

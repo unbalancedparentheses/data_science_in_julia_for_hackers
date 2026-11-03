@@ -32,6 +32,21 @@ def sync_spam_results(source, page):
         source, count = re.subn(pattern, lambda m: m[1] + '\n' + fragment + '\n' + m[2], source, flags=re.S)
         if count != 1:
             raise ValueError(f'Missing unique spam result marker: {name}')
+    # Refresh introductory prose while retaining the original data preview output.
+    for title, slug, following, stop in (
+        ('Naive Bayes: Spam or Ham?', 'naive-bayes-spam-or-ham', 'The Training Data', r'</div>'),
+        ('The Training Data', 'the-training-data', 'Preprocessing the Data', r'<div class="sourceCode" id="cb1">'),
+    ):
+        body = source.split('## ' + title + '\n', 1)[1].split('## ' + following + '\n', 1)[0]
+        if slug == 'naive-bayes-spam-or-ham':
+            body = re.sub(r'```\{julia[^\n]*\}.*?```', '', body, flags=re.S)
+        else:
+            body = body.split('```', 1)[0]
+        rendered = subprocess.check_output(pandoc_command() + ['--from=markdown', '--to=html4', '--mathjax', '--wrap=none'], input=body, text=True, cwd=ROOT).strip()
+        pattern = rf'(<div id="{slug}" class="section level2.*?</h2>).*?(?={stop})'
+        page, count = re.subn(pattern, lambda m: m[1] + '\n' + rendered + '\n', page, count=1, flags=re.S)
+        if count != 1:
+            raise ValueError(f'Missing legacy introduction: {slug}')
     for title, slug, following, number, blocks in SECTIONS:
         body = source.split('## ' + title + '\n', 1)[1].split('## ' + following + '\n', 1)[0]
         body = re.sub(r'^```\{julia[^\n]*\}', '```julia', body, flags=re.M)

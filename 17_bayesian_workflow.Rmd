@@ -135,7 +135,7 @@ Here is the seeded run's report, rounded for reading:
 | Bulk effective sample size | 3,394.8 |
 | Tail effective sample size | 3,240.7 |
 | Monte Carlo standard error of the mean | 0.0028 |
-| Acceptance across the four chains | 34.47–36.07% |
+| Acceptance across the four chains | 34.5–36.1% |
 
 The sampled mean is close to our exact answer, and its difference is smaller than one estimated Monte Carlo standard error. Now we have something concrete to compare with a bad sampler setting.
 

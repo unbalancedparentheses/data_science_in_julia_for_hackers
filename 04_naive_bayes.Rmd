@@ -36,15 +36,15 @@ classified data. Think of it like a machine to which you can give some
 input, like an email, and will give you some label to that input, like
 spam or ham. This machine has a lot of tiny knobs, and based on their
 particular configuration it will output some label for each input.
-Supervised learning involves iteratively finding the right configuration
-of these knobs by letting the machine make a guess with some
-pre-classified data, checking if the guess matches the true label, and
-if not, tune the knobs in some controlled way. The way our machine will
+For this model, we find the configuration by counting words in labeled
+spam and ham messages. Other learning algorithms adjust their parameters
+through repeated guesses; our naive Bayes fit can learn its counts in a
+single pass. The way our machine will
 make predictions is based on the underlying mathematical model. For a
 spam filter, a *naive Bayes* approach has proven to be effective, and
 you will have the opportunity to verify that yourself at the end of the
 chapter. In a naive Bayes model, Bayes' theorem is the main tool for
-classifying, and it is *naive* because we make very loose assumptions
+classifying, and it is *naive* because we make strong, simplifying assumptions
 about the data we are analyzing. This will be clearer once we dive into
 the implementation.
 
@@ -70,8 +70,8 @@ contents:
 > The .csv file contains 5,172 rows, one row for each email. There are
 > 3,002 columns. The first column indicates Email name. The name has
 > been set with numbers and not recipients' name to protect privacy. The
-> last column has the labels for prediction: \lstinline{1} for spam,
-> \lstinline{0} for not spam. The remaining 3,000 columns are the 3,000
+> last column has the labels for prediction: `1` for spam,
+> `0` for not spam. The remaining 3,000 columns are the 3,000
 > most common words in all the emails, after excluding the
 > non-alphabetical characters/words. For each row, the count of each
 > word(column) in that email(row) is stored in the respective cells.
@@ -219,13 +219,13 @@ the training ham email set:
 
 $P(email|ham) = \prod_{i=1}^{n}P(word_i|ham)$
 
-The multiplication of each of the probabilities associated with a
-particular word here stems from the naive assumption that all the words
-in the email are statistically independent. In reality, this assumption
-isn't necessarily true. In fact, it's most likely false. Words in a
-language are never independent from one another, but this simple
-assumption seems to be enough for the level of complexity our problem
-requires.
+The multiplication comes from a strong simplifying assumption: word
+occurrences are independent **given the class**. Once we know that an
+email is spam (or ham), the model treats one word occurrence as giving
+no further information about another. Real language does not behave that
+way: even within spam, some words tend to occur together. We make this
+conditional-independence assumption to obtain a simple model, then check
+how well its predictions work on held-out emails.
 
 The probability of a given word $word_i$ being in a given category is
 calculated like so:
@@ -274,11 +274,8 @@ The line `BayesSpamFilter() = new()` is the constructor of this struct.
 Because the constructor is empty, all the attributes will be undefined
 when we instantiate the filter. We'll have to define some functions to
 fill these variables with values that are relevant to our particular
-problem. First, here's a function `word_count` that counts the
+problem. First, here's a function `words_count` that counts the
 occurrences of each word in the ham and spam categories.
-
-Now we are going to define some functions that will be important for our
-filter implementation.
 
 ```{julia, results = FALSE}
 function words_count(word_data, vocabulary, labels, spam=0)
